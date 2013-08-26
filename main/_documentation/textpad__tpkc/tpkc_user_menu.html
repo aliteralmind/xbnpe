@@ -1,6 +1,11 @@
 <HTML><HEAD>
-	<TITLE></TITLE>
+	<TITLE>XBNPE-TPKC: User menu</TITLE>
 	<meta name="viewport" content="width=device-width" />
+<STYLE TYPE={#asc 34}text/css{#asc 34}>
+<!--
+	.greyHL {background: #E1E1E1; color: #000000;}
+-->
+</STYLE>
 </HEAD>
 
 <BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF"><a name="top"></a>
@@ -16,7 +21,7 @@
 
 <P>Selecting the TPKC item (by, for example, clicking it with your mouse) displays the main TPKC menu:</P>
 
-<P><IMG SRC="linked_to_files/tpkcum_main.jpg" BORDER="1" usemap="#tpkcummap"/></P>
+<P><IMG SRC="linked_to_files/tpkcum_main.jpg" BORDER="0" usemap="#tpkcummap"/></P>
 
 <P><I>(Click on an item in the menu for further information).</I></P>
 
@@ -54,41 +59,46 @@
 <HR/>
 
 </PRE>
-<A NAME="tpkcumac1clistpri"/><H2><CODE>[<A HREF="#tpkcumac1c">BACK</A>]</CODE> &nbsp; TPKC user-menu: All-cmds-in-1-cat: List primary KC for all cmds in cat</H2>
+<A NAME="tpkcumac1clistpri"/><H2><CODE>[<A HREF="#tpkcumac1c">BACK</A>]</CODE> &nbsp; TPKC user-menu: All-cmds-in-1-cat: List primary KC for all cmds in 1 category</H2>
+
+<P><I><CODE>[<A HREF="#tpkcumacacprikc">all</A>, <B>CAT</B>, <A HREF="#tpkcumakcdt">all debugging tools</A>]</CODE></I></P>
+
+<P>Prints the <A HREF="../pex_in_textpad.html#tpbs">primary key-command </A> (see terminology) for all commands in a single category. Commands with no key-commands are suppressed.</P>
+
+<H3>Partial example</H3>
+
+<PRE STYLE="background-color:#E1E1E1;">The primary key-command, for all commands in 1 category...
+...that have at least one kc
+Category 'edit' (total commands=67, with-a-kc=32):
+   EditAlignRight (nbs-kcs=1)
+      zTPAlignRight -- {#insert zCSpEE}{#sleep 10}
+   EditBackspace (nbs-kcs=4)
+      zTPDeleteL1c -- {#insert zSpBKSP}{#sleep 5}
+   EditCapitalize (nbs-kcs=2)
+      zTPTitleCase -- {#insert zCSpUU}{#sleep 10}
+   EditCopy (btstrp, nbs-kcs=1)
+      zTPCopy -- {#CTRL -chars j}{#insert zTSlp}{#sleep 10}
+   EditCopyAppend (nbs-kcs=2)
+      zTPCopyAppend -- {#insert zCSpCC}{#sleep 50}
+   ...</PRE>
 
 <PRE>
 
 <HR/>
 
 </PRE>
-<A NAME="tpkcumac1ctest"/><H2><CODE>[<A HREF="#tpkcumac1c">BACK</A>]</CODE> &nbsp; TPKC user-menu: All-cmds-in-1-cat: Test all nbs-cmds in cat</H2>
+<A NAME="tpkcumac1ctest"/><H2><CODE>[<A HREF="#tpkcumac1c">BACK</A>]</CODE> &nbsp; TPKC user-menu: All-cmds-in-1-cat: Test all nbs-cmds in 1 category</H2>
+
+<P><I><CODE>[<A HREF="#tpkcumacactestnbs">all</A>, cat, <A HREF="#tpkcumuptest1"><B>ONE</B></A>, <A HREF="#tpkcumakcdt">all debugging tools</A>]</CODE></I></P>
 
 <P>Tests all Non-BootStrap (nbs) commands in the selected category.</P>
 
-<P><B>Contents:</B><UL>
-	<LI><CODE>[<A HREF="#tpkcumac1ctestnbs">go</A>]</CODE> &nbsp; Non-BootStrap (nbs) command test format</LI>
-	<LI><CODE>[<A HREF="#tpkcumac1ctesttpbs">go</A>]</CODE> &nbsp; TextPad-bootstraps are not tested by the TPKC-project</LI>
-</UL></P>
-
-<P><I><B>Although the framework to support these TPKC nbs-tests is complete, very few tests have been setup.</B> Most currently-existing tests are in the <CODE>file</CODE> category. If you have created a specific test, please consider contributing it (<CODE>aliteralmind-github_AT_yahoo_DOT_com</CODE>).</I></P>
-
-<H4><U>Files</U></H4>
-
-<P>Each category has one or more files containing its test. Categories with many commands or numerous tests are split into multitple files. For example
-<BR> &nbsp; &nbsp; <CODE>{#insert zXPROOT_DIR_tpkc}\for_v_7_0_9\verify_nbs_commands\vnbsc_file_1of2.px.txt</CODE></P>
-
-<P>These files contain the
-<BR> &nbsp; &nbsp; <CODE>zzNewFlV1Nbs_<I>[category]</I>_<I>[commandname]</I>_ifKc</CODE>
-<BR>and
-<BR> &nbsp; &nbsp; <CODE>zzzNewFlKcVrfy_<I>[category]</I>_<I>[commandname]</I>_M_cmd1this</CODE>
-<BR>phrases.</P>
-
 <PRE>
 
 <HR/>
 
 </PRE>
-<A NAME="tpkcumac1ctestnbs"/><H2><CODE>[<A HREF="#tpkcumac1ctest">BACK</A>]</CODE> &nbsp; TPKC user-menu: All-cmds-in-1-cat: Test all nbs-cmds in cat: Nbs test format</H2>
+<A NAME="tpkcumac1ctestnbs"/><H2><CODE>[<A HREF="#tpkcumac1ctest">BACK</A>]</CODE> &nbsp; TPKC: Test all nbs-cmds in cat: Nbs test format</H2>
 
 <P>Every command must has exactly one or two phrases:<OL>
 	<LI><CODE>[<A HREF="#tpkcumac1ctestnbshas">go</A>]</CODE> &nbsp; The &quot;has-a-kc-and-a-test?&quot; phrase, and</LI>
@@ -105,7 +115,7 @@
 <HR/>
 
 </PRE>
-<a name="tpkcumac1ctestforce"/><H2><CODE>[<A HREF="#tpkcumac1ctestnbs">BACK</A>]</CODE> &nbsp; Test all nbs-cmds in cat: &quot;Force&quot; test an unassigned nbs-command</H2>
+<a name="tpkcumac1ctestforce"/><H2><CODE>[<A HREF="#tpkcumac1ctestnbs">BACK</A>]</CODE> &nbsp; TPKC: Test all nbs-cmds in cat: &quot;Force&quot; test an unassigned nbs-command</H2>
 
 <P>It is possible to &quot;force&quot; a test for a single nbs-command that, <I><B>according to the TPKC-project</B></I>, has no key-command assigned to it. Use this to test a specific built-in TextPad command that<UL>
 	<LI>does not have any key-command associated to it in the TPKC-project (because it's not a <A HREF="../pex_in_textpad.html#tpbs">TextPad-bootstrap</A> and it has no nbs-kcs),</LI>
@@ -138,7 +148,7 @@
 <HR/>
 
 </PRE>
-<A NAME="tpkcumac1ctestnbshas"/><H2><CODE>[<A HREF="#tpkcumac1ctestnbs">BACK</A>]</CODE> &nbsp; Test all nbs-cmds in cat: Nbs test format: The &quot;has-a-kc-and-a-test?&quot; phrase</H2>
+<A NAME="tpkcumac1ctestnbshas"/><H2><CODE>[<A HREF="#tpkcumac1ctestnbs">BACK</A>]</CODE> &nbsp; TPKC: Test all nbs-cmds in cat: Nbs test format: The &quot;has-a-kc-and-a-test?&quot; phrase</H2>
 
 <P>The &quot;has-a-kc-and-has-a-test?&quot; phrase is named
 <BR> &nbsp; &nbsp; <CODE>zzzNewFlKcVrfy_<I>[category]</I>_<I>[commandname]</I>_M_cmd1this</CODE>
@@ -162,8 +172,7 @@
 <HR/>
 
 </PRE>
-<A NAME="tpkcumac1ctestnbstest"/><H2><CODE>[<A HREF="#tpkcumac1ctestnbs">BACK</A>]</CODE> &nbsp; Test all nbs-cmds in cat: Nbs test format: The test phrase</H2>
-
+<A NAME="tpkcumac1ctestnbstest"/><H2><CODE>[<A HREF="#tpkcumac1ctestnbs">BACK</A>]</CODE> &nbsp; TPKC: Test all nbs-cmds in cat: Nbs test format: The test phrase</H2>
 
 <P>If an nbs-command has a test (regardless if it is <A HREF="#tpkcumac1ctestforce">actually assigned a key-command</A>) then that test must setup, execute, and cleanup all necessary resources.</P>
 
@@ -207,7 +216,7 @@
 <HR/>
 
 </PRE>
-<A NAME="tpkcumac1ctesttpbs"/><H2><CODE>[<A HREF="#tpkcumac1ctest">BACK</A>]</CODE> &nbsp; TPKC user-menu: All-cmds-in-1-cat: Test all nbs-cmds in cat: <I>Not</I> tp-bootstraps</H2>
+<A NAME="tpkcumac1ctesttpbs"/><H2><CODE>[<A HREF="#tpkcumac1ctest">BACK</A>]</CODE> &nbsp; TPKC user-menu: Test all nbs-cmds: <I><B>Not</B></I> TextPad-bootstraps</H2>
 
 <P><A HREF="../pex_in_textpad.html#tpbs">TextPad-bootstrap</A> commands are tested externally from the TPKC-project (tp-bootstraps are not tested by the TPKC-project). Therefore TextPad-bootstrap commands must have their TPKC-tests set up like this:</P>
 
@@ -229,6 +238,8 @@
 </PRE>
 <A NAME="tpkcumac1cprintnvpm"/><H2><CODE>[<A HREF="#tpkcumac1c">BACK</A>]</CODE> &nbsp; TPKC user-menu: All-cmds-in-1-cat: Print all name/abrv/phrase-names</H2>
 
+<P><I><CODE>[<A HREF="#tpkcumacacnvpm">all</A>, cat, <A HREF="#tpkcumakcdt">all debugging tools</A>]</CODE></I></P>
+
 <P>Prints the command-name, abbreviation, and phrase-name for all commands in the current category. For example:</P>
 
 <PRE STYLE="background-color:#E1E1E1;">...
@@ -245,21 +256,30 @@ edit > EditCopyLine  /  zTPCopyLine    (ecpln)
 edit > EditCopyLineAppend  /  zTPCopyLineAppend    (ecplnapp)
 edit > EditCopyTaggedLines  /  zTPBookmarkCopyAll    (ecpbkmlns)
 ...</PRE>
-<PRE>
 
-<HR/>
-
-</PRE>
-<A NAME="tpkcumac1cdebug"/><H2><CODE>[<A HREF="#tpkcumac1c">BACK</A>]</CODE> &nbsp; TPKC user-menu: All-cmds-in-1-cat: Debug all cmds in category</H2>
+<P>For a single command, its command-name, abbreviation, and phrase-name is listed in the <A HREF="#tpkcumak1c">assign all kcs to one command</A> dropdown.</P>
 
 <PRE>
 
 <HR/>
 
 </PRE>
-<A NAME="tpkcumac1cassign"/><H2><CODE>[<A HREF="#tpkcumac1c">BACK</A>]</CODE> &nbsp; TPKC user-menu: All-cmds-in-1-cat: Assign all kc-s to all cmds in cat</H2>
+<A NAME="tpkcumac1cdebug"/><H2><CODE>[<A HREF="#tpkcumac1c">BACK</A>]</CODE> &nbsp; TPKC user-menu: All-cmds-in-1-cat: Debug all cmds in 1 category</H2>
 
-<P><A HREF="#tpkcumak1c">Assigns all key-commands</A> to every command in the currently selected category. This uses the category's <A HREF="#tpkcumacachakcqbl">has-a-kc qbl</A> to automatically skip over commands that have no key-commands assigned to them.</P>
+<P><I><CODE>[<A HREF="#tpkcumacacdac">all</A>, cat (<A HREF="#tpkcumupdebugcat">prompt</A>), <A HREF="#tpkcumupdebug1"><B>ONE</B></A>, <A HREF="#tpkcumakcdt">all debugging tools</A>]</CODE></I></P>
+
+<P>Prints out all debuging information for all commands in a single category.</P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="tpkcumac1cassign"/><H2><CODE>[<A HREF="#tpkcumac1c">BACK</A>]</CODE> &nbsp; TPKC user-menu: All-cmds-in-1-cat: Assign all kc-s to all cmds in 1 category</H2>
+
+<P><I><CODE>[<A HREF="#tpkcumacacaakc">all</A>, cat, <A HREF="#tpkcumak1c"><B>ONE</B></A> (<A HREF="#tpkcumupassign1">prompt</A>), <A HREF="#tpkcumakcdt">all debugging tools</A>]</CODE></I></P>
+
+<P>Assigns all key-commands to every command in the currently selected category. This uses an internal <A HREF="#tpkcumacachakcqbl">has-a-kc qbl</A> to automatically skip over commands that have no key-commands assigned to them.</P>
 
 <PRE>
 
@@ -267,6 +287,8 @@ edit > EditCopyTaggedLines  /  zTPBookmarkCopyAll    (ecpbkmlns)
 
 </PRE>
 <A NAME="tpkcumacac"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TPKC user-menu: All cmds in all cats</H2>
+
+<P><I>Click on a (non-dimmed) item for information.</I></P>
 
 <P><IMG SRC="linked_to_files/tpkcum_acac.jpg" BORDER="1" usemap="tpkcumacacmap"/></P>
 
@@ -288,6 +310,9 @@ edit > EditCopyTaggedLines  /  zTPBookmarkCopyAll    (ecpbkmlns)
 </PRE>
 <A NAME="tpkcumacactestnbs"/><H2><CODE>[<A HREF="#tpkcumacac">BACK</A>]</CODE> &nbsp; TPKC user-menu: All-cmds-all-cats: Test ALL Non-BootStrap (nbs) commands</H2>
 
+<P><I><CODE>[all, <A HREF="#tpkcumac1ctest">cat</A>, <A HREF="#tpkcumuptest1"><B>ONE</B></A>, <A HREF="#tpkcumakcdt">all debugging tools</A>]</CODE></I></P>
+
+<P>Executes the TPKC-nbs-test for all commands in all categories. There are more than three hundred commands, and each one requires you to press ok, to confirm the test succeeded.</P>
 <PRE>
 
 <HR/>
@@ -295,7 +320,9 @@ edit > EditCopyTaggedLines  /  zTPBookmarkCopyAll    (ecpbkmlns)
 </PRE>
 <A NAME="tpkcumacacnvpm"/><H2><CODE>[<A HREF="#tpkcumacac">BACK</A>]</CODE> &nbsp; TPKC user-menu: All-cmds-all-cats: Print ALL name/abrv/phrase-names</H2>
 
-<P><A HREF="#tpkcumac1cprintnvpm">Prints the command-name, abbreviation, and phrase-name</A> for all commands in all categories.</P>
+<P><I><CODE>[all, <A HREF="#tpkcumac1cprintnvpm">cat</A>, <A HREF="#tpkcumakcdt">all debugging tools</A>]</CODE></I></P>
+
+<P>Prints the command-name, abbreviation, and phrase-name for all commands in all categories. For a single command, see its listing in the <A HREF="#tpkcumak1c">assign all kcs to one command</A> dropdown.</P>
 
 
 
@@ -306,6 +333,10 @@ edit > EditCopyTaggedLines  /  zTPBookmarkCopyAll    (ecpbkmlns)
 </PRE>
 <A NAME="tpkcumacacprikc"/><H2><CODE>[<A HREF="#tpkcumacac">BACK</A>]</CODE> &nbsp; TPKC user-menu: All-cmds-all-cats: List primary KC for ALL cmds</H2>
 
+<P><I><CODE>[all, <A HREF="#tpkcumac1clistpri"><B>CAT</B></A>, <A HREF="#tpkcumakcdt">all debugging tools</A>]</CODE></I></P>
+
+<P>Prints the <A HREF="../pex_in_textpad.html#tpbs">primary key-command </A> (see terminology) for all commands in every category. Commands with no key-commands are suppressed.</P>
+
 <PRE>
 
 <HR/>
@@ -313,23 +344,11 @@ edit > EditCopyTaggedLines  /  zTPBookmarkCopyAll    (ecpbkmlns)
 </PRE>
 <A NAME="tpkcumacachakcqbl"/><H2><CODE>[<A HREF="#tpkcumacac">BACK</A>]</CODE> &nbsp; TPKC user-menu: All-cmds-all-cats: List all has-a-kc qb-lists</H2>
 
-<PRE>
+<P><I><CODE>[<A HREF="#tpkcumakcdt">all debugging tools</A>]</CODE></I></P>
 
-<HR/>
+<P>Prints a <A HREF="../search_and_replace/square_bracketed_lists.html">sQuare-Bracketed List</A> (qbl) for each category, containing the list of all commands that <I>have at least one key-command assigned to them</I>--either bootstrap or Non-BootStrap.</P>
 
-</PRE>
-<A NAME="tpkcumacacdac"/><H2><CODE>[<A HREF="#tpkcumacac">BACK</A>]</CODE> &nbsp; TPKC user-menu: All-cmds-all-cats: Debug ALL cmds</H2>
-
-<P>Prints all information, in a user-friendly format, about every command in every category.</P>
-
-<PRE>
-
-<HR/>
-
-</PRE>
-<A NAME="tpkcumacachakcqbl"/><H2><CODE>[<A HREF="#tpkcumacac">BACK</A>]</CODE> &nbsp; TPKC user-menu: All-cmds-all-cats: List ALL has-a-kc qb-lists</H2>
-
-<P>Each category's nbs-phrase file has a single special phrase, which is a <A HREF="../search_and_replace/square_bracketed_lists.html">sQuare-Bracketed List</A> of all commands in the category that have at least one key-command. If a command is <I>either</I> a <A HREF="#tpbs">TextPad-bootstrap</A>, or has at least one <A HREF="../pex_in_textpad.html#tpbs">Non-BootStrap (nbs)</A> kc, it is included in the qbl. In other words, the has-a-kc qbl is an exact <I>super-set</I> of the nbs-phrases in its category.</P>
+<P>If a command is <I>either</I> a <A HREF="index.html#tpbs">TextPad-bootstrap</A>, or has at least one <A HREF="../pex_in_textpad.html#tpbs">Non-BootStrap (nbs)</A> kc (see &quot;terminology&quot;), then it is included in this qbl. In other words, the has-a-kc qbl is an exact <I>super-set</I> of the nbs-phrases in its category.</P>
 
 <P>This qbl is named
 <BR> &nbsp; &nbsp; <CODE>zzTpkcAllCmdsWAKcQbl_<I>[category]</I></CODE>
@@ -351,9 +370,22 @@ edit > EditCopyTaggedLines  /  zTPBookmarkCopyAll    (ecpbkmlns)
 <HR/>
 
 </PRE>
+<A NAME="tpkcumacacdac"/><H2><CODE>[<A HREF="#tpkcumacac">BACK</A>]</CODE> &nbsp; TPKC user-menu: All-cmds-all-cats: Debug ALL cmds</H2>
+
+<P><I><CODE>[all, <A HREF="#tpkcumac1cdebug">cat</A> (<A HREF="#tpkcumupdebugcat">prompt</A>), <A HREF="#tpkcumupdebug1"><B>ONE</B></A>, <A HREF="#tpkcumakcdt">all debugging tools</A>]</CODE></I></P>
+
+<P>Prints all debugging information for all commands in every category.</P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
 <A NAME="tpkcumacacaakc"/><H2><CODE>[<A HREF="#tpkcumacac">BACK</A>]</CODE> &nbsp; TPKC user-menu: All-cmds-all-cats: Assign all KCs to ALL cmds</H2>
 
-<P><A HREF="#tpkcumak1c">Assigns all key-commands</A> to every command in every category. This uses each category's <A HREF="#tpkcumacachakcqbl">has-a-kc qbl</A> to automatically skip over commands that have no key-commands assigned to them.</P>
+<P><I><CODE>[all, <A HREF="#tpkcumac1cassign">cat</A>, <A HREF="#tpkcumak1c"><B>ONE</B></A> (<A HREF="#tpkcumupassign1">prompt</A>), <A HREF="#tpkcumakcdt">all debugging tools</A>]</CODE></I></P>
+
+<P>Assigns all key-commands to every command in every category.</P>
 
 <PRE>
 
@@ -362,6 +394,14 @@ edit > EditCopyTaggedLines  /  zTPBookmarkCopyAll    (ecpbkmlns)
 </PRE>
 <A NAME="tpkcumak1c"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TPKC user-menu: Assign all kc-s to 1 cmd</H2>
 
+<P><I><CODE>[<A HREF="#tpkcumacacaakc">all</A>, <A HREF="#tpkcumac1cassign">cat</A>, <B>ONE</B> (<A HREF="#tpkcumupassign1">prompt</A>), <A HREF="#tpkcumakcdt">all debugging tools</A>]</CODE></I></P>
+
+<P>Assigns all key-commands, both bootstrap and Non-BootStrap (nbs) to a single key-command. Each command's name, abbreviation, and phrase-name are displayed in this list (and may also be printed in bulk, for <A HREF="#tpkcumac1cprintnvpm">one</A> or <A HREF="#tpkcumacacnvpm">all</A> categories).</P>
+
+<P>This opens the
+<BR> &nbsp; &nbsp; <CODE>TextPad &gt; Configure &gt; Preferences</CODE>
+<BR>dialog, assigns all configured key-commands to the requested command, and closes the dialog. Note that this process only works for commands that actually <A HREF="#tpkcumacachakcqbl">have a key-command</A> assigned to them.</P>
+
 <P><IMG SRC="linked_to_files/tpkcum_ak1c.jpg" BORDER="1"/></P>
 
 <PRE>
@@ -369,12 +409,43 @@ edit > EditCopyTaggedLines  /  zTPBookmarkCopyAll    (ecpbkmlns)
 <HR/>
 
 </PRE>
-<A NAME="tpkcumakcdt"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TPKC user-menu: Assign-kc-s diagnostic tools</H2>
+<A NAME="tpkcumakcdt"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TPKC: All debugging and diagnostic tools (including for the assign-kcs process)</H2>
 
-<P>There are two diagnostic tools available when assigning key-commands (<A HREF="#tpkcumak1c">one</A>, <A HREF="#tpkcumac1cassign">cat</A>, <A HREF="#tpkcumacacaakc">all</A>):<UL>
-	<LI><CODE>[<A HREF="#tpkcumakcdtspeed">go</A>]</CODE> &nbsp; Slowing kc-assignment speed</LI>
-	<LI><CODE>[<A HREF="#tpkcumakcdtpause">go</A>]</CODE> &nbsp; Pausing between when the key-command is typed and assigned</LI>
-</UL>These tools are primarily intended to help you diagnose key-command conflicts (two commands assigned to the same key-command--<I>something that cannot be detected by the TPKC-project</I>). Other problems you may encounter (that these tools will help with) is as-of-yet unknown <A HREF="#tpaclbadkcs">illegal key-commands</A> that PhraseExpress simply cannot handle.</P>
+<P>This section lists all available TPKC debugging and diagnostic tools, including those specific to the assign-all-kcs-to-a-command (<A HREF="#tpkcumacacaakc">all</A>, <A HREF="#tpkcumac1cassign">cat</A>, <A HREF="#tpkcumak1c">one</A>) process.</P>
+
+<P>Since the TPKC project (and therefore XBN-PhraseExpress as a whole) is so dependant on user-configured input, there are likely to be problems. The two most common problems:<UL>
+	<LI><B>Key-command conflicts:</B> Assigning two different TextPad command the same key-command, which is something the TPKC-project cannot detect.</LI>
+	<LI><B>Illegal key-commands and key-presses:</B> Although the TPKC-build-process automatically tests for <A HREF="index.html#tpaclbadkcs">illegal key-presses</A> in the <A HREF="index.html#tpacl">TextPad-all-command-list</A>, there is no way to verify the specific key-presses that may exist in your user-specific command-configuration. Once the build-process is complete, key-commands are directly edited in the user-cmd-cfg.</LI>
+</UL></P>
+
+<P>There are numerous tools to assist you:</P>
+
+<P><UL>
+	<LI><B>All commands in all categories:</B><UL>
+		<LI><CODE>[<A HREF="#tpkcumacachakcqbl">go</A>]</CODE> &nbsp; Has-a-kc qbls</LI>
+		<LI><CODE>[<A HREF="#tpkcumacacprikc">go</A>]</CODE> &nbsp; Primary key-commands</LI>
+		<LI><CODE>[<A HREF="#tpkcumacacnvpm">go</A>]</CODE> &nbsp; Command-name, abbreviation, phrase-name</LI>
+		<LI><CODE>[<A HREF="#tpkcumacacdac">go</A>]</CODE> &nbsp; All debugging information</LI>
+	</UL></LI>
+	<LI><B>All commands in one category:</B><UL>
+		<LI><CODE>[<A HREF="#tpkcumac1clistpri">go</A>]</CODE> &nbsp; Primary key-commands</LI>
+		<LI><CODE>[<A HREF="#tpkcumac1cprintnvpm">go</A>]</CODE> &nbsp; Command-name, abbreviation, phrase-name</LI>
+		<LI><CODE>[<A HREF="#tpkcumac1cdebug">go</A>]</CODE> &nbsp; All debugging information <I>(<A HREF="#tpkcumupdebugcat">user-prompt</A>)</I></LI>
+	</UL></LI>
+	<LI><B>Assign all kcs to a command (<A HREF="#tpkcumacacaakc">all</A>, <A HREF="#tpkcumac1cassign">cat</A>, <A HREF="#tpkcumak1c">one</A>):</B> Debugging tools tailored to this specific process:<UL>
+		<LI><CODE>[<A HREF="#tpkcumakcdtspeed">go</A>]</CODE> &nbsp; Assignment speed</LI>
+		<LI><CODE>[<A HREF="#tpkcumakcdtpause">go</A>]</CODE> &nbsp; Pause-on-kc flag</LI>
+	</UL></LI>
+	<LI><B>One command (via user-prompted abbreviation):</B><UL>
+		<LI><CODE>[<A HREF="#tpkcumusrprmpt">go</A>]</CODE> &nbsp;  Test the functionality of a TextPad built-in command</LI>
+		<LI><CODE>[<A HREF="#tpkcumupdebug1">go</A>]</CODE> &nbsp; All debugging information</LI>
+	</UL></LI>
+	<LI><B>Other:</B><UL>
+		<LI><CODE>[<A HREF="#tpkcumdevt">go</A>]</CODE> &nbsp; TPKC-admin only data-verification tools.</LI>
+		<LI><CODE>[<A HREF="../phrase_express/debugging.html">go</A>]</CODE> &nbsp; Generic XBNPE debugging tools</LI>
+		<LI><CODE>[<A HREF="../z_non_xbnpe_docs/pex_troubleshooting.html">go</A>]</CODE> &nbsp; Generic PhraseExpress troubleshooting</LI>
+	</UL></LI>
+</UL></P>
 
 
 <PRE>
@@ -383,6 +454,8 @@ edit > EditCopyTaggedLines  /  zTPBookmarkCopyAll    (ecpbkmlns)
 
 </PRE>
 <A NAME="tpkcumakcdtspeed"/><H2><CODE>[<A HREF="#tpkcumakcdt">BACK</A>]</CODE> &nbsp; TPKC user-menu: Assign-kc-s diagnostic tools: Assignment speed</H2>
+
+<P><I><CODE>[<A HREF="#tpkcumakcdt">all debugging tools</A>]</CODE></I></P>
 
 <P>Use these commands to slow down the assign-a-kc process (<A HREF="#tpkcumak1c">one</A>, <A HREF="#tpkcumac1cassign">cat</A>, <A HREF="#tpkcumacacaakc">all</A>), for only when <I>typing and then actually assigning</I> each key-command. The speed of everything else is controlled by the overall <A HREF="../phrase_express/debugging.html#keypressspeed">XBNPE-key-press speed</A> setting.</P>
 
@@ -395,6 +468,8 @@ edit > EditCopyTaggedLines  /  zTPBookmarkCopyAll    (ecpbkmlns)
 
 </PRE>
 <A NAME="tpkcumakcdtpause"/><H2><CODE>[<A HREF="#tpkcumakcdt">BACK</A>]</CODE> &nbsp; TPKC user-menu: Assign-kc-s diagnostic tools: KC-pause flag</H2>
+
+<P><I><CODE>[<A HREF="#tpkcumakcdt">all debugging tools</A>]</CODE></I></P>
 
 <P>Turning on the &quot;KC-pause flag&quot; causes the assign-a-kc process (<A HREF="#tpkcumak1c">one</A>, <A HREF="#tpkcumac1cassign">cat</A>, <A HREF="#tpkcumacacaakc">all</A>) to pause and display some diagnostics. This gives you the opportunity to view the key-command that is <I>about to be assigned</I>, with the additional benefit of showing you the command it is <I>currently assigned to</I>.</P>
 
@@ -432,12 +507,41 @@ edit > EditCopyTaggedLines  /  zTPBookmarkCopyAll    (ecpbkmlns)
 </PRE>
 <A NAME="tpkcumupdebugcat"/><H2><CODE>[<A HREF="#tpkcumusrprmpt">BACK</A>]</CODE> &nbsp; TPKC user-menu: User-prompt: Debug all cmds in 1 cat</H2>
 
+<P><I><CODE>[<A HREF="#tpkcumacacdac">all</A>, <A HREF="#tpkcumupdebugcat">cat</A> (prompt), <A HREF="#tpkcumupdebug1"><B>ONE</B></A>, <A HREF="#tpkcumakcdt">all debugging tools</A>]</CODE></I></P>
+
+<P>Prints all debugging information for all commands in a single category, where the category-name abbreviation is provided by the user at a prompt.</P>
+
 <PRE>
 
 <HR/>
 
 </PRE>
-<A NAME="tpkcumuptest1"/><H2><CODE>[<A HREF="#tpkcumusrprmpt">BACK</A>]</CODE> &nbsp; TPKC user-menu: User-prompt: Test (nbs-commands only)</H2>
+<A NAME="tpkcumuptest1"/><H2><CODE>[<A HREF="#tpkcumusrprmpt">BACK</A>]</CODE> &nbsp; TPKC user-menu: User-prompt: Test a single nbs-command</H2>
+
+<P><I><CODE>[<A HREF="#tpkcumacactestnbs">all</A>, <A HREF="#tpkcumac1ctest">cat</A>, <B>ONE</B>, <A HREF="#tpkcumakcdt">all debugging tools</A>]</CODE></I></P>
+
+<P>Prompts you for a command's abbreviation, and then executes its TPKC-nbs-test. This is only useful for commands that are Non-BootStraps, and for which a TPKC test has been setup.</P>
+
+<P>A command's abbreviation may be obtained by looking at its entry in the <A HREF="#tpkcumak1c">assign all-kcs to 1 command drop-down</A>.</P>
+
+<P><B>Contents:</B><UL>
+	<LI><CODE>[<A HREF="#tpkcumac1ctestnbs">go</A>]</CODE> &nbsp; Non-BootStrap (nbs) command test format</LI>
+	<LI><CODE>[<A HREF="#tpkcumac1ctesttpbs">go</A>]</CODE> &nbsp; TextPad-bootstraps are not tested by the TPKC-project</LI>
+</UL></P>
+
+<P><I><B>Warning:</B> Although the framework to support these TPKC nbs-tests is complete, very few tests have been setup. Most currently-existing tests are in the <CODE>file</CODE> category. If you have created a specific test, please consider contributing it (<CODE>aliteralmind-github_AT_yahoo_DOT_com</CODE>).</I></P>
+
+<H4><U>Files</U></H4>
+
+<P>Each category has one or more files containing its test. Categories with many commands or numerous tests are split into multitple files. For example
+<BR> &nbsp; &nbsp; <CODE>{#insert zXPROOT_DIR_tpkc}\for_v_7_0_9\verify_nbs_commands\vnbsc_file_1of2.px.txt</CODE></P>
+
+<P>These files contain the
+<BR> &nbsp; &nbsp; <CODE>zzNewFlV1Nbs_<I>[category]</I>_<I>[commandname]</I>_ifKc</CODE>
+<BR>and
+<BR> &nbsp; &nbsp; <CODE>zzzNewFlKcVrfy_<I>[category]</I>_<I>[commandname]</I>_M_cmd1this</CODE>
+<BR>phrases.</P>
+
 
 <PRE>
 
@@ -446,6 +550,28 @@ edit > EditCopyTaggedLines  /  zTPBookmarkCopyAll    (ecpbkmlns)
 </PRE>
 <A NAME="tpkcumupdebug1"/><H2><CODE>[<A HREF="#tpkcumusrprmpt">BACK</A>]</CODE> &nbsp; TPKC user-menu: User-prompt: Debug info</H2>
 
+<P><I><CODE>[<A HREF="#tpkcumacacdac">all</A>, <A HREF="#tpkcumac1cdebug">cat</A> (<A HREF="#tpkcumupdebugcat">prompt</A>), <B>ONE</B>, <A HREF="#tpkcumakcdt">all debugging tools</A>]</CODE></I></P>
+
+<P>Prints all debugging information for a single command, where the command's abbreviation is provided by the user at a prompt. The abbreviation for each command is listed in the <A HREF="#tpkcumak1c">assign-all-kcs-to-a-command drop-down</A>.</P>
+
+<H3>Example: Command with no key-commands assigned to it</H3>
+
+<PRE STYLE="background-color:#E1E1E1;">GoToBlockEnd
+	category=cursor, abrv=crblke, phrase=zTPGoToBlockEnd, post-kc-slp-mills=10
+	bootstrap-kc=no
+	nbs-kcs=0</PRE>
+
+<H3>Example: TextPad-bootstrap, with an additional nbs-kc</H3>
+
+<PRE STYLE="background-color:#E1E1E1;">EditCopy
+	category=edit, abrv=ecp, phrase=zTPCopy, post-kc-slp-mills=25
+	bootstrap-kc=yes
+		{#CTRL -chars j}{#insert zTSlp}{#sleep 10}
+	nbs-kcs=1
+		1: {#insert zCpINS}{#sleep 25}</PRE>
+
+<P>Presenting these key-commands are only possible because they are internally stored in an escaped form <I>(see <A HREF="../pex_in_textpad.html#tpbsesc">tpbs</A>, <A HREF="tpkc_config_vars.html#NbsKcEscNum">nbs</A>)</I>.</P>
+
 <PRE>
 
 <HR/>
@@ -453,7 +579,9 @@ edit > EditCopyTaggedLines  /  zTPBookmarkCopyAll    (ecpbkmlns)
 </PRE>
 <A NAME="tpkcumupassign1"/><H2><CODE>[<A HREF="#tpkcumusrprmpt">BACK</A>]</CODE> &nbsp; TPKC user-menu: User-prompt: Assign all KCs</H2>
 
+<P><I><CODE>[<A HREF="#tpkcumacacaakc">all</A>, <A HREF="#tpkcumac1cassign">cat</A>, <A HREF="#tpkcumak1c"><B>ONE</B></A> (prompt), <A HREF="#tpkcumakcdt">all debugging tools</A>]</CODE></I></P>
 
+<P>Assigns all key-commands to a single command, where its abbreviation is provided at the prompt. Command abbreviations are listed in the <A HREF="#tpkcumak1c">assign-kcs-to-one-cmd</A> drop-down.</P>
 
 <PRE>
 
@@ -470,6 +598,8 @@ edit > EditCopyTaggedLines  /  zTPBookmarkCopyAll    (ecpbkmlns)
 
 </PRE>
 <A NAME="tpkcumdevt"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TPKC user-menu: Developer tools</H2>
+
+<P><I><CODE>[<A HREF="#tpkcumakcdt">all debugging tools</A>]</CODE></I></P>
 
 <P><IMG SRC="linked_to_files/tpkcum_devt.jpg" BORDER="1"/></P>
 

@@ -4,7 +4,8 @@ zvNBS_KC_NUM_st0	{#SETPHRASE -description zvNBS_KC_NUM -content 0 -autotext zvNB
 zvNBS_KC_NUM_st1	{#SETPHRASE -description zvNBS_KC_NUM -content 1 -autotext zvNBS_KC_NUM -folder ctvv_folder}	zvNBS_KC_NUM_st1
 zzCmd1QSIsBtsrpQSCmaTotalNbsCmdsQS_M_cmd1	abrv='{#insert zvCMD_ABRV_1C}', is-bootstrap='{#insert zzTpCmdIsBootstrap_yn_M_cmd1}', total-nbs-cmds='{#insert zzTpCmdNbsKcCountAndSetNm_M_cmd1}'	zzCmd1QSIsBtsrpQSCmaTotalNbsCmdsQS_M_cmd1
 zzHasAKC_yes_M_cmd1 -- Either bootstrap or nbs	{#COND -if {#insert zzTpCmdIsBtstrp_yes_M_cmd1} = yes -then yes -else {#COND -if {#insert zzTpCmdNbsKcCountAndSetNm_M_cmd1} > 0 -then yes -else}}	zzHasAKC_yes_M_cmd1
-zzTpkcAllCmdsWAKcQblPNm_M_catl	zzTpkcAllCmdsWAKcQbl_{#insert zvCAT_ABRV_LC}	zzTpkcAllCmdsWAKcQblPNm_M_catl
+zzTpkcAllCmdsWAKcQblPNm_M_catl	{#insert zzTpkcAllCmdsWAKcQblPNmPrefix}{#insert zvCAT_ABRV_LC}	zzTpkcAllCmdsWAKcQblPNm_M_catl
+zzTpkcAllCmdsWAKcQblPNmPrefix	zzTpkcAllCmdsWAKcQbl_	zzTpkcAllCmdsWAKcQblPNmPrefix
 zzTpkcCallVarPNmForEachCmdInCat_M_catlCmdpm	{#insert zzTpkcCallVarPNmForEachCmdInCat_{#insert zvCAT_ABRV_LC}_M_pnm}	zzTpkcCallVarPNmForEachCmdInCat_M_catlCmdpm
 zzzEscdBootstrapKC_M_cmd1	{#insert {#insert zzTpCmdDfltPhrsNm_M_cmd1}Esc}	zzzEscdBootstrapKC_M_cmd1
 zzzHasAKC_yes_DEBUGTxt_M_cmd1 -- Permanent debugging	DEBUG zzzHasAKC_yes_M_cmd1: [cmd='{#insert zzTpCmdNameTC_M_cmd1}', phrs-nm='{#insert zzTpCmdDfltPhrsNm_M_cmd1}', zzHasAKC_yes_M_cmd1='{#insert zzHasAKC_yes_M_cmd1}' ({#insert zzCmd1QSIsBtsrpQSCmaTotalNbsCmdsQS_M_cmd1})]	zzzHasAKC_yes_DEBUGTxt_M_cmd1
