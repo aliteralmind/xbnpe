@@ -1,0 +1,10 @@
+alertbox1 -- '1' alert box	{#MSGBOX -head 1 -text 1}	alertbox1
+alertbox2 -- '2' alert box	{#MSGBOX -head 2 -text 2}	alertbox2
+alertbox3 -- '3' alert box	{#MSGBOX -head 3 -text 3}	alertbox3
+alertbox4 -- '4' alert box	{#MSGBOX -head 4 -text 4}	alertbox4
+alertbox5 -- '5' alert box	{#MSGBOX -head 5 -text 5}	alertbox5
+alertbox6 -- '6' alert box	{#MSGBOX -head 6 -text 6}	alertbox6
+alertbox7 -- '7' alert box	{#MSGBOX -head 7 -text 7}	alertbox7
+alertbox8 -- '8' alert box	{#MSGBOX -head 8 -text 8}	alertbox8
+alertbox9 -- '9' alert box	{#MSGBOX -head 9 -text 9}	alertbox9
+alertbox10 -- '10' alert box	{#MSGBOX -head 10 -text 10}	alertbox10

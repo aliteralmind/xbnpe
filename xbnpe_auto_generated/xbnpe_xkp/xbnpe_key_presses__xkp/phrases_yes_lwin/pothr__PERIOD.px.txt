@@ -1,0 +1,8 @@
+Alt+LWin+PERIOD -- zALpPERIOD	{#ALT {#LWIN -chars .}}{#insert zTSlp}	zALpPERIOD
+Alt+Shift+LWin+PERIOD -- zASLpPERIOD	{#ALT {#SHIFT {#LWIN -chars .}}}{#insert zTSlp}	zASLpPERIOD
+Ctrl+Alt+LWin+PERIOD -- zCALpPERIOD	{#CTRL {#ALT {#LWIN -chars .}}}{#insert zTSlp}	zCALpPERIOD
+Ctrl+Alt+Shift+LWin+PERIOD -- zCASLpPERIOD	{#CTRL {#ALT {#SHIFT {#LWIN -chars .}}}}{#insert zTSlp}	zCASLpPERIOD
+Ctrl+LWin+PERIOD -- zCLpPERIOD	{#CTRL {#LWIN -chars .}}{#insert zTSlp}	zCLpPERIOD
+Ctrl+Shift+LWin+PERIOD -- zCSLpPERIOD	{#CTRL {#SHIFT {#LWIN -chars .}}}{#insert zTSlp}	zCSLpPERIOD
+LWin+PERIOD -- zLpPERIOD	{#LWIN -chars .}{#insert zTSlp}	zLpPERIOD
+Shift+LWin+PERIOD -- zSLpPERIOD	{#SHIFT {#LWIN -chars .}}{#insert zTSlp}	zSLpPERIOD

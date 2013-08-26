@@ -1,0 +1,8 @@
+zTpkcEditBackspaceAbrv1C	Ebksp	zTpkcEditBackspaceAbrv1C
+zTpkcEbkspCmdNameTC	EditBackspace	zTpkcEbkspCmdNameTC
+zTpkcEbkspDfltPhrsNm	zTPDeleteL1c	zTpkcEbkspDfltPhrsNm
+zTpkcEbkspCatForCmdAbrvLC	edit	zTpkcEbkspCatForCmdAbrvLC
+zTpkcEbkspCmdType_mcrTl		zTpkcEbkspCmdType_mcrTl
+zTpkcEbkspIsBtstrp_yes		zTpkcEbkspIsBtstrp_yes
+zTpkcEbkspDfltPostKcSlpMils	5	zTpkcEbkspDfltPostKcSlpMils
+zTpkcEbkspStpsFrmCmdListTop	{#insert zPGDN}{#insert zUP2}	zTpkcEbkspStpsFrmCmdListTop

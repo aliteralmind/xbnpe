@@ -1,0 +1,8 @@
+zPrerPrirSTART	{#insert zPrePriALLThrPreDotHtml}{#asc 34}>	zPrerPrirSTART
+zPrefPrifkSTART	{#insert zPrePriALLThrPreDotHtml}{#insert zTPMoveL1w}{#insert zLEFT}{#insert zCopyL1w}{#insert zRIGHT}{#insert zTPMoveR1w}{#asc 34}>	zPrefPrifkSTART
+zPrePriALLThrPreDotHtml	{#insert zFindOpenUpMCRE}<A HREF={#asc 34}[^#]{#insert zFindGoMCREClose}{#insert zRightLeft}{#insert zFindOpenDownXS}.html{#insert zFindGoXSClose}{#insert zTPCopy}{#insert ztpmTagFindPrevHrefThrQQ}{#insert zLEFT}<A HREF={#asc 34}{#insert zTPPaste}	zPrePriALLThrPreDotHtml
+(*zGTAndDel1stXXX[[TAB_GOES_HERE]]{#insert zPostLinkGT1stXXX}{#insert zBKSP}[[TAB_GOES_HERE]]zGTAndDel1stXXX*)
+zprefkRAW	{#insert zPrefPrifkSTART}{#insert zTPPaste}</A>.	zprefkRAW
+zprifkRAW	{#insert zPrefPrifkSTART}<I>[{#insert zTPPaste}]</I></A>.	zprifkRAW
+zprerkRAW	{#insert zPrerPrirSTART}super</A>.	zprerkRAW
+zprirkRAW	{#insert zPrerPrirSTART}<I>[super]</I></A>.	zprirkRAW

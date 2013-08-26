@@ -1,0 +1,8 @@
+PRTSC -- zPRTSC	{#PRTSC}{#insert zTSlp}	zPRTSC
+Alt+PRTSC -- zApPRTSC	{#ALT {#PRTSC}}{#insert zTSlp}	zApPRTSC
+Alt+Shift+PRTSC -- zASpPRTSC	{#ALT {#SHIFT {#PRTSC}}}{#insert zTSlp}	zASpPRTSC
+Ctrl+PRTSC -- zCpPRTSC	{#CTRL {#PRTSC}}{#insert zTSlp}	zCpPRTSC
+Ctrl+Alt+PRTSC -- zCApPRTSC	{#CTRL {#ALT {#PRTSC}}}{#insert zTSlp}	zCApPRTSC
+Ctrl+Alt+Shift+PRTSC -- zCASpPRTSC	{#CTRL {#ALT {#SHIFT {#PRTSC}}}}{#insert zTSlp}	zCASpPRTSC
+Ctrl+Shift+PRTSC -- zCSpPRTSC	{#CTRL {#SHIFT {#PRTSC}}}{#insert zTSlp}	zCSpPRTSC
+Shift+PRTSC -- zSpPRTSC	{#SHIFT {#PRTSC}}{#insert zTSlp}	zSpPRTSC

@@ -1,0 +1,8 @@
+COMMA -- zCOMMA	{#NONE -chars ,}{#insert zTSlp}	zCOMMA
+Alt+COMMA -- zApCOMMA	{#ALT -chars ,}{#insert zTSlp}	zApCOMMA
+Alt+Shift+COMMA -- zASpCOMMA	{#ALT {#SHIFT -chars ,}}{#insert zTSlp}	zASpCOMMA
+Ctrl+COMMA -- zCpCOMMA	{#CTRL -chars ,}{#insert zTSlp}	zCpCOMMA
+Ctrl+Alt+COMMA -- zCApCOMMA	{#CTRL {#ALT -chars ,}}{#insert zTSlp}	zCApCOMMA
+Ctrl+Alt+Shift+COMMA -- zCASpCOMMA	{#CTRL {#ALT {#SHIFT -chars ,}}}{#insert zTSlp}	zCASpCOMMA
+Ctrl+Shift+COMMA -- zCSpCOMMA	{#CTRL {#SHIFT -chars ,}}{#insert zTSlp}	zCSpCOMMA
+Shift+COMMA -- zSpCOMMA	{#SHIFT -chars ,}{#insert zTSlp}	zSpCOMMA

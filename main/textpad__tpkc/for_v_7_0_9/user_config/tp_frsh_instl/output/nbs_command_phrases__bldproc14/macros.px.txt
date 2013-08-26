@@ -1,0 +1,4 @@
+zTPMacroMultiplay -- MacroMultiplay (Mcrmply)	{#insert zCpF7}{#sleep 10}	zTPMacroMultiplay
+zTPMacroPlay -- MacroPlay (Mcrply)	{#insert zCpRR}{#sleep 10}	zTPMacroPlay
+zTPMacroRecordToggle -- MacroRecord (Mcrrcrd)	{#insert zCSpRR}{#sleep 10}	zTPMacroRecordToggle
+zzTpkcAllCmdsWAKcQbl_macros	[MacroMultiplay][MacroPlay][MacroRecord]	zzTpkcAllCmdsWAKcQbl_macros

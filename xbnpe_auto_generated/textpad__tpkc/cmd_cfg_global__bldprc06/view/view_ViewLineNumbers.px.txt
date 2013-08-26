@@ -1,0 +1,8 @@
+zTpkcViewLineNumbersAbrv1C	Vlnm	zTpkcViewLineNumbersAbrv1C
+zTpkcVlnmCmdNameTC	ViewLineNumbers	zTpkcVlnmCmdNameTC
+zTpkcVlnmDfltPhrsNm	zTPViewLineNumbers	zTpkcVlnmDfltPhrsNm
+zTpkcVlnmCatForCmdAbrvLC	view	zTpkcVlnmCatForCmdAbrvLC
+zTpkcVlnmCmdType_mcrTl		zTpkcVlnmCmdType_mcrTl
+zTpkcVlnmIsBtstrp_yes		zTpkcVlnmIsBtstrp_yes
+zTpkcVlnmDfltPostKcSlpMils	10	zTpkcVlnmDfltPostKcSlpMils
+zTpkcVlnmStpsFrmCmdListTop	{#insert zVV}{#insert zPGDN}{#insert zDOWN2}	zTpkcVlnmStpsFrmCmdListTop

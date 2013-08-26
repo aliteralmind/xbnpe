@@ -1,0 +1,8 @@
+zTpkcFileNewAbrv1C	Fnew	zTpkcFileNewAbrv1C
+zTpkcFnewCmdNameTC	FileNew	zTpkcFnewCmdNameTC
+zTpkcFnewDfltPhrsNm	zTPFileNew	zTpkcFnewDfltPhrsNm
+zTpkcFnewCatForCmdAbrvLC	file	zTpkcFnewCatForCmdAbrvLC
+zTpkcFnewCmdType_mcrTl		zTpkcFnewCmdType_mcrTl
+zTpkcFnewIsBtstrp_yes	yes	zTpkcFnewIsBtstrp_yes
+zTpkcFnewDfltPostKcSlpMils	50	zTpkcFnewDfltPostKcSlpMils
+zTpkcFnewStpsFrmCmdListTop	{#insert zPGDN}{#insert zUP}	zTpkcFnewStpsFrmCmdListTop

@@ -1,0 +1,12 @@
+ACCENT	-chars `
+ASTERISK	-chars *
+CLOSE_SQUAREB	-chars ]
+COMMA	-chars ,
+DASH	-chars -
+DNR_SLASH	-chars \
+EQUALS	-chars =
+OPEN_SQUAREB	-chars [
+PERIOD	-chars .
+QUOTE	-chars '
+SEMI_COLON	-chars ;
+UPR_SLASH	-chars /

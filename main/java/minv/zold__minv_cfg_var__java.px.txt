@@ -1,0 +1,9 @@
+zzMnvVjfuVarAbrv	Vjfu	zzMnvVjfuVarAbrv
+zzMnvVjfuName	zvJFUNCS_UP	zzMnvVjfuName
+zzMnvVjfuMinSTNum	1	zzMnvVjfuMinSTNum
+zzMnvVjfuTotalSTCount	10	zzMnvVjfuTotalSTCount
+
+zzMnvVjfdVarAbrv	Vjfd	zzMnvVjfdVarAbrv
+zzMnvVjfdName	zvJFUNCS_DOWN	zzMnvVjfdName
+zzMnvVjfdMinSTNum	1	zzMnvVjfdMinSTNum
+zzMnvVjfdTotalSTCount	10	zzMnvVjfdTotalSTCount

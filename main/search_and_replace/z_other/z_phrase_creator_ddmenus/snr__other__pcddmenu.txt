@@ -1,0 +1,54 @@
+(*
+   *DUPLICATE* this document, unindent every line in it, then import it with the following settings:
+      - No prefix
+      - Manual confirmation
+   **All these phrases must be manually maintained.
+*)
+(*
+   Required by phrase-creator-ddmenu-utils...START
+      PM_DDMENU_DIR_ID=snr
+   Required by phrase-creator-ddmenu-utils...END
+*)
+(*
+   FROM
+   ...\xbnpe\tpkc\tpkc_bootstrap_phrases\zphrase_creator_pop_up_heirarchies\xbnpe_phrase_creator_popup_heirarchy_base.px.txt
+
+Phrase-creators: XBN-PhraseExpress -- Call 'xh'   .   zXbnpeCmdPopupRoot
+   Phrase-creators: Search & replace -- xhs   .   xh
+      SNR: String-tokenization -- xhsk   .   xhs
+         Square-Bracketed List (qbl) -- xhskq   .   xhsk
+            lltoqbl: zLineListToSquareBracketedList -- xhskql   .   xhskq
+*)
+					sortqblcb: zReSortQblInCB	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content sortqblcb:zReSortQblInCB -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhskql
+					sortqblcbn: zReSortQblNameInCB	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content sortqblcbn:zReSortQblNameInCB -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhskql
+					sortqbldoc: zReSortQblOnlyDoc	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content sortqbldoc:zReSortQblOnlyDoc -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhskql
+		SNR: Regex -- xhsx	.	xhs
+			zzQcaretQ	\\\{#insert zzQcaretQ\\\}	xhsx
+			zzQdollarSignQ	\\\{#insert zzQdollarSignQ\\\}	xhsx
+			zzQtabQ	\\\{#insert zzQtabQ\\\}	xhsx
+			zzRegexTabBtwWSCharsLookaround	\\\{#insert zzRegexTabBtwWSCharsLookaround\\\}	xhsx
+(*    SNR: Brackets -- xhse   .   xhs*)
+			GTP -- xhseg	.	xhse
+				zPostBracketGTP	\\\{#insert zPostBracketGTP\\\}	xhseg
+				zPostBracketGTP2	\\\{#insert zPostBracketGTP2\\\}	xhseg
+				zPreBracketGTP	\\\{#insert zPreBracketGTP\\\}	xhseg
+				zPreBracketGTP2	\\\{#insert zPreBracketGTP2\\\}	xhseg
+			Select/sel-copy -- xhses	.	xhse
+				zPostBracketSelCopy	\\\{#insert zPostBracketSelCopy\\\}	xhses
+				zPostBracketSelect	\\\{#insert zPostBracketSelect\\\}	xhses
+				zPreBracketSelCopy	\\\{#insert zPreBracketSelCopy\\\}	xhses
+				zPreBracketSelect	\\\{#insert zPreBracketSelect\\\}	xhses
+			zMatchBracket2	\\\{#insert zMatchBracket2\\\}	xhse
+			zMatchBracketExtend2	\\\{#insert zMatchBracketExtend2\\\}	xhse
+(*    SNR: Bookmarks -- xhsm   .   xhs*)
+(*       zCopyMarkedLinesToNewFile -- xhsmn   .   xhsm*)
+				zREoffCopyCountMarkedLines	\\\{#insert zREoffCopyCountMarkedLines\\\}	xhsmn
+				zREonCopyCountMarkedLines	\\\{#insert zREonCopyCountMarkedLines\\\}	xhsmn
+(*
+   Phrase-creators: Other -- xho   .   xh
+      XBNPE main directories -- xhoy   .   xho
+         zROOT_DIR_XBNPE_PARENT -- xhoym   .   xhoy
+            zROOT_DIR_XBNPE_MAIN -- xhoymm   .   xhoym
+*)
+					zXPROOT_DIR_srchRplc -- xhoymms	\\\{#insert zXPROOT_DIR_srchRplc\\\}	xhoymm
+						zXPROOT_DIR_AG_srchRplc	\\\{#insert zXPROOT_DIR_AG_srchRplc\\\}	xhoymms

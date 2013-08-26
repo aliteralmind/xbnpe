@@ -1,0 +1,23 @@
+herb -- zENTER,<BR>	{#insert zENTER}<BR>{#insert zzPBRSyn}	herb
+hhp -- <P>x-mark</P>	<P>{#insert zXmark}</P>{#insert zXUp}{#insert zzPBRSyn}	hhp
+hlt -- &lt;	&lt;	hlt
+hnb -- &nbsp;	&nbsp;{#insert zzPBRSyn}	hnb
+hnbnb -- &nbsp; &nbsp; (*starts and ends with space*)	(*starts with space*) &nbsp; &nbsp; (*ends with space*){#insert zzPBRSyn}	hnbnb
+hp1 -- <P/> (Single tag)	<P/>{#insert zzPBRSyn}	hp1
+hpa -- <P> (a for close/end tag only)	<P>{#insert zzPBRSyn}	hpa
+hpb -- <P><B>x-mark</B></P>	<P><B>{#insert zXmark}</B></P>{#insert zXUp}{#insert zzPBRSyn}	hpb
+hpg -- <P><CODE STYLE='background-color:#E1E1E1;'></CODE></P>	<P><CODE STYLE={#insert zAscQQ}background-color:#E1E1E1;{#insert zAscQQ}>{#insert zXmark}</CODE></P>{#insert zXUp}	hpg
+hpi	<P><I>{#insert zXmark}</I></P>{#insert zXUp}{#insert zzPBRSyn}	hpi
+hpp -- hp with paste	<P>{#insert zTPPaste}</P>{#insert zzPBRSyn}	hpp
+hppb	<P><B>{#insert zTPPaste}</B></P>{#insert zzPBRSyn}	hppb
+hppi	<P><I>{#insert zTPPaste}</I></P>{#insert zzPBRSyn}	hppi
+hps -- Split existing para. into two (</P>\R\R<P>)	</P>{#insert zENTER2}<P>{#insert zzPBRSyn}	hps
+hpz -- </P> (z for close/end tag only)	</P>{#insert zzPBRSyn}	hpz
+hrb -- <BR> (backwards because faster to type)	<BR>{#insert zzPBRSyn}	hrb
+hrbb -- Return then hrb	{#insert zENTER}<BR>{#insert zzPBRSyn}	hrbb
+hrbc -- hrbs, hhc	{#insert hrbs}{#insert hhc}{#insert zzPBRSyn}	hrbc
+hrbcb -- hrbc, paste clipBoard	{#insert hrbc}{#insert zTPPaste}{#insert zPreBracketGTP}{#insert zzPBRSyn}	hrbcb
+hrbs	{#insert zENTER}<BR> &nbsp; &nbsp; (*ends with space*){#insert zzPBRSyn}	hrbs
+htg -- &gt;	&gt;	htg
+htgs -- [space]&gt;[space], prints AND copies it	{#SETCLIPBOARD (*starts with space*) &gt; (*ends with space*)}{#insert zTPPaste}{#BALLOON -title DONE -text ' &gt; ' is now in the clipboard.}	htgs
+zzPBRSyn	{#BALLOON -title <P> and <BR> syntax -text hhp=plain, hpp=w/paste, hpg=grey-CODE  //  hp[p][b,i]=w/bold or italic ([p]=paste)  //  hpa=<P>, hpz=</P>, hps=split, hp1=<P/>  //  hrb=<BR>, hrbs[c[b]]=\n<BR>__ (c=code, b=paste)  //  herb=\n<BR>  //  hnbnb=_[_]}	zzPBRSyn

@@ -1,0 +1,8 @@
+zTpkcWindow9Abrv1C	Win9	zTpkcWindow9Abrv1C
+zTpkcWin9CmdNameTC	Window9	zTpkcWin9CmdNameTC
+zTpkcWin9DfltPhrsNm	zTPGTWin9	zTpkcWin9DfltPhrsNm
+zTpkcWin9CatForCmdAbrvLC	window	zTpkcWin9CatForCmdAbrvLC
+zTpkcWin9CmdType_mcrTl		zTpkcWin9CmdType_mcrTl
+zTpkcWin9IsBtstrp_yes		zTpkcWin9IsBtstrp_yes
+zTpkcWin9DfltPostKcSlpMils	10	zTpkcWin9DfltPostKcSlpMils
+zTpkcWin9StpsFrmCmdListTop	{#insert zPGDN}{#insert zDOWN3}	zTpkcWin9StpsFrmCmdListTop

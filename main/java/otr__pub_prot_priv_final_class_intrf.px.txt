@@ -1,0 +1,11 @@
+jpb	public (*ends with space*)	jpb
+jpc	public class (*ends with space*)	jpc
+jpi	public interface (*ends with space*)	jpi
+jpr	protected (*ends with space*)	jpr
+jps	public static (*ends with space*)	jps
+jpsf	public static final (*ends with space*)	jpsf
+jvt	private (*ends with space*)	jvt
+jrs	protected static (*ends with space*)	jrs
+jrsf	protected static final (*ends with space*)	jrsf
+jvs	private static (*ends with space*)	jvs
+jvsf	private static final (*ends with space*)	jvsf

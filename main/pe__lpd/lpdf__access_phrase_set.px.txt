@@ -1,0 +1,16 @@
+zCVTFromAbrv1C_M_pjDtPnmpst	{#insert {#insert zzLpdpsPNmCVTFromAbrv1C_M_pjDtvPnmpst}}	zCVTFromAbrv1C_M_pjDtPnmpst
+zCfgValue_M_pjDtFrm1Key	{#insert {#insert zzLpdpsPNmCfgValue_M_pjDtFrm1}}	zCfgValue_M_pjDtFrm1Key
+zCfgValueIfPrntbl_M_pjDtFrm1Key	{#insert {#COND -if {#insert zValPrntblYN_M_pjDtFrm1} = yes -then zCfgValue_M_pjDtFrm1Key -else zzLpdValueNotPrintable}}	zCfgValueIfPrntbl_M_pjDtFrm1Key
+zCfgVarPhrsNmPost_M_pjDtFrm1	{#insert {#insert zzLpdpsPNmCVTPhrsNmPostTC_M_pjDtFrm1}}	zCfgVarPhrsNmPost_M_pjDtFrm1
+zCfgVarPhrsNm_M_pjDtFrm1Key	{#insert {#insert zzLpdpsPNmCVPhrsName_M_pjDtFrm1}}	zCfgVarPhrsNm_M_pjDtFrm1Key
+zHlpForDlg_M_pjDtFrm1	{#insert {#insert zzLpdpsPNmHlpForDlg_M_pjDtFrm1}}	zHlpForDlg_M_pjDtFrm1
+zIntrnlVarNm_M_pjDtFrm1	{#insert {#insert zzLpdpsPNmIntrnlVarNm_M_pjDtFrm1}}	zIntrnlVarNm_M_pjDtFrm1
+zIntrnlVarValue_M_pjDtFrm1	{#insert {#insert zIntrnlVarNm_M_pjDtFrm1}}	zIntrnlVarValue_M_pjDtFrm1
+zKeyCVTFromAbrv1C_M_pjDtFrm1	{#insert {#insert zzLpdpsPNmKeyCVTFromAbrv1C_M_pjDtFrm1}}	zKeyCVTFromAbrv1C_M_pjDtFrm1
+zNKCVListNum_M_pjDtFrm1	{#insert {#insert zzLpdpsPNmNKCVListNum_M_pjDtFrm1}}	zNKCVListNum_M_pjDtFrm1
+zSetIntrnlVarToCB_M_pjDtFrm1	{#SETPHRASE -description {#insert zIntrnlVarNm_M_pjDtFrm1} -content {#INSERTCLIPBOARD} -autotext {#insert zIntrnlVarNm_M_pjDtFrm1} -folder ctvv_folder}	zSetIntrnlVarToCB_M_pjDtFrm1
+zValPrntblYN_M_pjDtFrm1	{#insert {#COND -if {#insert zvPRNTBL_YN_OVERIDE_TO_Y_ONFF} = on -then zzQyesQ -else zValPrntblYNNoOverride_M_pjDtFrm1}}	zValPrntblYN_M_pjDtFrm1
+zValPrntblYNNoOverride_M_pjDtFrm1	{#insert {#insert zzLpdpsPNmValPrntblYN_M_pjDtFrm1}}	zValPrntblYNNoOverride_M_pjDtFrm1
+zVldtValPhrsNm_M_pjDtFrm1	{#insert {#insert zzLpdpsPNmVldtValPhrsNm_M_pjDtFrm1}}	zVldtValPhrsNm_M_pjDtFrm1
+zvPRNTBL_YN_OVERIDE_TO_Y_ONFF_stOff	{#SETPHRASE -description zvPRNTBL_YN_OVERIDE_TO_Y_ONFF -content off -autotext zvPRNTBL_YN_OVERIDE_TO_Y_ONFF -folder ctvv_folder}	zvPRNTBL_YN_OVERIDE_TO_Y_ONFF_stOff
+zvPRNTBL_YN_OVERIDE_TO_Y_ONFF_stOn	{#SETPHRASE -description zvPRNTBL_YN_OVERIDE_TO_Y_ONFF -content on -autotext zvPRNTBL_YN_OVERIDE_TO_Y_ONFF -folder ctvv_folder}	zvPRNTBL_YN_OVERIDE_TO_Y_ONFF_stOn

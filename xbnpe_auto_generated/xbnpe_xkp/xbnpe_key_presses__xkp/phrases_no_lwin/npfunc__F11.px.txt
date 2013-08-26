@@ -1,0 +1,8 @@
+F11 -- zF11	{#F11}{#insert zTSlp}	zF11
+Alt+F11 -- zApF11	{#ALT {#F11}}{#insert zTSlp}	zApF11
+Alt+Shift+F11 -- zASpF11	{#ALT {#SHIFT {#F11}}}{#insert zTSlp}	zASpF11
+Ctrl+F11 -- zCpF11	{#CTRL {#F11}}{#insert zTSlp}	zCpF11
+Ctrl+Alt+F11 -- zCApF11	{#CTRL {#ALT {#F11}}}{#insert zTSlp}	zCApF11
+Ctrl+Alt+Shift+F11 -- zCASpF11	{#CTRL {#ALT {#SHIFT {#F11}}}}{#insert zTSlp}	zCASpF11
+Ctrl+Shift+F11 -- zCSpF11	{#CTRL {#SHIFT {#F11}}}{#insert zTSlp}	zCSpF11
+Shift+F11 -- zSpF11	{#SHIFT {#F11}}{#insert zTSlp}	zSpF11

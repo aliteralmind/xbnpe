@@ -1,0 +1,12 @@
+jpfmrwc -- Mark aRroWed (-->) Classes. Use in/to create compile_list.xml	{#insert zFindOpenDown}--> {#insert zFindBtnNext}{#insert zFindDlgClose}{#insert zRIGHT}{#insert zSpEND}{#insert zFindOpenDown}(*Adopts selected text*){#insert zFindMarkAllClose}{#insert zGTDocBottom}{#insert zTPBookmarkGTPrev}{#insert zDeleteLine}{#insert zHOME}	jpfmrwc
+jpfmrwc01 -- Actually jpfmrwc1 -- jpfmrwc ALT KC	{#insert jpfmrwc}	jpfmrwc01
+jpfmrwc02 -- jpfmrwc2 -- jpfmrwc, 2 times	{#loop {#insert jpfmrwc} -count 2}	jpfmrwc2
+jpfmrwc03 -- jpfmrwc3 -- jpfmrwc, 3 times	{#loop {#insert jpfmrwc} -count 3}	jpfmrwc3
+jpfmrwc04 -- jpfmrwc4 -- jpfmrwc, 4 times	{#loop {#insert jpfmrwc} -count 4}	jpfmrwc4
+jpfmrwc05 -- jpfmrwc5 -- jpfmrwc, 5 times	{#loop {#insert jpfmrwc} -count 5}	jpfmrwc5
+jpfmrwc06 -- jpfmrwc6 -- jpfmrwc, 6 times	{#loop {#insert jpfmrwc} -count 6}	jpfmrwc6
+jpfmrwc07 -- jpfmrwc7 -- jpfmrwc, 7 times	{#loop {#insert jpfmrwc} -count 7}	jpfmrwc7
+jpfmrwc08 -- jpfmrwc8 -- jpfmrwc, 8 times	{#loop {#insert jpfmrwc} -count 8}	jpfmrwc8
+jpfmrwc09 -- jpfmrwc9 -- jpfmrwc, 9 times	{#loop {#insert jpfmrwc} -count 9}	jpfmrwc9
+jpfmrwc10 -- jpfmrwc, 10 times	{#loop {#insert jpfmrwc} -count 10}	jpfmrwc10
+jpfmrwcn -- jpfmrwc, N times	{#loop {#insert jpfmrwc} -count {#insert zDfmrwcCount}}	jpfmrwcn

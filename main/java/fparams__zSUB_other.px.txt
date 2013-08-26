@@ -1,0 +1,16 @@
+zFindNextCommaSpace	{#insert ztpmJavaFuncFindNextCommaSpace}	zFindNextCommaSpace
+zFindNextNonCommaSpace	{#insert ztpmJavaFuncFindNextNonCommaSpace}	zFindNextNonCommaSpace
+zFindNextRetTypeThrOpenParen	{#insert ztpmJavaFindNextRetTypeThrOpenParen}	zFindNextRetTypeThrOpenParen
+zFindOpenParenPostRTFNameFdlgRE (**)	(*RTFName means 'return type and function name'*){#insert zFindNextRetTypeThr}){#insert zRIGHT}{#insert zTPSelectL1c}{#insert zFindDlgOpenDownRE}(*PRE ztpm: {#insert zFindDlgOpenDownRE}{#insert zjreRetTypeFuncName}){#insert zFindGoWhat}({#insert zFindBtnNext}*)	zFindOpenParenPostRTFNameFdlgRE
+zGTSigOrPrevFunc -- Go to prev func, or THIS func if on sig-line	{#insert zDOWN}{#insert ztpmJavaFuncGoToPrev}	zGTSigOrPrevFunc
+zParamNumFromPrompt	{#input -head Parameter number what? [2 or greater] -single}	zParamNumFromPrompt
+zPostYGTPrevJFunc	{#insert zYmark}{#insert zGTSigOrPrevFunc}	zPostYGTPrevJFunc
+zPreTypeSelCopyThrGEnd	{#insert zFindDlgOpenDownREXS}{#insert zreNonCommaSpace}{#insert zFindGoREXSClose}{#insert zTPSelectL1c}{#insert zTPCopy}	zPreTypeSelCopyThrGEnd
+zPreSigSTSigEnd	{#insert ztpmJavaPreSigSTSigEnd}	zPreSigSTSigEnd
+zYDownPPreBrkGTP -- to the right of the </CODE>	{#insert zYDownPaste}{#insert zPreBracketGTP}	zYDownPPreBrkGTP
+zYGTNextJFunc	{#insert zYmark}{#insert zjGTNextFunc}	zYGTNextJFunc
+zYUpPPreBrkGTP -- to the other side of </CODE>	{#insert zYUpPaste}{#insert zPreBracketGTP}	zYUpPPreBrkGTP
+zYcGTNextJFunc	{#insert zYmarkCoded}{#insert zjGTNextFunc}	zYcGTNextJFunc
+zYcGTPrevJFunc	{#insert zYmarkCoded}{#insert zGTSigOrPrevFunc}	zYcGTPrevJFunc
+zzFromPreSigFind1stCmaSpc	{#insert zFindNextRetTypeThrOpenParen}{#insert zRIGHT}{#insert zFindNextCommaSpace}	zzFromPreSigFind1stCmaSpc
+zzFromPreSigFind1stNonCmaSpc	{#insert zFindNextRetTypeThrOpenParen}{#insert zRIGHT}{#insert zFindNextNonCommaSpace}	zzFromPreSigFind1stNonCmaSpc

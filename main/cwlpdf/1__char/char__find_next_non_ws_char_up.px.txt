@@ -1,0 +1,11 @@
+zFindNonWSCharUpREoff -- RE ends up off, direction becomes down	{#insert zFindDlgOpenUpRE}{#insert zzRegexNonWSCharPressFindNext}{#insert zFindDlgCloseDownRE}	zFindNonWSCharUpREoff
+zzRegexNonWSCharPressFindNext	{#insert zzRegexNonWSChar}{#insert zFindBtnNext}	zzRegexNonWSCharPressFindNext
+zzRegexNonWSChar	\S	zzRegexNonWSChar
+
+
+
+
+
+
+
+

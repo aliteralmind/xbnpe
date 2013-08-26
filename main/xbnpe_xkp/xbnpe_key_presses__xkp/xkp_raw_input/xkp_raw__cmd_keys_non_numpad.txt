@@ -1,0 +1,17 @@
+ENTER	\\\{#ENTER\\\}
+SPACE	\\\{#SPACE\\\}
+TAB	\\\{#TAB\\\}
+BKSP	\\\{#BKSP\\\}
+BREAK	\\\{#BREAK\\\}
+DEL	\\\{#DEL\\\}
+DOWN	\\\{#DOWN\\\}
+END	\\\{#END\\\}
+ESC	\\\{#ESC\\\}
+HOME	\\\{#HOME\\\}
+INS	\\\{#INS\\\}
+LEFT	\\\{#LEFT\\\}
+PGDN	\\\{#PGDN\\\}
+PGUP	\\\{#PGUP\\\}
+PRTSC	\\\{#PRTSC\\\}
+RIGHT	\\\{#RIGHT\\\}
+UP	\\\{#UP\\\}

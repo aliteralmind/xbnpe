@@ -1,0 +1,8 @@
+zXPROOT_DIR_AG_xkpOutputRoot	{#insert zROOT_DIR_XBNPE_AG}{#insert zzXPSUB_DIR_xbnKeyPresses}	zXPROOT_DIR_AG_xkpOutputRoot
+zXPROOT_DIR_AG_xkpOutput_nolw	{#insert zROOT_DIR_XBNPE_AG}{#insert zzXPSUB_DIR_xkpOutput_nolw}	zXPROOT_DIR_AG_xkpOutput_nolw
+zXPROOT_DIR_AG_xkpOutput_yeslw	{#insert zROOT_DIR_XBNPE_AG}{#insert zzXPSUB_DIR_xkpOutput_yeslw}	zXPROOT_DIR_AG_xkpOutput_yeslw
+zXPROOT_DIR_allModForChrsInput	{#insert zROOT_DIR_XBNPE_MAIN}{#insert zzXPSUB_DIR_xkpInput}	zXPROOT_DIR_allModForChrsInput
+zzXPSUB_DIR_xbnKeyPresses	{#insert zzXPSUB_DIR_xbnpeXkp}xbnpe_key_presses__xkp\	zzXPSUB_DIR_xbnKeyPresses
+zzXPSUB_DIR_xkpInput	{#insert zzXPSUB_DIR_xbnKeyPresses}xkp_raw_input\	zzXPSUB_DIR_xkpInput
+zzXPSUB_DIR_xkpOutput_nolw	{#insert zzXPSUB_DIR_xbnKeyPresses}phrases_no_lwin\	zzXPSUB_DIR_xkpOutput_nolw
+zzXPSUB_DIR_xkpOutput_yeslw	{#insert zzXPSUB_DIR_xbnKeyPresses}phrases_yes_lwin\	zzXPSUB_DIR_xkpOutput_yeslw

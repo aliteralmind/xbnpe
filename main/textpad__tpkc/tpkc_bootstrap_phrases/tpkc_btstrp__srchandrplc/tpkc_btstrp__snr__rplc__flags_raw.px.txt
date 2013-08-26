@@ -1,0 +1,4 @@
+_Only those flags unique to the replace-dialog.
+zRplcFlagADraw	{#insert zApLL}{#sleep 5}	zRplcFlagADraw
+zRplcFlagSelRAW	{#insert zApSS}{#sleep 5}	zRplcFlagSelRAW
+zRplcFlagTDraw	{#insert zApDD}{#sleep 5}	zRplcFlagTDraw

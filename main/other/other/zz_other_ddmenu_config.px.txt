@@ -1,0 +1,4 @@
+_DO NOT TOUCH this folder or any of its phrases...	Required by phrase-creator-ddmenu-utils		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+zzAllFilePrefixesInDDMenuDirQbl_other	[{#insert zzPmdmFNmPreOtherMain}]	zzAllFilePrefixesInDDMenuDirQbl_other
+zzDDMenuDir_other	{#insert zXPROOT_DIR_srchRplc}other\z_phrase_creator_ddmenus\	zzDDMenuDir_other
+zzPmdmFNmPreOtherMain	xbnpe_other__pcddmenu	zzPmdmFNmPreOtherMain

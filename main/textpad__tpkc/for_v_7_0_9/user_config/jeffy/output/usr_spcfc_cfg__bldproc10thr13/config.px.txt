@@ -1,0 +1,15 @@
+zTpkcBlockSelectOffNbsKcCount	0	zTpkcBlockSelectOffNbsKcCount
+zTpkcBlockSelectOnNbsKcCount	0	zTpkcBlockSelectOnNbsKcCount
+zTpkcCustomizeToolbarsNbsKcCount	0	zTpkcCustomizeToolbarsNbsKcCount
+zTpkcPreferencesNbsKcCount	0	zTpkcPreferencesNbsKcCount
+zTpkcRightMarginDecNbsKcCount	0	zTpkcRightMarginDecNbsKcCount
+zTpkcRightMarginIncNbsKcCount	0	zTpkcRightMarginIncNbsKcCount
+zTpkcRightMarginSetNbsKcCount	0	zTpkcRightMarginSetNbsKcCount
+zTpkcToggleBlockSelectNbsKcCount	0	zTpkcToggleBlockSelectNbsKcCount
+zTpkcToggleInsertModeNbsKcCount	1	zTpkcToggleInsertModeNbsKcCount
+zTpkcToggleInsertModeNbsKcEsc1	\\\{#insert zINS\\\}\\\{#sleep 5\\\}	zTpkcToggleInsertModeNbsKcEsc1
+zTpkcToggleReadOnlyNbsKcCount	1	zTpkcToggleReadOnlyNbsKcCount
+zTpkcToggleReadOnlyNbsKcEsc1	\\\{#insert zCASpF5\\\}\\\{#sleep 5\\\}	zTpkcToggleReadOnlyNbsKcEsc1
+zTpkcToggleSyncScrollNbsKcCount	0	zTpkcToggleSyncScrollNbsKcCount
+zTpkcToggleUndoNbsKcCount	0	zTpkcToggleUndoNbsKcCount
+zTpkcToggleWordWrapNbsKcCount	0	zTpkcToggleWordWrapNbsKcCount

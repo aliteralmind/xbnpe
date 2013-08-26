@@ -1,0 +1,16 @@
+pwsv -- x()='+x()+' (**)	(*The TextPad regular expression to find all bracket chars: '([\[(){}<>]|\])' Note the close square is NOT in the range, but rather an alternate RE.*){#insert zCopyL1w}()={#insert zQQPPastePQQ}	pwsv
+pwsvq -- x()=['+x()+]' (**)	{#insert zCopyL1w}()=[{#insert zQQPPastePQQ}]	pwsvq
+pwsvh -- x()=<'+x()+>'	{#insert zCopyL1w}()=<{#insert zQQPPastePQQ}>	pwsvh
+pwsvc -- x()={'+x()+}'	{#insert zCopyL1w}()={#insert zOY}{#insert zQQPPastePQQ}>	pwsvc
+pwsvp -- x()={'+x()+}'	{#insert zCopyL1w}()=({#insert zQQPPastePQQ})	pwsvp
+pwsvq2 -- x()=[['+x()+]]'	{#insert zCopyL1w}()=[[{#insert zQQPPastePQQ}]]	pwsv2
+pwsvh2 -- x()=<<'+x()+>>'	{#insert zCopyL1w}()=<<{#insert zQQPPastePQQ}>>	pwsvh2
+pwsvc2 -- x()={{'+x()+}}'	{#insert zCopyL1w}()={#insert zOY}{#insert zOY}{#insert zQQPPastePQQ}}}	pwsvc2
+pwsvp2 -- x()={{'+x()+}}'	{#insert zCopyL1w}()=(({#insert zQQPPastePQQ}))	pwsvp2
+pwsvq3 -- x()=[[['+x()+]]]'	{#insert zCopyL1w}()=[[[{#insert zQQPPastePQQ}]]]	pwsv3
+pwsvh3 -- x()=<<<'+x()+>>>'	{#insert zCopyL1w}()=<<<{#insert zQQPPastePQQ}>>>	pwsvh3
+pwsvc3 -- x()={{{'+x()+}}}'	{#insert zCopyL1w}()={#insert zOY}{#insert zOY}{#insert zOY}{#insert zQQPPastePQQ}}}}	pwsvc3
+pwsvp3 -- x()={{{'+x()+}}}'	{#insert zCopyL1w}()=((({#insert zQQPPastePQQ})))	pwsvp3
+zQQPPastePQQ	{#asc 34} + {#insert zTPPaste}() + {#asc 34}	zQQPPastePQQ
+
+

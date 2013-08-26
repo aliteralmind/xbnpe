@@ -1,0 +1,9 @@
+zMoveL1R1w	{#insert zTPMoveL1w}{#insert zTPMoveR1w}	zMoveL1R1w
+zMoveR1L1w	{#insert zTPMoveR1w}{#insert zTPMoveL1w}	zMoveR1L1w
+zHomeMoveR1wSelCopyL1w -- zHomeMoveR1wSelL1w, copy	{#insert zHomeMoveR1wSelL1w}{#insert zTPCopy}	zHomeMoveR1wSelCopyL1w
+zHomeMoveR1wSelL1w -- Assumes at least one char!	{#insert zHOME}{#insert zTPMoveR1w}{#insert zTPSelectL1w}	zHomeMoveR1wSelL1w
+zSelectL1R1w	{#insert zTPSelectL1w}{#insert zTPSelectR1w}	zSelectL1R1w
+zSelectR1L1w	{#insert zTPSelectR1w}{#insert zTPSelectL1w}	zSelectR1L1w
+zSelectR2w	{#insert zTPSelectR1w}{#insert zTPSelectR1w}	zSelectR2w
+zCopyL1w -- zTPSelectL1w, zTPCopy	{#insert zSelectL1wCopy}{#insert zRIGHT}	zCopyL1w
+zCopyR1w -- zSelectR1w, zTPCopy	{#insert zSelectR1wCopy}{#insert zLEFT}	zCopyR1w

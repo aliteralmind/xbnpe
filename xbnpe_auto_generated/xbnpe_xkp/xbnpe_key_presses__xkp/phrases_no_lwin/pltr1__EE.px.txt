@@ -1,0 +1,8 @@
+EE -- zEE	{#NONE -chars e}{#insert zTSlp}	zEE
+Alt+EE -- zApEE	{#ALT -chars e}{#insert zTSlp}	zApEE
+Alt+Shift+EE -- zASpEE	{#ALT {#SHIFT -chars e}}{#insert zTSlp}	zASpEE
+Ctrl+EE -- zCpEE	{#CTRL -chars e}{#insert zTSlp}	zCpEE
+Ctrl+Alt+EE -- zCApEE	{#CTRL {#ALT -chars e}}{#insert zTSlp}	zCApEE
+Ctrl+Alt+Shift+EE -- zCASpEE	{#CTRL {#ALT {#SHIFT -chars e}}}{#insert zTSlp}	zCASpEE
+Ctrl+Shift+EE -- zCSpEE	{#CTRL {#SHIFT -chars e}}{#insert zTSlp}	zCSpEE
+Shift+EE -- zSpEE	{#SHIFT -chars e}{#insert zTSlp}	zSpEE

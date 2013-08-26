@@ -1,0 +1,22 @@
+
+zzMnvSynPstMstrPhrsNm -- Follows action name, to print call to master-phrase	m	zzMnvSynPstMstrPhrsNm
+zzMnvSynPstVarInfoSyntax -- Follows var abrv	f	zzMnvSynPstVarInfoSyntax
+zzMnvSynPstSetToNumPreCallMstr -- Between actn nm & zzMnvSynPstMstrPhrsNm, for "_st#" call	t	zzMnvSynPstSetToNumPreCallMstr
+zzMnvSynPstNumSetphrsPreCallMstr -- Between actn nm & zzMnvSynPstMstrPhrsNm, for setphrase	h	zzMnvSynPstNumSetphrsPreCallMstr
+zzMnvSynPstSetToNumCallMstr -- After actn nm, for "_st#" then call mstr-phrs	{#insert zzMnvSynPstSetToNumPreCallMstr}{#insert zzMnvSynPstMstrPhrsNm}	zzMnvSynPstSetToNumCallMstr
+zzMnvSynPstNumSetphrsCallMstr -- After actn nm, for setphrase then call mstr-phrs	{#insert zzMnvSynPstNumSetphrsPreCallMstr}{#insert zzMnvSynPstMstrPhrsNm}	zzMnvSynPstNumSetphrsCallMstr
+zzMnvSynPstSetNumToPrompt -- Follows action name 	n	zzMnvSynPstSetNumToPrompt
+zzMnvSynPstCmdInfoSyntax  -- Follows action name 	f	zzMnvSynPstCmdInfoSyntax
+zzMnvSynPstSetphrsToPrompt	r	zzMnvSynPstSetphrsToPrompt
+zzMnvSynPstSetphrsToPromptCallMstr -- After actn nm, for "_stPrompt" then call mstr	{#insert zzMnvSynPstSetphrsToPrompt}{#insert zzMnvSynPstMstrPhrsNm}	zzMnvSynPstSetphrsToPromptCallMstr
+
+(*
+   The NAME of the [PCActOffPst_pES] cv-type has 'p' in it, don't change any of the following
+      zzMnvSynPstMainPhrsCrtr
+      zzMnvSynPstLtrlPhrsCrtr
+      zzMnvSynPstCmdStyleLtrlPhrs
+   unless you REALLY know what you're doing.
+*)
+zzMnvSynPstMainPhrsCrtr -- DO NOT EDIT!	p	zzMnvSynPstMainPhrsCrtr
+zzMnvSynPstLtrlPhrsCrtr -- DO NOT EDIT!	q	zzMnvSynPstLtrlPhrsCrtr
+zzMnvSynPstCmdStyleLtrlPhrs -- DO NOT EDIT!	{#insert zzMnvSynPstMainPhrsCrtr}	zzMnvSynPstCmdStyleLtrlPhrs

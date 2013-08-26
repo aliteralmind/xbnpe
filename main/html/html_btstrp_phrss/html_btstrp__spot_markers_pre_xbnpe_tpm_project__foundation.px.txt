@@ -1,0 +1,13 @@
+__README__	Disable this folder once the XBNPE-spot-mark project (and its pre-requisite TPKC project) is installed		(*Two tabs plus this comment, to force this phrase to be imported, and with NO autotext*)
+zVDown	{#CTRL {#ALT {#END}}}{#insert z5ThnTSlp}	zVDown
+zVUp	{#CTRL {#ALT {#HOME}}}{#insert z5ThnTSlp}	zVUp
+zVmarkPostGTP	{#LEFT -count 3}	zVmarkPostGTP
+zXDown	{#CTRL {#END}}{#insert z5ThnTSlp}	zXDown
+zXUp	{#CTRL {#HOME}}{#insert z5ThnTSlp}	zXUp
+zXmarkPostGTP	{#LEFT -count 3}	zXmarkPostGTP
+zYDown	{#ALT {#PGUP}}{#insert z5ThnTSlp}	zYDown
+zYUp	{#ALT {#INS}}{#insert z5ThnTSlp}	zYUp
+zYmarkPostGTP	{#LEFT -count 3}	zYmarkPostGTP
+zZDown	{#CTRL {#ALT {#PGUP}}}{#insert z5ThnTSlp}	zZDown
+zZUp	{#CTRL {#ALT {#INS}}}{#insert z5ThnTSlp}	zZUp
+zZmarkPostGTP	{#LEFT -count 3}	zZmarkPostGTP

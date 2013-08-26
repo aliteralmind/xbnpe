@@ -1,0 +1,11 @@
+zzXkpIndvMdfr_a	{#insert zzzHmSelr1wCpLft}Alt+{#insert zzzMvr1wSpcDshDshSpc}zAp{#insert zzzPsteSell1wCpRigRig}\\\{#ALT {#END}\\\}{#insert zzzLtrlTSlpTbPstRig}	zzXkpIndvMdfr_a
+zzXkpIndvMdfr_as	{#insert zzzHmSelr1wCpLft}Alt+Shift+{#insert zzzMvr1wSpcDshDshSpc}zASp{#insert zzzPsteSell1wCpRigRig}\\\{#ALT \\\{#SHIFT {#END}\\\}\\\}{#insert zzzLtrlTSlpTbPstRig}	zzXkpIndvMdfr_as
+zzXkpIndvMdfr_c	{#insert zzzHmSelr1wCpLft}Ctrl+{#insert zzzMvr1wSpcDshDshSpc}zCp{#insert zzzPsteSell1wCpRigRig}\\\{#CTRL {#END}\\\}{#insert zzzLtrlTSlpTbPstRig}	zzXkpIndvMdfr_c
+zzXkpIndvMdfr_ca	{#insert zzzHmSelr1wCpLft}Ctrl+Alt+{#insert zzzMvr1wSpcDshDshSpc}zCAp{#insert zzzPsteSell1wCpRigRig}\\\{#CTRL \\\{#ALT {#END}\\\}\\\}{#insert zzzLtrlTSlpTbPstRig}	zzXkpIndvMdfr_ca
+zzXkpIndvMdfr_cas	{#insert zzzHmSelr1wCpLft}Ctrl+Alt+Shift+{#insert zzzMvr1wSpcDshDshSpc}zCASp{#insert zzzPsteSell1wCpRigRig}\\\{#CTRL \\\{#ALT \\\{#SHIFT {#END}\\\}\\\}\\\}{#insert zzzLtrlTSlpTbPstRig}	zzXkpIndvMdfr_cas
+zzXkpIndvMdfr_cs	{#insert zzzHmSelr1wCpLft}Ctrl+Shift+{#insert zzzMvr1wSpcDshDshSpc}zCSp{#insert zzzPsteSell1wCpRigRig}\\\{#CTRL \\\{#SHIFT {#END}\\\}\\\}{#insert zzzLtrlTSlpTbPstRig}	zzXkpIndvMdfr_cs
+zzXkpIndvMdfr_s	{#insert zzzHmSelr1wCpLft}Shift+{#insert zzzMvr1wSpcDshDshSpc}zSp{#insert zzzPsteSell1wCpRigRig}\\\{#SHIFT {#END}\\\}{#insert zzzLtrlTSlpTbPstRig}	zzXkpIndvMdfr_s
+zzXkpIndvMdfrNoMods	{#insert zzzHmSelr1wCpLft}{#insert zzzMvr1wSpcDshDshSpc}z{#insert zzzPsteSell1wCpRigRig}{#insert {#COND -if {#insert zvNEEDS_NONE_WRAP_Y} = yes -then zzzLtrlOpnCrlyHshNONESpc -else}}{#END}{#insert {#COND -if {#insert zvNEEDS_NONE_WRAP_Y} = yes -then zzzLtrlClsCrly -else}}{#insert zzzLtrlTSlpTbPstRig}	zzXkpIndvMdfrNoMods
+zzzLtrlOpnCrlyHshNONESpc	\\\{#NONE (*ends w space*)	zzzLtrlOpnCrlyHshNONESpc
+zzzLtrlClsCrly	\\\}	zzzLtrlClsCrly
+

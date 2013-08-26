@@ -1,0 +1,8 @@
+Alt+LWin+YY -- zALpYY	{#ALT {#LWIN -chars y}}{#insert zTSlp}	zALpYY
+Alt+Shift+LWin+YY -- zASLpYY	{#ALT {#SHIFT {#LWIN -chars y}}}{#insert zTSlp}	zASLpYY
+Ctrl+Alt+LWin+YY -- zCALpYY	{#CTRL {#ALT {#LWIN -chars y}}}{#insert zTSlp}	zCALpYY
+Ctrl+Alt+Shift+LWin+YY -- zCASLpYY	{#CTRL {#ALT {#SHIFT {#LWIN -chars y}}}}{#insert zTSlp}	zCASLpYY
+Ctrl+LWin+YY -- zCLpYY	{#CTRL {#LWIN -chars y}}{#insert zTSlp}	zCLpYY
+Ctrl+Shift+LWin+YY -- zCSLpYY	{#CTRL {#SHIFT {#LWIN -chars y}}}{#insert zTSlp}	zCSLpYY
+LWin+YY -- zLpYY	{#LWIN -chars y}{#insert zTSlp}	zLpYY
+Shift+LWin+YY -- zSLpYY	{#SHIFT {#LWIN -chars y}}{#insert zTSlp}	zSLpYY

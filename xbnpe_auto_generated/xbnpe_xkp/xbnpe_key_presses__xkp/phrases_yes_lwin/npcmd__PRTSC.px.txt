@@ -1,0 +1,8 @@
+Alt+LWin+PRTSC -- zALpPRTSC	{#ALT {#LWIN {#PRTSC}}}{#insert zTSlp}	zALpPRTSC
+Alt+Shift+LWin+PRTSC -- zASLpPRTSC	{#ALT {#SHIFT {#LWIN {#PRTSC}}}}{#insert zTSlp}	zASLpPRTSC
+Ctrl+Alt+LWin+PRTSC -- zCALpPRTSC	{#CTRL {#ALT {#LWIN {#PRTSC}}}}{#insert zTSlp}	zCALpPRTSC
+Ctrl+Alt+Shift+LWin+PRTSC -- zCASLpPRTSC	{#CTRL {#ALT {#SHIFT {#LWIN {#PRTSC}}}}}{#insert zTSlp}	zCASLpPRTSC
+Ctrl+LWin+PRTSC -- zCLpPRTSC	{#CTRL {#LWIN {#PRTSC}}}{#insert zTSlp}	zCLpPRTSC
+Ctrl+Shift+LWin+PRTSC -- zCSLpPRTSC	{#CTRL {#SHIFT {#LWIN {#PRTSC}}}}{#insert zTSlp}	zCSLpPRTSC
+LWin+PRTSC -- zLpPRTSC	{#LWIN {#PRTSC}}{#insert zTSlp}	zLpPRTSC
+Shift+LWin+PRTSC -- zSLpPRTSC	{#SHIFT {#LWIN {#PRTSC}}}{#insert zTSlp}	zSLpPRTSC

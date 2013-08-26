@@ -1,0 +1,28 @@
+(*ZIdx: Auto-generated -- **DO NOT EDIT**...start*)
+zvZIDX_PNABR_VTC_stJdlwc	{#SETPHRASE -description zvZIDX_PNABR_VTC -content {#insert zzZIdxJdlwpcnstrPNAbrvTC} -autotext zvZIDX_PNABR_VTC -folder ctvv_folder}	zvZIDX_PNABR_VTC_stJdlwc
+zidxjdlwpcnstr -- terse dialog (default)	{#insert zvZIDX_PNABR_VTC_stJdlwc}{#insert zZIdxOutputTerseDlg_M_vtc}	zidxjdlwpcnstr
+zidxjdlwpcnstrm -- write faMily information (to new file)	{#insert zvZIDX_PNABR_VTC_stJdlwc}{#insert zZIdxOutputFamilyPreChldSubsWrtToNF_M_vtc}(*3*){#setclipboard {#insert zzZIdxJdlwcddPostfix}}{#insert zZIdxPrntFmlyPsetChldPstlcInCB}{#setclipboard {#insert zzZIdxJdlwcsdPostfix}}{#insert zZIdxPrntFmlyPsetChldPstlcInCB}{#setclipboard {#insert zzZIdxJdlwctrPostfix}}{#insert zZIdxPrntFmlyPsetChldPstlcInCB}{#insert zZIdxOutputFamilyPostChldSubs_M_vtc}	zidxjdlwpcnstrm
+zidxjdlwpcnstrx -- eXtra info (to new file)	{#insert zvZIDX_PNABR_VTC_stJdlwc}{#insert zZIdxOutputExtraInfoToNF_M_vtc}	zidxjdlwpcnstrx
+(*ZIdx: Auto-generated -- **DO NOT EDIT**...end*)
+
+(*ZIdx: Auto-generated -- **DO NOT EDIT**...start*)
+zvZIDX_PNABR_VTC_stJdlwctr	{#SETPHRASE -description zvZIDX_PNABR_VTC -content {#insert zzZIdxJdlwcthissuperPNAbrvTC} -autotext zvZIDX_PNABR_VTC -folder ctvv_folder}	zvZIDX_PNABR_VTC_stJdlwctr
+zidxjdlwcthissuper -- terse dialog (default)	{#insert zvZIDX_PNABR_VTC_stJdlwctr}{#insert zZIdxOutputTerseDlg_M_vtc}	zidxjdlwcthissuper
+zidxjdlwcthissuperm -- zidxm ALT KC	{#insert zidxm}	zidxjdlwcthissuperm
+zidxjdlwcthissuperx -- eXtra info (to new file)	{#insert zvZIDX_PNABR_VTC_stJdlwctr}{#insert zZIdxOutputExtraInfoToNF_M_vtc}	zidxjdlwcthissuperx
+(*ZIdx: Auto-generated -- **DO NOT EDIT**...end*)
+
+(*ZIdx: Auto-generated -- **DO NOT EDIT**...start*)
+zvZIDX_PNABR_VTC_stJdlwcdd	{#SETPHRASE -description zvZIDX_PNABR_VTC -content {#insert zzZIdxJdlwcdiffdirPNAbrvTC} -autotext zvZIDX_PNABR_VTC -folder ctvv_folder}	zvZIDX_PNABR_VTC_stJdlwcdd
+zidxjdlwcdiffdir -- terse dialog (default)	{#insert zvZIDX_PNABR_VTC_stJdlwcdd}{#insert zZIdxOutputTerseDlg_M_vtc}	zidxjdlwcdiffdir
+zidxjdlwcdiffdirm -- zidxm ALT KC	{#insert zidxm}	zidxjdlwcdiffdirm
+zidxjdlwcdiffdirx -- eXtra info (to new file)	{#insert zvZIDX_PNABR_VTC_stJdlwcdd}{#insert zZIdxOutputExtraInfoToNF_M_vtc}	zidxjdlwcdiffdirx
+(*ZIdx: Auto-generated -- **DO NOT EDIT**...end*)
+
+(*ZIdx: Auto-generated -- **DO NOT EDIT**...start*)
+zvZIDX_PNABR_VTC_stJdlwcsd	{#SETPHRASE -description zvZIDX_PNABR_VTC -content {#insert zzZIdxJdlwcsamedirPNAbrvTC} -autotext zvZIDX_PNABR_VTC -folder ctvv_folder}	zvZIDX_PNABR_VTC_stJdlwcsd
+zidxjdlwcsamedir -- terse dialog (default)	{#insert zvZIDX_PNABR_VTC_stJdlwcsd}{#insert zZIdxOutputTerseDlg_M_vtc}	zidxjdlwcsamedir
+zidxjdlwcsamedirm -- zidxm ALT KC	{#insert zidxm}	zidxjdlwcsamedirm
+zidxjdlwcsamedirx -- eXtra info (to new file)	{#insert zvZIDX_PNABR_VTC_stJdlwcsd}{#insert zZIdxOutputExtraInfoToNF_M_vtc}	zidxjdlwcsamedirx
+(*ZIdx: Auto-generated -- **DO NOT EDIT**...end*)
+

@@ -1,0 +1,8 @@
+JJ -- zJJ	{#NONE -chars j}{#insert zTSlp}	zJJ
+Alt+JJ -- zApJJ	{#ALT -chars j}{#insert zTSlp}	zApJJ
+Alt+Shift+JJ -- zASpJJ	{#ALT {#SHIFT -chars j}}{#insert zTSlp}	zASpJJ
+Ctrl+JJ -- zCpJJ	{#CTRL -chars j}{#insert zTSlp}	zCpJJ
+Ctrl+Alt+JJ -- zCApJJ	{#CTRL {#ALT -chars j}}{#insert zTSlp}	zCApJJ
+Ctrl+Alt+Shift+JJ -- zCASpJJ	{#CTRL {#ALT {#SHIFT -chars j}}}{#insert zTSlp}	zCASpJJ
+Ctrl+Shift+JJ -- zCSpJJ	{#CTRL {#SHIFT -chars j}}{#insert zTSlp}	zCSpJJ
+Shift+JJ -- zSpJJ	{#SHIFT -chars j}{#insert zTSlp}	zSpJJ

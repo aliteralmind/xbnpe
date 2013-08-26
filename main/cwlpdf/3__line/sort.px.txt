@@ -1,0 +1,12 @@
+sortlun -- Sort N Lines Up	{#SETPHRASE -description zvUP_NUM -content {#insert zzInpHowManyLines} -autotext zvUP_NUM -folder ctvv_folder}{#insert zSortlun_MSTR}	sortlun
+sortldn -- Sort N Lines Down	{#SETPHRASE -description zvDOWN_NUM -content {#insert zzInpHowManyLines} -autotext zvUP_NUM -folder ctvv_folder}{#insert zSortlun_MSTR}	sortldn
+sortallu -- Sort everything from the cursor up	{#insert zTPSTDocTop}{#insert zSortDialogPauseConfirm}	sortallu
+sortalld -- Sort everything from the cursor down	{#insert zTPSTDocBottom}{#insert zSortDialogPauseConfirm}	sortalld
+sortall -- Sort the entire document	{#insert zTPSelectAll}{#insert zSortDialogPauseConfirm}	sortall
+sortdoc -- sortall ALT KC	{#insert sortall}	sortdoc
+sortlunr	{#insert sortlun}{#insert zRIGHT}	sortlunr
+zSortrlu_MSTR -- zSortlun_MSTR, right	{#insert zSortlun_MSTR}{#insert zRIGHT}	zSortrlu_MSTR
+zSortlun_MSTR -- Needs zvUP_NUM	{#insert zSpUP_numMSTR}{#insert zSortDialogPauseConfirm}	zSortlun_MSTR
+zSortrld_MSTR -- zSortldn_MSTR, right	{#insert zSortldn_MSTR}{#insert zRIGHT}	zSortrld_MSTR
+zSortldn_MSTR -- Needs zvDOWN_NUM	{#insert zSpDOWN_numMSTR}{#insert zSortDialogPauseConfirm}	zSortldn_MSTR
+zzInpHowManyLines	{#input -head How many lines? -single}	zzInpHowManyLines

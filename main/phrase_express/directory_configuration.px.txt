@@ -1,0 +1,9 @@
+zXPROOT_DIR_AG_peBuildMinv	{#insert zROOT_DIR_XBNPE_AG}{#insert zzXPSUB_DIR_peBuildMinv}	zXPROOT_DIR_AG_peBuildMinv
+zXPROOT_DIR_AG_peMinv	{#insert zROOT_DIR_XBNPE_AG}{#insert zzXPSUB_DIR_peMinv}	zXPROOT_DIR_AG_peMinv
+zXPROOT_DIR_AG_phraseExpress	{#insert zROOT_DIR_XBNPE_AG}{#insert zzXPSUB_DIR_phraseExpress}	zXPROOT_DIR_AG_phraseExpress
+zXPROOT_DIR_peBuildMinv	{#insert zROOT_DIR_XBNPE_MAIN}{#insert zzXPSUB_DIR_peBuildMinv}	zXPROOT_DIR_peBuildMinv
+zXPROOT_DIR_peMinv	{#insert zROOT_DIR_XBNPE_MAIN}{#insert zzXPSUB_DIR_peMinv}	zXPROOT_DIR_peMinv
+zXPROOT_DIR_phraseExpress	{#insert zROOT_DIR_XBNPE_MAIN}{#insert zzXPSUB_DIR_phraseExpress}	zXPROOT_DIR_phraseExpress
+zzXPSUB_DIR_peBuildMinv	{#insert zzXPSUB_DIR_phraseExpress}build_minv\	zzXPSUB_DIR_peBuildMinv
+zzXPSUB_DIR_peMinv	{#insert zzXPSUB_DIR_phraseExpress}minv\	zzXPSUB_DIR_peMinv
+zzXPSUB_DIR_phraseExpress	phrase_express\	zzXPSUB_DIR_phraseExpress

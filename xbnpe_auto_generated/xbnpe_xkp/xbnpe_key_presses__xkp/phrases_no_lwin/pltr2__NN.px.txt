@@ -1,0 +1,8 @@
+NN -- zNN	{#NONE -chars n}{#insert zTSlp}	zNN
+Alt+NN -- zApNN	{#ALT -chars n}{#insert zTSlp}	zApNN
+Alt+Shift+NN -- zASpNN	{#ALT {#SHIFT -chars n}}{#insert zTSlp}	zASpNN
+Ctrl+NN -- zCpNN	{#CTRL -chars n}{#insert zTSlp}	zCpNN
+Ctrl+Alt+NN -- zCApNN	{#CTRL {#ALT -chars n}}{#insert zTSlp}	zCApNN
+Ctrl+Alt+Shift+NN -- zCASpNN	{#CTRL {#ALT {#SHIFT -chars n}}}{#insert zTSlp}	zCASpNN
+Ctrl+Shift+NN -- zCSpNN	{#CTRL {#SHIFT -chars n}}{#insert zTSlp}	zCSpNN
+Shift+NN -- zSpNN	{#SHIFT -chars n}{#insert zTSlp}	zSpNN

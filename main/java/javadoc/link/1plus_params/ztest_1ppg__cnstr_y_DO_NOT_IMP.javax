@@ -1,0 +1,42 @@
+/**
+	<P>ZZZ</P>
+ **/
+public class MyClass extends AnotherClass  {
+
+	//&quot;../&quot; is entered for all directory prompts
+	Select and delete XXX, then run the macro. zzjlCkgpyTest
+
+		ckpry
+			<A HREF="../AnotherClass.html#AnotherClass(_4FQP_NumberBound, _4FQP_NumberBound)">XXX</A>
+			(NumberBound<N> nb_min, NumberBound<N> nb_max)XXX
+		ckpryn
+			<A HREF="../AnotherClass.html#AnotherClass(_4FQP_NumberBound, _4FQP_NumberBound)">constructor</A>
+			(NumberBound<N> nb_min, NumberBound<N> nb_max)XXX
+		ckpy
+			<A HREF="MyClass.html#MyClass(_4FQP_NumberBound, _4FQP_NumberBound)">XXX</A>
+			(NumberBound<N> nb_min, NumberBound<N> nb_max)XXX
+		ckpyn
+			<A HREF="MyClass.html#MyClass(_4FQP_NumberBound, _4FQP_NumberBound)">constructor</A>
+			(NumberBound<N> nb_min, NumberBound<N> nb_max)XXX
+		ckgdby ["../" in clipboard]
+			<A HREF="../NumberInRange.html#NumberInRange(_4FQP_NumberBound, _4FQP_NumberBound)">XXX</A>
+			NumberInRange(NumberBound<N> nb_min, NumberBound<N> nb_max)XXX
+		ckgdbyn ["../" in clipboard
+			<A HREF="../NumberInRange.html#NumberInRange(_4FQP_NumberBound, _4FQP_NumberBound)">constructor</A>
+			NumberInRange(NumberBound<N> nb_min, NumberBound<N> nb_max)XXX
+		ckgdy
+			<A HREF="../NumberInRange.html#NumberInRange(_4FQP_NumberBound, _4FQP_NumberBound)">XXX</A>
+			NumberInRange(NumberBound<N> nb_min, NumberBound<N> nb_max)XXX
+		ckgdyb ["the constructor" in clipboard]
+			<A HREF="../NumberInRange.html#NumberInRange(_4FQP_NumberBound, _4FQP_NumberBound)">XXX</A>
+			NumberInRange(NumberBound<N> nb_min, NumberBound<N> nb_max)XXX
+		ckgdyn
+			<A HREF="../NumberInRange.html#NumberInRange(_4FQP_NumberBound, _4FQP_NumberBound)">constructor</A>
+			NumberInRange(NumberBound<N> nb_min, NumberBound<N> nb_max)XXX
+		ckgyb ["the constructor" in clipboard]
+			<A HREF="NumberInRange.html#NumberInRange(_4FQP_NumberBound, _4FQP_NumberBound)">the constructor</A>
+			NumberInRange(NumberBound<N> nb_min, NumberBound<N> nb_max)XXX
+		ckgyn
+			<A HREF="NumberInRange.html#NumberInRange(_4FQP_NumberBound, _4FQP_NumberBound)">constructor</A>
+			NumberInRange(NumberBound<N> nb_min, NumberBound<N> nb_max)XXX
+

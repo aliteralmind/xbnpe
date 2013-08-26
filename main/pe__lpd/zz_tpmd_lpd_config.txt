@@ -1,0 +1,46 @@
+OUTPUT_FILE_DIR=R:\jeffy\programming\sandbox\macros\xbnpe_auto_generated\phrase_express\lpd_example_project_tpmd
+PROJECT_ABRV_1C=Tpmd
+DATA_TYPE_ABRV_1C=
+
+(*LPD CV-TYPE: PRIVATE KEY*)
+Pnv1
+PhrsNmAbrv1C
+zvPHRS_NM_ABRV_1C
+__VALUE_NOT_VLDTD__
+The unique_identifier that distinguishes the phrase_names of the configuration_variables for each TextPad macro. Recommended to be an abbreviated version of the public_key.
+
+(*LPD CV-TYPE: PUBLIC KEY*)
+Mcrv1
+MacroAbrv1C
+zvMACRO_ABRV_1C
+__VALUE_NOT_VLDTD__
+The unique_identifier for a macro's configuration_variables, which is used and seen by your users. Should be moderatly verbose and easy to remember.
+
+(*ALL LPD NON-KEY CV-TYPES BELOW THIS LINE*)
+
+(**)
+Livt
+LivePNPostTC
+zvLIVE_PN_POST_TC
+__VALUE_PRINTABLE__
+__LLI_REQUIRED__
+zzValidateLivt_M_self
+The postfix of the name of the phrase that triggers the actual macro in TextPad. This is the phrase called by other phrases.
+
+(**)
+Kc
+KeyCommand
+zvKEY_COMMAND
+__VALUE_NOT_PRINTABLE__
+__LLI_REQUIRED__
+__VALUE_NOT_VLDTD__
+The key_command, as configured in TextPad > Preferences > Keyboard > Macros. Must be QUADRUPLY=escaped==as in '{#insert zOYa}#CTRL {#insert zOYa}#HOME{#insert zCY2x}'. If the macro takes a particularly long time to execute, then add some {#insert zOYw}#sleep...{#insert zCYw} after triggering the key command.
+
+(**)
+Stps
+Steps
+zvMACRO_STEPS
+__VALUE_NOT_PRINTABLE__
+__LLI_REQUIRED__
+__VALUE_NOT_VLDTD__
+The explicit steps necessary to RECORD this macro. When the current installation of PhraseExpress has no access to TextPad (or the macro is not yet installed/recorded), then these steps can be called as an alternative (instead of calling zvKEY_COMMAND).

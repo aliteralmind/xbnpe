@@ -1,0 +1,8 @@
+Alt+LWin+BREAK -- zALpBREAK	{#ALT {#LWIN {#BREAK}}}{#insert zTSlp}	zALpBREAK
+Alt+Shift+LWin+BREAK -- zASLpBREAK	{#ALT {#SHIFT {#LWIN {#BREAK}}}}{#insert zTSlp}	zASLpBREAK
+Ctrl+Alt+LWin+BREAK -- zCALpBREAK	{#CTRL {#ALT {#LWIN {#BREAK}}}}{#insert zTSlp}	zCALpBREAK
+Ctrl+Alt+Shift+LWin+BREAK -- zCASLpBREAK	{#CTRL {#ALT {#SHIFT {#LWIN {#BREAK}}}}}{#insert zTSlp}	zCASLpBREAK
+Ctrl+LWin+BREAK -- zCLpBREAK	{#CTRL {#LWIN {#BREAK}}}{#insert zTSlp}	zCLpBREAK
+Ctrl+Shift+LWin+BREAK -- zCSLpBREAK	{#CTRL {#SHIFT {#LWIN {#BREAK}}}}{#insert zTSlp}	zCSLpBREAK
+LWin+BREAK -- zLpBREAK	{#LWIN {#BREAK}}{#insert zTSlp}	zLpBREAK
+Shift+LWin+BREAK -- zSLpBREAK	{#SHIFT {#LWIN {#BREAK}}}{#insert zTSlp}	zSLpBREAK

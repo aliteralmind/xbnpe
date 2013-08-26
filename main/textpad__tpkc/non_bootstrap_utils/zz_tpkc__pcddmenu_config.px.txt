@@ -1,0 +1,12 @@
+_DO NOT TOUCH this folder or any of its phrases...	Required by phrase-creator-ddmenu-utils		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+zzAllFilePrefixesInDDMenuDirQbl_tpkc	[{#insert zzPmdmFNmPreTpkcCwlpdf}][{#insert zzPmdmFNmPreTpkcFind}][{#insert zzPmdmFNmPreTpkcOther}][{#insert zzPmdmFNmPreTpkcPex}][{#insert zzPmdmFNmPreTpkcRplc}][{#insert zzPmdmFNmPreTpkcSnrOthr}][{#insert zzPmdmFNmPreTpkcTextpad}][{#insert zzPmdmFNmPreTpkcXkpProject}][{#insert zzPmdmFNmPreTpkcXpnpeBase}]	zzAllFilePrefixesInDDMenuDirQbl_tpkc
+zzDDMenuDir_tpkc	{#insert zXPROOT_DIR_tpkc}non_bootstrap_utils\z_phrase_creator_ddmenus\	zzDDMenuDir_tpkc
+zzPmdmFNmPreTpkcCwlpdf	tpkc_btstrp__cwlpdf__pcddmenu	zzPmdmFNmPreTpkcCwlpdf
+zzPmdmFNmPreTpkcFind	tpkc_btstrp__snr__find__pcddmenu	zzPmdmFNmPreTpkcFind
+zzPmdmFNmPreTpkcOther	tpkc_btstrp__other__pcddmenu	zzPmdmFNmPreTpkcOther
+zzPmdmFNmPreTpkcPex	tpkc_btstrp__pe__pcddmenu	zzPmdmFNmPreTpkcPex
+zzPmdmFNmPreTpkcRplc	tpkc_btstrp__snr__rplc__pcddmenu	zzPmdmFNmPreTpkcRplc
+zzPmdmFNmPreTpkcSnrOthr	tpkc_btstrp__snr__other__pcddmenu	zzPmdmFNmPreTpkcSnrOthr
+zzPmdmFNmPreTpkcTextpad	textpad__prefs_tpkc__pcddmenu	zzPmdmFNmPreTpkcTextpad
+zzPmdmFNmPreTpkcXkpProject	xkp__pcddmenu	zzPmdmFNmPreTpkcXkpProject
+zzPmdmFNmPreTpkcXpnpeBase	xbnpe_base__pcddmenu	zzPmdmFNmPreTpkcXpnpeBase

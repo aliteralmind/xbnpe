@@ -1,0 +1,2 @@
+zImportPW1of2 -- import prev word START	{#insert zFindDlgOpenClose}{#insert zCopyL1w}{#insert zVmark}{#insert zjGTLineAfterPkg}{#insert zENTER}{#insert zUP}{#insert zTAB}import  (*ends with space*)	zImportPW1of2
+zImportPW2of2 [RSTCB] -- import selected END	{#insert zTPPaste};{#insert zVDownDelete}{#insert zRestoreSrchTrmCBOpenClose}	zImportPW2of2

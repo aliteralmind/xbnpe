@@ -1,0 +1,18 @@
+jdfb -- jdf, bolded	<B><CODE>false</CODE></B>	jdfb
+jdnb -- jdn, bolded	<B><CODE>null</CODE></B>	jdnb
+jdn1b -- jdn1, bolded	<B><CODE>-1</CODE></B>	jdn1b
+jdtb -- jdt, bolded	<B><CODE>true</CODE></B>	jdtb
+jdf -- <CODE>false</CODE>	<CODE>false</CODE>	jdf
+jdn -- <CODE>null</CODE>	<CODE>null</CODE>	jdn
+jdnn -- non-<CODE>null</CODE>	non-<CODE>null</CODE>	jdnn
+jdn1 -- <CODE>-1</CODE>	<CODE>-1</CODE>	jdn1
+jdrtb -- <B>returns</B>	<B>returns</B> jdrtb
+jdt -- <CODE>true</CODE>	<CODE>true</CODE>	jdt
+jdnl	{#insert zzJdnlRAW}{#insert zYThenSelect}	jdnl
+jdnlc	{#insert zzJdnlRAW}{#insert hhc}	jdnlc
+jdnlb	{#insert zzJdnlRAW}{#insert zzEnterBrY}{#insert zYUp}	jdnlb
+jdnlcb	{#insert zzJdnlRAW}<CODE>{#insert zYmark}</CODE>{#insert zzEnterBrY}{#insert zYUp}	jdnlcb
+zzJdnlRAW	{#insert zENTER}<BR> &nbsp; &nbsp; (*ends with space*)	zzJdnlRAW
+zzEnterBrY	{#insert zENTER}<BR>{#insert zYmark}	zzEnterBrY
+hhis <I>Should</I>	<I>Should</I> (*ends with space*)	hhis
+hhisl <I>Should</I>	<I>should</I> (*ends with space*)	hhisl

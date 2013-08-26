@@ -1,0 +1,362 @@
+<HTML><HEAD>
+	<TITLE>XBNPE-XKP: XBN-Key Presses</TITLE>
+	<meta name="viewport" content="width=device-width" />
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF"><a name="top"></a>
+
+<P>[<A HREF="index.html">BACK</A>]</CODE></P>
+
+<HR/>
+
+<H1>XBNPE-Key-Press (XKP) project</H2>
+
+<P>An XBNPE-key-press (XKP) is a wrapper for a normal PhraseExpress key-press. An &quot;xbn-key-press&quot; or &quot;x-key-press&quot; provides for code that is both easier to read, and can be easily debugged by changing its <A HREF="phrase_express/debugging.html#keypressspeed">execution speed</A> at any time. Since the <A HREF="z_non_xbnpe_docs/pex_enhancement_requests.html#wishinscount"><CODE>'insert'</CODE> tag does not allow for the <CODE>'-count'</CODE> parameter</A>, the XKP project only provides for individual key-presses (<CODE>zUP</CODE> and not <CODE>zUP3</CODE>).</P>
+
+<P>An x-key-presses can be modified in any manner, using <CODE>'CTRL'</CODE>, <CODE>'ALT'</CODE>, <CODE>'SHIFT'</CODE>, and, optionally <CODE>'LWIN'</CODE> or <CODE>'RWIN'</CODE>. For example:
+<BR> &nbsp; &nbsp; <CODE>zCSpUP</CODE>
+<BR>which is equivalent to
+<BR> &nbsp; &nbsp; <CODE>{#CTRL {#SHIFT {#UP}}}{#insert zTSlp}</CODE></P>
+
+<P>For a listing of all available keys, see <CODE>'<A HREF="xbnpe_ddmenus.html#xh">xh</A>cckp'</CODE>. For administrator (build) related processes for XKP project, see <CODE>'xhcck'</CODE>.</P>
+
+<P><B>Contents:</B><UL>
+	<LI><CODE>[<A HREF="#zup">go</A>]</CODE> &nbsp; Detailed example: <CODE>zUP</CODE></LI>
+	<LI><CODE>[<A HREF="#build">go</A>]</CODE> &nbsp; XKP build process</LI>
+	<LI><CODE>[<A HREF="#tpbs">go</A>]</CODE> &nbsp; TextPad-bootstraps required by the XBNPE-XKP project</LI>
+</UL></P>
+<PRE>
+
+<P>Phrase-creator drop-down-menu</P>
+
+<P><B>Source (indented):</B>
+<BR> &nbsp; &nbsp; <CODE><CODE STYLE="background-color:#E1E1E1;">../../textpad__tpkc/non_bootstrap_utils/z_phrase_creator_ddmenus/xkp__pcddmenu.txt</CODE></CODE>
+<BR><B>Output (unindented):</B>
+<BR> &nbsp; &nbsp; <CODE><CODE STYLE="background-color:#E1E1E1;">../../textpad__tpkc/non_bootstrap_utils/z_phrase_creator_ddmenus/z_temp_folder_for_unindenting_ddmenus/xkp__pcddmenu.px.txt</CODE></CODE></P>
+
+<HR/>
+
+</PRE>
+
+<A NAME="zup"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; XBNPE-Key-Presses: Detailed example: <CODE>zUP</CODE></H2>
+
+<P>This document describes a single x-key-press, <CODE>zUP</CODE>, in detail. For all available x-key-presses, see<CODE>'<A HREF="xbnpe_ddmenus.html#xh">xh</A>okpk'</CODE>.</P>
+
+<A NAME="0mods"/><H2><CODE>[<A HREF="#zup">back</A>]</CODE> &nbsp; <CODE>[PREV, <A HREF="#1mod">NEXT</A>]</CODE> &nbsp; XKP: No modifiers: <CODE>zUP</CODE></H2>
+
+<P><TABLE ALIGN="center" BORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#EEEEEE"><TR ALIGN="center" VALIGN="middle">
+	<TD><B><U>X-Key-Press</U></B></TD>
+	<TD><B><U>Equivalent to</U> the &quot;raw&quot;
+	<BR>PhraseExpress key-press</B></TD>
+	<TD><B><U>Example <I>raw</I>-key-press
+	<BR><A HREF="phrase_express/phrase_creators_pcc.html#keypress">phrase-creators</A></U></B></TD>
+</TR><TR ALIGN="center">
+	<TD><B><CODE>zUP</CODE></B></TD>
+	<TD><CODE>{#UP}{#insert zTSlp}</CODE></TD>
+	<TD><CODE>krk</CODE>, <CODE>'UP'</CODE>
+	<BR><I>Or</I> &nbsp;<CODE>lur</CODE></TD>
+</TR></TABLE></P>
+
+<P><I>(Note that these example phrase-creators are for printing the <I><B>raw</B></I> key-press, not the x-key-press, nor the following <CODE>'zTSlp'</CODE>.)</I></P>
+
+<H2><CODE><U>zTSlp</U></CODE></H2>
+
+<P>The only difference between an x-key-presss and a default PhraseExpress key-press, is the call to <CODE>zTSlp</CODE> that ends each x-key-press. This call is what enables you to <A HREF="phrase_express/debugging.html#keypressspeed">slow down</A> <I>all</I> XBN-PhraseExpress code, on demand, for diagnostic or demonstration purposes. In normal circumstances, this <CODE>zTSlp</CODE> phrase <I>does not exist</I>, and therefore its overhead is minimal.</P>
+
+<P><I>(This <CODE>zTSlp</CODE> phrase is more like a <A HREF="xbnpe_phrase_types.html#variable">variable</A> phrase-type than a <A HREF="xbnpe_phrase_types.html#command">command</A>, in that it is only dynamically-created, and when it does exist, it resides in the <CODE>'cctv_folder'</CODE>-autotexted folder, and also that it is destroyed every time <CODE>zKeyPressFast</CODE> is called [by setting its value--its <CODE>'-content'</CODE> parameter to <B>nothing</B>]. However, its name and <B>purpose</B> is more like a command than a variable: Where a command normally <U>does something</U>, a variable is normally just a holder for a discrete and static string.)</I></P>
+
+<A NAME="1mod"/><H2><CODE>[<A HREF="#zup">back</A>]</CODE> &nbsp; <CODE>[<A HREF="#zup">PREV</A>, <A HREF="#2mods">NEXT</A>]</CODE> &nbsp; XKP: One modifier: <CODE>z?pUP</CODE></H2>
+
+<P><TABLE ALIGN="center" BORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#EEEEEE"><TR ALIGN="center" VALIGN="middle">
+	<TD><B><U>X-Key-Press</U></B></TD>
+	<TD><B><U>Equivalent to</U></B></TD>
+	<TD><B><U>Example <I>raw</I>-key-press
+	<BR><A HREF="phrase_express/phrase_creators_pcc.html#keypress">phrase-creators</A></U></B></TD>
+</TR><TR ALIGN="center">
+	<TD><B><CODE>zCpUP</CODE></B></TD>
+	<TD><CODE>{#CTRL {#UP}}{#insert zTSlp}</CODE></TD>
+	<TD><CODE>krkc</CODE>, <CODE>'UP'</CODE>
+	<BR><I>Or, with <CODE>'{#UP}'</CODE> in the clipboard: <CODE>krxc</CODE>, paste</I></TD>
+</TR><TR ALIGN="center">
+	<TD><B><CODE>zApUP</CODE></B></TD>
+	<TD><CODE>{#ALT {#UP}}{#insert zTSlp}</CODE></TD>
+	<TD><CODE>krka</CODE>, <CODE>'UP'</CODE></TD>
+</TR><TR ALIGN="center">
+	<TD><B><CODE>zSpUP</CODE></B></TD>
+	<TD><CODE>{#SHIFT {#UP}}{#insert zTSlp}</CODE></TD>
+	<TD><CODE>krks</CODE>, <CODE>'UP'</CODE></TD>
+</TR><TR ALIGN="center">
+	<TD><B><CODE>zLpUP</CODE></B></TD>
+	<TD><CODE>{#LWIN {#UP}}{#insert zTSlp}</CODE></TD>
+	<TD><CODE>krkl</CODE>, <CODE>'UP'</CODE></TD>
+</TR></TABLE></P>
+
+<H4><U><CODE>LWIN</CODE> modifiers are disabled by default</U></H4>
+
+<P>All <CODE>LWIN</CODE> modifiers are unavailable by default. To optionally enable them, right click on
+<BR> &nbsp; &nbsp; <CODE>XBN-PhraseExpress/XBNPE Key-presses (XKP) & basic utilities/XBNPE Key-presses (XKP)/x-key-presses: *Only* LWin modifiers</CODE>
+<BR>and check
+<BR> &nbsp; &nbsp; <B>Enable Autotext/Hotkeys</B>
+<BR>(as shown in the below screenshot). If <CODE>RWIN</CODE> modifiers are needed, follow <A HREF="#rwininstall">these steps</A>. <I>When <CODE>'LWIN'</CODE> (and/or <CODE>'RWIN'</CODE>) modifiers are <B>not</B> needed, this branch--which contains more than 700 phrases--should be disabled.</I></P>
+
+<P><IMG SRC="images/enable_lwin.jpg" BORDER="1"/></P>
+
+<a name="2mods"/><H2><CODE>[<A HREF="#zup">back</A>]</CODE> &nbsp; <CODE>[<A HREF="#1mod">PREV</A>, <A HREF="#3and4mods">NEXT</A>]</CODE> &nbsp; XKP: Two modifiers: <CODE>z??pUP</CODE></H2>
+
+<P><TABLE ALIGN="center" BORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#EEEEEE"><TR ALIGN="center" VALIGN="middle">
+	<TD><B><U>X-Key-Press</U></B></TD>
+	<TD><B><U>Equivalent to</U></B></TD>
+	<TD><B><U>Example <I>raw</I>-key-press
+	<BR><A HREF="phrase_express/phrase_creators_pcc.html#keypress">phrase-creators</A></U></B></TD>
+</TR><TR ALIGN="center">
+	<TD><B><CODE>zCApUP</CODE></B></TD>
+	<TD><CODE>{#CTRL {#ALT {#UP}}}{#insert zTSlp}</CODE></TD>
+	<TD><CODE>krkca</CODE>, <CODE>'UP'</CODE>
+	<BR><I>Or, with <CODE>'{#UP}'</CODE> in the clipboard: <CODE>krxca</CODE>, paste</I></TD>
+</TR><TR ALIGN="center">
+	<TD><B><CODE>zCSpUP</CODE></B></TD>
+	<TD><CODE>{#CTRL {#SHIFT {#UP}}}{#insert zTSlp}</CODE></TD>
+	<TD><CODE>krkcs</CODE>, <CODE>'UP'</CODE></TD>
+</TR><TR ALIGN="center">
+	<TD><B><CODE>zCLpUP</CODE></B></TD>
+	<TD><CODE>{#CTRL {#LWIN {#UP}}}{#insert zTSlp}</CODE></TD>
+	<TD><CODE>krkcl</CODE>, <CODE>'UP'</CODE></TD>
+</TR><TR ALIGN="center">
+	<TD><B><CODE>zASpUP</CODE></B></TD>
+	<TD><CODE>{#ALT {#SHIFT {#UP}}}{#insert zTSlp}</CODE></TD>
+	<TD><CODE>krkas</CODE>, <CODE>'UP'</CODE></TD>
+</TR><TR ALIGN="center">
+	<TD><B><CODE>zALpUP</CODE></B></TD>
+	<TD><CODE>{#ALT {#LWIN {#UP}}}{#insert zTSlp}</CODE></TD>
+	<TD><CODE>krkal</CODE>, <CODE>'UP'</CODE></TD>
+</TR><TR ALIGN="center">
+	<TD><B><CODE>zSLpUP</CODE></B></TD>
+	<TD><CODE>{#SHIFT {#LWIN {#UP}}}{#insert zTSlp}</CODE></TD>
+	<TD><CODE>krksl</CODE>, <CODE>'UP'</CODE></TD>
+</TR></TABLE></P>
+
+<H4>Ordering is required</H4>
+
+<P>When modifiers are used, they must be in order:<OL>
+	<LI><B><CODE>CTRL</CODE>:</B> <CODE>'C'</CODE></LI>
+	<LI><B><CODE>ALT</CODE>:</B> <CODE>'A'</CODE></LI>
+	<LI><B><CODE>SHIFT</CODE>:</B> <CODE>'S'</CODE></LI>
+	<LI><B><CODE>LWIN</CODE>:</B> <CODE>'L'</CODE></LI>
+</OL></P>
+
+<a name="3and4mods"/><H2><CODE>[<A HREF="#zup">back</A>]</CODE> &nbsp; <CODE>[<A HREF="#2mods">PREV</A>, NEXT]</CODE> &nbsp; XKP: Three & four modifiers: <CODE>z???pUP</CODE></H2>
+
+<P><TABLE ALIGN="center" BORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#EEEEEE"><TR ALIGN="center" VALIGN="middle">
+	<TD><B><U>X-Key-Press</U></B></TD>
+	<TD><B><U>Equivalent to</U></B></TD>
+	<TD><B><U>Example <I>raw</I>-key-press
+	<BR><A HREF="phrase_express/phrase_creators_pcc.html#keypress">phrase-creators</A></U></B></TD>
+</TR><TR ALIGN="center">
+	<TD><B><CODE>zCASpUP</CODE></B></TD>
+	<TD><CODE>{#CTRL {#ALT {#SHIFT {#UP}}}}{#insert zTSlp}</CODE></TD>
+	<TD><CODE>krkcas</CODE>, <CODE>'UP'</CODE>
+	<BR><I>Or, with <CODE>'{#UP}'</CODE> in the clipboard: <CODE>krxcas</CODE>, paste</I></TD>
+</TR><TR ALIGN="center">
+	<TD><B><CODE>zCALpUP</CODE></B></TD>
+	<TD><CODE>{#CTRL {#ALT {#LWIN {#UP}}}}{#insert zTSlp}</CODE></TD>
+	<TD><CODE>krkcal</CODE>, <CODE>'UP'</CODE></TD>
+</TR><TR ALIGN="center">
+	<TD><B><CODE>zCSLpUP</CODE></B></TD>
+	<TD><CODE>{#CTRL {#SHIFT {#LWIN {#UP}}}}{#insert zTSlp}</CODE></TD>
+	<TD><CODE>krkcsl</CODE>, <CODE>'UP'</CODE></TD>
+</TR><TR ALIGN="center">
+	<TD><B><CODE>zASLpUP</CODE></B></TD>
+	<TD><CODE>{#ALT {#SHIFT {#LWIN {#UP}}}}{#insert zTSlp}</CODE></TD>
+	<TD><CODE>krkasl</CODE>, <CODE>'UP'</CODE></TD>
+</TR><TR ALIGN="center">
+	<TD><B><CODE>zCASLpUP</CODE></B></TD>
+	<TD><CODE>{#CTRL {#ALT {#SHIFT {#LWIN {#UP}}}}}{#insert zTSlp}</CODE></TD>
+	<TD><CODE>krkcasl</CODE>, <CODE>'UP'</CODE></TD>
+</TR></TABLE></P>
+
+
+<a name=""/>
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="rwininstall"/><H2>[<A HREF="#top">top</A>] &nbsp; XBNPE-Key-Presses: Installing <CODE>'RWIN'</CODE> modifiers</H2>
+
+<P>By default, <CODE>'LWIN'</CODE> modifiers are <A HREF="#1mod">installed-but-disabled</A>. <CODE>'RWIN'</CODE> modifiers are not installed. To install them, follow these steps:<OL>
+	<LI>Duplicate the entire <CODE>LWIN</CODE> branch, by right-clicking on
+		<BR> &nbsp; &nbsp; <CODE>XBN-PhraseExpress/XBNPE Key-presses (XKP) & basic utilities/XBNPE Key-presses (XKP)/x-key-presses: *Only* LWin modifiers</CODE>
+		<BR>and selecting <CODE>'Duplicate'</CODE>.</LI>
+	<LI>Make the following replacements on the new branch:<OL>
+		<LI><CODE>'LWIN'</CODE> <CODE>--&gt;</CODE> <CODE>'RWIN'</CODE>,</LI>
+		<LI><CODE>'Lwin'</CODE> <CODE>--&gt;</CODE> <CODE>'Rwin'</CODE>, and</LI>
+		<LI><CODE>'Lp'</CODE> <CODE>--&gt;</CODE> <CODE>'Rp'</CODE>.</LI>
+	</OL>Replacement settings:<UL>
+		<LI><B>Fields checked:</B> Description, phrase-body, autotext. (Not hotkey)</LI>
+		<LI><B>Other checked settings:</B> Match case, Include sub-folders.</LI>
+	</UL></LI>
+	<LI>Enable the new branch if necessary.</LI>
+</OL></P>
+
+<P>To reiterate, there are more than 700 phrases in this (new) branch. For efficiency, it should be disabled unless needed.</P>
+
+<P><I><B>Warning</B>: The <A HREF="phrase_express/phrase_creators_pcc.html#keypress">key-press phrase-creators</A> in the PCC project do not recognize the RWIN modifier.</I></P>
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="build"/><H2>[<A HREF="#top">top</A>] &nbsp; XKP build process</H2>
+
+<H2><CODE>buildxkp</CODE></H2>
+
+<P><I>Equivalent to <CODE>zBuildAllXKPPhrasesWTypePromptActual</CODE></I></P>
+
+<P>Builds the entire XKP-project. This is a &quot;live&quot; build of all keys. Its output must be imported into PhraseExpress, replacing any and all phrases existing in
+<BR> &nbsp; &nbsp; <CODE>XBN-PhraseExpress/XBNPE Key-presses (XKP) & basic utilities/XBNPE Key-presses (XKP)/x-key-presses: *No* LWin modifiers</CODE>
+<BR>and, if <CODE>LWIN</CODE> modifiers are selected,
+<BR> &nbsp; &nbsp; <CODE>XBN-PhraseExpress/XBNPE Key-presses (XKP) & basic utilities/XBNPE Key-presses (XKP)/x-key-presses: *Only* LWin modifiers</CODE></P>
+
+<P>Before running this, it is expected that all files are deleted from
+<BR> &nbsp; &nbsp; <CODE>zXPROOT_DIR_AG_xkpOutputRoot</CODE>
+<BR>and all its sub-directories (do not delete any directories).</P>
+
+<P>At the beginning of this process, you are asked if <CODE>LWIN</CODE> modifiers should also be built.</P>
+
+<H2><CODE>buildxkptest</CODE></H2>
+
+<P><I>Equivalent to <CODE>zBuildAllXKPPhrasesWTypePromptTestOnly</CODE></I></P>
+
+<P>The same as &quot;live&quot;, with only two characters built per &quot;category&quot; (two numbers, two letters, etc.). Use this for diagnostics and demonstration of the build process.</P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="tpbs"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; XBNPE-Key-Presses: Required TextPad-bootstraps</H2>
+
+<P>The XKP project--and therefore the entirety of XBN-PhraseExpress--requires the following <A HREF="pex_in_textpad.html#tpbs">TextPad-bootstraps</A> to exist before installation.</P>
+
+<P><UL>
+	<LI><B>Testing function</B> <I>(accessible via <CODE><A HREF="xbnpe_ddmenus.html#xh">xh</A>cck</CODE>)</I><UL>
+		<LI><U>Command:</U> <CODE>zTestAllXKPTextPadBootstraps</CODE></LI>
+		<LI><U>Action:</U> <CODE>testtpbsxkp</CODE></LI>
+	</UL></LI>
+	<LI><B><A HREF="plain_text_phrase_files.html#fformat">Phrase-file</A> locations:</B><UL>
+		<LI><U><A HREF="pex_in_textpad.html#tpbs2files">On disk</A>:</U><UL>
+			<LI><B>Directory</B>
+			<BR> &nbsp; &nbsp; <CODE>{#insert zXPROOT_DIR_xbnpeXkp}xkp_bootstrap_phrases\xkp_btstrp__textpad__built_in_cmds\</CODE></LI>
+<!-- Originates in xbnpe_key_presses__xkp.html#tpbs...START-->
+			<LI><A HREF="pex_in_textpad.html#tpbsmain">Main</A> phrase-file:
+			<BR> &nbsp; &nbsp; <CODE>tp_bootstraps_for_xkp_project.px.txt</CODE></LI>
+			<LI>The &quot;non-main&quot; phrase-file (containing the <A HREF="pex_in_textpad.html#tpbsmain">Escaped</A> and <A HREF="pex_in_textpad.html#tpbstpkey">TextPad-key-press</A> phrases):
+				<BR> &nbsp; &nbsp; <CODE>tp_bootstraps_for_xkp_project_esc_tpk.px.txt</CODE></LI>
+<!-- Originates in xbnpe_key_presses__xkp.html#tpbs...END-->
+		</UL></LI>
+		<LI><U>PhraseExpress folder to <A HREF="plain_text_phrase_files.html#import1">import</A> into:</U>
+		<PRE>XBN-PhraseExpress &gt;
+   XBNPE Key-presses (XKP) & basic utilities &gt;
+      XKP bootstrap phrases (1MC) &gt;
+         TextPad-bootstraps: Built-in commands</PRE></LI>
+	</UL></LI>
+	<LI>The <A HREF="../xbnpe_xkp/xkp_bootstrap_phrases/xkp_btstrp__textpad__built_in_cmds/tp_bootstraps_for_xkp_project.px.txt">default tp-bootstrap phrase-file</A>, as used with a &quot;fresh&quot; TextPad install</LI>
+</UL></P>
+
+<P><TABLE ALIGN="center" WIDTH="100%" BORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#EEEEEE"><TR ALIGN="center" VALIGN="middle">
+	<TD><B><U>Phrase name</U></B></TD>
+	<TD><B><U>Built-in command name</U></B></TD>
+	<TD><B><U>Description</U></B></TD>
+</TR><TR>
+	<TD><CODE>zTPCopy</CODE></TD>
+	<TD><CODE>EditCopy</CODE></TD>
+	<TD>Duplicates the currently-selected text into the clipboard</TD>
+</TR><TR>
+	<TD><CODE>zTPCut</CODE></TD>
+	<TD><CODE>EditCut</CODE></TD>
+	<TD>Moves the currently-selected text</TD>
+</TR><TR>
+	<TD><CODE>zTPDupLine</CODE></TD>
+	<TD><CODE>EditDupLine</CODE></TD>
+	<TD>Duplicates the current line (does not copy)</TD>
+</TR><TR>
+	<TD><CODE>zTPFileClose</CODE></TD>
+	<TD><CODE>FileClose</CODE></TD>
+	<TD>Closes the current file. If unsaved, asks you to save or discard changes, or cancel the close process.</TD>
+</TR><TR>
+	<TD><CODE>zTPFileNew</CODE></TD>
+	<TD><CODE>FileNew</CODE></TD>
+	<TD>Opens a new document</TD>
+</TR><TR>
+	<TD><CODE>zTPFileSave</CODE></TD>
+	<TD><CODE>FileSave</CODE></TD>
+	<TD>Saves the current document. If unsaved, pops open the &quot;Open file(s)&quot; dialog.</TD>
+</TR><TR>
+	<TD><CODE>zTPGTDocTop</CODE></TD>
+	<TD><CODE>DocumentStart</CODE></TD>
+	<TD>Move the cursor to line one, column zero.</TD>
+</TR><TR>
+	<TD><CODE>zTPMoveR1w</CODE></TD>
+	<TD><CODE>WordRightEnd</CODE></TD>
+	<TD>Move the cursor to just after the final character of the non-whitespace word, closest to its right.</TD>
+</TR><TR>
+	<TD><CODE>zTPPaste</CODE></TD>
+	<TD><CODE>EditPaste</CODE></TD>
+	<TD>Write the value of the clipboard to the current document, replacing any selection.</TD>
+</TR><TR>
+	<TD><CODE>zTPSelectAll</CODE></TD>
+	<TD><CODE>SelectAll</CODE></TD>
+	<TD>Select all text in the document.</TD>
+</TR><TR>
+	<TD><CODE>zTPSelectL1w</CODE></TD>
+	<TD><CODE>WordLeftExtend</CODE></TD>
+	<TD>Increase the current selection so it includes the non-whitespace word closest to the left of the cursor/current-selection (there may be whitespace between the cursor/current-selection, and the left-word), through its first character.</TD>
+</TR><TR>
+	<TD><CODE>zTPSelectR1w</CODE></TD>
+	<TD><CODE>WordRightExtend</CODE></TD>
+	<TD>Increase the current selection so it includes the non-whitespace word closest to the right of the cursor/current-selection (there may be whitespace between the cursor/current-selection, and the right-word), through its final character.</TD>
+</TR><TR>
+	<TD><CODE>zTPToggleWW</CODE></TD>
+	<TD><CODE>ToggleWord</CODE></TD>
+	<TD>Toggle's &quot;word-wrap&quot; state.</TD>
+</TD>
+</TR></TABLE></P>
+
+
+
+<PRE>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</PRE>
+</BODY></HTML>
+
+
+

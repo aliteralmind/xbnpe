@@ -1,0 +1,7 @@
+zvCAT_ABRV_LC_uprCase1st	{#UPPERCASEFIRST {#insert zvCAT_ABRV_LC}}	zvCAT_ABRV_LC_uprCase1st
+zzTpkcCatAbrvLCNm_M_catml -- Needs zvCAT_NAME_LC	zTpkc{#UPPERCASEFIRST {#insert zvCAT_NAME_LC}}CatAbrvLC	zzTpkcCatAbrvLCNm_M_catml
+zzTpkcCatAbrvLCNm_M_catmlcb -- Needs Lowercase cat-naMe in ClipBoard	zTpkc{#UPPERCASEFIRST {#INSERTCLIPBOARD}}CatAbrvLC	zzTpkcCatAbrvLCNm_M_catmlcb
+zzTpkcCatAllCmdNamesTCQblNm_M_catl -- Needs zvCAT_ABRV_LC	zTpkc{#insert zvCAT_ABRV_LC_uprCase1st}AllCmdNamesTCQbl	zzTpkcCatAllCmdNamesTCQblNm_M_catl
+zzTpkcCatCmdCountNm_M_catl -- Needs zvCAT_ABRV_LC	zTpkc{#insert zvCAT_ABRV_LC_uprCase1st}CmdCount	zzTpkcCatCmdCountNm_M_catl
+zzTpkcCatHasUsrCrtdCmds_yesNm_M_catl -- Needs zvCAT_ABRV_LC	zTpkc{#insert zvCAT_ABRV_LC_uprCase1st}HasUsrCrtdCmds_yes	zzTpkcCatHasUsrCrtdCmds_yesNm_M_catl
+zzTpkcCatStpsFrmLstTopNm_M_catl -- Needs zvCAT_ABRV_LC	zTpkc{#insert zvCAT_ABRV_LC_uprCase1st}StpsFrmCatListTop	zzTpkcCatStpsFrmLstTopNm_M_catl

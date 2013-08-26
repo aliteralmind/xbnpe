@@ -1,0 +1,30 @@
+zTpkcActivateClipLibNbsKcCount	0	zTpkcActivateClipLibNbsKcCount
+zTpkcActivateDocumentNbsKcCount	0	zTpkcActivateDocumentNbsKcCount
+zTpkcActivateExplorerNbsKcCount	0	zTpkcActivateExplorerNbsKcCount
+zTpkcActivateSearchResultsNbsKcCount	1	zTpkcActivateSearchResultsNbsKcCount
+zTpkcActivateSearchResultsNbsKcEsc1	\\\{#insert zApFOUR\\\}\\\{#sleep 10\\\}	zTpkcActivateSearchResultsNbsKcEsc1
+zTpkcActivateSelectorNbsKcCount	0	zTpkcActivateSelectorNbsKcCount
+zTpkcActivateToolOutputNbsKcCount	1	zTpkcActivateToolOutputNbsKcCount
+zTpkcActivateToolOutputNbsKcEsc1	\\\{#insert zApFIVE\\\}\\\{#sleep 10\\\}	zTpkcActivateToolOutputNbsKcEsc1
+zTpkcStayOnTopNbsKcCount	0	zTpkcStayOnTopNbsKcCount
+zTpkcViewClipLibNbsKcCount	1	zTpkcViewClipLibNbsKcCount
+zTpkcViewClipLibNbsKcEsc1	\\\{#insert zCpF3\\\}\\\{#sleep 10\\\}	zTpkcViewClipLibNbsKcEsc1
+zTpkcViewDocSelectorNbsKcCount	0	zTpkcViewDocSelectorNbsKcCount
+zTpkcViewExplorerNbsKcCount	0	zTpkcViewExplorerNbsKcCount
+zTpkcViewFindDialogBoxNbsKcCount	0	zTpkcViewFindDialogBoxNbsKcCount
+zTpkcViewFullPathsNbsKcCount	0	zTpkcViewFullPathsNbsKcCount
+zTpkcViewFullScreenNbsKcCount	0	zTpkcViewFullScreenNbsKcCount
+zTpkcViewHScrollbarNbsKcCount	0	zTpkcViewHScrollbarNbsKcCount
+zTpkcViewInBrowserNbsKcCount	0	zTpkcViewInBrowserNbsKcCount
+zTpkcViewLineNumbersNbsKcCount	0	zTpkcViewLineNumbersNbsKcCount
+zTpkcViewPropertiesNbsKcCount	0	zTpkcViewPropertiesNbsKcCount
+zTpkcViewReplaceDialogBoxNbsKcCount	0	zTpkcViewReplaceDialogBoxNbsKcCount
+zTpkcViewSearchResultsNbsKcCount	1	zTpkcViewSearchResultsNbsKcCount
+zTpkcViewSearchResultsNbsKcEsc1	\\\{#insert zSpF11\\\}\\\{#sleep 10\\\}	zTpkcViewSearchResultsNbsKcEsc1
+zTpkcViewStatusBarNbsKcCount	0	zTpkcViewStatusBarNbsKcCount
+zTpkcViewTabSelectorNbsKcCount	0	zTpkcViewTabSelectorNbsKcCount
+zTpkcViewToolOutputNbsKcCount	1	zTpkcViewToolOutputNbsKcCount
+zTpkcViewToolOutputNbsKcEsc1	\\\{#insert zCpF11\\\}\\\{#sleep 10\\\}	zTpkcViewToolOutputNbsKcEsc1
+zTpkcViewVisibleSpacesNbsKcCount	1	zTpkcViewVisibleSpacesNbsKcCount
+zTpkcViewVisibleSpacesNbsKcEsc1	\\\{#insert zF9\\\}\\\{#sleep 25\\\}\\\{#insert zF8\\\}\\\{#sleep 10\\\}	zTpkcViewVisibleSpacesNbsKcEsc1
+zTpkcViewVScrollbarNbsKcCount	0	zTpkcViewVScrollbarNbsKcCount

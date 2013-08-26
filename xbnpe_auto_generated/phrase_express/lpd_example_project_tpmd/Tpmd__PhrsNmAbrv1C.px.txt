@@ -1,0 +1,13 @@
+__**WARNING**__: All phrases in this folder were created by 'plpdcf'. DO NOT EDIT.	.		(*Extra tab to allow for empty-string autotext*)
+zvPHRS_NM_ABRV_1C_sfKey	{#SETPHRASE -description zvPHRS_NM_ABRV_1C -content {#insert zzTpmdPnv1_cfgValue_M_key} -autotext zvPHRS_NM_ABRV_1C -folder ctvv_folder}	zvPHRS_NM_ABRV_1C_sfKey
+zzTpmdPnv1_cfgValue_M_key	{#insert {#insert zzTpmdPnv1_cfgVarPhrsName_M_key}}	zzTpmdPnv1_cfgValue_M_key
+zzTpmdPhrsNmAbrv1C_cvtFromAbrv1C	Pnv1	zzTpmdPhrsNmAbrv1C_cvtFromAbrv1C
+zzTpmdPnv1_cfgVarPNmPost	PhrsNmAbrv1C	zzTpmdPnv1_cfgVarPNmPost
+zzTpmdPnv1_intrnlVarNm	zvPHRS_NM_ABRV_1C	zzTpmdPnv1_intrnlVarNm
+zzTpmdPnv1_cfgVarPhrsName_M_key	zz{#insert zzTpmdProjectAbrv1C}{#insert zzTpmdDataTypeAbrv1C}{#insert zvMACRO_ABRV_1C}{#insert zzTpmdPnv1_cfgVarPNmPost}	zzTpmdPnv1_cfgVarPhrsName_M_key
+zzTpmdPnv1_helpForDlg	The unique_identifier that distinguishes the phrase_names of the configuration_variables for each TextPad macro. Recommended to be an abbreviated version of the public_key.	zzTpmdPnv1_helpForDlg
+zzTpmdPnv1_valuePrintable	yes	zzTpmdPnv1_valuePrintable
+zzTpmdPnv1_validateValuePhrsNm	__VALUE_NOT_VLDTD__	zzTpmdPnv1_validateValuePhrsNm
+zzTpmdPnv1_nkcvListNum	-2	zzTpmdPnv1_nkcvListNum
+zzTpmdPnv1_keyCVTFromAbrv1C	{#insert zzTpmdPubKeyCVTFromAbrv1C}	zzTpmdPnv1_keyCVTFromAbrv1C
+zvCVT_FRMV_1C_stTpmdPnv1	{#SETPHRASE -description zvCVT_FRMV_1C -content {#insert zzTpmdPhrsNmAbrv1C_cvtFromAbrv1C} -autotext zvCVT_FRMV_1C -folder ctvv_folder}	zvCVT_FRMV_1C_stTpmdPnv1

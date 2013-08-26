@@ -1,0 +1,8 @@
+Alt+LWin+THREE -- zALpTHREE	{#ALT {#LWIN -chars 3}}{#insert zTSlp}	zALpTHREE
+Alt+Shift+LWin+THREE -- zASLpTHREE	{#ALT {#SHIFT {#LWIN -chars 3}}}{#insert zTSlp}	zASLpTHREE
+Ctrl+Alt+LWin+THREE -- zCALpTHREE	{#CTRL {#ALT {#LWIN -chars 3}}}{#insert zTSlp}	zCALpTHREE
+Ctrl+Alt+Shift+LWin+THREE -- zCASLpTHREE	{#CTRL {#ALT {#SHIFT {#LWIN -chars 3}}}}{#insert zTSlp}	zCASLpTHREE
+Ctrl+LWin+THREE -- zCLpTHREE	{#CTRL {#LWIN -chars 3}}{#insert zTSlp}	zCLpTHREE
+Ctrl+Shift+LWin+THREE -- zCSLpTHREE	{#CTRL {#SHIFT {#LWIN -chars 3}}}{#insert zTSlp}	zCSLpTHREE
+LWin+THREE -- zLpTHREE	{#LWIN -chars 3}{#insert zTSlp}	zLpTHREE
+Shift+LWin+THREE -- zSLpTHREE	{#SHIFT {#LWIN -chars 3}}{#insert zTSlp}	zSLpTHREE

@@ -1,0 +1,13 @@
+zAscColon -- ':'	{#asc 58}	zAscColon
+zAscComma -- ','	{#asc 44}	zAscComma
+zAscDnrSlash -- '\'	{#asc 92}	zAscDnrSlash
+zAscEnter	{#asc 12}	zAscEnter
+zAscEqualSign -- '='	{#asc 61}	zAscEqualSign
+zAscExclaimation -- '!'	{#asc 33}     	zAscExclaimation
+zAscGT -- '>'	{#asc 62}	zAscGT
+zAscLT -- '<'	{#asc 60}	zAscLT
+zAscPeriod -- '.'	{#asc 46}	zAscPeriod
+zAscQ	{#asc 39}	zAscDblQ
+zAscSemiColon -- ';'	{#asc 59}	zAscSemiColon
+zAscTab	{#asc 9}	zAscTab
+zAscUprSlash -- '/'	{#asc 47}	zAscUprSlash

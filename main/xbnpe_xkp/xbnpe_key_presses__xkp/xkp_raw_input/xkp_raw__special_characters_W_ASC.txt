@@ -1,0 +1,16 @@
+ACCENT	\\\{#asc 96\\\}
+ASTERISK	\\\{#asc 42\\\}
+CLOSE_SQUAREB	\\\{#asc 93\\\}
+COMMA	\\\{#asc 44\\\}
+DASH	\\\{#asc 45\\\}
+DNR_SLASH	\\\{#asc 92\\\}
+ENTER	{{#asc 35}ENTER}
+EQUALS	\\\{#asc 61\\\}
+OPEN_SQUAREB	\\\{#asc 91\\\}
+PERIOD	\\\{#asc 46\\\}
+QUOTE	\\\{#asc 45\\\}
+SEMI_COLON	\\\{#asc 59\\\}
+SPACE	{{#asc 35}SPACE}
+TAB	{{#asc 35}TAB}
+UPR_SLASH	\\\{#asc 47\\\}
+[DELETE THIS LINE BEFORE ANSWERING THE how-many-lines dialog: Note that this file contains all the special characters on the keyboard for which you do NOT press shift. Hence, none of the following characters are in this project: ><"_+?}{   ]

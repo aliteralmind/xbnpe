@@ -1,0 +1,19 @@
+d2dln -- DOWN2, DEL, any 'N'umber of times.	{#insert zWWOffSvStateMaybeRecheck}{#insert zzD2dlnRAW}{#insert zRevertWWToOrigState}{#insert zzDnenSyn}	d2dln
+
+ddln -- DOWN, DEL, any 'N'umber of times.	{#insert zWWOffSvStateMaybeRecheck}{#insert zzDdlnRAW}{#insert zRevertWWToOrigState}{#insert zzDnenSyn}	ddln
+
+dnen -- DOWN, ENTER, any 'N'umber of times.	{#insert zWWOffSvStateMaybeRecheck}{#insert zzDnenRAW}{#insert zRevertWWToOrigState}{#insert zRevertWWToOrigState}{#insert zzDnenSyn}	dnen
+
+hokn -- HOME, BKSP, any 'N'umber of times	{#insert zWWOffSvStateMaybeRecheck}{#insert zzHoknRAW}{#insert zRevertWWToOrigState}{#insert zzDnenSyn}	hokn
+
+hoknw -- ww-tgl, hokn, ww-tgl 	{#insert zTPToggleWW}{#insert zzHoknRAW}{#insert zTPToggleWW}{#insert zzDnenSyn}	hoknw
+
+zzD2dlnRAW	{#LOOP {#DOWN -count 2}{#DEL} -count {#INPUT -head How many down~down~deletes? -single}}	zzD2dlnRAW
+
+zzDdlnRAW	{#LOOP {#DOWN}{#DEL} -count {#INPUT -head How many down~deletes? -single}}	zzDdlnRAW
+
+zzDnenSyn	{#BALLOON -title dnen/hokn/ddln syntax  -text dnen ~~ (DOWN, ENTER multiple times)  //  hokn ~~ HOME, BKSP.  //  d[2]dln ~~ DOWN[2], DEL  //  ww~state='{#insert zvWORD_WRAP_ON}' (see 'wt'~~[chk={#insert zvCURR_WW_RCHK_CNT}/{#insert zvWW_RCHK_CNT}])}	zzDnenSyn
+
+zzDnenRAW	{#LOOP {#DOWN}{#ENTER} -count {#INPUT -head How many down~enters? -single}}	zzDnenRAW
+
+zzHoknRAW	{#LOOP {#HOME}{#BKSP} -count {#INPUT -head How many home~bksps? -single}}	zzHoknRAW

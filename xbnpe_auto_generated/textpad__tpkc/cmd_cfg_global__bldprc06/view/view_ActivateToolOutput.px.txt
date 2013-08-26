@@ -1,0 +1,8 @@
+zTpkcActivateToolOutputAbrv1C	Vato	zTpkcActivateToolOutputAbrv1C
+zTpkcVatoCmdNameTC	ActivateToolOutput	zTpkcVatoCmdNameTC
+zTpkcVatoDfltPhrsNm	zTPActivateToolOutput	zTpkcVatoDfltPhrsNm
+zTpkcVatoCatForCmdAbrvLC	view	zTpkcVatoCatForCmdAbrvLC
+zTpkcVatoCmdType_mcrTl		zTpkcVatoCmdType_mcrTl
+zTpkcVatoIsBtstrp_yes		zTpkcVatoIsBtstrp_yes
+zTpkcVatoDfltPostKcSlpMils	10	zTpkcVatoDfltPostKcSlpMils
+zTpkcVatoStpsFrmCmdListTop	{#insert zPGDN}{#insert zUP}	zTpkcVatoStpsFrmCmdListTop

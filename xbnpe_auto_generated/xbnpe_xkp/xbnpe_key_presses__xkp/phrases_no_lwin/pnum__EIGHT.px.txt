@@ -1,0 +1,8 @@
+EIGHT -- zEIGHT	{#NONE -chars 8}{#insert zTSlp}	zEIGHT
+Alt+EIGHT -- zApEIGHT	{#ALT -chars 8}{#insert zTSlp}	zApEIGHT
+Alt+Shift+EIGHT -- zASpEIGHT	{#ALT {#SHIFT -chars 8}}{#insert zTSlp}	zASpEIGHT
+Ctrl+EIGHT -- zCpEIGHT	{#CTRL -chars 8}{#insert zTSlp}	zCpEIGHT
+Ctrl+Alt+EIGHT -- zCApEIGHT	{#CTRL {#ALT -chars 8}}{#insert zTSlp}	zCApEIGHT
+Ctrl+Alt+Shift+EIGHT -- zCASpEIGHT	{#CTRL {#ALT {#SHIFT -chars 8}}}{#insert zTSlp}	zCASpEIGHT
+Ctrl+Shift+EIGHT -- zCSpEIGHT	{#CTRL {#SHIFT -chars 8}}{#insert zTSlp}	zCSpEIGHT
+Shift+EIGHT -- zSpEIGHT	{#SHIFT -chars 8}{#insert zTSlp}	zSpEIGHT

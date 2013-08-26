@@ -1,0 +1,8 @@
+Alt+LWin+F7 -- zALpF7	{#ALT {#LWIN {#F7}}}{#insert zTSlp}	zALpF7
+Alt+Shift+LWin+F7 -- zASLpF7	{#ALT {#SHIFT {#LWIN {#F7}}}}{#insert zTSlp}	zASLpF7
+Ctrl+Alt+LWin+F7 -- zCALpF7	{#CTRL {#ALT {#LWIN {#F7}}}}{#insert zTSlp}	zCALpF7
+Ctrl+Alt+Shift+LWin+F7 -- zCASLpF7	{#CTRL {#ALT {#SHIFT {#LWIN {#F7}}}}}{#insert zTSlp}	zCASLpF7
+Ctrl+LWin+F7 -- zCLpF7	{#CTRL {#LWIN {#F7}}}{#insert zTSlp}	zCLpF7
+Ctrl+Shift+LWin+F7 -- zCSLpF7	{#CTRL {#SHIFT {#LWIN {#F7}}}}{#insert zTSlp}	zCSLpF7
+LWin+F7 -- zLpF7	{#LWIN {#F7}}{#insert zTSlp}	zLpF7
+Shift+LWin+F7 -- zSLpF7	{#SHIFT {#LWIN {#F7}}}{#insert zTSlp}	zSLpF7

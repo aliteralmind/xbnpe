@@ -1,0 +1,8 @@
+zTpkcWorkspaceOpenAbrv1C	Fwksop	zTpkcWorkspaceOpenAbrv1C
+zTpkcFwksopCmdNameTC	WorkspaceOpen	zTpkcFwksopCmdNameTC
+zTpkcFwksopDfltPhrsNm	zTPWorkspaceOpen	zTpkcFwksopDfltPhrsNm
+zTpkcFwksopCatForCmdAbrvLC	file	zTpkcFwksopCatForCmdAbrvLC
+zTpkcFwksopCmdType_mcrTl		zTpkcFwksopCmdType_mcrTl
+zTpkcFwksopIsBtstrp_yes		zTpkcFwksopIsBtstrp_yes
+zTpkcFwksopDfltPostKcSlpMils	1750	zTpkcFwksopDfltPostKcSlpMils
+zTpkcFwksopStpsFrmCmdListTop	{#insert zEND}{#insert zUP2}	zTpkcFwksopStpsFrmCmdListTop

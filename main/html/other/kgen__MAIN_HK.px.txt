@@ -1,0 +1,21 @@
+hpltn -- zAddHashToPrevLink ALT KC	{#insert zAddHashToPrevLink}{#insert zzNmlnkSyn}	hpltn
+nlcb -- zNameLinkFromCBWord ALT KC	{#insert zNameLinkFromCBWord}{#insert zzNmlnkSyn}	nlcb
+nlcbc -- zNameLinkFromCBWordCoded ALT KC	{#insert zNameLinkFromCBWordCoded}{#insert zzNmlnkSyn}	nlcbc
+nlwl -- zNameLinkFromWordLeft ALT KC	{#insert zNameLinkFromWordLeft}{#insert zzNmlnkSyn}	nlwl
+nlwlc -- zNameLinkFromWordLeftCoded ALT KC	{#insert zNameLinkFromWordLeftCoded}{#insert zzNmlnkSyn}	nlwlc
+ntcb -- zNameTargetFromCBWord ALT KC	{#insert zNameTargetFromCBWord}{#insert zzNmlnkSyn}	ntcb
+ntwl -- zNameTargetFromWordLeft ALT KC	{#insert zNameTargetFromWordLeft}{#insert zzNmlnkSyn}	ntwl
+zAddHashToPrevLink -- Add '#' to prev link [zApSIX]	{#insert zXmark}{#insert ztpmTagFindPrevHrefThrQQ}{#insert zRIGHT}#{#insert zSelectR1wCopy}{#insert zXDown}<a name={#asc 34}{#insert zTPPaste}{#asc 34}/>{#insert ztpmTagSelectL1}	zAddHashToPrevLink
+zCodedLinkFromSel -- Link from sel CODE-d [zCASpFIVE]	{#insert zzRplcDlgOpenRERplcUrlSpcDscWLink}{#insert zTPCut}<CODE>{#insert zTPPaste}</CODE>	zCodedLinkFromSel
+zLinkFromSel -- Link from sel (1st space-word url) [zCSpFIVE]	{#insert zzRplcDlgOpenRERplcUrlSpcDscWLink}{#insert zRIGHT}	zLinkFromSel
+zNameLinkFromCBWord -- Transforms cb-word to <A HREF='#[CB]'>[CB]</A>	<A HREF={#insert zAscQQ}#{#insert zTPPaste}{#insert zAscQQ}>{#insert zTPPaste}</A>	zNameLinkFromCBWord
+zNameLinkFromCBWordCoded -- zNameLinkFromCBWord, surrounded by <CODE>	<CODE>{#insert zNameLinkFromCBWord}</CODE>	zNameLinkFromCBWordCoded
+zNameLinkFromWordLeft -- Select-copy word-left, zNameLinkFromCBWord	{#insert zSelectL1wCopy}{#insert zNameLinkFromCBWord}	zNameLinkFromWordLeft
+zNameLinkFromWordLeftCoded -- Select-copy word-left, zNameLinkFromCBWordCoded	{#insert zSelectL1wCopy}{#insert zNameLinkFromCBWordCoded}	zNameLinkFromWordLeftCoded
+zNameTargetFromCBWord -- Transforms word in clipboard to <A NAME='[CB]'/>	<A NAME={#insert zAscQQ}{#insert zTPPaste}{#insert zAscQQ}/>	zNameTargetFromCBWord
+zNameTargetFromCBWordCoded -- Transforms word in clipboard to <A NAME='[CB]'/>	<A NAME={#insert zAscQQ}{#insert zTPPaste}{#insert zAscQQ}/>	zNameTargetFromCBWordCoded
+zNameTargetFromWordLeft -- Select-copy word-left, zNameTargetFromCBWord	{#insert zSelectL1wCopy}{#insert zNameTargetFromCBWord}	zNameTargetFromWordLeft
+zSelectedUrlDescToCodedNameLink -- zCodedLinkFromSel, hpltn [zCApSIX]	{#insert zCodedLinkFromSel}{#insert hpltn}	zSelectedUrlDescToCodedNameLink
+zSelectedUrlDescToNameLink -- zLinkFromSel, hpltn [zCSpSIX]	{#insert zLinkFromSel}{#insert hpltn}	zSelectedUrlDescToNameLink
+zzNmlnkSyn	{#BALLOON -title Syntax: '#NAME'~links -text hpltn=add '#' to prev link  //  nt[cb,wl]=clipboard or word-left to <A NAME='[cb]'/>  //  nl[cb,wl][c]=to full ('C'oded) name-link}	zzNmlnkSyn
+zzRplcDlgOpenRERplcUrlSpcDscWLink	{#insert zRplcDlgOpenRE}([^ ]+) (.+){#sleep 5}{#insert zRplcFieldWith}<A HREF={#asc 34}$1{#asc 34}>$2</A>{#insert zRplcBtnAllSel}{#insert zRplcDlgClose}	zzRplcDlgOpenRERplcUrlSpcDscWLink

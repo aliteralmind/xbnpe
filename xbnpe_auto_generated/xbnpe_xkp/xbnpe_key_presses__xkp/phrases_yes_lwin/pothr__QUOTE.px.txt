@@ -1,0 +1,8 @@
+Alt+LWin+QUOTE -- zALpQUOTE	{#ALT {#LWIN -chars '}}{#insert zTSlp}	zALpQUOTE
+Alt+Shift+LWin+QUOTE -- zASLpQUOTE	{#ALT {#SHIFT {#LWIN -chars '}}}{#insert zTSlp}	zASLpQUOTE
+Ctrl+Alt+LWin+QUOTE -- zCALpQUOTE	{#CTRL {#ALT {#LWIN -chars '}}}{#insert zTSlp}	zCALpQUOTE
+Ctrl+Alt+Shift+LWin+QUOTE -- zCASLpQUOTE	{#CTRL {#ALT {#SHIFT {#LWIN -chars '}}}}{#insert zTSlp}	zCASLpQUOTE
+Ctrl+LWin+QUOTE -- zCLpQUOTE	{#CTRL {#LWIN -chars '}}{#insert zTSlp}	zCLpQUOTE
+Ctrl+Shift+LWin+QUOTE -- zCSLpQUOTE	{#CTRL {#SHIFT {#LWIN -chars '}}}{#insert zTSlp}	zCSLpQUOTE
+LWin+QUOTE -- zLpQUOTE	{#LWIN -chars '}{#insert zTSlp}	zLpQUOTE
+Shift+LWin+QUOTE -- zSLpQUOTE	{#SHIFT {#LWIN -chars '}}{#insert zTSlp}	zSLpQUOTE

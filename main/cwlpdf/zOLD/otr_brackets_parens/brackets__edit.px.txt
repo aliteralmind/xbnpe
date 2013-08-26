@@ -1,0 +1,6 @@
+zPostBracketCut	{#insert zPostBracketSelect}{#insert zTPCut}	zPostBracketCut
+zPostBracketDelete	{#insert zPostBracketSelect}{#insert zBKSP}	zPostBracketDelete
+zPostBracketDup	{#insert zPostBracketSelCopy}{#insert zRIGHT}{#insert zTPPaste}	zPostBracketDup
+zPreBracketCut	{#insert zPreBracketSelect}{#insert zTPCut}	zPreBracketCut
+zPreBracketDelete	{#insert zPreBracketSelect}{#insert zBKSP}	zPreBracketDelete
+zPreBracketDup	{#insert zPreBracketSelCopy}{#insert zRIGHT}{#insert zTPPaste}	zPreBracketDup

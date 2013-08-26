@@ -1,0 +1,8 @@
+LEFT -- zLEFT	{#LEFT}{#insert zTSlp}	zLEFT
+Alt+LEFT -- zApLEFT	{#ALT {#LEFT}}{#insert zTSlp}	zApLEFT
+Alt+Shift+LEFT -- zASpLEFT	{#ALT {#SHIFT {#LEFT}}}{#insert zTSlp}	zASpLEFT
+Ctrl+LEFT -- zCpLEFT	{#CTRL {#LEFT}}{#insert zTSlp}	zCpLEFT
+Ctrl+Alt+LEFT -- zCApLEFT	{#CTRL {#ALT {#LEFT}}}{#insert zTSlp}	zCApLEFT
+Ctrl+Alt+Shift+LEFT -- zCASpLEFT	{#CTRL {#ALT {#SHIFT {#LEFT}}}}{#insert zTSlp}	zCASpLEFT
+Ctrl+Shift+LEFT -- zCSpLEFT	{#CTRL {#SHIFT {#LEFT}}}{#insert zTSlp}	zCSpLEFT
+Shift+LEFT -- zSpLEFT	{#SHIFT {#LEFT}}{#insert zTSlp}	zSpLEFT

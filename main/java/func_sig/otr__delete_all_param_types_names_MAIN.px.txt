@@ -1,0 +1,24 @@
+dapn -- dapnr ALT KC	{#insert dapnr}	dapn
+dapngtgs -- dapnl, wml1	{#insert dapnl}{#insert zMoveL1w}	dapngtgs
+dapnkg -- dapnkgr ALT KC	{#insert dapnkgr}	dapnkg
+dapnkgl -- dapnkgs, zLEFT	{#insert dapnkgs}{#insert zLEFT}	dapnkgl
+dapnkgr -- dapnkgs, zRIGHT	{#insert dapnkgs}{#insert zRIGHT}	dapnkgr
+dapnkgs -- dapn, but Keep Generics -- zDelAllParamNamesKGLeaveSel ALT KC	{#insert zDelAllParamNamesKGLeaveSel}	dapnkgs
+dapnl -- dapns, zLEFT	{#insert dapns}{#insert zLEFT}	dapnl
+dapnr -- dapns, zRIGHT	{#insert dapns}{#insert zRIGHT}	dapnr
+dapns -- ztpmJavaDeleteAllParamNames4FQP ALT KC	{#insert ztpmJavaDeleteAllParamNames4FQP}	dapns
+dapnv -- dapnvr ALT KC	{#insert dapnvr}	dapnv
+dapnvgtgs -- dapnvl, wml1	{#insert dapnvl}{#insert zMoveL1w}	dapnvgtgs
+dapnvl -- dapnvs, zLEFT	{#insert dapnvs}{#insert zLEFT}	dapnvl
+dapnvr -- dapnvs, zRIGHT	{#insert dapnvs}{#insert zRIGHT}	dapnvr
+dapnvs -- ztpmJavaDeleteAllParamNames4TV ALT KC	{#insert ztpmJavaDeleteAllParamNames4TV}	dapnvs
+dapnx -- dapnxr ALT KC	{#insert dapnxr}	dapnx
+dapnxgtgs -- dapnxl, wml1	{#insert dapnxl}{#insert zMoveL1w}	dapnxgtgs
+dapnxl -- dapnxs, zLEFT	{#insert dapnxs}{#insert zLEFT}	dapnxl
+dapnxr -- dapnxs, zRIGHT	{#insert dapnxs}{#insert zRIGHT}	dapnxr
+dapnxs -- ztpmJavaDeleteAllParamNamesX ALT KC	{#insert ztpmJavaDeleteAllParamNamesX}	dapnxs
+dapt -- daptr ALT KC	{#insert daptr}	dapt
+daptgtgs -- daptl, wml1	{#insert daptl}{#insert zMoveL1w}	daptgtgs
+daptl -- dapts, zLEFT	{#insert dapts}{#insert zLEFT}	daptl
+daptr -- dapts, zRIGHT	{#insert dapts}{#insert zRIGHT}	daptr
+dapts -- ztpmJavaDeleteAllParamTypes ALT KC	{#insert ztpmJavaDeleteAllParamTypes}	dapts

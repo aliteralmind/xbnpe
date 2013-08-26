@@ -1,0 +1,8 @@
+zTpkcActivateDocumentAbrv1C	Vad	zTpkcActivateDocumentAbrv1C
+zTpkcVadCmdNameTC	ActivateDocument	zTpkcVadCmdNameTC
+zTpkcVadDfltPhrsNm	zTPActivateDocument	zTpkcVadDfltPhrsNm
+zTpkcVadCatForCmdAbrvLC	view	zTpkcVadCatForCmdAbrvLC
+zTpkcVadCmdType_mcrTl		zTpkcVadCmdType_mcrTl
+zTpkcVadIsBtstrp_yes		zTpkcVadIsBtstrp_yes
+zTpkcVadDfltPostKcSlpMils	10	zTpkcVadDfltPostKcSlpMils
+zTpkcVadStpsFrmCmdListTop	{#insert zDOWN}	zTpkcVadStpsFrmCmdListTop

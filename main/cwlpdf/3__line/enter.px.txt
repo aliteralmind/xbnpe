@@ -1,0 +1,5 @@
+zENTERN_M_vlnd -(**)- etr[*,p]#, etr[f,[[h,t,r]]m], vlnd[[p,f]]	(*Needs zvLINES_DOWN (var-abrv-lc=vlnd, var-phrs-nm-abrv=Vlnd). This command: (action-name-lc=etr, cmd-phrs-nm-abrv=Etr)[*]=<<<[FYI: phrase-creators are ON, actions are OFF, the pc-postfix is '' (empty-string), and the pc-literal-style is 'command'] The section defines the asterisk ('*') that in the phrase-description -- Normally, MINV-phrase-creators are named '[action-name]p#'. That is not the case for this MINV-Command. You configured actions to not be printed, and the pc-postfix to be '' (empty-string)--therefore, the phrase-creators for this MINV-Command are EQUAL to the action-name: '[action-name]#' (for example: 'etr3'). Literal phrase-creators are named '[action-name]p#' (for example: 'etrp3')>>>*){#LOOP {#ENTER} -count {#insert zvLINES_DOWN}}{#insert zTSlp}	zENTERN_M_vlnd
+zENTER2 -- etr[*,p]2	{#ENTER -count 2}{#insert zTSlp}	zENTER2
+zENTER3 -- etr[*,p]3	{#ENTER -count 2}{#insert zTSlp}	zENTER3
+zENTER4 -- etr[*,p]4	{#ENTER -count 4}{#insert zTSlp}	zENTER4
+zENTER5 -- etr[*,p]5	{#ENTER -count 5}{#insert zTSlp}	zENTER5

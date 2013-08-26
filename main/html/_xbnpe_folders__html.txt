@@ -1,0 +1,6 @@
+Folders to create in XBN PhraseExpress
+	HTML (h)
+		Links: See Java>JavaDoc>Links>Generic           ***EMPTY FOLDER***
+		Major constructs (mjr)
+		Markup (mu)
+		Other (otr)

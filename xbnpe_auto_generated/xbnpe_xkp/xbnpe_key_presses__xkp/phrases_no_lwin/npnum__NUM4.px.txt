@@ -1,0 +1,8 @@
+NUM4 -- zNUM4	{#NUMPAD4}{#insert zTSlp}	zNUM4
+Alt+NUM4 -- zApNUM4	{#ALT {#NUMPAD4}}{#insert zTSlp}	zApNUM4
+Alt+Shift+NUM4 -- zASpNUM4	{#ALT {#SHIFT {#NUMPAD4}}}{#insert zTSlp}	zASpNUM4
+Ctrl+NUM4 -- zCpNUM4	{#CTRL {#NUMPAD4}}{#insert zTSlp}	zCpNUM4
+Ctrl+Alt+NUM4 -- zCApNUM4	{#CTRL {#ALT {#NUMPAD4}}}{#insert zTSlp}	zCApNUM4
+Ctrl+Alt+Shift+NUM4 -- zCASpNUM4	{#CTRL {#ALT {#SHIFT {#NUMPAD4}}}}{#insert zTSlp}	zCASpNUM4
+Ctrl+Shift+NUM4 -- zCSpNUM4	{#CTRL {#SHIFT {#NUMPAD4}}}{#insert zTSlp}	zCSpNUM4
+Shift+NUM4 -- zSpNUM4	{#SHIFT {#NUMPAD4}}{#insert zTSlp}	zSpNUM4

@@ -1,0 +1,2 @@
+zzSetIntrnlVarToCBVldtValIf_M_pjDtFrm1	{#SETPHRASE -description {#insert zIntrnlVarNm_M_pjDtFrm1} -content {#INSERTCLIPBOARD} -autotext {#insert zIntrnlVarNm_M_pjDtFrm1} -folder ctvv_folder}{#insert {#COND -if {#LENGTH {#insert zVldtValPhrsNm_M_pjDtFrm1}}>0 -then {#insert {#insert zVldtValPhrsNm_M_pjDtFrm1}} -else z1slp}}	zzSetIntrnlVarToCBVldtValIf_M_pjDtFrm1
+zzSetIntrnlVarToES_M_pjDtFrm1	{#SETPHRASE -description {#insert zIntrnlVarNm_M_pjDtFrm1} -content  -autotext {#insert zIntrnlVarNm_M_pjDtFrm1} -folder ctvv_folder}	zzSetIntrnlVarToES_M_pjDtFrm1

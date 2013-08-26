@@ -1,0 +1,5 @@
+zRplcDlgCloseMC -- zFindDlgCloseMC ALT KC	{#insert zFindDlgCloseMC}	zRplcDlgCloseMC
+zRplcDlgCloseMCRE -- zFindDlgCloseMCRE ALT KC	{#insert zFindDlgCloseMCRE}	zRplcDlgCloseMCRE
+zRplcDlgCloseMCWW -- zFindDlgCloseMCWW ALT KC	{#insert zFindDlgCloseMCWW}	zRplcDlgCloseMCWW
+zRplcDlgCloseRE -- zFindDlgCloseRE ALT KC	{#insert zFindDlgCloseRE}	zRplcDlgCloseRE
+zRplcDlgCloseWW -- zFindDlgCloseWW ALT KC	{#insert zFindDlgCloseWW}	zRplcDlgCloseWW

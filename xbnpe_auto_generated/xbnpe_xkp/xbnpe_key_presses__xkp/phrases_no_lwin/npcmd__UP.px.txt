@@ -1,0 +1,8 @@
+UP -- zUP	{#UP}{#insert zTSlp}	zUP
+Alt+UP -- zApUP	{#ALT {#UP}}{#insert zTSlp}	zApUP
+Alt+Shift+UP -- zASpUP	{#ALT {#SHIFT {#UP}}}{#insert zTSlp}	zASpUP
+Ctrl+UP -- zCpUP	{#CTRL {#UP}}{#insert zTSlp}	zCpUP
+Ctrl+Alt+UP -- zCApUP	{#CTRL {#ALT {#UP}}}{#insert zTSlp}	zCApUP
+Ctrl+Alt+Shift+UP -- zCASpUP	{#CTRL {#ALT {#SHIFT {#UP}}}}{#insert zTSlp}	zCASpUP
+Ctrl+Shift+UP -- zCSpUP	{#CTRL {#SHIFT {#UP}}}{#insert zTSlp}	zCSpUP
+Shift+UP -- zSpUP	{#SHIFT {#UP}}{#insert zTSlp}	zSpUP

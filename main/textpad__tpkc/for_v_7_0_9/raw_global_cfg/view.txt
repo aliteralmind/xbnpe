@@ -1,0 +1,24 @@
+ActivateClipLib	zTPActivateClipLib	Vacl	__ES__	10	(*NOTHING. Top command in list*)
+ActivateDocument	zTPActivateDocument	Vad	__ES__	10	{#insert zDOWN}
+ActivateExplorer	zTPActivateExplorer	Vax	__ES__	10	{#insert zDOWN2}
+ActivateSearchResults	zTPActivateSearchResults	Vasr	__ES__	10	{#insert zDOWN3}
+ActivateSelector	zTPActivateSelector	Vas	__ES__	10	{#insert zPGDN}{#insert zUP2}
+ActivateToolOutput	zTPActivateToolOutput	Vato	__ES__	10	{#insert zPGDN}{#insert zUP}
+StayOnTop	zTPStayOnTop	Vsot	__ES__	10	{#insert zSS}
+ViewClipLib	zTPViewClipLib	Vcl	__ES__	10	{#insert zVV}
+ViewDocSelector	zTPViewDocSelector	Vds	__ES__	10	{#insert zVV}{#insert zDOWN}
+ViewExplorer	zTPViewExplorer	Vxpl	__ES__	10	{#insert zVV}{#insert zDOWN2}
+ViewFindDialogBox	zTPViewFindDialogBox	Vfdlg	__ES__	10	{#insert zPGDN2}{#insert zUP2}
+ViewFullPaths	zTPViewFullPaths	Vflpth	__ES__	10	{#insert zPGDN2}{#insert zUP}
+ViewFullScreen	zTPViewFullScreen	Vflscr	__ES__	10	{#insert zPGDN2}
+ViewHScrollbar	zTPViewHScrollbar	Vhsb	__ES__	10	{#insert zPGDN2}{#insert zDOWN}
+ViewInBrowser	zTPViewInBrowser	Vinb	__ES__	10	{#insert zPGDN2}{#insert zDOWN2}
+ViewLineNumbers	zTPViewLineNumbers	Vlnm	__ES__	10	{#insert zVV}{#insert zPGDN}{#insert zDOWN2}
+ViewProperties	zTPViewProperties	Vprp	__ES__	10	{#insert zEND}{#insert zPGUP}{#insert zUP}
+ViewReplaceDialogBox	zTPViewReplaceDialogBox	Vrdlg	__ES__	10	{#insert zEND}{#insert zPGUP}
+ViewSearchResults	zTPViewSearchResults	Vsrchr	__ES__	10	{#insert zEND}{#insert zPGUP}{#insert zDOWN}
+ViewStatusBar	zTPViewStatusBar	Vstsb	__ES__	10	{#insert zEND}{#insert zPGUP}{#insert zDOWN2}
+ViewTabSelector	zTPViewTabSelector	Vtbsl	__ES__	10	{#insert zEND}{#insert zUP3}
+ViewToolOutput	zTPViewToolOutput	Vtlout	__ES__	10	{#insert zEND}{#insert zUP2}
+ViewVisibleSpaces	zTPVisibleSpaces	Vvspc	__ES__	10	{#insert zEND}{#insert zUP}
+ViewVScrollbar	zTPViewVScrollbar	Vvsb	__ES__	10	{#insert zEND}

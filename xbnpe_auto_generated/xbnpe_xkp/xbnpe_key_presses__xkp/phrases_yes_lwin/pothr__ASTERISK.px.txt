@@ -1,0 +1,8 @@
+Alt+LWin+ASTERISK -- zALpASTERISK	{#ALT {#LWIN -chars *}}{#insert zTSlp}	zALpASTERISK
+Alt+Shift+LWin+ASTERISK -- zASLpASTERISK	{#ALT {#SHIFT {#LWIN -chars *}}}{#insert zTSlp}	zASLpASTERISK
+Ctrl+Alt+LWin+ASTERISK -- zCALpASTERISK	{#CTRL {#ALT {#LWIN -chars *}}}{#insert zTSlp}	zCALpASTERISK
+Ctrl+Alt+Shift+LWin+ASTERISK -- zCASLpASTERISK	{#CTRL {#ALT {#SHIFT {#LWIN -chars *}}}}{#insert zTSlp}	zCASLpASTERISK
+Ctrl+LWin+ASTERISK -- zCLpASTERISK	{#CTRL {#LWIN -chars *}}{#insert zTSlp}	zCLpASTERISK
+Ctrl+Shift+LWin+ASTERISK -- zCSLpASTERISK	{#CTRL {#SHIFT {#LWIN -chars *}}}{#insert zTSlp}	zCSLpASTERISK
+LWin+ASTERISK -- zLpASTERISK	{#LWIN -chars *}{#insert zTSlp}	zLpASTERISK
+Shift+LWin+ASTERISK -- zSLpASTERISK	{#SHIFT {#LWIN -chars *}}{#insert zTSlp}	zSLpASTERISK

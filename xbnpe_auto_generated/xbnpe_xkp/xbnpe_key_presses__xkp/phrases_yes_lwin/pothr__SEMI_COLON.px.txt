@@ -1,0 +1,8 @@
+Alt+LWin+SEMI_COLON -- zALpSEMI_COLON	{#ALT {#LWIN -chars ;}}{#insert zTSlp}	zALpSEMI_COLON
+Alt+Shift+LWin+SEMI_COLON -- zASLpSEMI_COLON	{#ALT {#SHIFT {#LWIN -chars ;}}}{#insert zTSlp}	zASLpSEMI_COLON
+Ctrl+Alt+LWin+SEMI_COLON -- zCALpSEMI_COLON	{#CTRL {#ALT {#LWIN -chars ;}}}{#insert zTSlp}	zCALpSEMI_COLON
+Ctrl+Alt+Shift+LWin+SEMI_COLON -- zCASLpSEMI_COLON	{#CTRL {#ALT {#SHIFT {#LWIN -chars ;}}}}{#insert zTSlp}	zCASLpSEMI_COLON
+Ctrl+LWin+SEMI_COLON -- zCLpSEMI_COLON	{#CTRL {#LWIN -chars ;}}{#insert zTSlp}	zCLpSEMI_COLON
+Ctrl+Shift+LWin+SEMI_COLON -- zCSLpSEMI_COLON	{#CTRL {#SHIFT {#LWIN -chars ;}}}{#insert zTSlp}	zCSLpSEMI_COLON
+LWin+SEMI_COLON -- zLpSEMI_COLON	{#LWIN -chars ;}{#insert zTSlp}	zLpSEMI_COLON
+Shift+LWin+SEMI_COLON -- zSLpSEMI_COLON	{#SHIFT {#LWIN -chars ;}}{#insert zTSlp}	zSLpSEMI_COLON

@@ -1,0 +1,10 @@
+zvCHILD_TC_POSTS_sfPvtc	{#SETPHRASE -description zvCHILD_TC_POSTS -content {#insert zzZdxChlTCPsts_cfgValue_M_pvtc} -autotext zvCHILD_TC_POSTS -folder ctvv_folder}	zvCHILD_TC_POSTS_sfPvtc
+zzZdxChlTCPsts_dbgCfgItem_M_pvtc	zzZdxChlTCPsts_cfgValue_M_pvtc={#insert zzZdxChlTCPsts_cfgValue_M_pvtc}	zzZdxChlTCPsts_dbgCfgItem_M_pvtc
+zzZdxChlTCPsts_dbgVarItem_M_pvtcChltcpsts	zvCHILD_TC_POSTS={#insert zvCHILD_TC_POSTS}	zzZdxChlTCPsts_dbgVarItem_M_pvtcChltcpsts
+zzZdxChlTCPsts_cfgValue_M_pvtc	{#insert {#insert zzZdxChlTCPsts_varName_M_pvtc}}	zzZdxChlTCPsts_cfgValue_M_pvtc
+zzZdxChlTCPsts_cfgVarNmPostfix_M_pvtc	ChildTCPosts	zzZdxChlTCPsts_cfgVarNmPostfix_M_pvtc
+zzZdxChlTCPsts_intrnlVarNmFYIOnly	zvCHILD_TC_POSTS	zzZdxChlTCPsts_intrnlVarNmFYIOnly
+zzZdxChlTCPsts_phrsWCfgValue_M_pvtc	{#insert zzZdxChlTCPsts_varName_M_pvtc}{#insert zTAB}{#insert zzZdxChlTCPsts_cfgValue_M_pvtc}{#insert zTAB}{#insert zzZdxChlTCPsts_varName_M_pvtc}	zzZdxChlTCPsts_phrsWCfgValue_M_pvtc
+zzZdxChlTCPsts_phrsWVarValue_M_pvtcChltcpsts	{#insert zzZdxChlTCPsts_varName_M_pvtc}{#insert zTAB}{#insert zvCHILD_TC_POSTS}{#insert zTAB}{#insert zzZdxChlTCPsts_varName_M_pvtc}	zzZdxChlTCPsts_phrsWVarValue_M_pvtcChltcpsts
+zzZdxChlTCPsts_varName_M_pvtc	{#insert zzMinvVarNmPREFIX}{#insert zvPN_ABRV_TC}{#insert zzZdxChlTCPsts_cfgVarNmPostfix}	zzZdxChlTCPsts_varName_M_pvtc
+zzZdxChlTCPsts_llCfgLineDesc	The square-bracketed list of PHRASE-CALLS, to the ZIdx-postfix for each child in this ZIndex-Node. Use, for example, '[{#insert zzZdxChPostfix}][{#insert zzZdxWdPostfix}][{#insert zzZdxLnPostfix}]', instead of '[Char][Word][Line]'.	zzZdxChlTCPsts_llCfgLineDesc

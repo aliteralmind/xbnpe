@@ -1,0 +1,8 @@
+zDataTypeAbrv1C_M_pjDtv	{#insert {#insert zzLpdmdPNmDataTypeAbrv1C_M_pjDtv}}	zDataTypeAbrv1C_M_pjDtv
+zNKCVWithNumCVTFromAbrv1C_M_pjDtvNkcur	{#insert {#insert zzLpdmdPNmNKCVWithNum_M_pjDtvNkcur}}	zNKCVWithNumCVTFromAbrv1C_M_pjDtvNkcur
+zNonKeyCfgVarCount_M_pjDtv	{#insert {#insert zzLpdmdPNmNonKeyVarCount_M_pjDtv}}	zNonKeyCfgVarCount_M_pjDtv
+zOutputFileDir_M_pjDtv	{#insert {#insert zzLpdmdPNmOutDir_M_pjDtv}}	zOutputFileDir_M_pjDtv
+zPrivKeyCVTFromAbrv1C_M_pjDtv	{#insert {#insert zzLpdmdPNmPrivkCVTFromAbrv1C_M_pjDtv}}	zPrivKeyCVTFromAbrv1C_M_pjDtv
+zProjectAbrv1C_M_pjDtv	{#insert {#insert zzLpdmdPNmProjectAbrv1C_M_pjDtv}}	zProjectAbrv1C_M_pjDtv
+zPubKeyCVTFromAbrv1C_M_pjDtv	{#insert {#insert zzLpdmdPNmPubkCVTFromAbrv1C_M_pjDtv}}	zPubKeyCVTFromAbrv1C_M_pjDtv
+zvCVT_FRMV_1C_setFROM_pjDtvNkcur	{#SETPHRASE -description zvCVT_FRMV_1C -content {#insert zNKCVWithNumCVTFromAbrv1C_M_pjDtvNkcur} -autotext zvCVT_FRMV_1C -folder ctvv_folder}	zvCVT_FRMV_1C_setFROM_pjDtvNkcur

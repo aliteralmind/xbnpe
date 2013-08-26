@@ -1,0 +1,8 @@
+QQ -- zQQ	{#NONE -chars q}{#insert zTSlp}	zQQ
+Alt+QQ -- zApQQ	{#ALT -chars q}{#insert zTSlp}	zApQQ
+Alt+Shift+QQ -- zASpQQ	{#ALT {#SHIFT -chars q}}{#insert zTSlp}	zASpQQ
+Ctrl+QQ -- zCpQQ	{#CTRL -chars q}{#insert zTSlp}	zCpQQ
+Ctrl+Alt+QQ -- zCApQQ	{#CTRL {#ALT -chars q}}{#insert zTSlp}	zCApQQ
+Ctrl+Alt+Shift+QQ -- zCASpQQ	{#CTRL {#ALT {#SHIFT -chars q}}}{#insert zTSlp}	zCASpQQ
+Ctrl+Shift+QQ -- zCSpQQ	{#CTRL {#SHIFT -chars q}}{#insert zTSlp}	zCSpQQ
+Shift+QQ -- zSpQQ	{#SHIFT -chars q}{#insert zTSlp}	zSpQQ

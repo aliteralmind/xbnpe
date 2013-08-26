@@ -1,0 +1,8 @@
+Alt+LWin+OO -- zALpOO	{#ALT {#LWIN -chars o}}{#insert zTSlp}	zALpOO
+Alt+Shift+LWin+OO -- zASLpOO	{#ALT {#SHIFT {#LWIN -chars o}}}{#insert zTSlp}	zASLpOO
+Ctrl+Alt+LWin+OO -- zCALpOO	{#CTRL {#ALT {#LWIN -chars o}}}{#insert zTSlp}	zCALpOO
+Ctrl+Alt+Shift+LWin+OO -- zCASLpOO	{#CTRL {#ALT {#SHIFT {#LWIN -chars o}}}}{#insert zTSlp}	zCASLpOO
+Ctrl+LWin+OO -- zCLpOO	{#CTRL {#LWIN -chars o}}{#insert zTSlp}	zCLpOO
+Ctrl+Shift+LWin+OO -- zCSLpOO	{#CTRL {#SHIFT {#LWIN -chars o}}}{#insert zTSlp}	zCSLpOO
+LWin+OO -- zLpOO	{#LWIN -chars o}{#insert zTSlp}	zLpOO
+Shift+LWin+OO -- zSLpOO	{#SHIFT {#LWIN -chars o}}{#insert zTSlp}	zSLpOO

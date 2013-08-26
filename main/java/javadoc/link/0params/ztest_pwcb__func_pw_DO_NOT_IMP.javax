@@ -1,0 +1,159 @@
+/**
+	<P>ZZZ</P>
+ **/
+public class MyClass extends AnotherClass  {
+
+	//&quot;MyClass&quot; is entered for all directory prompts
+	Select and delete XXX, then run the macro.  zzjlFlpwTest
+
+		flpw
+			<A HREF="#getTheName()">getTheName</A>()
+			getTheNameXXX
+		flpwc
+			<CODE><A HREF="#getTheName()">getTheName</A>()</CODE>
+			getTheNameXXX
+		flpwdb ["ThatClass" in clipboard]
+				<A HREF="../ThatClass.html#getTheName()">getTheName</A>()
+				getTheNameXXX
+			flpwdbefk ["ThatClass" in clipboard]
+				<A HREF="../ThatClass.html">ThatClass</A>.<A HREF="../ThatClass.html#getTheName()">getTheName</A>()
+				getTheNameXXX
+			flpwdbifk ["ThatClass" in clipboard]
+				<A HREF="../ThatClass.html"><I>[ThatClass]</I></A>.<A HREF="../ThatClass.html#getTheName()">getTheName</A>()
+				getTheNameXXX
+			flpwdbefky ["ThatClass" in clipboard]
+				ThatClass.<A HREF="../ThatClass.html#getTheName()">getTheName</A>()
+				getTheNameXXX
+			flpwdbifky ["ThatClass" in clipboard]
+				<I>[ThatClass]</I>.<A HREF="../ThatClass.html#getTheName()">getTheName</A>()
+				getTheNameXXX
+		flpwdbc ["ThatClass" in clipboard]
+				<CODE><A HREF="../ThatClass.html#getTheName()">getTheName</A>()</CODE>
+				getTheNameXXX
+			flpwdbcefk ["ThatClass" in clipboard]
+				<CODE><A HREF="../ThatClass.html">ThatClass</A>.<A HREF="../ThatClass.html#getTheName()">getTheName</A>()</CODE>
+				getTheNameXXX
+			flpwdbcifk ["ThatClass" in clipboard]
+				<CODE><A HREF="../ThatClass.html"><I>[ThatClass]</I></A>.<A HREF="../ThatClass.html#getTheName()">getTheName</A>()</CODE>
+				getTheNameXXX
+			flpwdbcefky ["ThatClass" in clipboard]
+				<CODE>ThatClass.<A HREF="../ThatClass.html#getTheName()">getTheName</A>()</CODE>
+				getTheNameXXX
+			flpwdbcifky ["ThatClass" in clipboard]
+				<CODE><I>[ThatClass]</I>.<A HREF="../ThatClass.html#getTheName()">getTheName</A>()</CODE>
+				getTheNameXXX
+		flpwf
+				<A HREF="XXX.html#getTheName()">getTheName</A>()
+				getTheNameXXX
+		flpwfc
+				<CODE><A HREF="XXX.html#getTheName()">getTheName</A>()</CODE>
+				getTheNameXXX
+		flpwfb ["TheOtherClass" in clipboard]
+				<A HREF="TheOtherClass.html#getTheName()">getTheName</A>()
+				getTheNameXXX
+			flpwfbefk ["TheOtherClass" in clipboard]
+				<A HREF="TheOtherClass.html">TheOtherClass</A>.<A HREF="TheOtherClass.html#getTheName()">getTheName</A>()
+				getTheNameXXX
+			flpwfbifk ["TheOtherClass" in clipboard]
+				<A HREF="TheOtherClass.html"><I>[TheOtherClass]</I></A>.<A HREF="TheOtherClass.html#getTheName()">getTheName</A>()
+				getTheNameXXX
+			flpwfberk ["TheOtherClass" in clipboard]
+				<A HREF="TheOtherClass.html">super</A>.<A HREF="TheOtherClass.html#getTheName()">getTheName</A>()
+				getTheNameXXX
+			flpwfbirk ["TheOtherClass" in clipboard]
+				<A HREF="TheOtherClass.html"><I>[super]</I></A>.<A HREF="TheOtherClass.html#getTheName()">getTheName</A>()
+				getTheNameXXX
+			flpwfbefky ["TheOtherClass" in clipboard]
+				TheOtherClass.<A HREF="TheOtherClass.html#getTheName()">getTheName</A>()
+				getTheNameXXX
+			flpwfbifky ["TheOtherClass" in clipboard]
+				<I>[TheOtherClass]</I>.<A HREF="TheOtherClass.html#getTheName()">getTheName</A>()
+				getTheNameXXX
+			flpwfberky ["TheOtherClass" in clipboard]
+				super.<A HREF="TheOtherClass.html#getTheName()">getTheName</A>()
+				getTheNameXXX
+			flpwfbirky ["TheOtherClass" in clipboard]
+				<I>[super]</I>.<A HREF="TheOtherClass.html#getTheName()">getTheName</A>()
+				getTheNameXXX
+		flpwfbc ["TheOtherClass" in clipboard]
+				<CODE><A HREF="TheOtherClass.html#getTheName()">getTheName</A>()</CODE>
+				getTheNameXXX
+			flpwfbcefk ["TheOtherClass" in clipboard]
+				<CODE><A HREF="TheOtherClass.html">TheOtherClass</A>.<A HREF="TheOtherClass.html#getTheName()">getTheName</A>()</CODE>
+				getTheNameXXX
+			flpwfbcifk ["TheOtherClass" in clipboard]
+				<CODE><A HREF="TheOtherClass.html"><I>[TheOtherClass]</I></A>.<A HREF="TheOtherClass.html#getTheName()">getTheName</A>()</CODE>
+				getTheNameXXX
+			flpwfbcerk ["TheOtherClass" in clipboard]
+				<CODE><A HREF="TheOtherClass.html">super</A>.<A HREF="TheOtherClass.html#getTheName()">getTheName</A>()</CODE>
+				getTheNameXXX
+			flpwfbcirk ["TheOtherClass" in clipboard]
+				<CODE><A HREF="TheOtherClass.html"><I>[super]</I></A>.<A HREF="TheOtherClass.html#getTheName()">getTheName</A>()</CODE>
+				getTheNameXXX
+			flpwfbcefky ["TheOtherClass" in clipboard]
+				<CODE>TheOtherClass.<A HREF="TheOtherClass.html#getTheName()">getTheName</A>()</CODE>
+				getTheNameXXX
+			flpwfbcifky ["TheOtherClass" in clipboard]
+				<CODE><I>[TheOtherClass]</I>.<A HREF="TheOtherClass.html#getTheName()">getTheName</A>()</CODE>
+				getTheNameXXX
+			flpwfbcerky ["TheOtherClass" in clipboard]
+				<CODE>super.<A HREF="TheOtherClass.html#getTheName()">getTheName</A>()</CODE>
+				getTheNameXXX
+			flpwfbcirky ["TheOtherClass" in clipboard]
+				<CODE><I>[super]</I>.<A HREF="TheOtherClass.html#getTheName()">getTheName</A>()</CODE>
+				getTheNameXXX
+		flpwr
+				<A HREF="../AnotherClass.html#getTheName()">getTheName</A>()
+				getTheNameXXX
+			flpwrefk
+				<A HREF="../AnotherClass.html">AnotherClass</A>.<A HREF="../AnotherClass.html#getTheName()">getTheName</A>()
+				getTheNameXXX
+			flpwrifk
+				<A HREF="../AnotherClass.html"><I>[AnotherClass]</I></A>.<A HREF="../AnotherClass.html#getTheName()">getTheName</A>()
+				getTheNameXXX
+			flpwrerk
+				<A HREF="../AnotherClass.html">super</A>.<A HREF="../AnotherClass.html#getTheName()">getTheName</A>()
+				getTheNameXXX
+			flpwrirk
+				<A HREF="../AnotherClass.html"><I>[super]</I></A>.<A HREF="../AnotherClass.html#getTheName()">getTheName</A>()
+				getTheNameXXX
+			flpwrefky
+				AnotherClass.<A HREF="../AnotherClass.html#getTheName()">getTheName</A>()
+				getTheNameXXX
+			flpwrifky
+				<I>[AnotherClass]</I>.<A HREF="../AnotherClass.html#getTheName()">getTheName</A>()
+				getTheNameXXX
+			flpwrerky
+				super.<A HREF="../AnotherClass.html#getTheName()">getTheName</A>()
+				getTheNameXXX
+			flpwrirky
+				<I>[super]</I>.<A HREF="../AnotherClass.html#getTheName()">getTheName</A>()
+				getTheNameXXX
+		flpwrc
+				<CODE><A HREF="../AnotherClass.html#getTheName()">getTheName</A>()</CODE>
+				getTheNameXXX
+			flpwrcefk
+				<CODE><A HREF="../AnotherClass.html">AnotherClass</A>.<A HREF="../AnotherClass.html#getTheName()">getTheName</A>()</CODE>
+				getTheNameXXX
+			flpwrcifk
+				<CODE><A HREF="../AnotherClass.html"><I>[AnotherClass]</I></A>.<A HREF="../AnotherClass.html#getTheName()">getTheName</A>()</CODE>
+				getTheNameXXX
+			flpwrcerk
+				<CODE><A HREF="../AnotherClass.html">super</A>.<A HREF="../AnotherClass.html#getTheName()">getTheName</A>()</CODE>
+				getTheNameXXX
+			flpwrcirk
+				<CODE><A HREF="../AnotherClass.html"><I>[super]</I></A>.<A HREF="../AnotherClass.html#getTheName()">getTheName</A>()</CODE>
+				getTheNameXXX
+			flpwrcefky
+				<CODE>AnotherClass.<A HREF="../AnotherClass.html#getTheName()">getTheName</A>()</CODE>
+				getTheNameXXX
+			flpwrcifky
+				<CODE><I>[AnotherClass]</I>.<A HREF="../AnotherClass.html#getTheName()">getTheName</A>()</CODE>
+				getTheNameXXX
+			flpwrcerky
+				<CODE>super.<A HREF="../AnotherClass.html#getTheName()">getTheName</A>()</CODE>
+				getTheNameXXX
+			flpwrcirky
+				<CODE><I>[super]</I>.<A HREF="../AnotherClass.html#getTheName()">getTheName</A>()</CODE>
+				getTheNameXXX
+

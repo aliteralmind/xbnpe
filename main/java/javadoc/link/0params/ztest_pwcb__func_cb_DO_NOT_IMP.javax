@@ -1,0 +1,75 @@
+/**
+	<P>ZZZ</P>
+ **/
+public class MyClass extends AnotherClass  {
+
+	//&quot;../&quot; is entered for all directory prompts
+	Select and delete XXX, then run the macro.  zzjlFlcbTest
+
+		flcb ["ThisClass" in clipboard]
+			<A HREF="#ThisClass()">ThisClass</A>()
+			XXX
+		flcbc ["ThisClass" in clipboard]
+			<CODE><A HREF="#ThisClass()">ThisClass</A>()</CODE>
+			XXX
+		flcbf ["ThisClass" in clipboard]
+			<A HREF="XXX.html#ThisClass()">ThisClass</A>()
+			XXX
+		flcbfc ["ThisClass" in clipboard]
+			<CODE><A HREF="XXX.html#ThisClass()">ThisClass</A>()</CODE>
+			XXX
+		flcbr ["ThisClass" in clipboard]
+				<A HREF="../AnotherClass.html#ThisClass()">ThisClass</A>()
+				XXX
+			flcbrefk ["ThisClass" in clipboard]
+				<A HREF="../AnotherClass.html">AnotherClass</A>.<A HREF="../AnotherClass.html#ThisClass()">ThisClass</A>()
+				XXX
+			flcbrifk ["ThisClass" in clipboard]
+				<A HREF="../AnotherClass.html"><I>[AnotherClass]</I></A>.<A HREF="../AnotherClass.html#ThisClass()">ThisClass</A>()
+				XXX
+			flcbrerk ["ThisClass" in clipboard]
+				<A HREF="../AnotherClass.html">super</A>.<A HREF="../AnotherClass.html#ThisClass()">ThisClass</A>()
+				XXX
+			flcbrirk ["ThisClass" in clipboard]
+				<A HREF="../AnotherClass.html"><I>[super]</I></A>.<A HREF="../AnotherClass.html#ThisClass()">ThisClass</A>()
+				XXX
+			flcbrefky ["ThisClass" in clipboard]
+				AnotherClass.<A HREF="../AnotherClass.html#ThisClass()">ThisClass</A>()
+				XXX
+			flcbrifky ["ThisClass" in clipboard]
+				<I>[AnotherClass]</I>.<A HREF="../AnotherClass.html#ThisClass()">ThisClass</A>()
+				XXX
+			flcbrerky ["ThisClass" in clipboard]
+				super.<A HREF="../AnotherClass.html#ThisClass()">ThisClass</A>()
+				XXX
+			flcbrirky ["ThisClass" in clipboard]
+				<I>[super]</I>.<A HREF="../AnotherClass.html#ThisClass()">ThisClass</A>()
+				XXX
+		flcbrc ["ThisClass" in clipboard]
+				<CODE><A HREF="../AnotherClass.html#ThisClass()">ThisClass</A>()</CODE>
+				XXX
+			flcbrcefk ["ThisClass" in clipboard]
+				<CODE><A HREF="../AnotherClass.html">AnotherClass</A>.<A HREF="../AnotherClass.html#ThisClass()">ThisClass</A>()</CODE>
+				XXX
+			flcbrcifk ["ThisClass" in clipboard]
+				<CODE><A HREF="../AnotherClass.html"><I>[AnotherClass]</I></A>.<A HREF="../AnotherClass.html#ThisClass()">ThisClass</A>()</CODE>
+				XXX
+			flcbrcerk ["ThisClass" in clipboard]
+				<CODE><A HREF="../AnotherClass.html">super</A>.<A HREF="../AnotherClass.html#ThisClass()">ThisClass</A>()</CODE>
+				XXX
+			flcbrcirk ["ThisClass" in clipboard]
+				<CODE><A HREF="../AnotherClass.html"><I>[super]</I></A>.<A HREF="../AnotherClass.html#ThisClass()">ThisClass</A>()</CODE>
+				XXX
+			flcbrcefky ["ThisClass" in clipboard]
+				<CODE>AnotherClass.<A HREF="../AnotherClass.html#ThisClass()">ThisClass</A>()</CODE>
+				XXX
+			flcbrcifky ["ThisClass" in clipboard]
+				<CODE><I>[AnotherClass]</I>.<A HREF="../AnotherClass.html#ThisClass()">ThisClass</A>()</CODE>
+				XXX
+			flcbrcerky ["ThisClass" in clipboard]
+				<CODE>super.<A HREF="../AnotherClass.html#ThisClass()">ThisClass</A>()</CODE>
+				XXX
+			flcbrcirky ["ThisClass" in clipboard]
+				<CODE><I>[super]</I>.<A HREF="../AnotherClass.html#ThisClass()">ThisClass</A>()</CODE>
+				XXX
+

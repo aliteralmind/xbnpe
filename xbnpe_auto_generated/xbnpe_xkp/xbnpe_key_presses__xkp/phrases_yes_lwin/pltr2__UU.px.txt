@@ -1,0 +1,8 @@
+Alt+LWin+UU -- zALpUU	{#ALT {#LWIN -chars u}}{#insert zTSlp}	zALpUU
+Alt+Shift+LWin+UU -- zASLpUU	{#ALT {#SHIFT {#LWIN -chars u}}}{#insert zTSlp}	zASLpUU
+Ctrl+Alt+LWin+UU -- zCALpUU	{#CTRL {#ALT {#LWIN -chars u}}}{#insert zTSlp}	zCALpUU
+Ctrl+Alt+Shift+LWin+UU -- zCASLpUU	{#CTRL {#ALT {#SHIFT {#LWIN -chars u}}}}{#insert zTSlp}	zCASLpUU
+Ctrl+LWin+UU -- zCLpUU	{#CTRL {#LWIN -chars u}}{#insert zTSlp}	zCLpUU
+Ctrl+Shift+LWin+UU -- zCSLpUU	{#CTRL {#SHIFT {#LWIN -chars u}}}{#insert zTSlp}	zCSLpUU
+LWin+UU -- zLpUU	{#LWIN -chars u}{#insert zTSlp}	zLpUU
+Shift+LWin+UU -- zSLpUU	{#SHIFT {#LWIN -chars u}}{#insert zTSlp}	zSLpUU

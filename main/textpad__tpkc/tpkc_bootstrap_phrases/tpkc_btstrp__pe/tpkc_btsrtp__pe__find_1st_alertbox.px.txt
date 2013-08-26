@@ -1,0 +1,2 @@
+fnpab -- zSetAlertboxAsSearchTermGT1stFindREOpen ALT KC	{#insert zSetAlertboxAsSearchTermGT1stFindREOpen}{#insert zBalloonDone}	fnpab
+zSetAlertboxAsSearchTermGT1stFindREOpen	{#insert zTPFindDlgOpen}{#insert zFindFlagRETgl}{#SETPHRASE -description zvFIND_WHAT -content \\\\\\\{#insert alertbox[0-9]+\\\\\\\} -autotext zvFIND_WHAT -folder ctvv_folder}{#insert zvFIND_WHAT}{#insert zFindBtnNext}	zSetAlertboxAsSearchTermGT1stFindREOpen

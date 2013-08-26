@@ -1,0 +1,16 @@
+(*
+   Required by phrase-creator-ddmenu-utils...START
+      PM_DDMENU_DIRID_FILENMPHRSNM_HDRAUTOTXT=snr/zzPmdmFNmPreSnrFind/xhsfc
+   Required by phrase-creator-ddmenu-utils...END
+*)
+zFindDlgCloseMC	{#insert zFindDlgClose}{#insert zTPFindFlagMCoff}	zFindDlgCloseMC
+zFindDlgCloseMCRE	{#insert zFindDlgClose}{#insert zFindFlagsMCREoff}	zFindDlgCloseMCRE
+zFindDlgCloseMCREXS	{#insert zFindFlagXSTgl}{#insert zFindDlgClose}{#insert zFindFlagsMCREoff}	zFindDlgCloseMCREXS
+zFindDlgCloseMCWW	{#insert zFindDlgClose}{#insert zFindFlagsMCWWoff}	zFindDlgCloseMCWW
+zFindDlgCloseMCWWXS	{#insert zFindFlagXSTgl}{#insert zFindDlgClose}{#insert zFindFlagsMCWWoff}	zFindDlgCloseMCWWXS
+zFindDlgCloseMCXS	{#insert zFindDlgCloseXS}{#insert zTPFindFlagMCoff}	zFindDlgCloseMCXS
+zFindDlgCloseRE	{#insert zFindDlgClose}{#insert zTPFindFlagREoff}	zFindDlgCloseRE
+zFindDlgCloseREXS	{#insert zFindDlgCloseXS}{#insert zTPFindFlagREoff}	zFindDlgCloseREXS
+zFindDlgCloseWW	{#insert zFindDlgClose}{#insert zTPFindFlagWWoff}	zFindDlgCloseWW
+zFindDlgCloseWWXS	{#insert zFindDlgCloseXS}{#insert zTPFindFlagWWoff}	zFindDlgCloseWWXS
+zFindDlgCloseXS	{#insert zFindFlagXSTgl}{#insert zFindDlgClose}	zFindDlgCloseXS

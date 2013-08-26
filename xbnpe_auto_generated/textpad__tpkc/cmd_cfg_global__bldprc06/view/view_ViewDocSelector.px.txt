@@ -1,0 +1,8 @@
+zTpkcViewDocSelectorAbrv1C	Vds	zTpkcViewDocSelectorAbrv1C
+zTpkcVdsCmdNameTC	ViewDocSelector	zTpkcVdsCmdNameTC
+zTpkcVdsDfltPhrsNm	zTPViewDocSelector	zTpkcVdsDfltPhrsNm
+zTpkcVdsCatForCmdAbrvLC	view	zTpkcVdsCatForCmdAbrvLC
+zTpkcVdsCmdType_mcrTl		zTpkcVdsCmdType_mcrTl
+zTpkcVdsIsBtstrp_yes		zTpkcVdsIsBtstrp_yes
+zTpkcVdsDfltPostKcSlpMils	10	zTpkcVdsDfltPostKcSlpMils
+zTpkcVdsStpsFrmCmdListTop	{#insert zVV}{#insert zDOWN}	zTpkcVdsStpsFrmCmdListTop

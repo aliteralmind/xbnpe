@@ -1,0 +1,48 @@
+CharLeft	zTPMoveL1c	Crl	__ES__	1	(*NOTHING. Top command in list*)
+CharLeftExtend	zTPSelectL1c	Crlx	__ES__	1	{#insert zDOWN}
+CharRight	zTPMoveR1c	Crr	__ES__	1	{#insert zDOWN2}
+CharRightExtend	zTPSelectR1c	Crrx	__ES__	1	{#insert zDD}{#insert zUP}
+DocumentEnd	zTPGTDocBottom	Crdce	__ES__	25	{#insert zDD}
+DocumentEndExtend	zTPSTDocBottom	Crdcex	__ES__	50	{#NONE -chars d -count 2}{#insert z5ThnTSlp}
+DocumentStart	zTPGTDocTop	Crdcs	yes	25	{#NONE -chars d -count 3}{#insert z5ThnTSlp}
+DocumentStartExtend	zTPSTDocTop	Crdcsx	__ES__	50	{#insert zPGDN}{#insert zDOWN}
+GoToBlockEnd	zTPGoToBlockEnd	Crblke	__ES__	10	{#insert zGG}
+GoToBlockStart	zTPGoToBlockStart	Crblks	__ES__	10	{#insert zPGDN}{#insert zDOWN3}
+GoToColumn	zTPGoToColumn	Crgtc	__ES__	5	{#insert zPGDN2}{#insert zUP2}
+GoToLine	zTPGoToLine	Crgtl	__ES__	50	{#insert zPGDN2}{#insert zUP}
+GoToPage	zTPGoToPage	Crgtp	__ES__	50	{#insert zPGDN2}
+LineDown	zTPLineDown	Crlnd	__ES__	1	{#insert zLL}
+LineDownExtend	zTPLineDownExtend	Crlndx	__ES__	2	{#insert zPGDN2}{#insert zDOWN2}
+LineEnd	zTPLineEnd	Crlne	__ES__	1	{#insert zPGDN2}{#insert zDOWN3}
+LineEndExtend	zTPLineEndExtend	Crlnex	__ES__	2	{#insert zPGDN3}{#insert zUP2}
+LineLeft	zTPLineLeft	Crlnl	__ES__	1	{#insert zPGDN3}{#insert zUP}
+LineLeftExtend	zTPLineLeftExtend	Crlnlx	__ES__	2	{#insert zPGDN3}
+LineScrollDown	zTPLineScrollDown	Crlnscrd	__ES__	10	{#insert zPP}{#insert zPGUP}
+LineScrollUp	zTPLineScrollUp	Crlnscru	__ES__	10	{#insert zPP}{#insert zPGUP}{#insert zDOWN}
+LineStart	zTPLineHome	Crlnst	__ES__	1	{#insert zPP}{#UP -count 4}{#insert z5ThnTSlp}
+LineStartExtend	zTPLineHomeExtend	Crlnstx	__ES__	2	{#insert zPP}{#insert zUP3}
+LineUp	zTPLineUp	Crlnu	__ES__	1	{#insert zPP}{#insert zUP2}
+LineUpExtend	zTPLineUpExtend	Crlnux	__ES__	2	{#insert zPP}{#insert zUP}
+PageDown	zTPPageDown	Crpgd	__ES__	10	{#insert zPP}
+PageDownExtend	zTPPageDownExtend	Crpgdx	__ES__	20	{#NONE -chars p -count 2}{#insert z5ThnTSlp}
+PageLeft	zTPPageLeft	Crpgl	__ES__	10	{#NONE -chars p -count 3}{#insert z5ThnTSlp}
+PageLeftExtend	zTPPageLeftExtend	Crpglx	__ES__	20	{#NONE -chars p -count 4}{#insert z5ThnTSlp}
+PageRight	zTPPageRight	Crpgr	__ES__	10	{#insert zEND}{#insert zPGUP3}
+PageRightExtend	zTPPageRightExtend	Crpgrx	__ES__	20	{#insert zEND}{#insert zPGUP3}{#insert zDOWN}
+PageUp	zTPPageUp	Crpgu	__ES__	10	{#insert zEND}{#insert zPGUP3}{#insert zDOWN2}
+PageUpExtend	zTPPageUpExtend	Crpgux	__ES__	20	{#insert zEND}{#insert zPGUP2}{#insert zUP3}
+ParaDown	zTPParaDown	Crprd	__ES__	5	{#insert zEND}{#insert zEND}{#insert zPGUP2}{#insert zUP2}
+ParaDownExtend	zTPParaDownExtend	Crprdx	__ES__	10	{#insert zEND}{#insert zPGUP2}{#insert zUP}
+ParaUp	zTPParaUp	Crpru	__ES__	5	{#insert zEND}{#insert zPGUP2}
+ParaUpExtend	zTPParaUpExtend	Crprux	__ES__	10	{#insert zEND}{#insert zPGUP2}{#insert zDOWN}
+TabLeft	zTPTabLeft	Crtbllft	__ES__	1	{#insert zTT}
+ViewEnd	zTPViewEnd	Crvwe	__ES__	10	{#insert zVV}
+ViewStart	zTPViewStart	Crvws	__ES__	10	{#NONE -chars v -count 2}{#insert z5ThnTSlp}
+WordLeft	zTPMoveL1w	Crwdl	__ES__	1	{#insert zWW}
+WordLeftEnd	zTPWordLeftEnd	Crwdle	__ES__	1	{#NONE -chars w -count 2}{#insert z5ThnTSlp}
+WordLeftEndExtend	zTPWordLeftEndExtend	Crwdlex	__ES__	2	{#NONE -chars w -count 3}{#insert z5ThnTSlp}
+WordLeftExtend	zTPSelectL1w	Crwdlx	yes	2	{#NONE -chars w -count 4}{#insert z5ThnTSlp}
+WordRight	zTPWordRight	Crwdr	__ES__	1	{#insert zEND}{#insert zUP3}
+WordRightEnd	zTPMoveR1w	Crwdre	yes	1	{#insert zEND}{#insert zUP2}
+WordRightEndExtend	zTPSelectR1w	Crwdrex	yes	2	{#insert zEND}{#insert zUP}
+WordRightExtend	zTPWordRightExtend	Crwdrx	__ES__	2	{#insert zEND}

@@ -1,0 +1,90 @@
+
+(*---------------------------------------------------------------------------*)
+zzZIdxJdlncpNodeType -- DO NOT EDIT	pset	zzZIdxJdlncpNodeType
+zzZIdxJdlcnstrpwPNAbrvTC -- DO NOT EDIT	Jdlncp	zzZIdxJdlcnstrpwPNAbrvTC
+zzZIdxJdlncpPostfix	jdlcnstrpw	zzZIdxJdlncpPostfix
+zzZIdxJdlncpPostTC -- DO NOT EDIT	Jdlcnstrpw	zzZIdxJdlncpPostTC
+zzZIdxJdlncpParentTCPost -- LITERAL TEXT, NOT PHRASE CALL	Jdlnpcnstr	zzZIdxJdlncpParentTCPost
+zzZIdxJdlncpSyntax	clpw[d[b]][c][[e,i][f,r]k[y]] ... clpwdb[n,y] ... clpw[d][n,y[b]]	zzZIdxJdlncpSyntax
+zzZIdxJdlncpDescription	Create a 'L'ink to a 'C'onstructor that is either in THIS class (file), or another class in the same directory (package). The constructor-name is in the 'P'revious 'W'ord.	zzZIdxJdlncpDescription
+zzZIdxJdlncpXInfo_onff	on	zzZIdxJdlncpXInfo_onff
+zzZIdxJdlncpExtraInfo	{#insert zzAllOptsEntrTb}{#insert zzVFFkgOptBafterDForDir}{#insert zzVFFkgOptC}{#insert zzVFFkgOptD}{#insert zzVFFkgOptPrekALL}{#insert zzVFFkgOptN}{#insert zzVFFkgOptY}{#insert zzPhraseFileNameFooter}{#insert zXPROOT_DIR_jdLink}0params_cnstr_pw.px.txt	zzZIdxJdlncpExtraInfo
+
+(*---------------------------------------------------------------------------*)
+zzZIdxJdlncrNodeType -- DO NOT EDIT	pset	zzZIdxJdlncrNodeType
+zzZIdxJdlcnstrtrPNAbrvTC -- DO NOT EDIT	Jdlncr	zzZIdxJdlcnstrtrPNAbrvTC
+zzZIdxJdlncrPostfix	jdlcnstrtr	zzZIdxJdlncrPostfix
+zzZIdxJdlncrPostTC -- DO NOT EDIT	Jdlcnstrtr	zzZIdxJdlncrPostTC
+zzZIdxJdlncrParentTCPost -- LITERAL TEXT, NOT PHRASE CALL	Jdlnpcnstr	zzZIdxJdlncrParentTCPost
+zzZIdxJdlncrSyntax	clthis[c,n,t[c],y[b]] ... clsuper[c,n,r[c]][[e,i][f,r]k[y]] ... clsupery[b]	zzZIdxJdlncrSyntax
+zzZIdxJdlncrDescription	Create a 'L'ink to a 'C'onstructor in THIS class, or the super-class.	zzZIdxJdlncrDescription
+zzZIdxJdlncrXInfo_onff	on	zzZIdxJdlncrXInfo_onff
+zzZIdxJdlncrExtraInfo	{#insert zzAllOptsEntrTb}{#insert zzVFFkgOptBafterY}{#insert zzVFFkgOptC}{#insert zzVFFkgOptD}{#insert zzVFFkgOptPrekALL}{#insert zzVFFkgOptN}-R- (as follows 'clsuper'){#insert zzVFFkgOptREntrTbBody}{#insert zzVFFkgOptT}{#insert zzVFFkgOptY}{#insert zzPhraseFileNameFooter}{#insert zXPROOT_DIR_jdLink}0params_cnstr_this_super.px.txt	zzZIdxJdlncrExtraInfo
+
+(*---------------------------------------------------------------------------*)
+zzZIdxJdlniNodeType -- DO NOT EDIT	pset	zzZIdxJdlniNodeType
+zzZIdxJdlnfilePNAbrvTC -- DO NOT EDIT	Jdlni	zzZIdxJdlnfilePNAbrvTC
+zzZIdxJdlniPostfix	jdlnfile	zzZIdxJdlniPostfix
+zzZIdxJdlniPostTC -- DO NOT EDIT	Jdlnfile	zzZIdxJdlniPostTC
+zzZIdxJdlniParentTCPost -- LITERAL TEXT, NOT PHRASE CALL	Jdlnpfileobj	zzZIdxJdlniParentTCPost
+zzZIdxJdlniSyntax	ilcb[c,d[c,y],y] ... ilpw[c,d[c,y[b[c]]]] ... ilpw[d][y[b[c]]] ... ilpw[d]c	zzZIdxJdlniSyntax
+zzZIdxJdlniDescription	Create a f'I'le 'L'ink. The 'C'lip'B'oard contains the file name.	zzZIdxJdlniDescription
+zzZIdxJdlniXInfo_onff	on	zzZIdxJdlniXInfo_onff
+zzZIdxJdlniExtraInfo	{#insert zzAllOptsEntrTb}{#insert zzVFFkgOptBafterY}{#insert zzVFFkgOptC}{#insert zzVFFkgOptD}{#insert zzVFFkgOptY}{#insert zzPhraseFileNameFooter}{#insert zXPROOT_DIR_jdLink}0params_file.px.txt	zzZIdxJdlniExtraInfo
+
+(*---------------------------------------------------------------------------*)
+zzZIdxJdlnobNodeType -- DO NOT EDIT	pset	zzZIdxJdlnobNodeType
+zzZIdxJdlobjectcbPNAbrvTC -- DO NOT EDIT	Jdlnob	zzZIdxJdlobjectcbPNAbrvTC
+zzZIdxJdlnobPostfix	jdlobjectcb	zzZIdxJdlnobPostfix
+zzZIdxJdlnobPostTC -- DO NOT EDIT	Jdlobjectcb	zzZIdxJdlnobPostTC
+zzZIdxJdlnobParentTCPost -- LITERAL TEXT, NOT PHRASE CALL	Jdlnpfileobj	zzZIdxJdlnobParentTCPost
+zzZIdxJdlnobSyntax	olcb[r][c][[e,i][f,r]k[y]] ... olcb[r]y	zzZIdxJdlnobSyntax
+zzZIdxJdlnobDescription	Create a 'L'ink to a 'O'bject. The object's name is in the 'C'lip'B'oard.	zzZIdxJdlnobDescription
+zzZIdxJdlnobXInfo_onff	on	zzZIdxJdlnobXInfo_onff
+zzZIdxJdlnobExtraInfo	{#insert zzAllOptsEntrTb}{#insert zzVFFkgOptC}-R- (as follows 'olcb'){#insert zzVFFkgOptREntrTbBody}{# insert zzVFFkgOptPrekALL}{#insert zzVFFkgOptY}{#insert zzPhraseFileNameFooter}{#insert zXPROOT_DIR_jdLink}0params_object_cb.px.txt	zzZIdxJdlnobExtraInfo
+
+(*---------------------------------------------------------------------------*)
+zzZIdxJdlnopNodeType -- DO NOT EDIT	pset	zzZIdxJdlnopNodeType
+zzZIdxJdlobjectpwPNAbrvTC -- DO NOT EDIT	Jdlnop	zzZIdxJdlobjectpwPNAbrvTC
+zzZIdxJdlnopPostfix	jdlobjectpw	zzZIdxJdlnopPostfix
+zzZIdxJdlnopPostTC -- DO NOT EDIT	Jdlobjectpw	zzZIdxJdlnopPostTC
+zzZIdxJdlnopParentTCPost -- LITERAL TEXT, NOT PHRASE CALL	Jdlnpfileobj	zzZIdxJdlnopParentTCPost
+zzZIdxJdlnopSyntax	olpw[f[b],r][c][[e,i][f,r]k[y]] ... olpwry[b] ... olpw[fby,fyb]	zzZIdxJdlnopSyntax
+zzZIdxJdlnopDescription	Create a 'L'ink to a 'O'bject. The object's name is in the 'P'revious 'W'ord.	zzZIdxJdlnopDescription
+zzZIdxJdlnopXInfo_onff	on	zzZIdxJdlnopXInfo_onff
+zzZIdxJdlnopExtraInfo	{#insert zzAllOptsEntrTb}{#insert zzVFFkgOptBafterF}{#insert zzVFFkgOptC}{#insert zzVFFkgOptPrekALL}-R- (as follows 'olpw'){#insert zzVFFkgOptREntrTbBody}{#insert zzVFFkgOptY}{#insert zzPhraseFileNameFooter}{#insert zXPROOT_DIR_jdLink}0params_object_pw.px.txt	zzZIdxJdlnopExtraInfo
+
+(*---------------------------------------------------------------------------*)
+zzZIdxJdlnfrNodeType -- DO NOT EDIT	pset	zzZIdxJdlnfrNodeType
+zzZIdxJdlnfuncrPNAbrvTC -- DO NOT EDIT	Jdlnfr	zzZIdxJdlnfuncrPNAbrvTC
+zzZIdxJdlnfrPostfix	jdlnfuncr	zzZIdxJdlnfrPostfix
+zzZIdxJdlnfrPostTC -- DO NOT EDIT	Jdlnfuncr	zzZIdxJdlnfrPostTC
+zzZIdxJdlnfrParentTCPost -- LITERAL TEXT, NOT PHRASE CALL	Jdlnpfunc	zzZIdxJdlnfrParentTCPost
+zzZIdxJdlnfrSyntax	flcbr[c][[e,i][f,r]k[y]] ... flcbry ... flpwr[c][[e,i][f,r]k[y]] ... flpwry[b]	zzZIdxJdlnfrSyntax
+zzZIdxJdlnfrDescription	Create a 'L'ink to a 'F'unction in the supe'R'-class. The function-name is either in the 'C'lip'B'oard, or 'P'revious 'W'ord.	zzZIdxJdlnfrDescription
+zzZIdxJdlnfrXInfo_onff	on	zzZIdxJdlnfrXInfo_onff
+zzZIdxJdlnfrExtraInfo	{#insert zzAllOptsEntrTb}{#insert zzVFFkgOptBafterY}{#insert zzVFFkgOptC}{#insert zzVFFkgOptPrekALL}{#insert zzVFFkgOptY}{#insert zzPhraseFileNameFooter}{#insert zXPROOT_DIR_jdLink}0params_func_in_super.px.txt	zzZIdxJdlnfrExtraInfo
+
+(*---------------------------------------------------------------------------*)
+zzZIdxJdlnfoNodeType -- DO NOT EDIT	pset	zzZIdxJdlnfoNodeType
+zzZIdxJdlnfuncdfPNAbrvTC -- DO NOT EDIT	Jdlnfo	zzZIdxJdlnfuncdfPNAbrvTC
+zzZIdxJdlnfoPostfix	jdlnfuncdf	zzZIdxJdlnfoPostfix
+zzZIdxJdlnfoPostTC -- DO NOT EDIT	Jdlnfuncdf	zzZIdxJdlnfoPostTC
+zzZIdxJdlnfoParentTCPost -- LITERAL TEXT, NOT PHRASE CALL	Jdlnpfunc	zzZIdxJdlnfoParentTCPost
+zzZIdxJdlnfoSyntax	flcbf[c][[e,i][f,r]k[y]] ... flcbfy ... flpwf[[by,c,y[b]]] ... flpwfb[c][[e,i]fk[y]]  ('fk' only)	zzZIdxJdlnfoSyntax
+zzZIdxJdlnfoDescription	Create a 'L'ink to a function in a different class ('F'ile) in the same directory (package). The function-name is either in the 'C'lip'B'oard, or 'P'revious 'W'ord.	zzZIdxJdlnfoDescription
+zzZIdxJdlnfoXInfo_onff	on	zzZIdxJdlnfoXInfo_onff
+zzZIdxJdlnfoExtraInfo	{#insert zzAllOptsEntrTb}{#insert zzVFFkgOptBafterF}{#insert zzVFFkgOptBafterY}{#insert zzVFFkgOptC}{#insert zzVFFkgOptF}{#insert zzVFFkgOptPrekALL}{#insert zzVFFkgOptY}{#insert zzPhraseFileNameFooter}{#insert zXPROOT_DIR_jdLink}0params_func_diff_file_same_dir.px.txt	zzZIdxJdlnfoExtraInfo
+
+(*---------------------------------------------------------------------------*)
+zzZIdxJdlnftNodeType -- DO NOT EDIT	pset	zzZIdxJdlnftNodeType
+zzZIdxJdlnfuncotherPNAbrvTC -- DO NOT EDIT	Jdlnft	zzZIdxJdlnfuncotherPNAbrvTC
+zzZIdxJdlnftPostfix	jdlnfuncother	zzZIdxJdlnftPostfix
+zzZIdxJdlnftPostTC -- DO NOT EDIT	Jdlnfuncother	zzZIdxJdlnftPostTC
+zzZIdxJdlnftParentTCPost -- LITERAL TEXT, NOT PHRASE CALL	Jdlnpfunc	zzZIdxJdlnftParentTCPost
+zzZIdxJdlnftSyntax	flcb[c,y] ... flpw[c,y[b]] ... flpwdb[c][[e,i]fk[y]] ... flpwdfb[#,n]	zzZIdxJdlnftSyntax
+zzZIdxJdlnftDescription	Create a 'L'ink to a function that is either in THIS class, OR another. The function-name is in either in the 'C'lip'B'oard, or 'P'revious 'W'ord. flpwdfb[#,n] does flpwdb/flpwfb multiple times (dir-or-file is prompted).	zzZIdxJdlnftDescription
+zzZIdxJdlnftXInfo_onff	on	zzZIdxJdlnftXInfo_onff
+zzZIdxJdlnftExtraInfo	{#insert zzAllOptsEntrTb}{#insert zzVFFkgOptBafterDForDir}{#insert zzVFFkgOptBafterY}{#insert zzVFFkgOptC}{#insert zzVFFkgOptD}{#insert zzVFFkgOptF}{#insert zzVFFkgOptPrekFileOnly}{#insert zzVFFkgOptY}{#insert zENTER}---{#insert zENTER2}(Note there is no 'flcbd' command, to avoid both the directory and file being '{#insert zXmark}'...use 'flcbf' instead.){#insert zzPhraseFileNameFooter}{#insert zXPROOT_DIR_jdLink}0params_func_in_this_dir.px.txt	zzZIdxJdlnftExtraInfo
+
+(*---------------------------------------------------------------------------*)

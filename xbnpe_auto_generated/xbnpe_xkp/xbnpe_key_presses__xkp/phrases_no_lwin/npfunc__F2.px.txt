@@ -1,0 +1,8 @@
+F2 -- zF2	{#F2}{#insert zTSlp}	zF2
+Alt+F2 -- zApF2	{#ALT {#F2}}{#insert zTSlp}	zApF2
+Alt+Shift+F2 -- zASpF2	{#ALT {#SHIFT {#F2}}}{#insert zTSlp}	zASpF2
+Ctrl+F2 -- zCpF2	{#CTRL {#F2}}{#insert zTSlp}	zCpF2
+Ctrl+Alt+F2 -- zCApF2	{#CTRL {#ALT {#F2}}}{#insert zTSlp}	zCApF2
+Ctrl+Alt+Shift+F2 -- zCASpF2	{#CTRL {#ALT {#SHIFT {#F2}}}}{#insert zTSlp}	zCASpF2
+Ctrl+Shift+F2 -- zCSpF2	{#CTRL {#SHIFT {#F2}}}{#insert zTSlp}	zCSpF2
+Shift+F2 -- zSpF2	{#SHIFT {#F2}}{#insert zTSlp}	zSpF2

@@ -1,0 +1,19 @@
+zzTpCmdAbrv1CNm_M_cmdm -- Needs zvCMD_NAME_TC	{#insert zzzTpkcCmdCfgVarNmsPREFIX}{#insert zvCMD_NAME_TC}{#insert zzzTPkcCmcdAbrv1CPOSTFIX}	zzTpCmdAbrv1CNm_M_cmdm
+zzTpCmdAbrv1CNm_M_nminstr -- Needs zvSTRING	{#insert zzzTpkcCmdCfgVarNmsPREFIX}{#insert zvSTRING}{#insert zzzTPkcCmcdAbrv1CPOSTFIX}	zzTpCmdAbrv1CNm_M_nminstr
+zzTpCmdIsBtstrp_yesNm_M_cmd1 -- Needs zvCMD_ABRV_1C	{#insert zzzTpkcCmdCfgVarNmsPREFIX}{#insert zvCMD_ABRV_1C}IsBtstrp_yes	zzTpCmdIsBtstrp_yesNm_M_cmd1
+zzTpCmdDfltPhrsNameNm_M_cmd1 -- Needs zvCMD_ABRV_1C	{#insert zzzTpkcCmdCfgVarNmsPREFIX}{#insert zvCMD_ABRV_1C}{#insert zzzTPkcCmcdDfltPhrsNmPOSTFIX}	zzTpCmdDfltPhrsNameNm_M_cmd1
+zzTpCmdStpsFrmLstTopNm_M_cmd1 -- Needs zvCMD_ABRV_1C	{#insert zzzTpkcCmdCfgVarNmsPREFIX}{#insert zvCMD_ABRV_1C}StpsFrmCmdListTop	zzTpCmdStpsFrmLstTopNm_M_cmd1
+zzTpCmdNameTCNm_M_cmd1 -- Needs zvCMD_ABRV_1C	{#insert zzzTpkcCmdCfgVarNmsPREFIX}{#insert zvCMD_ABRV_1C}CmdNameTC	zzTpCmdNameTCNm_M_cmd1
+zzTpCmdNbsKcCountNm_M_cmdm -- Needs zvCMD_ABRV_1C	{#insert zzzTpkcCmdCfgVarNmsPREFIX}{#insert zvCMD_NAME_TC}{#insert zzzTpkcCmcdNbsKcCountPOSTFIX}	zzTpCmdNbsKcCountNm_M_cmdm
+zzTpCmdNbsKcEscNm_M_cmdmNum -- Needs zvCMD_NAME_TC, zvNBS_KC_NUM	{#insert zzzTpkcCmdCfgVarNmsPREFIX}{#insert zvCMD_NAME_TC}{#insert zzzTPkcCmcdNbsKcEscPOSTFIXPreNum}{#insert zvNBS_KC_NUM}	zzTpCmdNbsKcEscNm_M_cmdmNum
+zzTpCmdType_mcrTlNm_M_cmd1 -- Needs zvCMD_ABRV_1C	{#insert zzzTpkcCmdCfgVarNmsPREFIX}{#insert zvCMD_ABRV_1C}CmdType_mcrTl	zzTpCmdType_mcrTlNm_M_cmd1
+zzTpkcCatForCmdAbrvLCNm_M_cmd1 -- Needs zvCMD_ABRV_1C	{#insert zzzTpkcCmdCfgVarNmsPREFIX}{#insert zvCMD_ABRV_1C}{#insert zzzTPkcCmcdCatForCmdAbrvLCPOSTFIX}	zzTpkcCatForCmdAbrvLCNm_M_cmd1
+zzTpCmdDfltPstKcMlsNm_M_cmd1 -- Needs zvCMD_ABRV_1C	{#insert zzzTpkcCmdCfgVarNmsPREFIX}{#insert zvCMD_ABRV_1C}{#insert zzzTPkcCmcdDfltPstKcMlsAbrvLCPOSTFIX}	zzTpCmdDfltPstKcMlsNm_M_cmd1
+
+zzzTpkcCmdCfgVarNmsPREFIX	zTpkc	zzzTpkcCmdCfgVarNmsPREFIX
+zzzTPkcCmcdAbrv1CPOSTFIX	Abrv1C	zzzTPkcCmcdAbrv1CPOSTFIX
+zzzTPkcCmcdDfltPhrsNmPOSTFIX	DfltPhrsNm	zzzTPkcCmcdDfltPhrsNmPOSTFIX
+zzzTpkcCmcdNbsKcCountPOSTFIX	NbsKcCount	zzzTpkcCmcdNbsKcCountPOSTFIX
+zzzTPkcCmcdCatForCmdAbrvLCPOSTFIX	CatForCmdAbrvLC	zzzTPkcCmcdCatForCmdAbrvLCPOSTFIX
+zzzTPkcCmcdNbsKcEscPOSTFIXPreNum	NbsKcEsc	zzzTPkcCmcdNbsKcEscPOSTFIXPreNum
+zzzTPkcCmcdDfltPstKcMlsAbrvLCPOSTFIX	DfltPostKcSlpMils	zzzTPkcCmcdDfltPstKcMlsAbrvLCPOSTFIX

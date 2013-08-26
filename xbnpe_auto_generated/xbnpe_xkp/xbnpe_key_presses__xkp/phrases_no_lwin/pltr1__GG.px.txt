@@ -1,0 +1,8 @@
+GG -- zGG	{#NONE -chars g}{#insert zTSlp}	zGG
+Alt+GG -- zApGG	{#ALT -chars g}{#insert zTSlp}	zApGG
+Alt+Shift+GG -- zASpGG	{#ALT {#SHIFT -chars g}}{#insert zTSlp}	zASpGG
+Ctrl+GG -- zCpGG	{#CTRL -chars g}{#insert zTSlp}	zCpGG
+Ctrl+Alt+GG -- zCApGG	{#CTRL {#ALT -chars g}}{#insert zTSlp}	zCApGG
+Ctrl+Alt+Shift+GG -- zCASpGG	{#CTRL {#ALT {#SHIFT -chars g}}}{#insert zTSlp}	zCASpGG
+Ctrl+Shift+GG -- zCSpGG	{#CTRL {#SHIFT -chars g}}{#insert zTSlp}	zCSpGG
+Shift+GG -- zSpGG	{#SHIFT -chars g}{#insert zTSlp}	zSpGG

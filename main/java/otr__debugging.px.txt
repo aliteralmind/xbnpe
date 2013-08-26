@@ -1,0 +1,2 @@
+soplif -- Conditional println()	if({#insert zXmark})  {{#insert zENTER}System.out.println({#insert zXmark});{#insert zENTER}}  {#insert zFindXUp2}	soplif
+sopif -- Conditional print()	if({#insert zXmark})  {{#insert zENTER}System.out.print({#insert zXmark});{#insert zENTER}}  {#insert zFindXUp2}	sopif

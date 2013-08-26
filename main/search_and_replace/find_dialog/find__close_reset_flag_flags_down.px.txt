@@ -1,0 +1,17 @@
+(*
+   Required by phrase-creator-ddmenu-utils...START
+      PM_DDMENU_DIRID_FILENMPHRSNM_HDRAUTOTXT=snr/zzPmdmFNmPreSnrFind/xhsfcd
+   Required by phrase-creator-ddmenu-utils...END
+*)
+zFindDlgCloseDown	{#insert zFindFlagDownRAW}{#insert zFindDlgClose}	zFindDlgCloseDown
+zFindDlgCloseDownMC -- Down selected, MC unchecked	{#insert zFindDlgCloseDown}{#insert zTPFindFlagMCoff}	zFindDlgCloseDownMC
+zFindDlgCloseDownMCRE	{#insert zFindDlgCloseDown}{#insert zFindFlagsMCREoff}	zFindDlgCloseDownMCRE
+zFindDlgCloseDownMCREXS	{#insert zFindFlagXSTgl}{#insert zFindDlgCloseDown}{#insert zFindFlagsMCREoff}	zFindDlgCloseDownMCREXS
+zFindDlgCloseDownMCWW	{#insert zFindDlgCloseDown}{#insert zFindFlagsMCWWoff}	zFindDlgCloseDownMCWW
+zFindDlgCloseDownMCWWXS	{#insert zFindFlagXSTgl}{#insert zFindDlgCloseDown}{#insert zFindFlagsMCWWoff}	zFindDlgCloseDownMCWWXS
+zFindDlgCloseDownMCXS	{#insert zFindDlgCloseDownXS}{#insert zTPFindFlagMCoff}	zFindDlgCloseDownMCXS
+zFindDlgCloseDownRE	{#insert zFindDlgCloseDown}{#insert zTPFindFlagREoff}	zFindDlgCloseDownRE
+zFindDlgCloseDownREXS	{#insert zFindDlgCloseDownXS}{#insert zTPFindFlagREoff}	zFindDlgCloseDownREXS
+zFindDlgCloseDownWW	{#insert zFindDlgCloseDown}{#insert zTPFindFlagWWoff}	zFindDlgCloseDownWW
+zFindDlgCloseDownWWXS	{#insert zFindDlgCloseDownXS}{#insert zTPFindFlagWWoff}	zFindDlgCloseDownWWXS
+zFindDlgCloseDownXS	{#insert zFindFlagXSTgl}{#insert zFindDlgCloseDown}	zFindDlgCloseDownXS

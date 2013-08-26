@@ -1,0 +1,13 @@
+__**WARNING**__: All phrases in this folder were created by 'plpdcf'. DO NOT EDIT.	.		(*Extra tab to allow for empty-string autotext*)
+zvCOMMANDS_ON_sfKey	{#SETPHRASE -description zvCOMMANDS_ON -content {#insert zzMnvCmdCmdon_cfgValue_M_key} -autotext zvCOMMANDS_ON -folder ctvv_folder}	zvCOMMANDS_ON_sfKey
+zzMnvCmdCmdon_cfgValue_M_key	{#insert {#insert zzMnvCmdCmdon_cfgVarPhrsName_M_key}}	zzMnvCmdCmdon_cfgValue_M_key
+zzMnvCmdCommands_on_cvtFromAbrv1C	Cmdon	zzMnvCmdCommands_on_cvtFromAbrv1C
+zzMnvCmdCmdon_cfgVarPNmPost	Commands_on	zzMnvCmdCmdon_cfgVarPNmPost
+zzMnvCmdCmdon_intrnlVarNm	zvCOMMANDS_ON	zzMnvCmdCmdon_intrnlVarNm
+zzMnvCmdCmdon_cfgVarPhrsName_M_key	zz{#insert zzMnvCmdProjectAbrv1C}{#insert zzMnvCmdDataTypeAbrv1C}{#insert zvCMD_PNMV_1C}{#insert zzMnvCmdCmdon_cfgVarPNmPost}	zzMnvCmdCmdon_cfgVarPhrsName_M_key
+zzMnvCmdCmdon_helpForDlg	If command~phrases should be printed, set this to 'on'. Otherwise, ''. Sub cv~types (only used when this is 'on'): [NamePreNum], [NamePostNum]	zzMnvCmdCmdon_helpForDlg
+zzMnvCmdCmdon_valuePrintable	yes	zzMnvCmdCmdon_valuePrintable
+zzMnvCmdCmdon_validateValuePhrsNm		zzMnvCmdCmdon_validateValuePhrsNm
+zzMnvCmdCmdon_nkcvListNum	1	zzMnvCmdCmdon_nkcvListNum
+zzMnvCmdCmdon_keyCVTFromAbrv1C	{#insert zzMnvCmdPrivKeyCVTFromAbrv1C}	zzMnvCmdCmdon_keyCVTFromAbrv1C
+zvCVT_FRMV_1C_stMnvCmdCmdon	{#SETPHRASE -description zvCVT_FRMV_1C -content {#insert zzMnvCmdCommands_on_cvtFromAbrv1C} -autotext zvCVT_FRMV_1C -folder ctvv_folder}	zvCVT_FRMV_1C_stMnvCmdCmdon

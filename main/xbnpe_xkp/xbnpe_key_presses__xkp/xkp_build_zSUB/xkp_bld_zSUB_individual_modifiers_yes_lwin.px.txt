@@ -1,0 +1,8 @@
+zzXkpIndvMdfr_al	{#insert zzzHmSelr1wCpLft}Alt+LWin+{#insert zzzMvr1wSpcDshDshSpc}zALp{#insert zzzPsteSell1wCpRigRig}\\\{#ALT \\\{#LWIN {#END}\\\}\\\}{#insert zzzLtrlTSlpTbPstRig}	zzXkpIndvMdfr_al
+zzXkpIndvMdfr_asl	{#insert zzzHmSelr1wCpLft}Alt+Shift+LWin+{#insert zzzMvr1wSpcDshDshSpc}zASLp{#insert zzzPsteSell1wCpRigRig}\\\{#ALT \\\{#SHIFT \\\{#LWIN {#END}\\\}\\\}\\\}{#insert zzzLtrlTSlpTbPstRig}	zzXkpIndvMdfr_asl
+zzXkpIndvMdfr_cal	{#insert zzzHmSelr1wCpLft}Ctrl+Alt+LWin+{#insert zzzMvr1wSpcDshDshSpc}zCALp{#insert zzzPsteSell1wCpRigRig}\\\{#CTRL \\\{#ALT \\\{#LWIN {#END}\\\}\\\}\\\}{#insert zzzLtrlTSlpTbPstRig}	zzXkpIndvMdfr_cal
+zzXkpIndvMdfr_casl	{#insert zzzHmSelr1wCpLft}Ctrl+Alt+Shift+LWin+{#insert zzzMvr1wSpcDshDshSpc}zCASLp{#insert zzzPsteSell1wCpRigRig}\\\{#CTRL \\\{#ALT \\\{#SHIFT \\\{#LWIN {#END}\\\}\\\}\\\}\\\}{#insert zzzLtrlTSlpTbPstRig}	zzXkpIndvMdfr_casl
+zzXkpIndvMdfr_cl	{#insert zzzHmSelr1wCpLft}Ctrl+LWin+{#insert zzzMvr1wSpcDshDshSpc}zCLp{#insert zzzPsteSell1wCpRigRig}\\\{#CTRL \\\{#LWIN {#END}\\\}\\\}{#insert zzzLtrlTSlpTbPstRig}	zzXkpIndvMdfr_cl
+zzXkpIndvMdfr_csl	{#insert zzzHmSelr1wCpLft}Ctrl+Shift+LWin+{#insert zzzMvr1wSpcDshDshSpc}zCSLp{#insert zzzPsteSell1wCpRigRig}\\\{#CTRL \\\{#SHIFT \\\{#LWIN {#END}\\\}\\\}\\\}{#insert zzzLtrlTSlpTbPstRig}	zzXkpIndvMdfr_csl
+zzXkpIndvMdfr_l	{#insert zzzHmSelr1wCpLft}LWin+{#insert zzzMvr1wSpcDshDshSpc}zLp{#insert zzzPsteSell1wCpRigRig}\\\{#LWIN {#END}\\\}{#insert zzzLtrlTSlpTbPstRig}	zzXkpIndvMdfr_l
+zzXkpIndvMdfr_sl	{#insert zzzHmSelr1wCpLft}Shift+LWin+{#insert zzzMvr1wSpcDshDshSpc}zSLp{#insert zzzPsteSell1wCpRigRig}\\\{#SHIFT \\\{#LWIN {#END}\\\}\\\}{#insert zzzLtrlTSlpTbPstRig}	zzXkpIndvMdfr_sl

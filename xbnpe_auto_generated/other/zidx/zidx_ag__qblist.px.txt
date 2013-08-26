@@ -1,0 +1,33 @@
+
+
+
+
+
+(*ZIdx: Auto-generated -- **DO NOT EDIT**...start*)
+zvZIDX_PNABR_VTC_stQblc	{#SETPHRASE -description zvZIDX_PNABR_VTC -content {#insert zzZIdxQblcommaPNAbrvTC} -autotext zvZIDX_PNABR_VTC -folder ctvv_folder}	zvZIDX_PNABR_VTC_stQblc
+zidxqblcomma -- terse dialog (default)	{#insert zvZIDX_PNABR_VTC_stQblc}{#insert zZIdxOutputTerseDlg_M_vtc}	zidxqblcomma
+zidxqblcommam -- zidxqblistm ALT KC	{#insert zidxqblistm}	zidxqblcommam
+zidxqblcommax -- eXtra info (to new file)	{#insert zvZIDX_PNABR_VTC_stQblc}{#insert zZIdxOutputExtraInfoToNF_M_vtc}	zidxqblcommax
+(*ZIdx: Auto-generated -- **DO NOT EDIT**...end*)
+
+(*ZIdx: Auto-generated -- **DO NOT EDIT**...start*)
+zvZIDX_PNABR_VTC_stQblx	{#SETPHRASE -description zvZIDX_PNABR_VTC -content {#insert zzZIdxQblextractPNAbrvTC} -autotext zvZIDX_PNABR_VTC -folder ctvv_folder}	zvZIDX_PNABR_VTC_stQblx
+zidxqblextract -- terse dialog (default)	{#insert zvZIDX_PNABR_VTC_stQblx}{#insert zZIdxOutputTerseDlg_M_vtc}	zidxqblextract
+zidxqblextractm -- zidxqblistm ALT KC	{#insert zidxqblistm}	zidxqblextractm
+zidxqblextractx -- eXtra info (to new file)	{#insert zvZIDX_PNABR_VTC_stQblx}{#insert zZIdxOutputExtraInfoToNF_M_vtc}	zidxqblextractx
+(*ZIdx: Auto-generated -- **DO NOT EDIT**...end*)
+
+(*ZIdx: Auto-generated -- **DO NOT EDIT**...start*)
+zvZIDX_PNABR_VTC_stQblv	{#SETPHRASE -description zvZIDX_PNABR_VTC -content {#insert zzZIdxQblvarsPNAbrvTC} -autotext zvZIDX_PNABR_VTC -folder ctvv_folder}	zvZIDX_PNABR_VTC_stQblv
+zidxqblvars -- terse dialog (default)	{#insert zvZIDX_PNABR_VTC_stQblv}{#insert zZIdxOutputTerseDlg_M_vtc}	zidxqblvars
+zidxqblvarsm -- zidxqblistm ALT KC	{#insert zidxqblistm}	zidxqblvarsm
+zidxqblvarsx -- eXtra info (to new file)	{#insert zvZIDX_PNABR_VTC_stQblv}{#insert zZIdxOutputExtraInfoToNF_M_vtc}	zidxqblvarsx
+(*ZIdx: Auto-generated -- **DO NOT EDIT**...end*)
+
+(*ZIdx: Auto-generated -- **DO NOT EDIT**...start*)
+zvZIDX_PNABR_VTC_stQblgt	{#SETPHRASE -description zvZIDX_PNABR_VTC -content {#insert zzZIdxQblgtokenizePNAbrvTC} -autotext zvZIDX_PNABR_VTC -folder ctvv_folder}	zvZIDX_PNABR_VTC_stQblgt
+zidxqblgtokenize -- terse dialog (default)	{#insert zvZIDX_PNABR_VTC_stQblgt}{#insert zZIdxOutputTerseDlg_M_vtc}	zidxqblgtokenize
+zidxqblgtokenizem -- zidxqblistm ALT KC	{#insert zidxqblistm}	zidxqblgtokenizem
+zidxqblgtokenizex -- eXtra info (to new file)	{#insert zvZIDX_PNABR_VTC_stQblgt}{#insert zZIdxOutputExtraInfoToNF_M_vtc}	zidxqblgtokenizex
+(*ZIdx: Auto-generated -- **DO NOT EDIT**...end*)
+

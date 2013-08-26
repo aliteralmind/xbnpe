@@ -1,0 +1,94 @@
+COMMANDS:               KEYS:
+
+"-tag_selR1             Ctrl+9
+#-qq_mL1
+$-qq_mR1
+%-sqbrackets_insert     Ctrl+Y
+(-tag_mL1               Ctrl+C
+)-tag_mR1               Ctrl+R
+*-tag_insert_empty_single
+,-word_all_cap_prev_word
+.-word_delR5            Alt+Delete
+/-word_mR5              Alt+Right
+?-word_selL5            Shift+Alt+Left
+@-qq_insert
+]-tag_prev_word_to_dbl
+^-tag_find_prev_href_thr_qqCtrl+Shift+Alt+0
+__secrets_sjja to printable
+_TagSelectL1            Ctrl+8
+`-paren_mR1
+{-tag_prev_word_to_dbl_with_newline_btw
+}-tag_prev_word_to_singleCtrl+E
+~-parens_insert         Ctrl+B
+<-word_delL5            Alt+Backspace
+=-word_selR5            Shift+Alt+Right
+>-word_mL5              Alt+Left
+0-paren_mL1
+1-mark_xxx_find_up      Ctrl+Home
+2-mark_yyy_find_down    Alt+Pgup
+3-mark_yyy_find_up      Alt+Insert
+4-mark_zzz_find_down
+5-mark_zzz_find_up
+6-paragraph_go_to_end
+7-paragraph_go_to_start
+8-paragraph_select_thr_end
+9-paragraph_select_thr_start
+a-chr_delL5
+b-chr_delR5
+c-chr_mL5
+Compile Java: BUILD     Ctrl+4
+Compile Java: BUILD all Ctrl+3
+Compile Java: HERE      Ctrl+1
+Compile Java: HERE all  Ctrl+2
+d-chr_mR5
+e-chr_selL5
+explorer.exe $Dir
+f-chr_selR5
+g-java_del_param_names_4fqp
+h-java_del_param_names_4tv
+i-java_del_param_types
+j-java_func_sel_rt_name_open_paren
+k-java_find_comma_space
+-line_moveDown10
+-line_moveUp10
+l-java_find_non_comma_space
+n-java_func_goto_next
+o-java_func_goto_prev
+Open TODO.txt           Ctrl+6
+p-java_select_super_class_name
+q-java_select_this_class_name
+Regexbuddy
+r-java_sel_thr_sig_end
+Run Java Applet
+Run Java Application
+s-line_scrollDown20     Alt+Down
+Tool05                  Ctrl+5
+Tool07
+Tool12
+Tool13
+Tool14
+Tool15
+Tool16
+Tool17
+Tool18
+Tool19
+Tool20
+Tool21
+Tool22
+Tool23
+Tool24
+Tool25
+Tool26
+Tool27
+Tool28
+Tool29
+Tool30
+Tool31
+Tool32
+u-line_scrollDown5
+v-line_scrollUp20       Alt+Up
+w-line_scrollUp5
+x-mark_vvv_find_down    Ctrl+Alt+End
+y-mark_vvv_find_up      Ctrl+Alt+Home
+z-mark_xxx_find_down    Ctrl+End
+[-tag_mR2               Ctrl+0

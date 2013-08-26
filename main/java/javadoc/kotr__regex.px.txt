@@ -1,0 +1,5 @@
+zjreJDFileFuncUrlAndDispWHAT -- Group 1=url, 2=disp text	([^)]+)){#insert zzjreJDLinkPostSigDispText}	zjreJDFileFuncUrlAndDispWHAT
+zzjreJDLinkPostSigDispText	[ \t]+([^ \t].+)	zzjreJDLinkPostSigDispText
+zREGEXHtmlLinkSigAndDispWHAT -- MAYBE DELETE -- Group 1=url, 2=disp text	{#insert zjreFuncNameParams0orMore}{#insert zzjreJDLinkPostSigDispText}	zREGEXHtmlLinkSigAndDispWHAT
+zjreJDLinkSigAndDispWITH	<A HREF={#asc 34}$1{#asc 34}>$2</A>	zjreJDLinkSigAndDispWITH
+zjreJDLinkSigAndDispWITHc -- zjreJDLinkSigAndDispWITH, CODE-d	<CODE>{#insert zjreJDLinkSigAndDispWITH}</CODE>	zjreJDLinkSigAndDispWITHc

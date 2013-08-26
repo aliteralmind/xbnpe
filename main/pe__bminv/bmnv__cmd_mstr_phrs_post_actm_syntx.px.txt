@@ -1,0 +1,20 @@
+zMnvCmdMstrPhrsPstActmSyntax_cmdOrPcOn_M_actSntpaPconPoreLtryAstryn -(**)-	(*zvDEFINE_ASTERISK_YN must be no!*){#insert {#COND -if {#insert zvACTIONS_ON} = on -then zzMPPstActmSyntax_actOn_M_sntpaPconLtry -else zzMPPstActmSyntax_actOff_M_sntpaPconPoreLtry}}	zMnvCmdMstrPhrsPstActmSyntax_cmdOrPcOn_M_actSntpaPconPoreLtryAstryn
+zvDEFINE_ASTERISK_YN_stYes	{#SETPHRASE -description zvDEFINE_ASTERISK_YN -content yes -autotext zvDEFINE_ASTERISK_YN -folder ctvv_folder}	zvDEFINE_ASTERISK_YN_stYes
+zzMPPstActmSyntax_actOffPcOnLtryOffPcpstES	{#insert zvDEFINE_ASTERISK_YN_stYes}*	zzMPPstActmSyntax_actOffPcOnLtryOffPcpstES
+zzMPPstActmSyntax_actOffPcOnLtryOffPcpstP	{#insert zzMnvSynPstMainPhrsCrtr}	zzMPPstActmSyntax_actOffPcOnLtryOffPcpstP
+zzMPPstActmSyntax_actOffPcOnLtryOff_M_pore	{#insert {#COND -if {#insert zvPCAF_PST_PORES} = {#insert zzMnvSynPstMainPhrsCrtr} -then zzMPPstActmSyntax_actOffPcOnLtryOffPcpstP -else zzMPPstActmSyntax_actOffPcOnLtryOffPcpstES}}	zzMPPstActmSyntax_actOffPcOnLtryOff_M_pore
+zzMPPstActmSyntax_actOffPcOnLtryOnPcpstES	{#insert zvDEFINE_ASTERISK_YN_stYes}[*,{#insert zzMnvSynPstMainPhrsCrtr}]	zzMPPstActmSyntax_actOffPcOnLtryOnPcpstES
+zzMPPstActmSyntax_actOffPcOnLtryOnPcpstP	[{#insert zzMnvSynPstMainPhrsCrtr},{#insert zzMnvSynPstLtrlPhrsCrtr}]	zzMPPstActmSyntax_actOffPcOnLtryOnPcpstP
+zzMPPstActmSyntax_actOffPcOnLtryOn_M_pore	{#insert {#COND -if {#insert zvPCAF_PST_PORES} = {#insert zzMnvSynPstMainPhrsCrtr} -then zzMPPstActmSyntax_actOffPcOnLtryOnPcpstP -else zzMPPstActmSyntax_actOffPcOnLtryOnPcpstES}}	zzMPPstActmSyntax_actOffPcOnLtryOn_M_pore
+zzMPPstActmSyntax_actOffPcOn_M_poreLtry	{#insert {#COND -if {#insert zvLTRL_STYL_ESYC} = {#insert zzEmptyString} -then zzMPPstActmSyntax_actOffPcOnLtryOff_M_pore -else zzMPPstActmSyntax_actOffPcOnLtryOn_M_pore}}	zzMPPstActmSyntax_actOffPcOn_M_poreLtry
+zzMPPstActmSyntax_actOff_M_sntpaPconPoreLtry	{#insert {#COND -if {#insert zvPHRS_CRTRS_ON} = on -then zzMPPstActmSyntax_actOffPcOn_M_poreLtry -else zzzErrDlgMPPstSyntaxNotApplicable_M_actPcon}}	zzMPPstActmSyntax_actOff_M_sntpaPconPoreLtry
+zzMPPstActmSyntax_actOnSntpOff_M_pconLtry	{#insert {#COND -if {#insert zvPHRS_CRTRS_ON} = on -then zzMPPstActmSyntax_actOnSntpPcOff_M_ltry -else zzEmptyString}}	zzMPPstActmSyntax_actOnSntpOff_M_pconLtry
+zzMPPstActmSyntax_actOnSntpPcOffLtryOff	[{#insert zzMnvSynPstMainPhrsCrtr}]	zzMPPstActmSyntax_actOnSntpPcOffLtryOff
+zzMPPstActmSyntax_actOnSntpPcOffLtryOn	[[{#insert zzMnvSynPstMainPhrsCrtr},{#insert zzMnvSynPstLtrlPhrsCrtr}]]	zzMPPstActmSyntax_actOnSntpPcOffLtryOn
+zzMPPstActmSyntax_actOnSntpPcOff_M_ltry	{#insert {#COND -if {#insert zvLTRL_STYL_ESYC} != {#insert zzEmptyString} -then zzMPPstActmSyntax_actOnSntpPcOffLtryOn -else zzMPPstActmSyntax_actOnSntpPcOffLtryOff}}	zzMPPstActmSyntax_actOnSntpPcOff_M_ltry
+zzMPPstActmSyntax_actOn_M_sntpaPconLtry	{#insert {#COND -if {#insert zvSNTP_ACTN_ON} = on -then zzMPPstActmSyntax_actSntpOn_M_pconLtry -else zzMPPstActmSyntax_actOnSntpOff_M_pconLtry}}	zzMPPstActmSyntax_actOn_M_sntpaPconLtry
+zzMPPstActmSyntax_actSntpOnPcOff	[{#insert zzMnvSynPstSetNumToPrompt}]	zzMPPstActmSyntax_actSntpOnPcOff
+zzMPPstActmSyntax_actSntpOn_M_pconLtry	{#insert {#COND -if {#insert zvPHRS_CRTRS_ON} = on -then zzMPPstActmSyntax_actSntpPcOn_M_ltry -else zzMPPstActmSyntax_actSntpOnPcOff}}	zzMPPstActmSyntax_actSntpOn_M_pconLtry
+zzMPPstActmSyntax_actSntpPcOnLtryOn	,{#insert zzMnvSynPstLtrlPhrsCrtr}	zzMPPstActmSyntax_actSntpPcOnLtryOn
+zzMPPstActmSyntax_actSntpPcOn_M_ltry	[[{#insert zzMnvSynPstSetNumToPrompt},{#insert zzMnvSynPstMainPhrsCrtr}{#insert {#COND -if {#insert zvLTRL_STYL_ESYC} != {#insert zzEmptyString} -then zzMPPstActmSyntax_actSntpPcOnLtryOn -else zzEmptyString}}]]	zzMPPstActmSyntax_actSntpPcOn_M_ltry
+zzzErrDlgMPPstSyntaxNotApplicable_M_actPcon	{#MSGBOX -head ERROR -text ERROR: No MINV_Command master_phrase post action_name syntax needed! zvACTIONS_ON='{#insert zvACTIONS_ON}', zvPHRS_CRTRS_ON='{#insert zvPHRS_CRTRS_ON}'.{#insert zCancelProcNowPostTxt}}	zzzErrDlgMPPstSyntaxNotApplicable_M_actPcon

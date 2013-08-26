@@ -1,0 +1,7 @@
+zzLpdmdPNmDataTypeAbrv1C_M_pjDtv	{#insert zzLpdpsPNmPre2Zs_M_pjDtv}{#insert zzLpdmdPNmPstDataTypeAbrv1C}	zzLpdmdPNmDataTypeAbrv1C_M_pjDtv
+zzLpdmdPNmNKCVWithNum_M_pjDtvNkcur -- Also needs zvNKCV_CURR_NUM	{#insert zzLpdpsPNmPre2Zs_M_pjDtv}{#insert zzLpdmdPNmPstNKCVPreNum}{#insert zvNKCV_CURR_NUM}{#insert zzLpdmdPNmPstNKCVPostNum}	zzLpdmdPNmNKCVWithNum_M_pjDtvNkcur
+zzLpdmdPNmNonKeyVarCount_M_pjDtv	{#insert zzLpdpsPNmPre2Zs_M_pjDtv}{#insert zzLpdmdPNmPstNKVarCnt}	zzLpdmdPNmNonKeyVarCount_M_pjDtv
+zzLpdmdPNmOutDir_M_pjDtv	{#insert zzLpdpsPNmPre2Zs_M_pjDtv}{#insert zzLpdmdPNmPstOutFileDir}	zzLpdmdPNmOutDir_M_pjDtv
+zzLpdmdPNmPrivkCVTFromAbrv1C_M_pjDtv	{#insert zzLpdpsPNmPre2Zs_M_pjDtv}{#insert zzLpdmdPNmPstPrivkCVTFromAbrv1C}	zzLpdmdPNmPrivkCVTFromAbrv1C_M_pjDtv
+zzLpdmdPNmProjectAbrv1C_M_pjDtv	{#insert zzLpdpsPNmPre2Zs_M_pjDtv}{#insert zzLpdmdPNmPstPrjAbrv1C}	zzLpdmdPNmProjectAbrv1C_M_pjDtv
+zzLpdmdPNmPubkCVTFromAbrv1C_M_pjDtv	{#insert zzLpdpsPNmPre2Zs_M_pjDtv}{#insert zzLpdmdPNmPstPubkCVTFromAbrv1C}	zzLpdmdPNmPubkCVTFromAbrv1C_M_pjDtv

@@ -1,0 +1,13 @@
+__**WARNING**__: All phrases in this folder were created by 'plpdcf'. DO NOT EDIT.	.		(*Extra tab to allow for empty-string autotext*)
+zvLTRL_STYL_ESYC_sfKey	{#SETPHRASE -description zvLTRL_STYL_ESYC -content {#insert zzMnvCmdLtry_cfgValue_M_key} -autotext zvLTRL_STYL_ESYC -folder ctvv_folder}	zvLTRL_STYL_ESYC_sfKey
+zzMnvCmdLtry_cfgValue_M_key	{#insert {#insert zzMnvCmdLtry_cfgVarPhrsName_M_key}}	zzMnvCmdLtry_cfgValue_M_key
+zzMnvCmdLiteralStyle_esyc_cvtFromAbrv1C	Ltry	zzMnvCmdLiteralStyle_esyc_cvtFromAbrv1C
+zzMnvCmdLtry_cfgVarPNmPost	LiteralStyle_esyc	zzMnvCmdLtry_cfgVarPNmPost
+zzMnvCmdLtry_intrnlVarNm	zvLTRL_STYL_ESYC	zzMnvCmdLtry_intrnlVarNm
+zzMnvCmdLtry_cfgVarPhrsName_M_key	zz{#insert zzMnvCmdProjectAbrv1C}{#insert zzMnvCmdDataTypeAbrv1C}{#insert zvCMD_PNMV_1C}{#insert zzMnvCmdLtry_cfgVarPNmPost}	zzMnvCmdLtry_cfgVarPhrsName_M_key
+zzMnvCmdLtry_helpForDlg	Only used when [PhraseCreators_on] is 'on'. Should there also be literal~phrase creators? If '' (meaning off), then this should equal ''. Otherwise, which style of literal~phrases are wanted? If {#insert zOYp}#insert zTAB{#insert zCYp}, then set this to 'curly' ('Y' stands for 'curly'). If {#insert zOYp}#insert zTABp{#insert zCYp}, then set this to 'command'. These {#insert zOY}#insert zzMnvSynPstMainPhrsCrtr{#insert zCY}~postfixed commands (such as zTAB{#insert zOY}#insert zzMnvSynPstMainPhrsCrtr{#insert zCY} or zTAB3{#insert zOY}#insert zzMnvSynPstMainPhrsCrtr{#insert zCY}) are automatically generated.	zzMnvCmdLtry_helpForDlg
+zzMnvCmdLtry_valuePrintable	yes	zzMnvCmdLtry_valuePrintable
+zzMnvCmdLtry_validateValuePhrsNm		zzMnvCmdLtry_validateValuePhrsNm
+zzMnvCmdLtry_nkcvListNum	16	zzMnvCmdLtry_nkcvListNum
+zzMnvCmdLtry_keyCVTFromAbrv1C	{#insert zzMnvCmdPrivKeyCVTFromAbrv1C}	zzMnvCmdLtry_keyCVTFromAbrv1C
+zvCVT_FRMV_1C_stMnvCmdLtry	{#SETPHRASE -description zvCVT_FRMV_1C -content {#insert zzMnvCmdLiteralStyle_esyc_cvtFromAbrv1C} -autotext zvCVT_FRMV_1C -folder ctvv_folder}	zvCVT_FRMV_1C_stMnvCmdLtry

@@ -1,0 +1,13 @@
+BlockSelectOff
+BlockSelectOn
+CustomizeToolbars
+Preferences
+RightMarginDec
+RightMarginInc
+RightMarginSet          Ctrl+Q, R
+ToggleBlockSelect       Ctrl+Q, B
+ToggleInsertMode        Insert
+ToggleReadOnly          Ctrl+Q, E
+ToggleSyncScroll        Ctrl+Q, Y
+ToggleUndo              Ctrl+Q, U
+ToggleWordWrap

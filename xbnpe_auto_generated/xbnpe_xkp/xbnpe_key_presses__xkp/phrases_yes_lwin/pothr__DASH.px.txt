@@ -1,0 +1,8 @@
+Alt+LWin+DASH -- zALpDASH	{#ALT {#LWIN -chars -}}{#insert zTSlp}	zALpDASH
+Alt+Shift+LWin+DASH -- zASLpDASH	{#ALT {#SHIFT {#LWIN -chars -}}}{#insert zTSlp}	zASLpDASH
+Ctrl+Alt+LWin+DASH -- zCALpDASH	{#CTRL {#ALT {#LWIN -chars -}}}{#insert zTSlp}	zCALpDASH
+Ctrl+Alt+Shift+LWin+DASH -- zCASLpDASH	{#CTRL {#ALT {#SHIFT {#LWIN -chars -}}}}{#insert zTSlp}	zCASLpDASH
+Ctrl+LWin+DASH -- zCLpDASH	{#CTRL {#LWIN -chars -}}{#insert zTSlp}	zCLpDASH
+Ctrl+Shift+LWin+DASH -- zCSLpDASH	{#CTRL {#SHIFT {#LWIN -chars -}}}{#insert zTSlp}	zCSLpDASH
+LWin+DASH -- zLpDASH	{#LWIN -chars -}{#insert zTSlp}	zLpDASH
+Shift+LWin+DASH -- zSLpDASH	{#SHIFT {#LWIN -chars -}}{#insert zTSlp}	zSLpDASH

@@ -1,0 +1,13 @@
+__**WARNING**__: All phrases in this folder were created by 'plpdcf'. DO NOT EDIT.	.		(*Extra tab to allow for empty-string autotext*)
+zvCMD_NAME_PRE_NUM_sfKey	{#SETPHRASE -description zvCMD_NAME_PRE_NUM -content {#insert zzMnvCmdCmpre_cfgValue_M_key} -autotext zvCMD_NAME_PRE_NUM -folder ctvv_folder}	zvCMD_NAME_PRE_NUM_sfKey
+zzMnvCmdCmpre_cfgValue_M_key	{#insert {#insert zzMnvCmdCmpre_cfgVarPhrsName_M_key}}	zzMnvCmdCmpre_cfgValue_M_key
+zzMnvCmdNamePreNum_cvtFromAbrv1C	Cmpre	zzMnvCmdNamePreNum_cvtFromAbrv1C
+zzMnvCmdCmpre_cfgVarPNmPost	NamePreNum	zzMnvCmdCmpre_cfgVarPNmPost
+zzMnvCmdCmpre_intrnlVarNm	zvCMD_NAME_PRE_NUM	zzMnvCmdCmpre_intrnlVarNm
+zzMnvCmdCmpre_cfgVarPhrsName_M_key	zz{#insert zzMnvCmdProjectAbrv1C}{#insert zzMnvCmdDataTypeAbrv1C}{#insert zvCMD_PNMV_1C}{#insert zzMnvCmdCmpre_cfgVarPNmPost}	zzMnvCmdCmpre_cfgVarPhrsName_M_key
+zzMnvCmdCmpre_helpForDlg	Only used when [Commands_on] 'on'. The portion of the MINV~Command's phrase~name, that exists before the number. For example, 'zTAB' for 'zTAB#'.	zzMnvCmdCmpre_helpForDlg
+zzMnvCmdCmpre_valuePrintable	yes	zzMnvCmdCmpre_valuePrintable
+zzMnvCmdCmpre_validateValuePhrsNm		zzMnvCmdCmpre_validateValuePhrsNm
+zzMnvCmdCmpre_nkcvListNum	11	zzMnvCmdCmpre_nkcvListNum
+zzMnvCmdCmpre_keyCVTFromAbrv1C	{#insert zzMnvCmdPrivKeyCVTFromAbrv1C}	zzMnvCmdCmpre_keyCVTFromAbrv1C
+zvCVT_FRMV_1C_stMnvCmdCmpre	{#SETPHRASE -description zvCVT_FRMV_1C -content {#insert zzMnvCmdNamePreNum_cvtFromAbrv1C} -autotext zvCVT_FRMV_1C -folder ctvv_folder}	zvCVT_FRMV_1C_stMnvCmdCmpre

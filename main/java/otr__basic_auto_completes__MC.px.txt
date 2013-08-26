@@ -1,0 +1,7 @@
+abstract -- [An ]abstract implementation of ...	abstract implementation of <CODE>{#insert cnthis}{#insert zMoveL1w}{#RIGHT -count 8}{#insert zDeleteL1w}{#insert zMoveR1w}</CODE>, on which to base your own.	abstract
+//Functions that do nothing but call their super-version	//Functions that do nothing but call their super-version...START	//Func
+//Functions that do nothing but their super-version	//Functions that do nothing but call their super-version...END	//Func
+//Doc-ed by super	//Doc-ed by super	//Doc
+//Doc-ed by interface	//Doc-ed by interface	//Doc
+greater-than-or-equal-to	greater-than-or-equal-to	great
+less-than-or-equal-to	less-than-or-equal-to	less

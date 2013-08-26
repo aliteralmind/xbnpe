@@ -1,0 +1,8 @@
+DNR_SLASH -- zDNR_SLASH	{#NONE -chars \}{#insert zTSlp}	zDNR_SLASH
+Alt+DNR_SLASH -- zApDNR_SLASH	{#ALT -chars \}{#insert zTSlp}	zApDNR_SLASH
+Alt+Shift+DNR_SLASH -- zASpDNR_SLASH	{#ALT {#SHIFT -chars \}}{#insert zTSlp}	zASpDNR_SLASH
+Ctrl+DNR_SLASH -- zCpDNR_SLASH	{#CTRL -chars \}{#insert zTSlp}	zCpDNR_SLASH
+Ctrl+Alt+DNR_SLASH -- zCApDNR_SLASH	{#CTRL {#ALT -chars \}}{#insert zTSlp}	zCApDNR_SLASH
+Ctrl+Alt+Shift+DNR_SLASH -- zCASpDNR_SLASH	{#CTRL {#ALT {#SHIFT -chars \}}}{#insert zTSlp}	zCASpDNR_SLASH
+Ctrl+Shift+DNR_SLASH -- zCSpDNR_SLASH	{#CTRL {#SHIFT -chars \}}{#insert zTSlp}	zCSpDNR_SLASH
+Shift+DNR_SLASH -- zSpDNR_SLASH	{#SHIFT -chars \}{#insert zTSlp}	zSpDNR_SLASH

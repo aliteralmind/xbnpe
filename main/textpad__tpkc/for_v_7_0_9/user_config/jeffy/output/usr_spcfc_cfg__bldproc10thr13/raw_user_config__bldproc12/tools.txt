@@ -1,0 +1,9 @@
+ToolCompareFiles	0
+ToolExplorer	1	\\\{#insert zApF3\\\}
+ToolHTMLValidate	0
+ToolRerun	0
+ToolRun	0
+ToolSort	1	\\\{#insert zCApF6\\\}
+ToolSpell	0
+ToolStop	1	\\\{#insert zCASpXX\\\}
+ToolWildEdit	0

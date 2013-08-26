@@ -1,0 +1,12 @@
+_Example: krxs, lfrn, 2: {#ALT {#LEFT -count 2}}	.		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+bkr -- {#BKSP}	\\\{#BKSP\\\}{#insert zzMstCmnKPSyn}	bkr
+dlr -- {#DEL}	\\\{#DEL\\\}{#insert zzMstCmnKPSyn}	dlr
+enr -- {#ENTER}	\\\{#ENTER\\\}{#insert zzMstCmnKPSyn}	enr
+hmr -- {#HOME}	\\\{#HOME\\\}{#insert zzMstCmnKPSyn}	hmr
+lfr -- {#LEFT}	\\\{#LEFT\\\}{#insert zzMstCmnKPSyn}	lfr
+lur -- {#UP}	\\\{#UP\\\}{#insert zzMstCmnKPSyn}	lur
+lwr -- {#DOWN}	\\\{#DOWN\\\}{#insert zzMstCmnKPSyn}	lwr
+ndr -- {#END}	\\\{#END\\\}{#insert zzMstCmnKPSyn}	ndr
+rgr -- {#RIGHT}	\\\{#RIGHT\\\}{#insert zzMstCmnKPSyn}	rgr
+tbr -- {#TAB}	\\\{#TAB\\\}{#insert zzMstCmnKPSyn}	tbr
+zzMstCmnKPSyn	{#BALLOON -title Most common 'R'aw key~presses: Syntax -text Option 'n'= ~count  //  bkr[n]=\\\{#BKSP\\\}, dlr[n]=\\\{#DEL\\\}  //  hmr[n]=\\\{#HOME\\\}, ndr[n]=\\\{#END\\\}  //  lfr[n]=\\\{#LEFT\\\}, lur[n]=\\\{#UP\\\}, lwr[n]=\\\{#DOWN\\\}, rgr[n]=\\\{#RIGHT\\\}  //  enr[n]=\\\{#ENTER\\\}, tbr[n]=\\\{#TAB\\\}}	zzMstCmnKPSyn

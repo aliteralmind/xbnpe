@@ -1,0 +1,20 @@
+zFFindDlgOpenAllLines	{#insert zTPFFindDlgOpen}{#insert zFFindFlagAllLines}	zFFindDlgOpenAllLines
+zFFindDlgOpenAllLinesForceWW	{#insert zFFindDlgOpenAllLines}{#insert zFindFlagForceWWTgl}	zFFindDlgOpenAllLinesForceWW
+zFFindDlgOpenAllLinesMC	{#insert zTPFindFlagMCon}{#insert zFFindDlgOpenAllLines}	zFFindDlgOpenAllLinesMC
+zFFindDlgOpenAllLinesMCForceWW	{#insert zTPFindFlagMCon}{#insert zFFindDlgOpenAllLines}{#insert zFindFlagForceWWTgl}	zFFindDlgOpenAllLinesMCForceWW
+zFFindDlgOpenAllLinesMCOnly	{#insert zFindFlagMConOnly}{#insert zFFindDlgOpenAllLines}	zFFindDlgOpenAllLinesMCOnly
+zFFindDlgOpenAllLinesMCRE	{#insert zFindFlagsMCREon}{#insert zFFindDlgOpenAllLines}	zFFindDlgOpenAllLinesMCRE
+zFFindDlgOpenAllLinesMCWW	{#insert zFindFlagsMCWWon}{#insert zFFindDlgOpenAllLines}	zFFindDlgOpenAllLinesMCWW
+zFFindDlgOpenAllLinesRE	{#insert zTPFindFlagREon}{#insert zFFindDlgOpenAllLines}	zFFindDlgOpenAllLinesRE
+zFFindDlgOpenAllLinesWW	{#insert zTPFindFlagWWon}{#insert zFFindDlgOpenAllLines}	zFFindDlgOpenAllLinesWW
+
+
+zFFindDlgOpenAllLinesDefaults -- [zCpF5]	{#insert zTPFFindDlgOpen}{#insert zFFindBtnDefaults}	zFFindDlgOpenAllLinesDefaults
+zFFindDlgOpenAllLinesDefaultsRE	{#insert zFFindDlgOpenAllLinesDefaults}{#insert zFindFlagRETgl}	zFFindDlgOpenAllLinesDefaultsRE
+zFFindDlgOpenAllLinesDefaultsWW	{#insert zFFindDlgOpenAllLinesDefaults}{#insert zFindFlagWWTgl}	zFFindDlgOpenAllLinesDefaultsWW
+zFFindDlgOpenAllLinesDefaultsForceWW	{#insert zFFindDlgOpenAllLinesDefaults}{#insert zFindFlagForceWWTgl}	zFFindDlgOpenAllLinesDefaultsForceWW
+
+zFFindDlgOpenAllLinesDefaultsSubDirs -- [zCpF5]	{#insert zTPFFindDlgOpen}{#insert zFFindBtnDefaults}{#insert zFFindFlagSubDirsTglRAW}	zFFindDlgOpenAllLinesDefaultsSubDirs
+zFFindDlgOpenAllLinesDefaultsSubDirsRE	{#insert zFFindDlgOpenAllLinesDefaultsSubDirs}{#insert zFindFlagRETgl}	zFFindDlgOpenAllLinesDefaultsSubDirsRE
+zFFindDlgOpenAllLinesDefaultsSubDirsWW	{#insert zFFindDlgOpenAllLinesDefaultsSubDirs}{#insert zFindFlagWWTgl}	zFFindDlgOpenAllLinesDefaultsSubDirsWW
+zFFindDlgOpenAllLinesDefaultsSubDirsForceWW	{#insert zFFindDlgOpenAllLinesDefaultsSubDirs}{#insert zFindFlagForceWWTgl}	zFFindDlgOpenAllLinesDefaultsSubDirsForceWW

@@ -1,0 +1,2 @@
+zAscDash -- '-'	{#asc 45}	zAscDash
+zAscSpace -- ' '	{#asc 32}	zAscSpace

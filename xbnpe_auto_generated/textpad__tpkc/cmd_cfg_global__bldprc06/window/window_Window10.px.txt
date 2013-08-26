@@ -1,0 +1,8 @@
+zTpkcWindow10Abrv1C	Win10	zTpkcWindow10Abrv1C
+zTpkcWin10CmdNameTC	Window10	zTpkcWin10CmdNameTC
+zTpkcWin10DfltPhrsNm	zTPGTWin10	zTpkcWin10DfltPhrsNm
+zTpkcWin10CatForCmdAbrvLC	window	zTpkcWin10CatForCmdAbrvLC
+zTpkcWin10CmdType_mcrTl		zTpkcWin10CmdType_mcrTl
+zTpkcWin10IsBtstrp_yes		zTpkcWin10IsBtstrp_yes
+zTpkcWin10DfltPostKcSlpMils	10	zTpkcWin10DfltPostKcSlpMils
+zTpkcWin10StpsFrmCmdListTop	{#insert zDOWN}	zTpkcWin10StpsFrmCmdListTop

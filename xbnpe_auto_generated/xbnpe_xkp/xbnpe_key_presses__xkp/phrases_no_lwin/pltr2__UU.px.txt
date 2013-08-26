@@ -1,0 +1,8 @@
+UU -- zUU	{#NONE -chars u}{#insert zTSlp}	zUU
+Alt+UU -- zApUU	{#ALT -chars u}{#insert zTSlp}	zApUU
+Alt+Shift+UU -- zASpUU	{#ALT {#SHIFT -chars u}}{#insert zTSlp}	zASpUU
+Ctrl+UU -- zCpUU	{#CTRL -chars u}{#insert zTSlp}	zCpUU
+Ctrl+Alt+UU -- zCApUU	{#CTRL {#ALT -chars u}}{#insert zTSlp}	zCApUU
+Ctrl+Alt+Shift+UU -- zCASpUU	{#CTRL {#ALT {#SHIFT -chars u}}}{#insert zTSlp}	zCASpUU
+Ctrl+Shift+UU -- zCSpUU	{#CTRL {#SHIFT -chars u}}{#insert zTSlp}	zCSpUU
+Shift+UU -- zSpUU	{#SHIFT -chars u}{#insert zTSlp}	zSpUU

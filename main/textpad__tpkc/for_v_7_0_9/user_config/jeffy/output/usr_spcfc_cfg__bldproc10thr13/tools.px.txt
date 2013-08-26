@@ -1,0 +1,12 @@
+zTpkcToolCompareFilesNbsKcCount	0	zTpkcToolCompareFilesNbsKcCount
+zTpkcToolExplorerNbsKcCount	1	zTpkcToolExplorerNbsKcCount
+zTpkcToolExplorerNbsKcEsc1	\\\{#insert zApF3\\\}\\\{#sleep 10\\\}	zTpkcToolExplorerNbsKcEsc1
+zTpkcToolHTMLValidateNbsKcCount	0	zTpkcToolHTMLValidateNbsKcCount
+zTpkcToolRerunNbsKcCount	0	zTpkcToolRerunNbsKcCount
+zTpkcToolRunNbsKcCount	0	zTpkcToolRunNbsKcCount
+zTpkcToolSortNbsKcCount	1	zTpkcToolSortNbsKcCount
+zTpkcToolSortNbsKcEsc1	\\\{#insert zCApF6\\\}\\\{#sleep 10\\\}	zTpkcToolSortNbsKcEsc1
+zTpkcToolSpellNbsKcCount	0	zTpkcToolSpellNbsKcCount
+zTpkcToolStopNbsKcCount	1	zTpkcToolStopNbsKcCount
+zTpkcToolStopNbsKcEsc1	\\\{#insert zCASpXX\\\}\\\{#sleep 10\\\}	zTpkcToolStopNbsKcEsc1
+zTpkcToolWildEditNbsKcCount	0	zTpkcToolWildEditNbsKcCount

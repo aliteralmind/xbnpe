@@ -1,0 +1,3 @@
+__README__	ALL values is this document must end with the final down-right-slash ('\'), and none may contain comments in the phrase-body (because they display literally in MSGBOX-es and corrupt INSERTFILE-s.){#ENTER}		(*Two-tabs-then-comment to force NO autotext when imported*)
+zROOT_DIR_XBNPE_PARENT	R:\jeffy\programming\sandbox\macros\	zROOT_DIR_XBNPE_PARENT
+zWIN_DIR_desktop	C:\Users\jeffy\Desktop\	zWIN_DIR_desktop

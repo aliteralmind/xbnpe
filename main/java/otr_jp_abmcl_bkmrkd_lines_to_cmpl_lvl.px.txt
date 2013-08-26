@@ -1,0 +1,50 @@
+jpabmcl01 -- Actually jpabmcl1 -- Move All BookMarked lines to Compile-file, Level 1.	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 1 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl1MASTER}	jpabmcl1
+jpabmcl02 -- jpabmcl2	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 2 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl2
+jpabmcl03 -- jpabmcl3	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 3 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl3
+jpabmcl04 -- jpabmcl4	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 4 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl4
+jpabmcl05 -- jpabmcl5	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 5 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl5
+jpabmcl06 -- jpabmcl6	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 6 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl6
+jpabmcl07 -- jpabmcl7	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 7 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl7
+jpabmcl08 -- jpabmcl8	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 8 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl8
+jpabmcl09 -- jpabmcl9	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 9 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl9
+jpabmcl10	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 10 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl10
+jpabmcl11	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 11 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl11
+jpabmcl12	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 12 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl12
+jpabmcl13	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 13 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl13
+jpabmcl14	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 14 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl14
+jpabmcl15	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 15 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl15
+jpabmcl16	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 16 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl16
+jpabmcl17	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 17 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl17
+jpabmcl18	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 18 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl18
+jpabmcl19	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 19 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl19
+jpabmcl20	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 20 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl20
+jpabmcl21	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 21 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl21
+jpabmcl22	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 22 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl22
+jpabmcl23	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 23 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl23
+jpabmcl24	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 24 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl24
+jpabmcl25	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 25 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl25
+jpabmcl26	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 26 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl26
+jpabmcl27	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 27 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl27
+jpabmcl28	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 28 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl28
+jpabmcl29	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 29 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl29
+jpabmcl30	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 30 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl30
+jpabmcl31	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 31 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl31
+jpabmcl32	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 32 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl32
+jpabmcl33	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 33 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl33
+jpabmcl34	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 34 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl34
+jpabmcl35	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 35 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl35
+jpabmcl36	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 36 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl36
+jpabmcl37	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 37 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl37
+jpabmcl38	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 38 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl38
+jpabmcl39	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 39 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl39
+jpabmcl40	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 40 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl40
+jpabmcl41	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 41 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl41
+jpabmcl42	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 42 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl42
+jpabmcl43	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 43 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl43
+jpabmcl44	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 44 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl44
+jpabmcl45	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 45 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl45
+jpabmcl46	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 46 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl46
+jpabmcl47	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 47 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl47
+jpabmcl48	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 48 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl48
+jpabmcl49	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 49 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl49
+jpabmcl50	{#SETPHRASE -description zvJD_CMPL_BLOCK_NUM -content 50 -autotext zvJD_CMPL_BLOCK_NUM -folder ctvv_folder}{#insert zzJpabmcl2plusMASTER}	jpabmcl50

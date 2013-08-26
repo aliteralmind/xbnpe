@@ -1,0 +1,6 @@
+Assign all KCs to ALL cmds	{#insert zTpkcAsgnAllKcsToAllCmdsAllCats_M_kcpf}	zzTpkcAssignAllKCsInAllCatsForDDMenu_M_kcpf
+Debug ALL cmds	{#insert zTpkcDbgAllCmdsInAllCats}	zzTpkcDbgAllCmdsInAllCatsForDDMenu
+List primary KC for ALL cmds	{#insert zListAllPrimaryKcsInAllCats}	zListAllPrimaryKcsInAllCatsForDDMenu
+List all has-a-kc qb-lists	{#insert zListAllHasACatQbls}	zListAllHasACatQblsForDDMenu
+Print ALL name/abrv/phrase-names	{#insert zTpkcPrntAllCmdNmPhrsNmAbrvsInAllCats}	zzTpkcPrntAllCmdNmPhrsNmAbrvsInAllCatsForDDMenu
+Test ALL Non-BootStrap (nbs) commands	{#insert zVrfyAllNbsCmdsInAllCats}	zzVrfyAllNbsCmdsInAllCatsForDDMenu

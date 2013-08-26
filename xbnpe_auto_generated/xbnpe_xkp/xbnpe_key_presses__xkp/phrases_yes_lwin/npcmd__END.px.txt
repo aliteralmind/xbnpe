@@ -1,0 +1,8 @@
+Alt+LWin+END -- zALpEND	{#ALT {#LWIN {#END}}}{#insert zTSlp}	zALpEND
+Alt+Shift+LWin+END -- zASLpEND	{#ALT {#SHIFT {#LWIN {#END}}}}{#insert zTSlp}	zASLpEND
+Ctrl+Alt+LWin+END -- zCALpEND	{#CTRL {#ALT {#LWIN {#END}}}}{#insert zTSlp}	zCALpEND
+Ctrl+Alt+Shift+LWin+END -- zCASLpEND	{#CTRL {#ALT {#SHIFT {#LWIN {#END}}}}}{#insert zTSlp}	zCASLpEND
+Ctrl+LWin+END -- zCLpEND	{#CTRL {#LWIN {#END}}}{#insert zTSlp}	zCLpEND
+Ctrl+Shift+LWin+END -- zCSLpEND	{#CTRL {#SHIFT {#LWIN {#END}}}}{#insert zTSlp}	zCSLpEND
+LWin+END -- zLpEND	{#LWIN {#END}}{#insert zTSlp}	zLpEND
+Shift+LWin+END -- zSLpEND	{#SHIFT {#LWIN {#END}}}{#insert zTSlp}	zSLpEND

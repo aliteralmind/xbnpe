@@ -1,0 +1,54 @@
+zTpkcBookmarkClearAllNbsKcCount	2	zTpkcBookmarkClearAllNbsKcCount
+zTpkcBookmarkClearAllNbsKcEsc1	\\\{#insert zCSpF2\\\}\\\{#sleep 10\\\}	zTpkcBookmarkClearAllNbsKcEsc1
+zTpkcBookmarkClearAllNbsKcEsc2	\\\{#insert zCASpDASH\\\}\\\{#sleep 10\\\}	zTpkcBookmarkClearAllNbsKcEsc2
+zTpkcBookmarkInvertAllNbsKcCount	1	zTpkcBookmarkInvertAllNbsKcCount
+zTpkcBookmarkInvertAllNbsKcEsc1	\\\{#insert zASpPERIOD\\\}\\\{#sleep 10\\\}	zTpkcBookmarkInvertAllNbsKcEsc1
+zTpkcBookmarkNextNbsKcCount	0	zTpkcBookmarkNextNbsKcCount
+zTpkcBookmarkPrevNbsKcCount	1	zTpkcBookmarkPrevNbsKcCount
+zTpkcBookmarkPrevNbsKcEsc1	\\\{#insert zApCOMMA\\\}\\\{#sleep 100\\\}	zTpkcBookmarkPrevNbsKcEsc1
+zTpkcBookmarkToggleNbsKcCount	0	zTpkcBookmarkToggleNbsKcCount
+zTpkcIncrementalFindNbsKcCount	2	zTpkcIncrementalFindNbsKcCount
+zTpkcIncrementalFindNbsKcEsc1	\\\{#insert zCpII\\\}\\\{#sleep 10\\\}	zTpkcIncrementalFindNbsKcEsc1
+zTpkcIncrementalFindNbsKcEsc2	\\\{#insert zSpF3\\\}\\\{#sleep 10\\\}	zTpkcIncrementalFindNbsKcEsc2
+zTpkcIncrementalFindNextNbsKcCount	0	zTpkcIncrementalFindNextNbsKcCount
+zTpkcIncrementalFindPrevNbsKcCount	0	zTpkcIncrementalFindPrevNbsKcCount
+zTpkcMatchBracketNbsKcCount	1	zTpkcMatchBracketNbsKcCount
+zTpkcMatchBracketNbsKcEsc1	\\\{#insert zCpDNR_SLASH\\\}\\\{#sleep 10\\\}	zTpkcMatchBracketNbsKcEsc1
+zTpkcMatchBracketExtendNbsKcCount	1	zTpkcMatchBracketExtendNbsKcCount
+zTpkcMatchBracketExtendNbsKcEsc1	\\\{#insert zCSpDNR_SLASH\\\}\\\{#sleep 10\\\}	zTpkcMatchBracketExtendNbsKcEsc1
+zTpkcMatchCaseClearNbsKcCount	1	zTpkcMatchCaseClearNbsKcCount
+zTpkcMatchCaseClearNbsKcEsc1	\\\{#insert zCASpFF\\\}\\\{#sleep 25\\\}\\\{#insert zCC\\\}\\\{#sleep 5\\\}	zTpkcMatchCaseClearNbsKcEsc1
+zTpkcMatchCaseSetNbsKcCount	1	zTpkcMatchCaseSetNbsKcCount
+zTpkcMatchCaseSetNbsKcEsc1	\\\{#insert zASpFF\\\}\\\{#sleep 25\\\}\\\{#insert zCC\\\}\\\{#sleep 5\\\}	zTpkcMatchCaseSetNbsKcEsc1
+zTpkcMatchWordClearNbsKcCount	1	zTpkcMatchWordClearNbsKcCount
+zTpkcMatchWordClearNbsKcEsc1	\\\{#insert zCASpFF\\\}\\\{#sleep 25\\\}\\\{#insert zWW\\\}\\\{#sleep 5\\\}	zTpkcMatchWordClearNbsKcEsc1
+zTpkcMatchWordSetNbsKcCount	1	zTpkcMatchWordSetNbsKcCount
+zTpkcMatchWordSetNbsKcEsc1	\\\{#insert zASpFF\\\}\\\{#sleep 25\\\}\\\{#insert zWW\\\}\\\{#sleep 5\\\}	zTpkcMatchWordSetNbsKcEsc1
+zTpkcRegexClearNbsKcCount	1	zTpkcRegexClearNbsKcCount
+zTpkcRegexClearNbsKcEsc1	\\\{#insert zCASpFF\\\}\\\{#sleep 25\\\}\\\{#insert zRR\\\}\\\{#sleep 5\\\}	zTpkcRegexClearNbsKcEsc1
+zTpkcRegexSetNbsKcCount	1	zTpkcRegexSetNbsKcCount
+zTpkcRegexSetNbsKcEsc1	\\\{#insert zASpFF\\\}\\\{#sleep 25\\\}\\\{#insert zRR\\\}\\\{#sleep 5\\\}	zTpkcRegexSetNbsKcEsc1
+zTpkcSearchFilesNbsKcCount	0	zTpkcSearchFilesNbsKcCount
+zTpkcSearchFindNbsKcCount	0	zTpkcSearchFindNbsKcCount
+zTpkcSearchFindNextNbsKcCount	2	zTpkcSearchFindNextNbsKcCount
+zTpkcSearchFindNextNbsKcEsc1	\\\{#insert zSpF4\\\}\\\{#sleep 10\\\}	zTpkcSearchFindNextNbsKcEsc1
+zTpkcSearchFindNextNbsKcEsc2	\\\{#insert zApF4\\\}\\\{#sleep 10\\\}	zTpkcSearchFindNextNbsKcEsc2
+zTpkcSearchFindPreviousNbsKcCount	3	zTpkcSearchFindPreviousNbsKcCount
+zTpkcSearchFindPreviousNbsKcEsc1	\\\{#insert zF2\\\}\\\{#sleep 10\\\}	zTpkcSearchFindPreviousNbsKcEsc1
+zTpkcSearchFindPreviousNbsKcEsc2	\\\{#insert zSpF2\\\}\\\{#sleep 10\\\}	zTpkcSearchFindPreviousNbsKcEsc2
+zTpkcSearchFindPreviousNbsKcEsc3	\\\{#insert zApF2\\\}\\\{#sleep 10\\\}	zTpkcSearchFindPreviousNbsKcEsc3
+zTpkcSearchGotoNbsKcCount	1	zTpkcSearchGotoNbsKcCount
+zTpkcSearchGotoNbsKcEsc1	\\\{#insert zCSpGG\\\}\\\{#sleep 10\\\}	zTpkcSearchGotoNbsKcEsc1
+zTpkcSearchJumpNextNbsKcCount	2	zTpkcSearchJumpNextNbsKcCount
+zTpkcSearchJumpNextNbsKcEsc1	\\\{#insert zCApF4\\\}\\\{#sleep 50\\\}	zTpkcSearchJumpNextNbsKcEsc1
+zTpkcSearchJumpNextNbsKcEsc2	\\\{#insert zCASpF4\\\}\\\{#sleep 50\\\}	zTpkcSearchJumpNextNbsKcEsc2
+zTpkcSearchJumpPrevNbsKcCount	2	zTpkcSearchJumpPrevNbsKcCount
+zTpkcSearchJumpPrevNbsKcEsc1	\\\{#insert zCApF2\\\}\\\{#sleep 50\\\}	zTpkcSearchJumpPrevNbsKcEsc1
+zTpkcSearchJumpPrevNbsKcEsc2	\\\{#insert zCASpF2\\\}\\\{#sleep 50\\\}	zTpkcSearchJumpPrevNbsKcEsc2
+zTpkcSearchOpenAllNbsKcCount	1	zTpkcSearchOpenAllNbsKcCount
+zTpkcSearchOpenAllNbsKcEsc1	\\\{#insert zCpF12\\\}\\\{#sleep 25\\\}\\\{#insert zCpF8\\\}\\\{#sleep 2000\\\}	zTpkcSearchOpenAllNbsKcEsc1
+zTpkcSearchReplaceNbsKcCount	1	zTpkcSearchReplaceNbsKcCount
+zTpkcSearchReplaceNbsKcEsc1	\\\{#insert zF8\\\}\\\{#sleep 50\\\}	zTpkcSearchReplaceNbsKcEsc1
+zTpkcSearchReplaceNextNbsKcCount	2	zTpkcSearchReplaceNextNbsKcCount
+zTpkcSearchReplaceNextNbsKcEsc1	\\\{#insert zCpF8\\\}\\\{#sleep 25\\\}	zTpkcSearchReplaceNextNbsKcEsc1
+zTpkcSearchReplaceNextNbsKcEsc2	\\\{#insert zSpF5\\\}\\\{#sleep 25\\\}	zTpkcSearchReplaceNextNbsKcEsc2

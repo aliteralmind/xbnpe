@@ -1,0 +1,4 @@
+zXmark -- Must be 3 chars long [zCASpHOME]	XXX	zXmark
+zVmark -- Must be 3 chars long	VVV	zVmark
+zYmark -- Must be 3 chars long [zCASpINS]	YYY	zYmark
+zZmark -- Must be 3 chars long	ZZZ	zZmark

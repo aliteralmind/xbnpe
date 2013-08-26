@@ -1,0 +1,2 @@
+buildxkp -- Build all chars-with-all-modifier phrases	{#insert zBuildAllXKPPhrasesWTypePromptActual}	buildxkp
+buildxkptest -- buildxkp w/ only 2 keys per type	{#insert zBuildAllXKPPhrasesWTypePromptTestOnly}	buildxkptest

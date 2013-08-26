@@ -1,0 +1,22 @@
+(*
+   Other items for ddmenu:
+      zvHNR_YES
+*)
+zRplcBtnAll -- Cursor ends in what-field.	{#insert zRplcBtnAllRAW}{#insert zRplcFieldWhat}	zRplcBtnAll
+zRplcBtnAllSel	{#insert zRplcFlagSelRAW}{#insert zRplcBtnAll}	zRplcBtnAllSel
+zRplcBtnAllSelHnr	{#insert zRplcBtnAllSelHnrRAW}{#insert zRplcFieldWhat}	zRplcBtnAllSelHnr
+zRplcBtnAllSelHnrRAW	{#insert zRplcBtnAllSel}{#insert zSelHandleNoRplcsRAW}	zRplcBtnAllSelHnrRAW
+zRplcBtnAllSel_hnrIf_M_hnry -- Needs zvHNR_YES ('yes' or '')	{#insert zRplcBtnAllSel_hnrRAWIf_M_hnry}{#insert zRplcFieldWhat}	zRplcBtnAllSel_hnrIf_M_hnry
+zRplcBtnAllSel_hnrRAWIf_M_hnry -- Needs zvHNR_YES ('yes' or '')	{#insert {#COND -if {#insert zvHNR_YES} = yes -then zRplcBtnAllSelHnrRAW -else zRplcBtnAllSel}}	zRplcBtnAllSel_hnrRAWIf_M_hnry
+zRplcBtnAllTD	{#insert zRplcFlagTDraw}{#insert zRplcBtnAll}	zRplcBtnAllTD
+zRplcBtnAllTDHnr	{#insert zRplcBtnAllTDHnrRAW}{#insert zRplcFieldWhat}	zRplcBtnAllTDHnr
+zRplcBtnAllTDHnrRAW	{#insert zRplcBtnAllTD}{#insert zTDHandleNoRplcsRAW}	zRplcBtnAllTDHnrRAW
+zRplcBtnAllTD_hnrIf_M_hnry -- Needs zvHNR_YES ('yes' or '')	{#insert zRplcBtnAllTD_hnrRAWIf_M_hnry}{#insert zRplcFieldWhat}	zRplcBtnAllTD_hnrIf_M_hnry
+zRplcBtnAllTD_hnrRAWIf_M_hnry -- Needs zvHNR_YES ('yes' or '')	{#insert {#COND -if {#insert zvHNR_YES} = yes -then zRplcBtnAllTDHnrRAW -else zRplcBtnAllTD}}	zRplcBtnAllTD_hnrRAWIf_M_hnry
+zRplcFlagADEntrForHNROnlyRAW -- For Handling Not-Found only (**)	(*The purpose of this is not to change replace-scope. Rather, it is the first step in Handling Not-Found search-terms. This needs to be followed by an explicit scope flag (unless the scope is currently AD anyway). -- When a search term IS found (a replacement WAS made): Scope is changed to AD, ENTER is pressed WHICH DOES NOTHING. -- When a search term is NOT found (no replacement was made): The 'not found' dialog is open, above the replace-dialog. It is ATTEMPTED to change the scope to AD, but obviously nothing happens, because the focus is in the not-found dialog. Then ENTER is pressed, which dismisses it.*){#insert zRplcFlagADraw}{#sleep 100}{#insert zEtr100slp}	zRplcFlagADEntrForHNROnlyRAW
+zSelHandleNoRplcs	{#insert zSelHandleNoRplcsRAW}{#insert zRplcFieldWhat}	zSelHandleNoRplcs
+zSelHandleNoRplcsRAW	{#insert zRplcFlagADEntrForHNROnlyRAW}{#insert zRplcFlagSelRAW}	zSelHandleNoRplcsRAW
+zTDHandleNoRplcs	{#insert zTDHandleNoRplcsRAW}{#insert zRplcFieldWhat}	zTDHandleNoRplcs
+zTDHandleNoRplcsRAW	{#insert zRplcFlagADEntrForHNROnlyRAW}{#insert zRplcFlagTDraw}	zTDHandleNoRplcsRAW
+zvHNR_YES_stYes	{#SETPHRASE -description zvHNR_YES -content yes -autotext zvHNR_YES -folder ctvv_folder}	zvHNR_YES_stYes
+zvHNR_YES_stES	{#SETPHRASE -description zvHNR_YES -content -autotext zvHNR_YES -folder ctvv_folder}	zvHNR_YES_stES

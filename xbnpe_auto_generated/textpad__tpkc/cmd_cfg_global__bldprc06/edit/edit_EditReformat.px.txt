@@ -1,0 +1,8 @@
+zTpkcEditReformatAbrv1C	Erfmt	zTpkcEditReformatAbrv1C
+zTpkcErfmtCmdNameTC	EditReformat	zTpkcErfmtCmdNameTC
+zTpkcErfmtDfltPhrsNm	zTPReformatSelection	zTpkcErfmtDfltPhrsNm
+zTpkcErfmtCatForCmdAbrvLC	edit	zTpkcErfmtCatForCmdAbrvLC
+zTpkcErfmtCmdType_mcrTl		zTpkcErfmtCmdType_mcrTl
+zTpkcErfmtIsBtstrp_yes		zTpkcErfmtIsBtstrp_yes
+zTpkcErfmtDfltPostKcSlpMils	10	zTpkcErfmtDfltPostKcSlpMils
+zTpkcErfmtStpsFrmCmdListTop	{#insert zEND}{#insert zPGUP2}{#insert zDOWN2}	zTpkcErfmtStpsFrmCmdListTop

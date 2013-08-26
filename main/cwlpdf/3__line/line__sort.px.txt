@@ -1,0 +1,15 @@
+dnens -- zSortGTDocTopDnen ALT KC	{#insert zSortGTDocTopDnen}	dnens
+
+dnenx -- zSortGTDocTopDelMTLnDnen ALT KC	{#insert zSortGTDocTopDelMTLnDnen}	dnenx
+
+zSortDialogPauseConfirm	{#insert zTPSortDlgOpen}{#sleep 500}{#insert zzProceedWSortMbxEntrSlp50}zSortDialogPauseConfirm
+
+zSortDialogPauseConfirmNoPause	{#insert zTPSortDlgOpen}{#insert zzProceedWSortMbxEntrSlp50}	zSortDialogPauseConfirm
+
+zSortGTDocTopDelMTLnDnen	{#BALLOON -title dnenx WARNING -text This only works when there is at least one empty line (aside from the post-new-line LAST line in the file) in the document. If the first character in the top-most phrase is deleted, this is the reason (use 'dnens' instead).}{#insert zzSortDialogPauseCnfrmGTDocTop}{#insert zDEL}{#insert dnen}	zSortGTDocTopDelMTLnDnen
+
+zSortGTDocTopDnen	{#BALLOON -title dnens versus dnenx -text To delete the empty line at the top, between the sort and 'dnen', use 'dnenx' instead.}{#insert zzSortDialogPauseCnfrmGTDocTop}{#insert dnen}	zSortGTDocTopDnen
+
+zzProceedWSortMbxEntrSlp50	{#MSGBOX -head Proceed with sort? -text Configure the sort as you wish, then press enter. Settings are stored for next time.}{#insert zENTER}{#sleep 50}	zzProceedWSortMbxEntrSlp50
+
+zzSortDialogPauseCnfrmGTDocTop	{#insert zSortDialogPauseConfirm}{#insert zTPGTDocTop}	zzSortDialogPauseCnfrmGTDocTop

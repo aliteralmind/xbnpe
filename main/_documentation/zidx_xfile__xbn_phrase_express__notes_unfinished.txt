@@ -1,0 +1,315 @@
+---
+--- {#insert zzZIdxXbnpeCatNameLong} ---
+---
+
+---XBN-PhraseExpress for TextPad: INSTALLATION---
+
+This describes how to install XBN-PhraseExpress for TextPad. These phrases are written almost exclusively for use in Helios Solution's TextPad text editor. I ONLY write PhraseExpress code in TextPad. I NEVER write phrases directly in the PhraseExpress application. Every change I make, I re-import that phrase-file (one phrase-per-line) into PhraseExpress.
+
+NOTES:
+- XBN-PhraseExpress does NOT require the professional license.
+- It is assumed that you have already downloaded, at least, the bootstrap XBN-PhraseExpress project:
+	XBNPhraseExpress: XBNPE-Bootstrap & All-chars-with-all-modifiers
+in the file
+	xbn_phrase_express__btstrp_and_xkp.pxp
+and that file is in a known folder on your computer.
+- All the below installation instructions tell you to directly edit phrases from within the PhraseExpress application. I personally NEVER do this, but it makes the installation instructions easier to understand.
+- All installation instructions also assume that you've never used PhraseExpress before, and have no other phrases installed, beyond the pre-installed examples.
+
+---
+
+Steps to installing XBN-PhraseExpress:
+
+-1- Install PhraseExpress and TextPad
+
+-3- Open the TextPad application, and leave it open.
+
+-2- In PhraseExpress, create a root- (top-most-)level folder named 'XBN-PhraseExpress' (no quotes)
+
+-3- Select the folder with your mouse.
+
+-4- Customize the folder in preparation for XBN-PhraseExpress phrases
+
+-4.1- On the right half of the screen (the left half is the folder-heirarchy), if the 'Expert mode' button is currently visible (near the bottom), then click it. Now you are in 'Expert mode'--the button now says 'Easy mode', for when you want to switch back--if you do (I always stay in expert-mode).
+
+(**For all the below steps, if there already happen to be any folders or phrases in the XBN-PhraseExpress folder, then you'll need to confirm each setting by selecting the 'Overwrite settings' radio button, and the 'All subfolders' checkbox.**)
+
+-4.2- Change the 'Postfix' dropdown to 'Custom'. This will popup a dialog with two buttons and a textbox. UN-select both buttons, delete all text in the textbox, and then type the up-left-accent mark ('`', which is below the tilde '~' on american QWERTY keyboards). Confirm this.
+
+-4.3- Tick the 'Case sensitive autotext' checkbox.
+
+-4.4- [**Make sure TextPad is open before doing this step**] Below-and-to-the-left of the 'Prefix' drop down is the 'Execute only in certain programs' checkbox. Tick the box, and it will pop up a new dialog:
+	'Restrict to specific programs'
+In that dialog, select the following values from the dropdowns:
+	'Restrict to' -- 'TextPad' -- 'With any window title'
+Press OK to confirm and exit the dialog.
+
+-4.5- Tick the 'Remove trailing delimiter (postfix)' checkbox.
+
+All these settings will be adopted by all future folders and phrases created in this directory (or sub-directory).
+
+-5- Install the XBN-PhraseExpress project: 'XBNPE-Bootstrap & All-chars-with-all-modifiers'
+
+This step shows you how to install and configure the XBNPE-Bootstrap project, as contained in this phrase-file:
+	xbn_phrase_express__btstrp_and_xkp.pxp
+
+-5.1- Open PhraseExpress, select the 'XBN-PhraseExpress' folder, and click Ctrl-I. This opens up the
+	'Select file to import' dialog box
+
+-5.2- Navigate to and select this file:
+	[installation-directory]\xbn_phrase_express__btstrp_and_xkp.pxp
+This creates a new folder called
+	XBNPE-Bootstrap & All-chars-with-all-modifiers
+which contains the phrases that EVERY other XBN-PhraseExpress project is dependant on, in addition to some fundamentally-useful phrases.
+
+-5.3- Configure all Windows OS directories ("on disk" directories), by carefully changing the values of the phrases in
+	XBN-PhraseExpress/XBNPE-Bootstrap & All-chars-with-all-modifiers/xbnpe__directory_config_edit_this.px
+
+There are two directories:
+	zROOT_DIR_XBNPE_PARENT
+		The full directory in which the XBN-PhraseExpress source-code root-directory ('xbn_phrase_express') resides. If you have not downloaded the XBN-PhraseExpress source-code, this can be safely ignored. Example value
+			R:\jeffy\programming\sandbox\macros\
+	zWIN_DIR_desktop
+		The full directory to your Windows desktop
+			C:\Users\jeffy\Desktop\
+
+All values must end with a down-right-slash ('\').
+
+To confirm each value, select and copy its autotext (such as zROOT_DIR_XBNPE_PARENT), and execute it by typing "cpcb`" into a new document. It will print the directory value, such as
+	R:\jeffy\programming\sandbox\macros\
+Select and copy that path. Attempt to open that directory, by then pasting it into the open dialog, and pressing return.
+
+It is strongly recommended that you properly set these values. Documentation files are stored and launched based on these directory paths.
+
+-6- Configure the 12 'TextPad-Bootstrap' commands.
+
+There are 12 built-in TextPad commands that are needed by this XBNPE-bootstrap project. Specifically, the all-characters-with-all-modifiers project, as installed in
+	XBN-PhraseExpress/XBNPE-Bootstrap & All-chars-with-all-modifiers/All chars with all modifiers (xkp)
+uses these fourteen commands in order to BUILD the XKP phrases. Although it is unlikely that you will be building the XKP phrases yourself--since they already exist--these 12 phrases are critical to all other XBN-PhraseExpress projects. Before ANY other XBN-PhraseExpress projects can be downloaded and used, these 12 phrases must be configured. It is therefore highly recommended that you configure them now.
+
+These 12 built-in TextPad commands, are the 'TextPad Bootstraps' for the XBNPE-XKP project:
+
+	TextPad built-in command      XBN-PhraseExpress phrase
+	------------------------      ------------------------
+	DocumentStart                 zTPGTDocTop
+	EditCopy                      zTPCopy
+	EditCut                       zTPCut
+	EditDupLine                   zTPDupLine
+	EditPaste                     zTPPaste
+	FileClose                     zTPFileClose
+	FileNew                       zTPFileNew
+	FileSave                      zTPFileSave
+	SelectAll                     zTPSelectAll
+	WordLeftExtend                zTPSelectL1w
+	WordRightEnd                  zTPMoveR1w
+	WordRightEndExtend            zTPSelectR1w
+
+Each of these commands, in both PhraseExpress
+	TextPad > Configure > Preferences > 'All' category > [command-name]
+must refer to the exact same key-command.
+
+So, for example, if
+	TextPad > Configure > Preferences > 'All' category > WordLeftExtend
+has the following key-command assigned to it (in the "Current keys" box):
+	Ctrl+Shift+Left
+Then its corresponding phrase
+	zTPSelectL1w
+must click exactly this key-combination (key-command). The contents of this phrase must be:
+	\\\{#CTRL \\\{#SHIFT \\\{#LEFT\\\}\\\}\\\}\\\{#insert zTSlp\\\}
+The phrase "zTSlp" is critical for reasons described in other sections. A single call to zTSlp must be the final phrase-call in all bootstrap phrases.
+
+NOTE: If there are multiple "Current keys" assigned in TextPad, just pick your favorite to consider the bootstrap key-command.
+
+--TextPad built-in-command bootstrap phrase: Escaped version--
+
+TextPad built-in commands that are XBNPE-bootstraps (the 12 phrases above) each have a corresponding escaped version. For example, the escaped version of
+	zTPSelectL1w
+is
+	zTPSelectL1wEsc
+and contains the EXACT SAME CONTENTS as its non-escaped version:
+	\\\\\\{#CTRL \\\\\\{#SHIFT \\\\\\{#LEFT\\\\\\}\\\\\\}\\\\\\}\\\\\\{#insert zTSlp\\\\\\}
+
+This escaped-version of the bootstrap phrase is critical for diagnostics and debugging purposes. Unfortunately, these "Esc" phrases must be manually maintained--whenever a change is made to a bootstrap phrase, its corresponding "Esc" phrase must also be updated. Simply duplicate the contents, and add three down-right slashes ("\\\") in front of every open and close curly-brace.
+
+
+***To test this entire setup process, including TextPad-bootstraps, run
+	zTestAllXKPTPBootstraps
+by opening a new TextPad document, and typing "zTestAllXKPTPBootstraps`" (no quotes).
+This will run a short process that confirms every bootstrap command, and will also confirm that all other steps (like the "Prefix key" and other XBN-PhraseExpress folder configuration settings) were done properly.
+
+------------------------------
+
+--Now you are ready to use XBN-PhraseExpress for TextPad--
+
+Welcome to XBN-PhraseExpress!
+
+--------------------------------
+--------------------------------
+--------------------------------
+--------------------------------
+--------------------------------
+--------------------------------
+
+--XBNPhraseExpress: XBNPE-Bootstrap & All-chars-with-all-modifiers--
+
+This is the most fundamental project in XBN-PhraseExpress. It depends on no other XBNPE project. ALL other XBNPE projects depend on this.
+
+--PhraseExpress folder structure--
+
+XBN-PhraseExpress
+	XBNPE-Bootstrap & All-chars-with-all-modifiers
+		All chars with all modifiers (xkp)
+		Basic utilities
+			Debugging tools: Execution speed & alertboxNUM
+				Key-Press Speed
+		Temporary variable storage -- ctvv_folder
+		xbnpe_btsrp__for_HotKeys_only.px
+		xbnpe__directory_config_do_not_edit_this.px
+		xbnpe__directory_config_edit_this.px
+		xbnpe__global_config.px
+		XBNPE-btstrp & XKP: Bootstrap phrases
+
+
+--DETAILS--
+
+-Folder: XBNPE: Bootstrap & Chars w/ mods (XKP)-
+
+Described in a below section
+
+-Folder: XBNPE-Bootstrap/Basic utilities-
+
+The most fundamental phrases I use for phrase creation and debugging purposes.
+
+-Folder: XBNPE-Bootstrap/Basic utilities/Debugging tools: Execution speed & alertboxNUM-
+
+Phrases to assist in debugging, by
+
+	- Slowing down or speeding execution of MOST XBN-PhraseExpress processes. To slow down execution speed, either call one of the following phrases:
+		kpf: Key-Press Fast
+		kpm: Key-Press Medium
+		kps: Key-Press Slow
+		kpss: Key-Press Super-Slow
+	or use the pop-up dialog for the folder
+		XBNPE-Bootstrap/Basic utilities/Debugging tools: Execution speed & alertboxNUM/Key-Press Speed
+	by pressing its hotkey (which by default is 'Ctrl+Alt+Shift+\'), and then choosing the desired speed with your keyboard or mouse.
+
+	- Inserting tracing-alertboxes, to determine exactly where problems are occurring. These alertboxes are created with 'pab#' where the number is anything from 1-to-10. They result in a call to alertbox#, such as
+		\\\{#insert alertbox2\\\}
+
+-Folder: XBNPE-Bootstrap/Temporary variable storage -- ctvv_folder-
+
+Stores temporary variables created and used by most XBN-PhraseExpress projects. While these variables are critical, they may be deleted at any time. In otherwords, they are only critical DURING processes, and are always created immediately before they are needed.
+
+-Folder: XBNPE-Bootstrap/xbnpe_btsrp__for_HotKeys_only.px-
+
+A special set of phrases that does nothing but call other phrases. The purpose is to assign desired phrases to a specific key-command, without UN-assigning that key-command when the target-phrase is re-imported.
+
+-Folder: XBNPE-Bootstrap/xbnpe__directory_config_do_not_edit_this.px-
+
+Critical on-disk (Windows OS) directories that are derived from the "edit_this" directories.
+
+-Folder: XBNPE-Bootstrap/xbnpe__directory_config_edit_this.px-
+
+Critical on-disk directories that you must configure for your specific computer setup. See the XBN-PhraseExpress setup process for details.
+
+-Folder: XBNPE-Bootstrap/xbnpe__global_config.px-
+
+Some configuration values used throughout the XBN-PhraseExpress project. Do not alter unless you know exactly what you're doing.
+
+
+----------------------------------------
+
+---XBN-PhraseExpress project: All characters with all modifiers (xkp)---
+
+The most fundamental major project in XBN-PhraseExpress. Here are basic button preses in PhraseExpress.
+	\\\{#ENTER\\\}
+	\\\{#TAB -count 2\\\}
+	\\\{#SHIFT \\\{#RIGHT\\\}\\\}
+	\\\{#CTRL -chars m\\\}
+
+The All characters with all modifiers (xkp) project creates a replacement for every possible key-press (exception the '-count' parameter), replacing the above with the following:
+	\\\{#insert zENTER\\\}
+	\\\{#insert zTAB\\\}\\\{#insert zTAB\\\}
+	\\\{#insert zSpRIGHT\\\}\\\}
+	\\\{#insert zCpMM\\\}
+
+(Note that 'zTAB2'--and 'zTAB[any-number]'--is made available by the XBN-PhraseExpress MINV-Project, which is dependant on this XKP project. It is separately downloadable.)
+
+These are called XKP-key-presses. The benefit of the XKP-key-presses is two-fold:
+	-1- When any modifiers are used (CTRL, ALT, SHIFT, and/or LWIN), XKP-key-presses are more concise and easy to read and quickly type.
+		PhraseExpress defaults       Corresponding XKP-key-press
+		----------------------       ---------------------------
+		\\\{#NONE -chars m\\\}             \\\{#insert zMM\\\}
+		\\\{#SHIFT \\\{#RIGHT\\\}\\\}            \\\{#insert zSpRIGHT\\\}
+		\\\{#CTRL \\\{#SHIFT \\\{#RIGHT\\\}\\\}\\\}    \\\{#insert zCSpRIGHT\\\}
+		\\\{#ALT -chars m\\\}              \\\{#insert zApMM\\\}
+
+	-2- They allow for the ability to slow down and speed up ALL processes that use them, via the
+		Folder: XBNPE-Bootstrap/Basic utilities/Debugging tools: Execution speed & alertboxNUM
+	as described in the above XBNPE-Bootstrap folder structure section.
+
+--PhraseExpress folder structure--
+
+XBN-PhraseExpress
+	XBNPE-Bootstrap & XKP
+		All chars with all modifiers (xkp)
+			Build process [deactivate this branch when fully-built]
+				xkp_build__MAIN.px
+				xkp_build_directory_config.px
+				zSUB
+			XKP-key-press phrases: *Only* LWin modifiers
+				[Same sub-folders as "no-LWin"]
+			XKP-key-press phrases: *No* LWin modifiers
+				Printable (i.e. a, 3, `, #)
+					Letters
+					Digits
+					Other
+				Non-printable (i.e. F3, BKSP, NUM7)
+					Command keys (i.e. ENTER, BKSP)
+					Function keys (i.e. F3, F8)
+					Number pad (i.e. NUM7, NUMADD)
+
+-XKP folder: All chars with all modifiers (xkp)/Build process-
+
+
+--Building the XKP-key-press phrases--
+
+All XKP-key-press phrases already exist, so this section is likely only of interest to XBN-PhraseExpress developers.
+
+Input files:
+	-zXPROOT_DIR_allModForChrsInput:
+	{#insert zXPROOT_DIR_allModForChrsInput}
+Output files:
+	With no LWin-modified phrases:
+		-zXPROOT_DIR_AG_xkpOutput_nolw:
+		{#insert zXPROOT_DIR_AG_xkpOutput_nolw}
+		-Imported into the XBN-PhraseExpress branch:
+			.../All chars with all modifiers (xkp)/XKP-key-presses/With no LWin modifiers
+	With only LWin-modified phrases:
+		-zXPROOT_DIR_AG_xkpOutput_nolw:
+		{#insert zXPROOT_DIR_AG_xkpOutput_yeslw}
+		-Imported into the XBN-PhraseExpress branch:
+			.../All chars with all modifiers (xkp)/XKP-key-presses/With only LWin modifiers
+
+The reason for separating LWIn-modified from non-LWin-modified phrases, is so all LWin-modified-phrases can be deactivated at once (I personally do not use them), by right-clicking on the 'With only LWin modifiers' folder, and unchecking
+	Enable AutoText/HotKeys
+
+--NOTES TO ORGANIZE--
+
+Note that this file contains all the digits on the keyboard--NOT the shift-digit character. Hence, none of the following characters are in this project: !@#$%^&*()
+Note that this file contains all the special characters on the keyboard for which you do NOT press shift. Hence, none of the following characters are in this project: ><"_+?}{    --  ALSO note that ENTER, TAB, and SPACE are in the raw_command_keys input file, because they are not compatible with '-chars [CHAR]'
+
+-Executing the build process: buildxkp-
+
+-1- Delete ALL files from the above output directories (only delete files, not directories)
+-2- Open a new document in TextPad, and type "buildxkp`".
+-3- You are asked which modifier-types should be generated:
+	- Non-LWin-modified phrases only,
+	- LWin-modified phrases only,
+	- or both
+-4- It opens up multiple raw-input files, one at a time, and generates the requested phrases, saving them in the above output directories. Note that all output is saved to the root output directories. Nothing is saved into any sub-directories.
+-5- Open Windows Explorer, and navigate to the above output directories. Move all files into their appropriate sub-directories. For example, move AA.px.txt through ZZ.px.txt into the 'letters' sub-directory.
+-6- Import all files into the PhraseExpress directories as dictated above. Delete any existing files first--don't delete any NON-'.px' folders (such as 'letters' and 'digits_and_numpad'), ONLY delete any the '.px' folders (such as 'AA.px' and 'SEMI_COLON.px').
+
+
+

@@ -1,0 +1,65 @@
+Char01UpsideDownExclaimation	zTPChar01UpsideDownExclaimation	Chrudx	__ES__	1	(*NOTHING. Top command in list*)
+Char02UpsideDownQuestion	zTPChar02UpsideDownQuestion	Chrudq	__ES__	1	{#insert zDOWN}
+Char03QuestionUnknown1of3	zTPChar03QuestionUnknown1of3	Chrunk1	__ES__	1	{#insert zDOWN2}
+Char04QuestionUnknown2of3	zTPChar04QuestionUnknown2of3	Chrunk2	__ES__	1	{#insert zDOWN3}
+Char05QuestionUnknown3of3	zTPChar05QuestionUnknown3of3	Chrunk3	__ES__	1	{#insert zPGDN}{#insert zUP2}
+Char06AUpperURAccent	zTPChar06AUpperURAccent	Chrauur	__ES__	1	{#insert zPGDN}{#insert zUP}
+Char07ALowerURAccent	zTPChar07ALowerURAccent	Chralur	__ES__	1	{#insert zPGDN}
+Char08AUpperULAccent	zTPChar08AUpperULAccent	Chrauul	__ES__	1	{#insert zPGDN}{#insert zDOWN}
+Char09ALowerULAccent	zTPChar09ALowerULAccent	Chralul	__ES__	1	{#insert zPGDN}{#insert zDOWN2}
+Char10AUpperCaret	zTPChar10AUpperCaret	Chrauc	__ES__	1	{#insert zPGDN}{#insert zDOWN3}
+Char11ALowerCaret	zTPChar11ALowerCaret	Chralc	__ES__	1	{#insert zPGDN2}{#insert zUP2}
+Char12AUpperUmlaut	zTPChar12AUpperUmlaut	Chrauu	__ES__	1	{#insert zPGDN2}{#insert zUP}
+Char13ALowerUmlaut	zTPChar13ALowerUmlaut	Chralu	__ES__	1	{#insert zPGDN2}
+Char14AUpperTilde	zTPChar14AUpperTilde	Chraut	__ES__	1	{#insert zPGDN2}{#insert zDOWN}
+Char15ALowerTilde	zTPChar15ALowerTilde	Chralt	__ES__	1	{#insert zPGDN2}{#insert zDOWN2}
+Char16AUpperDegree	zTPChar16AUpperDegree	Chraud	__ES__	1	{#insert zPGDN2}{#insert zDOWN3}
+Char17ALowerDegree	zTPChar17ALowerDegree	Chrald	__ES__	1	{#insert zPGDN3}{#insert zUP2}
+Char18AUpperAe	zTPChar18AUpperAe	Chrauae	__ES__	1	{#insert zPGDN3}{#insert zUP}
+Char19ALowerAe	zTPChar19ALowerAe	Chralae	__ES__	1	{#insert zPGDN3}
+Char20CUpperUnderAccent	zTPChar20CUpperUnderAccent	Chrcuua	__ES__	1	{#insert zPGDN3}{#insert zDOWN}
+Char21CLowerUnderAccent	zTPChar21CLowerUnderAccent	Chralua	__ES__	1	{#insert zPGDN3}{#insert zDOWN2}
+Char22DUpperHorizCross	zTPChar22DUpperHorizCross	Chrduhc	__ES__	1	{#insert zPGDN3}{#insert zDOWN3}
+Char23OLowerUpside9	zTPChar23OLowerUpside9	Chrolu9	__ES__	1	{#insert zPGDN4}{#insert zUP2}
+Char24EUpperURAccent	zTPChar24EUpperURAccent	Chreuur	__ES__	1	{#insert zPGDN4}{#insert zUP}
+Char25ELowerURAccent	zTPChar25ELowerURAccent	Chrelur	__ES__	1	{#insert zPGDN4}
+Char26EUpperULAccent	zTPChar26EUpperULAccent	Chreeuul	__ES__	1	{#insert zPGDN4}{#insert zDOWN}
+Char27ELowerULAccent	zTPChar27ELowerULAccent	Chrelul	__ES__	1	{#insert zPGDN4}{#insert zDOWN2}
+Char28EUpperCaret	zTPChar28EUpperCaret	Chreuc	__ES__	1	{#insert zPGDN4}{#insert zDOWN3}
+Char29ELowerCaret	zTPChar29ELowerCaret	Chrelc	__ES__	1	{#insert zPGDN5}{#insert zUP2}
+Char30EUpperUmlaut	zTPChar30EUpperUmlaut	Chreuu	__ES__	1	{#insert zPGDN5}{#insert zUP}
+Char31ELowerUmlaut	zTPChar31ELowerUmlaut	Chrelu	__ES__	1	{#insert zPGDN5}
+Char32IUpperURAccent	zTPChar32IUpperURAccent	Chriuur	__ES__	1	{#insert zPGDN5}{#insert zDOWN}
+Char33ILowerURAccent	zTPChar33ILowerURAccent	Chrilur	__ES__	1	{#insert zPGDN5}{#insert zDOWN2}
+Char34IUpperULAccent	zTPChar34IUpperULAccent	Chriuul	__ES__	1	{#insert zPGDN5}{#insert zDOWN3}
+Char35ILowerULAccent	zTPChar35ILowerULAccent	Chrilul	__ES__	1	{#insert zPGDN6}{#insert zUP2}
+Char36IUpperCaret	zTPChar36IUpperCaret	Chriuc	__ES__	1	{#insert zPGDN6}{#insert zUP}
+Char37ILowerCaret	zTPChar37ILowerCaret	Chrilc	__ES__	1	{#insert zPGDN6}
+Char38IUpperUmlaut	zTPChar38IUpperUmlaut	Chriuu	__ES__	1	{#insert zPGDN6}{#insert zDOWN}
+Char39ILowerUmlaut	zTPChar39ILowerUmlaut	Chrilu	__ES__	1	{#insert zEND}{#insert zPGUP4}{#insert zUP2}
+Char40NUpperTilde	zTPChar40NUpperTilde	Chrnut	__ES__	1	{#insert zEND}{#insert zPGUP4}{#insert zUP}
+Char41NLowerTilde	zTPChar41NLowerTilde	Chrnlt	__ES__	1	{#insert zEND}{#insert zPGUP4}
+Char42OUpperURAccent	zTPChar42OUpperURAccent	Chrouur	__ES__	1	{#insert zEND}{#insert zPGUP4}{#insert zDOWN}
+Char43OLowerURAccent	zTPChar43OLowerURAccent	Chrolur	__ES__	1	{#insert zEND}{#insert zPGUP4}{#insert zDOWN2}
+Char44OUpperULAccent	zTPChar44OUpperULAccent	Chrouul	__ES__	1	{#insert zEND}{#insert zPGUP3}{#insert zUP3}
+Char45OLowerULAccent	zTPChar45OLowerULAccent	Chrolul	__ES__	1	{#insert zEND}{#insert zPGUP3}{#insert zUP2}
+Char46OUpperCaret	zTPChar46OUpperCaret	Chrouc	__ES__	1	{#insert zEND}{#insert zPGUP3}{#insert zUP}
+Char47OLowerCaret	zTPChar47OLowerCaret	Chrolc	__ES__	1	{#insert zEND}{#insert zPGUP3}
+Char48OUpperUmlaut	zTPChar48OUpperUmlaut	Chrouu	__ES__	1	{#insert zEND}{#insert zPGUP3}{#insert zDOWN}
+Char49OLowerUmlaut	zTPChar49OLowerUmlaut	Chrolu	__ES__	1	{#insert zEND}{#insert zPGUP3}{#insert zDOWN2}
+Char50OUpperTilde	zTPChar50OUpperTilde	Chrout	__ES__	1	{#insert zEND}{#insert zPGUP2}{#insert zUP3}
+Char51OLowerTilde	zTPChar51OLowerTilde	Chrolt	__ES__	1	{#insert zEND}{#insert zPGUP2}{#insert zUP2}
+Char52OUpperURCross	zTPChar52OUpperURCross	Chrouurc	__ES__	1	{#insert zEND}{#insert zPGUP2}{#insert zUP}
+Char53OLowerURCross	zTPChar53OLowerURCross	Chrolurc	__ES__	1	{#insert zEND}{#insert zPGUP2}
+Char54SLowerUpperB	zTPChar54SLowerUpperB	Chrslub	__ES__	1	{#insert zEND}{#insert zPGUP2}{#insert zDOWN}
+Char55UUpperURAccent	zTPChar55UUpperURAccent	Chruuur	__ES__	1	{#insert zEND}{#insert zPGUP2}{#insert zDOWN2}
+Char56ULowerURAccent	zTPChar56ULowerURAccent	Chrulur	__ES__	1	{#insert zEND}{#insert zPGUP}{#insert zUP3}
+Char57UUpperULAccent	zTPChar57UUpperULAccent	Chruuul	__ES__	1	{#insert zEND}{#insert zPGUP}{#insert zUP2}
+Char58ULowerULAccent	zTPChar58ULowerULAccent	Chrulul	__ES__	1	{#insert zEND}{#insert zPGUP}{#insert zUP}
+Char59UUpperCaret	zTPChar59UUpperCaret	Chruuc	__ES__	1	{#insert zEND}{#insert zPGUP}
+Char60ULowerCaret	zTPChar60ULowerCaret	Chrulc	__ES__	1	{#insert zEND}{#insert zPGUP}{#insert zDOWN}
+Char61UUpperUmlaut	zTPChar61UUpperUmlaut	Chruuu	__ES__	1	{#insert zEND}{#insert zPGUP}{#insert zDOWN2}
+Char62ULowerUmlaut	zTPChar62ULowerUmlaut	Chrulu	__ES__	1	{#insert zEND}{#insert zUP3}
+Char63YUpperURAccent	zTPChar63YUpperURAccent	Chryuur	__ES__	1	{#insert zEND}{#insert zUP2}
+Char64YLowerURAccent	zTPChar64YLowerURAccent	Chrylur	__ES__	1	{#insert zEND}{#insert zUP}
+Char65YLowerUmlaut	zTPChar65YLowerUmlaut	Chryuu	__ES__	1	{#insert zEND}

@@ -1,0 +1,8 @@
+SPACE -- zSPACE	{#SPACE}{#insert zTSlp}	zSPACE
+Alt+SPACE -- zApSPACE	{#ALT {#SPACE}}{#insert zTSlp}	zApSPACE
+Alt+Shift+SPACE -- zASpSPACE	{#ALT {#SHIFT {#SPACE}}}{#insert zTSlp}	zASpSPACE
+Ctrl+SPACE -- zCpSPACE	{#CTRL {#SPACE}}{#insert zTSlp}	zCpSPACE
+Ctrl+Alt+SPACE -- zCApSPACE	{#CTRL {#ALT {#SPACE}}}{#insert zTSlp}	zCApSPACE
+Ctrl+Alt+Shift+SPACE -- zCASpSPACE	{#CTRL {#ALT {#SHIFT {#SPACE}}}}{#insert zTSlp}	zCASpSPACE
+Ctrl+Shift+SPACE -- zCSpSPACE	{#CTRL {#SHIFT {#SPACE}}}{#insert zTSlp}	zCSpSPACE
+Shift+SPACE -- zSpSPACE	{#SHIFT {#SPACE}}{#insert zTSlp}	zSpSPACE

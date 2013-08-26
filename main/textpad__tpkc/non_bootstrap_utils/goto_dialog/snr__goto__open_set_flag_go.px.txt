@@ -1,0 +1,7 @@
+zGTDlgOpenLineGo_M_gtn -- Needs zvGT_REL_NUM	{#insert zGTDlgOpenFlagLine}{#insert zvGT_REL_NUM}{#sleep 10}{#insert zGTDlgGoClose}	zGTDlgOpenLineGo_M_gtn
+zGTDlgOpenColumnGo_M_gtn	{#insert zGTDlgOpenFlagColumn}{#insert zvGT_REL_NUM}{#sleep 10}{#insert zGTDlgGoClose}	zGTDlgOpenColumnGo_M_gtn
+zGTDlgOpenPageGo_M_gtn	{#insert zGTDlgOpenFlagPage}{#insert zvGT_REL_NUM}{#sleep 10}{#insert zGTDlgGoClose}	zGTDlgOpenPageGo_M_gtn
+zGTDlgOpenByteGo_M_gtn	{#insert zGTDlgOpenFlagByte}{#insert zvGT_REL_NUM}{#sleep 10}{#insert zGTDlgGoClose}	zGTDlgOpenByteGo_M_gtn
+zGTDlgOpenBookmarkGo_M_gtn	{#insert zGTDlgOpenFlagBookmark}{#insert zvGT_REL_NUM}{#sleep 10}{#insert zGTDlgGoClose}	zGTDlgOpenBookmarkGo_M_gtn
+zGTDlgOpenGo_M_gtn	{#insert zGTDlgOpenFlag}{#insert zvGT_REL_NUM}{#sleep 10}{#insert zGTDlgGoClose}	zGTDlgOpenGo_M_gtn
+

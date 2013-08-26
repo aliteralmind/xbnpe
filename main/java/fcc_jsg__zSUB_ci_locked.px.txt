@@ -1,0 +1,34 @@
+(*This must precede both the copy-constructor and setter
+
+Creates              For        Desc
+----------------------------------------------------------------------
+zvJSG_JD_LX         setter     @exception LockException
+zvJSG_JAVA_CILKD    setter     ciLocked(setter-func-name)
+
+NOTE that a no new-lines (zENTER), are at the end of any variable. New-lines must be concatenated externally.
+
+(Duplicate these zvJSG[B]_* table rows into zSUB_setter.px.txt.)
+*)
+
+(*JSG*)
+zjsgSetCILockedInfo	{#msgbox -head Is THIS class lockable? -text {#insert zcilmbBody} -yes zjsgSetCILockedInfo_LKBL -no z5slp -defaultno}	zjsgSetCILockedInfo
+zjsgSetCILockedInfo_LKBL	{#insert zjsgSetJSG_JD_LX}{#insert zjsgSetJSG_JAVA_CILKD}	zjsgSetCILockedInfo_LKBL
+
+(*JSG -- sub*)
+zjsgSetJSG_JAVA_CILKD	{#SETPHRASE -description zvJSG_JAVA_CILKD -content {#insert zjsgJavaCILockedRAW} -autotext zvJSG_JAVA_CILKD -folder ctvv_folder}	zjsgSetJSG_JAVA_CILKD
+zjsgJavaCILockedRAW	ciLocked({#asc 34}{#insert zjsgbSetterName}{#asc 34});	zjsgJavaCILockedRAW
+zjsgSetJSG_JD_LX	{#SETPHRASE -description zvJSG_JD_LX -content {#insert zjsgJDLockXRAW} -autotext zvJSG_JD_LX -folder ctvv_folder}	zjsgSetJSG_JD_LX
+zjsgJDLockXRAW	@exception  LockException  If <CODE><A HREF={#asc 34}{#insert zJDUrRellDirToXbnLang}OneWayLockable.html{#asc 34}><I>[OneWayLockable]</I></A>.<A HREF={#asc 34}{#insert zJDUrRellDirToXbnLang}OneWayLockable.html#isLocked(){#asc 34}>isLocked</A>()</CODE> is <CODE>true</CODE>.	zjsgJDLockXRAW
+
+zJDUrRellDirToXbnLang	{#input -head URL to xbn.lang dir. (incl. end-/)? -single -def ../lang/}	zJDUrRellDirToXbnLang
+
+(*JXSG*)
+zjxsgSetCILockedInfo	{#msgbox -head Is THIS class lockable? -text {#insert zcilmbBody} -yes zxjsgSetCILockedInfo_LKBL -no z5slp -defaultno}	zjxsgSetCILockedInfo
+
+(*JSGB -- sub*)
+zcilmbBody	Does THIS class implement xbn.lang.[OneWay]Lockable AND should the setter crash if THIS is locked? // [Yes]: It IS lockable, and when locked, it SHOULD crash on a locked-set-attempt. [No]: It should not crash on a lock-set-attempt, or it's not lockable to begin with. 	zcilmbBody
+
+(*Unset*)
+zjsgbUnsetAllCILocked	{#insert zUnsetJSG_JD_LX}{#insert zUnsetJSG_JAVA_CILKD}	zjsgbUnsetAllCILocked
+zUnsetJSG_JD_LX	{#SETPHRASE -description zvJSG_JD_LX -content -autotext zvJSG_JD_LX -folder ctvv_folder}	zUnsetJSG_JD_LX
+zUnsetJSG_JAVA_CILKD	{#SETPHRASE -description zvJSG_JAVA_CILKD -content -autotext zvJSG_JAVA_CILKD -folder ctvv_folder}	zUnsetJSG_JAVA_CILKD

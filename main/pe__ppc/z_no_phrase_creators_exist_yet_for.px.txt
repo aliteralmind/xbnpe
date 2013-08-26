@@ -1,0 +1,14 @@
+No phrase-creator exists yet for
+	{#date}
+	{#time}
+	{#datetime -f yy -s 1D-1H -r 15}
+	{#calendar -f dd.mm.yyyy -s 1D -head Select date -manual}
+	{#setvar -var ouoeueou -value 0 -inc 0}
+	{#clipboard -paste}
+	{#adldap mailNickname}
+	{#mail -to to -cc cc -bcc bcc -subject subj -attach attch -body hello -send}
+	{#env %ALLUSERSPROFILE%}
+	{#pastefile aoeueo}
+	{#rnd 1}
+	{#setlayout 00000409}
+	{#getlayout}

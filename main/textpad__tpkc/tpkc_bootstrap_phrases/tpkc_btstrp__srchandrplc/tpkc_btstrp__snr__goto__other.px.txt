@@ -1,0 +1,1 @@
+zGoToDocBottom_page999999ViaGTDlg -- For before zTPGTDocBottom is available	{#insert zTPGTDlgOpen}{#insert zGTFlagPage}999999{#sleep 10}{#insert zENTER}{#sleep 50}	zGoToDocBottom_page999999ViaGTDlg

@@ -1,0 +1,77 @@
+C=1
+
+[Syntax]
+Namespace1 = 6
+IgnoreCase = Yes
+KeyWordLength =
+BracketChars = {}
+OperatorChars =
+PreprocStart =
+HexPrefix = #
+SyntaxStart = {
+SyntaxEnd = }
+CommentStart =
+CommentEnd =
+CommentStartAlt =
+CommentEndAlt =
+SingleComment =
+SingleCommentCol =
+SingleCommentAlt =
+SingleCommentColAlt =
+SingleCommentEsc =
+StringsSpanLines = Yes
+StringStart = "
+StringEnd = "
+StringAlt =
+StringEsc =
+CharStart =
+CharEnd =
+CharEsc =
+
+[Keywords 1]
+insert
+loop
+
+[Keywords 2]
+z5slp
+z10slp
+z25slp
+z50lp
+z100slp
+z250slp
+z500slp
+z1000slp
+sleep
+msgbox
+alertbox
+
+[Keywords 3]
+zTPFind
+zTPReplace
+
+[Keywords 4]
+zTPCut
+zTPCopy
+zTPPaste
+zTPFile
+
+[Keywords 5]
+ztpmLine
+ztpmParen
+ztpmTag
+ztpmChar
+ztpmWord
+ztpmQQ
+ztpkc_assignKCFromFieldGotoCmdTop
+ztpkc_assignKCFromFieldGoToKBCatTop
+
+[Keywords 6]
+zTEST0slp
+zTEST5slp
+zTEST10slp
+zTEST25slp
+zTEST50lp
+zTEST100slp
+zTEST250slp
+zTEST500slp
+zTEST1000slp

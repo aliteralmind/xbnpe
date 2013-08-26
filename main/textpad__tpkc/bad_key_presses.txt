@@ -1,0 +1,34 @@
+Bad key-presses:
+
+	zASpCLOSEDASHSQUAREB
+	zCASpPGDOWN
+
+Fresh install bootstraps:
+
+	DocumentStart           {#CTRL {#HOME}}{#insert zTSlp}
+	EditCopy                {#CTRL -chars c}{#insert zTSlp}
+	EditCut                 {#SHIFT {#DEL}}{#insert zTSlp}
+	EditPaste               {#CTRL -chars v}{#insert zTSlp}
+	FileNew                 {#CTRL -chars n}{#insert zTSlp}
+	FileOpen                {#insert zCpOO}
+	FileSave                {#CTRL -chars s}{#insert zTSlp}
+	Preferences             {#insert zCpQQ}{#sleep 25}{#insert zPP}
+	SearchFind              {#insert zF5}
+	SearchFindNext          {#insert zCpFF}
+	SearchReplace           {#insert zF8}
+	SelectAll               {#CTRL -chars a}{#insert zTSlp}
+	ToggleWordWrap          {#CTRL -chars q}{#sleep 25}{#NONE -chars w}{#insert zTSlp}
+	WordLeftExtend          {#CTRL {#SHIFT -chars b}}{#insert zTSlp}
+
+MUST MANUALLY ASSIGN THESE KEY-COMMAND AFTER INSTALLING TextPad:
+
+	EditCopyTaggedLines     {#insert zCASpEE}
+	EditCutTaggedLines      {#insert zCASpWW}
+	EditDupLine             {#CTRL {#ALT {#SHIFT -chars v}}}{#insert zTSlp}
+	FileClose               {#CTRL -chars w}{#insert zTSlp}
+	WordRightEnd            {#CTRL {#RIGHT}}{#insert zTSlp}
+	WordRightEndExtend      {#CTRL {#SHIFT {#RIGHT}}}{#insert zTSlp}
+
+
+
+

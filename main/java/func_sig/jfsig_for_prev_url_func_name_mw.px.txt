@@ -1,0 +1,26 @@
+sprcnstrsigpl -- super-cnstr signature w/ params from prev siG	{#insert cnsuper}{#insert mwpl}	sprcnstrsigpl
+sprcnstrsigpz -- super-cnstr signature w/ params from next siG	{#insert cnsuper}{#insert mwpz}	sprcnstrsigpz
+mwcpkg -- mwpkg CODE-d	{#insert scpkmcgprompt}{#insert zYDownUp}	mwcpkg
+mwcpkgn -- mwpkg CODE-d	{#insert scpkmcgprompt}{#insert zYDownUp}{#insert dapt}	mwcpkgn
+mwcpkgt -- mwpkg CODE-d	{#insert scpkmcgprompt}{#insert zYDownUp}{#insert dapn}	mwcpkgt
+mwcpkgy -- mwpkg CODE-d	{#insert scpkmcgprompt}{#insert zYDownUp}{#insert dapn}	mwcpkgy
+mwcpkmrg -- mwpkmrg CODE-d	{#insert scpkmcrgprompt}{#insert zYDownUp}	mwcpkrg
+mwcpkmrgn -- mwpkmrg CODE-d	{#insert scpkmcrgprompt}{#insert zYDownUp}{#insert dapt}	mwcpkmrgn
+mwcpkmrgt -- mwpkmrg CODE-d	{#insert scpkmcrgprompt}{#insert zYDownUp}{#insert dapn}	mwcpkmrgt
+mwcpkmrgy -- mwpkmrg CODE-d	{#insert scpkmcrgprompt}{#insert zYDownUp}{#insert dapn}	mwcpkmrgy
+mwcpkp --  mwpkp CODE-d	{#insert scpkmcpprompt}{#insert zYDownUp}	mwcpkp
+mwcpkpn --  mwpkp CODE-d	{#insert scpkmcpprompt}{#insert zYDownUp}{#insert dapt}	mwcpkpn
+mwcpkpt --  mwpkp CODE-d	{#insert scpkmcpprompt}{#insert zYDownUp}{#insert dapn}	mwcpkpt
+mwcpkpy --  mwpkp CODE-d	{#insert scpkmcpprompt}{#insert zYDownUp}{#insert dapn}	mwcpkpy
+mwpkg -- func-name (siG start)	{#insert scpkmgprompt}{#insert zYDownUp}	mwpkg
+mwpkgn -- func-name (siG start)	{#insert scpkmgprompt}{#insert zYDownUp}{#insert dapt}	mwpkgn
+mwpkgt -- func-name (siG start)	{#insert scpkmgprompt}{#insert zYDownUp}{#insert dapn}	mwpkgt
+mwpkgy -- func-name (siG start)	{#insert scpkmgprompt}{#insert zYDownUp}{#insert dapn}	mwpkgy
+mwpkmrg -- Return type	{#insert scpkmrgprompt}{#insert zYDownUp}	mwpkrg
+mwpkmrgn -- Return type	{#insert scpkmrgprompt}{#insert zYDownUp}{#insert dapt}	mwpkmrgn
+mwpkmrgt -- Return type	{#insert scpkmrgprompt}{#insert zYDownUp}{#insert dapn}	mwpkmrgt
+mwpkmrgy -- Return type	{#insert scpkmrgprompt}{#insert zYDownUp}{#insert dapn}	mwpkmrgy
+mwpkp -- Params (open paren)	{#insert scpkmpprompt}{#insert zYDownUp}	mwpkp
+mwpkpn -- Params (open paren)	{#insert scpkmpprompt}{#insert zYDownUp}{#insert dapt}	mwpkpn
+mwpkpt -- Params (open paren)	{#insert scpkmpprompt}{#insert zYDownUp}{#insert dapn}	mwpkpt
+mwpkpy -- Params (open paren)	{#insert scpkmpprompt}{#insert zYDownUp}{#insert dapn}	mwpkpy

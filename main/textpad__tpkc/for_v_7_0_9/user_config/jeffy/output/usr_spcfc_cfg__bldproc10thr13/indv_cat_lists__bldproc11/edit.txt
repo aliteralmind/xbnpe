@@ -1,0 +1,67 @@
+EditAlignCenter
+EditAlignJustify
+EditAlignLeft
+EditAlignRight          Ctrl+Shift+E
+EditBackspace           Shift+Backspace         Ctrl+Shift+W            Backspace               Ctrl+Alt+Backspace
+EditCapitalize          Ctrl+Shift+U            Ctrl+Shift+Alt+2
+EditClearAll
+EditCopy                Ctrl+Insert
+EditCopyAllFileNames
+EditCopyAppend          Ctrl+Shift+C            Alt+J
+EditCopyAsHTML
+EditCopyFileName        Ctrl+Shift+F
+EditCopyLine
+EditCopyLineAppend
+EditCopyTaggedLines
+EditCopyWord
+EditCopyWordAppend
+EditCut                 Shift+Delete            Ctrl+X
+EditCutAppend           Ctrl+Shift+X            Alt+Q
+EditCutLine
+EditCutLineAppend
+EditCutTaggedLines
+EditCutWord
+EditCutWordAppend
+EditDelete              Ctrl+Shift+V            Delete
+EditDelLine             Ctrl+F
+EditDelLineEnd          Ctrl+Shift+Delete
+EditDelSelection
+EditDelTaggedLines      Ctrl+Shift+Alt+Delete
+EditDelWord
+EditDelWordLeft         Ctrl+Shift+M            Ctrl+Backspace
+EditDelWordRight        Ctrl+Shift+Z            Ctrl+Delete
+EditDupLine
+EditFillBlock
+EditIMEreconvert
+EditIndentLess          Ctrl+Shift+,            Ctrl+F9
+EditIndentMore          Ctrl+Shift+.            Ctrl+F10
+EditInsertFile
+EditInsertFileName
+EditInsertStatistics
+EditInvertCase          Ctrl+Shift+Alt+1
+EditJoinLines
+EditLongDate
+EditLowerCase           Alt+2
+EditMarkClean
+EditNewLineAfter
+EditNewLineBefore
+EditPageBreak           Ctrl+Shift+L
+EditPaste               Shift+Insert
+EditPasteBlock
+EditPasteHTML
+EditPasteLines
+EditPopupContext        Shift+F10
+EditPopupDateTime
+EditRedo                Alt+;
+EditRedoAll             Ctrl+Shift+Y
+EditReformat            Ctrl+Shift+J            Ctrl+Shift+Alt+F11
+EditSentenceCase
+EditShortDate
+EditSplitLines          Ctrl+Alt+J
+EditTime
+EditTranspose
+EditTransposeWords      Ctrl+Shift+T
+EditUndo                Ctrl+;
+EditUndoAll             Ctrl+Shift+Alt+Z
+EditUpperCase           Ctrl+U                  Alt+1
+EmptyClipboard

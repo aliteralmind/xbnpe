@@ -1,0 +1,23 @@
+(*Utilities, literal master-phrase and command-style commands, and external nnl-command. NOTE -- Command range: min=1, max=5*)
+etrm -- Phrase: zENTERN_M_vlnd	{#insert zENTERN_M_vlndp}	etrm
+etrtm -- Phrase: zvLINES_DOWN_st[prompt], zENTERN_M_vlnd	{#insert zzMnvCmdEtrSetSntpMsg}{#insert zzMnvVarVlndSetToNumWPrompt_M_sntpmsgp}{#insert zENTERN_M_vlndp}	etrtm
+etrhm -- Phrase: [#SETPHRASE zvLINES_DOWN=[prompt]], zENTERN_M_vlnd	{#insert zzMnvCmdEtrSetSntpMsg}{#insert zzMnvVarVlndSetphraseWPrompt_M_sntpmsgp}{#insert zENTERN_M_vlndp}	etrhm
+etrrm -- Phrase: zvLINES_DOWN_stPrompt, zENTERN_M_vlnd	\\\{#insert zvLINES_DOWN_stPrompt\\\}{#insert zENTERN_M_vlndp}	etrrm
+etrf -- inFo on this MINV-Command	{#SETPHRASE -description zvACTION_NM_1C -content Etr -autotext zvACTION_NM_1C -folder ctvv_folder}{#insert zMnvCmdInformation_M_actm1}	etrf
+zENTERN_M_vlndp	\\\{#insert zENTERN_M_vlnd\\\}	zENTERN_M_vlndp
+zENTERN_M_vlndq	\\\{#insert zENTERN_M_vlndp\\\}	zENTERN_M_vlndq
+zzMnvCmdEtrSetSntpMsg	{#SETPHRASE -description zvSNT_PROMPT_MSG -content {#insert zzMnvCmdEtrSNTPromptActnMsg} -autotext zvSNT_PROMPT_MSG -folder ctvv_folder}	zzMnvCmdEtrSetSntpMsg
+(*Action phrases proper*)
+(*Phrase creators*)
+etrp -- Phrase: zENTER	\\\{#insert zENTER\\\}	etrp
+etrp1 -- Phrase: zENTER1	\\\{#insert zENTER1\\\}	etrp1
+etrp2 -- Phrase	\\\{#insert zENTER2\\\}	etrp2
+etrp3 -- Phrase	\\\{#insert zENTER3\\\}	etrp3
+etrp4 -- Phrase	\\\{#insert zENTER4\\\}	etrp4
+etrp5 -- Phrase	\\\{#insert zENTER5\\\}	etrp5
+etrq -- Literal phrase: zENTER	\\\\\\{#insert zENTER\\\\\\}	etrq
+etrq1 -- Literal phrase: zENTER1	\\\\\\{#insert zENTER1\\\\\\}	etrq1
+etrq2 -- Literal phrase	\\\\\\{#insert zENTER2\\\\\\}	etrq2
+etrq3 -- Literal phrase	\\\\\\{#insert zENTER3\\\\\\}	etrq3
+etrq4 -- Literal phrase	\\\\\\{#insert zENTER4\\\\\\}	etrq4
+etrq5 -- Literal phrase	\\\\\\{#insert zENTER5\\\\\\}	etrq5

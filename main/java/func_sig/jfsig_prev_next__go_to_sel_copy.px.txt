@@ -1,0 +1,48 @@
+gtgl -- func-name (siG start), UP	{#insert zGTSigOrPrevFunc}{#insert gsgtg}	gtgl
+gtgz -- DOWN	{#insert ztpmJavaFuncGoToNext}{#insert gsgtg}	gtgz
+gtmcgl	{#insert zYmarkCoded}{#insert gtgl}	gtmcgl
+gtmcgz	{#insert zYmarkCoded}{#insert gtgz}	gtmcgz
+gtmcpl	{#insert zYmarkCoded}{#insert gtpl}	gtmcpl
+gtmcpz	{#insert zYmarkCoded}{#insert gtpz}	gtmcpz
+gtmcrgl	{#insert zYmarkCoded}{#insert gtrgl}	gtmcrgl
+gtmcrgz	{#insert zYmarkCoded}{#insert gtrgz}	gtmcrgz
+gtmgl	{#insert zYmark}{#insert gtgl}	gtmgl
+gtmgz	{#insert zYmark}{#insert gtgz}	gtmgz
+gtmpl	{#insert zYmark}{#insert gtpl}	gtmpl
+gtmpz	{#insert zYmark}{#insert gtpz}	gtmpz
+gtmrgl	{#insert zYmark}{#insert gtrgl}	gtmrgl
+gtmrgz	{#insert zYmark}{#insert gtrgz}	gtmrgz
+gtpl -- Params (open-paren), UP	{#insert zGTSigOrPrevFunc}{#insert gsgtp}	gtpl
+gtpz -- Params, DOWN	{#insert ztpmJavaFuncGoToNext}{#insert gsgtp}	gtpz
+gtrgl -- Return type, UP	{#insert zGTSigOrPrevFunc}{#insert gsgtrg}	gtrgl
+gtrgz -- Return type, DOWN	{#insert ztpmJavaFuncGoToNext}{#insert gsgtrg}	gtrgz
+scgl -- func-name and params (siG), UP	{#insert zGTSigOrPrevFunc}{#insert gsscg}	scgl
+scgz -- siG, DOWN	{#insert ztpmJavaFuncGoToNext}{#insert gsscg}	scgz
+scmcgl -- func-name and params (siG), UP	{#insert zYmarkCoded}{#insert zGTSigOrPrevFunc}{#insert gsscg}	scmcgl
+scmcgz -- siG, DOWN	{#insert zYmarkCoded}{#insert ztpmJavaFuncGoToNext}{#insert gsscg}	scmcgz
+scmcpl -- Params, UP	{#insert zYmarkCoded}{#insert zGTSigOrPrevFunc}{#insert gsscp}	scmcpl
+scmcpz -- Params, DOWN	{#insert zYmarkCoded}{#insert ztpmJavaFuncGoToNext}{#insert gsscp}	scmcpz
+scmcrgl -- Return type and siG, UP	{#insert zYmarkCoded}{#insert zGTSigOrPrevFunc}{#insert gsscrg}	scmcrgl
+scmcrgz -- Return type and siG, DOWN	{#insert zYmarkCoded}{#insert ztpmJavaFuncGoToNext}{#insert gsscrg}	scmcrgz
+scmcrtl -- Return type, no generics, UP	{#insert zYmarkCoded}{#insert ztpmJavaFuncGoToPrev}{#insert gsscrt}	scmcrtl
+scmcrtz -- Return type, no generics, DOWN	{#insert zYmarkCoded}{#insert ztpmJavaFuncGoToNext}{#insert gsscrt}	scmcrtz
+scmcryl -- Return type, with generics, UP	{#insert zYmarkCoded}{#insert ztpmJavaFuncGoToPrev}{#insert gsscry}	scmcryl
+scmcryz -- Return type, with generics, DOWN	{#insert zYmarkCoded}{#insert ztpmJavaFuncGoToNext}{#insert gsscry}	scmcryz
+scmgl -- func-name and params (siG), UP	{#insert zYmark}{#insert zGTSigOrPrevFunc}{#insert gsscg}	scmgl
+scmgz -- siG, DOWN	{#insert zYmark}{#insert ztpmJavaFuncGoToNext}{#insert gsscg}	scmgz
+scmpl -- Params, UP	{#insert zYmark}{#insert zGTSigOrPrevFunc}{#insert gsscp}	scmpl
+scmpz -- Params, DOWN	{#insert zYmark}{#insert ztpmJavaFuncGoToNext}{#insert gsscp}	scmpz
+scmrgl -- Return type and siG, UP	{#insert zYmark}{#insert zGTSigOrPrevFunc}{#insert gsscrg}	scmrgl
+scmrgz -- Return type and siG, DOWN	{#insert zYmark}{#insert ztpmJavaFuncGoToNext}{#insert gsscrg}	scmrgz
+scmrtl -- Return type, no generics, UP	{#insert zYmark}{#insert ztpmJavaFuncGoToPrev}{#insert gsscrt}	scmrtl
+scmrtz -- Return type, no generics, DOWN	{#insert zYmark}{#insert ztpmJavaFuncGoToNext}{#insert gsscrt}	scmrtz
+scmryl -- Return type, with generics, UP	{#insert zYmark}{#insert ztpmJavaFuncGoToPrev}{#insert gsscry}	scmryl
+scmryz -- Return type, with generics, DOWN	{#insert zYmark}{#insert ztpmJavaFuncGoToNext}{#insert gsscry}	scmryz
+scpl -- Params, UP	{#insert zGTSigOrPrevFunc}{#insert gsscp}	scpl
+scpz -- Params, DOWN	{#insert ztpmJavaFuncGoToNext}{#insert gsscp}	scpz
+scrgl -- Return type and siG, UP	{#insert zGTSigOrPrevFunc}{#insert gsscrg}	scrgl
+scrgz -- Return type and siG, DOWN	{#insert ztpmJavaFuncGoToNext}{#insert gsscrg}	scrgz
+scrtl -- Return type, no generics, UP	{#insert ztpmJavaFuncGoToPrev}{#insert gsscrt}	scrtl
+scrtz -- Return type, no generics, DOWN	{#insert ztpmJavaFuncGoToNext}{#insert gsscrt}	scrtz
+scryl -- Return type, with generics, UP	{#insert ztpmJavaFuncGoToPrev}{#insert gsscry}	scryl
+scryz -- Return type, with generics, DOWN	{#insert ztpmJavaFuncGoToNext}{#insert gsscry}	scryz

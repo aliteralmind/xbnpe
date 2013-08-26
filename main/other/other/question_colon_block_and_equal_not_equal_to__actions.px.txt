@@ -1,0 +1,5 @@
+qtn -- == null	(*starts with space*) == null	qtn
+nqn -- != null	(*starts with space*) != null	nqn
+qcb1	({#insert zXmark} ? {#insert zXmark} : {#insert zXmark}){#insert zXmark}{#insert zXUp4}	qcb1
+qcb2	({#insert zXmark} ? {#insert zXmark}{#insert zEnterTab}:  {#insert zXmark}){#insert zXmark}{#insert zXUp4}	qcb2
+qcb3	({#insert zXmark}{#insert zEnterTab}?  {#insert zXmark}{#insert zEnter}:  {#insert zXmark}){#insert zXmark}{#insert zXUp4}	qcb3

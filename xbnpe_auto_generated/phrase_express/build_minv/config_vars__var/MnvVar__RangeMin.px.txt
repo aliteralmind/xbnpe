@@ -1,0 +1,13 @@
+__**WARNING**__: All phrases in this folder were created by 'plpdcf'. DO NOT EDIT.	.		(*Extra tab to allow for empty-string autotext*)
+zvVAR_RANGE_MIN_sfKey	{#SETPHRASE -description zvVAR_RANGE_MIN -content {#insert zzMnvVarVgmin_cfgValue_M_key} -autotext zvVAR_RANGE_MIN -folder ctvv_folder}	zvVAR_RANGE_MIN_sfKey
+zzMnvVarVgmin_cfgValue_M_key	{#insert {#insert zzMnvVarVgmin_cfgVarPhrsName_M_key}}	zzMnvVarVgmin_cfgValue_M_key
+zzMnvVarRangeMin_cvtFromAbrv1C	Vgmin	zzMnvVarRangeMin_cvtFromAbrv1C
+zzMnvVarVgmin_cfgVarPNmPost	RangeMin	zzMnvVarVgmin_cfgVarPNmPost
+zzMnvVarVgmin_intrnlVarNm	zvVAR_RANGE_MIN	zzMnvVarVgmin_intrnlVarNm
+zzMnvVarVgmin_cfgVarPhrsName_M_key	zz{#insert zzMnvVarProjectAbrv1C}{#insert zzMnvVarDataTypeAbrv1C}{#insert zvVAR_PNMV_1C}{#insert zzMnvVarVgmin_cfgVarPNmPost}	zzMnvVarVgmin_cfgVarPhrsName_M_key
+zzMnvVarVgmin_helpForDlg	The minimum number for the range of [intrnl_var_name]_st# phrases. For example, zvCHARS_LEFT_COUNT_st5. Must be between 1 and [RangeMax], inclusive. Must ALSO be less_than_or_equal_to EVERY MINV_Command's [RangeMin]==although this latter requirement is not programatically enforced.	zzMnvVarVgmin_helpForDlg
+zzMnvVarVgmin_valuePrintable	yes	zzMnvVarVgmin_valuePrintable
+zzMnvVarVgmin_validateValuePhrsNm		zzMnvVarVgmin_validateValuePhrsNm
+zzMnvVarVgmin_nkcvListNum	2	zzMnvVarVgmin_nkcvListNum
+zzMnvVarVgmin_keyCVTFromAbrv1C	{#insert zzMnvVarPrivKeyCVTFromAbrv1C}	zzMnvVarVgmin_keyCVTFromAbrv1C
+zvCVT_FRMV_1C_stMnvVarVgmin	{#SETPHRASE -description zvCVT_FRMV_1C -content {#insert zzMnvVarRangeMin_cvtFromAbrv1C} -autotext zvCVT_FRMV_1C -folder ctvv_folder}	zvCVT_FRMV_1C_stMnvVarVgmin

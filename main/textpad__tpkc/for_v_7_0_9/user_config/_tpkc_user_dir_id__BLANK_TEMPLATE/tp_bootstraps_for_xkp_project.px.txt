@@ -1,0 +1,13 @@
+zTPCopy -- TextPad built-in command: EditCopy	XXX{#sleep 10}	zTPCopy
+zTPCut -- TextPad built-in command: EditCut	XXX	zTPCut
+zTPDupLine -- TextPad built-in command: EditDupLine	XXX	zTPDupLine
+zTPFileClose -- TextPad built-in command: FileClose	XXX	zTPFileClose
+zTPFileNew -- TextPad built-in command: FileNew	XXX	zTPFileNew
+zTPFileSave -- TextPad built-in command: FileSave	XXX	zTPFileSave
+zTPGTDocTop -- TextPad built-in command: DocumentStart	XXX	zTPGTDocTop
+zTPMoveR1w -- TextPad built-in command: WordRightEnd	XXX	zTPMoveR1w
+zTPPaste -- TextPad built-in command: EditPaste	XXX	zTPPaste
+zTPSelectAll -- TextPad built-in command: SelectAll	XXX	zTPSelectAll
+zTPSelectL1w -- TextPad built-in command: WordLeftExtend	XXX	zTPSelectL1w
+zTPSelectR1w -- TextPad built-in command: WordRightEndExtend	XXX	zTPSelectR1w
+zTPToggleWW -- TextPad built-in command: ToggleWordWrap	XXX	zTPToggleWW

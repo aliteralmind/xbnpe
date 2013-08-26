@@ -1,0 +1,8 @@
+Alt+LWin+F9 -- zALpF9	{#ALT {#LWIN {#F9}}}{#insert zTSlp}	zALpF9
+Alt+Shift+LWin+F9 -- zASLpF9	{#ALT {#SHIFT {#LWIN {#F9}}}}{#insert zTSlp}	zASLpF9
+Ctrl+Alt+LWin+F9 -- zCALpF9	{#CTRL {#ALT {#LWIN {#F9}}}}{#insert zTSlp}	zCALpF9
+Ctrl+Alt+Shift+LWin+F9 -- zCASLpF9	{#CTRL {#ALT {#SHIFT {#LWIN {#F9}}}}}{#insert zTSlp}	zCASLpF9
+Ctrl+LWin+F9 -- zCLpF9	{#CTRL {#LWIN {#F9}}}{#insert zTSlp}	zCLpF9
+Ctrl+Shift+LWin+F9 -- zCSLpF9	{#CTRL {#SHIFT {#LWIN {#F9}}}}{#insert zTSlp}	zCSLpF9
+LWin+F9 -- zLpF9	{#LWIN {#F9}}{#insert zTSlp}	zLpF9
+Shift+LWin+F9 -- zSLpF9	{#SHIFT {#LWIN {#F9}}}{#insert zTSlp}	zSLpF9

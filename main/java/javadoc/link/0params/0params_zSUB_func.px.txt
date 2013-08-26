@@ -1,0 +1,47 @@
+(*        CODE-/PREK-able, url=[DIR,    FILE, FUNC-NM],    DISP,    PAP
+          ------------------------------------------------------------------
+flcb          YES                ''       ''       CB       func-nm  ()
+flcbf         YES                ''       X        CB       func-nm  ()
+flcbfy        no                 ''       X        CB       X        ''
+flcbr         YES                prompt   super    CB       func-nm  ()
+flcbry        no                 prompt   super    CB       X        ''
+flcby         no                 ''       ''       CB       X        ''
+flpw          YES                ''       ''       L1w      func-nm  ()
+flpwdb        YES                prompt   CB       L1w      func-nm  ()
+flpwf         YES                ''       X        L1w      func-nm  ()
+flpwfb        YES                ''       CB       L1w      func-nm  ()
+flpwfy        no                 ''       X        L1w      X        ''
+flpwfyb       no                 ''       X        L1w      CB       ''
+flpwr         YES                prompt   super    L1w      func-nm  ()
+flpwry        no                 prompt   super    L1w      X        ''
+flpwryb       no                 prompt   super    L1w      CB       ''
+flpwy         no                 ''       ''       L1w      X        ''
+*)
+
+zzjlNPFuncLink_MSTR_dispOther -- zzjlNO_PARAMS_FUNC_LINK_MSTR, post-</A> params ''	{#insert zzjlCodeOffPrekOff}{#insert zzjlPAParamsEmpty}{#insert zzjlNO_PARAMS_FUNC_LINK_MSTR}	zzjlNPFuncLink_MSTR_dispOther
+zzjlNPFuncLink_MSTR_dispX -- zzjlNPFuncLink_MSTR_dispOther, disp=x-mark	{#insert zzjlDispX}{#insert zzjlNPFuncLink_MSTR_dispOther}	zzjlNPFuncLink_MSTR_dispX
+zzjlNPFuncLink_MSTR_dispXFileIsX -- zzjlNPFuncLink_MSTR_dispX, file to-be-determined	{#insert zzjlFileIsX}{#insert zzjlNPFuncLink_MSTR_dispX}	zzjlNPFuncLink_MSTR_dispXFileIsX
+zzjlNPFuncLink_MSTR_dispXDirPrompt -- zzjlNPFuncLink_MSTR_dispX, for diff-dir	{#insert zzjlDirPrompt}{#insert zzjlNPFuncLink_MSTR_dispX}	zzjlNPFuncLink_MSTR_dispXDirPrompt
+zzjlNPFuncLink_MSTR_dispXFileSuperCN -- zzjlNPFuncLink_MSTR_dispXDirPrompt, for super-class	{#insert zzjlFileIsSuperCN}{#insert zzjlNPFuncLink_MSTR_dispXDirPrompt}	zzjlNPFuncLink_MSTR_dispXFileSuperCN
+zzjlNPFuncLink_MSTR_dispXDirEmpty -- zzjlNPFuncLink_MSTR_dispX, same-dir	{#insert zzjlDirIsEmpty}{#insert zzjlNPFuncLink_MSTR_dispX}	zzjlNPFuncLink_MSTR_dispXDirEmpty
+zzjlNPFuncLink_MSTR_dispXFileEmpty -- zzjlNPFuncLink_MSTR_dispXDirEmpty, same-file	{#insert zzjlFileIsEmpty}{#insert zzjlNPFuncLink_MSTR_dispXDirEmpty}	zzjlNPFuncLink_MSTR_dispXFileEmpty
+zzjlNPFuncLink_MSTR_dispFunc -- zzjlNO_PARAMS_FUNC_LINK_MSTR, disp=func-nm, post-</A> params '()'	{#insert zzjlDispFuncObjNmPAPP}{#insert zzjlNO_PARAMS_FUNC_LINK_MSTR}	zzjlNPFuncLink_MSTR_dispFunc
+zzjlNPFuncLink_MSTR_dispFuncDirPrompt -- zzjlNPFuncLink_MSTR_dispFunc, diff-dir	{#insert zzjlDirPrompt}{#insert zzjlNPFuncLink_MSTR_dispFunc}	zzjlNPFuncLink_MSTR_dispFuncDirPrompt
+zzjlNPFuncLink_MSTR_dispFuncFileSuperCN -- zzjlNPFuncLink_MSTR_dispFuncDirPrompt for super-class	{#insert zzjlFileIsSuperCN}{#insert zzjlNPFuncLink_MSTR_dispFuncDirPrompt}	zzjlNPFuncLink_MSTR_dispFuncFileSuperCN
+zzjlNPFuncLink_MSTR_dispFuncDirEmpty -- zzjlNPFuncLink_MSTR_dispFunc, same dir	{#insert zzjlDirIsEmpty}{#insert zzjlNPFuncLink_MSTR_dispFunc}	zzjlNPFuncLink_MSTR_dispFuncDirEmpty
+zzjlNPFuncLink_MSTR_dispFuncFileEmpty -- zzjlNPFuncLink_MSTR_dispFuncDirEmpty, same file	{#insert zzjlFileIsEmpty}{#insert zzjlNPFuncLink_MSTR_dispFuncDirEmpty}	zzjlNPFuncLink_MSTR_dispFuncFileEmpty
+zzjlNPFuncLink_MSTR_dispFuncFileIsX -- zzjlNPFuncLink_MSTR_dispFuncDirEmpty, file to-be-determined	{#insert zzjlFileIsX}{#insert zzjlNPFuncLink_MSTR_dispFuncDirEmpty}	zzjlNPFuncLink_MSTR_dispFuncFileIsX
+zvFLPWDB_NUM_st02 --  Actually zvFLPWDB_NUM_st2	{#SETPHRASE -description zvFLPWDB_NUM -content 2 -autotext zvFLPWDB_NUM -folder ctvv_folder}	zvFLPWDB_NUM_st2
+zvFLPWDB_NUM_st03 -- ..._st3	{#SETPHRASE -description zvFLPWDB_NUM -content 3 -autotext zvFLPWDB_NUM -folder ctvv_folder}	zvFLPWDB_NUM_st3
+zvFLPWDB_NUM_st04 -- ..._st4	{#SETPHRASE -description zvFLPWDB_NUM -content 4 -autotext zvFLPWDB_NUM -folder ctvv_folder}	zvFLPWDB_NUM_st4
+zvFLPWDB_NUM_st05 -- ..._st5	{#SETPHRASE -description zvFLPWDB_NUM -content 5 -autotext zvFLPWDB_NUM -folder ctvv_folder}	zvFLPWDB_NUM_st5
+zvFLPWDB_NUM_st06 -- ..._st6	{#SETPHRASE -description zvFLPWDB_NUM -content 6 -autotext zvFLPWDB_NUM -folder ctvv_folder}	zvFLPWDB_NUM_st6
+zvFLPWDB_NUM_stPrompt	{#SETPHRASE -description zvFLPWDB_NUM -content {#input -head Set zvFLPWDB_NUM to? -single} -autotext zvFLPWDB_NUM -folder ctvv_folder}	zvFLPWDB_NUM_stPrompt
+zFlpwdfb_numMSTR -- Needs zvFLPWDB_NUM	{#insert zzjlCodeOffPrekOff}{#insert zzjlFileIsCBFuncNmIsL1w}{#insert zzjlDir{#insert zzFlpwdbnPromptOrIsEmpty}}{#insert zzjlNPFuncLink_MSTR_dispFunc}{#loop {#insert zParenMoveR1BkspDel}{#insert zzjlFuncNmIsL1w}{#insert zzjlNPFuncLink_MSTR_dispFunc} -count {#CALC {#insert zvFLPWDB_NUM} - 1 -round 0 -thousands none}}	zFlpwdfb_numMSTR
+zzjlDispCBFuncNmIsL1w	{#insert zzjlDispCB}{#insert zzjlFuncNmIsL1w}	zzjlDispCBFuncNmIsL1w
+zzFlpwdbnPromptOrIsEmpty	{#msgbox -head Dir prompt? or Dir empty? -text [OK]=Directory derived from a user-prompt. [Cancel]=Directory is an empty-string -ok zzFlpwdbnPromptOrIsEmpty_PROMPT -cancel zzFlpwdbnPromptOrIsEmpty_EMPTY}	zzFlpwdbnPromptOrIsEmpty
+zzFlpwdbnPromptOrIsEmpty_PROMPT	Prompt	zzFlpwdbnPromptOrIsEmpty_PROMPT
+zzFlpwdbnPromptOrIsEmpty_EMPTY	IsEmpty	zzFlpwdbnPromptOrIsEmpty_EMPTY
+zzjlDispCBFuncNmL1w	{#insert zzjlFileIsCB}{#insert zzjlFuncNmIsL1w}	zzjlDispCBFuncNmL1w
+zzjlFuncNmIsL1w	{#insert zzjlFuncObjNmIsL1w}	zzjlFuncNmIsL1w
+zzjlFileIsCBFuncNmIsL1w	{#insert zzjlFileIsCB}{#insert zzjlFuncNmIsL1w}	zzjlFileIsCBFuncNmIsL1w

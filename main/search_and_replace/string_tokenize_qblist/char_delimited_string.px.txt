@@ -1,0 +1,58 @@
+
+zElimThrDelimChar1_M_cdsDlc -- Needs zvCHR_DLM_STR, zvDELIM_CHAR	{#SETPHRASE -description zvCHR_DLM_STR -content {#insert zGetAfterDelimChar1_M_cdsDlc} -autotext zvCHR_DLM_STR -folder ctvv_folder}	zElimThrDelimChar1_M_cdsDlc
+zElimThrEqSign1_M_cds	{#SETPHRASE -description zvCHR_DLM_STR -content {#insert zGetAfterEqSign1_M_cds} -autotext zvCHR_DLM_STR -folder ctvv_folder}	zElimThrEqSign1_M_cds
+zElimThrSpace1_M_cdsDlc -- Needs zvCHR_DLM_STR, zvDELIM_CHAR	{#SETPHRASE -description zvCHR_DLM_STR -content {#insert zGetAfterSpace1_M_cdsDlc} -autotext zvCHR_DLM_STR -folder ctvv_folder}	zElimThrSpace1_M_cdsDlc
+zElimThrTab1_M_cds	{#SETPHRASE -description zvCHR_DLM_STR -content {#insert zGetAfterTab1_M_cds} -autotext zvCHR_DLM_STR -folder ctvv_folder}	zElimThrTab1_M_cds
+zGetAfterDelimChar1_M_cdsDlc	{#SUBSTR {#insert zvCHR_DLM_STR} -from {#CALC {#insert zPosDelimChar1_M_cdsDlc} + 1 -round 0 -thousands none} -count {#CALC {#insert zvCHR_DLM_STR_len} - {#insert zPosDelimChar1_M_cdsDlc} + 1 -round 0 -thousands none}}	zGetAfterDelimChar1_M_cdsDlc
+zGetAfterEqSign1_M_cds	{#SUBSTR {#insert zvCHR_DLM_STR} -from {#CALC {#insert zPosEqSign1_M_cds} + 1 -round 0 -thousands none} -count {#CALC {#insert zvCHR_DLM_STR_len} - {#insert zPosEqSign1_M_cds} + 1 -round 0 -thousands none}}	zGetAfterEqSign1_M_cds
+zGetAfterSpace1_M_cdsDlc	{#SUBSTR {#insert zvCHR_DLM_STR} -from {#CALC {#insert zPosSpace1_M_cds} + 1 -round 0 -thousands none} -count {#CALC {#insert zvCHR_DLM_STR_len} - {#insert zPosSpace1_M_cds} + 1 -round 0 -thousands none}}	zGetAfterSpace1_M_cdsDlc
+zGetAfterTab1_M_cds	{#SUBSTR {#insert zvCHR_DLM_STR} -from {#CALC {#insert zPosTab1_M_cds} + 1 -round 0 -thousands none} -count {#CALC {#insert zvCHR_DLM_STR_len} - {#insert zPosTab1_M_cds} + 1 -round 0 -thousands none}}	zGetAfterTab1_M_cds
+zGetChar1_M_cds	{#SUBSTR {#insert zvCHR_DLM_STR} -from 1 -count 1}	zGetChar1_M_cds
+zGetElimThrDelimChar1_M_cdsDlc	{#insert zGetThrDelimChar1_M_cdsDlc}{#insert zElimThrDelimChar1_M_cdsDlc}	zGetElimThrDelimChar1_M_cdsDlc
+zGetElimThrEqSign1_M_cds	{#insert zGetThrEqSign1_M_cds}{#insert zElimThrEqSign1_M_cds}	zGetElimThrEqSign1_M_cds
+zGetElimThrSpace1_M_cdsDlc	{#insert zGetThrSpace1_M_cdsDlc}{#insert zElimThrSpace1_M_cdsDlc}	zGetElimThrSpace1_M_cdsDlc
+zGetElimThrTab1_M_cds	{#insert zGetThrTab1_M_cds}{#insert zElimThrTab1_M_cds}	zGetElimThrTab1_M_cds
+zGetThrDelimChar1_M_cdsDlc	{#SUBSTR {#insert zvCHR_DLM_STR} -from 0 -count {#CALC {#insert zPosDelimChar1_M_cdsDlc} -round 0 -thousands none}}	zGetThrDelimChar1_M_cdsDlc
+zGetThrEqSign1_M_cds	{#SUBSTR {#insert zvCHR_DLM_STR} -from 0 -count {#CALC {#insert zPosEqSign1_M_cds} -round 0 -thousands none}}	zGetThrEqSign1_M_cds
+zGetThrSpace1_M_cdsDlc	{#SUBSTR {#insert zvCHR_DLM_STR} -from 0 -count {#CALC {#insert zPosSpace1_M_cds} -round 0 -thousands none}}	zGetThrSpace1_M_cdsDlc
+zGetThrTab1_M_cds	{#SUBSTR {#insert zvCHR_DLM_STR} -from 0 -count {#CALC {#insert zPosTab1_M_cds} -round 0 -thousands none}}	zGetThrTab1_M_cds
+zGetToDelimChar1_M_cdsDlc	{#SUBSTR {#insert zvCHR_DLM_STR} -from 0 -count {#CALC {#insert zPosDelimChar1_M_cdsDlc} - 1 -round 0 -thousands none}}	zGetToDelimChar1_M_cdsDlc
+zGetToElimThrDelimChar1_M_cdsDlc	{#insert zGetToDelimChar1_M_cdsDlc}{#insert zElimThrDelimChar1_M_cdsDlc}	zGetToElimThrDelimChar1_M_cdsDlc
+zGetToElimThrEqSign1_M_cds	{#insert zGetToEqSign1_M_cds}{#insert zElimThrEqSign1_M_cds}	zGetToElimThrEqSign1_M_cds
+zGetToElimThrSpace1_M_cdsDlc	{#insert zGetToSpace1_M_cdsDlc}{#insert zElimThrSpace1_M_cdsDlc}	zGetToElimThrSpace1_M_cdsDlc
+zGetToElimThrTab1_M_cds	{#insert zGetToTab1_M_cds}{#insert zElimThrTab1_M_cds}	zGetToElimThrTab1_M_cds
+zGetToEqSign1_M_cds	{#SUBSTR {#insert zvCHR_DLM_STR} -from 0 -count {#CALC {#insert zPosEqSign1_M_cds} - 1 -round 0 -thousands none}}	zGetToEqSign1_M_cds
+zGetToSpace1_M_cdsDlc	{#SUBSTR {#insert zvCHR_DLM_STR} -from 0 -count {#CALC {#insert zPosSpace1_M_cds} - 1 -round 0 -thousands none}}	zGetToSpace1_M_cdsDlc
+zGetToTab1_M_cds	{#SUBSTR {#insert zvCHR_DLM_STR} -from 0 -count {#CALC {#insert zPosTab1_M_cds} - 1 -round 0 -thousands none}}	zGetToTab1_M_cds
+zPosDelimChar1_M_cdsDlc	{#POS {#insert zvCHR_DLM_STR} -substr {#insert zvDELIM_CHAR}}	zPosDelimChar1_M_cdsDlc
+zPosEqSign1_M_cds	{#POS {#insert zvCHR_DLM_STR} -substr =}	zPosEqSign1_M_cds
+zPosSpace1_M_cds	{#POS {#insert zvCHR_DLM_STR} -substr {#insert zAscSpace}}	zPosSpace1_M_cds
+zPosTab1_M_cds	{#POS {#insert zvCHR_DLM_STR} -substr {#insert zAscTab}}	zPosTab1_M_cds
+zSetCBToCds	{#SETCLIPBOARD {#insert zvCHR_DLM_STR}}	zSetCBToCds
+zSetCBToTrimmedCds	{#SETCLIPBOARD {#TRIM {#insert zvCHR_DLM_STR}}}	zSetCBToTrimmedCds
+zSetCBToDelimChar1_M_cdsDlc	{#SETCLIPBOARD {#insert zGetToDelimChar1_M_cdsDlc}}	zSetCBToDelimChar1_M_cdsDlc
+zSetCBToElimThrDelimChar1_M_cdsDlc	{#SETCLIPBOARD {#insert zGetToElimThrDelimChar1_M_cdsDlc}}	zSetCBToElimThrDelimChar1_M_cdsDlc
+zSetCBToElimThrEqSign1_M_cds	{#SETCLIPBOARD {#insert zGetToElimThrEqSign1_M_cds}}	zSetCBToElimThrEqSign1_M_cds
+zSetCBToElimThrSpace1_M_cds	{#SETCLIPBOARD {#insert zGetToElimThrSpace1_M_cds}}	zSetCBToElimThrSpace1_M_cds
+zSetCBToElimThrTab1_M_cds	{#SETCLIPBOARD {#insert zGetToElimThrTab1_M_cds}}	zSetCBToElimThrTab1_M_cds
+zSetCBToEqSign1_M_cds	{#SETCLIPBOARD {#insert zGetToEqSign1_M_cds}}	zSetCBToEqSign1_M_cds
+zSetCBToSpace1_M_cds	{#SETCLIPBOARD {#insert zGetToSpace1_M_cds}}	zSetCBToSpace1_M_cds
+zSetCBToTab1_M_cds	{#SETCLIPBOARD {#insert zGetToTab1_M_cds}}	zSetCBToTab1_M_cds
+zvCHR_DLM_STR_getThenElim	{#insert zvCHR_DLM_STR}{#insert zvCHR_DLM_STR_stES}	zvCHR_DLM_STR_getThenElim
+zvCHR_DLM_STR_len	{#LENGTH {#insert zvCHR_DLM_STR}}	zvCHR_DLM_STR_len
+zvCHR_DLM_STR_setThrLineEnd	{#insert zSelCopyToLineEnd}{#insert zvCHR_DLM_STR_stCB}	zvCHR_DLM_STR_setThrLineEnd
+zvCHR_DLM_STR_stCB	{#SETPHRASE -description zvCHR_DLM_STR -content {#INSERTCLIPBOARD} -autotext zvCHR_DLM_STR -folder ctvv_folder}	zvCHR_DLM_STR_stCB
+zvCHR_DLM_STR_stCurrLineNoNL	{#insert zSelCopyEntireLineNoNL}{#insert zvCHR_DLM_STR_stCB}	zvCHR_DLM_STR_stCurrLineNoNL
+zvCHR_DLM_STR_stCutCurrLineNoNL	{#insert zvCHR_DLM_STR_stCurrLineNoNL}{#insert zDEL}	zvCHR_DLM_STR_stCutCurrLineNoNL
+zvCHR_DLM_STR_stCutTrimCurrLineNoNL	{#insert zvCHR_DLM_STR_stTrimCurrLineNoNL}{#insert zDEL}	zvCHR_DLM_STR_stCutTrimCurrLineNoNL
+zvCHR_DLM_STR_stES	{#SETPHRASE -description zvCHR_DLM_STR -content  -autotext zvCHR_DLM_STR -folder ctvv_folder}	zvCHR_DLM_STR_stES
+zvCHR_DLM_STR_stTrimCB	{#SETPHRASE -description zvCHR_DLM_STR -content {#TRIM {#INSERTCLIPBOARD}} -autotext zvCHR_DLM_STR -folder ctvv_folder}	zvCHR_DLM_STR_stTrimCB
+zvCHR_DLM_STR_stTrimCurrLineNoNL	{#insert zSelCopyEntireLineNoNL}{#insert zvCHR_DLM_STR_stTrimCB}	zvCHR_DLM_STR_stTrimCurrLineNoNL
+zvCHR_DLM_STR_thenSetToES	{#insert zvCHR_DLM_STR}{#SETPHRASE -description zvCHR_DLM_STR -content  -autotext zvCHR_DLM_STR -folder ctvv_folder}	zvCHR_DLM_STR_thenSetToES
+zvDELIM_CHAR_stEqSign	{#SETPHRASE -description zvDELIM_CHAR -content = -autotext zvDELIM_CHAR -folder ctvv_folder}	zvDELIM_CHAR_stEqSign
+zvDELIM_CHAR_stSpace	{#SETPHRASE -description zvDELIM_CHAR -content \\\{#insert zAscSpace\\\} -autotext zvDELIM_CHAR -folder ctvv_folder}	zvDELIM_CHAR_stSpace
+zvDELIM_CHAR_stTab	{#SETPHRASE -description zvDELIM_CHAR -content \\\{#insert zAscTab\\\} -autotext zvDELIM_CHAR -folder ctvv_folder}	zvDELIM_CHAR_stTab
+zzDebugCdsAndTmpCds	{#MSGBOX -head zzDebugCdsAndTmpCds -text zvCHR_DLM_STR='{#insert zvCHR_DLM_STR}', zvTEMP_CDS='{#insert zvTEMP_CDS}'}	zzDebugCdsAndTmpCds
+zzcdstest	{#insert zTPToggleWW}zvDELIM_CHAR_stSpace...{#insert zvDELIM_CHAR_stSpace}{#insert zENTER}A test string, with space-delimiters.{#sleep 1000}{#insert zvCHR_DLM_STR_stCutCurrLineNoNL}zGetToElimThrDelimChar1_M_cdsDlc:{#insert zGetToElimThrDelimChar1_M_cdsDlc}{#insert zENTER}zGetToElimThrDelimChar1_M_cdsDlc:{#insert zGetToElimThrDelimChar1_M_cdsDlc}{#insert zENTER}zGetToElimThrDelimChar1_M_cdsDlc:{#insert zGetToElimThrDelimChar1_M_cdsDlc}{#insert zENTER}zGetToElimThrDelimChar1_M_cdsDlc:{#insert zGetToElimThrDelimChar1_M_cdsDlc}{#insert zENTER2}Space delimiters, using space-tailored functions...{#insert zENTER}A test string, with space-delimiters.{#sleep 1000}{#insert zvCHR_DLM_STR_stCutCurrLineNoNL}zGetToElimThrSpace1_M_cdsDlc:{#insert zGetToElimThrSpace1_M_cdsDlc}{#insert zENTER}zGetToElimThrSpace1_M_cdsDlc:{#insert zGetToElimThrSpace1_M_cdsDlc}{#insert zENTER}zGetToElimThrSpace1_M_cdsDlc:{#insert zGetToElimThrSpace1_M_cdsDlc}{#insert zENTER}zGetToElimThrSpace1_M_cdsDlc:{#insert zGetToElimThrSpace1_M_cdsDlc}{#insert zENTER2}Tab delimiters, using tab-tailored functions...{#insert zENTER}A{#insert zTAB}test{#insert zTAB}string,{#insert zTAB}with{#insert zTAB}tab-delimiters.{#sleep 1000}{#insert zvCHR_DLM_STR_stCutCurrLineNoNL}zGetToElimThrTab1_M_cds:{#insert zGetToElimThrTab1_M_cds}{#insert zENTER}zGetToElimThrTab1_M_cds:{#insert zGetToElimThrTab1_M_cds}{#insert zENTER}zGetToElimThrTab1_M_cds:{#insert zGetToElimThrTab1_M_cds}{#insert zENTER}zGetToElimThrTab1_M_cds:{#insert zGetToElimThrTab1_M_cds}{#insert zENTER2}Note that the above examples are not executed with loops. Each one is just 4 hard-coded calls to zGetToElimThr*.{#insert zENTER2}Some other tests:{#insert zENTER2}[DISPPARENT]zRplc... __FOR=CONTEXT=ONLY==DELETE=FROM=OUTPUT__{#insert zTAB}xhr(delim is ']'){#MSGBOX -head WARNING -text If the equal signs in this string are replaced with dashes, then the following tests will fail. This is because 'dash from' is in the string, which causes SUBSTR phrases to incorrectly ignore their actual 'dash from' paraemeters.}{#SETPHRASE -description zvDELIM_CHAR -content ] -autotext zvDELIM_CHAR -folder ctvv_folder}{#insert zvCHR_DLM_STR_stTrimCurrLineNoNL}{#insert zzvTEMP_CDS_stCds}{#insert zRIGHT}{#insert zENTER}zGetToDelimChar1_M_cdsDlc='{#insert zGetToDelimChar1_M_cdsDlc}'{#insert zENTER}zGetThrDelimChar1_M_cdsDlc='{#insert zGetThrDelimChar1_M_cdsDlc}'{#insert zENTER}zGetAfterDelimChar1_M_cdsDlc='{#insert zGetAfterDelimChar1_M_cdsDlc}'{#insert zENTER}zGetToElimThrDelimChar1_M_cdsDlc='{#insert zGetToElimThrDelimChar1_M_cdsDlc}'{#insert zENTER}{#insert zzvCHR_DLM_STR_stTmpcds}zGetElimThrDelimChar1_M_cdsDlc='{#insert zGetElimThrDelimChar1_M_cdsDlc}'{#insert zENTER}zElimThrDelimChar1_M_cdsDlc...zvCHR_DLM_STR='{#insert zvCHR_DLM_STR}'{#insert zENTER}{#insert zzvCHR_DLM_STR_stTmpcds}zGetElimThrDelimChar1_M_cdsDlc='{#insert zGetElimThrDelimChar1_M_cdsDlc}'{#insert zTPToggleWW}	zzcdstest
+zzvCHR_DLM_STR_stTmpcds	(...reseting zvCHR_DLM_STR to original string...){#SETPHRASE -description zvCHR_DLM_STR -content {#insert zvTEMP_CDS} -autotext zvCHR_DLM_STR -folder ctvv_folder}{#insert zENTER}	zzvCHR_DLM_STR_stTmpcds
+zzvTEMP_CDS_stCds	{#SETPHRASE -description zvTEMP_CDS -content {#insert zvCHR_DLM_STR} -autotext zvTEMP_CDS -folder ctvv_folder}	zzvTEMP_CDS_stCds

@@ -1,0 +1,4 @@
+1. Create raw-user-config from tp-list (10-13:~25min) -- TOTAL REFRESH	{#insert zTpkcMasterBuild3of4}	zTpkcMasterBuild3of4ForDDMenu
+2. Create nbs phrss & all-cmd-ddmenu from user-cfg (14:~15min, 15:~9min)	{#insert zTpkcMasterBuild4of4}	zTpkcMasterBuild4of4ForDDMenu
+2a. 14 only, with category prompts	{#insert zTpkc14CreateNbsPhrssAndWKcQBLsFrmUSCCWCatPrompts}	zTpkc14CreateNbsPhrssAndWKcQBLsFrmUSCCWCatPromptsForDDMenu
+2b. Create all-active-tp-cmd drop-down-menu (15:~9min)	{#insert zTpkc15CrtAllActvTPCmdsDDMenuFromAll}	zTpkc15CrtAllActvTPCmdsDDMenuFromAllForDDMenu

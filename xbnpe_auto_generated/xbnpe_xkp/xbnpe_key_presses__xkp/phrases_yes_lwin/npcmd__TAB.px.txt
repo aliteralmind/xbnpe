@@ -1,0 +1,8 @@
+Alt+LWin+TAB -- zALpTAB	{#ALT {#LWIN {#TAB}}}{#insert zTSlp}	zALpTAB
+Alt+Shift+LWin+TAB -- zASLpTAB	{#ALT {#SHIFT {#LWIN {#TAB}}}}{#insert zTSlp}	zASLpTAB
+Ctrl+Alt+LWin+TAB -- zCALpTAB	{#CTRL {#ALT {#LWIN {#TAB}}}}{#insert zTSlp}	zCALpTAB
+Ctrl+Alt+Shift+LWin+TAB -- zCASLpTAB	{#CTRL {#ALT {#SHIFT {#LWIN {#TAB}}}}}{#insert zTSlp}	zCASLpTAB
+Ctrl+LWin+TAB -- zCLpTAB	{#CTRL {#LWIN {#TAB}}}{#insert zTSlp}	zCLpTAB
+Ctrl+Shift+LWin+TAB -- zCSLpTAB	{#CTRL {#SHIFT {#LWIN {#TAB}}}}{#insert zTSlp}	zCSLpTAB
+LWin+TAB -- zLpTAB	{#LWIN {#TAB}}{#insert zTSlp}	zLpTAB
+Shift+LWin+TAB -- zSLpTAB	{#SHIFT {#LWIN {#TAB}}}{#insert zTSlp}	zSLpTAB

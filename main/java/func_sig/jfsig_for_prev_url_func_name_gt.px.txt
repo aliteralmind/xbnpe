@@ -1,0 +1,20 @@
+gtk -- Func sig-line start	{#insert scpkflocal}{#insert gtcb}	gtk
+gtkg -- func-name (siG start)	{#insert scpkflocal}{#insert gtcbg}	gtkg
+gtkgprompt	{#insert gtkg}{#insert zCorrectFuncPrompt}	gtkgprompt
+gtkm -- Func sig-line start	{#insert zYmark}{#insert gtk}	gtkm
+gtkmc -- Func sig-line start	{#insert zYmarkCoded}{#insert gtk}	gtkmc
+gtkmcg -- func-name (siG start)	{#insert zYmarkCoded}{#insert gtkg}	gtkmcg
+gtkmcp -- Params (open paren)	{#insert zYmarkCoded}{#insert gtkp}	gtkmcp
+gtkmcrg -- Return type	{#insert zYmarkCoded}{#insert gtkrg}	gtkmcrg
+gtkmfprompt	{#insert gtkmf}{#insert zCorrectFuncPrompt}	gtkmfprompt
+gtkmg -- func-name (siG start)	{#insert zYmark}{#insert gtkg}	gtkmg
+gtkmgprompt	{#insert gtkmg}{#insert zCorrectFuncPrompt}	gtkmgprompt
+gtkmp -- Params (open paren)	{#insert zYmark}{#insert gtkp}	gtkmp
+gtkmpprompt	{#insert gtkmp}{#insert zCorrectFuncPrompt}	gtkmpprompt
+gtkmrg -- Return type	{#insert zYmark}{#insert gtkrg}	gtkmrg
+gtkmrgprompt	{#insert gtkmrg}{#insert zCorrectFuncPrompt}	gtkmrgprompt
+gtkp -- Params (open paren)	{#insert scpkflocal}{#insert gtcbp}	gtkp
+gtkpprompt	{#insert gtkp}{#insert zCorrectFuncPrompt}	gtkpprompt
+gtkprompt	{#insert gtk}{#insert zCorrectFuncPrompt}	gtkprompt
+gtkrg -- Return type	{#insert scpkflocal}{#insert gtcbrg}	gtkrg
+gtkrgprompt	{#insert gtkrg}{#insert zCorrectFuncPrompt}	gtkrgprompt

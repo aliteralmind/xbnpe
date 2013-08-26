@@ -1,0 +1,13 @@
+zTpkcSelectAllNbsKcCount	0	zTpkcSelectAllNbsKcCount
+zTpkcSelectBeginBlockNbsKcCount	0	zTpkcSelectBeginBlockNbsKcCount
+zTpkcSelectBeginLineNbsKcCount	0	zTpkcSelectBeginLineNbsKcCount
+zTpkcSelectBeginStreamNbsKcCount	0	zTpkcSelectBeginStreamNbsKcCount
+zTpkcSelectCancelNbsKcCount	0	zTpkcSelectCancelNbsKcCount
+zTpkcSelectEndNbsKcCount	0	zTpkcSelectEndNbsKcCount
+zTpkcSelectLineNbsKcCount	1	zTpkcSelectLineNbsKcCount
+zTpkcSelectLineNbsKcEsc1	\\\{#insert zCApAA\\\}\\\{#sleep 10\\\}	zTpkcSelectLineNbsKcEsc1
+zTpkcSelectParagraphNbsKcCount	1	zTpkcSelectParagraphNbsKcCount
+zTpkcSelectParagraphNbsKcEsc1	\\\{#insert zApAA\\\}\\\{#sleep 10\\\}	zTpkcSelectParagraphNbsKcEsc1
+zTpkcSelectSwapEndsNbsKcCount	0	zTpkcSelectSwapEndsNbsKcCount
+zTpkcSelectWordNbsKcCount	1	zTpkcSelectWordNbsKcCount
+zTpkcSelectWordNbsKcEsc1	\\\{#insert zCSpAA\\\}\\\{#sleep 10\\\}	zTpkcSelectWordNbsKcEsc1

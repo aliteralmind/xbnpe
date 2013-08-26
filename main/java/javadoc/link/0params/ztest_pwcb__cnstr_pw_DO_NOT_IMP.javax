@@ -1,0 +1,170 @@
+/**
+	<P>ZZZ</P>
+ **/
+public class MyClass extends AnotherClass  {
+
+	//&quot;../&quot; is entered for all directory prompts
+	Select and delete XXX, then run the macro.
+
+		clpw
+				<A HREF="MyClass.html#MyClass()">MyClass</A>()
+				MyClassXXX
+			clpwefk
+				<A HREF="MyClass">MyClass</A>.<A HREF="MyClass.html#MyClass()">MyClass</A>()
+				MyClassXXX
+			clpwefky
+				MyClass.<A HREF="MyClass.html#MyClass()">MyClass</A>()
+				MyClassXXX
+			clpwerk
+				<A HREF="MyClass">super</A>.<A HREF="MyClass.html#MyClass()">MyClass</A>()
+				MyClassXXX
+			clpwerky
+				super.<A HREF="MyClass.html#MyClass()">MyClass</A>()
+				MyClassXXX
+			clpwifk
+				<A HREF="MyClass"><I>[MyClass]</I></A>.<A HREF="MyClass.html#MyClass()">MyClass</A>()
+				MyClassXXX
+			clpwifky
+				<I>[MyClass]</I>.<A HREF="MyClass.html#MyClass()">MyClass</A>()
+				MyClassXXX
+			clpwirk
+				<A HREF="MyClass"><I>[super]</I></A>.<A HREF="MyClass.html#MyClass()">MyClass</A>()
+				MyClassXXX
+			clpwirky
+				<I>[super]</I>.<A HREF="MyClass.html#MyClass()">MyClass</A>()
+				MyClassXXX
+		clpwc
+				<CODE><A HREF="MyClass.html#MyClass()">MyClass</A>()</CODE>
+				MyClassXXX
+			clpwcefk
+				<CODE><A HREF="MyClass">MyClass</A>.<A HREF="MyClass.html#MyClass()">MyClass</A>()</CODE>
+				MyClassXXX
+			clpwcefky
+				<CODE>MyClass.<A HREF="MyClass.html#MyClass()">MyClass</A>()</CODE>
+				MyClassXXX
+			clpwcerk
+				<CODE><A HREF="MyClass">super</A>.<A HREF="MyClass.html#MyClass()">MyClass</A>()</CODE>
+				MyClassXXX
+			clpwcerky
+				<CODE>super.<A HREF="MyClass.html#MyClass()">MyClass</A>()</CODE>
+				MyClassXXX
+			clpwcifk
+				<CODE><A HREF="MyClass"><I>[MyClass]</I></A>.<A HREF="MyClass.html#MyClass()">MyClass</A>()</CODE>
+				MyClassXXX
+			clpwcifky
+				<CODE><I>[MyClass]</I>.<A HREF="MyClass.html#MyClass()">MyClass</A>()</CODE>
+				MyClassXXX
+			clpwcirk
+				<CODE><A HREF="MyClass"><I>[super]</I></A>.<A HREF="MyClass.html#MyClass()">MyClass</A>()</CODE>
+				MyClassXXX
+			clpwcirky
+				<CODE><I>[super]</I>.<A HREF="MyClass.html#MyClass()">MyClass</A>()</CODE>
+				MyClassXXX
+		clpwd
+				<A HREF="../MyClass.html#MyClass()">MyClass</A>()
+				MyClassXXX
+			clpwdefk
+				<A HREF="../MyClass">MyClass</A>.<A HREF="../MyClass.html#MyClass()">MyClass</A>()
+				MyClassXXX
+			clpwdefky
+				MyClass.<A HREF="../MyClass.html#MyClass()">MyClass</A>()
+				MyClassXXX
+			clpwderk
+				<A HREF="../MyClass">super</A>.<A HREF="../MyClass.html#MyClass()">MyClass</A>()
+				MyClassXXX
+			clpwderky
+				super.<A HREF="../MyClass.html#MyClass()">MyClass</A>()
+				MyClassXXX
+			clpwdifk
+				<A HREF="../MyClass"><I>[MyClass]</I></A>.<A HREF="../MyClass.html#MyClass()">MyClass</A>()
+				MyClassXXX
+			clpwdifky
+				<I>[MyClass]</I>.<A HREF="../MyClass.html#MyClass()">MyClass</A>()
+				MyClassXXX
+			clpwdirk
+				<A HREF="../MyClass"><I>[super]</I></A>.<A HREF="../MyClass.html#MyClass()">MyClass</A>()
+				MyClassXXX
+			clpwdirky
+				<I>[super]</I>.<A HREF="../MyClass.html#MyClass()">MyClass</A>()
+				MyClassXXX
+		clpwdb ["../../" in clipBoard]
+				<A HREF="../../MyClass.html#MyClass()">MyClass</A>()
+				MyClassXXX
+			clpwdbefk ["../../" in clipBoard]
+				<A HREF="../../MyClass">MyClass</A>.<A HREF="../../MyClass.html#MyClass()">MyClass</A>()
+				MyClassXXX
+			clpwdbefky ["../../" in clipBoard]
+				MyClass.<A HREF="../../MyClass.html#MyClass()">MyClass</A>()
+				MyClassXXX
+			clpwdberk ["../../" in clipBoard]
+				<A HREF="../../MyClass">super</A>.<A HREF="../../MyClass.html#MyClass()">MyClass</A>()
+				MyClassXXX
+			clpwdberky ["../../" in clipBoard]
+				super.<A HREF="../../MyClass.html#MyClass()">MyClass</A>()
+				MyClassXXX
+			clpwdbifk ["../../" in clipBoard]
+				<A HREF="../../MyClass"><I>[MyClass]</I></A>.<A HREF="../../MyClass.html#MyClass()">MyClass</A>()
+				MyClassXXX
+			clpwdbifky ["../../" in clipBoard]
+				<I>[MyClass]</I>.<A HREF="../../MyClass.html#MyClass()">MyClass</A>()
+				MyClassXXX
+			clpwdbirk ["../../" in clipBoard]
+				<A HREF="../../MyClass"><I>[super]</I></A>.<A HREF="../../MyClass.html#MyClass()">MyClass</A>()
+				MyClassXXX
+			clpwdbirky ["../../" in clipBoard]
+				<I>[super]</I>.<A HREF="../../MyClass.html#MyClass()">MyClass</A>()
+				MyClassXXX
+		clpwdbc ["../../" in clipBoard]
+				<CODE><A HREF="../../MyClass.html#MyClass()">MyClass</A>()</CODE>
+				MyClassXXX
+			clpwdbcefk ["../../" in clipBoard]
+				<CODE><A HREF="../../MyClass">MyClass</A>.<A HREF="../../MyClass.html#MyClass()">MyClass</A>()</CODE>
+				MyClassXXX
+			clpwdbcefky ["../../" in clipBoard]
+				<CODE>MyClass.<A HREF="../../MyClass.html#MyClass()">MyClass</A>()</CODE>
+				MyClassXXX
+			clpwdbcerk ["../../" in clipBoard]
+				<CODE><A HREF="../../MyClass">super</A>.<A HREF="../../MyClass.html#MyClass()">MyClass</A>()</CODE>
+				MyClassXXX
+			clpwdbcerky ["../../" in clipBoard]
+				<CODE>super.<A HREF="../../MyClass.html#MyClass()">MyClass</A>()</CODE>
+				MyClassXXX
+			clpwdbcifk ["../../" in clipBoard]
+				<CODE><A HREF="../../MyClass"><I>[MyClass]</I></A>.<A HREF="../../MyClass.html#MyClass()">MyClass</A>()</CODE>
+				MyClassXXX
+			clpwdbcifky ["../../" in clipBoard]
+				<CODE><I>[MyClass]</I>.<A HREF="../../MyClass.html#MyClass()">MyClass</A>()</CODE>
+				MyClassXXX
+			clpwdbcirk ["../../" in clipBoard]
+				<CODE><A HREF="../../MyClass"><I>[super]</I></A>.<A HREF="../../MyClass.html#MyClass()">MyClass</A>()</CODE>
+				MyClassXXX
+			clpwdbcirky ["../../" in clipBoard]
+				<CODE><I>[super]</I>.<A HREF="../../MyClass.html#MyClass()">MyClass</A>()</CODE>
+				MyClassXXX
+		clpwdc
+				<CODE><A HREF="../MyClass.html#MyClass()">MyClass</A>()</CODE>
+				MyClassXXX
+			clpwdcefk
+				<CODE><A HREF="../MyClass">MyClass</A>.<A HREF="../MyClass.html#MyClass()">MyClass</A>()</CODE>
+				MyClassXXX
+			clpwdcefky
+				<CODE>MyClass.<A HREF="../MyClass.html#MyClass()">MyClass</A>()</CODE>
+				MyClassXXX
+			clpwdcerk
+				<CODE><A HREF="../MyClass">super</A>.<A HREF="../MyClass.html#MyClass()">MyClass</A>()</CODE>
+				MyClassXXX
+			clpwdcerky
+				<CODE>super.<A HREF="../MyClass.html#MyClass()">MyClass</A>()</CODE>
+				MyClassXXX
+			clpwdcifk
+				<CODE><A HREF="../MyClass"><I>[MyClass]</I></A>.<A HREF="../MyClass.html#MyClass()">MyClass</A>()</CODE>
+				MyClassXXX
+			clpwdcifky
+				<CODE><I>[MyClass]</I>.<A HREF="../MyClass.html#MyClass()">MyClass</A>()</CODE>
+				MyClassXXX
+			clpwdcirk
+				<CODE><A HREF="../MyClass"><I>[super]</I></A>.<A HREF="../MyClass.html#MyClass()">MyClass</A>()</CODE>
+				MyClassXXX
+			clpwdcirky
+				<CODE><I>[super]</I>.<A HREF="../MyClass.html#MyClass()">MyClass</A>()</CODE>
+				MyClassXXX

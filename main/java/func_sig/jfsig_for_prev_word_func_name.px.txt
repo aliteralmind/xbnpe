@@ -1,0 +1,18 @@
+gtpwf -- Func sig-line start	{#insert zSelectL1wCopy}{#insert gtcb}	gtpwf
+gtpwfm -- gtpwf, Mark first	{#insert zPostYGTP}{#insert gtpwf}	gtpwfm
+gtpwg --func-name (siG start)	{#insert zSelectL1wCopy}{#insert gtcbg}	gtpwg
+gtpwgm --gtpwg, Mark first	{#insert zPostYGTP}{#insert gtpwg}	gtpwgm
+gtpwp -- Params (open-paren)	{#insert zSelectL1wCopy}{#insert gtcbp}	gtpwp
+gtpwpm -- gtpwp, Mark first	{#insert zPostYGTP}{#insert gtpwp}	gtpwpm
+gtpwrg -- Return type	{#insert zSelectL1wCopy}{#insert gtcbrg}	gtpwrg
+gtpwrgm -- gtpwrg, Mark first	{#insert zPostYGTP}{#insert gtpwrg}	gtmwrgm
+mppw -- full Params (types, generics, and names) (**)	(*All these 'mw' phrases assume that there is exactly one paste mark (zYmark) in the document. Since TextPad macros cannot wrap around from bottom to top--despite the 'Wrap searches' being checked while recording the macro--these all call zYUp and then zYDown, and THEN paste. This is also true for the mw*cb macros.*){#insert zYCopyL1wSccbPromptPmkUpDown}	mppw
+mppwn -- Names only	{#insert zYCopyL1wSccbPromptPmkUpDown}{#insert dapt}	mppwn
+mppwt -- Types (no generics) only	{#insert zYCopyL1wSccbPromptPmkUpDown}{#insert dapn}	mppwt
+mppwy -- tYpes (with generics) only	{#insert zYCopyL1wSccbPromptPmkUpDown}{#insert dapnkg}	mppwy
+scpwg -- func-name and params (siG)	{#insert zCopyL1w}{#insert sccbg}	scpwg
+scpwgm -- scpwg, Mark first	{#insert zPostYGTP}{#insert scpwg}	scpwgm
+scpwp -- Params only	{#insert zCopyL1w}{#insert sccbp}	scpwp
+scpwpm -- scpwp, Mark first	{#insert zPostYGTP}{#insert scpwp}	scpwpm
+scpwrg -- Return type and siG	{#insert zCopyL1w}{#insert sccbrg}	scpwrg
+scpwrgm -- scpwrg, Mark first	{#insert zPostYGTP}{#insert scpwrg}	scmwrgm

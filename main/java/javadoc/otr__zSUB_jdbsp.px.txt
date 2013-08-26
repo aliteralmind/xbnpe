@@ -1,0 +1,8 @@
+zJdbEnd	{#insert zzJdbgRAW}{#insert zEND}{#insert zENTER2}{#insert zSpHOME}{#insert zTPPaste}	zJdbEnd
+zzDownGtfc	{#insert zDOWN}{#insert gtfc}	zzDownGtfc
+zzEntUpJDBStrtEntTbPZPEnt2SphmPstLEntBkspJDBEndDnGtfcBkmk	{#insert zzEntUpSlsh2StrEntTbPZP}{#insert zENTER2}{#insert zSpHOME}{#insert zTPPaste}{#insert zDEL}{#insert zLEFT}{#insert zEnterBksp} **/{#insert zzDownGtfc}{#insert zTPBookmarkToggle}	zzEntUpJDBStrtEntTbPZPEnt2SphmPstLEntBkspJDBEndDnGtfcBkmk
+zzFindOpenCurlyDown	{#insert zFindOpenDown}{#insert zOY}{#insert zFindBtnNext}{#insert zFindDlgClose}	zzFindOpenCurlyDown
+zzJdbspRAW	{#insert zTPBookmarkClearAll}{#insert zzEntUpJDBStrtEntTbPZPEnt2SphmPstLEntBkspJDBEndDnGtfcBkmk}	zzJdbspRAW
+zzJdbspn_MSTR	{#insert zTPBookmarkClearAll}{#insert zzEntUpJDBStrtEntTbPZPEnt2SphmPstLEntBkspJDBEndDnGtfcBkmk}{#insert zFindOpenUpXS}/**{#insert zFindGoXSClose}{#insert zTPCopy}{#insert zRIGHT}{#insert zzFindOpenCurlyDown}{#loop {#insert zzMtchBrkDownGtfc}{#insert zTPPaste}{#insert zTPBookmarkToggle}{#insert zTPFindNext} -count {#insert zvNUMBERMinus1}}{#insert zzMtchBrkDownGtfc}	zzJdbspn_MSTR
+zzMtchBrkDownGtfc	{#insert zTPMatchBracket}{#insert zzDownGtfc}	zzMtchBrkDownGtfc
+zzMtchBrkR2Gtfc	{#insert zTPMatchBracket}{#insert zRIGHT2}{#insert gtfc}	zzMtchBrkR2Gtfc

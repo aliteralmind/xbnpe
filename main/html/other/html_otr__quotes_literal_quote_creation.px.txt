@@ -1,0 +1,11 @@
+hqo -- hq2 ALT KC (q and 2 are too damn far away in Dvorak)	{#insert hq2}	hqo
+hqop -- hq2p ALT KC	{#insert hq2p}	hqop
+hqp -- hqqp ALT KC	{#insert hqqp}	hqp
+hqq -- &quot;	&quot;	hqq
+hq2 -- &quot;&quot;	&quot;{#insert zXmark}&quot;{#insert zXUp}	hq2
+hq2p -- hqqp ALT KC	{#insert hqqp}	hq2p
+hqqp -- hq2, then paste	&quot;{#insert zTPPaste}&quot;	hqqp
+hqtq -- Opposite of qthq -- CALL FROM RPLC DLG WHAT FIELD!!!	{#insert zRplcFlagSel}&quot;{#insert zRplcFieldWith}{#asc 34}{#insert zRplcBtnAllSelHnr}{#insert zRplcDlgClose}	hqtq
+qthq -- HTML-Escape sel dbl-quotes -- CALL FROM RPLC DLG WHAT FIELD!!!	{#insert zRplcFlagSel}{#asc 34}{#insert zRplcFieldWith}&quot;{#insert zRplcBtnAllSelHnr}{#insert zRplcDlgClose}	qthq
+rhqtq	{#insert zRplcDlgSel}&quot;{#insert zRplcFieldWith}{#asc 34}{#insert zRplcBtnAllSelHnr}{#insert zRplcDlgClose}	rhqtq
+rqthq	{#insert zRplcDlgSel}{#asc 34}{#insert zRplcFieldWith}&quot;{#insert zRplcBtnAllSelHnr}{#insert zRplcDlgClose}	rqthq

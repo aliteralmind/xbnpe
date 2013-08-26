@@ -1,0 +1,8 @@
+DASH -- zDASH	{#NONE -chars -}{#insert zTSlp}	zDASH
+Alt+DASH -- zApDASH	{#ALT -chars -}{#insert zTSlp}	zApDASH
+Alt+Shift+DASH -- zASpDASH	{#ALT {#SHIFT -chars -}}{#insert zTSlp}	zASpDASH
+Ctrl+DASH -- zCpDASH	{#CTRL -chars -}{#insert zTSlp}	zCpDASH
+Ctrl+Alt+DASH -- zCApDASH	{#CTRL {#ALT -chars -}}{#insert zTSlp}	zCApDASH
+Ctrl+Alt+Shift+DASH -- zCASpDASH	{#CTRL {#ALT {#SHIFT -chars -}}}{#insert zTSlp}	zCASpDASH
+Ctrl+Shift+DASH -- zCSpDASH	{#CTRL {#SHIFT -chars -}}{#insert zTSlp}	zCSpDASH
+Shift+DASH -- zSpDASH	{#SHIFT -chars -}{#insert zTSlp}	zSpDASH

@@ -1,0 +1,4 @@
+Detect redundant command abbreviations 	{#insert zDetectRedundantCmdAbrvs}	zDetectRedundantCmdAbrvsForDDMenu
+Verify all global-cmd-cfg w/ cat-prompts	{#insert zTpkc07VerifyImportedGlobalCmdCfgWCatPrompts}	zTpkc07VerifyImportedGlobalCmdCfgWCatPromptsForDDMenu
+Verify all global-command configuration	{#insert zTpkc07VerifyImportedGlobalCmdCfg}	zTpkc07VerifyImportedGlobalCmdCfgForDDMenu
+Verify from-list-top steps for all commands	{#insert zConfirmAllCmdsInAllCats_fromListTopSteps}	zVerifyFLTStepsForAllCmdsCallDrct

@@ -1,0 +1,3 @@
+zFFindSelPhraseNameUsage_forHK -- [zASpEE]	{#insert zFFindSelPhraseNameUsage}	zFFindSelPhraseNameUsage_forHK
+zREoffFFindSlctdPhrsNmOrigPhrsLine_forHK -- [zCSpEE]	{#insert zREoffFFindSlctdPhrsNmOrigPhrsLine}	zREoffFFindSlctdPhrsNmOrigPhrsLine_forHK
+zREonFFindSlctdPhrsNmOrigPhrsLineReOn_forHK -- [zCASpEE]	{#insert zREonFFindSlctdPhrsNmOrigPhrsLine}	zREonFFindSlctdPhrsNmOrigPhrsLineReOn_forHK

@@ -1,0 +1,6 @@
+(*
+   Required by phrase-creator-ddmenu-utils...START
+      PM_DDMENU_DIRID_FILENMPHRSNM_HDRAUTOTXT=snr/zzPmdmFNmPreSnrFind/xhsfm
+   Required by phrase-creator-ddmenu-utils...END
+*)
+zFindDlgOpenWrapSearchTglClose	{#insert zFcsTPFindDlgOpen}{#insert zFindFlagWrapSearchTglRAW}{#insert zFindDlgClose}	zFindDlgOpenWrapSearchTglClose

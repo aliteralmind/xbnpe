@@ -1,0 +1,8 @@
+FOUR -- zFOUR	{#NONE -chars 4}{#insert zTSlp}	zFOUR
+Alt+FOUR -- zApFOUR	{#ALT -chars 4}{#insert zTSlp}	zApFOUR
+Alt+Shift+FOUR -- zASpFOUR	{#ALT {#SHIFT -chars 4}}{#insert zTSlp}	zASpFOUR
+Ctrl+FOUR -- zCpFOUR	{#CTRL -chars 4}{#insert zTSlp}	zCpFOUR
+Ctrl+Alt+FOUR -- zCApFOUR	{#CTRL {#ALT -chars 4}}{#insert zTSlp}	zCApFOUR
+Ctrl+Alt+Shift+FOUR -- zCASpFOUR	{#CTRL {#ALT {#SHIFT -chars 4}}}{#insert zTSlp}	zCASpFOUR
+Ctrl+Shift+FOUR -- zCSpFOUR	{#CTRL {#SHIFT -chars 4}}{#insert zTSlp}	zCSpFOUR
+Shift+FOUR -- zSpFOUR	{#SHIFT -chars 4}{#insert zTSlp}	zSpFOUR

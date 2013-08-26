@@ -1,0 +1,11 @@
+zFromPreSigSCPtYpeWG1	{#insert zFromPreSigGTPTypeNG1}{#insert zPreTypeSelCopyThrGEnd}	zFromPreSigSCPtYpeWG1
+zFromPreSigSCPtYpeWG2	{#insert zFromPreSigGTPTypeNG2}{#insert zPreTypeSelCopyThrGEnd}	zFromPreSigSCPtYpeWG2
+zFromPreSigSCPtYpeWG3	{#insert zFromPreSigGTPTypeNG3}{#insert zPreTypeSelCopyThrGEnd}	zFromPreSigSCPtYpeWG3
+zFromPreSigSCPtYpeWG4	{#insert zFromPreSigGTPTypeNG4}{#insert zPreTypeSelCopyThrGEnd}	zFromPreSigSCPtYpeWG4
+zFromPreSigSCPtYpeWG5	{#insert zFromPreSigGTPTypeNG5}{#insert zPreTypeSelCopyThrGEnd}	zFromPreSigSCPtYpeWG5
+zFromPreSigSCPtYpeWG7	{#insert zFromPreSigGTPTypeNG7}{#insert zPreTypeSelCopyThrGEnd}	zFromPreSigSCPtYpeWG7
+zFromPreSigSCPtYpeWG8	{#insert zFromPreSigGTPTypeNG8}{#insert zPreTypeSelCopyThrGEnd}	zFromPreSigSCPtYpeWG8
+zFromPreSigSCPtYpeWG9	{#insert zFromPreSigGTPTypeNG9}{#insert zPreTypeSelCopyThrGEnd}	zFromPreSigSCPtYpeWG9
+zFromPreSigSCPtYpeWG10	{#insert zFromPreSigGTPTypeNG10}{#insert zPreTypeSelCopyThrGEnd}	zFromPreSigSCPtYpeWG10
+zFromPreSigSCPtYpeWG6	{#insert zFromPreSigGTPTypeNG6}{#insert zPreTypeSelCopyThrGEnd}	zFromPreSigSCPtYpeWG6
+zFromPreSigSCPtYpeWGN	{#insert zFromPreSigGTPTypeNGN}{#insert zPreTypeSelCopyThrGEnd}	zFromPreSigSCPtYpeWGN

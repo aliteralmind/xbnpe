@@ -1,0 +1,5 @@
+zzNewFlV1Nbs_macros_MacroMultiplay_ifKc	{#insert zvCMD_ABRV_1C_sfMacroMultiplay}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_macros_MacroMultiplay_ifKc
+zzNewFlV1Nbs_macros_MacroPause_ifKc	{#insert zvCMD_ABRV_1C_sfMacroPause}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_macros_MacroPause_ifKc
+zzNewFlV1Nbs_macros_MacroPlay_ifKc	{#insert zvCMD_ABRV_1C_sfMacroPlay}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_macros_MacroPlay_ifKc
+zzNewFlV1Nbs_macros_MacroRecord_ifKc	{#insert zvCMD_ABRV_1C_sfMacroRecord}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_macros_MacroRecord_ifKc
+zzNewFlV1Nbs_macros_MacroSave_ifKc	{#insert zvCMD_ABRV_1C_sfMacroSave}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_macros_MacroSave_ifKc

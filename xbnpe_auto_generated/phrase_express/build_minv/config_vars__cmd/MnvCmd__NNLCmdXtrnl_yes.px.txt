@@ -1,0 +1,13 @@
+__**WARNING**__: All phrases in this folder were created by 'plpdcf'. DO NOT EDIT.	.		(*Extra tab to allow for empty-string autotext*)
+zvNNLC_XTRNL_YES_sfKey	{#SETPHRASE -description zvNNLC_XTRNL_YES -content {#insert zzMnvCmdNnlcxy_cfgValue_M_key} -autotext zvNNLC_XTRNL_YES -folder ctvv_folder}	zvNNLC_XTRNL_YES_sfKey
+zzMnvCmdNnlcxy_cfgValue_M_key	{#insert {#insert zzMnvCmdNnlcxy_cfgVarPhrsName_M_key}}	zzMnvCmdNnlcxy_cfgValue_M_key
+zzMnvCmdNNLCmdXtrnl_yes_cvtFromAbrv1C	Nnlcxy	zzMnvCmdNNLCmdXtrnl_yes_cvtFromAbrv1C
+zzMnvCmdNnlcxy_cfgVarPNmPost	NNLCmdXtrnl_yes	zzMnvCmdNnlcxy_cfgVarPNmPost
+zzMnvCmdNnlcxy_intrnlVarNm	zvNNLC_XTRNL_YES	zzMnvCmdNnlcxy_intrnlVarNm
+zzMnvCmdNnlcxy_cfgVarPhrsName_M_key	zz{#insert zzMnvCmdProjectAbrv1C}{#insert zzMnvCmdDataTypeAbrv1C}{#insert zvCMD_PNMV_1C}{#insert zzMnvCmdNnlcxy_cfgVarPNmPost}	zzMnvCmdNnlcxy_cfgVarPhrsName_M_key
+zzMnvCmdNnlcxy_helpForDlg	Only used when both [Commands_on] and [NoNumAlias_on] are 'on'. When the No~Num~aLias COMMAND is implemented eXternally from the MINV~project, then this must be 'yes' (otherwise, ''). An example of an external nnl~command is zTAB (action~name 'tbb'). zTAB, which is equal to {#insert zOYp}#TAB{#insert zCYp}, is a fundamental PhraseExpress function~key. So in the 'tbb' MINV~Command, zTAB is implemented elsewhere, but zTAB1, zTAB2, ... are implemented as MINV~Commands. So the 'no~num~alias', zTAB, is external, and zTAB1 (where 1 is [RangeMin]) is really an alias for IT (zTAB1 equals zTAB).	zzMnvCmdNnlcxy_helpForDlg
+zzMnvCmdNnlcxy_valuePrintable	yes	zzMnvCmdNnlcxy_valuePrintable
+zzMnvCmdNnlcxy_validateValuePhrsNm		zzMnvCmdNnlcxy_validateValuePhrsNm
+zzMnvCmdNnlcxy_nkcvListNum	7	zzMnvCmdNnlcxy_nkcvListNum
+zzMnvCmdNnlcxy_keyCVTFromAbrv1C	{#insert zzMnvCmdPrivKeyCVTFromAbrv1C}	zzMnvCmdNnlcxy_keyCVTFromAbrv1C
+zvCVT_FRMV_1C_stMnvCmdNnlcxy	{#SETPHRASE -description zvCVT_FRMV_1C -content {#insert zzMnvCmdNNLCmdXtrnl_yes_cvtFromAbrv1C} -autotext zvCVT_FRMV_1C -folder ctvv_folder}	zvCVT_FRMV_1C_stMnvCmdNnlcxy

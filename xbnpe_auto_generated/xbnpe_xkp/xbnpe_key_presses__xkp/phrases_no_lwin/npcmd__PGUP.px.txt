@@ -1,0 +1,8 @@
+PGUP -- zPGUP	{#PGUP}{#insert zTSlp}	zPGUP
+Alt+PGUP -- zApPGUP	{#ALT {#PGUP}}{#insert zTSlp}	zApPGUP
+Alt+Shift+PGUP -- zASpPGUP	{#ALT {#SHIFT {#PGUP}}}{#insert zTSlp}	zASpPGUP
+Ctrl+PGUP -- zCpPGUP	{#CTRL {#PGUP}}{#insert zTSlp}	zCpPGUP
+Ctrl+Alt+PGUP -- zCApPGUP	{#CTRL {#ALT {#PGUP}}}{#insert zTSlp}	zCApPGUP
+Ctrl+Alt+Shift+PGUP -- zCASpPGUP	{#CTRL {#ALT {#SHIFT {#PGUP}}}}{#insert zTSlp}	zCASpPGUP
+Ctrl+Shift+PGUP -- zCSpPGUP	{#CTRL {#SHIFT {#PGUP}}}{#insert zTSlp}	zCSpPGUP
+Shift+PGUP -- zSpPGUP	{#SHIFT {#PGUP}}{#insert zTSlp}	zSpPGUP

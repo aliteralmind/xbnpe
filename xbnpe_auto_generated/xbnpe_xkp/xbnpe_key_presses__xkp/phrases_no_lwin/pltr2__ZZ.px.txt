@@ -1,0 +1,8 @@
+ZZ -- zZZ	{#NONE -chars z}{#insert zTSlp}	zZZ
+Alt+ZZ -- zApZZ	{#ALT -chars z}{#insert zTSlp}	zApZZ
+Alt+Shift+ZZ -- zASpZZ	{#ALT {#SHIFT -chars z}}{#insert zTSlp}	zASpZZ
+Ctrl+ZZ -- zCpZZ	{#CTRL -chars z}{#insert zTSlp}	zCpZZ
+Ctrl+Alt+ZZ -- zCApZZ	{#CTRL {#ALT -chars z}}{#insert zTSlp}	zCApZZ
+Ctrl+Alt+Shift+ZZ -- zCASpZZ	{#CTRL {#ALT {#SHIFT -chars z}}}{#insert zTSlp}	zCASpZZ
+Ctrl+Shift+ZZ -- zCSpZZ	{#CTRL {#SHIFT -chars z}}{#insert zTSlp}	zCSpZZ
+Shift+ZZ -- zSpZZ	{#SHIFT -chars z}{#insert zTSlp}	zSpZZ

@@ -1,0 +1,64 @@
+(*Copy constructor lines must follow both ci-locked, and ci-null, and must precede the setter.
+
+Creates            For           Desc
+----------------------------------------------------------------------
+zvJSG_JDSEE_CC    jsg-setter    See: <A HREF={#asc 34}cnthis(){#asc 34}>cnthis</A>()
+
+NOTE that a no new-lines (zENTER), are at the end of any variable. New-lines must be concatenated externally.
+
+(Duplicate these zvJSG[B]_* table rows into zSUB_setter.px.txt.)
+*)
+
+
+(*JSG: Copy cnstr needed?*)
+zjsgCopyCnstrLines	{#msgbox -head {#insert zjsgbCCMBHead} -yes zjsgCopyCnstrLines_NEEDED -no z5slp}	zjsgCopyCnstrLines
+
+(*JSG needed*)
+zjsgCopyCnstrLines_NEEDED	{#insert zjsgbMsgForCCnstrA}{#insert zSetJSG_JDSEE_CC}{#insert zjsgCCJDandJava}{#insert zjsgbMsgForCCnstrZ}	zjsgCopyCnstrLines_NEEDED
+
+zjsgCCJDandJava	{#msgbox -head Does copy-cnstr call setter? -text {#insert zzjsgbCallSetrMsg} -ok zjsgCCJDandJava_SETR -cancel zjsgCCJDandJava_PRIV}	zjsgCCJDandJava
+zjsgCCJDandJava_SETR	{#insert zzjsgJDCCCalls}{#insert zzjsgJavaCCCallSetter}	zjsgCCJDandJava_SETR
+zjsgCCJDandJava_PRIV	{#insert zzjsgJDCCSets}{#insert zzjsgbJavaCCSetPriv}	zjsgCCJDandJava_PRIV
+
+
+zzjsgJDCCCalls	{#insert zzjsgbJDCCCalls}	zzjsgJDCCCalls
+zzjsgJDCCSets	{#insert zjsgbJDCCnstrSetsTo}	zzjsgJDCCSets
+zzjsgJavaCCCallSetter	{#insert zTAB}{#insert zjsgbSetterName}({#insert zzjsgbCCParamDotGetter});{#insert zEnterBksp}	zzjsgJavaCCCallSetter
+zzjsgJDCCParamDotGetterWLink	{#insert zjinpClassAbbrvForCpCnstr}_toCopy.<A HREF={#asc 34}#{#insert zjsgbGetterName}(){#asc 34}>{#insert zjsgbGetterName}</A>()	zzjsgJDCCParamDotGetterWLink
+zzjsgJDCCParamDotGetter	{#insert zjinpClassAbbrvForCpCnstr}_toCopy.{#insert zjsgbGetterName}()	zzjsgJDCCParamDotGetter
+zSetJSG_JDSEE_CC	{#SETPHRASE -description zvJSG_JDSEE_CC -content {#insert zjsgJDSeeCpCnstr} -autotext zvJSG_JDSEE_CC -folder ctvv_folder}	zSetJSG_JDSEE_CC
+zjsgJDSeeCpCnstr	<P><I>See: <CODE><A HREF={#asc 34}#{#insert zjsgbDPHThisClassName}({#insert zjsgbDPHThisPkgName}.{#insert zjinpCopyCnstrParamType}){#asc 34}>{#insert zjsgbDPHThisClassName}</A>({#insert zjinpClassAbbrvForCpCnstr})</CODE></I></P>	zjsgJDSeeCpCnstr
+
+(*JXSG: Copy cnstr needed?*)
+zjxsgCopyCnstrLines	{#msgbox -head {#insert zjsgbCCMBHead} -text Does THIS class implement xbn.lang.CopyableObject? -yes zjxsgCopyCnstrLines_NEEDED -no z5slp -defaultno}	zjxsgCopyCnstrLines
+
+(*JXSG: needed*)
+zjxsgCopyCnstrLines_NEEDED	{#insert zjsgbMsgForCCnstrA}{#insert zzjxsgCCJDandJava}{#insert zjsgbMsgForCCnstrZ}	zjxsgCopyCnstrLines_NEEDED
+zzjxsgCCJDandJava	{#msgbox -head Does copy-cnstr call setter? -text {#insert zzjsgbCallSetrMsg} -ok zzjxsgCCJDandJava_SETR -cancel zjsgCCJDandJava_PRIV}	zzjxsgCCJDandJava
+zzjxsgCCJDandJava_SETR	{#insert zzjxsgJDCCCalls}{#insert zzjxsgJavaCCCallSetter}	zzjxsgCCJDandJava_SETR
+zzjxsgCCJDandJava_PRIV	{#insert zzjxsgJDCCSets}{#insert zzjxsgJavaCCSetPriv}	zzjxsgCCJDandJava_PRIV
+
+(*JXSG: raw JD and Java*)
+zzjxsgJDCCSets	{#insert zjsgbJDCCnstrSetsTo}	zzjxsgJDCCSets
+zzjxsgJavaCCSetPriv	{#insert zzjsgbJavaCCSetPriv}	zzjxsgJavaCCSetPriv
+zzjxsgJDCCCalls	{#insert zzjsgbJDCCCalls}	zzjxsgJDCCCalls
+zzjxsgJavaCCCallSetter	{#insert zzjsgbJavaCCCallSetter}	zzjxsgJavaCCCallSetter
+
+
+
+(*JSGB*)
+zzjsgbJDCCCalls	{#insert zjsgbJDCallsSetterThrHref}({#insert zzjsgJDCCParamDotGetterWLink})</CODE></LI>{#insert zEnterBkspBksp}	zzjsgbJDCCCalls
+zzjsgbJavaCCCallSetter	{#insert zTAB}{#insert zjsgbSetterName}({#insert zzjsgbCCParamDotGetter});{#insert zEnterBksp}	zzjsgbJavaCCCallSetter
+zzjsgbJavaCCSetPriv	{#insert zTAB}{#insert zjsgbVarName} = {#insert zzjsgbCCParamDotGetter};{#insert zEnterBksp}	zzjsgbJavaCCSetPriv
+zjsgbJDCCnstrSetsTo	{#insert zjsgbJDCnstrSetsGtrToThrOpenCODE}{#insert zzjsgJDCCParamDotGetter}</CODE></LI>{#insert zEnterBkspBksp}	zjsgbJDCCnstrSetsTo
+zzjsgbCallSetrMsg	Does the copy-constructor call the setter [OK], or does it set the private variable directly [Cancel]?	zzjsgbCallSetrMsg
+zjsgbCCMBHead	Is THIS class a CopyableObject?	zjsgbCCMBHead
+zjsgbMsgForCCnstrA	{#insert zjsgbMsgForCCnstrPrefix}START---{#insert zENTER}	zjsgbMsgForCCnstrA
+zjsgbMsgForCCnstrZ	{#insert zjsgbMsgForCCnstrPrefix}END---{#insert zENTER}	zjsgbMsgForCCnstrZ
+zjsgbMsgForCCnstrPrefix	{#insert zobmPrefix}copy-constructor...	zjsgbMsgForCCnstrPrefix
+zzjsgbCCParamDotGetter	{#insert zjinpClassAbbrvForCpCnstr}_toCopy.{#insert zjsgbGetterName}()	zzjsgbCCParamDotGetter
+
+
+(*Unset*)
+zjsgbUnsetAllCopyCnstr	{#insert zUnset_JSG_JDSEE_CC}	zjsgbUnsetAllCopyCnstr
+zUnset_JSG_JDSEE_CC	{#SETPHRASE -description zvJSG_JDSEE_CC -content -autotext zvJSG_JDSEE_CC -folder ctvv_folder}	zUnset_JSG_JDSEE_CC

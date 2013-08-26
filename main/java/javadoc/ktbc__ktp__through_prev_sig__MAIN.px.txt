@@ -1,0 +1,4 @@
+ktpg -- linK with text through Prev siGnature (**)	(*Display text follows the signature.*){#insert zzktpgSTART}{#insert zREGEXHtmlLinkUrlDispWITH}{#insert zzRplcAllRECloseMoveR}	ktpg
+ktpgc -- ktpg, CODE-d	{#insert zzktpgSTART}{#insert zREGEXHtmlLinkUrlDispWITHc}{#insert zzRplcAllRECloseMoveR}	ktpgc
+ktpmg -- linK with text Through Prev {#insert zXmark}-Marked siG (**)	(*func-sig must be immediately preceding  by the go-mark (zXmark).*){#insert zzktpmgSTART}{#insert zREGEXHtmlLinkUrlDispWITH}{#insert zzRplcAllRECloseMoveR}	ktpmg
+ktpmgc -- ktpmg CODE-d	{#insert zzktpmgSTART}{#insert zREGEXHtmlLinkUrlDispWITHc}{#insert zzRplcAllRECloseMoveR}	ktpmgc

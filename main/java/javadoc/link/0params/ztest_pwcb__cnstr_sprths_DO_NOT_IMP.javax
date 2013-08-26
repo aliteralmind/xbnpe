@@ -1,0 +1,159 @@
+/**
+	<P>ZZZ</P>
+ **/
+public class MyClass extends AnotherClass  {
+
+	//&quot;../&quot; is entered for all directory prompts
+	Select and delete XXX, then run the macro. To run all tests automatically, Put the cursor before "clsuper", then run zzjlClsprthsTest
+
+
+		clsuper
+				<A HREF="../AnotherClass.html#AnotherClass()">AnotherClass</A>()
+				XXX
+			clsuperefk
+				<A HREF="../AnotherClass.html">AnotherClass</A>.<A HREF="../AnotherClass.html#AnotherClass()">AnotherClass</A>()
+				XXX
+			clsuperifk
+				<A HREF="../AnotherClass.html"><I>[AnotherClass]</I></A>.<A HREF="../AnotherClass.html#AnotherClass()">AnotherClass</A>()
+				XXX
+			clsupererk
+				<A HREF="../AnotherClass.html">super</A>.<A HREF="../AnotherClass.html#AnotherClass()">AnotherClass</A>()
+				XXX
+			clsuperirk
+				<A HREF="../AnotherClass.html"><I>[super]</I></A>.<A HREF="../AnotherClass.html#AnotherClass()">AnotherClass</A>()
+				XXX
+			clsuperefky
+				AnotherClass.<A HREF="../AnotherClass.html#AnotherClass()">AnotherClass</A>()
+				XXX
+			clsuperifky
+				<I>[AnotherClass]</I>.<A HREF="../AnotherClass.html#AnotherClass()">AnotherClass</A>()
+				XXX
+			clsupererky
+				super.<A HREF="../AnotherClass.html#AnotherClass()">AnotherClass</A>()
+				XXX
+			clsuperirky
+				<I>[super]</I>.<A HREF="../AnotherClass.html#AnotherClass()">AnotherClass</A>()
+				XXX
+		clsuperc
+				<CODE><A HREF="../AnotherClass.html#AnotherClass()">AnotherClass</A>()</CODE>
+				XXX
+			clsupercefk
+				<CODE><A HREF="../AnotherClass.html">AnotherClass</A>.<A HREF="../AnotherClass.html#AnotherClass()">AnotherClass</A>()</CODE>
+				XXX
+			clsupercifk
+				<CODE><A HREF="../AnotherClass.html"><I>[AnotherClass]</I></A>.<A HREF="../AnotherClass.html#AnotherClass()">AnotherClass</A>()</CODE>
+				XXX
+			clsupercerk
+				<CODE><A HREF="../AnotherClass.html">super</A>.<A HREF="../AnotherClass.html#AnotherClass()">AnotherClass</A>()</CODE>
+				XXX
+			clsupercirk
+				<CODE><A HREF="../AnotherClass.html"><I>[super]</I></A>.<A HREF="../AnotherClass.html#AnotherClass()">AnotherClass</A>()</CODE>
+				XXX
+			clsupercefky
+				<CODE>AnotherClass.<A HREF="../AnotherClass.html#AnotherClass()">AnotherClass</A>()</CODE>
+				XXX
+			clsupercifky
+				<CODE><I>[AnotherClass]</I>.<A HREF="../AnotherClass.html#AnotherClass()">AnotherClass</A>()</CODE>
+				XXX
+			clsupercerky
+				<CODE>super.<A HREF="../AnotherClass.html#AnotherClass()">AnotherClass</A>()</CODE>
+				XXX
+			clsupercirky
+				<CODE><I>[super]</I>.<A HREF="../AnotherClass.html#AnotherClass()">AnotherClass</A>()</CODE>
+				XXX
+		clsupern
+				<A HREF="../AnotherClass.html#AnotherClass()">constructor</A>
+				XXX
+			clsupernefk
+				<A HREF="../AnotherClass.html">AnotherClass</A>.<A HREF="../AnotherClass.html#AnotherClass()">constructor</A>
+				XXX
+			clsupernifk
+				<A HREF="../AnotherClass.html"><I>[AnotherClass]</I></A>.<A HREF="../AnotherClass.html#AnotherClass()">constructor</A>
+				XXX
+			clsupernerk
+				<A HREF="../AnotherClass.html">super</A>.<A HREF="../AnotherClass.html#AnotherClass()">constructor</A>
+				XXX
+			clsupernirk
+				<A HREF="../AnotherClass.html"><I>[super]</I></A>.<A HREF="../AnotherClass.html#AnotherClass()">constructor</A>
+				XXX
+			clsupernefky
+				AnotherClass.<A HREF="../AnotherClass.html#AnotherClass()">constructor</A>
+				XXX
+			clsupernifky
+				<I>[AnotherClass]</I>.<A HREF="../AnotherClass.html#AnotherClass()">constructor</A>
+				XXX
+			clsupernerky
+				super.<A HREF="../AnotherClass.html#AnotherClass()">constructor</A>
+				XXX
+			clsupernirky
+				<I>[super]</I>.<A HREF="../AnotherClass.html#AnotherClass()">constructor</A>
+				XXX
+		clsuperr
+				<A HREF="../AnotherClass.html#AnotherClass()">super</A>()
+				XXX
+			clsuperrefk
+				<A HREF="../AnotherClass.html">AnotherClass</A>.<A HREF="../AnotherClass.html#AnotherClass()">super</A>()
+				XXX
+			clsuperrifk
+				<A HREF="../AnotherClass.html"><I>[AnotherClass]</I></A>.<A HREF="../AnotherClass.html#AnotherClass()">super</A>()
+				XXX
+			clsuperrerk
+				<A HREF="../AnotherClass.html">super</A>.<A HREF="../AnotherClass.html#AnotherClass()">super</A>()
+				XXX
+			clsuperrirk
+				<A HREF="../AnotherClass.html"><I>[super]</I></A>.<A HREF="../AnotherClass.html#AnotherClass()">super</A>()
+				XXX
+			clsuperrefky
+				AnotherClass.<A HREF="../AnotherClass.html#AnotherClass()">super</A>()
+				XXX
+			clsuperrifky
+				<I>[AnotherClass]</I>.<A HREF="../AnotherClass.html#AnotherClass()">super</A>()
+				XXX
+			clsuperrerky
+				super.<A HREF="../AnotherClass.html#AnotherClass()">super</A>()
+				XXX
+			clsuperrirky
+				<I>[super]</I>.<A HREF="../AnotherClass.html#AnotherClass()">super</A>()
+				XXX
+		clsuperrc
+				<CODE><A HREF="../AnotherClass.html#AnotherClass()">super</A>()</CODE>
+				XXX
+			clsuperrcefk
+				<CODE><A HREF="../AnotherClass.html">AnotherClass</A>.<A HREF="../AnotherClass.html#AnotherClass()">super</A>()</CODE>
+				XXX
+			clsuperrcifk
+				<CODE><A HREF="../AnotherClass.html"><I>[AnotherClass]</I></A>.<A HREF="../AnotherClass.html#AnotherClass()">super</A>()</CODE>
+				XXX
+			clsuperrcerk
+				<CODE><A HREF="../AnotherClass.html">super</A>.<A HREF="../AnotherClass.html#AnotherClass()">super</A>()</CODE>
+				XXX
+			clsuperrcirk
+				<CODE><A HREF="../AnotherClass.html"><I>[super]</I></A>.<A HREF="../AnotherClass.html#AnotherClass()">super</A>()</CODE>
+				XXX
+			clsuperrcefky
+				<CODE>AnotherClass.<A HREF="../AnotherClass.html#AnotherClass()">super</A>()</CODE>
+				XXX
+			clsuperrcifky
+				<CODE><I>[AnotherClass]</I>.<A HREF="../AnotherClass.html#AnotherClass()">super</A>()</CODE>
+				XXX
+			clsuperrcerky
+				<CODE>super.<A HREF="../AnotherClass.html#AnotherClass()">super</A>()</CODE>
+				XXX
+			clsuperrcirky
+				<CODE><I>[super]</I>.<A HREF="../AnotherClass.html#AnotherClass()">super</A>()</CODE>
+				XXX
+		clthis
+				<A HREF="#MyClass()">MyClass</A>()
+				XXX
+		clthisc
+				<CODE><A HREF="#MyClass()">MyClass</A>()</CODE>
+				XXX
+		clthisn
+				<A HREF="#MyClass()">constructor</A>
+				XXX
+		clthist
+				<A HREF="#MyClass()">this</A>()
+				XXX
+		clthistc
+				<CODE><A HREF="#MyClass()">this</A>()</CODE>
+				XXX

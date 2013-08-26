@@ -1,0 +1,8 @@
+ZERO -- zZERO	{#NONE -chars 0}{#insert zTSlp}	zZERO
+Alt+ZERO -- zApZERO	{#ALT -chars 0}{#insert zTSlp}	zApZERO
+Alt+Shift+ZERO -- zASpZERO	{#ALT {#SHIFT -chars 0}}{#insert zTSlp}	zASpZERO
+Ctrl+ZERO -- zCpZERO	{#CTRL -chars 0}{#insert zTSlp}	zCpZERO
+Ctrl+Alt+ZERO -- zCApZERO	{#CTRL {#ALT -chars 0}}{#insert zTSlp}	zCApZERO
+Ctrl+Alt+Shift+ZERO -- zCASpZERO	{#CTRL {#ALT {#SHIFT -chars 0}}}{#insert zTSlp}	zCASpZERO
+Ctrl+Shift+ZERO -- zCSpZERO	{#CTRL {#SHIFT -chars 0}}{#insert zTSlp}	zCSpZERO
+Shift+ZERO -- zSpZERO	{#SHIFT -chars 0}{#insert zTSlp}	zSpZERO

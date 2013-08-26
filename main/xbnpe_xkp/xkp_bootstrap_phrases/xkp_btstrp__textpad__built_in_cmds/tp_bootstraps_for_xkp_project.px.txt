@@ -1,0 +1,13 @@
+zTPCopy -- TextPad built-in command: EditCopy	{#CTRL -chars j}{#insert zTSlp}{#sleep 10}	zTPCopy
+zTPCut -- TextPad built-in command: EditCut	{#CTRL -chars q}{#insert zTSlp}{#sleep 10}	zTPCut
+zTPDupLine -- TextPad built-in command: EditDupLine	{#CTRL {#ALT {#SHIFT -chars k}}}{#insert zTSlp}{#sleep 25}	zTPDupLine
+zTPFileClose -- TextPad built-in command: FileClose	{#F12}{#insert zTSlp}{#sleep 25}{#F9}{#insert zTSlp}{#sleep 100}	zTPFileClose
+zTPFileNew -- TextPad built-in command: FileNew	{#F12}{#insert zTSlp}{#sleep 25}{#F11}{#insert zTSlp}{#sleep 50}	zTPFileNew
+zTPFileSave -- TextPad built-in command: FileSave	{#F12}{#insert zTSlp}{#sleep 25}{#F12}{#insert zTSlp}{#sleep 250}	zTPFileSave
+zTPGTDocTop -- TextPad built-in command: DocumentStart	{#CTRL {#ALT {#SHIFT {#UP}}}}{#insert zTSlp}{#sleep 50}	zTPGTDocTop
+zTPMoveR1w -- TextPad built-in command: WordRightEnd	{#CTRL {#RIGHT}}{#insert zTSlp}{#sleep 1}	zTPMoveR1w
+zTPPaste -- TextPad built-in command: EditPaste	{#CTRL -chars k}{#insert zTSlp}{#sleep 10}	zTPPaste
+zTPSelectAll -- TextPad built-in command: SelectAll	{#CTRL -chars a}{#insert zTSlp}{#sleep 250}	zTPSelectAll
+zTPSelectL1w -- TextPad built-in command: WordLeftExtend	{#insert zTSlp}{#SHIFT {#LEFT}}	zTPSelectL1w
+zTPSelectR1w -- TextPad built-in command: WordRightEndExtend	{#SHIFT {#RIGHT}}{#insert zTSlp}{#sleep 1}	zTPSelectR1w
+zTPToggleWW -- TextPad built-in command: ToggleWordWrap	{#CTRL {#F7}}{#insert zTSlp}{#sleep 25}	zTPToggleWW

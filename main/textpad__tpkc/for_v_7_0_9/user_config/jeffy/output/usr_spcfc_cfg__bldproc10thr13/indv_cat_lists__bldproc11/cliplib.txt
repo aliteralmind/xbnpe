@@ -1,0 +1,13 @@
+ClipClose
+ClipCopy
+ClipDeleteBook
+ClipDeleteEntry
+ClipEditBook
+ClipInsert
+ClipNewBook
+ClipPaste
+ClipRefresh
+ClipRenameBook
+ClipRenameEntry
+ClipSaveBook
+ClipSortEntries

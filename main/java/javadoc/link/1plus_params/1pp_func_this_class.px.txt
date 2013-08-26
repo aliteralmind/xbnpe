@@ -1,0 +1,16 @@
+fkg -- Function linK from at-least-1-param-siGnature b4 cursor. Func in THIS class	{#insert zzjlCodeOffPrekOff}{#insert zzjlPRPCutSaveFuncNmIsL1wirFileIsEmpty}{#insert zzjlDirIsEmpty}{#insert zzjlDispFuncPAPAreUrlP_MSTR_dapnUrlParamsDaptPAP}	fkg
+fkgc -- fkg, CODE-d	{#insert zzjlCodeOnPrekOff}{#insert zzjlPRPCutSaveFuncNmIsL1wirFileIsEmpty}{#insert zzjlDirIsEmpty}{#insert zzjlDispFuncPAPAreUrlP_MSTR_dapnUrlParamsDaptPAP}	fkgc
+fkgp -- fkg, no post-</A> params	{#insert zzjlCodeOffPrekOff}{#insert zzjlPRPCutSaveFuncNmIsL1wirFileIsEmpty}{#insert zzjlDirIsEmpty}{#insert zzjlDispFuncPAPES_MSTR_dapnUrlParams}	fkgp
+fkgv -- fkg, with post-</A> params type-abbreViations	{#insert zzjlCodeOffPrekOff}{#insert zzjlPRPCutSaveFuncNmIsL1wirFileIsEmpty}{#insert zzjlDirIsEmpty}{#insert zzjlDispFuncPAPAreUrlP_MSTR_dapnUrlParamsDapnvPAP}	fkgv
+fkgvc -- fkgv, CODE-d	{#insert zzjlCodeOnPrekOff}{#insert zzjlPRPCutSaveFuncNmIsL1wirFileIsEmpty}{#insert zzjlDirIsEmpty}{#insert zzjlDispFuncPAPAreUrlP_MSTR_dapnUrlParamsDapnvPAP}	fkgvc
+fkgy -- fkg, no displaY (x-mark only)	{#insert zzjlCodeOffPrekOff}{#insert zzjlPRPCutSaveFuncNmIsL1wirFileIsEmpty}{#insert zzjlDirIsEmpty}{#insert zzjlDispXPAPES_MSTR_daptUrlParamsPAPES}	fkgy
+fkp -- Func linK from AT-LEAST-ONE-PARAM params b4 cursor. Func-name=x-mark	{#insert zzjlCodeOffPrekOff}{#insert zzjlPRPCutSaveFuncNmIsX}{#insert zzjlDirFileIsEmpty}{#insert zzjlDispFuncPAPAreUrlP_MSTR_dapnUrlParamsDaptPAP}	fkp
+fkpb -- fkp, func-name in clipBoard	{#insert zzjlCodeOnPrekOff}{#insert zzjlFuncObjNmIsCB}{#insert zzjlPRPCutSave}{#insert zzjlDirFileIsEmpty}{#insert zzjlDispFuncPAPAreUrlP_MSTR_dapnUrlParamsDaptPAP}	fkpb
+fkpby -- fkpb, displaY nothing (just x-mark)	{#insert zzjlCodeOffPrekOff}{#insert zzjlFuncObjNmIsCB}{#insert zzjlPRPCutSaveDirFileIsEmpty}{#insert zzjlDispXPAPES_MSTR_daptUrlParamsPAPES}	fkpby
+fkpc -- fkp, CODE-d	{#insert zzjlCodeOnPrekOff}{#insert zzjlPRPCutSaveFuncNmIsX}{#insert zzjlDirFileIsEmpty}{#insert zzjlDispFuncPAPAreUrlP_MSTR_dapnUrlParamsDaptPAP}	fkpc
+fkpp -- fkp, no post-</A> params	{#insert zzjlCodeOnPrekOff}{#insert zzjlPRPCutSaveFuncNmIsX}{#insert zzjlDirFileIsEmpty}{#insert zzjlDispFuncPAPES_MSTR_dapnUrlParams}	fkpp
+fkppb -- fkpb, no post-</A> params	{#insert zzjlCodeOnPrekOff}{#insert zzjlFuncObjNmIsCB}{#insert zzjlPRPCutSave}{#insert zzjlDirFileIsEmpty}{#insert zzjlDispFuncPAPES_MSTR_dapnUrlParams}	fkppb
+fkpv -- fkp, post-</A> params type-abbreViations	{#insert zzjlCodeOffPrekOff}{#insert zzjlPRPCutSaveFuncNmIsX}{#insert zzjlDirFileIsEmpty}{#insert zzjlDispFuncPAPAreUrlP_MSTR_dapnUrlParamsDapnvPAP}	fkpv
+fkpvc -- fkpv, CODE-d	{#insert zzjlCodeOnPrekOff}{#insert zzjlPRPCutSaveFuncNmIsX}{#insert zzjlDirFileIsEmpty}{#insert zzjlDispFuncPAPAreUrlP_MSTR_dapnUrlParamsDapnvPAP}	fkpvc
+fkpy -- fkp, no displaY (x-mark only)	{#insert zzjlCodeOffPrekOff}{#insert zzjlPRPCutSaveDirFileIsEmpty}{#insert zzjlDispXPAPES_MSTR_daptUrlParamsPAPES}	fkpy
+fkpyb -- fkp, displaY in clipBoard	{#insert zzjlCodeOffPrekOff}{#insert zzjlDispCB}{#insert zzjlPRPCutSaveDirFileIsEmpty}{#insert zzjlPAParamsEmpty}{#insert zzjlFuncLink_MSTR_dapnUrlParamsPAPES}	fkpyb

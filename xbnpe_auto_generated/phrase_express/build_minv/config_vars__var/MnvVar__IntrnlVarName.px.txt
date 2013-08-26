@@ -1,0 +1,13 @@
+__**WARNING**__: All phrases in this folder were created by 'plpdcf'. DO NOT EDIT.	.		(*Extra tab to allow for empty-string autotext*)
+zvVAR_IVAR_NAME_sfKey	{#SETPHRASE -description zvVAR_IVAR_NAME -content {#insert zzMnvVarVivn_cfgValue_M_key} -autotext zvVAR_IVAR_NAME -folder ctvv_folder}	zvVAR_IVAR_NAME_sfKey
+zzMnvVarVivn_cfgValue_M_key	{#insert {#insert zzMnvVarVivn_cfgVarPhrsName_M_key}}	zzMnvVarVivn_cfgValue_M_key
+zzMnvVarIntrnlVarName_cvtFromAbrv1C	Vivn	zzMnvVarIntrnlVarName_cvtFromAbrv1C
+zzMnvVarVivn_cfgVarPNmPost	IntrnlVarName	zzMnvVarVivn_cfgVarPNmPost
+zzMnvVarVivn_intrnlVarNm	zvVAR_IVAR_NAME	zzMnvVarVivn_intrnlVarNm
+zzMnvVarVivn_cfgVarPhrsName_M_key	zz{#insert zzMnvVarProjectAbrv1C}{#insert zzMnvVarDataTypeAbrv1C}{#insert zvVAR_PNMV_1C}{#insert zzMnvVarVivn_cfgVarPNmPost}	zzMnvVarVivn_cfgVarPhrsName_M_key
+zzMnvVarVivn_helpForDlg	The full internal_only variable_name for this MINV_Variable. It is recommended that this start with 'zv' and end with all_caps words divided by underscores.	zzMnvVarVivn_helpForDlg
+zzMnvVarVivn_valuePrintable	yes	zzMnvVarVivn_valuePrintable
+zzMnvVarVivn_validateValuePhrsNm		zzMnvVarVivn_validateValuePhrsNm
+zzMnvVarVivn_nkcvListNum	1	zzMnvVarVivn_nkcvListNum
+zzMnvVarVivn_keyCVTFromAbrv1C	{#insert zzMnvVarPrivKeyCVTFromAbrv1C}	zzMnvVarVivn_keyCVTFromAbrv1C
+zvCVT_FRMV_1C_stMnvVarVivn	{#SETPHRASE -description zvCVT_FRMV_1C -content {#insert zzMnvVarIntrnlVarName_cvtFromAbrv1C} -autotext zvCVT_FRMV_1C -folder ctvv_folder}	zvCVT_FRMV_1C_stMnvVarVivn

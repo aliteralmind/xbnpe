@@ -1,0 +1,8 @@
+QUOTE -- zQUOTE	{#NONE -chars '}{#insert zTSlp}	zQUOTE
+Alt+QUOTE -- zApQUOTE	{#ALT -chars '}{#insert zTSlp}	zApQUOTE
+Alt+Shift+QUOTE -- zASpQUOTE	{#ALT {#SHIFT -chars '}}{#insert zTSlp}	zASpQUOTE
+Ctrl+QUOTE -- zCpQUOTE	{#CTRL -chars '}{#insert zTSlp}	zCpQUOTE
+Ctrl+Alt+QUOTE -- zCApQUOTE	{#CTRL {#ALT -chars '}}{#insert zTSlp}	zCApQUOTE
+Ctrl+Alt+Shift+QUOTE -- zCASpQUOTE	{#CTRL {#ALT {#SHIFT -chars '}}}{#insert zTSlp}	zCASpQUOTE
+Ctrl+Shift+QUOTE -- zCSpQUOTE	{#CTRL {#SHIFT -chars '}}{#insert zTSlp}	zCSpQUOTE
+Shift+QUOTE -- zSpQUOTE	{#SHIFT -chars '}{#insert zTSlp}	zSpQUOTE

@@ -1,0 +1,8 @@
+zRplcBtnNext2	{#insert zRplcBtnNext}{#insert zRplcBtnNext}	zRplcBtnNext2
+zRplcBtnNext3	{#insert zRplcBtnNext2}{#insert zRplcBtnNext}	zRplcBtnNext3
+zRplcBtnNext4	{#insert zRplcBtnNext3}{#insert zRplcBtnNext}	zRplcBtnNext4
+zRplcBtnNext5	{#insert zRplcBtnNext4}{#insert zRplcBtnNext}	zRplcBtnNext5
+zRplcBtnNext_M_rnxtc -- Needs zvRPLC_NXT_CNT	{#LOOP {#insert zRplcBtnNext} -count {#insert zvRPLC_NXT_CNT}}	zRplcBtnNext_M_rnxtc
+zRplcBtnNextClose	{#insert zRplcBtnNext}{#insert zRplcDlgClose}	zRplcBtnNextClose
+
+zRplcBtnFindThenRplc -- btn-find, btn-rplc (for rplc next only)	{#insert zRplcBtnFind}{#insert zRplcBtnRplc}	zRplcBtnFindThenRplc

@@ -1,0 +1,13 @@
+__**WARNING**__: All phrases in this folder were created by 'plpdcf'. DO NOT EDIT.	.		(*Extra tab to allow for empty-string autotext*)
+zvACTIONS_ON_sfKey	{#SETPHRASE -description zvACTIONS_ON -content {#insert zzMnvCmdActon_cfgValue_M_key} -autotext zvACTIONS_ON -folder ctvv_folder}	zvACTIONS_ON_sfKey
+zzMnvCmdActon_cfgValue_M_key	{#insert {#insert zzMnvCmdActon_cfgVarPhrsName_M_key}}	zzMnvCmdActon_cfgValue_M_key
+zzMnvCmdActions_on_cvtFromAbrv1C	Acton	zzMnvCmdActions_on_cvtFromAbrv1C
+zzMnvCmdActon_cfgVarPNmPost	Actions_on	zzMnvCmdActon_cfgVarPNmPost
+zzMnvCmdActon_intrnlVarNm	zvACTIONS_ON	zzMnvCmdActon_intrnlVarNm
+zzMnvCmdActon_cfgVarPhrsName_M_key	zz{#insert zzMnvCmdProjectAbrv1C}{#insert zzMnvCmdDataTypeAbrv1C}{#insert zvCMD_PNMV_1C}{#insert zzMnvCmdActon_cfgVarPNmPost}	zzMnvCmdActon_cfgVarPhrsName_M_key
+zzMnvCmdActon_helpForDlg	If action~phrases should be printed, set this to 'on'. Otherwise ''.	zzMnvCmdActon_helpForDlg
+zzMnvCmdActon_valuePrintable	yes	zzMnvCmdActon_valuePrintable
+zzMnvCmdActon_validateValuePhrsNm		zzMnvCmdActon_validateValuePhrsNm
+zzMnvCmdActon_nkcvListNum	2	zzMnvCmdActon_nkcvListNum
+zzMnvCmdActon_keyCVTFromAbrv1C	{#insert zzMnvCmdPrivKeyCVTFromAbrv1C}	zzMnvCmdActon_keyCVTFromAbrv1C
+zvCVT_FRMV_1C_stMnvCmdActon	{#SETPHRASE -description zvCVT_FRMV_1C -content {#insert zzMnvCmdActions_on_cvtFromAbrv1C} -autotext zvCVT_FRMV_1C -folder ctvv_folder}	zvCVT_FRMV_1C_stMnvCmdActon

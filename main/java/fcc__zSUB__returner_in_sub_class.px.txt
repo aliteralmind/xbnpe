@@ -1,0 +1,46 @@
+zzOribcnpRAW	{#insert zzOribcnpJdbrGTPostSigBody}{#insert zzribcRetSprDtMwgClsFnc}	zzOribcnpRAW
+zzOribcnpnRAW	{#loop {#insert oribcnp}{#insert zDOWN} -count {#input -head How many? -single}}	zzOribcnpnRAW
+zzOribcnpyRAW	{#insert zzOribcnpJdbrGTPostSigBody}{#insert zzribcRetSprDtMwgClsFnc}	zzOribcnpyRAW
+zzOribcnpynRAW	{#loop {#insert oribcnpy}{#insert zDOWN} -count {#input -head How many? -single}}	zzOribcnpynRAW
+zzOribcwpRAW	{#insert zzOribcwpJdbrGTPostSigBody}{#insert zzribcRetSprDtMwgClsFnc}	zzOribcwpRAW
+zzOribcwpnRAW	{#loop {#insert oribcwp}{#insert zDOWN} -count {#input -head How many? -single}}	zzOribcwpnRAW
+zzOribcwpyRAW	{#insert zzOribcwpJdbrGTPostSigBody}{#insert zzribcRetSprDtMwgClsFnc}	zzOribcwpyRAW
+zzOribcwpynRAW	{#loop {#insert oribcwpy}{#insert zDOWN} -count {#input -head How many? -single}}	zzOribcwpynRAW
+zzScribcnpRAW	{#insert zzribcNPJdbrtGTPostSigBody}{#insert zzribcRtCastSprDtMwgRtThisClsFnc}	zzScribcnpRAW
+zzScribcnpnRAW	{#loop {#insert sribcnp}{#insert zDOWN} -count {#input -head How many? -single}}	zzScribcnpnRAW
+zzScribcnpyRAW	{#insert zzribcNPJdbryGTPostSigBody}{#insert zzribcRtCastSprDtMwgRtThisClsFnc}	zzScribcnpyRAW
+zzScribcnpynRAW	{#loop {#insert sribcnpy}{#insert zDOWN} -count {#input -head How many? -single}}	zzScribcnpynRAW
+zzScribcwpRAW	{#insert zzribcWPJdbrtGTPostSigBody}{#insert zzribcRtCastSprDtMwgRtThisClsFnc}	zzScribcwpRAW
+zzScribcwpnRAW	{#loop {#insert sribcwp}{#insert zDOWN} -count {#input -head How many? -single}}	zzScribcwpnRAW
+zzScribcwpyRAW	{#insert zzribcWPJdbryGTPostSigBody}{#insert zzribcRtCastSprDtMwgRtThisClsFnc}	zzScribcwpyRAW
+zzScribcwpynRAW	{#loop {#insert sribcwpy}{#insert zDOWN} -count {#input -head How many? -single}}	zzScribcwpynRAW
+zzSribcnpRAW	{#insert zzribcNPJdbrtGTPostSigBody}{#insert zzribcSprDtMwgRtThisClsFnc}	zzSribcnpRAW
+zzSribcnpnRAW	{#loop {#insert sribcnp}{#insert zDOWN} -count {#input -head How many? -single}}	zzSribcnpnRAW
+zzSribcnpyRAW	{#insert zzribcNPJdbryGTPostSigBody}{#insert zzribcSprDtMwgRtThisClsFnc}	zzSribcnpyRAW
+zzSribcnpynRAW	{#loop {#insert sribcnpy}{#insert zDOWN} -count {#input -head How many? -single}}	zzSribcnpynRAW
+zzSribcwpRAW	{#insert zzribcWPJdbrtGTPostSigBody}{#insert zzribcSprDtMwgRtThisClsFnc}	zzSribcwpRAW
+zzSribcwpnRAW	{#loop {#insert sribcwp}{#insert zDOWN} -count {#input -head How many? -single}}	zzSribcwpnRAW
+zzSribcwpyRAW	{#insert zzribcWPJdbryGTPostSigBody}{#insert zzribcSprDtMwgRtThisClsFnc}	zzSribcwpyRAW
+zzSribcwpynRAW	{#loop {#insert sribcwpy}{#insert zDOWN} -count {#input -head How many? -single}}	zzSribcwpynRAW
+zzribcCloseCurlyGTPreNxtSig	{#insert zCY}{#insert zENTER2}{#insert zEND}{#insert zDOWN}	zzribcCloseCurlyGTPreNxtSig
+zzribcJdbrJdrThrJDRTgStart	{#insert gtfc}{#insert zENTER}{#insert zHOME}{#insert zLEFT}/**{#insert zEnterTab}@return  <CODE>{#insert zEnterBksp} **/{#insert zUP}{#insert zEND}	zzribcJdbrJdrThrJDRTgStart
+zzribcJdbrtThrCloseParen	{#insert zzribcJdbrJdrThrJDRTgStart}({#insert mwrtz})	zzribcJdbrtThrCloseParen
+zzribcJdbryThrCloseParen	{#insert zzribcJdbrJdrThrJDRTgStart}({#insert mwryhz}{#insert zRIGHT})	zzribcJdbryThrCloseParen
+zzribcNPJdbPostRetCloseParen	{#insert thisfnz}{#insert flpwrerk}</CODE>{#insert zzribcDelGTPstSigBody}	zzribcNPJdbPostRetCloseParen
+zzribcNPJdbrtGTPostSigBody	{#insert zzribcJdbrtThrCloseParen}{#insert zzribcNPJdbPostRetCloseParen}	zzribcNPJdbrtGTPostSigBody
+zzribcNPJdbryGTPostSigBody	{#insert zzribcJdbryThrCloseParen}{#insert zzribcNPJdbPostRetCloseParen}	zzribcNPJdbryGTPostSigBody
+zzribcDelGTPstSigBody	{#insert zDEL}{#insert zFindOpenDown}{#insert zOY}{#insert zFindBtnNext}{#insert zFindDlgClose}{#insert zRIGHT}{#insert zENTER}	zzribcDelGTPstSigBody
+zzribcRetSprDtMwgClsFnc	return  super.{#insert mwgnl};{#insert zENTER}{#insert zzribcCloseCurlyGTPreNxtSig}	zzribcRetSprDtMwgClsFnc
+zzribcRtCastSprDtMwgRtThisClsFnc	return  ({#insert mwryl})super.{#insert mwgnl};{#insert zENTER}{#insert zzribcCloseCurlyGTPreNxtSig}	zzribcRtCastSprDtMwgRtThisClsFnc
+zzribcSprDtMwgRtThisClsFnc	super.{#insert mwgnl};{#insert zENTER}return  this;{#insert zENTER}{#insert zzribcCloseCurlyGTPreNxtSig}	zzribcSprDtMwgRtThisClsFnc
+zzribcWPJdbPostRetCloseParen	{#insert mwgz}er{#insert fkgprk}</CODE>{#insert zzribcDelGTPstSigBody}	zzribcWPJdbPostRetCloseParen
+zzribcWPJdbrtGTPostSigBody	{#insert zzribcJdbrtThrCloseParen}{#insert zzribcWPJdbPostRetCloseParen}	zzribcWPJdbrtGTPostSigBody
+zzribcWPJdbryGTPostSigBody	{#insert zzribcJdbryThrCloseParen}{#insert zzribcWPJdbPostRetCloseParen}	zzribcWPJdbryGTPostSigBody
+zzOribcnpJdbrGTPostSigBody	{#insert zzribcJdbrJdrThrJDRTgStart}{#insert zzribcNPJdbPostRetCloseParen}	zzOribcnpJdbrGTPostSigBody
+zzOribcwpJdbrGTPostSigBody	{#insert zzribcJdbrJdrThrJDRTgStart}{#insert zzribcWPJdbPostRetCloseParen}	zzOribcwpJdbrGTPostSigBody
+
+(*
+   zzribcJdbrtGTPSig[[TAB_GOES_HERE]]{#insert zzribcJdbrtThrCloseParen}{#insert mwgz}{#insert zzFkgrfRAW}{#insert zzribcDelGTPstSigBody}[[TAB_GOES_HERE]]zzribcJdbrtGTPSig
+   zzribcJdbryGTPSig[[TAB_GOES_HERE]]{#insert zzribcJdbryThrCloseParen}{#insert mwgz}{#insert zzFkgrfRAW}{#insert zzribcDelGTPstSigBody}[[TAB_GOES_HERE]]zzribcJdbryGTPSig
+   zzribcJavaRetCastSprDt[[TAB_GOES_HERE]]return  ({#insert thisryl})super.[[TAB_GOES_HERE]]zzribcJavaRetCastSprDt
+*)

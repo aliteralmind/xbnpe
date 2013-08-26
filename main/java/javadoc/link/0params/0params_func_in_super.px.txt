@@ -1,0 +1,8 @@
+flcbr* -- flcb, function in super-class	{#insert zzjlCodeOffPrekOff}{#insert zzFlcbrPostPrek}	flcbr
+flcbrc* -- flcbr, CODE-d	{#insert zzjlCodeOnPrekOff}{#insert zzFlcbrPostPrek}	flcbrc
+flcbry -- flcbr, displaY nothing (just x-mark)	{#insert zzjlFuncNmIsCB}{#insert zzjlZeroParamsFuncLink_MSTR_dispXFileSuperCN}	flcbry
+flpwr* -- flpw, function in super-class	{#insert zzjlCodeOffPrekOff}{#insert zzFlpwrPostPrek}	flpwr*
+flpwrc* -- flpwr, CODE-d	{#insert zzjlCodeOnPrekOff}{#insert zzFlpwrPostPrek}	flpwrc
+flpwry -- flpwr, displaY nothing (just x-mark)	{#insert zzjlFuncNmIsL1w}{#insert zzjlZeroParamsFuncLink_MSTR_dispXFileSuperCN}	flpwry
+flpwryb -- flpwry, displaY in clipBoard	{#insert zzjlDispCBFuncNmIsL1w}{#insert zzjlFileSuperDirPrompt}{#insert zzjlZeroParamsFuncLink_MSTR_dispOther}	flpwryb
+

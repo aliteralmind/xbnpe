@@ -1,0 +1,3 @@
+zzApS50slp	{#insert zApSS}{#sleep 50}	zzApS50slp
+zzApF50slp	{#insert zApFF}{#sleep 50}	zzApF50slp
+zzApE50slp	{#insert zApEE}{#sleep 50}	zzApE50slp

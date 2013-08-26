@@ -1,0 +1,60 @@
+zzZIdxJdlwfNodeType -- DO NOT EDIT	cat	zzZIdxJdlwfNodeType
+zzZIdxJdlwpfuncPNAbrvTC -- DO NOT EDIT	Jdlwf	zzZIdxJdlwpfuncPNAbrvTC
+zzZIdxJdlwfPostfix	jdlwpfunc	zzZIdxJdlwfPostfix
+zzZIdxJdlwfPostTC -- DO NOT EDIT	Jdlwpfunc	zzZIdxJdlwfPostTC
+zzZIdxJdlwfParentTCPost -- LITERAL TEXT, NOT PHRASE CALL	Jdlink	zzZIdxJdlwfParentTCPost
+zzZIdxJdlwfCatNameShort	Create JD Func-Link W/-Param(s)	zzZIdxJdlwfCatNameShort
+zzZIdxJdlwfCatNameLong	Create JavaDoc Function-Link With-Parameter(s): fk[g,p]	zzZIdxJdlwfCatNameLong
+zzZIdxJdlwfChildCountCat	0	zzZIdxJdlwfChildCountCat
+zzZIdxJdlwfChildTCPostsQBLCat -- PHRASE CALLS, NOT LITERAL TEXT		zzZIdxJdlwfChildTCPostsQBLCat
+zzZIdxJdlwfChildCountPset	4	zzZIdxJdlwfChildCountPset
+zzZIdxJdlwfChildTCPostsQBLPset -- PHRASE CALLS, NOT LITERAL TEXT	[{#insert zzZIdxJdlwffxPostfix}][{#insert zzZIdxJdlwffbPostfix}][{#insert zzZIdxJdlwfrPostfix}][{#insert zzZIdxJdlwftPostfix}]	zzZIdxJdlwfChildTCPostsQBLPset
+zzZIdxJdlwfDescription	[fkg.../fkp...] -- Create a lin'K' to a 'F'unction that has at least one parameter, from the si'G'nature, or signature-'P'arameters immediately before the cursor.	zzZIdxJdlwfDescription
+zzZIdxJdlwfXInfo_onff	on	zzZIdxJdlwfXInfo_onff
+zzZIdxJdlwfExtraInfo	{#insert zzAllOptsEntrTb}{#insert zzVFFkgOptBafterFkp}{#insert zzVFFkgOptBafterFkp}{#insert zzVFFkgOptBafterDForFile}{#insert zzVFFkgOptBafterY}{#insert zzVFFkgOptC}{#insert zzVFFkgOptD}{#insert zzVFFkgOptF}{#insert zzVFFkgOptK}{#insert zzVFFkgOptP}{#insert zzVFFkgOptV}{#insert zzVFFkgOptY}{#insert zzVFFkgParamNote}	zzZIdxJdlwfExtraInfo
+
+(*---------------------------------------------------------------------------*)
+zzZIdxJdlwfrNodeType -- DO NOT EDIT	pset	zzZIdxJdlwfrNodeType
+zzZIdxJdlwfsuperPNAbrvTC -- DO NOT EDIT	Jdlwfr	zzZIdxJdlwfsuperPNAbrvTC
+zzZIdxJdlwfrPostfix	jdlwfsuper	zzZIdxJdlwfrPostfix
+zzZIdxJdlwfrPostTC -- DO NOT EDIT	Jdlwfsuper	zzZIdxJdlwfrPostTC
+zzZIdxJdlwfrParentTCPost -- LITERAL TEXT, NOT PHRASE CALL	Jdlwparamsfunc	zzZIdxJdlwfrParentTCPost
+zzZIdxJdlwfrSyntax	fkgpr[k] ... fkgr[v][c][k] ... fkp[b]r[v][c][k] ... fkpp[b]r[k]	zzZIdxJdlwfrSyntax
+zzZIdxJdlwfrDescription	Create a lin'K' to a 'F'unction in the supe'R'-class, from the si'G'nature, or signature-'P'arameters immediately before the cursor.	zzZIdxJdlwfrDescription
+zzZIdxJdlwfrXInfo_onff	on	zzZIdxJdlwfrXInfo_onff
+zzZIdxJdlwfrExtraInfo	{#insert zzAllOptsEntrTb}{#insert zzVFFkgOptBafterFkp}{#insert zzVFFkgOptC}{#insert zzVFFkgOptK}-R- (as follows 'fkg[p[p]][b]'){#insert zzVFFkgOptREntrTbBody}{#insert zzVFFkgOptV}{#insert zzVFFkgParamNote}{#insert zzPhraseFileNameFooter}{#insert zXPROOT_DIR_jdLink}1pp_func_super_class.px.txt	zzZIdxJdlwfrExtraInfo
+
+(*---------------------------------------------------------------------------*)
+zzZIdxJdlwftNodeType -- DO NOT EDIT	pset	zzZIdxJdlwftNodeType
+zzZIdxJdlwfthisPNAbrvTC -- DO NOT EDIT	Jdlwft	zzZIdxJdlwfthisPNAbrvTC
+zzZIdxJdlwftPostfix	jdlwfthis	zzZIdxJdlwftPostfix
+zzZIdxJdlwftPostTC -- DO NOT EDIT	Jdlwfthis	zzZIdxJdlwftPostTC
+zzZIdxJdlwftParentTCPost -- LITERAL TEXT, NOT PHRASE CALL	Jdlwparamsfunc	zzZIdxJdlwftParentTCPost
+zzZIdxJdlwftSyntax	fkg[v][c] ... fkg[p,y] ... fkp[b[y],y[b]] ... fkp[[c,p[b],v[c]]]	zzZIdxJdlwftSyntax
+zzZIdxJdlwftDescription	Create a lin'K' to a 'F'unction in THIS class, from the si'G'nature, or signature-'P'arameters immediately before the cursor.	zzZIdxJdlwftDescription
+zzZIdxJdlwftXInfo_onff	on	zzZIdxJdlwftXInfo_onff
+zzZIdxJdlwftExtraInfo	{#insert zzAllOptsEntrTb}{#insert zzVFFkgOptBafterFkp}{#insert zzVFFkgOptC}{#insert zzVFFkgOptK}{#insert zzVFFkgOptV}{#insert zzVFFkgOptY}{#insert zzVFFkgParamNote}{#insert zzPhraseFileNameFooter}{#insert zXPROOT_DIR_jdLink}1pp_func_this_class.px.txt	zzZIdxJdlwftExtraInfo
+
+(*---------------------------------------------------------------------------*)
+zzZIdxJdlwffxNodeType -- DO NOT EDIT	pset	zzZIdxJdlwffxNodeType
+zzZIdxJdlwfuncfilexPNAbrvTC -- DO NOT EDIT	Jdlwffx	zzZIdxJdlwfuncfilexPNAbrvTC
+zzZIdxJdlwffxPostfix	jdlwfuncfilex	zzZIdxJdlwffxPostfix
+zzZIdxJdlwffxPostTC -- DO NOT EDIT	Jdlwfuncfilex	zzZIdxJdlwffxPostTC
+zzZIdxJdlwffxParentTCPost -- LITERAL TEXT, NOT PHRASE CALL	Jdlwparamsfunc	zzZIdxJdlwffxParentTCPost
+zzZIdxJdlwffxSyntax	fkgf[v][c][k] ... fkgfy[b] ... fkgpf[k] ... fkp[b]f[v][c][k] ... fkp[bfy,fy[b]] ... fkpp[b]f[k]	zzZIdxJdlwffxSyntax
+zzZIdxJdlwffxDescription	Create a lin'K' to a 'F'unction in another class ('F'ile) in the same directory, from the si'G'nature, or signature-'P'arameters immediately before the cursor. The file-name is set to '{#insert zXmark}'.	zzZIdxJdlwffxDescription
+zzZIdxJdlwffxXInfo_onff	on	zzZIdxJdlwffxXInfo_onff
+zzZIdxJdlwffxExtraInfo	{#insert zzAllOptsEntrTb}{#insert zzVFFkgOptBafterDForDir}{#insert zzVFFkgOptBafterFkp}{#insert zzVFFkgOptBafterY}{#insert zzVFFkgOptC}{#insert zzVFFkgOptD}{#insert zzVFFkgOptK}{#insert zzVFFkgOptP}{#insert zzVFFkgOptV}{#insert zzVFFkgOptY}{#insert zzVFFkgParamNote}{#insert zzPhraseFileNameFooter}{#insert zXPROOT_DIR_jdLink}1pp_func_dir_empty_file_x.px.txt	zzZIdxJdlwffxExtraInfo
+
+(*---------------------------------------------------------------------------*)
+zzZIdxJdlwffbNodeType -- DO NOT EDIT	pset	zzZIdxJdlwffbNodeType
+zzZIdxJdlwffilebPNAbrvTC -- DO NOT EDIT	Jdlwffb	zzZIdxJdlwffilebPNAbrvTC
+zzZIdxJdlwffbPostfix	jdlwffileb	zzZIdxJdlwffbPostfix
+zzZIdxJdlwffbPostTC -- DO NOT EDIT	Jdlwffileb	zzZIdxJdlwffbPostTC
+zzZIdxJdlwffbParentTCPost -- LITERAL TEXT, NOT PHRASE CALL	Jdlwparamsfunc	zzZIdxJdlwffbParentTCPost
+zzZIdxJdlwffbSyntax	fkg[d,f]b[v][c][k] ... fkgfby ... fkgp[d,f]b[k] ... fkpfb[v][c][k] ... fkp[fby,pfb[k]]	zzZIdxJdlwffbSyntax
+zzZIdxJdlwffbDescription	Create a lin'K' to a 'F'unction in another class ('F'ile), either in this, or a different, 'D'irectory (package), from the si'G'nature, or signature-'P'arameters immediately before the cursor. The file-name is in the clip'B'oard. The directory is either prompted for (when 'd' is provided) or empty (when 'fk[[g,p]]f' is provided).	zzZIdxJdlwffbDescription
+zzZIdxJdlwffbXInfo_onff	on	zzZIdxJdlwffbXInfo_onff
+zzZIdxJdlwffbExtraInfo	{#insert zzAllOptsEntrTb}{#insert zzVFFkgOptBafterDForDir}{#insert zzVFFkgOptBafterF}{#insert zzVFFkgOptBafterY}{#insert zzVFFkgOptC}{#insert zzVFFkgOptD}{#insert zzVFFkgOptK}{#insert zzVFFkgOptP}{#insert zzVFFkgOptV}{#insert zzVFFkgOptY}{#insert zzVFFkgParamNote}{#insert zzPhraseFileNameFooter}{#insert zXPROOT_DIR_jdLink}1pp_dir_empty_prompt_file_cb.px.txt	zzZIdxJdlwffbExtraInfo
+
+(*---------------------------------------------------------------------------*)

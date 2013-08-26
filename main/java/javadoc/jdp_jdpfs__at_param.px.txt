@@ -1,0 +1,14 @@
+jdpfs02 -- jdpfs2 (**)	 (*Must call from within the JavaDoc block, and the LAST line in the block (before the close **/) must have the same indentation as desired for the @param-s.*){#SETPHRASE -description zvPARAM_COUNT -content 2 -autotext zvPARAM_COUNT -folder ctvv_folder}{#insert zzJdpfsMSTR}	jdpfs2
+jdpfs03 -- jdpfs3	{#SETPHRASE -description zvPARAM_COUNT -content 3 -autotext zvPARAM_COUNT -folder ctvv_folder}{#insert zzJdpfsMSTR}	jdpfs3
+jdpfs04 -- jdpfs4	{#SETPHRASE -description zvPARAM_COUNT -content 4 -autotext zvPARAM_COUNT -folder ctvv_folder}{#insert zzJdpfsMSTR}	jdpfs4
+jdpfs05 -- jdpfs5	{#SETPHRASE -description zvPARAM_COUNT -content 5 -autotext zvPARAM_COUNT -folder ctvv_folder}{#insert zzJdpfsMSTR}	jdpfs5
+jdpfs06 -- jdpfs6	{#SETPHRASE -description zvPARAM_COUNT -content 6 -autotext zvPARAM_COUNT -folder ctvv_folder}{#insert zzJdpfsMSTR}	jdpfs6
+jdpfs07 -- jdpfs7	{#SETPHRASE -description zvPARAM_COUNT -content 7 -autotext zvPARAM_COUNT -folder ctvv_folder}{#insert zzJdpfsMSTR}	jdpfs7
+jdpfs08 -- jdpfs8	{#SETPHRASE -description zvPARAM_COUNT -content 8 -autotext zvPARAM_COUNT -folder ctvv_folder}{#insert zzJdpfsMSTR}	jdpfs8
+jdpfs09 -- jdpfs9	{#SETPHRASE -description zvPARAM_COUNT -content 9 -autotext zvPARAM_COUNT -folder ctvv_folder}{#insert zzJdpfsMSTR}	jdpfs9
+jdpfs10	{#SETPHRASE -description zvPARAM_COUNT -content 10 -autotext zvPARAM_COUNT -folder ctvv_folder}{#insert zzJdpfsMSTR}	jdpfs10
+jdpfsn	{#SETPHRASE -description zvPARAM_COUNT -content {#input -head Total param count? [2 or greater] -single} -autotext zvPARAM_COUNT -folder ctvv_folder}{#insert zzJdpfsMSTR}	jdpfsn
+zzJdpfsMSTR	{#insert zzJdpfsUGtnjfncUHLEntAtpMwpnzDel}{#loop {#insert zzJdpfsNext} -count {#CALC {#insert zvPARAM_COUNT} - 1 -round 0 -thousands none}}{#insert zMoveR1w}{#insert zDEL}(*delete comma-or-close-paren*)  {#insert zXmark}{#insert zXUp{#insert zvPARAM_COUNT}}	zzJdpfsMSTR
+zzJdpfsUGtnjfncUHLEntAtpMwpnzDel	{#insert zUP}{#insert zjGTNextFunc}{#insert zUP}{#insert zHOME}{#insert zLEFT}{#insert zENTER}@param  {#insert mwpnz} {#insert zLEFT}(*<--spc-lft, so the zRIGHT in zzJdpfsWmr1DelSpcRX doesn't go to the next line.*){#insert zPostBracketGTP}{#insert zDEL}(*delete open paren*)	zzJdpfsUGtnjfncUHLEntAtpMwpnzDel
+zzJdpfsNext	{#insert zzJdpfsWmr1DelSpcRX}{#insert zENTER}@param  (*ends with space*)	zzJdpfsNext
+zzJdpfsWmr1DelSpcRX	{#insert zMoveR1w}{#insert zDEL}(*delete comma-or-close-paren*) {#insert zRIGHT}{#insert zXmark}	zzJdpfsWmr1DelSpcRX

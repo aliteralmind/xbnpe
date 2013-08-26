@@ -1,0 +1,13 @@
+__**WARNING**__: All phrases in this folder were created by 'plpdcf'. DO NOT EDIT.	.		(*Extra tab to allow for empty-string autotext*)
+zvCMD_NAME_POST_NUM_sfKey	{#SETPHRASE -description zvCMD_NAME_POST_NUM -content {#insert zzMnvCmdCmpst_cfgValue_M_key} -autotext zvCMD_NAME_POST_NUM -folder ctvv_folder}	zvCMD_NAME_POST_NUM_sfKey
+zzMnvCmdCmpst_cfgValue_M_key	{#insert {#insert zzMnvCmdCmpst_cfgVarPhrsName_M_key}}	zzMnvCmdCmpst_cfgValue_M_key
+zzMnvCmdNamePostNum_cvtFromAbrv1C	Cmpst	zzMnvCmdNamePostNum_cvtFromAbrv1C
+zzMnvCmdCmpst_cfgVarPNmPost	NamePostNum	zzMnvCmdCmpst_cfgVarPNmPost
+zzMnvCmdCmpst_intrnlVarNm	zvCMD_NAME_POST_NUM	zzMnvCmdCmpst_intrnlVarNm
+zzMnvCmdCmpst_cfgVarPhrsName_M_key	zz{#insert zzMnvCmdProjectAbrv1C}{#insert zzMnvCmdDataTypeAbrv1C}{#insert zvCMD_PNMV_1C}{#insert zzMnvCmdCmpst_cfgVarPNmPost}	zzMnvCmdCmpst_cfgVarPhrsName_M_key
+zzMnvCmdCmpst_helpForDlg	Only used when [Commands_on] 'on'. The portion of the MINV~Command's phrase~name, that exists after the number. For example, '' for 'zTAB#' or 'w' for 'zCopyR#w'. If empty~string is desired, set this to zzEmptyStringMarker='{#insert zOY}#insert zzEmptyStringMarker{#insert zCY}'.	zzMnvCmdCmpst_helpForDlg
+zzMnvCmdCmpst_valuePrintable	yes	zzMnvCmdCmpst_valuePrintable
+zzMnvCmdCmpst_validateValuePhrsNm		zzMnvCmdCmpst_validateValuePhrsNm
+zzMnvCmdCmpst_nkcvListNum	12	zzMnvCmdCmpst_nkcvListNum
+zzMnvCmdCmpst_keyCVTFromAbrv1C	{#insert zzMnvCmdPrivKeyCVTFromAbrv1C}	zzMnvCmdCmpst_keyCVTFromAbrv1C
+zvCVT_FRMV_1C_stMnvCmdCmpst	{#SETPHRASE -description zvCVT_FRMV_1C -content {#insert zzMnvCmdNamePostNum_cvtFromAbrv1C} -autotext zvCVT_FRMV_1C -folder ctvv_folder}	zvCVT_FRMV_1C_stMnvCmdCmpst

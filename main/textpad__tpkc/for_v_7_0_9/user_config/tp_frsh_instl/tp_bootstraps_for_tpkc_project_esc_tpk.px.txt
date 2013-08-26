@@ -1,0 +1,26 @@
+zTPBookmarkCopyAllEsc	\\\{#insert zCASpEE\\\}	zTPBookmarkCopyAllEsc
+zTPBookmarkCopyAllTPKeys	Ctrl+Shift+Alt+E	zTPBookmarkCopyAllTPKeys
+zTPBookmarkCutAllEsc	\\\{#insert zCASpWW\\\}	zTPBookmarkCutAllEsc
+zTPBookmarkCutAllTPKeys	Ctrl+Shift+Alt+W	zTPBookmarkCutAllTPKeys
+zTPBookmarkGTNextEsc	\\\{#insert zF2\\\}\\\{#sleep 100\\\}	zTPBookmarkGTNextEsc
+zTPBookmarkGTNextTPKeys	F2	zTPBookmarkGTNextTPKeys
+zTPBookmarkToggleEsc	\\\{#insert zCpF2\\\}\\\{#sleep 10\\\}	zTPBookmarkToggleEsc
+zTPBookmarkToggleTPKeys	Ctrl+F2	zTPBookmarkToggleTPKeys
+zTPFFindDlgOpenEsc	\\\{#insert zCpF5\\\}\\\{#sleep 50\\\}	zTPFFindDlgOpenEsc
+zTPFFindDlgOpenTPKeys	Ctrl+F5	zTPFFindDlgOpenTPKeys
+zTPFileManagerEsc	\\\{#insert F3\\\}\\\{#sleep 50\\\}	zTPFileManagerEsc
+zTPFileManagerTPKeys	F3	zTPFileManagerTPKeys
+zTPFileOpenEsc	\\\{#insert zCpOO\\\}\\\{#sleep 1750\\\}	zTPFileOpenEsc
+zTPFileOpenTPKeys	Ctrl+O	zTPFileOpenTPKeys
+zTPFileQOpenEsc	\\\{#insert zCSpOO\\\}\\\{#sleep 50\\\}	zTPFileQOpenEsc
+zTPFileQOpenTPKeys	Ctrl+Shift+O	zTPFileQOpenTPKeys
+zTPFindDlgOpenEsc	\\\{#insert zF5\\\}\\\{#sleep 50\\\}	zTPFindDlgOpenEsc
+zTPFindDlgOpenTPKeys	F5	zTPFindDlgOpenTPKeys
+zTPFindNextEsc	\\\{#insert zCpFF\\\}\\\{#sleep 15\\\}	zTPFindNextEsc
+zTPFindNextTPKeys	Ctrl+F	zTPFindNextTPKeys
+zTPGTDlgOpenEsc	\\\{#insert zCpGG\\\}\\\{#sleep 50\\\}	zTPGTDlgOpenEsc
+zTPGTDlgOpenTPKeys	Ctrl+G	zTPGTDlgOpenTPKeys
+zTPPrefsDlgOpenEsc	\\\{#insert zCpQQ\\\}\\\{#sleep 25\\\}\\\{#insert zPP\\\}\\\{#sleep 50\\\}	zTPPrefsDlgOpenEsc
+zTPPrefsDlgOpenTPKeys	Ctrl+Q, P	zTPPrefsDlgOpenTPKeys
+zTPRplcDlgOpenEsc	\\\{#insert zF8\\\}\\\{#sleep 50\\\}	zTPRplcDlgOpenEsc
+zTPRplcDlgOpenTPKeys	F8	zTPRplcDlgOpenTPKeys

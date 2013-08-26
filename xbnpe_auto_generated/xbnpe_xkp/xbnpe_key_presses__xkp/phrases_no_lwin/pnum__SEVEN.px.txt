@@ -1,0 +1,8 @@
+SEVEN -- zSEVEN	{#NONE -chars 7}{#insert zTSlp}	zSEVEN
+Alt+SEVEN -- zApSEVEN	{#ALT -chars 7}{#insert zTSlp}	zApSEVEN
+Alt+Shift+SEVEN -- zASpSEVEN	{#ALT {#SHIFT -chars 7}}{#insert zTSlp}	zASpSEVEN
+Ctrl+SEVEN -- zCpSEVEN	{#CTRL -chars 7}{#insert zTSlp}	zCpSEVEN
+Ctrl+Alt+SEVEN -- zCApSEVEN	{#CTRL {#ALT -chars 7}}{#insert zTSlp}	zCApSEVEN
+Ctrl+Alt+Shift+SEVEN -- zCASpSEVEN	{#CTRL {#ALT {#SHIFT -chars 7}}}{#insert zTSlp}	zCASpSEVEN
+Ctrl+Shift+SEVEN -- zCSpSEVEN	{#CTRL {#SHIFT -chars 7}}{#insert zTSlp}	zCSpSEVEN
+Shift+SEVEN -- zSpSEVEN	{#SHIFT -chars 7}{#insert zTSlp}	zSpSEVEN

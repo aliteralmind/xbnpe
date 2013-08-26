@@ -1,0 +1,4 @@
+zTPToolExplorer -- ToolExplorer (Txplr)	{#insert zApF3}{#sleep 10}	zTPToolExplorer
+zTPSortDlgOpen -- ToolSort (Tsrt)	{#insert zCApF6}{#sleep 10}	zTPSortDlgOpen
+zTPToolStop -- ToolStop (Tstp)	{#insert zCASpXX}{#sleep 10}	zTPToolStop
+zzTpkcAllCmdsWAKcQbl_tools	[ToolExplorer][ToolSort][ToolStop]	zzTpkcAllCmdsWAKcQbl_tools

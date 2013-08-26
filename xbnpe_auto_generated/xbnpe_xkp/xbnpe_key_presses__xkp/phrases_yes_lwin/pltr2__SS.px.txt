@@ -1,0 +1,8 @@
+Alt+LWin+SS -- zALpSS	{#ALT {#LWIN -chars s}}{#insert zTSlp}	zALpSS
+Alt+Shift+LWin+SS -- zASLpSS	{#ALT {#SHIFT {#LWIN -chars s}}}{#insert zTSlp}	zASLpSS
+Ctrl+Alt+LWin+SS -- zCALpSS	{#CTRL {#ALT {#LWIN -chars s}}}{#insert zTSlp}	zCALpSS
+Ctrl+Alt+Shift+LWin+SS -- zCASLpSS	{#CTRL {#ALT {#SHIFT {#LWIN -chars s}}}}{#insert zTSlp}	zCASLpSS
+Ctrl+LWin+SS -- zCLpSS	{#CTRL {#LWIN -chars s}}{#insert zTSlp}	zCLpSS
+Ctrl+Shift+LWin+SS -- zCSLpSS	{#CTRL {#SHIFT {#LWIN -chars s}}}{#insert zTSlp}	zCSLpSS
+LWin+SS -- zLpSS	{#LWIN -chars s}{#insert zTSlp}	zLpSS
+Shift+LWin+SS -- zSLpSS	{#SHIFT {#LWIN -chars s}}{#insert zTSlp}	zSLpSS

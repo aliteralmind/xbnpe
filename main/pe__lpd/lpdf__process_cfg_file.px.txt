@@ -1,0 +1,12 @@
+blanklpdcf -- zBlankLPDConfigFileTemplate ALT KC	{#insert zBlankLPDConfigFileTemplate}	blanklpdcf
+plpdcf -- zProcessLPDConfigFileFull ALT KC	{#insert zProcessLPDConfigFileFull}	plpdcf
+plpdcfm -- zProcessLPDConfigFileMetadataOnly ALT KC	{#insert zProcessLPDConfigFileMetadataOnly}	plpdcfm
+plpdcfmu -- zProcessLPDConfigFileMetadataUtilitiesOnly ALT KC	{#insert zProcessLPDConfigFileMetadataUtilitiesOnly}	plpdcfmu
+plpdcfps -- zProcessLPDConfigFilePhraseSetsOnly ALT KC	{#insert zProcessLPDConfigFilePhraseSetsOnly}	plpdcfps
+plpdcfu -- zProcessLPDConfigFileUtilitiesOnly ALT KC	{#insert zProcessLPDConfigFileUtilitiesOnly}	plpdcfu
+zBlankLPDConfigFileTemplate	{#insert zzInlineCVOutDir}={#insert zENTER}{#insert zzInlineCVPrjAbrv1C}={#insert zENTER}{#insert zzInlineCVDataTypeAbrv1C}={#insert zENTER2}\(*{#insert zzRqdCmtStartPrivKey}*){#insert zENTER2}\(*{#insert zzRqdCmtStartPublicKey}*){#insert zENTER2}\(*{#insert zzRqdCmtStartAllNKVarsBelow}*){#insert zENTER2}\(*{#insert zzRqdCmtStartNonKeyVar}*){#insert zENTER2}	zBlankLPDConfigFileTemplate
+zProcessLPDConfigFileFull	{#insert zvPHRS_SET_ONFF_stOn}{#insert zvMETADATA_ONFF_stOn}{#insert zvUTIL_ONFF_stOn}{#insert zzProcessLPDConfigFile_M_psMdUtlonf}	zProcessLPDConfigFileFull
+zProcessLPDConfigFileMetadataOnly	{#insert zvPHRS_SET_ONFF_stOff}{#insert zvMETADATA_ONFF_stOn}{#insert zvUTIL_ONFF_stOff}{#insert zzProcessLPDConfigFile_M_psMdUtlonf}	zProcessLPDConfigFileMetadataOnly
+zProcessLPDConfigFileMetadataUtilitiesOnly	{#insert zvPHRS_SET_ONFF_stOff}{#insert zvMETADATA_ONFF_stOn}{#insert zvUTIL_ONFF_stOn}{#insert zzProcessLPDConfigFile_M_psMdUtlonf}	zProcessLPDConfigFileMetadataUtilitiesOnly
+zProcessLPDConfigFilePhraseSetsOnly	{#insert zvPHRS_SET_ONFF_stOn}{#insert zvMETADATA_ONFF_stOff}{#insert zvUTIL_ONFF_stOff}{#insert zzProcessLPDConfigFile_M_psMdUtlonf}	zProcessLPDConfigFilePhraseSetsOnly
+zProcessLPDConfigFileUtilitiesOnly	{#insert zvPHRS_SET_ONFF_stOff}{#insert zvMETADATA_ONFF_stOff}{#insert zvUTIL_ONFF_stOn}{#insert zzProcessLPDConfigFile_M_psMdUtlonf}	zProcessLPDConfigFileUtilitiesOnly

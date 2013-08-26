@@ -1,0 +1,1 @@
+zvBTSTRP_PHRS_NM_sfCmd1	{#SETPHRASE -description zvBTSTRP_PHRS_NM -content {#insert zzTpCmdDfltPhrsNm_M_cmd1} -autotext zvBTSTRP_PHRS_NM -folder ctvv_folder}	zvBTSTRP_PHRS_NM_sfCmd1

@@ -1,0 +1,8 @@
+ENTER -- zENTER	{#ENTER}{#insert zTSlp}	zENTER
+Alt+ENTER -- zApENTER	{#ALT {#ENTER}}{#insert zTSlp}	zApENTER
+Alt+Shift+ENTER -- zASpENTER	{#ALT {#SHIFT {#ENTER}}}{#insert zTSlp}	zASpENTER
+Ctrl+ENTER -- zCpENTER	{#CTRL {#ENTER}}{#insert zTSlp}	zCpENTER
+Ctrl+Alt+ENTER -- zCApENTER	{#CTRL {#ALT {#ENTER}}}{#insert zTSlp}	zCApENTER
+Ctrl+Alt+Shift+ENTER -- zCASpENTER	{#CTRL {#ALT {#SHIFT {#ENTER}}}}{#insert zTSlp}	zCASpENTER
+Ctrl+Shift+ENTER -- zCSpENTER	{#CTRL {#SHIFT {#ENTER}}}{#insert zTSlp}	zCSpENTER
+Shift+ENTER -- zSpENTER	{#SHIFT {#ENTER}}{#insert zTSlp}	zSpENTER

@@ -1,0 +1,8 @@
+zTpkcEditDupLineAbrv1C	Edpln	zTpkcEditDupLineAbrv1C
+zTpkcEdplnCmdNameTC	EditDupLine	zTpkcEdplnCmdNameTC
+zTpkcEdplnDfltPhrsNm	zTPDupLine	zTpkcEdplnDfltPhrsNm
+zTpkcEdplnCatForCmdAbrvLC	edit	zTpkcEdplnCatForCmdAbrvLC
+zTpkcEdplnCmdType_mcrTl		zTpkcEdplnCmdType_mcrTl
+zTpkcEdplnIsBtstrp_yes	yes	zTpkcEdplnIsBtstrp_yes
+zTpkcEdplnDfltPostKcSlpMils	10	zTpkcEdplnDfltPostKcSlpMils
+zTpkcEdplnStpsFrmCmdListTop	{#insert zPGDN5}{#insert zDOWN2}	zTpkcEdplnStpsFrmCmdListTop

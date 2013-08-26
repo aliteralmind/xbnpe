@@ -1,0 +1,8 @@
+MM -- zMM	{#NONE -chars m}{#insert zTSlp}	zMM
+Alt+MM -- zApMM	{#ALT -chars m}{#insert zTSlp}	zApMM
+Alt+Shift+MM -- zASpMM	{#ALT {#SHIFT -chars m}}{#insert zTSlp}	zASpMM
+Ctrl+MM -- zCpMM	{#CTRL -chars m}{#insert zTSlp}	zCpMM
+Ctrl+Alt+MM -- zCApMM	{#CTRL {#ALT -chars m}}{#insert zTSlp}	zCApMM
+Ctrl+Alt+Shift+MM -- zCASpMM	{#CTRL {#ALT {#SHIFT -chars m}}}{#insert zTSlp}	zCASpMM
+Ctrl+Shift+MM -- zCSpMM	{#CTRL {#SHIFT -chars m}}{#insert zTSlp}	zCSpMM
+Shift+MM -- zSpMM	{#SHIFT -chars m}{#insert zTSlp}	zSpMM

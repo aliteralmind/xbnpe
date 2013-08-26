@@ -1,0 +1,6 @@
+zENTERN_M_vlnd -(**)- etr[p,q]#, etr[f,[[h,t,r]]m], vlnd[[p,f]]	(*Needs zvLINES_DOWN (var-abrv-lc=vlnd, var-phrs-nm-abrv=Vlnd). This command: (action-name-lc=etr, cmd-phrs-nm-abrv=Etr)*){#LOOP {#ENTER} -count {#insert zvLINES_DOWN}}	zENTERN_M_vlnd
+zENTER1 -- etr[p,q]1	{#ENTER}	zENTER1
+zENTER2 -- etr[p,q]2	{#ENTER -count 2}	zENTER2
+zENTER3 -- etr[p,q]3	{#ENTER -count 3}	zENTER3
+zENTER4 -- etr[p,q]4	{#ENTER -count 4}	zENTER4
+zENTER5 -- etr[p,q]5	{#ENTER -count 5}	zENTER5

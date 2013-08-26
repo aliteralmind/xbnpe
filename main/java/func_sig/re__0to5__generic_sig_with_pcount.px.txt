@@ -1,0 +1,6 @@
+zjreGenericSig_pCount0	{#insert zjreSetPCountPost_0}{#insert zjreGenericSig_pCountMASTER}	zjreGenericSig_pCount0
+zjreGenericSig_pCount1	{#insert zjreSetPCountPost_1}{#insert zjreGenericSig_pCountMASTER}	zjreGenericSig_pCount1
+zjreGenericSig_pCount2	{#insert zjreSetPCountPost_2}{#insert zjreGenericSig_pCountMASTER}	zjreGenericSig_pCount2
+zjreGenericSig_pCount3	{#insert zjreSetPCountPost_3}{#insert zjreGenericSig_pCountMASTER}	zjreGenericSig_pCount3
+zjreGenericSig_pCount4	{#insert zjreSetPCountPost_4}{#insert zjreGenericSig_pCountMASTER}	zjreGenericSig_pCount4
+zjreGenericSig_pCount5	{#insert zjreSetPCountPost_5}{#insert zjreGenericSig_pCountMASTER}	zjreGenericSig_pCount5

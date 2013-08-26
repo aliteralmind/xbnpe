@@ -1,0 +1,21 @@
+
+zAReallyLongPhrase
+{#insert zHOME}
+{#insert zUP}
+{#insert zDOWN}
+{#insert zUP}
+{#insert zDOWN}
+{#insert zHOME}
+{#insert zEND}
+{#insert zHOME}
+{#insert zDOWN}
+{#insert zUP}
+{#insert zDOWN}
+{#insert zHOME}
+{#insert zHOME}
+{#insert zDOWN}
+{#insert zUP}
+{#insert zDOWN}
+{#insert zEND}
+{#insert zEND}
+

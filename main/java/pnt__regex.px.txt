@@ -1,0 +1,21 @@
+impwj	{#insert zImportPW1of2}java.util.regex.{#insert zImportPW2of2}	impwjur
+jqur	java.util.regex.	jqur
+jqurm	java.util.regex.Matcher	jqurm
+jqurmc	java.util.regex.Matcher, (*ends with space*)	jqurmc
+jqurp	java.util.regex.Pattern	jqurp
+jqurpc	java.util.regex.Pattern, (*ends with space*)	jqurpc
+jqurx	java.util.regex.{#insert zXDown}	jqurx
+jqurx10	{#insert jqurx9}{#insert jqurx}	jqurx10
+jqurx2	{#insert jqurx}{#insert jqurx}	jqurx2
+jqurx3	{#insert jqurx2}{#insert jqurx}	jqurx3
+jqurx4	{#insert jqurx3}{#insert jqurx}	jqurx4
+jqurx5	{#insert jqurx4}{#insert jqurx}	jqurx5
+jqurx6	{#insert jqurx5}{#insert jqurx}	jqurx6
+jqurx7	{#insert jqurx6}{#insert jqurx}	jqurx7
+jqurx8	{#insert jqurx7}{#insert jqurx}	jqurx8
+jqurx9	{#insert jqurx8}{#insert jqurx}	jqurx9
+jqurxn	{#loop {#insert jqurx} -count {#insert zUserInpHMW1}}	jqurxn
+jp -- Pattern	Pattern	jp
+jap -- Pattern_	Pattern (*ends with space*)	jap
+jm -- Matcher	Matcher	jm
+jam -- Matcher_	Matcher (*ends with space*)	jam

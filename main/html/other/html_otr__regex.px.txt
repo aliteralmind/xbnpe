@@ -1,0 +1,4 @@
+xhreTag	<[^>]+>	xhreTag
+hrtag -- xhreTag ALT KC	{#insert xhreTag}	hrtag
+hrtage -- hrtag, tick RE find-dialog flag	{#insert hrtag}{#insert zFindFlagRETgl}	hrtage
+renfk -- REGEX for a Non-Function linK	(**)	(*Non-function meaning the first url-char is not a #. This requires match-case to be OFF!*)f={#asc 34}[^#]	renfk

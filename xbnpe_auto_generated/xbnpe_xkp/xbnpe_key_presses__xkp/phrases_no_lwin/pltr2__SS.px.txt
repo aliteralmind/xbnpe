@@ -1,0 +1,8 @@
+SS -- zSS	{#NONE -chars s}{#insert zTSlp}	zSS
+Alt+SS -- zApSS	{#ALT -chars s}{#insert zTSlp}	zApSS
+Alt+Shift+SS -- zASpSS	{#ALT {#SHIFT -chars s}}{#insert zTSlp}	zASpSS
+Ctrl+SS -- zCpSS	{#CTRL -chars s}{#insert zTSlp}	zCpSS
+Ctrl+Alt+SS -- zCApSS	{#CTRL {#ALT -chars s}}{#insert zTSlp}	zCApSS
+Ctrl+Alt+Shift+SS -- zCASpSS	{#CTRL {#ALT {#SHIFT -chars s}}}{#insert zTSlp}	zCASpSS
+Ctrl+Shift+SS -- zCSpSS	{#CTRL {#SHIFT -chars s}}{#insert zTSlp}	zCSpSS
+Shift+SS -- zSpSS	{#SHIFT -chars s}{#insert zTSlp}	zSpSS

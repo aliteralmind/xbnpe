@@ -1,0 +1,8 @@
+zTpkcHelpWWWAbrv1C	Hwww	zTpkcHelpWWWAbrv1C
+zTpkcHwwwCmdNameTC	HelpWWW	zTpkcHwwwCmdNameTC
+zTpkcHwwwDfltPhrsNm	zTPHelpWWW	zTpkcHwwwDfltPhrsNm
+zTpkcHwwwCatForCmdAbrvLC	help	zTpkcHwwwCatForCmdAbrvLC
+zTpkcHwwwCmdType_mcrTl		zTpkcHwwwCmdType_mcrTl
+zTpkcHwwwIsBtstrp_yes		zTpkcHwwwIsBtstrp_yes
+zTpkcHwwwDfltPostKcSlpMils	1000	zTpkcHwwwDfltPostKcSlpMils
+zTpkcHwwwStpsFrmCmdListTop	{#insert zEND}	zTpkcHwwwStpsFrmCmdListTop

@@ -1,0 +1,7 @@
+zTpkcSearchAbrvLC	search	zTpkcSearchAbrvLC
+zTpkcSearchAllCmdNamesTCQbl	[BookmarkClearAll][BookmarkInvertAll][BookmarkNext][BookmarkPrev][BookmarkToggle][IncrementalFind][IncrementalFindNext][IncrementalFindPrev][MatchBracket][MatchBracketExtend][MatchCaseClear][MatchCaseSet][MatchWordClear][MatchWordSet][RegexClear][RegexSet][SearchFiles][SearchFind][SearchFindNext][SearchFindPrevious][SearchGoto][SearchJumpNext][SearchJumpPrev][SearchOpenAll][SearchReplace][SearchReplaceNext]	zTpkcSearchAllCmdNamesTCQbl
+zTpkcSearchCmdCount	26	zTpkcSearchCmdCount
+zTpkcSearchHasUserCrtdCmds_yes		zTpkcSearchHasUsrCrtdCmds_yes
+zTpkcSearchStpsFrmCatListTop	{#insert zSS}{#insert z5ThnTSlp}	zTpkcSearchStpsFrmCatListTop
+zTpkcSearchNameLC	search	zTpkcSearchNameLC
+

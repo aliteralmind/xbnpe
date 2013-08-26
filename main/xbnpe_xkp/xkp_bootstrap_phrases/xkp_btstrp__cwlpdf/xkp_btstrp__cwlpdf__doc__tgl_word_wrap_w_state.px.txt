@@ -1,0 +1,25 @@
+tw -- zToggleWW ALT KC [zApF7]	{#insert zToggleWW}{#insert zzWWSyn}	tw
+twh -- zToggleWWHome [zF7]	{#insert zToggleWWHome}{#insert zzWWSyn}	twh
+twp -- Phrase: zToggleWW	\\\{#insert zToggleWW\\\}{#insert zzWWSyn}	twp
+wf -- zzvWORD_WRAP_ON_stOff ALT KC	{#insert zzvWORD_WRAP_ON_stOff}{#insert zzWWSyn}	wf
+wn -- zzvWORD_WRAP_ON_stOn ALT KC	{#insert zzvWORD_WRAP_ON_stOn}{#insert zzWWSyn}	wn
+wt -- zzvWORD_WRAP_ON_stOn ALT KC	{#insert zzWWSyn}	wt
+zConfirmWWStatePrompt	{#MSGBOX -head Is word-wrap on? -text Is word-wrap currently on? -yes zzvWORD_WRAP_ON_stOn -no zzvWORD_WRAP_ON_stOff}	zConfirmWWStatePrompt
+zRevertWWToOrigState	{#insert {#COND -if {#insert zvWW_ORIG_STATE} = on -then zWordWrapOn -else zWordWrapOff}}	zRevertWWToOrigState
+zSetWWStateToTPTxtDefault -- zzvWORD_WRAP_ON_stTPTxtDefault ALT KC	{#insert zzvWORD_WRAP_ON_stTPTxtDefault}	zSetWWStateToTPTxtDefault
+zToggleWW -- zToggleWWAndState_M_wwo ALT KC	{#insert zToggleWWAndState_M_wwo}	zToggleWW
+zToggleWWAndState_M_wwo	{#insert zTPToggleWW}{#insert {#COND -if {#insert zvWORD_WRAP_ON} = on -then zzvWORD_WRAP_ON_stOff -else zzvWORD_WRAP_ON_stOn}}	zToggleWWAndState_M_wwo
+zToggleWWHome	{#insert zToggleWW}{#HOME}	zToggleWWHome
+zWordWrapOff -- Needs zvWORD_WRAP_ON	{#insert {#COND -if {#insert zvWORD_WRAP_ON} = on -then zToggleWWSetStateToOff -else z1slp}}	zWordWrapOff
+zWordWrapOffFromTPDfltState -- zSetWWStateToTPTxtDefault, zWordWrapOff	{#insert zSetWWStateToTPTxtDefault}{#insert zWordWrapOff}	zWordWrapOffFromTPDfltState
+zWordWrapOffSaveState -- Needs zvWORD_WRAP_ON	{#insert zvWW_ORIG_STATE_stWwon}{#insert zWordWrapOff}	zWordWrapOffSaveState
+zWordWrapOn -- Needs zvWORD_WRAP_ON	{#insert {#COND -if {#insert zvWORD_WRAP_ON} = on -then z1slp -else zToggleWWSetStateToOn}}	zWordWrapOn
+zWordWrapOnFromTPDfltState -- zSetWWStateToTPTxtDefault, zWordWrapOn	{#insert zSetWWStateToTPTxtDefault}{#insert zWordWrapOn}	zWordWrapOnFromTPDfltState
+zWordWrapOnSaveState -- Needs zvWORD_WRAP_ON	{#insert zvWW_ORIG_STATE_stWwon}{#insert zWordWrapOn}	zWordWrapOnSaveState
+zvWW_ORIG_STATE_stWwon -- Needs zvWORD_WRAP_ON	{#SETPHRASE -description zvWW_ORIG_STATE -content {#insert zvWORD_WRAP_ON} -autotext zvWW_ORIG_STATE -folder ctvv_folder}	zvWW_ORIG_STATE_stWwon
+zToggleWWSetStateToOff	{#insert zTPToggleWW}{#insert zzvWORD_WRAP_ON_stOff}	zToggleWWSetStateToOff
+zToggleWWSetStateToOn	{#insert zTPToggleWW}{#insert zzvWORD_WRAP_ON_stOn}	zToggleWWSetStateToOn
+zzWWSyn	{#BALLOON -title Word~Wrap is currently *O{#COND -if {#insert zvWORD_WRAP_ON} = on -then N -else FF}* -text tw[[h,p]] ~~ (toggle, [h]=then home, [p]=phrase~creator)  //  w[n,f,t] ~~ (State: on, off, get)  //  zvWORD_WRAP_ON='{#insert zvWORD_WRAP_ON}'  //  State check count: {#insert zvCURR_WW_RCHK_CNT}/{#insert zvWW_RCHK_CNT} (swwrc)}	zzWWSyn
+zzvWORD_WRAP_ON_stOff -(**)- 'off' is signified by the empty-string: '' (*nothing*)	(*Also resets zvCURR_WW_RCHK_CNT*){#SETPHRASE -description zvWORD_WRAP_ON -content -autotext zvWORD_WRAP_ON -folder ctvv_folder}{#insert zvCURR_WW_RCHK_CNT_st0}	zzvWORD_WRAP_ON_stOff
+zzvWORD_WRAP_ON_stOn -- Also resets zvCURR_WW_RCHK_CNT	{#SETPHRASE -description zvWORD_WRAP_ON -content on -autotext zvWORD_WRAP_ON -folder ctvv_folder}{#insert zvCURR_WW_RCHK_CNT_st0}	zzvWORD_WRAP_ON_stOn
+zzvWORD_WRAP_ON_stTPTxtDefault -- Also resets zvCURR_WW_RCHK_CNT	{#SETPHRASE -description zvWORD_WRAP_ON -content {#insert zzTPTxtDefaultWordWrapOnOrES}{#insert zvCURR_WW_RCHK_CNT_st0} -autotext zvWORD_WRAP_ON -folder ctvv_folder}	zzvWORD_WRAP_ON_stTPTxtDefault

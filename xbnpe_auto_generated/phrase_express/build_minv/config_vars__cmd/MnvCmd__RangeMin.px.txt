@@ -1,0 +1,13 @@
+__**WARNING**__: All phrases in this folder were created by 'plpdcf'. DO NOT EDIT.	.		(*Extra tab to allow for empty-string autotext*)
+zvCMD_RANGE_MIN_sfKey	{#SETPHRASE -description zvCMD_RANGE_MIN -content {#insert zzMnvCmdCgmin_cfgValue_M_key} -autotext zvCMD_RANGE_MIN -folder ctvv_folder}	zvCMD_RANGE_MIN_sfKey
+zzMnvCmdCgmin_cfgValue_M_key	{#insert {#insert zzMnvCmdCgmin_cfgVarPhrsName_M_key}}	zzMnvCmdCgmin_cfgValue_M_key
+zzMnvCmdRangeMin_cvtFromAbrv1C	Cgmin	zzMnvCmdRangeMin_cvtFromAbrv1C
+zzMnvCmdCgmin_cfgVarPNmPost	RangeMin	zzMnvCmdCgmin_cfgVarPNmPost
+zzMnvCmdCgmin_intrnlVarNm	zvCMD_RANGE_MIN	zzMnvCmdCgmin_intrnlVarNm
+zzMnvCmdCgmin_cfgVarPhrsName_M_key	zz{#insert zzMnvCmdProjectAbrv1C}{#insert zzMnvCmdDataTypeAbrv1C}{#insert zvCMD_PNMV_1C}{#insert zzMnvCmdCgmin_cfgVarPNmPost}	zzMnvCmdCgmin_cfgVarPhrsName_M_key
+zzMnvCmdCgmin_helpForDlg	The minimum number for this MINV~Command. Must be between 1 and [RangeMax], inclusive. Must ALSO be greater~than~or~equal~to the MINV~Variable's [RangeMin].	zzMnvCmdCgmin_helpForDlg
+zzMnvCmdCgmin_valuePrintable	yes	zzMnvCmdCgmin_valuePrintable
+zzMnvCmdCgmin_validateValuePhrsNm		zzMnvCmdCgmin_validateValuePhrsNm
+zzMnvCmdCgmin_nkcvListNum	9	zzMnvCmdCgmin_nkcvListNum
+zzMnvCmdCgmin_keyCVTFromAbrv1C	{#insert zzMnvCmdPrivKeyCVTFromAbrv1C}	zzMnvCmdCgmin_keyCVTFromAbrv1C
+zvCVT_FRMV_1C_stMnvCmdCgmin	{#SETPHRASE -description zvCVT_FRMV_1C -content {#insert zzMnvCmdRangeMin_cvtFromAbrv1C} -autotext zvCVT_FRMV_1C -folder ctvv_folder}	zvCVT_FRMV_1C_stMnvCmdCgmin

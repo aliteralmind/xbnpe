@@ -1,0 +1,6 @@
+(*
+	Additional phrase for ddmenu only: zvNUMBER
+*)
+zvNUMBER_incBy1 -- zvNUMBER=(zvNUMBER + 1)	{#SETPHRASE -description zvNUMBER -content {#CALC {#insert zvNUMBER}+1 -round 0 -thousands none} -autotext zvNUMBER -folder ctvv_folder}	zvNUMBER_incBy1
+zvNUMBER_st0 -- zvNUMBER=0	{#SETPHRASE -description zvNUMBER -content 0 -autotext zvNUMBER -folder ctvv_folder}	zvNUMBER_st0
+zvNUMBER_st1	{#SETPHRASE -description zvNUMBER -content 1 -autotext zvNUMBER -folder ctvv_folder}	zvNUMBER_st1

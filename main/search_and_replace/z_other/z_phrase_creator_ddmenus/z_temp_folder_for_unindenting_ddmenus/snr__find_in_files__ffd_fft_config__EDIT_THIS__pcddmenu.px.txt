@@ -1,0 +1,31 @@
+(*
+*DUPLICATE* this document, unindent every line in it, then import it with the following settings:
+- No prefix
+- Manual confirmation
+**All these phrases must be manually maintained.
+*)
+(*
+Required by phrase-creator-ddmenu-utils...START
+PM_DDMENU_DIR_ID=snr
+Required by phrase-creator-ddmenu-utils...END
+*)
+(*
+FROM
+...\xbnpe\tpkc\tpkc_bootstrap_phrases\zphrase_creator_pop_up_heirarchies\xbnpe_phrase_creator_popup_heirarchy_base.px.txt
+Phrase-creators: XBN-PhraseExpress -- Call 'xh'   .   zXbnpeCmdPopupRoot
+Phrase-creators: Search & replace -- xhs   .   xh
+SNR: Find -- xhsf   .   xhs
+SNR: Find In Files -- xhsfi   .   xhsf*)
+User-config'd directories -- xhsfic (must call from 'In files' field!)	.	xhsfi
+...\macros\	{#insert zTPSelectAll}{#insert zROOT_DIR_XBNPE_PARENT}	xhsfic
+...\macros\xbnpe\	{#insert zTPSelectAll}{#insert zROOT_DIR_XBNPE_MAIN}	xhsfic
+...\macros\xbnpe_auto_generated\	{#insert zTPSelectAll}{#insert zROOT_DIR_XBNPE_AG}	xhsfic
+User-config'd file-types -- xhsfil (must call from 'In folder' field!)	.	xhsfi
+*	{#insert zTPSelectAll}*	xhsfil
+*.java	{#insert zTPSelectAll}*.java	xhsfil
+*.java *.xml	{#insert zTPSelectAll}*.java *.xml	xhsfil
+*.java *.xml {#insert zTPSelectAll}*.html	*.java *.xml *.html	xhsfil
+*.txt	{#insert zTPSelectAll}*.txt	xhsfil
+*.txt *.html	{#insert zTPSelectAll}*.txt *.html	xhsfil
+*.px.txt	{#insert zTPSelectAll}*.px.txt	xhsfil
+*.px.txt *.html	{#insert zTPSelectAll}*.px.txt *.html	xhsfil

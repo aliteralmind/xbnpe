@@ -1,0 +1,18 @@
+zFromPreSigGTPTypeNG1 (**)	(*The first parameter-type immediately follows open paren in the signature. The second follows the next space-comma.*){#insert zFindNextRetTypeThrOpenParen}{#insert zRIGHT}	zFromPreSigGTPTypeNG1
+zFromPreSigGTPTypeNG2	{#insert zzFromPreSigFind1stCmaSpc}{#insert zRIGHT}	zFromPreSigGTPTypeNG2
+zFromPreSigGTPTypeNG3	{#insert zzFromPreSigFind1stCmaSpc}{#insert zFindNextCommaSpace}{#insert zRIGHT}	zFromPreSigGTPTypeNG3
+zFromPreSigGTPTypeNG4	{#insert zzFromPreSigFind1stCmaSpc}{#loop {#insert zFindNextCommaSpace} -count 2}{#insert zRIGHT}	zFromPreSigGTPTypeNG4
+zFromPreSigGTPTypeNG5	{#insert zzFromPreSigFind1stCmaSpc}{#loop {#insert zFindNextCommaSpace} -count 3}{#insert zRIGHT}	zFromPreSigGTPTypeNG5
+zFromPreSigGTPTypeNG6	{#insert zzFromPreSigFind1stCmaSpc}{#loop {#insert zFindNextCommaSpace} -count 4}{#insert zRIGHT}	zFromPreSigGTPTypeNG6
+zFromPreSigGTPTypeNG7	{#insert zzFromPreSigFind1stCmaSpc}{#loop {#insert zFindNextCommaSpace} -count 5}{#insert zRIGHT}	zFromPreSigGTPTypeNG7
+zFromPreSigGTPTypeNG8	{#insert zzFromPreSigFind1stCmaSpc}{#loop {#insert zFindNextCommaSpace} -count 6}{#insert zRIGHT}	zFromPreSigGTPTypeNG8
+zFromPreSigGTPTypeNG9	{#insert zzFromPreSigFind1stCmaSpc}{#loop {#insert zFindNextCommaSpace} -count 7}{#insert zRIGHT}	zFromPreSigGTPTypeNG9
+zFromPreSigGTPTypeNG10	{#insert zzFromPreSigFind1stCmaSpc}{#loop {#insert zFindNextCommaSpace} -count 8}{#insert zRIGHT}	zFromPreSigGTPTypeNG10
+zFromPreSigGTPTypeNGN	{#insert zzFromPreSigFind1stCmaSpc}{#loop {#insert zFindNextCommaSpace} -count {#CALC {#insert zParamNumFromPrompt} - 2 -round 0 -thousands none}}}{#insert zRIGHT}	zFromPreSigGTPTypeNGN
+zFromPreSigSCPTypeNG1	{#insert zFromPreSigGTPTypeNG1}{#insert zSelectR1wCopy}	zFromPreSigSCPTypeNG1
+zFromPreSigSCPTypeNG2	{#insert zFromPreSigGTPTypeNG2}{#insert zSelectR1wCopy}	zFromPreSigSCPTypeNG2
+zFromPreSigSCPTypeNG3	{#insert zFromPreSigGTPTypeNG3}{#insert zSelectR1wCopy}	zFromPreSigSCPTypeNG3
+zFromPreSigSCPTypeNG4	{#insert zFromPreSigGTPTypeNG4}{#insert zSelectR1wCopy}	zFromPreSigSCPTypeNG4
+zFromPreSigSCPTypeNG5	{#insert zFromPreSigGTPTypeNG5}{#insert zSelectR1wCopy}	zFromPreSigSCPTypeNG5
+zFromPreSigSCPTypeNG6	{#insert zFromPreSigGTPTypeNG6}{#insert zSelectR1wCopy}	zFromPreSigSCPTypeNG6
+zFromPreSigSCPTypeNGN	{#insert zFromPreSigGTPTypeNGN}{#insert zSelectR1wCopy}	zFromPreSigSCPTypeNGN

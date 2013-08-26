@@ -1,0 +1,10 @@
+cnthisco	{#insert zVmark}{#insert cnthissco}{#insert zVDownDelete}	cnthisco
+cnsuperco	{#insert zVmark}{#insert cnsupersco}{#insert zVDownDelete}	cnsuperco
+cnsuper -- y-mk, cnsupersco, y-down-paste	{#insert zYmark}{#insert cnsupersco}{#insert zYDownUpPaste}	cnsuper
+cnsuperc -- cnsuper, CODE-d	<CODE>{#insert cnsuper}</CODE>	cnsuperc
+cnsupers -- ztpmJavaSelectSuperClassName ALT KC -- NO y-mk	{#insert ztpmJavaSelectSuperClassName}	cnsupers
+cnsupersco -- cnsupers, zTPCopy -- NO y-mk	{#insert cnsupers}{#insert zTPCopy}	cnsupersco
+cnthis -- y-mk, cnthissc, y-down-paste	{#insert zYmark}{#insert cnthissc}{#insert zYDownUpPaste}	cnthis
+cnthisc -- cnthis, CODE-d	<CODE>{#insert cnthis}</CODE>	cnthisc
+cnthiss -- ztpmJavaSelectThisClassName ALT KC -- NO y-mk	{#insert ztpmJavaSelectThisClassName}	cnthiss
+cnthissco -- cnthiss, zTPCopy -- NO y-mk	{#insert cnthiss}{#insert zTPCopy}	cnthissco

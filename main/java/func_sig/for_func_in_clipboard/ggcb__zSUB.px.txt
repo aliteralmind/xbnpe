@@ -1,0 +1,8 @@
+zjreSetGetSigForFuncInCBForParamCount	{#insert zjreSigForCBFunc_pCount{#insert zvPARAM_COUNT_POST}}	zjreSetGetSigForFuncInCBForParamCount
+zUpGsscgREoff	{#insert zUP}{#insert gsscg}{#insert zFindDlgOpenRETglClose}	zUpGsscgREoff
+zggcbTroubleshootingMsg	{#insert zENTER2}TROUBLESHOOTING{#insert zENTER}If you cancel this process (not by clicking the [Cancel] button, rather by hitting the ESC key), then the RE find-flag will remain on. It needs to be turned off before calling ggcb* (or any search/replace phrase) again.	zggcbTroubleshootingMsg
+zggcbDebuggingMsg (*starts AND ends with space*)	 ***DEBUGGING*** Func-name={#asc 34}{#insert zNameFromCBSigOrCall}{#asc 34}, Param-count={#asc 34}{#insert zvPARAM_COUNT_POST}{#asc 34} //  	zggcbDebuggingMsg
+zggcbKCMoreInfoPreMsg (*ends with space*)	After the cursor is in the correct (java file and) signature line -- [OK/Yes]=Copy sig (& go back (& paste)). // [Cancel]=Go back w/o copying. // {#insert zggcbDebuggingMsg}For more information, call 	zggcbKCMoreInfoPreMsg
+zggcbqGTCutName	{#insert zPostBracketGTP}{#insert zCutL1w}	zggcbqGTCutName
+zMoreInfoTrblPrcdDlgCloseFile	{#insert zggcbTroubleshootingMsg}{#insert zDialogProceed}{#insert zFileCloseDiscardChanges}	zMoreInfoTrblPrcdDlgCloseFile
+zggcbfDefaultJavaDir	{#insert zWIN_ROOT_DIR_xbnJavaSource}	zggcbfDefaultJavaDir

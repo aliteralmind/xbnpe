@@ -1,0 +1,5 @@
+zpcctDeleteInAllMark	__DELETE_IN_ALL__	zpcctDeleteInAllMark
+zrqmDeleteInAllMarks	{#insert zpcctDeleteInAllMark}{#insert zRplcWithNOTHING}	zrqmDeleteInAllMarks
+zpcctDelInAllMarksGoSel	{#insert zRplcDlgSelRE}{#insert zrqmDeleteInAllMarks}{#insert zRplcBtnAllSelHnrREClose}	zpcctDelInAllMarksGoSel
+zpcctDelInAllMarksGoTD	{#insert zRplcDlgTDRE}{#insert zrqmDeleteInAllMarks}{#insert zzRplcBtnAllTDHnrREClose}	zpcctDelInAllMarksGoTD
+zrqmGoTDDeleteInAllMarks	{#insert zrqmDeleteInAllMarks}{#insert zzRplcBtnAllTDHnr}	zrqmGoTDDeleteInAllMarks

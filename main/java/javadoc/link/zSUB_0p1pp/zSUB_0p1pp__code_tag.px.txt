@@ -1,0 +1,8 @@
+zvCODE_END_TAG_stNothing	{#SETPHRASE -description zvCODE_END_TAG -content (*NOTHING*) -autotext zvCODE_END_TAG -folder ctvv_folder}	zvCODE_END_TAG_stNothing
+zvCODE_END_TAG_stOn	{#SETPHRASE -description zvCODE_END_TAG -content </CODE> -autotext zvCODE_END_TAG -folder ctvv_folder}	zvCODE_END_TAG_stOn
+zvCODE_END_TAG_stOnForNoPAP	{#SETPHRASE -description zvCODE_END_TAG -content {#insert zZmark}</CODE> -autotext zvCODE_END_TAG -folder ctvv_folder}	zvCODE_END_TAG_stOnForNoPAP
+zvCODE_OPEN_TAG_stNothing	{#SETPHRASE -description zvCODE_OPEN_TAG -content (*NOTHING*) -autotext zvCODE_OPEN_TAG -folder ctvv_folder}	zvCODE_OPEN_TAG_stNothing
+zvCODE_OPEN_TAG_stOn	{#SETPHRASE -description zvCODE_OPEN_TAG -content <CODE> -autotext zvCODE_OPEN_TAG -folder ctvv_folder}	zvCODE_OPEN_TAG_stOn
+zzjlCodeOff	{#insert zvCODE_OPEN_TAG_stNothing}{#insert zvCODE_END_TAG_stNothing}	zzjlCodeOff
+zzjlCodeOn	{#insert zvCODE_OPEN_TAG_stOn}{#insert zvCODE_END_TAG_stOn}	zzjlCodeOn
+zzjlCodeOnForNPAP	{#insert zvCODE_OPEN_TAG_stOn}{#insert zvCODE_END_TAG_stOnForNoPAP}	zzjlCodeOnForNPAP

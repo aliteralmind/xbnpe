@@ -1,0 +1,8 @@
+Alt+LWin+DEL -- zALpDEL	{#ALT {#LWIN {#DEL}}}{#insert zTSlp}	zALpDEL
+Alt+Shift+LWin+DEL -- zASLpDEL	{#ALT {#SHIFT {#LWIN {#DEL}}}}{#insert zTSlp}	zASLpDEL
+Ctrl+Alt+LWin+DEL -- zCALpDEL	{#CTRL {#ALT {#LWIN {#DEL}}}}{#insert zTSlp}	zCALpDEL
+Ctrl+Alt+Shift+LWin+DEL -- zCASLpDEL	{#CTRL {#ALT {#SHIFT {#LWIN {#DEL}}}}}{#insert zTSlp}	zCASLpDEL
+Ctrl+LWin+DEL -- zCLpDEL	{#CTRL {#LWIN {#DEL}}}{#insert zTSlp}	zCLpDEL
+Ctrl+Shift+LWin+DEL -- zCSLpDEL	{#CTRL {#SHIFT {#LWIN {#DEL}}}}{#insert zTSlp}	zCSLpDEL
+LWin+DEL -- zLpDEL	{#LWIN {#DEL}}{#insert zTSlp}	zLpDEL
+Shift+LWin+DEL -- zSLpDEL	{#SHIFT {#LWIN {#DEL}}}{#insert zTSlp}	zSLpDEL

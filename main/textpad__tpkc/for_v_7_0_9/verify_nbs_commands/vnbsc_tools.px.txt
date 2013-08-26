@@ -1,0 +1,9 @@
+zzNewFlV1Nbs_tools_ToolCompareFiles_ifKc	{#insert zvCMD_ABRV_1C_sfToolCompareFiles}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_tools_ToolCompareFiles_ifKc
+zzNewFlV1Nbs_tools_ToolExplorer_ifKc	{#insert zvCMD_ABRV_1C_sfToolExplorer}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_tools_ToolExplorer_ifKc
+zzNewFlV1Nbs_tools_ToolHTMLValidate_ifKc	{#insert zvCMD_ABRV_1C_sfToolHTMLValidate}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_tools_ToolHTMLValidate_ifKc
+zzNewFlV1Nbs_tools_ToolRerun_ifKc	{#insert zvCMD_ABRV_1C_sfToolRerun}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_tools_ToolRerun_ifKc
+zzNewFlV1Nbs_tools_ToolRun_ifKc	{#insert zvCMD_ABRV_1C_sfToolRun}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_tools_ToolRun_ifKc
+zzNewFlV1Nbs_tools_ToolSort_ifKc	{#insert zvCMD_ABRV_1C_sfToolSort}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_tools_ToolSort_ifKc
+zzNewFlV1Nbs_tools_ToolSpell_ifKc	{#insert zvCMD_ABRV_1C_sfToolSpell}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_tools_ToolSpell_ifKc
+zzNewFlV1Nbs_tools_ToolStop_ifKc	{#insert zvCMD_ABRV_1C_sfToolStop}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_tools_ToolStop_ifKc
+zzNewFlV1Nbs_tools_ToolWildEdit_ifKc	{#insert zvCMD_ABRV_1C_sfToolWildEdit}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_tools_ToolWildEdit_ifKc

@@ -1,0 +1,2 @@
+zFcsTPRplcDlgOpen -- Focus on TextPad window, zTPRplcDlgOpen	{#insert zFocusOnTextPadWindow}{#insert zTPRplcDlgOpen}	zFcsTPRplcDlgOpen
+zBalPostRplcHnrDingAlert	{#BALLOON -title DING alert -text The following replacement will cause a ding, in order to handle the potential no-match-found dialog.}	zBalPostRplcHnrDingAlert

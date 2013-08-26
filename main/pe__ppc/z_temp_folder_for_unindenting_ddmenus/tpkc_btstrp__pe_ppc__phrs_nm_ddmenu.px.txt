@@ -1,0 +1,45 @@
+(*
+*DUPLICATE* this document, unindent every line in it, then import it with the following settings:
+- No prefix
+- Manual confirmation
+- Assign the key-command (hotkey) to the first phrase
+**All these phrases must be manually maintained.
+*)
+(*
+FROM xbnpe_phrase_creator_popup_heirarchy_base.px.txt:
+
+Phrase-creators: XBN-PhraseExpress -- Call 'xh'   .   zXbnpeCmdPopupRoot
+Phrase-creators: PhraseExpress -- xhp   .   xh
+Phrase creation and import-text file management -- xhpc   .   xhp
+*)
+Pex func-call phrase-creators (main actions ONLY) -- xhpcp	.	xhpc
+Functions -- xhpcpf	.	xhpcp
+Clipboard & external file/dirs -- xhpcpfx	.	xhpcpf
+INSERTCLIPBOARD: icb	icb	xhpcpfx
+INSERTFILE: ifl	.	xhpcpfx
+OPEN: ofl	.	xhpcpfx
+OPENFOLDER: ofd	.	xhpcpfx
+PASTEOPTIONS: popt	popt	xhpcpfx
+SETCLIPBOARD: scb	scb	xhpcpfx
+Logic & numbers -- xhpcpfl (cil, cqd, lop, slp)	.	xhpcpf
+CALC: cil	cil	xhpcpfl
+COND: cqd	cqd	xhpcpfl
+LOOP: lop	lop	xhpcpfl
+SLEEP: slp	slp	xhpcpfl
+Other -- xhpcpfo	.	xhpcpf
+BALLOON: bal	bal	xhpcpfo
+CURSOR: crs	crs	xhpcpfo
+FOCUS: fcs	fcs	xhpcpfo
+INPUT: inp	inp	xhpcpfo
+MOUSEPOSITION: mps	mps	xhpcpfo
+MSGBOX: mbx	mbx	xhpcpfo
+SETPHRASE: stp	stp	xhpcpfo
+String -- xhpcpfs (gth, [lo,up]c, rpl, s[b,p]s, tri)	.	xhpcpf
+LENGTH: gth	.	xhpcpfs
+LOWER/UPPERCASE: loc, upc	.	xhpcpfs
+POS: sps	.	xhpcpfs
+REPLACE: rpl	.	xhpcpfs
+SUBSTR: sbs	.	xhpcpfs
+TRIM: tri	.	xhpcpfs
+Key-presses: kr[k,h,n,u,x][c][a][s][l][[p,q]] (example: krks)	.	xhpcp
+

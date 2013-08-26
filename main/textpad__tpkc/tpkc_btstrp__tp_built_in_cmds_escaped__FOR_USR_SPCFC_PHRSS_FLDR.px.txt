@@ -1,0 +1,7 @@
+zzTPBookmarkCopyAllEsc	\\\{#insert zCASpPERIOD\\\}	zzTPBookmarkCopyAllEsc
+zzTPBookmarkCutAllEsc	\\\{#insert zCASpCOMMA\\\}	zzTPBookmarkCutAllEsc
+zzTPFileOpenEsc	\\\{#insert zF12\\\}\\\{#sleep 10\\\}\\\{#insert zF8\\\}\\\{#sleep 1500\\\}	zzTPFileOpenEsc
+zzFindDlgOpenEsc	\\\{#insert zF3\\\}\\\{#sleep 50\\\}	zzFindDlgOpenEsc
+zzTPFindNextEsc	\\\{#insert zF4\\\}\\\{#sleep 15\\\}	zzTPFindNextEsc
+zzTPPrefsDlgOpenEsc	\\\{#insert zF9\\\}\\\{#sleep 50\\\}\\\{#insert zF12\\\}\\\{#sleep 50\\\}	zzTPPrefsDlgOpenEsc
+zzTPRplcDlgOpenEsc	\\\{#insert zF5\\\}\\\{#sleep 50\\\}	zzTPRplcDlgOpenEsc

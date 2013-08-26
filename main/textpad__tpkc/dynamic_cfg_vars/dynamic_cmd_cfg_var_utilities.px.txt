@@ -1,0 +1,4 @@
+zzTpCmdIsBootstrap_yn_M_cmd1	{#COND -if {#LENGTH {#insert zzTpCmdIsBtstrp_yes_M_cmd1}} > 0 -then yes -else no}	zzTpCmdIsBootstrap_yn_M_cmd1
+zzvCMD_NAME_TC_sfCmd1	{#SETPHRASE -description zvCMD_NAME_TC -content {#insert zzTpCmdNameTC_M_cmd1} -autotext zvCMD_NAME_TC -folder ctvv_folder}	zzvCMD_NAME_TC_sfCmd1
+zzTpCmdNbsKcCountAndSetNm_M_cmd1	{#insert zzvCMD_NAME_TC_sfCmd1}{#insert zzTpCmdNbsKcCount_M_cmdm}	zzTpCmdNbsKcCountAndSetNm_M_cmd1
+zzTpCmdNbsKcEsc_M_cmd1Num	{#insert zzvCMD_NAME_TC_sfCmd1}{#insert zzTpCmdNbsKcEsc_M_cmdmNum}	zzTpCmdNbsKcEsc_M_cmd1Num

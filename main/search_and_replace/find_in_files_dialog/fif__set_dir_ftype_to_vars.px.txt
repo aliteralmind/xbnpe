@@ -1,0 +1,6 @@
+zFFindSetDirFNmsRAW_M_dirFnm	{#insert zFFindSetDirRAW_M_dir}{#insert zFFindSetFNmsRAW_M_fnm}	zFFindSetDirFNmsRAW_M_dirFnm
+zFFindSetDirFNms_M_dirFnm -- Needs zvDIRECTORY, zvFILE_NAME	{#insert zFFindSetDirFNmsRAW_M_dirFnm}{#insert zFFindFieldWhat}	zFFindSetDirFNms_M_dirFnm
+zFFindSetDirRAW_M_dir -- Needs zvDIRECTORY	{#insert zFFindFieldDir}{#insert zvDIRECTORY}	zFFindSetDirRAW_M_dir
+zFFindSetDir_M_dir -- Needs zvDIRECTORY	{#insert zFFindSetDirRAW_M_dir}{#insert zFFindFieldWhat}	zFFindSetDir_M_dir
+zFFindSetFNmsRAW_M_fnm -- Needs zvFILE_NAME (for searching ONE file only)	{#insert zFFindFieldFileType}{#insert zvFILE_NAME}	zFFindSetFNmsRAW_M_fnm
+zFFindSetFNms_M_fnm -- Needs zvFILE_NAME (for searching ONE file only)	{#insert zFFindSetFNmsRAW_M_fnm}{#insert zFFindFieldWhat}	zFFindSetFNms_M_fnm

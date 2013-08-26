@@ -1,0 +1,8 @@
+NUM3 -- zNUM3	{#NUMPAD3}{#insert zTSlp}	zNUM3
+Alt+NUM3 -- zApNUM3	{#ALT {#NUMPAD3}}{#insert zTSlp}	zApNUM3
+Alt+Shift+NUM3 -- zASpNUM3	{#ALT {#SHIFT {#NUMPAD3}}}{#insert zTSlp}	zASpNUM3
+Ctrl+NUM3 -- zCpNUM3	{#CTRL {#NUMPAD3}}{#insert zTSlp}	zCpNUM3
+Ctrl+Alt+NUM3 -- zCApNUM3	{#CTRL {#ALT {#NUMPAD3}}}{#insert zTSlp}	zCApNUM3
+Ctrl+Alt+Shift+NUM3 -- zCASpNUM3	{#CTRL {#ALT {#SHIFT {#NUMPAD3}}}}{#insert zTSlp}	zCASpNUM3
+Ctrl+Shift+NUM3 -- zCSpNUM3	{#CTRL {#SHIFT {#NUMPAD3}}}{#insert zTSlp}	zCSpNUM3
+Shift+NUM3 -- zSpNUM3	{#SHIFT {#NUMPAD3}}{#insert zTSlp}	zSpNUM3

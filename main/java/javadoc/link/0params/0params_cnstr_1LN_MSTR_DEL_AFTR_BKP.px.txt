@@ -1,0 +1,157 @@
+0params_cnstr_cb.px.txt
+clcb --  NP (No Parameter) Constructor Link from name in ClipBoard	{#insert zzjlCodeOffPrekOff}{#insert zzClcbPostPrek}	clcb
+clcbc -- clcb, CODE-d	{#insert zzjlCodeOnPrekOff}{#insert zzClcbPostPrek}	clcbc
+clcbcefk -- clcbc, prefk	{#insert zzjlCodeOnPrekEF}{#insert zzClcbPostPrek}	clcbcefk
+clcbcefky -- clcbc, prefky	{#insert zzjlCodeOnPrekEFY}{#insert zzClcbPostPrek}	clcbcefky
+clcbcifk -- clcbc, prifk	{#insert zzjlCodeOnPrekIF}{#insert zzClcbPostPrek}	clcbcifk
+clcbcifky -- clcbc, prifky	{#insert zzjlCodeOnPrekIFY}{#insert zzClcbPostPrek}	clcbcifky
+clcbd -- clcb, target file in a different dir	{#insert zzjlCodeOffPrekOff}{#insert zzClcbdPostPrek}	clcbd
+clcbdc -- clcbd, CODE-d	{#insert zzjlCodeOnPrekOff}{#insert zzClcbdPostPrek}	clcbdc
+clcbdcefk -- clcbdc, prefk	{#insert zzjlCodeOnPrekEF}{#insert zzClcbdPostPrek}	clcbdcefk
+clcbdcefky -- clcbdc, prefky	{#insert zzjlCodeOnPrekEFY}{#insert zzClcbdPostPrek}	clcbdcefky
+clcbdcifk -- clcbdc, prifk	{#insert zzjlCodeOnPrekIF}{#insert zzClcbdPostPrek}	clcbdcifk
+clcbdcifky -- clcbdc, prifky	{#insert zzjlCodeOnPrekIFY}{#insert zzClcbdPostPrek}	clcbdcifky
+clcbdefk -- clcbd, prefk	{#insert zzjlCodeOffPrekEF}{#insert zzClcbdPostPrek}	clcbdefk
+clcbdefky -- clcbd, prefky	{#insert zzjlCodeOffPrekEFY}{#insert zzClcbdPostPrek}	clcbdefky
+clcbdifk -- clcbd, prifk	{#insert zzjlCodeOffPrekIF}{#insert zzClcbdPostPrek}	clcbdifk
+clcbdifky -- clcbd, prifky	{#insert zzjlCodeOffPrekIFY}{#insert zzClcbdPostPrek}	clcbdifky
+clcbdn -- clcbdyn ALT KC	{#insert clcbdyn}	clcbdn
+clcbdy -- clcbd, displaY nothing (x-mark)	{#insert zzjlCodeOffPrekOff}{#insert zzjlCnstrNmIsCB}{#insert zzjlDispXPAPES}{#insert zzjlNPCnstrLink_fileIsCnstrNmDirPrompt}	clcbdy
+clcbdyn -- clcbd, 'coNstructor' display	{#insert zzjlCodeOffPrekOff}{#insert zzjlCnstrNmIsCB}{#insert zzjlDispQCnstrQPAPES}{#insert zzjlNPCnstrLink_fileIsCnstrNmDirPrompt}	clcbdn
+clcbefk -- clcb, prefk	{#insert zzjlCodeOffPrekEF}{#insert zzClcbPostPrek}	clcbefk
+clcbefky -- clcb, prefky	{#insert zzjlCodeOffPrekEFY}{#insert zzClcbPostPrek}	clcbefky
+clcbifk -- clcb, prifk	{#insert zzjlCodeOffPrekIF}{#insert zzClcbPostPrek}	clcbifk
+clcbifky -- clcb, prifky	{#insert zzjlCodeOffPrekIFY}{#insert zzClcbPostPrek}	clcbifky
+clcbn -- clcbyn ALT KC	{#insert clcbyn}	clcbn
+clcby -- clcb, displaY nothing (x-mark)	{#insert zzjlCodeOffPrekOff}{#insert zzjlCnstrNmIsCB}{#insert zzjlDispXPAPES}{#insert zzjlNPCnstrLink_fileIsCnstrNmDirEmpty}	clcby
+clcbyn -- clcb, 'coNstructor' display	{#insert zzjlCodeOffPrekOff}{#insert zzjlCnstrNmIsCB}{#insert zzjlDispQCnstrQPAPES}{#insert zzjlNPCnstrLink_fileIsCnstrNmDirEmpty}	clcbn
+
+0params_cnstr_pw.px.txt
+clpw -- NP (No Parameter) Constructor Link from name in Prev Word	{#insert zzjlCodeOffPrekOff}{#insert zzClpwPostPrek}	clpw
+clpwc -- clpw, CODE-d	{#insert zzjlCodeOnPrekOff}{#insert zzClpwPostPrek}	clpwc
+clpwcefk -- clpwc, prefk	{#insert zzjlCodeOnPrekEF}{#insert zzClpwPostPrek}	clpwcefk
+clpwcefky -- clpwc, prefky	{#insert zzjlCodeOnPrekEFY}{#insert zzClpwPostPrek}	clpwcefky
+clpwcerk -- clpwc, prerk	{#insert zzjlCodeOnPrekER}{#insert zzClpwPostPrek}	clpwcerk
+clpwcerky -- clpwc, prerky	{#insert zzjlCodeOnPrekERY}{#insert zzClpwPostPrek}	clpwcerky
+clpwcifk -- clpwc, prifk	{#insert zzjlCodeOnPrekIF}{#insert zzClpwPostPrek}	clpwcifk
+clpwcifky -- clpwc, prifky	{#insert zzjlCodeOnPrekIFY}{#insert zzClpwPostPrek}	clpwcifky
+clpwcirk -- clpwc, prirk	{#insert zzjlCodeOnPrekIR}{#insert zzClpwPostPrek}	clpwcirk
+clpwcirky -- clpwc, prirky	{#insert zzjlCodeOnPrekIRY}{#insert zzClpwPostPrek}	clpwcirky
+clpwd -- clpw, target file in diff dir	{#insert zzjlCodeOffPrekOff}{#insert zzClpwdPostPrek}	clpwd
+clpwdb -- clpwd, Directory in clipBoard	{#insert zzjlCodeOffPrekOff}{#insert zzClpwdbPostPrek}	clpwdb
+clpwdbc -- clpwdc, Directory in clipBoard	{#insert zzjlCodeOnPrekOff}{#insert zzClpwdbPostPrek}	clpwdbc
+clpwdbcefk -- clpwdbc, prefk	{#insert zzjlCodeOnPrekEF}{#insert zzClpwdbPostPrek}	clpwdbcefk
+clpwdbcefky -- clpwdbc, prefky	{#insert zzjlCodeOnPrekEFY}{#insert zzClpwdbPostPrek}	clpwdbcefky
+clpwdbcerk -- clpwdbc, prerk	{#insert zzjlCodeOnPrekER}{#insert zzClpwdbPostPrek}	clpwdbcerk
+clpwdbcerky -- clpwdbc, prerky	{#insert zzjlCodeOnPrekERY}{#insert zzClpwdbPostPrek}	clpwdbcerky
+clpwdbcifk -- clpwdbc, prifk	{#insert zzjlCodeOnPrekIF}{#insert zzClpwdbPostPrek}	clpwdbcifk
+clpwdbcifky -- clpwdbc, prifky	{#insert zzjlCodeOnPrekIFY}{#insert zzClpwdbPostPrek}	clpwdbcifky
+clpwdbcirk -- clpwdbc, prirk	{#insert zzjlCodeOnPrekIR}{#insert zzClpwdbPostPrek}	clpwdbcirk
+clpwdbcirky -- clpwdbc, prirky	{#insert zzjlCodeOnPrekIRY}{#insert zzClpwdbPostPrek}	clpwdbcirky
+clpwdbefk -- clpwdb, prefk	{#insert zzjlCodeOffPrekEF}{#insert zzClpwdbPostPrek}	clpwdbefk
+clpwdbefky -- clpwdb, prefky	{#insert zzjlCodeOffPrekEFY}{#insert zzClpwdbPostPrek}	clpwdbefky
+clpwdberk -- clpwdb, prerk	{#insert zzjlCodeOffPrekER}{#insert zzClpwdbPostPrek}	clpwdberk
+clpwdberky -- clpwdb, prerky	{#insert zzjlCodeOffPrekERY}{#insert zzClpwdbPostPrek}	clpwdberky
+clpwdbifk -- clpwdb, prifk	{#insert zzjlCodeOffPrekIF}{#insert zzClpwdbPostPrek}	clpwdbifk
+clpwdbifky -- clpwdb, prifky	{#insert zzjlCodeOffPrekIFY}{#insert zzClpwdbPostPrek}	clpwdbifky
+clpwdbirk -- clpwdb, prirk	{#insert zzjlCodeOffPrekIR}{#insert zzClpwdbPostPrek}	clpwdbirk
+clpwdbirky -- clpwdb, prirky	{#insert zzjlCodeOffPrekIRY}{#insert zzClpwdbPostPrek}	clpwdbirky
+clpwdbn -- clpwdn, Directory in clipBoard	{#insert zzjlCodeOffPrekOff}{#insert zzjlDirIsCBFuncNmIsL1w}{#insert zzjlDispQCnstrQPAPES}{#insert zzjlNPCnstrLink_fileIsCnstrNm}	clpwdbn
+clpwdby -- clpwdy, Directory in clipBoard	{#insert zzjlCodeOffPrekOff}{#insert zzjlDirIsCBFuncObjNmIsL1w}{#insert zzjlDispXPAPES}{#insert zzjlNPCnstrLink_fileIsCnstrNm}	clpwdby
+clpwdc -- clpwd, CODE-d	{#insert zzjlCodeOnPrekOff}{#insert zzClpwdPostPrek}	clpwdc
+clpwdcefk -- clpwdc, prefk	{#insert zzjlCodeOnPrekEF}{#insert zzClpwdPostPrek}	clpwdcefk
+clpwdcefky -- clpwdc, prefky	{#insert zzjlCodeOnPrekEFY}{#insert zzClpwdPostPrek}	clpwdcefky
+clpwdcerk -- clpwdc, prerk	{#insert zzjlCodeOnPrekER}{#insert zzClpwdPostPrek}	clpwdcerk
+clpwdcerky -- clpwdc, prerky	{#insert zzjlCodeOnPrekERY}{#insert zzClpwdPostPrek}	clpwdcerky
+clpwdcifk -- clpwdc, prifk	{#insert zzjlCodeOnPrekIF}{#insert zzClpwdPostPrek}	clpwdcifk
+clpwdcifky -- clpwdc, prifky	{#insert zzjlCodeOnPrekIFY}{#insert zzClpwdPostPrek}	clpwdcifky
+clpwdcirk -- clpwdc, prirk	{#insert zzjlCodeOnPrekIR}{#insert zzClpwdPostPrek}	clpwdcirk
+clpwdcirky -- clpwdc, prirky	{#insert zzjlCodeOnPrekIRY}{#insert zzClpwdPostPrek}	clpwdcirky
+clpwdefk -- clpwd, prefk	{#insert zzjlCodeOffPrekEF}{#insert zzClpwdPostPrek}	clpwdefk
+clpwdefky -- clpwd, prefky	{#insert zzjlCodeOffPrekEFY}{#insert zzClpwdPostPrek}	clpwdefky
+clpwderk -- clpwd, prerk	{#insert zzjlCodeOffPrekER}{#insert zzClpwdPostPrek}	clpwderk
+clpwderky -- clpwd, prerky	{#insert zzjlCodeOffPrekERY}{#insert zzClpwdPostPrek}	clpwderky
+clpwdifk -- clpwd, prifk	{#insert zzjlCodeOffPrekIF}{#insert zzClpwdPostPrek}	clpwdifk
+clpwdifky -- clpwd, prifky	{#insert zzjlCodeOffPrekIFY}{#insert zzClpwdPostPrek}	clpwdifky
+clpwdirk -- clpwd, prirk	{#insert zzjlCodeOffPrekIR}{#insert zzClpwdPostPrek}	clpwdirk
+clpwdirky -- clpwd, prirky	{#insert zzjlCodeOffPrekIRY}{#insert zzClpwdPostPrek}	clpwdirky
+clpwdn -- clpwd, 'coNstructor' display	{#insert zzjlCodeOffPrekOff}{#insert zzjlFuncObjNmIsL1w}{#insert zzjlDispQCnstrQPAPES}{#insert zzjlNPCnstrLink_fileIsCnstrNmDirPrompt}	clpwdn
+clpwdy -- clpwd, displaY nothing (x-mark)	{#insert zzjlCodeOffPrekOff}{#insert zzjlFuncObjNmIsL1w}{#insert zzjlDispXPAPES}{#insert zzjlNPCnstrLink_fileIsCnstrNmDirPrompt}	clpwdy
+clpwdyb -- clpwd, displaY clipBoard	{#insert zzjlCodeOffPrekOff}{#insert zzjlDispCBCnstrNmL1wPAPES}{#insert zzjlNPCnstrLink_fileIsCnstrNmDirPrompt}	clpwdyb
+clpwefk -- clpw, prefk	{#insert zzjlCodeOffPrekEF}{#insert zzClpwPostPrek}	clpwefk
+clpwefky -- clpw, prefky	{#insert zzjlCodeOffPrekEFY}{#insert zzClpwPostPrek}	clpwefky
+clpwerk -- clpw, prerk	{#insert zzjlCodeOffPrekER}{#insert zzClpwPostPrek}	clpwerk
+clpwerky -- clpw, prerky	{#insert zzjlCodeOffPrekERY}{#insert zzClpwPostPrek}	clpwerky
+clpwifk -- clpw, prifk	{#insert zzjlCodeOffPrekIF}{#insert zzClpwPostPrek}	clpwifk
+clpwifky -- clpw, prifky	{#insert zzjlCodeOffPrekIFY}{#insert zzClpwPostPrek}	clpwifky
+clpwirk -- clpw, prirk	{#insert zzjlCodeOffPrekIR}{#insert zzClpwPostPrek}	clpwirk
+clpwirky -- clpw, prirky	{#insert zzjlCodeOffPrekIRY}{#insert zzClpwPostPrek}	clpwirky
+clpwn -- clpw, 'coNstructor' display	{#insert zzjlCodeOffPrekOff}{#insert zzjlFuncObjNmIsL1w}{#insert zzjlDispQCnstrQPAPES}{#insert zzjlNPCnstrLink_fileIsCnstrNmDirEmpty}	clpwn
+clpwy -- clpw, displaY nothing (x-mark)	{#insert zzjlCodeOffPrekOff}{#insert zzjlFuncObjNmIsL1w}{#insert zzjlDispXPAPES}{#insert zzjlNPCnstrLink_fileIsCnstrNmDirEmpty}	clpwy
+clpwyb -- clpw, displaY clipBoard	{#insert zzjlCodeOffPrekOff}{#insert zzjlDispCBCnstrNmL1wPAPES}{#insert zzjlNPCnstrLink_fileIsCnstrNmDirEmpty}	clpwyb
+
+0params_cnstr_this_super.px.txt
+clsuper -- NP Super-Constructor Link	{#insert zzjlCodeOffPrekOff}{#insert zzjlNPCnstrLink_dirPromptCnstrFileAndDispAreSuperCN}	clsuper
+clsuperc -- clsuper, CODE-d	{#insert zzjlCodeOnPrekOff}{#insert zzjlNPCnstrLink_dirPromptCnstrFileAndDispAreSuperCN}	clsuperc
+clsupercefk -- clsuperc, prefk	{#insert zzjlCodeOnPrekEF}{#insert zzjlNPCnstrLink_dirPromptCnstrFileAndDispAreSuperCN}	clsupercefk
+clsupercefky -- clsuperc, prefky	{#insert zzjlCodeOnPrekEFY}{#insert zzjlNPCnstrLink_dirPromptCnstrFileAndDispAreSuperCN}	clsupercefky
+clsupercerk -- clsuperc, prerk	{#insert zzjlCodeOnPrekER}{#insert zzjlNPCnstrLink_dirPromptCnstrFileAndDispAreSuperCN}	clsupercerk
+clsupercerky -- clsuperc, prerky	{#insert zzjlCodeOnPrekERY}{#insert zzjlNPCnstrLink_dirPromptCnstrFileAndDispAreSuperCN}	clsupercerky
+clsupercifk -- clsuperc, prifk	{#insert zzjlCodeOnPrekIF}{#insert zzjlNPCnstrLink_dirPromptCnstrFileAndDispAreSuperCN}	clsupercifk
+clsupercifky -- clsuperc, prifky	{#insert zzjlCodeOnPrekIFY}{#insert zzjlNPCnstrLink_dirPromptCnstrFileAndDispAreSuperCN}	clsupercifky
+clsupercirk -- clsuperc, prirk	{#insert zzjlCodeOnPrekIR}{#insert zzjlNPCnstrLink_dirPromptCnstrFileAndDispAreSuperCN}	clsupercirk
+clsupercirky -- clsuperc, prirky	{#insert zzjlCodeOnPrekIRY}{#insert zzjlNPCnstrLink_dirPromptCnstrFileAndDispAreSuperCN}	clsupercirky
+clsuperefk -- clsuper, prefk	{#insert zzjlCodeOffPrekEF}{#insert zzjlNPCnstrLink_dirPromptCnstrFileAndDispAreSuperCN}	clsuperefk
+clsuperefky -- clsuper, prefky	{#insert zzjlCodeOffPrekEFY}{#insert zzjlNPCnstrLink_dirPromptCnstrFileAndDispAreSuperCN}	clsuperefky
+clsupererk -- clsuper, prerk	{#insert zzjlCodeOffPrekER}{#insert zzjlNPCnstrLink_dirPromptCnstrFileAndDispAreSuperCN}	clsupererk
+clsupererky -- clsuper, prerky	{#insert zzjlCodeOffPrekERY}{#insert zzjlNPCnstrLink_dirPromptCnstrFileAndDispAreSuperCN}	clsupererky
+clsuperifk -- clsuper, prifk	{#insert zzjlCodeOffPrekIF}{#insert zzjlNPCnstrLink_dirPromptCnstrFileAndDispAreSuperCN}	clsuperifk
+clsuperifky -- clsuper, prifky	{#insert zzjlCodeOffPrekIFY}{#insert zzjlNPCnstrLink_dirPromptCnstrFileAndDispAreSuperCN}	clsuperifky
+clsuperirk -- clsuper, prirk	{#insert zzjlCodeOffPrekIR}{#insert zzjlNPCnstrLink_dirPromptCnstrFileAndDispAreSuperCN}	clsuperirk
+clsuperirky -- clsuper, prirky	{#insert zzjlCodeOffPrekIRY}{#insert zzjlNPCnstrLink_dirPromptCnstrFileAndDispAreSuperCN}	clsuperirky
+clsupern -- clsuper, 'coNstructor' display	{#insert zzjlCodeOffPrekOff}{#insert zzClsupernPostPrek}	clsupern
+clsupernefk -- clsupern, prefk	{#insert zzjlCodeOffPrekEF}{#insert zzClsupernPostPrek}	clsupernefk
+clsupernefky -- clsupern, prefky	{#insert zzjlCodeOffPrekEFY}{#insert zzClsupernPostPrek}	clsupernefky
+clsupernerk -- clsupern, prerk	{#insert zzjlCodeOffPrekER}{#insert zzClsupernPostPrek}	clsupernerk
+clsupernerky -- clsupern, prerky	{#insert zzjlCodeOffPrekERY}{#insert zzClsupernPostPrek}	clsupernerky
+clsupernifk -- clsupern, prifk	{#insert zzjlCodeOffPrekIF}{#insert zzClsupernPostPrek}	clsupernifk
+clsupernifky -- clsupern, prifky	{#insert zzjlCodeOffPrekIFY}{#insert zzClsupernPostPrek}	clsupernifky
+clsupernirk -- clsupern, prirk	{#insert zzjlCodeOffPrekIR}{#insert zzClsupernPostPrek}	clsupernirk
+clsupernirky -- clsupern, prirky	{#insert zzjlCodeOffPrekIRY}{#insert zzClsupernPostPrek}	clsupernirky
+clsuperr -- clsuper, 'super' display	{#insert zzjlCodeOffPrekOff}{#insert zzClsuperrPostPrek}	clsuperr
+clsuperrc -- clsuperr, CODE-d	{#insert zzjlCodeOnPrekOff}{#insert zzClsuperrPostPrek}	clsuperrc
+clsuperrcefk -- clsuperrc, prefk	{#insert zzjlCodeOnPrekEF}{#insert zzClsuperrPostPrek}	clsuperrcefk
+clsuperrcefky -- clsuperrc, prefky	{#insert zzjlCodeOnPrekEFY}{#insert zzClsuperrPostPrek}	clsuperrcefky
+clsuperrcerk -- clsuperrc, prerk	{#insert zzjlCodeOnPrekER}{#insert zzClsuperrPostPrek}	clsuperrcerk
+clsuperrcerky -- clsuperrc, prerky	{#insert zzjlCodeOnPrekERY}{#insert zzClsuperrPostPrek}	clsuperrcerky
+clsuperrcifk -- clsuperrc, prifk	{#insert zzjlCodeOnPrekIF}{#insert zzClsuperrPostPrek}	clsuperrcifk
+clsuperrcifky -- clsuperrc, prifky	{#insert zzjlCodeOnPrekIFY}{#insert zzClsuperrPostPrek}	clsuperrcifky
+clsuperrcirk -- clsuperrc, prirk	{#insert zzjlCodeOnPrekIR}{#insert zzClsuperrPostPrek}	clsuperrcirk
+clsuperrcirky -- clsuperrc, prirky	{#insert zzjlCodeOnPrekIRY}{#insert zzClsuperrPostPrek}	clsuperrcirky
+clsuperrefk -- clsuperr, prefk	{#insert zzjlCodeOffPrekEF}{#insert zzClsuperrPostPrek}	clsuperrefk
+clsuperrefky -- clsuperr, prefky	{#insert zzjlCodeOffPrekEFY}{#insert zzClsuperrPostPrek}	clsuperrefky
+clsuperrerk -- clsuperr, prerk	{#insert zzjlCodeOffPrekER}{#insert zzClsuperrPostPrek}	clsuperrerk
+clsuperrerky -- clsuperr, prerky	{#insert zzjlCodeOffPrekERY}{#insert zzClsuperrPostPrek}	clsuperrerky
+clsuperrifk -- clsuperr, prifk	{#insert zzjlCodeOffPrekIF}{#insert zzClsuperrPostPrek}	clsuperrifk
+clsuperrifky -- clsuperr, prifky	{#insert zzjlCodeOffPrekIFY}{#insert zzClsuperrPostPrek}	clsuperrifky
+clsuperrirk -- clsuperr, prirk	{#insert zzjlCodeOffPrekIR}{#insert zzClsuperrPostPrek}	clsuperrirk
+clsuperrirky -- clsuperr, prirky	{#insert zzjlCodeOffPrekIRY}{#insert zzClsuperrPostPrek}	clsuperrirky
+clsupery -- clsuper, displaY nothing (x-mark)	{#insert zzjlCodeOffPrekOff}{#insert zzjlDispXPAPES}{#insert zzjlNPCnstrLink_dirPromptCnstrAndFileNmAreSuperCN}	clsupery
+clsuperyb -- clsuper, displaY clipBoard	{#insert zzjlCodeOffPrekOff}{#insert zzjlDispCBPAPES}{#insert zzjlNPCnstrLink_dirPromptCnstrAndFileNmAreSuperCN}	clsuperyb
+Create a 'L'ink to THIS class.
+clthis -- NP THIS-class coNstructor link	{#insert zzjlCodeOffPrekOff}{#insert zzjlNPCnstrLink_thisClsCnstrDispCnstr}	clthis
+clthisc -- clthis, CODE-d	{#insert zzjlCodeOnPrekOff}{#insert zzjlNPCnstrLink_thisClsCnstrDispCnstr}	clthisc
+clthisn -- clthis, 'coNstructor' display	{#insert zzjlCodeOffPrekOff}{#insert zzjlDispQCnstrQPAPES}{#insert zzjlNPCnstrLink_thisClsCnstr}	clthisn
+clthist -- clthis, 'this' display	{#insert zzjlCodeOffPrekOff}{#insert zzjlDispQThisQPAPP}{#insert zzjlNPCnstrLink_thisClsCnstr}	clthist
+clthistc -- clthist, CODE-d	{#insert zzjlCodeOnPrekOff}{#insert zzjlDispQThisQPAPP}{#insert zzjlNPCnstrLink_thisClsCnstr}	clthistc
+clthisy -- clthis, displaY nothing (x-mark)	{#insert zzjlCodeOffPrekOff}{#insert zzjlDispXPAPES}{#insert zzjlNPCnstrLink_thisClsCnstr}	clthisy
+clthisyb -- clthis, displaY clipBoard	{#insert zzjlCodeOffPrekOff}{#insert zzjlDispCBPAPES}{#insert zzjlNPCnstrLink_thisClsCnstr}	clthisyb
+
+0params_cnstr_zSUB.px.txt
+zzClcbPostPrek	{#insert zzjlCnstrNmIsCB}{#insert zzjlDispCnstrNmPAPP}{#insert zzjlNPCnstrLink_fileIsCnstrNmDirEmpty}	zzClcbPostPrek
+zzClcbdPostPrek	{#insert zzjlCnstrNmIsCB}{#insert zzjlDispCnstrNmPAPP}{#insert zzjlNPCnstrLink_fileIsCnstrNmDirPrompt}	zzClcbdPostPrek
+zzClpwPostPrek	{#insert zzjlFuncObjNmIsL1w}{#insert zzjlDispCnstrNmPAPP}{#insert zzjlNPCnstrLink_fileIsCnstrNmDirEmpty}	zzClpwPostPrek
+zzClpwdPostPrek	{#insert zzjlFuncObjNmIsL1w}{#insert zzjlDispCnstrNmPAPP}{#insert zzjlNPCnstrLink_fileIsCnstrNmDirPrompt}	zzClpwdPostPrek
+zzClpwdbPostPrek	{#insert zzjlDirIsCBFuncNmIsL1w}{#insert zzjlDispCnstrNmPAPP}{#insert zzjlNPCnstrLink_fileIsCnstrNm}	zzClpwdbPostPrek
+zzClsupernPostPrek	{#insert zzjlDispQCnstrQPAPES}{#insert zzjlNPCnstrLink_dirPromptCnstrAndFileNmAreSuperCN}	zzClsupernPostPrek
+zzClsuperrPostPrek	{#insert zzjlDispQSuperQPAPP}{#insert zzjlNPCnstrLink_dirPromptCnstrAndFileNmAreSuperCN}	zzClsuperrPostPrek

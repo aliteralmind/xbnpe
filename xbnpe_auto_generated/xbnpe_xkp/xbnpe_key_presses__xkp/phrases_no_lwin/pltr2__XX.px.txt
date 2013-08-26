@@ -1,0 +1,8 @@
+XX -- zXX	{#NONE -chars x}{#insert zTSlp}	zXX
+Alt+XX -- zApXX	{#ALT -chars x}{#insert zTSlp}	zApXX
+Alt+Shift+XX -- zASpXX	{#ALT {#SHIFT -chars x}}{#insert zTSlp}	zASpXX
+Ctrl+XX -- zCpXX	{#CTRL -chars x}{#insert zTSlp}	zCpXX
+Ctrl+Alt+XX -- zCApXX	{#CTRL {#ALT -chars x}}{#insert zTSlp}	zCApXX
+Ctrl+Alt+Shift+XX -- zCASpXX	{#CTRL {#ALT {#SHIFT -chars x}}}{#insert zTSlp}	zCASpXX
+Ctrl+Shift+XX -- zCSpXX	{#CTRL {#SHIFT -chars x}}{#insert zTSlp}	zCSpXX
+Shift+XX -- zSpXX	{#SHIFT -chars x}{#insert zTSlp}	zSpXX

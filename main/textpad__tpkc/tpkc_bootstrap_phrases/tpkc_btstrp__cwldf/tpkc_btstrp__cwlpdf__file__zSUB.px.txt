@@ -1,0 +1,1 @@
+zvPATH_stDirPlusFNm -(**)- Needs zvDIRECTORY, zvFILE_NAME	(*zvDIRECTORY must end with '\'*){#SETPHRASE -description zvPATH -content {#insert zvDIRECTORY}{#insert zvFILE_NAME} -autotext zvPATH -folder ctvv_folder}	zvPATH_stDirPlusFNm

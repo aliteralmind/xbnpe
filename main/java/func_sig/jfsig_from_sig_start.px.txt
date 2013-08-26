@@ -1,0 +1,45 @@
+gsgtg -- func-name (the siG itself)	{#insert gsgtp}{#insert zTPMoveL1w}	gsgtg
+gsgtp -- Params (open paren)	{#insert zFindNextRetTypeThrOpenParen}{#insert zRightLeft}	gsgtp
+gsgtrg -- gsgtrt ALT KC	{#insert gsgtrt}	gsgtrg
+gsgtrt -- Return type	{#insert zFindNextRetTypeThrOpenParen}{#insert zLEFT}	gsgtrt
+gsgtry -- gsgtrt ALT KC	{#insert gsgtrt}	gsgtry
+gsscg -- gssg, copy	{#insert gssg}{#insert zTPCopy}	gsscg
+gsscp -- gssp, copy	{#insert gssp}{#insert zTPCopy}	gsscp
+gsscrg -- gssrg, copy	{#insert gssrg}{#insert zTPCopy}	gsscrg
+gsscrt -- gsgtrt, copy	{#insert gssrt}{#insert zTPCopy}	gsscrt
+gsscry -- gsgtry, copy	{#insert gssry}{#insert zTPCopy}	gsscry
+gssg -- The siG itself (name-plus-params)	{#insert gsgtg}{#insert zPreSigSTSigEnd}	gssg
+gssp -- Parameters	{#insert gsgtp}{#insert zPreSigSTSigEnd}	gssp
+gssrg -- Return-type-through-params	{#insert zFindNextRetTypeThrOpenParen}{#insert zLEFT}{#insert zPreSigSTSigEnd}	gssrg
+gssrt -- Return-type, no generics	{#insert zFindNextRetTypeThrOpenParen}{#insert zLEFT}{#insert zSelectR1w}	gssrt
+gssry -- Return-type, with generics	{#insert zFindNextRetTypeThrOpenParen}{#insert zSelectL3R1w}	gssry
+wxmgl -- with full-params (types, generics, and names), eXisting mark UP	{#insert gsscg}{#insert zYUpPaste}	wxmgl
+wxmgnl -- Names only, UP	{#insert gsscg}{#insert zYUpPasteDapt}	wxmgnl
+wxmgnz -- Names, DOWN	{#insert gsscg}{#insert zYDownPasteDapt}	wxmgnz
+wxmgtl -- Types (no generics) only, UP	{#insert gsscg}{#insert zYUpPasteDapn}	wxmgtl
+wxmgtz -- Types, DOWN	{#insert gsscg}{#insert zYDownPasteDapn}	wxmgtz
+wxmgyl -- tYpes (with generics) only, UP	{#insert gsscg}{#insert zYUpPasteDapnkg}	wxmgyl
+wxmgyz -- tYpes, DOWN	{#insert gsscg}{#insert zYDownPasteDapnkg}	wxmgyz
+wxmgz -- full-params, eXisting mark DOWN	{#insert gsscg}{#insert zYDownPaste}	wxmgz
+wxmpl -- full, UP	{#insert gsscp}{#insert zYUpPaste}	wxmpl
+wxmpnl -- Names, UP	{#insert gsscp}{#insert zYUpPasteDapt}	wxmpnl
+wxmpnz -- Names, DOWN	{#insert gsscp}{#insert zYDownPasteDapt}	wxmpnz
+wxmptl -- Types, UP	{#insert gsscp}{#insert zYUpPasteDapn}	wxmptl
+wxmptz -- Types, DOWN	{#insert gsscp}{#insert zYDownPasteDapn}	wxmptz
+wxmpyl -- tYpes, UP	{#insert gsscp}{#insert zYUpPasteDapnkg}	wxmpyl
+wxmpyz -- tYpes, DOWN	{#insert gsscp}{#insert zYDownPasteDapnkg}	wxmpyz
+wxmpz -- full, DOWN	{#insert gsscp}{#insert zYDownPaste}	wxmpz
+wxmrgl -- full, UP	{#insert gsscrg}{#insert zYUpPaste}	wxmrgl
+wxmrgnl -- Names, UP	{#insert gsscrg}{#insert zYUpPasteDapt}	wxmrgnl
+wxmrgnz -- Names, DOWN	{#insert gsscrg}{#insert zYDownPasteDapt}	wxmrgnz
+wxmrgtl -- Types, UP	{#insert gsscrg}{#insert zYUpPasteDapn}	wxmrgtl
+wxmrgtz -- Types, DOWN	{#insert gsscrg}{#insert zYDownPasteDapn}	wxmrgtz
+wxmrgyl -- tYpes, UP	{#insert gsscrg}{#insert zYUpPasteDapnkg}	wxmrgyl
+wxmrgyz -- tYpes, DOWN	{#insert gsscrg}{#insert zYDownPasteDapnkg}	wxmrgyz
+wxmrgz -- full, DOWN	{#insert gsscrg}{#insert zYDownPaste}	wxmrgz
+wxmrtl -- Return Type, no generics, eXisting mark UP	{#insert gsscrt}{#insert zYUpPaste}	wxmrtl
+wxmrtz -- Return Type, no generics, eXisting mark DOWN	{#insert gsscrt}{#insert zYDownPaste}	wxmrtz
+wxmryhl -- wxmryl, html-escaped	{#insert gsscry}{#insert zYUpPasteSelect}{#insert xhEscapeSel}{#insert zRIGHT}	wxmryhl
+wxmryhz -- wxmryl, html-escaped	{#insert gsscry}{#insert zYDownPasteSelect}{#insert xhEscapeSel}{#insert zRIGHT}	wxmryhz
+wxmryl -- Return tYpe, with generics, eXisting mark UP	{#insert gsscry}{#insert zYUpPaste}	wxmryl
+wxmryz -- Return tYpe, with generics, eXisting mark DOWN	{#insert gsscry}{#insert zYDownPaste}	wxmryz

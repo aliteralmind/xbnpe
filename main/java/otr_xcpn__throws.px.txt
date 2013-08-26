@@ -1,0 +1,7 @@
+jxt -- throw  new XXXException(...)	throw  new {#insert zXmark}Exception{#insert zzPQXQPsc}{#insert zXThenUp3}	jxt
+jxtnp -- throw  new NullPointerException(...)	throw  new NullPointerException{#insert zzPQXQPsc}{#insert zXThenUp2}	jxtnp
+jxtis -- throw  new IllegalStateException(...)	throw  new IllegalStateException{#insert zzPQXQPsc}{#insert zXThenUp2}	jxtis
+jxtias -- throw  new IllegalArgumentStateException(...)	throw  new IllegalArgumentStateException{#insert zzPQXQPsc}{#insert zXThenUp2}	jxtias
+jxtia -- throw  new IllegalArgumentException(...)	throw  new IllegalArgumentException{#insert zzPQXQPsc}{#insert zXThenUp2}	jxtia
+jxtr -- throw  new RuntimeException(...)	throw  new RuntimeException({#asc 34}{#insert zXmark}{#asc 34}, {#insert zXmark});{#insert zXThenUp3}	jxtr
+zzPQXQPsc	({#asc 34}{#insert zXmark}{#asc 34});	zzPQXQPsc

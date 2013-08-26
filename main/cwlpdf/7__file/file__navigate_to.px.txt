@@ -1,0 +1,5 @@
+zOpenExplorerDirYesNoOrPrompt_M_oynpDir -(**)- Needs zvOPEN_YN_OR_PRMPT, zvDIRECTORY	(*zvOPEN_YN_OR_PRMPT=[yes]: Open the directory (no prompt). [no]=Do not open the directory (no prompt). [prompt]=Prompt them, yes-or-no.*){#insert {#COND -if {#insert zvOPEN_YN_OR_PRMPT} = open -then zOpenExplorerDir_M_dir -else {#COND -if {#insert zvOPEN_YN_OR_PRMPT} = no -then z1slp -else zOpenExplorerDirWithYNPrompt_M_dir}}}	zOpenExplorerDirYesNoOrPrompt_M_oynpDir
+zOpenExplorerDirWithYNPrompt_M_dir	{#MSGBOX -head Open directory? -text Open explorer window for '{#insert zvDIRECTORY}'? -yes zOpenExplorerDir_M_dir -no z1slp}	zOpenExplorerDirWithYNPrompt_M_dir
+zvOPEN_YN_OR_PRMPT_stYes	{#SETPHRASE -description zvOPEN_YN_OR_PRMPT -content yes -autotext zvOPEN_YN_OR_PRMPT -folder ctvv_folder}	zvOPEN_YN_OR_PRMPT_stYes
+zvOPEN_YN_OR_PRMPT_stNo	{#SETPHRASE -description zvOPEN_YN_OR_PRMPT -content no -autotext zvOPEN_YN_OR_PRMPT -folder ctvv_folder}	zvOPEN_YN_OR_PRMPT_stNo
+zvOPEN_YN_OR_PRMPT_stQpromptQ	{#SETPHRASE -description zvOPEN_YN_OR_PRMPT -content prompt -autotext zvOPEN_YN_OR_PRMPT -folder ctvv_folder}	zvOPEN_YN_OR_PRMPT_stQpromptQ

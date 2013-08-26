@@ -1,0 +1,11 @@
+zzNewFlV1Nbs_sel_SelectAll_ifKc	{#insert zvCMD_ABRV_1C_sfSelectAll}{#insert zzzNoVerificationForBtstrpsDlg_M_cmd1}	zzNewFlV1Nbs_sel_SelectAll_ifKc
+zzNewFlV1Nbs_sel_SelectBeginBlock_ifKc	{#insert zvCMD_ABRV_1C_sfSelectBeginBlock}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_sel_SelectBeginBlock_ifKc
+zzNewFlV1Nbs_sel_SelectBeginLine_ifKc	{#insert zvCMD_ABRV_1C_sfSelectBeginLine}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_sel_SelectBeginLine_ifKc
+zzNewFlV1Nbs_sel_SelectBeginStream_ifKc	{#insert zvCMD_ABRV_1C_sfSelectBeginStream}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_sel_SelectBeginStream_ifKc
+zzNewFlV1Nbs_sel_SelectCancel_ifKc	{#insert zvCMD_ABRV_1C_sfSelectCancel}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_sel_SelectCancel_ifKc
+zzNewFlV1Nbs_sel_SelectEnd_ifKc	{#insert zvCMD_ABRV_1C_sfSelectEnd}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_sel_SelectEnd_ifKc
+zzNewFlV1Nbs_sel_SelectLine_ifKc	{#insert zvCMD_ABRV_1C_sfSelectLine}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_sel_SelectLine_ifKc
+zzNewFlV1Nbs_sel_SelectParagraph_ifKc	{#insert zvCMD_ABRV_1C_sfSelectParagraph}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_sel_SelectParagraph_ifKc
+zzNewFlV1Nbs_sel_SelectSwapEnds_ifKc	{#insert zvCMD_ABRV_1C_sfSelectSwapEnds}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_sel_SelectSwapEnds_ifKc
+zzNewFlV1Nbs_sel_SelectWord_ifKc	{#insert zvCMD_ABRV_1C_sfSelectWord}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_sel_SelectWord_ifKc
+

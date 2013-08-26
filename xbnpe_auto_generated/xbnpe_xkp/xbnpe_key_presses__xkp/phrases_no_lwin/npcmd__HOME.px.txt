@@ -1,0 +1,8 @@
+HOME -- zHOME	{#HOME}{#insert zTSlp}	zHOME
+Alt+HOME -- zApHOME	{#ALT {#HOME}}{#insert zTSlp}	zApHOME
+Alt+Shift+HOME -- zASpHOME	{#ALT {#SHIFT {#HOME}}}{#insert zTSlp}	zASpHOME
+Ctrl+HOME -- zCpHOME	{#CTRL {#HOME}}{#insert zTSlp}	zCpHOME
+Ctrl+Alt+HOME -- zCApHOME	{#CTRL {#ALT {#HOME}}}{#insert zTSlp}	zCApHOME
+Ctrl+Alt+Shift+HOME -- zCASpHOME	{#CTRL {#ALT {#SHIFT {#HOME}}}}{#insert zTSlp}	zCASpHOME
+Ctrl+Shift+HOME -- zCSpHOME	{#CTRL {#SHIFT {#HOME}}}{#insert zTSlp}	zCSpHOME
+Shift+HOME -- zSpHOME	{#SHIFT {#HOME}}{#insert zTSlp}	zSpHOME

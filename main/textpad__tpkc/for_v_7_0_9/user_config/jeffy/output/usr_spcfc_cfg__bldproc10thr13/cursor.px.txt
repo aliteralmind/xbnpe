@@ -1,0 +1,94 @@
+zTpkcCharLeftNbsKcCount	2	zTpkcCharLeftNbsKcCount
+zTpkcCharLeftNbsKcEsc1	\\\{#insert zLEFT\\\}\\\{#sleep 1\\\}	zTpkcCharLeftNbsKcEsc1
+zTpkcCharLeftNbsKcEsc2	\\\{#insert zCpTT\\\}\\\{#sleep 1\\\}	zTpkcCharLeftNbsKcEsc2
+zTpkcCharLeftExtendNbsKcCount	2	zTpkcCharLeftExtendNbsKcCount
+zTpkcCharLeftExtendNbsKcEsc1	\\\{#insert zCpWW\\\}\\\{#sleep 1\\\}	zTpkcCharLeftExtendNbsKcEsc1
+zTpkcCharLeftExtendNbsKcEsc2	\\\{#insert zCSpLEFT\\\}\\\{#sleep 1\\\}	zTpkcCharLeftExtendNbsKcEsc2
+zTpkcCharRightNbsKcCount	1	zTpkcCharRightNbsKcCount
+zTpkcCharRightNbsKcEsc1	\\\{#insert zRIGHT\\\}\\\{#sleep 1\\\}	zTpkcCharRightNbsKcEsc1
+zTpkcCharRightExtendNbsKcCount	2	zTpkcCharRightExtendNbsKcCount
+zTpkcCharRightExtendNbsKcEsc1	\\\{#insert zCpVV\\\}\\\{#sleep 1\\\}	zTpkcCharRightExtendNbsKcEsc1
+zTpkcCharRightExtendNbsKcEsc2	\\\{#insert zCSpRIGHT\\\}\\\{#sleep 1\\\}	zTpkcCharRightExtendNbsKcEsc2
+zTpkcDocumentEndNbsKcCount	1	zTpkcDocumentEndNbsKcCount
+zTpkcDocumentEndNbsKcEsc1	\\\{#insert zCASpDOWN\\\}\\\{#sleep 25\\\}	zTpkcDocumentEndNbsKcEsc1
+zTpkcDocumentEndExtendNbsKcCount	2	zTpkcDocumentEndExtendNbsKcCount
+zTpkcDocumentEndExtendNbsKcEsc1	\\\{#insert zCSpEND\\\}\\\{#sleep 50\\\}	zTpkcDocumentEndExtendNbsKcEsc1
+zTpkcDocumentEndExtendNbsKcEsc2	\\\{#insert zCASpPGDN\\\}\\\{#sleep 50\\\}	zTpkcDocumentEndExtendNbsKcEsc2
+zTpkcDocumentStartNbsKcCount	0	zTpkcDocumentStartNbsKcCount
+zTpkcDocumentStartExtendNbsKcCount	2	zTpkcDocumentStartExtendNbsKcCount
+zTpkcDocumentStartExtendNbsKcEsc1	\\\{#insert zCSpHOME\\\}\\\{#sleep 50\\\}	zTpkcDocumentStartExtendNbsKcEsc1
+zTpkcDocumentStartExtendNbsKcEsc2	\\\{#insert zCASpPGUP\\\}\\\{#sleep 50\\\}	zTpkcDocumentStartExtendNbsKcEsc2
+zTpkcGoToBlockEndNbsKcCount	0	zTpkcGoToBlockEndNbsKcCount
+zTpkcGoToBlockStartNbsKcCount	0	zTpkcGoToBlockStartNbsKcCount
+zTpkcGoToColumnNbsKcCount	0	zTpkcGoToColumnNbsKcCount
+zTpkcGoToLineNbsKcCount	0	zTpkcGoToLineNbsKcCount
+zTpkcGoToPageNbsKcCount	0	zTpkcGoToPageNbsKcCount
+zTpkcLineDownNbsKcCount	1	zTpkcLineDownNbsKcCount
+zTpkcLineDownNbsKcEsc1	\\\{#insert zDOWN\\\}\\\{#sleep 1\\\}	zTpkcLineDownNbsKcEsc1
+zTpkcLineDownExtendNbsKcCount	1	zTpkcLineDownExtendNbsKcCount
+zTpkcLineDownExtendNbsKcEsc1	\\\{#insert zSpDOWN\\\}\\\{#sleep 2\\\}	zTpkcLineDownExtendNbsKcEsc1
+zTpkcLineEndNbsKcCount	2	zTpkcLineEndNbsKcCount
+zTpkcLineEndNbsKcEsc1	\\\{#insert zEND\\\}\\\{#sleep 1\\\}	zTpkcLineEndNbsKcEsc1
+zTpkcLineEndNbsKcEsc2	\\\{#insert zCpSPACE\\\}\\\{#sleep 1\\\}	zTpkcLineEndNbsKcEsc2
+zTpkcLineEndExtendNbsKcCount	2	zTpkcLineEndExtendNbsKcCount
+zTpkcLineEndExtendNbsKcEsc1	\\\{#insert zSpEND\\\}\\\{#sleep 2\\\}	zTpkcLineEndExtendNbsKcEsc1
+zTpkcLineEndExtendNbsKcEsc2	\\\{#insert zCSpSPACE\\\}\\\{#sleep 2\\\}	zTpkcLineEndExtendNbsKcEsc2
+zTpkcLineLeftNbsKcCount	1	zTpkcLineLeftNbsKcCount
+zTpkcLineLeftNbsKcEsc1	\\\{#insert zHOME\\\}\\\{#sleep 1\\\}	zTpkcLineLeftNbsKcEsc1
+zTpkcLineLeftExtendNbsKcCount	1	zTpkcLineLeftExtendNbsKcCount
+zTpkcLineLeftExtendNbsKcEsc1	\\\{#insert zSpHOME\\\}\\\{#sleep 2\\\}	zTpkcLineLeftExtendNbsKcEsc1
+zTpkcLineScrollDownNbsKcCount	1	zTpkcLineScrollDownNbsKcCount
+zTpkcLineScrollDownNbsKcEsc1	\\\{#insert zCpUP\\\}\\\{#sleep 10\\\}	zTpkcLineScrollDownNbsKcEsc1
+zTpkcLineScrollUpNbsKcCount	1	zTpkcLineScrollUpNbsKcCount
+zTpkcLineScrollUpNbsKcEsc1	\\\{#insert zCpDOWN\\\}\\\{#sleep 10\\\}	zTpkcLineScrollUpNbsKcEsc1
+zTpkcLineStartNbsKcCount	0	zTpkcLineStartNbsKcCount
+zTpkcLineStartExtendNbsKcCount	0	zTpkcLineStartExtendNbsKcCount
+zTpkcLineUpNbsKcCount	1	zTpkcLineUpNbsKcCount
+zTpkcLineUpNbsKcEsc1	\\\{#insert zUP\\\}\\\{#sleep 1\\\}	zTpkcLineUpNbsKcEsc1
+zTpkcLineUpExtendNbsKcCount	1	zTpkcLineUpExtendNbsKcCount
+zTpkcLineUpExtendNbsKcEsc1	\\\{#insert zSpUP\\\}\\\{#sleep 2\\\}	zTpkcLineUpExtendNbsKcEsc1
+zTpkcPageDownNbsKcCount	1	zTpkcPageDownNbsKcCount
+zTpkcPageDownNbsKcEsc1	\\\{#insert zPGDN\\\}\\\{#sleep 10\\\}	zTpkcPageDownNbsKcEsc1
+zTpkcPageDownExtendNbsKcCount	1	zTpkcPageDownExtendNbsKcCount
+zTpkcPageDownExtendNbsKcEsc1	\\\{#insert zSpPGDN\\\}\\\{#sleep 20\\\}	zTpkcPageDownExtendNbsKcEsc1
+zTpkcPageLeftNbsKcCount	1	zTpkcPageLeftNbsKcCount
+zTpkcPageLeftNbsKcEsc1	\\\{#insert zCpPGUP\\\}\\\{#sleep 10\\\}	zTpkcPageLeftNbsKcEsc1
+zTpkcPageLeftExtendNbsKcCount	1	zTpkcPageLeftExtendNbsKcCount
+zTpkcPageLeftExtendNbsKcEsc1	\\\{#insert zCSpPGUP\\\}\\\{#sleep 20\\\}	zTpkcPageLeftExtendNbsKcEsc1
+zTpkcPageRightNbsKcCount	1	zTpkcPageRightNbsKcCount
+zTpkcPageRightNbsKcEsc1	\\\{#insert zCpPGDN\\\}\\\{#sleep 10\\\}	zTpkcPageRightNbsKcEsc1
+zTpkcPageRightExtendNbsKcCount	1	zTpkcPageRightExtendNbsKcCount
+zTpkcPageRightExtendNbsKcEsc1	\\\{#insert zCSpPGDN\\\}\\\{#sleep 20\\\}	zTpkcPageRightExtendNbsKcEsc1
+zTpkcPageUpNbsKcCount	1	zTpkcPageUpNbsKcCount
+zTpkcPageUpNbsKcEsc1	\\\{#insert zPGUP\\\}\\\{#sleep 10\\\}	zTpkcPageUpNbsKcEsc1
+zTpkcPageUpExtendNbsKcCount	1	zTpkcPageUpExtendNbsKcCount
+zTpkcPageUpExtendNbsKcEsc1	\\\{#insert zSpPGUP\\\}\\\{#sleep 20\\\}	zTpkcPageUpExtendNbsKcEsc1
+zTpkcParaDownNbsKcCount	1	zTpkcParaDownNbsKcCount
+zTpkcParaDownNbsKcEsc1	\\\{#insert zASpDOWN\\\}\\\{#sleep 5\\\}	zTpkcParaDownNbsKcEsc1
+zTpkcParaDownExtendNbsKcCount	1	zTpkcParaDownExtendNbsKcCount
+zTpkcParaDownExtendNbsKcEsc1	\\\{#insert zCSpDOWN\\\}\\\{#sleep 10\\\}	zTpkcParaDownExtendNbsKcEsc1
+zTpkcParaUpNbsKcCount	1	zTpkcParaUpNbsKcCount
+zTpkcParaUpNbsKcEsc1	\\\{#insert zASpUP\\\}\\\{#sleep 5\\\}	zTpkcParaUpNbsKcEsc1
+zTpkcParaUpExtendNbsKcCount	1	zTpkcParaUpExtendNbsKcCount
+zTpkcParaUpExtendNbsKcEsc1	\\\{#insert zCSpUP\\\}\\\{#sleep 10\\\}	zTpkcParaUpExtendNbsKcEsc1
+zTpkcTabLeftNbsKcCount	0	zTpkcTabLeftNbsKcCount
+zTpkcViewEndNbsKcCount	1	zTpkcViewEndNbsKcCount
+zTpkcViewEndNbsKcEsc1	\\\{#insert zApEND\\\}\\\{#sleep 10\\\}	zTpkcViewEndNbsKcEsc1
+zTpkcViewStartNbsKcCount	1	zTpkcViewStartNbsKcCount
+zTpkcViewStartNbsKcEsc1	\\\{#insert zApHOME\\\}\\\{#sleep 10\\\}	zTpkcViewStartNbsKcEsc1
+zTpkcWordLeftNbsKcCount	2	zTpkcWordLeftNbsKcCount
+zTpkcWordLeftNbsKcEsc1	\\\{#insert zCpLEFT\\\}\\\{#sleep 1\\\}	zTpkcWordLeftNbsKcEsc1
+zTpkcWordLeftNbsKcEsc2	\\\{#insert zCpHH\\\}\\\{#sleep 1\\\}	zTpkcWordLeftNbsKcEsc2
+zTpkcWordLeftEndNbsKcCount	1	zTpkcWordLeftEndNbsKcCount
+zTpkcWordLeftEndNbsKcEsc1	\\\{#insert zCpDD\\\}\\\{#sleep 1\\\}	zTpkcWordLeftEndNbsKcEsc1
+zTpkcWordLeftEndExtendNbsKcCount	1	zTpkcWordLeftEndExtendNbsKcCount
+zTpkcWordLeftEndExtendNbsKcEsc1	\\\{#insert zCSpDD\\\}\\\{#sleep 2\\\}	zTpkcWordLeftEndExtendNbsKcEsc1
+zTpkcWordLeftExtendNbsKcCount	2	zTpkcWordLeftExtendNbsKcCount
+zTpkcWordLeftExtendNbsKcEsc1	\\\{#insert zCSpBB\\\}\\\{#sleep 2\\\}	zTpkcWordLeftExtendNbsKcEsc1
+zTpkcWordLeftExtendNbsKcEsc2	\\\{#insert zCpMM\\\}\\\{#sleep 2\\\}	zTpkcWordLeftExtendNbsKcEsc2
+zTpkcWordRightNbsKcCount	0	zTpkcWordRightNbsKcCount
+zTpkcWordRightEndNbsKcCount	1	zTpkcWordRightEndNbsKcCount
+zTpkcWordRightEndNbsKcEsc1	\\\{#insert zCpSS\\\}\\\{#sleep 1\\\}	zTpkcWordRightEndNbsKcEsc1
+zTpkcWordRightEndExtendNbsKcCount	1	zTpkcWordRightEndExtendNbsKcCount
+zTpkcWordRightEndExtendNbsKcEsc1	\\\{#insert zCpZZ\\\}\\\{#sleep 2\\\}	zTpkcWordRightEndExtendNbsKcEsc1
+zTpkcWordRightExtendNbsKcCount	0	zTpkcWordRightExtendNbsKcCount

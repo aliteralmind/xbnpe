@@ -1,0 +1,8 @@
+ACCENT -- zACCENT	{#NONE -chars `}{#insert zTSlp}	zACCENT
+Alt+ACCENT -- zApACCENT	{#ALT -chars `}{#insert zTSlp}	zApACCENT
+Alt+Shift+ACCENT -- zASpACCENT	{#ALT {#SHIFT -chars `}}{#insert zTSlp}	zASpACCENT
+Ctrl+ACCENT -- zCpACCENT	{#CTRL -chars `}{#insert zTSlp}	zCpACCENT
+Ctrl+Alt+ACCENT -- zCApACCENT	{#CTRL {#ALT -chars `}}{#insert zTSlp}	zCApACCENT
+Ctrl+Alt+Shift+ACCENT -- zCASpACCENT	{#CTRL {#ALT {#SHIFT -chars `}}}{#insert zTSlp}	zCASpACCENT
+Ctrl+Shift+ACCENT -- zCSpACCENT	{#CTRL {#SHIFT -chars `}}{#insert zTSlp}	zCSpACCENT
+Shift+ACCENT -- zSpACCENT	{#SHIFT -chars `}{#insert zTSlp}	zSpACCENT

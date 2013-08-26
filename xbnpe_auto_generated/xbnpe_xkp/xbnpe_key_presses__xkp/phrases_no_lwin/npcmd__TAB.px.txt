@@ -1,0 +1,8 @@
+TAB -- zTAB	{#TAB}{#insert zTSlp}	zTAB
+Alt+TAB -- zApTAB	{#ALT {#TAB}}{#insert zTSlp}	zApTAB
+Alt+Shift+TAB -- zASpTAB	{#ALT {#SHIFT {#TAB}}}{#insert zTSlp}	zASpTAB
+Ctrl+TAB -- zCpTAB	{#CTRL {#TAB}}{#insert zTSlp}	zCpTAB
+Ctrl+Alt+TAB -- zCApTAB	{#CTRL {#ALT {#TAB}}}{#insert zTSlp}	zCApTAB
+Ctrl+Alt+Shift+TAB -- zCASpTAB	{#CTRL {#ALT {#SHIFT {#TAB}}}}{#insert zTSlp}	zCASpTAB
+Ctrl+Shift+TAB -- zCSpTAB	{#CTRL {#SHIFT {#TAB}}}{#insert zTSlp}	zCSpTAB
+Shift+TAB -- zSpTAB	{#SHIFT {#TAB}}{#insert zTSlp}	zSpTAB

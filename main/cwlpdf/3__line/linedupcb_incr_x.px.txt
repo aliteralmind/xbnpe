@@ -1,0 +1,4 @@
+dblincx -- Duplicate all *Lines* in clipBoard, INCrementing X-marks 	{#insert zDupCBLinesIncrXEveryLine}	dblincx
+dblincxk -- dblincx, skipping lines between each dup.	{#insert zDupCBLinesIncrXWSkipPrompt}	dblincxk
+deblincx -- dblincx, Escaping the cb-text first (does not unescape, use uscofv)	{#insert zDupEscapedCBLinesIncrXEveryLine}	deblincx
+deblincxk -- dblincxk, Escaping the cb-text first (does not unescape, use uscofv)	{#insert zDupEscapedCBLinesIncrXWSkipPrompt}	deblincxk

@@ -1,0 +1,104 @@
+Folders to create in PhraseExpress
+Java
+	Functions and constructors
+		Creation (fcc)
+			Constructors: deFault &/or Copy --- jfcnstr & j[f]ccnstr[base/sub]
+			Non-returning function calling super-version -- jcallsuper[n/w]p
+			Returning func In suB-Class calls supeR -- [o/s/sc]ribc[n/w]p[y][n]
+			Setter-getter creation (jsg) -- j[x]setgetter
+				zSUB
+		Signature: Go-to, select-copy, write-at-mark (sig)
+			For cursor at siGnature-line Start
+				gs[gt/s/sc][p/g/rg/rt/ry] -- Go-To/Select/Select-Copy
+				wxm[p/g/rg/*r[t/y]][ l/z][*[t/y/n]] -- Write siG-part at eXisting Mark
+			For func-name in ClipBoard
+				Search ANY file -- gg[cb[q]/pw][f[ad]][[g/r/p*]][[0p*/1p/0-5,n]]
+					zSUB
+					THIS file only
+					ALL files -- default dir
+					ALL files -- alt. dir
+			For func-name in previous linK
+				gtpk[m[c]][[g/p/rg]] -- Go-To
+				scpk[m[c]][g/p/rg] -- Select-Copy
+				zOther -- sckpf[local] -- sprcnstrsigp[ l/z]
+				mw[c][g/p/g][[t/y/n]] -- Mark, write at mark
+			regex -- zjre*
+				0-5 parameters
+				Other parameter count
+		Parameters: Go to, select-copy, write-at-mark (fparams)
+			Go To param number X -- gt[m[c]][[n*/t]][[1*-10,n]][l/z]
+			Mark, get, Write at mark -- mw[c][[t/y]][[1*-10,n]][l/z]
+			Select-Copy -- sc[m[c]][[t/y]][[1*-10,n]][l/z]
+			Write at eXistng Mark (FROM SIG START) -- wxm[[1*-10,n]][l/z]
+			zFromPreSig[GT/SC]PName[1-10,N]
+			zFromPreSig[GT/SC]PTypeNG[1-10,N]
+			zFromPreSigSCPtYpeWG[1-10,N]
+	JavaDoc
+		NOT links (notk)
+		Links: JavaDoc & generic
+			From ONE-OR-MORE-PARAM function signature (1ppg)
+				Constructor linK
+					From Parameters before cursor
+						ckp[v][c] -- Constructor in diff class, same dir
+						ckpf[v][c][k] -- ckp, File (cnstr-name)='XXX'
+						ckpfb[v][c][k] -- ckp, File in clipBoard (dir-prompt)
+						ckpr[r][v][c][k] -- supeR-Constructor (dir-prompt)
+						ckpt[v][c] -- THIS-class costructor
+						zNo post-</A> Params (papes)
+							ckpp[t][v] -- THIS-class constructor
+							ckppf[b][v][k] -- Cnstr in diff-file ('b'=file in CB & dir-prompt)
+							ckppr[r][v][k] -- ckpp, supeR-Constructor (dir-prompt)
+					From siGnature before cursor (SEE Java>Function signature)
+						ckg[v][c][k] -- Target class in same dir
+						ckgd[b][v][c][k] -- Target class in diff dir (dir-prompt)
+						ckgp[d[b]][v][k] -- No post-</A> params
+				Function linK
+					From Parameters before cursor
+						fkp[v][c] -- Func in THIS-class (dir=file='', func-name='XXX')
+						fkpb[f,r][v][c][k] -- fkp, func-name in clipBoard
+						fkpdb[v][c][k] -- Func in diff-class, diff-dir
+						fkpf[b][v][c][k] -- Func in diff-class, same-dir
+						fkpp[b[f,r],f[b],r][k] -- No post-</A> Parameters
+						fkpr[v][c][k] -- Func in supeR-class
+					From siGnature before cursor (SEE Java>Function signature)
+						fkg[v][c] -- Func in THIS-class
+						fkgdb[v][c][k] -- Func in diff-class, diff-dir (file in cb, dir prompt)
+						fkgf[b][v][c][k] -- Func in diff-class, same-dir (dir='')
+						fkgp[db,f[b],r][k] -- No post-</A> Parameters
+						fkgr[v][c][k] -- Func in super-class (dir-prompt)
+				zAlternate Display
+					Cnstr: ckgy[[b/n]] -- ckgd[by[n]/y[b/n]] -- ckp[r]y[n]
+					Func: fkgy[b] -- fkgf[[b]y/y[b]]
+					Func: fkp[[b]y/y[b]] -- fkpf[[b]y/y[b]]
+			From ZERO-PARAM Func name in prev-word or CB (pwcb)
+				Constructor
+					clcb[d][n/c] -- Name in ClipBoard
+					clpw[d[b]][c/n] -- Name in Prev Word
+					clthis[t[c]/n] -- clsuper[r[c]/n] -- Name derived
+				File -- il[cb/pw][d][y[b]/c]
+				Function
+					flcb[f/r][c] -- Name in ClipBoard
+					flpw[r][c] -- flpw[d/f][b][c] -- Name in Prev Word
+					flpwdfb[2-10,n] -- flpwfb or flpwdb, multiple times
+				Object
+					olcb[r][c] -- Name in ClipBoard
+					olpw[f[b]/r][c] -- Name in Prev Word
+				zAlternate Display
+					Cnstr: clcb[[super/this]]y[b] -- clcb[d]y -- clpwd[[b]y/y[b]]
+					Func: flcb[f/r]y -- flpwf[b]y/y[b]] -- flpw[r]y[b]
+					Obj: olcb[r]y -- olpwy[b] -- olpwf[by/y[b]]
+			Other
+				pr[e/i][f/r]k[gb] -- File-only link to precede the just made func link
+				Generic (kgen)
+					glpw[x][2-6/n] -- Generic Link from Prev X Words [x=del pre-url space]
+				jdsee -- <P><I>See:...
+					jdsfgl[l][[1-10,n]] -- jdsee 'main' func toc from sub-func sig-lines
+			zSUB and testing
+				_Testing
+		Other (otr)
+			ccsdl[[1-5, n]] -- Copy Cnstr setter doc-lines
+			Java Class Elements (jce)
+				Class name: cn[this/super][c/s/sc]
+				Package name: pn[this/super][c/s/sc]
+			ktp[m]g[c] -- linK with text thr Prev [XXX-Marked] siG
+			Delete all param names/types -- dap[t/n]

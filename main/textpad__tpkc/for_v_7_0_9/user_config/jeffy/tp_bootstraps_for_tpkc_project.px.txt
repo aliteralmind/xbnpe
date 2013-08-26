@@ -1,0 +1,13 @@
+zTPBookmarkCopyAll -- TextPad built-in command: EditCopyTaggedLines	{#insert zCASpPERIOD}{#sleep 10}	zTPBookmarkCopyAll
+zTPBookmarkCutAll -- TextPad built-in command: EditCutTaggedLines	{#insert zCASpCOMMA}{#sleep 10}	zTPBookmarkCutAll
+zTPBookmarkGTNext -- TextPad built-in command: BookmarkNext	{#insert zApPP}{#sleep 100}	zTPBookmarkGTNext
+zTPBookmarkToggle -- TextPad built-in command: BookmarkToggle	{#insert zApPERIOD}{#sleep 10}	zTPBookmarkToggle
+zTPFFindDlgOpen -- TextPad built-in command: SearchFiles	{#insert zApF5}{#sleep 50}	zTPFFindDlgOpen
+zTPFileManager -- TextPad built-in command: FileManager	{#insert zCApOO}{#sleep 50}	zTPFileManager
+zTPFileOpen -- TextPad built-in command: FileOpen	{#insert zF12}{#sleep 10}{#insert zF8}{#sleep 1500}	zTPFileOpen
+zTPFileQOpen -- TextPad built-in command: FileQuickOpen	{#insert zCSpOO}{#sleep 50}	zTPFileQOpen
+zTPFindDlgOpen -- TextPad built-in command: SearchFind	{#insert zF3}{#sleep 50}	zTPFindDlgOpen
+zTPFindNext -- TextPad built-in command: SearchFindNext	{#insert zF4}{#sleep 15}	zTPFindNext
+zTPGTDlgOpen -- TextPad built-in command: SearchGoto	{#insert zCSpGG}{#sleep 50}	zTPGTDlgOpen
+zTPPrefsDlgOpen -- TextPad built-in command: Preferences	{#insert zF9}{#sleep 50}{#insert zF12}{#sleep 50}	zTPPrefsDlgOpen
+zTPRplcDlgOpen -- TextPad built-in command: SearchReplace	{#insert zF5}{#sleep 50}	zTPRplcDlgOpen

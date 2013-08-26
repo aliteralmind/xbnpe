@@ -1,0 +1,14 @@
+pnsuper -- {#insert zYmark}, pnsupersco, zYDownUpPaste (plus a dot)	{#insert zYmark}{#insert pnsupersco}{#insert zYDownUpPaste}.	pnsuper
+pnsuperc -- pnsuper, CODE-d, with cursor after the dot.	<CODE>{#insert pnsuper}</CODE>{#insert zPostBracketGTP}	pnsuperc
+pnsuperco -- y-mark, pnsupersco, y-down-del	{#insert zYmark}{#insert pnsupersco}{#insert zYDownDelete}	pnsupersco
+pnsupers -- Select the package of the super-class. -- NO y-mark	{#insert zTPGTDocTop}{#msgbox -head Super-class in same pkg as THIS? -text Is the super-class in the same package as THIS class? -yes zzpnsuper_SAMEPKG -no zzpnsuper_DIFF -defaultno}	pnsupers
+pnsupersco -- pnsupers, zTPCopy -- NO y-mark	{#insert pnsupers}{#insert zTPCopy}	pnsupersco
+pnthis -- {#insert zYmark}, pnthissco, zYDownUpPaste (plus a dot)	{#insert zYmark}{#insert pnthissco}{#insert zYDownUpPaste}.{#sleep 10}	pnthis
+pnthisc -- pnthis, CODE-d, with cursor after the dot.	<CODE>{#insert pnthis}</CODE>{#insert zPostBracketGTP}	pnthisc
+pnthisco -- y-mark, pnthissco, y-down-del	{#insert zYmark}{#insert pnthissco}{#insert zYDownDelete}	pnthissco
+pnthiss -- Select this classes package name -- NO {#insert zYmark} MARK	{#insert zjGTPkgLine}{#insert zMoveR2L1w}{#insert zSpEND}{#insert zSelectL1c}	pnthiss
+pnthissco -- pnthiss, zTPCopy -- NO y-mark	{#insert pnthiss}{#insert zTPCopy}	pnthissco
+zjGTLineAfterPkg	{#insert zjGTPkgLine}{#insert zFindDlgOpenDownRE};${#insert zFindGoREClose}{#insert zRIGHT2}	zjGTLineAfterPkg
+zjGTPkgLine -- Go to this classes 'package' line	{#insert zTPGTDocTop}{#insert zFindDlgOpenDownRE}^[ \t]*package[ \t]+[^;]+;${#insert zFindGoREClose}{#insert zLEFT}	zjGTPkgLine
+zzpnsuper_DIFF	{#insert cnsupersco}{#insert zTPGTDocTop}{#insert zFindOpenDown}.{#insert zSystemPaste};{#insert zFindBtnNext}{#insert zFindDlgClose}{#insert zLEFT(*Cursor before the final dot*)}{#insert zSpHOME}{#insert zSelectR2L1w}	zzpnsuper_DIFF
+zzpnsuper_SAMEPKG	{#insert pnthiss}	zzpnsuper_SAMEPKG

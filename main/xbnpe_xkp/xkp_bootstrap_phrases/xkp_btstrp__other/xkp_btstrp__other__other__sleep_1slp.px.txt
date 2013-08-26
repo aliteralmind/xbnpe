@@ -1,0 +1,1 @@
+z1slp -- Useful for COND target, which MUST be a phrase NAME 	{#sleep 1}	z1slp

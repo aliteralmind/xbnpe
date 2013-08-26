@@ -1,0 +1,5 @@
+zFindNonWSCharUpREoffHomSelR1w	{#insert zFindNonWSCharUpREoff}{#insert zHOME}{#insert zTPSelectR1w}	zFindNonWSCharUpREoffHomSelR1w
+
+zAtEOD_copyFirstWordInLastLineREoff -- Needs zvWORD_WRAP_ON, RE trnd off, dir ends up down	{#insert zWordWrapOffSaveState}{#insert zFindNonWSCharUpREoffHomSelR1w}{#insert zTPCopy}(*Must copy BEFORE toggling word wrap. The selected is canceled!*){#insert zRevertWWToOrigState}	zAtEOD_copyFirstWordInLastLineREoff
+
+

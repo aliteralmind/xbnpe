@@ -1,0 +1,5 @@
+jxcioob -- catch IOOBX	catch(IndexOutOfBoundsException ioobx)  {{#insert zENTER}throw  new IndexOutOfBoundsException(xif().getIOOBXMsg({#insert zXmark}clg, {#insert zXmark}xval, {#insert zXmark}xname, {#insert zXmark}lv, {#insert zXmark}ln));{#insert zENTER}}  {#insert zXmark}{#insert zFindOpenUpRE}{#insert zXmark}[a-z]+{#insert zFindBtnNext4}{#insert zFindBtnNext}{#insert zFindDlgClose}{#insert zMsgREFlagStillOn}	jxcioob
+jxc -- catch(...	catch({#insert zXmark}Exception {#insert zXmark})  {#insert zFuncCurlyBlock}{#insert zXUp2}	jxc
+jxcnp -- catch(NullPointerException...	catch(NullPointerException npx)  {#insert zFuncCurlyBlock}	jxcnp
+jxccc -- catch(ClassCastException...	catch(ClassCastException ccx)  {#insert zFuncCurlyBlock}throw  new ClassCastException({#asc 34}{#insert zXmark}: {#insert zXmark} is expected to be a {#insert zXmark}, but is sctually a {#asc 34} + {#insert zXmark}.getClass().getName());{#insert zXUp4}	jxccc
+jxcr -- catch(RuntimeException...	catch(RuntimeException rtx)  {#insert zFuncCurlyBlock}throw  new {#insert zXmark}({#asc 34}{#insert zXmark}: Attempting {#insert zXmark}. -- {#insert zXmark}{#asc 34}, rtx);{#insert zXUp4}	jxcr

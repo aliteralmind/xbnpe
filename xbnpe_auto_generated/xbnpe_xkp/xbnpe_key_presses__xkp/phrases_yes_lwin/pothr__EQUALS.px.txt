@@ -1,0 +1,8 @@
+Alt+LWin+EQUALS -- zALpEQUALS	{#ALT {#LWIN -chars =}}{#insert zTSlp}	zALpEQUALS
+Alt+Shift+LWin+EQUALS -- zASLpEQUALS	{#ALT {#SHIFT {#LWIN -chars =}}}{#insert zTSlp}	zASLpEQUALS
+Ctrl+Alt+LWin+EQUALS -- zCALpEQUALS	{#CTRL {#ALT {#LWIN -chars =}}}{#insert zTSlp}	zCALpEQUALS
+Ctrl+Alt+Shift+LWin+EQUALS -- zCASLpEQUALS	{#CTRL {#ALT {#SHIFT {#LWIN -chars =}}}}{#insert zTSlp}	zCASLpEQUALS
+Ctrl+LWin+EQUALS -- zCLpEQUALS	{#CTRL {#LWIN -chars =}}{#insert zTSlp}	zCLpEQUALS
+Ctrl+Shift+LWin+EQUALS -- zCSLpEQUALS	{#CTRL {#SHIFT {#LWIN -chars =}}}{#insert zTSlp}	zCSLpEQUALS
+LWin+EQUALS -- zLpEQUALS	{#LWIN -chars =}{#insert zTSlp}	zLpEQUALS
+Shift+LWin+EQUALS -- zSLpEQUALS	{#SHIFT {#LWIN -chars =}}{#insert zTSlp}	zSLpEQUALS

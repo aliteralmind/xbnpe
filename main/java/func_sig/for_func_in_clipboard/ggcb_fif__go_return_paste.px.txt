@@ -1,0 +1,47 @@
+
+ggcbf -- ggcbfp0p ALT KC	{#insert ggcbfp0p}	ggcbf
+ggcbfp -- ggcbfp0p ALT KC	{#insert ggcbfp0p}	ggcbfp
+ggcbfp01 -- ggcbfp1	{#insert zjreSetPCountPost_1}{#insert zggcbfp_MASTER}	ggcbfp1
+ggcbfp02 -- ggcbfp2	{#insert zjreSetPCountPost_2}{#insert zggcbfp_MASTER}	ggcbfp2
+ggcbfp03 -- ggcbfp3	{#insert zjreSetPCountPost_3}{#insert zggcbfp_MASTER}	ggcbfp3
+ggcbfp04 -- ggcbfp4	{#insert zjreSetPCountPost_4}{#insert zggcbfp_MASTER}	ggcbfp4
+ggcbfp05 -- ggcbfp5	{#insert zjreSetPCountPost_5}{#insert zggcbfp_MASTER}	ggcbfp5
+ggcbfp06 -- ggcbfp6	{#insert zjreSetPCountPost_6}{#insert zggcbfp_MASTER}	ggcbfp6
+ggcbfp07 -- ggcbfp7	{#insert zjreSetPCountPost_7}{#insert zggcbfp_MASTER}	ggcbfp7
+ggcbfp08 -- ggcbfp8	{#insert zjreSetPCountPost_8}{#insert zggcbfp_MASTER}	ggcbfp8
+ggcbfp09 -- ggcbfp9	{#insert zjreSetPCountPost_9}{#insert zggcbfp_MASTER}	ggcbfp9
+ggcbfp0p -- ggcbfp, zero-or-more (0-Plus) parameters	{#insert zjreSetPCountPost_0orMore}{#insert zggcbfp_MASTER}	ggcbfp0p
+ggcbfp10	{#insert zjreSetPCountPost_10}{#insert zggcbfp_MASTER}	ggcbfp10
+ggcbfp1p -- ggcbfp, one-or-more (1-Plus) parameters	{#insert zjreSetPCountPost_1orMore}{#insert zggcbfp_MASTER}	ggcbfp1p
+ggcbfpn -- prompt for exact param-count	{#insert zjreSetPCountPost_FromGT0Prompt}{#insert zggcbfp_MASTER}	ggcbfpn
+ggcbqf -- Go to and delete func name, then ggcbqf	{#insert zggcbqGTCutName}{#insert ggcbf}	ggcbqf
+ggcbqfad -- Go to and delete func name, then ggcbqfad	{#insert zggcbqGTCutName}{#insert ggcbfad}	ggcbqfad
+ggcbqfp -- ggcbfp	{#insert zggcbqGTCutName}{#insert ggcbfp}	ggcbqfp
+ggcbqfp01 -- ggcbfp1 -- ggcbfp1	{#insert zggcbqGTCutName}{#insert ggcbfp1}	ggcbqfp1
+ggcbqfp02 -- ggcbfp2 -- ggcbfp2	{#insert zggcbqGTCutName}{#insert ggcbfp2}	ggcbqfp2
+ggcbqfp03 -- ggcbfp3 -- ggcbfp3	{#insert zggcbqGTCutName}{#insert ggcbfp3}	ggcbqfp3
+ggcbqfp04 -- ggcbfp4 -- ggcbfp4	{#insert zggcbqGTCutName}{#insert ggcbfp4}	ggcbqfp4
+ggcbqfp05 -- ggcbfp5 -- ggcbfp5	{#insert zggcbqGTCutName}{#insert ggcbfp5}	ggcbqfp5
+ggcbqfp06 -- ggcbfp6 -- ggcbfp6	{#insert zggcbqGTCutName}{#insert ggcbfp6}	ggcbqfp6
+ggcbqfp07 -- ggcbfp7 -- ggcbfp7	{#insert zggcbqGTCutName}{#insert ggcbfp7}	ggcbqfp7
+ggcbqfp08 -- ggcbfp8 -- ggcbfp8	{#insert zggcbqGTCutName}{#insert ggcbfp8}	ggcbqfp8
+ggcbqfp09 -- ggcbfp9 -- ggcbfp9	{#insert zggcbqGTCutName}{#insert ggcbfp9}	ggcbqfp9
+ggcbqfp0p -- ggcbfp0p	{#insert zggcbqGTCutName}{#insert ggcbfp0p}	ggcbqfp0p
+ggcbqfp10	{#insert zggcbqGTCutName}{#insert ggcbfp10}	ggcbqfp10
+ggcbqfp1p -- ggcbfp1p	{#insert zggcbqGTCutName}{#insert ggcbfp1p}	ggcbqfp1p
+ggcbqfpn -- ggcbfpn	{#insert zggcbqGTCutName}{#insert ggcbfpn}	ggcbqfpn
+ggpwf -- zCutL1w, ggcbf	{#insert zCutL1w}{#insert ggcbf}	ggpwf
+ggpwfp -- zCutL1w, ggcbfp	{#insert zCutL1w}{#insert ggcbfp}	ggpwfp
+ggpwfp01 -- zCutL1w, ggcbfp01	{#insert zCutL1w}{#insert ggcbfp01}	ggpwfp01
+ggpwfp02 -- zCutL1w, ggcbfp02	{#insert zCutL1w}{#insert ggcbfp02}	ggpwfp02
+ggpwfp03 -- zCutL1w, ggcbfp03	{#insert zCutL1w}{#insert ggcbfp03}	ggpwfp03
+ggpwfp04 -- zCutL1w, ggcbfp04	{#insert zCutL1w}{#insert ggcbfp04}	ggpwfp04
+ggpwfp05 -- zCutL1w, ggcbfp05	{#insert zCutL1w}{#insert ggcbfp05}	ggpwfp05
+ggpwfp06 -- zCutL1w, ggcbfp06	{#insert zCutL1w}{#insert ggcbfp06}	ggpwfp06
+ggpwfp07 -- zCutL1w, ggcbfp07	{#insert zCutL1w}{#insert ggcbfp07}	ggpwfp07
+ggpwfp08 -- zCutL1w, ggcbfp08	{#insert zCutL1w}{#insert ggcbfp08}	ggpwfp08
+ggpwfp09 -- zCutL1w, ggcbfp09	{#insert zCutL1w}{#insert ggcbfp09}	ggpwfp09
+ggpwfp0p -- zCutL1w, ggcbfp0p	{#insert zCutL1w}{#insert ggcbfp0p}	ggpwfp0p
+ggpwfp10 -- zCutL1w, ggcbfp10	{#insert zCutL1w}{#insert ggcbfp10}	ggpwfp10
+ggpwfp1p -- zCutL1w, ggcbfp1p	{#insert zCutL1w}{#insert ggcbfp1p}	ggpwfp1p
+ggpwfpn -- zCutL1w, ggcbfpn	{#insert zCutL1w}{#insert ggcbfpn}	ggpwfpn

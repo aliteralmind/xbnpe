@@ -1,0 +1,11 @@
+pab1	\\\{#insert alertbox1\\\}{#insert zzPabSyntax}	pab1
+pab2	\\\{#insert alertbox2\\\}{#insert zzPabSyntax}	pab2
+pab3	\\\{#insert alertbox3\\\}{#insert zzPabSyntax}	pab3
+pab4	\\\{#insert alertbox4\\\}{#insert zzPabSyntax}	pab4
+pab5	\\\{#insert alertbox5\\\}{#insert zzPabSyntax}	pab5
+pab6	\\\{#insert alertbox6\\\}{#insert zzPabSyntax}	pab6
+pab7	\\\{#insert alertbox7\\\}{#insert zzPabSyntax}	pab7
+pab8	\\\{#insert alertbox8\\\}{#insert zzPabSyntax}	pab8
+pab9	\\\{#insert alertbox9\\\}{#insert zzPabSyntax}	pab9
+pab10	\\\{#insert alertbox10\\\}{#insert zzPabSyntax}	pab10
+zzPabSyntax	{#BALLOON -title Tracing alert boxes (pab) syntax -text pab[1-10]  //  Phrases: alertbox[1-10]}	zzPabSyntax

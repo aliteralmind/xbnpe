@@ -1,0 +1,8 @@
+zTpkcHelpTipAbrv1C	Htip	zTpkcHelpTipAbrv1C
+zTpkcHtipCmdNameTC	HelpTip	zTpkcHtipCmdNameTC
+zTpkcHtipDfltPhrsNm	zTPHelpTip	zTpkcHtipDfltPhrsNm
+zTpkcHtipCatForCmdAbrvLC	help	zTpkcHtipCatForCmdAbrvLC
+zTpkcHtipCmdType_mcrTl		zTpkcHtipCmdType_mcrTl
+zTpkcHtipIsBtstrp_yes		zTpkcHtipIsBtstrp_yes
+zTpkcHtipDfltPostKcSlpMils	10	zTpkcHtipDfltPostKcSlpMils
+zTpkcHtipStpsFrmCmdListTop	{#insert zEND}{#insert zUP}	zTpkcHtipStpsFrmCmdListTop

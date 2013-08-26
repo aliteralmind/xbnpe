@@ -1,0 +1,8 @@
+Alt+LWin+EE -- zALpEE	{#ALT {#LWIN -chars e}}{#insert zTSlp}	zALpEE
+Alt+Shift+LWin+EE -- zASLpEE	{#ALT {#SHIFT {#LWIN -chars e}}}{#insert zTSlp}	zASLpEE
+Ctrl+Alt+LWin+EE -- zCALpEE	{#CTRL {#ALT {#LWIN -chars e}}}{#insert zTSlp}	zCALpEE
+Ctrl+Alt+Shift+LWin+EE -- zCASLpEE	{#CTRL {#ALT {#SHIFT {#LWIN -chars e}}}}{#insert zTSlp}	zCASLpEE
+Ctrl+LWin+EE -- zCLpEE	{#CTRL {#LWIN -chars e}}{#insert zTSlp}	zCLpEE
+Ctrl+Shift+LWin+EE -- zCSLpEE	{#CTRL {#SHIFT {#LWIN -chars e}}}{#insert zTSlp}	zCSLpEE
+LWin+EE -- zLpEE	{#LWIN -chars e}{#insert zTSlp}	zLpEE
+Shift+LWin+EE -- zSLpEE	{#SHIFT {#LWIN -chars e}}{#insert zTSlp}	zSLpEE

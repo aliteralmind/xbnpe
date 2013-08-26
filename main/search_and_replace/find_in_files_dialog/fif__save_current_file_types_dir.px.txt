@@ -1,0 +1,5 @@
+zFFindSaveCurrDirRAW -- Sets zvDIR_PREV	{#insert zFFindFieldDir}{#insert zSystemCopy}{#SETPHRASE -description zvDIR_PREV -content {#INSERTCLIPBOARD} -autotext zvDIR_PREV -folder ctvv_folder}	zFFindSaveCurrDirRAW
+zFFindSaveCurrFileType	{#insert zFFindSaveCurrFileTypeRAW}{#insert zFindFieldWhat}	zFFindSaveCurrFileType
+zFFindSaveCurrDirFNmsRAW -- Sets zvFNM_PREV, zvDIR_PREV	{#insert zFFindSaveCurrFileTypeRAW}{#insert zFFindSaveCurrDirRAW}	zFFindSaveCurrDirFNmsRAW
+zFFindSaveCurrDirFNms -- Cursor ends in find-what	{#insert zFFindSaveCurrDirFNmsRAW}{#insert zFFindFieldWhat}	zFFindSaveCurrDirFNms
+zFFindSaveCurrFileTypeRAW -- Sets zvFNM_PREV	{#insert zFFindFieldFileType}{#insert zSystemCopy}{#SETPHRASE -description zvFNM_PREV -content {#INSERTCLIPBOARD} -autotext zvFNM_PREV -folder ctvv_folder}	zFFindSaveCurrFileTypeRAW

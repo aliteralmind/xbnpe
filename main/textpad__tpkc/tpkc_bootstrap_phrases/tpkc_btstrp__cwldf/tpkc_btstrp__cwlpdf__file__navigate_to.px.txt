@@ -1,0 +1,8 @@
+zFileOpenDlgGTDir_M_dir -- Needs zvDIRECTORY	{#insert zFcsTPFileOpen}{#sleep 1000}{#insert zvDIRECTORY}{#insert zKSlpEtr}	zFileOpenDlgGTDir_M_dir
+zFileOpenDlgGTDirSlk_M_dir	{#insert zFileOpenDlgGTDir_M_dir}{#sleep 1000}	zFileOpenDlgGTDirSlk_M_dir
+zOpenExplorerDirSelectTargetFile_M_dirFnm -- zvPATH=zvDIRECTORY+zvFILE_NAME, zOpenExplorerDirSelectTarget_M_path	{#insert zvPATH_stDirPlusFNm}{#insert zOpenExplorerDirSelectTarget_M_path}	zOpenExplorerDirSelectTargetFile_M_dirFnm
+zOpenExplorerDirSelectTarget_M_path -- Needs zvPATH (may be directory or file)	{#BALLOON -title Opening PARENT directory, selecting child -text  (zvPATH is a directory or file in the parent). zvPATH='{#insert zvPATH}'}{#OPENFOLDER /select, {#insert zAscQQ}{#insert zvPATH}{#insert zAscQQ}}	zOpenExplorerDirSelectTarget_M_path
+zOpenExplorerDir_M_dir -- Needs zvDIRECTORY. If zvDIR is a file, it will *execute* the file	{#BALLOON -title Opening Windows Explorer directory -text zvDIRECTORY='{#insert zvDIRECTORY}'}{#OPENFOLDER {#insert zAscQQ}{#insert zvDIRECTORY}{#insert zAscQQ}}	zOpenExplorerDir_M_dir
+zFileOpenDlgGTDirHighlightFile_M_dirFnm	{#insert zFileOpenDlgGTDirSlk_M_dir}{#insert zzFileNmStarKSlpEtrKSlp}	zFileOpenDlgGTDirHighlightFile_M_dirFnm
+zzFileNmStarKSlpEtrKSlp	{#SETPHRASE -description zvFNM_PLUS_STR -content {#insert zvFILE_NAME}* -autotext zvFNM_PLUS_STR -folder ctvv_folder}{#insert zvFNM_PLUS_STR}{#insert zKSlpEtrKSlp}	zzFileNmStarKSlpEtrKSlp
+

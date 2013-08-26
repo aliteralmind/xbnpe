@@ -1,0 +1,13 @@
+(*
+   Required by phrase-creator-ddmenu-utils...START
+      PM_DDMENU_DIRID_FILENMPHRSNM_HDRAUTOTXT=tpkc/zzPmdmFNmPreTpkcOther/xhoy
+   Required by phrase-creator-ddmenu-utils...END
+*)
+zROOT_DIR_XBNPE	{#insert zROOT_DIR_XBNPE_PARENT}xbnpe\	zROOT_DIR_XBNPE
+zROOT_DIR_XBNPE_MAIN	{#insert zROOT_DIR_XBNPE}main\	zROOT_DIR_XBNPE_MAIN
+zXPROOT_DIR_AG_temp	{#insert zROOT_DIR_XBNPE_AG}{#insert zzXPSUB_DIR_temp}	zXPROOT_DIR_AG_temp
+zROOT_DIR_XBNPE_AG	{#insert zROOT_DIR_XBNPE_AG_PARENT}xbnpe_auto_generated\	zROOT_DIR_XBNPE_AG
+zROOT_DIR_XBNPE_AG_PARENT	{#insert zROOT_DIR_XBNPE}	zROOT_DIR_XBNPE_AG_PARENT
+zXPROOT_DIR_xbnpeXkp	{#insert zROOT_DIR_XBNPE_MAIN}{#insert zzXPSUB_DIR_xbnpeXkp}	zXPROOT_DIR_xbnpeXkp
+zzXPSUB_DIR_temp	zz_temp\	zzXPSUB_DIR_temp
+zzXPSUB_DIR_xbnpeXkp	xbnpe_xkp\	zzXPSUB_DIR_xbnpeXkp

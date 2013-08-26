@@ -1,0 +1,8 @@
+Alt+LWin+DD -- zALpDD	{#ALT {#LWIN -chars d}}{#insert zTSlp}	zALpDD
+Alt+Shift+LWin+DD -- zASLpDD	{#ALT {#SHIFT {#LWIN -chars d}}}{#insert zTSlp}	zASLpDD
+Ctrl+Alt+LWin+DD -- zCALpDD	{#CTRL {#ALT {#LWIN -chars d}}}{#insert zTSlp}	zCALpDD
+Ctrl+Alt+Shift+LWin+DD -- zCASLpDD	{#CTRL {#ALT {#SHIFT {#LWIN -chars d}}}}{#insert zTSlp}	zCASLpDD
+Ctrl+LWin+DD -- zCLpDD	{#CTRL {#LWIN -chars d}}{#insert zTSlp}	zCLpDD
+Ctrl+Shift+LWin+DD -- zCSLpDD	{#CTRL {#SHIFT {#LWIN -chars d}}}{#insert zTSlp}	zCSLpDD
+LWin+DD -- zLpDD	{#LWIN -chars d}{#insert zTSlp}	zLpDD
+Shift+LWin+DD -- zSLpDD	{#SHIFT {#LWIN -chars d}}{#insert zTSlp}	zSLpDD

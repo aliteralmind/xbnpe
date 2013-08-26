@@ -1,0 +1,8 @@
+Alt+LWin+F5 -- zALpF5	{#ALT {#LWIN {#F5}}}{#insert zTSlp}	zALpF5
+Alt+Shift+LWin+F5 -- zASLpF5	{#ALT {#SHIFT {#LWIN {#F5}}}}{#insert zTSlp}	zASLpF5
+Ctrl+Alt+LWin+F5 -- zCALpF5	{#CTRL {#ALT {#LWIN {#F5}}}}{#insert zTSlp}	zCALpF5
+Ctrl+Alt+Shift+LWin+F5 -- zCASLpF5	{#CTRL {#ALT {#SHIFT {#LWIN {#F5}}}}}{#insert zTSlp}	zCASLpF5
+Ctrl+LWin+F5 -- zCLpF5	{#CTRL {#LWIN {#F5}}}{#insert zTSlp}	zCLpF5
+Ctrl+Shift+LWin+F5 -- zCSLpF5	{#CTRL {#SHIFT {#LWIN {#F5}}}}{#insert zTSlp}	zCSLpF5
+LWin+F5 -- zLpF5	{#LWIN {#F5}}{#insert zTSlp}	zLpF5
+Shift+LWin+F5 -- zSLpF5	{#SHIFT {#LWIN {#F5}}}{#insert zTSlp}	zSLpF5

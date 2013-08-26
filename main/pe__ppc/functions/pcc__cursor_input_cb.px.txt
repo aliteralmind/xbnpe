@@ -1,0 +1,11 @@
+crs -- {#CURSOR}	{#insert zvESC_LVL_CNT_st0}{#insert zCrsRAW_M_elc}{#insert zzInpSyn}	crs
+crsp -- crs, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zCrsRAW_M_elc}{#insert zzInpSyn}	crsp
+crsq -- crs, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zCrsRAW_M_elc}{#insert zzInpSyn}	crsq
+inp -- {#INPUT -head ... -single}	{#insert zvESC_LVL_CNT_st0}{#insert zInpRAW_M_elc}{#insert zzInpSyn}	inp
+inpp -- inp, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zInpRAW_M_elc}{#insert zzInpSyn}	inpp
+inpq -- inp, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zInpRAW_M_elc}{#insert zzInpSyn}	inpq
+pccinptestall	{#SETPHRASE -description zvQB_STR_LIST -content {#insert zzPccInpAllMainAbrvs1CQBL} -autotext zvQB_STR_LIST -folder ctvv_folder}{#insert zzTestAllMainPhrsCrtrAbrvs_M_qbl}	pccinptestall
+zCrsRAW_M_elc	{#insert zOY_M_elc}#CURSOR{#insert zCY_M_elc}	zCrsRAW_M_elc
+zInpRAW_M_elc	{#insert zOY_M_elc}#INPUT -head  -single{#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}{#LEFT -count 8}	zInpRAW_M_elc
+zzInpSyn	{#BALLOON -title Syntax: CURSOR, INPUT -text crs[[p,q]]  //  inp[[p,q]] (available option: ~def)  //  pccinptestall  //  z[non~pq~abrv~1c]RAW_M_elc (ex: 'zCrsRAW_M_elc')  //  [p]=esc'd, [q]=dbly~or~more~esc'd}	zzInpSyn
+zzPccInpAllMainAbrvs1CQBL	[Crs][Inp]	zzPccInpAllMainAbrvs1CQBL

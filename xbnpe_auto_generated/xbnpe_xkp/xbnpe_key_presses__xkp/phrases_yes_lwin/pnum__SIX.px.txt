@@ -1,0 +1,8 @@
+Alt+LWin+SIX -- zALpSIX	{#ALT {#LWIN -chars 6}}{#insert zTSlp}	zALpSIX
+Alt+Shift+LWin+SIX -- zASLpSIX	{#ALT {#SHIFT {#LWIN -chars 6}}}{#insert zTSlp}	zASLpSIX
+Ctrl+Alt+LWin+SIX -- zCALpSIX	{#CTRL {#ALT {#LWIN -chars 6}}}{#insert zTSlp}	zCALpSIX
+Ctrl+Alt+Shift+LWin+SIX -- zCASLpSIX	{#CTRL {#ALT {#SHIFT {#LWIN -chars 6}}}}{#insert zTSlp}	zCASLpSIX
+Ctrl+LWin+SIX -- zCLpSIX	{#CTRL {#LWIN -chars 6}}{#insert zTSlp}	zCLpSIX
+Ctrl+Shift+LWin+SIX -- zCSLpSIX	{#CTRL {#SHIFT {#LWIN -chars 6}}}{#insert zTSlp}	zCSLpSIX
+LWin+SIX -- zLpSIX	{#LWIN -chars 6}{#insert zTSlp}	zLpSIX
+Shift+LWin+SIX -- zSLpSIX	{#SHIFT {#LWIN -chars 6}}{#insert zTSlp}	zSLpSIX

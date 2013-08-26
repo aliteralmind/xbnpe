@@ -1,0 +1,8 @@
+zFFindDlgOpenForceWW	{#insert zTPFFindDlgOpen}{#insert zFindFlagForceWWTgl}	zFFindDlgOpenForceWW
+zFFindDlgOpenMC	{#insert zTPFindFlagMCon}{#insert zTPFFindDlgOpen}	zFFindDlgOpenMC
+zFFindDlgOpenMCForceWW	{#insert zTPFindFlagMCon}{#insert zTPFFindDlgOpen}{#insert zFindFlagForceWWTgl}	zFFindDlgOpenMCForceWW
+zFFindDlgOpenMCOnly	{#insert zFindFlagMConOnly}{#insert zTPFFindDlgOpen}	zFFindDlgOpenMCOnly
+zFFindDlgOpenMCRE	{#insert zFindFlagsMCREon}{#insert zTPFFindDlgOpen}	zFFindDlgOpenMCRE
+zFFindDlgOpenMCWW	{#insert zFindFlagsMCWWon}{#insert zTPFFindDlgOpen}	zFFindDlgOpenMCWW
+zFFindDlgOpenRE	{#insert zTPFindFlagREon}{#insert zTPFFindDlgOpen}	zFFindDlgOpenRE
+zFFindDlgOpenWW	{#insert zTPFindFlagWWon}{#insert zTPFFindDlgOpen}	zFFindDlgOpenWW

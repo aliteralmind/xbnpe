@@ -1,0 +1,8 @@
+PGDN -- zPGDN	{#PGDN}{#insert zTSlp}	zPGDN
+Alt+PGDN -- zApPGDN	{#ALT {#PGDN}}{#insert zTSlp}	zApPGDN
+Alt+Shift+PGDN -- zASpPGDN	{#ALT {#SHIFT {#PGDN}}}{#insert zTSlp}	zASpPGDN
+Ctrl+PGDN -- zCpPGDN	{#CTRL {#PGDN}}{#insert zTSlp}	zCpPGDN
+Ctrl+Alt+PGDN -- zCApPGDN	{#CTRL {#ALT {#PGDN}}}{#insert zTSlp}	zCApPGDN
+Ctrl+Alt+Shift+PGDN -- zCASpPGDN	{#CTRL {#ALT {#SHIFT {#PGDN}}}}{#insert zTSlp}	zCASpPGDN
+Ctrl+Shift+PGDN -- zCSpPGDN	{#CTRL {#SHIFT {#PGDN}}}{#insert zTSlp}	zCSpPGDN
+Shift+PGDN -- zSpPGDN	{#SHIFT {#PGDN}}{#insert zTSlp}	zSpPGDN

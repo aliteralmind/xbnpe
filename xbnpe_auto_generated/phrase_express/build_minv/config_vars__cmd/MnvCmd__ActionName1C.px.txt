@@ -1,0 +1,13 @@
+__**WARNING**__: All phrases in this folder were created by 'plpdcf'. DO NOT EDIT.	.		(*Extra tab to allow for empty-string autotext*)
+zvACTION_NM_1C_sfKey	{#SETPHRASE -description zvACTION_NM_1C -content {#insert zzMnvCmdActm1_cfgValue_M_key} -autotext zvACTION_NM_1C -folder ctvv_folder}	zvACTION_NM_1C_sfKey
+zzMnvCmdActm1_cfgValue_M_key	{#insert {#insert zzMnvCmdActm1_cfgVarPhrsName_M_key}}	zzMnvCmdActm1_cfgValue_M_key
+zzMnvCmdActionName1C_cvtFromAbrv1C	Actm1	zzMnvCmdActionName1C_cvtFromAbrv1C
+zzMnvCmdActm1_cfgVarPNmPost	ActionName1C	zzMnvCmdActm1_cfgVarPNmPost
+zzMnvCmdActm1_intrnlVarNm	zvACTION_NM_1C	zzMnvCmdActm1_intrnlVarNm
+zzMnvCmdActm1_cfgVarPhrsName_M_key	zz{#insert zzMnvCmdProjectAbrv1C}{#insert zzMnvCmdDataTypeAbrv1C}{#insert zvCMD_PNMV_1C}{#insert zzMnvCmdActm1_cfgVarPNmPost}	zzMnvCmdActm1_cfgVarPhrsName_M_key
+zzMnvCmdActm1_helpForDlg	The name of the action for this MINV~Cmd, where only the first character is uppercase. For example, 'Tbb', which executes '{#insert zOY}#insert zTAB{#insert zCY}'. This is the public (user~used) unique identifier for a MINV~Command data instance. NOTE that the user only uses the lowercase version of this action name. However, internally it is stored as 1~case.	zzMnvCmdActm1_helpForDlg
+zzMnvCmdActm1_valuePrintable	yes	zzMnvCmdActm1_valuePrintable
+zzMnvCmdActm1_validateValuePhrsNm	zzVldtActm1NotES_M_self	zzMnvCmdActm1_validateValuePhrsNm
+zzMnvCmdActm1_nkcvListNum	-1	zzMnvCmdActm1_nkcvListNum
+zzMnvCmdActm1_keyCVTFromAbrv1C	{#insert zzMnvCmdPrivKeyCVTFromAbrv1C}	zzMnvCmdActm1_keyCVTFromAbrv1C
+zvCVT_FRMV_1C_stMnvCmdActm1	{#SETPHRASE -description zvCVT_FRMV_1C -content {#insert zzMnvCmdActionName1C_cvtFromAbrv1C} -autotext zvCVT_FRMV_1C -folder ctvv_folder}	zvCVT_FRMV_1C_stMnvCmdActm1

@@ -1,0 +1,6 @@
+zTpkcHelpNbsKcCount	0	zTpkcHelpNbsKcCount
+zTpkcHelpFAQNbsKcCount	0	zTpkcHelpFAQNbsKcCount
+zTpkcHelpOrderingNbsKcCount	0	zTpkcHelpOrderingNbsKcCount
+zTpkcHelpSupportNbsKcCount	0	zTpkcHelpSupportNbsKcCount
+zTpkcHelpTipNbsKcCount	0	zTpkcHelpTipNbsKcCount
+zTpkcHelpWWWNbsKcCount	0	zTpkcHelpWWWNbsKcCount

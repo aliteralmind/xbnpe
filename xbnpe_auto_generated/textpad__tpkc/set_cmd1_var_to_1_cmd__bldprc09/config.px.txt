@@ -1,0 +1,13 @@
+zvCMD_ABRV_1C_sfBlockSelectOff	{#SETPHRASE -description zvCMD_ABRV_1C -content Cfgblkself -autotext zvCMD_ABRV_1C -folder ctvv_folder}	zvCMD_ABRV_1C_sfBlockSelectOff
+zvCMD_ABRV_1C_sfBlockSelectOn	{#SETPHRASE -description zvCMD_ABRV_1C -content Cfgblkseln -autotext zvCMD_ABRV_1C -folder ctvv_folder}	zvCMD_ABRV_1C_sfBlockSelectOn
+zvCMD_ABRV_1C_sfCustomizeToolbars	{#SETPHRASE -description zvCMD_ABRV_1C -content Cfgcstmztbs -autotext zvCMD_ABRV_1C -folder ctvv_folder}	zvCMD_ABRV_1C_sfCustomizeToolbars
+zvCMD_ABRV_1C_sfPreferences	{#SETPHRASE -description zvCMD_ABRV_1C -content Cfgprfsdlg -autotext zvCMD_ABRV_1C -folder ctvv_folder}	zvCMD_ABRV_1C_sfPreferences
+zvCMD_ABRV_1C_sfRightMarginDec	{#SETPHRASE -description zvCMD_ABRV_1C -content Cfgrmrgdec -autotext zvCMD_ABRV_1C -folder ctvv_folder}	zvCMD_ABRV_1C_sfRightMarginDec
+zvCMD_ABRV_1C_sfRightMarginInc	{#SETPHRASE -description zvCMD_ABRV_1C -content Cfgrmrginc -autotext zvCMD_ABRV_1C -folder ctvv_folder}	zvCMD_ABRV_1C_sfRightMarginInc
+zvCMD_ABRV_1C_sfRightMarginSet	{#SETPHRASE -description zvCMD_ABRV_1C -content Cfgrmrgset -autotext zvCMD_ABRV_1C -folder ctvv_folder}	zvCMD_ABRV_1C_sfRightMarginSet
+zvCMD_ABRV_1C_sfToggleBlockSelect	{#SETPHRASE -description zvCMD_ABRV_1C -content Cfgtgblksel -autotext zvCMD_ABRV_1C -folder ctvv_folder}	zvCMD_ABRV_1C_sfToggleBlockSelect
+zvCMD_ABRV_1C_sfToggleInsertMode	{#SETPHRASE -description zvCMD_ABRV_1C -content Cfgtgins -autotext zvCMD_ABRV_1C -folder ctvv_folder}	zvCMD_ABRV_1C_sfToggleInsertMode
+zvCMD_ABRV_1C_sfToggleReadOnly	{#SETPHRASE -description zvCMD_ABRV_1C -content Cfgtgro -autotext zvCMD_ABRV_1C -folder ctvv_folder}	zvCMD_ABRV_1C_sfToggleReadOnly
+zvCMD_ABRV_1C_sfToggleSyncScroll	{#SETPHRASE -description zvCMD_ABRV_1C -content Cfgtgsyncscr -autotext zvCMD_ABRV_1C -folder ctvv_folder}	zvCMD_ABRV_1C_sfToggleSyncScroll
+zvCMD_ABRV_1C_sfToggleUndo	{#SETPHRASE -description zvCMD_ABRV_1C -content Cfgtgudo -autotext zvCMD_ABRV_1C -folder ctvv_folder}	zvCMD_ABRV_1C_sfToggleUndo
+zvCMD_ABRV_1C_sfToggleWordWrap	{#SETPHRASE -description zvCMD_ABRV_1C -content Cfgtgww -autotext zvCMD_ABRV_1C -folder ctvv_folder}	zvCMD_ABRV_1C_sfToggleWordWrap

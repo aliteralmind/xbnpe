@@ -1,0 +1,31 @@
+__README__	The phrases in this folder may not use any TextPad non-macro key-commands, with the exception of XBN-PhraseExpress bootstrap commands. *WARNING* -- Also note that these commands will only work when the 'Document Classes' and 'Tools' branches are either not open, or are open but contain no items beginning with a 'K'.		(*This comment is to force NO autotext when imported*)
+
+zAssignKCInFieldGBTCmdFast -- No pause on kc (**)	(*After [Assign], this goes back to the cmd in the cmd-list*){#sleep 25}{#insert zTAB}{#sleep 250}{#insert zApSS}{#sleep 100}	zAssignKCInFieldGBTCmdFast
+
+zAssignKCInFieldGBTCmdMedium -- Pauses briefly on the key-command	{#sleep 500}{#insert zAssignKCInFieldGBTCmdFast}	zAssignKCInFieldGBTCmdMedium
+
+zAssignKCInFieldGBTCmdSlow -- Pauses on the key-command	{#sleep 1000}{#insert zAssignKCInFieldGBTCmdFast}	zAssignKCInFieldGBTCmdSlow
+
+zAssignKCInFieldGTCmdTopFast	{#insert zAssignKCInFieldGBTCmdFast}{#insert zHOME}{#sleep 10}	zAssignKCInFieldGTCmdTopFast
+
+zAssignKCInFieldGTCmdTopMedium	{#insert zAssignKCInFieldGBTCmdMedium}{#insert zHOME}{#sleep 10}	zAssignKCInFieldGTCmdTopMedium
+
+zAssignKCInFieldGTCmdTopSlow	{#insert zAssignKCInFieldGBTCmdSlow}{#insert zHOME}{#sleep 10}	zAssignKCInFieldGTCmdTopSlow
+
+zAssignKCInFieldGTKBCatTopFast	{#insert zAssignKCInFieldGBTCmdFast}{#insert zGTKBCatTopFromCmd}	zAssignKCInFieldGTKBCatTopFast
+
+zAssignKCInFieldGTKBCatTopMedium	{#insert zAssignKCInFieldGBTCmdMedium}{#insert zGTKBCatTopFromCmd}	zAssignKCInFieldGTKBCatTopMedium
+
+zAssignKCInFieldGTKBCatTopSlow	{#insert zAssignKCInFieldGBTCmdSlow}{#insert zGTKBCatTopFromCmd}	zAssignKCInFieldGTKBCatTopSlow
+
+zFcsTPPrefsDlgOpen -- Focus on TextPad window, zTPPrefsDlgOpen	{#insert zFocusOnTextPadWindow}{#insert zTPPrefsDlgOpen}	zFcsTPPrefsDlgOpen
+
+zGBTCmdFromKCField	{#insert zSpTAB}{#sleep 10}	zGBTCmdFromKCField
+
+zGTKBCatTopFromCmd	{#insert zSpTAB}{#sleep 10}{#insert zHOME}{#sleep 10}	zGTKBCatTopFromCmd
+
+zTPPrefsClose	{#FOCUS Preferences}{#insert zESC}{#sleep 500}	zTPPrefsClose
+
+zTPPrefsGTKeyboardBranchFromListTop	{#insert zKK}{#sleep 10}	zTPPrefsGTKeyboardBranchFromListTop
+
+zTPPrefsOpenGTKBCatTop	{#insert zFcsTPPrefsDlgOpen}{#insert zTPPrefsGTKeyboardBranchFromListTop}{#TAB}{#sleep 10}	zTPPrefsOpenGTKBCatTop

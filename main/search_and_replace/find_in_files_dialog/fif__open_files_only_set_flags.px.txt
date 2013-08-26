@@ -1,0 +1,19 @@
+zFFindDlgOpenFilesOnly -- [zCpF5]	{#insert zTPFFindDlgOpen}{#insert zFFindFlagFilesOnly}	zFFindDlgOpenFilesOnly
+zFFindDlgOpenFilesOnlyMC	{#insert zTPFindFlagMCon}{#insert zFFindDlgOpenFilesOnly}	zFFindDlgOpenFilesOnlyMC
+zFFindDlgOpenFilesOnlyMCRE	{#insert zFindFlagsMCREon}{#insert zFFindDlgOpenFilesOnly}	zFFindDlgOpenFilesOnlyMCRE
+zFFindDlgOpenFilesOnlyMCOnly	{#insert zFindFlagMConOnly}{#insert zFFindDlgOpenFilesOnly}	zFFindDlgOpenFilesOnlyMCOnly
+zFFindDlgOpenFilesOnlyMCWW	{#insert zFindFlagsMCWWon}{#insert zFFindDlgOpenFilesOnly}	zFFindDlgOpenFilesOnlyMCWW
+zFFindDlgOpenFilesOnlyMCForceWW	{#insert zTPFindFlagMCon}{#insert zFFindDlgOpenFilesOnly}{#insert zFindFlagForceWWTgl}	zFFindDlgOpenFilesOnlyMCForceWW
+zFFindDlgOpenFilesOnlyRE	{#insert zTPFindFlagREon}{#insert zFFindDlgOpenFilesOnly}	zFFindDlgOpenFilesOnlyRE
+zFFindDlgOpenFilesOnlyWW	{#insert zTPFindFlagWWon}{#insert zFFindDlgOpenFilesOnly}	zFFindDlgOpenFilesOnlyWW
+zFFindDlgOpenFilesOnlyForceWW	{#insert zFFindDlgOpenFilesOnly}{#insert zFindFlagForceWWTgl}	zFFindDlgOpenFilesOnlyForceWW
+
+zFFindDlgOpenFilesOnlyDefaults -- [zCpF5]	{#insert zTPFFindDlgOpen}{#insert zFFindBtnDefaults}{#insert zFFindFlagFilesOnly}	zFFindDlgOpenFilesOnlyDefaults
+zFFindDlgOpenFilesOnlyDefaultsRE	{#insert zFFindDlgOpenFilesOnlyDefaults}{#insert zFindFlagRETgl}	zFFindDlgOpenFilesOnlyDefaultsRE
+zFFindDlgOpenFilesOnlyDefaultsWW	{#insert zFFindDlgOpenFilesOnlyDefaults}{#insert zFindFlagWWTgl}	zFFindDlgOpenFilesOnlyDefaultsWW
+zFFindDlgOpenFilesOnlyDefaultsForceWW	{#insert zFFindDlgOpenFilesOnlyDefaults}{#insert zFindFlagForceWWTgl}	zFFindDlgOpenFilesOnlyDefaultsForceWW
+
+zFFindDlgOpenFilesOnlyDefaultsSubDirs -- [zCpF5]	{#insert zTPFFindDlgOpen}{#insert zFFindBtnDefaults}{#insert zFFindFlagFilesOnlySubDirsTglRAW}	zFFindDlgOpenFilesOnlyDefaultsSubDirs
+zFFindDlgOpenFilesOnlyDefaultsSubDirsRE	{#insert zFFindDlgOpenFilesOnlyDefaultsSubDirs}{#insert zFindFlagRETgl}	zFFindDlgOpenFilesOnlyDefaultsSubDirsRE
+zFFindDlgOpenFilesOnlyDefaultsSubDirsWW	{#insert zFFindDlgOpenFilesOnlyDefaultsSubDirs}{#insert zFindFlagWWTgl}	zFFindDlgOpenFilesOnlyDefaultsSubDirsWW
+zFFindDlgOpenFilesOnlyDefaultsSubDirsForceWW	{#insert zFFindDlgOpenFilesOnlyDefaultsSubDirs}{#insert zFindFlagForceWWTgl}	zFFindDlgOpenFilesOnlyDefaultsSubDirsForceWW

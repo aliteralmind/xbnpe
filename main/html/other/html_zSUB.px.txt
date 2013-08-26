@@ -1,0 +1,8 @@
+zzHRETag	<[^>]+>	zzHRETag
+zzLeftMatchBracketLeft	{#insert zLEFT}{#insert zTPMatchBracket}{#insert zLEFT}	zzLeftMatchBracketLeft
+zzRigFDlgDnRE_tagInFndWht	{#insert zRIGHT}{#insert zFindDlgOpenDownRE}{#insert zzHRETag}	zzRigFDlgDnRE_tagInFndWht
+zzRigFDlgUpRE_tagInFndWht	{#insert zRIGHT}{#insert zFindDlgOpenUpRE}{#insert zzHRETag}	zzRigFDlgUpRE_tagInFndWht
+zzTagMoveL1_MANUAL_STEPS	{#insert zzRigFDlgUpRE_tagInFndWht}{#insert zFindBtnNext}{#insert zFindDlgCloseREoff}{#insert zRIGHT}	zzTagMoveL1_MANUAL_STEPS
+zzTagMoveR1_MANUAL_STEPS	{#insert zzRigFDlgDnRE_tagInFndWht}{#insert zFindBtnNext}{#insert zFindDlgCloseREoff}{#insert zLEFT}	zzTagMoveR1_MANUAL_STEPS
+zzTagMoveR2_MANUAL_STEPS	{#insert zzRigFDlgDnRE_tagInFndWht}{#insert zFindBtnNext}{#insert zFindBtnNext}{#insert zFindDlgCloseREoff}{#insert zLEFT}	zzTagMoveR2_MANUAL_STEPS
+zzTagMoveR2_MANUAL_STEPS	{#insert zzRigFDlgUpRE_tagInFndWht}{#insert zFindBtnNext}{#insert zFindBtnNext}{#insert zFindDlgCloseREoff}{#insert zRIGHT}	zzTagMoveR2_MANUAL_STEPS

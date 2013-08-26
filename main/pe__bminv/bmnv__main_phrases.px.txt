@@ -1,0 +1,17 @@
+mnvact -- zMnvCmdAllActionPhrases_dlgIfOff_wActmlPrompt ALT KC	{#insert zMnvCmdAllActionPhrases_dlgIfOff_wActmlPrompt}	mnvact
+mnvapc -- zAllPhraseCreatorPhrases_dlgIfOff_wActmlPrompt ALT KC	{#insert zAllPhraseCreatorPhrases_dlgIfOff_wActmlPrompt}	mnvapc
+mnvbpc -- zAllBasicPhraseCreators_dlgIfOff_wActmlPrompt ALT KC	{#insert zAllBasicPhraseCreators_dlgIfOff_wActmlPrompt}	mnvbpc
+mnvcag -- zMnvCmdAllAutogenPhrasesWActmlPrompt ALT KC	{#insert zMnvCmdAllAutogenPhrasesWActmlPrompt}	mnvcag
+mnvcagll -- zMnvCmdAllAutogenPhrasesForActmlLL ALT KC	{#insert zMnvCmdAllAutogenPhrasesForActmlLL}	mnvcagll
+mnvcmdd -- zAllCmdDescs_dlgIfOff_wActmlPrompt ALT KC	{#insert zAllCmdDescs_dlgIfOff_wActmlPrompt}	mnvcmdd
+mnvcmp -- zMnvMstrPhrsAndCmdDescsWActmlPrompt ALT KC	{#insert zMnvMstrPhrsAndCmdDescsWActmlPrompt}	mnvcmp
+mnvcmpll -- zMnvMstrPhrsAndCmdDescsForActmlLL ALT KC	{#insert zMnvMstrPhrsAndCmdDescsForActmlLL}	mnvcmpll
+mnvlpc -- zAllLiteralPhraseCreators_dlgIfOff_wActmlPrompt ALT KC	{#insert zAllLiteralPhraseCreators_dlgIfOff_wActmlPrompt}	mnvlpc
+mnvmpd -- zMasterPhraseDescAndBSCWActmlPrompt ALT KC	{#insert zMasterPhraseDescAndBSCWActmlPrompt}	mnvmpd
+mnvoag -- zMnvAllOtherActionPhrasesWActmlPrompt ALT KC (incl nnl-cmd)	{#insert zMnvAllOtherActionPhrasesWActmlPrompt}	mnvoag
+mnvvag -- zAllMnvVarPhrasesWVrvlPrompt ALT KC	{#insert zAllMnvVarPhrasesWVrvlPrompt}	mnvvag
+mnvvagll -- zAllMnvVarPhrasesForVrvlLL ALT KC	{#insert zAllMnvVarPhrasesForVrvlLL}	mnvvagll
+mnvvas -- zAllVarSetToNumPhrasesWVrvlPrompt ALT KC	{#insert zAllVarSetToNumPhrasesWVrvlPrompt}	mnvvas
+mnvvsa -- zAllVarSetToNumActionsWVrvlPrompt ALT KC	{#insert zAllVarSetToNumActionsWVrvlPrompt}	mnvvsa
+mnvvsp -- zAllVarSetToNumPhrsCrtrsWVrvlPrompt ALT KC	{#insert zAllVarSetToNumPhrsCrtrsWVrvlPrompt}	mnvvsp
+mnvvug -- zAllMnvVarUtilPhrasesWVrvlPrompt ALT KC	{#insert zAllMnvVarUtilPhrasesWVrvlPrompt}	mnvvug

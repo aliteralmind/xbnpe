@@ -1,0 +1,3 @@
+zListAllOthrCmptrDirsToNewFile	{#OPEN {#insert zzListAllOthrCmptrDirsToNewFileNm}}	zListAllOthrCmptrDirsToNewFile
+zzListAllOthrCmptrDirsToNewFileNm	{#insert zXPROOT_DIR_AG_tpkcDocs}other_computers_directory_structure.html	zzListAllOthrCmptrDirsToNewFileNm
+

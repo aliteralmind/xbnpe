@@ -1,0 +1,8 @@
+ONE -- zONE	{#NONE -chars 1}{#insert zTSlp}	zONE
+Alt+ONE -- zApONE	{#ALT -chars 1}{#insert zTSlp}	zApONE
+Alt+Shift+ONE -- zASpONE	{#ALT {#SHIFT -chars 1}}{#insert zTSlp}	zASpONE
+Ctrl+ONE -- zCpONE	{#CTRL -chars 1}{#insert zTSlp}	zCpONE
+Ctrl+Alt+ONE -- zCApONE	{#CTRL {#ALT -chars 1}}{#insert zTSlp}	zCApONE
+Ctrl+Alt+Shift+ONE -- zCASpONE	{#CTRL {#ALT {#SHIFT -chars 1}}}{#insert zTSlp}	zCASpONE
+Ctrl+Shift+ONE -- zCSpONE	{#CTRL {#SHIFT -chars 1}}{#insert zTSlp}	zCSpONE
+Shift+ONE -- zSpONE	{#SHIFT -chars 1}{#insert zTSlp}	zSpONE

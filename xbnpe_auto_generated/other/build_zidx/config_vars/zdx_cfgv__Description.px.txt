@@ -1,0 +1,10 @@
+zvDESCRIPTION_sfPvtc	{#SETPHRASE -description zvDESCRIPTION -content {#insert zzZdxDesc_cfgValue_M_pvtc} -autotext zvDESCRIPTION -folder ctvv_folder}	zvDESCRIPTION_sfPvtc
+zzZdxDesc_dbgCfgItem_M_pvtc	zzZdxDesc_cfgValue_M_pvtc={#insert zzZdxDesc_cfgValue_M_pvtc}	zzZdxDesc_dbgCfgItem_M_pvtc
+zzZdxDesc_dbgVarItem_M_pvtcDesc	zvDESCRIPTION={#insert zvDESCRIPTION}	zzZdxDesc_dbgVarItem_M_pvtcDesc
+zzZdxDesc_cfgValue_M_pvtc	{#insert {#insert zzZdxDesc_varName_M_pvtc}}	zzZdxDesc_cfgValue_M_pvtc
+zzZdxDesc_cfgVarNmPostfix_M_pvtc	Description	zzZdxDesc_cfgVarNmPostfix_M_pvtc
+zzZdxDesc_intrnlVarNmFYIOnly	zvDESCRIPTION	zzZdxDesc_intrnlVarNmFYIOnly
+zzZdxDesc_phrsWCfgValue_M_pvtc	{#insert zzZdxDesc_varName_M_pvtc}{#insert zTAB}{#insert zzZdxDesc_cfgValue_M_pvtc}{#insert zTAB}{#insert zzZdxDesc_varName_M_pvtc}	zzZdxDesc_phrsWCfgValue_M_pvtc
+zzZdxDesc_phrsWVarValue_M_pvtcDesc	{#insert zzZdxDesc_varName_M_pvtc}{#insert zTAB}{#insert zvDESCRIPTION}{#insert zTAB}{#insert zzZdxDesc_varName_M_pvtc}	zzZdxDesc_phrsWVarValue_M_pvtcDesc
+zzZdxDesc_varName_M_pvtc	{#insert zzMinvVarNmPREFIX}{#insert zvPN_ABRV_TC}{#insert zzZdxDesc_cfgVarNmPostfix}	zzZdxDesc_varName_M_pvtc
+zzZdxDesc_llCfgLineDesc	The description of the phrases, or collection-of-phrases, in this ZIndex-Node. Recommended to be no longer than a few sentences.	zzZdxDesc_llCfgLineDesc

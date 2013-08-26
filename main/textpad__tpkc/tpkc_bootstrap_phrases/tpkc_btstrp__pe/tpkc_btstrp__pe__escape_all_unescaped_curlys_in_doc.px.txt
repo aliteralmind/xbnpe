@@ -1,0 +1,4 @@
+eucurlys -- zREoffEscapeAllUnescCurlysInDoc ALT KC	{#insert zREoffEscapeAllUnescCurlysInDoc}	eucurlys
+zREoffEscapeAllUnescCurlysInDoc	{#insert zFcsTPRplcDlgOpen}{#insert zFindFlagRETgl}{#insert zzMidRplcREEscapeAllUnescCurlys}{#insert zRplcBtnAllTDHnrRAW}{#insert zFindFlagRETglRAW}{#insert zRplcDlgClose}	zREoffEscapeAllUnescCurlysInDoc
+zREonEscapeAllUnescCurlysInDoc	{#insert zFcsTPRplcDlgOpen}{#insert zzMidRplcREEscapeAllUnescCurlys}{#insert zRplcBtnAllTDHnrRAW}{#insert zRplcDlgClose}	zREonEscapeAllUnescCurlysInDoc
+zzMidRplcREEscapeAllUnescCurlys	(*Can't put a curly--unescaped or not--into a SETPHRASE:*)(?<!\\\\\\)(\{|\\\\}){#insert zRplcFieldWith}{#SETPHRASE -description zvRPLC_WITH -content \\\\\\$1 -autotext zvRPLC_WITH -folder ctvv_folder}{#insert zvRPLC_WITH}	zzMidRplcREEscapeAllUnescCurlys

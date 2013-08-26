@@ -1,0 +1,2 @@
+fnkp -- zSetKeyPressAsSearchTermGT1stFindREOpen ALT KC	{#insert zSetKeyPressAsSearchTermGT1stFindREOpen}{#insert zBalloonDone}	fnkp
+zSetKeyPressAsSearchTermGT1stFindREOpen	{#insert zTPFindDlgOpen}{#insert zFindFlagRETgl}{#SETPHRASE -description zvFIND_WHAT -content \\\\\\\{#insert zKeyPress(Fast|Medium|Slow|SuperSlow|Glacial)\\\\\\\} -autotext zvFIND_WHAT -folder ctvv_folder}{#insert zvFIND_WHAT}{#insert zFindBtnNext}	zSetKeyPressAsSearchTermGT1stFindREOpen

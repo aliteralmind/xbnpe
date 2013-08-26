@@ -1,0 +1,19 @@
+hpltn_forHKOnly -- hpltn ALT KC [zApSIX]	{#insert hpltn}	hpltn_forHKOnly
+
+xhEscapeSel_forHKOnly -- xhEscapeSel ALT KC [zCASpF8]	{#insert xhEscapeSel}	xhEscapeSel_forHKOnly
+
+zCodedLinkFromSel_forHKOnly -- zCodedLinkFromSel ALT KC [zCApFIVE]	{#insert zCodedLinkFromSel}	zCodedLinkFromSel_forHKOnly
+
+zDeleteSurroundingTag_forHKOnly -- zDeleteSurroundingTag ALT KC [zCSpDD]	{#insert zDeleteSurroundingTag}	zDeleteSurroundingTag_forHKOnly
+
+zLinkFromSel_forHKOnly -- zLinkFromSel ALT KC [zCSpFIVE]	{#insert zLinkFromSel}	zLinkFromSel_forHKOnly
+
+zSelectedUrlDescToCodedNameLink_forHKOnly -- [zCApSIX] zSelectedUrlDescToCodedNameLink ALT KC	{#insert zSelectedUrlDescToCodedNameLink}	zSelectedUrlDescToCodedNameLink_forHKOnly
+
+zSelectedUrlDescToNameLink_forHKOnly -- [zCSpSIX] zSelectedUrlDescToNameLink ALT KC	{#insert zSelectedUrlDescToNameLink}	zSelectedUrlDescToNameLink_forHKOnly
+
+zTagMoveL2_forHKOnly -- zTagMoveL2 ALT KC [zApGG]	{#insert zTagMoveL2}	zTagMoveL2_forHKOnly
+
+zTagSelectL2_forHKOnly -- zTagSelectL2 ALT KC [zApSEVEN]	{#insert zTagSelectL2}	zTagSelectL2_forHKOnly
+
+zTagSelectR2_forHKOnly -- zTagSelectR2 ALT KC [zApZERO]	{#insert zTagSelectR2}	zTagSelectR2_forHKOnly

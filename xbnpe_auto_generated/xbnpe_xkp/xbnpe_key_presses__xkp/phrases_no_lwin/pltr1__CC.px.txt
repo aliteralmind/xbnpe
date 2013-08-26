@@ -1,0 +1,8 @@
+CC -- zCC	{#NONE -chars c}{#insert zTSlp}	zCC
+Alt+CC -- zApCC	{#ALT -chars c}{#insert zTSlp}	zApCC
+Alt+Shift+CC -- zASpCC	{#ALT {#SHIFT -chars c}}{#insert zTSlp}	zASpCC
+Ctrl+CC -- zCpCC	{#CTRL -chars c}{#insert zTSlp}	zCpCC
+Ctrl+Alt+CC -- zCApCC	{#CTRL {#ALT -chars c}}{#insert zTSlp}	zCApCC
+Ctrl+Alt+Shift+CC -- zCASpCC	{#CTRL {#ALT {#SHIFT -chars c}}}{#insert zTSlp}	zCASpCC
+Ctrl+Shift+CC -- zCSpCC	{#CTRL {#SHIFT -chars c}}{#insert zTSlp}	zCSpCC
+Shift+CC -- zSpCC	{#SHIFT -chars c}{#insert zTSlp}	zSpCC

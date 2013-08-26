@@ -1,0 +1,7 @@
+zTpkcToolsAbrvLC	tools	zTpkcToolsAbrvLC
+zTpkcToolsAllCmdNamesTCQbl	[ToolCompareFiles][ToolExplorer][ToolHTMLValidate][ToolRerun][ToolRun][ToolSort][ToolSpell][ToolStop][ToolWildEdit]	zTpkcToolsAllCmdNamesTCQbl
+zTpkcToolsCmdCount	9	zTpkcToolsCmdCount
+zTpkcToolsHasUserCrtdCmds_yes	yes	zTpkcToolsHasUsrCrtdCmds_yes
+zTpkcToolsStpsFrmCatListTop	{#insert zTT}{#insert z5ThnTSlp}	zTpkcToolsStpsFrmCatListTop
+zTpkcToolsNameLC	tools	zTpkcToolsNameLC
+

@@ -1,0 +1,28 @@
+zzjlDirIsCBFuncObjNmIsL1w	{#insert zzjlDirIsCB}{#insert zzjlFuncObjNmIsL1w}	zzjlDirIsCBFuncObjNmIsL1w
+zzjlDispCB	{#SETPHRASE -description zvLINK_DISP -content {#insert zTPPaste} -autotext zvLINK_DISP -folder ctvv_folder}	zzjlDispCB
+zzjlDispCBDirEmptyFileIsX	{#insert zzjlDispCB}{#insert zzjlDirIsEmptyFileIsX}	zzjlDispCBDirEmptyFileIsX
+zzjlDispCBDirFileEmpty	{#insert zzjlDispCB}{#insert zzjlDirFileIsEmpty}	zzjlDispCBDirFileEmpty
+zzjlDispCBFileL1w	{#insert zzjlDispCB}{#insert zzjlFileIsL1w}	zzjlDispCBFileL1w
+zzjlDispCBFileL1wDirPrompt	{#insert zzjlDispCB}{#insert zzjlFileIsL1wDirPrompt}	zzjlDispCBFileL1wDirPrompt
+zzjlDispCBFileL1wNoDir	{#insert zzjlDispCB}{#insert zzjlFileIsL1wNoDir}	zzjlDispCBFileL1wNoDir
+zzjlDispCBFileSuperDirPrompt	{#insert zzjlDispCB}{#insert zzjlFileSuperDirPrompt}	zzjlDispCBFileSuperDirPrompt
+zzjlDispCBFuncObjNmIsL1w	{#insert zzjlDispCB}{#insert zzjlFuncObjNmIsL1w}	zzjlDispCBFuncObjNmIsL1w
+zzjlDispFuncObjNm	{#SETPHRASE -description zvLINK_DISP -content {#insert zvURL_POST_HASH_OBJFNAME} -autotext zvLINK_DISP -folder ctvv_folder}	zzjlDispFuncObjNm
+zzjlDispFuncObjNmPAPP	{#insert zzjlDispFuncObjNm}{#insert zzjlPAParamsParenParen}	zzjlDispFuncObjNmPAPP
+zzjlDispQCnstrQ	{#SETPHRASE -description zvLINK_DISP -content constructor -autotext zvLINK_DISP -folder ctvv_folder}	zzjlDispQCnstrQ
+zzjlDispQCnstrQPAPES	{#insert zzjlDispQCnstrQ}{#insert zzjlPAParamsEmpty}	zzjlDispQCnstrQPAPES
+zzjlDispQSuperQPAPP	{#insert zzjlDispQSuperQ}{#insert zzjlPAParamsParenParen}	zzjlDispQSuperQPAPP
+zzjlDispQSuperQ	{#SETPHRASE -description zvLINK_DISP -content super -autotext zvLINK_DISP -folder ctvv_folder}	zzjlDispQSuperQ
+zzjlDispQThisQPAPP	{#insert zzjlDispQThisQ}{#insert zzjlPAParamsParenParen}	zzjlDispQThisQPAPP
+zzjlDispQThisQ	{#SETPHRASE -description zvLINK_DISP -content this -autotext zvLINK_DISP -folder ctvv_folder}	zzjlDispQThisQ
+zzjlDispX	{#SETPHRASE -description zvLINK_DISP -content {#insert zXMark} -autotext zvLINK_DISP -folder ctvv_folder}	zzjlDispX
+zzjlFileIsCBFuncObjNmIsL1w	{#insert zzjlFileIsCB}{#insert zzjlFuncObjNmIsL1w}	zzjlFileIsCBFuncObjNmIsL1w
+zzjlFileIsXDispX	{#insert zzjlDispX}{#insert zzjlFileIsX}	zzjlFileIsXDispX
+zzjlFuncObjNmIsCB	{#SETPHRASE -description zvURL_POST_HASH_OBJFNAME -content {#insert zTPPaste} -autotext zvURL_POST_HASH_OBJFNAME -folder ctvv_folder}	zzjlFuncObjNmIsCB
+zzjlFuncObjNmIsEmpty	{#SETPHRASE -description zvURL_POST_HASH_OBJFNAME -content (*NOTHING*) -autotext zvURL_POST_HASH_OBJFNAME -folder ctvv_folder}	zzjlFuncObjNmIsEmpty
+zzjlFuncObjNmIsL1w	{#insert zCutL1w}{#insert zzjlFuncObjNmIsCB}	zzjlFuncObjNmIsL1w
+zzjlFuncObjNmIsSuperCN	{#insert cnsuperco}{#insert zzjlFuncObjNmIsCB}	zzjlFuncObjNmIsSuperCN
+zzjlFuncObjNmIsThisCN	{#insert cnthisco}{#insert zzjlFuncObjNmIsCB}	zzjlFuncObjNmIsThisCN
+zzjlFuncObjNmIsX	{#SETPHRASE -description zvURL_POST_HASH_OBJFNAME -content {#insert zXmark} -autotext zvURL_POST_HASH_OBJFNAME -folder ctvv_folder}	zzjlFuncObjNmIsX
+zzjlHashOff	{#SETPHRASE -description zvURL_HASH -content (*NOTHING*) -autotext zvURL_HASH -folder ctvv_folder}	zzjlHashOff
+zzjlHashOn	{#SETPHRASE -description zvURL_HASH -content # -autotext zvURL_HASH -folder ctvv_folder}	zzHashOn

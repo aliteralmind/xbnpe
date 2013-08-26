@@ -1,0 +1,33 @@
+zParaDelete -- Del current para. If cursor in column 1, this deletes PREV para [zApFF]	{#insert zParaGTStart}{#insert zParaSTEnd}{#insert zBKSP}	zParaDelete
+zParaDown -- zParaGTEnd, zRIGHT	{#insert zParaGTEnd}{#insert zRIGHT}	zParaDown
+zParaDown02 -- zParaGTEnd, zParaDown	{#insert zParaGTEnd}{#insert zParaDown}	zParaDown2
+zParaDown_numMSTR -- Needs zvPARA_NUM	{#loop {#insert zParaGTEnd} -count {#CALC {#insert zvPARA_NUM} - 1 -round 0 -thousands none}}{#insert zParaDown}	zParaDown_numMSTR
+zParaGTEnd -- ztpmParaGTEnd ALT KC	{#insert ztpmParaGTEnd}	zParaGTEnd
+zParaGTEnd02 -- Actually zParaGTEnd2	{#insert zParaGTEnd}{#insert zParaGTEnd}	zParaGTEnd2
+zParaGTEnd_numMSTR -- Needs zvPARA_NUM	{#loop {#insert zParaGTEnd} -count {#insert zvPARA_NUM}}	zParaGTEnd_numMSTR
+zParaGTStart -- ztpmParaGTStart ALT KC	{#insert ztpmParaGTStart}	zParaGTStart
+zParaGTStart02 -- Actually zParaGTStart2	{#insert zParaGTStart}{#insert zParaGTStart}	zParaGTStart2
+zParaGTStart_numMSTR -- Needs zvPARA_NUM	{#loop {#insert zParaGTStart} -count {#insert zvPARA_NUM}}	zParaGTStart_numMSTR
+zParaSTEnd -- zParaSTEndNoNL, csr1	{#insert zParaSTEndNoNL}{#insert zSelectR1c}	zParaSTEnd
+zParaSTEnd02 -- zParaSTEnd2	{#insert zParaSTEnd}{#insert zParaSTEnd}	zParaSTEnd2
+zParaSTEndNoNL -- ztpmParaSTEnd ALT KC	{#insert ztpmParaSTEnd}	zParaSTEndNoNL
+zParaSTEndNoNL02 -- Actually zParaSTEndNoNL2	{#insert zParaSTEndNoNL}{#insert zParaSTEndNoNL}	zParaSTEndNoNL2
+zParaSTEnd_numMSTR -- Needs zvPARA_NUM	{#loop {#insert zParaSTEnd} -count {#CALC {#insert zvPARA_NUM} - 1 -round 0 -thousands none}}{#insert zParaSTEnd}	zParaSTEnd_numMSTR
+zParaSTStart -- ztpmParaSTStart ALT KC	{#insert ztpmParaSTStart}	zParaSTStart
+zParaSTStart02 -- zParaSTStart2	{#insert zParaSTStart}{#insert zParaSTStart}	zParaSTStart2
+zParaSTStart_numMSTR -- Needs zvPARA_NUM	{#loop {#insert zParaSTStart} -count {#insert zvPARA_NUM}}	zParaSTStart_numMSTR
+zParaSelect -- Select ENTIRE para incl ending newline	{#insert zParaSelectNoNL}{#insert zSelectR1c}	zParaSelect
+zParaSelectNoNL -- Select ENTIRE para, w/o ending newline	{#insert zParaGTStart}{#insert zParaSTEnd}	zParaSelectNoNL
+zParaUp -- zParaGTStart ALT KC	{#insert zParaGTStart}	zParaUp
+zParaUp02 -- Actually zParaUp2 -- zParaUp X2	{#insert zParaGTStart}{#insert zParaGTStart}	zParaUp2
+zvPARA_NUM_st1	{#SETPHRASE -description zvPARA_NUM -content 1 -autotext zvPARA_NUM -folder ctvv_folder}	zvPARA_NUM_st1
+zvPARA_NUM_st10	{#SETPHRASE -description zvPARA_NUM -content 10 -autotext zvPARA_NUM -folder ctvv_folder}	zvPARA_NUM_st10
+zvPARA_NUM_st2	{#SETPHRASE -description zvPARA_NUM -content 2 -autotext zvPARA_NUM -folder ctvv_folder}	zvPARA_NUM_st2
+zvPARA_NUM_st3	{#SETPHRASE -description zvPARA_NUM -content 3 -autotext zvPARA_NUM -folder ctvv_folder}	zvPARA_NUM_st3
+zvPARA_NUM_st4	{#SETPHRASE -description zvPARA_NUM -content 4 -autotext zvPARA_NUM -folder ctvv_folder}	zvPARA_NUM_st4
+zvPARA_NUM_st5	{#SETPHRASE -description zvPARA_NUM -content 5 -autotext zvPARA_NUM -folder ctvv_folder}	zvPARA_NUM_st5
+zvPARA_NUM_st6	{#SETPHRASE -description zvPARA_NUM -content 6 -autotext zvPARA_NUM -folder ctvv_folder}	zvPARA_NUM_st6
+zvPARA_NUM_st7	{#SETPHRASE -description zvPARA_NUM -content 7 -autotext zvPARA_NUM -folder ctvv_folder}	zvPARA_NUM_st7
+zvPARA_NUM_st8	{#SETPHRASE -description zvPARA_NUM -content 8 -autotext zvPARA_NUM -folder ctvv_folder}	zvPARA_NUM_st8
+zvPARA_NUM_st9	{#SETPHRASE -description zvPARA_NUM -content 9 -autotext zvPARA_NUM -folder ctvv_folder}	zvPARA_NUM_st9
+zvPARA_NUM_stPrompt	{#SETPHRASE -description zvPARA_NUM -content {#input -head Set zvPARA_NUM to? -single} -autotext zvPARA_NUM -folder ctvv_folder}	zvPARA_NUM_stPrompt

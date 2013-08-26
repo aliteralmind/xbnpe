@@ -1,0 +1,8 @@
+WW -- zWW	{#NONE -chars w}{#insert zTSlp}	zWW
+Alt+WW -- zApWW	{#ALT -chars w}{#insert zTSlp}	zApWW
+Alt+Shift+WW -- zASpWW	{#ALT {#SHIFT -chars w}}{#insert zTSlp}	zASpWW
+Ctrl+WW -- zCpWW	{#CTRL -chars w}{#insert zTSlp}	zCpWW
+Ctrl+Alt+WW -- zCApWW	{#CTRL {#ALT -chars w}}{#insert zTSlp}	zCApWW
+Ctrl+Alt+Shift+WW -- zCASpWW	{#CTRL {#ALT {#SHIFT -chars w}}}{#insert zTSlp}	zCASpWW
+Ctrl+Shift+WW -- zCSpWW	{#CTRL {#SHIFT -chars w}}{#insert zTSlp}	zCSpWW
+Shift+WW -- zSpWW	{#SHIFT -chars w}{#insert zTSlp}	zSpWW

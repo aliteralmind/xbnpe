@@ -1,0 +1,7 @@
+etrb -- Phrase: zEnterBksp	\\\{#insert zEnterBksp\\\}	etrb
+etrt -- Phrase: zEnterTab	\\\{#insert zEnterTab\\\}	etrt
+zEnterBksp	{#ENTER}{#BKSP}{#insert zTSlp}	zEnterBksp
+zEnterBkspBksp	{#ENTER}{#BKSP -count 2}{#insert zTSlp}	zEnterBkspBksp
+zEnterTab	{#ENTER}{#TAB}{#insert zTSlp}	zEnterTab
+zEnterTabTab	{#ENTER}{#TAB -count 2}{#insert zTSlp}	zEnterTabTab
+zzEtrThnSyn	{#BALLOON -title ENTER-then syntax -text etr[b,t] ~~ ([b]=BKSP, [t]=TAB)}	zzEtrThnSyn

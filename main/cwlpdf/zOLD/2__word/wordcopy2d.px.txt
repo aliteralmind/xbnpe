@@ -1,0 +1,12 @@
+zSelLNR1wCopyBack_M_vwmdl -- Vwmdl[p] - wslnrck[[h,t]]m - wslnrck[vy,cvlc]	(*Needs zvWORDS_LEFT: Vwmdl[p]. MINV-Command abbreviation is 'wslnrck'. MINV-Action name is 'wslnrck'.*){#insert zSelLNR1wCopy_M_vwmdl}{#insert zRIGHT}	zSelLNR1wCopyBack_M_vwmdl
+zSelL1R1wCopyBack - wslnrck[p]1 - zSelectL1R1wCopy, zRIGHT	{#insert zSelectL1R1wCopy}{#insert zRIGHT}	zSelL1R1wCopyBack
+
+zSelRNL1wCopyBack_M_vwmdr -- Vwmdr[p] - wsrnlck[[h,t]]m - wsrnlck[vy,cvlc]	(*Needs zvWORDS_RIGHT: Vwmdr[p]. MINV-Command abbreviation is 'wsrnlck'. MINV-Action name is 'wsrnlck'.*){#insert zSelRNL1wCopy_M_vwmdl}{#insert zLEFT}	zSelRNL1wCopyBack_M_vwmdr
+zSelR1L1wCopyBack - wsrnlck[p]1 - zSelectR1L1wCopy, zLEFT	{#insert zSelectR1L1wCopy}{#insert zRIGHT}	zSelR1L1wCopyBack
+
+zSelLNR1wCopyGTP_M_vwmdr -- Vwmdr[p] - wsrnlcg[[h,t]]m - wsrnlcg[vy,cvlc]	(*Needs zvWORDS_RIGHT: Vwmdr[p]. MINV-Command abbreviation is 'wsrnlcg'. MINV-Action name is 'wsrnlcg'.*){#insert zSelLNR1wCopy_M_vwmdl}{#insert zRIGHT}	zSelLNR1wCopyGTP_M_vwmdr
+zSelR1L1wCopyGTP - wsrnlcg[p]1 - zSelectR1L1wCopy, zRIGHT	{#insert zSelectR1L1wCopy}{#insert zRIGHT}	zSelR1L1wCopyGTP
+
+zSelLNR1wCopyGTP_M_vwmdl -- Vwmdl[p] - wslnrcg[[h,t]]m - wslnrcg[vy,cvlc]	(*Needs zvWORDS_LEFT: Vwmdl[p]. MINV-Command abbreviation is 'wslnrcg'. MINV-Action name is 'wslnrcg'.*){#insert zSelLNR1wCopy_M_vwmdl}{#insert zLEFT}	zSelLNR1wCopyGTP_M_vwmdl
+zSelL1R1wCopyGTP - wslnrcg[p]1 - zSelectL1R1wCopy, zLEFT	{#insert zSelectL1R1wCopy}{#insert zLEFT}	zSelL1R1wCopyGTP
+

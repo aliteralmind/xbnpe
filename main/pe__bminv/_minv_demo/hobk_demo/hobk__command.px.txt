@@ -1,0 +1,15 @@
+zHomeBkspN_M_vlnu -(**)- hobk[n]#, hobk[f,[[h,t,r]]m], vlnu[[p,f]]	(*Needs zvLINES_UP (var-abrv-lc=vlnu, var-phrs-nm-abrv=Vlnu). This command: (action-name-lc=hobk, cmd-phrs-nm-abrv=Hobk)*)(*Call this with the cursor at the end of the final line*)(*Select the lines*){#insert zSpHOME}{#LOOP {#SHIFT {#UP}} -count {#CALC {#insert zvLINES_UP} - 1 -round 0 -thousands none}}(*Regex replacement: '\R' --> '' *){#insert zRplcDlgSelRE}\R{#insert zRplcWithNOTHING}{#insert zRplcAllREClose}(*Go to end of line*){#insert zTPToggleWW}{#insert zEND}{#insert zTPToggleWW}	zHomeBkspN_M_vlnu
+
+(*Utilities, literal master-phrase and command-style commands, and external nnl-command. NOTE -- Command range: min=1, max=1*)
+hobkn -- Action: Set-num-to-prompt	{#insert zzMnvCmdHobkSetSntpMsg}{#insert zzMnvVarVlnuSetphraseWPrompt_M_sntpmsg}{#insert zHomeBkspN_M_vlnu}	hobkn
+hobkm -- Phrase: zHomeBkspN_M_vlnu	{#insert zHomeBkspN_M_vlnup}	hobkm
+hobktm -- Phrase: zvLINES_UP_st[prompt], zHomeBkspN_M_vlnu	{#insert zzMnvCmdHobkSetSntpMsg}{#insert zzMnvVarVlnuSetToNumWPrompt_M_sntpmsgp}{#insert zHomeBkspN_M_vlnup}	hobktm
+hobkhm -- Phrase: [#SETPHRASE zvLINES_UP=[prompt]], zHomeBkspN_M_vlnu	{#insert zzMnvCmdHobkSetSntpMsg}{#insert zzMnvVarVlnuSetphraseWPrompt_M_sntpmsgp}{#insert zHomeBkspN_M_vlnup}	hobkhm
+hobkrm -- Phrase: zvLINES_UP_stPrompt, zHomeBkspN_M_vlnu	\\\{#insert zvLINES_UP_stPrompt\\\}{#insert zHomeBkspN_M_vlnup}	hobkrm
+hobkf -- inFo on this MINV-Command	{#SETPHRASE -description zvACTION_NM_1C -content Hobk -autotext zvACTION_NM_1C -folder ctvv_folder}{#insert zMnvCmdInformation_M_actm1}	hobkf
+zHomeBkspN_M_vlnup	\\\{#insert zHomeBkspN_M_vlnu\\\}	zHomeBkspN_M_vlnup
+zzMnvCmdHobkSetSntpMsg	{#SETPHRASE -description zvSNT_PROMPT_MSG -content {#insert zzMnvCmdHobkSNTPromptActnMsg} -autotext zvSNT_PROMPT_MSG -folder ctvv_folder}	zzMnvCmdHobkSetSntpMsg
+(*Action phrases proper*)
+hobk1 -- Action: zvLINES_UP_st1, zHomeBkspN_M_vlnu	{#insert zvLINES_UP_st1}{#insert zHomeBkspN_M_vlnu}	hobk1
+(*Phrase creators*)
+

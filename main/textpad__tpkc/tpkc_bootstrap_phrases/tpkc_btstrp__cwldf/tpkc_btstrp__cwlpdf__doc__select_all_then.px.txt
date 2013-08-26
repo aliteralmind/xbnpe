@@ -1,0 +1,3 @@
+zSelectAllCopy -- Clears clipboard first	{#insert zTPSelectAll}{#SETCLIPBOARD}{#insert zTPCopy}	zSelectAllCopy
+zSelectAllCut -- Clears clipboard first	{#insert zTPSelectAll}{#SETCLIPBOARD}{#insert zTPCut}	zSelectAllCut
+zSelectAllDel	{#insert zTPSelectAll}{#insert zDEL}	zSelectAllDel

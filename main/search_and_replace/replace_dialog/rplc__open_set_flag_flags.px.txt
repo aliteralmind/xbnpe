@@ -1,0 +1,8 @@
+zRplcDlgOpenForceWW	{#insert zTPRplcDlgOpen}{#insert zRplcFlagForceWWTgl}	zRplcDlgOpenForceWW
+zRplcDlgOpenMC	{#insert zTPFindFlagMCon}{#insert zTPRplcDlgOpen}	zRplcDlgOpenMC
+zRplcDlgOpenMCForceWW	{#insert zRplcDlgOpenMC}{#insert zRplcFlagForceWWTgl}	zRplcDlgOpenMCForceWW
+zRplcDlgOpenMCOnly	{#insert zFindFlagMConOnly}{#insert zTPRplcDlgOpen}	zRplcDlgOpenMCOnly
+zRplcDlgOpenMCRE	{#insert zFindFlagsMCREon}{#insert zTPRplcDlgOpen}	zRplcDlgOpenMCRE
+zRplcDlgOpenMCWW	{#insert zFindFlagsMCWWon}{#insert zTPRplcDlgOpen}	zRplcDlgOpenMCWW
+zRplcDlgOpenRE	{#insert zTPFindFlagREon}{#insert zTPRplcDlgOpen}	zRplcDlgOpenRE
+zRplcDlgOpenWW	{#insert zTPFindFlagWWon}{#insert zTPRplcDlgOpen}	zRplcDlgOpenWW

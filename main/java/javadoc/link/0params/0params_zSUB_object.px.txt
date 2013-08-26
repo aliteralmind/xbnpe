@@ -1,0 +1,34 @@
+(*           CODE-/PREK-able   OBJNAME  DISP   DIR      FILE
+             --------------   -------------   --------------
+   olcb          YES           CB      oname   ''       ''
+   olcbr         YES           CB      oname   prompt   super
+   olcbry        no            CB      X       prompt   super
+   olcby         no            CB      X       ''       ''
+   olpw          YES           L1w     oname   ''       ''
+   olpwf         YES           L1w     oname   ''       X
+   olpwfb        YES           L1w     oname   prompt   CB
+   olpwfby       no            L1w     X       prompt   CB
+   olpwfy        no            L1w     X       ''       X
+   olpwfyb       no            L1w     CB      ''       X
+   olpwr         YES           L1w     oname   prompt   super
+   olpwry        no            L1w     X       prompt   super
+   olpwryb       no            L1w     CB      prompt   super
+   olpwy         no            L1w     X       ''       ''
+   olpwyb        no            L1w     CB      ''       ''
+*)
+zzjlObjLink_MSTR_noDir -- zzjlOBJECT_LINK_MASTER, dir '' (**)	(*Need to set code, prek, url=[file, obj-name], disp*){#insert zzjlDirIsEmpty}{#insert zzjlOBJECT_LINK_MASTER}	zzjlObjLink_MSTR_noDir
+zzjlObjLink_MSTR_noFile -- zzjlObjLink_MSTR_noDir, file '' (**)	(*Need to set code, prek, url=[obj-name], disp*){#insert zzjlFileIsEmpty}{#insert zzjlObjLink_MSTR_noDir}	zzjlObjLink_MSTR_noFile
+zzjlObjLink_MSTR_dirPrompt -- zzjlOBJECT_LINK_MASTER, for diff dir (**)	(*Need to set code, prek, url=[file, obj-name], disp*){#insert zzjlDirPrompt}{#insert zzjlOBJECT_LINK_MASTER}	zzjlObjLink_MSTR_dirPrompt
+zzjlObjLink_MSTR_fileSuperDirPrompt -- zzjlObjLink_MSTR_dirPrompt for super-class (**)	(*Need to set code, prek, url=[dir, file, obj-name], disp*){#insert zzjlFileIsSuperCN}{#insert zzjlObjLink_MSTR_dirPrompt}	zzjlObjLink_MSTR_fileSuperDirPrompt
+zzjlDispObjName	{#insert zzjlDispFuncObjNm}	zzjlDispObjName	zzjlObjLink_MSTR_fileSuperDirPrompt
+zzjlFileIsCBObjNmL1w	{#insert zzjlFileIsCB}{#insert zzjlFuncObjNmIsL1w}	zzjlFileIsCBObjNmL1w
+zzjlObjNmCBDispObjNm	{#insert zzjlFuncObjNmIsCB}{#insert zzjlDispObjName}	zzjlObjNmCBDispObjNm
+zzjlFuncObjNmIsCBDispX	{#insert zzjlFuncObjNmIsCB}{#insert zzjlDispX}	zzjlFuncObjNmIsCBDispX
+zzjlObjNmL1wDispObjNm	{#insert zzjlFuncObjNmIsL1w}{#insert zzjlDispObjName}	zzjlObjNmL1wDispObjNm
+zzjlObjNmL1w	{#insert zzjlFuncObjNmIsL1w}	zzjlObjNmL1w
+zzOlcbPostPrek	{#insert zzjlObjNmCBDispObjNm}{#insert zzjlObjLink_MSTR_noFile}	zzOlcbPostPrek
+zzOlcbrPostPrek	{#insert zzjlObjNmCBDispObjNm}{#insert zzjlObjLink_MSTR_fileSuperDirPrompt}	zzOlcbrPostPrek
+zzOlpwPostPrek	{#insert zzjlObjNmL1wDispObjNm}{#insert zzjlObjLink_MSTR_noFile}	zzOlpwPostPrek
+zzOlpwfPostPrek	{#insert zzjlObjNmL1wDispObjNm}{#insert zzjlFileIsX}{#insert zzjlObjLink_MSTR_noDir}	zzOlpwfPostPrek
+zzOlpwfbPostPrek	{#insert zzjlDispObjName}{#insert zzjlFileIsCBObjNmL1w}{#insert zzjlObjLink_MSTR_dirPrompt}	zzOlpwfbPostPrek
+zzOlpwrPostPrek	{#insert zzjlObjNmL1wDispObjNm}{#insert zzjlObjLink_MSTR_fileSuperDirPrompt}	zzOlpwrPostPrek

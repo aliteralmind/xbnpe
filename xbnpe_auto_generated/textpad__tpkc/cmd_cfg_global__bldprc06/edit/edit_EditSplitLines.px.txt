@@ -1,0 +1,8 @@
+zTpkcEditSplitLinesAbrv1C	Espltlns	zTpkcEditSplitLinesAbrv1C
+zTpkcEspltlnsCmdNameTC	EditSplitLines	zTpkcEspltlnsCmdNameTC
+zTpkcEspltlnsDfltPhrsNm	zTPSplitLines	zTpkcEspltlnsDfltPhrsNm
+zTpkcEspltlnsCatForCmdAbrvLC	edit	zTpkcEspltlnsCatForCmdAbrvLC
+zTpkcEspltlnsCmdType_mcrTl		zTpkcEspltlnsCmdType_mcrTl
+zTpkcEspltlnsIsBtstrp_yes		zTpkcEspltlnsIsBtstrp_yes
+zTpkcEspltlnsDfltPostKcSlpMils	10	zTpkcEspltlnsDfltPostKcSlpMils
+zTpkcEspltlnsStpsFrmCmdListTop	{#insert zEND}{#insert zPGUP}{#insert zUP}	zTpkcEspltlnsStpsFrmCmdListTop

@@ -1,0 +1,27 @@
+zTPAlignRight -- EditAlignRight (Ealr)	{#insert zCSpEE}{#sleep 10}	zTPAlignRight
+zTPDeleteL1c -- EditBackspace (Ebksp)	{#insert zSpBKSP}{#sleep 5}	zTPDeleteL1c
+zTPTitleCase -- EditCapitalize (Ecptl)	{#insert zCSpUU}{#sleep 10}	zTPTitleCase
+zTPCopyAppend -- EditCopyAppend (Ecpapp)	{#insert zCSpCC}{#sleep 50}	zTPCopyAppend
+zTPCopyFileName -- EditCopyFileName (Ecpfnm)	{#insert zCSpFF}{#sleep 10}	zTPCopyFileName
+zTPCutAppend -- EditCutAppend (Ectapp)	{#insert zCSpXX}{#sleep 50}	zTPCutAppend
+zTPDeleteR1c -- EditDelete (Edl)	{#insert zCSpVV}{#sleep 10}	zTPDeleteR1c
+zTPDeleteLine -- EditDelLine (Edlln)	{#insert zCpFF}{#sleep 10}	zTPDeleteLine
+zTPDelToEndOfLine -- EditDelLineEnd (Edllnend)	{#insert zCSpDEL}{#sleep 10}	zTPDelToEndOfLine
+zTPBookmarkDeleteAll -- EditDelTaggedLines (Edlbkmlns)	{#insert zCASpDEL}{#sleep 20}	zTPBookmarkDeleteAll
+zTPDeleteL1w -- EditDelWordLeft (Edlwdl)	{#insert zCSpMM}{#sleep 5}	zTPDeleteL1w
+zTPDeleteR1w -- EditDelWordRight (Edlwdr)	{#insert zCSpZZ}{#sleep 5}	zTPDeleteR1w
+zTPUnindent -- EditIndentLess (Eindl)	{#insert zCSpCOMMA}{#sleep 20}	zTPUnindent
+zTPIndent -- EditIndentMore (Eindm)	{#insert zCSpPERIOD}{#sleep 20}	zTPIndent
+zTPToggleCase -- EditInvertCase (Einvcs)	{#insert zCASpONE}{#sleep 10}	zTPToggleCase
+zTPLowerCase -- EditLowerCase (Elwc)	{#insert zApTWO}{#sleep 10}	zTPLowerCase
+zTPPageBreak -- EditPageBreak (Epgbrk)	{#insert zCSpLL}{#sleep 10}	zTPPageBreak
+zTPPopupContext -- EditPopupContext (Epopcntxt)	{#insert zSpF10}{#sleep 10}	zTPPopupContext
+zTPRedo -- EditRedo (Erdo)	{#insert zApSEMI_COLON}{#sleep 10}	zTPRedo
+zTPRedoAll -- EditRedoAll (Erdoall)	{#insert zCSpYY}{#sleep 10}	zTPRedoAll
+zTPReformatSelection -- EditReformat (Erfmt)	{#insert zCSpJJ}{#sleep 10}	zTPReformatSelection
+zTPSplitLines -- EditSplitLines (Espltlns)	{#insert zCApJJ}{#sleep 10}	zTPSplitLines
+zTPTransposeWords -- EditTransposeWords (Etrnspswds)	{#insert zCSpTT}{#sleep 10}	zTPTransposeWords
+zTPUndo -- EditUndo (Eudo)	{#insert zCpSEMI_COLON}{#sleep 10}	zTPUndo
+zTPUndoAll -- EditUndoAll (Eudoa)	{#insert zCASpZZ}{#sleep 10}	zTPUndoAll
+zTPUpperCase -- EditUpperCase (Euprcs)	{#insert zCpUU}{#sleep 10}	zTPUpperCase
+zzTpkcAllCmdsWAKcQbl_edit	[EditAlignRight][EditBackspace][EditCapitalize][EditCopy][EditCopyAppend][EditCopyFileName][EditCopyTaggedLines][EditCut][EditCutAppend][EditCutTaggedLines][EditDelete][EditDelLine][EditDelLineEnd][EditDelTaggedLines][EditDelWordLeft][EditDelWordRight][EditDupLine][EditIndentLess][EditIndentMore][EditInvertCase][EditLowerCase][EditPageBreak][EditPaste][EditPopupContext][EditRedo][EditRedoAll][EditReformat][EditSplitLines][EditTransposeWords][EditUndo][EditUndoAll][EditUpperCase]	zzTpkcAllCmdsWAKcQbl_edit

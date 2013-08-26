@@ -1,0 +1,25 @@
+FileClose
+FileCloseAll
+FileExit
+FileGoTo                Ctrl+Shift+G
+FileManage
+FileNew
+FileOpen
+FilePageSetup
+FilePrint               Ctrl+P
+FilePrintAll
+FilePrintDefault
+FilePrintPreview        Ctrl+Shift+P
+FileQuickOpen
+FileRename
+FileRevert
+FileSave
+FileSaveAll             Ctrl+Shift+S
+FileSaveAndClose
+FileSaveAs              F12
+FileSend
+FileStatistics          Ctrl+F1
+WorkspaceClose
+WorkspaceOpen
+WorkspaceSave
+WorkspaceSaveAs

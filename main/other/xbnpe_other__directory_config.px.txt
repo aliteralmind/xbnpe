@@ -1,0 +1,2 @@
+zXPROOT_DIR_other	{#insert zROOT_DIR_XBNPE_MAIN}{#insert zzXPSUB_DIR_other}	zXPROOT_DIR_other
+zzXPSUB_DIR_other	other\	zzXPSUB_DIR_other

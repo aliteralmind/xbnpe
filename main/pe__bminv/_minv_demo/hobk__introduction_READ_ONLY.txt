@@ -1,0 +1,9 @@
+R:\jeffy\programming\sandbox\macros\xbn_phrase_express\phrase_express\build_minv\_minv_demo\hobk_demo\hobk__introduction.px.txt
+
+
+MINV-Commands
+
+Part of XBN-PhraseExpress
+
+M.I.N.V.: "Master-phrase that uses an Incremented Number Variable"
+

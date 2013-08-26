@@ -1,0 +1,3 @@
+zTPToggleInsertMode -- ToggleInsertMode (Cfgtgins)	{#insert zINS}{#sleep 5}	zTPToggleInsertMode
+zTPToggleReadOnly -- ToggleReadOnly (Cfgtgro)	{#insert zCASpF5}{#sleep 5}	zTPToggleReadOnly
+zzTpkcAllCmdsWAKcQbl_config	[Preferences][ToggleInsertMode][ToggleReadOnly][ToggleWordWrap]	zzTpkcAllCmdsWAKcQbl_config

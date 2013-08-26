@@ -1,0 +1,2 @@
+zCBLen	{#LENGTH {#INSERTCLIPBOARD}}	zCBLen
+zInsertCB -- For use in COND phrases, so it only executes if needed.	{#INSERTCLIPBOARD}	zInsertCB

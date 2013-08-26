@@ -1,0 +1,2 @@
+zPrintAboutToOpenFileWarning_M_dirFnm	{#insert zvPATH_stDirPlusFNm}{#insert zPrintAboutToOpenFileWarning_M_pth}	zPrintAboutToOpenFileWarning_M_dirFnm
+zPrintDelAboutToOpenFileWarning_M_dirFnm	{#insert zvPATH_stDirPlusFNm}{#insert zPrintDelAboutToOpenFileWarning_M_pth}	zPrintDelAboutToOpenFileWarning_M_dirFnm

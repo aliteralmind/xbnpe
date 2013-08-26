@@ -1,0 +1,64 @@
+hbacklk -- A '[BACK]' link, right-padded with space	<CODE>[<A HREF={#asc 34}#{#insert zXmark}{#asc 34}>BACK</A>]</CODE> &nbsp; {#insert zXUp}	hbacklk
+
+hbackrk -- A '[BACK]' link, left-padded with space	(*starts with space*) &nbsp; <CODE>[<A HREF={#asc 34}#{#insert zXmark}{#asc 34}>BACK</A>]</CODE>{#insert zXUp}	hbackrk
+
+htoplk -- A '[top]' link, right-padded with space	<CODE>[<A HREF={#asc 34}#top{#asc 34}>top</A>]</CODE> &nbsp; 	htoplk
+
+htoprk -- A '[top]' link, left-padded with space	(*starts with space*) &nbsp; <CODE>[<A HREF={#asc 34}#top{#asc 34}>top</A>]</CODE>	htoprk
+
+hgok -- A '[go]' link for toc lists	<CODE>[<A HREF={#asc 34}#{#insert zXmark}{#asc 34}>go</A>]</CODE> &nbsp; (*ends with space*)	hgok
+hgow -- hgok, invisible and inactive (white)	<CODE><FONT COLOR={#insert zAscQQ}#FFFFFF{#insert zAscQQ}>[go]</FONT></A></CODE> &nbsp; (*ends with space*)	hgow
+hhhr -- <HR>	<HR>	hhhr
+
+hsectionh -- <PRE>\n\n<HR/>\n\n</PRE>y-mark<H2>hbacklk, x-mark</H2>	{#insert zzHsectionhPreBackLink}<CODE>[<A HREF={#insert zAscQQ}#{#insert zYmark}{#insert zAscQQ}>BACK</A>]</CODE> &nbsp; {#insert zYmark}</H2>{#insert zENTER}{#insert zXUp}	hsectionh
+hhz -- </> (z for close/end)	</>{#insert zLEFT}	hhz
+zzHsectionhPreBackLink	<PRE>{#insert zENTER}{#insert zENTER}<HR/>{#insert zENTER}{#insert zENTER}</PRE>{#insert zENTER}{#insert zXmark}<H2>	zzHsectionhPreBackLink
+hsectionht -- <PRE>\n\n<HR/>\n\n</PRE>y-mark<H2>htoplk, x-mark</H2>	{#insert zzHsectionhPreBackLink}<CODE>[<A HREF={#insert zAscQQ}#top{#insert zAscQQ}>top</A>]</CODE> &nbsp; {#insert zYmark}</H2>{#insert zENTER}{#insert zXUp}	hsectionht
+
+hig -- <IMG SRC='[crs]' BORDER='0'/>	<IMG SRC={#insert zAscQQ}{#insert zXmark}{#insert zAscQQ} BORDER={#insert zAscQQ}0{#insert zAscQQ}/>{#insert zXUp}	hig
+
+hig1 -- <IMG SRC='[crs]' BORDER='1'/>	<IMG SRC={#insert zAscQQ}{#insert zXmark}{#insert zAscQQ} BORDER={#insert zAscQQ}1{#insert zAscQQ}/>{#insert zXUp}	hig1
+
+hpig -- <P><IMG SRC='[crs]' BORDER='0'/></P>	<P><IMG SRC={#insert zAscQQ}{#insert zXmark}{#insert zAscQQ} BORDER={#insert zAscQQ}0{#insert zAscQQ}/></P>{#insert zXUp}	hpig
+hpg1 -- <P><IMG SRC='[crs]' BORDER='1'/></P>	<P><IMG SRC={#insert zAscQQ}{#insert zXmark}{#insert zAscQQ} BORDER={#insert zAscQQ}1{#insert zAscQQ}/></P>{#insert zXUp}	hpg1
+
+xhEscapeSel -- [zCASpF8]	{#BALLOON -title DING alert -text These replacements will ding, as a result of protecting against no search results.}{#insert zTPRplcDlgOpen}&{#insert zRplcFieldWith}&amp;{#insert zRplcBtnAllSelHnr}<{#insert zRplcFieldWith}&lt;{#insert zRplcBtnAllSelHnr}>{#insert zRplcFieldWith}&gt;{#insert zRplcBtnAllSelHnr}{#asc 34}{#insert zRplcFieldWith}&quot;{#insert zRplcBtnAllSelHnr}  {#insert zRplcFieldWith}&npsb; {#insert zFindFlagRETglRAW}{#insert zRplcBtnAllSelHnr}\t{#insert zRplcFieldWith}\&npsb; \&npsb;{#insert zRplcBtnAllSelHnr}{#insert zRplcDlgCloseRE}	xhEscapeSel
+
+zzMidRplcGoSelHnrHtmlUnsecape	{#insert zzMinRplcLtrlGTToNon}{#insert zRplcBtnAllSelHnr}{#insert zzMinRplcLtrlLTToNon}{#insert zRplcBtnAllSelHnr}{#insert zzMinRplcRELtrlNbspSpcNbspToTab}{#insert zRplcBtnAllSelHnr}{#insert zzMinRplcLtrlNbspSpcToNon}{#insert zRplcBtnAllSelHnr}{#insert zzMinRplcLtrlNbspToNon}{#insert zRplcBtnAllSelHnr}{#insert zzMinRplcLtrlQuotToNon}{#insert zRplcBtnAllSelHnr}{#insert zzMinRplcLtrlAmpToNon}{#insert zRplcBtnAllSelHnr}	zzMidRplcGoSelHnrHtmlUnsecape
+zzMinRplcLtrlAmpToNon	&amp;{#insert zRplcFieldWith}&	zzMinRplcLtrlAmpToNon
+zzMinRplcLtrlGTToNon	&gt;{#insert zRplcFieldWith}>	zzMinRplcLtrlGTToNon
+zzMinRplcLtrlLTToNon	&lt;{#insert zRplcFieldWith}<	zzMinRplcLtrlLTToNon
+zzMinRplcRELtrlNbspSpcNbspToTab	&nbsp; {#insert zRplcFieldWith}\t	zzMinRplcRELtrlNbspSpcNbspToTab
+zzMinRplcLtrlNbspSpcToNon	&nbsp; {#insert zRplcFieldWith}  (*ends with 2 spaces*)	zzMinRplcLtrlNbspSpcToNon
+zzMinRplcLtrlNbspToNon	&nbsp;{#insert zRplcFieldWith} (*ends with space*)	zzMinRplcLtrlNbspToNon
+zzMinRplcLtrlQuotToNon	&quot;{#insert zRplcFieldWith}{#insert zAscQQ}	zzMinRplcLtrlQuotToNon
+
+zDeleteSurroundingTag [RST] -- [zCSpDD]	{#insert zFindDlgOpenUpRE}<[^>]+>{#insert zFindBtnNext}{#insert zFindDlgClose}{#insert zDEL}{#insert zTPFindNext}{#insert zDEL}{#insert zTPFindFlagREoff}	zDeleteSurroundingTag
+
+zTagDelete -- zDeleteSurroundingTag ALT KC	{#insert zDeleteSurroundingTag_rst}	zTagDelete
+
+zTagMoveL1 -- This either calls zTPMTagMoveL1 or zzTagMoveL1_MANUAL_STEPS	{#insert zzTagMoveL1_MANUAL_STEPS}	zTagMoveL1
+
+zTagMoveL1R1	{#insert ztpmTagMoveL1}{#insert zzTagMoveR1_MANUAL_STEPS}	zTagMoveL1R1
+
+zTagMoveL2 -- This either calls zTPMTagMoveL2 or zzTagMoveL2_MANUAL_STEPS	{#insert zzTagMoveL2_MANUAL_STEPS}	zTagMoveL2
+
+zTagMoveL2 -- [zApGG]	{#insert ztpmTagMoveL1}{#insert zzTagMoveL1_MANUAL_STEPS}	zTagMoveL2
+
+zTagMoveL2R1	{#insert zTagMoveL2}{#insert zzTagMoveR1_MANUAL_STEPS}	zTagMoveL2R1
+
+zTagMoveR1 -- This either calls zTPMTagMoveR1 or zzTagMoveR1_MANUAL_STEPS	{#insert zzTagMoveR1_MANUAL_STEPS}	zTagMoveR1
+
+zTagMoveR1L1	{#insert zzTagMoveR1_MANUAL_STEPS}{#insert zzTagMoveR1_MANUAL_STEPS}	zTagMoveR1L1
+
+zTagMoveR2 -- This either calls zTPMTagMoveR2 or zzTagMoveR2_MANUAL_STEPS	{#insert zzTagMoveR2_MANUAL_STEPS}	zTagMoveR2
+
+zTagMoveR2L1	{#insert zTagMoveR2}{#insert zzTagMoveL1_MANUAL_STEPS}	zTagMoveR2L1
+
+zTagReverseMidTxtNL -- WITH optional text between the tags	{#insert zFindOpenUpRE}<[^/>]+>{#insert zFindGoFlagsDownXS}{#insert zzHRETag}{#insert zFindGoFlagXS}{#insert zRplcDlgSel}<([^/>]+>[^<]*<)/([^>]+>){#insert zRplcFieldWith}</$1$2{#insert zRplcBtnAllSelHnr}{#insert zFindFlagRETglRAW}{#insert zRplcDlgClose}{#insert zRIGHT}{#insert zPostBracketGTP}	zTagReverseMidTxtNL
+
+zTagReverseNL with NO text between the tags (faster) -- KC: zCSpC	{#insert zFindOpenUpRE}{#insert zzHRETag}{#insert zFindBtnNext}{#insert zFindDlgClose}{#insert zLeftRight}/{#sleep 5}{#insert zFindOpenDown}{#insert zFindBtnNext}{#insert zFindDlgCloseRE}{#insert zLeftRight}{#insert zDEL}{#insert zLEFT}{#insert zENTER}{#insert zEND}	zTagReverseNL
+
+zTagSelectL2 -- [zApSEVEN]	{#insert ztpmTagSelectL1}{#insert ztpmTagSelectL1}	zTagSelectL2
+
+zTagSelectR2 -- [zApZERO]	{#insert ztpmTagSelectR1}{#insert ztpmTagSelectR1}	zTagSelectR2

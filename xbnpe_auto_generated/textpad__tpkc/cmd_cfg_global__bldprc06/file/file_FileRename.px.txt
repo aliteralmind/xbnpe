@@ -1,0 +1,8 @@
+zTpkcFileRenameAbrv1C	Frenm	zTpkcFileRenameAbrv1C
+zTpkcFrenmCmdNameTC	FileRename	zTpkcFrenmCmdNameTC
+zTpkcFrenmDfltPhrsNm	zTPFileRename	zTpkcFrenmDfltPhrsNm
+zTpkcFrenmCatForCmdAbrvLC	file	zTpkcFrenmCatForCmdAbrvLC
+zTpkcFrenmCmdType_mcrTl		zTpkcFrenmCmdType_mcrTl
+zTpkcFrenmIsBtstrp_yes		zTpkcFrenmIsBtstrp_yes
+zTpkcFrenmDfltPostKcSlpMils	50	zTpkcFrenmDfltPostKcSlpMils
+zTpkcFrenmStpsFrmCmdListTop	{#insert zPGDN2}{#insert zDOWN}	zTpkcFrenmStpsFrmCmdListTop

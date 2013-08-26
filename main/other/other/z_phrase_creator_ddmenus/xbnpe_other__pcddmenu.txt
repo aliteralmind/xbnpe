@@ -1,0 +1,38 @@
+(*
+   *DUPLICATE* this document, unindent every line in it, then import it with the following settings:
+      - No prefix
+      - Manual confirmation
+      - Assign the key-command (hotkey) to the first phrase
+   **All these phrases must be manually maintained.
+*)
+(*
+   FROM
+   ...\xbnpe\tpkc\tpkc_bootstrap_phrases\zphrase_creator_pop_up_heirarchies\xbnpe_phrase_creator_popup_heirarchy_base.px.txt
+
+Phrase-creators: XBN-PhraseExpress -- Call 'xh'   .   zXbnpeCmdPopupRoot
+   Phrase-creators: Other -- xho   .   xh
+*)
+(*    Other -- xhoo   .   xho  *)
+			Actions: Equal/not-equal to: qtn, nqn	.	xhoa
+			Actions: Question-colon block (... ? ... : ...): qcb[1,2,3]	.	xhoa
+		Block-start comments -- xhob	.	xho
+			Action: zzfvbbsctest	zzfvbbsctest	xhob
+			zREonFindVerifyBypassNextBlockStartCmt_M_rqsxReon	\\\{#insert zREonFindVerifyBypassNextBlockStartCmt_M_rqsxReon\\\}	xhob
+			zzCBStartSubstrSameLenAs_rqsx	\\\{#insert zzCBStartSubstrSameLenAs_rqsx\\\}	xhob
+			zzREFindEOBlockStartCmtGTNextLine	\\\{#insert zzREFindEOBlockStartCmtGTNextLine\\\}	xhob
+			zzREFindNextNonWSInCol0Left	\\\{#insert zzREFindNextNonWSInCol0Left\\\}	xhob
+			zzREonFindVerifyBypassEmptyOkBSC_M_rqsxReon	\\\{#insert zzREonFindVerifyBypassEmptyOkBSC_M_rqsxReon\\\}	xhob
+		Inline configuration-variables -- xhov	.	xho
+			Action: zzinlinecvtest	zzinlinecvtest	xhov
+			zSetCBToNamedInlineCVWRqdValGTNxtLn_M_vnm	\\\{#insert zSetCBToNamedInlineCVWRqdValGTNxtLn_M_vnm\\\}	xhov
+			zSetCBToNamedInlineCfgValWESDfltGTNxtLn_M_vnmDflt	\\\{#insert zSetCBToNamedInlineCfgValWESDfltGTNxtLn_M_vnmDflt\\\}	xhov
+			zSetCBToNamedOptInlineCfgValESDfltIsESGTNxtLn_M_vnmDflt	\\\{#insert zSetCBToNamedOptInlineCfgValESDfltIsESGTNxtLn_M_vnmDflt\\\}	xhov
+			zSetCB_TO_dflt	\\\{#insert zSetCB_TO_dflt\\\}	xhov
+			zvES_VAL_DEFAULT_stES	\\\{#insert zvES_VAL_DEFAULT_stES\\\}	xhov
+			zvOUT_DIR_stRqdInlineCV	\\\{#insert zvOUT_DIR_stRqdInlineCV\\\}	xhov
+			zvOUTPUT_FILE_NAME_stOptInlineCVOrThisFileNm	\\\{#insert zvOUTPUT_FILE_NAME_stOptInlineCVOrThisFileNm\\\}	xhov
+			zzValidateInlineCVSetTrimValIntoCB_M_vnm	\\\{#insert zzValidateInlineCVSetTrimValIntoCB_M_vnm\\\}	xhov
+(*		Math and sleep -- xhom*)
+			Sleep -- xhoms	.	xhom
+				zSlpXMillsForEveryYWBal_xy	\\\{#insert zSlpXMillsForEveryYWBal_xy\\\}	xhoms
+				zSlpXMillsForEveryY_xy	\\\{#insert zSlpXMillsForEveryY_xy\\\}	xhoms

@@ -1,0 +1,20 @@
+dddes -- ...START, ...END, cut START line	...{#insert zzHomeCpR}END{#insert zHOME}{#insert zEnterUp}{#insert zTPPaste}START{#insert zzRUslpCut}	dddes
+dddse -- ...START, ...END, cut END line (**)	(*Call from end of start line, where Dot-Dot-Dot should go.*)...{#insert zzHomeCpR}START{#insert zENTER}{#insert zTPPaste}END{#insert zzRUslpCut}	dddse
+jcn -- constructor	constructor	jcn
+jcnc -- constructor:	constructor: (*ends with a space*)	jcnc
+jmlc	/*{#insert zENTER}{#insert zTAB}{#insert zEnterBksp}*/{#insert zUP}{#insert zEND}	jmlc
+jmlcp	/*{#insert zENTER}{#insert zTPPaste}*/	jmlcp
+jrdrthis -- jrthis, jdrthis (call from inside DOC-ed func body)	{#insert jrthis}{#insert zjGTPrevFunc}{#insert zUP2}{#insert zEND}{#insert zENTER}{#insert jdrthis}	jrdrthis
+jrt -- return[2-spaces]	return  (*ends with space*)	jrt
+jrtf -- return  false;	return  false;	jrtf
+jrth	return  this;	jrth
+jrtn	return  null;	jrtn
+jrtt -- return  true;	return  true;	jrtt
+jrty -- return  {#insert zYmark};	return  {#insert zYmark};{#insert zYUp}	jrty
+jts -- toString	toString	jts
+sop -- System.out.print()	System.out.print({#insert zXmark});{#insert zENTER}{#insert zXUp}	sop
+sopl -- System.out.println()	System.out.println({#insert zXmark});{#insert zENTER}{#insert zXUp}	sopl
+soplq -- System.out.println()	System.out.println({#asc 34}{#insert zXmark}{#asc 34});{#insert zENTER}{#insert zXUp}	soplq
+sopq -- System.out.print()	System.out.print({#asc 34}{#insert zXmark}{#asc 34});{#insert zENTER}{#insert zXUp}	sopq
+zzHomeCpR	{#insert zSpHOME}{#insert zTPCopy}{#insert zRIGHT}	zzHomeCpR
+zzRUslpCut	{#insert zRIGHT}{#insert zSpUP}{#sleep 500}{#insert zTPCut}	zzRUslpCut

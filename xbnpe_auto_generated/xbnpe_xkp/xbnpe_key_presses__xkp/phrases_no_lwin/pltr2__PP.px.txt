@@ -1,0 +1,8 @@
+PP -- zPP	{#NONE -chars p}{#insert zTSlp}	zPP
+Alt+PP -- zApPP	{#ALT -chars p}{#insert zTSlp}	zApPP
+Alt+Shift+PP -- zASpPP	{#ALT {#SHIFT -chars p}}{#insert zTSlp}	zASpPP
+Ctrl+PP -- zCpPP	{#CTRL -chars p}{#insert zTSlp}	zCpPP
+Ctrl+Alt+PP -- zCApPP	{#CTRL {#ALT -chars p}}{#insert zTSlp}	zCApPP
+Ctrl+Alt+Shift+PP -- zCASpPP	{#CTRL {#ALT {#SHIFT -chars p}}}{#insert zTSlp}	zCASpPP
+Ctrl+Shift+PP -- zCSpPP	{#CTRL {#SHIFT -chars p}}{#insert zTSlp}	zCSpPP
+Shift+PP -- zSpPP	{#SHIFT -chars p}{#insert zTSlp}	zSpPP

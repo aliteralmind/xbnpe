@@ -1,0 +1,24 @@
+ActivateClipLib	1	\\\{#insert zApTWO\\\}
+ActivateDocument	0
+ActivateExplorer	1	\\\{#insert zApTHREE\\\}
+ActivateSearchResults	1	\\\{#insert zApFOUR\\\}
+ActivateSelector	1	\\\{#insert zApONE\\\}
+ActivateToolOutput	1	\\\{#insert zApFIVE\\\}
+StayOnTop	0
+ViewClipLib	1	\\\{#insert zCpF3\\\}
+ViewDocSelector	1	\\\{#insert zF11\\\}
+ViewExplorer	0
+ViewFindDialogBox	0
+ViewFullPaths	0
+ViewFullScreen	0
+ViewHScrollbar	1	\\\{#insert zCpQQ\\\}\\\{#sleep 25\\\}\\\{#insert zHH\\\}
+ViewInBrowser	0
+ViewLineNumbers	1	\\\{#insert zCpQQ\\\}\\\{#sleep 25\\\}\\\{#insert zLL\\\}
+ViewProperties	0
+ViewReplaceDialogBox	0
+ViewSearchResults	1	\\\{#insert zSpF11\\\}
+ViewStatusBar	0
+ViewTabSelector	0
+ViewToolOutput	1	\\\{#insert zCpF11\\\}
+ViewVisibleSpaces	1	\\\{#insert zCpQQ\\\}\\\{#sleep 25\\\}\\\{#insert zII\\\}
+ViewVScrollbar	1	\\\{#insert zCpQQ\\\}\\\{#sleep 25\\\}\\\{#insert zVV\\\}

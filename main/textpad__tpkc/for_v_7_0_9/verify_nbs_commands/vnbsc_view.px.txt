@@ -1,0 +1,27 @@
+zzNewFlV1Nbs_view_ActivateClipLib_ifKc	{#insert zvCMD_ABRV_1C_sfActivateClipLib}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_view_ActivateClipLib_ifKc
+zzNewFlV1Nbs_view_ActivateDocument_ifKc	{#insert zvCMD_ABRV_1C_sfActivateDocument}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_view_ActivateDocument_ifKc
+zzNewFlV1Nbs_view_ActivateExplorer_ifKc	{#insert zvCMD_ABRV_1C_sfActivateExplorer}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_view_ActivateExplorer_ifKc
+zzNewFlV1Nbs_view_ActivateSearchResults_ifKc	{#insert zvCMD_ABRV_1C_sfActivateSearchResults}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_view_ActivateSearchResults_ifKc
+zzNewFlV1Nbs_view_ActivateSelector_ifKc	{#insert zvCMD_ABRV_1C_sfActivateSelector}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_view_ActivateSelector_ifKc
+zzNewFlV1Nbs_view_ActivateToolOutput_ifKc	{#insert zvCMD_ABRV_1C_sfActivateToolOutput}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_view_ActivateToolOutput_ifKc
+zzNewFlV1Nbs_view_StayOnTop_ifKc	{#insert zvCMD_ABRV_1C_sfStayOnTop}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_view_StayOnTop_ifKc
+zzNewFlV1Nbs_view_ViewClipLib_ifKc	{#insert zvCMD_ABRV_1C_sfViewClipLib}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_view_ViewClipLib_ifKc
+zzNewFlV1Nbs_view_ViewDocSelector_ifKc	{#insert zvCMD_ABRV_1C_sfViewDocSelector}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_view_ViewDocSelector_ifKc
+zzNewFlV1Nbs_view_ViewExplorer_ifKc	{#insert zvCMD_ABRV_1C_sfViewExplorer}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_view_ViewExplorer_ifKc
+zzNewFlV1Nbs_view_ViewFindDialogBox_ifKc	{#insert zvCMD_ABRV_1C_sfViewFindDialogBox}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_view_ViewFindDialogBox_ifKc
+zzNewFlV1Nbs_view_ViewFullPaths_ifKc	{#insert zvCMD_ABRV_1C_sfViewFullPaths}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_view_ViewFullPaths_ifKc
+zzNewFlV1Nbs_view_ViewFullScreen_ifKc	{#insert zvCMD_ABRV_1C_sfViewFullScreen}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_view_ViewFullScreen_ifKc
+zzNewFlV1Nbs_view_ViewHScrollbar_ifKc	{#insert zvCMD_ABRV_1C_sfViewHScrollbar}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_view_ViewHScrollbar_ifKc
+zzNewFlV1Nbs_view_ViewInBrowser_ifKc	{#insert zvCMD_ABRV_1C_sfViewInBrowser}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_view_ViewInBrowser_ifKc
+zzNewFlV1Nbs_view_ViewLineNumbers_ifKc	{#insert zvCMD_ABRV_1C_sfViewLineNumbers}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_view_ViewLineNumbers_ifKc
+zzNewFlV1Nbs_view_ViewProperties_ifKc	{#insert zvCMD_ABRV_1C_sfViewProperties}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_view_ViewProperties_ifKc
+zzNewFlV1Nbs_view_ViewReplaceDialogBox_ifKc	{#insert zvCMD_ABRV_1C_sfViewReplaceDialogBox}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_view_ViewReplaceDialogBox_ifKc
+zzNewFlV1Nbs_view_ViewSearchResults_ifKc	{#insert zvCMD_ABRV_1C_sfViewSearchResults}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_view_ViewSearchResults_ifKc
+zzNewFlV1Nbs_view_ViewStatusBar_ifKc	{#insert zvCMD_ABRV_1C_sfViewStatusBar}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_view_ViewStatusBar_ifKc
+zzNewFlV1Nbs_view_ViewTabSelector_ifKc	{#insert zvCMD_ABRV_1C_sfViewTabSelector}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_view_ViewTabSelector_ifKc
+zzNewFlV1Nbs_view_ViewToolOutput_ifKc	{#insert zvCMD_ABRV_1C_sfViewToolOutput}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_view_ViewToolOutput_ifKc
+zzNewFlV1Nbs_view_ViewVScrollbar_ifKc	{#insert zvCMD_ABRV_1C_sfViewVScrollbar}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_view_ViewVScrollbar_ifKc
+zzNewFlV1Nbs_view_ViewVisibleSpaces_ifKc	{#insert zvCMD_ABRV_1C_sfViewVisibleSpaces}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_view_ViewVisibleSpaces_ifKc
+
+
+

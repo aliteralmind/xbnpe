@@ -1,0 +1,10 @@
+zvEXTRA_INFO_ONFF_sfPvtc	{#SETPHRASE -description zvEXTRA_INFO_ONFF -content {#insert zzZdxXIOnff_cfgValue_M_pvtc} -autotext zvEXTRA_INFO_ONFF -folder ctvv_folder}	zvEXTRA_INFO_ONFF_sfPvtc
+zzZdxXIOnff_dbgCfgItem_M_pvtc	zzZdxXIOnff_cfgValue_M_pvtc={#insert zzZdxXIOnff_cfgValue_M_pvtc}	zzZdxXIOnff_dbgCfgItem_M_pvtc
+zzZdxXIOnff_dbgVarItem_M_pvtcXionff	zvEXTRA_INFO_ONFF={#insert zvEXTRA_INFO_ONFF}	zzZdxXIOnff_dbgVarItem_M_pvtcXionff
+zzZdxXIOnff_cfgValue_M_pvtc	{#insert {#insert zzZdxXIOnff_varName_M_pvtc}}	zzZdxXIOnff_cfgValue_M_pvtc
+zzZdxXIOnff_cfgVarNmPostfix_M_pvtc	XInfo_onff	zzZdxXIOnff_cfgVarNmPostfix_M_pvtc
+zzZdxXIOnff_intrnlVarNmFYIOnly	zvEXTRA_INFO_ONFF	zzZdxXIOnff_intrnlVarNmFYIOnly
+zzZdxXIOnff_phrsWCfgValue_M_pvtc	{#insert zzZdxXIOnff_varName_M_pvtc}{#insert zTAB}{#insert zzZdxXIOnff_cfgValue_M_pvtc}{#insert zTAB}{#insert zzZdxXIOnff_varName_M_pvtc}	zzZdxXIOnff_phrsWCfgValue_M_pvtc
+zzZdxXIOnff_phrsWVarValue_M_pvtcXionff	{#insert zzZdxXIOnff_varName_M_pvtc}{#insert zTAB}{#insert zvEXTRA_INFO_ONFF}{#insert zTAB}{#insert zzZdxXIOnff_varName_M_pvtc}	zzZdxXIOnff_phrsWVarValue_M_pvtcXionff
+zzZdxXIOnff_varName_M_pvtc	{#insert zzMinvVarNmPREFIX}{#insert zvPN_ABRV_TC}{#insert zzZdxXIOnff_cfgVarNmPostfix}	zzZdxXIOnff_varName_M_pvtc
+zzZdxXIOnff_llCfgLineDesc	Is extra-information available for this node? If yes, 'on'. Otherwise, 'off'. The extra information is contained in zvEXTRA_INFO.	zzZdxXIOnff_llCfgLineDesc

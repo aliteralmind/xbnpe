@@ -1,0 +1,7 @@
+zPCNNAPhraseIf_pcOn_M_ALL	{#insert {#COND -if {#insert zvNO_NUM_ALIAS_ON} = {#insert zzEmptyString} -then z1slp -else zzPCNnaPhrs_pcNnaOn_M_ALL}}	zPCNNAPhraseIf_pcOn_M_ALL
+zzPCNnaPhrs_pcNnaOn_M_ALL	{#insert zzzSetPCPostChar_M_actonPcafp}{#insert zzzPCNnaPhrsName_M_actmlOnPcafp}{#insert zvNUMBER_stNnlg} -- {#insert zzPCNnaPhrsDscPst_M_ALL}{#insert zTAB}{#insert zzPCNnaPhrsBody_M_cmdonActmlPstcCmdpreNumPst}{#insert zTAB}{#insert zzzPCNnaPhrsName_M_actmlOnPcafp}{#insert zENTER}	zzPCNnaPhrs_pcNnaOn_M_ALL
+zzPCNnaPhrsDscPst_M_ALL	{#insert {#COND -if {#insert zvCOMMANDS_ON} = on -then zzPCNnaDscPst_cmdOn_M_preNumPst -else zzPCNnaDscPst_cmdOff_M_ALL}}	zzPCNnaPhrsDscPst_M_ALL
+zzPCNnaDscPst_cmdOn_M_preNumPst	Phrase: {#insert zzMnvCmdName_M_preNumPst}	zzPCNnaDscPst_cmdOn_M_preNumPst
+zzPCNnaDscPst_cmdOff_M_ALL	{#insert zzzCINnaTgtES_cmdOff_M_nnlg}(*Redundant check. It's assumed that, when not empty-string, that the target num is indeed in the command-range. This was verified when the minv-config was read in, via plpdcf.*){#insert zzzPCNnaPhrsName_M_actmlOnPcafp} ALT KC	zzPCNnaDscPst_cmdOff_M_ALL
+zzPCNnaPhrsBody_M_cmdonActmlPstcCmdpreNumPst	{#insert {#COND -if {#insert zvCOMMANDS_ON} = {#insert zzEmptyString} -then zzCallPCWithNum_M_actmlPstcNum -else zzMnvCmdDblyLtrlCall_M_preNumPst}}	zzPCNnaPhrsBody_M_cmdonActmlPstcCmdpreNumPst
+zzPCNnaDscPst_cmdOn_M_preNumPst

@@ -1,0 +1,5 @@
+zjreSigForCBFunc_pCount0orMore	{#insert zjreSetPCountPost_0orMore}{#insert zjreSigForCBFunc_pCountMASTER}	zjreSigForCBFunc_pCount0orMore
+zjreSigForCBFunc_pCount1orMore	{#insert zjreSetPCountPost_1orMore}{#insert zjreSigForCBFunc_pCountMASTER}	zjreSigForCBFunc_pCount1orMore
+zjreSigForCBFunc_pCountMASTER	{#insert zjreRetTypeWS}{#insert zNameFromCBSigOrCall}{#insert zjreParamsForDynamicCount}	zjreSigForCBFunc_pCountMASTER
+zjreSigForCBFunc_pCountFromGT0Prompt	{#insert zjreSetPCountPost_FromGT0Prompt0}{#insert zjreSigForCBFunc_pCountMASTER}	zjreSigForCBFunc_pCountFromGT0Prompt
+zREADME	CBFunc stands for {#asc 34}the function name in the clipboard{#asc 34}. What ACTUALLY can be in the clipboard is [1] the function NAME, or [2] a CALL to that function. Only the text up-to-but-not-including the first open-paren {#asc 34}({#asc 34} is used. See zNameFromCBSigOrCall and zNameFromCBSigOrCallTEST	xxx

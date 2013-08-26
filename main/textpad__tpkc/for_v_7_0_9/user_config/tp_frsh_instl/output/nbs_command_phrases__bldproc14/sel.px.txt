@@ -1,0 +1,2 @@
+zTPSelBeginStream -- SelectBeginStream (Slbstr)	{#insert zCpQQ}{#sleep 25}{#insert zSS}{#sleep 10}	zTPSelBeginStream
+zzTpkcAllCmdsWAKcQbl_sel	[SelectAll][SelectBeginStream]	zzTpkcAllCmdsWAKcQbl_sel

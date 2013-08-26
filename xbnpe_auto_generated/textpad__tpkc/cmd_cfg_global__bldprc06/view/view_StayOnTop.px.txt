@@ -1,0 +1,8 @@
+zTpkcStayOnTopAbrv1C	Vsot	zTpkcStayOnTopAbrv1C
+zTpkcVsotCmdNameTC	StayOnTop	zTpkcVsotCmdNameTC
+zTpkcVsotDfltPhrsNm	zTPStayOnTop	zTpkcVsotDfltPhrsNm
+zTpkcVsotCatForCmdAbrvLC	view	zTpkcVsotCatForCmdAbrvLC
+zTpkcVsotCmdType_mcrTl		zTpkcVsotCmdType_mcrTl
+zTpkcVsotIsBtstrp_yes		zTpkcVsotIsBtstrp_yes
+zTpkcVsotDfltPostKcSlpMils	10	zTpkcVsotDfltPostKcSlpMils
+zTpkcVsotStpsFrmCmdListTop	{#insert zSS}	zTpkcVsotStpsFrmCmdListTop

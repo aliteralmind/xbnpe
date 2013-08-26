@@ -1,0 +1,8 @@
+Alt+LWin+NUM7 -- zALpNUM7	{#ALT {#LWIN {#NUMPAD7}}}{#insert zTSlp}	zALpNUM7
+Alt+Shift+LWin+NUM7 -- zASLpNUM7	{#ALT {#SHIFT {#LWIN {#NUMPAD7}}}}{#insert zTSlp}	zASLpNUM7
+Ctrl+Alt+LWin+NUM7 -- zCALpNUM7	{#CTRL {#ALT {#LWIN {#NUMPAD7}}}}{#insert zTSlp}	zCALpNUM7
+Ctrl+Alt+Shift+LWin+NUM7 -- zCASLpNUM7	{#CTRL {#ALT {#SHIFT {#LWIN {#NUMPAD7}}}}}{#insert zTSlp}	zCASLpNUM7
+Ctrl+LWin+NUM7 -- zCLpNUM7	{#CTRL {#LWIN {#NUMPAD7}}}{#insert zTSlp}	zCLpNUM7
+Ctrl+Shift+LWin+NUM7 -- zCSLpNUM7	{#CTRL {#SHIFT {#LWIN {#NUMPAD7}}}}{#insert zTSlp}	zCSLpNUM7
+LWin+NUM7 -- zLpNUM7	{#LWIN {#NUMPAD7}}{#insert zTSlp}	zLpNUM7
+Shift+LWin+NUM7 -- zSLpNUM7	{#SHIFT {#LWIN {#NUMPAD7}}}{#insert zTSlp}	zSLpNUM7

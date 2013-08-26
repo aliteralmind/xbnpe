@@ -1,0 +1,34 @@
+(*
+   Concatenate 100 lines from TPKC raw-global-config files, into a single file. Sort them, and ensure there's no empty lines.
+
+   Eliminate all but the first word on each line
+      Find:
+         ^([^\t]+)\t.+
+      Replace with:
+         $1
+
+   Replace each word with its length (a number)
+      For each number-length, from 4-through-30 (inclusive):
+         Find:
+            ^.{[THE_NUMBER]}$
+         Replace with:
+            [THE_NUMBER]
+
+   Get the non-empty line count
+
+   Go to doc-top
+
+   For each line:
+      Delete the number (and its line), adding them all
+
+   Close the file, discarding all changes.
+
+   Present the total and average length.
+*)
+w1avglen -- Use with ALL TPKC raw-global-cfg in one file	{#insert zzW1tlDelPostWrd1ChangeEachToLenNum}{#insert zzW1tlAccumulateSumAndAverageWLineCountPrompt}{#insert zFileCloseDiscardChanges}{#MSGBOX -head DONE -text Total words={#insert zvLINE_COUNT}, Total length={#insert zvLENGTH_SUM}, Average length={#CALC {#insert zvLENGTH_SUM} / {#insert zvLINE_COUNT}  -round 2 -thousands none}}	w1avglen
+zzW1tlDelPostWrd1ChangeEachToLenNum	{#insert zRplcDlgOpenMCRE}^([^\t]+)\t.+{#insert zRplcFieldWith}$1{#insert zRplcBtnAllTD}{#SETPHRASE -description zvLEN -content {#insert zMinWord1Len} -autotext zvLEN -folder ctvv_folder}{#LOOP {#insert zRplcREOpen_rplcNxtWrdLenWActlLen_M_len} -count {#CALC {#insert zMaxWord1Len} - {#insert zMinWord1Len} + 1  -round 0 -thousands none}}{#insert zRplcDlgCloseRE}	zzW1tlDelPostWrd1ChangeEachToLenNum
+zzW1tlAccumulateSumAndAverageWLineCountPrompt	{#SETPHRASE -description zvLENGTH_SUM -content 0 -autotext zvLENGTH_SUM -folder ctvv_folder}{#insert zREoffGetSetNonEmptyRqdLineCountForCurrentDocXsInCB}{#insert zTPSTDocTop}{#LOOP {#insert zDelAddNextLineLen_M_lcntLensum} -count {#insert zvLINE_COUNT}}	zzW1tlAccumulateSumAndAverageWLineCountPrompt
+zDelAddNextLineLen_M_lcntLensum	{#insert zTPLineEndExtend}{#insert zTPCut}{#DEL}{#SETPHRASE -description zvLENGTH_SUM -content {#CALC {#insert zvLENGTH_SUM} + {#INSERTCLIPBOARD} -round 0 -thousands none} -autotext zvLENGTH_SUM -folder ctvv_folder}	zDelAddNextLineLen_M_lcntLensum
+zMaxWord1Len	22	zMaxWord1Len
+zMinWord1Len	4	zMinWord1Len
+zRplcREOpen_rplcNxtWrdLenWActlLen_M_len -- Needs zvLEN	(*In find-what*)^.{{#insert zvLEN}}${#insert zRplcFieldWith}{#insert zvLEN}{#insert zRplcBtnAllTDHnr}{#SETPHRASE -description zvLEN -content {#CALC {#insert zvLEN} + 1 -round 0 -thousands none} -autotext zvLEN -folder ctvv_folder}	zRplcREOpen_rplcNxtWrdLenWActlLen_M_len

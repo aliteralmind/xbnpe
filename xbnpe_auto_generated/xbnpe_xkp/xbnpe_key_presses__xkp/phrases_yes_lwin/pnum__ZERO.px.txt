@@ -1,0 +1,8 @@
+Alt+LWin+ZERO -- zALpZERO	{#ALT {#LWIN -chars 0}}{#insert zTSlp}	zALpZERO
+Alt+Shift+LWin+ZERO -- zASLpZERO	{#ALT {#SHIFT {#LWIN -chars 0}}}{#insert zTSlp}	zASLpZERO
+Ctrl+Alt+LWin+ZERO -- zCALpZERO	{#CTRL {#ALT {#LWIN -chars 0}}}{#insert zTSlp}	zCALpZERO
+Ctrl+Alt+Shift+LWin+ZERO -- zCASLpZERO	{#CTRL {#ALT {#SHIFT {#LWIN -chars 0}}}}{#insert zTSlp}	zCASLpZERO
+Ctrl+LWin+ZERO -- zCLpZERO	{#CTRL {#LWIN -chars 0}}{#insert zTSlp}	zCLpZERO
+Ctrl+Shift+LWin+ZERO -- zCSLpZERO	{#CTRL {#SHIFT {#LWIN -chars 0}}}{#insert zTSlp}	zCSLpZERO
+LWin+ZERO -- zLpZERO	{#LWIN -chars 0}{#insert zTSlp}	zLpZERO
+Shift+LWin+ZERO -- zSLpZERO	{#SHIFT {#LWIN -chars 0}}{#insert zTSlp}	zSLpZERO

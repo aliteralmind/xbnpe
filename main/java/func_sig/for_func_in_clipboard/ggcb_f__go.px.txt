@@ -1,0 +1,29 @@
+ggcbg -- ggcbg0p ALT KC	{#insert ggcbg0p}	ggcbg
+ggcbg0 -- ggcbg, zero parameters	{#insert zjreSetPCountPost_0}{#insert zggcbg_MASTER}	ggcbg0
+ggcbg0p -- ggcbg, zero-or-more (0-Plus) parameters	{#insert zjreSetPCountPost_0orMore}{#insert zggcbg_MASTER}	ggcbg0p
+ggcbg1	{#insert zjreSetPCountPost_1}{#insert zggcbg_MASTER}	ggcbg1
+ggcbg1p -- ggcbg, one-or-more (1-Plus) parameters	{#insert zjreSetPCountPost_1orMore}{#insert zggcbg_MASTER}	ggcbg1p
+ggcbg2	{#insert zjreSetPCountPost_2}{#insert zggcbg_MASTER}	ggcbg2
+ggcbg3	{#insert zjreSetPCountPost_3}{#insert zggcbg_MASTER}	ggcbg3
+ggcbg4	{#insert zjreSetPCountPost_4}{#insert zggcbg_MASTER}	ggcbg4
+ggcbg5	{#insert zjreSetPCountPost_5}{#insert zggcbg_MASTER}	ggcbg5
+ggcbgn -- prompt for exact param-count	{#insert zjreSetPCountPost_FromGT0Prompt}{#insert zggcbg_MASTER}	ggcbgn
+ggcbqg	{#insert zggcbqGTCutName}{#insert ggcbg}	ggcbqg
+ggcbqg0p	{#insert zggcbqGTCutName}{#insert ggcbg0p}	ggcbqg0p
+ggcbqg1	{#insert zggcbqGTCutName}{#insert ggcbg1}	ggcbqg1
+ggcbqg1p	{#insert zggcbqGTCutName}{#insert ggcbg1p}	ggcbqg1p
+ggcbqg2	{#insert zggcbqGTCutName}{#insert ggcbg2}	ggcbqg2
+ggcbqg3	{#insert zggcbqGTCutName}{#insert ggcbg3}	ggcbqg3
+ggcbqg4	{#insert zggcbqGTCutName}{#insert ggcbg4}	ggcbqg4
+ggcbqg5	{#insert zggcbqGTCutName}{#insert ggcbg5}	ggcbqg5
+ggcbqgn	{#insert zzggcGTDN}{#insert ggcbqgn}	gnggcbqgn
+ggpwg -- zCutL1w, ggcbg	{#insert zCutL1w}{#insert ggcbg}	ggpwg
+ggpwg0 -- zCutL1w, ggcbg0	{#insert zCutL1w}{#insert ggcbg0}	ggpwg0
+ggpwg0p -- zCutL1w, ggcbg0p	{#insert zCutL1w}{#insert ggcbg0p}	ggpwg0p
+ggpwg1 -- zCutL1w, ggcbg1	{#insert zCutL1w}{#insert ggcbg1}	ggpwg1
+ggpwg1p -- zCutL1w, ggcbg1p	{#insert zCutL1w}{#insert ggcbg1p}	ggpwg1p
+ggpwg2 -- zCutL1w, ggcbg2	{#insert zCutL1w}{#insert ggcbg2}	ggpwg2
+ggpwg3 -- zCutL1w, ggcbg3	{#insert zCutL1w}{#insert ggcbg3}	ggpwg3
+ggpwg4 -- zCutL1w, ggcbg4	{#insert zCutL1w}{#insert ggcbg4}	ggpwg4
+ggpwg5 -- zCutL1w, ggcbg5	{#insert zCutL1w}{#insert ggcbg5}	ggpwg5
+ggpwgn -- zCutL1w, ggcbgn	{#insert zCutL1w}{#insert ggcbgn}	ggpwgn

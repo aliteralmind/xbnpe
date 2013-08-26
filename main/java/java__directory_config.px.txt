@@ -1,0 +1,13 @@
+zROOT_DIR_PRGRMG	R:\jeffy\programming\	zROOT_DIR_PRGRMG
+zROOT_DIR_SNDBX	R:\jeffy\programming\sandbox\	zROOT_DIR_SNDBX
+zzXPSUB_DIR_jdLink	{#insert zzXPSUB_DIR_javadoc}link\	zzXPSUB_DIR_jdLink
+zWIN_ROOT_DIR_xbnJavaClasses -- 'xbn' root *.class directory is in this	{#insert zROOT_DIR_PRGRMG}build\CLASSES\	zWIN_ROOT_DIR_xbnJavaClasses
+zWIN_ROOT_DIR_xbnJavaSource -- 'xbn' root source directory is in this	{#insert zROOT_DIR_SNDBX}xbnjava\	zWIN_ROOT_DIR_xbnJavaSource
+zWIN_ROOT_DIR_xbnJavaWorrking -- 'xbn' root *.class directory is in this	{#insert zROOT_DIR_PRGRMG}working\xbnjava\	zWIN_ROOT_DIR_xbnJavaWorrking
+zXPROOT_DIR_jFuncSig	{#insert zROOT_DIR_XBNPE_MAIN}{#insert zzXPSUB_DIR_jFuncSig}	zXPROOT_DIR_jFuncSig
+zXPROOT_DIR_java	{#insert zROOT_DIR_XBNPE_MAIN}{#insert zzXPSUB_DIR_java}	zXPROOT_DIR_java
+zXPROOT_DIR_javadoc	{#insert zROOT_DIR_XBNPE_MAIN}{#insert zzXPSUB_DIR_javadoc}	zXPROOT_DIR_javadoc
+zzXPSUB_DIR_jFuncSig	{#insert zzXPSUB_DIR_java}func_sig\	zzXPSUB_DIR_jFuncSig
+zzXPSUB_DIR_java	java\	zzXPSUB_DIR_java
+zzXPSUB_DIR_javadoc	{#insert zzXPSUB_DIR_java}javadoc\	zzXPSUB_DIR_javadoc
+zXPROOT_DIR_jdLink	{#insert zROOT_DIR_XBNPE_MAIN}{#insert zzXPSUB_DIR_jdLink}	zXPROOT_DIR_jdLink

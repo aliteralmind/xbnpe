@@ -1,0 +1,8 @@
+F9 -- zF9	{#F9}{#insert zTSlp}	zF9
+Alt+F9 -- zApF9	{#ALT {#F9}}{#insert zTSlp}	zApF9
+Alt+Shift+F9 -- zASpF9	{#ALT {#SHIFT {#F9}}}{#insert zTSlp}	zASpF9
+Ctrl+F9 -- zCpF9	{#CTRL {#F9}}{#insert zTSlp}	zCpF9
+Ctrl+Alt+F9 -- zCApF9	{#CTRL {#ALT {#F9}}}{#insert zTSlp}	zCApF9
+Ctrl+Alt+Shift+F9 -- zCASpF9	{#CTRL {#ALT {#SHIFT {#F9}}}}{#insert zTSlp}	zCASpF9
+Ctrl+Shift+F9 -- zCSpF9	{#CTRL {#SHIFT {#F9}}}{#insert zTSlp}	zCSpF9
+Shift+F9 -- zSpF9	{#SHIFT {#F9}}{#insert zTSlp}	zSpF9

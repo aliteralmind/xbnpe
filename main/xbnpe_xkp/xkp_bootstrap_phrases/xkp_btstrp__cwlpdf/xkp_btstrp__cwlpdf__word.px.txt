@@ -1,0 +1,9 @@
+(*
+   Required by phrase-creator-ddmenu-utils...START
+      PM_DDMENU_DIRID_FILENMPHRSNM_HDRAUTOTXT=tpkc/zzPmdmFNmPreTpkcCwlpdf/xhcw
+   Required by phrase-creator-ddmenu-utils...END
+*)
+zCutL1w	{#insert zTPSelectL1w}{#insert zTPCut}	zCutL1w
+zCutR1w	{#insert zTPSelectR1w}{#insert zTPCut}	zCutR1w
+zSelectL1wCopy	{#insert zTPSelectL1w}{#insert zTPCopy}	zSelectL1wCopy
+zSelectR1wCopy	{#insert zTPSelectR1w}{#insert zTPCopy}	zSelectR1wCopy

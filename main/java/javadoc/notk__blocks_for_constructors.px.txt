@@ -1,0 +1,5 @@
+jdbfc -- JavaDoc block for constructor (**)	(*Call from just before pub/priv/prot of ALREADY-CREATED constructor. The class-name is left in the clipboard.*){#insert jdb}Create a new <CODE>{#sleep 5}{#insert cnthis}</CODE>.{#insert zPreBracketGTP}(*<--Better than zEND, in case the line has wrapped*){#insert zENTER2}{#insert zjdbfcJDSeeCCnstr}{#insert zjdbfcCallSuper}	jdbfc
+jdbfccroot -- JD Block For Copy Cnstr that doesn't call super()(**)	{#insert zJdbfccrootRAW}{#insert zXmark}{#insert zFindXUp3}	jdbfccroot
+jdbfccsub -- JD Block For Copy Cnstr that calls super()(**)	(*See doc for jdbfccroot.*){#insert zJdbfccsubRAW}{#insert zXmark}{#insert zFindXUp3}	jdbfccsub
+
+

@@ -1,0 +1,4 @@
+zREoffFindNonWSWordUp -- RE stays off	{#insert zTPFindDlgOpen}{#insert zFindFlagRETglRAW}{#insert zzFlagUpRegexNonWSWrdPrsFindNxtFlagDownRAW}{#insert zFindFlagRETglRAW}{#insert zFindDlgClose}	zREoffFindNonWSWordUp
+zREonFindNonWSWordUp -- RE stays on	{#insert zTPFindDlgOpen}{#insert zzFlagUpRegexNonWSWrdPrsFindNxtFlagDownRAW}{#insert zFindDlgClose}	zREonFindNonWSWordUp
+zzFlagUpRegexNonWSWrdPrsFindNxtFlagDownRAW	{#insert zFindFlagUp}{#insert zzRegexNonWSWordPressFindNext}{#insert zFindFlagDownRAW}	zzFlagUpRegexNonWSWrdPrsFindNxtFlagDownRAW
+zzRegexNonWSWordPressFindNext	{#SETPHRASE -description zvFIND_WHAT -content \b[^\t \n\r]+\b -autotext zvFIND_WHAT -folder ctvv_folder}{#insert zvFIND_WHAT}{#insert zFindBtnNext}	zzRegexNonWSWordPressFindNext

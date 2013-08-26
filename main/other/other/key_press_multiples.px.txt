@@ -1,0 +1,3 @@
+zENTER2	{#ENTER -count 2}{#insert zTSlp}	zENTER2
+zUP9	{#UP -count 9}{#insert zTSlp}	zUP9
+zUP10	{#UP -count 10}{#insert zTSlp}	zUP10

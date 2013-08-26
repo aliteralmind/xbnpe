@@ -1,0 +1,16 @@
+ilcb -- File Link, file in ClipBoard	{#insert zzjlCodeOffFileCB}{#insert zzjlFileLink_MSTR_thisDirDispFile}	ilcb
+ilcbc -- ilcb, CODE-d	{#insert zzjlCodeOnFileCB}{#insert zzjlFileLink_MSTR_thisDirDispFile}	ilcbc
+ilcbd -- ilcb, different Directory	{#insert zzjlCodeOffFileCB}{#insert zzjlFileLink_MSTR_diffDir}	ilcbd
+ilcbdc -- ilcbd, CODE-d	{#insert zzjlCodeOnFileCB}{#insert zzjlFileLink_MSTR_diffDir}	ilcbdc
+ilcbdy -- ilcbd, no displaY (just x-mark)	{#insert zzjlCodeOffFileCB}{#insert zzjlDispX}{#insert zzjlFileLink_MSTR_diffDir}	ilcbdy
+ilcby -- ilcb, no displaY (just x-mark)	{#insert zzjlCodeOffFileCB}{#insert zzjlDispX}{#insert zzjlFileLink_MSTR_thisDir}	ilcby
+ilpw -- File Link, file in Prev Word	{#insert zzjlCodeOffFileL1w}{#insert zzjlFileLink_MSTR_thisDirDispFile}	ilpw
+ilpwc -- ilpw, CODE-d	{#insert zzjlCodeOnFileL1w}{#insert zzjlFileLink_MSTR_thisDirDispFile}	ilpwc
+ilpwd -- ilpw, different Directory	{#insert zzjlCodeOffFileL1w}{#insert zzjlFileLink_MSTR_diffDir}	ilpwd
+ilpwdc -- ilpwd, CODE-d	{#insert zzjlCodeOnFileL1w}{#insert zzjlFileLink_MSTR_diffDir}	ilpwdc
+ilpwdy -- ilpwd, no displaY (just x-mark)	{#insert zzjlCodeOffFileL1wDispX}{#insert zzjlFileLink_MSTR_diffDir}	ilpwdy
+ilpwdyb -- ilpwd, displaY in clipBoard	{#insert zzjlCodeOffDispCBFileL1w}{#insert zzjlFileLink_MSTR_diffDir}	ilpwdyb
+ilpwdybc -- ilpwdyb, CODE-d	{#insert zzjlCodeOnDispCBFileL1w}{#insert zzjlFileLink_MSTR_diffDir}	ilpwdybc
+ilpwy -- ilpw, no displaY (just x-mark)	{#insert zzjlCodeOffFileL1wDispX}{#insert zzjlFileLink_MSTR_thisDir}	ilpwy
+ilpwyb -- ilpw, displaY in clipBoard	{#insert zzjlCodeOffDispCBFileL1w}{#insert zzjlFileLink_MSTR_thisDir}	ilpwyb
+ilpwybc -- ilpwyb, CODE-d	{#insert zzjlCodeOnDispCBFileL1w}{#insert zzjlFileLink_MSTR_thisDir}	ilpwybc

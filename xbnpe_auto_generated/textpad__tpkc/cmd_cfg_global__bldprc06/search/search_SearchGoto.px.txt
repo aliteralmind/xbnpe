@@ -1,0 +1,8 @@
+zTpkcSearchGotoAbrv1C	Srchgoto	zTpkcSearchGotoAbrv1C
+zTpkcSrchgotoCmdNameTC	SearchGoto	zTpkcSrchgotoCmdNameTC
+zTpkcSrchgotoDfltPhrsNm	zTPGTDlgOpen	zTpkcSrchgotoDfltPhrsNm
+zTpkcSrchgotoCatForCmdAbrvLC	search	zTpkcSrchgotoCatForCmdAbrvLC
+zTpkcSrchgotoCmdType_mcrTl		zTpkcSrchgotoCmdType_mcrTl
+zTpkcSrchgotoIsBtstrp_yes	yes	zTpkcSrchgotoIsBtstrp_yes
+zTpkcSrchgotoDfltPostKcSlpMils	10	zTpkcSrchgotoDfltPostKcSlpMils
+zTpkcSrchgotoStpsFrmCmdListTop	{#insert zEND}{#insert zPGUP}{#insert zDOWN}	zTpkcSrchgotoStpsFrmCmdListTop

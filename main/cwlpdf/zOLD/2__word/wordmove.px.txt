@@ -1,0 +1,14 @@
+zMoveLNw_M_vwmdl -- Vwmdl[p] - wml[[h,t]]m - wml[vy,cvlc]	(*Needs zvWORDS_LEFT: Vwmdl[p]. MINV-Command abbreviation is 'wml'. MINV-Action name is 'wml'.*){#loop {#insert zTPMoveL1w} -count {#insert zvWORDS_LEFT}}	zMoveLNw_M_vwmdl
+zMoveL1w - wml[p]1 - zTPMoveL1w ALT KC	{#insert zTPMoveL1w}	zMoveL1w
+
+zMoveRNw_M_vwmdr -- Vwmdr[p] - wmr[[h,t]]m - wmr[vy,cvlc]	(*Needs zvWORDS_RIGHT: Vwmdr[p]. MINV-Command abbreviation is 'wmr'. MINV-Action name is 'wmr'.*){#loop {#insert zTPMoveR1w} -count {#insert zvWORDS_RIGHT}}	zMoveRNw_M_vwmdr
+zMoveR1w - wmr[p]1 - zTPMoveR1w ALT KC	{#insert zTPMoveR1w}	zMoveR1w
+zMoveR2w - wmr[p]2	{#insert zvWORDS_RIGHT_st2}{#insert zMoveRNw_M_vwmdr}	zMoveR2w
+zMoveR3w - wmr[p]3	{#insert zvWORDS_RIGHT_st3}{#insert zMoveRNw_M_vwmdr}	zMoveR3w
+zMoveR4w - wmr[p]4	{#insert zvWORDS_RIGHT_st4}{#insert zMoveRNw_M_vwmdr}	zMoveR4w
+
+zMoveLNR1w_M_vwmdl -- Vwmdl[p] - wmlnr[[h,t]]m - wmlnr[vy,cvlc]	(*Needs zvWORDS_LEFT: Vwmdl[p]. MINV-Command abbreviation is 'wmlnr'. MINV-Action name is 'wmlnr'.*){#insert zMoveLNw_M_vwmdl}{#insert zMoveR1w}	zMoveLNR1w_M_vwmdl
+zMoveL1R1w - wmlnr[p]1 - zMoveL1w, zMoveR1w	{#insert zMoveL1w}{#insert zMoveR1w}	zMoveL1R1w
+
+zMoveRNL1w_M_vwmdr -- Vwmdr[p] - wmrnl[[h,t]]m - wmrnl[vy,cvlc]	(*Needs zvWORDS_RIGHT: Vwmdr[p]. MINV-Command abbreviation is 'wmrnl'. MINV-Action name is 'wmrnl'.*){#insert zMoveRNw_M_vwmdr}{#insert zMoveL1w}	zMoveRNL1w_M_vwmdr
+zMoveR1L1w - wmrnl[p]1 - zMoveR1w, zMoveL1w	{#insert zMoveR1w}{#insert zMoveL1w}	zMoveR1L1w

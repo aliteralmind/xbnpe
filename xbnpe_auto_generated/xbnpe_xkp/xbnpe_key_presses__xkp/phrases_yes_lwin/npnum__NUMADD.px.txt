@@ -1,0 +1,8 @@
+Alt+LWin+NUMADD -- zALpNUMADD	{#ALT {#LWIN {#ADD}}}{#insert zTSlp}	zALpNUMADD
+Alt+Shift+LWin+NUMADD -- zASLpNUMADD	{#ALT {#SHIFT {#LWIN {#ADD}}}}{#insert zTSlp}	zASLpNUMADD
+Ctrl+Alt+LWin+NUMADD -- zCALpNUMADD	{#CTRL {#ALT {#LWIN {#ADD}}}}{#insert zTSlp}	zCALpNUMADD
+Ctrl+Alt+Shift+LWin+NUMADD -- zCASLpNUMADD	{#CTRL {#ALT {#SHIFT {#LWIN {#ADD}}}}}{#insert zTSlp}	zCASLpNUMADD
+Ctrl+LWin+NUMADD -- zCLpNUMADD	{#CTRL {#LWIN {#ADD}}}{#insert zTSlp}	zCLpNUMADD
+Ctrl+Shift+LWin+NUMADD -- zCSLpNUMADD	{#CTRL {#SHIFT {#LWIN {#ADD}}}}{#insert zTSlp}	zCSLpNUMADD
+LWin+NUMADD -- zLpNUMADD	{#LWIN {#ADD}}{#insert zTSlp}	zLpNUMADD
+Shift+LWin+NUMADD -- zSLpNUMADD	{#SHIFT {#LWIN {#ADD}}}{#insert zTSlp}	zSLpNUMADD

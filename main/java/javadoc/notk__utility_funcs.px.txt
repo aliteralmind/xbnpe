@@ -1,0 +1,6 @@
+xpp -- Deletes the immediately previous parameters.	{#insert zPostBracketDelete}	xpp
+xppsd -- xpp, and the previous 'super.'	{#insert xpp}{#insert zXmark}{#insert zFindOpenUp}super.{#insert zFindBtnNext}{#insert zFindDlgClose}{#insert zBKSP}{#insert zFindXDown}	xppsd
+xprdg -- Deletes the immediately-previous 'super.' and sig	{#insert zFindOpenUpXS}super.{#insert zFindGoXSClose}{#insert zBKSP}	xprdg
+rrdpz -- xppsd, and Replace Params with those in below sig	{#insert xppsd}{#insert mwpz}	rrdpz
+rrdgz -- xprdg, and Replace siG with the below	{#insert xprdg}{#insert mwgz}	rrdgz
+rppz -- Replace immediately-Prev Params with those in below sig	{#insert xpp}{#insert mwpz}	rppz

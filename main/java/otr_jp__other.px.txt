@@ -1,0 +1,11 @@
+jpacb -- sort Class-Block, insert into Ant <javac...> (**)	(*Call from first class in block*){#insert zTPToggleWW}{#insert zzJpacbRAW}{#insert zTPToggleWW}	jpacb
+jpacbn -- jpacb, N times	{#insert zFindDialogFlagPreCheck}{#insert zzJdInsertDisasterXWEnter}{#insert zTPToggleWW}{#loop {#insert zzJpacbRAW} -count {#input -head How many compile blocks? -single}}{#insert zTPToggleWW}{#insert zzJdRemoveDisasterX}	jpacbn
+jpbdfl -- Bookmark '--> class-on-cursor-line' dependancy in dependant-file (**)	(*Call from fqcn line in compile-sequence text file. ***The compile-sequence and dependants_M_extract text files must be the only files open in TextPad (at least the two most-recently focused). ***This WILL fail for some of the most fundamental classes (those not dependent on anything else), as well as exceptions.*){#insert zTPToggleWW}{#insert zzJdbdlRAW}{#insert zTPToggleWW}	jpbdfl
+jpbdfln -- jpbdfl, N times	{#insert zzJpbdflnRAW}	jpbdfln
+jpdccount -- How many class-blocks in dependant text file?(**)	(*Call this AFTER jdpcsx*){#insert zFindDlgOpenDownRE}^[a-z]{#insert zFindMarkAllRE}{#msgbox -head Proceed? -text The count is in the status bar. Use this number when calling jppdcn.{#insert zMsgProceedOrNot}}{#insert zFindDlgClose}{#insert zTPBookmarkClearAll}	jpdccount
+jpfb -- Find branch, for FQCN in ClipBoard	{#insert zFindDlgOpenDownRE}^{#insert zSystemPaste}\>{#insert zFindGoREClose}	jpfb
+jppdcn -- Prepare N Classes in the Dependants text file -- Call from first class-line to process	{#insert zzJppdcnRAW}	jppdcn
+jdpdx -- Prepare Dependents_M_extract.tXt	{#insert zFindDialogFlagPreCheck}{#insert zzJdpdxRAW}{#insert zDialogDONE}	jdpdx
+jdpcsx -- Create and prepare Compile_Sequence.tXt(**)	(*See jpdccount*){#insert zzJdpcsxRAW}	jdpcsx
+jdpcsdx -- jdpcsx, jdpdx	{#insert zzJdpcsdxRAW}	jdpcsdx
+jpcqreadme	{#msgbox -head Steps to creating compile sequence -text [1] Create {#insert zzFileNameCmplSq} with DependencyExtractor and then DependentsToText. [2] Close ALL files in TextPad except {#insert zzFileNameCmplSq} and run 'jdpcsdx' on it. [3] In the resulting text, bookmark all classes that have NO LINES between it and the next class. Then call 'jpabmcl1'. [4] Go to the top of {#insert zzFileNameCmplSq} (or the first class you want to process), get the remaining class-count with 'jpdccount', and run 'jppdcn' with that number.}	jpcqreadme

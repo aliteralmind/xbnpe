@@ -1,0 +1,8 @@
+zRplcBtnAllRAW	{#insert zApAA}{#sleep 50}	zRplcBtnAllRAW
+zRplcBtnFind	{#insert zApFF}{#sleep 10}	zRplcBtnFind
+zRplcBtnNext	{#insert zApNN}{#sleep 10}	zRplcBtnNext
+zRplcBtnRplc	{#insert zApRR}{#sleep 10}	zRplcBtnRplc
+zRplcDlgClose	{#insert zESC}{#sleep 10}	zRplcDlgClose
+zRplcFieldWhat -- zFindFieldWhat ALT KC	{#insert zFindFieldWhat}	zRplcFieldWhat
+zRplcFieldWith	{#insert zApPP}{#sleep 5}	zRplcFieldWith
+zRplcWithNOTHING	{#insert zRplcFieldWith} {#insert zBKSP}	zRplcWithNOTHING

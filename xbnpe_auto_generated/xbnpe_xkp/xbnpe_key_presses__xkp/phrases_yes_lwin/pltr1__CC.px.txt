@@ -1,0 +1,8 @@
+Alt+LWin+CC -- zALpCC	{#ALT {#LWIN -chars c}}{#insert zTSlp}	zALpCC
+Alt+Shift+LWin+CC -- zASLpCC	{#ALT {#SHIFT {#LWIN -chars c}}}{#insert zTSlp}	zASLpCC
+Ctrl+Alt+LWin+CC -- zCALpCC	{#CTRL {#ALT {#LWIN -chars c}}}{#insert zTSlp}	zCALpCC
+Ctrl+Alt+Shift+LWin+CC -- zCASLpCC	{#CTRL {#ALT {#SHIFT {#LWIN -chars c}}}}{#insert zTSlp}	zCASLpCC
+Ctrl+LWin+CC -- zCLpCC	{#CTRL {#LWIN -chars c}}{#insert zTSlp}	zCLpCC
+Ctrl+Shift+LWin+CC -- zCSLpCC	{#CTRL {#SHIFT {#LWIN -chars c}}}{#insert zTSlp}	zCSLpCC
+LWin+CC -- zLpCC	{#LWIN -chars c}{#insert zTSlp}	zLpCC
+Shift+LWin+CC -- zSLpCC	{#SHIFT {#LWIN -chars c}}{#insert zTSlp}	zSLpCC

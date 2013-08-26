@@ -1,0 +1,8 @@
+NINE -- zNINE	{#NONE -chars 9}{#insert zTSlp}	zNINE
+Alt+NINE -- zApNINE	{#ALT -chars 9}{#insert zTSlp}	zApNINE
+Alt+Shift+NINE -- zASpNINE	{#ALT {#SHIFT -chars 9}}{#insert zTSlp}	zASpNINE
+Ctrl+NINE -- zCpNINE	{#CTRL -chars 9}{#insert zTSlp}	zCpNINE
+Ctrl+Alt+NINE -- zCApNINE	{#CTRL {#ALT -chars 9}}{#insert zTSlp}	zCApNINE
+Ctrl+Alt+Shift+NINE -- zCASpNINE	{#CTRL {#ALT {#SHIFT -chars 9}}}{#insert zTSlp}	zCASpNINE
+Ctrl+Shift+NINE -- zCSpNINE	{#CTRL {#SHIFT -chars 9}}{#insert zTSlp}	zCSpNINE
+Shift+NINE -- zSpNINE	{#SHIFT -chars 9}{#insert zTSlp}	zSpNINE

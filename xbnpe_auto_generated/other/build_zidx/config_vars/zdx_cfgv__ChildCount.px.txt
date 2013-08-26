@@ -1,0 +1,10 @@
+zvCHILD_COUNT_sfPvtc	{#SETPHRASE -description zvCHILD_COUNT -content {#insert zzZdxChlCnt_cfgValue_M_pvtc} -autotext zvCHILD_COUNT -folder ctvv_folder}	zvCHILD_COUNT_sfPvtc
+zzZdxChlCnt_dbgCfgItem_M_pvtc	zzZdxChlCnt_cfgValue_M_pvtc={#insert zzZdxChlCnt_cfgValue_M_pvtc}	zzZdxChlCnt_dbgCfgItem_M_pvtc
+zzZdxChlCnt_dbgVarItem_M_pvtcChlcnt	zvCHILD_COUNT={#insert zvCHILD_COUNT}	zzZdxChlCnt_dbgVarItem_M_pvtcChlcnt
+zzZdxChlCnt_cfgValue_M_pvtc	{#insert {#insert zzZdxChlCnt_varName_M_pvtc}}	zzZdxChlCnt_cfgValue_M_pvtc
+zzZdxChlCnt_cfgVarNmPostfix_M_pvtc	ChildCount	zzZdxChlCnt_cfgVarNmPostfix_M_pvtc
+zzZdxChlCnt_intrnlVarNmFYIOnly	zvCHILD_COUNT	zzZdxChlCnt_intrnlVarNmFYIOnly
+zzZdxChlCnt_phrsWCfgValue_M_pvtc	{#insert zzZdxChlCnt_varName_M_pvtc}{#insert zTAB}{#insert zzZdxChlCnt_cfgValue_M_pvtc}{#insert zTAB}{#insert zzZdxChlCnt_varName_M_pvtc}	zzZdxChlCnt_phrsWCfgValue_M_pvtc
+zzZdxChlCnt_phrsWVarValue_M_pvtcChlcnt	{#insert zzZdxChlCnt_varName_M_pvtc}{#insert zTAB}{#insert zvCHILD_COUNT}{#insert zTAB}{#insert zzZdxChlCnt_varName_M_pvtc}	zzZdxChlCnt_phrsWVarValue_M_pvtcChlcnt
+zzZdxChlCnt_varName_M_pvtc	{#insert zzMinvVarNmPREFIX}{#insert zvPN_ABRV_TC}{#insert zzZdxChlCnt_cfgVarNmPostfix}	zzZdxChlCnt_varName_M_pvtc
+zzZdxChlCnt_llCfgLineDesc	The number of children nodes in this ZIndex node. Must equal the number of elements in zvCHILD_TC_POSTS.	zzZdxChlCnt_llCfgLineDesc

@@ -1,0 +1,8 @@
+F4 -- zF4	{#F4}{#insert zTSlp}	zF4
+Alt+F4 -- zApF4	{#ALT {#F4}}{#insert zTSlp}	zApF4
+Alt+Shift+F4 -- zASpF4	{#ALT {#SHIFT {#F4}}}{#insert zTSlp}	zASpF4
+Ctrl+F4 -- zCpF4	{#CTRL {#F4}}{#insert zTSlp}	zCpF4
+Ctrl+Alt+F4 -- zCApF4	{#CTRL {#ALT {#F4}}}{#insert zTSlp}	zCApF4
+Ctrl+Alt+Shift+F4 -- zCASpF4	{#CTRL {#ALT {#SHIFT {#F4}}}}{#insert zTSlp}	zCASpF4
+Ctrl+Shift+F4 -- zCSpF4	{#CTRL {#SHIFT {#F4}}}{#insert zTSlp}	zCSpF4
+Shift+F4 -- zSpF4	{#SHIFT {#F4}}{#insert zTSlp}	zSpF4

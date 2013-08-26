@@ -1,0 +1,8 @@
+TT -- zTT	{#NONE -chars t}{#insert zTSlp}	zTT
+Alt+TT -- zApTT	{#ALT -chars t}{#insert zTSlp}	zApTT
+Alt+Shift+TT -- zASpTT	{#ALT {#SHIFT -chars t}}{#insert zTSlp}	zASpTT
+Ctrl+TT -- zCpTT	{#CTRL -chars t}{#insert zTSlp}	zCpTT
+Ctrl+Alt+TT -- zCApTT	{#CTRL {#ALT -chars t}}{#insert zTSlp}	zCApTT
+Ctrl+Alt+Shift+TT -- zCASpTT	{#CTRL {#ALT {#SHIFT -chars t}}}{#insert zTSlp}	zCASpTT
+Ctrl+Shift+TT -- zCSpTT	{#CTRL {#SHIFT -chars t}}{#insert zTSlp}	zCSpTT
+Shift+TT -- zSpTT	{#SHIFT -chars t}{#insert zTSlp}	zSpTT

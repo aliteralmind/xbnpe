@@ -1,0 +1,27 @@
+zClearCBCopyToLineEndGTNext	{#SETCLIPBOARD }{#insert zCopyToLineEndGTNext}	zClearCBCopyToLineEndGTNext
+zCopyEntireLine	{#insert zHOME}{#insert zSpDOWN}{#insert zTPCopy}	zCopyEntireLine
+zCopyEntireLineNoNL	{#insert zHOME}{#insert zCopyToLineEnd}	zCopyEntireLineNoNL
+zCopyToLineEnd	{#insert zSelCopyToLineEnd}{#insert zLEFT}	zCopyToLineEnd
+zCopyToLineEndGTNext -- Go to next line.	{#insert zCopyToLineEndGTPost}{#insert zRIGHT}	zCopyToLineEndGTNext
+zCopyToLineEndGTPost	{#insert zSelCopyToLineEnd}{#insert zRIGHT}	zCopyToLineEndGTPost
+zCopyToLineHome	{#insert zTPLineLeftExtend}{#insert zTPCopy}{#insert zRIGHT}	zCopyToLineHome
+zCopyToLineHomeGTPre	{#insert zSelCopyToLineHome}{#insert zLEFT}	zCopyToLineHomeGTPre
+zCutEntireLine	{#insert zHOME}{#insert zSpDOWN}{#insert zTPCut}	zCutEntireLine
+zCutEntireLineNoNL	{#insert zHOME}{#insert zCutToLineEnd}	zCutEntireLineNoNL
+zCutToLineEnd	{#insert zTPLineEndExtend}{#insert zTPCut}	zCutToLineEnd
+zCutToLineEndBksp	{#insert zCutToLineEnd}{#insert zBKSP}	zCutToLineEndBksp
+zCutToLineEndDel	{#insert zCutToLineEnd}{#insert zDEL}	zCutToLineEndDel
+zCutToLineHome	{#insert zTPLineLeftExtend}{#insert zTPCut}	zCutToLineHome
+zCutToLineHomeBksp	{#insert zCutToLineHome}{#insert zBKSP}	zCutToLineHomeBksp
+zCutToLineHomeDel	{#insert zCutToLineHome}{#insert zDEL}	zCutToLineHomeDel
+zDeleteToLineEnd	{#insert zSpEND}{#insert zDEL}	zDeleteToLineEnd
+zSelCopyEntireLineNoNL	{#insert zHOME}{#insert zSelCopyToLineEnd}	zSelCopyEntireLineNoNL
+zSelCopyToLineEnd	{#insert zTPLineEndExtend}{#insert zTPCopy}	zSelCopyToLineEnd
+zSelCopyToLineHome	{#insert zTPLineLeftExtend}{#insert zTPCopy}	zSelCopyToLineHome
+zSelCopyUpThr1NonWS [zCASpSPACE] -- The 1st non-WS char in the line, starting from col 1	{#insert zSelectUpThr1NonWS}{#insert zTPCopy}	zSelCopyUpThr1NonWS
+zSelectEntireLine	{#insert zHOME}{#insert zTPLineEndExtend}	zSelectEntireLine
+zSelectUpThr1NonWS [zSpSPACE] -- The 1st non-WS char in the line, starting from col 1	{#insert zTPLineLeftExtend}{#insert zSelectR1L1w}	zSelectUpThr1NonWS
+zSelectNLinesDown_M_ldc -- Needs zvLINES_DOWN_COUNT
+{#LOOP xh -count {#insert zvLINES_DOWN_COUNT}}
+zHomeThenSelectNLinesDown_M_ldc
+{#insert zHOME}

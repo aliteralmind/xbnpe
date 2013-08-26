@@ -1,0 +1,8 @@
+zTpkcChar54SLowerUpperBAbrv1C	Chrslub	zTpkcChar54SLowerUpperBAbrv1C
+zTpkcChrslubCmdNameTC	Char54SLowerUpperB	zTpkcChrslubCmdNameTC
+zTpkcChrslubDfltPhrsNm	zTPChar54SLowerUpperB	zTpkcChrslubDfltPhrsNm
+zTpkcChrslubCatForCmdAbrvLC	chars	zTpkcChrslubCatForCmdAbrvLC
+zTpkcChrslubCmdType_mcrTl		zTpkcChrslubCmdType_mcrTl
+zTpkcChrslubIsBtstrp_yes		zTpkcChrslubIsBtstrp_yes
+zTpkcChrslubDfltPostKcSlpMils	1	zTpkcChrslubDfltPostKcSlpMils
+zTpkcChrslubStpsFrmCmdListTop	{#insert zEND}{#insert zPGUP2}{#insert zDOWN}	zTpkcChrslubStpsFrmCmdListTop

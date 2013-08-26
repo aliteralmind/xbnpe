@@ -1,0 +1,4 @@
+_DO NOT TOUCH this folder or any of its phrases...	Required by phrase-creator-ddmenu-utils		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+zzAllFilePrefixesInDDMenuDirQbl_cwlpdf	[{#insert zzPmdmFNmPreCwlpdf}]	zzAllFilePrefixesInDDMenuDirQbl_cwlpdf
+zzDDMenuDir_cwlpdf	{#insert zXPROOT_DIR_cwlpdf}z_phrase_creator_ddmenus\	zzDDMenuDir_cwlpdf
+zzPmdmFNmPreCwlpdf	cwlpdf__pcddmenu	zzPmdmFNmPreCwlpdf

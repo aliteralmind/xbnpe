@@ -1,0 +1,8 @@
+AA -- zAA	{#NONE -chars a}{#insert zTSlp}	zAA
+Alt+AA -- zApAA	{#ALT -chars a}{#insert zTSlp}	zApAA
+Alt+Shift+AA -- zASpAA	{#ALT {#SHIFT -chars a}}{#insert zTSlp}	zASpAA
+Ctrl+AA -- zCpAA	{#CTRL -chars a}{#insert zTSlp}	zCpAA
+Ctrl+Alt+AA -- zCApAA	{#CTRL {#ALT -chars a}}{#insert zTSlp}	zCApAA
+Ctrl+Alt+Shift+AA -- zCASpAA	{#CTRL {#ALT {#SHIFT -chars a}}}{#insert zTSlp}	zCASpAA
+Ctrl+Shift+AA -- zCSpAA	{#CTRL {#SHIFT -chars a}}{#insert zTSlp}	zCSpAA
+Shift+AA -- zSpAA	{#SHIFT -chars a}{#insert zTSlp}	zSpAA

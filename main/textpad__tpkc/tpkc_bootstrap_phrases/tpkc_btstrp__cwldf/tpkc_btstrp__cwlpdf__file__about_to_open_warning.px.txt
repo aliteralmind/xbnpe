@@ -1,0 +1,5 @@
+zPrintAboutToOpenFileWarning_M_pth -- Needs dir-and-file-name in zvPATH	About to open/INSERTFILE:{#insert zENTER}{#insert zvPATH}...	zPrintAboutToOpenFileWarning_M_pth
+zPrintDelAboutToOpenFileWarning_M_pth	{#insert zPrintAboutToOpenFileWarning_M_pth}{#sleep 2000}{#insert zSelectAllDel}{#sleep 500}	zPrintDelAboutToOpenFileWarning_M_pth
+zInsFileTextToNewWAboutToWarning_M_dirFnm	{#insert zvPATH_stDirPlusFNm}{#insert zInsFileTextToNewWAboutToWarning_M_pth}	zInsFileTextToNewWAboutToWarning_M_dirFnm
+zInsFileTextToNewWAboutToWarning_M_pth -- Needs zvPATH	{#insert zFcsTPFileNew}{#insert zInsFileTextWAboutToWarning_M_pth}	zInsFileTextToNewWAboutToWarning_M_pth
+zInsFileTextWAboutToWarning_M_pth -- Needs zvPATH	{#insert zPrintDelAboutToOpenFileWarning_M_pth}{#insert zInsertFile_M_path}	zInsFileTextWAboutToWarning_M_pth

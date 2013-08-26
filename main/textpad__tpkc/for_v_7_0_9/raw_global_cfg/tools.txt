@@ -1,0 +1,9 @@
+ToolCompareFiles	zTPToolCompareFiles	Tcmp	__ES__	10	{#insert zEND}{#insert zPGUP}{#insert zUP2}
+ToolExplorer	zTPToolExplorer	Txplr	__ES__	10	{#insert zEND}{#insert zPGUP}{#insert zUP}
+ToolHTMLValidate	zTPToolHTMLValidate	Thv	__ES__	10	{#insert zEND}{#insert zPGUP}
+ToolRerun	zTPToolRerun	Trer	__ES__	10	{#insert zEND}{#insert zPGUP}{#insert zDOWN}
+ToolRun	zTPToolRun	Trun	__ES__	10	{#insert zEND}{#insert zPGUP}{#insert zDOWN2}
+ToolSort	zTPSortDlgOpen	Tsrt	__ES__	10	{#insert zEND}{#insert zUP3}
+ToolSpell	zTPToolSpell	Tspl	__ES__	10	{#insert zEND}{#insert zUP2}
+ToolStop	zTPToolStop	Tstp	__ES__	10	{#insert zEND}{#insert zUP}
+ToolWildEdit	zTPToolWildEdit	Twedt	__ES__	10	{#insert zEND}

@@ -1,0 +1,6 @@
+1. zKeyPressFast (kpf, kfp) 	{#SETPHRASE -description zTSlp -content  -autotext zTSlp -folder ctvv_folder}{#SETPHRASE -description zvCURR_KP_SPEED -content 0 ({#insert zAscQQ}Fast{#insert zAscQQ}~~zTSlp does not exist!) -autotext zvCURR_KP_SPEED -folder ctvv_folder}	zKeyPressFast
+2. zKeyPressMedium (kpm, kmp) 	{#SETPHRASE -description zvMILLS -content 250 -autotext zvMILLS -folder ctvv_folder}{#insert zKeyPressSpeedSetToMills_M_mils}	zKeyPressMedium
+3. zKeyPressSlow (kps, ksp) 	{#SETPHRASE -description zvMILLS -content 500 -autotext zvMILLS -folder ctvv_folder}{#insert zKeyPressSpeedSetToMills_M_mils}	zKeyPressSlow
+4. zKeyPressSuperSlow (kpss, kssp)	{#SETPHRASE -description zvMILLS -content 1000 -autotext zvMILLS -folder ctvv_folder}{#insert zKeyPressSpeedSetToMills_M_mils}	zKeyPressSuperSlow
+5. zKeyPressGlacial (kpg, kgp)	{#SETPHRASE -description zvMILLS -content 2000 -autotext zvMILLS -folder ctvv_folder}{#insert zKeyPressSpeedSetToMills_M_mils}	zKeyPressGlacial
+6. zKeyPressCurrentSpeed (kpt)	(*NOTHING if never set*){#insert zzKeyPrsSyntax}	zKeyPressCurrentSpeed

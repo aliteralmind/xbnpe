@@ -1,0 +1,8 @@
+_DO NOT TOUCH this folder or any of its phrases...	Required by phrase-creator-ddmenu-utils		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+zzAllFilePrefixesInDDMenuDirQbl_snr	[{#insert zzPmdmFNmPreSnrFifUsrParams}][{#insert zzPmdmFNmPreSnrFifMain}][{#insert zzPmdmFNmPreSnrFind}][{#insert zzPmdmFNmPreSnrRplc}][{#insert zzPmdmFNmPreSnrOther}]	zzAllFilePrefixesInDDMenuDirQbl_snr
+zzDDMenuDir_snr	{#insert zXPROOT_DIR_srchRplc}z_other\z_phrase_creator_ddmenus\	zzDDMenuDir_snr
+zzPmdmFNmPreSnrFifMain	snr__find_in_files__pcddmenu__DO_NOT_EDIT	zzPmdmFNmPreSnrFifMain
+zzPmdmFNmPreSnrFifUsrParams	snr__find_in_files__ffd_fft_config__pcddmenu__EDIT_THIS	zzPmdmFNmPreSnrFifUsrParams
+zzPmdmFNmPreSnrFind	snr__find__pcddmenu	zzPmdmFNmPreSnrFind
+zzPmdmFNmPreSnrRplc	snr__rplc__pcddmenu	zzPmdmFNmPreSnrRplc
+zzPmdmFNmPreSnrOther	snr__other__pcddmenu	zzPmdmFNmPreSnrOther

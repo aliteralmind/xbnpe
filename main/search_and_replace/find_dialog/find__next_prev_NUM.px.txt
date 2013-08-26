@@ -1,0 +1,8 @@
+zFindNext2	{#insert zTPFindNext}{#insert zTPFindNext}	zFindNext2
+zFindNext3	{#insert zFindNext2}{#insert zTPFindNext}	zFindNext3
+zFindNext4	{#insert zFindNext3}{#insert zTPFindNext}	zFindNext4
+zFindNext5	{#insert zFindNext4}{#insert zTPFindNext}	zFindNext5
+zFindPrev2	{#insert zTPFindPrev}{#insert zTPFindPrev}	zFindPrev2
+zFindPrev3	{#insert zFindPrev2}{#insert zTPFindPrev}	zFindPrev3
+zFindPrev4	{#insert zFindPrev3}{#insert zTPFindPrev}	zFindPrev4
+zFindPrev5	{#insert zFindPrev4}{#insert zTPFindPrev}	zFindPrev5

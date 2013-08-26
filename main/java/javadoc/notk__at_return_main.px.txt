@@ -1,0 +1,5 @@
+jdr -- @return  <CODE>{#insert zYmark}</CODE>	@return  <CODE>{#insert zYmark}</CODE>{#insert zYUp}	jdr
+jdre -- jdr, Empty (no CODE)	@return  {#insert zYmark}{#insert zYUp}	jdre
+jdrep -- jdre, paste	{#insert jdre}{#insert zTPPaste}	jdrep
+jdrp -- jdr, paste	{#insert jdr}{#insert zTPPaste}	jdrp
+jdrthis	@return  <B><CODE>this</CODE></B>	jdrthis

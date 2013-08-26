@@ -1,0 +1,8 @@
+zTpkcClipRefreshAbrv1C	Clrf	zTpkcClipRefreshAbrv1C
+zTpkcClrfCmdNameTC	ClipRefresh	zTpkcClrfCmdNameTC
+zTpkcClrfDfltPhrsNm	zTPClipRefresh	zTpkcClrfDfltPhrsNm
+zTpkcClrfCatForCmdAbrvLC	cliplib	zTpkcClrfCatForCmdAbrvLC
+zTpkcClrfCmdType_mcrTl		zTpkcClrfCmdType_mcrTl
+zTpkcClrfIsBtstrp_yes		zTpkcClrfIsBtstrp_yes
+zTpkcClrfDfltPostKcSlpMils	100	zTpkcClrfDfltPostKcSlpMils
+zTpkcClrfStpsFrmCmdListTop	{#insert zPGDN}{#insert zDOWN2}	zTpkcClrfStpsFrmCmdListTop

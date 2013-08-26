@@ -1,0 +1,21 @@
+zFinishSave	{#insert zENTER}{#sleep 250}	zFinishSave
+zFinishSaveCloseFile	{#insert zFinishSave}{#insert zFcsTPFileClose}{#sleep 100}	zFinishSaveCloseFile
+zGTDocBottom	{#insert zTPGTDocBottom}	zGTDocBottom
+zTPGTDocTop	{#insert zTPGTDocTop}	zTPGTDocTop
+zGoToAndCopyDoc1stWord	{#insert zGoToAndSelectDoc1stWord}{#insert zTPCopy}	zGoToAndCopyDoc1stWord
+zGoToAndSelectDoc1stWord	{#insert zTPGTDocTop}{#insert zTPSelectR1w}	zGoToAndSelectDoc1stWord
+zPGDN2	{#insert zPGDN}{#insert zPGDN}	zPGDN2
+zPGDN3	{#insert zPGDN2}{#insert zPGDN}	zPGDN3
+zPGUP2	{#insert zPGUP}{#insert zPGUP}	zPGUP2
+zPGUP3	{#insert zPGUP2}{#insert zPGUP}	zPGUP3
+zPasteMatchBracketRight	{#insert zTPPaste}{#insert zTPMatchBracket}{#insert zRIGHT}	zPasteMatchBracketRight
+zSTDocBottom	{#insert zTPSTDocBottom}	zSTDocBottom
+zSTDocTop	{#insert zTPSTDocTop}	zSTDocTop
+zSelCopyToDocBottom	{#insert zSTDocBottom}{#insert zTPCopy}	zSelCopyToDocBottom
+zSelCopyToDocTop	{#insert zSTDocTop}{#insert zTPCopy}	zSelCopyToDocTop
+zSaveCloseFile -- Expected that this will NOT open the dialog (**)	(*That the file was already saved*){#insert zFileSave1750slp}{#insert zFcsTPFileClose}	zSaveCloseFile
+zTPSelectAll -- zTPSelectAll ALT KC	{#insert zTPSelectAll}	zTPSelectAll
+zSelectAllCopyGTEnd	{#insert zSelectAllCopy}{#insert zRIGHT}	zSelectAllCopyGTEnd
+zSelectAllPaste	{#insert zTPSelectAll}{#insert zTPPaste}	zSelectAllPaste
+zSortAllLines -- Uses all current sort-settings.	{#insert zTPGTDocTop}{#insert zSortSelectedLines}	zSortAllLines
+zSortSelectedLines	{#insert zTPSortDlgOpen}{#insert zENTER}	zSortSelectedLines

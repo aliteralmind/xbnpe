@@ -1,0 +1,8 @@
+zTpkcMacroPauseAbrv1C	Mcrpaus	zTpkcMacroPauseAbrv1C
+zTpkcMcrpausCmdNameTC	MacroPause	zTpkcMcrpausCmdNameTC
+zTpkcMcrpausDfltPhrsNm	zTPMacroPause	zTpkcMcrpausDfltPhrsNm
+zTpkcMcrpausCatForCmdAbrvLC	macros	zTpkcMcrpausCatForCmdAbrvLC
+zTpkcMcrpausCmdType_mcrTl		zTpkcMcrpausCmdType_mcrTl
+zTpkcMcrpausIsBtstrp_yes		zTpkcMcrpausIsBtstrp_yes
+zTpkcMcrpausDfltPostKcSlpMils	10	zTpkcMcrpausDfltPostKcSlpMils
+zTpkcMcrpausStpsFrmCmdListTop	{#NONE -chars m -count 2}{#insert z5ThnTSlp}	zTpkcMcrpausStpsFrmCmdListTop

@@ -1,0 +1,18 @@
+zDupEscapedCBLinesIncrXEveryLine	{#insert zvLINES_TO_SKIP_st0}{#insert zDupEscapedCBLinesIncrX_M_skiplinecount}	zDupEscapedCBLinesIncrXEveryLine
+zDupCBLinesIncrXEveryLine	{#insert zvLINES_TO_SKIP_st0}{#insert zDupCBLinesIncrX_M_skiplinecount}	zDupCBLinesIncrXEveryLine
+zDupCBLinesIncrXWSkipPrompt	{#insert zvLINES_TO_SKIP_stPrompt}{#insert zDupCBLinesIncrX_M_skiplinecount}	zDupCBLinesIncrXWSkipPrompt
+zDupEscapedCBLinesIncrXWSkipPrompt	{#insert zvLINES_TO_SKIP_stPrompt}{#insert zDupEscapedCBLinesIncrX_M_skiplinecount}	zDupEscapedCBLinesIncrXWSkipPrompt
+zDupEscapedCBLinesIncrX_M_skiplinecount	{#insert zEscapeCBOCForVarQuiet}{#insert zDupCBLinesIncrX_M_skiplinecount}(*{#insert zUnescapeOCForVarQuiet}*)	zDupEscapedCBLinesIncrX_M_skiplinecount
+zvLINES_TO_SKIP_stPrompt	{#SETPHRASE -description zvLINES_TO_SKIP -content {#input -head Skip how many lines b/t each paste? -single -def 1} -autotext zvLINES_TO_SKIP -folder ctvv_folder}	zvLINES_TO_SKIP_stPrompt
+zvLINES_TO_SKIP_st0	{#SETPHRASE -description zvLINES_TO_SKIP -content 0 -autotext zvLINES_TO_SKIP -folder ctvv_folder}	zvLINES_TO_SKIP_st0
+zvLINES_TO_SKIP_st1	{#SETPHRASE -description zvLINES_TO_SKIP -content 1 -autotext zvLINES_TO_SKIP -folder ctvv_folder}	zvLINES_TO_SKIP_st1
+
+zDupCBLinesIncrX_M_skiplinecount -- Needs zvLINES_TO_SKIP	{#insert zvFIRST_NUM_stPrompt}{#insert zvTOT_DUPS_stPrompt}{#insert zDupCBLinesIncrX_M_skpcntFrstnmTotdups}	zDupCBLinesIncrX_M_skiplinecount
+
+zDupCBLinesIncrX_M_skpcntFrstnmTotdups -- Needs zvLINES_TO_SKIP, zvFIRST_NUM, zvTOT_DUPS	{#insert zTPToggleWW}{#setvar -var zGLOBAL_COUNTER -value {#insert zvFIRST_NUM} -inc 1}{#loop {#replace {#insert zTPPaste} -oldtext {#insert zXmark} -newtext {#insert zGLOBAL_COUNTER}}{#loop {#insert zDOWN} -count {#insert zvLINES_TO_SKIP}}{#insert zHOME} -count {#insert zvTOT_DUPS}}{#insert zTPToggleWW}	zDupCBLinesIncrX_M_skpcntFrstnmTotdups
+zvFIRST_NUM_stCB	{#SETPHRASE -description zvFIRST_NUM -content {#insert zTPPaste} -autotext zvFIRST_NUM -folder ctvv_folder}	zvFIRST_NUM_stCB
+
+zvFIRST_NUM_stPrompt	{#SETPHRASE -description zvFIRST_NUM -content {#insert zzStartNumPrompt} -autotext zvFIRST_NUM -folder ctvv_folder}	zvFIRST_NUM_stPrompt
+zzStartNumPrompt	{#input -head Starting number? -single -def 1}	zzStartNumPrompt
+zvTOT_DUPS_stPrompt	{#SETPHRASE -description zvTOT_DUPS -content {#insert zzTotDupCountPrompt} -autotext zvTOT_DUPS -folder ctvv_folder}	zvTOT_DUPS_stPrompt
+zzTotDupCountPrompt	{#input -head Dup cb-lines how many times? -single}	zzTotDupCountPrompt

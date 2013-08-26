@@ -1,0 +1,45 @@
+R:\jeffy\programming\sandbox\macros\xbn_phrase_express\phrase_express\build_minv\_minv_demo\hobk_demo\hobk__mnv_configuration.px.txt
+zzMnvCmdHobkActionName1C
+Hobk
+zzMnvCmdHobkActions_on
+on
+zzMnvCmdHobkMasterPhraseNm
+zHomeBkspN_FROM_vlnu
+zzMnvCmdHobkSNTPromptActn_on
+on
+zzMnvCmdHobkSNTPromptActnMsg
+How many lines up?
+(*---------------------------
+   ^^ -- Explain
+
+   vv -- Ignore
+---------------------------*)
+
+zzMnvCmdHobkPhraseCreators_on
+
+zzMnvCmdHobkCommands_on
+
+zzMnvCmdHobkPNmAbrv1C
+Hobk
+zzMnvCmdHobkRangeMin
+1
+zzMnvCmdHobkRangeMax
+1
+zzMnvCmdHobkNamePreNum
+
+zzMnvCmdHobkNamePostNum
+
+zzMnvCmdHobkNNLTargetNum
+
+zzMnvCmdHobkVarAbrv1CForCmd
+Vlnu
+zzMnvCmdHobkPCActOffPst_pES
+
+zzMnvCmdHobkLiteralStyle_esyc
+
+zzMnvCmdHobkNoNumAlias_on
+
+zzMnvCmdHobkNNLCmdIfIntrnl_yes
+
+zzMnvCmdHobkNNLCmdXtrnl_yes
+

@@ -1,0 +1,29 @@
+(*
+   Required by phrase-creator-ddmenu-utils...START
+      PM_DDMENU_DIRID_FILENMPHRSNM_HDRAUTOTXT=cwlpdf/zzPmdmFNmPreCwlpdf/xhcff
+   Required by phrase-creator-ddmenu-utils...END
+*)
+(*
+   Other phrases to include in this group's ddmenu-branch:
+         zTPCopyFileName**
+*)
+ccdr -- zCopySetCurrDirREoffDown ALT KC	{#insert zCopySetCurrDirREoffDown}{#sleep 2000}{#insert ccfnsyn}	ccdr
+ccfn -- zCopySetCurrFileNameREoffDown ALT KC	{#insert zCopySetCurrFileNameREoffDown}{#sleep 2000}{#insert ccfnsyn}	ccfn
+ccfne -- zCopySetCurrFileNamePreExtREoffDown ALT KC	{#insert zCopySetCurrFileNamePreExtREoffDown}{#sleep 2000}{#insert ccfnsyn}	ccfne
+ccfnsyn	{#BALLOON -title Syntax: Get curr file-nm/dir -text cc[df,dr,fn[e]] -- [df]=both dir and file (path copied), [dr]=dir, [fn]=file-name, [e]=Prefix (up-through but not incl. 1st '.')  //  WARNING: Only works on already-saved files.  //  ccfnsyn}	ccfnsyn
+ccdf -- zCopySetCurrDirFileNameREoffDown ALT KC	{#insert zCopySetCurrDirFileNameREoffDown}{#sleep 2000}{#insert ccfnsyn}	ccdf
+zCopySetCurrDirFileNameREoffDown -- Sets zvDIR, zvFNM, path in cb, RE-off, down-sel	{#BALLOON -title Please wait... -text Retrieving directory and file-name of THIS document via zTPCopyFileName.}{#insert zzCopyFilePathToNewFlFindCutSetFNmREoff}{#insert zSelectAllCopy}{#SETPHRASE -description zvDIRECTORY -content {#INSERTCLIPBOARD} -autotext zvDIRECTORY -folder ctvv_folder}(*It is redundant to copy the file-name, then the directory, then re-set the clipboard to the path...but there's no other way to set the variables.*){#insert zFileCloseDiscardChanges}{#insert zTPCopyFileName}{#insert zzzBalDoneIcbInCBCcfnsyn}	zCopySetCurrDirFileNameREoffDown
+zCopySetCurrDirREoffDown -- Sets zvDIRECTORY (& copies it), RE unchecked	{#BALLOON -title Please wait... -text Copying directory of THIS document via zTPCopyFileName.}{#insert zzCopyFilePathToNewFlFindCutSetDirREoff}{#insert zFileCloseDiscardChanges}{#SETCLIPBOARD {#insert zvDIRECTORY}}{#insert zzzBalDoneIcbInCBCcfnsyn}	zCopySetCurrDirREoffDown
+zCopySetCurrFileNamePreExtREoffDown -- file-name, w/o '.' extension	{#BALLOON -title Please wait... -text Retrieving file-name prefix (up-to-but-not-including the first '.') of THIS document, via zTPCopyFileName.}{#insert zzCopyFilePathToNewFlFindCutSetFNmREoff}(*Eliminate postfix, starting with the first '.':*){#SETPHRASE -description zvFILE_NAME -content {#SUBSTR {#insert zvFILE_NAME} -from 0 -count {#CALC {#POS {#insert zvFILE_NAME} -substr .} - 1 -round 0 -thousands none}} -autotext zvFILE_NAME -folder ctvv_folder}{#insert zzFlClsDscrdSetCBtoFNmBalDone}	zCopySetCurrFileNamePreExtREoffDown
+zCopySetCurrFileNameREoffDown -- Sets zvFILE_NAME (& copies it), RE-off, down-sel	{#BALLOON -title Please wait... -text Retrieving file-name of THIS document via zTPCopyFileName.}{#insert zzCopyFilePathToNewFlFindCutSetFNmREoff}{#insert zzFlClsDscrdSetCBtoFNmBalDone}	zCopySetCurrFileNameREoffDown
+zzCopyFilePathToNewFlFindCutSetDirREoff	{#insert zzzCopyCurFlPthCIESFlNewPastGTDTFndDlgOpenDownMCRE}(*All text ending with the final directory slash ('\'). Greedy, so guaranteed to capture all through the last slash:*){#SETPHRASE -description zvFIND_WHAT -content ^.+\\ -autotext zvFIND_WHAT -folder ctvv_folder}{#insert zvFIND_WHAT}{#insert zFindBtnNext}{#insert zFindFlagDownRAW}{#insert zFindDlgClose}{#insert zTPFindFlagREoff}{#insert zTPCopy}{#SETPHRASE -description zvDIRECTORY -content {#INSERTCLIPBOARD} -autotext zvDIRECTORY -folder ctvv_folder}	zzCopyFilePathToNewFlFindCutSetDirREoff
+zzCopyFilePathToNewFlFindCutSetFNmREoff	{#insert zzzCopyCurFlPthCIESFlNewPastGTDTFndDlgOpenDownMCRE}(*All text starting immediately after the final directory slash ('\')*){#SETPHRASE -description zvFIND_WHAT -content (?<=[\\])[^\\]+$ -autotext zvFIND_WHAT -folder ctvv_folder}{#insert zvFIND_WHAT}{#insert zFindBtnNext}{#insert zFindDlgClose}{#insert zTPFindFlagREoff}{#insert zTPCut}{#SETPHRASE -description zvFILE_NAME -content {#INSERTCLIPBOARD} -autotext zvFILE_NAME -folder ctvv_folder}	zzCopyFilePathToNewFlFindCutSetFNmREoff
+zzFlClsDscrdSetCBtoFNmBalDone	{#insert zFileCloseDiscardChanges}{#SETCLIPBOARD {#insert zvFILE_NAME}}{#insert zzzBalDoneIcbInCBCcfnsyn}	zzFlClsDscrdSetCBtoFNmBalDone
+zzzBalDoneIcbInCBCcfnsyn	{#BALLOON -title DONE -text '{#INSERTCLIPBOARD}' is now in the clipboard.}	zzzBalDoneIcbInCBCcfnsyn
+zzzCopyCurFlPthCIESFlNewPastGTDTFndDlgOpenDownMCRE	{#insert zzCopyCurrFilePathCIES}{#insert zFileNewPaste}{#insert zTPGTDocTop}{#insert zTPFindFlagMCon}{#insert zTPFindFlagREon}{#insert zTPFindDlgOpen}{#insert zFindFlagDown}	zzzCopyCurFlPthCIESFlNewPastGTDTFndDlgOpenDownMCRE
+zzCopyCurrFilePathCIES	{#SETCLIPBOARD}{#insert zTPCopyFileName}(*Must have at least [drive-letter, colon, slash, single-char file name]*){#insert {#COND -if {#LENGTH {#INSERTCLIPBOARD}} >= 4 -then z1slp -else zzzErrDlgCurrFilePathES}}	zzCopyCurrFilePathCIES
+zzzErrDlgCurrFilePathES	{#MSGBOX -head ERROR -text ERROR ~~ Attempting to copy this file's path, with zTPCopyFileName, but there is no path! This may only be used from within an ALREADY~SAVED file.{#insert zCancelProcNowPostTxt}}	zzzErrDlgCurrFilePathES
+zCopyFileNameFromSaveAsDlg	{#insert zTPFileSaveAs}{#sleep 100}{#insert zSystemCopy}{#sleep 100}{#insert zESC}{#sleep 100}	zCopyFileNameFromSaveAsDlg
+zCopyFileNameFromSaveAsDlgPasteIntoOpenDlg	{#insert zCopyFileNameFromSaveAsDlg}{#insert zFcsTPFileOpen}{#sleep 100}{#insert zSystetmPaste}	zCopyFileNameFromSaveAsDlgPasteIntoOpenDlg
+zCopyFileNameWPxTxtFromSaveAsDlg -- Rplcs actual extension with '.px.txt'	{#insert zCopyFileNameFromSaveAsDlg}{#SETCLIPBOARD {#insert zGetCBPreDot}.px.txt}	zCopyFileNameWPxTxtFromSaveAsDlg
+zGetCBPreDot -- Eliminates the file extension.	{#SUBSTR {#INSERTCLIPBOARD} -from 0 -count {#CALC {#POS {#INSERTCLIPBOARD} -substr .} - 1 -round 0 -thousands none}}	zGetCBPreDot

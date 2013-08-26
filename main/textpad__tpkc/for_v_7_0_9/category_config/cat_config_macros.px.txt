@@ -1,0 +1,7 @@
+zTpkcMacrosAbrvLC	macros	zTpkcMacrosAbrvLC
+zTpkcMacrosAllCmdNamesTCQbl	[MacroMultiplay][MacroPause][MacroPlay][MacroRecord][MacroSave]	zTpkcMacrosAllCmdNamesTCQbl
+zTpkcMacrosCmdCount	5	zTpkcMacrosCmdCount
+zTpkcMacrosHasUserCrtdCmds_yes	yes	zTpkcMacrosHasUsrCrtdCmds_yes
+zTpkcMacrosStpsFrmCatListTop	{#insert zMM}{#insert z5ThnTSlp}	zTpkcMacrosStpsFrmCatListTop
+zTpkcMacrosNameLC	macros	zTpkcMacrosNameLC
+

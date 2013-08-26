@@ -1,0 +1,6 @@
+zDEL2	{#DEL -count 2}{#insert zTSlp}	zDEL2
+zDEL3	{#DEL -count 3}{#insert zTSlp}	zDEL3
+zDEL4	{#DEL -count 4}{#insert zTSlp}	zDEL4
+zBKSP2	{#BKSP -count 2}{#insert zTSlp}	zBKSP2
+zBKSP3	{#BKSP -count 3}{#insert zTSlp}	zBKSP3
+zBKSP4	{#BKSP -count 4}{#insert zTSlp}	zBKSP4

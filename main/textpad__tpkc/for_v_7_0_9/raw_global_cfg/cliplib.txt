@@ -1,0 +1,13 @@
+ClipClose	zTPClipClose	Clcls	__ES__	10	(*NOTHING. Top command in list*)
+ClipCopy	zTPClipCopy	Clcp	__ES__	5	{#insert zDOWN}
+ClipDeleteBook	zTPClipDeleteBook	Cldb	__ES__	25	{#insert zDOWN2}
+ClipDeleteEntry	zTPClipDeleteEntry	Clde	__ES__	10	{#insert zDOWN3}
+ClipEditBook	zTPClipEditBook	Cleb	__ES__	50	{#insert zPGDN}{#insert zUP2}
+ClipInsert	zTPClipInsert	Clins	__ES__	25	{#insert zPGDN}{#insert zUP}
+ClipNewBook	zTPClipNewBook	Clnb	__ES__	25	{#insert zPGDN}
+ClipPaste	zTPClipPaste	Clp	__ES__	10	{#insert zPGDN}{#insert zDOWN}
+ClipRefresh	zTPClipRefresh	Clrf	__ES__	100	{#insert zPGDN}{#insert zDOWN2}
+ClipRenameBook	zTPClipRenameBook	Clrb	__ES__	50	{#insert zPGDN}{#insert zDOWN3}
+ClipRenameEntry	zTPClipRenameEntry	Clre	__ES__	50	{#insert zEND}{#insert zUP2}
+ClipSaveBook	zTPClipSaveBook	Clsb	__ES__	50	{#insert zEND}{#insert zUP}
+ClipSortEntries	zTPClipSortEntries	Clsrt	__ES__	50	{#insert zEND}

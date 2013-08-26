@@ -1,0 +1,18 @@
+klw1 -- Elim all but 1st word from next line	{#insert zWWOffHmSvStateMaybeRecheck}{#SHIFT {#DOWN}}(*<--I'd use zSpDOWN, but zTSlp is already integrated in-->*){#insert zzTSlpKlw1SelLnsRvrtWWSyn}	klw1
+klw110 -- klw1 for this line and the following	{#insert zWWOffHmSvStateMaybeRecheck}{#SHIFT {#DOWN -count 10}}{#insert zzTSlpKlw1SelLnsRvrtWWSyn}	klw110
+klw12 -- klw1 for this line and the following	{#insert zWWOffHmSvStateMaybeRecheck}{#SHIFT {#DOWN -count 2}}{#insert zzTSlpKlw1SelLnsRvrtWWSyn}	klw12
+klw13 -- klw1 for this line and the following	{#insert zWWOffHmSvStateMaybeRecheck}{#SHIFT {#DOWN -count 3}}{#insert zzTSlpKlw1SelLnsRvrtWWSyn}	klw13
+klw14 -- klw1 for this line and the following	{#insert zWWOffHmSvStateMaybeRecheck}{#SHIFT {#DOWN -count 4}}{#insert zzTSlpKlw1SelLnsRvrtWWSyn}	klw14
+klw15 -- klw1 for this line and the following	{#insert zWWOffHmSvStateMaybeRecheck}{#SHIFT {#DOWN -count 5}}{#insert zzTSlpKlw1SelLnsRvrtWWSyn}	klw15
+klw16 -- klw1 for this line and the following	{#insert zWWOffHmSvStateMaybeRecheck}{#SHIFT {#DOWN -count 6}}{#insert zzTSlpKlw1SelLnsRvrtWWSyn}	klw16
+klw17 -- klw1 for this line and the following	{#insert zWWOffHmSvStateMaybeRecheck}{#SHIFT {#DOWN -count 7}}{#insert zzTSlpKlw1SelLnsRvrtWWSyn}	klw17
+klw18 -- klw1 for this line and the following	{#insert zWWOffHmSvStateMaybeRecheck}{#SHIFT {#DOWN -count 8}}{#insert zzTSlpKlw1SelLnsRvrtWWSyn}	klw18
+klw19 -- klw1 for this line and the following	{#insert zWWOffHmSvStateMaybeRecheck}{#SHIFT {#DOWN -count 9}}{#insert zzTSlpKlw1SelLnsRvrtWWSyn}	klw19
+klw1all -- klw1 for the entire document	{#insert zTPSelectAll}{#insert zvHNR_YES_stYes}{#insert zzTSlpKlw1SelLines_M_hnry}	klw1all
+klw1n -- klw1 for any 'N'umber of lines	{#insert zWWOffHmSvStateMaybeRecheck}{#LOOP {#SHIFT {#DOWN}} -count {#INPUT -head How many lines down? -single}}{#insert zzTSlpKlw1SelLnsRvrtWWSyn}	klw1n
+zREoffKlw1SelLines_M_hnry -- Needs zvHNR_YES. RE-flag stays off	{#insert zTPRplcDlgOpen}{#insert zFindFlagRETgl}{#insert zzMidRplcREKeepWrd1Only}{#insert zRplcBtnAllSel_hnrIf_M_hnry}{#insert zFindFlagRETglRAW}{#insert zRplcDlgClose}	zREoffKlw1SelLines_M_hnry
+zREonKlw1SelLines_M_hnry -- Needs zvHNR_YES. RE-flag stays on	{#insert zFcsTPRplcDlgOpen}{#insert zzMidRplcREKeepWrd1Only}{#insert zRplcBtnAllSel_hnrIf_M_hnry}{#insert zRplcDlgClose}	zREonKlw1SelLines_M_hnry
+zzMidRplcREKeepWrd1Only -- Does not press replace-all button	(*Duplicate any changes to ../../../_documentation/search_and_replace/index.html#midrplc*){#SETPHRASE -description zvFIND_WHAT -content ^([A-Za-z0-9_]+)\>.*$ -autotext zvFIND_WHAT -folder ctvv_folder}{#insert zvFIND_WHAT}{#insert zRplcFieldWith}{#SETPHRASE -description zvRPLC_WITH -content $1 -autotext zvRPLC_WITH -folder ctvv_folder}{#insert zvRPLC_WITH}	zzMidRplcREKeepWrd1Only
+zzTSlpKlw1SelLines_M_hnry -- Needs zvHNR_YES	{#insert zTSlp}{#insert zREoffKlw1SelLines_M_hnry}	zzTSlpKlw1SelLines_M_hnry
+zzTSlpKlw1SelLnsRvrtWWSyn	{#insert zvHNR_YES_stYes}{#insert zzTSlpKlw1SelLines_M_hnry}{#insert zRevertWWToOrigState}{#insert zzKlw1Syntax}	zzTSlpKlw1SelLnsRvrtWWSyn
+zzKlw1Syntax	{#BALLOON -title klw1 syntax -text klw1[[2-10,all,n]]  //  Call this with the cursor in the first line.  //  WARNING: The RE~flag must be OFF before calling this. // ww-state='{#insert zvWORD_WRAP_ON}' (see 'wt'~~[chk={#insert zvCURR_WW_RCHK_CNT}/{#insert zvWW_RCHK_CNT}])}	zzKlw1Syntax

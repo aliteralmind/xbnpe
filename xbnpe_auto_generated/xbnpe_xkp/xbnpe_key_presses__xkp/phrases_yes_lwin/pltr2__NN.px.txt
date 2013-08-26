@@ -1,0 +1,8 @@
+Alt+LWin+NN -- zALpNN	{#ALT {#LWIN -chars n}}{#insert zTSlp}	zALpNN
+Alt+Shift+LWin+NN -- zASLpNN	{#ALT {#SHIFT {#LWIN -chars n}}}{#insert zTSlp}	zASLpNN
+Ctrl+Alt+LWin+NN -- zCALpNN	{#CTRL {#ALT {#LWIN -chars n}}}{#insert zTSlp}	zCALpNN
+Ctrl+Alt+Shift+LWin+NN -- zCASLpNN	{#CTRL {#ALT {#SHIFT {#LWIN -chars n}}}}{#insert zTSlp}	zCASLpNN
+Ctrl+LWin+NN -- zCLpNN	{#CTRL {#LWIN -chars n}}{#insert zTSlp}	zCLpNN
+Ctrl+Shift+LWin+NN -- zCSLpNN	{#CTRL {#SHIFT {#LWIN -chars n}}}{#insert zTSlp}	zCSLpNN
+LWin+NN -- zLpNN	{#LWIN -chars n}{#insert zTSlp}	zLpNN
+Shift+LWin+NN -- zSLpNN	{#SHIFT {#LWIN -chars n}}{#insert zTSlp}	zSLpNN

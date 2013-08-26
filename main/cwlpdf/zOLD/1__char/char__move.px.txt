@@ -1,0 +1,12 @@
+zLEFT10 -- lef[*,p]10	{#LEFT -count 10}{#sleep 1}	zLEFT10
+zLEFT6 -- lef[*,p]6	{#LEFT -count 6}{#sleep 1}	zLEFT6
+zLEFT7 -- lef[*,p]7	{#LEFT -count 7}{#sleep 1}	zLEFT7
+zLEFT8 -- lef[*,p]8	{#LEFT -count 8}{#sleep 1}	zLEFT8
+zLEFT9 -- lef[*,p]9	{#LEFT -count 9}{#sleep 1}	zLEFT9
+zLEFTN_M_vchl -(**)- lef[*,p]#, lef[f,[[h,t]]m], vchl[[p,f]]	(*Needs zvCHARS_LEFT (var-abrv-lc=vchl, var-phrs-nm-abrv=Vchl). This command: (action-name-lc=lef, cmd-phrs-nm-abrv=Lef)[*]=<<<[FYI: phrase-creators are ON, actions are OFF, the pc-postfix is '' (empty-string), and the pc-literal-style is 'command'] The section defines the asterisk ('*') that in the phrase-description -- Normally, MINV-phrase-creators are named '[action-name]p#'. That is not the case for this MINV-Command. You configured actions to not be printed, and the pc-postfix to be '' (empty-string)--therefore, the phrase-creators for this MINV-Command are EQUAL to the action-name: '[action-name]#' (for example: 'lef3'). Literal phrase-creators are named '[action-name]p#' (for example: 'lefp3')>>>*){#loop {#LEFT} -count {#insert zvCHARS_LEFT}}{#sleep 1}	zLEFTN_M_vchl
+zRIGHT10 -- rig[*,p]10	{#RIGHT -count 10}{#sleep 1}	zRIGHT10
+zRIGHT6 -- rig[*,p]6	{#RIGHT -count 6}{#sleep 1}	zRIGHT6
+zRIGHT7 -- rig[*,p]7	{#RIGHT -count 7}{#sleep 1}	zRIGHT7
+zRIGHT8 -- rig[*,p]8	{#RIGHT -count 8}{#sleep 1}	zRIGHT8
+zRIGHT9 -- rig[*,p]9	{#RIGHT -count 9}{#sleep 1}	zRIGHT9
+zRIGHTN_M_vchr -(**)- rig[*,p]#, rig[f,[[h,t]]m], vchr[[p,f]]	(*Needs zvCHARS_RIGHT (var-abrv-lc=vchr, var-phrs-nm-abrv=Vchr). This command: (action-name-lc=rig, cmd-phrs-nm-abrv=Rig)[*]=<<<[FYI: phrase-creators are ON, actions are OFF, the pc-postfix is '' (empty-string), and the pc-literal-style is 'command'] The section defines the asterisk ('*') that in the phrase-description -- Normally, MINV-phrase-creators are named '[action-name]p#'. That is not the case for this MINV-Command. You configured actions to not be printed, and the pc-postfix to be '' (empty-string)--therefore, the phrase-creators for this MINV-Command are EQUAL to the action-name: '[action-name]#' (for example: 'rig3'). Literal phrase-creators are named '[action-name]p#' (for example: 'rigp3')>>>*){#loop {#RIGHT} -count {#insert zvCHARS_RIGHT}}{#sleep 1}	zRIGHTN_M_vchr

@@ -1,0 +1,12 @@
+jdbsp -- jdb, paste '<P><I>See:' in CB, goto next func (**)	(*The clipboard is expected to contain the JavaDoc 'See:' line that links to its MAIN-FUNCTION. No empty-lines should in the clipboard. Use this after jdbsm or jdseem.*){#insert zzJdbspRAW}	jdbsp
+jdbsp01 -- Actually jdbsp1 -- jdbsp ALT KC	{#insert jdbsp}	jdbsp1
+jdbsp02 -- jdbsp2	{#insert zvNUMBER_st2}{#insert zzJdbspn_MSTR}	jdbsp2
+jdbsp03 -- jdbsp3	{#insert zvNUMBER_st3}{#insert zzJdbspn_MSTR}	jdbsp3
+jdbsp04 -- jdbsp4	{#insert zvNUMBER_st4}{#insert zzJdbspn_MSTR}	jdbsp4
+jdbsp05 -- jdbsp5	{#insert zvNUMBER_st5}{#insert zzJdbspn_MSTR}	jdbsp5
+jdbsp06 -- jdbsp6	{#insert zvNUMBER_st6}{#insert zzJdbspn_MSTR}	jdbsp6
+jdbsp07 -- jdbsp7	{#insert zvNUMBER_st7}{#insert zzJdbspn_MSTR}	jdbsp7
+jdbsp08 -- jdbsp8	{#insert zvNUMBER_st8}{#insert zzJdbspn_MSTR}	jdbsp8
+jdbsp09 -- jdbsp9	{#insert zvNUMBER_st9}{#insert zzJdbspn_MSTR}	jdbsp9
+jdbsp10	{#insert zvNUMBER_st10}{#insert zzJdbspn_MSTR}	jdbsp10
+jdbspn	{#insert zvNUMBER_stPrompt}{#insert zzJdbspn_MSTR}	jdbspn

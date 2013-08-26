@@ -1,0 +1,22 @@
+(*
+   Required by phrase-creator-ddmenu-utils...START
+      PM_DDMENU_DIRID_FILENMPHRSNM_HDRAUTOTXT=snr/zzPmdmFNmPreSnrFind/xhsfod
+   Required by phrase-creator-ddmenu-utils...END
+*)
+zFindDlgOpenDown	{#insert zTPFindDlgOpen}{#insert zFindFlagDown}	zFindDlgOpenDown
+zFindDlgOpenDownForceWW	{#insert zFindDlgOpenDown}{#insert zFindFlagForceWWTgl}	zFindDlgOpenDownForceWW
+zFindDlgOpenDownForceWWXS	{#insert zFindDlgOpenDownForceWW}{#insert zFindFlagXSTgl}	zFindDlgOpenDownForceWWXS
+zFindDlgOpenDownMC	{#insert zTPFindFlagMCon}{#insert zFindDlgOpenDown}	zFindDlgOpenDownMC
+zFindDlgOpenDownMCForceWW	{#insert zFindDlgOpenDownMC}{#insert zFindFlagForceWWTgl}	zFindDlgOpenDownMCForceWW
+zFindDlgOpenDownMCForceWWXS	{#insert zFindDlgOpenDownMCForceWW}{#insert zFindFlagXSTgl}	zFindDlgOpenDownMCForceWWXS
+zFindDlgOpenDownMCOnly	{#insert zFindFlagMConOnly}{#insert zFindDlgOpenDown}	zFindDlgOpenDownMCOnly
+zFindDlgOpenDownMCRE	{#insert zFindFlagsMCREon}{#insert zFindDlgOpenDown}	zFindDlgOpenDownMCRE
+zFindDlgOpenDownMCREXS	{#insert zFindDlgOpenDownMCRE}{#insert zFindFlagXSTgl}	zFindDlgOpenDownMCREXS
+zFindDlgOpenDownMCWW	{#insert zFindFlagsMCWWon}{#insert zFindDlgOpenDown}	zFindDlgOpenDownMCWW
+zFindDlgOpenDownMCWWXS	{#insert zFindDlgOpenDownMCWW}{#insert zFindFlagXSTgl}	zFindDlgOpenDownMCWWXS
+zFindDlgOpenDownMCXS	{#insert zFindDlgOpenDownMC}{#insert zFindFlagXSTgl}	zFindDlgOpenDownMCXS
+zFindDlgOpenDownRE	{#insert zTPFindFlagREon}{#insert zFindDlgOpenDown}	zFindDlgOpenDownRE
+zFindDlgOpenDownREXS	{#insert zFindDlgOpenDownRE}{#insert zFindFlagXSTgl}	zFindDlgOpenDownREXS
+zFindDlgOpenDownWW	{#insert zTPFindFlagWWon}{#insert zFindDlgOpenDown}	zFindDlgOpenDownWW
+zFindDlgOpenDownWWXS	{#insert zTPFindFlagWWon}{#insert zFindDlgOpenDownXS}	zFindDlgOpenDownWWXS
+zFindDlgOpenDownXS	{#insert zFindDlgOpenDown}{#insert zFindFlagXSTgl}	zFindDlgOpenDownXS

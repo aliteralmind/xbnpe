@@ -1,0 +1,13 @@
+__**WARNING**__: All phrases in this folder were created by 'plpdcf'. DO NOT EDIT.	.		(*Extra tab to allow for empty-string autotext*)
+zvPCAF_PST_PORES_sfKey	{#SETPHRASE -description zvPCAF_PST_PORES -content {#insert zzMnvCmdPcafp_cfgValue_M_key} -autotext zvPCAF_PST_PORES -folder ctvv_folder}	zvPCAF_PST_PORES_sfKey
+zzMnvCmdPcafp_cfgValue_M_key	{#insert {#insert zzMnvCmdPcafp_cfgVarPhrsName_M_key}}	zzMnvCmdPcafp_cfgValue_M_key
+zzMnvCmdPCActOffPst_pES_cvtFromAbrv1C	Pcafp	zzMnvCmdPCActOffPst_pES_cvtFromAbrv1C
+zzMnvCmdPcafp_cfgVarPNmPost	PCActOffPst_pES	zzMnvCmdPcafp_cfgVarPNmPost
+zzMnvCmdPcafp_intrnlVarNm	zvPCAF_PST_PORES	zzMnvCmdPcafp_intrnlVarNm
+zzMnvCmdPcafp_cfgVarPhrsName_M_key	zz{#insert zzMnvCmdProjectAbrv1C}{#insert zzMnvCmdDataTypeAbrv1C}{#insert zvCMD_PNMV_1C}{#insert zzMnvCmdPcafp_cfgVarPNmPost}	zzMnvCmdPcafp_cfgVarPhrsName_M_key
+zzMnvCmdPcafp_helpForDlg	Only used when [Actions_on] is '' (meaning off) and [PhraseCreators_on] is 'on'. What should the postfix of the phrase~creator names be? The only legal values are 'p' and '' (the empty~string, as indicated by zzEmptyStringMarker='{#insert zOY}#insert zzEmptyStringMarker{#insert zCY}'). Normally, the names of phrase~creators are the action~name, postfixed with a '{#insert zOY}#insert zzMnvSynPstMainPhrsCrtr{#insert zCY}', such as 'tbb{#insert zOY}#insert zzMnvSynPstMainPhrsCrtr{#insert zCY}' (which may create {#insert zOYp}#insert zTAB{#insert zCYp}). However, when actions are '' (off), this postfix may optionally be NOTHING. So 'tbb' would be the phrase~creator. NOTE that the names of literal~phrase creators, when used, are dependant on this setting. If this is '{#insert zOY}#insert zzMnvSynPstMainPhrsCrtr{#insert zCY}' ('tbb{#insert zOY}#insert zzMnvSynPstMainPhrsCrtr{#insert zCY}'), then the names of literal~phrase creators are '{#insert zOY}#insert zzMnvSynPstLtrlPhrsCrtr{#insert zCY}' ('tbb{#insert zOY}#insert zzMnvSynPstLtrlPhrsCrtr{#insert zCY}'). When empty~string, the literal~phrase creator postfix is '{#insert zOY}#insert zzMnvSynPstMainPhrsCrtr{#insert zCY}'.	zzMnvCmdPcafp_helpForDlg
+zzMnvCmdPcafp_valuePrintable	yes	zzMnvCmdPcafp_valuePrintable
+zzMnvCmdPcafp_validateValuePhrsNm		zzMnvCmdPcafp_validateValuePhrsNm
+zzMnvCmdPcafp_nkcvListNum	15	zzMnvCmdPcafp_nkcvListNum
+zzMnvCmdPcafp_keyCVTFromAbrv1C	{#insert zzMnvCmdPrivKeyCVTFromAbrv1C}	zzMnvCmdPcafp_keyCVTFromAbrv1C
+zvCVT_FRMV_1C_stMnvCmdPcafp	{#SETPHRASE -description zvCVT_FRMV_1C -content {#insert zzMnvCmdPCActOffPst_pES_cvtFromAbrv1C} -autotext zvCVT_FRMV_1C -folder ctvv_folder}	zvCVT_FRMV_1C_stMnvCmdPcafp

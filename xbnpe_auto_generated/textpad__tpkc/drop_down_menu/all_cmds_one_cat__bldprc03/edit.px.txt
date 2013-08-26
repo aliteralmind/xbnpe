@@ -1,0 +1,5 @@
+Assign all KCs to all cmds	{#insert zvCAT_ABRV_LC_stEdit}{#insert zTpkcAsgnAllKcsToAllCmds1CatIfAnyHaveKC_M_catlKcpf}	zzTpkcAsgnAllKCsInCat_M_kcpf_edit
+Debug all cmds	{#insert zvCAT_ABRV_LC_stEdit}{#insert zTpkcDbgAllCmdsIn1Cat_M_catl}	zzTpkcDbgAllCmdsInCat_edit
+List primary KC for all cmds	{#insert zvCAT_ABRV_LC_stEdit}{#insert zListAllCmdsIn1CatWithKcs_M_catl}	zzListAllCmdsInCatWithKcs_edit
+Print all name/abrv/phrase-names	{#insert zvCAT_ABRV_LC_stEdit}{#insert zzTpkcPrntAllCmdNmPrsNmAbrvsInCat_M_catl}	zzTpkcPrntAllCmdNmPrsNmAbrvsInCat_edit
+Test all Non-BootStrap (nbs) commands	{#insert zvCAT_ABRV_LC_stEdit}{#insert zVrfyAllNbsCmdsIn1Cat_M_catl}	zzVrfyAllCmdsIn1Cat_edit

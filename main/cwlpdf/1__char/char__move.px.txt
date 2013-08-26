@@ -1,0 +1,8 @@
+zLEFT2	{#LEFT -count 2}{#insert zTSlp}	zLEFT2
+zLEFT3	{#LEFT -count 3}{#insert zTSlp}	zLEFT3
+zLEFT4	{#LEFT -count 4}{#insert zTSlp}	zLEFT4
+zLEFT5	{#LEFT -count 5}{#insert zTSlp}	zLEFT5
+zRIGHT2	{#RIGHT -count 2}{#insert zTSlp}	zRIGHT2
+zRIGHT3	{#RIGHT -count 3}{#insert zTSlp}	zRIGHT3
+zRIGHT4	{#RIGHT -count 4}{#insert zTSlp}	zRIGHT4
+zRIGHT5	{#RIGHT -count 5}{#insert zTSlp}	zRIGHT5

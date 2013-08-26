@@ -1,0 +1,1 @@
+zUnRawFindNotFFindBal	{#BALLOON -title Note -text The un-toggle-raw is a FIND-flag. The find-in-files dialog has no RAW flags for MC/RE/WW (they are equivalent to the find dialog.)}	zUnRawFindNotFFindBal

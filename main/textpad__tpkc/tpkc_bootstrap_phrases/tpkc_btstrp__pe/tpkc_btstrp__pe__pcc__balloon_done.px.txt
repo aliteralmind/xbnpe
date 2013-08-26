@@ -1,0 +1,3 @@
+zBalloonDone	{#BALLOON -title DONE -text Done}	zBalloonDone
+zBalDoneSlk2	{#insert zBalloonDone}{#sleep 2000}	zBalDoneSlk2
+zBalDoneSlk2SelAllDel	{#insert zBalDoneSlk2}{#insert zSelectAllDel}	zBalDoneSlk2SelAllDel

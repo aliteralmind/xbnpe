@@ -1,0 +1,13 @@
+__**WARNING**__: All phrases in this folder were created by 'plpdcf'. DO NOT EDIT.	.		(*Extra tab to allow for empty-string autotext*)
+zvNO_NUM_ALIAS_ON_sfKey	{#SETPHRASE -description zvNO_NUM_ALIAS_ON -content {#insert zzMnvCmdNnlon_cfgValue_M_key} -autotext zvNO_NUM_ALIAS_ON -folder ctvv_folder}	zvNO_NUM_ALIAS_ON_sfKey
+zzMnvCmdNnlon_cfgValue_M_key	{#insert {#insert zzMnvCmdNnlon_cfgVarPhrsName_M_key}}	zzMnvCmdNnlon_cfgValue_M_key
+zzMnvCmdNoNumAlias_on_cvtFromAbrv1C	Nnlon	zzMnvCmdNoNumAlias_on_cvtFromAbrv1C
+zzMnvCmdNnlon_cfgVarPNmPost	NoNumAlias_on	zzMnvCmdNnlon_cfgVarPNmPost
+zzMnvCmdNnlon_intrnlVarNm	zvNO_NUM_ALIAS_ON	zzMnvCmdNnlon_intrnlVarNm
+zzMnvCmdNnlon_cfgVarPhrsName_M_key	zz{#insert zzMnvCmdProjectAbrv1C}{#insert zzMnvCmdDataTypeAbrv1C}{#insert zvCMD_PNMV_1C}{#insert zzMnvCmdNnlon_cfgVarPNmPost}	zzMnvCmdNnlon_cfgVarPhrsName_M_key
+zzMnvCmdNnlon_helpForDlg	If no~num~alias commands/actions/phrase~creators should be printed, set this to 'on'. Otherwise, ''. Sub cv~types: [NNLTargetNum], [NNLIntrnlCmd_yes]	zzMnvCmdNnlon_helpForDlg
+zzMnvCmdNnlon_valuePrintable	yes	zzMnvCmdNnlon_valuePrintable
+zzMnvCmdNnlon_validateValuePhrsNm		zzMnvCmdNnlon_validateValuePhrsNm
+zzMnvCmdNnlon_nkcvListNum	4	zzMnvCmdNnlon_nkcvListNum
+zzMnvCmdNnlon_keyCVTFromAbrv1C	{#insert zzMnvCmdPrivKeyCVTFromAbrv1C}	zzMnvCmdNnlon_keyCVTFromAbrv1C
+zvCVT_FRMV_1C_stMnvCmdNnlon	{#SETPHRASE -description zvCVT_FRMV_1C -content {#insert zzMnvCmdNoNumAlias_on_cvtFromAbrv1C} -autotext zvCVT_FRMV_1C -folder ctvv_folder}	zvCVT_FRMV_1C_stMnvCmdNnlon

@@ -1,0 +1,11 @@
+zSelLNR1wDelete_M_vwmdl -- Vwmdl[p] - wslnrdl[[h,t]]m - wslnrdl[n,vy,cvlc]	(*Needs zvWORDS_LEFT: Vwmdl[p]. MINV-Command abbreviation is 'wslnrdl'. MINV-Action name is 'wslnrdl'.*){#insert zSelectLNR1w_M_vwmdl}{#insert zDEL}	zSelLNR1wDelete_M_vwmdl
+zSelL1R1wDelete - wslnrdl[p]1 - zSelectL1R1w, zDEL	{#insert zSelectL1R1w}{#insert zDEL}	zSelL1R1wDelete
+
+zSelLNR1wCut_M_vwmdl -- Vwmdl[p] - wslnrx[[h,t]]m - wslnrx[vy,cvlc]	(*Needs zvWORDS_LEFT: Vwmdl[p]. MINV-Command abbreviation is 'wslnrx'. MINV-Action name is 'wslnrx'.*){#insert zSelectLNR1w_M_vwmdl}{#insert zTPCut}	zSelLNR1wCut_M_vwmdl
+zSelL1R1wCut - wslnrx[p]1 - zSelectL1R1w, zTPCut	{#insert zSelectL1R1w}{#insert zTPCut}	zSelL1R1wCut
+
+zSelRNL1wCut_M_vwmdr -- Vwmdr[p] - wsrnlx[[h,t]]m - wsrnlx[vy,cvlc]	(*Needs zvWORDS_RIGHT: Vwmdr[p]. MINV-Command abbreviation is 'wsrnlx'. MINV-Action name is 'wsrnlx'.*){#insert zSelectRNL1w_M_vwmdl}{#insert zTPCut}	zSelRNL1wCut_M_vwmdr
+zSelR1L1wCut - wsrnlx[p]1 - zSelectR1L1w, zTPCut	{#insert zSelectR1L1w}{#insert zTPCut}	zSelR1L1wCut
+
+zSelRNL1wDelete_M_vwmdr -- Vwmdr[p] - wsrnldl[[h,t]]m - wsrnldl[vy,cvlc]	(*Needs zvWORDS_RIGHT: Vwmdr[p]. MINV-Command abbreviation is 'wsrnldl'. MINV-Action name is 'wsrnldl'.*){#insert zSelectRNL1w_M_vwmdl}{#insert zDEL}	zSelRNL1wDelete_M_vwmdr
+zSelR1L1wDelete - wsrnldl[p]1 - zSelectR1L1w, zDEL	{#insert zSelectR1L1w}{#insert zDEL}	zSelR1L1wDelete

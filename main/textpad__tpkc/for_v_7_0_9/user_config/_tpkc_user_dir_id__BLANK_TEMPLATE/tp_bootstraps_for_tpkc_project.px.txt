@@ -1,0 +1,12 @@
+zTPBookmarkCopyAll -- TextPad built-in command: EditCopyTaggedLines	XXX	zTPBookmarkCopyAll
+zTPBookmarkCutAll -- TextPad built-in command: EditCutTaggedLines	XXX	zTPBookmarkCutAll
+zTPBookmarkGTNextEsc	XXX	zTPBookmarkGTNextEsc
+zTPFFindDlgOpenEsc	XXX	zTPFFindDlgOpenEsc
+zTPFileManager -- TextPad built-in command: FileManager	XXX	zTPFileManager
+zTPFileOpen -- TextPad built-in command: FileOpen	XXX	zTPFileOpen
+zTPFileQOpen -- TextPad built-in command: FileQuickOpen	XXX	zTPFileQOpen
+zTPFindDlgOpen -- TextPad built-in command: SearchFind	XXX	zTPFindDlgOpen
+zTPFindNext -- TextPad built-in command: SearchFindNext	XXX	zTPFindNext
+zTPGTDlgOpenEsc	XXX	zTPGTDlgOpenEsc
+zTPPrefsDlgOpen -- TextPad built-in command: Preferences	XXX	zTPPrefsDlgOpen
+zTPRplcDlgOpen -- TextPad built-in command: SearchReplace	XXX	zTPRplcDlgOpen

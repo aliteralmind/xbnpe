@@ -1,0 +1,24 @@
+ActivateClipLib
+ActivateDocument
+ActivateExplorer
+ActivateSearchResults   Alt+4
+ActivateSelector
+ActivateToolOutput      Alt+5
+StayOnTop
+ViewClipLib             Ctrl+F3
+ViewDocSelector
+ViewExplorer
+ViewFindDialogBox
+ViewFullPaths
+ViewFullScreen
+ViewHScrollbar
+ViewInBrowser
+ViewLineNumbers
+ViewProperties
+ViewReplaceDialogBox
+ViewSearchResults       Shift+F11
+ViewStatusBar
+ViewTabSelector
+ViewToolOutput          Ctrl+F11
+ViewVisibleSpaces       F9, F8
+ViewVScrollbar

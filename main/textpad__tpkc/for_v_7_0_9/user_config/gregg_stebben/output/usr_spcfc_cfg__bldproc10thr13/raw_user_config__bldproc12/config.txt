@@ -1,0 +1,13 @@
+BlockSelectOff	0
+BlockSelectOn	0
+CustomizeToolbars	0
+Preferences	0
+RightMarginDec	0
+RightMarginInc	0
+RightMarginSet	1	\\\{#insert zCpQQ\\\}\\\{#sleep 25\\\}\\\{#insert zRR\\\}
+ToggleBlockSelect	1	\\\{#insert zCpQQ\\\}\\\{#sleep 25\\\}\\\{#insert zBB\\\}
+ToggleInsertMode	1	\\\{#insert zINS\\\}
+ToggleReadOnly	1	\\\{#insert zCpQQ\\\}\\\{#sleep 25\\\}\\\{#insert zEE\\\}
+ToggleSyncScroll	1	\\\{#insert zCpQQ\\\}\\\{#sleep 25\\\}\\\{#insert zYY\\\}
+ToggleUndo	1	\\\{#insert zCpQQ\\\}\\\{#sleep 25\\\}\\\{#insert zUU\\\}
+ToggleWordWrap	0

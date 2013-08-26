@@ -1,0 +1,8 @@
+Alt+LWin+F12 -- zALpF12	{#ALT {#LWIN {#F12}}}{#insert zTSlp}	zALpF12
+Alt+Shift+LWin+F12 -- zASLpF12	{#ALT {#SHIFT {#LWIN {#F12}}}}{#insert zTSlp}	zASLpF12
+Ctrl+Alt+LWin+F12 -- zCALpF12	{#CTRL {#ALT {#LWIN {#F12}}}}{#insert zTSlp}	zCALpF12
+Ctrl+Alt+Shift+LWin+F12 -- zCASLpF12	{#CTRL {#ALT {#SHIFT {#LWIN {#F12}}}}}{#insert zTSlp}	zCASLpF12
+Ctrl+LWin+F12 -- zCLpF12	{#CTRL {#LWIN {#F12}}}{#insert zTSlp}	zCLpF12
+Ctrl+Shift+LWin+F12 -- zCSLpF12	{#CTRL {#SHIFT {#LWIN {#F12}}}}{#insert zTSlp}	zCSLpF12
+LWin+F12 -- zLpF12	{#LWIN {#F12}}{#insert zTSlp}	zLpF12
+Shift+LWin+F12 -- zSLpF12	{#SHIFT {#LWIN {#F12}}}{#insert zTSlp}	zSLpF12

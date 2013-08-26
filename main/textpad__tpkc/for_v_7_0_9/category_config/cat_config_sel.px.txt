@@ -1,0 +1,6 @@
+zTpkcSelAllCmdNamesTCQbl	[SelectAll][SelectBeginBlock][SelectBeginLine][SelectBeginStream][SelectCancel][SelectEnd][SelectLine][SelectParagraph][SelectSwapEnds][SelectWord]	zTpkcSelAllCmdNamesTCQbl
+zTpkcSelCmdCount	10	zTpkcSelCmdCount
+zTpkcSelStpsFrmCatListTop	{#LOOP {#insert zSS}{#insert z5ThnTSlp} -count 2}	zTpkcSelStpsFrmCatListTop
+zTpkcSelHasUserCrtdCmds_yes		zTpkcSelHasUsrCrtdCmds_yes
+zTpkcSelNameLC	selection	zTpkcSelNameLC
+zTpkcSelectionAbrvLC	sel	zTpkcSelectionAbrvLC

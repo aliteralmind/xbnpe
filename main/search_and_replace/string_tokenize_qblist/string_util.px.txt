@@ -1,0 +1,3 @@
+zGet0IfStrEmpty1IfNot_M_str -- Needs zvSTRING	{#length {#substr {#insert zvSTRING} -from 0 -count 1}}	zGet0IfStrEmpty1IfNot_M_str
+zGet0IfStrInCBEmpty1IfNot	{#SETPHRASE -description zvSTRING -content {#insert zTPPaste} -autotext zvSTRING -folder ctvv_folder}{#insert zGet0IfStrEmpty1IfNot_M_str}	zGet0IfStrInCBEmpty1IfNot
+zztest0es1not	{#insert zENTER2}{#insert zUP}{#setclipboard (*NOTHING*)}zGet0IfStrInCBEmpty1IfNot for Empty string -> {#insert zGet0IfStrInCBEmpty1IfNot}{#insert zENTER}{#setclipboard abc123xyz}zGet0IfStrInCBEmpty1IfNot for abc123xyz -> {#insert zGet0IfStrInCBEmpty1IfNot}{#insert zENTER}	zztest0es1not

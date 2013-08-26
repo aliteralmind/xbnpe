@@ -1,0 +1,70 @@
+(*JSG: Setter
+
+--This must follow ci-locked, ci-null, and the copy-constructor, and must precede the getter.
+
+Creates           For           Desc
+----------------------------------------------------------------------
+zvJSGB_GTR_JD_POST_RTN   jsgb-getter   The text post {#asc 34}@return  .{#asc 34}
+
+---
+
+(All these rows originate in their zSUB file. Don't edit these duplicates.)
+
+From zSUB_ci_null.px.txt
+-------------------------------------------------------------------------
+zvJSGB_JD_MNBN      JavaDoc param    May not be <CODE>null</CODE>.
+zvJSG_JAVA_CIFN     jsg-setter       xif(__FUNC_NAME__).null(...) __or__ if(null) throw NPX
+
+From zSUB_ci_locked.px.txt
+-------------------------------------------------------------------------
+zvJSG_JD_LX          jsg-setter    @exception LockException
+zvJSG_JAVA_CILKD    jxsg-setter   ciLocked(setter-name)
+
+From zSUB_copy_cnstr.px.txt
+-------------------------------------------------------------------------
+zvJSG_JDSEE_CC    jsg-setter    See: <A HREF={#asc 34}cnthis(){#asc 34}>cnthis</A>()
+
+NOTE that a no new-lines (zENTER), are at the end of any variable. New-lines must be concatenated externally.
+
+*)
+zjsgSetter	/**{#insert zEnterTab}<P>{#insert zXmark}</P>{#insert zjsgbENTER2}{#insert zjsgJDSeeCCnstr}{#insert zjsgbJDSetterParam}{#insert zjsgJDReturnThis}{#insert zjsgJDCILocked}{#insert zENTER}{#insert zBKSP} **/{#insert zEnterBksp}{#input -head S{#insert zjsgbMsgPPPNPostfix} -single -def public} {#insert zjsgJavaSetterRtnType} {#insert zjsgbSetterName}({#insert zjsgbVarTypeParamName})  {{#insert zENTER}{#insert zjsgJavaCILocked}{#insert zjsgbCrashIfNull}{#insert zjsgbJavaSetLine}{#insert zjsgbJavaFuncEndBTRetLine}{#insert zjsgJavaReturnThisGTGetterStart}{#insert zzjsgSetGetterJDRtn}	zjsgSetter
+zjsgJDSeeCCnstr	{#insert zvJSG_JDSEE_CC}{#insert zjsgbENTER2}	zjsgJDSeeCCnstr
+zjsgJDCILocked	{#insert zvJSG_JD_LX}{#insert zENTER}	zjsgJDCILocked
+zjsgJavaCILocked	{#insert zvJSG_JAVA_CILKD}{#insert zENTER}	zjsgJavaCILocked
+zjsgbCrashIfNull	{#insert zvJSG_JAVA_CIFN}{#insert zENTER}	zjsgbCrashIfNull
+zzjsgSetGetterJDRtn	{#SETPHRASE -description zvJSGB_GTR_JD_POST_RTN -content {#insert zzjsgJDGetterAfterAsPrvTo} -autotext zvJSGB_GTR_JD_POST_RTN -folder ctvv_folder}	zzjsgSetGetterJDRtn
+zzjsgJDGetterAfterAsPrvTo	<B><CODE>{#insert zjsgbSetterParamName}</CODE></B>  As provided to {#insert zzjsgbJDSetterPostAPT}	zzjsgJDGetterAfterAsPrvTo
+
+(*Return this?*)
+zjsgJDReturnThis	{#msgbox -head Is setter a self-returner? -text Is THIS class returned by the setter? -yes zjsgJDReturnThis_THIS -no zjsgJDReturnThis_OTHER -defaultno}	zjsgJDReturnThis
+zjsgJDReturnThis_THIS -- See zjsgJavaSetterRtnType and zjsgJavaReturnThisGTGetterStart	(*{#insert zTAB}*)@return  <I><CODE>this</CODE></I>{#insert zENTER}{#insert zmmtDownA1__}{#insert zjsgbDPHThisClassName}{#insert z__mmtDownZ1}{#insert zmmtDownA2__}{#insert zENTER}return  this;(*enter first, because it's right before the function end bracket*){#insert z__mmtDownZ2}{#insert zENTER}	zjsgJDReturnThis_THIS
+zjsgJDReturnThis_OTHER	{#insert zmmtDownA1__}{#input -head Setter return type and finality? -single -def final void}{#insert z__mmtDownZ1}{#insert zmmtDownEMPTY2}{#insert zENTER}	zjsgJDReturnThis_OTHER
+
+zjsgJavaSetterRtnType -- See zjsgJDReturnThis_THIS	{#insert zmmtDownGo1}	zjsgJavaSetterRtnType
+zjsgJavaReturnThisGTGetterStart -- See zjsgJDReturnThis_THIS	{#insert zmmtDownGo2}{#insert zDOWN}{#insert zEND}{#insert zjsgbENTER2}	zjsgJavaReturnThisGTGetterStart
+
+(*JXSG: Lines for the existing setter*)
+zjxsgSetterLines	{#insert zjsgbMsgForXSA}{#insert zjxsgJDSetterParam}{#insert zjsgbJavaParamLine}{#insert zjxsgJavaSetLine}{#insert zjsgbMsgForXSZ}{#insert zzjxsgSetGetterJDRtn}	zjxsgSetterLines
+zzjxsgSetGetterJDRtn	{#SETPHRASE -description zvJSGB_GTR_JD_POST_RTN -content {#insert zzjxsgJDGetterPstRtn} -autotext zvJSGB_GTR_JD_POST_RTN -folder ctvv_folder}	zzjxsgSetGetterJDRtn
+zzjxsgJDGetterPstRtn	<B><CODE>{#insert zjsgbSetterParamName}</CODE></B>  As provided to {#msgbox -head Is the existing setter a constructor? -text Is the existing setter a constructor [OK], or a function [Cancel]? -ok zzjxsgJDGetterPstRtn_CNSTR -cancel zzjsgbJDSetterPostAPT}	zzjxsgJDGetterPstRtn
+zzjxsgJDGetterPstRtn_CNSTR	the <A HREF={#asc 34}#{#insert zjsgbDPHThisClassName}(){#asc 34}>constructor</A>.(*Needs ending zENTER, but cannot have on in this SETPHRASE value*)	zzjxsgJDGetterPstRtn_CNSTR
+zjxsgJDSetterParam	{#insert zTAB}{#insert zjsgbJDSetterParam}{#insert zENTER}	zjxsgJDSetterParam
+zjxsgJavaSetLine	{#insert zjsgbJavaSetLine}{#insert zBKSP}	zjxsgJavaSetLine
+
+(*JSGB   --RENAME MOST OF THESE VARIABLES TO ZZ *)
+zjsgbJavaParamLine	{#insert zUnindentMark}, {#insert zjsgbVarTypeParamName}{#insert zENTER}	zjsgbJavaParamLine
+zjsgbJavaSetLine	{#insert zjsgbVarName} = {#insert zjsgbSetterParamName};{#insert zENTER}	zjsgbJavaSetLine
+zjsgbJavaFuncEndBTRetLine	{#insert zOY}{#insert zENTER}{#insert zUP2}{#insert zEND}	zjsgbJavaFuncEndBTRetLine
+zzjsgbJDSetterPostAPT	<CODE>{#insert zjsgbSetterHtmlLinkNP}({#insert zjsgbVarTypeAbbrv})</CODE>.(*Needs ending zENTER, but cannot have one in a SETPHRASE value*)	zzjsgbJDSetterPostAPT
+zjsgbJDSetterParam	@param  {#insert zjsgbSetterParamName}  {#insert zXmark}{#insert zvJSGB_JD_MNBN}Get with <CODE>{#insert zjsgbGetterHtmlLinkNP}()</CODE>{#insert zENTER2(*not jsgb*)}{#insert zBKSP}{#insert zENTER}{#insert zUP}{#insert zHOME}{#insert zLEFT}	zjsgbJDSetterParam
+zjsgbMsgNeedsSetr	Var needs a setter? -text Does the variable need a setter (OK), or is it only gettable (Cancel)?	zjsgbMsgNeedsSetr
+
+(*Other*)
+zjsgbMsgForXSA	{#insert zjsgbMsgForXSPrefix}START---{#insert zENTER}	zjsgbMsgForXSA
+zjsgbMsgForXSZ	{#insert zjsgbMsgForXSPrefix}END---{#insert zENTER}	zjsgbMsgForXSZ
+zjsgbMsgForXSPrefix	{#insert zobmPrefix}existing setter...	zjsgbMsgForXSPrefix
+zjsgbENTER2	{#insert zENTER}{#insert zpcctDeleteInAllMark}{#insert zENTER}	zjsgbENTER2
+
+(*Unset*)
+zjsgbUnsetAllSetter	{#insert zUnsetJSGB_GTR_JDR}	zjsgbUnsetAllSetter
+zUnsetJSGB_GTR_JDR	{#SETPHRASE -description zvJSGB_GTR_JD_POST_RTN -content -autotext zvJSGB_GTR_JD_POST_RTN -folder ctvv_folder}	zUnsetJSGB_GTR_JDR

@@ -1,0 +1,4 @@
+zFFindRestoreCurrDirRAW_M_dir -- Needs zvDIR_PREV	{#insert zFFindFieldDir}{#insert zvDIR_PREV}	zFFindRestoreCurrDirRAW_M_dir
+zFFindRestoreCurrDirFNmsRAW_M_dirFnm -- Needs zvFNM_PREV, zvDIR_PREV	{#insert zFFindRestoreCurrFileTypeRAW_M_fnm}{#insert zFFindRestoreCurrDirRAW_M_dir}	zFFindRestoreCurrDirFNmsRAW_M_dirFnm
+zFFindRestoreCurrDirFNms_M_dirFnm -- Cursor ends in find-what	{#insert zFFindRestoreCurrDirFNmsRAW_M_dirFnm}{#insert zFFindFieldWhat}	zFFindRestoreCurrDirFNms_M_dirFnm
+zFFindRestoreCurrFileTypeRAW_M_fnm -- Needs zvFNM_PREV	{#insert zFFindFieldFileType}{#insert zvFNM_PREV}	zFFindRestoreCurrFileTypeRAW_M_fnm

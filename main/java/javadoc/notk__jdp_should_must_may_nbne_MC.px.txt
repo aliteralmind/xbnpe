@@ -1,0 +1,20 @@
+<I>Should</I> be non-<CODE>null</CODE>	<I>Should</I> {#insert zzBnn}	Should b
+<I>Should</I> be non-<CODE>null</CODE> and non-empty	<I>Should</I> {#insert zzBnne}	Should b
+<I>Should</I> not be <CODE>null</CODE>	<I>Should</I> {#insert zzNbn}	Should n
+<I>Should</I> not be <CODE>null</CODE> or empty	<I>Should</I> {#insert zzNbne}	Should n
+<I>should</I> be non-<CODE>null</CODE>	<I>should</I> {#insert zzBnn}	should b
+<I>should</I> be non-<CODE>null</CODE> and non-empty	<I>should</I> {#insert zzBnne}	should b
+<I>should</I> not be <CODE>null</CODE>	<I>should</I> {#insert zzNbn}	should n
+<I>should</I> not be <CODE>null</CODE> or empty	<I>should</I> {#insert zzNbne}	should n
+May not be <CODE>null</CODE>	May {#insert zzNbn}	May n
+May not be <CODE>null</CODE> or empty	May {#insert zzNbne}	May n
+Must be non-<CODE>null</CODE>	Must {#insert zzBnn}	Must b
+Must be non-<CODE>null</CODE> and non-empty	Must {#insert zzBnne}	Must b
+may not be <CODE>null</CODE>	May {#insert zzNbn}	may n
+may not be <CODE>null</CODE> or empty	May {#insert zzNbne}	may n
+must be non-<CODE>null</CODE>	Must {#insert zzBnn}	must b
+must be non-<CODE>null</CODE> and non-empty	Must {#insert zzBnne}	must b
+zzBnn -- STARTING W/ A SPACE ADDS AN **EXTRA** SPACE	be non-<CODE>null</CODE>	zzBnn
+zzBnne -- BUT NO SPACE RESULTS IN **NO** SPACE.	{#insert zzBnn} and non-empty	zzBnne
+zzNbn -- MUST APPEND A SPACE BEFORE CALLING	not be <CODE>null</CODE>	zzNbn
+zzNbne -- ANY OF THESE.	{#insert zzNbn} or empty	zzNbne

@@ -1,0 +1,10 @@
+lfrn -- {#LEFT -count }	\\\{#LEFT -count \\\}{#LEFT}{#insert zzMstCmnKPSyntax}	lfrn
+rgrn -- {#RIGHT -count }	\\\{#RIGHT -count \\\}{#LEFT}{#insert zzMstCmnKPSyntax}	rgrn
+lurn -- {#UP -count }	\\\{#UP -count \\\}{#LEFT}{#insert zzMstCmnKPSyntax}	lurn
+lwrn -- {#DOWN -count }	\\\{#DOWN -count \\\}{#LEFT}{#insert zzMstCmnKPSyntax}	lwrn
+dlrn -- {#DEL -count }	\\\{#DEL -count \\\}{#LEFT}{#insert zzMstCmnKPSyntax}	dlrn
+bkrn -- {#BKSP -count }	\\\{#BKSP -count \\\}{#LEFT}{#insert zzMstCmnKPSyntax}	bkrn
+enrn -- {#ENTER -count }	\\\{#ENTER -count \\\}{#LEFT}{#insert zzMstCmnKPSyntax}	enrn
+tbrn -- {#TAB -count }	\\\{#TAB -count \\\}{#LEFT}{#insert zzMstCmnKPSyntax}	tbrn
+hmrn -- {#HOME -count }	\\\{#HOME -count \\\}{#LEFT}{#insert zzMstCmnKPSyntax}	hmrn
+ndrn -- {#END -count }	\\\{#END -count \\\}{#LEFT}{#insert zzMstCmnKPSyntax}	ndrn

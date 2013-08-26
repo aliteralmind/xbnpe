@@ -1,0 +1,13 @@
+zvCAT_ABRV_LC_stFile	{#SETPHRASE -description zvCAT_ABRV_LC -content file -autotext zvCAT_ABRV_LC -folder ctvv_folder}	zvCAT_ABRV_LC_stFile
+zvCAT_ABRV_LC_stEdit	{#SETPHRASE -description zvCAT_ABRV_LC -content edit -autotext zvCAT_ABRV_LC -folder ctvv_folder}	zvCAT_ABRV_LC_stEdit
+zvCAT_ABRV_LC_stSearch	{#SETPHRASE -description zvCAT_ABRV_LC -content search -autotext zvCAT_ABRV_LC -folder ctvv_folder}	zvCAT_ABRV_LC_stSearch
+zvCAT_ABRV_LC_stView	{#SETPHRASE -description zvCAT_ABRV_LC -content view -autotext zvCAT_ABRV_LC -folder ctvv_folder}	zvCAT_ABRV_LC_stView
+zvCAT_ABRV_LC_stTools	{#SETPHRASE -description zvCAT_ABRV_LC -content tools -autotext zvCAT_ABRV_LC -folder ctvv_folder}	zvCAT_ABRV_LC_stTools
+zvCAT_ABRV_LC_stMacros	{#SETPHRASE -description zvCAT_ABRV_LC -content macros -autotext zvCAT_ABRV_LC -folder ctvv_folder}	zvCAT_ABRV_LC_stMacros
+zvCAT_ABRV_LC_stConfig	{#SETPHRASE -description zvCAT_ABRV_LC -content config -autotext zvCAT_ABRV_LC -folder ctvv_folder}	zvCAT_ABRV_LC_stConfig
+zvCAT_ABRV_LC_stWindow	{#SETPHRASE -description zvCAT_ABRV_LC -content window -autotext zvCAT_ABRV_LC -folder ctvv_folder}	zvCAT_ABRV_LC_stWindow
+zvCAT_ABRV_LC_stHelp	{#SETPHRASE -description zvCAT_ABRV_LC -content help -autotext zvCAT_ABRV_LC -folder ctvv_folder}	zvCAT_ABRV_LC_stHelp
+zvCAT_ABRV_LC_stCursor	{#SETPHRASE -description zvCAT_ABRV_LC -content cursor -autotext zvCAT_ABRV_LC -folder ctvv_folder}	zvCAT_ABRV_LC_stCursor
+zvCAT_ABRV_LC_stSel	{#SETPHRASE -description zvCAT_ABRV_LC -content sel -autotext zvCAT_ABRV_LC -folder ctvv_folder}	zvCAT_ABRV_LC_stSel
+zvCAT_ABRV_LC_stCliplib	{#SETPHRASE -description zvCAT_ABRV_LC -content cliplib -autotext zvCAT_ABRV_LC -folder ctvv_folder}	zvCAT_ABRV_LC_stCliplib
+zvCAT_ABRV_LC_stChars	{#SETPHRASE -description zvCAT_ABRV_LC -content chars -autotext zvCAT_ABRV_LC -folder ctvv_folder}	zvCAT_ABRV_LC_stChars

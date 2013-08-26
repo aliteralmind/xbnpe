@@ -1,0 +1,7 @@
+zGTDlgOpenFlagLineExtend	{#insert zGTDlgOpenFlagExtendRAW}{#insert zGTFlagLine}	zGTDlgOpenFlagLineExtend
+zGTDlgOpenFlagColumnExtend	{#insert zGTDlgOpenFlagExtendRAW}{#insert zGTFlagColumn}	zGTDlgOpenFlagColumnExtend
+zGTDlgOpenFlagPageExtend	{#insert zGTDlgOpenFlagExtendRAW}{#insert zGTFlagPage}	zGTDlgOpenFlagPageExtend
+zGTDlgOpenFlagByteExtend	{#insert zGTDlgOpenFlagExtendRAW}{#insert zGTFlagByte}	zGTDlgOpenFlagByteExtend
+zGTDlgOpenFlagBookmarkExtend	{#insert zGTDlgOpenFlagExtendRAW}{#insert zGTFlagBookmark}	zGTDlgOpenFlagBookmarkExtend
+zGTDlgOpenFlagExtendRAW	{#insert zTPGTDlgOpen}{#insert zGTFlagExtendRAW}	zGTDlgOpenFlagExtendRAW
+zGTDlgOpenFlagExtend	{#insert zGTDlgOpenFlagExtendRAW}{#insert zSpTAB}	zGTDlgOpenFlagExtend

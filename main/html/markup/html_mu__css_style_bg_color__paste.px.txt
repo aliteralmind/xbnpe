@@ -1,0 +1,26 @@
+hlep -- hle	{#insert hle}{#insert zTPPaste}{#insert zPreBracketGTP}	hlep
+hlwp -- hlw	{#insert hlw}{#insert zTPPaste}{#insert zPreBracketGTP}	hlwp
+hlyp -- hly	{#insert hly}{#insert zTPPaste}{#insert zPreBracketGTP}	hlyp
+hlbp -- hlb	{#insert hlb}{#insert zTPPaste}{#insert zPreBracketGTP}	hlbp
+hlgp -- hlg	{#insert hlg}{#insert zTPPaste}{#insert zPreBracketGTP}	hlgp
+hsbcbp -- hsbcb	{#insert zXThenLeft}{#insert hsbcb}{#insert zUP}{#insert zXDownDelete}	hsbcbp
+hsbcfp -- hsbcf	{#insert zXThenLeft}{#insert hsbcf}{#insert zUP}{#insert zXDownDelete}	hsbcfp
+hsbcgp -- hsbcg	{#insert zXThenLeft}{#insert hsbcg}{#insert zUP}{#insert zXDownDelete}	hsbcgp
+hsbcgyp -- hsbcgy	{#insert zXThenLeft}{#insert hsbcgy}{#insert zUP}{#insert zXDownDelete}	hsbcgyp
+hsbckp -- hsbck	{#insert zXThenLeft}{#insert hsbck}{#insert zUP}{#insert zXDownDelete}	hsbckp
+hsbclp -- hsbcl	{#insert zXThenLeft}{#insert hsbcl}{#insert zUP}{#insert zXDownDelete}	hsbclp
+hsbcmp -- hsbcm	{#insert zXThenLeft}{#insert hsbcm}{#insert zUP}{#insert zXDownDelete}	hsbcmp
+hsbcnp -- hsbcn	{#insert zXThenLeft}{#insert hsbcn}{#insert zUP}{#insert zXDownDelete}	hsbcnp
+hsbcop -- hsbco	{#insert zXThenLeft}{#insert hsbco}{#insert zUP}{#insert zXDownDelete}	hsbcop
+hsbcp -- hsbc	{#insert zXThenLeft}{#insert hsbc}{#insert zUP}{#insert zXDownDelete}	hsbcp
+hsbcpp -- hsbcp	{#insert zXThenLeft}{#insert hsbcp}{#insert zUP}{#insert zXDownDelete}	hsbcpp
+hsbcqp -- hsbcq	{#insert zXThenLeft}{#insert hsbcq}{#insert zUP}{#insert zXDownDelete}	hsbcqp
+hsbcqwp -- hsbcqw	{#insert zXThenLeft}{#insert hsbcqw}{#insert zUP}{#insert zXDownDelete}	hsbcqwp
+hsbcrp -- hsbcr	{#insert zXThenLeft}{#insert hsbcr}{#insert zUP}{#insert zXDownDelete}	hsbcrp
+hsbcsp -- hsbcs	{#insert zXThenLeft}{#insert hsbcs}{#insert zUP}{#insert zXDownDelete}	hsbcsp
+hsbctp -- hsbct	{#insert zXThenLeft}{#insert hsbct}{#insert zUP}{#insert zXDownDelete}	hsbctp
+hsbcwp -- hsbcw	{#insert zXThenLeft}{#insert hsbcw}{#insert zUP}{#insert zXDownDelete}	hsbcwp
+hsbcyp -- hsbcy	{#insert zXThenLeft}{#insert hsbcy}{#insert zUP}{#insert zXDownDelete}	hsbcyp
+hsbcywp -- hsbcyw	{#insert zXThenLeft}{#insert hsbcyw}{#insert zUP}{#insert zXDownDelete}	hsbcywp
+
+

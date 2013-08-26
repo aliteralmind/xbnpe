@@ -1,0 +1,6 @@
+zjreSigForCBFunc_pCount0	{#insert zjreSetPCountPost_0}{#insert zjreSigForCBFunc_pCountMASTER}	zjreSigForCBFunc_pCount0
+zjreSigForCBFunc_pCount1	{#insert zjreSetPCountPost_1}{#insert zjreSigForCBFunc_pCountMASTER}	zjreSigForCBFunc_pCount1
+zjreSigForCBFunc_pCount2	{#insert zjreSetPCountPost_2}{#insert zjreSigForCBFunc_pCountMASTER}	zjreSigForCBFunc_pCount2
+zjreSigForCBFunc_pCount3	{#insert zjreSetPCountPost_3}{#insert zjreSigForCBFunc_pCountMASTER}	zjreSigForCBFunc_pCount3
+zjreSigForCBFunc_pCount4	{#insert zjreSetPCountPost_4}{#insert zjreSigForCBFunc_pCountMASTER}	zjreSigForCBFunc_pCount4
+zjreSigForCBFunc_pCount5	{#insert zjreSetPCountPost_5}{#insert zjreSigForCBFunc_pCountMASTER}	zjreSigForCBFunc_pCount5

@@ -1,0 +1,14 @@
+clpw* -- NP (No Parameter) Constructor Link from name in Prev Word	{#insert zzjlCodeOffPrekOff}{#insert zzClpwPostPrek}	clpw
+clpwc* -- clpw, CODE-d	{#insert zzjlCodeOnPrekOff}{#insert zzClpwPostPrek}	clpwc
+clpwd* -- clpw, target file in diff dir	{#insert zzjlCodeOffPrekOff}{#insert zzClpwdPostPrek}	clpwd
+clpwdb* -- clpwd, Directory in clipBoard	{#insert zzjlCodeOffPrekOff}{#insert zzClpwdbPostPrek}	clpwdb
+clpwdbc* -- clpwdc, Directory in clipBoard	{#insert zzjlCodeOnPrekOff}{#insert zzClpwdbPostPrek}	clpwdbc
+clpwdbn -- clpwdn, Directory in clipBoard	{#insert zzjlCodeOffPrekOff}{#insert zzjlDirIsCBFuncNmIsL1w}{#insert zzjlDispQCnstrQPAPES}{#insert zzjlNPCnstrLink_fileIsCnstrNm}	clpwdbn
+clpwdby -- clpwdy, Directory in clipBoard	{#insert zzjlCodeOffPrekOff}{#insert zzjlDirIsCBFuncObjNmIsL1w}{#insert zzjlDispXPAPES}{#insert zzjlNPCnstrLink_fileIsCnstrNm}	clpwdby
+clpwdc* -- clpwd, CODE-d	{#insert zzjlCodeOnPrekOff}{#insert zzClpwdPostPrek}	clpwdc
+clpwdn -- clpwd, 'coNstructor' display	{#insert zzjlCodeOffPrekOff}{#insert zzjlFuncObjNmIsL1w}{#insert zzjlDispQCnstrQPAPES}{#insert zzjlNPCnstrLink_fileIsCnstrNmDirPrompt}	clpwdn
+clpwdy -- clpwd, displaY nothing (x-mark)	{#insert zzjlCodeOffPrekOff}{#insert zzjlFuncObjNmIsL1w}{#insert zzjlDispXPAPES}{#insert zzjlNPCnstrLink_fileIsCnstrNmDirPrompt}	clpwdy
+clpwdyb -- clpwd, displaY clipBoard	{#insert zzjlCodeOffPrekOff}{#insert zzjlDispCBCnstrNmL1wPAPES}{#insert zzjlNPCnstrLink_fileIsCnstrNmDirPrompt}	clpwdyb
+clpwn -- clpw, 'coNstructor' display	{#insert zzjlCodeOffPrekOff}{#insert zzjlFuncObjNmIsL1w}{#insert zzjlDispQCnstrQPAPES}{#insert zzjlNPCnstrLink_fileIsCnstrNmDirEmpty}	clpwn
+clpwy -- clpw, displaY nothing (x-mark)	{#insert zzjlCodeOffPrekOff}{#insert zzjlFuncObjNmIsL1w}{#insert zzjlDispXPAPES}{#insert zzjlNPCnstrLink_fileIsCnstrNmDirEmpty}	clpwy
+clpwyb -- clpw, displaY clipBoard	{#insert zzjlCodeOffPrekOff}{#insert zzjlDispCBCnstrNmL1wPAPES}{#insert zzjlNPCnstrLink_fileIsCnstrNmDirEmpty}	clpwyb

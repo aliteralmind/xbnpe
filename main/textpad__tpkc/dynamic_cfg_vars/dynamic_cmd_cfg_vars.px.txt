@@ -1,0 +1,11 @@
+zzTpCmdAbrv1C_M_cmdm	{#insert {#insert zzTpCmdAbrv1CNm_M_cmdm}}	zzTpCmdAbrv1C_M_cmdm
+zzTpCmdAbrv1C_M_nminstr	{#insert {#insert zzTpCmdAbrv1CNm_M_nminstr}}	zzTpCmdAbrv1C_M_nminstr
+zzTpCmdDfltPhrsNm_M_cmd1	{#insert {#insert zzTpCmdDfltPhrsNameNm_M_cmd1}}	zzTpCmdDfltPhrsNm_M_cmd1
+zzTpCmdIsBtstrp_yes_M_cmd1	{#insert {#insert zzTpCmdIsBtstrp_yesNm_M_cmd1}}	zzTpCmdIsBtstrp_yes_M_cmd1
+zzTpCmdNameTC_M_cmd1	{#insert {#insert zzTpCmdNameTCNm_M_cmd1}}	zzTpCmdNameTC_M_cmd1
+zzTpCmdNbsKcCount_M_cmdm	{#insert {#insert zzTpCmdNbsKcCountNm_M_cmdm}}	zzTpCmdNbsKcCount_M_cmdm
+zzTpCmdNbsKcEsc_M_cmdmNum	{#insert {#insert zzTpCmdNbsKcEscNm_M_cmdmNum}}	zzTpCmdNbsKcEsc_M_cmdmNum
+zzTpCmdStpsFrmLstTop_M_cmd1	{#insert {#insert zzTpCmdStpsFrmLstTopNm_M_cmd1}}	zzTpCmdStpsFrmLstTop_M_cmd1
+zzTpCmdType_mcrTl_M_cmd1	{#insert {#insert zzTpCmdType_mcrTlNm_M_cmd1}}	zzTpCmdType_mcrTl_M_cmd1
+zzTpkcCatForCmdAbrvLC_M_cmd1	{#insert {#insert zzTpkcCatForCmdAbrvLCNm_M_cmd1}}	zzTpkcCatForCmdAbrvLC_M_cmd1
+zzTpCmdDfltPstKcMls_M_cmd1	{#insert {#insert zzTpCmdDfltPstKcMlsNm_M_cmd1}}	zzTpCmdDfltPstKcMls_M_cmd1

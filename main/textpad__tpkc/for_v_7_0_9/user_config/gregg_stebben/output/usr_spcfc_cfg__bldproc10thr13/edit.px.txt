@@ -1,0 +1,103 @@
+zTpkcEditAlignCenterNbsKcCount	1	zTpkcEditAlignCenterNbsKcCount
+zTpkcEditAlignCenterNbsKcEsc1	\\\{#insert zCpEE\\\}	zTpkcEditAlignCenterNbsKcEsc1
+zTpkcEditAlignJustifyNbsKcCount	0	zTpkcEditAlignJustifyNbsKcCount
+zTpkcEditAlignLeftNbsKcCount	0	zTpkcEditAlignLeftNbsKcCount
+zTpkcEditAlignRightNbsKcCount	1	zTpkcEditAlignRightNbsKcCount
+zTpkcEditAlignRightNbsKcEsc1	\\\{#insert zCSpEE\\\}	zTpkcEditAlignRightNbsKcEsc1
+zTpkcEditBackspaceNbsKcCount	3	zTpkcEditBackspaceNbsKcCount
+zTpkcEditBackspaceNbsKcEsc1	\\\{#insert zCpHH\\\}	zTpkcEditBackspaceNbsKcEsc1
+zTpkcEditBackspaceNbsKcEsc2	\\\{#insert zBKSP\\\}	zTpkcEditBackspaceNbsKcEsc2
+zTpkcEditBackspaceNbsKcEsc3	\\\{#insert zSpBKSP\\\}	zTpkcEditBackspaceNbsKcEsc3
+zTpkcEditCapitalizeNbsKcCount	1	zTpkcEditCapitalizeNbsKcCount
+zTpkcEditCapitalizeNbsKcEsc1	\\\{#insert zCSpUU\\\}	zTpkcEditCapitalizeNbsKcEsc1
+zTpkcEditClearAllNbsKcCount	1	zTpkcEditClearAllNbsKcCount
+zTpkcEditClearAllNbsKcEsc1	\\\{#insert zApDEL\\\}	zTpkcEditClearAllNbsKcEsc1
+zTpkcEditCopyNbsKcCount	1	zTpkcEditCopyNbsKcCount
+zTpkcEditCopyNbsKcEsc1	\\\{#insert zCpINS\\\}	zTpkcEditCopyNbsKcEsc1
+zTpkcEditCopyAllFileNamesNbsKcCount	0	zTpkcEditCopyAllFileNamesNbsKcCount
+zTpkcEditCopyAppendNbsKcCount	1	zTpkcEditCopyAppendNbsKcCount
+zTpkcEditCopyAppendNbsKcEsc1	\\\{#insert zCSpCC\\\}	zTpkcEditCopyAppendNbsKcEsc1
+zTpkcEditCopyAsHTMLNbsKcCount	0	zTpkcEditCopyAsHTMLNbsKcCount
+zTpkcEditCopyFileNameNbsKcCount	0	zTpkcEditCopyFileNameNbsKcCount
+zTpkcEditCopyLineNbsKcCount	0	zTpkcEditCopyLineNbsKcCount
+zTpkcEditCopyLineAppendNbsKcCount	0	zTpkcEditCopyLineAppendNbsKcCount
+zTpkcEditCopyTaggedLinesNbsKcCount	0	zTpkcEditCopyTaggedLinesNbsKcCount
+zTpkcEditCopyWordNbsKcCount	0	zTpkcEditCopyWordNbsKcCount
+zTpkcEditCopyWordAppendNbsKcCount	0	zTpkcEditCopyWordAppendNbsKcCount
+zTpkcEditCutNbsKcCount	1	zTpkcEditCutNbsKcCount
+zTpkcEditCutNbsKcEsc1	\\\{#insert zSpDEL\\\}	zTpkcEditCutNbsKcEsc1
+zTpkcEditCutAppendNbsKcCount	1	zTpkcEditCutAppendNbsKcCount
+zTpkcEditCutAppendNbsKcEsc1	\\\{#insert zCSpXX\\\}	zTpkcEditCutAppendNbsKcEsc1
+zTpkcEditCutLineNbsKcCount	0	zTpkcEditCutLineNbsKcCount
+zTpkcEditCutLineAppendNbsKcCount	0	zTpkcEditCutLineAppendNbsKcCount
+zTpkcEditCutTaggedLinesNbsKcCount	0	zTpkcEditCutTaggedLinesNbsKcCount
+zTpkcEditCutWordNbsKcCount	0	zTpkcEditCutWordNbsKcCount
+zTpkcEditCutWordAppendNbsKcCount	0	zTpkcEditCutWordAppendNbsKcCount
+zTpkcEditDeleteNbsKcCount	1	zTpkcEditDeleteNbsKcCount
+zTpkcEditDeleteNbsKcEsc1	\\\{#insert zDEL\\\}	zTpkcEditDeleteNbsKcEsc1
+zTpkcEditDelLineNbsKcCount	0	zTpkcEditDelLineNbsKcCount
+zTpkcEditDelLineEndNbsKcCount	1	zTpkcEditDelLineEndNbsKcCount
+zTpkcEditDelLineEndNbsKcEsc1	\\\{#insert zCSpDEL\\\}	zTpkcEditDelLineEndNbsKcEsc1
+zTpkcEditDelSelectionNbsKcCount	0	zTpkcEditDelSelectionNbsKcCount
+zTpkcEditDelTaggedLinesNbsKcCount	0	zTpkcEditDelTaggedLinesNbsKcCount
+zTpkcEditDelWordNbsKcCount	0	zTpkcEditDelWordNbsKcCount
+zTpkcEditDelWordLeftNbsKcCount	1	zTpkcEditDelWordLeftNbsKcCount
+zTpkcEditDelWordLeftNbsKcEsc1	\\\{#insert zCpBKSP\\\}	zTpkcEditDelWordLeftNbsKcEsc1
+zTpkcEditDelWordRightNbsKcCount	1	zTpkcEditDelWordRightNbsKcCount
+zTpkcEditDelWordRightNbsKcEsc1	\\\{#insert zCpDEL\\\}	zTpkcEditDelWordRightNbsKcEsc1
+zTpkcEditDupLineNbsKcCount	0	zTpkcEditDupLineNbsKcCount
+zTpkcEditFillBlockNbsKcCount	0	zTpkcEditFillBlockNbsKcCount
+zTpkcEditIMEreconvertNbsKcCount	0	zTpkcEditIMEreconvertNbsKcCount
+zTpkcEditIndentLessNbsKcCount	1	zTpkcEditIndentLessNbsKcCount
+zTpkcEditIndentLessNbsKcEsc1	\\\{#insert zCSpCOMMA\\\}	zTpkcEditIndentLessNbsKcEsc1
+zTpkcEditIndentMoreNbsKcCount	1	zTpkcEditIndentMoreNbsKcCount
+zTpkcEditIndentMoreNbsKcEsc1	\\\{#insert zCSpPERIOD\\\}	zTpkcEditIndentMoreNbsKcEsc1
+zTpkcEditInsertFileNbsKcCount	1	zTpkcEditInsertFileNbsKcCount
+zTpkcEditInsertFileNbsKcEsc1	\\\{#insert zCSpVV\\\}	zTpkcEditInsertFileNbsKcEsc1
+zTpkcEditInsertFileNameNbsKcCount	0	zTpkcEditInsertFileNameNbsKcCount
+zTpkcEditInsertStatisticsNbsKcCount	0	zTpkcEditInsertStatisticsNbsKcCount
+zTpkcEditInvertCaseNbsKcCount	1	zTpkcEditInvertCaseNbsKcCount
+zTpkcEditInvertCaseNbsKcEsc1	\\\{#insert zCpKK\\\}	zTpkcEditInvertCaseNbsKcEsc1
+zTpkcEditJoinLinesNbsKcCount	1	zTpkcEditJoinLinesNbsKcCount
+zTpkcEditJoinLinesNbsKcEsc1	\\\{#insert zCpJJ\\\}	zTpkcEditJoinLinesNbsKcEsc1
+zTpkcEditLongDateNbsKcCount	0	zTpkcEditLongDateNbsKcCount
+zTpkcEditLowerCaseNbsKcCount	1	zTpkcEditLowerCaseNbsKcCount
+zTpkcEditLowerCaseNbsKcEsc1	\\\{#insert zCpLL\\\}	zTpkcEditLowerCaseNbsKcEsc1
+zTpkcEditMarkCleanNbsKcCount	0	zTpkcEditMarkCleanNbsKcCount
+zTpkcEditNewLineAfterNbsKcCount	0	zTpkcEditNewLineAfterNbsKcCount
+zTpkcEditNewLineBeforeNbsKcCount	0	zTpkcEditNewLineBeforeNbsKcCount
+zTpkcEditPageBreakNbsKcCount	1	zTpkcEditPageBreakNbsKcCount
+zTpkcEditPageBreakNbsKcEsc1	\\\{#insert zCSpLL\\\}	zTpkcEditPageBreakNbsKcEsc1
+zTpkcEditPasteNbsKcCount	1	zTpkcEditPasteNbsKcCount
+zTpkcEditPasteNbsKcEsc1	\\\{#insert zSpINS\\\}	zTpkcEditPasteNbsKcEsc1
+zTpkcEditPasteBlockNbsKcCount	0	zTpkcEditPasteBlockNbsKcCount
+zTpkcEditPasteHTMLNbsKcCount	0	zTpkcEditPasteHTMLNbsKcCount
+zTpkcEditPasteLinesNbsKcCount	0	zTpkcEditPasteLinesNbsKcCount
+zTpkcEditPopupContextNbsKcCount	1	zTpkcEditPopupContextNbsKcCount
+zTpkcEditPopupContextNbsKcEsc1	\\\{#insert zSpF10\\\}	zTpkcEditPopupContextNbsKcEsc1
+zTpkcEditPopupDateTimeNbsKcCount	1	zTpkcEditPopupDateTimeNbsKcCount
+zTpkcEditPopupDateTimeNbsKcEsc1	\\\{#insert zCpF10\\\}	zTpkcEditPopupDateTimeNbsKcEsc1
+zTpkcEditRedoNbsKcCount	1	zTpkcEditRedoNbsKcCount
+zTpkcEditRedoNbsKcEsc1	\\\{#insert zCpYY\\\}	zTpkcEditRedoNbsKcEsc1
+zTpkcEditRedoAllNbsKcCount	1	zTpkcEditRedoAllNbsKcCount
+zTpkcEditRedoAllNbsKcEsc1	\\\{#insert zCSpYY\\\}	zTpkcEditRedoAllNbsKcEsc1
+zTpkcEditReformatNbsKcCount	1	zTpkcEditReformatNbsKcCount
+zTpkcEditReformatNbsKcEsc1	\\\{#insert zCSpJJ\\\}	zTpkcEditReformatNbsKcEsc1
+zTpkcEditSentenceCaseNbsKcCount	1	zTpkcEditSentenceCaseNbsKcCount
+zTpkcEditSentenceCaseNbsKcEsc1	\\\{#insert zCSpKK\\\}	zTpkcEditSentenceCaseNbsKcEsc1
+zTpkcEditShortDateNbsKcCount	0	zTpkcEditShortDateNbsKcCount
+zTpkcEditSplitLinesNbsKcCount	1	zTpkcEditSplitLinesNbsKcCount
+zTpkcEditSplitLinesNbsKcEsc1	\\\{#insert zCApJJ\\\}	zTpkcEditSplitLinesNbsKcEsc1
+zTpkcEditTimeNbsKcCount	0	zTpkcEditTimeNbsKcCount
+zTpkcEditTransposeNbsKcCount	1	zTpkcEditTransposeNbsKcCount
+zTpkcEditTransposeNbsKcEsc1	\\\{#insert zCpTT\\\}	zTpkcEditTransposeNbsKcEsc1
+zTpkcEditTransposeWordsNbsKcCount	1	zTpkcEditTransposeWordsNbsKcCount
+zTpkcEditTransposeWordsNbsKcEsc1	\\\{#insert zCSpTT\\\}	zTpkcEditTransposeWordsNbsKcEsc1
+zTpkcEditUndoNbsKcCount	2	zTpkcEditUndoNbsKcCount
+zTpkcEditUndoNbsKcEsc1	\\\{#insert zApBKSP\\\}	zTpkcEditUndoNbsKcEsc1
+zTpkcEditUndoNbsKcEsc2	\\\{#insert zCpZZ\\\}	zTpkcEditUndoNbsKcEsc2
+zTpkcEditUndoAllNbsKcCount	1	zTpkcEditUndoAllNbsKcCount
+zTpkcEditUndoAllNbsKcEsc1	\\\{#insert zCSpZZ\\\}	zTpkcEditUndoAllNbsKcEsc1
+zTpkcEditUpperCaseNbsKcCount	1	zTpkcEditUpperCaseNbsKcCount
+zTpkcEditUpperCaseNbsKcEsc1	\\\{#insert zCpUU\\\}	zTpkcEditUpperCaseNbsKcEsc1
+zTpkcEmptyClipboardNbsKcCount	0	zTpkcEmptyClipboardNbsKcCount

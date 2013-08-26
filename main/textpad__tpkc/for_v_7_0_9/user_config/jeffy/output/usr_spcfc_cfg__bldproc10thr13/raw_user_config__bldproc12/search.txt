@@ -1,0 +1,26 @@
+BookmarkClearAll	2	\\\{#insert zCSpF2\\\}	\\\{#insert zCASpDASH\\\}
+BookmarkInvertAll	1	\\\{#insert zASpPERIOD\\\}
+BookmarkNext	0
+BookmarkPrev	1	\\\{#insert zApCOMMA\\\}
+BookmarkToggle	0
+IncrementalFind	2	\\\{#insert zCpII\\\}	\\\{#insert zSpF3\\\}
+IncrementalFindNext	0
+IncrementalFindPrev	0
+MatchBracket	1	\\\{#insert zCpDNR_SLASH\\\}
+MatchBracketExtend	1	\\\{#insert zCSpDNR_SLASH\\\}
+MatchCaseClear	1	\\\{#insert zCASpFF\\\}\\\{#sleep 25\\\}\\\{#insert zCC\\\}
+MatchCaseSet	1	\\\{#insert zASpFF\\\}\\\{#sleep 25\\\}\\\{#insert zCC\\\}
+MatchWordClear	1	\\\{#insert zCASpFF\\\}\\\{#sleep 25\\\}\\\{#insert zWW\\\}
+MatchWordSet	1	\\\{#insert zASpFF\\\}\\\{#sleep 25\\\}\\\{#insert zWW\\\}
+RegexClear	1	\\\{#insert zCASpFF\\\}\\\{#sleep 25\\\}\\\{#insert zRR\\\}
+RegexSet	1	\\\{#insert zASpFF\\\}\\\{#sleep 25\\\}\\\{#insert zRR\\\}
+SearchFiles	0
+SearchFind	0
+SearchFindNext	2	\\\{#insert zSpF4\\\}	\\\{#insert zApF4\\\}
+SearchFindPrevious	3	\\\{#insert zF2\\\}	\\\{#insert zSpF2\\\}	\\\{#insert zApF2\\\}
+SearchGoto	1	\\\{#insert zCSpGG\\\}
+SearchJumpNext	2	\\\{#insert zCApF4\\\}	\\\{#insert zCASpF4\\\}
+SearchJumpPrev	2	\\\{#insert zCApF2\\\}	\\\{#insert zCASpF2\\\}
+SearchOpenAll	1	\\\{#insert zCpF12\\\}\\\{#sleep 25\\\}\\\{#insert zCpF8\\\}
+SearchReplace	1	\\\{#insert zF8\\\}
+SearchReplaceNext	2	\\\{#insert zCpF8\\\}	\\\{#insert zSpF5\\\}

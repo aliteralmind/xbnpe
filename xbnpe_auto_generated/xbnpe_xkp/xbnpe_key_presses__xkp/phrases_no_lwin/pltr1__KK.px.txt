@@ -1,0 +1,8 @@
+KK -- zKK	{#NONE -chars k}{#insert zTSlp}	zKK
+Alt+KK -- zApKK	{#ALT -chars k}{#insert zTSlp}	zApKK
+Alt+Shift+KK -- zASpKK	{#ALT {#SHIFT -chars k}}{#insert zTSlp}	zASpKK
+Ctrl+KK -- zCpKK	{#CTRL -chars k}{#insert zTSlp}	zCpKK
+Ctrl+Alt+KK -- zCApKK	{#CTRL {#ALT -chars k}}{#insert zTSlp}	zCApKK
+Ctrl+Alt+Shift+KK -- zCASpKK	{#CTRL {#ALT {#SHIFT -chars k}}}{#insert zTSlp}	zCASpKK
+Ctrl+Shift+KK -- zCSpKK	{#CTRL {#SHIFT -chars k}}{#insert zTSlp}	zCSpKK
+Shift+KK -- zSpKK	{#SHIFT -chars k}{#insert zTSlp}	zSpKK

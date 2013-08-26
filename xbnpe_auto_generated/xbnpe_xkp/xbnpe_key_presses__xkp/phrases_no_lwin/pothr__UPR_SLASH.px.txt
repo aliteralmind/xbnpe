@@ -1,0 +1,8 @@
+UPR_SLASH -- zUPR_SLASH	{#NONE -chars /}{#insert zTSlp}	zUPR_SLASH
+Alt+UPR_SLASH -- zApUPR_SLASH	{#ALT -chars /}{#insert zTSlp}	zApUPR_SLASH
+Alt+Shift+UPR_SLASH -- zASpUPR_SLASH	{#ALT {#SHIFT -chars /}}{#insert zTSlp}	zASpUPR_SLASH
+Ctrl+UPR_SLASH -- zCpUPR_SLASH	{#CTRL -chars /}{#insert zTSlp}	zCpUPR_SLASH
+Ctrl+Alt+UPR_SLASH -- zCApUPR_SLASH	{#CTRL {#ALT -chars /}}{#insert zTSlp}	zCApUPR_SLASH
+Ctrl+Alt+Shift+UPR_SLASH -- zCASpUPR_SLASH	{#CTRL {#ALT {#SHIFT -chars /}}}{#insert zTSlp}	zCASpUPR_SLASH
+Ctrl+Shift+UPR_SLASH -- zCSpUPR_SLASH	{#CTRL {#SHIFT -chars /}}{#insert zTSlp}	zCSpUPR_SLASH
+Shift+UPR_SLASH -- zSpUPR_SLASH	{#SHIFT -chars /}{#insert zTSlp}	zSpUPR_SLASH

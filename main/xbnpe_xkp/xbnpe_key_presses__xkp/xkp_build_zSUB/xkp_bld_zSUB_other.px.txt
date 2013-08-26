@@ -1,0 +1,11 @@
+zzzEditCut1stLineToNewFile_M_numKyct -- Needs zvNUMBER (cur key), zvKEY_COUNT (total) 	{#insert zvNUMBER_incBy1}{#BALLOON -title Processing key {#insert zvNUMBER} of {#insert zvKEY_COUNT} -text zvTEST_BLD_ON='{#insert zvTEST_BLD_ON}', zvLWIN_YES_OR_NO='{#insert zvLWIN_YES_OR_NO}'. zvKEY_COUNT is '{#insert zvKEY_COUNT}', which is also the number of (non-empty) lines. If this is incorrect, cancel this process NOW by pressing the [Esc] key. Update this var in its 'zzXkp*_M_ynlw' phrase.}{#SHIFT {#DOWN}}{#insert zTPCut}{#insert zFcsTPFileNew}{#insert zTPPaste}{#UP}{#insert zTSlp}	zzzEditCut1stLineToNewFile_M_numKyct
+zzzFNMDtPxTxt_M_fnmFnmpre -- Needs zvFILE_NAME, zvFLNM_PREFIX	{#insert zvFLNM_PREFIX}__{#insert zvFILE_NAME}.px.txt	zzzFNMDtPxTxt_M_fnmFnmpre
+zzzFileSaveClose_M_ynlwFnmpreFnm	{#insert zFileSave1750slp}{#insert zXPROOT_DIR_AG_xkpOutput_{#insert zvLWIN_YES_OR_NO}lw}{#sleep 1000}{#ENTER}{#sleep 1000}{#insert zzzFNMDtPxTxt_M_fnmFnmpre}{#sleep 1000}{#ENTER}{#sleep 1000}{#insert zFcsTPFileClose}	zzzFileSaveClose_M_ynlwFnmpreFnm
+zzzGtdoctpSelr1wCpOpenFlSvDlg	{#insert zTPGTDocTop}{#insert zTPSelectR1w}{#insert zTPCopy}{#insert zFileSave1750slp}(*<--Opens the save-file dialog*)	zzzGtdoctpSelr1wCpOpenFlSvDlg
+zzzHmSelr1wCpLft	{#HOME}{#insert zTPSelectR1w}{#insert zTPCopy}{#LEFT}{#insert zTSlp}	zzzHmSelr1wCpLft
+zzzLtrlTSlpTbPstRig	\\\{#insert zTSlp\\\}{#TAB}{#insert zTPPaste}{#RIGHT}{#insert zTSlp}	zzzLtrlTSlpTbPstRig
+zzzMvr1wSpcDshDshSpc	{#insert zTPMoveR1w} -- {#insert zTSlp}	zzzMvr1wSpcDshDshSpc
+zzzPsteSell1wCpRigRig	{#insert zTPPaste}{#insert zTPSelectL1w}{#insert zTPCopy}{#RIGHT}{#insert zTSlp}{#RIGHT}	zzzPsteSell1wCpRigRig
+zzzSelAllDelAbtToInsrtEtr	{#insert zTPSelectAll}{#DEL}(*<--When running a test or demo build, then LESS than all the lines will be processed. So select-all-delete to ensure a fresh start for each category.*)About to open{#ENTER}	zzzSelAllDelAbtToInsrtEtr
+zzzSetR1wToFLNMLef	{#insert zTPSelectR1w}{#insert zTPCopy}{#SETPHRASE -description zvFILE_NAME -content {#INSERTCLIPBOARD} -autotext zvFILE_NAME -folder ctvv_folder}{#LEFT}	zzzSetR1wToFLNMLef
+zzzSlpkSelAllDel	{#sleep 1000}{#insert zTPSelectAll}{#DEL}	zzzSlpkSelAllDel

@@ -1,0 +1,8 @@
+F10 -- zF10	{#F10}{#insert zTSlp}	zF10
+Alt+F10 -- zApF10	{#ALT {#F10}}{#insert zTSlp}	zApF10
+Alt+Shift+F10 -- zASpF10	{#ALT {#SHIFT {#F10}}}{#insert zTSlp}	zASpF10
+Ctrl+F10 -- zCpF10	{#CTRL {#F10}}{#insert zTSlp}	zCpF10
+Ctrl+Alt+F10 -- zCApF10	{#CTRL {#ALT {#F10}}}{#insert zTSlp}	zCApF10
+Ctrl+Alt+Shift+F10 -- zCASpF10	{#CTRL {#ALT {#SHIFT {#F10}}}}{#insert zTSlp}	zCASpF10
+Ctrl+Shift+F10 -- zCSpF10	{#CTRL {#SHIFT {#F10}}}{#insert zTSlp}	zCSpF10
+Shift+F10 -- zSpF10	{#SHIFT {#F10}}{#insert zTSlp}	zSpF10

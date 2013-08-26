@@ -1,0 +1,2 @@
+zGTDlgGoClose -- Assumes number is in the textbox	{#sleep 10}{#insert zENTER}{#sleep 50}	zGTDlgGoClose
+zGTDlgClose -- zEscThenFcsTP ALT KC	{#insert zEscThenFcsTP}	zGTDlgClose

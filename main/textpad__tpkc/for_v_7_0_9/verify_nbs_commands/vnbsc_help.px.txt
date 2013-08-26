@@ -1,0 +1,6 @@
+zzNewFlV1Nbs_help_HelpFAQ_ifKc	{#insert zvCMD_ABRV_1C_sfHelpFAQ}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_help_HelpFAQ_ifKc
+zzNewFlV1Nbs_help_HelpOrdering_ifKc	{#insert zvCMD_ABRV_1C_sfHelpOrdering}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_help_HelpOrdering_ifKc
+zzNewFlV1Nbs_help_HelpSupport_ifKc	{#insert zvCMD_ABRV_1C_sfHelpSupport}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_help_HelpSupport_ifKc
+zzNewFlV1Nbs_help_HelpTip_ifKc	{#insert zvCMD_ABRV_1C_sfHelpTip}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_help_HelpTip_ifKc
+zzNewFlV1Nbs_help_HelpWWW_ifKc	{#insert zvCMD_ABRV_1C_sfHelpWWW}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_help_HelpWWW_ifKc
+zzNewFlV1Nbs_help_Help_ifKc	{#insert zvCMD_ABRV_1C_sfHelp}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_help_Help_ifKc

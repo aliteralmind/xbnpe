@@ -1,0 +1,6 @@
+zTpkcFileAbrvLC	file	zTpkcFileAbrvLC
+zTpkcFileAllCmdNamesTCQbl	[FileClose][FileCloseAll][FileExit][FileGoTo][FileManage][FileNew][FileOpen][FilePageSetup][FilePrintAll][FilePrintDefault][FilePrintPreview][FilePrint][FileQuickOpen][FileRename][FileRevert][FileSaveAll][FileSaveAndClose][FileSaveAs][FileSave][FileSend][FileStatistics][WorkspaceClose][WorkspaceOpen][WorkspaceSave][WorkspaceSaveAs]	zTpkcFileAllCmdNamesTCQbl
+zTpkcFileCmdCount	25	zTpkcFileCmdCount
+zTpkcFileHasUserCrtdCmds_yes		zTpkcFileHasUsrCrtdCmds_yes
+zTpkcFileStpsFrmCatListTop -- NOTHING!		zTpkcFileStpsFrmCatListTop
+zTpkcFileNameLC	file	zTpkcFileNameLC

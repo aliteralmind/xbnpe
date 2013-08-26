@@ -1,0 +1,13 @@
+BlockSelectOff	zTPBlockSelectOff	Cfgblkself	__ES__	5	(*NOTHING. Top command in list*)
+BlockSelectOn	zTPBlockSelectOn	Cfgblkseln	__ES__	5	{#insert zDOWN}
+CustomizeToolbars	zTPCustomizeToolbars	Cfgcstmztbs	__ES__	100	{#insert zCC}
+Preferences	zTPPrefsDlgOpen	Cfgprfsdlg	yes	50	{#insert zPP}
+RightMarginDec	zTPRightMarginDec	Cfgrmrgdec	__ES__	5	{#insert zRR}
+RightMarginInc	zTPRightMarginInc	Cfgrmrginc	__ES__	5	{#NONE -chars r -count 2}{#insert z5ThnTSlp}
+RightMarginSet	zTPRightMarginSet	Cfgrmrgset	__ES__	5	{#insert zPGDN}
+ToggleBlockSelect	zTPToggleBlockSelect	Cfgtgblksel	__ES__	5	{#insert zTT}
+ToggleInsertMode	zTPToggleInsertMode	Cfgtgins	__ES__	5	{#NONE -chars t -count 2}{#insert z5ThnTSlp}
+ToggleReadOnly	zTPToggleReadOnly	Cfgtgro	__ES__	5	{#NONE -chars t -count 3}{#insert z5ThnTSlp}
+ToggleSyncScroll	zTPToggleSyncScroll	Cfgtgsyncscr	__ES__	5	{#insert zEND}{#insert zUP2}
+ToggleUndo	zTPToggleUndo	Cfgtgudo	__ES__	5	{#insert zEND}{#insert zUP}
+ToggleWordWrap	zTPToggleWW	Cfgtgww	yes	50	{#insert zEND}

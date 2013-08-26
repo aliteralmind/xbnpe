@@ -1,0 +1,139 @@
+<HTML><HEAD>
+	<TITLE>XBN-PhraseExpress</TITLE>
+	<meta name="viewport" content="width=device-width" />
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF"><a name="top"></a>
+
+<H1>XBN-PhraseExpress</H1>
+
+<P><I><B>The most-updated documentation is always at <CODE><A HREF="http://xbnpe.jeffyepstein.com">http://xbnpe.jeffyepstein.com</A></CODE>.</B></I></P>
+
+<P>XBN-PhraseExpress is a large set of generically useful MS Windows scripting tools, written in PhraseExpress and <A HREF="http://textpad.com">TextPad</A>. <A HREF="http://textpad.com">TextPad</A> is the plain-text editor written by Helios Software Solutions. XBNPE is significantly for <I>creating</I> phrases in TextPad--and therefore most phrases are logically only-callable in TextPad. There are, however, many useful features for those developing phrases in any environment, including the PhraseExpress application itself.</P>
+
+<P>There is a significant setup necessary in order for XBN-PhraseExpress and TextPad to communicate properly, but it is largely a one-time-only process.</P>
+
+<P><B>XBNPE overview:</B><UL>
+	<LI>XBN-PhraseExpress is hosted by <A HREF="http://github.com">GitHub</A>: <A HREF="http://github.com/aliteralmind/xbnpe"><B>Main project page</B></A>, <A HREF="https://github.com/aliteralmind/xbnpe/issues">Issue tracker</A>, <A HREF="https://github.com/aliteralmind/xbnpe/wiki">Wiki</A></LI>
+	<LI><CODE>[<A HREF="http://forums.delphiforums.com/xbnpe">go</A>]</CODE> &nbsp; <B>User-discussion forum</B></LI>
+	<LI><CODE>[<A HREF="pex_in_textpad.html">go</A>]</CODE> &nbsp; I only edit my phrases in TextPad <I>(also defines <A HREF="pex_in_textpad.html#tpbs">TextPad-bootstraps</A>)</I></LI>
+	<LI><CODE>[<A HREF="xbnpe_phrase_types.html">go</A>]</CODE> &nbsp; The main types of phrases used in the XBN-PhraseExpress project: <A HREF="xbnpe_phrase_types.html#command">Commands</A>, <A HREF="xbnpe_phrase_types.html#action">actions</A>, <A HREF="xbnpe_phrase_types.html#variable">variables</A>, <A HREF="phrase_express/phrase_creators_pcc.html">phrase-creators</A></LI>
+	<LI><CODE>[<A HREF="textpad__tpkc/index.html">go</A>]</CODE> &nbsp; TextPad built-in commands (TPKC) project</LI>
+	<LI><CODE>[<A HREF="#glblcfg">go</A>]</CODE> &nbsp; XBN-PhraseExpress: global configuration</LI>
+	<LI><CODE>[<A HREF="xbnpe_key_presses__xkp.html">go</A>]</CODE> &nbsp; XBNPE-Key-Presses (XKP)</LI>
+	<LI><CODE>[<A HREF="plain_text_phrase_files.html">go</A>]</CODE> &nbsp; Plain-text phrase-files: Their format and how to <A HREF="plain_text_phrase_files.html#import1">import</A>.</LI>
+</UL><B>Composing and managing phrase express code:</B><UL>
+	<LI><CODE>[<A HREF="xbnpe_ddmenus.html">go</A>]</CODE> &nbsp; <CODE>'xh...'</CODE> phrase-creator ddmenu (and the XBNPE user-menu)</LI>
+	<LI><CODE>[<A HREF="phrase_express/phrase_creators_pcc.html">go</A>]</CODE> &nbsp; XBNPE-Phrase-creators (PPC) project</LI>
+	<LI><CODE>[<A HREF="phrase_express/phrase_compression.html">go</A>]</CODE> &nbsp; Phrase &quot;compression&quot;: <CODE>'c2pl'</CODE> and related utilities</LI>
+	<LI><CODE>[<A HREF="phrase_express/call_phrase_name_in_clipboard.html">go</A>]</CODE> &nbsp; Call Phrase-name in ClipBoard (CPCB)</LI>
+	<LI><CODE>[<A HREF="phrase_express/debugging.html">go</A>]</CODE> &nbsp; Debugging utilities</LI>
+</UL><B>Specific tasks and projects:</B><UL>
+	<LI><CODE>[<A HREF="cwlpdf/file_manipulation.html">go</A>]</CODE> &nbsp; File manipulation</LI>
+	<LI><CODE>[<A HREF="search_and_replace/index.html">go</A>]</CODE> &nbsp; Search and replace (SNR): <I>Find, replace, find-in-files, go-to dialog, and bookmarks</I></LI>
+	<LI><CODE>[<A HREF="other/divisor_quotient.html">go</A>]</CODE> &nbsp; Advanced division (divisor/quotient)</LI>
+	<LI><CODE>[<A HREF="search_and_replace/square_bracketed_lists.html">go</A>]</CODE> &nbsp; sQuare-Bracketed Lists (QBL): <I>Plain-text string iterator</I></LI>
+	<LI><CODE>[<A HREF="cwlpdf/ww_with_state.html">go</A>]</CODE> &nbsp; Word-wrap with state</LI>
+	<LI><CODE>[<A HREF="phrase_express/phrase_creator_ddmenu_util.html">go</A>]</CODE> &nbsp;  Phrase-name ddmenu creation utilities (PMDM)</LI>
+</UL><B>Generic (non XBNPE-specific) documentation</B><UL>
+	<LI><CODE>[<A HREF="z_non_xbnpe_docs/pex_built_in_functions.html">go</A>]</CODE> &nbsp; Specific PhraseExpress built-in functions, including in-depth documentation on the <A HREF="z_non_xbnpe_docs/cond_tag.html"><CODE>COND</CODE> tag</A>.</LI>
+	<LI><CODE>[<A HREF="z_non_xbnpe_docs/pex_troubleshooting.html">go</A>]</CODE> &nbsp; Trouble-shooting and work-arounds</LI>
+	<LI><CODE>[<A HREF="z_non_xbnpe_docs/pex_enhancement_requests.html">go</A>]</CODE> &nbsp; My most important Pex enhancement requests</LI>
+	<LI><CODE>[<A HREF="z_non_xbnpe_docs/phrase_set_syntax.html">go</A>]</CODE> &nbsp; Understanding and determining phrase-set syntax</LI>
+</UL><B>Unfinished and future projects:</B><UL>
+	<LI><CODE>[<A HREF="phrase_express/example_code_framework.html">go</A>]</CODE> &nbsp; Example code framework (XCF) project</LI>
+	<LI><CODE>[<A HREF="phrase_express/minv_commands.html">go</A>]</CODE> &nbsp; MINV-Commands: Automated creation and management of repeating commands</LI>
+	<LI><CODE>[<A HREF="phrase_express/large_project_database.html">go</A>]</CODE> &nbsp; Large project database framework (LPD) project.</LI>
+</UL></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="install"/><H2><CODE>[<A HREF="#YYY">BACK</A>]</CODE> &nbsp; XBN-PhraseExpress: Installation</H2>
+
+<P>Install TextPad. XBNPE is verified with TextPad version <CODE>7.0.9</CODE>. It <I>should</I> work with all <CODE>7.*</CODE> versions. It will not work with earlier versions.</P>
+
+<P>Install PhraseExpress. XBNPE was built with &quot;PhraseExpress Standard v9.1.41s&quot;. It <I>may</I> work with other <CODE>9.*</CODE> versions of PhraseExpress. It will not work with earlier versions.</P>
+
+<P>Download and install XBN-PhraseExpress.</P>
+
+<P>Configure global directories:</P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="glblcfg"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; XBN-PhraseExpress: global configuration</H2>
+
+<P>Global configuration variables that must be correct, in order for <I>anything</I> in XBN-PhraseExpress to function.</P>
+
+<P><TABLE ALIGN="center" BORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#EEEEEE"><TR ALIGN="center" VALIGN="middle">
+	<TD><B><U>Variable</U></B></TD>
+	<TD><B><U>Description and requirements</U></B></TD>
+</TR><TR>
+	<TD ALIGN="right"><B><CODE>zzTextPadWindowName</CODE></B></TD>
+	<TD>The name of the TextPad application's window title, as required by <CODE>{#FOCUS ...}</CODE>. May include asterisks (such as <CODE>&quot;*TextPad*&quot;</CODE>). Used for re-focusing on the main TextPad document window, when opening and closing <I>both TextPad and PhraseExpress</I> dialogs.</TD>
+</TR><TR>
+	<TD ALIGN="right"><B><CODE>zzCurrVersionOfPETextEditorWUndrscrs</CODE></B></TD>
+	<TD>The current version of TextPad, using underscores instead of dots. For example, if, in
+	<BR> &nbsp; &nbsp; <CODE>TextPad &gt; Help &gt; About</CODE>
+	<BR>it says version <CODE>&quot;7.0.9&quot;</CODE>, then this value must be <CODE>&quot;7_0_9&quot;</CODE>.
+	<BR>
+	<BR>This is the <I>postfix</I> of the name of the version-specific directory in the <A HREF="textpad_tpkc/index.html">XBNPE-TPKC project</A>.</TD>
+</TR><TR>
+	<TD ALIGN="right"><B><CODE>zzTPTxtDefaultWordWrapOnOrES</CODE></B></TD>
+	<TD><A HREF="plain_text_phrase_files.html#fformat">Plain-text phrase-files</A> are named with the postfix <CODE>&quot;.px.txt&quot;</CODE> and are therefore included in the &quot;Text&quot; document class. If the default <A HREF="cwlpdf/ww_with_state.html">word-wrap</A> state for the text document class is<UL>
+		<LI><B>checked,</B> then the value of this phrase must be &quot;on&quot;</LI>
+		<LI><B>unchecked,</B> then this must be <I>nothing</I> (the empty-string: <CODE>''</CODE>).</LI>
+	</UL><I>(<U>Screenshot below</U>)</I></TD>
+</TR><TR>
+	<TD ALIGN="right"><B><CODE>zzTPTxtDefaultStripTrailingWSOnOrES</CODE></B></TD>
+	<TD>If the Text document class setting &quot;<B><A HREF="cwlpdf/file_manipulation.html#stripsave">Strip trailing spaces</A> from lines when saving</B>&quot; is<UL>
+		<LI><B>checked,</B> then the value of this phrase must be &quot;on&quot;</LI>
+		<LI><B>unchecked,</B> then this must be <I>nothing</I> (the empty-string: <CODE>''</CODE>).</LI>
+	</UL>This refers to whitespace being at the end (right-side) of each line. Both tabs and spaces are stripped.
+	<BR>
+	<BR><I>(<U>Screenshot below</U>)</I></TD>
+</TR></TABLE></P>
+
+<P><I><B>Warning:</B> Significant portions of XBNPE (particularly the larger build-processes) will fail unless &quot;<B>Word wrap text &gt; Save with no breaks in lines</B>&quot; is selected.</I></P>
+
+<P><IMG SRC="images/prefs_text_doc_class_ww_strip_ws.jpg" BORDER="1"/></P>
+
+<PRE>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</PRE>
+</BODY></HTML>
+
+
+

@@ -1,0 +1,3 @@
+zInsFileToCBPasteFromPathInCB	{#SETPHRASE -description zvFILE_PATH -content {#INSERTCLIPBOARD} -autotext zvFILE_PATH -folder ctvv_folder}{#insert zInsertFileToCBThenPaste_M_fpth}	zInsFileToCBPasteFromPathInCB
+zInsertFileToCBThenPaste_M_fpth -- Needs zvFILE_PATH	[[insertfile{#insert zEnterTab}{#insert zvFILE_PATH}...]]{#insert zEnterBksp}{#setclipboard {#insertfile {#insert zvFILE_PATH}}}{#insert zTPPaste}{#insert zENTER2}[[insertfile...END]]	zInsertFileToCBThenPaste_M_fpth
+zzDelAllOutFilesRqst_M_outdir -- Needs zvOUT_DIR	{#MSGBOX -head DEPRECATED: zzDelAllOutFilesRqst_M_outdir -text zzDelAllOutFilesRqst_M_outdir is deprecated}{#insert zvDIRECTORY_stOUT_DIR}{#insert zDelAllOutFilesDlg_M_dir}	zzDelAllOutFilesRqst_M_outdir

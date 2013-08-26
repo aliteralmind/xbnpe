@@ -1,0 +1,3 @@
+jdrfrl -- Create @return with 1-line return line (**)	(*Call from actual return line*){#insert zzWWHmMr2l1wSelToLineEndGTPrvFnUp2JdrLine}{#insert zzClsCdVDownWW}	jdrfrl
+jdrfrle -- jdrfrl, HTML-esc ret-type	{#insert zzWWHmMr2l1wSelToLineEndGTPrvFnUp2JdrLine}{#insert zHOME}{#insert zMoveR4w}{#insert zRIGHT}{#insert zSpEND}{#insert xhEscapeSel}{#insert zRIGHT}{#insert zzClsCdVDownWW}	jdrfrle
+jdrfrlq -- jdrfrl, qthq	{#insert zzWWHmMr2l1wSelToLineEndGTPrvFnUp2JdrLine}{#insert zHOME}{#insert zMoveR4w}{#insert zRIGHT}{#insert zSpEND}{#insert rqthq}{#insert zRIGHT}{#insert zzClsCdVDownWW}	jdrfrlq

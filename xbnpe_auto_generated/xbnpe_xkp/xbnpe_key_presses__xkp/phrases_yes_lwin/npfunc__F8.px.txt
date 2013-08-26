@@ -1,0 +1,8 @@
+Alt+LWin+F8 -- zALpF8	{#ALT {#LWIN {#F8}}}{#insert zTSlp}	zALpF8
+Alt+Shift+LWin+F8 -- zASLpF8	{#ALT {#SHIFT {#LWIN {#F8}}}}{#insert zTSlp}	zASLpF8
+Ctrl+Alt+LWin+F8 -- zCALpF8	{#CTRL {#ALT {#LWIN {#F8}}}}{#insert zTSlp}	zCALpF8
+Ctrl+Alt+Shift+LWin+F8 -- zCASLpF8	{#CTRL {#ALT {#SHIFT {#LWIN {#F8}}}}}{#insert zTSlp}	zCASLpF8
+Ctrl+LWin+F8 -- zCLpF8	{#CTRL {#LWIN {#F8}}}{#insert zTSlp}	zCLpF8
+Ctrl+Shift+LWin+F8 -- zCSLpF8	{#CTRL {#SHIFT {#LWIN {#F8}}}}{#insert zTSlp}	zCSLpF8
+LWin+F8 -- zLpF8	{#LWIN {#F8}}{#insert zTSlp}	zLpF8
+Shift+LWin+F8 -- zSLpF8	{#SHIFT {#LWIN {#F8}}}{#insert zTSlp}	zSLpF8

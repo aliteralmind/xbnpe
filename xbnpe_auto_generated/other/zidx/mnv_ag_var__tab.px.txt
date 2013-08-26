@@ -1,0 +1,48 @@
+
+(*MINV-Variable: Utilities*)
+vtbr -- zvTABS_RIGHT ALT KC (for diagnostics)	{#insert zvTABS_RIGHT}	vtbr
+vtbrp -- Phrase: zvTABS_RIGHT	{#insert zOY}#insert zvTABS_RIGHT{#insert zCY}	vtbrp
+
+(*MINV-Variable: Internal use only*)
+zzMnvVtbrVarAbrvTitleC	Vtbr	zzMnvVtbrVarAbrvTitleC
+zvVAR_ABRV_LC_stVtbr	{#SETPHRASE -description zvVAR_ABRV_LC -content vtbr -autotext zvVAR_ABRV_LC -folder ctvv_folder}	zvVAR_ABRV_LC_stVtbr
+zvVAR_ABRV_TC_stVtbr	{#SETPHRASE -description zvVAR_ABRV_TC -content {#insert zzMnvVtbrVarAbrvTitleC} -autotext zvVAR_ABRV_TC -folder ctvv_folder}	zvVAR_ABRV_TC_stVtbr
+zvVAR_ABRV_LC_TC_stVtbr	{#insert zvVAR_ABRV_LC_stVtbr}{#insert zvVAR_ABRV_TC_stVtbr}	zvVAR_ABRV_LC_TC_stVtbr
+
+(*MINV-Variable: '_st#' set-to-number phrases*)
+zvTABS_RIGHT_st1 -- Set variable To 1	{#SETPHRASE -description zvTABS_RIGHT -content 1 -autotext zvTABS_RIGHT -folder ctvv_folder}	zvTABS_RIGHT_st1
+zvTABS_RIGHT_st2	{#SETPHRASE -description zvTABS_RIGHT -content 2 -autotext zvTABS_RIGHT -folder ctvv_folder}	zvTABS_RIGHT_st2
+zvTABS_RIGHT_st3	{#SETPHRASE -description zvTABS_RIGHT -content 3 -autotext zvTABS_RIGHT -folder ctvv_folder}	zvTABS_RIGHT_st3
+zvTABS_RIGHT_st4	{#SETPHRASE -description zvTABS_RIGHT -content 4 -autotext zvTABS_RIGHT -folder ctvv_folder}	zvTABS_RIGHT_st4
+zvTABS_RIGHT_st5	{#SETPHRASE -description zvTABS_RIGHT -content 5 -autotext zvTABS_RIGHT -folder ctvv_folder}	zvTABS_RIGHT_st5
+zvTABS_RIGHT_st6	{#SETPHRASE -description zvTABS_RIGHT -content 6 -autotext zvTABS_RIGHT -folder ctvv_folder}	zvTABS_RIGHT_st6
+zvTABS_RIGHT_st7	{#SETPHRASE -description zvTABS_RIGHT -content 7 -autotext zvTABS_RIGHT -folder ctvv_folder}	zvTABS_RIGHT_st7
+zvTABS_RIGHT_st8	{#SETPHRASE -description zvTABS_RIGHT -content 8 -autotext zvTABS_RIGHT -folder ctvv_folder}	zvTABS_RIGHT_st8
+zvTABS_RIGHT_st9	{#SETPHRASE -description zvTABS_RIGHT -content 9 -autotext zvTABS_RIGHT -folder ctvv_folder}	zvTABS_RIGHT_st9
+zvTABS_RIGHT_st10	{#SETPHRASE -description zvTABS_RIGHT -content 10 -autotext zvTABS_RIGHT -folder ctvv_folder}	zvTABS_RIGHT_st10
+
+
+(*MINV-Command: Master phrase and commands*)
+
+(*MINV-Command: Actions and phrase-creators*)
+(*MINV-Variable: Utilities*)
+vtbl -- zvTABS_LEFT ALT KC (for diagnostics)	{#insert zvTABS_LEFT}	vtbl
+vtblp -- Phrase: zvTABS_LEFT	{#insert zOY}#insert zvTABS_LEFT{#insert zCY}	vtblp
+
+(*MINV-Variable: Internal use only*)
+zzMnvVtblVarAbrvTitleC	Vtbl	zzMnvVtblVarAbrvTitleC
+zvVAR_ABRV_LC_stVtbl	{#SETPHRASE -description zvVAR_ABRV_LC -content vtbl -autotext zvVAR_ABRV_LC -folder ctvv_folder}	zvVAR_ABRV_LC_stVtbl
+zvVAR_ABRV_TC_stVtbl	{#SETPHRASE -description zvVAR_ABRV_TC -content {#insert zzMnvVtblVarAbrvTitleC} -autotext zvVAR_ABRV_TC -folder ctvv_folder}	zvVAR_ABRV_TC_stVtbl
+zvVAR_ABRV_LC_TC_stVtbl	{#insert zvVAR_ABRV_LC_stVtbl}{#insert zvVAR_ABRV_TC_stVtbl}	zvVAR_ABRV_LC_TC_stVtbl
+
+(*MINV-Variable: '_st#' set-to-number phrases*)
+zvTABS_LEFT_st1 -- Set variable To 1	{#SETPHRASE -description zvTABS_LEFT -content 1 -autotext zvTABS_LEFT -folder ctvv_folder}	zvTABS_LEFT_st1
+zvTABS_LEFT_st2	{#SETPHRASE -description zvTABS_LEFT -content 2 -autotext zvTABS_LEFT -folder ctvv_folder}	zvTABS_LEFT_st2
+zvTABS_LEFT_st3	{#SETPHRASE -description zvTABS_LEFT -content 3 -autotext zvTABS_LEFT -folder ctvv_folder}	zvTABS_LEFT_st3
+zvTABS_LEFT_st4	{#SETPHRASE -description zvTABS_LEFT -content 4 -autotext zvTABS_LEFT -folder ctvv_folder}	zvTABS_LEFT_st4
+zvTABS_LEFT_st5	{#SETPHRASE -description zvTABS_LEFT -content 5 -autotext zvTABS_LEFT -folder ctvv_folder}	zvTABS_LEFT_st5
+zvTABS_LEFT_st6	{#SETPHRASE -description zvTABS_LEFT -content 6 -autotext zvTABS_LEFT -folder ctvv_folder}	zvTABS_LEFT_st6
+zvTABS_LEFT_st7	{#SETPHRASE -description zvTABS_LEFT -content 7 -autotext zvTABS_LEFT -folder ctvv_folder}	zvTABS_LEFT_st7
+zvTABS_LEFT_st8	{#SETPHRASE -description zvTABS_LEFT -content 8 -autotext zvTABS_LEFT -folder ctvv_folder}	zvTABS_LEFT_st8
+zvTABS_LEFT_st9	{#SETPHRASE -description zvTABS_LEFT -content 9 -autotext zvTABS_LEFT -folder ctvv_folder}	zvTABS_LEFT_st9
+zvTABS_LEFT_st10	{#SETPHRASE -description zvTABS_LEFT -content 10 -autotext zvTABS_LEFT -folder ctvv_folder}	zvTABS_LEFT_st10

@@ -1,0 +1,7 @@
+zGTFlagByte -- Cursor ends in textbox (**)	(*Since zApBB is already assigned, rigamarole required*){#insert zGTFlagPage}{#insert zSpTAB}{#insert zDOWN}{#sleep 10}	zGTFlagByte
+zGTFlagPage -- Cursor ends in textbox	{#insert zApPP}{#sleep 10}	zGTFlagPage
+zGTFlagLine -- Cursor ends in textbox	{#insert zApLL}{#sleep 10}	zGTFlagLine
+zGTFlagColumn -- Cursor ends in textbox	{#insert zApCC}{#sleep 10}	zGTFlagColumn
+zGTFlagBookmark -- Cursor ends in textbox	{#insert zApNN}{#sleep 10}	zGTFlagBookmark
+zGTFlagExtendRAW -- Checkbox remains selected	{#insert zApEE}{#sleep 10}	zGTFlagExtendRAW
+zGTFlagExtend -- Cursor ends in textbox	{#insert zGTFlagExtendRAW}{#insert zSpTAB}	zGTFlagExtend

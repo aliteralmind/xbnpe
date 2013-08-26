@@ -1,0 +1,13 @@
+__**WARNING**__: All phrases in this folder were created by 'plpdcf'. DO NOT EDIT.	.		(*Extra tab to allow for empty-string autotext*)
+zvCMD_RANGE_MAX_sfKey	{#SETPHRASE -description zvCMD_RANGE_MAX -content {#insert zzMnvCmdCgmax_cfgValue_M_key} -autotext zvCMD_RANGE_MAX -folder ctvv_folder}	zvCMD_RANGE_MAX_sfKey
+zzMnvCmdCgmax_cfgValue_M_key	{#insert {#insert zzMnvCmdCgmax_cfgVarPhrsName_M_key}}	zzMnvCmdCgmax_cfgValue_M_key
+zzMnvCmdRangeMax_cvtFromAbrv1C	Cgmax	zzMnvCmdRangeMax_cvtFromAbrv1C
+zzMnvCmdCgmax_cfgVarPNmPost	RangeMax	zzMnvCmdCgmax_cfgVarPNmPost
+zzMnvCmdCgmax_intrnlVarNm	zvCMD_RANGE_MAX	zzMnvCmdCgmax_intrnlVarNm
+zzMnvCmdCgmax_cfgVarPhrsName_M_key	zz{#insert zzMnvCmdProjectAbrv1C}{#insert zzMnvCmdDataTypeAbrv1C}{#insert zvCMD_PNMV_1C}{#insert zzMnvCmdCgmax_cfgVarPNmPost}	zzMnvCmdCgmax_cfgVarPhrsName_M_key
+zzMnvCmdCgmax_helpForDlg	The maximum number for this MINV~Command. Must be greater~than~or~equal~to [RangeMin]. Must ALSO be less~than~or~equal~to the MINV~Variable's [RangeMax].	zzMnvCmdCgmax_helpForDlg
+zzMnvCmdCgmax_valuePrintable	yes	zzMnvCmdCgmax_valuePrintable
+zzMnvCmdCgmax_validateValuePhrsNm		zzMnvCmdCgmax_validateValuePhrsNm
+zzMnvCmdCgmax_nkcvListNum	10	zzMnvCmdCgmax_nkcvListNum
+zzMnvCmdCgmax_keyCVTFromAbrv1C	{#insert zzMnvCmdPrivKeyCVTFromAbrv1C}	zzMnvCmdCgmax_keyCVTFromAbrv1C
+zvCVT_FRMV_1C_stMnvCmdCgmax	{#SETPHRASE -description zvCVT_FRMV_1C -content {#insert zzMnvCmdRangeMax_cvtFromAbrv1C} -autotext zvCVT_FRMV_1C -folder ctvv_folder}	zvCVT_FRMV_1C_stMnvCmdCgmax

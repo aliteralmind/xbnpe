@@ -1,0 +1,7 @@
+zTpkcHelpAbrvLC	help	zTpkcHelpAbrvLC
+zTpkcHelpAllCmdNamesTCQbl	[Help][HelpFAQ][HelpOrdering][HelpSupport][HelpTip][HelpWWW]	zTpkcHelpAllCmdNamesTCQbl
+zTpkcHelpCmdCount	6	zTpkcHelpCmdCount
+zTpkcHelpHasUserCrtdCmds_yes		zTpkcHelpHasUsrCrtdCmds_yes
+zTpkcHelpStpsFrmCatListTop	{#insert zHH}{#insert z5ThnTSlp}	zTpkcHelpStpsFrmCatListTop
+zTpkcHelpNameLC	help	zTpkcHelpNameLC
+

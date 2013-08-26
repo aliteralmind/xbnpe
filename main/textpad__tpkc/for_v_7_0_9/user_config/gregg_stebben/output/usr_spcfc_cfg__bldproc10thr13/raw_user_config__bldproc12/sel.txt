@@ -1,0 +1,10 @@
+SelectAll	0
+SelectBeginBlock	0
+SelectBeginLine	0
+SelectBeginStream	1	\\\{#insert zCpQQ\\\}\\\{#sleep 25\\\}\\\{#insert zSS\\\}
+SelectCancel	0
+SelectEnd	0
+SelectLine	0
+SelectParagraph	0
+SelectSwapEnds	0
+SelectWord	0

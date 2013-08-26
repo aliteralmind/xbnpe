@@ -1,0 +1,10 @@
+zzModifierCount_M_ynlw	{#insert zzModifierCount_{#insert zvLWIN_YES_OR_NO}lw}	zzModifierCount_M_ynlw
+zzModifierCount_nolw -- Not including 'no modifier'	7	zzModifierCount_nolw
+zzModifierCount_yeslw	7	zzModifierCount_yeslw
+zzXkpPathCmdNonNumPad	{#insert zXPROOT_DIR_allModForChrsInput}xkp_raw__cmd_keys_non_numpad.txt	zzXkpPathCmdNonNumPad
+zzXkpPathCmdNumPad	{#insert zXPROOT_DIR_allModForChrsInput}xkp_raw__cmd_keys_numpad.txt	zzXkpPathCmdNumPad
+zzXkpPathDigits	{#insert zXPROOT_DIR_allModForChrsInput}xkp_raw__digits.txt	zzXkpPathDigits
+zzXkpPathFunctionKeys	{#insert zXPROOT_DIR_allModForChrsInput}xkp_raw__function_F_keys.txt	zzXkpPathFunctionKeys
+zzXkpPathLettersAtoM	{#insert zXPROOT_DIR_allModForChrsInput}xkp_raw__letters_a_to_m.txt	zzXkpPathLettersAtoM
+zzXkpPathLettersNtoZ	{#insert zXPROOT_DIR_allModForChrsInput}xkp_raw__letters_n_to_z.txt	zzXkpPathLettersNtoZ
+zzXkpPathPrntblNonNumLtr	{#insert zXPROOT_DIR_allModForChrsInput}xkp_raw__printable_non_digit_non_letter.txt	zzXkpPathPrntblNonNumLtr

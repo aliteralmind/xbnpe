@@ -1,0 +1,43 @@
+OUTPUT_FILE_DIR={#insert zXPROOT_DIR_AG_peBuildMinv}config_vars__var
+PROJECT_ABRV_1C=Mnv
+DATA_TYPE_ABRV_1C=Var
+
+(*LPD CV-TYPE: PRIVATE KEY*)
+Vpn1
+PNAbrv1C
+zvVAR_PNMV_1C
+zzVldtVpn1NotES_M_self
+The MINV_Variable's phrase_name abbreviation, where only the first character is uppercase ('1C'). This is the internal_only, unique identifier for each MINV_Variable instance, distiguishing the phrase names of one variable's configuration_variables from another's.
+
+(*LPD CV-TYPE: PUBLIC KEY*)
+Vrv1
+Abrv1C
+zvVAR_ABRV_1C
+__VALUE_NOT_VLDTD__
+The MINV_Variable abbreviation, used publicly to uniquely identify this MINV_Variable. Only the first character is uppercase. Note that this cv_types internal_variable name MUST be the same as the MINV_Command's Varv1 cv_type.
+
+(*ALL LPD NON-KEY CV-TYPES BELOW THIS LINE*)
+
+(**)
+Vivn
+IntrnlVarName
+zvVAR_IVAR_NAME
+__VALUE_PRINTABLE__
+__VALUE_NOT_VLDTD__
+The full internal_only variable_name for this MINV_Variable. It is recommended that this start with 'zv' and end with all_caps words divided by underscores.
+
+(**)
+Vgmin
+RangeMin
+zvVAR_RANGE_MIN
+__VALUE_PRINTABLE__
+zzMnvVldtVgminGT0_M_self
+The minimum number for the range of [intrnl_var_name]_st# phrases. For example, zvCHARS_LEFT_COUNT_st5. Must be between 1 and [RangeMax], inclusive. Must ALSO be less_than_or_equal_to EVERY MINV_Command's [RangeMin]==although this latter requirement is not programatically enforced.
+
+(**)
+Vgmax
+RangeMax
+zvVAR_RANGE_MAX
+__VALUE_PRINTABLE__
+zzMnvVldtVarRange_M_minMx
+The maximum number for the range of [var_name]_st# phrases. Must be greater_than_or_equal_to [RangeMin]. Must ALSO be greater_than_or_equal_to EVERY MINV_Command's [RangeMax]==although this latter requirement is not programatically enforced.

@@ -1,0 +1,73 @@
+(*
+   *DUPLICATE* this document, unindent every line in it, then import it with the following settings:
+      - No prefix
+      - Manual confirmation
+      - Assign the key-command (hotkey) to the first phrase
+   **All these phrases must be manually maintained.
+*)
+(*
+   Required by phrase-creator-ddmenu-utils...START
+      PM_DDMENU_DIR_ID=tpkc
+   Required by phrase-creator-ddmenu-utils...END
+*)
+(*
+Phrase-creators: XBN-PhraseExpress -- xh [zCASpDNR_SLASH]   .      (*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+Phrase-creators: XBN-PhraseExpress -- xh   .   zXbnpeCmdPopupRoot
+   Phrase-creators: Char, word, line, para, doc, file -- xhc   .   xh
+    1. Char -- xhcc   .   xhc
+*)
+			PC: XBNPE-Key-Presses (XKP) -- xhcck	.	xhcc
+				TextPad-bootstraps -- xhcckb	.	xhcck
+					testtpbsxkp: zTestAllXKPTextPadBootstraps	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content testtpbsxkp:zTestAllXKPTextPadBootstraps -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhcckb
+					zTPBtstrpEscKCGetOrCIES_M_bspm	\\\{#insert zTPBtstrpEscKCGetOrCIES_M_bspm\\\}	xhcckb
+					zTPBtstrpEscKC_M_bspm	\\\{#insert zTPBtstrpEscKC_M_bspm\\\}	xhcckb
+					zTPBtstrpEscPhrsNm_M_bspm	\\\{#insert zTPBtstrpEscPhrsNm_M_bspm\\\}	xhcckb
+					zTPBtstrpTPKeysKCGetOrCIES_M_bspm	\\\{#insert zTPBtstrpTPKeysKCGetOrCIES_M_bspm\\\}	xhcckb
+					zTPBtstrpTPKeysPhrsNm_M_bspm	\\\{#insert zTPBtstrpTPKeysPhrsNm_M_bspm\\\}	xhcckb
+					zTPBtstrpTPKeys_M_bspm	\\\{#insert zTPBtstrpTPKeys_M_bspm\\\}	xhcckb
+				buildxkp: zBuildAllXKPPhrasesWTypePromptActual	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content buildxkp:zBuildAllXKPPhrasesWTypePromptActual -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhcck
+				buildxkptest: zBuildAllXKPPhrasesWTypePromptTestOnly	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content buildxkptest:zBuildAllXKPPhrasesWTypePromptTestOnly -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhcck
+				zXPROOT_DIR_AG_xkpOutputRoot	\\\{#insert zXPROOT_DIR_AG_xkpOutputRoot\\\}	xhcck
+				zXPROOT_DIR_allModForChrsInput	\\\{#insert zXPROOT_DIR_allModForChrsInput\\\}	xhcck
+				All unmodified keys -- xhcckp (add '[C][A][S][L*]p' btw 'z' & key-name)	.	xhcck
+					Digit: z[all-caps-spelled-digit] (ex: 'zFIVE')	.	xhcckp
+					Letter: z[A-Z][letter-repeated] (ex: 'zAA')	.	xhcckp
+					Non-printable keys -- xhcckpn	.	xhcckp
+						zBKSP	\\\{#insert zBKSP\\\}	xhcckpn
+						zBREAK	\\\{#insert zBREAK\\\}	xhcckpn
+						zDEL	\\\{#insert zDEL\\\}	xhcckpn
+						zDOWN	\\\{#insert zDOWN\\\}	xhcckpn
+						zEND	\\\{#insert zEND\\\}	xhcckpn
+						zENTER	\\\{#insert zENTER\\\}	xhcckpn
+						zESC	\\\{#insert zESC\\\}	xhcckpn
+						zHOME	\\\{#insert zHOME\\\}	xhcckpn
+						zINS	\\\{#insert zINS\\\}	xhcckpn
+						zLEFT	\\\{#insert zLEFT\\\}	xhcckpn
+						zPGDN	\\\{#insert zPGDN\\\}	xhcckpn
+						zPGUP	\\\{#insert zPGUP\\\}	xhcckpn
+						zPRTSC	\\\{#insert zPRTSC\\\}	xhcckpn
+						zRIGHT	\\\{#insert zRIGHT\\\}	xhcckpn
+						zSPACE	\\\{#insert zSPACE\\\}	xhcckpn
+						zTAB	\\\{#insert zTAB\\\}	xhcckpn
+						zUP	\\\{#insert zUP\\\}	xhcckpn
+					Non-printable functions: zF[1-12]	.	xhcckp
+					Number pad -- xhcckpm -- zNUM[1-12]	.	xhcckp
+						zNUMADD	\\\{#insert zNUMADD\\\}	xhcckpm
+						zNUMDECIMAL	\\\{#insert zNUMDECIMAL\\\}	xhcckpm
+						zNUMDIVIDE	\\\{#insert zNUMDIVIDE\\\}	xhcckpm
+						zNUMMULTIPLY	\\\{#insert zNUMMULTIPLY\\\}	xhcckpm
+						zNUMSUBTRACT	\\\{#insert zNUMSUBTRACT\\\}	xhcckpm
+					Other printable -- xhcckpo	.	xhcckp
+						zACCENT	\\\{#insert zACCENT\\\}	xhcckpo
+						zASTERISK	\\\{#insert zASTERISK\\\}	xhcckpo
+						zCLOSE_SQUAREB	\\\{#insert zCLOSE_SQUAREB\\\}	xhcckpo
+						zCOMMA	\\\{#insert zCOMMA\\\}	xhcckpo
+						zDASH	\\\{#insert zDASH\\\}	xhcckpo
+						zDNR_SLASH	\\\{#insert zDNR_SLASH\\\}	xhcckpo
+						zEQUALS	\\\{#insert zEQUALS\\\}	xhcckpo
+						zOPEN_SQUAREB	\\\{#insert zOPEN_SQUAREB\\\}	xhcckpo
+						zPERIOD	\\\{#insert zPERIOD\\\}	xhcckpo
+						zQUOTE	\\\{#insert zQUOTE\\\}	xhcckpo
+						zSEMI_COLON	\\\{#insert zSEMI_COLON\\\}	xhcckpo
+						zUPR_SLASH	\\\{#insert zUPR_SLASH\\\}	xhcckpo
+

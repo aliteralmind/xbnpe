@@ -1,0 +1,10 @@
+__**WARNING**__: All phrases in this folder were created by 'plpdcf'. DO NOT EDIT.	.		(*Extra tab to allow for empty-string autotext*)
+zzMnvVarOutputFileDir	R:\jeffy\programming\sandbox\macros\xbnpe_auto_generated\phrase_express\build_minv\config_vars__var	zzMnvVarOutputFileDir
+zzMnvVarProjectAbrv1C	Mnv	zzMnvVarProjectAbrv1C
+zzMnvVarDataTypeAbrv1C	Var	zzMnvVarDataTypeAbrv1C
+zzMnvVarPrivKeyCVTFromAbrv1C	Vpn1	zzMnvVarPrivKeyCVTFromAbrv1C
+zzMnvVarPubKeyCVTFromAbrv1C	Vrv1	zzMnvVarPubKeyCVTFromAbrv1C
+zzMnvVarNonKeyVarCount	3	zzMnvVarNonKeyVarCount
+zzMnvVarNkcv1CVTFromAbrv1C	Vivn	zzMnvVarNkcv1CVTFromAbrv1C
+zzMnvVarNkcv2CVTFromAbrv1C	Vgmin	zzMnvVarNkcv2CVTFromAbrv1C
+zzMnvVarNkcv3CVTFromAbrv1C	Vgmax	zzMnvVarNkcv3CVTFromAbrv1C

@@ -1,0 +1,33 @@
+mwcbrgn -- Names	{#insert sccbmrgprompt}{#insert zYDownUp}	mwcbrgn
+mwcbrgt -- Types	{#insert sccbmrgprompt}{#insert zYDownUp}	mwcbrgt
+mwcbrgy -- tYpes	{#insert sccbmrgprompt}{#insert zYDownUp}	mwcbrgy
+mwccbg -- full params (types, generics and names)	{#insert sccbmcgprompt}{#insert zYDownUp}	mwccbg
+mwccbgn -- Names only	{#insert sccbmcgprompt}{#insert zYDownUp}	mwccbgn
+mwccbgt -- Types only (no generics)	{#insert sccbmcgprompt}{#insert zYDownUp}	mwccbgt
+mwccbgy -- tYpes only (with generics)	{#insert sccbmcgprompt}{#insert zYDownUp}	mwccbgy
+mwccbp -- full	{#insert sccbmcpprompt}{#insert zYDownUp}	mwccbp
+mwccbpn -- Names	{#insert sccbmcpprompt}{#insert zYDownUp}	mwccbpn
+mwccbpt -- Types	{#insert sccbmcpprompt}{#insert zYDownUp}	mwccbpt
+mwccbpy -- tYpes	{#insert sccbmcpprompt}{#insert zYDownUp}	mwccbpy
+mwccbrg -- full	{#insert sccbmcrgprompt}{#insert zYDownUp}	mwccbrg
+mwccbrgn -- Names	{#insert sccbmcrgprompt}{#insert zYDownUp}	mwccbrgn
+mwccbrgt -- Types	{#insert sccbmcrgprompt}{#insert zYDownUp}	mwccbrgt
+mwccbrgy -- tYpes	{#insert sccbmcrgprompt}{#insert zYDownUp}	mwccbrgy
+sccbg -- func-name and params (siG)	{#insert zNameInCBFindFuncFdlgRE}{#insert zjreFuncNameParams0orMore}{#insert zFindGoRECloseCopy}	sccbg
+sccbgprompt	{#insert sccbg}{#insert zCorrectFuncPrompt}	sccbgprompt
+sccbmcg	{#insert zYmarkCoded}{#insert sccbg}	sccbmcg
+sccbmcgprompt	{#insert sccbmcg}{#insert zCorrectFuncPrompt}	sccbmcgprompt
+sccbmcp	{#insert zYmarkCoded}{#insert sccbp}	sccbmcp
+sccbmcpprompt	{#insert sccbmcp}{#insert zCorrectFuncPrompt}	sccbmcpprompt
+sccbmcrg	{#insert zYmarkCoded}{#insert sccbrg}	sccbmcrg
+sccbmcrgprompt	{#insert sccbmcrg}{#insert zCorrectFuncPrompt}	sccbmcrgprompt
+sccbmg	{#insert zYmark}{#insert sccbg}	sccbmg
+sccbmgprompt	{#insert sccbmg}{#insert zCorrectFuncPrompt}	sccbmgprompt
+sccbmp	{#insert zYmark}{#insert sccbp}	sccbmp
+sccbmpprompt	{#insert sccbmp}{#insert zCorrectFuncPrompt}	sccbmpprompt
+sccbmrg	{#insert zYmark}{#insert sccbrg}	sccbmrg
+sccbmrgprompt	{#insert sccbmrg}{#insert zCorrectFuncPrompt}	sccbmrgprompt
+sccbp -- Params (open-paren)	{#insert zNameInCBFindFuncFdlgRE}{#insert zjreParameters}{#insert zFindGoRECloseCopy}	sccbp
+sccbpprompt	{#insert sccbp}{#insert zCorrectFuncPrompt}	sccbpprompt
+sccbrg -- Return type and siG	{#insert zNameInCBFindRetTypeFdlgRE}{#insert zFindDlgClose}{#insert zFdlgXSSTCloseParenCopy}	sccbrg
+sccbrgprompt	{#insert sccbrg}{#insert zCorrectFuncPrompt}	sccbrgprompt

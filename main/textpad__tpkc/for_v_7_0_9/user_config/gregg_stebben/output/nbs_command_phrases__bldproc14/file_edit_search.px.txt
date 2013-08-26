@@ -1,0 +1,46 @@
+zTPFileCloseAll	{#insert zCpF12}{#sleep 25}{#insert zCpF9}	zTPFileCloseAll
+zTPFileOpenSelPath	{#insert zCASpOO}	zTPFileOpenSelPath
+zTPFileManager	{#insert zCASpF12}{#sleep 25}{#insert zF9}	zTPFileManager
+zTPFilePrintAll	{#insert zCASpPP}	zTPFilePrintAll
+zTPFileSaveAll	{#insert zCpF12}{#sleep 25}{#insert zCpF12}	zTPFileSaveAll
+zTPFileSaveAndClose	{#insert zCASpF12}{#sleep 25}{#insert zCASpF9}	zTPFileSaveAndClose
+zTPFileSaveAs	{#insert zSpF12}{#sleep 25}{#insert zSpF12}	zTPFileSaveAs
+zTPWorkspaceSaveAs	{#insert zASpOO}	zTPWorkspaceSaveAs
+zTPDeleteL1c	{#insert zCSpWW}	zTPDeleteL1c
+zTPTitleCase	{#insert zCASpTWO}	zTPTitleCase
+zTPCopyAppend	{#insert zApJJ}	zTPCopyAppend
+zTPCopyFileName	{#insert zCSpFF}	zTPCopyFileName
+zTPCutAppend	{#insert zApQQ}	zTPCutAppend
+zTPDeleteR1c	{#insert zCSpVV}	zTPDeleteR1c
+zTPDeleteLine	{#insert zCpFF}	zTPDeleteLine
+zTPDelToEndOfLine	{#insert zCSpDEL}	zTPDelToEndOfLine
+zTPBookmarkDeleteAll	{#insert zCASpDEL}	zTPBookmarkDeleteAll
+zTPDeleteL1w	{#insert zCSpMM}	zTPDeleteL1w
+zTPDeleteR1w	{#insert zCSpZZ}	zTPDeleteR1w
+zTPUnindent	{#insert zCSpCOMMA}	zTPUnindent
+zTPIndent	{#insert zCSpPERIOD}	zTPIndent
+zTPToggleCase	{#insert zCASpONE}	zTPToggleCase
+zTPLowerCase	{#insert zApTWO}	zTPLowerCase
+zTPRedo	{#insert zApSEMI_COLON}	zTPRedo
+zTPReformatSelection	{#insert zCASpF11}	zTPReformatSelection
+zTPUndo	{#insert zCpSEMI_COLON}	zTPUndo
+zTPUpperCase	{#insert zApONE}	zTPUpperCase
+zTPBookmarkClearAll	{#insert zCASpDASH}	zTPBookmarkClearAll
+zTPBookmarkInvertAll	{#insert zASpPERIOD}	zTPBookmarkInvertAll
+zTPBookmarkGTNext	{#insert zApPP}	zTPBookmarkGTNext
+zTPBookmarkGTPrev	{#insert zApCOMMA}	zTPBookmarkGTPrev
+zTPBookmarkToggle	{#insert zApPERIOD}	zTPBookmarkToggle
+zTPIncrementalFind	{#insert zSpF3}	zTPIncrementalFind
+zTPMatchBracket	{#insert zCpDNR_SLASH}	zTPMatchBracket
+zTPMatchBracketExtend	{#insert zCSpDNR_SLASH}	zTPMatchBracketExtend
+zTPFindFlagMCoff	{#insert zCASpEQUALS}	zTPFindFlagMCoff
+zTPFindFlagMCon	{#insert zASpEQUALS}	zTPFindFlagMCon
+zTPFindFlagWWoff	{#insert zCASpWW}	zTPFindFlagWWoff
+zTPFindFlagWWon	{#insert zASpWW}	zTPFindFlagWWon
+zTPFindFlagREoff	{#insert zCASpCLOSE_SQUAREB}	zTPFindFlagREoff
+zTPFindFlagREon	{#insert zASpCLOSE_SQUAREB}	zTPFindFlagREon
+zTPFFindDlgOpen	{#insert zCpF5}	zTPFFindDlgOpen
+zTPFindPrev	{#insert zF2}	zTPFindPrev
+zTPGTDlgOpen	{#insert zCSpGG}	zTPGTDlgOpen
+zTPFFindOpenAll	{#insert zCpF12}{#sleep 25}{#insert zCpF8}	zTPFFindOpenAll
+zTPReplaceNext	{#insert zSpF5}	zTPReplaceNext

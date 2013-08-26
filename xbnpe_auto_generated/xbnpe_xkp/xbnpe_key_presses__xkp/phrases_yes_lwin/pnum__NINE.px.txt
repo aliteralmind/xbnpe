@@ -1,0 +1,8 @@
+Alt+LWin+NINE -- zALpNINE	{#ALT {#LWIN -chars 9}}{#insert zTSlp}	zALpNINE
+Alt+Shift+LWin+NINE -- zASLpNINE	{#ALT {#SHIFT {#LWIN -chars 9}}}{#insert zTSlp}	zASLpNINE
+Ctrl+Alt+LWin+NINE -- zCALpNINE	{#CTRL {#ALT {#LWIN -chars 9}}}{#insert zTSlp}	zCALpNINE
+Ctrl+Alt+Shift+LWin+NINE -- zCASLpNINE	{#CTRL {#ALT {#SHIFT {#LWIN -chars 9}}}}{#insert zTSlp}	zCASLpNINE
+Ctrl+LWin+NINE -- zCLpNINE	{#CTRL {#LWIN -chars 9}}{#insert zTSlp}	zCLpNINE
+Ctrl+Shift+LWin+NINE -- zCSLpNINE	{#CTRL {#SHIFT {#LWIN -chars 9}}}{#insert zTSlp}	zCSLpNINE
+LWin+NINE -- zLpNINE	{#LWIN -chars 9}{#insert zTSlp}	zLpNINE
+Shift+LWin+NINE -- zSLpNINE	{#SHIFT {#LWIN -chars 9}}{#insert zTSlp}	zSLpNINE

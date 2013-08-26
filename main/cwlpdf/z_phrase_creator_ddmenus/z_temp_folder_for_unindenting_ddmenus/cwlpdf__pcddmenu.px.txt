@@ -1,0 +1,119 @@
+(*
+*DUPLICATE* this document, unindent every line in it, then import it with the following settings:
+- No prefix
+- Manual confirmation
+- Assign the key-command (hotkey) to the first phrase
+**All these phrases must be manually maintained.
+*)
+(*
+Required by phrase-creator-ddmenu-utils...START
+PM_DDMENU_DIR_ID=cwlpdf
+Required by phrase-creator-ddmenu-utils...END
+*)
+(*
+FROM xbnpe_phrase_creator_popup_heirarchy_base.px.txt:
+
+Phrase-creators: XBN-PhraseExpress -- Call 'xh'   .   zXbnpeCmdPopupRoot
+Phrase-creators: Char, word, line, para, doc, file -- xhc   .   xh
+(*    1. Char -- xhcc   .   xhc*)
+(*       Alter -- xhcca   .   xhcc*)
+zDEL2 [2-4]	\\\{#insert zDEL2\\\}	xhcca
+zBKSP2 [2-4]	\\\{#insert zBKSP2\\\}	xhcca
+(*       Move -- xhccm   .   xhcc*)
+zLEFT2 [2-5]	\\\{#insert zLEFT2\\\}	xhccm
+zRIGHT2 [2-5]	\\\{#insert zRIGHT2\\\}	xhccm
+(*       Select -- xhccs   .   xhcc*)
+zSelectL2c [2-3]	\\\{#insert zSelectL2c\\\}	xhccs
+zSelectR2c [2-3]	\\\{#insert zSelectL2c\\\}	xhccs
+(*    2. Word -- xhcw   .   xhc*)
+(*       Alter -- xhcwa   .   xhcw*)
+(*          Cut, delete -- xhcwax   .   xhcwa*)
+(*          Other -- xhcwat   .   xhcwa*)
+(*       Move -- xhcwm   .   xhcw*)
+zEndMoveR1L1w	\\\{#insert zEndMoveR1L1w\\\}	xhcwm
+zHomeMoveR1L1w	\\\{#insert zHomeMoveR1L1w\\\}	xhcwm
+zMoveL1R1w	\\\{#insert zMoveL1R1w\\\}	xhcwm
+zMoveR1L1w	\\\{#insert zMoveR1L1w\\\}	xhcwm
+(*       Select & copy -- xhcws   .   xhcw*)
+(*          Select -- xhcwss   .   xhcws*)
+zHomeMoveR1wSelL1w	\\\{#insert zHomeMoveR1wSelL1w\\\}	xhcwss
+zSelectL1R1w	\\\{#insert zSelectL1R1w\\\}	xhcwss
+zSelectR1L1w	\\\{#insert zSelectR1L1w\\\}	xhcwss
+zSelectR1L1w	\\\{#insert zSelectR1L1w\\\}	xhcwss
+(*          Select-copy -- xhcwsp   .   xhcws*)
+zHomeMoveR1wSelCopyL1w	\\\{#insert zHomeMoveR1wSelCopyL1w\\\}	xhcwsp
+(*          Copy -- xhcwsc   .   xhcws*)
+zCopyL1w	\\\{#insert zCopyL1w\\\}	xhcwsc
+zCopyR1w	\\\{#insert zCopyR1w\\\}	xhcwsc
+(*    3. Line -- xhcl   .   xhc*)
+(*       Alter -- xhcla   .   xhcl*)
+(*          Cut, delete -- xhclax   .   xhcla*)
+zCutEntireLine	\\\{#insert zCutEntireLine\\\}	xhclax
+zCutEntireLineNoNL	\\\{#insert zCutEntireLineNoNL\\\}	xhclax
+zCutToLineEnd	\\\{#insert zCutToLineEnd\\\}	xhclax
+zCutToLineEndBksp	\\\{#insert zCutToLineEndBksp\\\}	xhclax
+zCutToLineEndDel	\\\{#insert zCutToLineEndDel\\\}	xhclax
+zCutToLineHome	\\\{#insert zCutToLineHome\\\}	xhclax
+zCutToLineHomeBksp	\\\{#insert zCutToLineHomeBksp\\\}	xhclax
+zCutToLineHomeDel	\\\{#insert zCutToLineHomeDel\\\}	xhclax
+zDeleteToLineEnd	\\\{#insert zDeleteToLineEnd\\\}	xhclax
+(*          Indent -- xhclai   .   xhcla*)
+zCompletelyUnindentSelection	\\\{#insert zCompletelyUnindentSelection\\\}	xhclai
+zCompletelyUnindentDocument	\\\{#insert zCompletelyUnindentDocument\\\}	xhclai
+zzMidRplcREIndentTbSpcToNothing	\\\{#insert zzMidRplcREIndentTbSpcToNothing\\\}	xhclai
+(*       Select/copy -- xhclc   .   xhcl*)
+Copy -- xhclcc	.	xhclc
+zClearCBCopyToLineEndGTNext	\\\{#insert zClearCBCopyToLineEndGTNext\\\}	xhclcc
+zCopyEntireLine	\\\{#insert zCopyEntireLine\\\}	xhclcc
+zCopyEntireLineNoNL	\\\{#insert zCopyEntireLineNoNL\\\}	xhclcc
+zCopyToLineEnd	\\\{#insert zCopyToLineEnd\\\}	xhclcc
+zCopyToLineEndGTNext	\\\{#insert zCopyToLineEndGTNext\\\}	xhclcc
+zCopyToLineEndGTPost	\\\{#insert zCopyToLineEndGTPost\\\}	xhclcc
+zCopyToLineHome	\\\{#insert zCopyToLineHome\\\}	xhclcc
+zCopyToLineHomeGTPre	\\\{#insert zCopyToLineHomeGTPre\\\}	xhclcc
+Select-copy -- xhclccs	.	xhclcc
+zSelCopyEntireLineNoNL	\\\{#insert zSelCopyEntireLineNoNL\\\}	xhclccs
+zSelCopyToLineEnd	\\\{#insert zSelCopyToLineEnd\\\}	xhclccs
+zSelCopyToLineHome	\\\{#insert zSelCopyToLineHome\\\}	xhclccs
+zSelCopyUpThr1NonWS	\\\{#insert zSelCopyUpThr1NonWS\\\}	xhclccs
+zSelectEntireLine	\\\{#insert zSelectEntireLine\\\}	xhclc
+zSelectUpThr1NonWS	\\\{#insert zSelectUpThr1NonWS\\\}	xhclc
+(*       4. Para -- xhcp   .   xhc*)
+(*          Move -- xhcpm   .   xhcp*)
+zParaNotAtCol0_gtNonWSChar1_downREoff	\\\{#insert zParaNotAtCol0_gtNonWSChar1_downREoff\\\}	xhcpm
+zParaNotAt_gtEnd_downREoff	\\\{#insert zParaNotAt_gtEnd_downREoff\\\}	xhcpm
+zParaNotAt_gtStart_downREoff	\\\{#insert zParaNotAt_gtStart_downREoff\\\}	xhcpm
+(*          Select -- xhcps   .   xhcp*)
+zParaNotAtCol0_stNonWSChar1_downREoff	\\\{#insert zParaNotAtCol0_stNonWSChar1_downREoff\\\}	xhcps
+zParaNotAt_stEnd_downREoff	\\\{#insert zParaNotAt_stEnd_downREoff\\\}	xhcps
+zParaNotAt_stStart_downREoff	\\\{#insert zParaNotAt_stStart_downREoff\\\}	xhcpsxhcp
+(*          Clipboard -- xhcsb   .   xhcs
+Paste -- xhcsbp   .   xhcsb*)
+zPasteSpaceGTStart	\\\{#insert zPasteSpaceGTStart\\\}	xhcsbp
+(*       7. File -- xhcf   .   xhc*)
+ccdf: zCopySetCurrDirFileNameREoffDown* -- xhcff	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content ccdf:zCopySetCurrDirFileNameREoffDown -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhcf
+ccdr: zCopySetCurrDirREoffDown	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content ccdr:zCopySetCurrDirREoffDown -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhcff
+ccfn: zCopySetCurrFileNameREoffDown	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content ccfn:zCopySetCurrFileNameREoffDown -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhcff
+ccfne: zCopySetCurrFileNamePreExtREoffDown	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content ccfne:zCopySetCurrFileNamePreExtREoffDown -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhcff
+zCopyFileNameFromSaveAsDlg -- xhcfft	\\\{#insert zCopyFileNameFromSaveAsDlg\\\}	xhcff
+zCopyFileNameFromSaveAsDlgPasteIntoOpenDlg	\\\{#insert zCopyFileNameFromSaveAsDlgPasteIntoOpenDlg\\\}	xhcfft
+zCopyFileNameWPxTxtFromSaveAsDlg	\\\{#insert zCopyFileNameWPxTxtFromSaveAsDlg\\\}	xhcfft
+zGetCBPreDot	\\\{#insert zGetCBPreDot\\\}	xhcfft
+(*          Other -- xhcft   .   xhcf*)
+splitsave1ln: zzDupSplit1stLineFileNameMaster* -- xhcftl	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content splitsave1ln:zzDupSplit1stLineFileNameMaster -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhcft
+splitsave1lndemo	(*actnonly=splitsave1lndemo*){#SETPHRASE -description zvACTN_NM -content splitsave1lndemo -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhcftl
+(*          New -- xhcfn (and open-dup-close)   .   xhcf*)
+zDupCurrFileTextToNewCloseOrig	\\\{#insert zDupCurrFileTextToNewCloseOrig\\\}	xhcfn
+zDupCurrFileTextToNewFileEmptyCB	\\\{#insert zDupCurrFileTextToNewFileEmptyCB\\\}	xhcfn
+zUndo2DupCurrFileTextToNewFileCloseOrig	\\\{#insert zUndo2DupCurrFileTextToNewFileCloseOrig\\\}	xhcfn
+Var: zvDIRECTORY**	{#SETCLIPBOARD zvDIRECTORY}{#insert zzBalCBContainsVarNm}	xhcf
+Var: zvFILE_NAME**	{#SETCLIPBOARD zvFILE_NAME}{#insert zzBalCBContainsVarNm}	xhcf
+
+(*
+Phrase-creators: Other -- xho   .   xh
+XBNPE main directories -- xhoy   .   xho
+zROOT_DIR_XBNPE_PARENT -- xhoym   .   xhoy
+zROOT_DIR_XBNPE_MAIN -- xhoymm   .   xhoym*)
+zXPROOT_DIR_cwlpdf	\\\{#insert zXPROOT_DIR_cwlpdf\\\}	xhoymmc
+
+

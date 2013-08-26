@@ -1,0 +1,8 @@
+Alt+LWin+ONE -- zALpONE	{#ALT {#LWIN -chars 1}}{#insert zTSlp}	zALpONE
+Alt+Shift+LWin+ONE -- zASLpONE	{#ALT {#SHIFT {#LWIN -chars 1}}}{#insert zTSlp}	zASLpONE
+Ctrl+Alt+LWin+ONE -- zCALpONE	{#CTRL {#ALT {#LWIN -chars 1}}}{#insert zTSlp}	zCALpONE
+Ctrl+Alt+Shift+LWin+ONE -- zCASLpONE	{#CTRL {#ALT {#SHIFT {#LWIN -chars 1}}}}{#insert zTSlp}	zCASLpONE
+Ctrl+LWin+ONE -- zCLpONE	{#CTRL {#LWIN -chars 1}}{#insert zTSlp}	zCLpONE
+Ctrl+Shift+LWin+ONE -- zCSLpONE	{#CTRL {#SHIFT {#LWIN -chars 1}}}{#insert zTSlp}	zCSLpONE
+LWin+ONE -- zLpONE	{#LWIN -chars 1}{#insert zTSlp}	zLpONE
+Shift+LWin+ONE -- zSLpONE	{#SHIFT {#LWIN -chars 1}}{#insert zTSlp}	zSLpONE

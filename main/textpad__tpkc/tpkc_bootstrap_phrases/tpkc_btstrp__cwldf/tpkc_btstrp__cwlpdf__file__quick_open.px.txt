@@ -1,0 +1,10 @@
+zDirFileQuickOpenSlk_M_dirFnm	{#insert zvQOPEN_PAUSE_Y_stES}{#insert zDirFileQuickOpenSlk_M_dirFnmQopy}	zDirFileQuickOpenSlk_M_dirFnm
+zDirFilePauseQuickOpenSlk_M_dirFnm -- Needs zvDIRECTORY, zvFILE_NAME	{#insert zvQOPEN_PAUSE_Y_stYes}{#insert zDirFileQuickOpenSlk_M_dirFnmQopy}	zDirFilePauseQuickOpenSlk_M_dirFnm
+zDirFileQuickOpenSlk_M_dirFnmQopy -(*!*)- Needs zvDIRECTORY, zvFILE_NAME, zvQOPEN_PAUSE_Y	(*Only use this when it is KNOWN that AT LEAST the directory exists.*){#insert zTPFileQOpen}{#insert zvDIRECTORY}{#sleep 1000}{#insert zvFILE_NAME}{#insert {#COND -if {#insert zvQOPEN_PAUSE_Y_stYes} = yes -then zzDFQOpenPause_M_dirFnm -else z1slp}}{#sleep 1000}{#insert zENTER}{#sleep 1000}	zDirFileQuickOpenSlk_M_dirFnmQopy
+zDirFileQuickOpenSlk2_M_dirFnm	{#insert zDirFileQuickOpenSlk_M_dirFnm}{#sleep 1000}	zDirFileQuickOpenSlk2_M_dirFnm
+zDirFileQuickOpenSlk3_M_dirFnm	{#insert zDirFileQuickOpenSlk_M_dirFnm}{#sleep 2000}	zDirFileQuickOpenSlk3_M_dirFnm
+zDirFileQuickOpenSlk4_M_dirFnm	{#insert zDirFileQuickOpenSlk_M_dirFnm}{#sleep 3000}	zDirFileQuickOpenSlk4_M_dirFnm
+zDirFileQuickOpenSlk5_M_dirFnm	{#insert zDirFileQuickOpenSlk_M_dirFnm}{#sleep 4000}	zDirFileQuickOpenSlk5_M_dirFnm
+zvQOPEN_PAUSE_Y_stYes	{#SETPHRASE -description zvQOPEN_PAUSE_Y -content yes -autotext zvQOPEN_PAUSE_Y -folder ctvv_folder}	zvQOPEN_PAUSE_Y_stYes
+zvQOPEN_PAUSE_Y_stES	{#SETPHRASE -description zvQOPEN_PAUSE_Y -content -autotext zvQOPEN_PAUSE_Y -folder ctvv_folder}	zvQOPEN_PAUSE_Y_stES
+zzDFQOpenPause_M_dirFnm	{#MSGBOX -head Quick-open dir-file pause -text zDirFileQuickOpenSlk_M_dirFnm dir-file pause. zvQOPEN_PAUSE_Y=yes.  //  zvDIRECTORY='{#insert zvDIRECTORY}', zvFILE_NAME='{#insert zvFILE_NAME}'.  //  Press [OK] to proceed}	zzDFQOpenPause_M_dirFnm

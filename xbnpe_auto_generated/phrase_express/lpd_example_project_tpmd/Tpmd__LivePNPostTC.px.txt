@@ -1,0 +1,13 @@
+__**WARNING**__: All phrases in this folder were created by 'plpdcf'. DO NOT EDIT.	.		(*Extra tab to allow for empty-string autotext*)
+zvLIVE_PN_POST_TC_sfKey	{#SETPHRASE -description zvLIVE_PN_POST_TC -content {#insert zzTpmdLivt_cfgValue_M_key} -autotext zvLIVE_PN_POST_TC -folder ctvv_folder}	zvLIVE_PN_POST_TC_sfKey
+zzTpmdLivt_cfgValue_M_key	{#insert {#insert zzTpmdLivt_cfgVarPhrsName_M_key}}	zzTpmdLivt_cfgValue_M_key
+zzTpmdLivePNPostTC_cvtFromAbrv1C	Livt	zzTpmdLivePNPostTC_cvtFromAbrv1C
+zzTpmdLivt_cfgVarPNmPost	LivePNPostTC	zzTpmdLivt_cfgVarPNmPost
+zzTpmdLivt_intrnlVarNm	zvLIVE_PN_POST_TC	zzTpmdLivt_intrnlVarNm
+zzTpmdLivt_cfgVarPhrsName_M_key	zz{#insert zzTpmdProjectAbrv1C}{#insert zzTpmdDataTypeAbrv1C}{#insert zvPHRS_NM_ABRV_1C}{#insert zzTpmdLivt_cfgVarPNmPost}	zzTpmdLivt_cfgVarPhrsName_M_key
+zzTpmdLivt_helpForDlg	The postfix of the name of the phrase that triggers the actual macro in TextPad. This is the phrase called by other phrases.	zzTpmdLivt_helpForDlg
+zzTpmdLivt_valuePrintable	yes	zzTpmdLivt_valuePrintable
+zzTpmdLivt_validateValuePhrsNm		zzTpmdLivt_validateValuePhrsNm
+zzTpmdLivt_nkcvListNum	1	zzTpmdLivt_nkcvListNum
+zzTpmdLivt_keyCVTFromAbrv1C	{#insert zzTpmdPrivKeyCVTFromAbrv1C}	zzTpmdLivt_keyCVTFromAbrv1C
+zvCVT_FRMV_1C_stTpmdLivt	{#SETPHRASE -description zvCVT_FRMV_1C -content {#insert zzTpmdLivePNPostTC_cvtFromAbrv1C} -autotext zvCVT_FRMV_1C -folder ctvv_folder}	zvCVT_FRMV_1C_stTpmdLivt

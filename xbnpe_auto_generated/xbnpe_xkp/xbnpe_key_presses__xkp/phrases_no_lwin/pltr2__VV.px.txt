@@ -1,0 +1,8 @@
+VV -- zVV	{#NONE -chars v}{#insert zTSlp}	zVV
+Alt+VV -- zApVV	{#ALT -chars v}{#insert zTSlp}	zApVV
+Alt+Shift+VV -- zASpVV	{#ALT {#SHIFT -chars v}}{#insert zTSlp}	zASpVV
+Ctrl+VV -- zCpVV	{#CTRL -chars v}{#insert zTSlp}	zCpVV
+Ctrl+Alt+VV -- zCApVV	{#CTRL {#ALT -chars v}}{#insert zTSlp}	zCApVV
+Ctrl+Alt+Shift+VV -- zCASpVV	{#CTRL {#ALT {#SHIFT -chars v}}}{#insert zTSlp}	zCASpVV
+Ctrl+Shift+VV -- zCSpVV	{#CTRL {#SHIFT -chars v}}{#insert zTSlp}	zCSpVV
+Shift+VV -- zSpVV	{#SHIFT -chars v}{#insert zTSlp}	zSpVV

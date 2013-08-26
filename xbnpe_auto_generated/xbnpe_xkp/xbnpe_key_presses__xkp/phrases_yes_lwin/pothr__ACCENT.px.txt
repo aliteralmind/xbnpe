@@ -1,0 +1,8 @@
+Alt+LWin+ACCENT -- zALpACCENT	{#ALT {#LWIN -chars `}}{#insert zTSlp}	zALpACCENT
+Alt+Shift+LWin+ACCENT -- zASLpACCENT	{#ALT {#SHIFT {#LWIN -chars `}}}{#insert zTSlp}	zASLpACCENT
+Ctrl+Alt+LWin+ACCENT -- zCALpACCENT	{#CTRL {#ALT {#LWIN -chars `}}}{#insert zTSlp}	zCALpACCENT
+Ctrl+Alt+Shift+LWin+ACCENT -- zCASLpACCENT	{#CTRL {#ALT {#SHIFT {#LWIN -chars `}}}}{#insert zTSlp}	zCASLpACCENT
+Ctrl+LWin+ACCENT -- zCLpACCENT	{#CTRL {#LWIN -chars `}}{#insert zTSlp}	zCLpACCENT
+Ctrl+Shift+LWin+ACCENT -- zCSLpACCENT	{#CTRL {#SHIFT {#LWIN -chars `}}}{#insert zTSlp}	zCSLpACCENT
+LWin+ACCENT -- zLpACCENT	{#LWIN -chars `}{#insert zTSlp}	zLpACCENT
+Shift+LWin+ACCENT -- zSLpACCENT	{#SHIFT {#LWIN -chars `}}{#insert zTSlp}	zSLpACCENT

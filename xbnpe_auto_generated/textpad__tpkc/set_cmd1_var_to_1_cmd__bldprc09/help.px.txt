@@ -1,0 +1,6 @@
+zvCMD_ABRV_1C_sfHelp	{#SETPHRASE -description zvCMD_ABRV_1C -content Hmain -autotext zvCMD_ABRV_1C -folder ctvv_folder}	zvCMD_ABRV_1C_sfHelp
+zvCMD_ABRV_1C_sfHelpFAQ	{#SETPHRASE -description zvCMD_ABRV_1C -content Hfaq -autotext zvCMD_ABRV_1C -folder ctvv_folder}	zvCMD_ABRV_1C_sfHelpFAQ
+zvCMD_ABRV_1C_sfHelpOrdering	{#SETPHRASE -description zvCMD_ABRV_1C -content Hrdr -autotext zvCMD_ABRV_1C -folder ctvv_folder}	zvCMD_ABRV_1C_sfHelpOrdering
+zvCMD_ABRV_1C_sfHelpSupport	{#SETPHRASE -description zvCMD_ABRV_1C -content Hsprt -autotext zvCMD_ABRV_1C -folder ctvv_folder}	zvCMD_ABRV_1C_sfHelpSupport
+zvCMD_ABRV_1C_sfHelpTip	{#SETPHRASE -description zvCMD_ABRV_1C -content Htip -autotext zvCMD_ABRV_1C -folder ctvv_folder}	zvCMD_ABRV_1C_sfHelpTip
+zvCMD_ABRV_1C_sfHelpWWW	{#SETPHRASE -description zvCMD_ABRV_1C -content Hwww -autotext zvCMD_ABRV_1C -folder ctvv_folder}	zvCMD_ABRV_1C_sfHelpWWW

@@ -1,0 +1,8 @@
+Alt+LWin+LEFT -- zALpLEFT	{#ALT {#LWIN {#LEFT}}}{#insert zTSlp}	zALpLEFT
+Alt+Shift+LWin+LEFT -- zASLpLEFT	{#ALT {#SHIFT {#LWIN {#LEFT}}}}{#insert zTSlp}	zASLpLEFT
+Ctrl+Alt+LWin+LEFT -- zCALpLEFT	{#CTRL {#ALT {#LWIN {#LEFT}}}}{#insert zTSlp}	zCALpLEFT
+Ctrl+Alt+Shift+LWin+LEFT -- zCASLpLEFT	{#CTRL {#ALT {#SHIFT {#LWIN {#LEFT}}}}}{#insert zTSlp}	zCASLpLEFT
+Ctrl+LWin+LEFT -- zCLpLEFT	{#CTRL {#LWIN {#LEFT}}}{#insert zTSlp}	zCLpLEFT
+Ctrl+Shift+LWin+LEFT -- zCSLpLEFT	{#CTRL {#SHIFT {#LWIN {#LEFT}}}}{#insert zTSlp}	zCSLpLEFT
+LWin+LEFT -- zLpLEFT	{#LWIN {#LEFT}}{#insert zTSlp}	zLpLEFT
+Shift+LWin+LEFT -- zSLpLEFT	{#SHIFT {#LWIN {#LEFT}}}{#insert zTSlp}	zSLpLEFT

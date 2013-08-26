@@ -1,0 +1,8 @@
+FF -- zFF	{#NONE -chars f}{#insert zTSlp}	zFF
+Alt+FF -- zApFF	{#ALT -chars f}{#insert zTSlp}	zApFF
+Alt+Shift+FF -- zASpFF	{#ALT {#SHIFT -chars f}}{#insert zTSlp}	zASpFF
+Ctrl+FF -- zCpFF	{#CTRL -chars f}{#insert zTSlp}	zCpFF
+Ctrl+Alt+FF -- zCApFF	{#CTRL {#ALT -chars f}}{#insert zTSlp}	zCApFF
+Ctrl+Alt+Shift+FF -- zCASpFF	{#CTRL {#ALT {#SHIFT -chars f}}}{#insert zTSlp}	zCASpFF
+Ctrl+Shift+FF -- zCSpFF	{#CTRL {#SHIFT -chars f}}{#insert zTSlp}	zCSpFF
+Shift+FF -- zSpFF	{#SHIFT -chars f}{#insert zTSlp}	zSpFF

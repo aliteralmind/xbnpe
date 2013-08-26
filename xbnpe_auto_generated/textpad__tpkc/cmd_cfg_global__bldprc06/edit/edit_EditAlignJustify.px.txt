@@ -1,0 +1,8 @@
+zTpkcEditAlignJustifyAbrv1C	Ealj	zTpkcEditAlignJustifyAbrv1C
+zTpkcEaljCmdNameTC	EditAlignJustify	zTpkcEaljCmdNameTC
+zTpkcEaljDfltPhrsNm	zTPAlignJustify	zTpkcEaljDfltPhrsNm
+zTpkcEaljCatForCmdAbrvLC	edit	zTpkcEaljCatForCmdAbrvLC
+zTpkcEaljCmdType_mcrTl		zTpkcEaljCmdType_mcrTl
+zTpkcEaljIsBtstrp_yes		zTpkcEaljIsBtstrp_yes
+zTpkcEaljDfltPostKcSlpMils	10	zTpkcEaljDfltPostKcSlpMils
+zTpkcEaljStpsFrmCmdListTop	{#insert zDOWN}	zTpkcEaljStpsFrmCmdListTop

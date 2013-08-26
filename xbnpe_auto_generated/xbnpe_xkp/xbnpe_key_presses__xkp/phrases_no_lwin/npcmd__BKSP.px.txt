@@ -1,0 +1,8 @@
+BKSP -- zBKSP	{#BKSP}{#insert zTSlp}	zBKSP
+Alt+BKSP -- zApBKSP	{#ALT {#BKSP}}{#insert zTSlp}	zApBKSP
+Alt+Shift+BKSP -- zASpBKSP	{#ALT {#SHIFT {#BKSP}}}{#insert zTSlp}	zASpBKSP
+Ctrl+BKSP -- zCpBKSP	{#CTRL {#BKSP}}{#insert zTSlp}	zCpBKSP
+Ctrl+Alt+BKSP -- zCApBKSP	{#CTRL {#ALT {#BKSP}}}{#insert zTSlp}	zCApBKSP
+Ctrl+Alt+Shift+BKSP -- zCASpBKSP	{#CTRL {#ALT {#SHIFT {#BKSP}}}}{#insert zTSlp}	zCASpBKSP
+Ctrl+Shift+BKSP -- zCSpBKSP	{#CTRL {#SHIFT {#BKSP}}}{#insert zTSlp}	zCSpBKSP
+Shift+BKSP -- zSpBKSP	{#SHIFT {#BKSP}}{#insert zTSlp}	zSpBKSP

@@ -1,0 +1,72 @@
+impwjl	{#insert zImportPW1of2}java.lang.{#insert zImportPW2of2}	impwjl
+jab -- boolean	boolean (*ews*)	jab
+jabb -- Boolean	Boolean (*ews*)	jabb
+jacc -- Character	Character (*ews*)	jacc
+jaf -- false (The a after the j stands for spAce)	false (*ends with space*)	jaf
+jaii -- Integer	Integer (*ews*)	jaii
+jaii -- Integer_	Integer (*ends with space*)	jiai
+jao -- Object	Object (*ews*)	jao
+jao -- Object_	Object (*ends with space*)	jao
+jaq -- CharSequence	CharSequence (*ews*)	jaq
+jaq -- CharSequence_	CharSequence (*ends with space*)	jaq
+jas -- String	String (*ews*)	jas
+jasb -- StringBuffer	StringBuffer (*ews*)	jasb
+jasb -- StringBuffer_	StringBuffer (*ends with space*)	jsab
+jasd -- StringBuilder	StringBuilder (*ews*)	jasd
+jat -- true	true (*ews*)	jat
+jb -- boolean	boolean	jb
+jbb -- Boolean	Boolean	jbb
+jc -- Character	Character	jc
+jcb -- boolean,	boolean, (*ews*)	jcb
+jcbb -- Boolean,	Boolean, (*ews*)	jcbb
+jcc -- Character,	Character, (*ews*)	jcc
+jcf -- false,	false, (*ends with space*)	jcf
+jcii -- Integer,	Integer, (*ews*)	jcii
+jcj -- Object,	Object, (*ews*)	jcj
+jcq -- CharSequence,	CharSequence, (*ews*)	jcq
+jcs -- String,	String, (*ews*)	jcs
+jcsb -- StringBuffer,	StringBuffer, (*ews*)	jcsb
+jcsd -- StringBuilder,	StringBuilder, (*ews*)	jcsd
+jct -- true,	true, (*ews*)	jct
+jf -- false	false	jf
+jii -- Integer	Integer	jii
+jql	java.lang.	jql
+jqlo	java.lang.Object	jqlo
+jqloc	java.lang.Object, (*ends with space*)	jqloc
+jqls	java.lang.String	jqls
+jqls02 -- jqls2	{#insert jqlsc}{#insert jqls}	jqls2
+jqls03 -- jqls3	{#insert jqlsc2}{#insert jqls}	jqls3
+jqls04 -- jqls4	{#insert jqlsc3}{#insert jqls}	jqls4
+jqls05 -- jqls5	{#insert jqlsc4}{#insert jqls}	jqls5
+jqls06 -- jqls6	{#insert jqlsc5}{#insert jqls}	jqls6
+jqls07 -- jqls7	{#insert jqlsc6}{#insert jqls}	jqls7
+jqls08 -- jqls8	{#insert jqlsc7}{#insert jqls}	jqls8
+jqls09 -- jqls9	{#insert jqlsc8}{#insert jqls}	jqls9
+jqls10	{#insert jqlsc9}{#insert jqls}	jqls10
+jqlsc	java.lang.String, (*ends with space*)	jqlsc
+jqlsc02 -- jqlsc2	{#insert jqlsc}{#insert jqlsc}	jqlsc2
+jqlsc03 -- jqlsc3	{#insert jqlsc2}{#insert jqlsc}	jqlsc3
+jqlsc04 -- jqlsc4	{#insert jqlsc3}{#insert jqlsc}	jqlsc4
+jqlsc05 -- jqlsc5	{#insert jqlsc4}{#insert jqlsc}	jqlsc5
+jqlsc06 -- jqlsc6	{#insert jqlsc5}{#insert jqlsc}	jqlsc6
+jqlsc07 -- jqlsc7	{#insert jqlsc6}{#insert jqlsc}	jqlsc7
+jqlsc08 -- jqlsc8	{#insert jqlsc7}{#insert jqlsc}	jqlsc8
+jqlsc09 -- jqlsc9	{#insert jqlsc8}{#insert jqlsc}	jqlsc9
+jqlsc10	{#insert jqlsc9}{#insert jqlsc}	jqlsc10
+jqlx	java.lang.{#insert zXDown}	jqlx
+jqlx10	{#insert jqlx9}{#insert jqlx}	jqlx10
+jqlx2	{#insert jqlx}{#insert jqlx}	jqlx2
+jqlx3	{#insert jqlx2}{#insert jqlx}	jqlx3
+jqlx4	{#insert jqlx3}{#insert jqlx}	jqlx4
+jqlx5	{#insert jqlx4}{#insert jqlx}	jqlx5
+jqlx6	{#insert jqlx5}{#insert jqlx}	jqlx6
+jqlx7	{#insert jqlx6}{#insert jqlx}	jqlx7
+jqlx8	{#insert jqlx7}{#insert jqlx}	jqlx8
+jqlx9	{#insert jqlx8}{#insert jqlx}	jqlx9
+jqlxn	{#loop {#insert jqlx} -count {#insert zUserInpHMW1}}	jqlxn
+jo -- Object	Object	jo
+jq -- CharSequence	CharSequence	jq
+js -- String	String	js
+jsb -- StringBuffer	StringBuffer	jsb
+jsd -- StringBuilder	StringBuilder	jsd
+jt -- true	true	jt

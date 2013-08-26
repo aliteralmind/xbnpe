@@ -1,0 +1,9 @@
+(*
+   Required by phrase-creator-ddmenu-utils...START
+      PM_DDMENU_DIRID_FILENMPHRSNM_HDRAUTOTXT=snr/zzPmdmFNmPreSnrFind/xhsffb
+   Required by phrase-creator-ddmenu-utils...END
+*)
+zFindFlagsMCREoff	{#insert zTPFindFlagMCoff}{#insert zTPFindFlagREoff}	zFindFlagsMCREoff
+zFindFlagsMCREon	{#insert zTPFindFlagMCon}{#insert zTPFindFlagREon}	zFindFlagsMCREon
+zFindFlagsMCWWoff	{#insert zTPFindFlagMCoff}{#insert zTPFindFlagWWoff}	zFindFlagsMCWWoff
+zFindFlagsMCWWon	{#insert zTPFindFlagMCon}{#insert zTPFindFlagWWon}	zFindFlagsMCWWon

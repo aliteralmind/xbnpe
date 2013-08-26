@@ -1,0 +1,7 @@
+zTpkcEditAbrvLC	edit	zTpkcEditAbrvLC
+zTpkcEditAllCmdNamesTCQbl	[EditAlignCenter][EditAlignJustify][EditAlignLeft][EditAlignRight][EditBackspace][EditCapitalize][EditClearAll][EditCopy][EditCopyAllFileNames][EditCopyAppend][EditCopyAsHTML][EditCopyFileName][EditCopyLine][EditCopyLineAppend][EditCopyTaggedLines][EditCopyWord][EditCopyWordAppend][EditCut][EditCutAppend][EditCutLine][EditCutLineAppend][EditCutTaggedLines][EditCutWord][EditCutWordAppend][EditDelete][EditDelLine][EditDelLineEnd][EditDelSelection][EditDelTaggedLines][EditDelWord][EditDelWordLeft][EditDelWordRight][EditDupLine][EditFillBlock][EditIMEreconvert][EditIndentLess][EditIndentMore][EditInsertFile][EditInsertFileName][EditInsertStatistics][EditInvertCase][EditJoinLines][EditLongDate][EditLowerCase][EditMarkClean][EditNewLineAfter][EditNewLineBefore][EditPageBreak][EditPaste][EditPasteBlock][EditPasteHTML][EditPasteLines][EditPopupContext][EditPopupDateTime][EditRedo][EditRedoAll][EditReformat][EditSentenceCase][EditShortDate][EditSplitLines][EditTime][EditTranspose][EditTransposeWords][EditUndo][EditUndoAll][EditUpperCase][EmptyClipboard]	zTpkcEditAllCmdNamesTCQbl
+zTpkcEditCmdCount	67	zTpkcEditCmdCount
+zTpkcEditHasUserCrtdCmds_yes		zTpkcEditHasUsrCrtdCmds_yes
+zTpkcEditStpsFrmCatListTop	{#insert zDOWN}{#insert z5ThnTSlp}	zTpkcEditStpsFrmCatListTop
+zTpkcEditNameLC	edit	zTpkcEditNameLC
+

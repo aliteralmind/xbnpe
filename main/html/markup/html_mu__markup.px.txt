@@ -1,0 +1,29 @@
+hh1 -- <H1></H1>	<H1>{#insert zXmark}</H1>{#insert zXUp}	hh1
+hh2 -- <H2></H2>	<H2>{#insert zXmark}</H2>{#insert zXUp}	hh2
+hh3 -- <H3></H3>	<H3>{#insert zXmark}</H3>{#insert zXUp}	hh3
+hh4 -- <H4></H4>	<H4>{#insert zXmark}</H4>{#insert zXUp}	hh4
+h1u -- <H1><U></U></H1>	<H1><U>{#insert zXmark}</U></H1>{#insert zXUp}	h1u
+h2u -- <H2><U></U></H2>	<H2><U>{#insert zXmark}</U></H2>{#insert zXUp}	h2u
+h3u -- <H3><U></U></H3>	<H3><U>{#insert zXmark}</U></H3>{#insert zXUp}	h3u
+h4u -- <H4><U></U></H4>	<H4><U>{#insert zXmark}</U></H4>{#insert zXUp}	h4u
+h4uc -- <H4><U><CODE></CODE></U></H4>	<H4><U><CODE>{#insert zXmark}</CODE></U></H4>{#insert zXUp}	h4uc
+hhb -- <B></B>	<B>{#insert zXmark}</B>{#insert zXUp}	hhb
+hbc -- <B><CODE></CODE></B>	<B><CODE>{#insert zXmark}</CODE></B>{#insert zXUp}	hbc
+hbcq -- <B><CODE>&quot;&quot;</CODE></B>	<B><CODE>&quot;{#insert zXmark}&quot;</CODE></B>{#insert zXUp}	hbcq
+hbq -- <B>&quot;</B>&quot;	<B>&quot;{#insert zXmark}&quot;</B>{#insert zXUp}	hbq
+hbcsq -- <B><CODE>''</CODE></B>	<B><CODE>'{#insert zXmark}'</CODE></B>{#insert zXUp}	hbcsq
+hbi -- <B><I></I></B>	<B><I>{#insert zXmark}</I></B>{#insert zXUp}	hbi
+hbu -- <B><U></U></B>	<B><U>{#insert zXmark}</U></B>{#insert zXUp}	hbu
+hhc -- <CODE></CODE>	<CODE>{#insert zXmark}</CODE>{#insert zXUp}	hhc
+hcq -- <CODE>&quot;&quot;</CODE>	<CODE>&quot;{#insert zXmark}&quot;</CODE>{#insert zXUp}	hcq
+hcsq -- <CODE>''</CODE>	<CODE>'{#insert zXmark}'</CODE>{#insert zXUp}	hcsq
+hcqb -- <CODE>[]</CODE>	<CODE>[{#insert zXmark}]</CODE>{#insert zXUp}	hcqb
+hfc -- <FONT COLOR...	<FONT COLOR={#asc 34}#{#insert zXmark}{#asc 34}>{#insert zXmark}</FONT>{#insert zXUp}	hfc
+hfcs -- <FONT COLOR and SIZE...	<FONT COLOR={#asc 34}#{#insert zXmark}{#asc 34} SIZE={#asc 34}{#insert zXmark}{#asc 34}>{#insert zXmark}</FONT>{#insert zXUp}	hfcs
+hfs -- <FONT SIZE...	<FONT SIZE={#asc 34}{#insert zXmark}{#asc 34}>{#insert zXmark}</FONT>{#insert zXUp}	hfs
+hhi -- <I></I>	<I>{#insert zXmark}</I>{#insert zXUp}	hhi
+hib -- <I><B></B></I>	<I><B>{#insert zXmark}</B></I>{#insert zXUp}	hib
+hbi -- hhib ALT KC	{#insert hhib}	hbi
+hic -- <I><CODE></CODE></I>	<I><CODE>{#insert zXmark}</CODE></I>{#insert zXUp}	hic
+hhu -- <U></U>	<U>{#insert zXmark}</U>{#insert zXUp}	hhu
+hub -- hhbu ALT KC	{#insert hhbu}	hub

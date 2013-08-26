@@ -1,0 +1,8 @@
+zTpkcFileOpenAbrv1C	Fopn	zTpkcFileOpenAbrv1C
+zTpkcFopnCmdNameTC	FileOpen	zTpkcFopnCmdNameTC
+zTpkcFopnDfltPhrsNm	zTPFileOpen	zTpkcFopnDfltPhrsNm
+zTpkcFopnCatForCmdAbrvLC	file	zTpkcFopnCatForCmdAbrvLC
+zTpkcFopnCmdType_mcrTl		zTpkcFopnCmdType_mcrTl
+zTpkcFopnIsBtstrp_yes	yes	zTpkcFopnIsBtstrp_yes
+zTpkcFopnDfltPostKcSlpMils	1750	zTpkcFopnDfltPostKcSlpMils
+zTpkcFopnStpsFrmCmdListTop	{#insert zPGDN}	zTpkcFopnStpsFrmCmdListTop

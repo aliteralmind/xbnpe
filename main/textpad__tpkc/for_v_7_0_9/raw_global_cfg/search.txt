@@ -1,0 +1,26 @@
+BookmarkClearAll	zTPBookmarkClearAll	Srchmkclr	__ES__	10	(*NOTHING. Top command in list*)
+BookmarkInvertAll	zTPBookmarkInvertAll	Srchmkinv	__ES__	10	{#insert zDOWN}
+BookmarkNext	zTPBookmarkGTNext	Srchmknxt	yes	100	{#insert zDOWN2}
+BookmarkPrev	zTPBookmarkGTPrev	Srchmkprv	__ES__	100	{#insert zDOWN3}
+BookmarkToggle	zTPBookmarkToggle	Srchmktgl	yes	10	{#insert zII}{#insert zUP}
+IncrementalFind	zTPIncrementalFind	Srchifnd	__ES__	10	{#insert zII}
+IncrementalFindNext	zTPIncrementalFindNext	Srchifndnx	__ES__	10	{#insert zII}{#insert zDOWN}
+IncrementalFindPrev	zTPIncrementalFindPrev	Srchifndprv	__ES__	10	{#insert zMM}{#insert zUP}
+MatchBracket	zTPMatchBracket	Srchmtchbrk	__ES__	10	{#insert zMM}
+MatchBracketExtend	zTPMatchBracketExtend	Srchmtchbrkx	__ES__	10	{#insert zMM}{#insert zDOWN}
+MatchCaseClear	zTPFindFlagMCoff	Srchmtchcsclr	__ES__	5	{#insert zMM}{#insert zDOWN2}
+MatchCaseSet	zTPFindFlagMCon	Srchmtchcsst	__ES__	5	{#insert zPGDN2}{#insert zUP}
+MatchWordClear	zTPFindFlagWWoff	Srchmtchwdclr	__ES__	5	{#insert zPGDN2}
+MatchWordSet	zTPFindFlagWWon	Srchmtchwdst	__ES__	5	{#insert zPGDN2}{#insert zDOWN}
+RegexClear	zTPFindFlagREoff	Srchreclr	__ES__	5	{#insert zRR}
+RegexSet	zTPFindFlagREon	Srchreset	__ES__	5	{#insert zRR}{#insert zDOWN}
+SearchFiles	zTPFFindDlgOpen	Srchfls	yes	10	{#insert zSS}
+SearchFind	zTPFindDlgOpen	Srchfind	yes	10	{#insert zSS}{#insert zDOWN}
+SearchFindNext	zTPFindNext	Srchfnxt	yes	10	{#insert zSS}{#insert zDOWN2}
+SearchFindPrevious	zTPFindPrev	Srchfprv	__ES__	10	{#insert zEND}{#insert zPGUP}
+SearchGoto	zTPGTDlgOpen	Srchgoto	__ES__	10	{#insert zEND}{#insert zPGUP}{#insert zDOWN}
+SearchJumpNext	zTPSearchJumpNext	Srchjnxt	__ES__	50	{#insert zEND}{#insert zPGUP}{#insert zDOWN2}
+SearchJumpPrev	zTPSearchJumpPrev	Srchjprv	__ES__	50	{#insert zEND}{#insert zUP3}
+SearchOpenAll	zTPFFindOpenAll	Srchopnall	__ES__	2000	{#insert zEND}{#insert zUP2}
+SearchReplace	zTPRplcDlgOpen	Srchrplc	yes	50	{#insert zEND}{#insert zUP}
+SearchReplaceNext	zTPReplaceNext	Srchrplcnxt	__ES__	25	{#insert zEND}

@@ -1,0 +1,14 @@
+clsuper* -- NP Super-Constructor Link	{#insert zzjlCodeOffPrekOff}{#insert zzjlNPCnstrLink_dirPromptCnstrFileAndDispAreSuperCN}	clsuper
+clsuperc* -- clsuper, CODE-d	{#insert zzjlCodeOnPrekOff}{#insert zzjlNPCnstrLink_dirPromptCnstrFileAndDispAreSuperCN}	clsuperc
+clsupern* -- clsuper, 'coNstructor' display	{#insert zzjlCodeOffPrekOff}{#insert zzClsupernPostPrek}	clsupern
+clsuperr* -- clsuper, 'super' display	{#insert zzjlCodeOffPrekOff}{#insert zzClsuperrPostPrek}	clsuperr
+clsuperrc* -- clsuperr, CODE-d	{#insert zzjlCodeOnPrekOff}{#insert zzClsuperrPostPrek}	clsuperrc
+clsupery -- clsuper, displaY nothing (x-mark)	{#insert zzjlCodeOffPrekOff}{#insert zzjlDispXPAPES}{#insert zzjlNPCnstrLink_dirPromptCnstrAndFileNmAreSuperCN}	clsupery
+clsuperyb -- clsuper, displaY clipBoard	{#insert zzjlCodeOffPrekOff}{#insert zzjlDispCBPAPES}{#insert zzjlNPCnstrLink_dirPromptCnstrAndFileNmAreSuperCN}	clsuperyb
+clthis -- NP THIS-class coNstructor link	{#insert zzjlCodeOffPrekOff}{#insert zzjlNPCnstrLink_thisClsCnstrDispCnstr}	clthis
+clthisc -- clthis, CODE-d	{#insert zzjlCodeOnPrekOff}{#insert zzjlNPCnstrLink_thisClsCnstrDispCnstr}	clthisc
+clthisn -- clthis, 'coNstructor' display	{#insert zzjlCodeOffPrekOff}{#insert zzjlDispQCnstrQPAPES}{#insert zzjlNPCnstrLink_thisClsCnstr}	clthisn
+clthist -- clthis, 'this' display	{#insert zzjlCodeOffPrekOff}{#insert zzjlDispQThisQPAPP}{#insert zzjlNPCnstrLink_thisClsCnstr}	clthist
+clthistc -- clthist, CODE-d	{#insert zzjlCodeOnPrekOff}{#insert zzjlDispQThisQPAPP}{#insert zzjlNPCnstrLink_thisClsCnstr}	clthistc
+clthisy -- clthis, displaY nothing (x-mark)	{#insert zzjlCodeOffPrekOff}{#insert zzjlDispXPAPES}{#insert zzjlNPCnstrLink_thisClsCnstr}	clthisy
+clthisyb -- clthis, displaY clipBoard	{#insert zzjlCodeOffPrekOff}{#insert zzjlDispCBPAPES}{#insert zzjlNPCnstrLink_thisClsCnstr}	clthisyb

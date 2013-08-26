@@ -1,0 +1,4 @@
+flpwr -- Func Link to super-class for Pre-Word-Func	{#insert zCutL1w}{#insert flcb}	flpwr
+flcbr -- Func Link to super-class for ClipBoard-func	<A HREF={#asc 34}{#insert cnthis}.html#{#insert zjinpUrlToSuperDir}{#insert thisfnz}(){#asc 34}>{#insert zTPPaste}</A>(){#insert prerk}	flcbr
+flcbrc -- flcbr, CODE-d	<CODE>{#insert flcb}</CODE>	flcbrc
+flpwrc -- flpwr, CODE-d	{#insert zCutL1w}{#insert flcbrc}	flpwrc

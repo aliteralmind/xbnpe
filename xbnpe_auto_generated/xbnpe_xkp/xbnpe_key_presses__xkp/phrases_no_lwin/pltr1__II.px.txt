@@ -1,0 +1,8 @@
+II -- zII	{#NONE -chars i}{#insert zTSlp}	zII
+Alt+II -- zApII	{#ALT -chars i}{#insert zTSlp}	zApII
+Alt+Shift+II -- zASpII	{#ALT {#SHIFT -chars i}}{#insert zTSlp}	zASpII
+Ctrl+II -- zCpII	{#CTRL -chars i}{#insert zTSlp}	zCpII
+Ctrl+Alt+II -- zCApII	{#CTRL {#ALT -chars i}}{#insert zTSlp}	zCApII
+Ctrl+Alt+Shift+II -- zCASpII	{#CTRL {#ALT {#SHIFT -chars i}}}{#insert zTSlp}	zCASpII
+Ctrl+Shift+II -- zCSpII	{#CTRL {#SHIFT -chars i}}{#insert zTSlp}	zCSpII
+Shift+II -- zSpII	{#SHIFT -chars i}{#insert zTSlp}	zSpII

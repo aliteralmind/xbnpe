@@ -1,0 +1,13 @@
+__**WARNING**__: All phrases in this folder were created by 'plpdcf'. DO NOT EDIT.	.		(*Extra tab to allow for empty-string autotext*)
+zvNNL_INTRNLC_YES_sfKey	{#SETPHRASE -description zvNNL_INTRNLC_YES -content {#insert zzMnvCmdNnlicy_cfgValue_M_key} -autotext zvNNL_INTRNLC_YES -folder ctvv_folder}	zvNNL_INTRNLC_YES_sfKey
+zzMnvCmdNnlicy_cfgValue_M_key	{#insert {#insert zzMnvCmdNnlicy_cfgVarPhrsName_M_key}}	zzMnvCmdNnlicy_cfgValue_M_key
+zzMnvCmdNNLIntrnlCmd_yes_cvtFromAbrv1C	Nnlicy	zzMnvCmdNNLIntrnlCmd_yes_cvtFromAbrv1C
+zzMnvCmdNnlicy_cfgVarPNmPost	NNLIntrnlCmd_yes	zzMnvCmdNnlicy_cfgVarPNmPost
+zzMnvCmdNnlicy_intrnlVarNm	zvNNL_INTRNLC_YES	zzMnvCmdNnlicy_intrnlVarNm
+zzMnvCmdNnlicy_cfgVarPhrsName_M_key	zz{#insert zzMnvCmdProjectAbrv1C}{#insert zzMnvCmdDataTypeAbrv1C}{#insert zvCMD_PNMV_1C}{#insert zzMnvCmdNnlicy_cfgVarPNmPost}	zzMnvCmdNnlicy_cfgVarPhrsName_M_key
+zzMnvCmdNnlicy_helpForDlg	Only used when [Commands_on] and [NoNumAlias_on] are both 'on', and [NNLCmdXtrnl_yes] is '' (meaning off). Should the INTERNAL No~Num~aLias Command be printed? For example, with a command such as 'zCutR#c', you may only want the numbered versions (zCutR1c, zCutR2c, ...)~~not 'zCutRc'. If the non~numbered version is wanted, set this to 'yes'. Otherwise, ''.	zzMnvCmdNnlicy_helpForDlg
+zzMnvCmdNnlicy_valuePrintable	yes	zzMnvCmdNnlicy_valuePrintable
+zzMnvCmdNnlicy_validateValuePhrsNm		zzMnvCmdNnlicy_validateValuePhrsNm
+zzMnvCmdNnlicy_nkcvListNum	6	zzMnvCmdNnlicy_nkcvListNum
+zzMnvCmdNnlicy_keyCVTFromAbrv1C	{#insert zzMnvCmdPrivKeyCVTFromAbrv1C}	zzMnvCmdNnlicy_keyCVTFromAbrv1C
+zvCVT_FRMV_1C_stMnvCmdNnlicy	{#SETPHRASE -description zvCVT_FRMV_1C -content {#insert zzMnvCmdNNLIntrnlCmd_yes_cvtFromAbrv1C} -autotext zvCVT_FRMV_1C -folder ctvv_folder}	zvCVT_FRMV_1C_stMnvCmdNnlicy

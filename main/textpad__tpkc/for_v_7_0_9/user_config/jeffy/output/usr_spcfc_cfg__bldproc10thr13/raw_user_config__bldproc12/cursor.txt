@@ -1,0 +1,48 @@
+CharLeft	2	\\\{#insert zLEFT\\\}	\\\{#insert zCpTT\\\}
+CharLeftExtend	2	\\\{#insert zCpWW\\\}	\\\{#insert zCSpLEFT\\\}
+CharRight	1	\\\{#insert zRIGHT\\\}
+CharRightExtend	2	\\\{#insert zCpVV\\\}	\\\{#insert zCSpRIGHT\\\}
+DocumentEnd	1	\\\{#insert zCASpDOWN\\\}
+DocumentEndExtend	2	\\\{#insert zCSpEND\\\}	\\\{#insert zCASpPGDN\\\}
+DocumentStart	0
+DocumentStartExtend	2	\\\{#insert zCSpHOME\\\}	\\\{#insert zCASpPGUP\\\}
+GoToBlockEnd	0
+GoToBlockStart	0
+GoToColumn	0
+GoToLine	0
+GoToPage	0
+LineDown	1	\\\{#insert zDOWN\\\}
+LineDownExtend	1	\\\{#insert zSpDOWN\\\}
+LineEnd	2	\\\{#insert zEND\\\}	\\\{#insert zCpSPACE\\\}
+LineEndExtend	2	\\\{#insert zSpEND\\\}	\\\{#insert zCSpSPACE\\\}
+LineLeft	1	\\\{#insert zHOME\\\}
+LineLeftExtend	1	\\\{#insert zSpHOME\\\}
+LineScrollDown	1	\\\{#insert zCpUP\\\}
+LineScrollUp	1	\\\{#insert zCpDOWN\\\}
+LineStart	0
+LineStartExtend	0
+LineUp	1	\\\{#insert zUP\\\}
+LineUpExtend	1	\\\{#insert zSpUP\\\}
+PageDown	1	\\\{#insert zPGDN\\\}
+PageDownExtend	1	\\\{#insert zSpPGDN\\\}
+PageLeft	1	\\\{#insert zCpPGUP\\\}
+PageLeftExtend	1	\\\{#insert zCSpPGUP\\\}
+PageRight	1	\\\{#insert zCpPGDN\\\}
+PageRightExtend	1	\\\{#insert zCSpPGDN\\\}
+PageUp	1	\\\{#insert zPGUP\\\}
+PageUpExtend	1	\\\{#insert zSpPGUP\\\}
+ParaDown	1	\\\{#insert zASpDOWN\\\}
+ParaDownExtend	1	\\\{#insert zCSpDOWN\\\}
+ParaUp	1	\\\{#insert zASpUP\\\}
+ParaUpExtend	1	\\\{#insert zCSpUP\\\}
+TabLeft	0
+ViewEnd	1	\\\{#insert zApEND\\\}
+ViewStart	1	\\\{#insert zApHOME\\\}
+WordLeft	2	\\\{#insert zCpLEFT\\\}	\\\{#insert zCpHH\\\}
+WordLeftEnd	1	\\\{#insert zCpDD\\\}
+WordLeftEndExtend	1	\\\{#insert zCSpDD\\\}
+WordLeftExtend	2	\\\{#insert zCSpBB\\\}	\\\{#insert zCpMM\\\}
+WordRight	0
+WordRightEnd	1	\\\{#insert zCpSS\\\}
+WordRightEndExtend	1	\\\{#insert zCpZZ\\\}
+WordRightExtend	0

@@ -1,0 +1,26 @@
+BookmarkClearAll        Ctrl+Shift+F2           Ctrl+Shift+Alt+-
+BookmarkInvertAll       Shift+Alt+.
+BookmarkNext
+BookmarkPrev            Alt+,
+BookmarkToggle
+IncrementalFind         Ctrl+I                  Shift+F3
+IncrementalFindNext
+IncrementalFindPrev
+MatchBracket            Ctrl+\
+MatchBracketExtend      Ctrl+Shift+\
+MatchCaseClear          Ctrl+Shift+Alt+F, C
+MatchCaseSet            Shift+Alt+F, C
+MatchWordClear          Ctrl+Shift+Alt+F, W
+MatchWordSet            Shift+Alt+F, W
+RegexClear              Ctrl+Shift+Alt+F, R
+RegexSet                Shift+Alt+F, R
+SearchFiles
+SearchFind
+SearchFindNext                                Shift+F4                Alt+F4
+SearchFindPrevious      F2                      Shift+F2                Alt+F2
+SearchGoto              Ctrl+Shift+G
+SearchJumpNext          Ctrl+Alt+F4             Ctrl+Shift+Alt+F4
+SearchJumpPrev          Ctrl+Alt+F2             Ctrl+Shift+Alt+F2
+SearchOpenAll           Ctrl+F12, Ctrl+F8
+SearchReplace           F8
+SearchReplaceNext       Ctrl+F8                 Shift+F5

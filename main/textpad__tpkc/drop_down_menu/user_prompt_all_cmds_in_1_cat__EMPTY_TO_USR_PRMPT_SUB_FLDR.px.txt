@@ -1,0 +1,1 @@
+Debug all cmds in 1 cat	{#insert zTpkcDbgAllKCsIn1CatWithPrompt}	zTpkcDbgAllKCsIn1CatWithPromptForDDMenu

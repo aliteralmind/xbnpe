@@ -1,0 +1,8 @@
+BB -- zBB	{#NONE -chars b}{#insert zTSlp}	zBB
+Alt+BB -- zApBB	{#ALT -chars b}{#insert zTSlp}	zApBB
+Alt+Shift+BB -- zASpBB	{#ALT {#SHIFT -chars b}}{#insert zTSlp}	zASpBB
+Ctrl+BB -- zCpBB	{#CTRL -chars b}{#insert zTSlp}	zCpBB
+Ctrl+Alt+BB -- zCApBB	{#CTRL {#ALT -chars b}}{#insert zTSlp}	zCApBB
+Ctrl+Alt+Shift+BB -- zCASpBB	{#CTRL {#ALT {#SHIFT -chars b}}}{#insert zTSlp}	zCASpBB
+Ctrl+Shift+BB -- zCSpBB	{#CTRL {#SHIFT -chars b}}{#insert zTSlp}	zCSpBB
+Shift+BB -- zSpBB	{#SHIFT -chars b}{#insert zTSlp}	zSpBB

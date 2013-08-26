@@ -1,0 +1,8 @@
+zTpkcEditTransposeAbrv1C	Etrnsps	zTpkcEditTransposeAbrv1C
+zTpkcEtrnspsCmdNameTC	EditTranspose	zTpkcEtrnspsCmdNameTC
+zTpkcEtrnspsDfltPhrsNm	zTPTranspose	zTpkcEtrnspsDfltPhrsNm
+zTpkcEtrnspsCatForCmdAbrvLC	edit	zTpkcEtrnspsCatForCmdAbrvLC
+zTpkcEtrnspsCmdType_mcrTl		zTpkcEtrnspsCmdType_mcrTl
+zTpkcEtrnspsIsBtstrp_yes		zTpkcEtrnspsIsBtstrp_yes
+zTpkcEtrnspsDfltPostKcSlpMils	10	zTpkcEtrnspsDfltPostKcSlpMils
+zTpkcEtrnspsStpsFrmCmdListTop	{#insert zEND}{#insert zPGUP}{#insert zDOWN}	zTpkcEtrnspsStpsFrmCmdListTop

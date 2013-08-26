@@ -1,0 +1,4 @@
+zElimAllFIFResultMetaTextFromDoc	{#insert zRplcDlgOpenRE}{#insert zzMidRplcREElim_allLnsFifRslt_col0ThrClsPrnClnSpc}{#insert zRplcBtnAllTDHnr}{#insert zzMidRplcREElim_fifSearchingForHeader}{#insert zRplcBtnAllTDHnr}{#insert zzMidRplcREElim_fifFoundXOccurancesFooter}{#insert zRplcBtnAllTDHnr}{#insert zRplcDlgCloseRE}	zElimAllFIFResultMetaTextFromDoc
+zElimAllInDoc_allLnsFifRslt_col0ThrColonSpc_reOff	{#insert zRplcDlgOpenRE}{#insert zzMidRplcREElim_allLnsFifRslt_col0ThrClsPrnClnSpc}{#insert zRplcBtnAllTDHnr}{#insert zRplcDlgCloseRE}	zElimAllInDoc_allLnsFifRslt_col0ThrColonSpc_reOff
+zFFindDlgClose -- zFindDlgClose ALT KC	{#insert zFindDlgClose}	zFFindDlgClose
+zFFindSaveCurrDirFNmsThenSet_M_dirFnm -- Needs zvDIRECTORY, zvFILE	{#insert zFFindSaveCurrDirFNms}{#insert zFFindSetDirFNms_M_dirFnm}	zFFindSaveCurrDirFNmsThenSet_M_dirFnm

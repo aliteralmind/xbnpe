@@ -1,0 +1,8 @@
+zKPSpeedSetToRequested -(**)- Needs zvKP_SPD_RQSTD (Fast, Medium, Slow, SuperSlow, Glacial)	(*The phrases in this folder are the only XKP/bootstrap/pe/key-press phrases that use zvKP_SPD_RQSTD. It is intended for external use.*){#insert zKeyPress{#insert zvKP_SPD_RQSTD}}	zKPSpeedSetToRequested
+zKPSpeedRequestFast	{#SETPHRASE -description zvKP_SPD_RQSTD -content Fast -autotext zvKP_SPD_RQSTD -folder ctvv_folder}	zKPSpeedRequestFast
+zKPSpeedRequestMedium	{#SETPHRASE -description zvKP_SPD_RQSTD -content Medium -autotext zvKP_SPD_RQSTD -folder ctvv_folder}	zKPSpeedRequestMedium
+zKPSpeedRequestSlow	{#SETPHRASE -description zvKP_SPD_RQSTD -content Slow -autotext zvKP_SPD_RQSTD -folder ctvv_folder}	zKPSpeedRequestSlow
+zKPSpeedRequestSuperSlow	{#SETPHRASE -description zvKP_SPD_RQSTD -content SuperSlow -autotext zvKP_SPD_RQSTD -folder ctvv_folder}	zKPSpeedRequestSuperSlow
+zKPSpeedRequestGlacial	{#SETPHRASE -description zvKP_SPD_RQSTD -content Glacial -autotext zvKP_SPD_RQSTD -folder ctvv_folder}	zKPSpeedRequestGlacial
+zKPSpeedSaveSetToRqstd	{#insert zKeyPressSpeedSave}{#insert zKPSpeedSetToRequested}	zKPSpeedSaveSetToRqstd
+zSlk2KPSpeedSetToRequested	{#sleep 2000}{#insert zKPSpeedSetToRequested}	zSlk2KPSpeedSetToRequested

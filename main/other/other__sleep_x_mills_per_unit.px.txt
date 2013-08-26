@@ -1,0 +1,2 @@
+zSlpXMillsForEveryYWBal_xy	{#BALLOON -title Please wait... -text Sleeping (zvYY * zvMILLS) = ({#insert zvYY} * {#insert zvMILLS}) = {#CALC {#insert zvYY} * {#insert zvMILLS} -round 0 -thousands none} milliseconds}{#insert zSlpXMillsForEveryY_xy}	zSlpXMillsForEveryYWBal_xy
+zSlpXMillsForEveryY_xy -- Needs zvMILLS and zvYY	{#sleep {#CALC {#insert zvYY} * {#insert zvMILLS} -round 0 -thousands none}}	zSlpXMillsForEveryY_xy

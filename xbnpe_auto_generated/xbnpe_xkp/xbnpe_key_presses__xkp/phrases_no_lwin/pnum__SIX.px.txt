@@ -1,0 +1,8 @@
+SIX -- zSIX	{#NONE -chars 6}{#insert zTSlp}	zSIX
+Alt+SIX -- zApSIX	{#ALT -chars 6}{#insert zTSlp}	zApSIX
+Alt+Shift+SIX -- zASpSIX	{#ALT {#SHIFT -chars 6}}{#insert zTSlp}	zASpSIX
+Ctrl+SIX -- zCpSIX	{#CTRL -chars 6}{#insert zTSlp}	zCpSIX
+Ctrl+Alt+SIX -- zCApSIX	{#CTRL {#ALT -chars 6}}{#insert zTSlp}	zCApSIX
+Ctrl+Alt+Shift+SIX -- zCASpSIX	{#CTRL {#ALT {#SHIFT -chars 6}}}{#insert zTSlp}	zCASpSIX
+Ctrl+Shift+SIX -- zCSpSIX	{#CTRL {#SHIFT -chars 6}}{#insert zTSlp}	zCSpSIX
+Shift+SIX -- zSpSIX	{#SHIFT -chars 6}{#insert zTSlp}	zSpSIX

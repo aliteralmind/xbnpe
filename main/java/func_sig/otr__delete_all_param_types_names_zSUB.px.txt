@@ -1,0 +1,17 @@
+zDapnGTPreSig	{#insert dapnl}{#insert zMoveL1w}	zDapnGTPreSig
+zDapnvGTPreSig	{#insert dapnvl}{#insert zMoveL1w}	zDapnvGTPreSig
+zDelAllParamNamesKGLeaveSel	{#insert zzDapnPostBrkSelRplcDlgSelREWriteWhatGTWith}$1{#insert zXmark}$2{#insert zRplcBtnAllSelHnr}{#insert zRplcDlgREClose}	zDelAllParamNamesKGLeaveSel
+zDelAllParamNamesLeaveSel4FQP -- *** Steps used by ztpmJavaDeleteAllParamNames4FQP. Use dapns instead	{#insert zzDapnPostBrkSelRplcDlgSelREWriteWhatGTWith}$1{#insert zzDapnForFQCNTypePrefix}$2{#insert zRplcBtnAllSelHnr}{#insert zzDapnRqmGoREDelGenerics}{#insert zRplcBtnAllSelHnr}{#insert zRplcDlgREClose}	zDelAllParamNamesLeaveSel4FQP
+zDelAllParamNamesLeaveSel4TV -- *** Steps used by ztpmJavaDeleteAllParamNames4TV. Use dapnvs instead	{#insert zzDapnPostBrkSelRplcDlgSelREWriteWhatGTWith}$1{#insert zzDapnForTypeAbbrevPrefix}$2{#insert zRplcBtnAllSelHnr}{#insert zzDapnRqmGoREDelGenerics}(*Delete spaces*) {#insert zRplcWithNOTHING}{#insert zRplcAllREClose}	zDelAllParamNamesLeaveSel4TV
+zDelAllParamNamesLeaveSelX	{#insert zzDapnPostBrkSelRplcDlgSelREWriteWhatGTWith}$1{#insert zXmark}$2{#insert zRplcBtnAllSelHnr}{#insert zzDapnRqmGoREDelGenerics}{#insert zRplcDlgREClose}	zDelAllParamNamesLeaveSelX
+zDelAllParamTypesLeaveSel -- *** Steps used by ztpmJavaDeleteAllParamTypes. Use dapt instead	{#insert zPostBracketSelect}{#insert zRplcDlgSelRE}{#insert zzDaptRqmSelREGoDeletePlainTypes}{#insert zzDaptRqmSelREGoDeleteArrayTypes}{#insert zzDaptRqmSelREGoDeleteGenericTypes}{#insert zRplcDlgREClose}	zDelAllParamTypesLeaveSel
+zzDapnForFQCNTypePrefix	_4FQP_	zzDapnForFQCNTypePrefix
+zzDapnForTypeAbbrevPrefix	_4TV_	zzDapnForTypeAbbrevPrefix
+zzDapnPostBrkSelRplcDlgSelREWriteWhatGTWith	{#insert zPostBracketSelect}{#insert zRplcDlgSelRE}{#insert zjreOpenParenOrCmaSpcParamTypePlainArrayGenerics}{#insert zRplcFieldWith}	zzDapnPostBrkSelRplcDlgSelREWriteWhatGTWith
+zzDapnRqmGoREDelGenerics	<[^>]+>{#insert zRplcWithNOTHING}{#insert zRplcBtnAllSelHnr}	zzDapnRqmGoREDelGenerics
+zzDaptRqmREDeleteArrayTypes	{#insert zjreOpenParenParamTypeNameArray}{#insert zRplcFieldWith}$1$4	zzDaptRqmREDeleteArrayTypes
+zzDaptRqmREDeleteGenericTypes	{#insert zjreOpenParenParamTypeNameGenerics}{#insert zRplcFieldWith}$1$4	zzDaptRqmREDeleteGenericTypes
+zzDaptRqmREDeletePlainTypes	{#insert zjreOpenParenParamTypeNamePlain}{#insert zRplcFieldWith}$1$3	zzDaptRqmREDeletePlainTypes
+zzDaptRqmSelREGoDeleteArrayTypes	{#insert zzDaptRqmREDeleteArrayTypes}{#insert zRplcBtnAllSelHnr}	zzDaptRqmSelREGoDeleteArrayTypes
+zzDaptRqmSelREGoDeleteGenericTypes	{#insert zzDaptRqmREDeleteGenericTypes}{#insert zRplcBtnAllSelHnr}	zzDaptRqmSelREGoDeleteGenericTypes
+zzDaptRqmSelREGoDeletePlainTypes	{#insert zzDaptRqmREDeletePlainTypes}{#insert zRplcBtnAllSelHnr}	zzDaptRqmSelREGoDeletePlainTypes

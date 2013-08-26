@@ -1,0 +1,366 @@
+COMMANDS:               KEYS:
+
+?
+?
+?
+¡
+¿
+Á
+á
+À
+à
+Â
+â
+Ä
+ä
+Ã
+ã
+Å
+å
+ActivateClipLib         Alt+2
+ActivateDocument
+ActivateExplorer        Alt+3
+ActivateSearchResults   Alt+4
+ActivateSelector        Alt+1
+ActivateToolOutput      Alt+5
+Æ
+æ
+BlockSelectOff
+BlockSelectOn
+BookmarkClearAll        Ctrl+Shift+F2
+BookmarkInvertAll
+BookmarkNext            F2
+BookmarkPrev            Shift+F2
+BookmarkToggle          Ctrl+F2
+Ç
+ç
+CharLeft                Left
+CharLeftExtend          Shift+Left
+CharRight               Right
+CharRightExtend         Shift+Right
+ClipClose
+ClipCopy
+ClipDeleteBook
+ClipDeleteEntry
+ClipEditBook
+ClipInsert
+ClipNewBook
+ClipPaste
+ClipRefresh
+ClipRenameBook
+ClipRenameEntry
+ClipSaveBook
+ClipSortEntries
+CustomizeToolbars
+Ð
+ð
+DocumentEnd             Ctrl+End
+DocumentEndExtend       Ctrl+Shift+End
+DocumentStart           Ctrl+Home
+DocumentStartExtend     Ctrl+Shift+Home
+É
+é
+È
+è
+Ê
+ê
+Ë
+ë
+EditAlignCenter         Ctrl+E
+EditAlignJustify
+EditAlignLeft
+EditAlignRight          Ctrl+Shift+E
+EditBackspace           Ctrl+H                  Backspace               Shift+Backspace
+EditCapitalize          Ctrl+Shift+U
+EditClearAll            Alt+Delete
+EditCopy                Ctrl+C                  Ctrl+Insert
+EditCopyAllFileNames
+EditCopyAppend          Ctrl+Shift+C
+EditCopyAsHTML
+EditCopyFileName
+EditCopyLine
+EditCopyLineAppend
+EditCopyTaggedLines     Ctrl+Alt+Shift+E
+EditCopyWord
+EditCopyWordAppend
+EditCut                 Shift+Delete            Ctrl+X
+EditCutAppend           Ctrl+Shift+X
+EditCutLine
+EditCutLineAppend
+EditCutTaggedLines      Ctrl+Alt+Shift+W
+EditCutWord
+EditCutWordAppend
+EditDelete              Delete
+EditDelLine
+EditDelLineEnd          Ctrl+Shift+Delete
+EditDelSelection
+EditDelTaggedLines
+EditDelWord
+EditDelWordLeft         Ctrl+Backspace
+EditDelWordRight        Ctrl+Delete
+EditDupLine             Ctrl+Alt+Shift+V
+EditFillBlock
+EditIMEreconvert
+EditIndentLess          Ctrl+Shift+,
+EditIndentMore          Ctrl+Shift+.
+EditInsertFile          Ctrl+Shift+V
+EditInsertFileName
+EditInsertStatistics
+EditInvertCase          Ctrl+K
+EditJoinLines           Ctrl+J
+EditLongDate
+EditLowerCase           Ctrl+L
+EditMarkClean
+EditNewLineAfter
+EditNewLineBefore
+EditPageBreak           Ctrl+Shift+L
+EditPaste               Ctrl+V                  Shift+Insert
+EditPasteBlock
+EditPasteHTML
+EditPasteLines
+EditPopupContext        Shift+F10
+EditPopupDateTime       Ctrl+F10
+EditRedo                Ctrl+Y
+EditRedoAll             Ctrl+Shift+Y
+EditReformat            Ctrl+Shift+J
+EditSentenceCase        Ctrl+Shift+K
+EditShortDate
+EditSplitLines          Ctrl+Alt+J
+EditTime
+EditTranspose           Ctrl+T
+EditTransposeWords      Ctrl+Shift+T
+EditUndo                Alt+Backspace           Ctrl+Z
+EditUndoAll             Ctrl+Shift+Z
+EditUpperCase           Ctrl+U
+EmptyClipboard
+FileClose               Ctrl+W
+FileCloseAll
+FileExit
+FileGoTo                Ctrl+Shift+G
+FileManage              F3
+FileNew                 Ctrl+N
+FileOpen                Ctrl+O
+FilePageSetup
+FilePrint               Ctrl+P
+FilePrintAll
+FilePrintDefault
+FilePrintPreview        Ctrl+Shift+P
+FileQuickOpen           Ctrl+Shift+O
+FileRename
+FileRevert
+FileSave                Ctrl+S
+FileSaveAll             Ctrl+Shift+S
+FileSaveAndClose
+FileSaveAs              F12
+FileSend
+FileStatistics          Ctrl+F1
+GoToBlockEnd
+GoToBlockStart
+GoToColumn
+GoToLine
+GoToPage
+Help
+HelpFAQ
+HelpOrdering
+HelpSupport
+HelpTip
+HelpWWW
+Í
+í
+Ì
+ì
+Î
+î
+Ï
+ï
+IncrementalFind         Ctrl+I
+IncrementalFindNext
+IncrementalFindPrev
+LineDown                Down
+LineDownExtend          Shift+Down
+LineEnd                 End
+LineEndExtend           Shift+End
+LineLeft
+LineLeftExtend
+LineScrollDown          Ctrl+Up
+LineScrollUp            Ctrl+Down
+LineStart               Home
+LineStartExtend         Shift+Home
+LineUp                  Up
+LineUpExtend            Shift+Up
+MacroMultiplay          Ctrl+F7
+MacroPause
+MacroPlay               Ctrl+R
+MacroRecord             Ctrl+Shift+R
+MacroSave
+MatchBracket            Ctrl+M
+MatchBracketExtend      Ctrl+Shift+M
+MatchCaseClear
+MatchCaseSet
+MatchWordClear
+MatchWordSet
+Ñ
+ñ
+Ó
+ó
+Ò
+ò
+Ô
+ô
+Ö
+ö
+Õ
+õ
+Ø
+ø
+PageDown                Pgdown
+PageDownExtend          Shift+Pgdown
+PageLeft                Ctrl+Pgup
+PageLeftExtend          Ctrl+Shift+Pgup
+PageRight               Ctrl+Pgdown
+PageRightExtend         Ctrl+Shift+Pgdown
+PageUp                  Pgup
+PageUpExtend            Shift+Pgup
+ParaDown                Alt+Down
+ParaDownExtend          Shift+Alt+Down
+ParaUp                  Alt+Up
+ParaUpExtend            Shift+Alt+Up
+Preferences             Ctrl+Q, P
+RegexClear
+RegexSet
+RightMarginDec
+RightMarginInc
+RightMarginSet          Ctrl+Q, R
+SearchFiles             Ctrl+F5
+SearchFind              F5
+SearchFindNext          Ctrl+F
+SearchFindPrevious      Ctrl+Shift+F
+SearchGoto              Ctrl+G
+SearchJumpNext          F4
+SearchJumpPrev          Shift+F4
+SearchOpenAll
+SearchReplace           F8
+SearchReplaceNext       Ctrl+F8
+SelectAll               Ctrl+A
+SelectBeginBlock
+SelectBeginLine
+SelectBeginStream       Ctrl+Q, S
+SelectCancel
+SelectEnd
+SelectLine
+SelectParagraph
+SelectSwapEnds
+SelectWord
+ß
+StayOnTop
+TabLeft
+ToggleBlockSelect       Ctrl+Q, B
+ToggleInsertMode        Insert
+ToggleReadOnly          Ctrl+Q, E
+ToggleSyncScroll        Ctrl+Q, Y
+ToggleUndo              Ctrl+Q, U
+ToggleWordWrap          Ctrl+Q, W
+Tool01                  Ctrl+1
+Tool02                  Ctrl+2
+Tool03                  Ctrl+3
+Tool04                  Ctrl+4
+Tool05                  Ctrl+5
+Tool06                  Ctrl+6
+Tool07                  Ctrl+7
+Tool08                  Ctrl+8
+Tool09                  Ctrl+9
+Tool10
+Tool11
+Tool12
+Tool13
+Tool14
+Tool15
+Tool16
+Tool17
+Tool18
+Tool19
+Tool20
+Tool21
+Tool22
+Tool23
+Tool24
+Tool25
+Tool26
+Tool27
+Tool28
+Tool29
+Tool30
+Tool31
+Tool32
+ToolCompareFiles        Ctrl+F9
+ToolExplorer            Alt+F3
+ToolHTMLValidate        Ctrl+0
+ToolRerun
+ToolRun
+ToolSort                F9
+ToolSpell               F7
+ToolStop                Ctrl+Shift+Alt+X
+ToolWildEdit
+Ú
+ú
+Ù
+ù
+Û
+û
+Ü
+ü
+ViewClipLib             Ctrl+F3
+ViewDocSelector         F11
+ViewEnd                 Alt+End
+ViewExplorer
+ViewFindDialogBox
+ViewFullPaths
+ViewFullScreen
+ViewHScrollbar          Ctrl+Q, H
+ViewInBrowser
+ViewLineNumbers         Ctrl+Q, L
+ViewProperties
+ViewReplaceDialogBox
+ViewSearchResults       Shift+F11
+ViewStart               Alt+Home
+ViewStatusBar
+ViewTabSelector
+ViewToolOutput          Ctrl+F11
+ViewVisibleSpaces       Ctrl+Q, I
+ViewVScrollbar          Ctrl+Q, V
+Window1
+Window10
+Window2
+Window3
+Window4
+Window5
+Window6
+Window7
+Window8
+Window9
+WindowArrangeIcons
+WindowCascade
+WindowNext
+WindowPaneNext          F6
+WindowPanePrev          Shift+F6
+WindowPrev
+WindowSplit
+WindowTileHorz
+WindowTileVert
+WindowToggleIcon
+WindowToggleZoom
+WordLeft                Ctrl+B                  Ctrl+Left
+WordLeftEnd             Ctrl+D
+WordLeftEndExtend       Ctrl+Shift+D
+WordLeftExtend          Ctrl+Shift+B            Ctrl+Shift+Left
+WordRight
+WordRightEnd            Ctrl+Right
+WordRightEndExtend      Ctrl+Shift+Right
+WordRightExtend         Ctrl+Shift+W
+WorkspaceClose
+WorkspaceOpen
+WorkspaceSave
+WorkspaceSaveAs
+Ý
+ý
+ÿ

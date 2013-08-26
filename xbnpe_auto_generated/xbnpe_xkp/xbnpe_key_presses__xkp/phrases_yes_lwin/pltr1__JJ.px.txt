@@ -1,0 +1,8 @@
+Alt+LWin+JJ -- zALpJJ	{#ALT {#LWIN -chars j}}{#insert zTSlp}	zALpJJ
+Alt+Shift+LWin+JJ -- zASLpJJ	{#ALT {#SHIFT {#LWIN -chars j}}}{#insert zTSlp}	zASLpJJ
+Ctrl+Alt+LWin+JJ -- zCALpJJ	{#CTRL {#ALT {#LWIN -chars j}}}{#insert zTSlp}	zCALpJJ
+Ctrl+Alt+Shift+LWin+JJ -- zCASLpJJ	{#CTRL {#ALT {#SHIFT {#LWIN -chars j}}}}{#insert zTSlp}	zCASLpJJ
+Ctrl+LWin+JJ -- zCLpJJ	{#CTRL {#LWIN -chars j}}{#insert zTSlp}	zCLpJJ
+Ctrl+Shift+LWin+JJ -- zCSLpJJ	{#CTRL {#SHIFT {#LWIN -chars j}}}{#insert zTSlp}	zCSLpJJ
+LWin+JJ -- zLpJJ	{#LWIN -chars j}{#insert zTSlp}	zLpJJ
+Shift+LWin+JJ -- zSLpJJ	{#SHIFT {#LWIN -chars j}}{#insert zTSlp}	zSLpJJ

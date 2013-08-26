@@ -1,0 +1,22 @@
+zzjlDirIsCB	{#SETPHRASE -description zvURL_DIR -content {#insert zTPPaste} -autotext zvURL_DIR -folder ctvv_folder}	zzjlDirIsCB
+zzjlDirIsEmpty	{#SETPHRASE -description zvURL_DIR -content (*NOTHING*) -autotext zvURL_DIR -folder ctvv_folder}	zzjlDirIsEmpty
+zzjlDirFileIsEmpty	{#insert zzjlDirIsEmpty}{#insert zzjlFileIsEmpty}	zzjlDirFileIsEmpty
+zzjlDirFileIsX	{#insert zzjlDirIsEmpty}{#insert zzjlFileIsX}	zzjlDirFileIsX
+zzjlDirFileIsXCB	{#insert zzjlDirIsEmpty}{#insert zzjlFileIsCB}	zzjlDirFileIsXCB
+zzjlDirPrompt	{#SETPHRASE -description zvURL_DIR -content {#input -head Url to {#insert zvURL_FILE_NAME} dir? (end w/ '/', or empty if same) -single -def {#insert zXmark}} -autotext zvURL_DIR -folder ctvv_folder}	zzjlDirPrompt
+zzjlDirX	{#SETPHRASE -description zvURL_DIR -content {#insert zXMark} -autotext zvURL_DIR -folder ctvv_folder}	zzjlDirX
+zzjlFileIsCB	{#SETPHRASE -description zvURL_FILE_NAME -content {#insert zTPPaste} -autotext zvURL_FILE_NAME -folder ctvv_folder}{#insert zzjlFileDotHtmlOn}	zzjlFileIsCB
+zzjlFileIsCBDirPrompt	{#insert zzjlFileIsCB}{#insert zzjlDirPrompt}	zzjlFileIsCBDirPrompt
+zzjlFileIsCBNoDir	{#insert zzjlDirIsEmpty}{#insert zzjlFileIsCB}	zzjlFileIsCBNoDir
+zzjlFileDotHtmlOff	{#SETPHRASE -description zvURL_FILE_DOT_HTML -content (*NOTHING*) -autotext zvURL_FILE_DOT_HTML -folder ctvv_folder}	zzjlFileDotHtmlOff
+zzjlFileDotHtmlOn	{#SETPHRASE -description zvURL_FILE_DOT_HTML -content .html -autotext zvURL_FILE_DOT_HTML -folder ctvv_folder}	zzjlFileDotHtmlOn
+zzjlFileIsEmpty	{#SETPHRASE -description zvURL_FILE_NAME -content (*NOTHING*) -autotext zvURL_FILE_NAME -folder ctvv_folder}{#insert zzjlFileDotHtmlOff}	zzjlFileIsEmpty
+zzjlFileIsL1wDirPrompt	{#insert {#insert zzjlFileIsL1w}}{#insert zzjlDirPrompt}	zzjlFileIsL1wDirPrompt
+zzjlFileIsL1wNoDir	{#insert {#insert zzjlFileIsL1w}}{#insert zzjlDirIsEmpty}	zzjlFileIsL1wNoDir
+zzjlFileIsSuperCN	{#insert cnsuperco}{#insert zzjlFileIsCB}	zzjlFileIsSuperCN
+zzjlFileSuperDirPrompt	{#insert zzjlFileIsSuperCN}{#insert zzjlDirPrompt}	zzjlFileSuperDirPrompt
+zzjlDirFileIsEmptyX	{#insert zzjlDirIsEmpty}{#insert zzjlFileIsX}	zzjlDirFileIsEmptyX
+zzjlFileIsX	{#SETPHRASE -description zvURL_FILE_NAME -content {#insert zXMark} -autotext zvURL_FILE_NAME -folder ctvv_folder}{#insert zzjlFileDotHtmlOn}	zzjlFileIsX
+zzjlFileIsFuncObjNm	{#SETPHRASE -description zvURL_FILE_NAME -content {#insert zvURL_POST_HASH_OBJFNAME} -autotext zvURL_FILE_NAME -folder ctvv_folder}{#insert zzjlFileDotHtmlOn}	zzjlFileIsFuncObjNm
+zzjlFileIsL1w	{#insert zCutL1w}{#insert zzjlFileIsCB}	zzjlFileIsL1w
+zzjlDirIsEmptyFileIsX	{#insert zzjlDirIsEmpty}{#insert zzjlFileIsX}	zzjlDirIsEmptyFileIsX

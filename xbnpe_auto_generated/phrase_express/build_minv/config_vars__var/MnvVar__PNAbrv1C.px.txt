@@ -1,0 +1,13 @@
+__**WARNING**__: All phrases in this folder were created by 'plpdcf'. DO NOT EDIT.	.		(*Extra tab to allow for empty-string autotext*)
+zvVAR_PNMV_1C_sfKey	{#SETPHRASE -description zvVAR_PNMV_1C -content {#insert zzMnvVarVpn1_cfgValue_M_key} -autotext zvVAR_PNMV_1C -folder ctvv_folder}	zvVAR_PNMV_1C_sfKey
+zzMnvVarVpn1_cfgValue_M_key	{#insert {#insert zzMnvVarVpn1_cfgVarPhrsName_M_key}}	zzMnvVarVpn1_cfgValue_M_key
+zzMnvVarPNAbrv1C_cvtFromAbrv1C	Vpn1	zzMnvVarPNAbrv1C_cvtFromAbrv1C
+zzMnvVarVpn1_cfgVarPNmPost	PNAbrv1C	zzMnvVarVpn1_cfgVarPNmPost
+zzMnvVarVpn1_intrnlVarNm	zvVAR_PNMV_1C	zzMnvVarVpn1_intrnlVarNm
+zzMnvVarVpn1_cfgVarPhrsName_M_key	zz{#insert zzMnvVarProjectAbrv1C}{#insert zzMnvVarDataTypeAbrv1C}{#insert zvVAR_ABRV_1C}{#insert zzMnvVarVpn1_cfgVarPNmPost}	zzMnvVarVpn1_cfgVarPhrsName_M_key
+zzMnvVarVpn1_helpForDlg	The MINV_Variable's phrase_name abbreviation, where only the first character is uppercase ('1C'). This is the internal_only, unique identifier for each MINV_Variable instance, distiguishing the phrase names of one variable's configuration_variables from another's.	zzMnvVarVpn1_helpForDlg
+zzMnvVarVpn1_valuePrintable	yes	zzMnvVarVpn1_valuePrintable
+zzMnvVarVpn1_validateValuePhrsNm	zzVldtVpn1NotES_M_self	zzMnvVarVpn1_validateValuePhrsNm
+zzMnvVarVpn1_nkcvListNum	-2	zzMnvVarVpn1_nkcvListNum
+zzMnvVarVpn1_keyCVTFromAbrv1C	{#insert zzMnvVarPubKeyCVTFromAbrv1C}	zzMnvVarVpn1_keyCVTFromAbrv1C
+zvCVT_FRMV_1C_stMnvVarVpn1	{#SETPHRASE -description zvCVT_FRMV_1C -content {#insert zzMnvVarPNAbrv1C_cvtFromAbrv1C} -autotext zvCVT_FRMV_1C -folder ctvv_folder}	zvCVT_FRMV_1C_stMnvVarVpn1

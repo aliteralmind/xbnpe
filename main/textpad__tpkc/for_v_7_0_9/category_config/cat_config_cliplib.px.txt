@@ -1,0 +1,7 @@
+zTpkcCliplibraryAbrvLC	cliplib	zTpkcCliplibraryAbrvLC
+zTpkcCliplibAllCmdNamesTCQbl	[ClipClose][ClipCopy][ClipDeleteBook][ClipDeleteEntry][ClipEditBook][ClipInsert][ClipNewBook][ClipPaste][ClipRefresh][ClipRenameBook][ClipRenameEntry][ClipSaveBook][ClipSortEntries]	zTpkcCliplibAllCmdNamesTCQbl
+zTpkcCliplibCmdCount	13	zTpkcCliplibCmdCount
+zTpkcCliplibHasUserCrtdCmds_yes		zTpkcCliplibHasUsrCrtdCmds_yes
+zTpkcCliplibStpsFrmCatListTop	{#LOOP {#insert zCC}{#insert z5ThnTSlp} -count 3}	zTpkcCliplibStpsFrmCatListTop
+zTpkcCliplibNameLC	cliplibrary	zTpkcCliplibNameLC
+

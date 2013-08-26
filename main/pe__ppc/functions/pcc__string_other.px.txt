@@ -1,0 +1,81 @@
+gth -- {#LENGTH ...}	{#insert zvESC_LVL_CNT_st0}{#insert zGthRAW_M_elc}{#insert zzPccGthSyn}	gth
+
+gthb -- {#LENGTH [paste]}	{#insert zvESC_LVL_CNT_st0}{#insert zGthbRAW_M_elc}{#insert zzPccGthSyn}	gthb
+
+gthbp -- gthb, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zGthbRAW_M_elc}{#insert zzPccGthSyn}	gthbp
+
+gthbq -- gthb, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zGthbRAW_M_elc}{#insert zzPccGthSyn}	gthbq
+
+gthcb -- {#LENGTH {#INSERTCLIPBOARD}}	{#insert zvESC_LVL_CNT_st0}{#insert zGthcbRAW_M_elc}{#insert zzPccGthSyn}	gthcb
+
+gthcbp -- gthcb, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zGthcbRAW_M_elc}{#insert zzPccGthSyn}	gthcbp
+
+gthcbq -- gthcb, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zGthcbRAW_M_elc}{#insert zzPccGthSyn}	gthcbq
+
+gthp -- gth, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zGthRAW_M_elc}{#insert zzPccGthSyn}	gthp
+
+gthq -- gth, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zGthRAW_M_elc}{#insert zzPccGthSyn}	gthq
+
+gtht -- {#LENGTH {#insert [paste]}}	{#insert zvESC_LVL_CNT_st0}{#insert zGthtRAW_M_elc}{#insert zzPccGthSyn}	gtht
+
+gthtp -- gtht, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zGthtRAW_M_elc}{#insert zzPccGthSyn}	gthtp
+
+gthtq -- gtht, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zGthtRAW_M_elc}{#insert zzPccGthSyn}	gthtq
+
+pccgthtestall	{#SETPHRASE -description zvQB_STR_LIST -content {#insert zzPccStrCbAllMainAbrvs1CQBL} -autotext zvQB_STR_LIST -folder ctvv_folder}{#insert zzTestAllMainPhrsCrtrAbrvs_M_qbl}	pccgthtestall
+
+rpl -- {#REPLACE ... -oldtext ... -newtext ...}	{#insert zvESC_LVL_CNT_st0}{#insert zRplRAW_M_elc}{#insert zzPccGthSyn}	rpl
+
+rplp -- rpl, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zRplRAW_M_elc}{#insert zzPccGthSyn}	rplp
+
+rplq -- rpl, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zRplRAW_M_elc}{#insert zzPccGthSyn}	rplq
+
+rpls -- {#REPLACE [crsr] -oldtext ... -newtext ...}	{#insert zvESC_LVL_CNT_st0}{#insert zRplsRAW_M_elc}{#insert zzPccGthSyn}	rpls
+
+rplsp -- rpls, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zRplsRAW_M_elc}{#insert zzPccGthSyn}	rplsp
+
+rplsq -- rpls, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zRplsRAW_M_elc}{#insert zzPccGthSyn}	rplsq
+
+sbs -- {#SUBSTR ... -from ... -count ...}	{#insert zvESC_LVL_CNT_st0}{#insert zSbsRAW_M_elc}{#insert zzPccGthSyn}	sbs
+
+sbsp -- sbs, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zSbsRAW_M_elc}{#insert zzPccGthSyn}	sbsp
+
+sbsq -- sbs, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zSbsRAW_M_elc}{#insert zzPccGthSyn}	sbsq
+
+sbss -- {#SUBSTR [crsr] -from ... -count ...}	{#insert zvESC_LVL_CNT_st0}{#insert zSbssRAW_M_elc}{#insert zzPccGthSyn}	sbss
+
+sbssp -- sbss, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zSbssRAW_M_elc}{#insert zzPccGthSyn}	sbssp
+
+sbssq -- sbss, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zSbssRAW_M_elc}{#insert zzPccGthSyn}	sbssq
+
+sps -- {#POS ... -substr ...}	{#insert zvESC_LVL_CNT_st0}{#insert zSpsRAW_M_elc}{#insert zzPccGthSyn}	sps
+
+spsp -- sps, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zSpsRAW_M_elc}{#insert zzPccGthSyn}	spsp
+
+spsq -- sps, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zSpsRAW_M_elc}{#insert zzPccGthSyn}	spsq
+
+spss -- {#POS [crsr] -substr ...}	{#insert zvESC_LVL_CNT_st0}{#insert zSpssRAW_M_elc}{#insert zzPccGthSyn}	spss
+
+zGthRAW_M_elc -- Needs zvESC_LVL_CNT (assumed good value!)	{#insert zOY_M_elc}#LENGTH {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zGthRAW_M_elc
+
+zGthbRAW_M_elc	{#insert zOY_M_elc}#LENGTH {#insert zTPPaste}{#insert zCY_M_elc}	zGthbRAW_M_elc
+
+zGthcbRAW_M_elc -- Needs zvESC_LVL_CNT (assumed good value!)	{#insert zOY_M_elc}#LENGTH \\\{#INSERTCLIPBOARD\\\}{#insert zCY_M_elc}	zGthcbRAW_M_elc
+
+zGthtRAW_M_elc -- Needs zvESC_LVL_CNT (assumed good value!)	{#insert zOY_M_elc}#LENGTH \\\{#insert {#insert zTPPaste}\\\}{#insert zCY_M_elc}	zGthtRAW_M_elc
+
+zRplRAW_M_elc	{#insert zOY_M_elc}#REPLACE {#insert zXmark} -oldtext {#insert zYmark} -newtext {#insert zYmark}{#insert zCY_M_elc}	zRplRAW_M_elc
+
+zRplsRAW_M_elc	{#insert zOY_M_elc}#REPLACE  -oldtext {#insert zXmark} -newtext {#insert zXmark}{#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}{#LEFT -count 26}	zRplsRAW_M_elc
+
+zSbsRAW_M_elc	{#insert zOY_M_elc}#SUBSTR {#insert zXmark} -from {#insert zYmark} -count {#insert zYmark}{#insert zCY_M_elc}	zSbsRAW_M_elc
+
+zSbssRAW_M_elc	{#insert zOY_M_elc}#SUBSTR  -from {#insert zXmark} -count {#insert zXmark}{#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}{#LEFT -count 21}	zSbssRAW_M_elc
+
+zSpsRAW_M_elc	{#insert zOY_M_elc}#POS {#insert zXmark} -substr {#insert zYmark}{#insert zCY_M_elc}	zSpsRAW_M_elc
+
+zSpssRAW_M_elc	{#insert zOY_M_elc}#POS  -substr {#insert zXmark}{#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}{#LEFT -count 12}	zSpssRAW_M_elc
+
+zzPccGthSyn	{#BALLOON -title Non~trim/upper/lower str (all have '[[p,q]]') -text sbs[s]=SUBSTR  //  rpl[s]=REPLACE  //  sps[s]=POS  //  gth[[b,cb,t]]=LENGTH ~~ ([b]=paste, [cb]=\\\{#INSCB\\\}, [t]=insb)  //  [s]=go to str param, , [p]=esc'd, [q]=dbly~esc'd (or more)  //  pccgthtestall}	zzPccGthSyn
+
+zzPccStrCbAllMainAbrvs1CQBL	[Gth][Gthb][Gthcb][Gtht][Rpl][Rpls][Sbs][Sbss][Sps][Spss]	zzPccStrCbAllMainAbrvs1CQBL

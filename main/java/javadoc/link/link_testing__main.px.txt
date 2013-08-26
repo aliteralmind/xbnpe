@@ -1,0 +1,8 @@
+jlt -- zzjlTest ALT KC	{#insert zzjlTest}	jlt
+jltb -- zzjlTestWithCB ALT KC	{#insert zzjlTestWithCB}	jltb
+jltn -- zzjlTestN ALT KC	{#insert zzjlTestN}	jltn
+jltbn -- zzjlTestWithCBN ALT KC	{#insert zzjlTestWithCBn}	jltbn
+jltcleanup -- zzjlTestCleanup ALT KC	{#insert zzjlTestCleanup}	jltcleanup
+jltinit -- zzjlTestInit ALT KC	{#insert zzjlTestInit}	jltinit
+jltcleanupw -- zzjlTestCleanupWW ALT KC	{#insert zzjlTestCleanupWW}	jltcleanupw
+jltinitw -- zzjlTestInitWW ALT KC	{#insert zzjlTestInitWW}	jltinitw

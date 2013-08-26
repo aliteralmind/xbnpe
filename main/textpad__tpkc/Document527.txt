@@ -1,0 +1,41 @@
+ERROR LOG: Any TPKC global config variables that have unexpected values will be logged here. If there are no entries (no bad commands), then this log-file will be discarded.
+-----------------------------
+EditCopyFileName
+	-Category='edit'
+	-First detected error: Unexpected value for 'zTpkcEditCopyFileNameAbrv1C': ''
+	---
+	Variable name, expected value, actual value (without quotes)
+	-------------  --------------  -----------------------------
+	zTpkcEcpfnmCmdNameTC, '', 'EditCopyFileName'
+	zTpkcEcpfnmDfltPhrsNm, '', 'zTPCopyFileName'
+	zTpkcEcpfnmCatForCmdAbrvLC, '', 'edit'
+	zTpkcEditCopyFileNameAbrv1C, '', 'Ecpfnm'
+	zTpkcEcpfnmIsBtstrp_yes, '', ''
+	zTpkcEcpfnmDfltPostKcSlpMils, '', '10'
+	zTpkcEcpfnmCmdType_mcrTl, '', ''
+EditCopyTaggedLines
+	-Category='edit'
+	-First detected error: Unexpected value for 'zTpkcEcpbkmlnsIsBtstrp_yes': ''
+	---
+	Variable name, expected value, actual value (without quotes)
+	-------------  --------------  -----------------------------
+	zTpkcEcpbkmlnsCmdNameTC, '', 'EditCopyTaggedLines'
+	zTpkcEcpbkmlnsDfltPhrsNm, '', 'zTPBookmarkCopyAll'
+	zTpkcEcpbkmlnsCatForCmdAbrvLC, '', 'edit'
+	zTpkcEditCopyTaggedLinesAbrv1C, '', 'Ecpbkmlns'
+	zTpkcEcpbkmlnsIsBtstrp_yes, '', 'yes'
+	zTpkcEcpbkmlnsDfltPostKcSlpMils, '', '10'
+	zTpkcEcpbkmlnsCmdType_mcrTl, '', ''
+EditLowerCase
+	-Category='edit'
+	-First detected error: Unexpected value for 'zTpkcEditLowerCaseAbrv1C': ''
+	---
+	Variable name, expected value, actual value (without quotes)
+	-------------  --------------  -----------------------------
+	zTpkcElwcCmdNameTC, '', 'EditLowerCase'
+	zTpkcElwcDfltPhrsNm, '', 'zTPLowerCase'
+	zTpkcElwcCatForCmdAbrvLC, '', 'edit'
+	zTpkcEditLowerCaseAbrv1C, '', 'Elwc'
+	zTpkcElwcIsBtstrp_yes, '', ''
+	zTpkcElwcDfltPostKcSlpMils, '', '10'
+	zTpkcElwcCmdType_mcrTl, '', ''

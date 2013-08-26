@@ -1,0 +1,5 @@
+zFFindFlagAllLines	{#insert zFFindFlagAllLinesRAW}{#insert zFFindFieldWhat}	zFFindFlagAllLines
+zFFindFlagBinaryFilesTgl	{#insert zFFindFlagBinaryFilesTglRAW}{#insert zFFindFieldWhat}	zFFindFlagBinaryFilesTgl
+zFFindFlagFilesOnly	{#insert zFFindFlagFilesOnlyRAW}{#insert zFFindFieldWhat}	zFFindFlagFilesOnly
+zFFindFlagSubDirsTgl	{#insert zFFindFlagSubDirsTglRAW}{#insert zFFindFieldWhat}	zFFindFlagSubDirsTgl
+zFFindFlagFilesOnlySubDirsTgl	{#insert zFFindFlagFilesOnlySubDirsTglRAW}{#insert zFFindFieldWhat}	zFFindFlagFilesOnlySubDirsTgl

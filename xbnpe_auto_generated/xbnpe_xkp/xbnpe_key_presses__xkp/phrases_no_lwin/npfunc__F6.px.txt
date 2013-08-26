@@ -1,0 +1,8 @@
+F6 -- zF6	{#F6}{#insert zTSlp}	zF6
+Alt+F6 -- zApF6	{#ALT {#F6}}{#insert zTSlp}	zApF6
+Alt+Shift+F6 -- zASpF6	{#ALT {#SHIFT {#F6}}}{#insert zTSlp}	zASpF6
+Ctrl+F6 -- zCpF6	{#CTRL {#F6}}{#insert zTSlp}	zCpF6
+Ctrl+Alt+F6 -- zCApF6	{#CTRL {#ALT {#F6}}}{#insert zTSlp}	zCApF6
+Ctrl+Alt+Shift+F6 -- zCASpF6	{#CTRL {#ALT {#SHIFT {#F6}}}}{#insert zTSlp}	zCASpF6
+Ctrl+Shift+F6 -- zCSpF6	{#CTRL {#SHIFT {#F6}}}{#insert zTSlp}	zCSpF6
+Shift+F6 -- zSpF6	{#SHIFT {#F6}}{#insert zTSlp}	zSpF6

@@ -1,0 +1,8 @@
+zTpkcWindow5Abrv1C	Win5	zTpkcWindow5Abrv1C
+zTpkcWin5CmdNameTC	Window5	zTpkcWin5CmdNameTC
+zTpkcWin5DfltPhrsNm	zTPGTWin5	zTpkcWin5DfltPhrsNm
+zTpkcWin5CatForCmdAbrvLC	window	zTpkcWin5CatForCmdAbrvLC
+zTpkcWin5CmdType_mcrTl		zTpkcWin5CmdType_mcrTl
+zTpkcWin5IsBtstrp_yes		zTpkcWin5IsBtstrp_yes
+zTpkcWin5DfltPostKcSlpMils	10	zTpkcWin5DfltPostKcSlpMils
+zTpkcWin5StpsFrmCmdListTop	{#insert zPGDN}{#insert zUP}	zTpkcWin5StpsFrmCmdListTop

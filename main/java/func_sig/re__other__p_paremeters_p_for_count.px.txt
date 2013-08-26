@@ -1,0 +1,5 @@
+zjreParams_count0orMore	({#insert zjreBasicParamChar}*)	zjreParams_count0orMore
+zjreParams_count1orMore	({#insert zjreBasicParamChar}+)	zjreParams_count1orMore
+zjreParams_countFromGT0Prompt	({#insert zjreParamTypeAndName}{#insert zjreCmaSpcParamTypeAndName}\{{#CALC {#insert zjreParamCountFromPrompt} - 1}\})	zjreParams_countFromGT0Prompt
+zjreParamsForDynamicCount	{#insert zjreParams_count{#insert zvPARAM_COUNT_POST}}	zjreParamsForDynamicCount
+zjreBasicParamChar	([A-Za-z ,_0-9><?]|\[\])	zjreBasicParamChar

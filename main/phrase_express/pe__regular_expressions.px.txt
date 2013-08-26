@@ -1,0 +1,3 @@
+zzRegexPhrsLnWAutotxtDscWrd1MidIndentAutotext -- Ends at tab before autotext. 3 groups	(*Group 1=autotext (1st word in description), 2=rest of description, 3=phrase-body*)(\b[\w]+\b)([^\t\n\r]*)\t([^\t\n\r]+)\t	zzRegexPhrsLnWAutotxtDscWrd1MidIndentAutotext
+zzRegexTabDelimPhraseLineWAutotextDescWord1PstIndnt -(**)- No ^ start-line anchor. 3 groups.	(*Group 1=autotext (1st word in description), 2=rest of description, 3=phrase-body*){#insert zzRegexPhrsLnWAutotxtDscWrd1MidIndentAutotext}\1$	zzRegexTabDelimPhraseLineWAutotextDescWord1PstIndnt
+zzRegexTextTabTextTabTextDlrSignPstIndnt -(**)- No ^ start-line anchor. 3 groups.	(*Group 1=description, 2=phrase-body, 3=autotext*)([^\t\n\r]+)\t([^\t\n\r]+)\t([\w]+)$	zzRegexTextTabTextTabTextDlrSignPstIndnt

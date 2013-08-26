@@ -1,0 +1,36 @@
+
+ifl -- {#INSERTFILE ...}	{#insert zvESC_LVL_CNT_st0}{#insert zIflRAW_M_elc}{#insert zzIflOpenSyntax}	ifl
+iflb -- {#INSERTFILE [paste]}	{#insert zvESC_LVL_CNT_st0}{#insert zIflbRAW_M_elc}{#insert zzIflOpenSyntax}	iflb
+iflbp -- iflb, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zIflbRAW_M_elc}{#insert zzIflOpenSyntax}	iflbp
+iflbq -- iflb, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zIflbRAW_M_elc}{#insert zzIflOpenSyntax}	iflbq
+iflp -- ifl, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zIflRAW_M_elc}{#insert zzIflOpenSyntax}	iflp
+iflq -- ifl, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zIflRAW_M_elc}{#insert zzIflOpenSyntax}	iflq
+iod -- {#OPENFOLDER ...}	{#insert zvESC_LVL_CNT_st0}{#insert zIodRAW_M_elc}{#insert zzIflOpenSyntax}	iod
+iodb -- {#OPENFOLDER [paste]}	{#insert zvESC_LVL_CNT_st0}{#insert zIodbRAW_M_elc}{#insert zzIflOpenSyntax}	iodb
+iodbp -- iodb, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zIodbRAW_M_elc}{#insert zzIflOpenSyntax}	iodbp
+iodbq -- iodb, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zIodbRAW_M_elc}{#insert zzIflOpenSyntax}	iodbq
+iodp -- iod, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zIodRAW_M_elc}{#insert zzIflOpenSyntax}	iodp
+iodq -- iod, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zIodRAW_M_elc}{#insert zzIflOpenSyntax}	iodq
+iods -- {#OPENFOLDER /select, ''[paste]''}	{#insert zvESC_LVL_CNT_st0}{#insert zIodsRAW_M_elc}{#insert zzIflOpenSyntax}	iods
+iodsb -- {#OPENFOLDER /select, ''[paste]''}	{#insert zvESC_LVL_CNT_st0}{#insert zIodsbRAW_M_elc}{#insert zzIflOpenSyntax}	iodsb
+iodsbp -- iodsb, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zIodsbRAW_M_elc}{#insert zzIflOpenSyntax}	iodsbp
+iodsbq -- iodsb, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zIodsbRAW_M_elc}{#insert zzIflOpenSyntax}	iodsbq
+iodsp -- iods, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zIodsRAW_M_elc}{#insert zzIflOpenSyntax}	iodsp
+iodsq -- iods, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zIodsRAW_M_elc}{#insert zzIflOpenSyntax}	iodsq
+iol -- {#OPEN ...}	{#insert zvESC_LVL_CNT_st0}{#insert zIolRAW_M_elc}{#insert zzIflOpenSyntax}	iol
+iolb -- {#OPEN [paste]}	{#insert zvESC_LVL_CNT_st0}{#insert zIolbRAW_M_elc}{#insert zzIflOpenSyntax}	iolb
+iolbp -- iolb, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zIolbRAW_M_elc}{#insert zzIflOpenSyntax}	iolbp
+iolbq -- iolb, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zIolbRAW_M_elc}{#insert zzIflOpenSyntax}	iolbq
+iolp -- iol, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zIolRAW_M_elc}{#insert zzIflOpenSyntax}	iolp
+iolq -- iol, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zIolRAW_M_elc}{#insert zzIflOpenSyntax}	iolq
+pccifltestall	{#SETPHRASE -description zvQB_STR_LIST -content {#insert zzPccIflAllMainAbrvs1CQBL} -autotext zvQB_STR_LIST -folder ctvv_folder}{#insert zzTestAllMainPhrsCrtrAbrvs_M_qbl}	pccifltestall
+zIflRAW_M_elc -- Needs zvESC_LVL_CNT (assumed good value!)	{#insert zOY_M_elc}#INSERTFILE {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zIflRAW_M_elc
+zIflbRAW_M_elc	{#insert zOY_M_elc}#INSERTFILE {#insert zTPPaste}{#insert zCY_M_elc}	zIflbRAW_M_elc
+zIodRAW_M_elc	{#insert zOY_M_elc}#OPENFOLDER {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zIodRAW_M_elc
+zIodbRAW_M_elc	{#insert zOY_M_elc}#OPENFOLDER {#insert zTPPaste}{#insert zCY_M_elc}	zIodbRAW_M_elc
+zIodsRAW_M_elc	{#insert zOY_M_elc}#OPENFOLDER /select, {#insert zAscQQ}{#insert zAscQQ}{#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}{#LEFT}	zIodsRAW_M_elc
+zIodsbRAW_M_elc	{#insert zOY_M_elc}#OPENFOLDER /select, {#insert zAscQQ}{#insert zTPPaste}{#insert zAscQQ}{#insert zCY_M_elc}	zIodsbRAW_M_elc
+zIolRAW_M_elc	{#insert zOY_M_elc}#OPEN {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zIolRAW_M_elc
+zIolbRAW_M_elc	{#insert zOY_M_elc}#OPEN {#insert zTPPaste}{#insert zCY_M_elc}	zIolbRAW_M_elc
+zzIflOpenSyntax	{#BALLOON -title INSERTFILE, OPENFOLDER, OPEN syntax -text ifl[b][[p,q]] -- (INSERTFILE)  //  iod[s][b][[p,q]] -- (OPEN fol'D'er, [s]=highlight ['S'elect] file)  //  iol[b][[p,q]] -- (OPEN fi'L'e)  //  [p]=esc'd, [q]=dbly-esc'd (or more)  //  pccifltestall  //  'z[1c-abrv-w/o-pq]RAW_M_elc' (ex: 'zIflbRAW_M_elc')}	zzIflOpenSyntax
+zzPccIflAllMainAbrvs1CQBL	[Ifl][Iflb][Iod][Iodb][Iods][Iodsb][Iol][Iolb]	zzPccIflAllMainAbrvs1CQBL

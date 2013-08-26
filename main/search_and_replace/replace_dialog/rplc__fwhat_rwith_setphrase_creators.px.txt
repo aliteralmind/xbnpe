@@ -1,0 +1,3 @@
+fwhatp -- zvFIND_WHAT setphrase then call **MUST BE DOUBLY-ESCAPED**	\\\{#SETPHRASE -description zvFIND_WHAT -content {#CURSOR} -autotext zvFIND_WHAT -folder ctvv_folder\\\}\\\{#insert zvFIND_WHAT\\\}{#insert zzFWhatRWithSyn}	fwhatp
+rwithp -- zvRPLC_WITH setphrase then call **MUST BE DOUBLY-ESCAPED**	\\\{#SETPHRASE -description zvRPLC_WITH -content {#CURSOR} -autotext zvRPLC_WITH -folder ctvv_folder\\\}\\\{#insert zvRPLC_WITH\\\}{#insert zzFWhatRWithSyn}	rwithp
+zzFWhatRWithSyn	{#BALLOON -title fwhatp / rwithp -text A SETPHRASE~then~immediate~call to zvFIND_WHAT and zvRPLC_WITH. To avoid typing directly into the find~what and replace~with textboxes, which is not as reliable as calling a phrase containing its text. Must DOUBLY~escape the values.}	zzFWhatRWithSyn

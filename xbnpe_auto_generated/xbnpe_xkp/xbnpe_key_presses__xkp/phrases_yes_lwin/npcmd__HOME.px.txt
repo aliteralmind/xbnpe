@@ -1,0 +1,8 @@
+Alt+LWin+HOME -- zALpHOME	{#ALT {#LWIN {#HOME}}}{#insert zTSlp}	zALpHOME
+Alt+Shift+LWin+HOME -- zASLpHOME	{#ALT {#SHIFT {#LWIN {#HOME}}}}{#insert zTSlp}	zASLpHOME
+Ctrl+Alt+LWin+HOME -- zCALpHOME	{#CTRL {#ALT {#LWIN {#HOME}}}}{#insert zTSlp}	zCALpHOME
+Ctrl+Alt+Shift+LWin+HOME -- zCASLpHOME	{#CTRL {#ALT {#SHIFT {#LWIN {#HOME}}}}}{#insert zTSlp}	zCASLpHOME
+Ctrl+LWin+HOME -- zCLpHOME	{#CTRL {#LWIN {#HOME}}}{#insert zTSlp}	zCLpHOME
+Ctrl+Shift+LWin+HOME -- zCSLpHOME	{#CTRL {#SHIFT {#LWIN {#HOME}}}}{#insert zTSlp}	zCSLpHOME
+LWin+HOME -- zLpHOME	{#LWIN {#HOME}}{#insert zTSlp}	zLpHOME
+Shift+LWin+HOME -- zSLpHOME	{#SHIFT {#LWIN {#HOME}}}{#insert zTSlp}	zSLpHOME

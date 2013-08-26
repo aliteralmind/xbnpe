@@ -1,0 +1,25 @@
+FileClose	0
+FileCloseAll	0
+FileExit	0
+FileGoTo	1	\\\{#insert zCSpGG\\\}
+FileManage	0
+FileNew	0
+FileOpen	0
+FilePageSetup	0
+FilePrint	1	\\\{#insert zCpPP\\\}
+FilePrintAll	0
+FilePrintDefault	0
+FilePrintPreview	1	\\\{#insert zCSpPP\\\}
+FileQuickOpen	0
+FileRename	0
+FileRevert	0
+FileSave	0
+FileSaveAll	1	\\\{#insert zCSpSS\\\}
+FileSaveAndClose	0
+FileSaveAs	1	\\\{#insert zF12\\\}
+FileSend	0
+FileStatistics	1	\\\{#insert zCpF1\\\}
+WorkspaceClose	0
+WorkspaceOpen	0
+WorkspaceSave	0
+WorkspaceSaveAs	0

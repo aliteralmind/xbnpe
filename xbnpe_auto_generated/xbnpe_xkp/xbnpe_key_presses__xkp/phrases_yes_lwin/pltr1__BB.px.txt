@@ -1,0 +1,8 @@
+Alt+LWin+BB -- zALpBB	{#ALT {#LWIN -chars b}}{#insert zTSlp}	zALpBB
+Alt+Shift+LWin+BB -- zASLpBB	{#ALT {#SHIFT {#LWIN -chars b}}}{#insert zTSlp}	zASLpBB
+Ctrl+Alt+LWin+BB -- zCALpBB	{#CTRL {#ALT {#LWIN -chars b}}}{#insert zTSlp}	zCALpBB
+Ctrl+Alt+Shift+LWin+BB -- zCASLpBB	{#CTRL {#ALT {#SHIFT {#LWIN -chars b}}}}{#insert zTSlp}	zCASLpBB
+Ctrl+LWin+BB -- zCLpBB	{#CTRL {#LWIN -chars b}}{#insert zTSlp}	zCLpBB
+Ctrl+Shift+LWin+BB -- zCSLpBB	{#CTRL {#SHIFT {#LWIN -chars b}}}{#insert zTSlp}	zCSLpBB
+LWin+BB -- zLpBB	{#LWIN -chars b}{#insert zTSlp}	zLpBB
+Shift+LWin+BB -- zSLpBB	{#SHIFT {#LWIN -chars b}}{#insert zTSlp}	zSLpBB

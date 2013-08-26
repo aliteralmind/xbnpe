@@ -1,0 +1,8 @@
+NUM9 -- zNUM9	{#NUMPAD9}{#insert zTSlp}	zNUM9
+Alt+NUM9 -- zApNUM9	{#ALT {#NUMPAD9}}{#insert zTSlp}	zApNUM9
+Alt+Shift+NUM9 -- zASpNUM9	{#ALT {#SHIFT {#NUMPAD9}}}{#insert zTSlp}	zASpNUM9
+Ctrl+NUM9 -- zCpNUM9	{#CTRL {#NUMPAD9}}{#insert zTSlp}	zCpNUM9
+Ctrl+Alt+NUM9 -- zCApNUM9	{#CTRL {#ALT {#NUMPAD9}}}{#insert zTSlp}	zCApNUM9
+Ctrl+Alt+Shift+NUM9 -- zCASpNUM9	{#CTRL {#ALT {#SHIFT {#NUMPAD9}}}}{#insert zTSlp}	zCASpNUM9
+Ctrl+Shift+NUM9 -- zCSpNUM9	{#CTRL {#SHIFT {#NUMPAD9}}}{#insert zTSlp}	zCSpNUM9
+Shift+NUM9 -- zSpNUM9	{#SHIFT {#NUMPAD9}}{#insert zTSlp}	zSpNUM9

@@ -1,0 +1,8 @@
+zTpkcLineScrollUpAbrv1C	Crlnscru	zTpkcLineScrollUpAbrv1C
+zTpkcCrlnscruCmdNameTC	LineScrollUp	zTpkcCrlnscruCmdNameTC
+zTpkcCrlnscruDfltPhrsNm	zTPLineScrollUp	zTpkcCrlnscruDfltPhrsNm
+zTpkcCrlnscruCatForCmdAbrvLC	cursor	zTpkcCrlnscruCatForCmdAbrvLC
+zTpkcCrlnscruCmdType_mcrTl		zTpkcCrlnscruCmdType_mcrTl
+zTpkcCrlnscruIsBtstrp_yes		zTpkcCrlnscruIsBtstrp_yes
+zTpkcCrlnscruDfltPostKcSlpMils	10	zTpkcCrlnscruDfltPostKcSlpMils
+zTpkcCrlnscruStpsFrmCmdListTop	{#insert zPP}{#insert zPGUP}{#insert zDOWN}	zTpkcCrlnscruStpsFrmCmdListTop

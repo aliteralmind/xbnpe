@@ -1,0 +1,14 @@
+zvNKCV_CURR_NUM_initTo0 -- Generify a phrase creator for this and inc1	{#SETPHRASE -description zvNKCV_CURR_NUM -content 0 -autotext zvNKCV_CURR_NUM -folder ctvv_folder}	zvNKCV_CURR_NUM_initTo0
+zvNKCV_CURR_NUM_incBy1	{#SETPHRASE -description zvNKCV_CURR_NUM -content {#CALC {#insert zvNKCV_CURR_NUM} + 1 -round 0 -thousands none} -autotext zvNKCV_CURR_NUM -folder ctvv_folder}	zvNKCV_CURR_NUM_incBy1
+zvNKCV_CURR_NUM_getThenIncBy1 -- Phrase creator for this and init	{#insert zvNKCV_CURR_NUM}{#insert zvNKCV_CURR_NUM_incBy1}	zvNKCV_CURR_NUM_getThenIncBy1
+zzCrashIfRqdCBItemES_M_rqin -- First trims clipboard. Needs zvRQD_ITEM_NAME	{#SETCLIPBOARD {#TRIM {#INSERTCLIPBOARD}}}{#insert {#COND -if {#insert zCBLen} = 0 -then zzErrDlgRqdItemES_M_rqin -else z1slp}}	zzCrashIfRqdCBItemES_M_rqin
+zzErrDlgRqdItemES_M_rqin -- Needs zvRQD_ITEM_NAME	{#MSGBOX -head ERROR: '{#insert zvRQD_ITEM_NAME}' -text ERROR: The required item '{#insert zvRQD_ITEM_NAME}' is empty-string. It must contain at least one character.}	zzErrDlgRqdItemES_M_rqin
+zzDbgThenCIRqdCBItemES_M_rqinDbgf -- Needs zvRQD_ITEM_NAME, zvDBG_RQD_CB_ITEM	{#insert {#COND -if {#insert zvDBG_RQD_CB_ITEM} = on -then zzDbgThenCIRqdCBItemES_M_rqin -else zzCrashIfRqdCBItemES_M_rqin}}	zzDbgThenCIRqdCBItemES_M_rqinDbgf
+zzDbgThenCIRqdCBItemES_M_rqin -- DO debug.	{#MSGBOX -head Debugging '{#insert zvRQD_ITEM_NAME}' -text About to call zzCrashIfRqdCBItemES_M_rqin. zvDBG_RQD_CB_ITEM is 'on' (actually '{#insert zvDBG_RQD_CB_ITEM}'). Debugging zvRQD_ITEM_NAME='{#insert zvRQD_ITEM_NAME}', {#insert zOY}#INSERTCLIPBOARD{#insert zCY}='{#INSERTCLIPBOARD}'.}{#insert zzCrashIfRqdCBItemES_M_rqin}	zzDbgThenCIRqdCBItemES_M_rqin
+zvDBG_RQD_CB_ITEM_stOn	{#SETPHRASE -description zvDBG_RQD_CB_ITEM -content on -autotext zvDBG_RQD_CB_ITEM -folder ctvv_folder}	zvDBG_RQD_CB_ITEM_stOn
+zvDBG_RQD_CB_ITEM_stOff	{#SETPHRASE -description zvDBG_RQD_CB_ITEM -content off -autotext zvDBG_RQD_CB_ITEM -folder ctvv_folder}	zvDBG_RQD_CB_ITEM_stOff
+zzQoffQ	off	zzQoffQ
+zzQonQ	on	zzQonQ
+zzQyesQ	yes	zzQyesQ
+zzQnoQ	no	zzQnoQ
+zMsgboxDone	{#MSGBOX -head DONE -text Done}	zMsgboxDone

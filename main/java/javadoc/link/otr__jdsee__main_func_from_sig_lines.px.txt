@@ -1,0 +1,38 @@
+jdsfgl -- jdsfgl1 ALT KC	{#insert jdsfgl1}	jdsfgl
+jdsfgl01 -- Actually jdsfgl1	{#insert zvNUMBER_st1}{#insert zzJdsfgl_MSTR}	jdsfgl1
+jdsfgl02 -- jdsfgl2	{#insert zvNUMBER_st2}{#insert zzJdsfgl_MSTR}	jdsfgl2
+jdsfgl03 -- jdsfgl3	{#insert zvNUMBER_st3}{#insert zzJdsfgl_MSTR}	jdsfgl3
+jdsfgl04 -- jdsfgl4	{#insert zvNUMBER_st4}{#insert zzJdsfgl_MSTR}	jdsfgl4
+jdsfgl05 -- jdsfgl5	{#insert zvNUMBER_st5}{#insert zzJdsfgl_MSTR}	jdsfgl5
+jdsfgl06 -- jdsfgl6	{#insert zvNUMBER_st6}{#insert zzJdsfgl_MSTR}	jdsfgl6
+jdsfgl07 -- jdsfgl7	{#insert zvNUMBER_st7}{#insert zzJdsfgl_MSTR}	jdsfgl7
+jdsfgl08 -- jdsfgl8	{#insert zvNUMBER_st8}{#insert zzJdsfgl_MSTR}	jdsfgl8
+jdsfgl09 -- jdsfgl9	{#insert zvNUMBER_st9}{#insert zzJdsfgl_MSTR}	jdsfgl9
+jdsfgl10	{#insert zvNUMBER_st10}{#insert zzJdsfgl_MSTR}	jdsfgl10
+jdsfgll -- jdsfgll1 ALT KC	{#insert jdsfgll1}	jdsfgll
+jdsfgll01 -- Actually jdsfgll1	{#insert zvNUMBER_st1}{#insert zzJdsfgll_MSTR}	jdsfgll1
+jdsfgll02 -- jdsfgll2	{#insert zvNUMBER_st2}{#insert zzJdsfgll_MSTR}	jdsfgll2
+jdsfgll03 -- jdsfgll3	{#insert zvNUMBER_st3}{#insert zzJdsfgll_MSTR}	jdsfgll3
+jdsfgll04 -- jdsfgll4	{#insert zvNUMBER_st4}{#insert zzJdsfgll_MSTR}	jdsfgll4
+jdsfgll05 -- jdsfgll5	{#insert zvNUMBER_st5}{#insert zzJdsfgll_MSTR}	jdsfgll5
+jdsfgll06 -- jdsfgll6	{#insert zvNUMBER_st6}{#insert zzJdsfgll_MSTR}	jdsfgll6
+jdsfgll07 -- jdsfgll7	{#insert zvNUMBER_st7}{#insert zzJdsfgll_MSTR}	jdsfgll7
+jdsfgll08 -- jdsfgll8	{#insert zvNUMBER_st8}{#insert zzJdsfgll_MSTR}	jdsfgll8
+jdsfgll09 -- jdsfgll9	{#insert zvNUMBER_st9}{#insert zzJdsfgll_MSTR}	jdsfgll9
+jdsfgll10	{#insert zvNUMBER_st10}{#insert zzJdsfgll_MSTR}	jdsfgll10
+jdsfglexample	{#insert zFcsTPFileNew}{#insert zTAB}/**{#insert zEnterTab}<P>This is a function JavaDoc block. The following &quot;See&quot; line is created with <CODE>&quot;jdsee&quot;</CODE>. After it is a bunch of signature lines <I>from functions existing in the same class</I>. Note that after each close paren are some spaces and the function's open-curly (&quot; &nbsp;{&quot;). Also note that the order of these signatures is preserved.</P>{#insert zENTER2}<P>The cursor is now in the right spot. Call <CODE>&quot;jdsfgl5&quot;</CODE>.</P>{#insert zENTER2}<P><I>See: {#insert zYmark}</I></P>{#insert zENTER}{#insert zXmark}String getArrayRangeMsg(ObjectExceptionContextable oxc_b, int i_badIdxStart, String s_idxStartName, int i_badIdxEndX, String s_idxEndName, Object[] a_o)  {#insert zzOpnCrlEntrBksp}public static final String getListIndexMsg(ObjectExceptionContextable oxc_b, int i_badIdx, String s_idxName, Collection<? extends Object> c_oll)  {#insert zzOpnCrlEntrBksp}public String getIndexMsg(ExceptionContextable xc_b, int i_badIdx, String s_idxName, int i_containerLen, String s_containerNameDotLengthFunc)  {#insert zzOpnCrlEntrBksp}public static String getStringRangeMsg(ObjectExceptionContextable oxc_b, int i_badIdxStart, String s_idxStartName, int i_badIdxEndX, String s_idxEndName, String s_tring)  {#insert zzOpnCrlEntrBksp}public static final String getListRangeMsg(ObjectExceptionContextable oxc_b, int i_badIdxStart, String s_idxStartName, int i_badIdxEndX, String s_idxEndName, Collection<? extends Object> c_oll)  {#insert zzOpnCrlEntrBksp}{#insert zXUpDelete}	jdsfglexample
+zzOpnCrlEntrBksp	{#insert zOY}{#insert zEnterBksp}	zzOpnCrlEntrBksp
+jdsfgln	{#insert zzJdsfglSetNUMtoPrompt}{#insert zzJdsfgl_MSTR}	jdsfgln
+jdsfglln	{#insert zzJdsfglSetNUMtoPrompt}{#insert zzJdsfgll_MSTR}	jdsfglln
+zzJdsfglRAW	{#insert zHOME}{#insert zVmark}{#insert zENTER}(*<--Pad line*){#insert gsscg}{#insert zDeleteLine}{#insert zYUpPaste}{#insert fkgvc}{#insert {#insert zvDIVIDER_PNAME}}{#insert zYmark}{#insert zVDownDelete}{#insert zDEL}(*<--Pad line*)	zzJdsfglRAW
+zzJdsfgl_MSTR	{#insert zFindOpenFlgPreChkWW}{#insert zzJdsfgl_MSTRNoPreChkOrWW}{#insert zTPToggleWW}(*{#insert zzWWFindZUpNPnplvn}*)	zzJdsfgl_MSTR
+zzJdsfgll_MSTR	{#insert zFindOpenFlgPreChkWW}{#insert zzJdsfgll_MSTRNoPreChkOrWW}{#insert zTPToggleWW}(*{#insert zzWWFindZUpNPnplvn}*)	zzJdsfgll_MSTR
+zzJdsfgl_MSTRNoPreChkOrWW	{#SETPHRASE -description zvDIVIDER_PNAME -content zzCmaSpc -autotext zvDIVIDER_PNAME -folder ctvv_folder}{#insert zzJdsfglLoopVYupDel2bkspVdnDel}	zzJdsfgl_MSTRNoPreChkOrWW
+zzJdsfgll_MSTRNoPreChkOrWW	{#SETPHRASE -description zvDIVIDER_PNAME -content zzNewLI -autotext zvDIVIDER_PNAME -folder ctvv_folder}{#insert zzJdsfglLoopVYupDel2bkspVdnDel}	zzJdsfgll_MSTRNoPreChkOrWW
+zzFindZUpNPnplvn	{#insert zFindZUp{#insert zvNUMBER}}{#insert zzPnplvn_MSTRNoPreCheck}	zzFindZUpNPnplvn
+zFindOpenFlgPreChkWW	{#insert zFindDialogFlagPreCheck}{#insert zTPToggleWW}	zFindOpenFlgPreChkWW
+zzCmaSpc	, (*ends with space*)	zzCmaSpc
+zzNewLI	</LI>{#insert zENTER}<LI>	zzNewLI
+zzWWFindZUpNPnplvn	{#insert zTPToggleWW}{#insert zzFindZUpNPnplvn}	zzWWFindZUpNPnplvn
+zzJdsfglSetNUMtoPrompt	{#insert zvNUMBER_st{#input -head How many sig lines follow the jd-see? -single}}	zzJdsfglSetNUMtoPrompt
+zzJdsfglLoopVYupDel2bkspVdnDel	{#loop {#insert zzJdsfglRAW} -count {#insert zvNUMBER}}{#insert zVmark}{#insert zYUpDelete}{#insert zBKSP2}{#insert zVDownDelete}	zzJdsfglLoopVYupDel2bkspVdnDel

@@ -1,0 +1,18 @@
+zFindGoRECloseCopy	{#insert zFindGoREClose}{#insert zTPCopy}	zFindGoRECloseCopy
+zFindPrevLinkTagStartFDlg	{#insert ztpmTagFindPrevHrefThrQQ}{#insert zFindOpenDownMC}	zFindPrevLinkTagStartFDlg
+zSigStartGTFuncName	{#insert zSigStartGTFuncNameSTART}{#insert zTPMoveL1w}	zSigStartGTFuncName
+zSigStartGTFuncNameSTART	{#insert zFindNextRetTypeThrOpenParen}{#insert zRightLeft}	zSigStartGTFuncNameSTART
+zSigStartSCFuncName	{#insert zSigStartGTFuncNameSTART}{#insert zSelectR1wCopy}	zSigStartSCFuncName
+zSupercCoded	<CODE>{#insert cnsuper}</CODE>{#insert zPostBracketGTP}	zSupercCoded
+zThisfnlEND	{#insert zGTSigOrPrevFunc}{#insert zSigStartSCFuncName}{#insert zYDownPaste}	zThisfnlEND
+zThisfnzEND	{#insert ztpmJavaFuncGoToNext}{#insert zSigStartSCFuncName}{#insert zYUpPaste}	zThisfnzEND
+zYCopyL1wSccbPromptPmkUpDown	{#insert zPostYGTP}{#insert zCopyL1w}{#insert sccbpprompt}{#insert zYDownUp}	zYCopyL1wSccbPromptPmkUpDownfpwfif -- Find prev-word func-name actual sig in files	{#insert zCopyL1w}{#insert zFFindOpenFC} {#insert zSystemPaste}({#insert zFFindBtnGo}	fpwfif
+zYDownPasteDapn	{#insert zYDownPaste}{#insert dapn}	zYDownPasteDapn
+zYDownPasteDapnkg	{#insert zYDownPaste}{#insert dapnkg}	zYDownPasteDapnkg
+zYDownPasteDapt	{#insert zYDownPaste}{#insert dapt}	zYDownPasteDapt
+zYUpPasteDapn	{#insert zYUpPaste}{#insert dapn}	zYUpPasteDapn
+zYUpPasteDapnkg	{#insert zYUpPaste}{#insert dapnkg}	zYUpPasteDapnkg
+zYUpPasteDapt	{#insert zYUpPaste}{#insert dapt}	zYUpPasteDapt
+zzNameInCBFindFuncFdlgRE -- func-name (siG)	{#insert zFindDlgOpenDownRE}{#insert zjreTypeAndGenerics}[ \t]+{#insert zSystemPaste}({#insert zFindBtnNext}	zzNameInCBFindFuncFdlgRE
+zzNameInCBFindRetTypeFdlgRE -- Return type	{#insert zzNameInCBFindFuncFdlgRE}{#insert zFindFlagUpRAW}{#insert zjreTypeAndGenerics}{#insert zFindBtnNext}{#insert zFindFlagDownRAW}	zzNameInCBFindRetTypeFdlgRE
+zCorrectFuncPrompt	{#msgbox -head Proceed? -text If this the correct function, proceed. *NOTE* that ' funcName(' remains as the search term.{#insert zMsgProceedOrNot}}	zCorrectFuncPrompt

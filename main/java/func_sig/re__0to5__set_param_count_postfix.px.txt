@@ -1,0 +1,8 @@
+zjreSetPCountPost_0	{#SETPHRASE -description zvPARAM_COUNT_POST -content 0 -autotext zvPARAM_COUNT_POST -folder ctvv_folder}	zjreSetPCountPost_0
+zjreSetPCountPost_1	{#SETPHRASE -description zvPARAM_COUNT_POST -content 1 -autotext zvPARAM_COUNT_POST -folder ctvv_folder}	zjreSetPCountPost_1
+zjreSetPCountPost_2	{#SETPHRASE -description zvPARAM_COUNT_POST -content 2 -autotext zvPARAM_COUNT_POST -folder ctvv_folder}	zjreSetPCountPost_2
+zjreSetPCountPost_3	{#SETPHRASE -description zvPARAM_COUNT_POST -content 3 -autotext zvPARAM_COUNT_POST -folder ctvv_folder}	zjreSetPCountPost_3
+zjreSetPCountPost_4	{#SETPHRASE -description zvPARAM_COUNT_POST -content 4 -autotext zvPARAM_COUNT_POST -folder ctvv_folder}	zjreSetPCountPost_4
+zjreSetPCountPost_5	{#SETPHRASE -description zvPARAM_COUNT_POST -content 5 -autotext zvPARAM_COUNT_POST -folder ctvv_folder}	zjreSetPCountPost_5
+
+

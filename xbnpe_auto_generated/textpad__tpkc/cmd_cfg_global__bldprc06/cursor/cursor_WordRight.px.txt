@@ -1,0 +1,8 @@
+zTpkcWordRightAbrv1C	Crwdr	zTpkcWordRightAbrv1C
+zTpkcCrwdrCmdNameTC	WordRight	zTpkcCrwdrCmdNameTC
+zTpkcCrwdrDfltPhrsNm	zTPWordRight	zTpkcCrwdrDfltPhrsNm
+zTpkcCrwdrCatForCmdAbrvLC	cursor	zTpkcCrwdrCatForCmdAbrvLC
+zTpkcCrwdrCmdType_mcrTl		zTpkcCrwdrCmdType_mcrTl
+zTpkcCrwdrIsBtstrp_yes		zTpkcCrwdrIsBtstrp_yes
+zTpkcCrwdrDfltPostKcSlpMils	1	zTpkcCrwdrDfltPostKcSlpMils
+zTpkcCrwdrStpsFrmCmdListTop	{#insert zEND}{#insert zUP3}	zTpkcCrwdrStpsFrmCmdListTop

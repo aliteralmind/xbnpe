@@ -1,0 +1,8 @@
+DEL -- zDEL	{#DEL}{#insert zTSlp}	zDEL
+Alt+DEL -- zApDEL	{#ALT {#DEL}}{#insert zTSlp}	zApDEL
+Alt+Shift+DEL -- zASpDEL	{#ALT {#SHIFT {#DEL}}}{#insert zTSlp}	zASpDEL
+Ctrl+DEL -- zCpDEL	{#CTRL {#DEL}}{#insert zTSlp}	zCpDEL
+Ctrl+Alt+DEL -- zCApDEL	{#CTRL {#ALT {#DEL}}}{#insert zTSlp}	zCApDEL
+Ctrl+Alt+Shift+DEL -- zCASpDEL	{#CTRL {#ALT {#SHIFT {#DEL}}}}{#insert zTSlp}	zCASpDEL
+Ctrl+Shift+DEL -- zCSpDEL	{#CTRL {#SHIFT {#DEL}}}{#insert zTSlp}	zCSpDEL
+Shift+DEL -- zSpDEL	{#SHIFT {#DEL}}{#insert zTSlp}	zSpDEL

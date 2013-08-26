@@ -1,0 +1,12 @@
+jpmrwcins01 -- Actually jpmrwcins1 -- dfmrwc, Ins cls into proper block	{#SETPHRASE -description zvDFMRWC_COUNT -content 1 -autotext zvDFMRWC_COUNT -folder ctvv_folder}{#insert zzJpmrwcinsMASTER}	jpmrwcins1
+jpmrwcins02 -- jpmrwcins2	{#SETPHRASE -description zvDFMRWC_COUNT -content 2 -autotext zvDFMRWC_COUNT -folder ctvv_folder}{#insert zzJpmrwcinsMASTER}	jpmrwcins2
+jpmrwcins03 -- jpmrwcins3	{#SETPHRASE -description zvDFMRWC_COUNT -content 3 -autotext zvDFMRWC_COUNT -folder ctvv_folder}{#insert zzJpmrwcinsMASTER}	jpmrwcins3
+jpmrwcins04 -- jpmrwcins4	{#SETPHRASE -description zvDFMRWC_COUNT -content 4 -autotext zvDFMRWC_COUNT -folder ctvv_folder}{#insert zzJpmrwcinsMASTER}	jpmrwcins4
+jpmrwcins05 -- jpmrwcins5	{#SETPHRASE -description zvDFMRWC_COUNT -content 5 -autotext zvDFMRWC_COUNT -folder ctvv_folder}{#insert zzJpmrwcinsMASTER}	jpmrwcins5
+jpmrwcins06 -- jpmrwcins6	{#SETPHRASE -description zvDFMRWC_COUNT -content 6 -autotext zvDFMRWC_COUNT -folder ctvv_folder}{#insert zzJpmrwcinsMASTER}	jpmrwcins6
+jpmrwcins07 -- jpmrwcins7	{#SETPHRASE -description zvDFMRWC_COUNT -content 7 -autotext zvDFMRWC_COUNT -folder ctvv_folder}{#insert zzJpmrwcinsMASTER}	jpmrwcins7
+jpmrwcins08 -- jpmrwcins8	{#SETPHRASE -description zvDFMRWC_COUNT -content 8 -autotext zvDFMRWC_COUNT -folder ctvv_folder}{#insert zzJpmrwcinsMASTER}	jpmrwcins8
+jpmrwcins09 -- jpmrwcins9	{#SETPHRASE -description zvDFMRWC_COUNT -content 9 -autotext zvDFMRWC_COUNT -folder ctvv_folder}{#insert zzJpmrwcinsMASTER}	jpmrwcins9
+jpmrwcins10 -- jpmrwcins10	{#SETPHRASE -description zvDFMRWC_COUNT -content 10 -autotext zvDFMRWC_COUNT -folder ctvv_folder}{#insert zzJpmrwcinsMASTER}	jpmrwcins10
+jpmrwcinsn -- jpmrwcinsn	{#SETPHRASE -description zvDFMRWC_COUNT -content {#insert zDfmrwcCount} -autotext zvDFMRWC_COUNT -folder ctvv_folder}{#insert zzJpmrwcinsMASTER}	jpmrwcinsn
+zzJpmrwcinsMASTER	{#insert zZmark}{#insert zFindOpenDownXS}--> {#loop {#insert zFindBtnNext} -count {#insert zvDFMRWC_COUNT}}{#insert zFindFlagXSClose}{#insert zUnindent5}{#insert zRIGHT}{#insert zEND}{#insert zRIGHT}{#insert zXmark}{#insert zZUpRight}{#insert dfmrwc{#insert zvDFMRWC_COUNT}}{#insert zZUpRight} {#insert zMoveR1L1w}{#insert zSpEND}{#insert zTPCut}{#insert zTPBookmarkGTPrev}{#insert zFindDlgOpenDownRE}\R\R{#insert zFindGoREClose}{#insert zRIGHT}{#insert zTPPaste}{#insert zENTER}{#insert zZDown}{#insert zSTXDown}{#insert zDEL}{#insert zTPBookmarkClearAll}	zzJpmrwcinsMASTER

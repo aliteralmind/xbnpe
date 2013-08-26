@@ -1,0 +1,9 @@
+zzjlAllParamsParenParen	{#insert zzjlUrlParamsParenParen}{#insert zzjlPAPAreUrlParams}	zzjlAllParamsParenParen
+zzjlAllParamsEmpty	{#insert zzjlUrlParamsEmpty}{#insert zzjlPAPAreUrlParams}	zzjlAllParamsEmpty
+zzjlPAParamsEmpty	{#SETPHRASE -description zvPOST_END_A_PARAMS -content (*NOTHING*) -autotext zvPOST_END_A_PARAMS -folder ctvv_folder}	zzjlPAParamsEmpty
+zzjlPAParamsParenParen	{#SETPHRASE -description zvPOST_END_A_PARAMS -content () -autotext zvPOST_END_A_PARAMS -folder ctvv_folder}	zzjlPAParamsParenParen
+zzjlUrlParamsEmpty	{#SETPHRASE -description zvURL_PARAMS -content (*NOTHING*) -autotext zvURL_PARAMS -folder ctvv_folder}	zzjlUrlParamsEmpty
+zzjlUrlParamsParenParen	{#SETPHRASE -description zvURL_PARAMS -content () -autotext zvURL_PARAMS -folder ctvv_folder}	zzjlUrlParamsParenParen
+zzPAPP -- zzjlPAParamsParenParen ALT KC	{#insert zzjlPAParamsParenParen}	zzPAPP
+zzPAPES -- zzjlPAParamsEmpty ALT KC	{#insert zzjlPAParamsEmpty}	zzPAPES
+zzjlPAPAreUrlParams	{#SETPHRASE -description zvPOST_END_A_PARAMS -content {#insert zvURL_PARAMS} -autotext zvPOST_END_A_PARAMS -folder ctvv_folder}	zzjlPAPAreUrlParams

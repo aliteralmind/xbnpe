@@ -1,0 +1,4 @@
+jfori -- With int i	for(int i = 0; i < {#insert zXmark}; i++)  {#insert zOY}{#insert zENTER2}}{#insert zXUp}	jfori
+jforx -- With int {#insert zXmark}	for(int {#insert zXmark} = 0; {#insert zXmark} < {#insert zXmark}; {#insert zXmark}++)  {#insert zOY}{#insert zENTER2}}{#insert zFindXUp4}	jforx
+jforj -- With int j	for(int j = 0; j < {#insert zXmark}; j++)  {#insert zOY}{#insert zENTER2}}{#insert zXUp}	jforj
+jfor -- With nothing	for()  {#insert zOY}{#insert zENTER2}}{#insert zParensMoveL1}	jfor

@@ -1,0 +1,1 @@
+zFocusOnTextPadWindow	{#FOCUS {#insert zzTextPadWindowName}}{#sleep 50}	zFocusOnTextPadWindow

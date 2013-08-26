@@ -1,0 +1,13 @@
+AA	-chars a
+BB	-chars b
+CC	-chars c
+DD	-chars d
+EE	-chars e
+FF	-chars f
+GG	-chars g
+HH	-chars h
+II	-chars i
+JJ	-chars j
+KK	-chars k
+LL	-chars l
+MM	-chars m

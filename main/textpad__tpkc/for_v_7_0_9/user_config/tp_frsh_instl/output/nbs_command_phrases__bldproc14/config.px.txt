@@ -1,0 +1,7 @@
+zTPRightMarginSet -- RightMarginSet (Cfgrmrgset)	{#insert zCpQQ}{#sleep 25}{#insert zRR}{#sleep 5}	zTPRightMarginSet
+zTPToggleBlockSelect -- ToggleBlockSelect (Cfgtgblksel)	{#insert zCpQQ}{#sleep 25}{#insert zBB}{#sleep 5}	zTPToggleBlockSelect
+zTPToggleInsertMode -- ToggleInsertMode (Cfgtgins)	{#insert zINS}{#sleep 5}	zTPToggleInsertMode
+zTPToggleReadOnly -- ToggleReadOnly (Cfgtgro)	{#insert zCpQQ}{#sleep 25}{#insert zEE}{#sleep 5}	zTPToggleReadOnly
+zTPToggleSyncScroll -- ToggleSyncScroll (Cfgtgsyncscr)	{#insert zCpQQ}{#sleep 25}{#insert zYY}{#sleep 5}	zTPToggleSyncScroll
+zTPToggleUndo -- ToggleUndo (Cfgtgudo)	{#insert zCpQQ}{#sleep 25}{#insert zUU}{#sleep 5}	zTPToggleUndo
+zzTpkcAllCmdsWAKcQbl_config	[Preferences][RightMarginSet][ToggleBlockSelect][ToggleInsertMode][ToggleReadOnly][ToggleSyncScroll][ToggleUndo][ToggleWordWrap]	zzTpkcAllCmdsWAKcQbl_config

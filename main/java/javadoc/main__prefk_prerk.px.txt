@@ -1,0 +1,8 @@
+prefk -- Creates a pref-file-only-linK, with path	{#insert zVmark}{#insert zprefkRAW}{#insert zVDownDelete}	prefk
+prifk -- prefk, with an Italicized disp-text	{#insert zVmark}{#insert zprifkRAW}{#insert zVDownDelete}	prifk
+prerk -- prefk, with 'super' as display-text	{#insert zVmark}{#insert zprerkRAW}{#insert zVDownDelete}	prerk
+prirk -- prerk, Italicized	{#insert zVmark}{#insert zprirkRAW}{#insert zVDownDelete}	prirk
+prefkgb -- prefk, but go back to calling spot	{#insert zVmark}{#insert zprefkRAW}{#insert zVDownDelete}	prefkgb
+prifkgb -- prefk, but go back to calling spot	{#insert zVmark}{#insert zprefkRAW}{#insert zVDownDelete}	prifkgb
+prerkgb -- prefk, but go back to calling spot	{#insert zVmark}{#insert zprerkRAW}{#insert zVDownDelete}	prerkgb
+prirkgb -- prefk, but go back to calling spot	{#insert zVmark}{#insert zprirkRAW}{#insert zVDownDelete}	prirkgb

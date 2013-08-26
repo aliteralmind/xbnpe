@@ -1,0 +1,6 @@
+zHomeMoveR1L1w -- If at least one non-ws char, this goes to 1st in line	{#insert zHOME}{#insert zMoveR1L1w}	zHomeMoveR1L1w
+zEndMoveR1L1w -- If at least one non-ws char, this goes to last in line	{#insert zEND}{#insert zMoveL1R1w}	zEndMoveR1L1w
+zSelectL2c	{#insert zTPSelectL1c}{#insert zTPSelectL1c}	zSelectL2c
+zSelectL3c	{#insert zSelectL2c}{#insert zTPSelectL1c}	zSelectL3c
+zSelectR2c	{#insert zTPSelectR1c}{#insert zTPSelectR1c}	zSelectR2c
+zSelectR3c	{#insert zSelectR2c}{#insert zTPSelectR1c}	zSelectR3c

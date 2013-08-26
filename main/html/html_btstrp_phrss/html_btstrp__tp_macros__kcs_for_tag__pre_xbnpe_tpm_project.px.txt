@@ -1,0 +1,6 @@
+__README__	Disable this folder when the XBNPE-TPM (TextPad Macro) project is installed		(*Two tabs plus this comment, to force this phrase to be imported, and with NO autotext*)
+ztpmTagFindPrevHrefThrQQ	{#insert zCASpZERO}{#sleep 10}	ztpmTagFindPrevHrefThrQQ
+ztpmTagSelectL1	{#insert zCpEIGHT}{#sleep 15}	ztpmTagSelectL1
+ztpmTagMoveL1	{#insert zCpCC}{#sleep 15}	ztpmTagMoveL1
+ztpmTagMoveR1	{#insert zCpRR}{#sleep 15}	ztpmTagMoveR1
+ztpmTagSelectR1	{#insert zCpNINE}{#sleep 15}	ztpmTagSelectR1

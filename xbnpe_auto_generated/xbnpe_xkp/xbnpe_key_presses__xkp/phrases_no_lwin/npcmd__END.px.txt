@@ -1,0 +1,8 @@
+END -- zEND	{#END}{#insert zTSlp}	zEND
+Alt+END -- zApEND	{#ALT {#END}}{#insert zTSlp}	zApEND
+Alt+Shift+END -- zASpEND	{#ALT {#SHIFT {#END}}}{#insert zTSlp}	zASpEND
+Ctrl+END -- zCpEND	{#CTRL {#END}}{#insert zTSlp}	zCpEND
+Ctrl+Alt+END -- zCApEND	{#CTRL {#ALT {#END}}}{#insert zTSlp}	zCApEND
+Ctrl+Alt+Shift+END -- zCASpEND	{#CTRL {#ALT {#SHIFT {#END}}}}{#insert zTSlp}	zCASpEND
+Ctrl+Shift+END -- zCSpEND	{#CTRL {#SHIFT {#END}}}{#insert zTSlp}	zCSpEND
+Shift+END -- zSpEND	{#SHIFT {#END}}{#insert zTSlp}	zSpEND

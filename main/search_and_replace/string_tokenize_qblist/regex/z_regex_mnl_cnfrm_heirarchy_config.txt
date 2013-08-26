@@ -1,0 +1,145 @@
+reh *** -- REgex element Heirarchy (root of pop-up heirarchy)
+	rehg -- YYY -- Group-parens	\({#insert zOY}#CURSOR{#insert zCY}\)
+		rehgb -- rehg, paste clipBoard	\({#insert zOY}#insert zTPPaste{#insert zCY}\)
+		rehgw* -- YYY -- W is for plus-sign (+)	\({#insert zOY}#CURSOR{#insert zCY}+\)
+			rehgwb -- rehgw, paste	\({#insert zOY}#insert zTPPaste{#insert zCY}+\)
+		rehgk* -- YYY -- asterisK (*)	\({#insert zOY}#CURSOR{#insert zCY}*\)
+			rehgkb -- rehgk, paste	\({#insert zOY}#insert zTPPaste{#insert zCY}*\)
+		rehgy* -- YYY -- curlY-braces count-range	\({#insert zOY}#CURSOR{#insert zCY}\{#insert zOY}\{#insert zCY}\)
+			rehgyb -- rehgy, paste	\({#insert zOY}#insert zTPPaste{#insert zCY}\{#insert zOY}\{#insert zCY}\)
+		rehgq* -- YYY -- sQuare brackets	\([{#insert zOY}#CURSOR{#insert zCY}]\)
+			rehgqb -- rehgq, paste	\([{#insert zOY}#insert zTPPaste{#insert zCY}]\)
+			rehgqw* -- YYY -- w=plus-sign	\([{#insert zOY}#CURSOR{#insert zCY}]+\)
+				rehgqwb -- rehgqw, paste	\([{#insert zOY}#insert zTPPaste{#insert zCY}]+\)
+			rehgqk* -- YYY -- asterisK	\([{#insert zOY}#CURSOR{#insert zCY}]*\)
+				rehgqkb -- rehgqk, paste	\([{#insert zOY}#insert zTPPaste{#insert zCY}]*\)
+			rehgqy* -- YYY -- curlY range-count	\([{#insert zOY}#CURSOR{#insert zCY}]\{#insert zOY}\{#insert zCY}\)
+				rehgqyb -- rehgqy, paste	\([{#insert zOY}#insert zTPPaste{#insert zCY}]\{#insert zOY}\{#insert zCY}\)
+			rehgql* -- YYY -- Lowercase	\([a-z]\)
+				rehgqlw -- YYY -- w=plus-sign	\([a-z]+\)
+				rehgqlk -- YYY -- asterisK	\([a-z]*\)
+				rehgqly -- YYY -- curlY range-count	\([a-z]\{#insert zOY}\{#insert zCY}\)
+				rehgqln* -- YYY -- Numbers	\([a-z0-9]\)
+					rehgqlnw -- YYY -- w=plus-sign	\([a-z0-9]+\)
+					rehgqlnk -- YYY -- asterisK	\([a-z0-9]*\)
+					rehgqlny -- YYY -- curlY range-count	\([a-z0-9]\{#insert zOY}\{#insert zCY}\)
+				rehgqlu* -- YYY -- Uppercase	\([a-zA-Z]\)
+					rehgqlun* -- YYY -- Numbers	\([a-zA-Z0-9]\)
+						rehgqlunw -- YYY -- w=plus-sign	\([a-zA-Z0-9]+\)
+						rehgqlunk -- YYY -- asterisK	\([a-zA-Z0-9]*\)
+						rehgqluny -- YYY -- curlY range-count	\([a-zA-Z0-9]\{#insert zOY}\{#insert zCY}\)
+					rehgqluw -- YYY -- w=plus-sign	\([a-zA-Z]+\)
+					rehgqluk -- YYY -- asterisK	\([a-zA-Z]*\)
+					rehgqluy -- YYY -- curlY range-count	\([a-zA-Z]\{#insert zOY}\{#insert zCY}\)
+			rehgqn* -- YYY -- Numbers	\([0-9]\)
+				rehgqnw -- YYY -- w=plus-sign	\([0-9]+\)
+				rehgqnk -- YYY -- asterisK	\([0-9]*\)
+				rehgqny -- YYY -- curlY range-count	\([0-9]\{#insert zOY}\{#insert zCY}\)
+			rehgqu* -- YYY -- Uppercase	\([A-Z]\)
+				rehgquw -- YYY -- w=plus-sign	\([A-Z]+\)
+				rehgquk -- YYY -- asterisK	\([A-Z]*\)
+				rehgquy -- YYY -- curlY range-count	\([A-Z]\{#insert zOY}\{#insert zCY}\)
+				rehgqun* -- YYY -- Numbers	\([A-Z0-9]\)
+					rehgqunw -- YYY -- w=plus-sign	\([A-Z0-9]+\)
+					rehgqunk -- YYY -- asterisK	\([A-Z0-9]*\)
+					rehgquny -- YYY -- curlY range-count	\([A-Z0-9]\{#insert zOY}\{#insert zCY}\)
+			rehgqt* -- YYY -- noT (caret)	\([^{#insert zOY}#CURSOR{#insert zCY}]\)
+				rehgqtb -- rehgqt, paste	\([^{#insert zOY}#insert zTPPaste{#insert zCY}]\)
+				rehgqtw* -- YYY -- w=plus-sign	\([^{#insert zOY}#CURSOR{#insert zCY}]+\)
+					rehgqtwb -- rehgqtw, paste	\([^{#insert zOY}#insert zTPPaste{#insert zCY}]+\)
+				rehgqtk* -- YYY -- asterisK	\([^{#insert zOY}#CURSOR{#insert zCY}]*\)
+					rehgqtkb -- rehgqtk, paste	\([^{#insert zOY}#insert zTPPaste{#insert zCY}]*\)
+				rehgqty* -- YYY -- curlY range-count	\([^{#insert zOY}#CURSOR{#insert zCY}]\{#insert zOY}\{#insert zCY}\)
+					rehgqtyb -- rehgqty, paste	\([^{#insert zOY}#insert zTPPaste{#insert zCY}]\{#insert zOY}\{#insert zCY}\)
+				rehgqtl* -- YYY -- Lowercase	\([^a-z]\)
+					rehgqtlw -- YYY -- w=plus-sign	\([^a-z]+\)
+					rehgqtlk -- YYY -- asterisK	\([^a-z]*\)
+					rehgqtly -- YYY -- curlY range-count	\([^a-z]\{#insert zOY}\{#insert zCY}\)
+					rehgqtln* -- YYY -- Numbers	\([^a-z0-9]\)
+						rehgqtlnw -- YYY -- w=plus-sign	\([^a-z0-9]+\)
+						rehgqtlnk -- YYY -- asterisK	\([^a-z0-9]*\)
+						rehgqtlny -- YYY -- curlY range-count	\([^a-z0-9]\{#insert zOY}\{#insert zCY}\)
+					rehgqtlu* -- YYY -- Uppercase	\([^a-zA-Z]\)
+						rehgqtlun* -- YYY -- Numbers	\([^a-zA-Z0-9]\)
+							rehgqtlunw -- YYY -- w=plus-sign	\([^a-zA-Z0-9]+\)
+							rehgqtlunk -- YYY -- asterisK	\([^a-zA-Z0-9]*\)
+							rehgqtluny -- YYY -- curlY range-count	\([^a-zA-Z0-9]\{#insert zOY}\{#insert zCY}\)
+						rehgqtluw -- YYY -- w=plus-sign	\([^a-zA-Z]+\)
+						rehgqtluk -- YYY -- asterisK	\([^a-zA-Z]*\)
+						rehgqtluy -- YYY -- curlY range-count	\([^a-zA-Z]\{#insert zOY}\{#insert zCY}\)
+				rehgqtn* -- YYY -- Numbers	\([^0-9]\)
+					rehgqtnw -- YYY -- w=plus-sign	\([^0-9]+\)
+					rehgqtnk -- YYY -- asterisK	\([^0-9]*\)
+					rehgqtny -- YYY -- curlY range-count	\([^0-9]\{#insert zOY}\{#insert zCY}\)
+				rehgqtu* -- YYY -- Uppercase	\([^A-Z]\)
+					rehgqtuw -- YYY -- w=plus-sign	\([^A-Z]+\)
+					rehgqtuk -- YYY -- asterisK	\([^A-Z]*\)
+					rehgqtuy -- YYY -- curlY range-count	\([^A-Z]\{#insert zOY}\{#insert zCY}\)
+					rehgqtun* -- YYY -- Numbers	\([^A-Z0-9]\)
+						rehgqtunw -- YYY -- w=plus-sign	\([^A-Z0-9]+\)
+						rehgqtunk -- YYY -- asterisK	\([^A-Z0-9]*\)
+						rehgqtuny -- YYY -- curlY range-count	\([^A-Z0-9]\{#insert zOY}\{#insert zCY}\)
+		rehq* -- YYY -- sQuare brackets	[{#insert zOY}#CURSOR{#insert zCY}]
+			rehqb -- rehq, paste	[{#insert zOY}#insert zTPPaste{#insert zCY}]
+			rehqw* -- YYY -- w=plus-sign	[{#insert zOY}#CURSOR{#insert zCY}]+
+				rehqwb -- rehqw, paste	[{#insert zOY}#insert zTPPaste{#insert zCY}]+
+			rehqk* -- YYY -- asterisK	[{#insert zOY}#CURSOR{#insert zCY}]*
+				rehqkb -- rehqk, paste	[{#insert zOY}#insert zTPPaste{#insert zCY}]*
+			rehqy* -- YYY -- curlY range-count	[{#insert zOY}#CURSOR{#insert zCY}]\{#insert zOY}\{#insert zCY}
+				rehqyb -- rehqy, paste	[{#insert zOY}#insert zTPPaste{#insert zCY}]\{#insert zOY}\{#insert zCY}
+			rehql* -- YYY -- Lowercase	[a-z]
+				rehqlw -- YYY -- w=plus-sign	[a-z]+
+				rehqlk -- YYY -- asterisK	[a-z]*
+				rehqly -- YYY -- curlY range-count	[a-z]\{#insert zOY}\{#insert zCY}
+				rehqln* -- YYY -- Numbers	[a-z0-9]
+					rehqlnw -- YYY -- w=plus-sign	[a-z0-9]+
+					rehqlnk -- YYY -- asterisK	[a-z0-9]*
+					rehqlny -- YYY -- curlY range-count	[a-z0-9]\{#insert zOY}\{#insert zCY}
+				rehqlu* -- YYY -- Uppercase	[a-zA-Z]
+					rehqluw -- YYY -- w=plus-sign	[a-zA-Z]+
+					rehqluk -- YYY -- asterisK	[a-zA-Z]*
+					rehqluy -- YYY -- curlY range-count	[a-zA-Z]\{#insert zOY}\{#insert zCY}
+			rehqn* -- YYY -- Numbers	[0-9]
+				rehqnw -- YYY -- w=plus-sign	[0-9]+
+				rehqnk -- YYY -- asterisK	[0-9]*
+				rehqny -- YYY -- curlY range-count	[0-9]\{#insert zOY}\{#insert zCY}
+			rehqu* -- YYY -- Uppercase	[A-Z]
+				rehquw -- YYY -- w=plus-sign	[A-Z]+
+				rehquk -- YYY -- asterisK	[A-Z]*
+				rehquy -- YYY -- curlY range-count	[A-Z]\{#insert zOY}\{#insert zCY}
+				rehqun* -- YYY -- Numbers	[A-Z0-9]
+					rehqunw -- YYY -- w=plus-sign	[A-Z0-9]+
+					rehqunk -- YYY -- asterisK	[A-Z0-9]*
+					rehquny -- YYY -- curlY range-count	[A-Z0-9]\{#insert zOY}\{#insert zCY}
+			rehqt* -- YYY -- noT (caret)	[^]
+				rehqtb -- rehqt, paste -- noT (caret)	[^{#insert zOY}#insert zTPPaste{#insert zCY}]
+				rehqtw* -- YYY -- w=plus-sign	[^{#insert zOY}#CURSOR{#insert zCY}]+
+					rehqtwb -- rehqtw, paste	[^{#insert zOY}#insert zTPPaste{#insert zCY}]+
+				rehqtw* -- YYY -- w=plus-sign	[^{#insert zOY}#CURSOR{#insert zCY}]+
+					rehqtkb -- rehqtk, paste	[^{#insert zOY}#insert zTPPaste{#insert zCY}]*
+				rehqty* -- YYY -- curlY range-count	[^{#insert zOY}#CURSOR{#insert zCY}]\{#insert zOY}\{#insert zCY}
+					rehqtyb -- rehqty, paste	[^{#insert zOY}#insert zTPPaste{#insert zCY}]\{#insert zOY}\{#insert zCY}
+				rehqtl* -- YYY -- Lowercase	[^a-z]
+					rehqtlw -- YYY -- w=plus-sign	[^a-z]+
+					rehqtlk -- YYY -- asterisK	[^a-z]*
+					rehqtly -- YYY -- curlY range-count	[^a-z]\{#insert zOY}\{#insert zCY}
+					rehqtln* -- YYY -- Numbers	[^a-z0-9]
+						rehqtlnw -- YYY -- w=plus-sign	[^a-z0-9]+
+						rehqtlnk -- YYY -- asterisK	[^a-z0-9]*
+						rehqtlny -- YYY -- curlY range-count	[^a-z0-9]\{#insert zOY}\{#insert zCY}
+					rehqtlu* -- YYY -- Uppercase	[^a-zA-Z]
+						rehqtluw -- YYY -- w=plus-sign	[^a-zA-Z]+
+						rehqtluk -- YYY -- asterisK	[^a-zA-Z]*
+						rehqtluy -- YYY -- curlY range-count	[^a-zA-Z]\{#insert zOY}\{#insert zCY}
+				rehqtn* -- YYY -- Numbers	[^0-9]
+					rehqtnw -- YYY -- w=plus-sign	[^0-9]+
+					rehqtnk -- YYY -- asterisK	[^0-9]*
+					rehqtny -- YYY -- curlY range-count	[^0-9]\{#insert zOY}\{#insert zCY}
+				rehqtu* -- YYY -- Uppercase	[^A-Z]
+					rehqtuw -- YYY -- w=plus-sign	[^A-Z]+
+					rehqtuk -- YYY -- asterisK	[^A-Z]*
+					rehqtuy -- YYY -- curlY range-count	[^A-Z]\{#insert zOY}\{#insert zCY}
+					rehqtun* -- YYY -- Numbers	[^A-Z0-9]
+						rehqtunw -- YYY -- w=plus-sign	[^A-Z0-9]+
+						rehqtunk -- YYY -- asterisK	[^A-Z0-9]*
+						rehqtuny -- YYY -- curlY range-count	[^A-Z0-9]\{#insert zOY}\{#insert zCY}

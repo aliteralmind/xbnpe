@@ -1,0 +1,195 @@
+(*
+*DUPLICATE* this document, unindent every line in it, then import it with the following settings:
+- No prefix
+- Manual confirmation
+- Assign the key-command (hotkey) to the first phrase
+**All these phrases must be manually maintained.
+*)
+(*
+Required by phrase-creator-ddmenu-utils...START
+PM_DDMENU_DIR_ID=tpkc
+Required by phrase-creator-ddmenu-utils...END
+*)
+(*
+FROM xbnpe_phrase_creator_popup_heirarchy_base.px.txt:
+Phrase-creators: Search & replace -- xhs   .   xh
+Phrase-creators: TextPad -- xht   .   xh
+*)
+TextPad-bootstrap utilities -- xhtb	.	xht
+Var: zvBTSTRP_PHRS_NM	{#SETCLIPBOARD zvBTSTRP_PHRS_NM}{#insert zzBalCBContainsVarNm}	xhtb
+zTPBtstrpEscKC_M_bspm	\\\{#insert zTPBtstrpEscKC_M_bspm\\\}	xhtb
+zTPBtstrpEscPhrsNm_M_bspm	\\\{#insert zTPBtstrpEscPhrsNm_M_bspm\\\}	xhtb
+zTPBtstrpTPKeysPhrsNm_M_bspm	\\\{#insert zTPBtstrpTPKeysPhrsNm_M_bspm\\\}	xhtb
+zTPBtstrpTPKeys_M_bspm	\\\{#insert zTPBtstrpTPKeys_M_bspm\\\}	xhtb
+Preferences Dialog -- xhtp	.	xht
+Assign then go back to command -- xhtpa	.	xhtp
+zAssignKCInFieldGBTCmdFast	\\\{#insert zAssignKCInFieldGBTCmdFast\\\}	xhtpa
+zAssignKCInFieldGBTCmdMedium	\\\{#insert zAssignKCInFieldGBTCmdMedium\\\}	xhtpa
+zAssignKCInFieldGBTCmdSlow	\\\{#insert zAssignKCInFieldGBTCmdSlow\\\}	xhtpa
+Assign then go to cmd-list top -- xhtpam	.	xhtpa
+zAssignKCInFieldGTCmdTopFast	\\\{#insert zAssignKCInFieldGTCmdTopFast\\\}	xhtpam
+zAssignKCInFieldGTCmdTopMedium	\\\{#insert zAssignKCInFieldGTCmdTopMedium\\\}	xhtpam
+zAssignKCInFieldGTCmdTopSlow	\\\{#insert zAssignKCInFieldGTCmdTopSlow\\\}	xhtpam
+Assign then go to cat-list top -- xhtpat	.	xhtpa
+zAssignKCInFieldGTKBCatTopFast	\\\{#insert zAssignKCInFieldGTKBCatTopFast\\\}	xhtpat
+zAssignKCInFieldGTKBCatTopMedium	\\\{#insert zAssignKCInFieldGTKBCatTopMedium\\\}	xhtpat
+zAssignKCInFieldGTKBCatTopSlow	\\\{#insert zAssignKCInFieldGTKBCatTopSlow\\\}	xhtpat
+Open dialog (then) -- xhtpo	.	xhtp
+zFcsTPPrefsDlgOpen	\\\{#insert zFcsTPPrefsDlgOpen\\\}{#insert zPrefsCloseYNPrompt}	xhtpo
+zTPPrefsOpenGTKBCatTop	\\\{#insert zTPPrefsOpenGTKBCatTop\\\}{#insert zPrefsCloseYNPrompt}	xhtpo
+zzOpenPrefsDlgGotoCmdListTop_M_catl	\\\{#insert zzOpenPrefsDlgGotoCmdListTop_M_catl\\\}{#insert zPrefsCloseYNPrompt}	xhtpo
+zzOpenPrefsDlgGotoCmdListTop_M_cmd1	\\\{#insert zzOpenPrefsDlgGotoCmdListTop_M_cmd1\\\}{#insert zPrefsCloseYNPrompt}	xhtpo
+zzTPPrefsDlgGotoCmdListTopFromCatListTop_M_catlzGBTCmdFromKCField	\\\{#insert zzTPPrefsDlgGotoCmdListTopFromCatListTop_M_catlzGBTCmdFromKCField\\\}{#insert zPrefsCloseYNPrompt}	xhtpo
+zGTKBCatTopFromCmd	\\\{#insert zGTKBCatTopFromCmd\\\}	xhtp
+zTPPrefsClose	\\\{#insert zTPPrefsClose\\\}	xhtp
+TextPad built-in commands (TPKC) project -- xhtk	.	xht
+TPKC administrators only! -- xhtka	.	xhtk
+Build processes **PHRASE CALLS** -- xhtkab (*NOT* phrase-creators! Admins only!)	.	xhtka
+zTpkcMasterBuild1of4 -- xhtkaba	{#insert zTpkcMasterBuild1of4}	xhtkab
+zzTpkcMasterBuild1of4RAW	{#insert zzTpkcMasterBuild1of4RAW}	xhtkaba
+zzTpkcMasterBuild1of4XSetup	{#insert zzTpkcMasterBuild1of4XSetup}	xhtkaba
+zzzTpkcBuld1of4OpenAllOutputDirs	{#insert zzzTpkcBuld1of4OpenAllOutputDirs}	xhtkaba
+zTpkc01CreateSetCatlVarPhrsFile -- xhtkabaa	{#insert zTpkc01CreateSetCatlVarPhrsFile}	xhtkaba
+zzTpkc01RAW	{#insert zzTpkc01RAW}	xhtkabaa
+zzTpkc01XSetup	{#insert zzTpkc01XSetup}	xhtkabaa
+zzzTpkc01OpenOutputDir	{#insert zzzTpkc01OpenOutputDir}	xhtkabaa
+zzzTpkc01_outDirPNm (copy phrase-name)	{#SETCLIPBOARD zzzTpkc01_outDirPNm}{#insert zzDirFNmInCB}	xhtkabaa
+zzzTpkc01_outFNm (copy phrase-name)	{#SETCLIPBOARD zzzTpkc01_outFNm}{#insert zzDirFNmInCB}	xhtkabaa
+zTpkc02CreateTPBtstrpQblAndMrkRGCRegex -- xhtkabab	{#insert zTpkc02CreateTPBtstrpQblAndMrkRGCRegex}	xhtkaba
+zzTpkc02RAW	{#insert zzTpkc02RAW}	xhtkabab
+zzTpkc02XSetup	{#insert zzTpkc02XSetup}	xhtkabab
+zzzTpkc02OpenOutputDir	{#insert zzzTpkc02OpenOutputDir}	xhtkabab
+zzzTpkc02_outDirPNm (copy phrase-name)	{#SETCLIPBOARD zzzTpkc02_outDirPNm}{#insert zzDirFNmInCB}	xhtkabab
+zzzTpkc02_outFNm (copy phrase-name)	{#SETCLIPBOARD zzzTpkc02_outFNm}{#insert zzDirFNmInCB}	xhtkabab
+zTpkc03CreateAll_allCmdsIn1CatPhrsFiles -- xhtkabac	{#insert zTpkc03CreateAll_allCmdsIn1CatPhrsFiles}	xhtkaba
+zzTpkc03RAW	{#insert zzTpkc03RAW}	xhtkabac
+zzTpkc03XSetup	{#insert zzTpkc03XSetup}	xhtkabac
+zzzTpkc03OpenOutputDir	{#insert zzzTpkc03OpenOutputDir}	xhtkabac
+zzzTpkc03_outDirPNm (copy phrase-name)	{#SETCLIPBOARD zzzTpkc03_outDirPNm}{#insert zzDirFNmInCB}	xhtkabac
+zTpkc03aCreate_AllCmdsAllCats_PhrsFile -- xhtkabad	{#insert zTpkc03aCreate_AllCmdsAllCats_PhrsFile}	xhtkaba
+zzTpkc03aRAW	{#insert zzTpkc03aRAW}	xhtkabad
+zzTpkc03aXSetup	{#insert zzTpkc03aXSetup}	xhtkabad
+zzzTpkc03aOpenOutputDir	{#insert zzzTpkc03aOpenOutputDir}	xhtkabad
+zzzTpkc03a_inDirPNm (copy phrase-name)	{#SETCLIPBOARD zzzTpkc03a_inDirPNm}{#insert zzDirFNmInCB}	xhtkabad
+zzzTpkc03a_outDirPNm (copy phrase-name)	{#SETCLIPBOARD zzzTpkc03a_outDirPNm}{#insert zzDirFNmInCB}	xhtkabad
+zzzTpkc03a_outFNm (copy phrase-name)	{#SETCLIPBOARD zzzTpkc03a_outFNm}{#insert zzDirFNmInCB}	xhtkabad
+zTpkc04CreatePhrsFl_callVPMForEachCatAndAllCatCnt -- xhtkabae	{#insert zTpkc04CreatePhrsFl_callVPMForEachCatAndAllCatCnt}	xhtkaba
+zzTpkc04RAW	{#insert zzTpkc04RAW}	xhtkabae
+zzTpkc04XSetup	{#insert zzTpkc04XSetup}	xhtkabae
+zzzTpkc04OpenOutputDir	{#insert zzzTpkc04OpenOutputDir}	xhtkabae
+zzzTpkc04_outDirPNm (copy phrase-name)	{#SETCLIPBOARD zzzTpkc04_outDirPNm}{#insert zzDirFNmInCB}	xhtkabae
+zzzTpkc04_outFNm (copy phrase-name)	{#SETCLIPBOARD zzzTpkc04_outFNm}{#insert zzDirFNmInCB}	xhtkabae
+zTpkc05CreateAll_callVPMForAllCmdsInCat_pFls -- xhtkabaf	{#insert zTpkc05CreateAll_callVPMForAllCmdsInCat_pFls}	xhtkaba
+zzTpkc05RAW	{#insert zzTpkc05RAW}	xhtkabaf
+zzTpkc05XSetup	{#insert zzTpkc05XSetup}	xhtkabaf
+zzzTpkc05OpenOutputDir	{#insert zzzTpkc05OpenOutputDir}	xhtkabaf
+zzzTpkc05_outDirPNm (copy phrase-name)	{#SETCLIPBOARD zzzTpkc05_outDirPNm}{#insert zzDirFNmInCB}	xhtkabaf
+zTpkc06CreateGlobalCommandConfigFromRaw -- xhtkabag	{#insert zTpkc06CreateGlobalCommandConfigFromRaw}	xhtkaba
+zTpkc06CreateGlobalCommandConfigFromRawWCatPrompts	{#insert zTpkc06CreateGlobalCommandConfigFromRawWCatPrompts}	xhtkabag
+zzTpkc06RAWNoCatPrompts	{#insert zzTpkc06RAWNoCatPrompts}	xhtkabag
+zzTpkc06RAWWCatPrompts	{#insert zzTpkc06RAWWCatPrompts}	xhtkabag
+zzTpkc06XSetup	{#insert zzTpkc06XSetup}	xhtkabag
+zzzTpkc06OpenOutputDir	{#insert zzzTpkc06OpenOutputDir}	xhtkabag
+zzzTpkc06_outDirPNm (copy phrase-name)	{#SETCLIPBOARD zzzTpkc06_outDirPNm}{#insert zzDirFNmInCB}	xhtkabag
+zTpkcMasterBuild2of4 -- xhtkabb	{#insert zTpkcMasterBuild2of4}	xhtkab
+zzTpkcMasterBuild2of4RAW	{#insert zzTpkcMasterBuild2of4RAW}	xhtkabb
+zzTpkcMasterBuild2of4XSetup	{#insert zzTpkcMasterBuild2of4XSetup}	xhtkabb
+zzzTpkcBuld2of4OpenAllOutputDirs	{#insert zzzTpkcBuld2of4OpenAllOutputDirs}	xhtkabb
+zTpkc07VerifyImportedGlobalCmdCfg -- xhtkabba	{#insert zTpkc07VerifyImportedGlobalCmdCfg}	xhtkabb
+zTpkc07VerifyImportedGlobalCmdCfgWCatPrompts	{#insert zTpkc07VerifyImportedGlobalCmdCfgWCatPrompts}	xhtkabba
+zzTpkc07RAWNoCatPrompts	{#insert zzTpkc07RAWNoCatPrompts}	xhtkabba
+zzTpkc07RAWWithCatPrompts	{#insert zzTpkc07RAWWithCatPrompts}	xhtkabba
+zzTpkc07RAW_M_cpon	{#insert zzTpkc07RAW_M_cpon}	xhtkabba
+zTpkc08CreateSetAllKCsTo1CmdPhraseFiles -- xhtkabbb	{#insert zTpkc08CreateSetAllKCsTo1CmdPhraseFiles}	xhtkabb
+zzTpkc08RAW	{#insert zzTpkc08RAW}	xhtkabbb
+zzTpkc08XSetup	{#insert zzTpkc08XSetup}	xhtkabbb
+zzzTpkc08OpenOutputDir	{#insert zzzTpkc08OpenOutputDir}	xhtkabbb
+zzzTpkc08_outDirPNm (copy phrase-name)	{#SETCLIPBOARD zzzTpkc08_outDirPNm}{#insert zzDirFNmInCB}	xhtkabbb
+zTpkc09CreateAllSetCmd1VarPhraseFiles -- xhtkabbc	{#insert zTpkc09CreateAllSetCmd1VarPhraseFiles}	xhtkabb
+zzTpkc09RAW	{#insert zzTpkc09RAW}	xhtkabbc
+zzTpkc09XSetup	{#insert zzTpkc09XSetup}	xhtkabbc
+zzzTpkc09OpenOutputDir	{#insert zzzTpkc09OpenOutputDir}	xhtkabbc
+zzzTpkc09_outDirPNm (copy phrase-name)	{#SETCLIPBOARD zzzTpkc09_outDirPNm}{#insert zzDirFNmInCB}	xhtkabbc
+zTpkcMasterBuild3of4 -- xhtkabc	{#insert zTpkcMasterBuild3of4}	xhtkab
+zzTpkcMasterBuild3of4RAW	{#insert zzTpkcMasterBuild3of4RAW}	xhtkabc
+zzTpkcMasterBuild3of4XSetup	{#insert zzTpkcMasterBuild3of4XSetup}	xhtkabc
+zTpkc10ElimBtstrpKCsFromTpAllCatLst -- xhtkabca	{#insert zTpkc10ElimBtstrpKCsFromTpAllCatLst}	xhtkabc
+zzTpkc10RAW	{#insert zzTpkc10RAW}	xhtkabca
+zzTpkc10XSetup	{#insert zzTpkc10XSetup}	xhtkabca
+zzzTpkc10_inDirPNm_M_tpkcum (copy phrase-name)	{#SETCLIPBOARD zzzTpkc10_inDirPNm_M_tpkcum}{#insert zzDirFNmInCB}	xhtkabca
+zzzTpkc10_outDirPNm_M_tpkcum (copy phrase-name)	{#SETCLIPBOARD zzzTpkc10_outDirPNm_M_tpkcum}{#insert zzDirFNmInCB}	xhtkabca
+zzzTpkc10_outFNm (copy phrase-name)	{#SETCLIPBOARD zzzTpkc10_outFNm}{#insert zzDirFNmInCB}	xhtkabca
+zTpkc11SplitNbsAllLstToIndvCatLsts -- xhtkabcb	{#insert zTpkc11SplitNbsAllLstToIndvCatLsts}	xhtkabc
+zzTpkc11RAW	{#insert zzTpkc11RAW}	xhtkabcb
+zzTpkc11XSetup	{#insert zzTpkc11XSetup}	xhtkabcb
+zzzTpkc11_inDirPNm_M_tpkcum (copy phrase-name)	{#SETCLIPBOARD zzzTpkc11_inDirPNm_M_tpkcum}{#insert zzDirFNmInCB}	xhtkabcb
+zzzTpkc11_outDirPNm_M_tpkcum (copy phrase-name)	{#SETCLIPBOARD zzzTpkc11_outDirPNm_M_tpkcum}{#insert zzDirFNmInCB}	xhtkabcb
+zTpkc12CreateRawUsrCfgFromIndvCatLists -- xhtkabcc	{#insert zTpkc12CreateRawUsrCfgFromIndvCatLists}	xhtkabc
+zzTpkc12RAW	{#insert zzTpkc12RAW}	xhtkabcc
+zzTpkc12XSetup	{#insert zzTpkc12XSetup}	xhtkabcc
+zzzTpkc12_inDirPNm_M_tpkcum (copy phrase-name)	{#SETCLIPBOARD zzzTpkc12_inDirPNm_M_tpkcum}{#insert zzDirFNmInCB}	xhtkabcc
+zzzTpkc12_outDirPNm_M_tpkcum (copy phrase-name)	{#SETCLIPBOARD zzzTpkc12_outDirPNm_M_tpkcum}{#insert zzDirFNmInCB}	xhtkabcc
+zTpkc13CreateUsrSpcfcCmdConfigFromRaw -- xhtkabcd	{#insert zTpkc13CreateUsrSpcfcCmdConfigFromRaw}	xhtkabc
+zzTpkc13RAW	{#insert zzTpkc13RAW}	xhtkabcd
+zzTpkc13XSetup	{#insert zzTpkc13XSetup}	xhtkabcd
+zzzTpkc13OutroDlgMaybeOpenOutDir	{#insert zzzTpkc13OutroDlgMaybeOpenOutDir}	xhtkabcd
+zzzTpkc13_inDirPNm_M_tpkcum (copy phrase-name)	{#SETCLIPBOARD zzzTpkc13_inDirPNm_M_tpkcum}{#insert zzDirFNmInCB}	xhtkabcd
+zzzTpkc13_outDirPNm_M_tpkcum (copy phrase-name)	{#SETCLIPBOARD zzzTpkc13_outDirPNm_M_tpkcum}{#insert zzDirFNmInCB}	xhtkabcd
+zTpkcMasterBuild4of4 -- xhtkabd	{#insert zTpkcMasterBuild4of4}	xhtkab
+zzTpkcMasterBuild4of4RAW	{#insert zzTpkcMasterBuild4of4RAW}	xhtkabd
+zzTpkcMasterBuild4of4XSetup	{#insert zzTpkcMasterBuild4of4XSetup}	xhtkabd
+zzzTpkcBuld4of4OpenAllOutputDirs	{#insert zzzTpkcBuld4of4OpenAllOutputDirs}	xhtkabd
+zTpkc14CreateNbsPhrssAndWKcQBLsFrmUSCC -- xhtkabda	{#insert zTpkc14CreateNbsPhrssAndWKcQBLsFrmUSCC}	xhtkabd
+zTpkc14CreateNbsPhrssAndWKcQBLsFrmUSCCWCatPrompts	{#insert zTpkc14CreateNbsPhrssAndWKcQBLsFrmUSCCWCatPrompts}	xhtkabda
+zzTpkc14RAWNoCatPrompts	{#insert zzTpkc14RAWNoCatPrompts}	xhtkabda
+zzTpkc14RAWWithCatPrompts	{#insert zzTpkc14RAWWithCatPrompts}	xhtkabda
+zzTpkc14XSetup	{#insert zzTpkc14XSetup}	xhtkabda
+zzzTpkc14OpenOutputDir	{#insert zzzTpkc14OpenOutputDir}	xhtkabda
+zzzTpkc14_outDirPNm_M_tpkcum (copy phrase-name)	{#SETCLIPBOARD zzzTpkc14_outDirPNm_M_tpkcum}{#insert zzDirFNmInCB}	xhtkabda
+zTpkc15CrtAllActvTPCmdsDDMenuFromAll -- xhtkabdb	{#insert zTpkc15CrtAllActvTPCmdsDDMenuFromAll}	xhtkabd
+zzTpkc15RAW_M_lnwsl	{#insert zzTpkc15RAW_M_lnwsl}	xhtkabdb
+zzTpkc15XSetup	{#insert zzTpkc15XSetup}	xhtkabdb
+zzTpkc15_outDirPNm_M_tpkcum (copy phrase-name)	{#SETCLIPBOARD zzTpkc15_outDirPNm_M_tpkcum}{#insert zzDirFNmInCB}	xhtkabdb
+zzzTpkc15OpenOutputDir	{#insert zzzTpkc15OpenOutputDir}	xhtkabdb
+zzzTpkc15_inDirPNm (copy phrase-name)	{#SETCLIPBOARD zzzTpkc15_inDirPNm}{#insert zzDirFNmInCB}	xhtkabdb
+Dynamic config-vars: Command -- xhtkam	.	xhtka
+zzTpCmdAbrv1C[Nm]_M_cmdm	\\\{#insert zzTpCmdAbrv1C_M_cmdm\\\}	xhtkam
+zzTpCmdAbrv1C[Nm]_M_nminstr	\\\{#insert zzTpCmdAbrv1C_M_nminstr\\\}	xhtkam
+zzTpCmdDfltPhrsNm[Nm]_M_cmd1	\\\{#insert zzTpCmdDfltPhrsNm_M_cmd1\\\}	xhtkam
+zzTpCmdDfltPstKcMls[Nm]_M_cmd1	\\\{#insert zzTpCmdDfltPstKcMls_M_cmd1\\\}	xhtkam
+zzTpCmdIsBtstrp[Nm]_yes_M_cmd1	\\\{#insert zzTpCmdIsBtstrp_yes_M_cmd1\\\}	xhtkam
+zzTpCmdNameTC[Nm]_M_cmd1	\\\{#insert zzTpCmdNameTC_M_cmd1\\\}	xhtkam
+zzTpCmdNbsKcCount[Nm]_M_cmdm	\\\{#insert zzTpCmdNbsKcCount_M_cmdm\\\}	xhtkam
+zzTpCmdNbsKcEsc[Nm]_M_cmdmNum	\\\{#insert zzTpCmdNbsKcEsc_M_cmdmNum\\\}	xhtkam
+zzTpCmdStpsFrmLstTop[Nm]_M_cmd1	\\\{#insert zzTpCmdStpsFrmLstTop_M_cmd1\\\}	xhtkam
+zzTpCmdType[Nm]_mcrTl_M_cmd1	\\\{#insert zzTpCmdType_mcrTl_M_cmd1\\\}	xhtkam
+Dynamic config-vars: Category -- xhtkaa	.	xhtka
+zzTpkcCatAbrvLC[Nm]_M_catml	\\\{#insert zzTpkcCatAbrvLC_M_catml\\\}	xhtkaa
+zzTpkcCatAbrvLC[Nm]_M_catmlcb	\\\{#insert zzTpkcCatAbrvLC_M_catmlcb\\\}	xhtkaa
+zzTpkcCatAllCmdNamesTCQbl[Nm]_M_catl	\\\{#insert zzTpkcCatAllCmdNamesTCQbl_M_catl\\\}	xhtkaa
+zzTpkcCatCmdCount[Nm]_M_catl	\\\{#insert zzTpkcCatCmdCount_M_catl\\\}	xhtkaa
+zzTpkcCatForCmdAbrvLC[Nm]_M_cmd1	\\\{#insert zzTpkcCatForCmdAbrvLC_M_cmd1\\\}	xhtkaa
+zzTpkcCatHasUsrCrtdCmds[Nm]_yes_M_catl	\\\{#insert zzTpkcCatHasUsrCrtdCmds_yes_M_catl\\\}	xhtkaa
+zzTpkcCatStpsFrmLstTop[Nm]_M_catl	\\\{#insert zzTpkcCatStpsFrmLstTop_M_catl\\\}	xhtkaa
+Var: zvCMD_ABRV_1C (& other variables) -- xhtkav	{#SETCLIPBOARD zvCMD_ABRV_1C}{#insert zzBalCBContainsVarNm}	xhtka
+Var: zvCAT_ABRV_LC	{#SETCLIPBOARD zvCAT_ABRV_LC}{#insert zzBalCBContainsVarNm}	xhtkav
+Directories (primary only) -- xhtkd	.	xhtk
+zXPROOT_DIR_AG_tpkc	\\\{#insert zXPROOT_DIR_AG_tpkc\\\}	xhtkd
+zXPROOT_DIR_AG_tpkcNonBootstrapCmdPhrss	\\\{#insert zXPROOT_DIR_AG_tpkcNonBootstrapCmdPhrss\\\}	xhtkd
+zXPROOT_DIR_tpkc	\\\{#insert zXPROOT_DIR_tpkc\\\}	xhtkd
+zXPROOT_DIR_tpkcBuild	\\\{#insert zXPROOT_DIR_tpkcBuild\\\}	xhtkd
+zXPROOT_DIR_tpkcDropDownMenu	\\\{#insert zXPROOT_DIR_tpkcDropDownMenu\\\}	xhtkd
+zXPROOT_DIR_tpkcRawCfgGlobal	\\\{#insert zXPROOT_DIR_tpkcRawCfgGlobal\\\}	xhtkd
+zXPROOT_DIR_tpkcUsrCfgOutputBase_M_tpkcum	\\\{#insert zXPROOT_DIR_tpkcUsrCfgOutputBase_M_tpkcum\\\}	xhtkd
+zXPROOT_DIR_tpkcUsrCfgParent	\\\{#insert zXPROOT_DIR_tpkcUsrCfgParent\\\}	xhtkd
+zXPROOT_DIR_tpkcUsrCfgUserBase_M_tpkcum	\\\{#insert zXPROOT_DIR_tpkcUsrCfgUserBase_M_tpkcum\\\}	xhtkd
+zXPROOT_DIR_tpkcVrsnSpcfcFls	\\\{#insert zXPROOT_DIR_tpkcVrsnSpcfcFls\\\}	xhtkd
+newnbskc	(*actnonly=newnbskc*){#SETPHRASE -description zvACTN_NM -content newnbskc -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhtk
+testtpbstpkc: zTestAllTPKCTextPadBootstraps	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content testtpbstpkc:zTestAllTPKCTextPadBootstraps -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhtk
+testtpbsxkptpkc: zTestAllXkpTpkcTPBootstraps	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content testtpbsxkptpkc:zTestAllXkpTpkcTPBootstraps -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhtk
+tpaclcibkcs	(*actnonly=tpaclcibkcs*){#SETPHRASE -description zvACTN_NM -content tpaclcibkcs -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhtk
+tpaclwarnkccount	(*actnonly=tpaclwarnkccount*){#SETPHRASE -description zvACTN_NM -content tpaclwarnkccount -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhtk
+(*    Other -- xhtt   .   xht*)
+zFocusOnTextPadWindow	\\\{#insert zFocusOnTextPadWindow\\\}	xhtt
+zEscThenFcsTP	\\\{#insert zEscThenFcsTP\\\}	xhtt
+zEscThenFcsTPSlk	\\\{#insert zEscThenFcsTPSlk\\\}	xhtt

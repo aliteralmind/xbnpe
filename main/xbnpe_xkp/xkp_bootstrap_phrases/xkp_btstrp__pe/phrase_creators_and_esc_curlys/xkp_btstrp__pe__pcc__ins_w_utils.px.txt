@@ -1,0 +1,37 @@
+
+inlq -(**)- ins-sequence for line-list of phrase-names	(*Cursor must be at end of first line, no whitespace on any line.*){#insert zvESC_LVL_CNT_st0}{#insert zInlqRAW_M_elc}{#insert zzInsSyntax}	inlq
+inlqp -- inlq, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zInlqRAW_M_elc}{#insert zzInsSyntax}	inlqp
+inlqq -- inlq, doubly-escaped	{#insert zvESC_LVL_CNT_stPromptCIB}{#insert zInlqRAW_M_elc}{#insert zzInsSyntax}	inlqq
+inns -- {#insert {#insert ...}}	{#insert zvESC_LVL_CNT_st0}{#insert zInnsRAW_M_elc}{#insert zzInsSyntax}	inns
+innsb -- {#insert {#insert [paste]}}	{#insert zvESC_LVL_CNT_st0}{#insert zInnsbRAW_M_elc}{#insert zzInsSyntax}	innsb
+innsbp -- innsb, (outer-insert-only) escaped	{#insert zvESC_LVL_CNT_st1}{#insert zInnsbRAW_M_elc}{#insert zzInsSyntax}	innsbp
+innsbq -- innsb, (outer-insert-only) doubly-or-more escaped	{#insert zvESC_LVL_CNT_stPromptCIB}{#insert zInnsbRAW_M_elc}{#insert zzInsSyntax}	innsbq
+innsp -- inns, (outer-insert-only) escaped	{#insert zvESC_LVL_CNT_st1}{#insert zInnsRAW_M_elc}{#insert zzInsSyntax}	innsp
+innsq -- inns, (outer-insert-only) doubly-or-more escaped	{#insert zvESC_LVL_CNT_stPromptCIB}{#insert zInnsRAW_M_elc}{#insert zzInsSyntax}	innsq
+ins -- {#insert ...}	{#insert zvESC_LVL_CNT_st0}{#insert zInsRAW_M_elc}{#insert zzInsSyntax}	ins
+insb -- {#insert [paste]}	{#insert zvESC_LVL_CNT_st0}{#insert zInsbRAW_M_elc}{#insert zzInsSyntax}	insb
+insbp -- insb, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zInsbRAW_M_elc}{#insert zzInsSyntax}	insbp
+insbq -- insb, doubly-or-more escaped	{#insert zvESC_LVL_CNT_stPromptCIB}{#insert zInsbRAW_M_elc}{#insert zzInsSyntax}	insbq
+insp -- ins, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zInsRAW_M_elc}{#insert zzInsSyntax}	insp
+insq -- ins, doubly-or-more escaped	{#insert zvESC_LVL_CNT_stPromptCIB}{#insert zInsRAW_M_elc}{#insert zzInsSyntax}	insq
+insqs -- [paste]='[insb]' (for debugging--no esc'd versions)	{#insert zTPPaste}='{#insert zvESC_LVL_CNT_st0}{#insert zInsbRAW_M_elc}'{#insert zzInsSyntax}	insqs
+insx -- {#insert ...}	{#insert zvESC_LVL_CNT_st0}{#insert zInsxRAW_M_elc}{#insert zzInsSyntax}	insx
+insxp -- insx, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zInsxRAW_M_elc}{#insert zzInsSyntax}	insxp
+insxq -- insx, doubly-or-more escaped	{#insert zvESC_LVL_CNT_stPromptCIB}{#insert zInsxRAW_M_elc}{#insert zzInsSyntax}	insxq
+inwl -- sel-copy word-left, then ins	{#insert zvESC_LVL_CNT_st0}{#insert zInwlRAW_M_elc}{#insert zzInsSyntax}	inwl
+inwlp -- inwl, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zInwlRAW_M_elc}{#insert zzInsSyntax}	inwlp
+inwlq -- inwl, doubly-or-more escaped	{#insert zvESC_LVL_CNT_stPromptCIB}{#insert zInwlRAW_M_elc}{#insert zzInsSyntax}	inwlq
+inwr -- sel-copy word-right, then ins	{#insert zvESC_LVL_CNT_st0}{#insert zInwrRAW_M_elc}{#insert zzInsSyntax}	inwr
+inwrp -- inwr, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zInwrRAW_M_elc}{#insert zzInsSyntax}	inwrp
+inwrq -- inwr, doubly-or-more escaped	{#insert zvESC_LVL_CNT_stPromptCIB}{#insert zInwrRAW_M_elc}{#insert zzInsSyntax}	inwrq
+pccinstestall	{#SETPHRASE -description zvQB_STR_LIST -content {#insert zzPccInsAllMainAbrvs1CQBL} -autotext zvQB_STR_LIST -folder ctvv_folder}{#insert zzTestAllMainPhrsCrtrAbrvs_M_qbl}	pccinstestall
+zInlqRAW_M_elc -- Needs zvESC_LVL_CNT (assumed good value!)	{#insert zInwlRAW_M_elc}{#LOOP {#DEL}{#insert zInwrRAW_M_elc} -count {#CALC {#INPUT -head How many lines TOTAL? -single} - 1 -round 0 -thousands none}}	zInlqRAW_M_elc
+zInnsRAW_M_elc	{#insert zOY_M_elc}#insert \\\{#insert \\\}{#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}{#LEFT}	zInnsRAW_M_elc
+zInnsbRAW_M_elc	{#insert zOY_M_elc}#insert \\\{#insert {#insert zTPPaste}\\\}{#insert zCY_M_elc}	zInnsbRAW_M_elc
+zInsRAW_M_elc	{#insert zOY_M_elc}#insert {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zInsRAW_M_elc
+zInsbRAW_M_elc	{#insert zOY_M_elc}#insert {#insert zTPPaste}{#insert zCY_M_elc}	zInsbRAW_M_elc
+zInsxRAW_M_elc	{#insert zOY_M_elc}#insert {#insert zXmark}{#insert zCY_M_elc}	zInsxRAW_M_elc
+zInwlRAW_M_elc	{#insert zSelectL1wCopy}{#insert zInsbRAW_M_elc}	zInwlRAW_M_elc
+zInwrRAW_M_elc	{#insert zSelectR1wCopy}{#insert zInsbRAW_M_elc}	zInwrRAW_M_elc
+zzInsSyntax	{#BALLOON -title insert (ins) phrase-call syntax -text ins[[b,x]][[p,q]]  //  inw[l,r][[p,q]] -- (word Left/Right)  //  inlq[[p,q]] -- (line-list sequence)  //  insqs -- (paste='insb')  //  inns[b][[p,q]] [double-ins]  //  [p]=esc'd, [q]=dbly-esc'd (or more)  //  pccinstestall  //  'z[1c-abrv-w/o-pq]RAW_M_elc'}	zzInsSyntax
+zzPccInsAllMainAbrvs1CQBL -(**)-	(*Can't be tested via pccinstestall: [Inlq][Inwl][Inwr]*)[Innsb][Inns][Insb][Ins][Insx]	zzPccInsAllMainAbrvs1CQBL

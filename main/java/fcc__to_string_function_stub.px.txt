@@ -1,0 +1,2 @@
+jtsb -- toString() block	{#insert zjtsbRAW}{#insert zXUp}	jtsb
+zjtsbRAW	public String toString()  {{#insert zENTER}return  super.toString() + {#asc 34}{#insert zXmark}{#insert zENTER}}{#insert zENTER2}	zjtsbRAW

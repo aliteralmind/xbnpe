@@ -1,0 +1,5 @@
+forhkreadme	{#msgbox -head _forHK README -text This folder contains ALL phrases in XBN PhraseExpress/other that require a hotkey (key-command). Assign the phrases in THIS FOLDER ONLY to hotkeys, not the original phrases to which they point. Doing so allows the hotkey to remain assigned, even when the original has been updated (reimported). Note that all import text files (outside of this forHK folder) that contain one or more phrases that need a hotkey, are (must be) postfixed with '_KC.px.txt'.}	forhkreadme
+gtfc_forHK [zCApSPACE]	{#insert gtfc}	gtfc_forHK
+zSelectUpThr1NonWS_forHK  [zASpSPACE]	{#insert zSelectUpThr1NonWS}	zSelectUpThr1NonWS_forHK
+zSelCopyUpThr1NonWS_forHK [zCASpSPACE]	{#insert zSelCopyUpThr1NonWS}	zSelCopyUpThr1NonWS_forHK
+zSelCopyToLineEnd_forHK [zCSpSPACE]	{#insert zSelCopyToLineEnd}	zSelCopyToLineEnd_forHK

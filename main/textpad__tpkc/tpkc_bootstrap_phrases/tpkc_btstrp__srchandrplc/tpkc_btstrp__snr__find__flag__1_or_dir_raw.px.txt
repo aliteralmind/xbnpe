@@ -1,0 +1,11 @@
+zFindFlagADTglRAW -- When dlg closed, this is automatically unchecked!	{#insert zApAA}{#sleep 5}	zFindFlagADTglRAW
+zFindFlagDownRAW	{#insert zApDD}{#sleep 5}	zFindFlagDownRAW
+zFindFlagForceWWTglRAW (**)	(*This forces word-wrap by deleting the search-term. WW is a special case, as it cannot be checked unless there is a search term for which whole-words is appropriate. Lots of regular expressions are incompatible with WW--and make WW unclickable!--hence RE and WW are mutually exclusive.*){#insert zFindFieldWhat}{#insert zDEL}{#insert zFindFlagWWTglRAW}	zFindFlagForceWWTglRAW
+zFindFlagHexRAW	{#insert zApXX}{#sleep 5}	zFindFlagHexRAW
+zFindFlagMCTglRAW	{#insert zApCC}{#sleep 5}	zFindFlagMCTglRAW
+zFindFlagRETglRAW	{#insert zApEE}{#sleep 10}	zFindFlagRETglRAW
+zFindFlagTextRAW	{#insert zApTT}{#sleep 5}	zFindFlagTextRAW
+zFindFlagUpRAW	{#insert zApUU}{#sleep 5}	zFindFlagUpRAW
+zFindFlagWWTglRAW	{#insert zApWW}{#sleep 5}	zFindFlagWWTglRAW
+zFindFlagWrapSearchTglRAW	{#insert zApSS}{#sleep 5}	zFindFlagWrapSearchTglRAW
+zFindFlagXSTglRAW	{#insert zApLL}{#sleep 5}	zFindFlagXSTglRAW

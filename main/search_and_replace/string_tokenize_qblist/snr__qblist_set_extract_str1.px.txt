@@ -1,0 +1,11 @@
+(*
+   Required by phrase-creator-ddmenu-utils...START
+      PM_DDMENU_DIRID_FILENMPHRSNM_HDRAUTOTXT=snr/zzPmdmFNmPreSnrOther/xhskql
+   Required by phrase-creator-ddmenu-utils...END
+*)
+sortqblcb -- zReSortQblInCB ALT KC	{#insert zReSortQblInCB}	sortqblcb
+sortqblcbn -- zReSortQblNameInCB ALT KC	{#insert zReSortQblNameInCB}	sortqblcbn
+sortqbldoc -- zReSortQblOnlyDoc ALT KC	{#insert zReSortQblOnlyDoc}	sortqbldoc
+zReSortQblInCB -- Paste qbl-body in CB to new doc, zReSortQblOnlyDoc	{#insert zFileNewPaste}{#insert zReSortQblOnlyDoc}	zReSortQblInCB
+zReSortQblNameInCB -- Print qbl-body (whose NAME is in CB) to new doc, zReSortQblOnlyDoc	{#insert zFcsTPFileNew}{#insert zCallPhraseNameInCB}{#insert zReSortQblOnlyDoc}	zReSortQblNameInCB
+zReSortQblOnlyDoc	{#insert zTPFindFlagREoff}{#insert zSelectAllCopy}{#SETPHRASE -description zvQB_STR_LIST -content {#INSERTCLIPBOARD} -autotext zvQB_STR_LIST -folder ctvv_folder}{#insert zvQBL_LENGTH_stCurrSelfLen}{#BALLOON -title Please wait... -text Resorting and then copying the QBL that is the ONLY text in this document. (Just the phrase-body of the qbl itself--not its phrase name, and no empty lines.)  //  zvQBL_LENGTH='{#insert zvQBL_LENGTH}'}{#insert zREoffRplcQblOnlyDocToLineList}{#insert zSortDialogPauseConfirm}{#insert zTPGTDocTop}{#insert zEND}{#insert zLineListToSquareBracketedList_M_qblen}{#insert zSelectAllCopy}{#MSGBOX -head DONE -text Done. Newly sorted qbl is now selected and in the clipboard. Close this temporary document? -yes zFileCloseDiscardChanges -no z1slp}	zReSortQblOnlyDoc

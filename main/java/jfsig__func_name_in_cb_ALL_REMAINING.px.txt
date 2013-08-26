@@ -1,0 +1,6 @@
+Search THIS class only
+gtcb[m[c]][[p/g/rg]][[prompt]] -- Go-To
+sccb[m[c]][p/g/rg][[prompt]] -- Select-Copy
+mw[c]cb[p/g/rg][[t/y/n]] -- Mark, Write at mark
+
+

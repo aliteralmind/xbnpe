@@ -1,0 +1,3 @@
+zDupTextToEODIntoNewFile	{#insert zTPSTDocBottom}{#insert zTPCopy}{#insert zPasteCBIntoNewDoc}	zDupTextToEODIntoNewFile
+zDupTextToEODIntoNewFileGTTop	{#insert zDupTextToEODIntoNewFile}{#insert zTPGTDocTop}	zDupTextToEODIntoNewFileGTTop
+zDupTextToEODIntoNewFileWWGTTop	{#insert zDupTextToEODIntoNewFileGTTop}{#insert zTPToggleWW}	zDupTextToEODIntoNewFileWWGTTop

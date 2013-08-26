@@ -1,0 +1,18 @@
+zzobmSetProjectNameAbrv	{#SETPHRASE -description zvOMB_PRJ_ABRV -content {#input -head Prj name abbrv, for phrase-name prefix? -single} -autotext zvOMB_PRJ_ABRV -folder ctvv_folder}	zzobmSetProjectNameAbrv
+zzNeededPhrasesDlgCmt	{#msgbox -head DONE -text After ALL Output Blocks are printed (the output for the entire {#asc 34}project{#asc 34} is complete), call zobmBookmarkAllUnindentIf.}{#insert zzplCmtOMBNeededPhrase}	zzNeededPhrasesDlgCmt
+zzplCmtOMBNeededPhrase	({#insert zXmark}*zobmBookmarkAllUnindentIf*{#insert zXmark}){#insert zXmark}{#insert zXUp2Delete}{#insert zXUpDelete}{#insert zXDownDelete}	zzplCmtOMBNeededPhrase
+zzobmAllPhraseLines	{#insert zzobmDescRAWPhrase}{#insert zzobmStartRAWPhrase}{#insert zzobmEndRAWPhrase}{#insert zzobmStartPhrase}{#insert zzobmEndPhrase}	zzobmAllPhraseLines
+zzobmPrefixForMarkPhraseNames	zz{#insert zvOMB_PRJ_ABRV}_OBM_{#insert zzobmBlockDescAbbrv}	zzobmPrefixForMarkPhraseNames
+zzobmDescRAWPhraseName	{#insert zzobmPrefixForMarkPhraseNames}_descRAW	zzobmDescRAWPhraseName
+zzobmStartRAWPhraseName	{#insert zzobmPrefixForMarkPhraseNames}_startRAW	zzobmStartRAWPhraseName
+zzobmEndRAWPhraseName	{#insert zzobmPrefixForMarkPhraseNames}_endRAW	zzobmEndRAWPhraseName
+zzobmDescRAWPhrase	{#insert zzobmDescRAWPhraseName}{#insert zTAB}{#insert zzobmBriefDesc}{#insert zTAB}{#insert zzobmDescRAWPhraseName}{#insert zENTER}	zzobmDescRAWPhrase
+zzobmStartRAWPhrase	{#insert zzobmStartRAWPhraseName}{#insert zzplTabObmPreDesc}...START---{#insert zTAB}{#insert zzobmStartRAWPhraseName}{#insert zENTER}	zzobmStartRAWPhrase
+zzobmEndRAWPhrase	{#insert zzobmEndRAWPhraseName}{#insert zzplTabObmPreDesc}...END---{#insert zTAB}{#insert zzobmEndRAWPhraseName}{#insert zENTER}	zzobmEndRAWPhrase
+zzobmStartPhrase	{#insert zzobmPrefixForMarkPhraseNames}A{#insert zTAB}{#insert zOY}#insert zUnindentMark{#insert zCY}{#insert zOY}#insert {#insert zzobmStartRAWPhraseName{#insert zCY}}{#insert zOY}#insert zENTER{#insert zCY}{#insert zTAB}{#insert zzobmPrefixForMarkPhraseNames}A{#insert zENTER}	zzobmStartPhrase
+zzobmEndPhrase	{#insert zzobmPrefixForMarkPhraseNames}Z{#insert zTAB}{#insert zOY}#insert zUnindentMark{#insert zCY}{#insert zOY}#insert {#insert zzobmEndRAWPhraseName{#insert zCY}}{#insert zOY}#insert zENTER2{#insert zCY}{#insert zTAB}{#insert zzobmPrefixForMarkPhraseNames}Z{#insert zENTER2}	zzobmEndPhrase
+zzobmUnsetPrjAbrv	{#SETPHRASE -description zvOMB_PRJ_ABRV -content  -autotext zvOMB_PRJ_ABRV -folder ctvv_folder}	zzobmUnsetPrjAbrv
+zzobmUnsetPrjAbrv_NeededPhrsList	{#insert zzobmUnsetPrjAbrv}{#insert zzNeededPhrasesDlgCmt}	zzobmUnsetPrjAbrv_NeededPhrsList
+zzobmBlockDescAbbrv	{#input -head Output Block Desc Abrv for phrase name? -single}	zzobmBlockDescAbbrv
+zzobmBriefDesc	{#input -head Output block brief description? -single}	zzobmBriefDesc
+zzplTabObmPreDesc	{#insert zTAB}{#insert zpobmPrefixRAW}{#insert zOY}#insert {#insert zzobmDescRAWPhraseName{#insert zCY}}}	zzplTabObmPreDesc

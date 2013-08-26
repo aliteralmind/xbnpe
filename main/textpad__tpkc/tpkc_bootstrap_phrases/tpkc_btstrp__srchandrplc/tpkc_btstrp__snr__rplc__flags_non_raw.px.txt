@@ -1,0 +1,3 @@
+zRplcFlagAD	{#insert zRplcFlagADraw}{#insert zRplcFieldWhat}	zRplcFlagAD
+zRplcFlagSel	{#insert zRplcFlagSelRAW}{#insert zRplcFieldWhat}	zRplcFlagSel
+zRplcFlagTD	{#insert zRplcFlagThisDocRAW}{#insert zRplcFieldWhat}	zRplcFlagTD

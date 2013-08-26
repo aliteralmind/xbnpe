@@ -1,0 +1,25 @@
+(*
+Required by phrase-creator-ddmenu-utils...START
+PM_DDMENU_DIR_ID=pex
+Required by phrase-creator-ddmenu-utils...END
+*)
+(*
+MANUAL INSTRUCTIONS:
+*DUPLICATE* this document, unindent every line in it, then import it with the following settings:
+- No prefix
+- Manual confirmation
+- Assign the key-command (hotkey) to the first phrase
+**All these phrases must be manually maintained.
+*)
+(*
+FROM xbnpe_phrase_creator_popup_heirarchy_base.px.txt:
+Phrase-creators: XBN-PhraseExpress -- Call 'xh'   .   zXbnpeCmdPopupRoot
+Phrase-creators: Other -- xho   .   xh
+*)
+My example ddmenu phrases -- xhodx	.	xhod
+Numbered -- xhodxn (mxp[1-4])	.	xhodx
+zExamplePhrase1	\\\{#insert zExamplePhrase1\\\}	xhodxn
+zExamplePhrase2	\\\{#insert zExamplePhrase2\\\}	xhodxn
+zExamplePhrase3	\\\{#insert zExamplePhrase3\\\}	xhodxn
+zExamplePhrase4	\\\{#insert zExamplePhrase4\\\}	xhodxn
+zTheMainExamplePhrase	\\\{#insert zTheMainExamplePhrase\\\}	xhodx

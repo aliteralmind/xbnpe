@@ -1,0 +1,6 @@
+olpw -- Link from prev word	{#insert zCutL1w}{#insert zWriteObjLinkFromCB}	olpw
+olpwc -- olpw CODE-d	{#insert zCutL1w}<CODE>{#insert zWriteObjLinkFromCB}</CODE>	olpwc
+olpwd	{#insert olpw}{#insert zolpwdEND}	olpwd
+olpwdc -- olpwd CODE-d	{#insert olpwc}{#insert zolpwdEND}	olpwdc
+zolpwdEND	{#insert zgotoprevqqhash}.html{#insert zTPMoveL1w}{#insert zLEFT}	zolpwdEND
+zWriteObjLinkFromCB	<A HREF={#asc 34}{#insert zTPPaste}.html{#asc 34}>{#insert zTPPaste}</A>	zWriteObjLinkFromCB

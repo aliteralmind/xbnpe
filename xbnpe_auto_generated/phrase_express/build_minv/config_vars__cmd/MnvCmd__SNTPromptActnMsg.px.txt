@@ -1,0 +1,13 @@
+__**WARNING**__: All phrases in this folder were created by 'plpdcf'. DO NOT EDIT.	.		(*Extra tab to allow for empty-string autotext*)
+zvSNT_PROMPT_MSG_sfKey	{#SETPHRASE -description zvSNT_PROMPT_MSG -content {#insert zzMnvCmdSntpmsg_cfgValue_M_key} -autotext zvSNT_PROMPT_MSG -folder ctvv_folder}	zvSNT_PROMPT_MSG_sfKey
+zzMnvCmdSntpmsg_cfgValue_M_key	{#insert {#insert zzMnvCmdSntpmsg_cfgVarPhrsName_M_key}}	zzMnvCmdSntpmsg_cfgValue_M_key
+zzMnvCmdSNTPromptActnMsg_cvtFromAbrv1C	Sntpmsg	zzMnvCmdSNTPromptActnMsg_cvtFromAbrv1C
+zzMnvCmdSntpmsg_cfgVarPNmPost	SNTPromptActnMsg	zzMnvCmdSntpmsg_cfgVarPNmPost
+zzMnvCmdSntpmsg_intrnlVarNm	zvSNT_PROMPT_MSG	zzMnvCmdSntpmsg_intrnlVarNm
+zzMnvCmdSntpmsg_cfgVarPhrsName_M_key	zz{#insert zzMnvCmdProjectAbrv1C}{#insert zzMnvCmdDataTypeAbrv1C}{#insert zvCMD_PNMV_1C}{#insert zzMnvCmdSntpmsg_cfgVarPNmPost}	zzMnvCmdSntpmsg_cfgVarPhrsName_M_key
+zzMnvCmdSntpmsg_helpForDlg	Only used when [SNTPromptActn_on] is 'on'. When the set~number~to~prompt action is is used, what should the number~prompt dialog say? This should include the ending '?' if desired. This text is used by all prompts EXCEPT '[var~name]_stPrompt'.	zzMnvCmdSntpmsg_helpForDlg
+zzMnvCmdSntpmsg_valuePrintable	yes	zzMnvCmdSntpmsg_valuePrintable
+zzMnvCmdSntpmsg_validateValuePhrsNm		zzMnvCmdSntpmsg_validateValuePhrsNm
+zzMnvCmdSntpmsg_nkcvListNum	17	zzMnvCmdSntpmsg_nkcvListNum
+zzMnvCmdSntpmsg_keyCVTFromAbrv1C	{#insert zzMnvCmdPrivKeyCVTFromAbrv1C}	zzMnvCmdSntpmsg_keyCVTFromAbrv1C
+zvCVT_FRMV_1C_stMnvCmdSntpmsg	{#SETPHRASE -description zvCVT_FRMV_1C -content {#insert zzMnvCmdSNTPromptActnMsg_cvtFromAbrv1C} -autotext zvCVT_FRMV_1C -folder ctvv_folder}	zvCVT_FRMV_1C_stMnvCmdSntpmsg

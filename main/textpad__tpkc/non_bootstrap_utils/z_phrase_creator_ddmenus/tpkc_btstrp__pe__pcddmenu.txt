@@ -1,0 +1,57 @@
+(*
+   *DUPLICATE* this document, unindent every line in it, then import it with the following settings:
+      - No prefix
+      - Manual confirmation
+      - Assign the key-command (hotkey) to the first phrase
+   **All these phrases must be manually maintained.
+*)
+(*
+   Required by phrase-creator-ddmenu-utils...START
+      PM_DDMENU_DIR_ID=tpkc
+   Required by phrase-creator-ddmenu-utils...END
+*)
+(*
+   FROM xbnpe_phrase_creator_popup_heirarchy_base.px.txt:
+
+Phrase-creators: XBN-PhraseExpress -- xh   .   zXbnpeCmdPopupRoot
+   PhraseExpress -- xhp (creating & managing Pex code)   .   xh
+*)
+		'(*two tabs plus this...' -- Empty cmt, then 'two'	.	xhp
+		Debugging -- xhpg	.	xhp
+			'(*Permanent debugging-->...' -- Empty cmt, then 'perm'	.	xhpg
+			'(*Permanent err-chkg-->...' -- Empty cmt, then 'perm'	.	xhpg
+			Alertboxes: alertbox[1-10], pab[1-10]	.	xhpg
+			zSetAlertboxAsSearchTermGT1stFindREOpen (fnpab)	\\\{#insert zSetAlertboxAsSearchTermGT1stFindREOpen\\\}
+			Key-press (execution) speed -- xhpgs	.	xhpg
+				1. zKeyPressFast (kpf, kfp)	\\\{#insert zKeyPressFast\\\}	xhpgs
+				2. zKeyPressMedium (kpm, kmp)	\\\{#insert zKeyPressMedium\\\}	xhpgs
+				3. zKeyPressSlow (kps, ksp)	\\\{#insert zKeyPressSlow\\\}	xhpgs
+				4. zKeyPressSuperSlow (kpss, kssp)	\\\{#insert zKeyPressSuperSlow\\\}	xhpgs
+				5. zKeyPressGlacial (kpg, kgp)	\\\{#insert zKeyPressGlacial\\\}	xhpgs
+				zKeyPressCurrentSpeed (kpt)	\\\{#insert zKeyPressCurrentSpeed\\\{#insert zKeyPressCurrentSpeed\\\}	xhpgs
+				zKeyPressSpeedRevert -- xhpgsr	\\\{#insert zKeyPressSpeedRevert\\\}	xhpgs
+					Var: zvPREV_KP_MILLS	{#SETCLIPBOARD zvPREV_KP_MILLS}{#insert zzBalCBContainsVarNm}	xhpgsr
+					zvPREV_KP_MILLS_stCurr	\\\{#insert zvPREV_KP_MILLS_stCurr\\\}	xhpgsr
+					zKPSpeedSetToRequested	\\\{#insert zKPSpeedSetToRequested\\\}	xhpgsr
+					Var: zvKP_SPD_RQSTD	{#SETCLIPBOARD zvKP_SPD_RQSTD}{#insert zzBalCBContainsVarNm}	xhpgsr
+				zKeyPressSpeedSetToMills_M_mils	\\\{#insert zKeyPressSpeedSetToMills_M_mils\\\}	xhpgs
+		zCallPhraseNameInCB (main action=cpcb)	\\\{#insert zCallPhraseNameInCB\\\}	xhp
+		Phrase creation and import-text file management -- xhpc	.	xhp
+			Compress/un/re plain-text phrase files -- xhpcc	.	xhpc
+				Compress 2-line (name/body) phrase: c2pl[[2-10,n]]	.	xhpcc
+			Create {#insert...}, main action: ins	.	xhpc
+			Curlys and escaped-ness -- xhpce	.	xhpc
+				eucurlys: zREoffEscapeAllUnescCurlysInDoc* -- xhpcee	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content eucurlys:zREoffEscapeAllUnescCurlysInDoc -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhpce
+					zREonEscapeAllUnescCurlysInDoc	\\\{#insert zREonEscapeAllUnescCurlysInDoc\\\}	xhpcee
+					zzMidRplcREEscapeAllUnescCurlys	\\\{#insert zzMidRplcREEscapeAllUnescCurlys\\\}	xhpcee
+				Var: zvESC_LVL_CNT* -- xhpce	{#SETCLIPBOARD zvESC_LVL_CNT}{#insert zzBalCBContainsVarNm}	xhpce
+				zCY_M_elc (zCYe[0-10], zCYx[2-5]_M_elc)	\\\{#insert zCY_M_elc\\\}	xhpce
+				zOY_M_elc (zOYe[0-10], zOYx[2-5]_M_elc)	\\\{#insert zOY_M_elc\\\}	xhpce
+				zvESC_LVL_CNT_st[0,1,Prompt[CIB]]	\\\{#insert zvESC_LVL_CNT_st\\\}	xhpce
+				zzLeftPrevEscCrly_M_elc (zzLftPrvEscCrly[0-10], zzLeftPrevEscCrlyX[2-5]_M_elc)	\\\{#insert zzLeftPrevEscCrly_M_elc\\\}	xhpce
+			MSGBOX -- xhpcm (mbx)	.	xhpc
+				zCancelProcNowPostTxt	\\\{#insert zCancelProcNowPostTxt\\\}	xhpcm
+			BALLOON -- xhpcb (bal)	.	xhpc
+				zBalloonDone	\\\{#insert zBalloonDone\\\}	xhpcb
+				zBalDoneSlk2	\\\{#insert zBalDoneSlk2\\\}	xhpcb
+				zBalDoneSlk2SelAllDel	\\\{#insert zBalDoneSlk2SelAllDel\\\}	xhpcb

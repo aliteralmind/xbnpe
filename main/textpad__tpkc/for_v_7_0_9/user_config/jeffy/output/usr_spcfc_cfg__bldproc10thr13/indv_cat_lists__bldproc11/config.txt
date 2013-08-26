@@ -1,0 +1,13 @@
+BlockSelectOff
+BlockSelectOn
+CustomizeToolbars
+Preferences
+RightMarginDec
+RightMarginInc
+RightMarginSet
+ToggleBlockSelect
+ToggleInsertMode        Insert
+ToggleReadOnly          Ctrl+Shift+Alt+F5
+ToggleSyncScroll
+ToggleUndo
+ToggleWordWrap

@@ -1,0 +1,5 @@
+jcallsupernp -- Call the non-returning super func (w/ No Params) (**)	(*Call from the signature line of a No-Parameter function that HAS a JavaDoc block. This is for non-returning functions. For functions that return something, use sribc* and oribc*. For functions with parameters, use fkg*.*){#insert zzInSigInsertLICallsSpc}{#insert thisfnz}{#insert flpwrc}</LI>{#insert zGTNextOpenCurlyREnter}super.{#insert thisfnl}();{#insert zTPToggleWW}	jcallsupernp
+jcallsuperwp -- Call the non-returning super func (With Params) (**)	(*See jcallsupernp  This passes all parameters directly (blindly) to the super version.*){#insert zzInSigInsertLICallsSpc}{#insert mwgz}</CODE></LI>{#insert zTagMoveL2R1}er{#insert fkgrk}{#insert zGTNextOpenCurlyREnter}super.{#insert mwgnl};{#insert zTPToggleWW}	jcallsuperwp
+zzInSigInsertLICallsSpc	{#insert zTPToggleWW}{#insert zHOME}{#insert zUP}{#insert zLEFT}{#insert zENTER}{#insert zTAB}<LI>Calls (*ends with space*)	zzInSigInsertLICallsSpc
+
+

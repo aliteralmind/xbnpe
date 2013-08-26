@@ -1,0 +1,11 @@
+zFindFlagADTgl-- When dlg closed, this is automatically unchecked!	{#insert zFindFlagADTglRAW}{#insert zFindFieldWhat}	zFindFlagADTgl
+zFindFlagDown	{#insert zFindFlagDownRAW}{#insert zFindFieldWhat}	zFindFlagDown
+zFindFlagForceWWTgl -- Deletes search term first (in-dlg use only)	{#insert zFindFlagForceWWTglRAW}{#insert zFindFieldWhat}	zFindFlagForceWWTgl
+zFindFlagHex	{#insert zFindFlagHexRAW}{#insert zFindFieldWhat}	zFindFlagHex
+zFindFlagMCTgl	{#insert zFindFlagMCTglRAW}{#insert zFindFieldWhat}	zFindFlagMCTgl
+zFindFlagRETgl	{#insert zFindFlagRETglRAW}{#insert zFindFieldWhat}	zFindFlagRETgl
+zFindFlagText	{#insert zFindFlagTextRAW}{#insert zFindFieldWhat}	zFindFlagText
+zFindFlagUp	{#insert zFindFlagUpRAW}{#insert zFindFieldWhat}	zFindFlagUp
+zFindFlagWWTgl	{#insert zFindFlagWWTglRAW}{#insert zFindFieldWhat}	zFindFlagWWTgl
+zFindFlagWrapSearchTgl	{#insert zFindFlagWrapSearchTglRAW}{#insert zFindFieldWhat}	zFindFlagWrapSearchTgl
+zFindFlagXSTgl	{#insert zFindFlagXSTglRAW}{#insert zFindFieldWhat}	zFindFlagXSTgl

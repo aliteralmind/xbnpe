@@ -1,0 +1,7 @@
+zTpkcConfigAllCmdNamesTCQbl	[BlockSelectOff][BlockSelectOn][CustomizeToolbars][Preferences][RightMarginDec][RightMarginInc][RightMarginSet][ToggleBlockSelect][ToggleInsertMode][ToggleReadOnly][ToggleSyncScroll][ToggleUndo][ToggleWordWrap]	zTpkcConfigAllCmdNamesTCQbl
+zTpkcConfigCmdCount	13	zTpkcConfigCmdCount
+zTpkcConfigHasUserCrtdCmds_yes		zTpkcConfigHasUsrCrtdCmds_yes
+zTpkcConfigStpsFrmCatListTop	{#insert zCC}{#insert z5ThnTSlp}	zTpkcConfigStpsFrmCatListTop
+zTpkcConfigNameLC	configuration	zTpkcConfigNameLC
+zTpkcConfigurationAbrvLC	config	zTpkcConfigurationAbrvLC
+

@@ -1,0 +1,2 @@
+zXPROOT_DIR_ppc	{#insert zROOT_DIR_XBNPE_MAIN}{#insert zzXPSUB_DIR_ppc}	zXPROOT_DIR_ppc
+zzXPSUB_DIR_ppc	pe__ppc\	zzXPSUB_DIR_ppc

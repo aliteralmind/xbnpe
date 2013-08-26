@@ -1,0 +1,4 @@
+_The phrases in this file are...	...critical to (and dependant on!) the TPKC-Project, but only AFTER it is fully-built.	 	(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+zzOpenPrefsDlgGotoCmdListTop_M_catl	{#insert zTPPrefsOpenGTKBCatTop}{#insert zzTPPrefsDlgGotoCmdListTopFromCatListTop_M_catl}	zzOpenPrefsDlgGotoCmdListTop_M_catl
+zzOpenPrefsDlgGotoCmdListTop_M_cmd1 -- Needs zvCMD_ABRV_1C	{#insert zvCAT_ABRV_LC_sfCmd1}{#insert zzOpenPrefsDlgGotoCmdListTop_M_catl}	zzOpenPrefsDlgGotoCmdListTop_M_cmd1
+zzTPPrefsDlgGotoCmdListTopFromCatListTop_M_catl	{#insert zzTpkcCatStpsFrmLstTop_M_catl}{#insert zTAB}{#sleep 10}	zzTPPrefsDlgGotoCmdListTopFromCatListTop_M_catl

@@ -1,0 +1,10 @@
+SelectAll	zTPSelectAll	Slall	yes	250	(*NOTHING. Top command in list*)
+SelectBeginBlock	zTPSelBeginBlock	Slbblk	__ES__	10	{#insert zDOWN}
+SelectBeginLine	zTPSelBeginLine	Slbln	__ES__	10	{#insert zDOWN2}
+SelectBeginStream	zTPSelBeginStream	Slbstr	__ES__	10	{#insert zDOWN3}
+SelectCancel	zTPSelCancel	Slcnl	__ES__	10	{#insert zPGDN}{#insert zUP2}
+SelectEnd	zTPSelEnd	Slend	__ES__	10	{#insert zPGDN}{#insert zUP}
+SelectLine	zTPSelectLine	Slln	__ES__	10	{#insert zPGDN}
+SelectParagraph	zTPSelectParagraph	Slpara	__ES__	10	{#insert zPGDN}{#insert zDOWN}
+SelectSwapEnds	zTPSelSwapEnds	Slswnds	__ES__	10	{#insert zEND}{#insert zUP}
+SelectWord	zTPSelectWord	Slwd	__ES__	10	{#insert zEND}

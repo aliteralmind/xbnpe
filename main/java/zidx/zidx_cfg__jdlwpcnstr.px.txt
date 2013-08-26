@@ -1,0 +1,48 @@
+zzZIdxJdlwcNodeType -- DO NOT EDIT	cat	zzZIdxJdlwcNodeType
+zzZIdxJdlwpcnstrPNAbrvTC -- DO NOT EDIT	Jdlwc	zzZIdxJdlwpcnstrPNAbrvTC
+zzZIdxJdlwcPostfix	jdlwpcnstr	zzZIdxJdlwcPostfix
+zzZIdxJdlwcPostTC -- DO NOT EDIT	Jdlwpcnstr	zzZIdxJdlwcPostTC
+zzZIdxJdlwcParentTCPost -- LITERAL TEXT, NOT PHRASE CALL	Jdlink	zzZIdxJdlwcParentTCPost
+zzZIdxJdlwcCatNameShort	Create JD Cnstr-Link W/-Param(s)	zzZIdxJdlwcCatNameShort
+zzZIdxJdlwcCatNameLong	Create JavaDoc Cnstr-Link With-Parameter(s): ck[g,p]	zzZIdxJdlwcCatNameLong
+zzZIdxJdlwcChildCountCat	0	zzZIdxJdlwcChildCountCat
+zzZIdxJdlwcChildTCPostsQBLCat -- PHRASE CALLS, NOT LITERAL TEXT		zzZIdxJdlwcChildTCPostsQBLCat
+zzZIdxJdlwcChildCountPset	3	zzZIdxJdlwcChildCountPset
+zzZIdxJdlwcChildTCPostsQBLPset -- PHRASE CALLS, NOT LITERAL TEXT	[{#insert zzZIdxJdlwcddPostfix}][{#insert zzZIdxJdlwcsdPostfix}][{#insert zzZIdxJdlwctrPostfix}]	zzZIdxJdlwcChildTCPostsQBLPset
+zzZIdxJdlwcDescription	fk[g,p] -- Create a JavaDoc lin'K' for a 'C'onstructor, that has one or more parameters, from the function-si'G'nature, or signature-'P'arameters immediately before the cursor.	zzZIdxJdlwcDescription
+zzZIdxJdlwcXInfo_onff	on	zzZIdxJdlwcXInfo_onff
+zzZIdxJdlwcExtraInfo	{#insert zzAllOptsEntrTb}{#insert zzVFFkgOptBafterDForDir}{#insert zzVFFkgOptBafterF}{#insert zzVFFkgOptBafterY}{#insert zzVFFkgOptC}{#insert zzVFFkgOptD}{#insert zzVFFkgOptK}{#insert zzVFFkgOptN}{#insert zzVFFkgOptP}-R- (as follows ...){#insert zzVFFkgOptREntrTbBody}{#insert zzVFFkgOptT}{#insert zzVFFkgOptV}{#insert zzVFFkgOptY}{#insert zzVFFkgParamNote}	zzZIdxJdlwcExtraInfo
+
+(*---------------------------------------------------------------------------*)
+zzZIdxJdlwctrNodeType -- DO NOT EDIT	pset	zzZIdxJdlwctrNodeType
+zzZIdxJdlwcthissuperPNAbrvTC -- DO NOT EDIT	Jdlwctr	zzZIdxJdlwcthissuperPNAbrvTC
+zzZIdxJdlwctrPostfix	jdlwcthissuper	zzZIdxJdlwctrPostfix
+zzZIdxJdlwctrPostTC -- DO NOT EDIT	Jdlwcthissuper	zzZIdxJdlwctrPostTC
+zzZIdxJdlwctrParentTCPost -- LITERAL TEXT, NOT PHRASE CALL	Jdlwcnstr	zzZIdxJdlwctrParentTCPost
+zzZIdxJdlwctrSyntax	ckp[v][c] ... ckpp[t] ... ckpt[v][c] ... ckppr[r][k] ... ckpr[r][v][c][k] ... ckpry[n]	zzZIdxJdlwctrSyntax
+zzZIdxJdlwctrDescription	Create a lin'K' to a 'C'onstructor in THIS class or the supe'R'-class, from the signature-'P'arameters immediately before the cursor.	zzZIdxJdlwctrDescription
+zzZIdxJdlwctrXInfo_onff	on	zzZIdxJdlwctrXInfo_onff
+zzZIdxJdlwctrExtraInfo	{#insert zzAllOptsEntrTb}{#insert zzVFFkgOptC}{#insert zzVFFkgOptK}{#insert zzVFFkgOptN}{#insert zzVFFkgOptP}-R- (as follows 'ckpr'){#insert zzVFFkgOptREntrTbBody}{#insert zzVFFkgOptT}{#insert zzVFFkgOptV}{#insert zzVFFkgOptY}{#insert zzVFFkgParamNote}{#insert zzPhraseFileNameFooter}{#insert zXPROOT_DIR_jdLink}1pp_cnstr_this_super.px.txt	zzZIdxJdlwctrExtraInfo
+
+(*---------------------------------------------------------------------------*)
+zzZIdxJdlwcddNodeType -- DO NOT EDIT	pset	zzZIdxJdlwcddNodeType
+zzZIdxJdlwcdiffdirPNAbrvTC -- DO NOT EDIT	Jdlwcdd	zzZIdxJdlwcdiffdirPNAbrvTC
+zzZIdxJdlwcddPostfix	jdlwcdiffdir	zzZIdxJdlwcddPostfix
+zzZIdxJdlwcddPostTC -- DO NOT EDIT	Jdlwcdiffdir	zzZIdxJdlwcddPostTC
+zzZIdxJdlwcddParentTCPost -- LITERAL TEXT, NOT PHRASE CALL	Jdlwcnstr	zzZIdxJdlwcddParentTCPost
+zzZIdxJdlwcddSyntax	ckgd[b][v][c][k] ... ckgd[by[n],y[b,n]] ... ckgpd[b][k]	zzZIdxJdlwcddSyntax
+zzZIdxJdlwcddDescription	Create a lin'K' to a 'C'onstructor in a different class (not THIS or super), which is in a different 'D'irectory (package), from the si'G'nature immediately before the cursor. The name of the class (file) is either in the clip'B'oard, or set to '{#insert zXmark}'.	zzZIdxJdlwcddDescription
+zzZIdxJdlwcddXInfo_onff	on	zzZIdxJdlwcddXInfo_onff
+zzZIdxJdlwcddExtraInfo	{#insert zzAllOptsEntrTb}{#insert zzVFFkgOptBafterDForDir}{#insert zzVFFkgOptBafterY}{#insert zzVFFkgOptC}{#insert zzVFFkgOptD}{#insert zzVFFkgOptK}{#insert zzVFFkgOptN}{#insert zzVFFkgOptP}{#insert zzVFFkgOptV}{#insert zzVFFkgOptY}{#insert zzVFFkgParamNote}{#insert zzPhraseFileNameFooter}{#insert zXPROOT_DIR_jdLink}1pp_cnstr_dir_prompt_or_cb_file_fncnm.px.txt	zzZIdxJdlwcddExtraInfo
+
+(*---------------------------------------------------------------------------*)
+zzZIdxJdlwcsdNodeType -- DO NOT EDIT	pset	zzZIdxJdlwcsdNodeType
+zzZIdxJdlwcsamedirPNAbrvTC -- DO NOT EDIT	Jdlwcsd	zzZIdxJdlwcsamedirPNAbrvTC
+zzZIdxJdlwcsdPostfix	jdlwcsamedir	zzZIdxJdlwcsdPostfix
+zzZIdxJdlwcsdPostTC -- DO NOT EDIT	Jdlwcsamedir	zzZIdxJdlwcsdPostTC
+zzZIdxJdlwcsdParentTCPost -- LITERAL TEXT, NOT PHRASE CALL	Jdlwcnstr	zzZIdxJdlwcsdParentTCPost
+zzZIdxJdlwcsdSyntax	ckg[v][c][k] ... ckgp[v][k] ... ckgy[b,n] ... ckpf[b][v][c][k] ... ckppf[b][k] ... ckpy[n]	zzZIdxJdlwcsdSyntax
+zzZIdxJdlwcsdDescription	Create a lin'K' to a 'C'onstructor in a different class (not THIS or super), which is in the same directory (package), from the si'G'nature, or signature-'P'arameters immediately before the cursor.	zzZIdxJdlwcsdDescription
+zzZIdxJdlwcsdXInfo_onff	on	zzZIdxJdlwcsdXInfo_onff
+zzZIdxJdlwcsdExtraInfo	{#insert zzAllOptsEntrTb}{#insert zzVFFkgOptBafterF}{#insert zzVFFkgOptBafterY}{#insert zzVFFkgOptC}{#insert zzVFFkgOptK}{#insert zzVFFkgOptN}{#insert zzVFFkgOptP}{#insert zzVFFkgOptV}{#insert zzVFFkgOptY}{#insert zzVFFkgParamNote}{#insert zzPhraseFileNameFooter}{#insert zXPROOT_DIR_jdLink}1pp_cnstr_dir_empty_file_func_nm.px.txt	zzZIdxJdlwcsdExtraInfo
+

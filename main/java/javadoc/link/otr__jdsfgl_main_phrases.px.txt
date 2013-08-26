@@ -1,0 +1,24 @@
+jdsfgl -- jdsfgl1 ALT KC	{#insert jdsfgl1}	jdsfgl
+jdsfgl01 -- Actually jdsfgl1	{#insert zvJDSFGLL_NUM_st1}{#insert zzJdsfgl_MSTR}	jdsfgl1
+jdsfgl02 -- jdsfgl2	{#insert zvJDSFGLL_NUM_st2}{#insert zzJdsfgl_MSTR}	jdsfgl2
+jdsfgl03 -- jdsfgl3	{#insert zvJDSFGLL_NUM_st3}{#insert zzJdsfgl_MSTR}	jdsfgl3
+jdsfgl04 -- jdsfgl4	{#insert zvJDSFGLL_NUM_st4}{#insert zzJdsfgl_MSTR}	jdsfgl4
+jdsfgl05 -- jdsfgl5	{#insert zvJDSFGLL_NUM_st5}{#insert zzJdsfgl_MSTR}	jdsfgl5
+jdsfgl06 -- jdsfgl6	{#insert zvJDSFGLL_NUM_st6}{#insert zzJdsfgl_MSTR}	jdsfgl6
+jdsfgl07 -- jdsfgl7	{#insert zvJDSFGLL_NUM_st7}{#insert zzJdsfgl_MSTR}	jdsfgl7
+jdsfgl08 -- jdsfgl8	{#insert zvJDSFGLL_NUM_st8}{#insert zzJdsfgl_MSTR}	jdsfgl8
+jdsfgl09 -- jdsfgl9	{#insert zvJDSFGLL_NUM_st9}{#insert zzJdsfgl_MSTR}	jdsfgl9
+jdsfgl10	{#insert zvJDSFGLL_NUM_st10}{#insert zzJdsfgl_MSTR}	jdsfgl10
+jdsfgll -- jdsfgll1 ALT KC	{#insert jdsfgll1}	jdsfgll
+jdsfgll01 -- Actually jdsfgll1	{#insert zvJDSFGLL_NUM_st1}{#insert zzJdsfgll_numMSTR}	jdsfgll1
+jdsfgll02 -- jdsfgll2	{#insert zvJDSFGLL_NUM_st2}{#insert zzJdsfgll_numMSTR}	jdsfgll2
+jdsfgll03 -- jdsfgll3	{#insert zvJDSFGLL_NUM_st3}{#insert zzJdsfgll_numMSTR}	jdsfgll3
+jdsfgll04 -- jdsfgll4	{#insert zvJDSFGLL_NUM_st4}{#insert zzJdsfgll_numMSTR}	jdsfgll4
+jdsfgll05 -- jdsfgll5	{#insert zvJDSFGLL_NUM_st5}{#insert zzJdsfgll_numMSTR}	jdsfgll5
+jdsfgll06 -- jdsfgll6	{#insert zvJDSFGLL_NUM_st6}{#insert zzJdsfgll_numMSTR}	jdsfgll6
+jdsfgll07 -- jdsfgll7	{#insert zvJDSFGLL_NUM_st7}{#insert zzJdsfgll_numMSTR}	jdsfgll7
+jdsfgll08 -- jdsfgll8	{#insert zvJDSFGLL_NUM_st8}{#insert zzJdsfgll_numMSTR}	jdsfgll8
+jdsfgll09 -- jdsfgll9	{#insert zvJDSFGLL_NUM_st9}{#insert zzJdsfgll_numMSTR}	jdsfgll9
+jdsfgll10	{#insert zvJDSFGLL_NUM_st10}{#insert zzJdsfgll_numMSTR}	jdsfgll10
+jdsfglln	{#insert zvJDSFGLL_NUM_stPrompt}{#insert zzJdsfgll_numMSTR}	jdsfglln
+jdsfgln	{#insert zvJDSFGLL_NUM_stPrompt}{#insert zzJdsfgl_MSTR}	jdsfgln

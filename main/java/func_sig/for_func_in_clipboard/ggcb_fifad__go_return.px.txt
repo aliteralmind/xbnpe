@@ -1,0 +1,27 @@
+ggcbfadr -- ggcbfadr0p ALT KC	{#insert ggcbfadr0p}	ggcbfadr
+ggcbfadr0p -- ggcbfadr, zero-or-more (0-Plus) parameters	{#insert zjreSetPCountPost_0orMore}{#insert zggcbfadr_MASTER}	ggcbfadr0p
+ggcbfadr1	{#insert zjreSetPCountPost_1}{#insert zggcbfadr_MASTER}	ggcbfadr1
+ggcbfadr1p -- ggcbfadr, one-or-more (1-Plus) parameters	{#insert zjreSetPCountPost_1orMore}{#insert zggcbfadr_MASTER}	ggcbfadr1p
+ggcbfadr2	{#insert zjreSetPCountPost_2}{#insert zggcbfadr_MASTER}	ggcbfadr2
+ggcbfadr3	{#insert zjreSetPCountPost_3}{#insert zggcbfadr_MASTER}	ggcbfadr3
+ggcbfadr4	{#insert zjreSetPCountPost_4}{#insert zggcbfadr_MASTER}	ggcbfadr4
+ggcbfadr5	{#insert zjreSetPCountPost_5}{#insert zggcbfadr_MASTER}	ggcbfadr5
+ggcbfadrn -- prompt for exact param-count	{#insert zjreSetPCountPost_FromGT0Prompt}{#insert zggcbfadr_MASTER}	ggcbfadrn
+ggcbqfadr -- ggcbfadr	{#insert zggcbqGTCutName}{#insert ggcbfadr}	ggcbqfadr
+ggcbqfadr0p -- ggcbfadr0p	{#insert zggcbqGTCutName}{#insert ggcbfadr0p}	ggcbqfadr0p
+ggcbqfadr1 -- ggcbfadr1	{#insert zggcbqGTCutName}{#insert ggcbfadr1}	ggcbqfadr1
+ggcbqfadr1p -- ggcbfadr1p	{#insert zggcbqGTCutName}{#insert ggcbfadr1p}	ggcbqfadr1p
+ggcbqfadr2 -- ggcbfadr2	{#insert zggcbqGTCutName}{#insert ggcbfadr2}	ggcbqfadr2
+ggcbqfadr3 -- ggcbfadr3	{#insert zggcbqGTCutName}{#insert ggcbfadr3}	ggcbqfadr3
+ggcbqfadr4 -- ggcbfadr4	{#insert zggcbqGTCutName}{#insert ggcbfadr4}	ggcbqfadr4
+ggcbqfadr5 -- ggcbfadr5	{#insert zggcbqGTCutName}{#insert ggcbfadr5}	ggcbqfadr5
+ggcbqfadrn -- ggcbfadrn	{#insert zggcbqGTCutName}{#insert ggcbfadrn}	ggcbqfadrn
+ggpwfadr -- zCutL1w, ggcbfadr	{#insert zCutL1w}{#insert ggcbfadr}	ggpwfadr
+ggpwfadr0p -- zCutL1w, ggcbfadr0p	{#insert zCutL1w}{#insert ggcbfadr0p}	ggpwfadr0p
+ggpwfadr1 -- zCutL1w, ggcbfadr1	{#insert zCutL1w}{#insert ggcbfadr1}	ggpwfadr1
+ggpwfadr1p -- zCutL1w, ggcbfadr1p	{#insert zCutL1w}{#insert ggcbfadr1p}	ggpwfadr1p
+ggpwfadr2 -- zCutL1w, ggcbfadr2	{#insert zCutL1w}{#insert ggcbfadr2}	ggpwfadr2
+ggpwfadr3 -- zCutL1w, ggcbfadr3	{#insert zCutL1w}{#insert ggcbfadr3}	ggpwfadr3
+ggpwfadr4 -- zCutL1w, ggcbfadr4	{#insert zCutL1w}{#insert ggcbfadr4}	ggpwfadr4
+ggpwfadr5 -- zCutL1w, ggcbfadr5	{#insert zCutL1w}{#insert ggcbfadr5}	ggpwfadr5
+ggpwfadrn -- zCutL1w, ggcbfadrn	{#insert zCutL1w}{#insert ggcbfadrn}	ggpwfadrn

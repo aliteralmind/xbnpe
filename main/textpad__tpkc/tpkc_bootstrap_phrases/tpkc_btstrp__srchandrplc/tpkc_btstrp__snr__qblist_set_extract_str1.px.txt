@@ -1,0 +1,62 @@
+(*
+   Required by phrase-creator-ddmenu-utils...START
+      PM_DDMENU_DIRID_FILENMPHRSNM_HDRAUTOTXT=tpkc/zzPmdmFNmPreTpkcSnrOthr/xhskq
+   Required by phrase-creator-ddmenu-utils...END
+
+   Additional items to place in ddmenu-list:
+      zvQBL_LENGTH
+      zvQB_STR_LIST
+
+
+A 'qb-string' is '[a]'. A qb-string that has been EXTRACTED is just a 'string': 'a'
+
+Note that strings in sQuare-Bracket Lists must be static strings. Having any phrase-calls--escaped or not--in a qbl-string will not work. Each time a qbl-item is retrieved or extracted, and each time the qb-list is updated (after the first item is extracted), each element will be unescaped. When and how many times this occurs is almost unpredictable, and is therefore highly discouraged.{#ENTER -count 2}There are a number of fundamental phrases in this qblist project that are bootstraps for the XBNPE-TPKC project. See{#ENTER}{#TAB}xbn_phrase_express\textpad_built_in_cmds__tpkc\tpkc_bootstrap_phrases\tpkc_btstrp__srchandrplc__qblist_set_extract_str1.px.txt
+*)
+lltoqbl -- zLineListToSquareBracketedList ALT KC	{#insert zLineListToSquareBracketedList}	lltoqbl
+
+qbldemo	{#insert zFcsTPFileNew}Demonstrating sQuare-Bracket-Lists (qbl's)...{#insert zENTER2}{#SETPHRASE -description zvQB_STR_LIST -content [Item1][Item2][Item3][Item4][Item5][Item6][Item7][Item8][Item9][Item10][Item11][Item12][Item13][Item14][Item15][Item16] -autotext zvQB_STR_LIST -folder ctvv_folder}Entire list:{#insert zvQB_STR_LIST}{#insert zENTER2}{#LOOP {#insert zExtrElimSetStrSetQBL_M_qbl}'{#insert zvSTRING}'{#insert zEnterTab}{#insert zvQB_STR_LIST}{#insert zEnterBksp} -count {#insert zQblLenFromSelf_M_qbl}}{#insert zBalloonDone}	qbldemo
+
+qbltoll -- zREoffRplcQblOnlyDocToLineList ALT KC	{#insert zREoffRplcQblOnlyDocToLineList}	qbltoll
+
+zDelimList_M_qblDelim -- [a][b][c] -> a[DELIM]b[DELIM]c -- Needs zvQB_STR_LIST, zvDELIM_STR	{#substr {#replace {#insert zvQB_STR_LIST} -oldtext ][ -newtext {#insert zvDELIM_STR}} -from 2 -count {#CALC {#length {#insert zvQB_STR_LIST}} - {#LENGTH {#insert zvDELIM_STR}} -round 0 -thousands none}}	zDelimList_M_qblDelim
+
+zExtrElimSetStrSetQBL_M_qbl -- Sets zvSTRING and zvQB_STR_LIST	{#SETPHRASE -description zvSTRING -content {#insert zExtrElimStrSetQBL_M_qbl} -autotext zvSTRING -folder ctvv_folder}	zExtrElimSetStrSetQBL_M_qbl
+
+zExtrElimStrSetQBL_M_qbl -- Sets zvSTRING and zvQB_STR_LIST	{#insert zGetExtractStr1FromQBList_M_qbl}{#insert zvQB_STR_LIST_sfElimFirstQBS_M_qbl}	zExtrElimStrSetQBL_M_qbl
+
+zExtractString_M_qbs -- [abc] -> abc -- Needs zvQB_STRING	{#substr {#insert zvQB_STRING} -from 2 -count {#CALC {#length {#insert zvQB_STRING}} - 2 -round 0 -thousands none}}	zExtractString_M_qbs
+
+zGetExtractStr1FromQBList_M_qbl	{#SETPHRASE -description zvQB_STRING -content {#insert zGetQBS1_M_qbl} -autotext zvQB_STRING -folder ctvv_folder}{#insert zExtractString_M_qbs}	zGetExtractStr1FromQBList_M_qbl
+
+zGetQBS1_M_qbl -- [a][b][c] -> [a] -- Needs zvQB_STR_LIST [NO INTERNAL CMTS!]	{#substr {#insert zvQB_STR_LIST} -from 1 -count {#pos {#insert zvQB_STR_LIST} -substr ]}}	zGetQBS1_M_qbl
+
+zInitAllQBListVars	{#insert zSetQBListAndStrToEmpty}{#SETPHRASE -description zvQB_STRING -content  -autotext zvQB_STRING -folder ctvv_folder}	zInitAllQBListVars
+
+zLineListToSquareBracketedList	{#BALLOON -title lltoqbl -text Cursor must be in the line of the top-most element.}{#insert zHOME}{#LOOP [{#END}]{#DEL} -count {#INPUT -head How many lines? -single}}	zLineListToSquareBracketedList
+zLineListToSquareBracketedList_M_qblen -- zvQBL_LENGTH	{#insert zHOME}{#LOOP [{#END}]{#DEL} -count {#insert zvQBL_LENGTH}}	zLineListToSquareBracketedList_M_qblen
+
+zQblLenFromSelf_M_qbl -- Needs zvQB_STR_LIST	{#SETPHRASE -description zvORIG_STR_LEN -content {#LENGTH {#insert zvQB_STR_LIST}} -autotext zvORIG_STR_LEN -folder ctvv_folder}{#SETPHRASE -description zvWITHOUT_OPEN_SQBS -content {#REPLACE {#insert zvQB_STR_LIST} -oldtext [ -newtext} -autotext zvWITHOUT_OPEN_SQBS -folder ctvv_folder}{#CALC {#insert zvORIG_STR_LEN} - {#LENGTH {#insert zvWITHOUT_OPEN_SQBS}} -round 0 -thousands none}	zQblLenFromSelf_M_qbl
+
+zREoffRplcQblOnlyDocToLineList -- Transforms [a][b][c] to a\nb\nc	{#insert zFcsTPRplcDlgOpen}{#insert zzInFindWhatREoff_rplcOpenQBWNothingClsQBWNewlnTDscope_reOn}{#insert zFindFlagRETglRAW}(*re OFF*){#insert zRplcDlgClose}	zREoffRplcQblOnlyDocToLineList
+
+zREonRplcQblOnlyDocToLineList	{#insert zTPRplcDlgOpen}{#insert zFindFlagRETgl}(*RE off*){#insert zzInFindWhatREoff_rplcOpenQBWNothingClsQBWNewlnTDscope_reOn}{#insert zRplcDlgClose}	zREonRplcQblOnlyDocToLineList
+
+zSetQBListAndStrToEmpty	{#SETPHRASE -description zvSTRING -content  -autotext zvSTRING -folder ctvv_folder}{#SETPHRASE -description zvQB_STR_LIST -content  -autotext zvQB_STR_LIST -folder ctvv_folder}	zSetQBListAndStrToEmpty
+
+zvQBL_LENGTH_addCurrSelfLen -(**)- zvQBL_LENGTH += zQblLenFromSelf_M_qbl	(*Can be used for 1 or many*){#SETPHRASE -description zvQBL_LENGTH -content {#CALC {#insert zvQBL_LENGTH} + {#insert zQblLenFromSelf_M_qbl} -round 0 -thousands none} -autotext zvQBL_LENGTH -folder ctvv_folder}	zvQBL_LENGTH_addCurrSelfLen
+
+zvQBL_LENGTH_stCurrSelfLen -(**)- zvQBL_LENGTH = zQblLenFromSelf_M_qbl	(*Can be used for 1 or many*){#SETPHRASE -description zvQBL_LENGTH -content {#insert zQblLenFromSelf_M_qbl} -autotext zvQBL_LENGTH -folder ctvv_folder}	zvQBL_LENGTH_stCurrSelfLen
+
+zvQB_STR_LIST_sfElimFirstQBS_M_qbl	{#SETPHRASE -description zvQB_STR_LIST -content {#insert zvQB_STR_LIST_withItem1Elim} -autotext zvQB_STR_LIST -folder ctvv_folder}	zvQB_STR_LIST_sfElimFirstQBS_M_qbl
+
+zvQB_STR_LIST_withItem1Elim -- [a][b][c] -> [b][c] -- Needs zvQB_STR_LIST	{#SETPHRASE -description zvCLOSE_QB_POS -content {#pos {#insert zvQB_STR_LIST} -substr ]} -autotext zvCLOSE_QB_POS -folder ctvv_folder}{#insert zvQB_STR_LIST_withItem1Elim_M_posclsq}	zvQB_STR_LIST_withItem1Elim
+
+zvQB_STR_LIST_withItem1Elim_M_posclsq -- Needs zvQB_STR_LIST, zvCLOSE_QB_POS [NO INTERNAL CMTS!]	{#substr {#insert zvQB_STR_LIST} -from {#CALC {#insert zvCLOSE_QB_POS} + 1 -round 0 -thousands none} -count {#CALC {#length {#insert zvQB_STR_LIST}} - {#CALC {#insert zvCLOSE_QB_POS} -round 0 -thousands none} -round 0 -thousands none}}	zvQB_STR_LIST_withItem1Elim_M_posclsq
+
+zzDebugAllQBListVarsDlgTxt	zvQB_STR_LIST='{#insert zvQB_STR_LIST}'  //  zvSTRING='{#insert zvSTRING}'  //  zvQB_STRING='{#insert zvQB_STRING}'  //  zQblLenFromSelf_M_qbl='{#insert zQblLenFromSelf_M_qbl}'  //  zvQBL_LENGTH='{#insert zvQBL_LENGTH}'	zzDebugAllQBListVarsDlgTxt
+
+zzInFindWhatREoff_rplcOpenQBWNothingClsQBWNewlnTDscope_reOn	{#insert zzMidRplcREoffOpenSqBrktToNthng}{#insert zRplcBtnAllTD}{#insert zFindFlagRETgl}(*re ON*){#insert zzMidRplcREClsSqBrktToNewLine}{#insert zRplcBtnAllTD}	zzInFindWhatREoff_rplcOpenQBWNothingClsQBWNewlnTDscope_reOn
+
+zzMidRplcTDREoffQblToLineList -- No HNR. RE stays off, find-what field is focused on	{#insert zzMidRplcREoffOpenSqBrktToNthng}{#insert zRplcBtnAllTD}{#insert zFindFlagRETgl}{#insert zzMidRplcREClsSqBrktToNewLine}{#insert zRplcBtnAllTD}{#insert zFindFlagRETgl}	zzMidRplcTDREoffQblToLineList
+zzMidRplcREoffOpenSqBrktToNthng	{#SETPHRASE -description zvFIND_WHAT -content [ -autotext zvFIND_WHAT -folder ctvv_folder}{#insert zvFIND_WHAT}{#insert zRplcWithNOTHING}	zzMidRplcREoffOpenSqBrktToNthng
+zzMidRplcREClsSqBrktToNewLine	{#SETPHRASE -description zvFIND_WHAT -content \] -autotext zvFIND_WHAT -folder ctvv_folder}{#insert zvFIND_WHAT}{#insert zRplcFieldWith}\n	zzMidRplcREClsSqBrktToNewLine

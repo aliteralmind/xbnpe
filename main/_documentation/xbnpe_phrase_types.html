@@ -1,0 +1,233 @@
+<HTML><HEAD>
+	<TITLE>XBNPE: Phrase types</TITLE>
+	<meta name="viewport" content="width=device-width" />
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF"><a name="top"></a>
+
+<P>[<A HREF="index.html">BACK</A>]</CODE></P>
+
+<HR/>
+
+<H1>XBNPE: Phrase types</H1>
+
+<P>Broadly speaking, there are two types of phrases in XBN-PhraseExpress: &quot;Normal&quot; and &quot;ddmenu&quot;.<UL>
+		<LI><CODE>[<A HREF="#normal">go</A>]</CODE> &nbsp; <B>Normal</B> phrases are triggered by either typing (or calling) their autotext, or clicking their &quot;hotkey&quot; (key-command). There are four main types of &quot;normal&quot; phrases:<UL>
+		<LI>[<A HREF="#action">go</A>]</CODE> &nbsp; <B>Actions:</B> Phrases directly-called by you, for doing something <I>now</I></LI>
+		<LI>[<A HREF="#command">go</A>]</CODE> &nbsp; <B>Commands:</B> Phrases called by other phrases.</LI>
+		<LI>[<A HREF="#variable">go</A>]</CODE> &nbsp; <B>Variables:</B> Phrases that hold a single-and-static value, and are considered &quot;critical but temporary&quot;.</LI>
+		<LI>[<A HREF="phrase_express/phrase_creators_pcc.html">go</A>]</CODE> &nbsp; <B>Phrase-creators:</B> Actions that print calls to a single command.</LI>
+	</UL></LI>
+	<LI><CODE>[<A HREF="#ddmitem">go</A>]</CODE> &nbsp; <B>DDMenu items</B> are phrases that are only triggered manually, by finding-and-then-selecting them from within their drop-down-menu.<UL>
+		<LI><CODE>[<A HREF="#ddmconfig">go</A>]</CODE> &nbsp; Drop-down menus in XBN-PhraseExpress are configured to appear and behave in a certain way.</LI>
+	</UL></LI>
+</UL></P>
+
+<H3>Warning for when importing</H3>
+
+<P>When <A HREF="plain_text_phrase_files.html#import1">importing a file</A> into PhraseExpress, that <CODE>'px.txt'</CODE> file (which becomes a &quot;.px&quot; folder) adopts the settings of its parent folder. For this reason, I always import normal phrases separately from ddmenus. Also note, however, that once imported, that folder maintains its settings, even if moved out of its parent.</P>
+
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="ddmitem"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; XBNPE phrase-type: DDMenu item</CODE></H2>
+
+<P>DDMenu item phrases are, naturally, members of a drop-down-menu (heirarchical pop-up menu). They are not intended to be called by other phrases, and they <I>cannot</I> be directly triggered via their autotext or key-command (hotkey). They must be specifically <A HREF="http://www.phraseexpress.com/docs9/09/manual.htm#popup">triggered</A>.</P>
+
+<P>DDMenu item phrases are only for direct use by the user. It must first be found from within its drop-down-menu , and then triggered. Drop-down-menus in XBN-PhraseExpress are also <A HREF="#ddmconfig">configured to appear and behave</A> in a certain way.</P>
+
+<P>In XBN-PhraseExpress, there are two main drop-down menus. By default, they are accessed by <A HREF="xbnpe_ddmenus.html#xh">typing <CODE>'xh'</CODE></A> or by <A HREF="xbnpe_ddmenus.html#user">clicking <CODE>'zCASpDNR_SLASH'</CODE></A> (<CODE>Ctrl+Alt+Shift+\</CODE>). The former is navigated by typing (or backspacing over) specific characters, as displayed in each menu item (each header within it). The latter is navigated with either arrows, or by typing the displayed guide numbers.</P>
+
+<P>Drop-down-menu phrase-files have the following setup, where the following two items are the most critical:<UL>
+	<LI>No &quot;Postfix&quot; (<CODE>'None'</CODE>)</LI>
+	<LI>&quot;Manual confirmation&quot; is checked</LI>
+</UL></P>
+
+<P><IMG SRC="images/ddmenu_phrase_setup.jpg" BORDER="1"/></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="normal"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; XBNPE phrase-type: Normal</CODE></H2>
+
+<P>A &quot;normal&quot; phrase is one triggered by:<UL>
+	<LI>Typing their autotext and then clicking on the &quot;Postfix&quot; key. <I>By default, the XBNPE-postfix key is the accent key (<CODE>'<B>`</B>'</CODE>, or <CODE>'zACCENT'</CODE>).</I></LI>
+	<LI>Calling it from another phrase, such as
+	<BR> &nbsp; &nbsp; <CODE>{#insert zThePhraseToCall}</CODE></LI>
+	<LI>Putting the phrase in the clipboard, and then typing <CODE>'<A HREF="phrase_express\call_phrase_name_in_clipboard.html">cpcb</A>'</CODE></LI>
+</UL>
+
+<P>There are four types of &quot;normal&quot; phrases: <A HREF="#command">commands</A>, <A HREF="#variable">variables</A>, <A HREF="#action">actions</A>, and <A HREF="phrase_express/phrase_creators_pcc.html">phrase-creators</A></P>
+
+<P>By default, &quot;normal&quot; phrases in XBN-PhraseExpress have the following setup:<UL>
+	<LI>A &quot;Postfix&quot; of <CODE>'<B>`</B>'</CODE> (<CODE>'zACCENT'</CODE>, the accent character which, on my keyboard, is on the same key as the tilde, just below the [Esc] key). This is assigned via the &quot;Custom&quot; prefix.</LI>
+	<LI>&quot;Manual confirmation&quot; is unchecked.</LI>
+</UL></P>
+
+<P><IMG SRC="images/normal_phrase_setup.jpg" BORDER="1"/></P>
+
+<P><IMG SRC="images/accent_in_custom_postfix.jpg" BORDER="1"/></P>
+
+<P><I>It does say &quot;leading&quot;, even though this is for the postfix.</I></P>
+
+<P>Since this is the only prefix used in XBN-PhraseExpress, I personally also have the accent-key setup as the default postfix.</P>
+
+<P><IMG SRC="images/default_postfix_setting.jpg" BORDER="1"/></P>
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="action"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; XBNPE phrase-type: Action</CODE></H2>
+
+<P>An &quot;action&quot; phrase is one called by you, via typing its autotext or hitting its key-command (&quot;Hotkey&quot;), for the purpose of doing something <I>right now</I>. Example actions:<UL>
+	<LI><A HREF="phrase_express/phrase_compression.html"><CODE>c2pl</CODE></A>: Compress a single two-line phrase into its one-line (and importable) version.</LI>
+	<LI><A HREF="phrase_express/call_phrase_name_in_clipboard.html"><CODE>cpcb</CODE></A>: Executes the phrase whose <I>name</I> is currently in the clipboard.</LI>
+	<LI>The various sQuare-Bracket List (qbl) <A HREF="search_and_replace/square_bracketed_lists.html#lltoqbl">sorting utilities</A>.</LI>
+	<LI><B><CODE>hli</CODE>:</B> Used to create this html list-line: <CODE>&lt;LI&gt;<U><I><B>[CURSOR]</B></I></U>&lt;/LI&gt;</CODE></LI>
+</UL></P>
+
+<P>Most actions are not <A HREF="#command">commands</A>--they are not intended to be called by other phrases. However, many actions provide, or are equal to, a &quot;raw&quot; version that is indeed a command. For example, <CODE>'c2pl'</CODE> uses (but is not equal to) the raw command <CODE>'zzWWoffC2plRAW'</CODE>.</P>
+
+<P>Actions that specifically generate phrase-calls are called <A HREF="phrase_express/phrase_creators_pcc.html">phrase-creators</A>.</P>
+
+<P><I>Note that some actions may <A HREF="cwlpdf/ww_with_state.html#stateprompt">prompt the user for the current word-wrap state</A> before proceeding.</I></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="command"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; XBNPE phrase-type: Command</CODE></H2>
+
+<P>An &quot;command&quot; phrase is one that is intended to be called only from other phrases. Command phrase-names typically start with a single <CODE>'z'</CODE>. Example commands:<UL>
+	<LI><B><CODE>zApCC</CODE>:</B> The XBNPE key-press for <CODE>{#ALT -chars c}</CODE>.</LI>
+	<LI><B><CODE>zKeyPressSlow</CODE>:</B> Turns down execution speed for diagnostics and demonstration purposes.</LI>
+	<LI><B><CODE>zOpenExplorerDirSelectTargetFile_M_dirFnm</CODE>:</B> Opens a Windows Explorer window, with a particular file selected. The <CODE>'_M_dirFnm'</CODE> is an XBN-PhraseExpress naming convention, indicating this phrase requires two specific <A HREF="#variable">variables</A> in order to function properly.</LI>
+</UL></P>
+
+<P>In general, phrases starting with multiple <CODE>'z'</CODE>-s should not be directly called. However, there are some &quot;sub&quot; phrases that may be useful. For example, many <A HREF="#action">action phrases</A> make a &quot;raw&quot; command-version avaliable, and this raw-command usually starts with two <CODE>'z'</CODE>-s.</P>
+
+<P>Note that in some larger phrase-files, higher numbers of <CODE>'z'</CODE>-s are used at the start of phrase-names, to logically order the phrase-lines. In most cases, however, the fewer <CODE>'z'</CODE>-s that start a phrase's name, the more likely that the phrase is useful.</P>
+
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="variable"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; XBNPE phrase-type: Variable</CODE></H2>
+
+<P>An XBNPE &quot;variable&quot; is a phrase that holds a single static value (meaning it contains no <I>unescaped</I> PhraseExpress code), and is to be treated as &quot;critical but temporary&quot;. This means while that the values held in an XBNPE-variable are critical to the phrases or processes that use them, once the process is completed, those variables may be safely deleted.</P>
+
+<P>All XBNPE-variables are stored in
+<BR> &nbsp; &nbsp; <CODE>XBN-PhraseExpress/XBNPE Key-presses (XKP) & basic utilities/Temporary variable storage -- ctvv_folder</CODE>
+<BR>which, as alluded to in the folder-name, has an autotext of <CODE>'ctvv_folder'</CODE>. This folder-autotext is part of every <CODE>SETPHRASE</CODE>:
+<BR> &nbsp; &nbsp; <CODE>{#SETPHRASE -description zvVAR_NAME -content the variable's value -autotext zvVAR_NAME <B><U>-folder ctvv_folder</U></B>}</CODE></P>
+
+<P>The entire contents of this folder--every XBNPE-variable--may be safely deleted at any time. <I><B>Do not ever, however, delete the folder itself.</B></I></P>
+
+<P>Note that the most commonly-used variables have some pre-built <A HREF="#command">commands</A> associated to them. For example, <CODE>zvNUMBER</CODE> is the standard &quot;temp counter&quot; variable, and has these two useful commands:<UL>
+	<LI><CODE>zvNUMBER_st0</CODE>, for initializing the counter, and</LI>
+	<LI><CODE>zvNUMBER_incBy1</CODE>, for incrementing it.</LI>
+</UL></P>
+
+<P><I>The special <A HREF="xbnpe_key_presses__xkp.html#0mods"><CODE>zTSlp</CODE> phrase</A> is treated somewhat like a variable, but otherwise behaves like a <A HREF="#command">command</A>.</I></P>
+
+<H3>Naming conventions</H3>
+
+<P>All XBNPE-variable are start with <CODE>'zv'</CODE> and end with all-capital letters, separated by underscores. The name should be short and highly abbreviated--it is only necessary to understand the name within the context of the processes in which it is used. Therefore,
+<BR> &nbsp; &nbsp; <CODE>zvCMD_ABRV_1C</CODE>
+<BR>is perfectly acceptable, because this variable has meaning with the TPKC project (it's the command-abbreviation, &quot;one&quot;-case, meaning only the first character is uppercase), which is the only place where it is used. The name is meaningless outside of the TPKC project.</P>
+
+<P>The most commonly-used and user-facing variables are more descriptive, such as:<UL>
+	<LI><B><CODE>zvDIRECTORY</CODE></B> and <B><CODE>zvFILE_NAME</CODE></B>, which are used by many file-manipulation phrases, such as <CODE>'zDirFileSaveClose_M_dirFnm'</CODE>.</LI>
+	<LI><B><CODE>zvQB_STR_LIST</CODE></B>, <B><CODE>zvQB_LENGTH</CODE></B>, <B><CODE>zvQB_STRING</CODE></B>, and <B><CODE>zvSTRING</CODE></B>, which are used by &quot;<A HREF="search_and_replace/square_bracketed_lists.html">sQuare-Bracketed Lists</A>&quot;.</LI>
+	<LI><B><CODE>zvDIVIDEND_TOP</CODE></B> and <B><CODE>zvDIVISOR_BTM</CODE></B>, which are the input for <A HREF="other/divisor_quotient.html">division-related</A> phrases. The <I>output</I> of these particular phrases are stored in <B><CODE>zvQUOTIENT</CODE></B>, <B><CODE>zvMODULO</CODE></B>, <B><CODE>zv1_IF_MOD_GT0</CODE></B>, and <B><CODE>zvTTL_DIV_BLKS</CODE></B></LI>
+</UL></P>
+
+<H3>Phrases requiring variables</H3>
+
+<P>Many phrases require one or more variables, in order for it to function properly. This is indicated by the <B><CODE>'_M_...'</CODE></B> phrase-name postfix. Further examples:<UL>
+	<LI><B><CODE>zRplcBtnAllTD_hnrIf_M_hnry</CODE>:</B> Indicates that <CODE>'zvHNR_YES'</CODE> is required. When equal to <CODE>'yes'</CODE>, then when the replace button is pressed, it should 'H'andle the possibility that 'N'o matches ('R'eplacements) may be found (doing so results in a &quot;ding&quot;). When equal to <CODE>''</CODE> (<I>nothing</I>), then it is expected that at least one replacement is made--the benefit of which is no dings, and faster performance.</LI>
+	<LI><B><CODE>zQblLenFromSelf_M_qbl</CODE>:</B> Indicates that <CODE>'zvQB_STR_LIST'</CODE> is required.</LI>
+</UL>Each variable in the <CODE>'_M_...'</CODE> postfix is 1-cased (only the first character is upper) and highly-abbreviated.</P>
+
+<P>When a function requires many variables, it may make the phrase's name too long to include them all in the <CODE>'_M_...'</CODE> postfix. Consider in this case, appending, for example, <CODE>'_M_7zv'</CODE>. In all cases, the phrase's description or internal documentation will (should!) say specifically what variables are needed. Such as:
+<BR> &nbsp; &nbsp; <CODE>zDirFileOpen_M_dirFnm -- Needs zvDIRECTORY, zvFILE_NAME</CODE></P>
+
+
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="ddmconfig"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; XBNPE Drop-down-menus: Configured appearance and behavior</CODE></H2>
+
+<P>By default, the <A HREF="xbnpe_ddmenus.html">main drop-down-menus in XBN-PhraseExpress</A> (or, more accurately, all <A HREF="#ddmitem">ddmenu-item</A> phrases) have the following appearance and hot-key setup. It is recommended that you set it up in the same way, since all XBNPE documentation assumes it.</P>
+
+<H4><U><CODE>PhraseExpress &gt; Tools &gt; Settings &gt; Options &gt; Popups</CODE></U></H4>
+
+<P>There is one important setting on this screen:
+<BR> &nbsp; &nbsp; <B>Popup contents</B>
+<BR>which should be set to
+<BR> &nbsp; &nbsp; <CODE>'Description - QuickKey'</CODE>
+<BR>All other settings on this particular screen are less critical. FYI, here is my current setup:</P>
+
+<P><IMG SRC="images/pex_settings_popups.jpg" BORDER="1"/></P>
+
+<H4><U><CODE>PhraseExpress &gt; Tools &gt; Settings &gt; Options &gt; Popups &gt; Hotkeys</CODE></U></H4>
+
+<P>There are two critical settings on this screen:<UL>
+	<LI><B>Phrase confirmation hotkey:</B> <CODE>'Tab'</CODE></LI>
+	<LI><B>Phrases popup quick-select hotkey (QuickKey):</B> <CODE>'None'</CODE> and <CODE>'Numbers [1-9]'</CODE></LI>
+</UL></P>
+
+<P>The other item on this screen are less critical. Here is my current setup:</P>
+
+<P><IMG SRC="images/pex_settings_popups_hotkeys.jpg" BORDER="1"/></P>
+
+
+
+
+<PRE>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</PRE>
+</BODY></HTML>
+
+
+

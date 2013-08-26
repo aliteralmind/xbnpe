@@ -1,0 +1,8 @@
+F8 -- zF8	{#F8}{#insert zTSlp}	zF8
+Alt+F8 -- zApF8	{#ALT {#F8}}{#insert zTSlp}	zApF8
+Alt+Shift+F8 -- zASpF8	{#ALT {#SHIFT {#F8}}}{#insert zTSlp}	zASpF8
+Ctrl+F8 -- zCpF8	{#CTRL {#F8}}{#insert zTSlp}	zCpF8
+Ctrl+Alt+F8 -- zCApF8	{#CTRL {#ALT {#F8}}}{#insert zTSlp}	zCApF8
+Ctrl+Alt+Shift+F8 -- zCASpF8	{#CTRL {#ALT {#SHIFT {#F8}}}}{#insert zTSlp}	zCASpF8
+Ctrl+Shift+F8 -- zCSpF8	{#CTRL {#SHIFT {#F8}}}{#insert zTSlp}	zCSpF8
+Shift+F8 -- zSpF8	{#SHIFT {#F8}}{#insert zTSlp}	zSpF8

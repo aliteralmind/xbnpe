@@ -1,0 +1,30 @@
+ggcb -- ggcbp0p ALT KC	{#insert ggcbp0p}	ggcb
+ggcbp -- ggcbp0p ALT KC	{#insert ggcbp0p}	ggcbp
+ggcbp0p -- ggcbp, zero-or-more (0-Plus) parameters	{#insert zjreSetPCountPost_0orMore}{#insert zggcbp_MASTER}	ggcbp0p
+ggcbp1	{#insert zjreSetPCountPost_1}{#insert zggcbp_MASTER}	ggcbp1
+ggcbp1p -- ggcbp, one-or-more (1-Plus) parameters	{#insert zjreSetPCountPost_1orMore}{#insert zggcbp_MASTER}	ggcbp1p
+ggcbp2	{#insert zjreSetPCountPost_2}{#insert zggcbp_MASTER}	ggcbp2
+ggcbp3	{#insert zjreSetPCountPost_3}{#insert zggcbp_MASTER}	ggcbp3
+ggcbp4	{#insert zjreSetPCountPost_4}{#insert zggcbp_MASTER}	ggcbp4
+ggcbp5	{#insert zjreSetPCountPost_5}{#insert zggcbp_MASTER}	ggcbp5
+ggcbpn -- prompt for exact param-count	{#insert zjreSetPCountPost_FromGT0Prompt}{#insert zggcbp_MASTER}	ggcbpn
+ggcbq -- Go to and delete func name, then ggcbq	{#insert zggcbqGTCutName}{#insert ggcb}	ggcbq
+ggcbqp	{#insert zggcbqGTCutName}{#insert ggcbp}	ggcbqp
+ggcbqp0p	{#insert zggcbqGTCutName}{#insert ggcbp0p}	ggcbqp0p
+ggcbqp1	{#insert zggcbqGTCutName}{#insert ggcbp1}	ggcbqp1
+ggcbqp1p	{#insert zggcbqGTCutName}{#insert ggcbp1p}	ggcbqp1p
+ggcbqp2	{#insert zggcbqGTCutName}{#insert ggcbp2}	ggcbqp2
+ggcbqp3	{#insert zggcbqGTCutName}{#insert ggcbp3}	ggcbqp3
+ggcbqp4	{#insert zggcbqGTCutName}{#insert ggcbp4}	ggcbqp4
+ggcbqp5	{#insert zggcbqGTCutName}{#insert ggcbp5}	ggcbqp5
+ggcbqpn	{#insert zggcbqGTCutName}{#insert ggcbpn}	ggcbqpn
+ggpw -- zCutL1w, ggcb	{#insert zCutL1w}{#insert ggcb}	ggpw
+ggpwp -- zCutL1w, ggcbp	{#insert zCutL1w}{#insert ggcbp}	ggpwp
+ggpwp0p -- zCutL1w, ggcbp0p	{#insert zCutL1w}{#insert ggcbp0p}	ggpwp0p
+ggpwp1 -- zCutL1w, ggcbp1	{#insert zCutL1w}{#insert ggcbp1}	ggpwp1
+ggpwp1p -- zCutL1w, ggcbp1p	{#insert zCutL1w}{#insert ggcbp1p}	ggpwp1p
+ggpwp2 -- zCutL1w, ggcbp2	{#insert zCutL1w}{#insert ggcbp2}	ggpwp2
+ggpwp3 -- zCutL1w, ggcbp3	{#insert zCutL1w}{#insert ggcbp3}	ggpwp3
+ggpwp4 -- zCutL1w, ggcbp4	{#insert zCutL1w}{#insert ggcbp4}	ggpwp4
+ggpwp5 -- zCutL1w, ggcbp5	{#insert zCutL1w}{#insert ggcbp5}	ggpwp5
+ggpwpn -- zCutL1w, ggcbpn	{#insert zCutL1w}{#insert ggcbpn}	ggpwpn

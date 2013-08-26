@@ -1,0 +1,15 @@
+zTPBtstrpEscKCGetOrCIES_M_bspm	{#insert {#COND -if {#LENGTH {#insert zTPBtstrpEscKC_M_bspm}} > 0 -then z1slp -else zzErrDlgBtstrpEscKCES_M_bspm}}{#insert zTPBtstrpEscKC_M_bspm}	zTPBtstrpEscKCGetOrCIES_M_bspm
+
+zTPBtstrpEscKC_M_bspm	{#insert {#insert zTPBtstrpEscPhrsNm_M_bspm}}	zTPBtstrpEscKC_M_bspm
+
+zTPBtstrpEscPhrsNm_M_bspm -- Needs zvBTSTRP_PHRS_NM	{#insert zvBTSTRP_PHRS_NM}Esc	zTPBtstrpEscPhrsNm_M_bspm
+
+zTPBtstrpTPKeysKCGetOrCIES_M_bspm	{#insert {#COND -if {#LENGTH {#insert zTPBtstrpTPKeys_M_bspm}} > 0 -then z1slp -else zzErrDlgBtstrpTPKeysKCES_M_bspm}}{#insert zTPBtstrpTPKeys_M_bspm}	zTPBtstrpTPKeysKCGetOrCIES_M_bspm
+
+zTPBtstrpTPKeysPhrsNm_M_bspm -- Needs zvBTSTRP_PHRS_NM	{#insert zvBTSTRP_PHRS_NM}TPKeys	zTPBtstrpTPKeysPhrsNm_M_bspm
+
+zTPBtstrpTPKeys_M_bspm	{#insert {#insert zTPBtstrpTPKeysPhrsNm_M_bspm}}	zTPBtstrpTPKeys_M_bspm
+
+zzErrDlgBtstrpEscKCES_M_bspm	{#MSGBOX -head ERROR -text ERROR ~~ {#insert zTPBtstrpEscPhrsNm_M_bspm} has no characters!{#insert zCancelProcNowPostTxt}}	zzErrDlgBtstrpEscKCES_M_bspm
+
+zzErrDlgBtstrpTPKeysKCES_M_bspm	{#MSGBOX -head ERROR -text ERROR ~~ {#insert zTPBtstrpTPKeysPhrsNm_M_bspm} has no characters!{#insert zCancelProcNowPostTxt}}	zzErrDlgBtstrpTPKeysKCES_M_bspm

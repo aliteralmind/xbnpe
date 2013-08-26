@@ -1,0 +1,8 @@
+fcbpad -- fcbp in an Alt Dir (prompts before proceeding)	{#insert zzfcbpPrePrompt}{#insert zDialogProceed}{#insert zzfcbpPostPrompt}	fcbpad
+fcbp -- Find '^[ClipBoard/Phrase name]' in zROOT_DIR_XBNPE_MAIN	{#insert zzfcbpPrePrompt}{#insert zzfcbpPostPrompt}	fcbp
+fcbpuad -- fcbpu in an Alt Dir (prompts before proceeding)	{#insert zzfcbpuPrePrompt}{#insert zDialogProceed}{#insert zzfcbpuPostPrompt}	fcbpuad
+fcbpu -- Find '{#insert [ClipBoard]' (Usage) in zROOT_DIR_XBNPE_MAIN	{#insert zzfcbpPrePrompt}{#insert zzfcbpPostPrompt}	fcbpu
+zzfcbpPrePrompt	{#insert zFFindOpenREAM}^{#insert zTPPaste}{#insert zFFindFieldDirP4R}{#insert zROOT_DIR_XBNPE_MAIN}	zzfcbpPrePrompt
+zzfcbpPostPrompt	{#insert zFFindGoPMBForPEFilesResetRAW}{#insert zFFindREClose}	zzfcbpPostPrompt
+zzfcbpuPrePrompt	{#insert zFFindOpenAM}{#insert zHOME}{#insert zOY}#insert {#insert zTPPaste{#insert zCY}{#insert zFFindFieldDirP4R}{#insert zROOT_DIR_XBNPE_MAIN}	zzfcbpuPrePrompt
+zzfcbpuPostPrompt	{#insert zFFindGoPMBForPEFilesResetRAW}{#insert zFFindREClose}	zzfcbpuPostPrompt

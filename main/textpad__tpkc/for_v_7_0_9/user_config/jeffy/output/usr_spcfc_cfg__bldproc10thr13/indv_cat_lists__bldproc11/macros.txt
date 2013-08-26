@@ -1,0 +1,5 @@
+MacroMultiplay
+MacroPause
+MacroPlay
+MacroRecord             Ctrl+Shift+R            Ctrl+Shift+Alt+F1
+MacroSave               Ctrl+Alt+F1

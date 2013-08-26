@@ -1,0 +1,66 @@
+krh -- krk, w/ -chars param {#NONE -chars ...}	{#insert zvESC_LVL_CNT_st0}{#insert zKrhRAW_M_elc}{#insert zzKrkSyn}	krh
+krha -- {#ALT -chars ...}	{#insert zvESC_LVL_CNT_st0}{#insert zKrhaRAW_M_elc}{#insert zzKrkSyn}	krha
+krhal -- {#ALT {#LWIN -chars ...}}	{#insert zvESC_LVL_CNT_st0}{#insert zKrhalRAW_M_elc}{#insert zzKrkSyn}	krhal
+krhalp -- krhal, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrhalRAW_M_elc}{#insert zzKrkSyn}	krhalp
+krhalq -- krhal, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrhalRAW_M_elc}{#insert zzKrkSyn}	krhalq
+krhap -- krha, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrhaRAW_M_elc}{#insert zzKrkSyn}	krhap
+krhaq -- krha, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrhaRAW_M_elc}{#insert zzKrkSyn}	krhaq
+krhas -- {#ALT {#SHIFT -chars ...}}	{#insert zvESC_LVL_CNT_st0}{#insert zKrhasRAW_M_elc}{#insert zzKrkSyn}	krhas
+krhasl -- {#ALT {#SHIFT {#LWIN -chars ...}}}	{#insert zvESC_LVL_CNT_st0}{#insert zKrhaslRAW_M_elc}{#insert zzKrkSyn}	krhasl
+krhaslp -- krhasl, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrhaslRAW_M_elc}{#insert zzKrkSyn}	krhaslp
+krhaslq -- krhasl, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrhaslRAW_M_elc}{#insert zzKrkSyn}	krhaslq
+krhasp -- krhas, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrhasRAW_M_elc}{#insert zzKrkSyn}	krhasp
+krhasq -- krhas, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrhasRAW_M_elc}{#insert zzKrkSyn}	krhasq
+krhc -- {#CTRL -chars ...}	{#insert zvESC_LVL_CNT_st0}{#insert zKrhcRAW_M_elc}{#insert zzKrkSyn}	krhc
+krhca -- {#CTRL {#ALT -chars ...}}	{#insert zvESC_LVL_CNT_st0}{#insert zKrhcaRAW_M_elc}{#insert zzKrkSyn}	krhca
+krhcal -- {#CTRL {#ALT {#LWIN -chars ...}}}	{#insert zvESC_LVL_CNT_st0}{#insert zKrhcalRAW_M_elc}{#insert zzKrkSyn}	krhcal
+krhcalp -- krhcal, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrhcalRAW_M_elc}{#insert zzKrkSyn}	krhcalp
+krhcalq -- krhcal, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrhcalRAW_M_elc}{#insert zzKrkSyn}	krhcalq
+krhcap -- krhca, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrhcaRAW_M_elc}{#insert zzKrkSyn}	krhcap
+krhcaq -- krhca, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrhcaRAW_M_elc}{#insert zzKrkSyn}	krhcaq
+krhcas -- {#CTRL {#ALT {#SHIFT -chars ...}}}	{#insert zvESC_LVL_CNT_st0}{#insert zKrhcasRAW_M_elc}{#insert zzKrkSyn}	krhcas
+krhcasl -- {#CTRL {#ALT {#SHIFT {#insert zOY_M_elc}#LWIN -chars ...}}}}	{#insert zvESC_LVL_CNT_st0}{#insert zKrhcaslRAW_M_elc}{#insert zzKrkSyn}	krhcasl
+krhcaslp -- krhcasl, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrhcaslRAW_M_elc}{#insert zzKrkSyn}	krhcaslp
+krhcaslq -- krhcasl, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrhcaslRAW_M_elc}{#insert zzKrkSyn}	krhcaslq
+krhcasp -- krhcas, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrhcasRAW_M_elc}{#insert zzKrkSyn}	krhcasp
+krhcasq -- krhcas, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrhcasRAW_M_elc}{#insert zzKrkSyn}	krhcasq
+krhcl -- {#CTRL {#LWIN -chars ...}}	{#insert zvESC_LVL_CNT_st0}{#insert zKrhclRAW_M_elc}{#insert zzKrkSyn}	krhcl
+krhclp -- krhcl, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrhclRAW_M_elc}{#insert zzKrkSyn}	krhclp
+krhclq -- krhcl, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrhclRAW_M_elc}{#insert zzKrkSyn}	krhclq
+krhcp -- krhc, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrhcRAW_M_elc}{#insert zzKrkSyn}	krhcp
+krhcq -- krhc, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrhcRAW_M_elc}{#insert zzKrkSyn}	krhcq
+krhcs -- {#CTRL {#SHIFT -chars ...}}	{#insert zvESC_LVL_CNT_st0}{#insert zKrhcsRAW_M_elc}{#insert zzKrkSyn}	krhcs
+krhcsl -- {#CTRL {#SHIFT {#LWIN -chars ...}}}	{#insert zvESC_LVL_CNT_st0}{#insert zKrhcslRAW_M_elc}{#insert zzKrkSyn}	krhcsl
+krhcslp -- krhcsl, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrhcslRAW_M_elc}{#insert zzKrkSyn}	krhcslp
+krhcslq -- krhcsl, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrhcslRAW_M_elc}{#insert zzKrkSyn}	krhcslq
+krhcsp -- krhcs, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrhcsRAW_M_elc}{#insert zzKrkSyn}	krhcsp
+krhcsq -- krhcs, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrhcsRAW_M_elc}{#insert zzKrkSyn}	krhcsq
+krhl -- {#LWIN -chars ...}	{#insert zvESC_LVL_CNT_st0}{#insert zKrhlRAW_M_elc}{#insert zzKrkSyn}	krhl
+krhlp -- krhl, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrhlRAW_M_elc}{#insert zzKrkSyn}	krhlp
+krhlq -- krhl, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrhlRAW_M_elc}{#insert zzKrkSyn}	krhlq
+krhp -- krh, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrhRAW_M_elc}{#insert zzKrkSyn}	krhp
+krhq -- krh, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrhRAW_M_elc}{#insert zzKrkSyn}	krhq
+krhs -- {#SHIFT -chars ...}	{#insert zvESC_LVL_CNT_st0}{#insert zKrhsRAW_M_elc}{#insert zzKrkSyn}	krhs
+krhsl -- {#SHIFT {#LWIN -chars ...}}	{#insert zvESC_LVL_CNT_st0}{#insert zKrhslRAW_M_elc}{#insert zzKrkSyn}	krhsl
+krhslp -- krhsl, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrhslRAW_M_elc}{#insert zzKrkSyn}	krhslp
+krhslq -- krhsl, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrhslRAW_M_elc}{#insert zzKrkSyn}	krhslq
+krhsp -- krhs, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrhsRAW_M_elc}{#insert zzKrkSyn}	krhsp
+krhsq -- krhs, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrhsRAW_M_elc}{#insert zzKrkSyn}	krhsq
+zKrhRAW_M_elc -- Needs zvESC_LVL_CNT (assumed good value!)	{#insert zOY_M_elc}#NONE -chars {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zKrhRAW_M_elc
+zKrhaRAW_M_elc	{#insert zOY_M_elc}#ALT -chars {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zKrhaRAW_M_elc
+zKrhalRAW_M_elc	{#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#LWIN -chars {#insert zCYx2_M_elc}{#insert zzLeftPrevEscCrlyX2_M_elc}	zKrhalRAW_M_elc
+zKrhasRAW_M_elc	{#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#SHIFT -chars {#insert zCYx2_M_elc}{#insert zzLeftPrevEscCrlyX2_M_elc}	zKrhasRAW_M_elc
+zKrhaslRAW_M_elc	{#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#SHIFT {#insert zOY_M_elc}#LWIN -chars {#insert zCYx3_M_elc}{#insert zzLeftPrevEscCrlyX3_M_elc}	zKrhaslRAW_M_elc
+zKrhcRAW_M_elc	{#insert zOY_M_elc}#CTRL -chars {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zKrhcRAW_M_elc
+zKrhcaRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#ALT -chars {#insert zCYx2_M_elc}{#insert zzLeftPrevEscCrlyX2_M_elc}	zKrhcaRAW_M_elc
+zKrhcalRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#LWIN -chars {#insert zCYx3_M_elc}{#insert zzLeftPrevEscCrlyX3_M_elc}	zKrhcalRAW_M_elc
+zKrhcasRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#SHIFT -chars {#insert zCYx3_M_elc}{#insert zzLeftPrevEscCrlyX3_M_elc}	zKrhcasRAW_M_elc
+zKrhcaslRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#SHIFT {#insert zOY_M_elc}#LWIN -chars {#insert zCYx4_M_elc}{#insert zzLeftPrevEscCrlyX4_M_elc}	zKrhcaslRAW_M_elc
+zKrhclRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#LWIN -chars {#insert zCYx2_M_elc}{#insert zzLeftPrevEscCrlyX2_M_elc}	zKrhclRAW_M_elc
+zKrhcsRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#SHIFT -chars {#insert zCYx2_M_elc}{#insert zzLeftPrevEscCrlyX2_M_elc}	zKrhcsRAW_M_elc
+zKrhcslRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#SHIFT {#insert zOY_M_elc}#LWIN -chars {#insert zCYx3_M_elc}{#insert zzLeftPrevEscCrlyX3_M_elc}	zKrhcslRAW_M_elc
+zKrhlRAW_M_elc	{#insert zOY_M_elc}#LWIN -chars {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zKrhlRAW_M_elc
+zKrhsRAW_M_elc	{#insert zOY_M_elc}#SHIFT -chars {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zKrhsRAW_M_elc
+zKrhslRAW_M_elc	{#insert zOY_M_elc}#SHIFT {#insert zOY_M_elc}#LWIN -chars {#insert zCYx2_M_elc}{#insert zzLeftPrevEscCrlyX2_M_elc}	zKrhslRAW_M_elc
+zzKrhAllMainAbrvs1CQBL	[Krh][Krha][Krhc][Krhl][Krhs][Krhal][Krhas][Krhca][Krhcl][Krhcs][Krhsl][Krhasl][Krhcal][Krhcas][Krhcsl][Krhcasl]	zzKrhAllMainAbrvs1CQBL
+pcckrhtestall	{#SETPHRASE -description zvQB_STR_LIST -content {#insert zzKrhAllMainAbrvs1CQBL} -autotext zvQB_STR_LIST -folder ctvv_folder}{#insert zzTestAllMainPhrsCrtrAbrvs_M_qbl}	pcckrhtestall

@@ -1,0 +1,4 @@
+zFcsTPFileClose -- Focus on main TextPad window, FileClose	{#insert zFocusOnTextPadWindow}{#insert zTPFileClose}	zFcsTPFileClose
+zFcsTPFileNew -- Focus on main TextPad window, FileNew	{#insert zFocusOnTextPadWindow}{#insert zTPFileNew}	zFcsTPFileNew
+zFcsTPFileSave -- Focus on main TextPad window, FileSave	{#insert zFocusOnTextPadWindow}{#insert zTPFileSave}	zFcsTPFileSave
+zFileSave1750slp -- zFcsTPFileSave, 1750 pause	{#insert zFcsTPFileSave}{#sleep 1750}	zFileSave1750slp

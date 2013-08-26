@@ -1,0 +1,351 @@
+/**
+	<P>ZZZ</P>
+ **/
+public class MyClass extends AnotherClass  {
+
+	//&quot;../&quot; is entered for all directory prompts
+	Select and delete XXX, then run the macro. zzjlFkgTest
+
+	fkg
+		<A HREF="#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)
+		doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)XXX
+	fkgc
+		<CODE><A HREF="#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)</CODE>
+		doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)XXX
+	fkgf
+			<A HREF="XXX.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)XXX
+		fkgfk -- ERY
+			super.<A HREF="XXX.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)eryXXX
+		fkgfk -- IRY
+			<I>[super]</I>.<A HREF="XXX.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)iryXXX
+	fkgfc
+			<CODE><A HREF="XXX.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)XXX
+		fkgfck -- ERY
+			<CODE>super.<A HREF="XXX.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)eryXXX
+		fkgfck -- IRY
+			<CODE><I>[super]</I>.<A HREF="XXX.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)iryXXX
+	fkgfb ["YetAnotherClass" in clipboard]
+			<A HREF="YetAnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)XXX
+		fkgfbk ["YetAnotherClass" in clipboard] -- EF
+			<A HREF="YetAnotherClass.html">YetAnotherClass</A>.<A HREF="YetAnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)efXXX
+		fkgfbk ["YetAnotherClass" in clipboard] -- IF
+			<A HREF="YetAnotherClass.html"><I>[YetAnotherClass]</I></A>.<A HREF="YetAnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)ifXXX
+		fkgfbk ["YetAnotherClass" in clipboard] -- ER
+			<A HREF="YetAnotherClass.html">super</A>.<A HREF="YetAnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)erXXX
+		fkgfbk ["YetAnotherClass" in clipboard] -- IR
+			<A HREF="YetAnotherClass.html"><I>[super]</I></A>.<A HREF="YetAnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)irXXX
+		fkgfbk ["YetAnotherClass" in clipboard] -- EFY
+			YetAnotherClass.<A HREF="YetAnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)efyXXX
+		fkgfbk ["YetAnotherClass" in clipboard] -- IFY
+			<I>[YetAnotherClass]</I>.<A HREF="YetAnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)ifyXXX
+		fkgfbk ["YetAnotherClass" in clipboard] -- ERY
+			super.<A HREF="YetAnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)eryXXX
+		fkgfbk ["YetAnotherClass" in clipboard] -- IRY
+			<I>[super]</I>.<A HREF="YetAnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)iryXXX
+	fkgfbc ["YetAnotherClass" in clipboard]
+			<CODE><A HREF="YetAnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)XXX
+		fkgfbck ["YetAnotherClass" in clipboard] -- EF
+			<CODE><A HREF="YetAnotherClass.html">YetAnotherClass</A>.<A HREF="YetAnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)efXXX
+		fkgfbck ["YetAnotherClass" in clipboard] -- IF
+			<CODE><A HREF="YetAnotherClass.html"><I>[YetAnotherClass]</I></A>.<A HREF="YetAnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)ifXXX
+		fkgfbck ["YetAnotherClass" in clipboard] -- ER
+			<CODE><A HREF="YetAnotherClass.html">super</A>.<A HREF="YetAnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)erXXX
+		fkgfbck ["YetAnotherClass" in clipboard] -- IR
+			<CODE><A HREF="YetAnotherClass.html"><I>[super]</I></A>.<A HREF="YetAnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)irXXX
+		fkgfbck ["YetAnotherClass" in clipboard] -- EFY
+			<CODE>YetAnotherClass.<A HREF="YetAnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)efyXXX
+		fkgfbck ["YetAnotherClass" in clipboard] -- IFY
+			<CODE><I>[YetAnotherClass]</I>.<A HREF="YetAnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)ifyXXX
+		fkgfbck ["YetAnotherClass" in clipboard] -- ERY
+			<CODE>super.<A HREF="YetAnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)eryXXX
+		fkgfbck ["YetAnotherClass" in clipboard] -- IRY
+			<CODE><I>[super]</I>.<A HREF="YetAnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)iryXXX
+	fkgfbv ["YetAnotherClass" in clipboard]
+			<A HREF="YetAnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)XXX
+		fkgfbvk ["YetAnotherClass" in clipboard] -- EF
+			<A HREF="YetAnotherClass.html">YetAnotherClass</A>.<A HREF="YetAnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)efXXX
+		fkgfbvk ["YetAnotherClass" in clipboard] -- IF
+			<A HREF="YetAnotherClass.html"><I>[YetAnotherClass]</I></A>.<A HREF="YetAnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)ifXXX
+		fkgfbvk ["YetAnotherClass" in clipboard] -- ER
+			<A HREF="YetAnotherClass.html">super</A>.<A HREF="YetAnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)erXXX
+		fkgfbvk ["YetAnotherClass" in clipboard] -- IR
+			<A HREF="YetAnotherClass.html"><I>[super]</I></A>.<A HREF="YetAnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)irXXX
+		fkgfbvk ["YetAnotherClass" in clipboard] -- EFY
+			YetAnotherClass.<A HREF="YetAnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)efyXXX
+		fkgfbvk ["YetAnotherClass" in clipboard] -- IFY
+			<I>[YetAnotherClass]</I>.<A HREF="YetAnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)ifyXXX
+		fkgfbvk ["YetAnotherClass" in clipboard] -- ERY
+			super.<A HREF="YetAnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)eryXXX
+		fkgfbvk ["YetAnotherClass" in clipboard] -- IRY
+			<I>[super]</I>.<A HREF="YetAnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)iryXXX
+	fkgfbvc ["YetAnotherClass" in clipboard]
+			<CODE><A HREF="YetAnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)XXX
+		fkgfbvck ["YetAnotherClass" in clipboard] -- EF
+			<CODE><A HREF="YetAnotherClass.html">YetAnotherClass</A>.<A HREF="YetAnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)efXXX
+		fkgfbvck ["YetAnotherClass" in clipboard] -- IF
+			<CODE><A HREF="YetAnotherClass.html"><I>[YetAnotherClass]</I></A>.<A HREF="YetAnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)ifXXX
+		fkgfbvck ["YetAnotherClass" in clipboard] -- ER
+			<CODE><A HREF="YetAnotherClass.html">super</A>.<A HREF="YetAnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)erXXX
+		fkgfbvck ["YetAnotherClass" in clipboard] -- IR
+			<CODE><A HREF="YetAnotherClass.html"><I>[super]</I></A>.<A HREF="YetAnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)irXXX
+		fkgfbvck ["YetAnotherClass" in clipboard] -- EFY
+			<CODE>YetAnotherClass.<A HREF="YetAnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)efyXXX
+		fkgfbvck ["YetAnotherClass" in clipboard] -- IFY
+			<CODE><I>[YetAnotherClass]</I>.<A HREF="YetAnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)ifyXXX
+		fkgfbvck ["YetAnotherClass" in clipboard] -- ERY
+			<CODE>super.<A HREF="YetAnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)eryXXX
+		fkgfbvck ["YetAnotherClass" in clipboard] -- IRY
+			<CODE><I>[super]</I>.<A HREF="YetAnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)iryXXX
+	fkgfv
+			<A HREF="XXX.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)XXX
+	fkgfvc
+			<CODE><A HREF="XXX.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)XXX
+		fkgfvck -- EF
+			<CODE><A HREF="XXX.html">XXX</A>.<A HREF="XXX.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)efXXX
+		fkgfvck -- IF
+			<CODE><A HREF="XXX.html"><I>[XXX]</I></A>.<A HREF="XXX.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)ifXXX
+		fkgfvck -- ER
+			<CODE><A HREF="XXX.html">super</A>.<A HREF="XXX.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)erXXX
+		fkgfvck -- IR
+			<CODE><A HREF="XXX.html"><I>[super]</I></A>.<A HREF="XXX.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)irXXX
+		fkgfvck -- EFY
+			<CODE>XXX.<A HREF="XXX.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)efyXXX
+		fkgfvck -- IFY
+			<CODE><I>[XXX]</I>.<A HREF="XXX.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)ifyXXX
+		fkgfvck -- ERY
+			<CODE>super.<A HREF="XXX.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)eryXXX
+		fkgfvck -- IRY
+			<CODE><I>[super]</I>.<A HREF="XXX.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)iryXXX
+		fkgp
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)XXX
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)XXX
+		fkgpf
+				doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)XXX
+				doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)XXX
+			fkgpfk -- ERY
+				doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)eryXXX
+				doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)eryXXX
+			fkgpfk -- IRY
+				doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)iryXXX
+				doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)iryXXX
+		fkgpfb ["YetAnotherFile" in clipboard]
+				doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)XXX
+				doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)XXX
+			fkgpfbk ["YetAnotherFile" in clipboard] -- EF
+				doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)efXXX
+				doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)efXXX
+			fkgpfbk ["YetAnotherFile" in clipboard] -- IF
+				doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)ifXXX
+				doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)ifXXX
+			fkgpfbk ["YetAnotherFile" in clipboard] -- ER
+				doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)erXXX
+				doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)erXXX
+			fkgpfbk ["YetAnotherFile" in clipboard] -- IR
+				doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)irXXX
+				doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)irXXX
+			fkgpfbk ["YetAnotherFile" in clipboard] -- EFY
+				doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)efyXXX
+				doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)efyXXX
+			fkgpfbk ["YetAnotherFile" in clipboard] -- IFY
+				doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)ifyXXX
+				doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)ifyXXX
+			fkgpfbk ["YetAnotherFile" in clipboard] -- ERY
+				doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)eryXXX
+				doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)eryXXX
+			fkgpfbk ["YetAnotherFile" in clipboard] -- IRY
+				doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)iryXXX
+				doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)iryXXX
+		fkgpr
+				doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)XXX
+				doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)XXX
+			fkgprk -- EF
+				doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)efXXX
+				doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)efXXX
+			fkgprk -- IF
+				doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)ifXXX
+				doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)ifXXX
+			fkgprk -- ER
+				doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)erXXX
+				doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)erXXX
+			fkgprk -- IR
+				doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)irXXX
+				doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)irXXX
+			fkgprk -- EFY
+				doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)efyXXX
+				doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)efyXXX
+			fkgprk -- IFY
+				doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)ifyXXX
+				doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)ifyXXX
+			fkgprk -- ERY
+				doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)eryXXX
+				doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)eryXXX
+			fkgprk -- IRY
+				doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)iryXXX
+				doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)iryXXX
+	fkgr
+			<A HREF="../AnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)XXX
+		fkgrk -- EF
+			<A HREF="../AnotherClass.html">AnotherClass</A>.<A HREF="../AnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)efXXX
+		fkgrk -- IF
+			<A HREF="../AnotherClass.html"><I>[AnotherClass]</I></A>.<A HREF="../AnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)ifXXX
+		fkgrk -- ER
+			<A HREF="../AnotherClass.html">super</A>.<A HREF="../AnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)erXXX
+		fkgrk -- IR
+			<A HREF="../AnotherClass.html"><I>[super]</I></A>.<A HREF="../AnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)irXXX
+		fkgrk -- EFY
+			AnotherClass.<A HREF="../AnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)efyXXX
+		fkgrk -- IFY
+			<I>[AnotherClass]</I>.<A HREF="../AnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)ifyXXX
+		fkgrk -- ERY
+			super.<A HREF="../AnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)eryXXX
+		fkgrk -- IRY
+			<I>[super]</I>.<A HREF="../AnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)XXX
+	fkgrc
+			<CODE><A HREF="../AnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)XXX
+		fkgrck -- EF
+			<CODE><A HREF="../AnotherClass.html">AnotherClass</A>.<A HREF="../AnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)efXXX
+		fkgrck -- IF
+			<CODE><A HREF="../AnotherClass.html"><I>[AnotherClass]</I></A>.<A HREF="../AnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)ifXXX
+		fkgrck -- ER
+			<CODE><A HREF="../AnotherClass.html">super</A>.<A HREF="../AnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)erXXX
+		fkgrck -- IR
+			<CODE><A HREF="../AnotherClass.html"><I>[super]</I></A>.<A HREF="../AnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)irXXX
+		fkgrck -- EFY
+			<CODE>AnotherClass.<A HREF="../AnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)efyXXX
+		fkgrck -- IFY
+			<CODE><I>[AnotherClass]</I>.<A HREF="../AnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)ifyXXX
+		fkgrck -- ERY
+			<CODE>super.<A HREF="../AnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)eryXXX
+		fkgrck -- IRY
+			<CODE><I>[super]</I>.<A HREF="../AnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(o_bj, s_callingFunc, s_objName, t_cause)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)iryXXX
+	fkgrv
+			<A HREF="../AnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)XXX
+		fkgrvk -- EF
+			<A HREF="../AnotherClass.html">AnotherClass</A>.<A HREF="../AnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)efXXX
+		fkgrvk -- IF
+			<A HREF="../AnotherClass.html"><I>[AnotherClass]</I></A>.<A HREF="../AnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)ifXXX
+		fkgrvk -- ER
+			<A HREF="../AnotherClass.html">super</A>.<A HREF="../AnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)erXXX
+		fkgrvk -- IR
+			<A HREF="../AnotherClass.html"><I>[super]</I></A>.<A HREF="../AnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)irXXX
+		fkgrvk -- EFY
+			AnotherClass.<A HREF="../AnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)efyXXX
+		fkgrvk -- IFY
+			<I>[AnotherClass]</I>.<A HREF="../AnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)ifyXXX
+		fkgrvk -- ERY
+			super.<A HREF="../AnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)eryXXX
+		fkgrvk -- IRY
+			<I>[super]</I>.<A HREF="../AnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)iryXXX
+	fkgrvc
+			<CODE><A HREF="../AnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)XXX
+		fkgrvck -- EF
+			<CODE><A HREF="../AnotherClass.html">AnotherClass</A>.<A HREF="../AnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)efXXX
+		fkgrvck -- IF
+			<CODE><A HREF="../AnotherClass.html"><I>[AnotherClass]</I></A>.<A HREF="../AnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)ifXXX
+		fkgrvck -- ER
+			<CODE><A HREF="../AnotherClass.html">super</A>.<A HREF="../AnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)erXXX
+		fkgrvck -- IR
+			<CODE><A HREF="../AnotherClass.html"><I>[super]</I></A>.<A HREF="../AnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)irXXX
+		fkgrvck -- EFY
+			<CODE>AnotherClass.<A HREF="../AnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)efyXXX
+		fkgrvck -- IFY
+			<CODE><I>[AnotherClass]</I>.<A HREF="../AnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)ifyXXX
+		fkgrvck -- ERY
+			<CODE>super.<A HREF="../AnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)eryXXX
+		fkgrvck -- IRY
+			<CODE><I>[super]</I>.<A HREF="../AnotherClass.html#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)</CODE>
+			doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)iryXXX
+	fkgv
+		<A HREF="#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)
+		doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)XXX
+	fkgvc
+		<CODE><A HREF="#doTheThing(_4FQP_Object, _4FQP_String, _4FQP_String, _4FQP_Throwable)">doTheThing</A>(_4TV_Object,_4TV_String,_4TV_String,_4TV_Throwable)</CODE>
+		doTheThing(Object o_bj, String s_callingFunc, String s_objName, Throwable t_cause)XXX
+

@@ -1,0 +1,13 @@
+ClipClose	0
+ClipCopy	0
+ClipDeleteBook	0
+ClipDeleteEntry	0
+ClipEditBook	0
+ClipInsert	0
+ClipNewBook	0
+ClipPaste	0
+ClipRefresh	0
+ClipRenameBook	0
+ClipRenameEntry	0
+ClipSaveBook	0
+ClipSortEntries	0

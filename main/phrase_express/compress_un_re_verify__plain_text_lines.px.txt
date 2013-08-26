@@ -1,0 +1,42 @@
+(*
+   Required by phrase-creator-ddmenu-utils...START
+      PM_DDMENU_DIRID_FILENMPHRSNM_HDRAUTOTXT=pex/zzPmdmFNmPrePex/xhpc
+   Required by phrase-creator-ddmenu-utils...END
+*)
+mpfpl -- zMarkAllPrprlyFrmtdPlainTxtPhraseLines ALT KC	{#insert zMarkAllPrprlyFrmtdPlainTxtPhraseLines}{#insert zzR2plSyn}	mpfpl
+
+mpfpla -- zMarkAllPrprlyFrmtdPlainTxtPhraseLinesAD ALT KC	{#insert zMarkAllPrprlyFrmtdPlainTxtPhraseLinesAD}{#insert zzR2plSyn}	mpfpla
+
+r2pl -- zRefreshAutotextInCurrLnWDupDescWrd1_M_wwoLdc (for 1 line)	{#SETPHRASE -description zvLINES_DOWN -content 1 -autotext zvLINES_DOWN -folder ctvv_folder}{#insert zRefreshAutotextInCurrLnWDupDescWrd1_M_wwoLdc}{#insert zzR2plSyn}	r2pl
+
+r2plall -- select-all, zRefreshAutotextOfSelectedLines	{#insert zTPSelectAll}{#insert zRefreshAutotextOfSelectedLines}{#insert zzR2plSyn}	r2plall
+
+r2pln -- r2pl, user-prompt-times	{#SETPHRASE -description zvLINES_DOWN -content {#INPUT -head How many lines down? -single} -autotext zvLINES_DOWN -folder ctvv_folder}{#insert zRefreshAutotextInCurrLnWDupDescWrd1_M_wwoLdc}{#insert zzR2plSyn}	r2pln
+
+u2pl -- zUncompressSingleLinePhraseToTwo_M_wwoLdc (for 1 line)	{#SETPHRASE -description zvLINES_DOWN -content 1 -autotext zvLINES_DOWN -folder ctvv_folder}{#insert zUncompressSingleLinePhraseToTwo_M_wwoLdc}{#insert zzR2plSyn}	u2pl
+
+u2plall -- select-all, zUncompressSlctd1LinePhrssTo2	{#insert zTPSelectAll}{#insert zUncompressSlctd1LinePhrssTo2}{#insert zzR2plSyn}	u2plall
+
+u2pln -- u2pl, user-prompt-times	{#SETPHRASE -description zvLINES_DOWN -content {#INPUT -head How many lines down? -single} -autotext zvLINES_DOWN -folder ctvv_folder}{#insert zUncompressSingleLinePhraseToTwo_M_wwoLdc}{#insert zzR2plSyn}	u2pln
+
+zMarkAllPrprlyFrmtdPlainTxtPhraseLines	{#insert zzMarkAllPrprlyFrmtdPlainTxtPhraseLinesPreMrkAllBtn}{#insert zzBtnMarkAllFindDlgCloseRE}	zMarkAllPrprlyFrmtdPlainTxtPhraseLines
+
+zMarkAllPrprlyFrmtdPlainTxtPhraseLinesAD	{#insert zzMarkAllPrprlyFrmtdPlainTxtPhraseLinesPreMrkAllBtn}{#insert zFindFlagADTglRAW}{#insert zzBtnMarkAllFindDlgCloseRE}	zMarkAllPrprlyFrmtdPlainTxtPhraseLinesAD
+
+zRefreshAutotextInCurrLnWDupDescWrd1RAW_M_wwoLdc -- ww-off, at line-1-col-1	{#LOOP {#SHIFT {#DOWN}} -count {#insert zvLINES_DOWN}}{#insert zRefreshAutotextOfSelectedLines}	zRefreshAutotextInCurrLnWDupDescWrd1RAW_M_wwoLdc
+
+zRefreshAutotextInCurrLnWDupDescWrd1_M_wwoLdc -- zvWORD_WRAP_ON, zvLINES_DOWN	{#insert zWWOffHmSvStateMaybeRecheck}{#insert zRefreshAutotextInCurrLnWDupDescWrd1RAW_M_wwoLdc}{#insert zRevertWWToOrigState}	zRefreshAutotextInCurrLnWDupDescWrd1_M_wwoLdc
+
+zRefreshAutotextOfSelectedLines	{#insert zRplcDlgOpenMCRE}^{#insert zzRegexPhrsLnWAutotxtDscWrd1MidIndentAutotext}[\w]+${#insert zRplcFieldWith}{#SETPHRASE -description zvRPLC_WITH -content $1$2\t$3\t$1 -autotext zvRPLC_WITH -folder ctvv_folder}{#insert zvRPLC_WITH}{#insert zRplcBtnAllSel}{#insert zRplcDlgCloseRE}	zRefreshAutotextOfSelectedLines
+
+zUncompressSingleLinePhraseToTwo_M_wwoLdc -- zvWORD_WRAP_ON, zvLINES_DOWN	{#insert zWWOffHmSvStateMaybeRecheck}{#insert zWWonAtCol0_selectDwnLnsUncmprs1PhrsLnTo2_M_wwoLdc}{#insert zRevertWWToOrigState}	zUncompressSingleLinePhraseToTwo_M_wwoLdc
+
+zUncompressSlctd1LinePhrssTo2	{#insert zRplcDlgOpenMCRE}^{#insert zzRegexTabDelimPhraseLineWAutotextDescWord1PstIndnt}{#insert zRplcFieldWith}{#SETPHRASE -description zvRPLC_WITH -content $1$2\n$3 -autotext zvRPLC_WITH -folder ctvv_folder}{#insert zvRPLC_WITH}{#insert zRplcBtnAllSel}{#insert zRplcDlgCloseRE}	zUncompressSlctd1LinePhrssTo2
+
+zWWonAtCol0_selectDwnLnsUncmprs1PhrsLnTo2_M_wwoLdc -- ww-off, at line-1-col-1	{#LOOP {#SHIFT {#DOWN}} -count {#insert zvLINES_DOWN}}{#insert zUncompressSlctd1LinePhrssTo2}	zWWonAtCol0_selectDwnLnsUncmprs1PhrsLnTo2_M_wwoLdc
+
+zzBtnMarkAllFindDlgCloseRE	{#insert zFindBtnMarkAll}{#insert zFindDlgClose}{#insert zTPFindFlagREoff}	zzBtnMarkAllFindDlgCloseRE
+
+zzMarkAllPrprlyFrmtdPlainTxtPhraseLinesPreMrkAllBtn	{#BALLOON -title Please wait... -text Marking all properly-formatted plain-text phrase lines in this (or all open) document(s). The first word in the description is expected to be (redundantly) equal to the autotext.}{#insert zTPFindFlagREon}{#insert zFcsTPFindDlgOpen}{#SETPHRASE -description zvFIND_WHAT -content ^{#insert zzRegexTabDelimPhraseLineWAutotextDescWord1PstIndnt} -autotext zvFIND_WHAT -folder ctvv_folder}{#insert zvFIND_WHAT}	zzMarkAllPrprlyFrmtdPlainTxtPhraseLinesPreMrkAllBtn
+
+zzR2plSyn	{#BALLOON -title Syntax: r2pl, u2pl, mpfpl -text r2pl[all,n] ~~ [n]=user~prompt lines down, mpfpl=zMarkAllPrprlyFrmtdPlainTxtPhraseLines (also see 'maixbxbx[a]')  //  cpcbsyn}	zzR2plSyn

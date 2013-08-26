@@ -1,0 +1,25 @@
+FileClose	0
+FileCloseAll	1	\\\{#insert zCpF12\\\}\\\{#sleep 25\\\}\\\{#insert zCpF9\\\}
+FileExit	0
+FileGoTo	1	\\\{#insert zCASpOO\\\}
+FileManage	0
+FileNew	2	\\\{#insert zCpNN\\\}	\\\{#insert zCASpNN\\\}
+FileOpen	1	\\\{#insert zCpOO\\\}
+FilePageSetup	0
+FilePrint	1	\\\{#insert zCpPP\\\}
+FilePrintAll	1	\\\{#insert zCASpPP\\\}
+FilePrintDefault	0
+FilePrintPreview	1	\\\{#insert zCSpPP\\\}
+FileQuickOpen	0
+FileRename	0
+FileRevert	0
+FileSave	0
+FileSaveAll	2	\\\{#insert zCSpSS\\\}	\\\{#insert zCpF12\\\}\\\{#sleep 25\\\}\\\{#insert zCpF12\\\}
+FileSaveAndClose	1	\\\{#insert zCASpF12\\\}\\\{#sleep 25\\\}\\\{#insert zCASpF9\\\}
+FileSaveAs	1	\\\{#insert zSpF12\\\}\\\{#sleep 25\\\}\\\{#insert zSpF12\\\}
+FileSend	0
+FileStatistics	1	\\\{#insert zCpF1\\\}
+WorkspaceClose	0
+WorkspaceOpen	0
+WorkspaceSave	0
+WorkspaceSaveAs	1	\\\{#insert zASpOO\\\}

@@ -1,0 +1,6 @@
+Help	zTPHelp	Hmain	__ES__	10	(*	NOTHING. Top command in list*)
+HelpFAQ	zTPHelpFAQ	Hfaq	__ES__	10	{#insert zDOWN}
+HelpOrdering	zTPHelpOrdering	Hrdr	__ES__	10	{#insert zDOWN2}
+HelpSupport	zTPHelpSupport	Hsprt	__ES__	10	{#insert zDOWN3}
+HelpTip	zTPHelpTip	Htip	__ES__	10	{#insert zEND}{#insert zUP}
+HelpWWW	zTPHelpWWW	Hwww	__ES__	1000	{#insert zEND}

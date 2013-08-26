@@ -1,0 +1,28 @@
+cssblk -- Empty CSS block.	<STYLE TYPE={#asc 34}text/css{#asc 34}>{#insert zENTER}<!--{#insert zEnterTab}{#insert zXmark}{#insert zENTER}-->{#insert zENTER}</STYLE>{#insert zENTER}{#insert zXUpDelete}	cssblk
+csshblk -- CSS elements for highlights.	.blueHL {background: #CCFFFF; color: #000000;}{#insert zENTER}.greenHL {background: #EEFFEE; color: #000000;}{#insert zENTER}.yellowHL {background: #FFFF99; color: #000000;}{#insert zENTER}-->{#insert zENTER}</STYLE>{#insert zENTER}	csshblk
+
+hly -- CLASS='yellowHL'	<SPAN CLASS={#asc 34}yellowHL{#asc 34}></SPAN>{#insert ztpmTagMoveL1}	hly
+hlb -- CLASS='blueHL'	<SPAN CLASS={#asc 34}blueHL{#asc 34}></SPAN>{#insert ztpmTagMoveL1}	hlb
+hlg -- CLASS='greenHL'	<SPAN CLASS={#asc 34}greenHL{#asc 34}></SPAN>{#insert ztpmTagMoveL1}	hlg
+hle -- CLASS='greyHL'	<SPAN CLASS={#asc 34}greyHL{#asc 34}></SPAN>{#insert ztpmTagMoveL1}	hle
+hlw -- CLASS='whiteHL'	<SPAN CLASS={#asc 34}whiteHL{#asc 34}></SPAN>{#insert ztpmTagMoveL1}	hlw
+
+hsbc -- <FONT STYLE='background-color	<FONT STYLE={#asc 34}background-color:{#insert zXmark}{#asc 34}></FONT>{#insert ztpmTagMoveL1}	hsbc
+hsbcb -- blue (#0000FF)	<FONT STYLE={#asc 34}background-color:#0000FF{#asc 34}></FONT>{#insert ztpmTagMoveL1}	hsbcb
+hsbcf -- fuchsia (#FF00FF)	<FONT STYLE={#asc 34}background-color:#FF00FF{#asc 34}></FONT>{#insert ztpmTagMoveL1}	hsbcf
+hsbcgy -- gray (#808080)	<FONT STYLE={#asc 34}background-color:#808080{#asc 34}></FONT>{#insert ztpmTagMoveL1}	hsbcgy
+hsbcg -- green (#008000)	<FONT STYLE={#asc 34}background-color:#008000{#asc 34}></FONT>{#insert ztpmTagMoveL1}	hsbcg
+hsbck -- black (#000000)	<FONT STYLE={#asc 34}background-color:#000000{#asc 34}></FONT>{#insert ztpmTagMoveL1}	hsbck
+hsbcl -- lime (#00FF00)	<FONT STYLE={#asc 34}background-color:#00FF00{#asc 34}></FONT>{#insert ztpmTagMoveL1}	hsbcl
+hsbcm -- maroon (#800000)	<FONT STYLE={#asc 34}background-color:#800000{#asc 34}></FONT>{#insert ztpmTagMoveL1}	hsbcm
+hsbcn -- navy (#000080)	<FONT STYLE={#asc 34}background-color:#000080{#asc 34}></FONT>{#insert ztpmTagMoveL1}	hsbcn
+hsbco -- olive (#808000)	<FONT STYLE={#asc 34}background-color:#808000{#asc 34}></FONT>{#insert ztpmTagMoveL1}	hsbco
+hsbcp -- purple (#800080)	<FONT STYLE={#asc 34}background-color:#800080{#asc 34}></FONT>{#insert ztpmTagMoveL1}	hsbcp
+hsbcq -- aqua (#00FFFF)	<FONT STYLE={#asc 34}background-color:#00FFFF{#asc 34}></FONT>{#insert ztpmTagMoveL1}	hsbcq
+hsbcqw -- aqua, closer to white (#CCFFFF)	<FONT STYLE={#asc 34}background-color:#CCFFFF{#asc 34}></FONT>{#insert ztpmTagMoveL1}	hsbcqw
+hsbcr -- red (#FF0000)	<FONT STYLE={#asc 34}background-color:#FF0000{#asc 34}></FONT>{#insert ztpmTagMoveL1}	hsbcr
+hsbcs -- silver (#C0C0C0)	<FONT STYLE={#asc 34}background-color:#C0C0C0{#asc 34}></FONT>{#insert ztpmTagMoveL1}	hsbcs
+hsbct -- teal (#008080)	<FONT STYLE={#asc 34}background-color:#008080{#asc 34}></FONT>{#insert ztpmTagMoveL1}	hsbct
+hsbcw -- white (#FFFFFF)	<FONT STYLE={#asc 34}background-color:#FFFFFF{#asc 34}></FONT>{#insert ztpmTagMoveL1}	hsbcw
+hsbcy -- yellow (#FFFF00)	<FONT STYLE={#asc 34}background-color:#FFFF00{#asc 34}></FONT>{#insert ztpmTagMoveL1}	hsbcy
+hsbcyw -- yellow, closer to white (#FFFF99)	<FONT STYLE={#asc 34}background-color:#FFFF99{#asc 34}></FONT>{#insert ztpmTagMoveL1}	hsbcyw

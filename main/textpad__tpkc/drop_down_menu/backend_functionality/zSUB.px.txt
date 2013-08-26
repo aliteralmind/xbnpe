@@ -1,0 +1,10 @@
+zzBalToDiscvrCmdAbrvs	{#BALLOON -title To discover command abbreviations -text View 'TextPad built~in commands [DDMENU] > Assign all KCs to 1 cmd (AG) > [category]' or execute '{#insert zzDdmenuTitle_cat_prntNmPNmAbrvs}' under either '[DDMENU] > All cmds in 1 cat' or '[DDMENU] > All cmds in all cats'}	zzBalToDiscvrCmdAbrvs
+zzCallVPMForCat -- Calls the phrase whose NAME is in zvPNM_FOR_CAT	{#insert {#insert zvPNM_FOR_CAT}}	zzCallVPMForCat
+zzCallVPMForCmd -- Calls the phrase whose NAME is in zvPNM_FOR_CMD	{#insert {#insert zvPNM_FOR_CMD}}	zzCallVPMForCmd
+zzPrimaryEscdKCForCmd_M_cmd1Num1 -- cmd1 *is* btsrp or has >1 nbs-kc (& zvNBS_KC_NUM=1)	{#insert {#COND -if {#insert zzTpCmdIsBtstrp_yes_M_cmd1} = yes -then zzzEscdBootstrapKC_M_cmd1 -else zzTpCmdNbsKcEsc_M_cmd1Num}}	zzPrimaryEscdKCForCmd_M_cmd1Num1
+zzTpkcAllCmdsWAKcQbl_M_catl	{#insert {#insert zzTpkcAllCmdsWAKcQblPNm_M_catl}}	zzTpkcAllCmdsWAKcQbl_M_catl
+zzTpkcCIBCatLC_M_catl	{#insert {#COND -if {#LENGTH {#insert zzTpkcCatAllCmdNamesTCQbl_M_catl}} > 0 -then z1slp -else zzzTpkcErrDlgUnknownCatLC}}	zzTpkcCIBCatLC_M_catl
+zzTpkcCIBCmd1_M_cmd1	{#insert {#COND -if {#LENGTH {#insert zzTpkcCatForCmdAbrvLC_M_cmd1}} > 0 -then z1slp -else zzzTpkcErrDlgUnknownCmdAbrv_M_cmd1}}	zzTpkcCIBCmd1_M_cmd1
+zzzTpkcErrDlgUnknownCatLC	{#MSGBOX -head ERROR -text ERROR ~~ Unknown (or missing) TextPad (built~in~command) category abbreviation: '{#insert zvCAT_ABRV_LC}'. {#insert zCancelProcNowPostTxt}}	zzzTpkcErrDlgUnknownCatLC
+zzzTpkcErrDlgUnknownCmdAbrv_M_cmd1	{#MSGBOX -head ERROR -text ERROR ~~ Unknown (or missing) TextPad command abbreviation: '{#insert zvCMD_ABRV_1C}'. {#insert zCancelProcNowPostTxt}}	zzzTpkcErrDlgUnknownCmdAbrv_M_cmd1
+zzExtrElimSetCmd1SetQBL_M_cmdnameqbl -- All command-names in zvQB_STR_LIST, sets zvCMD_ABRV_1C	{#insert zExtrElimSetStrSetQBL_M_qbl}(*Command NAME now in zvSTRING*){#SETPHRASE -description zvCMD_ABRV_1C -content {#insert zzTpCmdAbrv1C_M_nminstr} -autotext zvCMD_ABRV_1C -folder ctvv_folder}	zzExtrElimSetCmd1SetQBL_M_cmdnameqbl

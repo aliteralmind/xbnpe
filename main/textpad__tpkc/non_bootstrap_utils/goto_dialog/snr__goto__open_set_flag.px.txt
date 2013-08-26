@@ -1,0 +1,5 @@
+zGTDlgOpenFlagLine	{#insert zTPGTDlgOpen}{#insert zGTFlagLine}	zGTDlgOpenFlagLine
+zGTDlgOpenFlagColumn	{#insert zTPGTDlgOpen}{#insert zGTFlagColumn}	zGTDlgOpenFlagColumn
+zGTDlgOpenFlagPage	{#insert zTPGTDlgOpen}{#insert zGTFlagPage}	zGTDlgOpenFlagPage
+zGTDlgOpenFlagByte	{#insert zTPGTDlgOpen}{#insert zGTFlagByte}	zGTDlgOpenFlagByte
+zGTDlgOpenFlagBookmark	{#insert zTPGTDlgOpen}{#insert zGTFlagBookmark}	zGTDlgOpenFlagBookmark

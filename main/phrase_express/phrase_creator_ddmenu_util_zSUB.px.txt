@@ -1,0 +1,115 @@
+zvDDMF_PROMPT_Y_stES	{#SETPHRASE -description zvDDMF_PROMPT_Y -content -autotext zvDDMF_PROMPT_Y -folder ctvv_folder}	zvDDMF_PROMPT_Y_stES
+
+zvDDMF_PROMPT_Y_stYes	{#SETPHRASE -description zvDDMF_PROMPT_Y -content yes -autotext zvDDMF_PROMPT_Y -folder ctvv_folder}	zvDDMF_PROMPT_Y_stYes
+
+zzAllFilePrefixesInDDMenuDirQblPhrsNm_M_dmid -- Needs zvDDMENU_ID	zzAllFilePrefixesInDDMenuDirQbl_{#insert zvDDMENU_ID}	zzAllFilePrefixesInDDMenuDirQblPhrsNm_M_dmid
+
+zzBalDoneOpenDirYNDlg_M_opdynpDir -- Needs zvDIRECTORY	{#insert zOpenExplorerDirYesNoOrPrompt_M_oynpDir}{#BALLOON -title DONE -text If you know that all output files exist, consider using the 'v' option next time.}{#sleep 2000}{#insert piddsyn}	zzBalDoneOpenDirYNDlg_M_opdynpDir
+
+zzDDMenuCopyHdrAbrvToNextChild_M_abrvcb	{#DOWN}{#END}{#TAB}.{#TAB}{#insert zTPPaste}	zzDDMenuCopyHdrAbrvToNextChild_M_abrvcb
+
+zzDDMenuDirPhrsNm_M_dmid -- Needs zvDDMENU_ID	zzDDMenuDir_{#insert zvDDMENU_ID}	zzDDMenuDirPhrsNm_M_dmid
+
+zzDDMenuDir_M_dmid -- Needs zvDDMENU_ID	{#insert {#insert zzDDMenuDirPhrsNm_M_dmid}}	zzDDMenuDir_M_dmid
+
+zzDirTmpFldrForUnindentingDDMenus_M_dmid	{#insert zzDDMenuDir_M_dmid}{#insert zSubDirNmTmpForUnindentingDDMenus}	zzDirTmpFldrForUnindentingDDMenus_M_dmid
+
+zzFindDDMenuPhrsFileMarkerDown	{#insert zFindDlgOpenDown}{#insert zXDDMenuPhraseFileMarker}={#insert zFindBtnNext}{#insert zFindDlgClose}	zzFindDDMenuPhrsFileMarkerDown
+
+zzGetSetAllDDMenuVarsFromClipboard	{#insert zzzCIEntireDDMenuPhrsFileMrkrValueInCBIsEmpty}{#insert zzSetDDMenuDirIDFromCB}{#insert zzSetDDMenuFilePhrsNmFromCB}{#insert zzSetDDMenuHeaderAutotextFromCB}{#BALLOON -title Please wait... -text ddid='{#insert zvDDMENU_ID}', ddmenu~file~name~prefix='{#insert zvDDM_FNM_PRE}', header~line~autotext='{#insert zvDDM_HDR_ATXT}'}	zzGetSetAllDDMenuVarsFromClipboard
+
+zzGoToMarkDDMenuHeaderAutoTextLine_M_hax -- Needs zvDDM_HDR_ATXT	{#insert zTPGTDocTop}{#insert zFindDlgOpenDownRE}(*Find the autotext that is NOT at the end of the line (negative lookahead: '(?!$)'). Note that this begins with '^(\(\*[NO-SPACE])?\s' instead of '^\t', to also capture COMMENTED header lines (headers defined in other files)*){#SETPHRASE -description zvFIND_WHAT -content ^(\(\*)?\s+[^\n\r\t]+.*\<{#insert zvDDM_HDR_ATXT}\>(?!$) -autotext zvFIND_WHAT -folder ctvv_folder}{#insert zvFIND_WHAT}{#insert zFindBtnNext}{#insert zFindDlgCloseRE}{#insert zTPBookmarkToggle}{#insert zLEFT}	zzGoToMarkDDMenuHeaderAutoTextLine_M_hax
+
+zzOpenDDMenuFile_M_dmidFpm -- Needs zvDDMENU_ID, zvDDM_FNM_PRE	{#insert zzvDIR_stDDMenu_M_dmid}{#insert zzvFNM_sfDDMenuFilePhrsNmDtTxt}{#insert zDirFileOpen_M_dirFnm}	zzOpenDDMenuFile_M_dmidFpm
+
+zzPiddDoneSyn	{#BALLOON -title DDMenu(s) now ready for import. -text {#insert zzPiddSynTxt}}	zzPiddDoneSyn
+
+zzPiddSynTxt	pidd[d[a],f][v][[o,x]] ~~ [d]=All files in ddmenu~id~dir, w/ y/n prompts [da]=all~no~prompts, [f]=this file only, [v]=Overwrite w/o does~tgt~xst prompt, [o/x]=Open/do not open output dir, [NOT o or x]=Prompt: Open dir? // piddfvxq=quick	zzPiddSynTxt
+
+zzPosSlash1InCBMinus1	{#CALC {#POS {#INSERTCLIPBOARD} -substr /} - 1 -round 0 -thousands none}	zzPosSlash1InCBMinus1
+
+zzProcessNextPNmDDMenuFileWYNPrompt_M_dmidTxpyQblenCfnDmpyFdmy	{#insert zvNUMBER_incBy1}{#insert zExtrElimSetStrSetQBL_M_qbl}{#SETPHRASE -description zvFILE_NAME -content {#insert zvSTRING}.txt -autotext zvFILE_NAME -folder ctvv_folder}{#BALLOON -title Please wait... -text Processing indented-ddmenu-file '{#insert zvFILE_NAME}' in ddmenu with id {#insert zvDDMENU_ID} (file {#insert zvNUMBER} of {#insert zvQBL_LENGTH})}{#insert {#COND -if {#insert zvDDMF_PROMPT_Y} = yes -then zzProcessNxtPNmDDMenuFileWYNPrompt_M_dmidTxpyCfnFdmy -else zzProcessNextPNmDDMenuFile_M_dmidTxpyCfnFdmy}}	zzProcessNextPNmDDMenuFileWYNPrompt_M_dmidTxpyQblenCfnDmpyFdmy
+
+zzProcessNextPNmDDMenuFile_M_dmidTxpyCfnFdmy	{#insert zzvDIR_stDDMenu_M_dmid}{#insert zzzzOpnFidmbSaveDupToNew_or_OpenDupXstgCls_M_dirFnmFdmy}{#insert zzvDIR_stTmpDDMenu_M_dmid}{#SETPHRASE -description zvFILE_NAME -content {#insert zvSTRING}.px.txt -autotext zvFILE_NAME -folder ctvv_folder}{#insert zDirFileSaveAsOverwrite_M_dirFnmTxpy}{#insert zzzCompletelyUnindentDocWBal}{#insert zFileSaveClose}	zzProcessNextPNmDDMenuFile_M_dmidTxpyCfnFdmy
+
+zzProcessNxtPNmDDMenuFileWYNPrompt_M_dmidTxpyCfnFdmy	{#MSGBOX -head Process ddmenu-file? -text Process '{#insert zvFILE_NAME}'? -yes zzProcessNextPNmDDMenuFile_M_dmidTxpyCfnFdmy -no z1slp}	zzProcessNxtPNmDDMenuFileWYNPrompt_M_dmidTxpyCfnFdmy
+
+zzRegex_indentTxtTbTxtTbTxt	^\t*{#insert zzRegexTextTabTextTabTextDlrSignPstIndnt}	zzRegex_indentTxtTbTxtTbTxt
+
+zzSetCBToPostSlsh1	(*Permanent debugging-->*)(*{#MSGBOX -head zzSetCBToPostSlsh1 (pre-set) -text cb={#INSERTCLIPBOARD}, zzzSlsh1Plus1='{#insert zzzSlsh1Plus1}', zzzzCBLenPostSlash1={#insert zzzzCBLenPostSlash1}}<--Permanent debugging*){#SETCLIPBOARD {#SUBSTR {#INSERTCLIPBOARD} -from {#insert zzzSlsh1Plus1} -count {#insert zzzzCBLenPostSlash1}}}	zzSetCBToPostSlsh1
+
+zzSetDDMenuDirIDFromCB	(*Set ddmenu-id:*){#insert zzzvSetSlsh1Min1PosSetTknPreSlsh1_M_cb}{#SETPHRASE -description zvDDMENU_ID -content {#insert zvTKN_PRE_SLSH1} -autotext zvDDMENU_ID -folder ctvv_folder}{#insert {#COND -if {#LENGTH {#insert zvDDMENU_ID}} > 0 -then z1slp -else zzzErrDlgPmddmDirIDES}}{#insert zzSetCBToPostSlsh1}(*Permanent debugging-->*)(*{#MSGBOX -head zvDDMENU_ID -text zvDDMENU_ID='{#insert zvDDMENU_ID}', remaining cb={#INSERTCLIPBOARD}}<--Permanent debugging*)	zzSetDDMenuDirIDFromCB
+
+zzSetDDMenuFilePhrsNmFromCB	{#insert zzzvSetSlsh1Min1PosSetTknPreSlsh1_M_cb}(*This actually EXECUTES the ddm-file phrase-name. So it' s the actual path (the VALUE of the phrase), not the phrase-NAME anymore, once sent into zvDDM_FNM_PRE:*){#SETPHRASE -description zvDDM_FNM_PRE -content {#insert zvTKN_PRE_SLSH1} -autotext zvDDM_FNM_PRE -folder ctvv_folder}{#insert {#COND -if {#LENGTH {#insert zvDDM_FNM_PRE}} > 0 -then z1slp -else zzzErrDlgPmddmFilePhrsNmES}}{#insert zzSetCBToPostSlsh1}(*Permanent debugging-->*)(*{#MSGBOX -head zvDDM_FNM_PRE -text zvDDM_FNM_PRE='{#insert zvDDM_FNM_PRE}', remaining cb={#INSERTCLIPBOARD}}<--Permanent debugging*)	zzSetDDMenuFilePhrsNmFromCB
+
+zzSetDDMenuHeaderAutotextFromCB	(*No more slashes! Just set it to the entire (remaining) clipboard*){#SETPHRASE -description zvDDM_HDR_ATXT -content {#INSERTCLIPBOARD} -autotext zvDDM_HDR_ATXT -folder ctvv_folder}{#insert {#COND -if {#LENGTH {#insert zvDDM_HDR_ATXT}} > 0 -then z1slp -else zzzErrDlgPmddmHdrAutotxtES}}{#SETCLIPBOARD}(*Permanent debugging-->*)(*{#MSGBOX -head zvDDM_HDR_ATXT -text zvDDM_HDR_ATXT='{#insert zvDDM_HDR_ATXT}', remaining cb={#INSERTCLIPBOARD}}<--Permanent debugging*)	zzSetDDMenuHeaderAutotextFromCB
+
+zzvDIR_stDDMenu_M_dmid	{#SETPHRASE -description zvDIRECTORY -content {#insert zzDDMenuDir_M_dmid} -autotext zvDIRECTORY -folder ctvv_folder}	zzvDIR_stDDMenu_M_dmid
+
+zzvDIR_stTmpDDMenu_M_dmid	{#SETPHRASE -description zvDIRECTORY -content {#insert zzDirTmpFldrForUnindentingDDMenus_M_dmid} -autotext zvDIRECTORY -folder ctvv_folder}	zzvDIR_stTmpDDMenu_M_dmid
+
+zzvFNM_sfDDMenuFilePhrsNmDtTxt	{#SETPHRASE -description zvFILE_NAME -content {#insert {#insert zvDDM_FNM_PRE}}.txt -autotext zvFILE_NAME -folder ctvv_folder}	zzvFNM_sfDDMenuFilePhrsNmDtTxt
+
+zzvPID_FDMB_Y_stES	{#SETPHRASE -description zvPID_FDMB_Y -content -autotext zvPID_FDMB_Y -folder ctvv_folder}	zzvPID_FDMB_Y_stES
+
+zzSetFidmbYToPromptWWPromptIf	{#MSGBOX -head Also execute 'fidmb'? -text Should 'fidmb' also be executed on each ddmenu-file? ('fidmb' transforms all empty ['.'] command, action, and variable phrase-bodies to their appropriate functionality.) -yes zzSetFidmbYToYWWStatePrompt -no zzvPID_FDMB_Y_stES -defaultno}	zzSetFidmbYToPromptWWPromptIf
+
+zzSetFidmbYToYWWStatePrompt	{#SETPHRASE -description zvPID_FDMB_Y -content yes -autotext zvPID_FDMB_Y -folder ctvv_folder}{#insert zConfirmWWStatePrompt}	zzSetFidmbYToYWWStatePrompt
+
+zzvQBL_stDDMenuForDirID_M_dmid -- Needs zvDDMENU_ID	{#SETPHRASE -description zvQB_STR_LIST -content {#insert {#insert zzAllFilePrefixesInDDMenuDirQblPhrsNm_M_dmid}} -autotext zvQB_STR_LIST -folder ctvv_folder}	zzvQBL_stDDMenuForDirID_M_dmid
+
+zzzCICallingFromOutputPxTxtFile	{#insert {#COND -if {#POS {#insert zvFILE_NAME} -substr px.txt} = 0 -then z1slp -else zzzErrDlgCallingFromOutputPxTxtFile}}	zzzCICallingFromOutputPxTxtFile
+
+zzzCIESDDMenuDirQbl_M_dmid	{#insert {#COND -if {#LENGTH {#insert zvQB_STR_LIST}} > 0 -then z1slp -else zzzErrDlgESDDMenuDirQBL_M_dmid}}	zzzCIESDDMenuDirQbl_M_dmid
+
+zzzCIEntireDDMenuPhrsFileMrkrValueInCBIsEmpty	{#insert {#COND -if {#LENGTH {#INSERTCLIPBOARD}} > 0 -then z1slp -else zzzErrDlgEntireDDMenuPhrsFileMrkrValueInCBIsEmpty}}	zzzCIEntireDDMenuPhrsFileMrkrValueInCBIsEmpty
+
+zzzREonWWoffChangeNextActnItemPhrsBody -- Needs zvACTN_NM, zvCMD_NM	(*Implementing this via a regex replacement, especially using rwithp (putting a literal SETPHRASE into a SETPHRASE), is insanity. Also, inserting the action and command-names individually into variables (by copying and then <SETPHRASE...-content INSERTCLIPBOARD>) is impossible, since INSERTCLIPBOARD *executes* the action/command.*){#insert zTPBookmarkGTNext}(*RE=on*)(*At col-0. If 1st char in phrs-body is '[open-paren]': action-only, if '.': action-cmd-->*){#insert zRIGHT}(*<--To prevent cursor from being at col-0, so this doesn't mess up-->*){#insert zPhrsLnNotAtParaStart_selBodyStartTab_downREoff}{#insert zTPFindFlagREon}{#insert zRIGHT}{#insert zTPSelectR1c}{#insert zTPCopy}{#insert zLEFT}(*Cursor now at phrase-body-start (after the tab)*){#insert {#COND -if {#INSERTCLIPBOARD} = . -then zzzREonWWoffAtPhrsBdyStrtChangeThisLineActnCmdState1To2 -else zzzREonAtPhrsBdyStrtChangeThisLineActnOnlyState1To2}}(*<--If 1st char in phrs-body is '(': action-only, if '.': action-cmd.*)	zzzREonWWoffChangeNextActnItemPhrsBody
+
+zzzCompletelyUnindentDocWBal	{#BALLOON -title Please wait... -text Output document saved. Unindenting and re-saving.}{#insert zCompletelyUnindentDocument}	zzzCompletelyUnindentDocWBal
+
+zzzErrDlgCallingFromOutputPxTxtFile	{#MSGBOX -head ERROR -text ERROR ~~ This file is a '.px.txt' file: '{#insert zvFILE_NAME}'. Raw ddmenus must be named as '.txt'. Did you accidentally call this from the (what should be) already-indented file?{#insert zCancelProcNowPostTxt}}	zzzErrDlgCallingFromOutputPxTxtFile
+
+zzzErrDlgDdmFileMrkrHelpTextPostfix	{#SETPHRASE -description zvDDMENU_ID -content tpkc -autotext zvDDMENU_ID -folder ctvv_folder}This is a phrase~name drop~down~menu PHRASE~FILE. It must have a line containing '{#insert zXDDMenuPhraseFileMarker}=...', where '...' must be three '/'~delimited items.  //  Item [1/3] ~~ The phrase~name~ddmenu~directory~id (such as '{#insert zvDDMENU_ID}'), which is the unique~identifier for both the '{#insert zzAllFilePrefixesInDDMenuDirQblPhrsNm_M_dmid}' and '{#insert zzDDMenuDirPhrsNm_M_dmid}' configuration~variables.  //  Item [2/3] ~~ The PHRASE-NAME of this phrase-file's ddmenu file-prefix (no '.txt' or '.px.txt')  //  Item [3/3] ~~ The autotext of the HEADER for the phrases in this file, as they exist in the ddmenu. This is used to navigate quickly to this file's items in its ddmenu-file.  //  Example value: '{#insert zXDDMenuPhraseFileMarker}=tpkc/zzPmdmFNmPreTpkcOther/xhod'  //  {#insert zCancelProcNowPostTxt}	zzzErrDlgDdmFileMrkrHelpTextPostfix
+
+zzzErrDlgESDDMenuDirQBL_M_dmid	{#MSGBOX -head ERROR -text ERROR ~~ The qb-list for this phrase-name-ddmenu's dir-id ({#insert zzAllFilePrefixesInDDMenuDirQblPhrsNm_M_dmid}, where zvDDMENU_ID='{#insert zvDDMENU_ID}'), has no characters, or does not exist.{#insert zCancelProcNowPostTxt}}	zzzErrDlgESDDMenuDirQBL_M_dmid
+
+zzzErrDlgEntireDDMenuPhrsFileMrkrValueInCBIsEmpty	{#MSGBOX -head ERROR -text ERROR ~~ The phrase-file marker is either missing or has no characters.{#insert zzzErrDlgDdmFileMrkrHelpTextPostfix}}	zzzErrDlgEntireDDMenuPhrsFileMrkrValueInCBIsEmpty
+
+zzzErrDlgMissingItem_M_rnum -- Needs zvERR_NUM	{#MSGBOX -head ERROR -text ERROR ~~ Item [{#insert zvERR_NUM}/3] is missing or has no characters.{#insert zzzErrDlgDdmFileMrkrHelpTextPostfix}}	zzzErrDlgMissingItem_M_rnum
+
+zzzErrDlgPmddmDirIDES	{#SETPHRASE -description zvERR_NUM -content 1 -autotext zvERR_NUM -folder ctvv_folder}{#insert zzzErrDlgMissingItem_M_rnum}	zzzErrDlgPmddmDirIDES
+
+zzzErrDlgPmddmFilePhrsNmES	{#SETPHRASE -description zvERR_NUM -content 2 -autotext zvERR_NUM -folder ctvv_folder}{#insert zzzErrDlgMissingItem_M_rnum}	zzzErrDlgPmddmFilePhrsNmES
+
+zzzErrDlgPmddmHdrAutotxtES	{#SETPHRASE -description zvERR_NUM -content 3 -autotext zvERR_NUM -folder ctvv_folder}{#insert zzzErrDlgMissingItem_M_rnum}	zzzErrDlgPmddmHdrAutotxtES
+
+zzzFidmbDoneSyn	{#insert zBalloonDone}{#sleep 2000}{#insert fidmbsyn}	zzzFidmbDoneSyn
+
+zzzFindCopyDDMIdForThisFile	{#insert zTPGTDocTop}{#insert zFindDlgOpenDown}{#SETPHRASE -description zvFIND_WHAT -content {#insert zXDDMenuDirIDStartCmtMarker}= -autotext zvFIND_WHAT -folder ctvv_folder}{#insert zvFIND_WHAT}{#insert zFindBtnNext}{#insert zFindDlgClose}{#insert zRIGHT}{#insert zTPSelectR1w}{#insert zTPCopy}{#SETPHRASE -description zvDDMENU_ID -content {#INSERTCLIPBOARD} -autotext zvDDMENU_ID -folder ctvv_folder}{#sleep 1000}{#insert zTPGTDocTop}	zzzFindCopyDDMIdForThisFile
+
+zzzREonAtPhrsBdyStrtChangeThisLineActnOnlyState1To2	(*Move to BETWEEN 'actnonly' and '=[action-name]'. Can't copy the action-name only, because getting it with {#INSERTCLIPBOARD} will **EXECUTE** it. Instead, copy '=[action-name]'*){#RIGHT -count 2}{#insert zTPMoveR1w}{#insert zSelectR2w}{#insert zTPCopy}(*'=[action-name]' in clipboard. Deselect it and move to after the 'actnonly' comment:*){#RIGHT -count 3}(*Delete the dot!*){#insert zDEL}\\\{#SETPHRASE -description zvACTN_NM -content {#INSERTCLIPBOARD}(*Delete '=' preceding action name, then go back-->*){#insert zTPMoveL1w}{#insert zBKSP}{#insert zTPMoveR1w}(*<--Delete '=' preceding action name, then go back*) -autotext zvACTN_NM -folder ctvv_folder\\\}\\\{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm\\\}{#insert zTPBookmarkToggle}(*Going to the start of the next line is BAD if the next line also happens to be bookmarked.*)	zzzREonAtPhrsBdyStrtChangeThisLineActnOnlyState1To2
+
+
+zzzREonWWoffAtPhrsBdyStrtChangeThisLineActnCmdState1To2	{#insert zHomeMoveR1L1w}(*Before 'actn: zCmd'. Select it.*){#insert zSelectR2w}{#insert zTPSelectR1w}{#insert zTPCopy}(*'[action]: [command]' now in cb*){#SETPHRASE -description zvATN_CLN_SPC_CMD -content {#REPLACE {#INSERTCLIPBOARD} -oldtext : z -newtext :z} -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}(*zvATN_CLN_SPC_CMD=[action]:[command]. Unselect, then go to the dot that's between two tabs (the phrase-body!):*){#insert zFcsTPFindDlgOpen}{#SETPHRASE -description zvFIND_WHAT -content (?<=\t).(?=\t) -autotext zvFIND_WHAT -folder ctvv_folder}{#insert zvFIND_WHAT}{#insert zFindBtnNext}{#insert zFindDlgClose}\\\{#SETPHRASE -description zvATN_CLN_SPC_CMD -content {#insert zvATN_CLN_SPC_CMD} -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder\\\}\\\{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd\\\}{#insert zTPBookmarkToggle}(*Going to the start of the next line is BAD if the next line also happens to be bookmarked.*)	zzzREonWWoffAtPhrsBdyStrtChangeThisLineActnCmdState1To2
+
+
+zzzSlsh1Plus1	{#CALC {#insert zvSLSH1MIN1_POS} + 2 -round 0 -thousands none}	zzzSlsh1Plus1
+
+zzzvSLSH1MIN1_POS_sfCb	{#SETPHRASE -description zvSLSH1MIN1_POS -content {#insert zzPosSlash1InCBMinus1} -autotext zvSLSH1MIN1_POS -folder ctvv_folder}	zzzvSLSH1MIN1_POS_sfCb
+
+zzzvSetSlsh1Min1PosSetTknPreSlsh1_M_cb	{#insert zzzvSLSH1MIN1_POS_sfCb}{#insert zzzvTKN_PRE_SLSH1_sfCbSh1}	zzzvSetSlsh1Min1PosSetTknPreSlsh1_M_cb
+
+zzzvTKN_PRE_SLSH1_sfCbSh1 -- Needs remaining cb, zvSLSH1MIN1_POS	(*Permanent debugging-->*)(*{#MSGBOX -head zzzvTKN_PRE_SLSH1_sfCbSh1 (pre-set) -text cb={#INSERTCLIPBOARD}, zvSLSH1MIN1_POS='{#insert zvSLSH1MIN1_POS}', zzPosSlash1InCBMinus1='{#insert zzPosSlash1InCBMinus1}'}<--Permanent debugging*){#SETPHRASE -description zvTKN_PRE_SLSH1 -content {#SUBSTR {#INSERTCLIPBOARD} -from 0 -count {#insert zvSLSH1MIN1_POS}} -autotext zvTKN_PRE_SLSH1 -folder ctvv_folder}	zzzvTKN_PRE_SLSH1_sfCbSh1
+
+zzzzCBLenPostSlash1	{#CALC {#LENGTH {#INSERTCLIPBOARD}} - {#insert zzzSlsh1Plus1} + 1 -round 0 -thousands none}	zzzzCBLenPostSlash1
+
+zzzzGetThisDDMFilesOutputDirFNm	{#insert zCopySetCurrDirFileNameREoffDown}{#SETPHRASE -description zvDIRECTORY -content {#insert zvDIRECTORY}{#insert zSubDirNmTmpForUnindentingDDMenus} -autotext zvDIRECTORY -folder ctvv_folder}{#insert zzzCICallingFromOutputPxTxtFile}{#SETPHRASE -description zvFILE_NAME -content {#REPLACE {#insert zvFILE_NAME} -oldtext .txt -newtext .px.txt} -autotext zvFILE_NAME -folder ctvv_folder}	zzzzGetThisDDMFilesOutputDirFNm
+
+zzzzOpnFidmbSaveDupToNew_M_dirFnm	{#insert zDirFileOpen_M_dirFnm}{#insert zzPmdmFillInEmptyItemsAll}{#insert zFcsTPFileSave}{#insert zDupCurrFileTextToNewCloseOrig}	zzzzOpnFidmbSaveDupToNew_M_dirFnm
+
+zzzzOpnFidmbSaveDupToNew_or_OpenDupXstgCls_M_dirFnmFdmy	{#insert {#COND -if {#insert zvPID_FDMB_Y} = yes -then zzzzOpnFidmbSaveDupToNew_M_dirFnm -else zOpenDupCloseXstgFileTextToNewEmptyCB_M_dirFnm}}	zzzzOpnFidmbSaveDupToNew_or_OpenDupXstgCls_M_dirFnmFdmy
+
+zzzzRunFidmbSaveThisFileIf_M_Fmby -- Needs zvPID_FDMB_Y	{#insert {#COND -if {#insert zvPID_FDMB_Y} = yes -then zzzzzPmdmFillInEmptyItemsAllSave -else z1slp}}	zzzzRunFidmbSaveThisFileIf_M_Fmby
+
+zzzzzPmdmFillInEmptyItemsAllSave	{#insert zzPmdmFillInEmptyItemsAll}{#insert zFcsTPFileSave}	zzzzzPmdmFillInEmptyItemsAllSave

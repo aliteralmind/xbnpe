@@ -1,0 +1,4 @@
+Change execution speed	{#insert kpspeed_user_menu_folder} 	kpspeed_user_menu_folder_forHKOnly
+Phrase-creators: XBN-PhraseExpress -- Type 'xh'	.		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+TextPad built-in commands (TPKC) project	{#insert tpkc_user_menu_folder}	tpkc_user_menu_folder_forHKOnly
+z-(The default key-command for this FOLDER is zCASpDNR_SLASH)	.		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)

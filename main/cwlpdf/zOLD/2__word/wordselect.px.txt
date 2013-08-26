@@ -1,0 +1,16 @@
+zSelectLNw_M_vwmdl -- Needs zvWORDS_LEFT: Vwmdl[p] - wsl[[h,t]]m - wslvy	{#loop {#insert zTPSelectL1w} -count {#insert zvWORDS_LEFT}}	zSelectLNw_M_vwmdl
+zTPSelectL1w - wsl[p]1 - zTPSelectL1w ALT KC	{#insert zTPSelectL1w}	zTPSelectL1w
+zSelectL2w - wsl[p]2 - zTPSelL2w ALT KC	{#insert zTPSelL2w}	zSelectL2w
+zSelectL3w - wsl[p]3 - zTPSelL3w ALT KC	{#insert zTPSelL3w}	zSelectL3w
+
+zSelectRNw_M_vwmdr -- Needs zvWORDS_RIGHT: Vwmdr[p] - wsr[[h,t]]m - wsrvy	{#loop {#insert zTPSelectR1w} -count {#insert zvWORDS_RIGHT}}	zSelectRNw_M_vwmdr
+zSelectR1w -- See tpkc_btstrp__cwldf__word.px.txt	.		(*Two tabs then this cmt to force import with NO autotext*)
+zSelectR2w - wsr[p]2 - zTPSelR2w ALT KC	{#insert zTPSelR2w}	zSelectR2w
+
+zSelectRNL1w_M_vwmdl -- Needs zvWORDS_RIGHT: Vwmdr[p] - wsrnl[[h,t]]m - wsrnlvy	{#insert zSelectRNw_M_vwmdr}{#insert zTPSelectL1w}	zSelectRNL1w_M_vwmdl
+zSelectR1L1w - wsrnl[p]1	{#insert zSelectR1w}{#insert zTPSelectL1w}	zSelectR1L1w
+
+zSelectLNR1w_M_vwmdl -- Needs zvWORDS_LEFT: Vwmdl[p] - wslnr[[h,t]]m - wslnrvy	{#insert zSelectLNw_M_vwmdl}{#insert zSelectR1w}	zSelectLNR1w_M_vwmdl
+zSelectL1R1w - wslnr[p]1	{#insert zTPSelectL1w}{#insert zSelectR1w}	zSelectL1R1w
+zSelectL2R1w - wslnr[p]2	{#insert zSelectL2w}{#insert zSelectR1w}	zSelectL2R1w
+zSelectL3R1w - wslnr[p]3	{#insert zSelectL3w}{#insert zSelectR1w}	zSelectL3R1w

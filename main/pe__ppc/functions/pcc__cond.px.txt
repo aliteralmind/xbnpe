@@ -1,0 +1,27 @@
+cqd -- {#COND -if ... -then ... -else ...}	{#insert zvESC_LVL_CNT_st0}{#insert zCqdRAW_M_elc}{#insert zzCqdSyn}	cqd
+cqdi -- {#COND -if [crsr] -then ... -else ...}	{#insert zvESC_LVL_CNT_st0}{#insert zCqdiRAW_M_elc}{#insert zzCqdSyn}	cqdi
+cqdip -- cqdi, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zCqdiRAW_M_elc}{#insert zzCqdSyn}	cqdip
+cqdiq -- cqdi, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zCqdiRAW_M_elc}{#insert zzCqdSyn}	cqdiq
+cqdit -- {#COND -if {#insert [paste]} [crsr] -then ... -else ...}	{#insert zvESC_LVL_CNT_st0}{#insert zCqditRAW_M_elc}{#insert zzCqdSyn}	cqdit
+cqditp -- cqdit, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zCqditRAW_M_elc}{#insert zzCqdSyn}	cqditp
+cqditq -- cqdit, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zCqditRAW_M_elc}{#insert zzCqdSyn}	cqditq
+cqdp -- cqd, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zCqdRAW_M_elc}{#insert zzCqdSyn}	cqdp
+cqdq -- cqd, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zCqdRAW_M_elc}{#insert zzCqdSyn}	cqdq
+cqs -- {#insert {#COND -if ... -then ... -else ...}}	{#insert zvESC_LVL_CNT_st0}{#insert zCqsRAW_M_elc}{#insert zzCqdSyn}	cqs
+cqsi -- {#insert {#COND -if [crsr] -then ... -else ...}}	{#insert zvESC_LVL_CNT_st0}{#insert zCqsiRAW_M_elc}{#insert zzCqdSyn}	cqsi
+cqsit -- {#insert {#COND -if {#insert [paste]} [crsr] -then ... -else ...}}	{#insert zvESC_LVL_CNT_st0}{#insert zCqsitRAW_M_elc}{#insert zzCqdSyn}	cqsit
+cqsitp -- cqsit, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zCqsitRAW_M_elc}{#insert zzCqdSyn}	cqsitp
+cqsitq -- cqsit, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zCqsitRAW_M_elc}{#insert zzCqdSyn}	cqsitq
+cqsip -- cqsi, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zCqsiRAW_M_elc}{#insert zzCqdSyn}	cqsip
+cqsiq -- cqsi, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zCqsiRAW_M_elc}{#insert zzCqdSyn}	cqsiq
+cqsp -- cqs, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zCqsRAW_M_elc}{#insert zzCqdSyn}	cqsp
+cqsq -- cqs, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zCqsRAW_M_elc}{#insert zzCqdSyn}	cqsq
+zCqdRAW_M_elc -- Needs zvESC_LVL_CNT (assumed good value!)	{#insert zOY_M_elc}#COND -if {#insert zXmark} -then {#insert zYmark} -else {#insert zYmark}{#insert zCY_M_elc}	zCqdRAW_M_elc
+zCqditRAW_M_elc	{#insert zOY_M_elc}#COND -if \\\{#insert {#insert zTPPaste}\\\}  -then {#insert zXmark} -else {#insert zXmark}{#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}{#LEFT -count 20}	zCqditRAW_M_elc
+zCqdiRAW_M_elc	{#insert zOY_M_elc}#COND -if  -then {#insert zXmark} -else {#insert zXmark}{#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}{#LEFT -count 20}	zCqdiRAW_M_elc
+zCqsRAW_M_elc	{#insert zOY_M_elc}#insert {#insert zOY_M_elc}#COND -if {#insert zXmark} -then {#insert zYmark} -else {#insert zYmark}{#insert zCY_M_elc}	zCqsRAW_M_elc
+zCqsitRAW_M_elc	{#insert zOY_M_elc}#insert {#insert zOY_M_elc}#COND -if \\\{#insert {#insert zTPPaste}\\\}  -then {#insert zXmark} -else {#insert zXmark}{#insert zCYx2_M_elc}{#insert zzLeftPrevEscCrlyX2_M_elc}{#LEFT -count 20}	zCqsitRAW_M_elc
+zCqsiRAW_M_elc	{#insert zOY_M_elc}#insert {#insert zOY_M_elc}#COND -if  -then {#insert zXmark} -else {#insert zXmark}{#insert zCYx2_M_elc}{#insert zzLeftPrevEscCrlyX2_M_elc}{#LEFT -count 20}	zCqsiRAW_M_elc
+zzCqdSyn	{#BALLOON -title COND (cqd) syntax -text cq[d,s][i[t]][[p,q]]  //  [i]=surr w/ '\\\{#insert\\\}, [t]=if w/ insb  //  [p]=esc'd, [q]=dbly-esc'd (or more)  //  pcccqdtestall  //  'z[1c-abrv-w/o-pq]RAW_M_elc' (ex: 'zCqdRAW_M_elc')}	zzCqdSyn
+zzPccCqdAllMainAbrvs1CQBL	[Cqd][Cqdi][Cqdit][Cqs][Cqsi][Cqsit]	zzPccCqdAllMainAbrvs1CQBL
+pcccqdtestall	{#SETPHRASE -description zvQB_STR_LIST -content {#insert zzPccCqdAllMainAbrvs1CQBL} -autotext zvQB_STR_LIST -folder ctvv_folder}{#insert zzTestAllMainPhrsCrtrAbrvs_M_qbl}	pcccqdtestall

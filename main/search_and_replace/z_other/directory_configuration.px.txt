@@ -1,0 +1,3 @@
+zXPROOT_DIR_AG_srchRplc	{#insert zROOT_DIR_XBNPE_AG}{#insert zzXPSUB_DIR_srchRplc}	zXPROOT_DIR_AG_srchRplc
+zXPROOT_DIR_srchRplc	{#insert zROOT_DIR_XBNPE_MAIN}{#insert zzXPSUB_DIR_srchRplc}	zXPROOT_DIR_srchRplc
+zzXPSUB_DIR_srchRplc	search_and_replace\	zzXPSUB_DIR_srchRplc

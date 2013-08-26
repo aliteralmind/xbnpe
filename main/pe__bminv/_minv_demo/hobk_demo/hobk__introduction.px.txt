@@ -1,0 +1,13 @@
+MINV-Commands
+
+Part of XBN-PhraseExpress
+
+M.I.N.V.: "Master-phrase that uses an Incremented Number Variable"
+
+
+hobk
+	ho - home
+	bk - bksp
+
+1. Master phrase
+2. Configure MINV-Command

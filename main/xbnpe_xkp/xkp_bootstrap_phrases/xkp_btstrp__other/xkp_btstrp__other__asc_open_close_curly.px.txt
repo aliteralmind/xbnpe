@@ -1,0 +1,2 @@
+zAscCloseCurly -- '}'	{#asc 125}	zAscCloseCurly
+zAscOpenCurly -- '{'	{#asc 123}	zAscOpenCurly

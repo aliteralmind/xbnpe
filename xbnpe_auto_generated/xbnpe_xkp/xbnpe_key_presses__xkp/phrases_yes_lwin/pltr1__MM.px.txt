@@ -1,0 +1,8 @@
+Alt+LWin+MM -- zALpMM	{#ALT {#LWIN -chars m}}{#insert zTSlp}	zALpMM
+Alt+Shift+LWin+MM -- zASLpMM	{#ALT {#SHIFT {#LWIN -chars m}}}{#insert zTSlp}	zASLpMM
+Ctrl+Alt+LWin+MM -- zCALpMM	{#CTRL {#ALT {#LWIN -chars m}}}{#insert zTSlp}	zCALpMM
+Ctrl+Alt+Shift+LWin+MM -- zCASLpMM	{#CTRL {#ALT {#SHIFT {#LWIN -chars m}}}}{#insert zTSlp}	zCASLpMM
+Ctrl+LWin+MM -- zCLpMM	{#CTRL {#LWIN -chars m}}{#insert zTSlp}	zCLpMM
+Ctrl+Shift+LWin+MM -- zCSLpMM	{#CTRL {#SHIFT {#LWIN -chars m}}}{#insert zTSlp}	zCSLpMM
+LWin+MM -- zLpMM	{#LWIN -chars m}{#insert zTSlp}	zLpMM
+Shift+LWin+MM -- zSLpMM	{#SHIFT {#LWIN -chars m}}{#insert zTSlp}	zSLpMM

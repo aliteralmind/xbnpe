@@ -1,0 +1,8 @@
+zTpkcWindowPrevAbrv1C	Winprv	zTpkcWindowPrevAbrv1C
+zTpkcWinprvCmdNameTC	WindowPrev	zTpkcWinprvCmdNameTC
+zTpkcWinprvDfltPhrsNm	zTPGTPrevDoc	zTpkcWinprvDfltPhrsNm
+zTpkcWinprvCatForCmdAbrvLC	window	zTpkcWinprvCatForCmdAbrvLC
+zTpkcWinprvCmdType_mcrTl		zTpkcWinprvCmdType_mcrTl
+zTpkcWinprvIsBtstrp_yes		zTpkcWinprvIsBtstrp_yes
+zTpkcWinprvDfltPostKcSlpMils	10	zTpkcWinprvDfltPostKcSlpMils
+zTpkcWinprvStpsFrmCmdListTop	{#insert zPGDN2}{#insert zDOWN3}	zTpkcWinprvStpsFrmCmdListTop

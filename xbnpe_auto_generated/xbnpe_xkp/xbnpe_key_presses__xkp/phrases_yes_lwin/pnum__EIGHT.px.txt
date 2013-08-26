@@ -1,0 +1,8 @@
+Alt+LWin+EIGHT -- zALpEIGHT	{#ALT {#LWIN -chars 8}}{#insert zTSlp}	zALpEIGHT
+Alt+Shift+LWin+EIGHT -- zASLpEIGHT	{#ALT {#SHIFT {#LWIN -chars 8}}}{#insert zTSlp}	zASLpEIGHT
+Ctrl+Alt+LWin+EIGHT -- zCALpEIGHT	{#CTRL {#ALT {#LWIN -chars 8}}}{#insert zTSlp}	zCALpEIGHT
+Ctrl+Alt+Shift+LWin+EIGHT -- zCASLpEIGHT	{#CTRL {#ALT {#SHIFT {#LWIN -chars 8}}}}{#insert zTSlp}	zCASLpEIGHT
+Ctrl+LWin+EIGHT -- zCLpEIGHT	{#CTRL {#LWIN -chars 8}}{#insert zTSlp}	zCLpEIGHT
+Ctrl+Shift+LWin+EIGHT -- zCSLpEIGHT	{#CTRL {#SHIFT {#LWIN -chars 8}}}{#insert zTSlp}	zCSLpEIGHT
+LWin+EIGHT -- zLpEIGHT	{#LWIN -chars 8}{#insert zTSlp}	zLpEIGHT
+Shift+LWin+EIGHT -- zSLpEIGHT	{#SHIFT {#LWIN -chars 8}}{#insert zTSlp}	zSLpEIGHT

@@ -1,0 +1,23 @@
+(*
+   Required by phrase-creator-ddmenu-utils...START
+      PM_DDMENU_DIRID_FILENMPHRSNM_HDRAUTOTXT=tpkc/zzPmdmFNmPreTpkcFind/xhsib
+   Required by phrase-creator-ddmenu-utils...END
+*)
+zFFindBtnDefaults	{#insert zApUU}{#sleep 25}	zFFindBtnDefaults
+zFFindBtnDefaultsFilesOnly	{#insert zFFindBtnDefaultsFilesOnlyRAW}{#insert zFFindFieldWhat}	zFFindBtnDefaultsFilesOnly
+zFFindBtnDefaultsFilesOnlyRAW	{#insert zFFindBtnDefaults}{#insert zFFindFlagFilesOnlyRAW}	zFFindBtnDefaultsFilesOnlyRAW
+
+zFFindBtnDefaultsFilesOnlySubDirsTgl	{#insert zFFindBtnDefaultsFilesOnlySubDirsTglRAW}{#insert zFFindFieldWhat}	zFFindBtnDefaultsFilesOnlySubDirsTgl
+zFFindBtnDefaultsFilesOnlySubDirsTglRAW	{#insert zFFindBtnDefaultsFilesOnlyRAW}{#insert zFFindFlagSubDirsTglRAW}	zFFindBtnDefaultsFilesOnlySubDirsTglRAW
+
+zFFindBtnDefaultsSubDirsTgl	{#insert zFFindBtnDefaultsSubDirsTglRAW}{#insert zFFindFieldWhat}	zFFindBtnDefaultsSubDirsTgl
+zFFindBtnDefaultsSubDirsTglRAW	{#insert zFFindBtnDefaults}{#insert zFFindFlagSubDirsTglRAW}	zFFindBtnDefaultsSubDirsTglRAW
+
+zFFindBtnFindSlp1500 -- enter, sleep 1500	{#insert zENTER}{#sleep 1500}	zFFindBtnFindSlp1500
+zFFindBtnFindSlp500 -- enter, sleep 500	{#insert zENTER}{#sleep 500}	zFFindBtnFindSlp500
+zFFindBtnFindSlp1000 -- enter, sleep 1000	{#insert zENTER}{#sleep 1000}	zFFindBtnFindSlp1000
+zFFindBtnFindSlp3000 -- enter, sleep 3000	{#insert zENTER}{#sleep 3000}	zFFindBtnFindSlp3000
+zFFindBtnFindSlp5000 -- enter, sleep 5000	{#insert zENTER}{#sleep 5000}	zFFindBtnFindSlp5000
+zFFindFieldDir	{#insert zApDD}{#sleep 25}	zFFindFieldDir
+zFFindFieldFileType	{#insert zApFF}{#sleep 25}	zFFindFieldFileType
+zFFindFieldWhat -- zFindFieldWhat ALT KC	{#insert zFindFieldWhat}	zFFindFieldWhat

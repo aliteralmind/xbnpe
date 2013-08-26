@@ -1,0 +1,10 @@
+ONE	-chars 1
+TWO	-chars 2
+THREE	-chars 3
+FOUR	-chars 4
+FIVE	-chars 5
+SIX	-chars 6
+SEVEN	-chars 7
+EIGHT	-chars 8
+NINE	-chars 9
+ZERO	-chars 0

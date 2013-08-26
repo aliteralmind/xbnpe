@@ -1,0 +1,84 @@
+(*
+   This transforms old MINV data-instances to the new (LPDF-based) design. It is a one-time-only process. I'm leaving it here because it's design/code may be useful code for future projects.
+
+   EXAMPLE OLD MINV-Command data-instance (pre LPDF-design):
+      zzMnvPcpnlCmdPNAbrv=Pcnl
+      zzMnvPcnlCmdNamePreNum=
+      zzMnvPcnlCmdNamePostNum=
+      zzMnvPcnlMasterPhraseName=zPecPhrNmLinesN_M_vlnd
+      zzMnvPcnlActionName=pcpnl
+      zzMnvPcnlVarAbrv={#insert zzMnvVlndVarAbrv}
+      zzMnvPcnlCmdMinNum=2
+      zzMnvPcnlCmdTotalCount=19
+      zzMnvPcnlCommands_on=off
+      zzMnvPcnlActions_on=on
+      zzMnvPcnlPhrsCrtrs_onff=off
+      zzMnvPcnlNoNumAlias_on=off
+      zzMnvPcnlSTPromptActn_onff=on
+      zzMnvPcnlNNLTargetNum=2
+
+   EXAMPLE OLD MINV-Variable:
+      zzMnvVlndMinSTNum=1
+      zzMnvVlndName=zvLINES_DOWN
+      zzMnvVlndTotalSTCount=100
+      zzMnvVlndVarAbrv=Vlnd
+
+   Transforms to this new MINV-Command:
+      zzMnvCmdLiteralStyle_esyc=off        <--new
+      zzMnvCmdPcnlActionName1C=Pcpnl
+      zzMnvCmdPcnlActions_on=on
+      zzMnvCmdPcnlNamePostNum=
+      zzMnvCmdPcnlNamePreNum=
+      zzMnvCmdPcnlRangeMax=20            <--max, not total
+      zzMnvCmdPcnlRangeMin=2
+      zzMnvCmdPcnlCommands_on=off
+      zzMnvCmdPcnlMasterPhraseNm=zPecPhrNmLinesN_M_vlnd
+      zzMnvCmdPcnlNNLTargetNum=2
+      zzMnvCmdPcnlNoNumAlias_on=off
+      zzMnvCmdPcnlPCActOffPst_pES=p         <--new
+      zzMnvCmdPcnlPhrsCrtrs_on=off
+      zzMnvCmdPcnlSTPromptActn_on=on
+      zzMnvCmdPcnlVarAbrv1CForCmd=Vlnd
+      zzMnvCmdPcpnlPNmAbrv1C=Pcnl
+      zzMnvCmdSNTPromptActnMsg=Set {#insert zzMnvVarVlndIntrnlVarName} to?    <--new
+
+   and new MINV-Variable:
+      zzMnvVarVlndIntrnlVarName=zvLINES_DOWN
+      zzMnvVarVlndAbrv1C=Vlnd          <--new
+      zzMnvVarVlndPNAbrv1C=Vlnd
+      zzMnvVarVlndRangeMax=100         <--max, not total
+      zzMnvVarVlndRangeMin=1
+
+   NOTES:
+      -The old format of MINV-Variables have public-keys only. The new format has both public and private. The value of the private-key is set equal to the public.
+      -For all data-types except the target num (and any 'new' fields), the appropriate validation functions are called (see bmnv__validate_config_values.px.txt).
+      -Note that all variables must be processed before any commands are processed, since the var-range is needed to validate the command-range
+      -If you get a
+         zvXXX=''
+      error, then likely that (old) data-instance does not exist (was not imported into) PhraseExpress.
+*)
+zMnvTransformOldCmdInstancesFromActmlLL	{#insert zHOME}{#insert zzMnvSetAllNewStaticVars}{#LOOP {#insert zzTransformNextCmdLLLI} -count {#INPUT -head How many MINV-Cmds to process? -single}}{#insert zMsgboxDone}	zMnvTransformOldCmdInstancesFromActmlLL
+zzMnvSetAllNewStaticVars	{#insert zzMnvSetNewPcafpToP}{#insert zzMnvSetNewLtrlStylToOff}{#insert zzMnvSetNewSntpmsg_M_vpn1}	zzMnvSetAllNewStaticVars
+zMnvTransformOldVarInstancesFromVrvlLL -- Old has pub-key only. New has pub & priv.	{#insert zHOME}{#insert zSetPrjDataTypeAbrvs_TO_mnvVar}{#LOOP {#insert zzTransformNextVarLLLI_M_vpjDtv} -count {#INPUT -head How many MINV-Vars to process? -single}}{#insert zMsgboxDone}	zMnvTransformOldVarInstancesFromVrvlLL
+zSetVldtOldCgmaxVldtRange_M_cpn1CgminVg	{#SETPHRASE -description zvCMD_RANGE_MAX -content {#insert zzGetCGMaxFromOldTotal_M_cpn1Cgmin} -autotext zvCMD_RANGE_MAX -folder ctvv_folder}{#insert zzVldtCmdRange_M_cgVg}	zSetVldtOldCgmaxVldtRange_M_cpn1CgminVg
+zzGetCGMaxFromOldTotal_M_cpn1Cgmin	{#CALC {#insert zvCMD_RANGE_MIN} + {#insert zzMnv{#insert zvCMD_PNMV_1C}CmdTotalCount} - 1 -round 0 -thousands none}	zzGetCGMaxFromOldTotal_M_cpn1Cgmin
+zzGetNewVgmaxFromOldTot_M_vrv1Gmin	{#CALC {#insert zvVAR_RANGE_MIN} + {#insert zzMnv{#insert zvVAR_ABRV_1C}TotalSTCount} - 1 -round 0 -thousands none}	zzGetNewVgmaxFromOldTot_M_vrv1Gmin
+zzMnvSetNewLtrlStylToOff	{#SETPHRASE -description zvLTRL_STYL_ESYC -content off -autotext zvLTRL_STYL_ESYC -folder ctvv_folder}	zzMnvSetNewLtrlStylToOff
+zzMnvSetNewPcafpToP	{#SETPHRASE -description zvPCAF_PST_PORES -content {#insert zzMnvSynPstMainPhrsCrtr} -autotext zvPCAF_PST_PORES -folder ctvv_folder}	zzMnvSetNewPcafpToP
+zzMnvSetNewSntpmsg_M_vpn1	{#SETPHRASE -description zvSNT_PROMPT_MSG -content Set {#insert zOYp}#insert {#insert zOY}#insert zzMnvVarVivn_cfgVarPhrsName_M_key{#insert zCY}{#insert zCYp} to? -autotext zvSNT_PROMPT_MSG -folder ctvv_folder}	zzMnvSetNewSntpmsg_M_vpn1
+zzMnvSetOldActm1_M_lccb	{#SETPHRASE -description zvACTION_NM_1C -content {#UPPERCASEFIRST {#INSERTCLIPBOARD}} -autotext zvACTION_NM_1C -folder ctvv_folder}	zzMnvSetOldActm1_M_lccb
+zzMnvSetOldActon_M_cpn1	{#SETPHRASE -description zvACTIONS_ON -content {#insert zzMnv{#insert zvCMD_PNMV_1C}Actions_on} -autotext zvACTIONS_ON -folder ctvv_folder}	zzMnvSetOldActon_M_cpn1
+zzMnvSetOldCmdon_M_cpn1	{#SETPHRASE -description zvCOMMANDS_ON -content {#insert zzMnv{#insert zvCMD_PNMV_1C}Commands_on} -autotext zvCOMMANDS_ON -folder ctvv_folder}	zzMnvSetOldCmdon_M_cpn1
+zzMnvSetOldCpn1_M_actm1	{#SETPHRASE -description zvCMD_PNMV_1C -content {#insert zzMnv{#insert zvACTION_NM_1C}CmdPNAbrv} -autotext zvCMD_PNMV_1C -folder ctvv_folder}	zzMnvSetOldCpn1_M_actm1
+zzMnvSetOldMstrPhrsNm_M_cpn1	{#SETPHRASE -description zvMSTR_PHRS_NM -content {#insert zzMnv{#insert zvCMD_PNMV_1C}MasterPhraseName} -autotext zvMSTR_PHRS_NM -folder ctvv_folder}	zzMnvSetOldMstrPhrsNm_M_cpn1
+zzMnvSetOldNnlg_M_cpn1 -- I manually validated them all	{#SETPHRASE -description zvNNL_TGT_NUM -content {#insert zzMnv{#insert zvCMD_PNMV_1C}NNLTargetNum} -autotext zvNNL_TGT_NUM -folder ctvv_folder}	zzMnvSetOldNnlg_M_cpn1
+zzMnvSetOldNnlon_M_cpn1	{#SETPHRASE -description zvNO_NUM_ALIAS_ON -content {#insert zzMnv{#insert zvCMD_PNMV_1C}NoNumAlias_on} -autotext zvNO_NUM_ALIAS_ON -folder ctvv_folder}	zzMnvSetOldNnlon_M_cpn1
+zzMnvSetOldPcon_M_cpn1	{#SETPHRASE -description zvPHRS_CRTRS_ON -content {#insert zzMnv{#insert zvCMD_PNMV_1C}PhrsCrtrs_onff} -autotext zvPHRS_CRTRS_ON -folder ctvv_folder}	zzMnvSetOldPcon_M_cpn1
+zzMnvSetOldSntpon_M_cpn1	{#SETPHRASE -description zvSNTP_ACTN_ON -content {#insert zzMnv{#insert zvCMD_PNMV_1C}STPromptActn_onff} -autotext zvSNTP_ACTN_ON -folder ctvv_folder}	zzMnvSetOldSntpon_M_cpn1
+zzMnvSetOldVarAbrvForCmdThenLoadNewVar_M_cpn1	{#SETPHRASE -description zvVAR_ABRV_1C -content {#insert zzMnv{#insert zvCMD_PNMV_1C}VarAbrv} -autotext zvVAR_ABRV_1C -folder ctvv_folder}{#insert zSetPrivateKeyCIES_M_pjDtvPubk}{#insert zSetAllIntrnlVarsToCfgVals_M_pjDtvKeys}	zzMnvSetOldVarAbrvForCmdThenLoadNewVar_M_cpn1
+zzMnvSetVldtOldCmdNmPrePostNum_M_cpn1Cmdon	{#SETPHRASE -description zvCMD_NAME_PRE_NUM -content {#insert zzMnv{#insert zvCMD_PNMV_1C}CmdNamePreNum} -autotext zvCMD_NAME_PRE_NUM -folder ctvv_folder}{#SETPHRASE -description zvCMD_NAME_POST_NUM -content {#insert zzMnv{#insert zvCMD_PNMV_1C}CmdNamePostNum} -autotext zvCMD_NAME_POST_NUM -folder ctvv_folder}{#insert zzVldtCmdName_M_cmdonNmprePst}	zzMnvSetVldtOldCmdNmPrePostNum_M_cpn1Cmdon
+zzMnvSetVldtOldCmdRange_M_cpn1Vg	{#insert zzSetVldtOldCgmin_M_cpn1Vgmin}{#insert zSetVldtOldCgmaxVldtRange_M_cpn1CgminVg}	zzMnvSetVldtOldCmdRange_M_cpn1Vg
+zzMnvSetVldtOldVarRange_M_vrv1	{#SETPHRASE -description zvVAR_RANGE_MIN -content {#insert zzMnv{#insert zvVAR_ABRV_1C}MinSTNum} -autotext zvVAR_RANGE_MIN -folder ctvv_folder}{#insert zzMnvVldtVgminGT0_M_self}{#SETPHRASE -description zvVAR_RANGE_MAX -content {#insert zzGetNewVgmaxFromOldTot_M_vrv1Gmin} -autotext zvVAR_RANGE_MAX -folder ctvv_folder}{#insert zzMnvVldtVarRange_M_minMx}	zzMnvSetVldtOldVarRange_M_vrv1
+zzSetVldtOldCgmin_M_cpn1Vgmin	{#SETPHRASE -description zvCMD_RANGE_MIN -content {#insert zzMnv{#insert zvCMD_PNMV_1C}CmdMinNum} -autotext zvCMD_RANGE_MIN -folder ctvv_folder}{#insert zzVldtCgminGTVgmin_M_selfVgmin}	zzSetVldtOldCgmin_M_cpn1Vgmin
+zzTransformNextCmdLLLI	{#BALLOON -title Please wait... -text Analyzing old MINV-Command data-instance.}{#insert zCutR1w}{#insert zSetPrjDataTypeAbrvs_TO_mnvVar}{#insert zzMnvSetOldActm1_M_lccb}{#insert zzMnvSetOldCpn1_M_actm1}{#insert zzMnvSetOldMstrPhrsNm_M_cpn1}{#insert zzMnvSetOldVarAbrvForCmdThenLoadNewVar_M_cpn1}{#insert zzMnvSetVldtOldCmdRange_M_cpn1Vg}{#insert zzMnvSetOldCmdon_M_cpn1}{#insert zzMnvSetVldtOldCmdNmPrePostNum_M_cpn1Cmdon}{#insert zzMnvSetOldActon_M_cpn1}{#insert zzMnvSetOldSntpon_M_cpn1}{#insert zzMnvSetOldPcon_M_cpn1}{#insert zzMnvSetOldNnlon_M_cpn1}{#insert zzMnvSetOldNnlg_M_cpn1}{#insert zSetPrjDataTypeAbrvs_TO_mnvCmd}{#BALLOON -title Done analysis -text Printing new MINV-Command data-instance}{#insert zAllImprtblPhrssWVarVals_M_pjDtvKeys}{#insert zRIGHT}	zzTransformNextCmdLLLI
+zzTransformNextVarLLLI_M_vpjDtv	{#BALLOON -title Please wait... -text Analyzing old MINV-Variable data-instance.}{#insert zCutR1w}{#SETPHRASE -description zvVAR_ABRV_1C -content {#UPPERCASEFIRST {#INSERTCLIPBOARD}} -autotext zvVAR_ABRV_1C -folder ctvv_folder}{#SETPHRASE -description zvVAR_PNMV_1C -content {#insert zvVAR_ABRV_1C} -autotext zvVAR_PNMV_1C -folder ctvv_folder}{#SETPHRASE -description zvVAR_IVAR_NAME -content {#insert zzMnv{#insert zvVAR_ABRV_1C}Name} -autotext zvVAR_IVAR_NAME -folder ctvv_folder}{#insert zzMnvSetVldtOldVarRange_M_vrv1}{#BALLOON -title Done analysis -text Printing new MINV-Variable data-instance}{#insert zAllImprtblPhrssWVarVals_M_pjDtvKeys}{#insert zRIGHT}	zzTransformNextVarLLLI_M_vpjDtv

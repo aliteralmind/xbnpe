@@ -1,0 +1,8 @@
+zTpkcHelpAbrv1C	Hmain	zTpkcHelpAbrv1C
+zTpkcHmainCmdNameTC	Help	zTpkcHmainCmdNameTC
+zTpkcHmainDfltPhrsNm	zTPHelp	zTpkcHmainDfltPhrsNm
+zTpkcHmainCatForCmdAbrvLC	help	zTpkcHmainCatForCmdAbrvLC
+zTpkcHmainCmdType_mcrTl		zTpkcHmainCmdType_mcrTl
+zTpkcHmainIsBtstrp_yes		zTpkcHmainIsBtstrp_yes
+zTpkcHmainDfltPostKcSlpMils	10	zTpkcHmainDfltPostKcSlpMils
+zTpkcHmainStpsFrmCmdListTop	(*	NOTHING. Top command in list*)	zTpkcHmainStpsFrmCmdListTop

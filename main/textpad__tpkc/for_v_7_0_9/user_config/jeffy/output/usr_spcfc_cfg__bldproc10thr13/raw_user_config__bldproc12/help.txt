@@ -1,0 +1,6 @@
+Help	0
+HelpFAQ	0
+HelpOrdering	0
+HelpSupport	0
+HelpTip	0
+HelpWWW	0

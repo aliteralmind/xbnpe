@@ -1,0 +1,21 @@
+hcontents -- hhp, hhb, Contents:, hlu, hgok	<P><B>Contents:</B><UL>{#insert zENTER}{#insert zTAB}<LI><CODE>[<A HREF={#insert zAscQQ}#{#insert zXmark}{#insert zAscQQ}>go</A>]</CODE> &nbsp; {#insert zXmark}</LI>{#insert zENTER}{#insert zBKSP}</UL></P>{#insert zXUp}	hcontents
+hli -- <LI>x-mark</LI>	<LI>{#insert zXmark}</LI>{#insert zXUp}{#insert zzHtmlListSyn}	hli
+hlib -- <LI><B>x-mark</B></LI>	<LI><B>{#insert zXmark}</B></LI>{#insert zXUp}{#insert zzHtmlListSyn}	hlib
+hlic -- <LI><CODE>x-mark</CODE></LI>	<LI><CODE>{#insert zXmark}</CODE></LI>{#insert zXUp}{#insert zzHtmlListSyn}	hlic
+hligk -- hll, hgok	{#insert hli}{#insert hgok}{#insert zXmark}{#insert zTPSelectL1w}	hligk
+hll -- End current line </LI> and start a new one.	</LI>{#insert zENTER}<LI>{#insert zXmark}{#insert zTPSelectL1w}{#insert zzHtmlListSyn}	hll
+hllb -- End current line </LI> and start a new <B>-olded one.	</LI>{#insert zENTER}<LI><B>{#insert zXmark}</B>{#insert zXUp}{#insert zzHtmlListSyn}	hllb
+hllc -- End current line </LI> and start a new <CODE>-d one.	</LI>{#insert zENTER}<LI><CODE>{#insert zXmark}</CODE>{#insert zXUp}{#insert zzHtmlListSyn}	hllc
+hllgk -- hll, hgok	{#insert hll}{#insert hgok}{#insert zXmark}{#insert zTPSelectL1w}	hllgk
+hlo -- <OL><LI>x-mark</LI></OL>..	<OL>{#insert zEnterTab}<LI>{#insert zXmark}</LI>{#insert zEnterBksp}</OL>{#insert zXUp}{#insert zzHtmlListSyn}	hlo
+hlu -- <UL><LI>x-mark</LI></UL>	<UL>{#insert zEnterTab}<LI>{#insert zXmark}</LI>{#insert zEnterBksp}</UL>{#insert zXUp}{#insert zzHtmlListSyn}	hlu
+hlux -- <UL>[cursor at home, for ins cb-lines]</UL>	<UL>{#insert zENTER}</UL>{#insert zHOME}{#insert zzHtmlListSyn}	hlux
+hlox -- <OL>[cursor at home, for ins cb-lines]</OL>	<OL>{#insert zENTER}</OL>{#insert zHOME}{#insert zzHtmlListSyn}	hlox
+hloxb -- <OL>[paste cb-lines]</OL>	<OL>{#insert zENTER}{#insert zHOME}{#insert zTPPaste}{#insert zBKSP}{#insert zENTER}{#insert zBKSP}</OL>{#insert zzHtmlListSyn}	hloxb
+hluxb -- <UL>[paste cb-lines]</UL>	<UL>{#insert zENTER}{#insert zHOME}{#insert zTPPaste}{#insert zBKSP}{#insert zENTER}{#insert zBKSP}</UL>{#insert zzHtmlListSyn}	hluxb
+hluc -- <UL><LI><CODE>x-mark</CODE></LI></UL>	<UL>{#insert zEnterTab}<LI><CODE>{#insert zXmark}</CODE></LI>{#insert zEnterBksp}</UL>{#insert zXUp}{#insert zzHtmlListSyn}	hluc
+hloc -- <OL><LI><CODE>x-mark</CODE></LI></OL>	<OL>{#insert zEnterTab}<LI><CODE>{#insert zXmark}</CODE></LI>{#insert zEnterBksp}</OL>{#insert zXUp}{#insert zzHtmlListSyn}	hloc
+hplo -- hhp, hlo	<P><OL>{#insert zzEtrTbLiaXmkLizEtrBksp}</OL></P>{#insert zXUp}	hplo
+hplu -- hhp, hlu	<P><UL>{#insert zzEtrTbLiaXmkLizEtrBksp}</UL></P>{#insert zXUp}	hplu
+zzEtrTbLiaXmkLizEtrBksp	{#insert zENTER}{#insert zTAB}<LI>{#insert zXmark}</LI>{#insert zENTER}{#insert zBKSP}	zzEtrTbLiaXmkLizEtrBksp
+zzHtmlListSyn	{#BALLOON -title HTML lists (<UL> and <OL>) -text hl[o,u][c,x[b]]=<UL>... ([n]=null/non-null, [b]=bolded, [c] line-coded), [x]=no lines, [xb]=paste lines in cb) // h[p]l[o,u]=<OL/UL>... ([p]=surrounded by <P>) //  hll[b,c,gk]=end <LI>, start new // hli[b,c,gk]=<LI> // [b/c]=bold/coded, [gk]=w/ go-link}	zzHtmlListSyn

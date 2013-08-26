@@ -1,0 +1,5 @@
+zzFindSelSigUpRDlgRE	{#insert zFindOpenUpREXS}{#insert zjreFuncNameParams0orMore}{#insert zFindGoXSOpenRplc}	zzFindSelSigUpRDlgRE
+zzRegexInWhatGTWith	{#insert zjreJDFileFuncUrlAndDispWHAT}{#insert zRplcFieldWith}	zzRegexInWhatGTWith
+zzRplcAllRECloseMoveR	{#insert zRplcBtnAllSelHnrREClose}{#insert zRIGHT}	zzRplcAllRECloseMoveR
+zzktpgSTART	{#insert zzFindSelSigUpRDlgRE}{#insert zzRegexInWhatGTWith}	zzktpgSTART
+zzktpmgSTART	{#insert zXSelectThrUpDelMarkRDlgRE}{#insert zzRegexInWhatGTWith}	zzktpmgSTART

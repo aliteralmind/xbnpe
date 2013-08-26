@@ -1,0 +1,1 @@
+zFindNonWSWordUpREoff -- RE ends up off, direction becomes down	{#insert zFindDlgOpenUpRE}{#insert zzRegexNonWSWordPressFindNext}{#insert zFindDlgCloseDownRE}	zFindNonWSWordUpREoff

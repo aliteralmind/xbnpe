@@ -1,0 +1,19 @@
+olpwry -- olpwr, no displaY (only x-mark)	{#insert zzjlCodeOffPrekOff}{#insert zzjlObjNmL1w}{#insert zzjlDispX}{#insert zzjlObjLink_MSTR_fileSuperDirPrompt}	olpwry
+olpwy -- olpw, no displaY (only x-mark)	{#insert zzjlCodeOffPrekOff}{#insert zzjlObjNmL1w}{#insert zzjlDispX}{#insert zzjlObjLink_MSTR_noFile}	olpwy
+olpwfby -- olpwfb, no displaY (only x-mark)	{#insert zzjlCodeOffPrekOff}{#insert zzjlDispX}{#insert zzjlFileIsCBObjNmL1w}{#insert zzjlObjLink_MSTR_dirPrompt}	olpwfby
+olpwfy -- olpwf, no displaY (only x-mark)	{#insert zzjlCodeOffPrekOff}{#insert zzjlObjNmL1w}{#insert zzjlFileIsXDispX}{#insert zzjlObjLink_MSTR_noDir}	olpwfy
+olpw* -- Object Link, obj-name in Prev Word (obj in same class)	{#insert zzjlCodeOffPrekOff}{#insert zzOlpwPostPrek}	olpw
+olpwc* -- olpw, CODE-d	{#insert zzjlCodeOnPrekOff}{#insert zzOlpwPostPrek}	olpwc
+olpwf* -- olpw, object in different file (dir-file x-mark)	{#insert zzjlCodeOffPrekOff}{#insert zzOlpwfPostPrek}	olpwf
+olpwfb* -- olpwf, url-file in clipBoard (dir-prompt)	{#insert zzjlCodeOffPrekOff}{#insert zzOlpwfbPostPrek}	olpwfb
+olpwfbc* -- olpwfb, CODE-d	{#insert zzjlCodeOnPrekOff}{#insert zzOlpwfbPostPrek}	olpwfbc
+olpwfby -- olpwfb, no displaY (only x-mark)	{#insert zzjlCodeOffPrekOff}{#insert zzjlDispX}{#insert zzjlFileIsCBObjNmL1w}{#insert zzjlObjLink_MSTR_dirPrompt}	olpwfby
+olpwfc* -- olpwf, CODE-d	{#insert zzjlCodeOnPrekOff}{#insert zzOlpwfPostPrek}	olpwfc
+olpwfy -- olpwf, no displaY (only x-mark)	{#insert zzjlCodeOffPrekOff}{#insert zzjlObjNmL1w}{#insert zzjlFileIsXDispX}{#insert zzjlObjLink_MSTR_noDir}	olpwfy
+olpwfyb -- olpwfy, displaY in clipBoard	{#insert zzjlCodeOffPrekOff}{#insert zzjlDispCBFuncObjNmIsL1w}{#insert zzjlFileIsX}{#insert zzjlObjLink_MSTR_noDir}	olpwfyb
+olpwr* -- olpw, obj in super-class	{#insert zzjlCodeOffPrekOff}{#insert zzOlpwrPostPrek}	olpwr
+olpwrc* -- olpwr, CODE-d	{#insert zzjlCodeOnPrekOff}{#insert zzOlpwrPostPrek}	olpwrc
+olpwry -- olpwr, no displaY (only x-mark)	{#insert zzjlCodeOffPrekOff}{#insert zzjlObjNmL1w}{#insert zzjlDispX}{#insert zzjlObjLink_MSTR_fileSuperDirPrompt}	olpwry
+olpwryb -- olpwry, displaY in clipBoard	{#insert zzjlCodeOffPrekOff}{#insert zzjlDispCBFuncObjNmIsL1w}{#insert zzjlObjLink_MSTR_fileSuperDirPrompt}	olpwryb
+olpwy -- olpw, no displaY (only x-mark)	{#insert zzjlCodeOffPrekOff}{#insert zzjlObjNmL1w}{#insert zzjlDispX}{#insert zzjlObjLink_MSTR_noFile}	olpwy
+olpwyb -- olpwy, displaY in clipBoard	{#insert zzjlCodeOffPrekOff}{#insert zzjlDispCBFuncObjNmIsL1w}{#insert zzjlObjLink_MSTR_noFile}	olpwyb

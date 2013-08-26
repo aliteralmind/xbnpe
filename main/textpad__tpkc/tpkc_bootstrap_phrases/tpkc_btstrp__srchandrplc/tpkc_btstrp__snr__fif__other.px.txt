@@ -1,0 +1,8 @@
+zzMidRplcREElim_allLnsFifRslt_col0ThrClsPrnClnSpc	{#SETPHRASE -description zvFIND_WHAT -content {#insert zRegexFifAllLnsSrchRslt_col0ThrColonSpc} -autotext zvFIND_WHAT -folder ctvv_folder}{#insert zvFIND_WHAT}{#insert zRplcWithNOTHING}	zzMidRplcREElim_allLnsFifRslt_col0ThrClsPrnClnSpc
+zRegexFifAllLnsSrchRslt_col0ThrColonSpc -- Grp1=file-sub-dir-and-name, Grp2=line-num	^([^(\n\r]+)\(([0-9]+)\): (*ends with space*)	zRegexFifAllLnsSrchRslt_col0ThrColonSpc
+
+zzMidRplcREElim_fifSearchingForHeader	{#SETPHRASE -description zvFIND_WHAT -content Searching for: [^\n\r]+\n -autotext zvFIND_WHAT -folder ctvv_folder}{#insert zvFIND_WHAT}{#insert zRplcWithNOTHING}	zzMidRplcREElim_fifSearchingForHeader
+zzMidRplcREElim_fifFoundXOccurancesFooter	{#SETPHRASE -description zvFIND_WHAT -content Found [0-9]+ occurrence\(s\) in [0-9]+ file\(s\)\n -autotext zvFIND_WHAT -folder ctvv_folder}{#insert zvFIND_WHAT}{#insert zRplcWithNOTHING}	zzMidRplcREElim_fifFoundXOccurancesFooter
+
+
+

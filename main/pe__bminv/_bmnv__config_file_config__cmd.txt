@@ -1,0 +1,156 @@
+OUTPUT_FILE_DIR={#insert zXPROOT_DIR_AG_peBuildMinv}config_vars__cmd
+PROJECT_ABRV_1C=Mnv
+DATA_TYPE_ABRV_1C=Cmd
+
+(*LPD CV-TYPE: PRIVATE KEY*)
+Cpn1
+PNmAbrv1C
+zvCMD_PNMV_1C
+zzVldtCpn1NotES_M_self
+The MINV~Command's phrase~name abbreviation, where only the first character is uppercase ('1C'). This is the internal~only, unique identifier for each MINV~Command instance, distiguishing the phrase names of one command's configuration~variables from another's.
+
+(*LPD CV-TYPE: PUBLIC KEY*)
+Actm1
+ActionName1C
+zvACTION_NM_1C
+zzVldtActm1NotES_M_self
+The name of the action for this MINV~Cmd, where only the first character is uppercase. For example, 'Tbb', which executes '{#insert zOYz}#insert zTAB{#insert zCYz}'. This is the public (user~used) unique identifier for a MINV~Command data instance. NOTE that the user only uses the lowercase version of this action name. However, internally it is stored as 1~case.
+
+(*ALL LPD NON-KEY CV-TYPES BELOW THIS LINE*)
+
+(**)
+Cmdon
+Commands_on
+zvCOMMANDS_ON
+__VALUE_PRINTABLE__
+zzVldtCmdonOnOrES_M_self
+If command~phrases should be printed, set this to 'on'. Otherwise, ''. Sub cv~types (only used when this is 'on'): [NamePreNum], [NamePostNum]
+
+(**)
+Acton
+Actions_on
+zvACTIONS_ON
+__VALUE_PRINTABLE__
+zzVldtActonOnOrES_M_self
+If action~phrases should be printed, set this to 'on'. Otherwise ''.
+
+(**)
+Pcon
+PhraseCreators_on
+zvPHRS_CRTRS_ON
+__VALUE_PRINTABLE__
+zzVldtPconOnOrES_M_self
+zzVldtCmdActPCOnOffAtLeast1On_M_selves
+If phrase~creator phrases should be printed, set this to 'on'. Otherwise, ''. Sub cv~types: [PCActOffPst_pES], [LiteralStyle_esyc].
+
+(**)
+Nnlon
+NoNumAlias_on
+zvNO_NUM_ALIAS_ON
+__VALUE_PRINTABLE__
+zzVldtNnlonOnOrES_M_self
+If no~num~alias commands/actions/phrase~creators should be printed, set this to 'on'. Otherwise, ''. Sub cv~types: [NNLTargetNum], [NNLIntrnlCmd_yes]
+
+(**)
+Sntpon
+SNTPromptActn_on
+zvSNTP_ACTN_ON
+__VALUE_PRINTABLE__
+zzVldtSntponOnOrES_M_self
+If the Set_Number~To~Prompt~action phrase should be printed, set this to 'on'. Otherwise, ''. This is only used when actions are 'on'. Sub cv~types: [SNTPromptActnMsg].
+
+(**)
+Nnlicy
+NNLIntrnlCmd_yes
+zvNNL_INTRNLC_YES
+__VALUE_PRINTABLE__
+zzVldtNnlicyOnOrES_M_self
+Only used when [Commands_on] and [NoNumAlias_on] are both 'on', and [NNLCmdXtrnl_yes] is '' (meaning off). Should the INTERNAL No~Num~aLias Command be printed? For example, with a command such as 'zCutR#c', you may only want the numbered versions (zCutR1c, zCutR2c, ...)~~not 'zCutRc'. If the non~numbered version is wanted, set this to 'yes'. Otherwise, ''.
+
+(**)
+Nnlcxy
+NNLCmdXtrnl_yes
+zvNNLC_XTRNL_YES
+__VALUE_PRINTABLE__
+zzVldtNnlcxyOnOrES_M_self
+Only used when both [Commands_on] and [NoNumAlias_on] are 'on'. When the No~Num~aLias COMMAND is implemented eXternally from the MINV~project, then this must be 'yes' (otherwise, ''). An example of an external nnl~command is zTAB (action~name 'tbb'). zTAB, which is equal to {#insert zOYz}#TAB{#insert zCYz}, is a fundamental PhraseExpress function~key. So in the 'tbb' MINV~Command, zTAB is implemented elsewhere, but zTAB1, zTAB2, ... are implemented as MINV~Commands. So the 'no~num~alias', zTAB, is external, and zTAB1 (where 1 is [RangeMin]) is really an alias for IT (zTAB1 equals zTAB).
+
+(**)
+Mpn
+MasterPhraseNm
+zvMSTR_PHRS_NM
+__VALUE_PRINTABLE__
+zzVldtMpnNotES_M_self
+The name of the master~phrase for this MINV~Command. When commands are 'on', this should generally be equal to '{#insert zOYz}#insert [NamePreNum]{#insert zCYz}N{#insert zOYz}#insert [NamePostNum]{#insert zCYz}_M_[VarAbrv1CForCmd]'
+
+(**)
+Cgmin
+RangeMin
+zvCMD_RANGE_MIN
+__VALUE_PRINTABLE__
+zzVldtCgminGTVgmin_M_selfVgmin
+The minimum number for this MINV~Command. Must be between 1 and [RangeMax], inclusive. Must ALSO be greater~than~or~equal~to the MINV~Variable's [RangeMin].
+
+(**)
+Cgmax
+RangeMax
+zvCMD_RANGE_MAX
+__VALUE_PRINTABLE__
+zzVldtCmdRange_M_cgVg
+The maximum number for this MINV~Command. Must be greater~than~or~equal~to [RangeMin]. Must ALSO be less~than~or~equal~to the MINV~Variable's [RangeMax].
+
+(**)
+Cmpre
+NamePreNum
+zvCMD_NAME_PRE_NUM
+__VALUE_PRINTABLE__
+__VALUE_NOT_VLDTD__
+Only used when [Commands_on] 'on'. The portion of the MINV~Command's phrase~name, that exists before the number. For example, 'zTAB' for 'zTAB#'.
+
+(**)
+Cmpst
+NamePostNum
+zvCMD_NAME_POST_NUM
+__VALUE_PRINTABLE__
+zzVldtCmdName_M_cmdonNmprePst
+Only used when [Commands_on] 'on'. The portion of the MINV~Command's phrase~name, that exists after the number. For example, '' for 'zTAB#' or 'w' for 'zCopyR#w'. If empty~string is desired, set this to zzEmptyStringMarker='{#insert zOYx}#insert zzEmptyStringMarker{#insert zCYx}'.
+
+(**)
+Nnlg
+NNLTargetNum
+zvNNL_TGT_NUM
+__VALUE_PRINTABLE__
+zzVldtNNLTgtNum_M_selfNnlCmdonCgminMax
+The target number for the no~num~alias, when [NoNumAlias_on] is 'on'. This number is used in the PHRASE~BODY for the no~num~alias phrases~~not in the phrase~description (because it's a no~num~alias, see?). It can be empty~string ONLY when commands are 'on' (to set the target~num to empty~string, use zzEmptyStringMarker='{#insert zOYx}#insert zzEmptyStringMarker{#insert zCYx}')~~in this case, the no~num~alias will trigger the no~num~command, which in turn executes a specific~numbered command. Otherwise it must be between [RangeMin] and [RangeMax], inclusive.
+
+(**)
+Varv1
+VarAbrv1CForCmd
+zvVAR_ABRV_1C
+__VALUE_PRINTABLE__
+__VALUE_NOT_VLDTD__
+The MINV~Variable abbreviation used by this MINV~Command. Only the first character is uppercase. Must equal an existing MINV~Variable abbreviation. Note that this cv~types internal~variable name MUST be the same as the MINV~Variable's Vrv1 cv~type.
+
+(**)
+Pcafp
+PCActOffPst_pES
+zvPCAF_PST_PORES
+__VALUE_PRINTABLE__
+zzVldtPCPostPorES_M_selfPcActon
+Only used when [Actions_on] is '' (meaning off) and [PhraseCreators_on] is 'on'. What should the postfix of the phrase~creator names be? The only legal values are 'p' and '' (the empty~string, as indicated by zzEmptyStringMarker='{#insert zOYx}#insert zzEmptyStringMarker{#insert zCYx}'). Normally, the names of phrase~creators are the action~name, postfixed with a '{#insert zOYx}#insert zzMnvSynPstMainPhrsCrtr{#insert zCYx}', such as 'tbb{#insert zOYx}#insert zzMnvSynPstMainPhrsCrtr{#insert zCYx}' (which may create {#insert zOYz}#insert zTAB{#insert zCYz}). However, when actions are '' (off), this postfix may optionally be NOTHING. So 'tbb' would be the phrase~creator. NOTE that the names of literal~phrase creators, when used, are dependant on this setting. If this is '{#insert zOYx}#insert zzMnvSynPstMainPhrsCrtr{#insert zCYx}' ('tbb{#insert zOYx}#insert zzMnvSynPstMainPhrsCrtr{#insert zCYx}'), then the names of literal~phrase creators are '{#insert zOYx}#insert zzMnvSynPstLtrlPhrsCrtr{#insert zCYx}' ('tbb{#insert zOYx}#insert zzMnvSynPstLtrlPhrsCrtr{#insert zCYx}'). When empty~string, the literal~phrase creator postfix is '{#insert zOYx}#insert zzMnvSynPstMainPhrsCrtr{#insert zCYx}'.
+
+(**)
+Ltry
+LiteralStyle_esyc
+zvLTRL_STYL_ESYC
+__VALUE_PRINTABLE__
+zzVldtLtrlStyleOffYM_M_selfPcon
+Only used when [PhraseCreators_on] is 'on'. Should there also be literal~phrase creators? If '' (meaning off), then this should equal ''. Otherwise, which style of literal~phrases are wanted? If {#insert zOYz}#insert zTAB{#insert zCYz}, then set this to 'curly' ('Y' stands for 'curly'). If {#insert zOYz}#insert zTABp{#insert zCYz}, then set this to 'command'. These {#insert zOYx}#insert zzMnvSynPstMainPhrsCrtr{#insert zCYx}~postfixed commands (such as zTAB{#insert zOYx}#insert zzMnvSynPstMainPhrsCrtr{#insert zCYx} or zTAB3{#insert zOYx}#insert zzMnvSynPstMainPhrsCrtr{#insert zCYx}) are automatically generated.
+
+(**)
+Sntpmsg
+SNTPromptActnMsg
+zvSNT_PROMPT_MSG
+__VALUE_PRINTABLE__
+zzVldtSntpmsgNotES_M_self
+Only used when [SNTPromptActn_on] is 'on'. When the set~number~to~prompt action is is used, what should the number~prompt dialog say? This should include the ending '?' if desired. This text is used by all prompts EXCEPT '[var~name]_stPrompt'.

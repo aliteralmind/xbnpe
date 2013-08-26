@@ -1,0 +1,4 @@
+__README__	Disable this folder once the XBNPE-spot-mark project (and its pre-requisite TPKC project) is installed		(*Two tabs plus this comment, to force this phrase to be imported, and with NO autotext*)
+zXDownDelete	{#insert zXDown}{#DEL}	zXDownDelete
+zXThenLeft	{#insert zXmark}{#insert zXmarkPostGTP}	zXThenLeft
+zXUpDelete	{#insert zXUp}{#DEL}	zXUpDelete

@@ -1,0 +1,68 @@
+EditAlignCenter	zTPAlignCenter	Ealc	__ES__	10	(*NOTHING. Top command in list*)
+EditAlignJustify	zTPAlignJustify	Ealj	__ES__	10	{#insert zDOWN}
+EditAlignLeft	zTPAlignLeft	Eall	__ES__	10	{#insert zDOWN2}
+EditAlignRight	zTPAlignRight	Ealr	__ES__	10	{#insert zDOWN3}
+EditBackspace	zTPDeleteL1c	Ebksp	__ES__	5	{#insert zPGDN}{#insert zUP2}
+EditCapitalize	zTPTitleCase	Ecptl	__ES__	10	{#insert zPGDN}{#insert zUP}
+EditClearAll	zTPClearAll	Eclall	__ES__	10	{#insert zPGDN}
+EditCopy	zTPCopy	Ecp	yes	25	{#insert zPGDN}{#insert zDOWN}
+EditCopyAllFileNames	zTPCopyAllFileNames	Ecpallfnms	__ES__	50	{#insert zPGDN}{#insert zDOWN2}
+EditCopyAppend	zTPCopyAppend	Ecpapp	__ES__	50	{#insert zPGDN}{#insert zDOWN3}
+EditCopyAsHTML	zTPCopyAsHTML	Ecphtm	__ES__	10	{#insert zPGDN2}{#insert zUP2}
+EditCopyFileName	zTPCopyFileName	Ecpfnm	__ES__	10	{#insert zPGDN2}{#insert zUP}
+EditCopyLine	zTPCopyLine	Ecpln	__ES__	10	{#insert zPGDN2}
+EditCopyLineAppend	zTPCopyLineAppend	Ecplnapp	__ES__	20	{#insert zPGDN2}{#insert zDOWN}
+EditCopyTaggedLines	zTPBookmarkCopyAll	Ecpbkmlns	yes	10	{#insert zPGDN2}{#insert zDOWN2}
+EditCopyWord	zTPCopyWord	Ecpwd	__ES__	10	{#insert zPGDN2}{#insert zDOWN3}
+EditCopyWordAppend	zTPCopyWordAppend	Ecpwdapp	__ES__	20	{#insert zPGDN3}{#insert zUP2}
+EditCut	zTPCut	Ect	yes	25	{#insert zPGDN3}{#insert zUP}
+EditCutAppend	zTPCutAppend	Ectapp	__ES__	50	{#insert zPGDN3}
+EditCutLine	zTPCutLine	Ectln	__ES__	10	{#insert zPGDN3}{#insert zDOWN}
+EditCutLineAppend	zTPCutLineAppend	Ectlnapp	__ES__	20	{#insert zPGDN3}{#insert zDOWN2}
+EditCutTaggedLines	zTPBookmarkCutAll	Ectbkmlns	yes	50	{#insert zPGDN3}{#insert zDOWN3}
+EditCutWord	zTPCutWord	Ectwd	__ES__	5	{#insert zPGDN4}{#insert zUP2}
+EditCutWordAppend	zTPCutWordAppend	Ectwdapp	__ES__	10	{#insert zPGDN4}{#insert zUP}
+EditDelete	zTPDeleteR1c	Edl	__ES__	10	{#insert zPGDN4}
+EditDelLine	zTPDeleteLine	Edlln	__ES__	10	{#insert zPGDN4}{#insert zDOWN}
+EditDelLineEnd	zTPDelToEndOfLine	Edllnend	__ES__	10	{#insert zPGDN4}{#insert zDOWN2}
+EditDelSelection	zTPDelSelection	Edlsel	__ES__	25	{#insert zPGDN4}{#insert zDOWN3}
+EditDelTaggedLines	zTPBookmarkDeleteAll	Edlbkmlns	__ES__	20	{#insert zPGDN5}{#insert zUP2}
+EditDelWord	zTPDelWord	Edlwd	__ES__	5	{#insert zPGDN5}{#insert zUP}
+EditDelWordLeft	zTPDeleteL1w	Edlwdl	__ES__	5	{#insert zPGDN5}
+EditDelWordRight	zTPDeleteR1w	Edlwdr	__ES__	5	{#insert zPGDN5}{#insert zDOWN}
+EditDupLine	zTPDupLine	Edpln	yes	10	{#insert zPGDN5}{#insert zDOWN2}
+EditFillBlock	zTPFillBlock	Eflblk	__ES__	10	{#insert zPGDN5}{#insert zDOWN3}
+EditIMEreconvert	zTPIMEreconvert	Eimerc	__ES__	10	{#insert zPGDN6}{#insert zUP2}
+EditIndentLess	zTPUnindent	Eindl	__ES__	20	{#insert zPGDN6}{#insert zUP}
+EditIndentMore	zTPIndent	Eindm	__ES__	20	{#insert zPGDN6}
+EditInsertFile	zTPInsertFile	Einsf	__ES__	100	{#insert zPGDN6}{#insert zDOWN}
+EditInsertFileName	zTPInsertFileName	Einsfnm	__ES__	10	{#insert zPGDN6}{#insert zDOWN2}
+EditInsertStatistics	zTPInsertStatistics	Einssts	__ES__	10	{#insert zEND}{#insert zPGUP4}{#insert zUP3}
+EditInvertCase	zTPToggleCase	Einvcs	__ES__	10	{#insert zEND}{#insert zPGUP4}{#insert zUP2}
+EditJoinLines	zTPJoinLines	Ejlns	__ES__	10	{#insert zEND}{#insert zPGUP4}{#insert zUP}
+EditLongDate	zTPLongDate	Eldt	__ES__	10	{#insert zEND}{#insert zPGUP4}
+EditLowerCase	zTPLowerCase	Elwc	__ES__	10	{#insert zEND}{#insert zPGUP4}{#insert zDOWN}
+EditMarkClean	zTPMarkClean	Emkcln	__ES__	10	{#insert zEND}{#insert zPGUP4}{#insert zDOWN2}
+EditNewLineAfter	zTPNewLineAfter	Enwlnftr	__ES__	10	{#insert zEND}{#insert zPGUP3}{#insert zUP3}
+EditNewLineBefore	zTPNewLineBefore	Enwlnb4	__ES__	10	{#insert zEND}{#insert zPGUP3}{#insert zUP2}
+EditPageBreak	zTPPageBreak	Epgbrk	__ES__	10	{#insert zEND}{#insert zPGUP3}{#insert zUP}
+EditPaste	zTPPaste	Epst	yes	20	{#insert zEND}{#insert zPGUP3}
+EditPasteBlock	zTPPasteBlock	Epstblk	__ES__	10	{#insert zEND}{#insert zPGUP3}{#insert zDOWN}
+EditPasteHTML	zTPPasteHTML	Epsthtm	__ES__	10	{#insert zEND}{#insert zPGUP3}{#insert zDOWN2}
+EditPasteLines	zTPPasteLines	Epstlns	__ES__	10	{#insert zEND}{#insert zPGUP2}{#insert zUP3}
+EditPopupContext	zTPPopupContext	Epopcntxt	__ES__	10	{#insert zEND}{#insert zPGUP2}{#insert zUP2}
+EditPopupDateTime	zTPPopupDateTime	Epopdttm	__ES__	10	{#insert zEND}{#insert zPGUP2}{#insert zUP}
+EditRedo	zTPRedo	Erdo	__ES__	10	{#insert zEND}{#insert zPGUP2}
+EditRedoAll	zTPRedoAll	Erdoall	__ES__	10	{#insert zEND}{#insert zPGUP2}{#insert zDOWN}
+EditReformat	zTPReformatSelection	Erfmt	__ES__	10	{#insert zEND}{#insert zPGUP2}{#insert zDOWN2}
+EditSentenceCase	zTPSentenceCase	Esntnccs	__ES__	10	{#insert zEND}{#insert zPGUP}{#insert zUP3}
+EditShortDate	zTPShortDate	Eshrtdt	__ES__	10	{#insert zEND}{#insert zPGUP}{#insert zUP2}
+EditSplitLines	zTPSplitLines	Espltlns	__ES__	10	{#insert zEND}{#insert zPGUP}{#insert zUP}
+EditTime	zTPTime	Etime	__ES__	10	{#insert zEND}{#insert zPGUP}
+EditTranspose	zTPTranspose	Etrnsps	__ES__	10	{#insert zEND}{#insert zPGUP}{#insert zDOWN}
+EditTransposeWords	zTPTransposeWords	Etrnspswds	__ES__	10	{#insert zEND}{#insert zPGUP}{#insert zDOWN2}
+EditUndo	zTPUndo	Eudo	__ES__	10	{#insert zEND}{#insert zUP3}
+EditUndoAll	zTPUndoAll	Eudoa	__ES__	10	{#insert zEND}{#insert zUP2}
+EditUpperCase	zTPUpperCase	Euprcs	__ES__	10	{#insert zEND}{#insert zUP}
+EmptyClipboard	zTPEmptyClipboard	Emtcb	__ES__	10	{#insert zEND}
+

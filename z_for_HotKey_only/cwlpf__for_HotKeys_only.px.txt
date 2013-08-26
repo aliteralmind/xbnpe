@@ -1,0 +1,1 @@
+zPasteSpaceGTStart_forHotKeyOnly -- zPasteSpaceGTStart ALT KC [zCApKK]	{#insert zPasteSpaceGTStart}	zPasteSpaceGTStart_forHotKeyOnly

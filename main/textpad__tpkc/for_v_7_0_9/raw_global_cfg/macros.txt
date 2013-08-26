@@ -1,0 +1,5 @@
+MacroMultiplay	zTPMacroMultiplay	Mcrmply	__ES__	10	{#insert zMM}
+MacroPause	zTPMacroPause	Mcrpaus	__ES__	10	{#NONE -chars m -count 2}{#insert z5ThnTSlp}
+MacroPlay	zTPMacroPlay	Mcrply	__ES__	10	{#NONE -chars m -count 3}{#insert z5ThnTSlp}
+MacroRecord	zTPMacroRecordToggle	Mcrrcrd	__ES__	10	{#NONE -chars m -count 4}{#insert z5ThnTSlp}
+MacroSave	zTPMacroSaveDlgOpen	Mcrsv	__ES__	10	{#NONE -chars m -count 5}{#insert z5ThnTSlp}

@@ -1,0 +1,8 @@
+zTpkcEditSentenceCaseAbrv1C	Esntnccs	zTpkcEditSentenceCaseAbrv1C
+zTpkcEsntnccsCmdNameTC	EditSentenceCase	zTpkcEsntnccsCmdNameTC
+zTpkcEsntnccsDfltPhrsNm	zTPSentenceCase	zTpkcEsntnccsDfltPhrsNm
+zTpkcEsntnccsCatForCmdAbrvLC	edit	zTpkcEsntnccsCatForCmdAbrvLC
+zTpkcEsntnccsCmdType_mcrTl		zTpkcEsntnccsCmdType_mcrTl
+zTpkcEsntnccsIsBtstrp_yes		zTpkcEsntnccsIsBtstrp_yes
+zTpkcEsntnccsDfltPostKcSlpMils	10	zTpkcEsntnccsDfltPostKcSlpMils
+zTpkcEsntnccsStpsFrmCmdListTop	{#insert zEND}{#insert zPGUP}{#insert zUP3}	zTpkcEsntnccsStpsFrmCmdListTop

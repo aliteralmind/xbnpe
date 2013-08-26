@@ -1,0 +1,12 @@
+zFindBtnNext	{#sleep 25}{#insert zApFF}{#sleep 25}	zFindBtnNext
+zFindBtnNext2	{#insert zFindBtnNext}{#insert zFindBtnNext}	zFindBtnNext2
+zFindBtnNext3	{#insert zFindBtnNext2}{#insert zFindBtnNext}	zFindBtnNext3
+zFindBtnNext4	{#insert zFindBtnNext3}{#insert zFindBtnNext}	zFindBtnNext4
+zFindBtnNext5	{#insert zFindBtnNext4}{#insert zFindBtnNext}	zFindBtnNext5
+zFindREBtnNextRE -- toggle RE, go, toggle RE	{#insert zFindFlagRETglRAW}{#insert zFindBtnNext}{#insert zFindFlagRETgl}	zFindREBtnNextRE
+zFindWWBtnNextWW -- toggle WW, go, toggle WW	{#insert zFindFlagWWTglRAW}{#insert zFindBtnNext}{#insert zFindFlagWWTgl}	zFindWWBtnNextWW
+zFindXSBtnNextXS -- toggle XS, go, toggle XS	{#insert zFindFlagXSTglRAW}{#insert zFindBtnNext}{#insert zFindFlagXSTgl}	zFindXSBtnNextXS
+zFindMCBtnNextMC -- toggle MC, go, toggle MC	{#insert zFindFlagMCTglRAW}{#insert zFindBtnNext}{#insert zFindFlagMCTgl}	zFindMCBtnNextMC
+zFindFieldWhat	{#insert zApII}{#sleep 25}	zFindFieldWhat
+zFindBtnMarkAll	{#sleep 250}{#insert zApMM}{#sleep 250}	zFindBtnMarkAll
+zFindBtnMarkAllThnEtr -(**)-	(*Presses enter so the potential no-matches-found dialog is dismissed. When matches ARE found, this simply goes to the next match, which should hopefully not mess anything up.*){#insert zFindBtnMarkAll}{#insert zENTER}	zFindBtnMarkAllThnEtr

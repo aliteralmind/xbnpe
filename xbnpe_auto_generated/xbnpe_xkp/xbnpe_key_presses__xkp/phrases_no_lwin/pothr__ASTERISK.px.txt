@@ -1,0 +1,8 @@
+ASTERISK -- zASTERISK	{#NONE -chars *}{#insert zTSlp}	zASTERISK
+Alt+ASTERISK -- zApASTERISK	{#ALT -chars *}{#insert zTSlp}	zApASTERISK
+Alt+Shift+ASTERISK -- zASpASTERISK	{#ALT {#SHIFT -chars *}}{#insert zTSlp}	zASpASTERISK
+Ctrl+ASTERISK -- zCpASTERISK	{#CTRL -chars *}{#insert zTSlp}	zCpASTERISK
+Ctrl+Alt+ASTERISK -- zCApASTERISK	{#CTRL {#ALT -chars *}}{#insert zTSlp}	zCApASTERISK
+Ctrl+Alt+Shift+ASTERISK -- zCASpASTERISK	{#CTRL {#ALT {#SHIFT -chars *}}}{#insert zTSlp}	zCASpASTERISK
+Ctrl+Shift+ASTERISK -- zCSpASTERISK	{#CTRL {#SHIFT -chars *}}{#insert zTSlp}	zCSpASTERISK
+Shift+ASTERISK -- zSpASTERISK	{#SHIFT -chars *}{#insert zTSlp}	zSpASTERISK

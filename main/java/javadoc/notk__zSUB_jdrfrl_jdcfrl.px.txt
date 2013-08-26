@@ -1,0 +1,9 @@
+zzClsCdPVDownWW	</CODE></P>{#insert zzVDnDelWW}	zzClsCdPVDownWW
+zzClsCdVDownWW	</CODE>{#insert zzVDnDelWW}	zzClsCdVDownWW
+zzPasteBksp	{#insert zTPPaste}{#insert zBKSP}(*<-- Get rid of the semi-colon*)	zzPasteBksp
+zzSelLineGTPrvFnUp2EndEnt2	{#insert zSelCopyToLineEnd}{#insert zRIGHT}{#insert zVmark}{#insert zjGTPrevFunc}{#insert zUP2}{#insert zEND}{#insert zENTER2}	zzSelLineGTPrvFnUp2EndEnt2
+zzVDnDelWW	{#insert zVDownDelete}{#insert zTPToggleWW}	zzVDnDelWW
+zzWWHmGtfcSelLineGTPrvFnUp2Calls1LPara	{#insert zzWWHmGtfcSelLineGTPrvFnUp2OpenPCalls} <CODE>{#insert zzPasteBksp}	zzWWHmGtfcSelLineGTPrvFnUp2Calls1LPara
+zzWWHmGtfcSelLineGTPrvFnUp2CallsPara	{#insert zzWWHmGtfcSelLineGTPrvFnUp2OpenPCalls}{#insert zENTER}<BR> &nbsp; &nbsp; <CODE>{#insert zzPasteBksp}	zzWWHmGtfcSelLineGTPrvFnUp2CallsPara
+zzWWHmGtfcSelLineGTPrvFnUp2OpenPCalls	{#insert zTPToggleWW}{#insert zHOME}{#insert gtfc}{#insert zzSelLineGTPrvFnUp2EndEnt2}<P>Calls	zzWWHmGtfcSelLineGTPrvFnUp2OpenPCalls
+zzWWHmMr2l1wSelToLineEndGTPrvFnUp2JdrLine	{#insert zTPToggleWW}{#insert zHOME}{#insert zMoveR2L1w}{#insert zzSelLineGTPrvFnUp2EndEnt2}@return  <CODE>{#insert zzPasteBksp}	zzWWHmMr2l1wSelToLineEndGTPrvFnUp2JdrLine

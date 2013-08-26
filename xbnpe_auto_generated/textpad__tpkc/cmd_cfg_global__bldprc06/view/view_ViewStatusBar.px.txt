@@ -1,0 +1,8 @@
+zTpkcViewStatusBarAbrv1C	Vstsb	zTpkcViewStatusBarAbrv1C
+zTpkcVstsbCmdNameTC	ViewStatusBar	zTpkcVstsbCmdNameTC
+zTpkcVstsbDfltPhrsNm	zTPViewStatusBar	zTpkcVstsbDfltPhrsNm
+zTpkcVstsbCatForCmdAbrvLC	view	zTpkcVstsbCatForCmdAbrvLC
+zTpkcVstsbCmdType_mcrTl		zTpkcVstsbCmdType_mcrTl
+zTpkcVstsbIsBtstrp_yes		zTpkcVstsbIsBtstrp_yes
+zTpkcVstsbDfltPostKcSlpMils	10	zTpkcVstsbDfltPostKcSlpMils
+zTpkcVstsbStpsFrmCmdListTop	{#insert zEND}{#insert zPGUP}{#insert zDOWN2}	zTpkcVstsbStpsFrmCmdListTop

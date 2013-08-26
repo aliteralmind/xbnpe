@@ -1,0 +1,9 @@
+zDeleteAllEmptyLines -- All in document (scope=TD).	{#insert zFindOpenRE}^${#insert zFindMarkAllRECloseDelMarked}	zDeleteAllEmptyLines
+zDeleteAllEmptyLinesAddToEnd	{#insert zDeleteAllEmptyLines}{#insert zGTDocBottom}{#insert zENTER}	zDeleteAllEmptyLinesAddToEnd
+zRplcSelEmptyLines	{#insert zRplcDlgSelRE}{#insert zmrgREDelSelEmptyLinesGo}{#insert zRplcDlgREClose}	zRplcSelEmptyLines
+zRplcSelEmptyLines2	{#insert zRplcDlgSelRE}{#insert zmrgREDelSelEmptyLinesGo2}{#insert zRplcDlgREClose}	zRplcSelEmptyLines2
+zRplcSelEmptyLines3	{#insert zRplcDlgSelRE}{#insert zmrgREDelSelEmptyLinesGo3}{#insert zRplcDlgREClose}	zRplcSelEmptyLines3
+zmrgREDelSelEmptyLinesGo	{#insert zmrreDelEmptyLines}{#insert zRplcBtnAllSelHnr}	zmrgREDelSelEmptyLinesGo
+zmrgREDelSelEmptyLinesGo2	{#insert zmrgREDelSelEmptyLinesGo}{#insert zRplcBtnAllSelHnr}	zmrgREDelSelEmptyLinesGo2
+zmrgREDelSelEmptyLinesGo3	{#insert zmrgREDelSelEmptyLinesGo2}{#insert zRplcBtnAllSelHnr}	zmrgREDelSelEmptyLinesGo3
+zmrreDelEmptyLines	\R[ \t]*\R{#insert zRplcFieldWith}\R	zmrreDelEmptyLines

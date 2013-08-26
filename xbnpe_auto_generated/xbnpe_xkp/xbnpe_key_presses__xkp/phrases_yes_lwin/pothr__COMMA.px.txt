@@ -1,0 +1,8 @@
+Alt+LWin+COMMA -- zALpCOMMA	{#ALT {#LWIN -chars ,}}{#insert zTSlp}	zALpCOMMA
+Alt+Shift+LWin+COMMA -- zASLpCOMMA	{#ALT {#SHIFT {#LWIN -chars ,}}}{#insert zTSlp}	zASLpCOMMA
+Ctrl+Alt+LWin+COMMA -- zCALpCOMMA	{#CTRL {#ALT {#LWIN -chars ,}}}{#insert zTSlp}	zCALpCOMMA
+Ctrl+Alt+Shift+LWin+COMMA -- zCASLpCOMMA	{#CTRL {#ALT {#SHIFT {#LWIN -chars ,}}}}{#insert zTSlp}	zCASLpCOMMA
+Ctrl+LWin+COMMA -- zCLpCOMMA	{#CTRL {#LWIN -chars ,}}{#insert zTSlp}	zCLpCOMMA
+Ctrl+Shift+LWin+COMMA -- zCSLpCOMMA	{#CTRL {#SHIFT {#LWIN -chars ,}}}{#insert zTSlp}	zCSLpCOMMA
+LWin+COMMA -- zLpCOMMA	{#LWIN -chars ,}{#insert zTSlp}	zLpCOMMA
+Shift+LWin+COMMA -- zSLpCOMMA	{#SHIFT {#LWIN -chars ,}}{#insert zTSlp}	zSLpCOMMA

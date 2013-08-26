@@ -1,0 +1,110 @@
+zTpkcEditAlignCenterNbsKcCount	0	zTpkcEditAlignCenterNbsKcCount
+zTpkcEditAlignJustifyNbsKcCount	0	zTpkcEditAlignJustifyNbsKcCount
+zTpkcEditAlignLeftNbsKcCount	0	zTpkcEditAlignLeftNbsKcCount
+zTpkcEditAlignRightNbsKcCount	1	zTpkcEditAlignRightNbsKcCount
+zTpkcEditAlignRightNbsKcEsc1	\\\{#insert zCSpEE\\\}\\\{#sleep 10\\\}	zTpkcEditAlignRightNbsKcEsc1
+zTpkcEditBackspaceNbsKcCount	4	zTpkcEditBackspaceNbsKcCount
+zTpkcEditBackspaceNbsKcEsc1	\\\{#insert zSpBKSP\\\}\\\{#sleep 5\\\}	zTpkcEditBackspaceNbsKcEsc1
+zTpkcEditBackspaceNbsKcEsc2	\\\{#insert zCSpWW\\\}\\\{#sleep 5\\\}	zTpkcEditBackspaceNbsKcEsc2
+zTpkcEditBackspaceNbsKcEsc3	\\\{#insert zBKSP\\\}\\\{#sleep 5\\\}	zTpkcEditBackspaceNbsKcEsc3
+zTpkcEditBackspaceNbsKcEsc4	\\\{#insert zCApBKSP\\\}\\\{#sleep 5\\\}	zTpkcEditBackspaceNbsKcEsc4
+zTpkcEditCapitalizeNbsKcCount	2	zTpkcEditCapitalizeNbsKcCount
+zTpkcEditCapitalizeNbsKcEsc1	\\\{#insert zCSpUU\\\}\\\{#sleep 10\\\}	zTpkcEditCapitalizeNbsKcEsc1
+zTpkcEditCapitalizeNbsKcEsc2	\\\{#insert zCASpTWO\\\}\\\{#sleep 10\\\}	zTpkcEditCapitalizeNbsKcEsc2
+zTpkcEditClearAllNbsKcCount	0	zTpkcEditClearAllNbsKcCount
+zTpkcEditCopyNbsKcCount	1	zTpkcEditCopyNbsKcCount
+zTpkcEditCopyNbsKcEsc1	\\\{#insert zCpINS\\\}\\\{#sleep 25\\\}	zTpkcEditCopyNbsKcEsc1
+zTpkcEditCopyAllFileNamesNbsKcCount	0	zTpkcEditCopyAllFileNamesNbsKcCount
+zTpkcEditCopyAppendNbsKcCount	2	zTpkcEditCopyAppendNbsKcCount
+zTpkcEditCopyAppendNbsKcEsc1	\\\{#insert zCSpCC\\\}\\\{#sleep 50\\\}	zTpkcEditCopyAppendNbsKcEsc1
+zTpkcEditCopyAppendNbsKcEsc2	\\\{#insert zApJJ\\\}\\\{#sleep 50\\\}	zTpkcEditCopyAppendNbsKcEsc2
+zTpkcEditCopyAsHTMLNbsKcCount	0	zTpkcEditCopyAsHTMLNbsKcCount
+zTpkcEditCopyFileNameNbsKcCount	1	zTpkcEditCopyFileNameNbsKcCount
+zTpkcEditCopyFileNameNbsKcEsc1	\\\{#insert zCSpFF\\\}\\\{#sleep 10\\\}	zTpkcEditCopyFileNameNbsKcEsc1
+zTpkcEditCopyLineNbsKcCount	0	zTpkcEditCopyLineNbsKcCount
+zTpkcEditCopyLineAppendNbsKcCount	0	zTpkcEditCopyLineAppendNbsKcCount
+zTpkcEditCopyTaggedLinesNbsKcCount	0	zTpkcEditCopyTaggedLinesNbsKcCount
+zTpkcEditCopyWordNbsKcCount	0	zTpkcEditCopyWordNbsKcCount
+zTpkcEditCopyWordAppendNbsKcCount	0	zTpkcEditCopyWordAppendNbsKcCount
+zTpkcEditCutNbsKcCount	2	zTpkcEditCutNbsKcCount
+zTpkcEditCutNbsKcEsc1	\\\{#insert zSpDEL\\\}\\\{#sleep 25\\\}	zTpkcEditCutNbsKcEsc1
+zTpkcEditCutNbsKcEsc2	\\\{#insert zCpXX\\\}\\\{#sleep 25\\\}	zTpkcEditCutNbsKcEsc2
+zTpkcEditCutAppendNbsKcCount	2	zTpkcEditCutAppendNbsKcCount
+zTpkcEditCutAppendNbsKcEsc1	\\\{#insert zCSpXX\\\}\\\{#sleep 50\\\}	zTpkcEditCutAppendNbsKcEsc1
+zTpkcEditCutAppendNbsKcEsc2	\\\{#insert zApQQ\\\}\\\{#sleep 50\\\}	zTpkcEditCutAppendNbsKcEsc2
+zTpkcEditCutLineNbsKcCount	0	zTpkcEditCutLineNbsKcCount
+zTpkcEditCutLineAppendNbsKcCount	0	zTpkcEditCutLineAppendNbsKcCount
+zTpkcEditCutTaggedLinesNbsKcCount	0	zTpkcEditCutTaggedLinesNbsKcCount
+zTpkcEditCutWordNbsKcCount	0	zTpkcEditCutWordNbsKcCount
+zTpkcEditCutWordAppendNbsKcCount	0	zTpkcEditCutWordAppendNbsKcCount
+zTpkcEditDeleteNbsKcCount	2	zTpkcEditDeleteNbsKcCount
+zTpkcEditDeleteNbsKcEsc1	\\\{#insert zCSpVV\\\}\\\{#sleep 10\\\}	zTpkcEditDeleteNbsKcEsc1
+zTpkcEditDeleteNbsKcEsc2	\\\{#insert zDEL\\\}\\\{#sleep 10\\\}	zTpkcEditDeleteNbsKcEsc2
+zTpkcEditDelLineNbsKcCount	1	zTpkcEditDelLineNbsKcCount
+zTpkcEditDelLineNbsKcEsc1	\\\{#insert zCpFF\\\}\\\{#sleep 10\\\}	zTpkcEditDelLineNbsKcEsc1
+zTpkcEditDelLineEndNbsKcCount	1	zTpkcEditDelLineEndNbsKcCount
+zTpkcEditDelLineEndNbsKcEsc1	\\\{#insert zCSpDEL\\\}\\\{#sleep 10\\\}	zTpkcEditDelLineEndNbsKcEsc1
+zTpkcEditDelSelectionNbsKcCount	0	zTpkcEditDelSelectionNbsKcCount
+zTpkcEditDelTaggedLinesNbsKcCount	1	zTpkcEditDelTaggedLinesNbsKcCount
+zTpkcEditDelTaggedLinesNbsKcEsc1	\\\{#insert zCASpDEL\\\}\\\{#sleep 20\\\}	zTpkcEditDelTaggedLinesNbsKcEsc1
+zTpkcEditDelWordNbsKcCount	0	zTpkcEditDelWordNbsKcCount
+zTpkcEditDelWordLeftNbsKcCount	2	zTpkcEditDelWordLeftNbsKcCount
+zTpkcEditDelWordLeftNbsKcEsc1	\\\{#insert zCSpMM\\\}\\\{#sleep 5\\\}	zTpkcEditDelWordLeftNbsKcEsc1
+zTpkcEditDelWordLeftNbsKcEsc2	\\\{#insert zCpBKSP\\\}\\\{#sleep 5\\\}	zTpkcEditDelWordLeftNbsKcEsc2
+zTpkcEditDelWordRightNbsKcCount	2	zTpkcEditDelWordRightNbsKcCount
+zTpkcEditDelWordRightNbsKcEsc1	\\\{#insert zCSpZZ\\\}\\\{#sleep 5\\\}	zTpkcEditDelWordRightNbsKcEsc1
+zTpkcEditDelWordRightNbsKcEsc2	\\\{#insert zCpDEL\\\}\\\{#sleep 5\\\}	zTpkcEditDelWordRightNbsKcEsc2
+zTpkcEditDupLineNbsKcCount	0	zTpkcEditDupLineNbsKcCount
+zTpkcEditFillBlockNbsKcCount	0	zTpkcEditFillBlockNbsKcCount
+zTpkcEditIMEreconvertNbsKcCount	0	zTpkcEditIMEreconvertNbsKcCount
+zTpkcEditIndentLessNbsKcCount	2	zTpkcEditIndentLessNbsKcCount
+zTpkcEditIndentLessNbsKcEsc1	\\\{#insert zCSpCOMMA\\\}\\\{#sleep 20\\\}	zTpkcEditIndentLessNbsKcEsc1
+zTpkcEditIndentLessNbsKcEsc2	\\\{#insert zCpF9\\\}\\\{#sleep 20\\\}	zTpkcEditIndentLessNbsKcEsc2
+zTpkcEditIndentMoreNbsKcCount	2	zTpkcEditIndentMoreNbsKcCount
+zTpkcEditIndentMoreNbsKcEsc1	\\\{#insert zCSpPERIOD\\\}\\\{#sleep 20\\\}	zTpkcEditIndentMoreNbsKcEsc1
+zTpkcEditIndentMoreNbsKcEsc2	\\\{#insert zCpF10\\\}\\\{#sleep 20\\\}	zTpkcEditIndentMoreNbsKcEsc2
+zTpkcEditInsertFileNbsKcCount	0	zTpkcEditInsertFileNbsKcCount
+zTpkcEditInsertFileNameNbsKcCount	0	zTpkcEditInsertFileNameNbsKcCount
+zTpkcEditInsertStatisticsNbsKcCount	0	zTpkcEditInsertStatisticsNbsKcCount
+zTpkcEditInvertCaseNbsKcCount	1	zTpkcEditInvertCaseNbsKcCount
+zTpkcEditInvertCaseNbsKcEsc1	\\\{#insert zCASpONE\\\}\\\{#sleep 10\\\}	zTpkcEditInvertCaseNbsKcEsc1
+zTpkcEditJoinLinesNbsKcCount	0	zTpkcEditJoinLinesNbsKcCount
+zTpkcEditLongDateNbsKcCount	0	zTpkcEditLongDateNbsKcCount
+zTpkcEditLowerCaseNbsKcCount	1	zTpkcEditLowerCaseNbsKcCount
+zTpkcEditLowerCaseNbsKcEsc1	\\\{#insert zApTWO\\\}\\\{#sleep 10\\\}	zTpkcEditLowerCaseNbsKcEsc1
+zTpkcEditMarkCleanNbsKcCount	0	zTpkcEditMarkCleanNbsKcCount
+zTpkcEditNewLineAfterNbsKcCount	0	zTpkcEditNewLineAfterNbsKcCount
+zTpkcEditNewLineBeforeNbsKcCount	0	zTpkcEditNewLineBeforeNbsKcCount
+zTpkcEditPageBreakNbsKcCount	1	zTpkcEditPageBreakNbsKcCount
+zTpkcEditPageBreakNbsKcEsc1	\\\{#insert zCSpLL\\\}\\\{#sleep 10\\\}	zTpkcEditPageBreakNbsKcEsc1
+zTpkcEditPasteNbsKcCount	1	zTpkcEditPasteNbsKcCount
+zTpkcEditPasteNbsKcEsc1	\\\{#insert zSpINS\\\}\\\{#sleep 20\\\}	zTpkcEditPasteNbsKcEsc1
+zTpkcEditPasteBlockNbsKcCount	0	zTpkcEditPasteBlockNbsKcCount
+zTpkcEditPasteHTMLNbsKcCount	0	zTpkcEditPasteHTMLNbsKcCount
+zTpkcEditPasteLinesNbsKcCount	0	zTpkcEditPasteLinesNbsKcCount
+zTpkcEditPopupContextNbsKcCount	1	zTpkcEditPopupContextNbsKcCount
+zTpkcEditPopupContextNbsKcEsc1	\\\{#insert zSpF10\\\}\\\{#sleep 10\\\}	zTpkcEditPopupContextNbsKcEsc1
+zTpkcEditPopupDateTimeNbsKcCount	0	zTpkcEditPopupDateTimeNbsKcCount
+zTpkcEditRedoNbsKcCount	1	zTpkcEditRedoNbsKcCount
+zTpkcEditRedoNbsKcEsc1	\\\{#insert zApSEMI_COLON\\\}\\\{#sleep 10\\\}	zTpkcEditRedoNbsKcEsc1
+zTpkcEditRedoAllNbsKcCount	1	zTpkcEditRedoAllNbsKcCount
+zTpkcEditRedoAllNbsKcEsc1	\\\{#insert zCSpYY\\\}\\\{#sleep 10\\\}	zTpkcEditRedoAllNbsKcEsc1
+zTpkcEditReformatNbsKcCount	2	zTpkcEditReformatNbsKcCount
+zTpkcEditReformatNbsKcEsc1	\\\{#insert zCSpJJ\\\}\\\{#sleep 10\\\}	zTpkcEditReformatNbsKcEsc1
+zTpkcEditReformatNbsKcEsc2	\\\{#insert zCASpF11\\\}\\\{#sleep 10\\\}	zTpkcEditReformatNbsKcEsc2
+zTpkcEditSentenceCaseNbsKcCount	0	zTpkcEditSentenceCaseNbsKcCount
+zTpkcEditShortDateNbsKcCount	0	zTpkcEditShortDateNbsKcCount
+zTpkcEditSplitLinesNbsKcCount	1	zTpkcEditSplitLinesNbsKcCount
+zTpkcEditSplitLinesNbsKcEsc1	\\\{#insert zCApJJ\\\}\\\{#sleep 10\\\}	zTpkcEditSplitLinesNbsKcEsc1
+zTpkcEditTimeNbsKcCount	0	zTpkcEditTimeNbsKcCount
+zTpkcEditTransposeNbsKcCount	0	zTpkcEditTransposeNbsKcCount
+zTpkcEditTransposeWordsNbsKcCount	1	zTpkcEditTransposeWordsNbsKcCount
+zTpkcEditTransposeWordsNbsKcEsc1	\\\{#insert zCSpTT\\\}\\\{#sleep 10\\\}	zTpkcEditTransposeWordsNbsKcEsc1
+zTpkcEditUndoNbsKcCount	1	zTpkcEditUndoNbsKcCount
+zTpkcEditUndoNbsKcEsc1	\\\{#insert zCpSEMI_COLON\\\}\\\{#sleep 10\\\}	zTpkcEditUndoNbsKcEsc1
+zTpkcEditUndoAllNbsKcCount	1	zTpkcEditUndoAllNbsKcCount
+zTpkcEditUndoAllNbsKcEsc1	\\\{#insert zCASpZZ\\\}\\\{#sleep 10\\\}	zTpkcEditUndoAllNbsKcEsc1
+zTpkcEditUpperCaseNbsKcCount	2	zTpkcEditUpperCaseNbsKcCount
+zTpkcEditUpperCaseNbsKcEsc1	\\\{#insert zCpUU\\\}\\\{#sleep 10\\\}	zTpkcEditUpperCaseNbsKcEsc1
+zTpkcEditUpperCaseNbsKcEsc2	\\\{#insert zApONE\\\}\\\{#sleep 10\\\}	zTpkcEditUpperCaseNbsKcEsc2
+zTpkcEmptyClipboardNbsKcCount	0	zTpkcEmptyClipboardNbsKcCount

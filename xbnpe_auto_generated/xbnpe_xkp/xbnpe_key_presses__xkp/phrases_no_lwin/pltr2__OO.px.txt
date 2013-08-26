@@ -1,0 +1,8 @@
+OO -- zOO	{#NONE -chars o}{#insert zTSlp}	zOO
+Alt+OO -- zApOO	{#ALT -chars o}{#insert zTSlp}	zApOO
+Alt+Shift+OO -- zASpOO	{#ALT {#SHIFT -chars o}}{#insert zTSlp}	zASpOO
+Ctrl+OO -- zCpOO	{#CTRL -chars o}{#insert zTSlp}	zCpOO
+Ctrl+Alt+OO -- zCApOO	{#CTRL {#ALT -chars o}}{#insert zTSlp}	zCApOO
+Ctrl+Alt+Shift+OO -- zCASpOO	{#CTRL {#ALT {#SHIFT -chars o}}}{#insert zTSlp}	zCASpOO
+Ctrl+Shift+OO -- zCSpOO	{#CTRL {#SHIFT -chars o}}{#insert zTSlp}	zCSpOO
+Shift+OO -- zSpOO	{#SHIFT -chars o}{#insert zTSlp}	zSpOO

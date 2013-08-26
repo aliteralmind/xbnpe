@@ -1,0 +1,42 @@
+(*
+*DUPLICATE* this document, unindent every line in it, then import it with the following settings:
+- No prefix
+- Manual confirmation
+**All these phrases must be manually maintained.
+*)
+(*
+Required by phrase-creator-ddmenu-utils...START
+PM_DDMENU_DIR_ID=snr
+Required by phrase-creator-ddmenu-utils...END
+*)
+(*
+FROM
+...\xbnpe\tpkc\tpkc_bootstrap_phrases\zphrase_creator_pop_up_heirarchies\xbnpe_phrase_creator_popup_heirarchy_base.px.txt
+
+Phrase-creators: XBN-PhraseExpress -- Call 'xh'   .   zXbnpeCmdPopupRoot
+Phrase-creators: Search & replace -- xhs   .   xh
+SNR: Replace -- xhsr   .   xhs*)xhsrb
+(*			Buttons -- xhsrb   .   xhsr*)xhsrb
+(*          zRplcBtnNext -- xhsrbn   .   xhsrb*)
+zRplcBtnNext2 [2-5]	\\\{#insert zRplcBtnNext2\\\}	xhsrbn
+zRplcBtnNextClose	\\\{#insert zRplcBtnNextClose\\\}	xhsrbn
+zRplcBtnNext_M_rnxtc	\\\{#insert zRplcBtnNext_M_rnxtc\\\}	xhsrbnxhsrb
+zRplcBtnFindThenRplc	\\\{#insert zRplcBtnFindThenRplc\\\}	xhsrb
+(*       Close -- xhsrc   .   xhsr*)
+zRplcDlgCloseMC	\\\{#insert zRplcDlgCloseMC\\\}	xhsrc
+zRplcDlgCloseMCRE	\\\{#insert zRplcDlgCloseMCRE\\\}	xhsrc
+zRplcDlgCloseMCWW	\\\{#insert zRplcDlgCloseMCWW\\\}	xhsrc
+zRplcDlgCloseRE	\\\{#insert zRplcDlgCloseRE\\\}	xhsrc
+zRplcDlgCloseWW	\\\{#insert zRplcDlgCloseWW\\\}	xhsrc
+(*       Open -- xhsro   .   xhsr*)
+zRplcDlgOpenForceWW	\\\{#insert zRplcDlgOpenForceWW\\\}{#insert zRplcWAndCloseYNPrompt}	xhsro
+zRplcDlgOpenMC* -- xhsrom	\\\{#insert zRplcDlgOpenMC\\\}{#insert zRplcWAndCloseYNPrompt}	xhsro
+zRplcDlgOpenMCForceWW	\\\{#insert zRplcDlgOpenMCForceWW\\\}{#insert zRplcWAndCloseYNPrompt}	xhsrom
+zRplcDlgOpenMCOnly	\\\{#insert zRplcDlgOpenMCOnly\\\}{#insert zRplcWAndCloseYNPrompt}	xhsrom
+zRplcDlgOpenMCRE	\\\{#insert zRplcDlgOpenMCRE\\\}{#insert zRplcWAndCloseYNPrompt}	xhsrom
+zRplcDlgOpenMCWW	\\\{#insert zRplcDlgOpenMCWW\\\}{#insert zRplcWAndCloseYNPrompt}	xhsrom
+zRplcDlgOpenRE	\\\{#insert zRplcDlgOpenRE\\\}{#insert zRplcWAndCloseYNPrompt}	xhsro
+zRplcDlgOpenWW	\\\{#insert zRplcDlgOpenWW\\\}{#insert zRplcWAndCloseYNPrompt}	xhsro
+(*       Other -- xhsrt   .   xhsr*)
+fwhatp	(*actnonly=fwhatp*){#SETPHRASE -description zvACTN_NM -content fwhatp -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhsr
+rwithp	(*actnonly=rwithp*){#SETPHRASE -description zvACTN_NM -content rwithp -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhsr

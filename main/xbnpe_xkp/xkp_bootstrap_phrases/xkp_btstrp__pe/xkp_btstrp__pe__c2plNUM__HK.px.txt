@@ -1,0 +1,22 @@
+(*
+   Required by phrase-creator-ddmenu-utils...START
+      PM_DDMENU_DIRID_FILENMPHRSNM_HDRAUTOTXT=tpkc/zzPmdmFNmPreTpkcPex/xhpc
+   Required by phrase-creator-ddmenu-utils...END
+*)
+c2pl -(**)- Compress two-line phrase to importable single-line	(*For example, this changes 'zPhraseName -- Description of the phrase[newline]This is the body of the phrase' --> 'zPhraseName -- Description of the phrase[tab]This is the body of the phrase[tab]zPhraseName'.  //  WARNING: Uses word-wrap-state*){#insert zWWOffHmSvStateMaybeRecheck}{#insert zzWWoffC2plRAW}{#insert zzRevertWWC2plSyntax}	c2pl
+c2pl10 -- c2pl, 10 times	{#insert zWWOffHmSvStateMaybeRecheck}{#LOOP {#insert zzWWoffC2plRAW} -count 10}{#insert zzRevertWWC2plSyntax}	c2pl10
+c2pl2 -- c2pl, 2 times	{#insert zWWOffHmSvStateMaybeRecheck}{#LOOP {#insert zzWWoffC2plRAW} -count 2}{#insert zzRevertWWC2plSyntax}	c2pl2
+c2pl3 -- c2pl, 3 times	{#insert zWWOffHmSvStateMaybeRecheck}{#LOOP {#insert zzWWoffC2plRAW} -count 3}{#insert zzRevertWWC2plSyntax}	c2pl3
+c2pl4 -- c2pl, 4 times	{#insert zWWOffHmSvStateMaybeRecheck}{#LOOP {#insert zzWWoffC2plRAW} -count 4}{#insert zzRevertWWC2plSyntax}	c2pl4
+c2pl5 -- c2pl, 5 times	{#insert zWWOffHmSvStateMaybeRecheck}{#LOOP {#insert zzWWoffC2plRAW} -count 5}{#insert zzRevertWWC2plSyntax}	c2pl5
+c2pl6 -- c2pl, 6 times	{#insert zWWOffHmSvStateMaybeRecheck}{#LOOP {#insert zzWWoffC2plRAW} -count 6}{#insert zzRevertWWC2plSyntax}	c2pl6
+c2pl7 -- c2pl, 7 times	{#insert zWWOffHmSvStateMaybeRecheck}{#LOOP {#insert zzWWoffC2plRAW} -count 7}{#insert zzRevertWWC2plSyntax}	c2pl7
+c2pl8 -- c2pl, 8 times	{#insert zWWOffHmSvStateMaybeRecheck}{#LOOP {#insert zzWWoffC2plRAW} -count 8}{#insert zzRevertWWC2plSyntax}	c2pl8
+c2pl9 -- c2pl, 9 times	{#insert zWWOffHmSvStateMaybeRecheck}{#LOOP {#insert zzWWoffC2plRAW} -count 9}{#insert zzRevertWWC2plSyntax}	c2pl9
+c2pln -- c2pl, any Number of times (w/ user-prompt)	{#insert zWWOffHmSvStateMaybeRecheck}{#insert zzC2plnRAW}{#insert c2plsyn}	c2pln
+pcmt -- Blank comment (**) [HK=zCApMM]	\(**){#LEFT -count 2}	pcmt
+zzWWoffC2plRAW	{#HOME}{#insert zTPSelectR1w}{#insert zTPCopy}{#END}{#insert zTSlp}{#TAB}{#insert zTSlp}{#DEL}{#insert zTSlp}{#END}{#insert zTSlp}{#TAB}{#insert zTSlp}{#insert zTPPaste}{#RIGHT}{#insert zTSlp}	zzWWoffC2plRAW
+zzC2plnRAW	{#SETPHRASE -description zvPHRS_COUNT -content {#INPUT -head How many c2pl lines? -single} -autotext zvPHRS_COUNT -folder ctvv_folder}{#insert zzC2plnRAW_M_phrc}	zzC2plnRAW
+zzC2plnRAW_M_phrc -- Needs zvPHRS_COUNT	{#LOOP {#insert zzWWoffC2plRAW} -count {#insert zvPHRS_COUNT}}	zzC2plnRAW_M_phrc
+zzRevertWWC2plSyntax	{#insert zRevertWWToOrigState}{#insert c2plsyn}	zzRevertWWC2plSyntax
+c2plsyn	{#BALLOON -title Syntax: c2pl -text c2pl[[2~10,n]] // ww~state='{#insert zvWORD_WRAP_ON}' (see 'wt'~~[chk={#insert zvCURR_WW_RCHK_CNT}/{#insert zvWW_RCHK_CNT}])  //  (pcmt: (**))}	c2plsyn

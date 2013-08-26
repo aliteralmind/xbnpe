@@ -1,0 +1,8 @@
+RR -- zRR	{#NONE -chars r}{#insert zTSlp}	zRR
+Alt+RR -- zApRR	{#ALT -chars r}{#insert zTSlp}	zApRR
+Alt+Shift+RR -- zASpRR	{#ALT {#SHIFT -chars r}}{#insert zTSlp}	zASpRR
+Ctrl+RR -- zCpRR	{#CTRL -chars r}{#insert zTSlp}	zCpRR
+Ctrl+Alt+RR -- zCApRR	{#CTRL {#ALT -chars r}}{#insert zTSlp}	zCApRR
+Ctrl+Alt+Shift+RR -- zCASpRR	{#CTRL {#ALT {#SHIFT -chars r}}}{#insert zTSlp}	zCASpRR
+Ctrl+Shift+RR -- zCSpRR	{#CTRL {#SHIFT -chars r}}{#insert zTSlp}	zCSpRR
+Shift+RR -- zSpRR	{#SHIFT -chars r}{#insert zTSlp}	zSpRR

@@ -1,0 +1,7 @@
+zTpkcViewAbrvLC	view	zTpkcViewAbrvLC
+zTpkcViewAllCmdNamesTCQbl	[ActivateClipLib][ActivateDocument][ActivateExplorer][ActivateSearchResults][ActivateSelector][ActivateToolOutput][StayOnTop][ViewClipLib][ViewDocSelector][ViewExplorer][ViewFindDialogBox][ViewFullPaths][ViewFullScreen][ViewHScrollbar][ViewInBrowser][ViewLineNumbers][ViewProperties][ViewReplaceDialogBox][ViewSearchResults][ViewStatusBar][ViewTabSelector][ViewToolOutput][ViewVisibleSpaces][ViewVScrollbar]	zTpkcViewAllCmdNamesTCQbl
+zTpkcViewCmdCount	24	zTpkcViewCmdCount
+zTpkcViewHasUserCrtdCmds_yes		zTpkcViewHasUsrCrtdCmds_yes
+zTpkcViewStpsFrmCatListTop	{#insert zVV}{#insert z5ThnTSlp}	zTpkcViewStpsFrmCatListTop
+zTpkcViewNameLC	view	zTpkcViewNameLC
+

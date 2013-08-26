@@ -1,0 +1,2 @@
+zXPROOT_DIR_cwlpdf	{#insert zROOT_DIR_XBNPE_MAIN}{#insert zzXPSUB_DIR_cwlpdf}	zXPROOT_DIR_cwlpdf
+zzXPSUB_DIR_cwlpdf	cwlpdf\	zzXPSUB_DIR_cwlpdf

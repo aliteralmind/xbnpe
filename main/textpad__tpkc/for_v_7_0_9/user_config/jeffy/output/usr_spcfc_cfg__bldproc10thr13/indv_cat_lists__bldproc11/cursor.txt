@@ -1,0 +1,48 @@
+CharLeft                Left                    Ctrl+T
+CharLeftExtend          Ctrl+W                  Ctrl+Shift+Left
+CharRight               Right
+CharRightExtend         Ctrl+V                  Ctrl+Shift+Right
+DocumentEnd             Ctrl+Shift+Alt+Down
+DocumentEndExtend       Ctrl+Shift+End          Ctrl+Shift+Alt+Pgdown
+DocumentStart
+DocumentStartExtend     Ctrl+Shift+Home         Ctrl+Shift+Alt+Pgup
+GoToBlockEnd
+GoToBlockStart
+GoToColumn
+GoToLine
+GoToPage
+LineDown                Down
+LineDownExtend          Shift+Down
+LineEnd                 End                     Ctrl+Space
+LineEndExtend           Shift+End               Ctrl+Shift+Space
+LineLeft                Home
+LineLeftExtend          Shift+Home
+LineScrollDown          Ctrl+Up
+LineScrollUp            Ctrl+Down
+LineStart
+LineStartExtend
+LineUp                  Up
+LineUpExtend            Shift+Up
+PageDown                Pgdown
+PageDownExtend          Shift+Pgdown
+PageLeft                Ctrl+Pgup
+PageLeftExtend          Ctrl+Shift+Pgup
+PageRight               Ctrl+Pgdown
+PageRightExtend         Ctrl+Shift+Pgdown
+PageUp                  Pgup
+PageUpExtend            Shift+Pgup
+ParaDown                Shift+Alt+Down
+ParaDownExtend          Ctrl+Shift+Down
+ParaUp                  Shift+Alt+Up
+ParaUpExtend            Ctrl+Shift+Up
+TabLeft
+ViewEnd                 Alt+End
+ViewStart               Alt+Home
+WordLeft                Ctrl+Left               Ctrl+H
+WordLeftEnd             Ctrl+D
+WordLeftEndExtend       Ctrl+Shift+D
+WordLeftExtend          Ctrl+Shift+B                          Ctrl+M
+WordRight
+WordRightEnd                          Ctrl+S
+WordRightEndExtend                   Ctrl+Z
+WordRightExtend

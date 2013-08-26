@@ -1,0 +1,2 @@
+zREoffCopyCountMarkedLines -- Open then closes temp file	{#insert zREoffCopyCountMarkedLinesToNewFile}{#insert zFileCloseDiscardChanges}	zREoffCopyCountMarkedLines
+zREonCopyCountMarkedLines -- Open then closes temp file	{#insert zREonCopyCountMarkedLinesToNewFile}{#insert zFileCloseDiscardChanges}	zREonCopyCountMarkedLines

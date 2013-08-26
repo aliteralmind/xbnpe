@@ -1,0 +1,26 @@
+zTPBookmarkCopyAllEsc	\\\{#insert zCASpPERIOD\\\}\\\{#sleep 10\\\}	zTPBookmarkCopyAllEsc
+zTPBookmarkCopyAllTPKeys	Ctrl+Shift+Alt+.	zTPBookmarkCopyAllTPKeys
+zTPBookmarkCutAllEsc	\\\{#insert zCASpCOMMA\\\}\\\{#sleep 10\\\}	zTPBookmarkCutAllEsc
+zTPBookmarkCutAllTPKeys	Ctrl+Shift+Alt+,	zTPBookmarkCutAllTPKeys
+zTPBookmarkGTNextEsc	\\\{#insert zApPP\\\}\\\{#sleep 100\\\}	zTPBookmarkGTNextEsc
+zTPBookmarkGTNextTPKeys	Alt+P	zTPBookmarkGTNextTPKeys
+zTPBookmarkToggleEsc	\\\{#insert zApPERIOD\\\}\\\{#sleep 10\\\}	zTPBookmarkToggleEsc
+zTPBookmarkToggleTPKeys	Alt+.	zTPBookmarkToggleTPKeys
+zTPFFindDlgOpenEsc	\\\{#insert zApF5\\\}\\\{#sleep 50\\\}	zTPFFindDlgOpenEsc
+zTPFFindDlgOpenTPKeys	Alt+F5	zTPFFindDlgOpenTPKeys
+zTPFileManagerEsc	\\\{#insert zCApOO\\\}\\\{#sleep 50\\\}	zTPFileManagerEsc
+zTPFileManagerTPKeys	Ctrl+Alt+O	zTPFileManagerTPKeys
+zTPFileOpenEsc	\\\{#insert zF12\\\}\\\{#sleep 10\\\}\\\{#insert zF8\\\}\\\{#sleep 1500\\\}	zTPFileOpenEsc
+zTPFileOpenTPKeys	F12, F8	zTPFileOpenTPKeys
+zTPFileQOpenEsc	\\\{#insert zCSpOO\\\}\\\{#sleep 50\\\}	zTPFileQOpenEsc
+zTPFileQOpenTPKeys	Ctrl+Shift+O	zTPFileQOpenTPKeys
+zTPFindDlgOpenEsc	\\\{#insert zF3\\\}\\\{#sleep 50\\\}	zTPFindDlgOpenEsc
+zTPFindDlgOpenTPKeys	F3	zTPFindDlgOpenTPKeys
+zTPFindNextEsc	\\\{#insert zF4\\\}\\\{#sleep 15\\\}	zTPFindNextEsc
+zTPFindNextTPKeys	F4	zTPFindNextTPKeys
+zTPGTDlgOpenEsc	\\\{#insert zCSpGG\\\}\\\{#sleep 50\\\}	zTPGTDlgOpenEsc
+zTPGTDlgOpenTPKeys	Ctrl+Shift+G	zTPGTDlgOpenTPKeys
+zTPPrefsDlgOpenEsc	\\\{#insert zF9\\\}\\\{#sleep 50\\\}\\\{#insert zF12\\\}\\\{#sleep 50\\\}	zTPPrefsDlgOpenEsc
+zTPPrefsDlgOpenTPKeys	F9, F12	zTPPrefsDlgOpenTPKeys
+zTPRplcDlgOpenEsc	\\\{#insert zF5\\\}\\\{#sleep 50\\\}	zTPRplcDlgOpenEsc
+zTPRplcDlgOpenTPKeys	F5	zTPRplcDlgOpenTPKeys

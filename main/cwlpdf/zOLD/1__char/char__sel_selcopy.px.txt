@@ -1,0 +1,9 @@
+zSelCopyL1c -- ceclp1 -- Select-and-copy char to left of cursor	{#insert zSelectL1c}{#insert zTPCopy}	zSelCopyL1c
+zSelCopyLNc_M_vchl -(**)- ceclp#, cecl[f,[[h,t]]m], vchl[[p,f]]	(*Needs zvCHARS_LEFT (var-abrv-lc=vchl, var-phrs-nm-abrv=Vchl). This command: (action-name-lc=cecl, cmd-phrs-nm-abrv=Cecl)*){#insert zSelectLNc_M_vchl}{#insert zTPCopy}	zSelCopyLNc_M_vchl
+zSelCopyR1c -- cecrp1 -- Select-and-copy char to right of cursor	{#insert zSelectR1c}{#insert zTPCopy}	zSelCopyR1c
+zSelCopyRNc_M_vchr -(**)- cecrp#, cecr[f,[[h,t]]m], vchr[[p,f]]	(*Needs zvCHARS_RIGHT (var-abrv-lc=vchr, var-phrs-nm-abrv=Vchr). This command: (action-name-lc=cecr, cmd-phrs-nm-abrv=Cecr)*){#insert zSelectRNc_M_vchl}{#insert zTPCopy}	zSelCopyRNc_M_vchr
+zSelectL1c -- cslp1 -- zTPSelectL1c ALT KC	{#insert zTPSelectL1c}	zSelectL1c
+zSelectL2c -- cslp2	{#insert zSelectL2c}{#insert zSelectL2c}	zSelectL2c
+zSelectLNc_M_vchl -(**)- cslp#, csl[f,[[h,t]]m], vchl[[p,f]]	(*Needs zvCHARS_LEFT (var-abrv-lc=vchl, var-phrs-nm-abrv=Vchl). This command: (action-name-lc=csl, cmd-phrs-nm-abrv=Csl)*){#loop {#insert zTPSelectL1c} -count {#insert zvCHARS_LEFT}}	zSelectLNc_M_vchl
+zSelectR1c -- csrp1 -- zTPSelectR1c ALT KC	{#insert zTPSelectR1c}	zSelectR1c
+zSelectRNc_M_vchr -(**)- csrp#, csr[f,[[h,t]]m], vchr[[p,f]]	(*Needs zvCHARS_RIGHT (var-abrv-lc=vchr, var-phrs-nm-abrv=Vchr). This command: (action-name-lc=csr, cmd-phrs-nm-abrv=Csr)*){#loop {#insert zTPSelectR1c} -count {#insert zvCHARS_RIGHT}}	zSelectRNc_M_vchr

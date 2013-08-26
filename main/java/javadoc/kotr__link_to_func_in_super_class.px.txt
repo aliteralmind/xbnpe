@@ -1,0 +1,9 @@
+flcbr -- No-param Func Link to super-class for ClipBoard (with prerk)	{#insert zzflcbrBeforePrerk}{#insert prerk}	flcbr
+flcbrc -- flcbr, CODE-d	<CODE>{#insert flcbr}</CODE>	flcbrc
+flcbri -- flcbr with prirk	{#insert zzflcbrBeforePrerk}{#insert prirk}	flcbri
+flcbric -- flcbrc, with prirk	<CODE>{#insert flcbri}</CODE>	flcbric
+flpwr -- No-param Func Link to super-class for Pre-Word	{#insert zCutL1w}{#insert flcbr}	flpwr
+flpwrc -- flpwr, CODE-d	{#insert zCutL1w}{#insert flcbrc}	flpwrc
+flpwri -- flpwr, with prirk	{#insert zCutL1w}{#insert flcbri}	flpwri
+flpwric -- flpwrc, with prirk	{#insert zCutL1w}{#insert flcbric}	flpwric
+zzflcbrBeforePrerk	<A HREF={#asc 34}{#insert zjinpUrlToSuperDir}{#insert zVmark}.html#{#insert zTPPaste}(){#asc 34}>{#insert zTPPaste}</A>(){#insert zVmark}{#insert zVUp2}{#insert cnsuper}{#insert zVDownDelete}	zzflcbrBeforePrerk

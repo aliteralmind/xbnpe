@@ -1,0 +1,20 @@
+jx -- XXXException	{#insert zXmark}Exception{#insert zXThenUp2}	jx
+jxnp -- NullPointerException	NullPointerException	jxnp
+jxcc -- ClassCastException	ClassCastException	jxcc
+jxr -- RuntimeException	RuntimeException	jxr
+jxioob -- IndexOutOfBoundsException	IndexOutOfBoundsException	jxioob
+jxaioob -- ArrayIndexOutOfBoundsException	ArrayIndexOutOfBoundsException	jxaioob
+jxia -- IllegalArgumentException	IllegalArgumentException	jxia
+jxias -- IllegalArgumentStateException	IllegalArgumentStateException	jxias
+jxis -- IllegalStateException	IllegalStateException	jxis
+jxuo -- UnsupportedOperation	UnsupportedOperation	jxuo
+jxxnp -- NullPointer	NullPointer	jxxnp
+jxxcc -- ClassCast	ClassCast	jxxcc
+jxxrt -- Runtime	Runtime	jxxrt
+jxxioob -- IndexOutOfBounds	IndexOutOfBounds	jxxioob
+jxxaioob -- ArrayIndexOutOfBounds	ArrayIndexOutOfBounds	jxxaioob
+jxxia -- IllegalArgument	IllegalArgument	jxxia
+jxxias -- IllegalArgumentState	IllegalArgumentState	jxxias
+jxxis -- IllegalState	IllegalState	jxxis
+jxxuo -- UnsupportedOperation	UnsupportedOperation	jxxuo
+

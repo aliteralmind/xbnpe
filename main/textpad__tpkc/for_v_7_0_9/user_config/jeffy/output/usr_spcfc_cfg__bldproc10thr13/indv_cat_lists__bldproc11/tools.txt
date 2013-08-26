@@ -1,0 +1,9 @@
+ToolCompareFiles
+ToolExplorer            Alt+F3
+ToolHTMLValidate
+ToolRerun
+ToolRun
+ToolSort                Ctrl+Alt+F6
+ToolSpell
+ToolStop                Ctrl+Shift+Alt+X
+ToolWildEdit

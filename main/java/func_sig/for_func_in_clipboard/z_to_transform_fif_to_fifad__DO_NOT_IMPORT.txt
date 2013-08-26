@@ -1,0 +1,16 @@
+*****FOR OLD FILE ORGANIZATION*****
+
+dir *fif*
+
+---For temp.bat:
+cd R:\jeffy\programming\sandbox\macros\xbn_phrase_express\java\function_signature\for_func_in_clipboard
+copy any__fif__1to5_go.px.txt any__fifad__1to5_go.px.txt
+copy any__fif__1to5_return.px.txt any__fifad__1to5_return.px.txt
+copy any__fif__1to5_return_and_paste.px.txt any__fifad__1to5_return_and_paste.px.txt
+copy any__fif__other_go_return_return_and_paste.px.txt any__fifad__other_go_return_return_and_paste.px.txt
+copy any__fif__q1to5_go.px.txt any__fifad__q1to5_go.px.txt
+copy any__fif__q1to5_return.px.txt any__fifad__q1to5_return.px.txt
+copy any__fif__q1to5_return_and_paste.px.txt any__fifad__q1to5_return_and_paste.px.txt
+copy any__fif__qother_go_return_return_and_paste.px.txt any__fifad__qother_go_return_return_and_paste.px.txt
+
+

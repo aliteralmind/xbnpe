@@ -1,0 +1,8 @@
+DD -- zDD	{#NONE -chars d}{#insert zTSlp}	zDD
+Alt+DD -- zApDD	{#ALT -chars d}{#insert zTSlp}	zApDD
+Alt+Shift+DD -- zASpDD	{#ALT {#SHIFT -chars d}}{#insert zTSlp}	zASpDD
+Ctrl+DD -- zCpDD	{#CTRL -chars d}{#insert zTSlp}	zCpDD
+Ctrl+Alt+DD -- zCApDD	{#CTRL {#ALT -chars d}}{#insert zTSlp}	zCApDD
+Ctrl+Alt+Shift+DD -- zCASpDD	{#CTRL {#ALT {#SHIFT -chars d}}}{#insert zTSlp}	zCASpDD
+Ctrl+Shift+DD -- zCSpDD	{#CTRL {#SHIFT -chars d}}{#insert zTSlp}	zCSpDD
+Shift+DD -- zSpDD	{#SHIFT -chars d}{#insert zTSlp}	zSpDD

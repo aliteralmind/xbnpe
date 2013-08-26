@@ -1,0 +1,65 @@
+Let>WIN_USEHANDLE=0
+//This code is compatible with MacroScheduler 13.1.05
+//Set IGNORESPACES to 1 to force script interpreter to ignore spaces.
+//If using IGNORESPACES quote strings in {" ... "}
+//Let>IGNORESPACES=1
+Let>MSG_STAYONTOP=1
+
+
+Let>sSpeedType="LIVE"
+
+IF>sSpeedType="LIVE"
+    Let>iWaitSameFocus=.3
+    Let>iWaitNewFocus=.7
+ELSE
+    IF>sSpeedType="SLOW"
+       Let>iWaitSameFocus=1
+        Let>iWaitNewFocus=2
+    ENDIF
+ENDIF
+
+Input>iTotalFiles,How many files to import into PhraseExpress? [1..*],1
+
+//(o) Generate phrases for each line of the text file
+Press Up
+Wait>iWaitSameFocus
+
+IF>iTotalFiles>1
+    Press Tab
+    Wait>iWaitSameFocus
+
+    //[x] Do this for all [#] files
+    Press Space
+    Wait>iWaitSameFocus
+ENDIF
+
+Press Enter
+Wait>iWaitNewFocus
+
+Let>i=iTotalFiles
+Repeat>i
+    WaitWindowOpen>Generate phrases of the text file
+    Press Page Down
+    Wait>iWaitSameFocus
+
+    //Desc-Content-Autotext
+    Press Up
+    Wait>iWaitSameFocus
+    Press Tab
+    Wait>iWaitSameFocus
+
+    //Tab is the delimiter
+    Press Tab
+    Wait>iWaitSameFocus
+    Press Enter
+
+
+    //Import dups
+//Needed for version 8. Version 9 eliminated this dialog.
+//    WaitWindowOpen>Confirmation
+//    Press Left
+//    Wait>iWaitSameFocus
+//    Press Enter
+//    Wait>iWaitNewFocus
+    Let>i=i-1
+Until>i<1

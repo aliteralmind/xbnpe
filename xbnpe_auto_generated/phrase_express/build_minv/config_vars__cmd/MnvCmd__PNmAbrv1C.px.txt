@@ -1,0 +1,13 @@
+__**WARNING**__: All phrases in this folder were created by 'plpdcf'. DO NOT EDIT.	.		(*Extra tab to allow for empty-string autotext*)
+zvCMD_PNMV_1C_sfKey	{#SETPHRASE -description zvCMD_PNMV_1C -content {#insert zzMnvCmdCpn1_cfgValue_M_key} -autotext zvCMD_PNMV_1C -folder ctvv_folder}	zvCMD_PNMV_1C_sfKey
+zzMnvCmdCpn1_cfgValue_M_key	{#insert {#insert zzMnvCmdCpn1_cfgVarPhrsName_M_key}}	zzMnvCmdCpn1_cfgValue_M_key
+zzMnvCmdPNmAbrv1C_cvtFromAbrv1C	Cpn1	zzMnvCmdPNmAbrv1C_cvtFromAbrv1C
+zzMnvCmdCpn1_cfgVarPNmPost	PNmAbrv1C	zzMnvCmdCpn1_cfgVarPNmPost
+zzMnvCmdCpn1_intrnlVarNm	zvCMD_PNMV_1C	zzMnvCmdCpn1_intrnlVarNm
+zzMnvCmdCpn1_cfgVarPhrsName_M_key	zz{#insert zzMnvCmdProjectAbrv1C}{#insert zzMnvCmdDataTypeAbrv1C}{#insert zvACTION_NM_1C}{#insert zzMnvCmdCpn1_cfgVarPNmPost}	zzMnvCmdCpn1_cfgVarPhrsName_M_key
+zzMnvCmdCpn1_helpForDlg	The MINV~Command's phrase~name abbreviation, where only the first character is uppercase ('1C'). This is the internal~only, unique identifier for each MINV~Command instance, distiguishing the phrase names of one command's configuration~variables from another's.	zzMnvCmdCpn1_helpForDlg
+zzMnvCmdCpn1_valuePrintable	yes	zzMnvCmdCpn1_valuePrintable
+zzMnvCmdCpn1_validateValuePhrsNm	zzVldtCpn1NotES_M_self	zzMnvCmdCpn1_validateValuePhrsNm
+zzMnvCmdCpn1_nkcvListNum	-2	zzMnvCmdCpn1_nkcvListNum
+zzMnvCmdCpn1_keyCVTFromAbrv1C	{#insert zzMnvCmdPubKeyCVTFromAbrv1C}	zzMnvCmdCpn1_keyCVTFromAbrv1C
+zvCVT_FRMV_1C_stMnvCmdCpn1	{#SETPHRASE -description zvCVT_FRMV_1C -content {#insert zzMnvCmdPNmAbrv1C_cvtFromAbrv1C} -autotext zvCVT_FRMV_1C -folder ctvv_folder}	zvCVT_FRMV_1C_stMnvCmdCpn1

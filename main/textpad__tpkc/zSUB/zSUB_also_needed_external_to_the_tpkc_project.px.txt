@@ -1,0 +1,1 @@
+zvCAT_ABRV_LC_sfCmd1 -- Also needed by zzOpenPrefsDlgGotoCmdListTop_M_cmd1	{#SETPHRASE -description zvCAT_ABRV_LC -content {#insert zzTpkcCatForCmdAbrvLC_M_cmd1} -autotext zvCAT_ABRV_LC -folder ctvv_folder}	zvCAT_ABRV_LC_sfCmd1

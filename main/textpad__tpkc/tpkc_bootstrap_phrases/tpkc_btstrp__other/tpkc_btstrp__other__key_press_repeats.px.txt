@@ -1,0 +1,12 @@
+zDOWN2	{#DOWN -count 2}{#insert zTSlp}	zDOWN2
+zDOWN3	{#DOWN -count 3}{#insert zTSlp}	zDOWN3
+zPGDN2	{#PGDN -count 2}{#insert zTSlp}	zPGDN2
+zPGDN3	{#PGDN -count 3}{#insert zTSlp}	zPGDN3
+zPGDN4	{#PGDN -count 4}{#insert zTSlp}	zPGDN4
+zPGDN5	{#PGDN -count 5}{#insert zTSlp}	zPGDN5
+zPGDN6	{#PGDN -count 6}{#insert zTSlp}	zPGDN6
+zPGUP2	{#PGUP -count 2}{#insert zTSlp}	zPGUP2
+zPGUP3	{#PGUP -count 3}{#insert zTSlp}	zPGUP3
+zPGUP4	{#PGUP -count 4}{#insert zTSlp}	zPGUP4
+zUP2	{#UP -count 2}{#insert zTSlp}	zUP2
+zUP3	{#UP -count 3}{#insert zTSlp}	zUP3

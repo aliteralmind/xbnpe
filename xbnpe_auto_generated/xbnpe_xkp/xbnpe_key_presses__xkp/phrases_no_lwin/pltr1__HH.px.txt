@@ -1,0 +1,8 @@
+HH -- zHH	{#NONE -chars h}{#insert zTSlp}	zHH
+Alt+HH -- zApHH	{#ALT -chars h}{#insert zTSlp}	zApHH
+Alt+Shift+HH -- zASpHH	{#ALT {#SHIFT -chars h}}{#insert zTSlp}	zASpHH
+Ctrl+HH -- zCpHH	{#CTRL -chars h}{#insert zTSlp}	zCpHH
+Ctrl+Alt+HH -- zCApHH	{#CTRL {#ALT -chars h}}{#insert zTSlp}	zCApHH
+Ctrl+Alt+Shift+HH -- zCASpHH	{#CTRL {#ALT {#SHIFT -chars h}}}{#insert zTSlp}	zCASpHH
+Ctrl+Shift+HH -- zCSpHH	{#CTRL {#SHIFT -chars h}}{#insert zTSlp}	zCSpHH
+Shift+HH -- zSpHH	{#SHIFT -chars h}{#insert zTSlp}	zSpHH

@@ -1,0 +1,5 @@
+zvCMD_ABRV_1C_sfMacroMultiplay	{#SETPHRASE -description zvCMD_ABRV_1C -content Mcrmply -autotext zvCMD_ABRV_1C -folder ctvv_folder}	zvCMD_ABRV_1C_sfMacroMultiplay
+zvCMD_ABRV_1C_sfMacroPause	{#SETPHRASE -description zvCMD_ABRV_1C -content Mcrpaus -autotext zvCMD_ABRV_1C -folder ctvv_folder}	zvCMD_ABRV_1C_sfMacroPause
+zvCMD_ABRV_1C_sfMacroPlay	{#SETPHRASE -description zvCMD_ABRV_1C -content Mcrply -autotext zvCMD_ABRV_1C -folder ctvv_folder}	zvCMD_ABRV_1C_sfMacroPlay
+zvCMD_ABRV_1C_sfMacroRecord	{#SETPHRASE -description zvCMD_ABRV_1C -content Mcrrcrd -autotext zvCMD_ABRV_1C -folder ctvv_folder}	zvCMD_ABRV_1C_sfMacroRecord
+zvCMD_ABRV_1C_sfMacroSave	{#SETPHRASE -description zvCMD_ABRV_1C -content Mcrsv -autotext zvCMD_ABRV_1C -folder ctvv_folder}	zvCMD_ABRV_1C_sfMacroSave

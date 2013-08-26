@@ -1,0 +1,63 @@
+'dblincx' duplicates the LINES in the clipboard ?-times, starting at ?, and incrementing every duplicate's x-mark by 1. Every line in the clipboard should end with a newline.
+
+For example, if this is in the clipboard ('[' and ']' denotes the boundaries)
+
+	[My number XXX favorite letter is {#insert zDblTempOpenCurly}#insert zFavLetterXXX}.
+	]
+
+then calling 'dblincx', with [starting-num=3 and total-dups=3], results in
+
+	My number 3 favorite letter is {#insert zOpenCurly}#insert zFavLetter3}.
+	My number 4 favorite letter is {#insert zOpenCurly}#insert zFavLetter4}.
+	My number 5 favorite letter is {#insert zOpenCurly}#insert zFavLetter5}.
+
+
+Calling 'dblincxk', with [starting-num=3, total-dups=3, lines-to-skip=1], results in
+
+	My number 3 favorite letter is {#insert zOpenCurly}#insert zFavLetter3}.
+
+	My number 4 favorite letter is {#insert zOpenCurly}#insert zFavLetter4}.
+
+	My number 5 favorite letter is {#insert zOpenCurly}#insert zFavLetter5}.
+
+(See below for an example of when this is useful.)
+
+Calling 'dblincx' is equivalent to calling 'dblincxk' with [lines-to-skip=0].
+
+--- SKIP-LINES EXAMPLE ---
+
+Take this series of lines, each being the *description* for a phrase:
+
+	zCharDeleteL1 - cdl[p]1
+	zCharDeleteL2 - cdl[p]2
+	zCharDeleteL3 - cdl[p]3
+	zCharDeleteL4 - cdl[p]4
+
+(See 'generateminvcmd')
+
+With this line in the clipboard [SEE NOTE AT BOTTOM]
+
+	[{#insert zDblTempOpenCurly}#loop {#insert zDblTempOpenCurly}#BKSP} -count XXX}
+	]
+
+Place the cursor immediately before zCharDeleteL2 (the spot where the first dup should be pasted), and call dblincxk, with [starting-num=1, total-dups=4, lines-to-skip=1].
+
+	zCharDeleteL1 - cdl[p]1
+	My number 1 favorite letter is {#insert zOpenCurly}#insert zFavLetter1}.
+	zCharDeleteL2 - cdl[p]2
+	My number 2 favorite letter is {#insert zOpenCurly}#insert zFavLetter2}.
+	zCharDeleteL3 - cdl[p]3
+	My number 3 favorite letter is {#insert zOpenCurly}#insert zFavLetter3}.
+	zCharDeleteL4 - cdl[p]4
+	My number 4 favorite letter is {#insert zOpenCurly}#insert zFavLetter4}.
+
+--- NOTE AT BOTTOM ---
+
+	<#BKSP -count 3}
+
+works just fine, but
+
+	zTHREE	3	zTHREE
+	<#BKSP -count {#insert zTHREE}}
+
+Does not.

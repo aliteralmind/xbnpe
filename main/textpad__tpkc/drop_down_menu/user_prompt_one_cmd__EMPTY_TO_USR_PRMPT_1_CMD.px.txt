@@ -1,0 +1,4 @@
+Assign all KCs	{#insert zTpkcAsgnAllKCsTo1CmdIfHasKcWithAbrvPrompt_M_kcpf}	zTpkcAsgnAllKCsTo1CmdIfHasKcWithAbrvPromptForDDMenu_M_kcpf
+Debug info	{#insert zTpkcDbg1CmdWAbrvPrompt}	zTpkcDbg1CmdWAbrvPromptForDDMenu
+Test (nbs-commands only)	{#insert zzVrfy1NbsCmdWAbrvPrompt}	zVrfy1NbsCmdWAbrvPromptForDDMenu
+Test (*FORCE*) (nbs-commands only)	{#insert zForceVrfy1NbsCmdWAbrvPrompt}	zVrfy1NbsCmdWAbrvPromptForDDMenu

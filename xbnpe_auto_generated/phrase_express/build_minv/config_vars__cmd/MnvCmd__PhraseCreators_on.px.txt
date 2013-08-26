@@ -1,0 +1,13 @@
+__**WARNING**__: All phrases in this folder were created by 'plpdcf'. DO NOT EDIT.	.		(*Extra tab to allow for empty-string autotext*)
+zvPHRS_CRTRS_ON_sfKey	{#SETPHRASE -description zvPHRS_CRTRS_ON -content {#insert zzMnvCmdPcon_cfgValue_M_key} -autotext zvPHRS_CRTRS_ON -folder ctvv_folder}	zvPHRS_CRTRS_ON_sfKey
+zzMnvCmdPcon_cfgValue_M_key	{#insert {#insert zzMnvCmdPcon_cfgVarPhrsName_M_key}}	zzMnvCmdPcon_cfgValue_M_key
+zzMnvCmdPhraseCreators_on_cvtFromAbrv1C	Pcon	zzMnvCmdPhraseCreators_on_cvtFromAbrv1C
+zzMnvCmdPcon_cfgVarPNmPost	PhraseCreators_on	zzMnvCmdPcon_cfgVarPNmPost
+zzMnvCmdPcon_intrnlVarNm	zvPHRS_CRTRS_ON	zzMnvCmdPcon_intrnlVarNm
+zzMnvCmdPcon_cfgVarPhrsName_M_key	zz{#insert zzMnvCmdProjectAbrv1C}{#insert zzMnvCmdDataTypeAbrv1C}{#insert zvCMD_PNMV_1C}{#insert zzMnvCmdPcon_cfgVarPNmPost}	zzMnvCmdPcon_cfgVarPhrsName_M_key
+zzMnvCmdPcon_helpForDlg	zzVldtCmdActPCOnOffAtLeast1On_M_selves	zzMnvCmdPcon_helpForDlg
+zzMnvCmdPcon_valuePrintable	yes	zzMnvCmdPcon_valuePrintable
+zzMnvCmdPcon_validateValuePhrsNm		zzMnvCmdPcon_validateValuePhrsNm
+zzMnvCmdPcon_nkcvListNum	3	zzMnvCmdPcon_nkcvListNum
+zzMnvCmdPcon_keyCVTFromAbrv1C	{#insert zzMnvCmdPrivKeyCVTFromAbrv1C}	zzMnvCmdPcon_keyCVTFromAbrv1C
+zvCVT_FRMV_1C_stMnvCmdPcon	{#SETPHRASE -description zvCVT_FRMV_1C -content {#insert zzMnvCmdPhraseCreators_on_cvtFromAbrv1C} -autotext zvCVT_FRMV_1C -folder ctvv_folder}	zvCVT_FRMV_1C_stMnvCmdPcon

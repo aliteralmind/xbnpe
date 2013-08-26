@@ -1,0 +1,29 @@
+zzZIdxJavaCatNameLong	XBN-PhraseExpress: Java	zzZIdxJavaCatNameLong
+zzZIdxJavaCatNameShort	XBNPE>Java	zzZIdxJavaCatNameShort
+zzZIdxJavaChildCountCat	3	zzZIdxJavaChildCountCat
+zzZIdxJavaChildCountPset	0	zzZIdxJavaChildCountPset
+zzZIdxJavaChildTCPostsQBLCat -- PHRASE CALLS, NOT LITERAL TEXT	[{#insert zzZIdxJdlPostTC}][{#insert zzZIdxJgxPostTC}][{#insert zzZIdxJgnPostTC}]	zzZIdxJavaChildTCPostsQBLCat
+zzZIdxJavaChildTCPostsQBLPset -- PHRASE CALLS, NOT LITERAL TEXT		zzZIdxJavaChildTCPostsQBLPset
+zzZIdxJavaDescription	Phrases for creating and navigation Java code.	zzZIdxJavaDescription
+zzZIdxJavaNodeType -- DO NOT EDIT	cat	zzZIdxJavaNodeType
+zzZIdxJavaPNAbrvTC -- DO NOT EDIT	Java	zzZIdxJavaPNAbrvTC
+zzZIdxJavaParentTCPost -- LITERAL TEXT, NOT PHRASE CALL	Xbnpe	zzZIdxJavaParentTCPost
+zzZIdxJavaPostTC -- DO NOT EDIT	Java	zzZIdxJavaPostTC
+zzZIdxJavaPostfix	java	zzZIdxJavaPostfix
+zzZIdxJavaXInfo_onff	off	zzZIdxJavaXInfo_onff
+
+zzZIdxJdlNodeType -- DO NOT EDIT	cat	zzZIdxJdlNodeType
+zzZIdxJdlinkPNAbrvTC -- DO NOT EDIT	Jdl	zzZIdxJdlinkPNAbrvTC
+zzZIdxJdlPostfix	jdlink	zzZIdxJdlPostfix
+zzZIdxJdlPostTC -- DO NOT EDIT	Jdlink	zzZIdxJdlPostTC
+zzZIdxJdlParentTCPost -- LITERAL TEXT, NOT PHRASE CALL	Java	zzZIdxJdlParentTCPost
+zzZIdxJdlCatNameShort	Create JD-Link	zzZIdxJdlCatNameShort
+zzZIdxJdlCatNameLong	Create JavaDoc Link: Func, Cnstr, File, Obj	zzZIdxJdlCatNameLong
+zzZIdxJdlChildCountCat	5	zzZIdxJdlChildCountCat
+zzZIdxJdlChildTCPostsQBLCat -- PHRASE CALLS, NOT LITERAL TEXT	[__OPEN_CURLY__#insert zzZIdxJdlwcPostfix}][__OPEN_CURLY__#insert zzZIdxJdlwfPostfix}][__OPEN_CURLY__#insert zzZIdxJdlnpfPostfix}][__OPEN_CURLY__#insert zzZIdxJdlnpcPostfix}][__OPEN_CURLY__#insert zzZIdxJdlnpioPostfix}]	zzZIdxJdlChildTCPostsQBLCat
+zzZIdxJdlChildCountPset	0	zzZIdxJdlChildCountPset
+zzZIdxJdlChildTCPostsQBLPset -- PHRASE CALLS, NOT LITERAL TEXT		zzZIdxJdlChildTCPostsQBLPset
+zzZIdxJdlDescription	Create a JavaDoc link to a functions or constructor (with or without parameters), or to a file or object.	zzZIdxJdlDescription
+zzZIdxJdlXInfo_onff	off	zzZIdxJdlXInfo_onff
+zzZIdxJdlExtraInfo		zzZIdxJdlExtraInfo
+

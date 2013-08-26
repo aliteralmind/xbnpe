@@ -1,0 +1,5 @@
+zFFindFlagAllLinesRAW	{#insert zApAA}{#sleep 25}	zFFindFlagAllLinesRAW
+zFFindFlagBinaryFilesTglRAW	{#insert zApBB}{#sleep 25}	zFFindFlagBinaryFilesTglRAW
+zFFindFlagFilesOnlyRAW	{#insert zApOO}{#sleep 25}	zFFindFlagFilesOnlyRAW
+zFFindFlagSubDirsTglRAW	{#insert zApSS}{#sleep 25}	zFFindFlagSubDirsTglRAW
+zFFindFlagFilesOnlySubDirsTglRAW	{#insert zFFindFlagFilesOnlyRAW}{#insert zFFindFlagSubDirsTglRAW}	zFFindFlagFilesOnlySubDirsTglRAW

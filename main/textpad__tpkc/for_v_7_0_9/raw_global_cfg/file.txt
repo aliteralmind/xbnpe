@@ -1,0 +1,25 @@
+FileClose	zTPFileClose	Fcls	yes	10	(*NOTHING! No steps! This command is the top-most command in the list.*)
+FileCloseAll	zTPFileCloseAll	Fclsa	__ES__	250	{#insert zDOWN}
+FileExit	zTPFileExit	Fxit	__ES__	1000	{#insert zDOWN2}
+FileGoTo	zTPFileOpenSelPath	Fgoto	__ES__	100	{#insert zDOWN3}
+FileManage	zTPFileManager	Fmngr	yes	50	{#insert zPGDN}{#insert zUP2}
+FileNew	zTPFileNew	Fnew	yes	50	{#insert zPGDN}{#insert zUP}
+FileOpen	zTPFileOpen	Fopn	yes	1750	{#insert zPGDN}
+FilePageSetup	zTPFilePageSetup	Fpgstp	__ES__	50	{#insert zPGDN}{#insert zDOWN}
+FilePrint	zTPFilePrint	Fprnt	__ES__	50	{#insert zPGDN}{#insert zDOWN2}
+FilePrintAll	zTPFilePrintAll	Fprnta	__ES__	10	{#insert zPGDN}{#insert zDOWN3}
+FilePrintDefault	zTPFilePrintDefault	Fprntd	__ES__	10	{#insert zPGDN2}{#insert zUP2}
+FilePrintPreview	zTPFilePrintPreview	Fprntprv	__ES__	100	{#insert zPGDN2}{#insert zUP}
+FileQuickOpen	zTPFileQOpen	Fqopn	yes	50	{#insert zPGDN2}
+FileRename	zTPFileRename	Frenm	__ES__	50	{#insert zPGDN2}{#insert zDOWN}
+FileRevert	zTPFileRevert	Frvrt	__ES__	50	{#insert zPGDN2}{#insert zDOWN2}
+FileSave	zTPFileSave	Fsv	yes	50	{#insert zEND}{#insert zPGUP}{#insert zUP3}
+FileSaveAll	zTPFileSaveAll	Fsval	__ES__	1000	{#insert zEND}{#insert zPGUP}{#insert zUP2}
+FileSaveAndClose	zTPFileSaveAndClose	Fsvcl	__ES__	100	{#insert zEND}{#insert zPGUP}{#insert zUP}
+FileSaveAs	zTPFileSaveAs	Fsvas	__ES__	1750	{#insert zEND}{#insert zPGUP}
+FileSend	zTPFileSend	Fsnd	__ES__	1000	{#insert zEND}{#insert zPGUP}{#insert zDOWN}
+FileStatistics	zTPFileStatistics	Fstat	__ES__	5	{#insert zEND}{#insert zPGUP}{#insert zDOWN2}
+WorkspaceClose	zTPWorkspaceClose	Fwkscls	__ES__	50	{#insert zEND}{#insert zUP3}
+WorkspaceOpen	zTPWorkspaceOpen	Fwksop	__ES__	1750	{#insert zEND}{#insert zUP2}
+WorkspaceSave	zTPWorkspaceSave	Fwkssv	__ES__	50	{#insert zEND}{#insert zUP}
+WorkspaceSaveAs	zTPWorkspaceSaveAs	Fwkssvas	__ES__	1750	{#insert zEND}

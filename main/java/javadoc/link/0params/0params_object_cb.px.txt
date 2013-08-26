@@ -1,0 +1,6 @@
+olcb* -- Object Link, obj-name in ClipBoard (obj in same class)	{#insert zzjlCodeOffPrekOff}{#insert zzOlcbPostPrek}	olcb
+olcbc* -- olcb, CODE-d	{#insert zzjlCodeOnPrekOff}{#insert zzOlcbPostPrek}	olcbc
+olcbr* -- olcb, obj in super-class	{#insert zzjlCodeOffPrekOff}{#insert zzOlcbrPostPrek}	olcbr
+olcbrc* -- olcbr, CODE-d	{#insert zzjlCodeOnPrekOff}{#insert zzOlcbrPostPrek}	olcbrc
+olcbry -- olcbr, no displaY (only x-mark)	{#insert zzjlCodeOffPrekOff}{#insert zzjlFuncObjNmIsCBDispX}{#insert zzjlObjLink_MSTR_fileSuperDirPrompt}	olcbry
+olcby -- olcb, no displaY (only x-mark)	{#insert zzjlCodeOffPrekOff}{#insert zzjlFuncObjNmIsCBDispX}{#insert zzjlObjLink_MSTR_noFile}	olcby

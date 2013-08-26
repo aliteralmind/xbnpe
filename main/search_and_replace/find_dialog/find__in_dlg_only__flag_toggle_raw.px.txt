@@ -1,0 +1,15 @@
+(*
+   Required by phrase-creator-ddmenu-utils...START
+      PM_DDMENU_DIRID_FILENMPHRSNM_HDRAUTOTXT=snr/zzPmdmFNmPreSnrFind/xhsfm
+   Required by phrase-creator-ddmenu-utils...END
+*)
+zFindFlagsForceWWXSTglRAW	{#insert zFindFlagForceWWTglRAW}{#insert zFindFlagXSTglRAW}	zFindFlagsForceWWXSTglRAW
+zFindFlagsMCForceWWTglRAW	{#insert zFindFlagMCTglRAW}{#insert zFindFlagForceWWTglRAW}	zFindFlagsMCForceWWTglRAW
+zFindFlagsMCForceWWXSTglRAW	{#insert zFindFlagsMCForceWWTgl}{#insert zFindFlagXSTglRAW}	zFindFlagsMCForceWWXSTglRAW
+zFindFlagsMCRETglRAW -- For in-find-dialog only	{#insert zFindFlagMCTglRAW}{#insert zFindFlagRETglRAW}	zFindFlagsMCRETglRAW
+zFindFlagsMCREXSTglRAW	{#insert zFindFlagsMCRETgl}{#insert zFindFlagXSTglRAW}	zFindFlagsMCREXSTglRAW
+zFindFlagsMCWWTglRAW	{#insert zFindFlagMCTglRAW}{#insert zFindFlagWWTglRAW}	zFindFlagsMCWWTglRAW
+zFindFlagsMCWWXSTglRAW	{#insert zFindFlagsMCWWTgl}{#insert zFindFlagXSTglRAW}	zFindFlagsMCWWXSTglRAW
+zFindFlagsMCXSTglRAW	{#insert zFindFlagMCTglRAW}{#insert zFindFlagXSTglRAW}	zFindFlagsMCXSTglRAW
+zFindFlagsREXSTglRAW	{#insert zFindFlagRETglRAW}{#insert zFindFlagXSTglRAW}	zFindFlagsREXSTglRAW
+zFindFlagsWWXSTglRAW	{#insert zFindFlagWWTglRAW}{#insert zFindFlagXSTglRAW}	zFindFlagsWWXSTglRAW

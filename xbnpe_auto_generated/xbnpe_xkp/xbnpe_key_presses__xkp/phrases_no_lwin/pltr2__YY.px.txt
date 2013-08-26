@@ -1,0 +1,8 @@
+YY -- zYY	{#NONE -chars y}{#insert zTSlp}	zYY
+Alt+YY -- zApYY	{#ALT -chars y}{#insert zTSlp}	zApYY
+Alt+Shift+YY -- zASpYY	{#ALT {#SHIFT -chars y}}{#insert zTSlp}	zASpYY
+Ctrl+YY -- zCpYY	{#CTRL -chars y}{#insert zTSlp}	zCpYY
+Ctrl+Alt+YY -- zCApYY	{#CTRL {#ALT -chars y}}{#insert zTSlp}	zCApYY
+Ctrl+Alt+Shift+YY -- zCASpYY	{#CTRL {#ALT {#SHIFT -chars y}}}{#insert zTSlp}	zCASpYY
+Ctrl+Shift+YY -- zCSpYY	{#CTRL {#SHIFT -chars y}}{#insert zTSlp}	zCSpYY
+Shift+YY -- zSpYY	{#SHIFT -chars y}{#insert zTSlp}	zSpYY

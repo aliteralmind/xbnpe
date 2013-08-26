@@ -1,0 +1,8 @@
+FIVE -- zFIVE	{#NONE -chars 5}{#insert zTSlp}	zFIVE
+Alt+FIVE -- zApFIVE	{#ALT -chars 5}{#insert zTSlp}	zApFIVE
+Alt+Shift+FIVE -- zASpFIVE	{#ALT {#SHIFT -chars 5}}{#insert zTSlp}	zASpFIVE
+Ctrl+FIVE -- zCpFIVE	{#CTRL -chars 5}{#insert zTSlp}	zCpFIVE
+Ctrl+Alt+FIVE -- zCApFIVE	{#CTRL {#ALT -chars 5}}{#insert zTSlp}	zCApFIVE
+Ctrl+Alt+Shift+FIVE -- zCASpFIVE	{#CTRL {#ALT {#SHIFT -chars 5}}}{#insert zTSlp}	zCASpFIVE
+Ctrl+Shift+FIVE -- zCSpFIVE	{#CTRL {#SHIFT -chars 5}}{#insert zTSlp}	zCSpFIVE
+Shift+FIVE -- zSpFIVE	{#SHIFT -chars 5}{#insert zTSlp}	zSpFIVE

@@ -1,0 +1,8 @@
+TWO -- zTWO	{#NONE -chars 2}{#insert zTSlp}	zTWO
+Alt+TWO -- zApTWO	{#ALT -chars 2}{#insert zTSlp}	zApTWO
+Alt+Shift+TWO -- zASpTWO	{#ALT {#SHIFT -chars 2}}{#insert zTSlp}	zASpTWO
+Ctrl+TWO -- zCpTWO	{#CTRL -chars 2}{#insert zTSlp}	zCpTWO
+Ctrl+Alt+TWO -- zCApTWO	{#CTRL {#ALT -chars 2}}{#insert zTSlp}	zCApTWO
+Ctrl+Alt+Shift+TWO -- zCASpTWO	{#CTRL {#ALT {#SHIFT -chars 2}}}{#insert zTSlp}	zCASpTWO
+Ctrl+Shift+TWO -- zCSpTWO	{#CTRL {#SHIFT -chars 2}}{#insert zTSlp}	zCSpTWO
+Shift+TWO -- zSpTWO	{#SHIFT -chars 2}{#insert zTSlp}	zSpTWO

@@ -1,0 +1,3 @@
+zzEmptyStringMarker	__ES__	zzEmptyStringMarker
+zEscThenFcsTP	{#sleep 50}{#insert zESC}{#sleep 50}{#insert zFocusOnTextPadWindow}	zEscThenFcsTP
+zEscThenFcsTPSlk	{#insert zEscThenFcsTP}{#sleep 1000}	zEscThenFcsTPSlk

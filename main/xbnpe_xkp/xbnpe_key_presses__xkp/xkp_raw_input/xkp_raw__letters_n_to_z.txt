@@ -1,0 +1,13 @@
+NN	-chars n
+OO	-chars o
+PP	-chars p
+QQ	-chars q
+RR	-chars r
+SS	-chars s
+TT	-chars t
+UU	-chars u
+VV	-chars v
+WW	-chars w
+XX	-chars x
+YY	-chars y
+ZZ	-chars z

@@ -1,0 +1,17 @@
+(*
+   Required by phrase-creator-ddmenu-utils...START
+      PM_DDMENU_DIRID_FILENMPHRSNM_HDRAUTOTXT=snr/zzPmdmFNmPreSnrFind/xhsfcu
+   Required by phrase-creator-ddmenu-utils...END
+*)
+zFindDlgCloseUp	{#insert zFindFlagUpRAW}{#insert zFindDlgClose}	zFindDlgCloseUp
+zFindDlgCloseUpMC -- Up selected, MC unchecked	{#insert zFindDlgCloseUp}{#insert zTPFindFlagMCoff}	zFindDlgCloseUpMC
+zFindDlgCloseUpMCRE	{#insert zFindDlgCloseUp}{#insert zFindFlagsMCREoff}	zFindDlgCloseUpMCRE
+zFindDlgCloseUpMCREXS	{#insert zFindFlagXSTgl}{#insert zFindDlgCloseUp}{#insert zFindFlagsMCREoff}	zFindDlgCloseUpMCREXS
+zFindDlgCloseUpMCWW	{#insert zFindDlgCloseUp}{#insert zFindFlagsMCWWoff}	zFindDlgCloseUpMCWW
+zFindDlgCloseUpMCWWXS	{#insert zFindFlagXSTgl}{#insert zFindDlgCloseUp}{#insert zFindFlagsMCWWoff}	zFindDlgCloseUpMCWWXS
+zFindDlgCloseUpMCXS	{#insert zFindDlgCloseUpXS}{#insert zTPFindFlagMCoff}	zFindDlgCloseUpMCXS
+zFindDlgCloseUpRE	{#insert zFindDlgCloseUp}{#insert zTPFindFlagREoff}	zFindDlgCloseUpRE
+zFindDlgCloseUpREXS	{#insert zFindDlgCloseUpXS}{#insert zTPFindFlagREoff}	zFindDlgCloseUpREXS
+zFindDlgCloseUpWW	{#insert zFindDlgCloseUp}{#insert zTPFindFlagWWoff}	zFindDlgCloseUpWW
+zFindDlgCloseUpWWXS	{#insert zFindDlgCloseUpXS}{#insert zTPFindFlagWWoff}	zFindDlgCloseUpWWXS
+zFindDlgCloseUpXS	{#insert zFindFlagXSTgl}{#insert zFindDlgCloseUp}	zFindDlgCloseUpXS

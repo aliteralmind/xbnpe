@@ -1,0 +1,10 @@
+SelectAll
+SelectBeginBlock
+SelectBeginLine
+SelectBeginStream       Ctrl+Q, S
+SelectCancel
+SelectEnd
+SelectLine
+SelectParagraph
+SelectSwapEnds
+SelectWord

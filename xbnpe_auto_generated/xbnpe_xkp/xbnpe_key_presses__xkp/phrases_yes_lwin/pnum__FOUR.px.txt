@@ -1,0 +1,8 @@
+Alt+LWin+FOUR -- zALpFOUR	{#ALT {#LWIN -chars 4}}{#insert zTSlp}	zALpFOUR
+Alt+Shift+LWin+FOUR -- zASLpFOUR	{#ALT {#SHIFT {#LWIN -chars 4}}}{#insert zTSlp}	zASLpFOUR
+Ctrl+Alt+LWin+FOUR -- zCALpFOUR	{#CTRL {#ALT {#LWIN -chars 4}}}{#insert zTSlp}	zCALpFOUR
+Ctrl+Alt+Shift+LWin+FOUR -- zCASLpFOUR	{#CTRL {#ALT {#SHIFT {#LWIN -chars 4}}}}{#insert zTSlp}	zCASLpFOUR
+Ctrl+LWin+FOUR -- zCLpFOUR	{#CTRL {#LWIN -chars 4}}{#insert zTSlp}	zCLpFOUR
+Ctrl+Shift+LWin+FOUR -- zCSLpFOUR	{#CTRL {#SHIFT {#LWIN -chars 4}}}{#insert zTSlp}	zCSLpFOUR
+LWin+FOUR -- zLpFOUR	{#LWIN -chars 4}{#insert zTSlp}	zLpFOUR
+Shift+LWin+FOUR -- zSLpFOUR	{#SHIFT {#LWIN -chars 4}}{#insert zTSlp}	zSLpFOUR

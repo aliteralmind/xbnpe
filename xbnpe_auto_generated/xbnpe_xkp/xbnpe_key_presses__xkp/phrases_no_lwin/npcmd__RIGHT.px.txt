@@ -1,0 +1,8 @@
+RIGHT -- zRIGHT	{#RIGHT}{#insert zTSlp}	zRIGHT
+Alt+RIGHT -- zApRIGHT	{#ALT {#RIGHT}}{#insert zTSlp}	zApRIGHT
+Alt+Shift+RIGHT -- zASpRIGHT	{#ALT {#SHIFT {#RIGHT}}}{#insert zTSlp}	zASpRIGHT
+Ctrl+RIGHT -- zCpRIGHT	{#CTRL {#RIGHT}}{#insert zTSlp}	zCpRIGHT
+Ctrl+Alt+RIGHT -- zCApRIGHT	{#CTRL {#ALT {#RIGHT}}}{#insert zTSlp}	zCApRIGHT
+Ctrl+Alt+Shift+RIGHT -- zCASpRIGHT	{#CTRL {#ALT {#SHIFT {#RIGHT}}}}{#insert zTSlp}	zCASpRIGHT
+Ctrl+Shift+RIGHT -- zCSpRIGHT	{#CTRL {#SHIFT {#RIGHT}}}{#insert zTSlp}	zCSpRIGHT
+Shift+RIGHT -- zSpRIGHT	{#SHIFT {#RIGHT}}{#insert zTSlp}	zSpRIGHT

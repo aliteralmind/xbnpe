@@ -1,0 +1,5 @@
+zDupCurrFileTextToNewCloseOrig -- Assumes orig has no unsaved changes!	{#sleep 25}{#insert zSelectAllCopy}{#insert zFcsTPFileClose}{#insert zFileNewPaste}	zDupCurrFileTextToNewCloseOrig
+
+zDupCurrFileTextToNewFileEmptyCB	{#insert zDupCurrFileTextToNewFile}{#SETCLIPBOARD}	zDupCurrFileTextToNewFileEmptyCB
+
+zUndo2DupCurrFileTextToNewFileCloseOrig -- Assumes only autotext typed since saved	{#BALLOON -title WARNING -text It is assumed that the ONLY thing done in this file, since it was last saved, was for an autotext to be typed and triggered. If this is not true (or if you mis-typed the autotext and backspaced!), this will fail.}{#insert zTPUndo}{#insert zTPUndo}{#insert zDupCurrFileTextToNewCloseOrig}	zUndo2DupCurrFileTextToNewFileCloseOrig

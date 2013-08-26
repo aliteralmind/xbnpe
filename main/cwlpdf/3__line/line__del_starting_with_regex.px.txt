@@ -1,0 +1,4 @@
+klc1n -- zDelLineStartingWPromptREAndNum ALT KC	{#insert zDelLineStartingWPromptREAndNum}	klc1n
+
+zDelLineStartingWPromptREAndNum -- Del each X-lines down, starting with 1st user-prompted regex
+{#BALLOON -title Delete lines starting with regex -text About to select some lines down, & delete each, starting with the first instance of a regex (including the regex). This is intended for extremely simply regexes and non-regex strings. '[^\n\r]+$' is appended to it.}{#SETPHRASE -description zv1LN_RE -content {#INPUT -head Start-with regex? -def \t -single} -autotext zv1LN_RE -folder ctvv_folder}{#SETPHRASE -description zvLINE_COUNT -content {#INPUT -head Lines down? -single} -autotext zvLINE_COUNT -folder ctvv_folder}

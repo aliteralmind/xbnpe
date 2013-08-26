@@ -1,0 +1,14 @@
+zzNewFlV1Nbs_cliplib_ClipClose_ifKc	{#insert zvCMD_ABRV_1C_sfClipClose}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_cliplib_ClipClose_ifKc
+zzNewFlV1Nbs_cliplib_ClipCopy_ifKc	{#insert zvCMD_ABRV_1C_sfClipCopy}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_cliplib_ClipCopy_ifKc
+zzNewFlV1Nbs_cliplib_ClipDeleteBook_ifKc	{#insert zvCMD_ABRV_1C_sfClipDeleteBook}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_cliplib_ClipDeleteBook_ifKc
+zzNewFlV1Nbs_cliplib_ClipDeleteEntry_ifKc	{#insert zvCMD_ABRV_1C_sfClipDeleteEntry}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_cliplib_ClipDeleteEntry_ifKc
+zzNewFlV1Nbs_cliplib_ClipEditBook_ifKc	{#insert zvCMD_ABRV_1C_sfClipEditBook}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_cliplib_ClipEditBook_ifKc
+zzNewFlV1Nbs_cliplib_ClipInsert_ifKc	{#insert zvCMD_ABRV_1C_sfClipInsert}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_cliplib_ClipInsert_ifKc
+zzNewFlV1Nbs_cliplib_ClipNewBook_ifKc	{#insert zvCMD_ABRV_1C_sfClipNewBook}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_cliplib_ClipNewBook_ifKc
+zzNewFlV1Nbs_cliplib_ClipPaste_ifKc	{#insert zvCMD_ABRV_1C_sfClipPaste}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_cliplib_ClipPaste_ifKc
+zzNewFlV1Nbs_cliplib_ClipRefresh_ifKc	{#insert zvCMD_ABRV_1C_sfClipRefresh}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_cliplib_ClipRefresh_ifKc
+zzNewFlV1Nbs_cliplib_ClipRenameBook_ifKc	{#insert zvCMD_ABRV_1C_sfClipRenameBook}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_cliplib_ClipRenameBook_ifKc
+zzNewFlV1Nbs_cliplib_ClipRenameEntry_ifKc	{#insert zvCMD_ABRV_1C_sfClipRenameEntry}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_cliplib_ClipRenameEntry_ifKc
+zzNewFlV1Nbs_cliplib_ClipSaveBook_ifKc	{#insert zvCMD_ABRV_1C_sfClipSaveBook}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_cliplib_ClipSaveBook_ifKc
+zzNewFlV1Nbs_cliplib_ClipSortEntries_ifKc	{#insert zvCMD_ABRV_1C_sfClipSortEntries}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_cliplib_ClipSortEntries_ifKc
+

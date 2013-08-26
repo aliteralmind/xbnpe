@@ -1,0 +1,8 @@
+zTpkcEditCapitalizeAbrv1C	Ecptl	zTpkcEditCapitalizeAbrv1C
+zTpkcEcptlCmdNameTC	EditCapitalize	zTpkcEcptlCmdNameTC
+zTpkcEcptlDfltPhrsNm	zTPTitleCase	zTpkcEcptlDfltPhrsNm
+zTpkcEcptlCatForCmdAbrvLC	edit	zTpkcEcptlCatForCmdAbrvLC
+zTpkcEcptlCmdType_mcrTl		zTpkcEcptlCmdType_mcrTl
+zTpkcEcptlIsBtstrp_yes		zTpkcEcptlIsBtstrp_yes
+zTpkcEcptlDfltPostKcSlpMils	10	zTpkcEcptlDfltPostKcSlpMils
+zTpkcEcptlStpsFrmCmdListTop	{#insert zPGDN}{#insert zUP}	zTpkcEcptlStpsFrmCmdListTop

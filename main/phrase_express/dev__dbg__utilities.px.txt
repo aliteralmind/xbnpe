@@ -1,0 +1,7 @@
+zDownUp4Times -- Surrounded by z500slp	{#insert zzDUDUDUD}{#insert zUP}{#sleep 500}	zDownUp4Times
+zMsgThenDownUp4Times -- msgbox then zDownUp4Times	{#msgbox -head :) -text About to down-up 4 times}{#insert zDownUp4Times}	zMsgThenDownUp4Times
+zMsgThenUpDown4Times -- msgbox then zUpDown4Times	{#msgbox -head :) -text About to up-down 4 times}{#insert zUpDown4Times}	zMsgThenUpDown4Times
+zUpDown4Times -- Surrounded by z500slp	{#sleep 500}{#insert zUP}{#insert zzDUDUDUD}	zUpDown4Times
+zXPauseDel	xxx{#sleep 1000}{#insert zBKSP3}{#sleep 1000}	zXPauseDel
+zXPauseDel2Times	{#insert zXPauseDel}{#insert zXPauseDel}	zXPauseDel2Times
+zzDUDUDUD	{#sleep 500}{#insert zDOWN}{#sleep 500}{#insert zUP}{#sleep 500}{#insert zDOWN}{#sleep 500}{#insert zUP}{#sleep 500}{#insert zDOWN}{#sleep 500}{#insert zUP}{#sleep 500}{#insert zDOWN}{#sleep 500}	zzDUDUDUD

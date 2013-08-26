@@ -1,0 +1,8 @@
+zTpkcEditLongDateAbrv1C	Eldt	zTpkcEditLongDateAbrv1C
+zTpkcEldtCmdNameTC	EditLongDate	zTpkcEldtCmdNameTC
+zTpkcEldtDfltPhrsNm	zTPLongDate	zTpkcEldtDfltPhrsNm
+zTpkcEldtCatForCmdAbrvLC	edit	zTpkcEldtCatForCmdAbrvLC
+zTpkcEldtCmdType_mcrTl		zTpkcEldtCmdType_mcrTl
+zTpkcEldtIsBtstrp_yes		zTpkcEldtIsBtstrp_yes
+zTpkcEldtDfltPostKcSlpMils	10	zTpkcEldtDfltPostKcSlpMils
+zTpkcEldtStpsFrmCmdListTop	{#insert zEND}{#insert zPGUP4}	zTpkcEldtStpsFrmCmdListTop

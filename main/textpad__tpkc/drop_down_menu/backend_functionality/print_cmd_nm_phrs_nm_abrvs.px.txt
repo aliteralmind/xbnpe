@@ -1,0 +1,49 @@
+(*
+   Print all command-name, cmd-abbreviation pairs, for all commands in a category.
+
+   All commands in all categories:
+      - No category prompts: zTpkcPrntAllCmdNmPhrsNmAbrvsInAllCats
+      - With category prompts: zTpkcPrntAllCmdNmPhrsNmAbrvsInAllCatsWCatPrompts
+
+      [**All of the phrases in this section expect this phrase to exist (in another file, dynamically-created): zzTpkcCallPhrsNmForEachCat_M_catpm]
+
+   All commands in one category:
+      - With lowercase prompt: zTpkcPrntAllCmdNmPhrsNmAbrvsInCatWPrompt
+      - Generic: zzTpkcPrntAllCmdNmPrsNmAbrvsInCat_M_catl
+      - Specific: zTpkcPrntAllCmdNmPhrsNmAbrvsInCat_[zvCAT_ABRV_LC] [***DEFINED ELSEWHERE***]
+
+      [**All of the phrases in this section expect this phrase to exist (in another file, dynamically-created): zzTpkcCallVarPNmForEachCmdInCat_M_catlCmdpm]
+
+   One command (also assigns all kc-s, with temp-on kc-prompt flag)
+      - With LC-user-prompt: zTpkcPrntNmAbrvPairFor1CmdWCmdLCPrompt
+      - zTpkcPrntNmAbrvPairFor1Cmd_M_cmd1 (Called by zTpkcPrntAllCmdNmPhrsNmAbrvsInCat_[zvCAT_ABRV_LC], and may be manually called.)
+
+
+   The phrase that ultimately prints out the (cat-)name-abrv pair is
+      - zTpkcPrntNmAbrvPrRAW_M_catlCmd1
+*)
+zTpkcPrntAllCmdNmPhrsNmAbrvsInAllCats	{#insert zzTpkcPrntAllCmdNmPhrsNmAbrvsIntroPre}{#SETPHRASE -description zvPNM_FOR_CAT -content zzTpkcPrntAllCmdNmPhrsNmAbrvsInCatRAW_M_catl -autotext zvPNM_FOR_CAT -folder ctvv_folder}{#insert zzTpkcCallPhrsNmForEachCat_M_catpm}{#insert zzTpkcPrntAllCmdNmPhrsNmAbrvsOutroPost}	zTpkcPrntAllCmdNmPhrsNmAbrvsInAllCats
+
+zTpkcPrntAllCmdNmPhrsNmAbrvsInAllCatsWCatPrompts	{#insert zzTpkcPrntAllCmdNmPhrsNmAbrvsIntroPre}{#SETPHRASE -description zvPNM_FOR_CAT -content zzTpkcPrntAllCmdNmPhrsNmAbrvsInCatFrmLstTpRAWWYNPrompt_M_catl -autotext zvPNM_FOR_CAT -folder ctvv_folder}{#insert zzTpkcCallPhrsNmForEachCat_M_catpm}{#insert zzTpkcPrntAllCmdNmPhrsNmAbrvsOutroPost}	zTpkcPrntAllCmdNmPhrsNmAbrvsInAllCatsWCatPrompts
+
+zTpkcPrntAllCmdNmPhrsNmAbrvsInCatWPrompt	{#insert zzvCAT_ABRV_LC_stPromptWBalAllCats}{#insert zzTpkcPrntAllCmdNmPrsNmAbrvsInCat_M_catl}	zTpkcPrntAllCmdNmPhrsNmAbrvsInCatWPrompt
+
+zTpkcPrntNmAbrvPairFor1CmdWCmdLCPrompt	{#insert zvCMD_ABRV_1C_stLCPrompt}{#insert zTpkcPrntNmAbrvPairFor1Cmd_M_cmd1}	zTpkcPrntNmAbrvPairFor1CmdWCmdLCPrompt
+
+zTpkcPrntNmAbrvPairFor1Cmd_M_cmd1	{#insert zzTpkcPrntAllCmdNmPhrsNmAbrvsIntroPre}{#insert zzTpkcCIBCmd1_M_cmd1}{#insert zTpkcPrntNmAbrvPrRAW_M_catlCmd1}{#insert zzTpkcPrntAllCmdNmPhrsNmAbrvsOutroPost}	zTpkcPrntNmAbrvPairFor1Cmd_M_cmd1
+
+zTpkcPrntNmAbrvPrRAW_M_catlCmd1 -- Needs zvCAT_ABRV_LC, zvCMD_ABRV_1C	{#insert zvCAT_ABRV_LC} > {#insert zzTpCmdNameTC_M_cmd1}  /  {#insert zzTpCmdDfltPhrsNm_M_cmd1}    ({#LOWERCASEWORD {#insert zvCMD_ABRV_1C}}){#insert zENTER}	zTpkcPrntNmAbrvPrRAW_M_catlCmd1
+
+zzTpkcPrntAllCmdNmPhrsNmAbrvsInCatFrmLstTpRAWWYNPrompt_M_catl	{#MSGBOX -head Assign all KCs to cat '{#insert zvCAT_ABRV_LC}'? -text Assign all key~commands to all commands in category '{#insert zvCAT_ABRV_LC}'? -yes zzTpkcPrntAllCmdNmPhrsNmAbrvsInCatRAW_M_catl -no z1slp -defaultno}	zzTpkcPrntAllCmdNmPhrsNmAbrvsInCatFrmLstTpRAWWYNPrompt_M_catl
+
+zzTpkcPrntAllCmdNmPhrsNmAbrvsInCatRAW_M_catl	{#insert zzTpkcCIBCatLC_M_catl}{#SETPHRASE -description zvPNM_FOR_CMD -content zTpkcPrntNmAbrvPrRAW_M_catlCmd1 -autotext zvPNM_FOR_CMD -folder ctvv_folder}{#insert zzTpkcCallVarPNmForEachCmdInCat_M_catlCmdpm}	zzTpkcPrntAllCmdNmPhrsNmAbrvsInCatRAW_M_catl
+
+zzTpkcPrntAllCmdNmPhrsNmAbrvsIntroPre	{#BALLOON -title Please wait... -text TextPad built in commands: Printing all command~names/command~abbreviation pairs, for all requested commands.}{#insert zFcsTPFileNew}	zzTpkcPrntAllCmdNmPhrsNmAbrvsIntroPre
+
+zzTpkcPrntAllCmdNmPhrsNmAbrvsOutroPost	{#insert zBalloonDone}	zzTpkcPrntAllCmdNmPhrsNmAbrvsOutroPost
+
+zzTpkcPrntAllCmdNmPrsNmAbrvsInCat_M_catl	{#insert zzTpkcPrntAllCmdNmPhrsNmAbrvsIntroPre}{#insert zzTpkcPrntAllCmdNmPhrsNmAbrvsInCatRAW_M_catl}{#insert zzTpkcPrntAllCmdNmPhrsNmAbrvsOutroPost}	zzTpkcPrntAllCmdNmPrsNmAbrvsInCat_M_catl
+
+zzvCAT_ABRV_LC_stPromptWBalAllCats	{#insert zzzBalloonAllCatAbrvs}{#SETPHRASE -description zvCAT_ABRV_LC -content {#INPUT -head Which category? -single} -autotext zvCAT_ABRV_LC -folder ctvv_folder}	zzvCAT_ABRV_LC_stPromptWBalAllCats
+
+zzzBalloonAllCatAbrvs	{#BALLOON -title All category abbreviations -text {#insert zTpkcAllCategoryAbrvLCsQbl}}	zzzBalloonAllCatAbrvs

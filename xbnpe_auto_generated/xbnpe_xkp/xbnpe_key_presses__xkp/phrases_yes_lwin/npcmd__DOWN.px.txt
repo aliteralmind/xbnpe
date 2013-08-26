@@ -1,0 +1,8 @@
+Alt+LWin+DOWN -- zALpDOWN	{#ALT {#LWIN {#DOWN}}}{#insert zTSlp}	zALpDOWN
+Alt+Shift+LWin+DOWN -- zASLpDOWN	{#ALT {#SHIFT {#LWIN {#DOWN}}}}{#insert zTSlp}	zASLpDOWN
+Ctrl+Alt+LWin+DOWN -- zCALpDOWN	{#CTRL {#ALT {#LWIN {#DOWN}}}}{#insert zTSlp}	zCALpDOWN
+Ctrl+Alt+Shift+LWin+DOWN -- zCASLpDOWN	{#CTRL {#ALT {#SHIFT {#LWIN {#DOWN}}}}}{#insert zTSlp}	zCASLpDOWN
+Ctrl+LWin+DOWN -- zCLpDOWN	{#CTRL {#LWIN {#DOWN}}}{#insert zTSlp}	zCLpDOWN
+Ctrl+Shift+LWin+DOWN -- zCSLpDOWN	{#CTRL {#SHIFT {#LWIN {#DOWN}}}}{#insert zTSlp}	zCSLpDOWN
+LWin+DOWN -- zLpDOWN	{#LWIN {#DOWN}}{#insert zTSlp}	zLpDOWN
+Shift+LWin+DOWN -- zSLpDOWN	{#SHIFT {#LWIN {#DOWN}}}{#insert zTSlp}	zSLpDOWN

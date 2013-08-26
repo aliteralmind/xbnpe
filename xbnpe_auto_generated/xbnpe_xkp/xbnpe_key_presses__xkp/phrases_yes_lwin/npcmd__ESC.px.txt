@@ -1,0 +1,8 @@
+Alt+LWin+ESC -- zALpESC	{#ALT {#LWIN {#ESC}}}{#insert zTSlp}	zALpESC
+Alt+Shift+LWin+ESC -- zASLpESC	{#ALT {#SHIFT {#LWIN {#ESC}}}}{#insert zTSlp}	zASLpESC
+Ctrl+Alt+LWin+ESC -- zCALpESC	{#CTRL {#ALT {#LWIN {#ESC}}}}{#insert zTSlp}	zCALpESC
+Ctrl+Alt+Shift+LWin+ESC -- zCASLpESC	{#CTRL {#ALT {#SHIFT {#LWIN {#ESC}}}}}{#insert zTSlp}	zCASLpESC
+Ctrl+LWin+ESC -- zCLpESC	{#CTRL {#LWIN {#ESC}}}{#insert zTSlp}	zCLpESC
+Ctrl+Shift+LWin+ESC -- zCSLpESC	{#CTRL {#SHIFT {#LWIN {#ESC}}}}{#insert zTSlp}	zCSLpESC
+LWin+ESC -- zLpESC	{#LWIN {#ESC}}{#insert zTSlp}	zLpESC
+Shift+LWin+ESC -- zSLpESC	{#SHIFT {#LWIN {#ESC}}}{#insert zTSlp}	zSLpESC

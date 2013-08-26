@@ -1,0 +1,2 @@
+zzPrjCVNumForPrivKey	-2	zzPrjCVNumForPrivKey
+zzPrjCVNumForPubKey	-1	zzPrjCVNumForPubKey

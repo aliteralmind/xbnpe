@@ -1,0 +1,8 @@
+zTpkcFileCloseAbrv1C	Fcls	zTpkcFileCloseAbrv1C
+zTpkcFclsCmdNameTC	FileClose	zTpkcFclsCmdNameTC
+zTpkcFclsDfltPhrsNm	zTPFileClose	zTpkcFclsDfltPhrsNm
+zTpkcFclsCatForCmdAbrvLC	file	zTpkcFclsCatForCmdAbrvLC
+zTpkcFclsCmdType_mcrTl		zTpkcFclsCmdType_mcrTl
+zTpkcFclsIsBtstrp_yes	yes	zTpkcFclsIsBtstrp_yes
+zTpkcFclsDfltPostKcSlpMils	10	zTpkcFclsDfltPostKcSlpMils
+zTpkcFclsStpsFrmCmdListTop	(*NOTHING! No steps! This command is the top-most command in the list.*)	zTpkcFclsStpsFrmCmdListTop

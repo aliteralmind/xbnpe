@@ -1,0 +1,11 @@
+flcbf* -- flcb, Target file different class in same directory	{#insert zzjlCodeOffPrekOff}{#insert zzFlcbfPostPrek}	flcbf
+flcbfc* -- flcbf, CODE-d	{#insert zzjlCodeOnPrekOff}{#insert zzFlcbfPostPrek}	flcbfc
+flcbfy -- flcbf, displaY nothing (just x-mark)	{#insert zzjlFuncNmIsCB}{#insert zzjlZeroParamsFuncLink_MSTR_dispXFileIsX}	flcbfy
+flpwf -- flpw, func in a diff class in same directory	{#insert zzjlCodeOffPrekOff}{#insert zzjlFuncNmIsL1w}{#insert zzjlNPFuncLink_MSTR_dispFuncFileIsX}	flpwf
+flpwfb** -- flpwf, file-name in clipBoard	{#insert zzjlCodeOffPrekOff}{#insert zzFlpwfbcPostPrek}	flpwfb**
+flpwfbc** -- flpwfb, CODE-d	{#insert zzjlCodeOnPrekOff}{#insert zzFlpwfbcPostPrek}	flpwfbc
+flpwfby -- flpwfy, File-name in clipBoard	{#insert zzjlFileIsCBFuncNmIsL1w}{#insert zzjlZeroParamsFuncLink_MSTR_dispXDirEmpty}	flpwfby
+flpwfc -- flpwf, CODE-d	{#insert zzjlCodeOnPrekOff}{#insert zzjlFuncNmIsL1w}{#insert zzjlNPFuncLink_MSTR_dispFuncFileIsX}	flpwfc
+flpwfy -- flpwf, displaY nothing (just x-mark)	{#insert zzjlFuncNmIsL1w}{#insert zzjlZeroParamsFuncLink_MSTR_dispXFileIsX}	flpwfy
+flpwfyb -- flpwfy, displaY in clipBoard	{#insert zzjlDispCBFuncNmIsL1w}{#insert zzjlZeroParamsFuncLink_MSTR_dispOther}	flpwfyb
+

@@ -1,0 +1,3 @@
+antcompile -- Ant javac tag.	<javac srcdir={#asc 34}${#insert zOY}DIR_xbnjava_sandbox_xbnsrc}{#insert zXmark}{#asc 34}{#insert zEnterTab}destdir={#asc 34}${#insert zOY}DIR_classes_parent}{#asc 34}{#insert zENTER}includes={#asc 34}{#insert zXmark}.java{#asc 34}{#insert zENTER}excludes={#asc 34}{#insert zXmark}{#asc 34}{#insert zENTER}classpathref={#asc 34}xbn_classpath{#asc 34} debug={#asc 34}true{#asc 34} debuglevel={#asc 34}lines,vars,source{#asc 34} listfiles={#asc 34}true{#asc 34}/>{#insert zFindXUp3}	antcompile
+antfs -- ${fs}	${#insert zOY}fs}	antfs
+antv -- ${}	${}{#insert zLEFT}	antv

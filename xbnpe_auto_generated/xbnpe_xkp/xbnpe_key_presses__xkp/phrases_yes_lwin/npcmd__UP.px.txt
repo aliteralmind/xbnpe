@@ -1,0 +1,8 @@
+Alt+LWin+UP -- zALpUP	{#ALT {#LWIN {#UP}}}{#insert zTSlp}	zALpUP
+Alt+Shift+LWin+UP -- zASLpUP	{#ALT {#SHIFT {#LWIN {#UP}}}}{#insert zTSlp}	zASLpUP
+Ctrl+Alt+LWin+UP -- zCALpUP	{#CTRL {#ALT {#LWIN {#UP}}}}{#insert zTSlp}	zCALpUP
+Ctrl+Alt+Shift+LWin+UP -- zCASLpUP	{#CTRL {#ALT {#SHIFT {#LWIN {#UP}}}}}{#insert zTSlp}	zCASLpUP
+Ctrl+LWin+UP -- zCLpUP	{#CTRL {#LWIN {#UP}}}{#insert zTSlp}	zCLpUP
+Ctrl+Shift+LWin+UP -- zCSLpUP	{#CTRL {#SHIFT {#LWIN {#UP}}}}{#insert zTSlp}	zCSLpUP
+LWin+UP -- zLpUP	{#LWIN {#UP}}{#insert zTSlp}	zLpUP
+Shift+LWin+UP -- zSLpUP	{#SHIFT {#LWIN {#UP}}}{#insert zTSlp}	zSLpUP

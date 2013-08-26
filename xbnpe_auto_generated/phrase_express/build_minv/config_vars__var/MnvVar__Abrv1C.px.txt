@@ -1,0 +1,13 @@
+__**WARNING**__: All phrases in this folder were created by 'plpdcf'. DO NOT EDIT.	.		(*Extra tab to allow for empty-string autotext*)
+zvVAR_ABRV_1C_sfKey	{#SETPHRASE -description zvVAR_ABRV_1C -content {#insert zzMnvVarVrv1_cfgValue_M_key} -autotext zvVAR_ABRV_1C -folder ctvv_folder}	zvVAR_ABRV_1C_sfKey
+zzMnvVarVrv1_cfgValue_M_key	{#insert {#insert zzMnvVarVrv1_cfgVarPhrsName_M_key}}	zzMnvVarVrv1_cfgValue_M_key
+zzMnvVarAbrv1C_cvtFromAbrv1C	Vrv1	zzMnvVarAbrv1C_cvtFromAbrv1C
+zzMnvVarVrv1_cfgVarPNmPost	Abrv1C	zzMnvVarVrv1_cfgVarPNmPost
+zzMnvVarVrv1_intrnlVarNm	zvVAR_ABRV_1C	zzMnvVarVrv1_intrnlVarNm
+zzMnvVarVrv1_cfgVarPhrsName_M_key	zz{#insert zzMnvVarProjectAbrv1C}{#insert zzMnvVarDataTypeAbrv1C}{#insert zvVAR_PNMV_1C}{#insert zzMnvVarVrv1_cfgVarPNmPost}	zzMnvVarVrv1_cfgVarPhrsName_M_key
+zzMnvVarVrv1_helpForDlg	The MINV_Variable abbreviation, used publicly to uniquely identify this MINV_Variable. Only the first character is uppercase. Note that this cv_types internal_variable name MUST be the same as the MINV_Command's Varv1 cv_type.	zzMnvVarVrv1_helpForDlg
+zzMnvVarVrv1_valuePrintable	yes	zzMnvVarVrv1_valuePrintable
+zzMnvVarVrv1_validateValuePhrsNm	__VALUE_NOT_VLDTD__	zzMnvVarVrv1_validateValuePhrsNm
+zzMnvVarVrv1_nkcvListNum	-1	zzMnvVarVrv1_nkcvListNum
+zzMnvVarVrv1_keyCVTFromAbrv1C	{#insert zzMnvVarPrivKeyCVTFromAbrv1C}	zzMnvVarVrv1_keyCVTFromAbrv1C
+zvCVT_FRMV_1C_stMnvVarVrv1	{#SETPHRASE -description zvCVT_FRMV_1C -content {#insert zzMnvVarAbrv1C_cvtFromAbrv1C} -autotext zvCVT_FRMV_1C -folder ctvv_folder}	zvCVT_FRMV_1C_stMnvVarVrv1

@@ -1,0 +1,19 @@
+---
+20130214: Considered adding, but never did
+
+
+(**)
+Anumpn
+ActNumSetPNameOrES
+zvANUM_SET_PNAME
+__VALUE_PRINTABLE__
+__LLI_OPT_ES_OK__
+__VALUE_NOT_VLDTD__
+If the master~phrase uses action number without change, then set this to the empty~string (as denoted by zzEmptyStringMarker='{#insert zOYx}#insert zzEmptyStringMarker{#insert zCYx}'='{#insert zOYw}#insert zzEmptyStringMarker{#insert zCYw}'). If the value needs to be altered in any way, then set this to the name of the phrase that does the alteration. This phrase reads the current MINV~Variable and then returns the needed value~~it should NOT set the variable itself. Such as 'zvTABS_RIGHT_times2'. (For example, in 'tbb5', 5 is the 'action number'. This prints a literal phrase~call to 'zTAB5', which prints five tabs. So this command uses the action-number as is. If a MINV-Command needs to double this action-number then create a phrase called zvTABS_RIGHT_times2, and set this to 'zvTABS_RIGHT_times2'.)
+
+
+
+---
+20130208: Removed from autogen-main -- The bodies of internal nnl-cmds are manually created, and are printed in the command-descriptions.
+
+zzNNLIntrnlCmdPntsToTgt_M_nnlgName	{#insert zzMnvCmdNameNoNum_M_prePst} -- {#insert zzMnvCmdNameWNnlTgtNum_M_prePst}(*zvNUMBER is now nnl target*) ALT KC{#insert zTAB}{#insert zOY}#insert {#insert zzMnvCmdName_M_preNumPst}{#insert zCY}{#insert zTAB}{#insert zzMnvCmdNameNoNum_M_prePst}{#insert zENTER}	zzNNLIntrnlCmdPntsToTgt_M_nnlgName

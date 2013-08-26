@@ -1,0 +1,13 @@
+zzTpkcAllCmdsWAKcQbl_file	[FileClose][FileCloseAll][FileGoTo][FileManage][FileNew][FileOpen][FilePrintAll][FileSave][FileSaveAll][FileSaveAndClose][FileSaveAs][WorkspaceSaveAs]	zzTpkcAllCmdsWAKcQbl_file
+zzTpkcAllCmdsWAKcQbl_edit	[EditBackspace][EditCapitalize][EditCopy][EditCopyAppend][EditCopyFileName][EditCopyTaggedLines][EditCut][EditCutAppend][EditCutTaggedLines][EditDelete][EditDelLine][EditDelLineEnd][EditDelTaggedLines][EditDelWordLeft][EditDelWordRight][EditDupLine][EditIndentLess][EditIndentMore][EditInvertCase][EditLowerCase][EditPaste][EditRedo][EditReformat][EditUndo][EditUpperCase]	zzTpkcAllCmdsWAKcQbl_edit
+zzTpkcAllCmdsWAKcQbl_search	[BookmarkClearAll][BookmarkInvertAll][BookmarkNext][BookmarkPrev][BookmarkToggle][IncrementalFind][MatchBracket][MatchBracketExtend][MatchCaseClear][MatchCaseSet][MatchWordClear][MatchWordSet][RegexClear][RegexSet][SearchFiles][SearchFind][SearchFindNext][SearchFindPrevious][SearchGoto][SearchOpenAll][SearchReplace][SearchReplaceNext]	zzTpkcAllCmdsWAKcQbl_search
+zzTpkcAllCmdsWAKcQbl_view	[ViewVisibleSpaces]	zzTpkcAllCmdsWAKcQbl_view
+zzTpkcAllCmdsWAKcQbl_tools	[ToolSort][ToolStop]	zzTpkcAllCmdsWAKcQbl_tools
+zzTpkcAllCmdsWAKcQbl_macros	[MacroRecord][MacroSave]	zzTpkcAllCmdsWAKcQbl_macros
+zzTpkcAllCmdsWAKcQbl_config	[Preferences][ToggleReadOnly][ToggleWordWrap]	zzTpkcAllCmdsWAKcQbl_config
+zzTpkcAllCmdsWAKcQbl_window	[WindowPaneNext]	zzTpkcAllCmdsWAKcQbl_window
+zzTpkcAllCmdsWAKcQbl_help		zzTpkcAllCmdsWAKcQbl_help
+zzTpkcAllCmdsWAKcQbl_cursor	[CharLeft][CharLeftExtend][CharRightExtend][DocumentEnd][DocumentEndExtend][DocumentStart][DocumentStartExtend][LineEnd][LineEndExtend][LineLeft][LineLeftExtend][PageDown][PageRight][PageUp][PageUpExtend][ParaDownExtend][ParaUpExtend][WordLeft][WordLeftExtend][WordRightEnd][WordRightEndExtend]	zzTpkcAllCmdsWAKcQbl_cursor
+zzTpkcAllCmdsWAKcQbl_sel	[SelectAll][SelectLine][SelectParagraph][SelectWord]	zzTpkcAllCmdsWAKcQbl_sel
+zzTpkcAllCmdsWAKcQbl_cliplib		zzTpkcAllCmdsWAKcQbl_cliplib
+zzTpkcAllCmdsWAKcQbl_chars		zzTpkcAllCmdsWAKcQbl_chars

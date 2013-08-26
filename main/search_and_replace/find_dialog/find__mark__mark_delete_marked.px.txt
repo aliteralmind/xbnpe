@@ -1,0 +1,10 @@
+(*
+   Required by phrase-creator-ddmenu-utils...START
+      PM_DDMENU_DIRID_FILENMPHRSNM_HDRAUTOTXT=snr/zzPmdmFNmPreSnrFind/xhsffb
+   Required by phrase-creator-ddmenu-utils...END
+*)
+zFindFlagADBtnMarkADraw -- toggle-AD, mark all, toggle-AD	{#insert zFindFlagADTglRAW}{#insert zFindBtnMarkAll}{#insert zFindFlagADTglRAW}	zFindFlagADBtnMarkADraw
+zFindFlagADBtnMarkAD -- zFindFlagADBtnMarkADraw, go to find-what	{#insert zFindFlagADBtnMarkADraw}{#insert zFindFieldWhat}	zFindFlagADBtnMarkAD
+
+
+

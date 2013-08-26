@@ -1,0 +1,6 @@
+zTpkcCursorAbrvLC	cursor	zTpkcCursorAbrvLC
+zTpkcCursorAllCmdNamesTCQbl	[CharLeft][CharLeftExtend][CharRight][CharRightExtend][DocumentEnd][DocumentEndExtend][DocumentStart][DocumentStartExtend][GoToBlockEnd][GoToBlockStart][GoToColumn][GoToLine][GoToPage][LineDown][LineDownExtend][LineEnd][LineEndExtend][LineLeft][LineLeftExtend][LineScrollDown][LineScrollUp][LineStart][LineStartExtend][LineUp][LineUpExtend][PageDown][PageDownExtend][PageLeft][PageLeftExtend][PageRight][PageRightExtend][PageUp][PageUpExtend][ParaDown][ParaDownExtend][ParaUp][ParaUpExtend][TabLeft][ViewEnd][ViewStart][WordLeft][WordLeftEnd][WordLeftEndExtend][WordLeftExtend][WordRight][WordRightEnd][WordRightEndExtend][WordRightExtend]	zTpkcCursorAllCmdNamesTCQbl
+zTpkcCursorCmdCount	48	zTpkcCursorCmdCount
+zTpkcCursorHasUserCrtdCmds_yes		zTpkcCursorHasUsrCrtdCmds_yes
+zTpkcCursorStpsFrmCatListTop	{#LOOP {#insert zCC}{#insert z5ThnTSlp} -count 2}	zTpkcCursorStpsFrmCatListTop
+zTpkcCursorNameLC	cursor	zTpkcCursorNameLC

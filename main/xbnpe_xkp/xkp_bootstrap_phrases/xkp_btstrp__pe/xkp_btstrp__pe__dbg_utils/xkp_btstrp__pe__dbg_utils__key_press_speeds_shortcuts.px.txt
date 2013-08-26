@@ -1,0 +1,17 @@
+kfp -- Literal zKeyPressFast	\\\{#insert zKeyPressFast\\\}{#insert zzKeyPrsSyntax}	kfp
+kgp -- Literal zKeyPressGlacial	\\\{#insert zKeyPressGlacial\\\}{#insert zzKeyPrsSyntax}	kgp
+kmp -- Literal zKeyPressMedium	\\\{#insert zKeyPressMedium\\\}{#insert zzKeyPrsSyntax}	kmp
+kpf -- zKeyPressFast ALT KC	{#insert zKeyPressFast}{#insert zzKeyPrsSyntax}	kpf
+kpg -- zKeyPressGlacial ALT KC	{#insert zKeyPressGlacial}{#insert zzKeyPrsSyntax}	kpg
+kpm -- zKeyPressMedium ALT KC	{#insert zKeyPressMedium}{#insert zzKeyPrsSyntax}	kpm
+kps -- zKeyPressSlow ALT KC	{#insert zKeyPressSlow}{#insert zzKeyPrsSyntax}	kps
+kpss -- zKeyPressSuperSlow ALT KC	{#insert zKeyPressSuperSlow}{#insert zzKeyPrsSyntax}	kpss
+kpt -- Get current speed	{#insert zzKeyPrsSyntax}	kpt
+ksp -- Literal zKeyPressSlow	\\\{#insert zKeyPressSlow\\\}{#insert zzKeyPrsSyntax}	ksp
+kssp -- Literal zKeyPressSuperSlow	\\\{#insert zKeyPressSuperSlow\\\}{#insert zzKeyPrsSyntax}	kssp
+zKeyPressSpeedRevert -- zvMILLS=zvPREV_KP_MILLS, zKeyPressSpeedSetToMills_M_mils	{#SETPHRASE -description zvMILLS -content {#insert zvPREV_KP_MILLS} -autotext zvMILLS -folder ctvv_folder}{#insert zKeyPressSpeedSetToMills_M_mils}	zKeyPressSpeedRevert
+zKeyPressSpeedSetToMills_M_mils -- Needs zvMILLS	{#SETPHRASE -description zTSlp -content \\\{#sleep {#insert zvMILLS}\\\} -autotext zTSlp -folder ctvv_folder}{#SETPHRASE -description zvCURR_KP_SPEED -content {#insert zvMILLS} -autotext zvCURR_KP_SPEED -folder ctvv_folder}	zKeyPressSpeedSetToMills_M_mils
+zzKeyPrsSyntax	{#BALLOON -title Current key-press speed -text zvCURR_KP_SPEED='{#insert zvCURR_KP_SPEED}'  //  Actions: kp[f,m,s,ss,g,t] -- (Fast,Medium,Slow,SuperSlow,Glacial,curren'T')  //  Phrase-creators: k[f,m,s,ss,g]p}	zzKeyPrsSyntax
+zSlk2KeyPressSlow	{#sleep 2000}{#insert zKeyPressSlow}	zSlk2KeyPressSlow
+
+zKeyPressSpeedSave -- zvPREV_KP_MILLS=zvCURR_KP_SPEED	{#SETPHRASE -description zvPREV_KP_MILLS -content {#insert zvCURR_KP_SPEED} -autotext zvPREV_KP_MILLS -folder ctvv_folder}	zKeyPressSpeedSave

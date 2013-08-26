@@ -1,0 +1,5 @@
+pcmt_forHKOnly -- [zCApMM]	{#insert pcmt}	pcmt_forHKOnly
+tw_forHKOnly -- tw ALT KC [zApF7]	{#insert tw}	tw_forHKOnly
+twh_forHKOnly -- twh [zF7]	{#insert twh}	twh_forHKOnly
+zXmark_forHKOnly -- [zCASpHOME]	{#insert zXmark}	zXmark_forHKOnly
+zYmark_forHKOnly -- [zCASpINS]	{#insert zYmark}	zYmark_forHKOnly

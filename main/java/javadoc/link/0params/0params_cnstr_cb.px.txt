@@ -1,0 +1,11 @@
+clcb* --  NP (No Parameter) Constructor Link from name in ClipBoard	{#insert zzjlCodeOffPrekOff}{#insert zzClcbPostPrek}	clcb
+clcbc* -- clcb, CODE-d	{#insert zzjlCodeOnPrekOff}{#insert zzClcbPostPrek}	clcbc
+clcbd* -- clcb, target file in a different dir	{#insert zzjlCodeOffPrekOff}{#insert zzClcbdPostPrek}	clcbd
+clcbdc* -- clcbd, CODE-d	{#insert zzjlCodeOnPrekOff}{#insert zzClcbdPostPrek}	clcbdc
+clcbdn -- clcbdyn ALT KC	{#insert clcbdyn}	clcbdn
+clcbdy -- clcbd, displaY nothing (x-mark)	{#insert zzjlCodeOffPrekOff}{#insert zzjlCnstrNmIsCB}{#insert zzjlDispXPAPES}{#insert zzjlNPCnstrLink_fileIsCnstrNmDirPrompt}	clcbdy
+clcbdyn -- clcbd, 'coNstructor' display	{#insert zzjlCodeOffPrekOff}{#insert zzjlCnstrNmIsCB}{#insert zzjlDispQCnstrQPAPES}{#insert zzjlNPCnstrLink_fileIsCnstrNmDirPrompt}	clcbdn
+clcbn -- clcbyn ALT KC	{#insert clcbyn}	clcbn
+clcby -- clcb, displaY nothing (x-mark)	{#insert zzjlCodeOffPrekOff}{#insert zzjlCnstrNmIsCB}{#insert zzjlDispXPAPES}{#insert zzjlNPCnstrLink_fileIsCnstrNmDirEmpty}	clcby
+clcbyn -- clcb, 'coNstructor' display	{#insert zzjlCodeOffPrekOff}{#insert zzjlCnstrNmIsCB}{#insert zzjlDispQCnstrQPAPES}{#insert zzjlNPCnstrLink_fileIsCnstrNmDirEmpty}	clcbn
+

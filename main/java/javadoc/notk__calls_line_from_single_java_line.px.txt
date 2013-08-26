@@ -1,0 +1,6 @@
+jdcfl -- Create <P>Calls line with current java line (**)	(*Call from java line*){#insert zzWWHmGtfcSelLineGTPrvFnUp2CallsPara}{#insert zzClsCdPVDownWW}	jdcfl
+jdcfl1 -- jdcfl on one line	{#insert zzWWHmGtfcSelLineGTPrvFnUp2CallsPara}{#insert zzClsCdPVDownWW}	jdcfl1
+jdcfle -- jdcfl, HTML-esc ret-type	{#insert zzWWHmGtfcSelLineGTPrvFnUp2CallsPara}{#insert zHOME}{#insert zMoveR4w}{#insert zRIGHT}{#insert zSpEND}{#insert xhEscapeSel}{#insert zRIGHT}{#insert zzClsCdPVDownWW}	jdcfle
+jdcfle1 -- jdcfl, HTML-esc ret-type	{#insert zzWWHmGtfcSelLineGTPrvFnUp2CallsPara}{#insert zHOME}{#insert zMoveR4w}{#insert zRIGHT}{#insert zSpEND}{#insert xhEscapeSel}{#insert zRIGHT}{#insert zzClsCdPVDownWW}	jdcfle1
+jdcflq -- jdcfl, qthq	{#insert zzWWHmGtfcSelLineGTPrvFnUp2CallsPara}{#insert zHOME}{#insert zMoveR4w}{#insert zRIGHT}{#insert zSpEND}{#insert rqthq}{#insert zRIGHT}{#insert zzClsCdPVDownWW}	jdcflq
+jdcflq1 -- jdcfl, qthq	{#insert zzWWHmGtfcSelLineGTPrvFnUp2CallsPara}{#insert zHOME}{#insert zMoveR4w}{#insert zRIGHT}{#insert zSpEND}{#insert rqthq}{#insert zRIGHT}{#insert zzClsCdPVDownWW}	jdcflq1

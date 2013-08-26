@@ -1,0 +1,4 @@
+flpw_forHK -[zCSpFOUR]- flpw ALT KC	{#insert flpw}	flpw_forHK
+flpwc_forHK -[zCApFOUR]- flpwc ALT KC	{#insert flpwc}	flpwc_forHK
+zPreFuncSigCopy_forHK -[zCApJJ]- zPreFuncSigCopy ALT KC	{#insert zPreFuncSigCopy}	zPreFuncSigCopy_forHK
+zRTSigSelectedSelCopySigREoff_forHK -[zCASpJJ]- zRTSigSelectedSelCopySigREoff ALT KC	{#insert zRTSigSelectedSelCopySigREoff}	zRTSigSelectedSelCopySigREoff_forHK

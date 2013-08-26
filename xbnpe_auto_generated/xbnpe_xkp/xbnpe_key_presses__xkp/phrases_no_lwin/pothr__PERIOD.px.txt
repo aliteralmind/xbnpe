@@ -1,0 +1,8 @@
+PERIOD -- zPERIOD	{#NONE -chars .}{#insert zTSlp}	zPERIOD
+Alt+PERIOD -- zApPERIOD	{#ALT -chars .}{#insert zTSlp}	zApPERIOD
+Alt+Shift+PERIOD -- zASpPERIOD	{#ALT {#SHIFT -chars .}}{#insert zTSlp}	zASpPERIOD
+Ctrl+PERIOD -- zCpPERIOD	{#CTRL -chars .}{#insert zTSlp}	zCpPERIOD
+Ctrl+Alt+PERIOD -- zCApPERIOD	{#CTRL {#ALT -chars .}}{#insert zTSlp}	zCApPERIOD
+Ctrl+Alt+Shift+PERIOD -- zCASpPERIOD	{#CTRL {#ALT {#SHIFT -chars .}}}{#insert zTSlp}	zCASpPERIOD
+Ctrl+Shift+PERIOD -- zCSpPERIOD	{#CTRL {#SHIFT -chars .}}{#insert zTSlp}	zCSpPERIOD
+Shift+PERIOD -- zSpPERIOD	{#SHIFT -chars .}{#insert zTSlp}	zSpPERIOD

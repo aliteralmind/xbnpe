@@ -1,0 +1,8 @@
+zTpkcClipEditBookAbrv1C	Cleb	zTpkcClipEditBookAbrv1C
+zTpkcClebCmdNameTC	ClipEditBook	zTpkcClebCmdNameTC
+zTpkcClebDfltPhrsNm	zTPClipEditBook	zTpkcClebDfltPhrsNm
+zTpkcClebCatForCmdAbrvLC	cliplib	zTpkcClebCatForCmdAbrvLC
+zTpkcClebCmdType_mcrTl		zTpkcClebCmdType_mcrTl
+zTpkcClebIsBtstrp_yes		zTpkcClebIsBtstrp_yes
+zTpkcClebDfltPostKcSlpMils	50	zTpkcClebDfltPostKcSlpMils
+zTpkcClebStpsFrmCmdListTop	{#insert zPGDN}{#insert zUP2}	zTpkcClebStpsFrmCmdListTop

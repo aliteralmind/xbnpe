@@ -1,0 +1,1 @@
+zPasteSpaceGTStart -- Paste, space, cursor b/4 1st pasted char [zCApKK]	CT/HU!-83%2hu{#insert zTPPaste} {#insert zTPFindDlgOpen}{#insert zFindFlagUp}CT/HU!-83%2hu{#insert zFindBtnNext}{#insert zFindFlagDownRAW}{#insert zFindDlgClose}{#insert zDEL}	zPasteSpaceGTStart

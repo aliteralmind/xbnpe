@@ -1,0 +1,21 @@
+zFFCloseYNPrompt	{#MSGBOX -head zFFindDlgClose? -text Print zFFindDlgClose too? -yes zFFindDlgClose_yes -no z1slp}	zFFCloseYNPrompt
+zFFindDlgClose_yes	{#CURSOR}\\\{#insert zFFindDlgClose\\\}	zFFindDlgClose_yes
+zFindDlgBtnNxtThnClose	{#CURSOR}\\\{#insert zFindBtnNext\\\}\\\{#insert zFindDlgClose\\\}	zFindDlgBtnNxtThnClose
+zFindDlgCloseOnly	{#CURSOR}\\\{#insert zFindDlgClose\\\}	zFindDlgCloseOnly
+zFindNxtAndClsYNPrompt	{#MSGBOX -head zFindBtnNext & zFindDlgClose? -text Print zFindBtnNext and zFindDlgClose too? [Yes]=next and close. [No]=Close only. [Cancel]=Neither -yes zFindDlgBtnNxtThnClose -no zFindDlgCloseOnly -cancel z1slp}	zFindNxtAndClsYNPrompt
+zFindWWFlagOnWarningDlg	{#MSGBOX -head WW warning -text WARNING ~~ The word-wrap flag may only be turned on when there is a search term that CAN be analyzed for whole-words! For example, if ' -- xyz' is in the find-what box, then word-wrap is both unclickable (toggle-able) and unsettable! See zFindFlagForceWWTgl}	zFindWWFlagOnWarningDlg
+zPrefsCloseYNPrompt	{#MSGBOX -head zTPPrefsClose? -text Print zTPPrefsClose too? -yes zTPPrefsClose_yes -no z1slp}	zPrefsCloseYNPrompt
+zRplcDlgCloseOnly	{#CURSOR}\\\{#insert zRplcDlgClose\\\}	zRplcDlgCloseOnly
+zRplcDlgWithThenClose	{#CURSOR}\\\{#insert zRplcFieldWith\\\}\\\{#insert zRplcDlgClose\\\}	zRplcDlgWithThenClose
+zRplcWAndCloseYNPrompt	{#MSGBOX -head zRplcFieldWith & zRplcDlgClose? -text Print zRplcFieldWith and zRplcDlgClose too? [Yes]=with and close. [No]=Close only. [Cancel]=Neither -yes zRplcDlgWithThenClose -no zRplcDlgCloseOnly -cancel z1slp}	zRplcWAndCloseYNPrompt
+zTPPrefsClose_yes	{#CURSOR}\\\{#insert zTPPrefsClose\\\}	zTPPrefsClose_yes
+zUnRawFindNotRplcBal	{#BALLOON -title Note -text The un-toggle-raw is a FIND-flag. The replace dialog has no RAW flags for MC/RE/WW (they are equivalent to the find dialog.)}	zUnRawFindNotRplcBal
+zzBalCBContainsActnNm	{#BALLOON -title DONE -text The action name is now in the clipboard. Use 'cpcb' to execute it.}	zzBalCBContainsActnNm
+zzBalCBContainsVarNm	{#BALLOON -title DONE -text The variable name is now in the clipboard.}	zzBalCBContainsVarNm
+zzBalFindFlagADWarning	{#BALLOON -title AD-flag warning -text When the find-dialog is closed, the AD flag is automatically unchecked.}	zzBalFindFlagADWarning
+zzCpExeActnOrPhrsClCmd_M_actclncmd -- Needs zvATN_CLN_SPC_CMD	{#SETPHRASE -description zvPOS_CLN -content {#POS {#insert zvATN_CLN_SPC_CMD} -substr :} -autotext zvPOS_CLN -folder ctvv_folder}{#SETPHRASE -description zvACTN_NM -content {#SUBSTR {#insert zvATN_CLN_SPC_CMD} -from 0 -count {#CALC {#insert zvPOS_CLN} - 1 -round 0 -thousands none}} -autotext zvACTN_NM -folder ctvv_folder}{#SETPHRASE -description zvCMD_NM -content {#SUBSTR {#insert zvATN_CLN_SPC_CMD} -from {#CALC {#insert zvPOS_CLN} + 1 -round 0 -thousands none} -count {#CALC {#insert zvATN_CLN_SPC_CMD} - {#insert zvPOS_CLN} -round 0 -thousands none}} -autotext zvCMD_NM -folder ctvv_folder}{#MSGBOX -head Copy action or call alt? -text [Yes]=Copy-then-execute action '{#insert zvACTN_NM}', [No]=Copy action only, [Cancel]=Print call to its command: \\\{#insert {#insert zvCMD_NM}\\\} -yes zzzCopyExecuteAction_M_actm -no zzzCopyActionNm_M_actm -cancel zzzPrintCallToCmd_M_cmdm}	zzCpExeActnOrPhrsClCmd_M_actclncmd
+zzMainActnNmOnlyCpExeOrCpDlg_M_actm -- Needs zvACTN_NM	{#MSGBOX -head Copy only or copy-execute? -text '{#insert zvACTN_NM}' action chosen. [OK]=Copy action~name and then execute, [Cancel]=Copy only -ok zzzCopyExecuteAction_M_actm -cancel zzzCopyActionNm_M_actm}	zzMainActnNmOnlyCpExeOrCpDlg_M_actm
+zzDirFNmInCB	{#BALLOON -title DONE -text PHRASE-NAME containing the directory-phrase-name or file-name now in the clipboard}	zzDirFNmInCB
+zzzCopyActionNm_M_actm	{#SETCLIPBOARD {#insert zvACTN_NM}}{#BALLOON -title DONE -text '{#insert zvACTN_NM}' is now in the clipboard. Use 'cpcb' to execute it.}	zzzCopyActionNm_M_actm
+zzzCopyExecuteAction_M_actm	{#SETCLIPBOARD {#insert zvACTN_NM}}{#BALLOON -title Please wait... -text '{#insert zvACTN_NM}' is now in the clipboard. About to execute.}{#sleep 2000}{#insert {#insert zvACTN_NM}}	zzzCopyExecuteAction_M_actm
+zzzPrintCallToCmd_M_cmdm -- Needs zvCMD_NM	\\\{#insert {#insert zvCMD_NM}\\\}	zzzPrintCallToCmd_M_cmdm

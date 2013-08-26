@@ -1,0 +1,21 @@
+scpkf -- Select-Copy Func-name from Prev linK (local or not)	{#insert zFindPrevLinkTagStartFDlg}.html#{#insert zFindBtnNext}{#insert zFindDlgClose}{#insert zRIGHT}{#insert zSelectL1wCopy}	scpkf
+scpkflocal -- Select-Copy LOCAL Func-name from Prev linK	{#insert zFindOpenUpMC}HREF={#asc 34}#{#insert zFindGoMCClose}{#insert zRIGHT}{#insert zSelectL1wCopy}{#sleep 500}	scpkflocal
+scpkg -- func-name (siG start)	{#insert scpkflocal}{#insert sccbg}	scpkg
+scpkgprompt	{#insert scpkg}{#insert zCorrectFuncPrompt}	scpkgprompt
+scpkmcg -- func-name (siG start)	{#insert zYmarkCoded}{#insert scpkg}	scpkmcg
+scpkmcgprompt	{#insert scpkmcg}{#insert zCorrectFuncPrompt}	scpkmcgprompt
+scpkmcp -- Params (open paren)	{#insert zYmarkCoded}{#insert scpkp}	scpkmcp
+scpkmcpprompt	{#insert scpkmcp}{#insert zCorrectFuncPrompt}	scpkmcpprompt
+scpkmcrg -- Return type	{#insert zYmarkCoded}{#insert scpkrg}	scpkmcrg
+scpkmcrgprompt	{#insert scpkmcrg}{#insert zCorrectFuncPrompt}	scpkmcrgprompt
+scpkmg -- func-name (siG start)	{#insert zYmark}{#insert scpkg}	scpkmg
+scpkmgprompt	{#insert scpkmg}{#insert zCorrectFuncPrompt}	scpkmgprompt
+scpkmp -- Params (open paren)	{#insert zYmark}{#insert scpkp}	scpkmp
+scpkmpprompt	{#insert scpkmp}{#insert zCorrectFuncPrompt}	scpkmpprompt
+scpkmrg -- Return type	{#insert zYmark}{#insert scpkrg}	scpkmrg
+scpkmrgprompt	{#insert scpkmrg}{#insert zCorrectFuncPrompt}	scpkmrgprompt
+scpkp -- Params (open paren)	{#insert scpkflocal}{#insert sccbp}	scpkp
+scpkpprompt	{#insert scpkpp}{#insert zCorrectFuncPrompt}	scpkpprompt
+scpkrg -- Return type	{#insert scpkflocal}{#insert sccbrg}	scpkrg
+scpkrgprompt	{#insert scpkrg}{#insert zCorrectFuncPrompt}	scpkrgprompt
+scpku -- Select-Copy entire Url from Prev-linK	{#insert zFindPrevLinkTagStartFDlg}{#insert zFindFlagRETglRAW}[^{#asc 34}]+{#asc 34}{#insert zFindGoREClose}{#insert zTPSelectL1c}	scpku

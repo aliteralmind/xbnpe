@@ -1,0 +1,8 @@
+Alt+LWin+TT -- zALpTT	{#ALT {#LWIN -chars t}}{#insert zTSlp}	zALpTT
+Alt+Shift+LWin+TT -- zASLpTT	{#ALT {#SHIFT {#LWIN -chars t}}}{#insert zTSlp}	zASLpTT
+Ctrl+Alt+LWin+TT -- zCALpTT	{#CTRL {#ALT {#LWIN -chars t}}}{#insert zTSlp}	zCALpTT
+Ctrl+Alt+Shift+LWin+TT -- zCASLpTT	{#CTRL {#ALT {#SHIFT {#LWIN -chars t}}}}{#insert zTSlp}	zCASLpTT
+Ctrl+LWin+TT -- zCLpTT	{#CTRL {#LWIN -chars t}}{#insert zTSlp}	zCLpTT
+Ctrl+Shift+LWin+TT -- zCSLpTT	{#CTRL {#SHIFT {#LWIN -chars t}}}{#insert zTSlp}	zCSLpTT
+LWin+TT -- zLpTT	{#LWIN -chars t}{#insert zTSlp}	zLpTT
+Shift+LWin+TT -- zSLpTT	{#SHIFT {#LWIN -chars t}}{#insert zTSlp}	zSLpTT

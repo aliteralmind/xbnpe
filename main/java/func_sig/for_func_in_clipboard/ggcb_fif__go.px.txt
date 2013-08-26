@@ -1,0 +1,27 @@
+ggcbfg -- ggcbfg0p ALT KC	{#insert ggcbfg0p}	ggcbfg
+ggcbfg0p -- ggcbfg, zero-or-more (0-Plus) parameters	{#insert zjreSetPCountPost_0orMore}{#insert zggcbfg_MASTER}	ggcbfg0p
+ggcbfg1	{#insert zjreSetPCountPost_1}{#insert zggcbfg_MASTER}	ggcbfg1
+ggcbfg1p -- ggcbfg, one-or-more (1-Plus) parameters	{#insert zjreSetPCountPost_1orMore}{#insert zggcbfg_MASTER}	ggcbfg1p
+ggcbfg2	{#insert zjreSetPCountPost_2}{#insert zggcbfg_MASTER}	ggcbfg2
+ggcbfg3	{#insert zjreSetPCountPost_3}{#insert zggcbfg_MASTER}	ggcbfg3
+ggcbfg4	{#insert zjreSetPCountPost_4}{#insert zggcbfg_MASTER}	ggcbfg4
+ggcbfg5	{#insert zjreSetPCountPost_5}{#insert zggcbfg_MASTER}	ggcbfg5
+ggcbfgn -- prompt for exact param-count	{#insert zjreSetPCountPost_FromGT0Prompt}{#insert zggcbfg_MASTER}	ggcbfgn
+ggcbqfg -- ggcbfg	{#insert zggcbqGTCutName}{#insert ggcbfg}	ggcbqfg
+ggcbqfg0p -- ggcbfg0p	{#insert zggcbqGTCutName}{#insert ggcbfg0p}	ggcbqfg0p
+ggcbqfg1 -- ggcbfg1	{#insert zggcbqGTCutName}{#insert ggcbfg1}	ggcbqfg1
+ggcbqfg1p -- ggcbfg1p	{#insert zggcbqGTCutName}{#insert ggcbfg1p}	ggcbqfg1p
+ggcbqfg2 -- ggcbfg2	{#insert zggcbqGTCutName}{#insert ggcbfg2}	ggcbqfg2
+ggcbqfg3 -- ggcbfg3	{#insert zggcbqGTCutName}{#insert ggcbfg3}	ggcbqfg3
+ggcbqfg4 -- ggcbfg4	{#insert zggcbqGTCutName}{#insert ggcbfg4}	ggcbqfg4
+ggcbqfg5 -- ggcbfg5	{#insert zggcbqGTCutName}{#insert ggcbfg5}	ggcbqfg5
+ggcbqfgn -- ggcbfgn	{#insert zzggcGTDN}{#insert ggcbqfgn}	gnggcbqfgn
+ggpwfg -- zCutL1w, ggcbfg	{#insert zCutL1w}{#insert ggcbfg}	ggpwfg
+ggpwfg0p -- zCutL1w, ggcbfg0p	{#insert zCutL1w}{#insert ggcbfg0p}	ggpwfg0p
+ggpwfg1 -- zCutL1w, ggcbfg1	{#insert zCutL1w}{#insert ggcbfg1}	ggpwfg1
+ggpwfg1p -- zCutL1w, ggcbfg1p	{#insert zCutL1w}{#insert ggcbfg1p}	ggpwfg1p
+ggpwfg2 -- zCutL1w, ggcbfg2	{#insert zCutL1w}{#insert ggcbfg2}	ggpwfg2
+ggpwfg3 -- zCutL1w, ggcbfg3	{#insert zCutL1w}{#insert ggcbfg3}	ggpwfg3
+ggpwfg4 -- zCutL1w, ggcbfg4	{#insert zCutL1w}{#insert ggcbfg4}	ggpwfg4
+ggpwfg5 -- zCutL1w, ggcbfg5	{#insert zCutL1w}{#insert ggcbfg5}	ggpwfg5
+ggpwfgn -- zCutL1w, ggcbfgn	{#insert zCutL1w}{#insert ggcbfgn}	ggpwfgn

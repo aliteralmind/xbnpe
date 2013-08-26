@@ -1,0 +1,22 @@
+zFromPreSigGTPName1 (**)	(*The first parameter-name follows the first NON-space-then-comma, which follows the open paren in the signature.*){#insert zzFromPreSigFind1stNonCmaSpc}{#insert zRIGHT}	zFromPreSigGTPName1
+zFromPreSigGTPName2	{#insert zzFromPreSigFind1stNonCmaSpc}{#insert zFindNextNonCommaSpace}{#insert zRIGHT}	zFromPreSigGTPName2
+zFromPreSigGTPName3	{#insert zzFromPreSigFind1stNonCmaSpc}{#loop {#insert zFindNextNonCommaSpace} -count 2}{#insert zRIGHT}	zFromPreSigGTPName3
+zFromPreSigGTPName4	{#insert zzFromPreSigFind1stNonCmaSpc}{#loop {#insert zFindNextNonCommaSpace} -count 3}{#insert zRIGHT}	zFromPreSigGTPName4
+zFromPreSigGTPName5	{#insert zzFromPreSigFind1stNonCmaSpc}{#loop {#insert zFindNextNonCommaSpace} -count 4}{#insert zRIGHT}	zFromPreSigGTPName5
+zFromPreSigGTPName6	{#insert zzFromPreSigFind1stNonCmaSpc}{#loop {#insert zFindNextNonCommaSpace} -count 5}{#insert zRIGHT}	zFromPreSigGTPName6
+zFromPreSigGTPName7	{#insert zzFromPreSigFind1stNonCmaSpc}{#loop {#insert zFindNextNonCommaSpace} -count 6}{#insert zRIGHT}	zFromPreSigGTPName7
+zFromPreSigGTPName8	{#insert zzFromPreSigFind1stNonCmaSpc}{#loop {#insert zFindNextNonCommaSpace} -count 7}{#insert zRIGHT}	zFromPreSigGTPName8
+zFromPreSigGTPName9	{#insert zzFromPreSigFind1stNonCmaSpc}{#loop {#insert zFindNextNonCommaSpace} -count 8}{#insert zRIGHT}	zFromPreSigGTPName9
+zFromPreSigGTPName10	{#insert zzFromPreSigFind1stNonCmaSpc}{#loop {#insert zFindNextNonCommaSpace} -count 9}{#insert zRIGHT}	zFromPreSigGTPName10
+zFromPreSigGTPNameN	{#insert zzFromPreSigFind1stNonCmaSpc}{#loop {#insert zFindNextNonCommaSpace} -count {#CALC {#insert zParamNumFromPrompt} - 1 -round 0 -thousands none}}{#insert zRIGHT}	zFromPreSigGTPNameN
+zFromPreSigSCPName1	{#insert zFromPreSigGTPName1}{#insert zSelectR1wCopy}	zFromPreSigSCPName1
+zFromPreSigSCPName2	{#insert zFromPreSigGTPName2}{#insert zSelectR1wCopy}	zFromPreSigSCPName2
+zFromPreSigSCPName3	{#insert zFromPreSigGTPName3}{#insert zSelectR1wCopy}	zFromPreSigSCPName3
+zFromPreSigSCPName4	{#insert zFromPreSigGTPName4}{#insert zSelectR1wCopy}	zFromPreSigSCPName4
+zFromPreSigSCPName5	{#insert zFromPreSigGTPName5}{#insert zSelectR1wCopy}	zFromPreSigSCPName5
+zFromPreSigSCPName6	{#insert zFromPreSigGTPName6}{#insert zSelectR1wCopy}	zFromPreSigSCPName6
+zFromPreSigSCPName7	{#insert zFromPreSigGTPName7}{#insert zSelectR1wCopy}	zFromPreSigSCPName7
+zFromPreSigSCPName8	{#insert zFromPreSigGTPName8}{#insert zSelectR1wCopy}	zFromPreSigSCPName8
+zFromPreSigSCPName9	{#insert zFromPreSigGTPName9}{#insert zSelectR1wCopy}	zFromPreSigSCPName9
+zFromPreSigSCPName10	{#insert zFromPreSigGTPName10}{#insert zSelectR1wCopy}	zFromPreSigSCPName10
+zFromPreSigSCPNameN	{#insert zFromPreSigGTPNameN}{#insert zSelectR1wCopy}	zFromPreSigSCPNameN

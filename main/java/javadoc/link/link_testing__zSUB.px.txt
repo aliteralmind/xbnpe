@@ -1,0 +1,12 @@
+zvJD_LINK_CMD_stCB	{#SETPHRASE -description zvJD_LINK_CMD -content {#insert zTPPaste} -autotext zvJD_LINK_CMD -folder ctvv_folder}	zvJD_LINK_CMD_stCB
+zzD2pDuplnUpHmXdnDelRunjdlcmdBkmkD1pHm	{#insert zParaDown2}{#insert zDupLine}{#insert zUP}{#insert zHOME}{#insert zXDownDelete}{#insert {#insert zvJD_LINK_CMD}}{#insert zTPBookmarkToggle}{#insert zParaDown}{#insert zHOME}	zzD2pDuplnUpHmXdnDelRunjdlcmdBkmkD1pHm
+zzjlTest -- See zzjlTestInit	{#insert gtfc}{#insert zSelectR1wCopy}{#insert zvJD_LINK_CMD_stCB}{#insert zzD2pDuplnUpHmXdnDelRunjdlcmdBkmkD1pHm}	zzjlTest
+zzjlTestCleanupWW	{#insert zzjlTestCleanup}{#insert zTPToggleWW}	zzjlTestCleanupWW
+zzjlTestCleanup -- Must call after tests and before real use	{#insert zFindOpenXSClose}	zzjlTestCleanup
+zzjlTestInitWW	{#insert zzjlTestInit}{#insert zTPToggleWW}	zzjlTestInitWW
+zzjlTestInit -- Must call this before zzjl*Test	{#insert zFindDialogFlagPreCheck}{#insert zTPBookmarkClearAll}{#insert zFcsTPFileNew}........{#asc 34}{#insert zHOME}{#insert zFindOpenDownXS}{#asc 34}{#insert zFindBtnNext}{#insert zFindDlgClose}{#insert zFileCloseDiscardChanges}	zzjlTestInit
+zzjlTestWithCB -- Run JavaDoc Link test, w/ something in ClipBoard. See zzjlTestInit	{#insert gtfc}{#insert zCopyR1wGTP}{#insert zvJD_LINK_CMD_stCB}{#insert zRIGHT3}{#insert zTPFindNext}{#insert zSelectL1c}{#insert zTPCopy}{#insert zzD2pDuplnUpHmXdnDelRunjdlcmdBkmkD1pHm}	zzjlTestWithCB
+zzjlTestWithCBN	{#loop {#insert zzjlTestWithCB} -count {#input -head How many zzjlTestWithCB? -single}}	zzjlTestWithCBN
+zzjlTestN	{#loop {#insert zzjlTest} -count {#input -head How many zzjlTest? -single}}	zzjlTestN
+zzjlTestWithCB2	{#loop {#insert zzjlTestWithCB} -count 2}	zzjlTestWithCB2
+zzjlTest2	{#loop {#insert zzjlTest} -count 2}	zzjlTest2

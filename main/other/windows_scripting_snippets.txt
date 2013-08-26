@@ -1,0 +1,2 @@
+Merge all files in a directory
+(*8/6/2013: http://www.wikihow.com/Merge-Text-(.Txt)-Files-in-Command-Prompt*)for %f in (*.txt) do type "%f" >> output.txt

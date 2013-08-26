@@ -1,0 +1,10 @@
+SelectAll	0
+SelectBeginBlock	0
+SelectBeginLine	0
+SelectBeginStream	0
+SelectCancel	0
+SelectEnd	0
+SelectLine	1	\\\{#insert zCApAA\\\}
+SelectParagraph	1	\\\{#insert zApAA\\\}
+SelectSwapEnds	0
+SelectWord	1	\\\{#insert zCSpAA\\\}

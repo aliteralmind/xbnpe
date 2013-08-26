@@ -1,0 +1,8 @@
+EQUALS -- zEQUALS	{#NONE -chars =}{#insert zTSlp}	zEQUALS
+Alt+EQUALS -- zApEQUALS	{#ALT -chars =}{#insert zTSlp}	zApEQUALS
+Alt+Shift+EQUALS -- zASpEQUALS	{#ALT {#SHIFT -chars =}}{#insert zTSlp}	zASpEQUALS
+Ctrl+EQUALS -- zCpEQUALS	{#CTRL -chars =}{#insert zTSlp}	zCpEQUALS
+Ctrl+Alt+EQUALS -- zCApEQUALS	{#CTRL {#ALT -chars =}}{#insert zTSlp}	zCApEQUALS
+Ctrl+Alt+Shift+EQUALS -- zCASpEQUALS	{#CTRL {#ALT {#SHIFT -chars =}}}{#insert zTSlp}	zCASpEQUALS
+Ctrl+Shift+EQUALS -- zCSpEQUALS	{#CTRL {#SHIFT -chars =}}{#insert zTSlp}	zCSpEQUALS
+Shift+EQUALS -- zSpEQUALS	{#SHIFT -chars =}{#insert zTSlp}	zSpEQUALS

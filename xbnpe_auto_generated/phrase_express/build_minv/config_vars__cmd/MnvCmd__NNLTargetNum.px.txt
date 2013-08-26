@@ -1,0 +1,13 @@
+__**WARNING**__: All phrases in this folder were created by 'plpdcf'. DO NOT EDIT.	.		(*Extra tab to allow for empty-string autotext*)
+zvNNL_TGT_NUM_sfKey	{#SETPHRASE -description zvNNL_TGT_NUM -content {#insert zzMnvCmdNnlg_cfgValue_M_key} -autotext zvNNL_TGT_NUM -folder ctvv_folder}	zvNNL_TGT_NUM_sfKey
+zzMnvCmdNnlg_cfgValue_M_key	{#insert {#insert zzMnvCmdNnlg_cfgVarPhrsName_M_key}}	zzMnvCmdNnlg_cfgValue_M_key
+zzMnvCmdNNLTargetNum_cvtFromAbrv1C	Nnlg	zzMnvCmdNNLTargetNum_cvtFromAbrv1C
+zzMnvCmdNnlg_cfgVarPNmPost	NNLTargetNum	zzMnvCmdNnlg_cfgVarPNmPost
+zzMnvCmdNnlg_intrnlVarNm	zvNNL_TGT_NUM	zzMnvCmdNnlg_intrnlVarNm
+zzMnvCmdNnlg_cfgVarPhrsName_M_key	zz{#insert zzMnvCmdProjectAbrv1C}{#insert zzMnvCmdDataTypeAbrv1C}{#insert zvCMD_PNMV_1C}{#insert zzMnvCmdNnlg_cfgVarPNmPost}	zzMnvCmdNnlg_cfgVarPhrsName_M_key
+zzMnvCmdNnlg_helpForDlg	The target number for the no~num~alias, when [NoNumAlias_on] is 'on'. This number is used in the PHRASE~BODY for the no~num~alias phrases~~not in the phrase~description (because it's a no~num~alias, see?). It can be empty~string ONLY when commands are 'on' (to set the target~num to empty~string, use zzEmptyStringMarker='{#insert zOY}#insert zzEmptyStringMarker{#insert zCY}')~~in this case, the no~num~alias will trigger the no~num~command, which in turn executes a specific~numbered command. Otherwise it must be between [RangeMin] and [RangeMax], inclusive.	zzMnvCmdNnlg_helpForDlg
+zzMnvCmdNnlg_valuePrintable	yes	zzMnvCmdNnlg_valuePrintable
+zzMnvCmdNnlg_validateValuePhrsNm		zzMnvCmdNnlg_validateValuePhrsNm
+zzMnvCmdNnlg_nkcvListNum	13	zzMnvCmdNnlg_nkcvListNum
+zzMnvCmdNnlg_keyCVTFromAbrv1C	{#insert zzMnvCmdPrivKeyCVTFromAbrv1C}	zzMnvCmdNnlg_keyCVTFromAbrv1C
+zvCVT_FRMV_1C_stMnvCmdNnlg	{#SETPHRASE -description zvCVT_FRMV_1C -content {#insert zzMnvCmdNNLTargetNum_cvtFromAbrv1C} -autotext zvCVT_FRMV_1C -folder ctvv_folder}	zvCVT_FRMV_1C_stMnvCmdNnlg

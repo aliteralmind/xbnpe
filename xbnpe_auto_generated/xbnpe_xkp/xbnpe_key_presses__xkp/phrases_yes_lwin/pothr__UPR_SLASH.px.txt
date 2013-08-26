@@ -1,0 +1,8 @@
+Alt+LWin+UPR_SLASH -- zALpUPR_SLASH	{#ALT {#LWIN -chars /}}{#insert zTSlp}	zALpUPR_SLASH
+Alt+Shift+LWin+UPR_SLASH -- zASLpUPR_SLASH	{#ALT {#SHIFT {#LWIN -chars /}}}{#insert zTSlp}	zASLpUPR_SLASH
+Ctrl+Alt+LWin+UPR_SLASH -- zCALpUPR_SLASH	{#CTRL {#ALT {#LWIN -chars /}}}{#insert zTSlp}	zCALpUPR_SLASH
+Ctrl+Alt+Shift+LWin+UPR_SLASH -- zCASLpUPR_SLASH	{#CTRL {#ALT {#SHIFT {#LWIN -chars /}}}}{#insert zTSlp}	zCASLpUPR_SLASH
+Ctrl+LWin+UPR_SLASH -- zCLpUPR_SLASH	{#CTRL {#LWIN -chars /}}{#insert zTSlp}	zCLpUPR_SLASH
+Ctrl+Shift+LWin+UPR_SLASH -- zCSLpUPR_SLASH	{#CTRL {#SHIFT {#LWIN -chars /}}}{#insert zTSlp}	zCSLpUPR_SLASH
+LWin+UPR_SLASH -- zLpUPR_SLASH	{#LWIN -chars /}{#insert zTSlp}	zLpUPR_SLASH
+Shift+LWin+UPR_SLASH -- zSLpUPR_SLASH	{#SHIFT {#LWIN -chars /}}{#insert zTSlp}	zSLpUPR_SLASH

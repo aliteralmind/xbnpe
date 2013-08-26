@@ -1,0 +1,12 @@
+zzClcbPostPrek	{#insert zzjlCnstrNmIsCB}{#insert zzjlDispCnstrNmPAPP}{#insert zzjlNPCnstrLink_fileIsCnstrNmDirEmpty}	zzClcbPostPrek
+zzClcbdPostPrek	{#insert zzjlCnstrNmIsCB}{#insert zzjlDispCnstrNmPAPP}{#insert zzjlNPCnstrLink_fileIsCnstrNmDirPrompt}	zzClcbdPostPrek
+zzClpwPostPrek	{#insert zzjlFuncObjNmIsL1w}{#insert zzjlDispCnstrNmPAPP}{#insert zzjlNPCnstrLink_fileIsCnstrNmDirEmpty}	zzClpwPostPrek
+zzClpwdPostPrek	{#insert zzjlFuncObjNmIsL1w}{#insert zzjlDispCnstrNmPAPP}{#insert zzjlNPCnstrLink_fileIsCnstrNmDirPrompt}	zzClpwdPostPrek
+zzClpwdbPostPrek	{#insert zzjlDirIsCBFuncNmIsL1w}{#insert zzjlDispCnstrNmPAPP}{#insert zzjlNPCnstrLink_fileIsCnstrNm}	zzClpwdbPostPrek
+zzClsupernPostPrek	{#insert zzjlDispQCnstrQPAPES}{#insert zzjlNPCnstrLink_dirPromptCnstrAndFileNmAreSuperCN}	zzClsupernPostPrek
+zzClsuperrPostPrek	{#insert zzjlDispQSuperQPAPP}{#insert zzjlNPCnstrLink_dirPromptCnstrAndFileNmAreSuperCN}	zzClsuperrPostPrek
+zzFlcbfPostPrek	{#insert zzjlFuncNmIsCB}{#insert zzjlNPFuncLink_MSTR_dispFuncFileIsX}	czzFlcbfPostPrek
+zzFlcbrPostPrek	{#insert zzjlFuncNmIsCB}{#insert zzjlNPFuncLink_MSTR_dispFuncFileSuperCN}	zzFlcbrPostPrek
+zzFlpwdbPostPrek	{#insert zzjlFileIsCBFuncNmIsL1w}{#insert zzjlNPFuncLink_MSTR_dispFuncDirPrompt}	zzFlpwdbPostPrek
+zzFlpwfbcPostPrek	{#insert zzjlFileIsCBFuncNmIsL1w}{#insert zzjlNPFuncLink_MSTR_dispFuncDirEmpty}	zzFlpwfbcPostPrek
+zzFlpwrPostPrek	{#insert zzjlFuncNmIsL1w}{#insert zzjlNPFuncLink_MSTR_dispFuncFileSuperCN}	zzFlpwrPostPrek

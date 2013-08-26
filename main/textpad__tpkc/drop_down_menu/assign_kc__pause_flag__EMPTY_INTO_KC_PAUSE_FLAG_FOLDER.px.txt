@@ -1,0 +1,3 @@
+Get current state	{#BALLOON -title Current View~KC pause flag state -text {#COND -if {#insert zvVIEW_KC_PAUSE_ON} = on -then on -else off}}	zGetCurrentViewKCFlagState
+Turn off	{#SETPHRASE -description zvVIEW_KC_PAUSE_ON -content -autotext zvVIEW_KC_PAUSE_ON -folder ctvv_folder}	zvVIEW_KC_PAUSE_ON_stES
+Turn on	{#SETPHRASE -description zvVIEW_KC_PAUSE_ON -content on -autotext zvVIEW_KC_PAUSE_ON -folder ctvv_folder}	zvVIEW_KC_PAUSE_ON_stOn

@@ -1,0 +1,8 @@
+INS -- zINS	{#INS}{#insert zTSlp}	zINS
+Alt+INS -- zApINS	{#ALT {#INS}}{#insert zTSlp}	zApINS
+Alt+Shift+INS -- zASpINS	{#ALT {#SHIFT {#INS}}}{#insert zTSlp}	zASpINS
+Ctrl+INS -- zCpINS	{#CTRL {#INS}}{#insert zTSlp}	zCpINS
+Ctrl+Alt+INS -- zCApINS	{#CTRL {#ALT {#INS}}}{#insert zTSlp}	zCApINS
+Ctrl+Alt+Shift+INS -- zCASpINS	{#CTRL {#ALT {#SHIFT {#INS}}}}{#insert zTSlp}	zCASpINS
+Ctrl+Shift+INS -- zCSpINS	{#CTRL {#SHIFT {#INS}}}{#insert zTSlp}	zCSpINS
+Shift+INS -- zSpINS	{#SHIFT {#INS}}{#insert zTSlp}	zSpINS

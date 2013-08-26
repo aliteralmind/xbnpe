@@ -1,0 +1,13 @@
+__**WARNING**__: All phrases in this folder were created by 'plpdcf'. DO NOT EDIT.	.		(*Extra tab to allow for empty-string autotext*)
+zvMSTR_PHRS_NM_sfKey	{#SETPHRASE -description zvMSTR_PHRS_NM -content {#insert zzMnvCmdMpn_cfgValue_M_key} -autotext zvMSTR_PHRS_NM -folder ctvv_folder}	zvMSTR_PHRS_NM_sfKey
+zzMnvCmdMpn_cfgValue_M_key	{#insert {#insert zzMnvCmdMpn_cfgVarPhrsName_M_key}}	zzMnvCmdMpn_cfgValue_M_key
+zzMnvCmdMasterPhraseNm_cvtFromAbrv1C	Mpn	zzMnvCmdMasterPhraseNm_cvtFromAbrv1C
+zzMnvCmdMpn_cfgVarPNmPost	MasterPhraseNm	zzMnvCmdMpn_cfgVarPNmPost
+zzMnvCmdMpn_intrnlVarNm	zvMSTR_PHRS_NM	zzMnvCmdMpn_intrnlVarNm
+zzMnvCmdMpn_cfgVarPhrsName_M_key	zz{#insert zzMnvCmdProjectAbrv1C}{#insert zzMnvCmdDataTypeAbrv1C}{#insert zvCMD_PNMV_1C}{#insert zzMnvCmdMpn_cfgVarPNmPost}	zzMnvCmdMpn_cfgVarPhrsName_M_key
+zzMnvCmdMpn_helpForDlg	The name of the master~phrase for this MINV~Command. When commands are 'on', this should generally be equal to '{#insert zOYp}#insert [NamePreNum]{#insert zCYp}N{#insert zOYp}#insert [NamePostNum]{#insert zCYp}_M_[VarAbrv1CForCmd]'	zzMnvCmdMpn_helpForDlg
+zzMnvCmdMpn_valuePrintable	yes	zzMnvCmdMpn_valuePrintable
+zzMnvCmdMpn_validateValuePhrsNm		zzMnvCmdMpn_validateValuePhrsNm
+zzMnvCmdMpn_nkcvListNum	8	zzMnvCmdMpn_nkcvListNum
+zzMnvCmdMpn_keyCVTFromAbrv1C	{#insert zzMnvCmdPrivKeyCVTFromAbrv1C}	zzMnvCmdMpn_keyCVTFromAbrv1C
+zvCVT_FRMV_1C_stMnvCmdMpn	{#SETPHRASE -description zvCVT_FRMV_1C -content {#insert zzMnvCmdMasterPhraseNm_cvtFromAbrv1C} -autotext zvCVT_FRMV_1C -folder ctvv_folder}	zvCVT_FRMV_1C_stMnvCmdMpn

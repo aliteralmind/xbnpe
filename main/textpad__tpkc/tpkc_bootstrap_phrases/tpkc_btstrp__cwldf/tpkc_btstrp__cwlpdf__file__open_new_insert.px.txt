@@ -1,0 +1,9 @@
+zDirFileOpen_M_dirFnm -- Needs zvDIRECTORY, zvFILE_NAME	{#insert zFileOpenDlgGTDirSlk_M_dir}{#insert zvFILE_NAME}{#insert zKSlpEtr}	zDirFileOpen_M_dirFnm
+zDupCurrFileTextToNewFile -- Orig file remains open	{#sleep 25}{#insert zSelectAllCopy}{#sleep 25}{#insert zFileNewPaste}	zDupCurrFileTextToNewFile
+zFcsTPFileOpen -- Focus on TextPad window, zTPFileOpen	{#insert zFocusOnTextPadWindow}{#insert zTPFileOpen}	zFcsTPFileOpen
+zFileNewPaste	{#insert zFcsTPFileNew}{#sleep 25}{#insert zTPPaste}	zFileNewPaste
+zInsertFile_M_path -- Needs zvPATH	{#INSERTFILE {#insert zvPATH}}	zInsertFile_M_path
+zOpenDupCloseXstgFileTextToNewEmptyCB_M_dirFnm	{#insert zOpenDupCloseXstgFileTextToNew_M_dirFnm}{#SETCLIPBOARD}	zOpenDupCloseXstgFileTextToNewEmptyCB_M_dirFnm
+zOpenDupCloseXstgFileTextToNew_M_dirFnm -- Needs zvDIRECTORY, zvFILE_NAME	{#insert zDirFileOpen_M_dirFnm}{#insert zSelectAllCopy}{#sleep 100}{#insert zFcsTPFileClose}{#sleep 100}{#insert zFileNewPaste}	zOpenDupCloseXstgFileTextToNew_M_dirFnm
+debugdirfn -- zzDebugDirFileNmDlg_M_dirFnm ALT KC	{#insert zzDebugDirFileNmDlg_M_dirFnm}	debugdirfn
+zzDebugDirFileNmDlg_M_dirFnm -- Needs zvDIRECTORY, zvFILE_NAME	{#MSGBOX -head zzDebugDirFileNmDlg_M_dirFnm -text zvDIRECTORY='{#insert zvDIRECTORY}', zvFILE_NAME='{#insert zvFILE_NAME}'}	zzDebugDirFileNmDlg_M_dirFnm

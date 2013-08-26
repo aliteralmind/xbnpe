@@ -1,0 +1,13 @@
+__**WARNING**__: All phrases in this folder were created by 'plpdcf'. DO NOT EDIT.	.		(*Extra tab to allow for empty-string autotext*)
+zvSNTP_ACTN_ON_sfKey	{#SETPHRASE -description zvSNTP_ACTN_ON -content {#insert zzMnvCmdSntpon_cfgValue_M_key} -autotext zvSNTP_ACTN_ON -folder ctvv_folder}	zvSNTP_ACTN_ON_sfKey
+zzMnvCmdSntpon_cfgValue_M_key	{#insert {#insert zzMnvCmdSntpon_cfgVarPhrsName_M_key}}	zzMnvCmdSntpon_cfgValue_M_key
+zzMnvCmdSNTPromptActn_on_cvtFromAbrv1C	Sntpon	zzMnvCmdSNTPromptActn_on_cvtFromAbrv1C
+zzMnvCmdSntpon_cfgVarPNmPost	SNTPromptActn_on	zzMnvCmdSntpon_cfgVarPNmPost
+zzMnvCmdSntpon_intrnlVarNm	zvSNTP_ACTN_ON	zzMnvCmdSntpon_intrnlVarNm
+zzMnvCmdSntpon_cfgVarPhrsName_M_key	zz{#insert zzMnvCmdProjectAbrv1C}{#insert zzMnvCmdDataTypeAbrv1C}{#insert zvCMD_PNMV_1C}{#insert zzMnvCmdSntpon_cfgVarPNmPost}	zzMnvCmdSntpon_cfgVarPhrsName_M_key
+zzMnvCmdSntpon_helpForDlg	If the Set_Number~To~Prompt~action phrase should be printed, set this to 'on'. Otherwise, ''. This is only used when actions are 'on'. Sub cv~types: [SNTPromptActnMsg].	zzMnvCmdSntpon_helpForDlg
+zzMnvCmdSntpon_valuePrintable	yes	zzMnvCmdSntpon_valuePrintable
+zzMnvCmdSntpon_validateValuePhrsNm		zzMnvCmdSntpon_validateValuePhrsNm
+zzMnvCmdSntpon_nkcvListNum	5	zzMnvCmdSntpon_nkcvListNum
+zzMnvCmdSntpon_keyCVTFromAbrv1C	{#insert zzMnvCmdPrivKeyCVTFromAbrv1C}	zzMnvCmdSntpon_keyCVTFromAbrv1C
+zvCVT_FRMV_1C_stMnvCmdSntpon	{#SETPHRASE -description zvCVT_FRMV_1C -content {#insert zzMnvCmdSNTPromptActn_on_cvtFromAbrv1C} -autotext zvCVT_FRMV_1C -folder ctvv_folder}	zvCVT_FRMV_1C_stMnvCmdSntpon

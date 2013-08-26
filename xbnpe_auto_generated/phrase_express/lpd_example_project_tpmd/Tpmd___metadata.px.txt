@@ -1,0 +1,10 @@
+__**WARNING**__: All phrases in this folder were created by 'plpdcf'. DO NOT EDIT.	.		(*Extra tab to allow for empty-string autotext*)
+zzTpmdOutputFileDir	R:\jeffy\programming\sandbox\macros\xbnpe_auto_generated\phrase_express\lpd_example_project_tpmd	zzTpmdOutputFileDir
+zzTpmdProjectAbrv1C	Tpmd	zzTpmdProjectAbrv1C
+zzTpmdDataTypeAbrv1C		zzTpmdDataTypeAbrv1C
+zzTpmdPrivKeyCVTFromAbrv1C	Pnv1	zzTpmdPrivKeyCVTFromAbrv1C
+zzTpmdPubKeyCVTFromAbrv1C	Mcrv1	zzTpmdPubKeyCVTFromAbrv1C
+zzTpmdNonKeyVarCount	3	zzTpmdNonKeyVarCount
+zzTpmdNkcv1CVTFromAbrv1C	Livt	zzTpmdNkcv1CVTFromAbrv1C
+zzTpmdNkcv2CVTFromAbrv1C	Kc	zzTpmdNkcv2CVTFromAbrv1C
+zzTpmdNkcv3CVTFromAbrv1C	Stps	zzTpmdNkcv3CVTFromAbrv1C

@@ -1,0 +1,8 @@
+(*
+   Required by phrase-creator-ddmenu-utils...START
+      PM_DDMENU_DIRID_FILENMPHRSNM_HDRAUTOTXT=snr/zzPmdmFNmPreSnrFind/xhsffa
+   Required by phrase-creator-ddmenu-utils...END
+*)
+zFindFlagMConOnly -- MC on, RE & WW off	{#insert zTPFindFlagMCon}{#insert zTPFindFlagREoff}{#insert zTPFindFlagWWoff}	zFindFlagMConOnly
+zFindFlagREonOnly -- MC & WW off	{#insert zTPFindFlagMCoff}{#insert zTPFindFlagREon}{#insert zTPFindFlagWWoff}	zFindFlagREonOnly
+zFindFlagWWonOnly -- MC & WW off	{#insert zTPFindFlagMCoff}{#insert zTPFindFlagREoff}{#insert zTPFindFlagWWon}	zFindFlagWWonOnly

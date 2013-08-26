@@ -1,0 +1,10 @@
+zvCMD_SYNTAX_sfPvtc	{#SETPHRASE -description zvCMD_SYNTAX -content {#insert zzZdxCmdSyn_cfgValue_M_pvtc} -autotext zvCMD_SYNTAX -folder ctvv_folder}	zvCMD_SYNTAX_sfPvtc
+zzZdxCmdSyn_dbgCfgItem_M_pvtc	zzZdxCmdSyn_cfgValue_M_pvtc={#insert zzZdxCmdSyn_cfgValue_M_pvtc}	zzZdxCmdSyn_dbgCfgItem_M_pvtc
+zzZdxCmdSyn_dbgVarItem_M_pvtcCmdsyn	zvCMD_SYNTAX={#insert zvCMD_SYNTAX}	zzZdxCmdSyn_dbgVarItem_M_pvtcCmdsyn
+zzZdxCmdSyn_cfgValue_M_pvtc	{#insert {#insert zzZdxCmdSyn_varName_M_pvtc}}	zzZdxCmdSyn_cfgValue_M_pvtc
+zzZdxCmdSyn_cfgVarNmPostfix_M_pvtc	CommandSyntax	zzZdxCmdSyn_cfgVarNmPostfix_M_pvtc
+zzZdxCmdSyn_intrnlVarNmFYIOnly	zvCMD_SYNTAX	zzZdxCmdSyn_intrnlVarNmFYIOnly
+zzZdxCmdSyn_phrsWCfgValue_M_pvtc	{#insert zzZdxCmdSyn_varName_M_pvtc}{#insert zTAB}{#insert zzZdxCmdSyn_cfgValue_M_pvtc}{#insert zTAB}{#insert zzZdxCmdSyn_varName_M_pvtc}	zzZdxCmdSyn_phrsWCfgValue_M_pvtc
+zzZdxCmdSyn_phrsWVarValue_M_pvtcCmdsyn	{#insert zzZdxCmdSyn_varName_M_pvtc}{#insert zTAB}{#insert zvCMD_SYNTAX}{#insert zTAB}{#insert zzZdxCmdSyn_varName_M_pvtc}	zzZdxCmdSyn_phrsWVarValue_M_pvtcCmdsyn
+zzZdxCmdSyn_varName_M_pvtc	{#insert zzMinvVarNmPREFIX}{#insert zvPN_ABRV_TC}{#insert zzZdxCmdSyn_cfgVarNmPostfix}	zzZdxCmdSyn_varName_M_pvtc
+zzZdxCmdSyn_llCfgLineDesc	The syntax for all commands in this node, if any. For categories with no phrases--and especially in documentation-only nodes--this should be set to empty-string ('', signified by '__ES__').	zzZdxCmdSyn_llCfgLineDesc

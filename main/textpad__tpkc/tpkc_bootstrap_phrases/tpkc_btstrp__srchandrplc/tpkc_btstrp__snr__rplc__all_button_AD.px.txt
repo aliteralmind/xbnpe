@@ -1,0 +1,14 @@
+zADHandleNoRplcs	{#insert zADHandleNoRplcsRAW}{#insert zRplcFieldWhat}	zADHandleNoRplcs
+zADHandleNoRplcsRAW -- zRplcFlagADEntrForHNROnlyRAW ALT KC	{#insert zRplcFlagADEntrForHNROnlyRAW}	zADHandleNoRplcsRAW
+zRplcBtnAllAD -- Cursor ends in what-field.	{#insert zRplcBtnAllADraw}{#insert zRplcFieldWhat}	zRplcBtnAllAD
+zRplcBtnAllADHnr	{#insert zRplcBtnAllADHnrRAW}{#insert zRplcFieldWhat}	zRplcBtnAllADHnr
+zRplcBtnAllADHnrRAW	{#insert zRplcBtnAllADraw}{#insert zADHandleNoRplcsRAW}	zRplcBtnAllADHnrRAW
+zRplcBtnAllADNoConfirm	{#insert zRplcBtnAllADNoConfirmRAW}{#insert zRplcFieldWhat}	zRplcBtnAllADNoConfirm
+zRplcBtnAllADNoConfirmHnr	{#insert zRplcBtnAllADNoConfirmHnrRAW}{#insert zRplcFieldWhat}	zRplcBtnAllADNoConfirmHnr
+zRplcBtnAllADNoConfirmHnrRAW	{#insert zRplcBtnAllADNoConfirmRAW}{#insert zADHandleNoRplcsRAW}	zRplcBtnAllADNoConfirmHnrRAW
+zRplcBtnAllADNoConfirmRAW	{#BALLOON -title WARNING -text If the replacement scope is not 'All docs', this will fail.}{#insert zRplcBtnAllRAW}{#insert zEtr100slp}	zRplcBtnAllADNoConfirmRAW
+zRplcBtnAllADNoConfirm_hnrIf_M_hnry	{#insert {#COND -if {#insert zvHNR_YES} = yes -then zRplcBtnAllADNoConfirmHnr -else zRplcBtnAllADNoConfirm}}	zRplcBtnAllADNoConfirm_hnrIf_M_hnry
+zRplcBtnAllADNoConfirm_hnrRAWIf_M_hnry	{#insert {#COND -if {#insert zvHNR_YES} = yes -then zRplcBtnAllADNoConfirmHnrRAW -else zRplcBtnAllADNoConfirmRAW}}	zRplcBtnAllADNoConfirm_hnrRAWIf_M_hnry
+zRplcBtnAllAD_hnrIf_M_hnry	{#insert {#COND -if {#insert zvHNR_YES} = yes -then zRplcBtnAllADHnr -else zRplcBtnAllAD}}	zRplcBtnAllAD_hnrIf_M_hnry
+zRplcBtnAllAD_hnrRAWIf_M_hnry	{#insert {#COND -if {#insert zvHNR_YES} = yes -then zRplcBtnAllADHnrRAW -else zRplcBtnAllADraw}}	zRplcBtnAllAD_hnrRAWIf_M_hnry
+zRplcBtnAllADraw	{#BALLOON -title WARNING -text If the replacement scope is not 'All docs', this will fail.}{#insert zRplcBtnAllRAW}{#MSGBOX -head Proceed? -text Proceed with ALL-DOCS text replacement?{#insert zMsgProceedOrNot}}{#insert zEtr100slp}	zRplcBtnAllADraw

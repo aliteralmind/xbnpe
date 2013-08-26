@@ -1,0 +1,24 @@
+impwju	{#insert zImportPW1of2}java.util.{#insert zImportPW2of2}	impwju
+jqu	java.util.	jqu
+jquc	java.util.Collection	jquc
+jqucc	java.util.Collection, (*ends with space*)	jqucc
+jqul	java.util.List	jqul
+jqulc	java.util.List, (*ends with space*)	jqulc
+jquv	java.util.Vector	jquv
+jquvc	java.util.Vector, (*ends with space*)	jquvc
+jqux	java.util.{#insert zXDown}	jqux
+jqux10	{#insert jqux9}{#insert jqux}	jqux10
+jqux2	{#insert jqux}{#insert jqux}	jqux2
+jqux3	{#insert jqux2}{#insert jqux}	jqux3
+jqux4	{#insert jqux3}{#insert jqux}	jqux4
+jqux5	{#insert jqux4}{#insert jqux}	jqux5
+jqux6	{#insert jqux5}{#insert jqux}	jqux6
+jqux7	{#insert jqux6}{#insert jqux}	jqux7
+jqux8	{#insert jqux7}{#insert jqux}	jqux8
+jqux9	{#insert jqux8}{#insert jqux}	jqux9
+jquxn	{#loop {#insert jqux} -count {#insert zUserInpHMW1}}	jquxn
+jcl	Collection	jcl
+jclg	Collection<? extends Object> (*ends with space*)	jclg
+jls	List	jls
+jlsg	List<? extends Object> (*ends with space*)	jlsg
+jvg	Vector<? extends Object> (*ends with space*)	jvg

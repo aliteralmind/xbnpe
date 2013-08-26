@@ -1,0 +1,33 @@
+zTpkcFileCloseNbsKcCount	0	zTpkcFileCloseNbsKcCount
+zTpkcFileCloseAllNbsKcCount	0	zTpkcFileCloseAllNbsKcCount
+zTpkcFileExitNbsKcCount	0	zTpkcFileExitNbsKcCount
+zTpkcFileGoToNbsKcCount	1	zTpkcFileGoToNbsKcCount
+zTpkcFileGoToNbsKcEsc1	\\\{#insert zCSpGG\\\}	zTpkcFileGoToNbsKcEsc1
+zTpkcFileManageNbsKcCount	1	zTpkcFileManageNbsKcCount
+zTpkcFileManageNbsKcEsc1	\\\{#insert zF3\\\}	zTpkcFileManageNbsKcEsc1
+zTpkcFileNewNbsKcCount	0	zTpkcFileNewNbsKcCount
+zTpkcFileOpenNbsKcCount	0	zTpkcFileOpenNbsKcCount
+zTpkcFilePageSetupNbsKcCount	0	zTpkcFilePageSetupNbsKcCount
+zTpkcFilePrintNbsKcCount	1	zTpkcFilePrintNbsKcCount
+zTpkcFilePrintNbsKcEsc1	\\\{#insert zCpPP\\\}	zTpkcFilePrintNbsKcEsc1
+zTpkcFilePrintAllNbsKcCount	0	zTpkcFilePrintAllNbsKcCount
+zTpkcFilePrintDefaultNbsKcCount	0	zTpkcFilePrintDefaultNbsKcCount
+zTpkcFilePrintPreviewNbsKcCount	1	zTpkcFilePrintPreviewNbsKcCount
+zTpkcFilePrintPreviewNbsKcEsc1	\\\{#insert zCSpPP\\\}	zTpkcFilePrintPreviewNbsKcEsc1
+zTpkcFileQuickOpenNbsKcCount	1	zTpkcFileQuickOpenNbsKcCount
+zTpkcFileQuickOpenNbsKcEsc1	\\\{#insert zCSpOO\\\}	zTpkcFileQuickOpenNbsKcEsc1
+zTpkcFileRenameNbsKcCount	0	zTpkcFileRenameNbsKcCount
+zTpkcFileRevertNbsKcCount	0	zTpkcFileRevertNbsKcCount
+zTpkcFileSaveNbsKcCount	0	zTpkcFileSaveNbsKcCount
+zTpkcFileSaveAllNbsKcCount	1	zTpkcFileSaveAllNbsKcCount
+zTpkcFileSaveAllNbsKcEsc1	\\\{#insert zCSpSS\\\}	zTpkcFileSaveAllNbsKcEsc1
+zTpkcFileSaveAndCloseNbsKcCount	0	zTpkcFileSaveAndCloseNbsKcCount
+zTpkcFileSaveAsNbsKcCount	1	zTpkcFileSaveAsNbsKcCount
+zTpkcFileSaveAsNbsKcEsc1	\\\{#insert zF12\\\}	zTpkcFileSaveAsNbsKcEsc1
+zTpkcFileSendNbsKcCount	0	zTpkcFileSendNbsKcCount
+zTpkcFileStatisticsNbsKcCount	1	zTpkcFileStatisticsNbsKcCount
+zTpkcFileStatisticsNbsKcEsc1	\\\{#insert zCpF1\\\}	zTpkcFileStatisticsNbsKcEsc1
+zTpkcWorkspaceCloseNbsKcCount	0	zTpkcWorkspaceCloseNbsKcCount
+zTpkcWorkspaceOpenNbsKcCount	0	zTpkcWorkspaceOpenNbsKcCount
+zTpkcWorkspaceSaveNbsKcCount	0	zTpkcWorkspaceSaveNbsKcCount
+zTpkcWorkspaceSaveAsNbsKcCount	0	zTpkcWorkspaceSaveAsNbsKcCount

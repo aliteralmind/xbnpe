@@ -1,0 +1,8 @@
+zTpkcActivateExplorerAbrv1C	Vax	zTpkcActivateExplorerAbrv1C
+zTpkcVaxCmdNameTC	ActivateExplorer	zTpkcVaxCmdNameTC
+zTpkcVaxDfltPhrsNm	zTPActivateExplorer	zTpkcVaxDfltPhrsNm
+zTpkcVaxCatForCmdAbrvLC	view	zTpkcVaxCatForCmdAbrvLC
+zTpkcVaxCmdType_mcrTl		zTpkcVaxCmdType_mcrTl
+zTpkcVaxIsBtstrp_yes		zTpkcVaxIsBtstrp_yes
+zTpkcVaxDfltPostKcSlpMils	10	zTpkcVaxDfltPostKcSlpMils
+zTpkcVaxStpsFrmCmdListTop	{#insert zDOWN2}	zTpkcVaxStpsFrmCmdListTop

@@ -1,0 +1,4 @@
+fpwd -- Find Prev Word, down	{#insert zTPSelectL1w}{#insert zTPFindNext}	fpwd
+fpwu -- Find Prev Word, Up	{#insert zTPSelectL1w}{#insert zTPFindPrev}	fpwu
+mfpwd -- Mark location, Find Prev Word, down	{#insert zXThenLeft}{#insert zTPSelectL1w}{#insert zTPFindNext}	fpwd
+mfpwu -- Mark location, Find Prev Word, Up	{#insert zXThenLeft}{#insert zTPSelectL1w}{#insert zTPFindPrev}	fpwu

@@ -1,0 +1,6 @@
+zzTpkcCatAllCmdNamesTCQbl_M_catl	{#insert {#insert zzTpkcCatAllCmdNamesTCQblNm_M_catl}}	zzTpkcCatAllCmdNamesTCQbl_M_catl
+zzTpkcCatCmdCount_M_catl	{#insert {#insert zzTpkcCatCmdCountNm_M_catl}}	zzTpkcCatCmdCount_M_catl
+zzTpkcCatStpsFrmLstTop_M_catl	{#insert {#insert zzTpkcCatStpsFrmLstTopNm_M_catl}}	zzTpkcCatStpsFrmLstTop_M_catl
+zzTpkcCatHasUsrCrtdCmds_yes_M_catl	{#insert {#insert zzTpkcCatHasUsrCrtdCmds_yesNm_M_catl}}	zzTpkcCatHasUsrCrtdCmds_yes_M_catl
+zzTpkcCatAbrvLC_M_catml	{#insert {#insert zzTpkcCatAbrvLCNm_M_catml}}	zzTpkcCatAbrvLC_M_catml
+zzTpkcCatAbrvLC_M_catmlcb	{#insert {#insert zzTpkcCatAbrvLCNm_M_catmlcb}}	zzTpkcCatAbrvLC_M_catmlcb

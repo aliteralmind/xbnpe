@@ -1,0 +1,48 @@
+zClassCount	{#input -head How many classes? -single}	zClassCount
+zDfmrwcCount	{#input -head How many dependencies? -single}	zDfmrwcCount
+zzFileNameCmplSq	compile_sequence.txt	zzFileNameCmplSq
+zzFileNameDpFrXtrt	dependents_M_extract.txt	zzFileNameDpFrXtrt
+zzJpabmcDelTxMkDependenciesInsIntoCmplBlkGTPrvDoc	{#insert zDEL}{#insert zRplcDlgTDRE}{#insert zSystemPaste}{#insert zHOME}(--> {#insert zEND})${#insert zRplcFieldWith}<*[{#insert zvJD_CMPL_BLOCK_NUM}]*>$1{#insert zzRplcBtnAllTDHnrREClose}{#insert zSystemGTPrevDoc}{#insert zTPGTDocTop}{#insert zFindDlgOpenDownRE}^{#insert zvJD_CMPL_BLOCK_NUM}${#insert zFindGoREClose}{#insert zRIGHT}{#insert zENTER}{#insert zTPPaste}{#insert zSystemGTPrevDoc}	zzJpabmcDelTxMkDependenciesInsIntoCmplBlkGTPrvDoc
+zzJpabmcHowManyBkmrdClss	{#input -head How many classes to move (are bookmarked)? -single}	zzJpabmcHowManyBkmrdClss
+zzJpabmcNotDpnddOnByMsg (*starts with a space*)	 Note: If the class-to-move is not DEPENDEND ON by any other, it's replacement will find nothing. This is okay.{#insert zMsgProceedOrNot}	zzJpabmcNotDpnddOnByMsg
+zzJpabmcl1MASTER (**)	(*This is only  MASTER because zzJdbmcl1RAW_MSTR calls zzJpabmcDelTxMkDependenciesInsIntoCmplBlkGTPrvDoc, which uses zvJD_CMPL_BLOCK_NUM, instead of a hard-coded '1'.*){#msgbox -head Proceed? -text About to move all bookmarked lines to compile level 1 (which have NO dependencies--no lines between it and the next class).{#insert zzJpabmcNotDpnddOnByMsg}}{#insert zFindDialogFlagPreCheck}{#insert zzJdInsertDisasterX}{#loop {#insert zzJdbmcl1RAW_MSTR}{#insert {#insert zTPGTDocTop}} -count {#insert zzJpabmcHowManyBkmrdClss}}{#insert zzJdRemoveDisasterX}	zzJpabmcl1MASTER
+zzJpabmcl2plusMASTER	{#msgbox -head Proceed? -text About to move all bookmarked lines to compile level {#insert zvJD_CMPL_BLOCK_NUM} (which have at least one dependency--at least one line between it and the next class).{#insert zzJpabmcNotDpnddOnByMsg}}{#insert zFindDialogFlagPreCheck}{#insert zzJdInsertDisasterX}{#loop {#insert zzJdbmcl2plusRAW_MSTR}{#insert {#insert zTPGTDocTop}} -count {#insert zzJpabmcHowManyBkmrdClss}}{#insert zzJdRemoveDisasterX}	zzJpabmcl2plusMASTER
+zzJpacbRAW	{#insert zHOME}{#insert zVmark}{#insert zFindDlgOpenDownRE}\R\R{#insert zFindGoREClose}{#insert zLEFT}{#insert zENTER(*for single-class blocks. If not there, disaster.*)}{#insert zRIGHT}{#insert zSTDiffLineVUpDelMark}{#insert zSortSelectedLines}{#insert zTPCut}{#insert zVmark}{#insert zTPPaste}{#insert zLEFT}{#insert zSTVSameLineUpDelMark}{#insert zRplcDlgSelRE}xbn[_a-z]*\.{#insert zRplcWithNOTHING}{#insert zRplcBtnAllSelHnrRE}.{#insert zRplcFieldWith}${#insert zOY}fs}{#insert zRplcBtnAllSelHnrRE}\R{#insert zRplcFieldWith}.java, {#insert zRplcBtnAllSelHnrREClose}{#insert zEND}.java{#insert zSpHOME}{#insert zTPCut}{#insert zzjdAntCmplWCBClasses}{#insert zDOWN}{#insert zRIGHT}	zzJpacbRAW
+zzJpbdflnRAW	{#insert zFindDialogFlagPreCheck}{#insert zTPToggleWW}{#loop {#insert zzJdbdlRAW}{#insert zRIGHT} -count {#insert zClassCount}}{#insert zTPToggleWW}	zzJpbdflnRAW
+zzJdbdlRAW	{#insert zParaSelect}{#insert zTPCopy}{#insert zSystemGTPrevDoc}{#insert zHOME}{#insert zFindOpenDown}{#insert zSystemPaste}{#insert zFindMarkAllClose}{#insert zSystemGTPrevDoc}{#insert zRIGHT2}	zzJdbdlRAW
+zzJdbmcl1RAW_MSTR	{#insert zTPBookmarkGTNext}{#insert zCutToLineEnd}{#insert zzJpabmcDelTxMkDependenciesInsIntoCmplBlkGTPrvDoc}	zzJdbmcl1RAW_MSTR
+zzJdbmcl2plusRAW_MSTR	{#insert zTPBookmarkGTNext}{#insert zSelCopyToLineEnd}{#insert zzjdSelToEndOfClassBlock}{#insert zzJpabmcDelTxMkDependenciesInsIntoCmplBlkGTPrvDoc}	zzJdbmcl2plusRAW_MSTR
+zzJdpcsdxDelCmplSqFile	{#insert zFcsTPFileOpen}{#insert zWIN_ROOT_DIR_xbnJavaWorrking}{#sleep 50}{#insert zENTER}{#msgbox -head Delete {#insert zzFileNameCmplSq} -text Delete {#insert zzFileNameCmplSq}, which is about to be created. Click ESC to quit. Click OK proceed.}{#ESC}{#sleep 500}	zzJdpcsdxDelCmplSqFile
+zzJdpcsdxRAW	{#insert zFindDialogFlagPreCheck}{#msgbox -head Proceed? -text About to prepare {#insert zzFileNameDpFrXtrt} and create {#insert zzFileNameCmplSq}. {#insert zzFileNameDpFrXtrt} should be the ONLY file open.{#insert zMsgProceedOrNot}}{#insert zzJdpcsxRAW}{#insert zSystemGTPrevDoc}{#insert zzJdpdxRAW}{#insert jpdccount}{#insert zDialogDONE}	zzJdpcsdxRAW
+zzJdpcsxRAW	{#insert zzJdpcsdxDelCmplSqFile}{#insert zFcsTPFileNew}{#setvar -var zGLOBAL_COUNTER -value 1 -inc 1}{#loop {#insert zGLOBAL_COUNTER}{#ENTER -count 2} -count {#input -head How many compile blocks? -single}}{#insert zFileSave1750slp}{#insert zWIN_ROOT_DIR_xbnJavaWorrking}{#insert zzFileNameCmplSq}{#sleep 500}{#insert zENTER}	zzJdpcsxRAW
+zzJdpdcRAW	(*{#insert zFindDlgOpenDownRE}^[a-z]{#insert zFindGoREClose}*){#insert zCopyToLineEndGTP}{#insert zEND}{#insert zRIGHT}{#insert zzjdSelToEndOfClassBlock}{#insert zRplcDlgSelRE}.*{#insert zSystemPaste}\>.*\R{#insert zRplcWithNOTHING}{#insert zRplcBtnAllSelHnrREClose}(*{#insert zSelectR1c}*){#insert zSortSelectedLines}{#insert zLEFT}{#insert zDEL}{#insert zzjdGoToEndOfClassBlock}{#insert zRIGHT}	zzJdpdcRAW
+zzJppdcnRAW	{#insert zTPToggleWW}{#insert zFindDialogFlagPreCheck}{#insert jpdccount}{#insert zzJdInsertDisasterX}{#insert zRplcDlgTDRE}^(x.+)${#insert zRplcFieldWith}\R$1\R{#insert zzRplcBtnAllTDHnrREClose}(*<--For single-class blocks. If not there, disaster.*){#insert zTPGTDocTop}{#insert zDEL}{#loop {#insert zzJdpdcRAW} -count {#insert zClassCount}}{#insert zTPToggleWW}{#insert zzJdRemoveDisasterX}	zzJppdcnRAW
+zzJdInsertDisasterX	{#insert zVmark}{#insert zGTDocBottom}(*the final empty-line must NOT end with a new-line*)x{#insert zVUpDelete}	zzJdInsertDisasterX
+zzJdInsertDisasterXWEnter	{#insert zVmark}{#insert zGTDocBottom}(*the final empty-line must NOT end with a new-line*){#insert zENTER}x{#insert zVUpDelete}	zzJdInsertDisasterXWEnter
+zzJdRemoveDisasterX	{#insert zGTDocBottom}(*Delete the disaster x*){#insert zBKSP}{#insert zTPGTDocTop}	zzJdRemoveDisasterX
+zzJdpdxMLGFunctions	        [^ -]{#insert zFindREMarkAllRE}	zzJdpdxMLGFunctions
+zzJdpdxMLGJavaPkg	--> java.{#insert zFindBtnMarkAll}	zzJdpdxMLGJavaPkg
+zzJdpdxRAW	{#insert zKeyPressFast}{#insert zTPFindDlgOpen}{#insert zzJdpdxMLGJavaPkg}{#insert zzJdpdxMLGFunctions}{#insert zzJdpdxXbnPkgHeader}{#insert zFindCloseDelMarked}{#insert zTPRplcDlgOpen}{#insert zzJdpdxRQMGUnindentClsHdr}{#insert zzJdpdxRQMGUnindentSubDependency}{#insert zzJdpdxRQMGUnindentDependency}{#insert zzJdpdxRQMGXdotXParenToX}{#insert zzJdpdxRQMGClsDtFuncOrVarToCls}{#insert zzJdpdxRQMGElim}{#insert zTPFindDlgOpen}({#insert zFindMarkAllCloseDelMarked}	zzJdpdxRAW
+zzJdpdxRQMGClsDtFuncOrVarToCls	\.([A-Z][A-Za-z0-9_]+\>)\.[a-z][A-Za-z0-9_]+${#insert zRplcFieldWith}.$1{#insert zREzRplcBtnAllTDHnrRE}	zzJdpdxRQMGClsDtFuncOrVarToCls
+zzJdpdxRQMGElim	 \*${#insert zRplcWithNOTHING}{#insert zREzRplcBtnAllTDHnrRE}	zzJdpdxRQMGElim
+zzJdpdxRQMGUnindentClsHdr	    x{#insert zRplcFieldWith}x{#insert zREzRplcBtnAllTDHnrRE}	zzJdpdxRQMGUnindentClsHdr
+zzJdpdxRQMGUnindentDependency	        -->{#insert zRplcFieldWith}\t-->{#insert zREzRplcBtnAllTDHnrRE}	zzJdpdxRQMGUnindentDependency
+zzJdpdxRQMGUnindentSubDependency	            -->{#insert zRplcFieldWith}\t-->{#insert zREzRplcBtnAllTDHnrRE}	zzJdpdxRQMGUnindentSubDependency
+zzJdpdxRQMGXdotXParenToX	\.([A-Z][A-Za-z0-9_]+)\>\.$1([^)]+)( \*){0,1}${#insert zRplcFieldWith}.$1{#insert zREzRplcBtnAllTDHnrRE}	zzJdpdxRQMGXdotXParenToX
+zzJdpdxXbnPkgHeader	^x{#insert zFindREMarkAllRE}	zzJdpdxXbnPkgHeader
+zzjdAntCmplWCBClasses	{#insert zTAB2}<javac srcdir={#asc 34}${#insert zOY}DIR_xbnjava_sandbox_xbnsrc}{#asc 34}{#insert zEnterTab}destdir={#asc 34}${#insert zOY}DIR_classes_parent}{#asc 34}{#insert zENTER}includes={#asc 34}{#insert zTPPaste}{#asc 34}{#insert zENTER}classpathref={#asc 34}xbn_classpath{#asc 34} debug={#asc 34}true{#asc 34} debuglevel={#asc 34}lines,vars,source{#asc 34} listfiles={#asc 34}true{#asc 34}/>	zzjdAntCmplWCBClasses
+zzjdGoToEndOfClassBlock	{#insert zFindDlgOpenDownRE}^[a-z]{#insert zFindGoREClose}{#insert zLEFT2}	zzjdGoToEndOfClassBlock
+zzjdSelToEndOfClassBlock	{#insert zFindDlgOpenDownREXS}^[a-z]{#insert zFindGoREXSClose}{#insert zSpHOME}	zzjdSelToEndOfClassBlock
+zzjdpdxKLMGDpndsOnJavaPkg	--> java.{#insert zFindBtnMarkAll}	zzjdpdxKLMGDpndsOnJavaPkg
+zzjdpdxKLMGNonDependencies	^[\t]+[^\t-]{#insert zFindBtnMarkAll}	zzjdpdxKLMGNonDependencies
+zzjdpdxKLMGPackageNames	^xbn{#insert zFindREMarkAllRE}	zzjdpdxKLMGPackageNames
+zzjdpdxRQMGXpnPrnToXpn	Exception([^)]*)${#insert zRplcFieldWith}Exception{#insert zREzRplcBtnAllTDHnrRE}	zzjdpdxRQMGXpnPrnToXpn
+zzjdpdxRQMGelimSpcStrEnd	 \*${#insert zRplcWithNOTHING}{#insert zREzRplcBtnAllTDHnrRE}	zzjdpdxRQMGelimSpcStrEnd
+(*
+   zzjdpdxRQMGXdotXToX -- Seems to only apply to exceptions[[TAB_GOES_HERE]]\.([A-Za-z0-9_]+)\.$1{#insert zRplcFieldWith}.$1{#insert zREzRplcBtnAllTDHnrRE}[[TAB_GOES_HERE]]zzjdpdxRQMGXdotXToX
+   zzjdpdxKLMGCnstrsIThink[[TAB_GOES_HERE]]}{#insert zFindBtnMarkAll}[[TAB_GOES_HERE]]zzjdpdxKLMGCnstrsIThink
+   zzjdpdxKLMGFunctions[[TAB_GOES_HERE]]){#insert zFindBtnMarkAll}[[TAB_GOES_HERE]]zzjdpdxKLMGFunctions
+   zzjdpdxKLMGVariables[[TAB_GOES_HERE]]\.[a-z][A-Za-z_]+${#insert zFindREMarkAllRE}[[TAB_GOES_HERE]]zzjdpdxKLMGVariables
+zzJdpdxRAW
+{#insert zTPRplcDlgOpen}{#insert zzjdpdxRQMGXpnPrnToXpn}{#insert zzjdpdxRQMGelimSpcStrEnd}{#insert zzjdpdxRQMGXdotXToX}{#insert zRplcDlgTDRE}    {#insert zRplcFieldWith}\t{#insert zzRplcBtnAllTDHnrREClose}{#insert zTPFindDlgOpen}{#insert zzjdpdxKLMGDpndsOnJavaPkg}{#insert zzjdpdxKLMGPackageNames}{#insert zFindCloseDelMarked}{#insert zTPSelectAll}{#insert zUnindent}{#insert zLEFT}{#insert zTPFindDlgOpen}{#insert zzjdpdxKLMGNonDependencies}{#insert zFindCloseDelMarked}
+*)

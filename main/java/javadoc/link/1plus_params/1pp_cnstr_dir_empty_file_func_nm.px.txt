@@ -1,0 +1,36 @@
+ckg -- Cnstr linK from (at-least-1-param) siG b4 cursor. Target class in same dir.	{#insert zzjlCodeOffPrekOff}{#insert zzjlPRPCutSaveFuncNmIsL1wFileIsFuncNmDirIsEmpty}{#insert zzjlDispFuncPAPAreUrlP_MSTR_dapnUrlParamsDaptPAP}	ckg
+ckgc -- ckg, CODE-d	{#insert zzjlCodeOnPrekOff}{#insert zzjlPRPCutSaveFuncNmIsL1wFileIsFuncNmDirIsEmpty}{#insert zzjlDispFuncPAPAreUrlP_MSTR_dapnUrlParamsDaptPAP}	ckgc
+ckgck -- ckgc, with prek abrv b4 cursor	{#insert zzjlCodeOnPrekVb4c}{#insert zzjlPRPCutSaveFuncNmIsL1wFileIsFuncNmDirIsEmpty}{#insert zzjlDispFuncPAPAreUrlP_MSTR_dapnUrlParamsDaptPAP}	ckgck
+ckgk -- ckg, with prek abrv b4 cursor	{#insert zzjlCodeOffPrekVb4c}{#insert zzjlPRPCutSaveFuncNmIsL1wFileIsFuncNmDirIsEmpty}{#insert zzjlDispFuncPAPAreUrlP_MSTR_dapnUrlParamsDaptPAP}	ckgk
+ckgp -- ckg, no post-</A> params	{#insert zzjlCodeOffPrekOff}{#insert zzjlPRPCutSaveFuncNmIsL1wFileIsFuncNmDirIsEmpty}{#insert zzjlDispFuncPAPES_MSTR_dapnUrlParams}	ckgp
+ckgpk -- ckgk, no post-</A> params	{#insert zzjlCodeOffPrekVb4c}{#insert zzjlPRPCutSaveFuncNmIsL1wFileIsFuncNmDirIsEmpty}{#insert zzjlDispFuncPAPES_MSTR_dapnUrlParams}	ckgpk
+ckgpv -- ckgv, no post-</A> params	{#insert zzjlCodeOffPrekOff}{#insert zzjlPRPCutSaveFuncNmIsL1wFileIsFuncNmDirIsEmpty}{#insert zzjlDispFuncPAPES_MSTR_dapnUrlParams}	ckgpv
+ckgpvk -- ckgvk, no post-</A> params	{#insert zzjlCodeOffPrekVb4c}{#insert zzjlPRPCutSaveFuncNmIsL1wFileIsFuncNmDirIsEmpty}{#insert zzjlDispFuncPAPES_MSTR_dapnUrlParams}	ckgpvk
+ckgv -- ckg, with post-</A> params type-abbreViations	{#insert zzjlCodeOffPrekOff}{#insert zzjlPRPCutSaveFuncNmIsL1wFileIsFuncNmDirIsEmpty}{#insert zzjlDispFuncPAPAreUrlP_MSTR_dapnUrlParamsDapnvPAP}	ckgv
+ckgvc -- ckgv, CODE-d	{#insert zzjlCodeOnPrekOff}{#insert zzjlPRPCutSaveFuncNmIsL1wFileIsFuncNmDirIsEmpty}{#insert zzjlDispFuncPAPAreUrlP_MSTR_dapnUrlParamsDapnvPAP}	ckgvc
+ckgvck -- ckgvc, with prek abrv b4 cursor	{#insert zzjlCodeOnPrekVb4c}{#insert zzjlPRPCutSaveFuncNmIsL1wFileIsFuncNmDirIsEmpty}{#insert zzjlDispFuncPAPAreUrlP_MSTR_dapnUrlParamsDapnvPAP}	ckgvck
+ckgvk -- ckgv, with prek abrv b4 cursor	{#insert zzjlCodeOffPrekVb4c}{#insert zzjlPRPCutSaveFuncNmIsL1wFileIsFuncNmDirIsEmpty}{#insert zzjlDispFuncPAPAreUrlP_MSTR_dapnUrlParamsDapnvPAP}	ckgvk
+ckgyb -- ckg, displaY in clipBoard	{#insert zzjlCodeOffPrekOff}{#insert zzjlDispCB}{#insert zzjlPRPCutSave}{#insert zzjlFuncObjNmIsL1w}{#insert zzjlFileIsFuncNmDirIsEmpty}{#insert zzjlPAParamsEmpty}{#insert zzjlFuncLink_MSTR_dapnUrlParamsPAPES}	ckgyb
+ckgyn -- ckg, 'coNstructor' display	{#insert zzjlCodeOffPrekOff}{#insert zzjlPRPCutSaveFuncNmIsL1wFileIsFuncNmDirIsEmpty}{#insert zzjlDispQCnstrQPAPES}{#insert zzjlFuncLink_MSTR_dapnUrlParamsPAPES}	ckgyn
+ckpf -- ckp, but cnstr-name (url-File) is TBD (x-mark)	{#insert zzjlCodeOffPrekOff}{#insert zzjlPRPCutSaveFuncNmIsXFileIsFuncNmDirIsEmpty}{#insert zzjlDispFuncPAPAreUrlP_MSTR_dapnUrlParamsDaptPAP}	ckpf
+ckpfb -- ckpf, with cnstr (File) name in clipBoard	{#insert zzjlCodeOffPrekOff}{#insert zzjlFuncNmIsCBPRPCutSaveFileIsFuncNmDirIsEmpty}{#insert zzjlDispFuncPAPAreUrlP_MSTR_dapnUrlParamsDaptPAP}	ckpfb
+ckpfbc -- ckpfb, CODE-d	{#insert zzjlCodeOnPrekOff}{#insert zzjlFuncNmIsCBPRPCutSaveFileIsFuncNmDirIsEmpty}{#insert zzjlDispFuncPAPAreUrlP_MSTR_dapnUrlParamsDaptPAP}	ckpfbc
+ckpfbck -- ckpfbc, with prek abrv b4 cursor	{#insert zzjlCodeOnPrekVb4c}{#insert zzjlFuncNmIsCBPRPCutSaveFileIsFuncNmDirIsEmpty}{#insert zzjlDispFuncPAPAreUrlP_MSTR_dapnUrlParamsDaptPAP}	ckpfbck
+ckpfbk -- ckpfb, with prek abrv b4 cursor	{#insert zzjlCodeOffPrekVb4c}{#insert zzjlFuncNmIsCBPRPCutSaveFileIsFuncNmDirIsEmpty}{#insert zzjlDispFuncPAPAreUrlP_MSTR_dapnUrlParamsDaptPAP}	ckpfbk
+ckpfbv -- ckpfb, with post-</A> params type-abbreViations	{#insert zzjlCodeOffPrekOff}{#insert zzjlFuncNmIsCBPRPCutSaveFileIsFuncNmDirIsEmpty}{#insert zzjlDispFuncPAPAreUrlP_MSTR_dapnUrlParamsDapnvPAP}	ckpfbv
+ckpfbvc -- ckpfbv, CODE-d	{#insert zzjlCodeOnPrekOff}{#insert zzjlFuncNmIsCBPRPCutSaveFileIsFuncNmDirIsEmpty}{#insert zzjlDispFuncPAPAreUrlP_MSTR_dapnUrlParamsDapnvPAP}	ckpfbvc
+ckpfbvck -- ckpfbvc, with prek abrv b4 cursor	{#insert zzjlCodeOnPrekVb4c}{#insert zzjlFuncNmIsCBPRPCutSaveFileIsFuncNmDirIsEmpty}{#insert zzjlDispFuncPAPAreUrlP_MSTR_dapnUrlParamsDapnvPAP}	ckpfbvck
+ckpfbvk -- ckpfbv, with prek abrv b4 cursor	{#insert zzjlCodeOffPrekVb4c}{#insert zzjlFuncNmIsCBPRPCutSaveFileIsFuncNmDirIsEmpty}{#insert zzjlDispFuncPAPAreUrlP_MSTR_dapnUrlParamsDapnvPAP}	ckpfbvk
+ckpfc -- ckpf, CODE-d	{#insert zzjlCodeOnPrekOff}{#insert zzjlPRPCutSaveFuncNmIsXFileIsFuncNmDirIsEmpty}{#insert zzjlDispFuncPAPAreUrlP_MSTR_dapnUrlParamsDaptPAP}	ckpfc
+ckpfck -- ckpfc, with prek abrv b4 cursor	{#insert zzjlCodeOnPrekVb4c}{#insert zzjlPRPCutSaveFuncNmIsXFileIsFuncNmDirIsEmpty}{#insert zzjlDispFuncPAPAreUrlP_MSTR_dapnUrlParamsDaptPAP}	ckpfck
+ckpfk -- ckpf, with prek abrv b4 cursor	{#insert zzjlCodeOffPrekVb4c}{#insert zzjlPRPCutSaveFuncNmIsXFileIsFuncNmDirIsEmpty}{#insert zzjlDispFuncPAPAreUrlP_MSTR_dapnUrlParamsDaptPAP}	ckpfk
+ckpfv -- ckpf, with post-</A> params type-abbreViations	{#insert zzjlCodeOffPrekOff}{#insert zzjlPRPCutSaveFuncNmIsXFileIsFuncNmDirIsEmpty}{#insert zzjlDispFuncPAPAreUrlP_MSTR_dapnUrlParamsDapnvPAP}	ckpfv
+ckpfvc -- ckpfv, CODE-d	{#insert zzjlCodeOnPrekOff}{#insert zzjlPRPCutSaveFuncNmIsXFileIsFuncNmDirIsEmpty}{#insert zzjlDispFuncPAPAreUrlP_MSTR_dapnUrlParamsDapnvPAP}	ckpfvc
+ckpfvck -- ckpfvc, with prek abrv b4 cursor	{#insert zzjlCodeOnPrekVb4c}{#insert zzjlPRPCutSaveFuncNmIsXFileIsFuncNmDirIsEmpty}{#insert zzjlDispFuncPAPAreUrlP_MSTR_dapnUrlParamsDapnvPAP}	ckpfvck
+ckpfvk -- ckpfv, with prek abrv b4 cursor	{#insert zzjlCodeOffPrekVb4c}{#insert zzjlPRPCutSaveFuncNmIsXFileIsFuncNmDirIsEmpty}{#insert zzjlDispFuncPAPAreUrlP_MSTR_dapnUrlParamsDapnvPAP}	ckpfvk
+ckppf -- ckpf, no post-</A> params	{#insert zzjlCodeOffPrekOff}{#insert zzjlPRPCutSaveFuncNmIsXFileIsFuncNmDirIsEmpty}{#insert zzjlDispFuncPAPES_MSTR_dapnUrlParams}	ckppf
+ckppfb -- ckpfb, no post-</A> params	{#insert zzjlCodeOffPrekOff}{#insert zzjlFuncNmIsCBPRPCutSaveFileIsFuncNmDirIsEmpty}{#insert zzjlDispFuncPAPES_MSTR_dapnUrlParams}	ckppfb
+ckppfbk -- ckpfbk, no post-</A> params	{#insert zzjlCodeOffPrekVb4c}{#insert zzjlFuncNmIsCBPRPCutSaveFileIsFuncNmDirIsEmpty}{#insert zzjlDispFuncPAPES_MSTR_dapnUrlParams}	ckppfbk
+ckppfk -- ckpfk, no post-</A> params	{#insert zzjlCodeOffPrekVb4c}{#insert zzjlPRPCutSaveFuncNmIsXFileIsFuncNmDirIsEmpty}{#insert zzjlDispFuncPAPES_MSTR_dapnUrlParams}	ckppfk
+ckpy -- ckp, no displaY (x-mark only)	{#insert zzjlCodeOffPrekOff}{#insert zzjlPRPCutSaveFuncNmIsThisCN}{#insert zzjlFileIsFuncNmDirIsEmpty}{#insert zzjlDispXPAPES}{#insert zzjlFuncLink_MSTR_dapnUrlParamsPAPES}	ckpy
+ckpyn -- ckp, 'coNstructor' display	{#insert zzjlCodeOffPrekOff}{#insert zzjlPRPCutSaveFuncNmIsThisCN}{#insert zzjlFileIsFuncNmDirIsEmpty}{#insert zzjlDispQCnstrQPAPES}{#insert zzjlFuncLink_MSTR_dapnUrlParamsPAPES}	ckpyn

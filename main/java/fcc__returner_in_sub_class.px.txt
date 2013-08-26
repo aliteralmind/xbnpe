@@ -1,0 +1,24 @@
+oribcnp -- sribcnp, but not a self-returner (Other Returner)(**)	(*Call with the cursor somewhere in the signature line. The non-'y' phrases do not html-escape the @return value, including any generics that happen to be in it. oribcnp's sister-phrase, oribcnpy, does. For all phrases in this folder, the signature is expected to have the format [pub/priv/... ret-val func-name(params) open-curly], where spaces are any amount of tab/spaces. ***NOTE*** If you want to have a casted return for a NON-self-returner, use scribc*. These phrases names need to be clarified. Unexpected benefit, but confusing with phrase names as they are.*){#insert zzOribcnpRAW}	oribcnp
+oribcnpn -- oribcnp loop, n times(**)	(*All signature lines must have the same indent, and must be in contiguous lines. Call with the cursor in the top-most signature.*){#insert zzOribcnpnRAW}	oribcnpn
+oribcnpy -- oribcnp, escapes generics in ret-val	{#insert zzOribcnpyRAW}	oribcnpy
+oribcnpyn -- oribcnpn, escapes generics in ret-val	{#insert zzOribcnpynRAW}	oribcnpyn
+oribcwp -- sribcwp, but Not a self Returner (Other) (returns a diff type)	{#insert zzOribcwpRAW}	oribcwp
+oribcwpn -- oribcwp	{#insert zzOribcwpnRAW}	oribcwpn
+oribcwpy -- oribcwp, escapes generics in ret-val	{#insert zzOribcwpyRAW}	oribcwpy
+oribcwpyn -- oribcwpn, escapes generics in ret-val	{#insert zzOribcwpynRAW}	oribcwpyn
+scribcnp -- sribcnp, casted-return (**)	(*return (RET-TYPE)super.func(), instead of return super.func();return this;*){#insert zzScribcnpRAW}	scribcnp
+scribcnpn -- sribcnpn, N times	{#insert zzScribcnpnRAW}	scribcnpn
+scribcnpy -- sribcnpy, casted-return	{#insert zzScribcnpyRAW}	scribcnpy
+scribcnpyn -- scribcnpy, N times	{#insert zzScribcnpynRAW}	scribcnpyn
+scribcwp -- sribcwp, casted-return	{#insert zzScribcwpRAW}	scribcwp
+scribcwpn -- sribcwpn, casted-return	{#insert zzScribcwpnRAW}	scribcwpn
+scribcwpy -- sribcwpy, casted-return	{#insert zzScribcwpyRAW}	scribcwpy
+scribcwpyn -- sribcwpyn, casted-return	{#insert zzScribcwpynRAW}	scribcwpyn
+sribcnp -- Self-Returner In Sub-Class, No Params	{#insert zzSribcnpRAW}	sribcnp
+sribcnpn -- sribcnp	{#insert zzSribcnpnRAW}	sribcnpn
+sribcnpy -- sribcnp, escapes generics in ret-val	{#insert zzSribcnpyRAW}	sribcnpy
+sribcnpyn -- sribcnpn, escapes generics in ret-val	{#insert zzSribcnpynRAW}	sribcnpyn
+sribcwp -- Self-Returner In suB-Class, With Params	{#insert zzSribcwpRAW}	sribcwp
+sribcwpn -- sribcwp	{#insert zzSribcwpnRAW}	sribcwpn
+sribcwpy -- sribcwp, escapes generics in ret-val	{#insert zzSribcwpyRAW}	sribcwpy
+sribcwpyn -- sribcwpn, escapes generics in ret-val	{#insert zzSribcwpynRAW}	sribcwpyn

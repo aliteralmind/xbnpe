@@ -1,0 +1,6 @@
+1. Fast	{#SETPHRASE -description zvKP_SPD_TMP_NAME -content Fast -autotext zvKP_SPD_TMP_NAME -folder ctvv_folder}	zzAsgnKcSpdFast
+2. Medium	{#SETPHRASE -description zvKP_SPD_TMP_NAME -content Medium -autotext zvKP_SPD_TMP_NAME -folder ctvv_folder}	zzAsgnKcSpdMedium
+3. Slow	{#SETPHRASE -description zvKP_SPD_TMP_NAME -content Slow -autotext zvKP_SPD_TMP_NAME -folder ctvv_folder}	zzAsgnKcSpdSlow
+4. Super-slow	{#SETPHRASE -description zvKP_SPD_TMP_NAME -content SuperSlow -autotext zvKP_SPD_TMP_NAME -folder ctvv_folder}	zzAsgnKcSpdSuperSlow
+5. Glacial	{#SETPHRASE -description zvKP_SPD_TMP_NAME -content Glacial -autotext zvKP_SPD_TMP_NAME -folder ctvv_folder}	zzAsgnKcSpdGlacial
+z-Get current	(*NOTHING if never set*){#BALLOON -title Current KC-assignment speed -text {#insert zvKP_SPD_TMP_NAME}}	zzAsgnKcSpdGetCurrent

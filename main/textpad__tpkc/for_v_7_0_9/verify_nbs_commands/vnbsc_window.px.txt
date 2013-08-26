@@ -1,0 +1,23 @@
+zzNewFlV1Nbs_window_Window10_ifKc	{#insert zvCMD_ABRV_1C_sfWindow10}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_window_Window10_ifKc
+zzNewFlV1Nbs_window_Window1_ifKc	{#insert zvCMD_ABRV_1C_sfWindow1}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_window_Window1_ifKc
+zzNewFlV1Nbs_window_Window2_ifKc	{#insert zvCMD_ABRV_1C_sfWindow2}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_window_Window2_ifKc
+zzNewFlV1Nbs_window_Window3_ifKc	{#insert zvCMD_ABRV_1C_sfWindow3}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_window_Window3_ifKc
+zzNewFlV1Nbs_window_Window4_ifKc	{#insert zvCMD_ABRV_1C_sfWindow4}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_window_Window4_ifKc
+zzNewFlV1Nbs_window_Window5_ifKc	{#insert zvCMD_ABRV_1C_sfWindow5}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_window_Window5_ifKc
+zzNewFlV1Nbs_window_Window6_ifKc	{#insert zvCMD_ABRV_1C_sfWindow6}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_window_Window6_ifKc
+zzNewFlV1Nbs_window_Window7_ifKc	{#insert zvCMD_ABRV_1C_sfWindow7}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_window_Window7_ifKc
+zzNewFlV1Nbs_window_Window8_ifKc	{#insert zvCMD_ABRV_1C_sfWindow8}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_window_Window8_ifKc
+zzNewFlV1Nbs_window_Window9_ifKc	{#insert zvCMD_ABRV_1C_sfWindow9}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_window_Window9_ifKc
+zzNewFlV1Nbs_window_WindowArrangeIcons_ifKc	{#insert zvCMD_ABRV_1C_sfWindowArrangeIcons}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_window_WindowArrangeIcons_ifKc
+zzNewFlV1Nbs_window_WindowCascade_ifKc	{#insert zvCMD_ABRV_1C_sfWindowCascade}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_window_WindowCascade_ifKc
+zzNewFlV1Nbs_window_WindowNext_ifKc	{#insert zvCMD_ABRV_1C_sfWindowNext}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_window_WindowNext_ifKc
+zzNewFlV1Nbs_window_WindowPaneNext_ifKc	{#insert zvCMD_ABRV_1C_sfWindowPaneNext}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_window_WindowPaneNext_ifKc
+zzNewFlV1Nbs_window_WindowPanePrev_ifKc	{#insert zvCMD_ABRV_1C_sfWindowPanePrev}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_window_WindowPanePrev_ifKc
+zzNewFlV1Nbs_window_WindowPrev_ifKc	{#insert zvCMD_ABRV_1C_sfWindowPrev}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_window_WindowPrev_ifKc
+zzNewFlV1Nbs_window_WindowSplit_ifKc	{#insert zvCMD_ABRV_1C_sfWindowSplit}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_window_WindowSplit_ifKc
+zzNewFlV1Nbs_window_WindowTileHorz_ifKc	{#insert zvCMD_ABRV_1C_sfWindowTileHorz}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_window_WindowTileHorz_ifKc
+zzNewFlV1Nbs_window_WindowTileVert_ifKc	{#insert zvCMD_ABRV_1C_sfWindowTileVert}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_window_WindowTileVert_ifKc
+zzNewFlV1Nbs_window_WindowToggleIcon_ifKc	{#insert zvCMD_ABRV_1C_sfWindowToggleIcon}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_window_WindowToggleIcon_ifKc
+zzNewFlV1Nbs_window_WindowToggleZoom_ifKc	{#insert zvCMD_ABRV_1C_sfWindowToggleZoom}{#insert {#COND -if {#insert zzzHasAKCOrFrcTst_yes_M_cmd1} = yes -then zzzNoTestForCmdWKc_M_cmd1 -else z1slp}}	zzNewFlV1Nbs_window_WindowToggleZoom_ifKc
+
+

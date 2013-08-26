@@ -1,0 +1,23 @@
+R:\jeffy\programming\sandbox\macros\xbn_phrase_express\phrase_express\build_minv\_minv_demo\hobk_demo\hobk__for_demoing_the_action.px.txt
+
+zAReallyLongPhrase
+{#insert zHOME}
+{#insert zUP}
+{#insert zDOWN}
+{#insert zUP}
+{#insert zDOWN}
+{#insert zHOME}
+{#insert zEND}
+{#insert zHOME}
+{#insert zDOWN}
+{#insert zUP}
+{#insert zDOWN}
+{#insert zHOME}
+{#insert zHOME}
+{#insert zDOWN}
+{#insert zUP}
+{#insert zDOWN}
+{#insert zEND}
+{#insert zEND}
+
+

@@ -1,0 +1,17 @@
+zDirFileSaveInsfileSelf_M_dirFnm -(**)- zvPATH = zvDIRECTORY + zvFILE_NAME	(*zvDIRECTORY must end with '\'*){#insert zDirFileSave_M_dirFnm}{#insert zTPSelectAll}{#insert zInsFileTextWAboutToWarning_M_dirFnm}(*<--Itself!!*)	zDirFileSaveInsfileSelf_M_dirFnm
+zInsFileTextWAboutToWarning_M_dirFnm	{#insert zvPATH_stDirPlusFNm}{#insert zInsFileTextWAboutToWarning_M_pth}	zInsFileTextWAboutToWarning_M_dirFnm
+_Long INSERTFILE-s sometimes...	choke, spewing out garbled text at the end. The only way to recover is to restart PhraseExpress (and potentially logout or restart the computer). Use these phrases to detect when this happens, by confirming the text in the final (non-empty) line is as expected.  --  Future: zCIBLastWordInDoc_M_xwrd -- Go-to-doc-bottom, zAtEOD_cibLastWordInDocFromEOD_M_xwrd		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+
+zvEXPECTED_WORD_A_st1stWrdLastLine_M_wwo -(*!*)- Needs zvWORD_WRAP_ON	(*Word must not be an *active* phrase-name!*){#insert zWordWrapOff}{#insert zTPGTDocBottom}{#insert zFindNonWSWordUpREoff}{#insert zTPCopy}{#SETPHRASE -description zvEXPECTED_WORD_A -content {#INSERTCLIPBOARD} -autotext zvEXPECTED_WORD_A -folder ctvv_folder}{#insert zWordWrapOn}	zvEXPECTED_WORD_A_st1stWrdLastLine_M_wwo
+zvEXPECTED_WORD_Z_stLastWrdLastLine -- Word must not be an *active* phrase-name!	{#insert zTPGTDocBottom}{#insert zFindNonWSWordUpREoff}{#insert zTPCopy}{#SETPHRASE -description zvEXPECTED_WORD_Z -content {#INSERTCLIPBOARD} -autotext zvEXPECTED_WORD_Z -folder ctvv_folder}	zvEXPECTED_WORD_Z_stLastWrdLastLine
+
+zAtEOD_cibLastWordInDoc_M_xwrdz -- Needs zvEXPECTED_WORD_Z	{#SETPHRASE -description zvEXPECTED_WORD -content {#insert zvEXPECTED_WORD_Z} -autotext zvEXPECTED_WORD -folder ctvv_folder}{#insert zFindNonWSWordUpREoff}{#insert zTPCopy}{#insert zzCISlctdLastLineWordUnexpected_M_xwrdAwrdcb}	zAtEOD_cibLastWordInDoc_M_xwrdz
+
+zAtEOD_cibFirstWrdInLastLine_M_xwrda -- Needs zvEXPECTED_WORD_A	{#SETPHRASE -description zvEXPECTED_WORD -content {#insert zvEXPECTED_WORD_A} -autotext zvEXPECTED_WORD -folder ctvv_folder}{#insert zWWoffAtEOD_copyFirstWordInLastLine}{#insert zzCISlctdLastLineWordUnexpected_M_xwrdAwrdcb}	zAtEOD_cibFirstWrdInLastLine_M_xwrda
+
+zzCISlctdLastLineWordUnexpected_M_xwrdAwrdcb -- Needs zvEXPECTED_WORD	(*Permanent debugging-->*)(*{#MSGBOX -head DEBUG: zzCISlctdLastLineWordUnexpected_M_xwrdAwrdcb -text clipboard='{#INSERTCLIPBOARD}', zvEXPECTED_WORD='{#insert zvEXPECTED_WORD}'}<--Permanent debugging*){#insert {#COND -if {#INSERTCLIPBOARD} = {#insert zvEXPECTED_WORD} -then z1slp -else zzErrDlgSlctdLstLnWrdUnexpected_M_xwrd}}{#sleep 250}	zzCISlctdLastLineWordUnexpected_M_xwrdAwrdcb
+
+zzErrDlgSlctdLstLnWrdUnexpected_M_xwrd -- Needs zvEXPECTED_WORD	{#MSGBOX -head ERROR: Selected last-line word unexpected -text ERROR ~~ The word in the last line (either selected, or immediately next to the cursor) is expected to be '{#insert zvEXPECTED_WORD}'.  //  Note that the INSERTFILE function sometimes chokes when inserting particularly~long documents--the last lines are completely mangled. If this is the case, then PhraseExpress should be restarted.{#insert zCancelProcNowPostTxt}}	zzErrDlgSlctdLstLnWrdUnexpected_M_xwrd
+
+
+zInsertFile_M_dirFnm -- zvPATH_stDirPlusFNm, zInsertFile_M_path	{#insert zvPATH_stDirPlusFNm}{#insert zInsertFile_M_path}	zInsertFile_M_dirFnm

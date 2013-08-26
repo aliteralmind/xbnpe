@@ -1,0 +1,12 @@
+zSystemCopy	{#CTRL -chars c}{#insert zTSlp}{#sleep 5}	zSystemCopy
+zSystemCut	{#CTRL -chars x}{#insert zTSlp}{#sleep 5}	zSystemCut
+zSystemFileOpenDlgFieldName	{#insert zApNN}	zSystemFileOpenDlgFieldName
+zSystemGTNextDoc -- See zSystemGTPrevDoc	{#CTRL {#SHIFT {#TAB}}}{#insert zTSlp}{#sleep 50}	zSystemGTNextDoc
+zSystemGTPrevDoc (**)	(*Ctrl+Tab is automatically assigned by TextPad to WindowPrev. Although it can be deleted, it can't be re-assigned. From TextPad help section {#asc 34}How to customize the keyboard{#asc 34}: Shortcuts can use any key, except Ctrl+\, or [the lock keys, Tab and Print Screen] in combination with Ctrl, Shift and Alt modifiers. *){#CTRL {#TAB}}{#insert zTSlp}{#sleep 50}	zSystemGTPrevDoc
+zSystemPaste	{#CTRL -chars v}{#insert zTSlp}{#sleep 5}	zSystemPaste
+zSystemSelectAll	{#CTRL -chars a}{#insert zTSlp}{#sleep 50}	zSystemSelectAll
+zSystemSelectL1c	{#SHIFT {#LEFT}}{#insert zTSlp}	zSystemSelectL1c
+zSystemSelectL1w	{#CTRL {#SHIFT {#LEFT}}}{#insert zTSlp}	zSystemSelectL1w
+zSystemSelectR1c	{#SHIFT {#RIGHT}}{#insert zTSlp}	zSystemSelectR1c
+zSystemSelectR1w	{#CTRL {#SHIFT {#RIGHT}}}{#insert zTSlp}	zSystemSelectR1w
+zSystemUndo	{#CTRL -chars z}{#insert zTSlp}{#sleep 5}	zSystemUndo

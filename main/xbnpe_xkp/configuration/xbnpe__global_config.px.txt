@@ -1,0 +1,4 @@
+zzTextPadWindowName -- Include any necessary asterisks. For re-focusing.	*TextPad*	zzTextPadWindowName
+zzCurrVersionOfPETextEditorWUndrscrs -- '_' instead of dots ('.'). USED IN DIR-NMS	7_0_9	zzCurrVersionOfPETextEditorWUndrscrs
+zzTPTxtDefaultWordWrapOnOrES -- TP > Config > Prefs > Doc cls > txt > ww	on	zzTPTxtDefaultWordWrapOnOrES
+zzTPTxtDefaultStripTrailingWSOnOrES -- TP > Config > Prefs > Doc cls > txt > Strp trl ws	on	zzTPTxtDefaultStripTrailingWSOnOrES

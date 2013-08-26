@@ -1,0 +1,28 @@
+(*ZIdx: Auto-generated -- **DO NOT EDIT**...start*)
+zvZIDX_PNABR_VTC_stJdlnpc	{#SETPHRASE -description zvZIDX_PNABR_VTC -content {#insert zzZIdxJdlnpcnstrPNAbrvTC} -autotext zvZIDX_PNABR_VTC -folder ctvv_folder}	zvZIDX_PNABR_VTC_stJdlnpc
+zidxjdlnpcnstr -- terse dialog (default)	{#insert zvZIDX_PNABR_VTC_stJdlnpc}{#insert zZIdxOutputTerseDlg_M_vtc}	zidxjdlnpcnstr
+zidxjdlnpcnstrm -- write faMily information (to new file)	{#insert zvZIDX_PNABR_VTC_stJdlnpc}{#insert zZIdxOutputFamilyPreChldSubsWrtToNF_M_vtc}(*3*){#setclipboard {#insert zzZIdxJdlncbPostfix}}{#insert zZIdxPrntFmlyPsetChldPstlcInCB}{#setclipboard {#insert zzZIdxJdlncpPostfix}}{#insert zZIdxPrntFmlyPsetChldPstlcInCB}{#setclipboard {#insert zzZIdxJdlncrPostfix}}{#insert zZIdxPrntFmlyPsetChldPstlcInCB}{#insert zZIdxOutputFamilyPostChldSubs_M_vtc}	zidxjdlnpcnstrm
+zidxjdlnpcnstrx -- eXtra info (to new file)	{#insert zvZIDX_PNABR_VTC_stJdlnpc}{#insert zZIdxOutputExtraInfoToNF_M_vtc}	zidxjdlnpcnstrx
+(*ZIdx: Auto-generated -- **DO NOT EDIT**...end*)
+
+(*ZIdx: Auto-generated -- **DO NOT EDIT**...start*)
+zvZIDX_PNABR_VTC_stJdlnpf	{#SETPHRASE -description zvZIDX_PNABR_VTC -content {#insert zzZIdxJdlnpfuncPNAbrvTC} -autotext zvZIDX_PNABR_VTC -folder ctvv_folder}	zvZIDX_PNABR_VTC_stJdlnpf
+zidxjdlnpfunc -- terse dialog (default)	{#insert zvZIDX_PNABR_VTC_stJdlnpf}{#insert zZIdxOutputTerseDlg_M_vtc}	zidxjdlnpfunc
+zidxjdlnpfuncm -- write faMily information (to new file)	{#insert zvZIDX_PNABR_VTC_stJdlnpf}{#insert zZIdxOutputFamilyPreChldSubsWrtToNF_M_vtc}(*3*){#setclipboard {#insert zzZIdxJdlnfoPostfix}}{#insert zZIdxPrntFmlyPsetChldPstlcInCB}{#setclipboard {#insert zzZIdxJdlnfrPostfix}}{#insert zZIdxPrntFmlyPsetChldPstlcInCB}{#setclipboard {#insert zzZIdxJdlnftPostfix}}{#insert zZIdxPrntFmlyPsetChldPstlcInCB}{#insert zZIdxOutputFamilyPostChldSubs_M_vtc}	zidxjdlnpfuncm
+zidxjdlnpfuncx -- eXtra info (to new file)	{#insert zvZIDX_PNABR_VTC_stJdlnpf}{#insert zZIdxOutputExtraInfoToNF_M_vtc}	zidxjdlnpfuncx
+(*ZIdx: Auto-generated -- **DO NOT EDIT**...end*)
+
+(*ZIdx: Auto-generated -- **DO NOT EDIT**...start*)
+zvZIDX_PNABR_VTC_stJdlnpio	{#SETPHRASE -description zvZIDX_PNABR_VTC -content {#insert zzZIdxJdlnpfileobjPNAbrvTC} -autotext zvZIDX_PNABR_VTC -folder ctvv_folder}	zvZIDX_PNABR_VTC_stJdlnpio
+zidxjdlnpfileobj -- terse dialog (default)	{#insert zvZIDX_PNABR_VTC_stJdlnpio}{#insert zZIdxOutputTerseDlg_M_vtc}	zidxjdlnpfileobj
+zidxjdlnpfileobjm -- write faMily information (to new file)	{#insert zvZIDX_PNABR_VTC_stJdlnpio}{#insert zZIdxOutputFamilyPreChldSubsWrtToNF_M_vtc}(*3*){#setclipboard {#insert zzZIdxJdlniPostfix}}{#insert zZIdxPrntFmlyPsetChldPstlcInCB}{#setclipboard {#insert zzZIdxJdlnobPostfix}}{#insert zZIdxPrntFmlyPsetChldPstlcInCB}{#setclipboard {#insert zzZIdxJdlnopPostfix}}{#insert zZIdxPrntFmlyPsetChldPstlcInCB}{#insert zZIdxOutputFamilyPostChldSubs_M_vtc}	zidxjdlnpfileobjm
+zidxjdlnpfileobjx -- eXtra info (to new file)	{#insert zvZIDX_PNABR_VTC_stJdlnpio}{#insert zZIdxOutputExtraInfoToNF_M_vtc}	zidxjdlnpfileobjx
+(*ZIdx: Auto-generated -- **DO NOT EDIT**...end*)
+
+(*ZIdx: Auto-generated -- **DO NOT EDIT**...start*)
+zvZIDX_PNABR_VTC_stJdlncb	{#SETPHRASE -description zvZIDX_PNABR_VTC -content {#insert zzZIdxJdlcnstrcbPNAbrvTC} -autotext zvZIDX_PNABR_VTC -folder ctvv_folder}	zvZIDX_PNABR_VTC_stJdlncb
+zidxjdlcnstrcb -- terse dialog (default)	{#insert zvZIDX_PNABR_VTC_stJdlncb}{#insert zZIdxOutputTerseDlg_M_vtc}	zidxjdlcnstrcb
+zidxjdlcnstrcbm -- zidxjdlnpcnstrm ALT KC	{#insert zidxjdlnpcnstrm}	zidxjdlcnstrcbm
+zidxjdlcnstrcbx -- eXtra info (to new file)	{#insert zvZIDX_PNABR_VTC_stJdlncb}{#insert zZIdxOutputExtraInfoToNF_M_vtc}	zidxjdlcnstrcbx
+(*ZIdx: Auto-generated -- **DO NOT EDIT**...end*)
+

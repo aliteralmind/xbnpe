@@ -1,0 +1,26 @@
+zPreFuncSigGTP	{#insert zTPMoveR1w}{#insert zPreBracketGTP}	zPreFuncSigGTP
+zPostFuncSigGTP	{#insert zPostBracketGTP}{#insert zTPMoveL1w}	zPostFuncSigGTP
+zPostFuncSigSelect	{#insert zPostFuncSigGTP}{#insert zPreFuncSigSelect}	zPostFuncSigSelect
+zPreFuncSigSelect -- zSTNextCloseParen ALT KC	{#insert zPreSigSTSigEnd}	zPreFuncSigSelect
+zPreFuncSigCopy -- zPreFuncSigSelect then copy [zCApJJ]	{#insert zPreFuncSigSelect}{#insert zTPCopy}	zPreFuncSigCopy
+zPostFuncSigDup -- x-mark at mid	{#insert zPostFuncSigSelCopy}{#insert zRIGHT}{#insert zXmark}{#insert zTPPaste}	zPostFuncSigDup
+zPostFuncSigDupGTP -- x-mark at mid and end	{#insert zPostFuncSigDupGTMid}{#insert zPostFuncSigGTP}	zPostFuncSigDupGTP
+zPostFuncSigDupGTMid -- x-mark at end	{#insert zPostFuncSigDup}{#insert zXThenUp2}	zPostFuncSigDupGTMid
+zPostFuncSigDupGTPost -- zPostFuncSigDup ALT KC	{#insert zPostFuncSigDup}	zPostFuncSigDupGTPost
+zPostFuncSigSelCopy	{#insert zPostFuncSigGTP}{#insert zPreFuncSigCopy}	zPostFuncSigSelCopy
+zNameFromCBSigOrCall	{#substr {#insert zTPPaste}( -from 0 -count {#CALC {#pos {#insert zTPPaste}( -substr (} - 1 -round 0 -thousands none}}	zNameFromCBSigOrCall
+zzNameFromCBSigOrCallTEST	Testing zNameFromCBSigOrCall:{#insert zENTER}{#setclipboard myFunc}{#insert zTPPaste}==>{#insert zNameFromCBSigOrCall}{#insert zENTER}{#setclipboard myFunc()}{#insert zTPPaste}==>{#insert zNameFromCBSigOrCall}{#insert zENTER}{#setclipboard myFunc(i_1)}{#insert zTPPaste}==>{#insert zNameFromCBSigOrCall}{#insert zENTER}{#setclipboard myFunc(int i_1)}{#insert zTPPaste}==>{#insert zNameFromCBSigOrCall}{#insert zENTER}{#setclipboard myFunc(int i_1, boolean b_b)}{#insert zTPPaste}==>{#insert zNameFromCBSigOrCall}	zzNameFromCBSigOrCallTEST
+zPostFuncSigGTDelName	{#insert zPostFuncSigGTP}{#insert zDeleteR1w}	zPostFuncSigGTDelName
+jcigl -- Copy all Interface siGnature Lines	{#insert zFindDlgOpenDownRE}^[ \t]*{#insert zjreRetTypeFuncName}{#insert zjreParams_count0orMore};${#insert zFindMarkAllREClose}{#insert zTPBookmarkCopyAll}{#insert zTPBookmarkClearAll}{#insert zUndo2}	jcigl
+zjGTFuncSigUp	{#insert zFindOpenUpRE}{#insert zzjre0orMoreSigFindGoREClose}	zjGTFuncSigUp
+zjGTFuncSigDown	{#insert zFindDlgOpenDownRE}{#insert zzjre0orMoreSigFindGoREClose}	zjGTFuncSigDown
+zzjre0orMoreSigFindGoREClose	{#insert zjreGenericSig_pCount0orMore}{#insert zFindGoREClose}	zzjre0orMoreSigFindGoREClose
+jfu -- zjGTFuncSigUp ALT KC	{#insert zjGTFuncSigUp}	jfu
+jfd -- zjGTFuncSigDown ALT KC	{#insert zjGTFuncSigDown}	jfd
+grgs -- Cursor Post func-siG or -call	{#insert zPostBracketGTP}{#insert grpw}	grgs
+grgsd -- Cursor Post func-siG or -call	{#insert zPostBracketGTP}{#insert grpwd}	grgsd
+grpw	{#insert zjMakeSigForPWFuncSearchTerm}{#insert zYThenSelect}	grpw
+grpwd	{#insert zCutL1w}{#insert grcb}	grpwd
+grcb -- {#insert zYmark}, zjMakeSigForCBFuncSearchTerm	{#insert zYmark}{#insert zjMakeSigForCBFuncSearchTerm}	grcb
+zjMakeSigForPWFuncSearchTerm	{#insert zCopyL1w}{#insert zjMakeSigForCBFuncSearchTerm}	zjMakeSigForPWFuncSearchTerm
+zjMakeSigForCBFuncSearchTerm	{#insert zFindOpenUpRE}{#insert zjreSigForCBFunc_pCount0orMore}{#insert zFindDlgClose}	zjMakeSigForCBFuncSearchTerm

@@ -1,0 +1,26 @@
+zTPCopyEsc	XXX\\\{#sleep 10\\\}	zTPCopyEsc
+zTPCopyTPKeys	XXX	zTPCopyTPKeys
+zTPCutEsc	XXX	zTPCutEsc
+zTPCutTPKeys	XXX	zTPCutTPKeys
+zTPDupLineEsc	XXX	zTPDupLineEsc
+zTPDupLineTPKeys	XXX	zTPDupLineTPKeys
+zTPFileCloseEsc	XXX	zTPFileCloseEsc
+zTPFileCloseTPKeys	XXX	zTPFileCloseTPKeys
+zTPFileNewEsc	XXX	zTPFileNewEsc
+zTPFileNewTPKeys	XXX	zTPFileNewTPKeys
+zTPFileSaveEsc	XXX	zTPFileSaveEsc
+zTPFileSaveTPKeys	XXX	zTPFileSaveTPKeys
+zTPGTDocTopEsc	XXX	zTPGTDocTopEsc
+zTPGTDocTopTPKeys	XXX	zTPGTDocTopTPKeys
+zTPMoveR1wEsc	XXX	zTPMoveR1wEsc
+zTPMoveR1wTPKeys	XXX	zTPMoveR1wTPKeys
+zTPPasteEsc	XXX	zTPPasteEsc
+zTPPasteTPKeys	XXX	zTPPasteTPKeys
+zTPSelectAllEsc	XXX	zTPSelectAllEsc
+zTPSelectAllTPKeys	XXX	zTPSelectAllTPKeys
+zTPSelectL1wEsc	XXX	zTPSelectL1wEsc
+zTPSelectL1wTPKeys	XXX	zTPSelectL1wTPKeys
+zTPSelectR1wEsc	XXX	zTPSelectR1wEsc
+zTPSelectR1wTPKeys	XXX	zTPSelectR1wTPKeys
+zTPToggleWWEsc	XXX	zTPToggleWWEsc
+zTPToggleWWTPKeys	XXX	zTPToggleWWTPKeys

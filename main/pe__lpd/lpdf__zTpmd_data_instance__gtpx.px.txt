@@ -1,0 +1,5 @@
+zzTpmdGtpxMacroAbrv1C	Gtprevx	zzTpmdGtpxMacroAbrv1C
+zzTpmdGtprevxPhrsNmAbrv1C	Gtpx	zzTpmdGtprevxPhrsNmAbrv1C
+zzTpmdGtpxLivePNPostTC	GoToPrevX	zzTpmdGtpxLivePNPostTC
+zzTpmdGtpxKeyCommand	{#CTRL {#HOME}}	zzTpmdGtpxKeyCommand
+zzTpmdGtpxSteps	{#insert zFindOpenUp}{#insert zXmark}{#insert zFindBtnNext}{#insert zFindDlgClose}	zzTpmdGtpxSteps

@@ -1,0 +1,3 @@
+zjGTPrevFunc -- Go to prev Java-func (**)	(*Expects /** ... **/ JavaDoc block*){#insert ztpmJavaFuncGotoPrev}	zjGTPrevFunc
+zjGTNextFunc	{#insert ztpmJavaFuncGotoNext}	zjGTNextFunc
+zGTNextOpenCurlyREnter -- Inserts a line after func-open-brace	{#insert zFindOpenDown}{#insert zOY}{#insert zFindBtnNext}{#insert zFindDlgClose}{#insert zRIGHT}{#insert zENTER}	zGTNextOpenCurlyREnter

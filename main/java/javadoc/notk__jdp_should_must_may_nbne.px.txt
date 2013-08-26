@@ -1,0 +1,16 @@
+bnn -- Must be non-<CODE>null</CODE>	May {#insert zzBnn}	bnn
+bnne -- Must be non-<CODE>null</CODE> and non-empty	May {#insert zzBnne}	bnne
+bnnel -- bnne, lowercase must	may {#insert zzBnne}	bnnel
+bnnes -- <I>Should</I> be non-<CODE>null</CODE> and non-empty	<I>Should</I> {#insert zzBnne}	bnnes
+bnnesl -- bnnes, lowercase should	<I>should</I> {#insert zzBnne}	bnnesl
+bnnl -- bnn, lowercase must	may {#insert zzBnn}	bnnl
+bnns -- <I>Should</I> be non-<CODE>null</CODE>	<I>Should</I> {#insert zzBnn}	bnns
+bnnsl -- bnns, lowercase should	<I>should</I> {#insert zzBnn}	bnnsl
+nbn -- May not be <CODE>null</CODE>	May {#insert zzNbn}	nbn
+nbne -- May not be <CODE>null</CODE> or empty	May {#insert zzNbne}	nbne
+nbnel -- nbne, lowercase may	may {#insert zzNbne}	nbnel
+nbnes -- <I>Should</I> not be <CODE>null</CODE> or empty	<I>Should</I> {#insert zzNbne}	nbnes
+nbnesl -- nbnes, lowercase should	<I>should</I> {#insert zzNbne}	nbnesl
+nbnl -- nbn, lowercase may	may {#insert zzNbn}	nbnl
+nbns -- <I>Should</I> not be <CODE>null</CODE>	<I>Should</I> {#insert zzNbn}	nbns
+nbnsl -- nbns, lowercase should	<I>should</I> {#insert zzNbn}	nbnsl

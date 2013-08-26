@@ -1,0 +1,21 @@
+Window1	zTPGTWin1	Win1	__ES__	10	(*NOTHING. Top command in list*)
+Window10	zTPGTWin10	Win10	__ES__	10	{#insert zDOWN}
+Window2	zTPGTWin2	Win2	__ES__	10	{#insert zDOWN2}
+Window3	zTPGTWin3	Win3	__ES__	10	{#insert zDOWN3}
+Window4	zTPGTWin4	Win4	__ES__	10	{#insert zPGDN}{#insert zUP2}
+Window5	zTPGTWin5	Win5	__ES__	10	{#insert zPGDN}{#insert zUP}
+Window6	zTPGTWin6	Win6	__ES__	10	{#insert zPGDN}
+Window7	zTPGTWin7	Win7	__ES__	10	{#insert zPGDN}{#insert zDOWN}
+Window8	zTPGTWin8	Win8	__ES__	10	{#insert zPGDN}{#insert zDOWN2}
+Window9	zTPGTWin9	Win9	__ES__	10	{#insert zPGDN}{#insert zDOWN3}
+WindowArrangeIcons	zTPWindowArrangeIcons	Winri	__ES__	10	{#insert zPGDN2}{#insert zUP2}
+WindowCascade	zTPWindowCascade	Wincsc	__ES__	10	{#insert zPGDN2}{#insert zUP}
+WindowNext	zTPGTNextDoc	Winnxt	__ES__	10	{#insert zPGDN2}
+WindowPaneNext	zTPWindowPaneNext	Winpnxt	__ES__	10	{#insert zPGDN2}{#insert zDOWN}
+WindowPanePrev	zTPWindowPanePrev	Winpprv	__ES__	10	{#insert zPGDN2}{#insert zDOWN2}
+WindowPrev	zTPGTPrevDoc	Winprv	__ES__	10	{#insert zPGDN2}{#insert zDOWN3}
+WindowSplit	zTPWindowSplit	Winsplt	__ES__	10	{#insert zPGDN3}{#insert zUP2}
+WindowTileHorz	zTPWindowTileHorz	Wintlh	__ES__	10	{#insert zPGDN3}{#insert zUP}
+WindowTileVert	zTPWindowTileVert	Wintlv	__ES__	10	{#insert zPGDN3}
+WindowToggleIcon	zTPWindowToggleIcon	Wintgic	__ES__	10	{#insert zEND}{#insert zUP}
+WindowToggleZoom	zTPWindowToggleZoom	Wintgzm	__ES__	10	{#insert zEND}

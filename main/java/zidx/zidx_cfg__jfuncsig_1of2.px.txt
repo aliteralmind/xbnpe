@@ -1,0 +1,52 @@
+zzZIdxJgxNodeType -- DO NOT EDIT	cat	zzZIdxJgxNodeType
+zzZIdxJfgnextPNAbrvTC -- DO NOT EDIT	Jgx	zzZIdxJfgnextPNAbrvTC
+zzZIdxJgxPostfix	jfgnext	zzZIdxJgxPostfix
+zzZIdxJgxPostTC -- DO NOT EDIT	Jfgnext	zzZIdxJgxPostTC
+zzZIdxJgxParentTCPost -- LITERAL TEXT, NOT PHRASE CALL	Java	zzZIdxJgxParentTCPost
+zzZIdxJgxCatNameShort	JFunc-Sig Above/Below	zzZIdxJgxCatNameShort
+zzZIdxJgxCatNameLong	Navigate The Just-Above Or -Below Java Function Signature	zzZIdxJgxCatNameLong
+zzZIdxJgxChildCountCat	3	zzZIdxJgxChildCountCat
+zzZIdxJgxChildTCPostsQBLCat -- PHRASE CALLS, NOT LITERAL TEXT	[{#insert zzZIdxJgpnmwPostfix}][{#insert zzZIdxJggsPostfix}][{#insert zzZIdxJgpnsPostfix}]	zzZIdxJgxChildTCPostsQBLCat
+zzZIdxJgxChildCountPset	0	zzZIdxJgxChildCountPset
+zzZIdxJgxChildTCPostsQBLPset -- PHRASE CALLS, NOT LITERAL TEXT		zzZIdxJgxChildTCPostsQBLPset
+zzZIdxJgxDescription	Go-to a function-signature, or select-copy it, or write it back it at the original cursor location. A signature always includes parameters, and optionally includes the function-name and return-type. Generics can be included or excluded from the return- or parameter-types. Parameters can be retrieved entirely, or can be configured to only keep names or types. (Throughout these phrases, the 'signature' is defined as the function-name-plus-parameters.)	zzZIdxJgxDescription
+zzZIdxJgxXInfo_onff	on	zzZIdxJgxXInfo_onff
+zzZIdxJgxExtraInfo	{#insert zzAllOptsEntrTb}{#insert zzJgOptInfoC}{#insert zzJgOptInfoG}{#insert zzJgOptInfoHafterQ}{#insert zzJgOptInfoHafterY}{#insert zzJgOptInfoK}{#insert zzJgOptInfoL}{#insert zzJgOptInfoM}{#insert zzJgOptInfoN}{#insert zzJgOptInfoP}{#insert zzJgOptInfoR}{#insert zzJgOptInfoT}{#insert zzJgOptInfoY}{#insert zzJgOptInfoZ}	zzZIdxJgxExtraInfo
+
+(*---------------------------------------------------------------*)
+zzZIdxJgnNodeType -- DO NOT EDIT	cat	zzZIdxJgnNodeType
+zzZIdxJfgfromnamePNAbrvTC -- DO NOT EDIT	Jgn	zzZIdxJfgfromnamePNAbrvTC
+zzZIdxJgnPostfix	jfgfromname	zzZIdxJgnPostfix
+zzZIdxJgnPostTC -- DO NOT EDIT	Jfgfromname	zzZIdxJgnPostTC
+zzZIdxJgnParentTCPost -- LITERAL TEXT, NOT PHRASE CALL	Java	zzZIdxJgnParentTCPost
+zzZIdxJgnCatNameShort	JFunc-Sig From Name	zzZIdxJgnCatNameShort
+zzZIdxJgnCatNameLong	Navigate The Java Function Signature Having A Particular Name	zzZIdxJgnCatNameLong
+zzZIdxJgnChildCountCat	5	zzZIdxJgnChildCountCat
+zzZIdxJgnChildTCPostsQBLCat -- PHRASE CALLS, NOT LITERAL TEXT	[{#insert zzZIdxJgcbPostfix}][{#insert zzZIdxJgpwPostfix}][{#insert zzZIdxJgkmwPostfix}][{#insert zzZIdxJgkgPostfix}][{#insert zzZIdxJgksPostfix}]	zzZIdxJgnChildTCPostsQBLCat
+zzZIdxJgnChildCountPset	0	zzZIdxJgnChildCountPset
+zzZIdxJgnChildTCPostsQBLPset -- PHRASE CALLS, NOT LITERAL TEXT		zzZIdxJgnChildTCPostsQBLPset
+zzZIdxJgnDescription	Go-to a function-signature, or select-copy it, or write it back it at the original cursor location. A signature always includes parameters, and optionally includes the function-name and return-type. Generics can be included or excluded from the return- or parameter-types. Parameters can be retrieved entirely, or can be configured to only keep names or types. (Throughout these phrases, the 'signature' is defined as the function-name-plus-parameters.)	zzZIdxJgnDescription
+zzZIdxJgnXInfo_onff	on	zzZIdxJgnXInfo_onff
+zzZIdxJgnExtraInfo	{#insert zzAllOptsEntrTb}{#insert zzJgOptInfoC}{#insert zzJgOptInfoG}{#insert zzJgOptInfoHafterQ}{#insert zzJgOptInfoHafterY}{#insert zzJgOptInfoK}{#insert zzJgOptInfoL}{#insert zzJgOptInfoM}{#insert zzJgOptInfoN}{#insert zzJgOptInfoP}{#insert zzJgOptInfoR}{#insert zzJgOptInfoT}{#insert zzJgOptInfoY}{#insert zzJgOptInfoZ}	zzZIdxJgnExtraInfo
+
+(*---------------------------------------------------------------*)
+zzZIdxJggsNodeType -- DO NOT EDIT	pset	zzZIdxJggsNodeType
+zzZIdxJfgsigstartPNAbrvTC -- DO NOT EDIT	Jggs	zzZIdxJfgsigstartPNAbrvTC
+zzZIdxJggsPostfix	jfgsigstart	zzZIdxJggsPostfix
+zzZIdxJggsPostTC -- DO NOT EDIT	Jfgsigstart	zzZIdxJggsPostTC
+zzZIdxJggsParentTCPost -- LITERAL TEXT, NOT PHRASE CALL	Jfgnext	zzZIdxJggsParentTCPost
+zzZIdxJggsSyntax	gsgt[g,p] ... gsgtr[g,t,y] ... gss[c][r][g,p] ... wxm[g,p][l,z] ... wxm[g,p,r,rg][n,t,y][l,z]	zzZIdxJggsSyntax
+zzZIdxJggsDescription	With the cursor at the start of the function-signature-line (column zero in the line on which the signature begins), 'G'o-to, or 'S'elect, or 'S'elect-'C'opy, or copy-then-paste ('W'rite) the signature at the e'X'isting 'M'ark ('{#insert zYmark}').	zzZIdxJggsDescription
+zzZIdxJggsXInfo_onff	on	zzZIdxJggsXInfo_onff
+zzZIdxJggsExtraInfo	{#insert zzAllOptsEntrTb}{#insert zzJgOptInfoG}{#insert zzJgOptInfoL}{#insert zzJgOptInfoN}{#insert zzJgOptInfoP}{#insert zzJgOptInfoR}{#insert zzJgOptInfoT}{#insert zzJgOptInfoY}{#insert zzJgOptInfoZ}{#insert zzPhraseFileNameFooter}{#insert zXPROOT_DIR_jFuncSig}jfsig_M_sig_start.px.txt	zzZIdxJggsExtraInfo
+
+(*---------------------------------------------------------------*)
+zzZIdxJgksNodeType -- DO NOT EDIT	pset	zzZIdxJgksNodeType
+zzZIdxJfgplinkscPNAbrvTC -- DO NOT EDIT	Jgks	zzZIdxJfgplinkscPNAbrvTC
+zzZIdxJgksPostfix	jfgplinksc	zzZIdxJgksPostfix
+zzZIdxJgksPostTC -- DO NOT EDIT	Jfgplinksc	zzZIdxJgksPostTC
+zzZIdxJgksParentTCPost -- LITERAL TEXT, NOT PHRASE CALL	Jfgfromname	zzZIdxJgksParentTCPost
+zzZIdxJgksSyntax	scpk[g,m[c],p] ... scpk[u,f[local]]	zzZIdxJgksSyntax
+zzZIdxJgksDescription	For the function-name in the url of the 'P'revious lin'K', go to, and then select-and-copy its signature. There are also utility functions to retrieve the url or function name from the previous link-url. ({#insert zzJgAddtnlPromptFuncsMsg} See 'zidxjfgplinkscx'.)	zzZIdxJgksDescription
+zzZIdxJgksXInfo_onff	on	zzZIdxJgksXInfo_onff
+zzZIdxJgksExtraInfo	--'scpk[u,f[local]]' utility functions--{#insert zEnterTab}Retrieves the function name ('f') or entire-url ('u') from the previous link-url. The 'local' option only considers urls beginning with a hash: '#'.{#insert zEnterBksp}{#insert zzAllOptsEntrTb}{#insert zzJgOptInfoC}{#insert zzJgOptInfoG}{#insert zzJgOptInfoM}{#insert zzJgOptInfoP}{#insert zzJgOptInfoR}{#insert zzJgOptInfoPromptPost_preSyntax}gtpk[m][p,[r]g][prompt] ... gtpkmf[prompt] ... scpk[m[c]][[p,[r]g]][prompt]{#insert zzJgOptInfoPromptPost_postSyntax}{#insert zzPhraseFileNameFooter}{#insert zXPROOT_DIR_jFuncSig}jfsig_for_prev_url_func_name_sc.px.txt	zzZIdxJgksExtraInfo

@@ -1,0 +1,8 @@
+F3 -- zF3	{#F3}{#insert zTSlp}	zF3
+Alt+F3 -- zApF3	{#ALT {#F3}}{#insert zTSlp}	zApF3
+Alt+Shift+F3 -- zASpF3	{#ALT {#SHIFT {#F3}}}{#insert zTSlp}	zASpF3
+Ctrl+F3 -- zCpF3	{#CTRL {#F3}}{#insert zTSlp}	zCpF3
+Ctrl+Alt+F3 -- zCApF3	{#CTRL {#ALT {#F3}}}{#insert zTSlp}	zCApF3
+Ctrl+Alt+Shift+F3 -- zCASpF3	{#CTRL {#ALT {#SHIFT {#F3}}}}{#insert zTSlp}	zCASpF3
+Ctrl+Shift+F3 -- zCSpF3	{#CTRL {#SHIFT {#F3}}}{#insert zTSlp}	zCSpF3
+Shift+F3 -- zSpF3	{#SHIFT {#F3}}{#insert zTSlp}	zSpF3

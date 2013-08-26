@@ -1,0 +1,8 @@
+F7 -- zF7	{#F7}{#insert zTSlp}	zF7
+Alt+F7 -- zApF7	{#ALT {#F7}}{#insert zTSlp}	zApF7
+Alt+Shift+F7 -- zASpF7	{#ALT {#SHIFT {#F7}}}{#insert zTSlp}	zASpF7
+Ctrl+F7 -- zCpF7	{#CTRL {#F7}}{#insert zTSlp}	zCpF7
+Ctrl+Alt+F7 -- zCApF7	{#CTRL {#ALT {#F7}}}{#insert zTSlp}	zCApF7
+Ctrl+Alt+Shift+F7 -- zCASpF7	{#CTRL {#ALT {#SHIFT {#F7}}}}{#insert zTSlp}	zCASpF7
+Ctrl+Shift+F7 -- zCSpF7	{#CTRL {#SHIFT {#F7}}}{#insert zTSlp}	zCSpF7
+Shift+F7 -- zSpF7	{#SHIFT {#F7}}{#insert zTSlp}	zSpF7

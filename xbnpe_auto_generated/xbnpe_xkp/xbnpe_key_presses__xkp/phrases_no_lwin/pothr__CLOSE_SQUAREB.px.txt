@@ -1,0 +1,8 @@
+CLOSE_SQUAREB -- zCLOSE_SQUAREB	{#NONE -chars ]}{#insert zTSlp}	zCLOSE_SQUAREB
+Alt+CLOSE_SQUAREB -- zApCLOSE_SQUAREB	{#ALT -chars ]}{#insert zTSlp}	zApCLOSE_SQUAREB
+Alt+Shift+CLOSE_SQUAREB -- zASpCLOSE_SQUAREB	{#ALT {#SHIFT -chars ]}}{#insert zTSlp}	zASpCLOSE_SQUAREB
+Ctrl+CLOSE_SQUAREB -- zCpCLOSE_SQUAREB	{#CTRL -chars ]}{#insert zTSlp}	zCpCLOSE_SQUAREB
+Ctrl+Alt+CLOSE_SQUAREB -- zCApCLOSE_SQUAREB	{#CTRL {#ALT -chars ]}}{#insert zTSlp}	zCApCLOSE_SQUAREB
+Ctrl+Alt+Shift+CLOSE_SQUAREB -- zCASpCLOSE_SQUAREB	{#CTRL {#ALT {#SHIFT -chars ]}}}{#insert zTSlp}	zCASpCLOSE_SQUAREB
+Ctrl+Shift+CLOSE_SQUAREB -- zCSpCLOSE_SQUAREB	{#CTRL {#SHIFT -chars ]}}{#insert zTSlp}	zCSpCLOSE_SQUAREB
+Shift+CLOSE_SQUAREB -- zSpCLOSE_SQUAREB	{#SHIFT -chars ]}{#insert zTSlp}	zSpCLOSE_SQUAREB

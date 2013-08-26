@@ -1,0 +1,10 @@
+pobmark -- An Output Block Marker that is the only one in a project.	{#insert pobmark1st}{#insert zzobmUnsetPrjAbrv_NeededPhrsList}	pobmark
+pobmark1st -- The first of many (2 or more) Output Block Markers in a project (**)	(*The marks printed by ALL the pobmark* phrases in this folder are no. The 1st, mid, and last phrases are to prevent from having to re-enter the project-name abbreviation (for projects that have numerous Output Blocks). For an example of an Output Block, open any Java file, and run jsetgetter. Warning: lots of input needed, but just fill the textboxes with anything.*){#insert zzobmSetProjectNameAbrv}{#insert zzobmAllPhraseLines}	pobmark1st
+pobmarklast -- An Output Block Marker that is the last in the project	{#insert zzobmAllPhraseLines}{#insert zzobmUnsetPrjAbrv_NeededPhrsList}	pobmarklast
+pobmarkmid -- An Output Block Marker that is NOT first or last	{#insert zzobmAllPhraseLines}	pobmarkmid
+zobmBookmarkAllUnindentIf -- Bookmarks all marker-lines and unindents ALL lines with zUnindentMark 	{#insert zobmBoomarkAllMarkers}{#insert zUnindentMarksGo}	zobmBookmarkAllUnindentIf
+zobmBoomarkAllMarkers	{#insert zFindDlgOpenDownRE}{#insert zpobmPrefixRAW}{#insert zFindMarkAllREClose}	zobmBoomarkAllMarkers
+zobmPrefix	{#insert zUnindentMark}{#insert zpobmPrefixRAW}	zobmPrefix
+zpobmPrefix	{#insert zOY}#insert zUnindentMark{#insert zCY}{#insert zOY}#insert zpobmPrefixRAW{#insert zCY}	zpobmPrefix
+zpobmPrefixRAW	---<OBM> (*ends with space*)	zpobmPrefixRAW
+zobmMarkDeleteAllMarkers	{#insert zVmark}{#insert zobmBoomarkAllMarkers}{#insert zTPBookmarkDeleteAll}{#insert zVDownUpDelete}	zobmMarkDeleteAllMarkers

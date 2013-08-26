@@ -1,0 +1,8 @@
+ccsdl -- ccsdl1 ALT KC	{#insert ccsdl1}	ccsdl
+ccsdl1 (**)	(*Example: prePostKeySnip(lek_toCopy.getPrePostKeySnip());   This ONLY works with 1-parameter setters, and no-parameter getters. Both must be in the same class-file as the constructor. Final semi-colon and proper indentation expected. Cursor can be anywhere within the line.*){#insert zTPToggleWW}{#insert zccsdl1raw}{#insert zTPToggleWW}	ccsdl1
+ccsdl2	{#insert zTPToggleWW}{#insert zccsdl1raw}{#insert zccsdl1raw}{#insert zTPToggleWW}	ccsdl2
+ccsdl3	{#insert zTPToggleWW}{#loop {#insert zccsdl1raw} -count 3}{#insert zTPToggleWW}	ccsdl3
+ccsdl4	{#insert zTPToggleWW}{#loop {#insert zccsdl1raw} -count 4}{#insert zTPToggleWW}	ccsdl4
+ccsdl5	{#insert zTPToggleWW}{#loop {#insert zccsdl1raw} -count 5}{#insert zTPToggleWW}	ccsdl5
+ccsdln	{#insert zTPToggleWW}{#loop {#insert zccsdl1raw} -count {#insert zUserInpHowManyTotal}}{#insert zTPToggleWW}	ccsdln
+zccsdl1raw	{#insert zHOME}{#insert zTPMoveR1w}{#insert mppw}{#insert fkgy}{#insert zEND}{#insert zBKSP}(*Semi-colon bye-bye*){#insert zLEFT}{#insert zBKSP}{#insert zBKSP}{#insert flpw}{#insert zEND}{#insert zSpHOME}{#insert zTPSelectR1w}{#insert zTPSelectL1w}{#insert zTPCut}<LI><CODE>{#insert zTPPaste}</CODE></LI>{#insert zRIGHT}	zccsdl1raw

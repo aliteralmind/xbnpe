@@ -1,0 +1,8 @@
+Alt+LWin+TWO -- zALpTWO	{#ALT {#LWIN -chars 2}}{#insert zTSlp}	zALpTWO
+Alt+Shift+LWin+TWO -- zASLpTWO	{#ALT {#SHIFT {#LWIN -chars 2}}}{#insert zTSlp}	zASLpTWO
+Ctrl+Alt+LWin+TWO -- zCALpTWO	{#CTRL {#ALT {#LWIN -chars 2}}}{#insert zTSlp}	zCALpTWO
+Ctrl+Alt+Shift+LWin+TWO -- zCASLpTWO	{#CTRL {#ALT {#SHIFT {#LWIN -chars 2}}}}{#insert zTSlp}	zCASLpTWO
+Ctrl+LWin+TWO -- zCLpTWO	{#CTRL {#LWIN -chars 2}}{#insert zTSlp}	zCLpTWO
+Ctrl+Shift+LWin+TWO -- zCSLpTWO	{#CTRL {#SHIFT {#LWIN -chars 2}}}{#insert zTSlp}	zCSLpTWO
+LWin+TWO -- zLpTWO	{#LWIN -chars 2}{#insert zTSlp}	zLpTWO
+Shift+LWin+TWO -- zSLpTWO	{#SHIFT {#LWIN -chars 2}}{#insert zTSlp}	zSLpTWO

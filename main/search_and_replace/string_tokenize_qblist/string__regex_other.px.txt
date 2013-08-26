@@ -1,0 +1,3 @@
+recolmaskcb -- Call from an empty line, text to mask in ClipBoard (**)	(*To translate, for example, 'ckgdby    no     pre(      fnc-nm   CB       ' to '^(.............................................)'*){#insert zTPPaste}{#insert zSpHOME}{#insert zRplcDlgSelRE}.{#insert zRplcFieldWith}.{#insert zRplcBtnAllSelHnrREClose}{#insert zHOME}^({#insert zEND})	recolmaskcb
+zREGEXFor1stCharInWord	\<[A-Za-z]	zREGEXFor1stCharInWord
+zreNonCommaSpace	[^,] (*ends with space*)	zreNonCommaSpace

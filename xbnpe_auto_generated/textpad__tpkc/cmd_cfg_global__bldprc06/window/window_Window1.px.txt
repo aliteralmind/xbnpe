@@ -1,0 +1,8 @@
+zTpkcWindow1Abrv1C	Win1	zTpkcWindow1Abrv1C
+zTpkcWin1CmdNameTC	Window1	zTpkcWin1CmdNameTC
+zTpkcWin1DfltPhrsNm	zTPGTWin1	zTpkcWin1DfltPhrsNm
+zTpkcWin1CatForCmdAbrvLC	window	zTpkcWin1CatForCmdAbrvLC
+zTpkcWin1CmdType_mcrTl		zTpkcWin1CmdType_mcrTl
+zTpkcWin1IsBtstrp_yes		zTpkcWin1IsBtstrp_yes
+zTpkcWin1DfltPostKcSlpMils	10	zTpkcWin1DfltPostKcSlpMils
+zTpkcWin1StpsFrmCmdListTop	(*NOTHING. Top command in list*)	zTpkcWin1StpsFrmCmdListTop

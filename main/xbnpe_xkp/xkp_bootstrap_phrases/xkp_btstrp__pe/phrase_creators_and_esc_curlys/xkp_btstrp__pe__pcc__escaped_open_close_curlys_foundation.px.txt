@@ -1,0 +1,60 @@
+zCY_M_elc -- 'C'lose-curl'Y' -- Needs zvESC_LVL_CNT (assumed good value!)	{#insert zCYe{#insert zvESC_LVL_CNT}}	zCY_M_elc
+zCYe0 -- Unescaped!	{#insert zAscCloseCurly}	zCYe0
+zCYe1 -- Singly-escaped	{#insert zAscCloseCurly}{#insert zzLft3DnrSlshsRig}	zCYe1
+zCYe10 -- Ten-tuply-escaped	\\\{#insert zCYe9\\\}	zCYe10
+zCYe2 -- Doubly-escaped	{#insert zAscCloseCurly}{#insert zzLft6DnrSlshsRig}	zCYe2
+zCYe3 -- Triply-escaped	\\\{#insert zCYe2\\\}	zCYe3
+zCYe4 -- Quadruply-escaped	\\\{#insert zCYe3\\\}	zCYe4
+zCYe5 -- Quintuply-escaped	\\\{#insert zCYe4\\\}	zCYe5
+zCYe6 -- Sextuply-escaped	\\\{#insert zCYe5\\\}	zCYe6
+zCYe7 -- Septuply-escaped	\\\{#insert zCYe6\\\}	zCYe7
+zCYe8 -- Octuply-escaped	\\\{#insert zCYe7\\\}	zCYe8
+zCYe9 -- Nine-tuply-escaped	\\\{#insert zCYe8\\\}	zCYe9
+zCYx2_M_elc -- zCY_M_elc, zCY_M_elc	{#insert zCY_M_elc}{#insert zCY_M_elc}	zCYx2_M_elc
+zCYx3_M_elc -- zCYx2_M_elc, zCY_M_elc	{#insert zCYx2_M_elc}{#insert zCY_M_elc}	zCYx3_M_elc
+zCYx4_M_elc -- zCYx3_M_elc, zCY_M_elc	{#insert zCYx3_M_elc}{#insert zCY_M_elc}	zCYx4_M_elc
+zCYx5_M_elc -- zCYx4_M_elc, zCY_M_elc	{#insert zCYx4_M_elc}{#insert zCY_M_elc}	zCYx5_M_elc
+zOY_M_elc -- 'O'pen-curl'Y' -- Needs zvESC_LVL_CNT (assumed good value!)	{#insert zOYe{#insert zvESC_LVL_CNT}}	zOY_M_elc
+zOYe0 -- Unescaped!	{#insert zAscOpenCurly}	zOYe0
+zOYe1 -- Singly-escaped	{#insert zAscOpenCurly}{#insert zzLft3DnrSlshsRig}	zOYe1
+zOYe10 -- Ten-tuply-escaped	\\\{#insert zOYe9\\\}	zOYe10
+zOYe2 -- Doubly-escaped	{#insert zAscOpenCurly}{#insert zzLft6DnrSlshsRig}	zOYe2
+zOYe3 -- Triply-escaped	\\\{#insert zOYe2\\\}	zOYe3
+zOYe4 -- Quadruply-escaped	\\\{#insert zOYe3\\\}	zOYe4
+zOYe5 -- Quintuply-escaped	\\\{#insert zOYe4\\\}	zOYe5
+zOYe6 -- Sextuply-escaped	\\\{#insert zOYe5\\\}	zOYe6
+zOYe7 -- Septuply-escaped	\\\{#insert zOYe6\\\}	zOYe7
+zOYe8 -- Octuply-escaped	\\\{#insert zOYe7\\\}	zOYe8
+zOYe9 -- Nine-tuply-escaped	\\\{#insert zOYe8\\\}	zOYe9
+zvESC_LVL_CNT_st0	{#SETPHRASE -description zvESC_LVL_CNT -content 0 -autotext zvESC_LVL_CNT -folder ctvv_folder}	zvESC_LVL_CNT_st0
+zvESC_LVL_CNT_st1	{#SETPHRASE -description zvESC_LVL_CNT -content 1 -autotext zvESC_LVL_CNT -folder ctvv_folder}	zvESC_LVL_CNT_st1
+zvESC_LVL_CNT_stPrompt	{#SETPHRASE -description zvESC_LVL_CNT -content {#INPUT -head How many levels of escaped-ness? [integer 0..10] -single} -autotext zvESC_LVL_CNT -folder ctvv_folder}	zvESC_LVL_CNT_stPrompt
+zvESC_LVL_CNT_stPromptCIB	{#insert zvESC_LVL_CNT_stPrompt}{#insert zzCIBEscLvlCnt_M_elc}	zvESC_LVL_CNT_stPromptCIB
+zzCIBEscLvlCnt_M_elc	{#insert {#COND -if {#insert zvESC_LVL_CNT} < 0 -then zzErrDlgBadEscLvlCnt_M_elc -else {#COND -if {#insert zvESC_LVL_CNT} > 10 -then zzErrDlgBadEscLvlCnt_M_elc -else z1slp}}}	zzCIBEscLvlCnt_M_elc
+zzCYWElcPrompt	{#insert zvESC_LVL_CNT_stPrompt}{#insert zzCY_cibElc_M_elc}	zzCYWElcPrompt
+zzCY_cibElc_M_elc	{#insert zzCIBEscLvlCnt_M_elc}{#insert zCY_M_elc}	zzCY_cibElc_M_elc
+zzErrDlgBadEscLvlCnt_M_elc	{#MSGBOX -head ERROR -text ERROR ~~ Bad value for zvESC_LVL_CNT (currently '{#insert zvESC_LVL_CNT}'). Must be an integer between zero and ten, inclusive.{#insert zCancelProcNowPostTxt}}	zzErrDlgBadEscLvlCnt_M_elc
+zzLeftPrevEscCrlyX2_M_elc -- For two close-curlys w/ SAME escaped-ness	{#insert zzLeftPrevEscCrly_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zzLeftPrevEscCrlyX2_M_elc
+zzLeftPrevEscCrlyX3_M_elc -- For three close-curlys w/ SAME escaped-ness	{#insert zzLeftPrevEscCrlyX2_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zzLeftPrevEscCrlyX3_M_elc
+zzLeftPrevEscCrlyX4_M_elc -- For three close-curlys w/ SAME escaped-ness	{#insert zzLeftPrevEscCrlyX3_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zzLeftPrevEscCrlyX4_M_elc
+zzLeftPrevEscCrlyX5_M_elc -- For three close-curlys w/ SAME escaped-ness	{#insert zzLeftPrevEscCrlyX4_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zzLeftPrevEscCrlyX5_M_elc
+zzLeftPrevEscCrly_M_elc -- Move left the correct # chars to get b4 close curly	{#insert zzLftPrvEscCrly{#insert zvESC_LVL_CNT}}	zzLeftPrevEscCrly_M_elc
+zzLftPrvEscCrly0 -- Just the curly itself (1 character left)	{#LEFT}	zzLftPrvEscCrly0
+zzLftPrvEscCrly1 -- The curly, plus 6 esc-slashes (left 4X)	{#LEFT -count 4}	zzLftPrvEscCrly1
+zzLftPrvEscCrly10 -- '{#insert zOYe9}' (15)	{#LEFT -count 15}	zzLftPrvEscCrly10
+zzLftPrvEscCrly2 -- The curly, plus 6 esc-slashes (left 7X)	{#LEFT -count 7}	zzLftPrvEscCrly2
+zzLftPrvEscCrly3 -- '{#insert zOYe2}' (left 15X)	{#LEFT -count 15}	zzLftPrvEscCrly3
+zzLftPrvEscCrly4 -- '{#insert zOYe3}' (15)	{#LEFT -count 15}	zzLftPrvEscCrly4
+zzLftPrvEscCrly5 -- '{#insert zOYe4}' (15)	{#LEFT -count 15}	zzLftPrvEscCrly5
+zzLftPrvEscCrly6 -- '{#insert zOYe5}' (15)	{#LEFT -count 15}	zzLftPrvEscCrly6
+zzLftPrvEscCrly7 -- '{#insert zOYe6}' (15)	{#LEFT -count 15}	zzLftPrvEscCrly7
+zzLftPrvEscCrly8 -- '{#insert zOYe7}' (15)	{#LEFT -count 15}	zzLftPrvEscCrly8
+zzLftPrvEscCrly9 -- '{#insert zOYe8}' (15)	{#LEFT -count 15}	zzLftPrvEscCrly9
+zzOYWElcPrompt	{#insert zvESC_LVL_CNT_stPrompt}{#insert zzOY_cibElc_M_elc}	zzOYWElcPrompt
+zzOY_cibElc_M_elc	{#insert zzCIBEscLvlCnt_M_elc}{#insert zOY_M_elc}	zzOY_cibElc_M_elc
+zDNR_SLASHES3	{#NONE -chars \ -count 3}	zDNR_SLASHES3
+zDNR_SLASHES6	{#NONE -chars \ -count 6}	zDNR_SLASHES6
+zDNR_SLASHES9	{#NONE -chars \ -count 9}	zDNR_SLASHES9
+zzLft3DnrSlshsRig -- For escaping the previous character	{#LEFT}{#insert zDNR_SLASHES3}{#RIGHT}	zzLft3DnrSlshsRig
+zzLft6DnrSlshsRig -- For escaping the previous character	{#LEFT}{#insert zDNR_SLASHES6}{#RIGHT}	zzLft6DnrSlshsRig
+zzLft9DnrSlshsRig -- For escaping the previous character	{#LEFT}{#insert zDNR_SLASHES9}{#RIGHT}	zzLft9DnrSlshsRig
