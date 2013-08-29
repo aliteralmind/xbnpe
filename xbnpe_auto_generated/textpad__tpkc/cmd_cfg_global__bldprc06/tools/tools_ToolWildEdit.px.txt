@@ -1,8 +1,0 @@
-zTpkcToolWildEditAbrv1C	Twedt	zTpkcToolWildEditAbrv1C
-zTpkcTwedtCmdNameTC	ToolWildEdit	zTpkcTwedtCmdNameTC
-zTpkcTwedtDfltPhrsNm	zTPToolWildEdit	zTpkcTwedtDfltPhrsNm
-zTpkcTwedtCatForCmdAbrvLC	tools	zTpkcTwedtCatForCmdAbrvLC
-zTpkcTwedtCmdType_mcrTl		zTpkcTwedtCmdType_mcrTl
-zTpkcTwedtIsBtstrp_yes		zTpkcTwedtIsBtstrp_yes
-zTpkcTwedtDfltPostKcSlpMils	10	zTpkcTwedtDfltPostKcSlpMils
-zTpkcTwedtStpsFrmCmdListTop	{#insert zEND}	zTpkcTwedtStpsFrmCmdListTop

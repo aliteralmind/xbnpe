@@ -1,8 +1,0 @@
-zTpkcViewPropertiesAbrv1C	Vprp	zTpkcViewPropertiesAbrv1C
-zTpkcVprpCmdNameTC	ViewProperties	zTpkcVprpCmdNameTC
-zTpkcVprpDfltPhrsNm	zTPViewProperties	zTpkcVprpDfltPhrsNm
-zTpkcVprpCatForCmdAbrvLC	view	zTpkcVprpCatForCmdAbrvLC
-zTpkcVprpCmdType_mcrTl		zTpkcVprpCmdType_mcrTl
-zTpkcVprpIsBtstrp_yes		zTpkcVprpIsBtstrp_yes
-zTpkcVprpDfltPostKcSlpMils	10	zTpkcVprpDfltPostKcSlpMils
-zTpkcVprpStpsFrmCmdListTop	{#insert zEND}{#insert zPGUP}{#insert zUP}	zTpkcVprpStpsFrmCmdListTop

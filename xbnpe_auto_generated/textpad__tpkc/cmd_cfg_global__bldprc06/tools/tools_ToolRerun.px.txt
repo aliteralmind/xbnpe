@@ -1,8 +1,0 @@
-zTpkcToolRerunAbrv1C	Trer	zTpkcToolRerunAbrv1C
-zTpkcTrerCmdNameTC	ToolRerun	zTpkcTrerCmdNameTC
-zTpkcTrerDfltPhrsNm	zTPToolRerun	zTpkcTrerDfltPhrsNm
-zTpkcTrerCatForCmdAbrvLC	tools	zTpkcTrerCatForCmdAbrvLC
-zTpkcTrerCmdType_mcrTl		zTpkcTrerCmdType_mcrTl
-zTpkcTrerIsBtstrp_yes		zTpkcTrerIsBtstrp_yes
-zTpkcTrerDfltPostKcSlpMils	10	zTpkcTrerDfltPostKcSlpMils
-zTpkcTrerStpsFrmCmdListTop	{#insert zEND}{#insert zPGUP}{#insert zDOWN}	zTpkcTrerStpsFrmCmdListTop

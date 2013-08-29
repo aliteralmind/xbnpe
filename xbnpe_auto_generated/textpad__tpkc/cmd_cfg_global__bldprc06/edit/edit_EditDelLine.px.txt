@@ -1,8 +1,0 @@
-zTpkcEditDelLineAbrv1C	Edlln	zTpkcEditDelLineAbrv1C
-zTpkcEdllnCmdNameTC	EditDelLine	zTpkcEdllnCmdNameTC
-zTpkcEdllnDfltPhrsNm	zTPDeleteLine	zTpkcEdllnDfltPhrsNm
-zTpkcEdllnCatForCmdAbrvLC	edit	zTpkcEdllnCatForCmdAbrvLC
-zTpkcEdllnCmdType_mcrTl		zTpkcEdllnCmdType_mcrTl
-zTpkcEdllnIsBtstrp_yes		zTpkcEdllnIsBtstrp_yes
-zTpkcEdllnDfltPostKcSlpMils	10	zTpkcEdllnDfltPostKcSlpMils
-zTpkcEdllnStpsFrmCmdListTop	{#insert zPGDN4}{#insert zDOWN}	zTpkcEdllnStpsFrmCmdListTop

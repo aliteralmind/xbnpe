@@ -1,8 +1,0 @@
-zTpkcChar40NUpperTildeAbrv1C	Chrnut	zTpkcChar40NUpperTildeAbrv1C
-zTpkcChrnutCmdNameTC	Char40NUpperTilde	zTpkcChrnutCmdNameTC
-zTpkcChrnutDfltPhrsNm	zTPChar40NUpperTilde	zTpkcChrnutDfltPhrsNm
-zTpkcChrnutCatForCmdAbrvLC	chars	zTpkcChrnutCatForCmdAbrvLC
-zTpkcChrnutCmdType_mcrTl		zTpkcChrnutCmdType_mcrTl
-zTpkcChrnutIsBtstrp_yes		zTpkcChrnutIsBtstrp_yes
-zTpkcChrnutDfltPostKcSlpMils	1	zTpkcChrnutDfltPostKcSlpMils
-zTpkcChrnutStpsFrmCmdListTop	{#insert zEND}{#insert zPGUP4}{#insert zUP}	zTpkcChrnutStpsFrmCmdListTop

@@ -1,8 +1,0 @@
-zTpkcEditTimeAbrv1C	Etime	zTpkcEditTimeAbrv1C
-zTpkcEtimeCmdNameTC	EditTime	zTpkcEtimeCmdNameTC
-zTpkcEtimeDfltPhrsNm	zTPTime	zTpkcEtimeDfltPhrsNm
-zTpkcEtimeCatForCmdAbrvLC	edit	zTpkcEtimeCatForCmdAbrvLC
-zTpkcEtimeCmdType_mcrTl		zTpkcEtimeCmdType_mcrTl
-zTpkcEtimeIsBtstrp_yes		zTpkcEtimeIsBtstrp_yes
-zTpkcEtimeDfltPostKcSlpMils	10	zTpkcEtimeDfltPostKcSlpMils
-zTpkcEtimeStpsFrmCmdListTop	{#insert zEND}{#insert zPGUP}	zTpkcEtimeStpsFrmCmdListTop

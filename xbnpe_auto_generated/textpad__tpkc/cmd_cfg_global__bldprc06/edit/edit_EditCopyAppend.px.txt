@@ -1,8 +1,0 @@
-zTpkcEditCopyAppendAbrv1C	Ecpapp	zTpkcEditCopyAppendAbrv1C
-zTpkcEcpappCmdNameTC	EditCopyAppend	zTpkcEcpappCmdNameTC
-zTpkcEcpappDfltPhrsNm	zTPCopyAppend	zTpkcEcpappDfltPhrsNm
-zTpkcEcpappCatForCmdAbrvLC	edit	zTpkcEcpappCatForCmdAbrvLC
-zTpkcEcpappCmdType_mcrTl		zTpkcEcpappCmdType_mcrTl
-zTpkcEcpappIsBtstrp_yes		zTpkcEcpappIsBtstrp_yes
-zTpkcEcpappDfltPostKcSlpMils	50	zTpkcEcpappDfltPostKcSlpMils
-zTpkcEcpappStpsFrmCmdListTop	{#insert zPGDN}{#insert zDOWN3}	zTpkcEcpappStpsFrmCmdListTop

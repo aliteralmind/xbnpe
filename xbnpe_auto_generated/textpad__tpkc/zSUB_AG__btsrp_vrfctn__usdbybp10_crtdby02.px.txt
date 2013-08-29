@@ -1,2 +1,2 @@
-zzAllTPBtstrpCmdAbrv1CQbl	[Cfgprfsdlg][Cfgtgww][Crdcs][Crwdlx][Crwdre][Crwdrex][Ecp][Ecpbkmlns][Ect][Ectbkmlns][Edpln][Epst][Fcls][Fmngr][Fnew][Fopn][Fqopn][Fsv][Srchmknxt][Srchmktgl][Srchfls][Srchfind][Srchfnxt][Srchrplc][Slall]	zzAllTPBtstrpCmdAbrv1CQbl
-zzRegexMrkAllTPBtstrpsInTPAllCmdList	^(Preferences|ToggleWordWrap|DocumentStart|WordLeftExtend|WordRightEnd|WordRightEndExtend|EditCopy|EditCopyTaggedLines|EditCut|EditCutTaggedLines|EditDupLine|EditPaste|FileClose|FileManage|FileNew|FileOpen|FileQuickOpen|FileSave|BookmarkNext|BookmarkToggle|SearchFiles|SearchFind|SearchFindNext|SearchReplace|SelectAll)\b	zzRegexMrkAllTPBtstrpsInTPAllCmdList
+zzAllTPBtstrpCmdAbrv1CQbl	[Cfgprfsdlg][Cfgtgww][Fcls][Fmngr][Fnew][Fopn][Fqopn][Fsv]	zzAllTPBtstrpCmdAbrv1CQbl
+zzRegexMrkAllTPBtstrpsInTPAllCmdList	^(Preferences|ToggleWordWrap|FileClose|FileManage|FileNew|FileOpen|FileQuickOpen|FileSave)\b	zzRegexMrkAllTPBtstrpsInTPAllCmdList

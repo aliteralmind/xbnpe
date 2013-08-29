@@ -1,8 +1,0 @@
-zTpkcWindowArrangeIconsAbrv1C	Winri	zTpkcWindowArrangeIconsAbrv1C
-zTpkcWinriCmdNameTC	WindowArrangeIcons	zTpkcWinriCmdNameTC
-zTpkcWinriDfltPhrsNm	zTPWindowArrangeIcons	zTpkcWinriDfltPhrsNm
-zTpkcWinriCatForCmdAbrvLC	window	zTpkcWinriCatForCmdAbrvLC
-zTpkcWinriCmdType_mcrTl		zTpkcWinriCmdType_mcrTl
-zTpkcWinriIsBtstrp_yes		zTpkcWinriIsBtstrp_yes
-zTpkcWinriDfltPostKcSlpMils	10	zTpkcWinriDfltPostKcSlpMils
-zTpkcWinriStpsFrmCmdListTop	{#insert zPGDN2}{#insert zUP2}	zTpkcWinriStpsFrmCmdListTop

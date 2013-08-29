@@ -1,8 +1,0 @@
-zTpkcDocumentEndAbrv1C	Crdce	zTpkcDocumentEndAbrv1C
-zTpkcCrdceCmdNameTC	DocumentEnd	zTpkcCrdceCmdNameTC
-zTpkcCrdceDfltPhrsNm	zTPGTDocBottom	zTpkcCrdceDfltPhrsNm
-zTpkcCrdceCatForCmdAbrvLC	cursor	zTpkcCrdceCatForCmdAbrvLC
-zTpkcCrdceCmdType_mcrTl		zTpkcCrdceCmdType_mcrTl
-zTpkcCrdceIsBtstrp_yes		zTpkcCrdceIsBtstrp_yes
-zTpkcCrdceDfltPostKcSlpMils	25	zTpkcCrdceDfltPostKcSlpMils
-zTpkcCrdceStpsFrmCmdListTop	{#insert zDD}	zTpkcCrdceStpsFrmCmdListTop

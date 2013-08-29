@@ -1,8 +1,0 @@
-zTpkcSearchJumpNextAbrv1C	Srchjnxt	zTpkcSearchJumpNextAbrv1C
-zTpkcSrchjnxtCmdNameTC	SearchJumpNext	zTpkcSrchjnxtCmdNameTC
-zTpkcSrchjnxtDfltPhrsNm	zTPSearchJumpNext	zTpkcSrchjnxtDfltPhrsNm
-zTpkcSrchjnxtCatForCmdAbrvLC	search	zTpkcSrchjnxtCatForCmdAbrvLC
-zTpkcSrchjnxtCmdType_mcrTl		zTpkcSrchjnxtCmdType_mcrTl
-zTpkcSrchjnxtIsBtstrp_yes		zTpkcSrchjnxtIsBtstrp_yes
-zTpkcSrchjnxtDfltPostKcSlpMils	50	zTpkcSrchjnxtDfltPostKcSlpMils
-zTpkcSrchjnxtStpsFrmCmdListTop	{#insert zEND}{#insert zPGUP}{#insert zDOWN2}	zTpkcSrchjnxtStpsFrmCmdListTop

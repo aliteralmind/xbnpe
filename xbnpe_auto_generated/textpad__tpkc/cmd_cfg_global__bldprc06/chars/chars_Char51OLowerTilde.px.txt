@@ -1,8 +1,0 @@
-zTpkcChar51OLowerTildeAbrv1C	Chrolt	zTpkcChar51OLowerTildeAbrv1C
-zTpkcChroltCmdNameTC	Char51OLowerTilde	zTpkcChroltCmdNameTC
-zTpkcChroltDfltPhrsNm	zTPChar51OLowerTilde	zTpkcChroltDfltPhrsNm
-zTpkcChroltCatForCmdAbrvLC	chars	zTpkcChroltCatForCmdAbrvLC
-zTpkcChroltCmdType_mcrTl		zTpkcChroltCmdType_mcrTl
-zTpkcChroltIsBtstrp_yes		zTpkcChroltIsBtstrp_yes
-zTpkcChroltDfltPostKcSlpMils	1	zTpkcChroltDfltPostKcSlpMils
-zTpkcChroltStpsFrmCmdListTop	{#insert zEND}{#insert zPGUP2}{#insert zUP2}	zTpkcChroltStpsFrmCmdListTop

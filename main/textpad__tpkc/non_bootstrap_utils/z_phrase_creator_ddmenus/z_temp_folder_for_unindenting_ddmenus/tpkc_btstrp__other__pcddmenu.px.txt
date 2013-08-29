@@ -22,7 +22,7 @@ zEnterTabTab	\\\{#insert zEnterTabTab\\\}	xhokce
 zKSlpEtr* -- xhokces	\\\{#insert zKSlpEtr\\\}	xhokce
 zEtr100slp	\\\{#insert zEtr100slp\\\}	xhokces
 zKSlpEtrKSlp	\\\{#insert zKSlpEtrKSlp\\\}	xhokces
-zzEnterTSlp	\\\{#insert zzEnterTSlp\\\}	xhokces
+zENTER	\\\{#insert zENTER\\\}	xhokces
 (*    Other -- xhot   .   xho*)
 Asc-equivalents: -- xhota	.	xhot
 zAscCloseCurly	\\\{#insert zAscCloseCurly\\\}	xhota
@@ -64,5 +64,4 @@ zXPROOT_DIR_tpkc -- xhoymmt	\\\{#insert zXPROOT_DIR_tpkc\\\}	xhoymm
 zXPROOT_DIR_AG_tpkc	\\\{#insert zXPROOT_DIR_AG_tpkc\\\}	xhoymmt
 zXPROOT_DIR_tpkcVrsnSpcfcFls -- xhoymmtv	\\\{#insert zXPROOT_DIR_tpkcVrsnSpcfcFls\\\}	xhoymmt
 zXPROOT_DIR_tpkcUsrCfgUserBase_M_tpkcum -- Needs zvTPKC_UDIR_NM	\\\{#insert zXPROOT_DIR_tpkcUsrCfgUserBase_M_tpkcum\\\}	xhoymmtv
-zWIN_DIR_desktop	\\\{#insert zWIN_DIR_desktop\\\}	xhoy
 

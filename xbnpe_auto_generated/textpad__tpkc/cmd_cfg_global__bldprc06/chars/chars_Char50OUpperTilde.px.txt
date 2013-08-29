@@ -1,8 +1,0 @@
-zTpkcChar50OUpperTildeAbrv1C	Chrout	zTpkcChar50OUpperTildeAbrv1C
-zTpkcChroutCmdNameTC	Char50OUpperTilde	zTpkcChroutCmdNameTC
-zTpkcChroutDfltPhrsNm	zTPChar50OUpperTilde	zTpkcChroutDfltPhrsNm
-zTpkcChroutCatForCmdAbrvLC	chars	zTpkcChroutCatForCmdAbrvLC
-zTpkcChroutCmdType_mcrTl		zTpkcChroutCmdType_mcrTl
-zTpkcChroutIsBtstrp_yes		zTpkcChroutIsBtstrp_yes
-zTpkcChroutDfltPostKcSlpMils	1	zTpkcChroutDfltPostKcSlpMils
-zTpkcChroutStpsFrmCmdListTop	{#insert zEND}{#insert zPGUP2}{#insert zUP3}	zTpkcChroutStpsFrmCmdListTop

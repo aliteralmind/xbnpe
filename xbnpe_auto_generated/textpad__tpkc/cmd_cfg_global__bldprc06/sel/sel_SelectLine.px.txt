@@ -1,8 +1,0 @@
-zTpkcSelectLineAbrv1C	Slln	zTpkcSelectLineAbrv1C
-zTpkcSllnCmdNameTC	SelectLine	zTpkcSllnCmdNameTC
-zTpkcSllnDfltPhrsNm	zTPSelectLine	zTpkcSllnDfltPhrsNm
-zTpkcSllnCatForCmdAbrvLC	sel	zTpkcSllnCatForCmdAbrvLC
-zTpkcSllnCmdType_mcrTl		zTpkcSllnCmdType_mcrTl
-zTpkcSllnIsBtstrp_yes		zTpkcSllnIsBtstrp_yes
-zTpkcSllnDfltPostKcSlpMils	10	zTpkcSllnDfltPostKcSlpMils
-zTpkcSllnStpsFrmCmdListTop	{#insert zPGDN}	zTpkcSllnStpsFrmCmdListTop

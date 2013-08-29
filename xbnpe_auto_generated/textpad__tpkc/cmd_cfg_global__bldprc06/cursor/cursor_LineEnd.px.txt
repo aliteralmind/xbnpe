@@ -1,8 +1,0 @@
-zTpkcLineEndAbrv1C	Crlne	zTpkcLineEndAbrv1C
-zTpkcCrlneCmdNameTC	LineEnd	zTpkcCrlneCmdNameTC
-zTpkcCrlneDfltPhrsNm	zTPLineEnd	zTpkcCrlneDfltPhrsNm
-zTpkcCrlneCatForCmdAbrvLC	cursor	zTpkcCrlneCatForCmdAbrvLC
-zTpkcCrlneCmdType_mcrTl		zTpkcCrlneCmdType_mcrTl
-zTpkcCrlneIsBtstrp_yes		zTpkcCrlneIsBtstrp_yes
-zTpkcCrlneDfltPostKcSlpMils	1	zTpkcCrlneDfltPostKcSlpMils
-zTpkcCrlneStpsFrmCmdListTop	{#insert zPGDN2}{#insert zDOWN3}	zTpkcCrlneStpsFrmCmdListTop

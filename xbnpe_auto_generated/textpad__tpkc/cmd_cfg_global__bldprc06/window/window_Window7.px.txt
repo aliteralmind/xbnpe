@@ -1,8 +1,0 @@
-zTpkcWindow7Abrv1C	Win7	zTpkcWindow7Abrv1C
-zTpkcWin7CmdNameTC	Window7	zTpkcWin7CmdNameTC
-zTpkcWin7DfltPhrsNm	zTPGTWin7	zTpkcWin7DfltPhrsNm
-zTpkcWin7CatForCmdAbrvLC	window	zTpkcWin7CatForCmdAbrvLC
-zTpkcWin7CmdType_mcrTl		zTpkcWin7CmdType_mcrTl
-zTpkcWin7IsBtstrp_yes		zTpkcWin7IsBtstrp_yes
-zTpkcWin7DfltPostKcSlpMils	10	zTpkcWin7DfltPostKcSlpMils
-zTpkcWin7StpsFrmCmdListTop	{#insert zPGDN}{#insert zDOWN}	zTpkcWin7StpsFrmCmdListTop

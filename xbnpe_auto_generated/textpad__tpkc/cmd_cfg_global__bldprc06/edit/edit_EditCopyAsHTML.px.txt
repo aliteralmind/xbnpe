@@ -1,8 +1,0 @@
-zTpkcEditCopyAsHTMLAbrv1C	Ecphtm	zTpkcEditCopyAsHTMLAbrv1C
-zTpkcEcphtmCmdNameTC	EditCopyAsHTML	zTpkcEcphtmCmdNameTC
-zTpkcEcphtmDfltPhrsNm	zTPCopyAsHTML	zTpkcEcphtmDfltPhrsNm
-zTpkcEcphtmCatForCmdAbrvLC	edit	zTpkcEcphtmCatForCmdAbrvLC
-zTpkcEcphtmCmdType_mcrTl		zTpkcEcphtmCmdType_mcrTl
-zTpkcEcphtmIsBtstrp_yes		zTpkcEcphtmIsBtstrp_yes
-zTpkcEcphtmDfltPostKcSlpMils	10	zTpkcEcphtmDfltPostKcSlpMils
-zTpkcEcphtmStpsFrmCmdListTop	{#insert zPGDN2}{#insert zUP2}	zTpkcEcphtmStpsFrmCmdListTop

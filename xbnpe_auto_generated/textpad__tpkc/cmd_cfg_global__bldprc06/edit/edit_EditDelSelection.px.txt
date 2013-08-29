@@ -1,8 +1,0 @@
-zTpkcEditDelSelectionAbrv1C	Edlsel	zTpkcEditDelSelectionAbrv1C
-zTpkcEdlselCmdNameTC	EditDelSelection	zTpkcEdlselCmdNameTC
-zTpkcEdlselDfltPhrsNm	zTPDelSelection	zTpkcEdlselDfltPhrsNm
-zTpkcEdlselCatForCmdAbrvLC	edit	zTpkcEdlselCatForCmdAbrvLC
-zTpkcEdlselCmdType_mcrTl		zTpkcEdlselCmdType_mcrTl
-zTpkcEdlselIsBtstrp_yes		zTpkcEdlselIsBtstrp_yes
-zTpkcEdlselDfltPostKcSlpMils	25	zTpkcEdlselDfltPostKcSlpMils
-zTpkcEdlselStpsFrmCmdListTop	{#insert zPGDN4}{#insert zDOWN3}	zTpkcEdlselStpsFrmCmdListTop

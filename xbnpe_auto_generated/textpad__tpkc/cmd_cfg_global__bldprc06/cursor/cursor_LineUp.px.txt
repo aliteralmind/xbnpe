@@ -1,8 +1,0 @@
-zTpkcLineUpAbrv1C	Crlnu	zTpkcLineUpAbrv1C
-zTpkcCrlnuCmdNameTC	LineUp	zTpkcCrlnuCmdNameTC
-zTpkcCrlnuDfltPhrsNm	zTPLineUp	zTpkcCrlnuDfltPhrsNm
-zTpkcCrlnuCatForCmdAbrvLC	cursor	zTpkcCrlnuCatForCmdAbrvLC
-zTpkcCrlnuCmdType_mcrTl		zTpkcCrlnuCmdType_mcrTl
-zTpkcCrlnuIsBtstrp_yes		zTpkcCrlnuIsBtstrp_yes
-zTpkcCrlnuDfltPostKcSlpMils	1	zTpkcCrlnuDfltPostKcSlpMils
-zTpkcCrlnuStpsFrmCmdListTop	{#insert zPP}{#insert zUP2}	zTpkcCrlnuStpsFrmCmdListTop

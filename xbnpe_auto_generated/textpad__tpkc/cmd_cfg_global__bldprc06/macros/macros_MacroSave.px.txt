@@ -1,8 +1,0 @@
-zTpkcMacroSaveAbrv1C	Mcrsv	zTpkcMacroSaveAbrv1C
-zTpkcMcrsvCmdNameTC	MacroSave	zTpkcMcrsvCmdNameTC
-zTpkcMcrsvDfltPhrsNm	zTPMacroSaveDlgOpen	zTpkcMcrsvDfltPhrsNm
-zTpkcMcrsvCatForCmdAbrvLC	macros	zTpkcMcrsvCatForCmdAbrvLC
-zTpkcMcrsvCmdType_mcrTl		zTpkcMcrsvCmdType_mcrTl
-zTpkcMcrsvIsBtstrp_yes		zTpkcMcrsvIsBtstrp_yes
-zTpkcMcrsvDfltPostKcSlpMils	10	zTpkcMcrsvDfltPostKcSlpMils
-zTpkcMcrsvStpsFrmCmdListTop	{#NONE -chars m -count 5}{#insert z5ThnTSlp}	zTpkcMcrsvStpsFrmCmdListTop

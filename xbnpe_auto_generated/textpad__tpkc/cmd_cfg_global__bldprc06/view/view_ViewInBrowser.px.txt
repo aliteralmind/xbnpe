@@ -1,8 +1,0 @@
-zTpkcViewInBrowserAbrv1C	Vinb	zTpkcViewInBrowserAbrv1C
-zTpkcVinbCmdNameTC	ViewInBrowser	zTpkcVinbCmdNameTC
-zTpkcVinbDfltPhrsNm	zTPViewInBrowser	zTpkcVinbDfltPhrsNm
-zTpkcVinbCatForCmdAbrvLC	view	zTpkcVinbCatForCmdAbrvLC
-zTpkcVinbCmdType_mcrTl		zTpkcVinbCmdType_mcrTl
-zTpkcVinbIsBtstrp_yes		zTpkcVinbIsBtstrp_yes
-zTpkcVinbDfltPostKcSlpMils	10	zTpkcVinbDfltPostKcSlpMils
-zTpkcVinbStpsFrmCmdListTop	{#insert zPGDN2}{#insert zDOWN2}	zTpkcVinbStpsFrmCmdListTop

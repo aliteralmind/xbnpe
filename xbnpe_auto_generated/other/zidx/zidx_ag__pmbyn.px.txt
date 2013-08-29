@@ -1,8 +1,0 @@
-(*ZIdx: Auto-generated -- **DO NOT EDIT**...start*)
-zvZIDX_PNABR_VTC_stPmbyn	{#SETPHRASE -description zvZIDX_PNABR_VTC -content {#insert zzZIdxPmbynPNAbrvTC} -autotext zvZIDX_PNABR_VTC -folder ctvv_folder}	zvZIDX_PNABR_VTC_stPmbyn
-zidxpmbyn -- terse dialog (default)	{#insert zvZIDX_PNABR_VTC_stPmbyn}{#insert zZIdxOutputTerseDlg_M_vtc}	zidxpmbyn
-zidxpmbynm -- zidxpem ALT KC	{#insert zidxpem}	zidxpmbynm
-zidxpmbynx -- eXtra info (to new file)	{#insert zvZIDX_PNABR_VTC_stPmbyn}{#insert zZIdxOutputExtraInfoToNF_M_vtc}	zidxpmbynx
-(*ZIdx: Auto-generated -- **DO NOT EDIT**...end*)
-
-

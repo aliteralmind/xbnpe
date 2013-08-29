@@ -1,192 +1,193 @@
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress: Large set of generically useful scripting tools for MS Windows, written in PhraseExpress and TextPad.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
 zzDirKslpEtrKslpFNm
 
 
 
 (*
-   *DUPLICATE* this document, unindent every line in it, then import it with the following settings:
-      - No prefix
-      - Manual confirmation
-      - Assign the key-command (hotkey) to the first phrase
-   **All these phrases must be manually maintained.
+*DUPLICATE* this document, unindent every line in it, then import it with the following settings:
+- No prefix
+- Manual confirmation
+- Assign the key-command (hotkey) to the first phrase
+**All these phrases must be manually maintained.
 *)
 (*
-   Required by phrase-creator-ddmenu-utils...START
-      PM_DDMENU_DIR_ID=tpkc
-   Required by phrase-creator-ddmenu-utils...END
+Required by phrase-creator-ddmenu-utils...START
+PM_DDMENU_DIR_ID=tpkc
+Required by phrase-creator-ddmenu-utils...END
 *)
 (*
-   FROM xbnpe_phrase_creator_popup_heirarchy_base.px.txt:
+FROM xbnpe_phrase_creator_popup_heirarchy_base.px.txt:
 
 Phrase: .
-   Phrase-creators: Char, word, line, para, doc, file -- xhc   .   xh
+Phrase-creators: Char, word, line, para, doc, file -- xhc   .   xh
 *)
 (*    1. Char -- xhcc   .   xhc*)
 (*       Select -- xhccs   .   xhcc*)
-				zSystemSelectL1c	\\\{#insert zSystemSelectL1c\\\}	xhccs
-				zSystemSelectR1c	\\\{#insert zSystemSelectR1c\\\}	xhccs
+zSystemSelectL1c	\\\{#insert zSystemSelectL1c\\\}	xhccs
+zSystemSelectR1c	\\\{#insert zSystemSelectR1c\\\}	xhccs
 (*    2. Word -- xhcw   .   xhc*)
 (*       Alter -- xhcwa   .   xhcw*)
 (*          Cut, delete -- xhcwax   .   xhcwa*)
-					zCutL1w	\\\{#insert zCutL1w\\\}	xhcwax
-					zCutR1w	\\\{#insert zCutR1w\\\}	xhcwax
+zCutL1w	\\\{#insert zCutL1w\\\}	xhcwax
+zCutR1w	\\\{#insert zCutR1w\\\}	xhcwax
 (*          Other -- xhcwat   .   xhcwa*)
 (*       Move -- xhcwm   .   xhcw*)
 (*       Select & copy -- xhcws   .   xhcw*)
 (*          Select -- xhcwss   .   xhcws*)
-					zSystemSelectL1w	\\\{#insert zSystemSelectL1w\\\}	xhcwss
-					zSystemSelectR1w	\\\{#insert zSystemSelectR1w\\\}	xhcwss
-					zREoffFindNonWSWordUp	\\\{#insert zREoffFindNonWSWordUp\\\}	xhcwss
-					zREonFindNonWSWordUp	\\\{#insert zREonFindNonWSWordUp\\\}	xhcwss
+zSystemSelectL1w	\\\{#insert zSystemSelectL1w\\\}	xhcwss
+zSystemSelectR1w	\\\{#insert zSystemSelectR1w\\\}	xhcwss
+zREoffFindNonWSWordUp	\\\{#insert zREoffFindNonWSWordUp\\\}	xhcwss
+zREonFindNonWSWordUp	\\\{#insert zREonFindNonWSWordUp\\\}	xhcwss
 (*          Select-copy -- xhcwsp   .   xhcws*)
-					zSelectL1wCopy	\\\{#insert zSelectL1wCopy\\\}	xhcwax
-					zSelectR1wCopy	\\\{#insert zSelectR1wCopy\\\}	xhcwax
+zSelectL1wCopy	\\\{#insert zSelectL1wCopy\\\}	xhcwax
+zSelectR1wCopy	\\\{#insert zSelectR1wCopy\\\}	xhcwax
 (*          Copy -- xhcwsc   .   xhcws*)
 (*    3. Line -- xhcl   .   xhc*)
 (*       Alter -- xhcla   .   xhcl*)
-				Down-enter: dnen	.	xhcla
-				Home-backspace: hokn	.	xhcla
-				down[-two]-then-delete: d[2]dln	.	xhcla
-				Keep 1st-words only -- xhclak	.	xhcla
-					Main action: klw1	(*actnonly=klw1*){#SETPHRASE -description zvACTN_NM -content klw1 -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhclak
-					zREoffKlw1SelLines_M_hnry	\\\{#insert zREoffKlw1SelLines_M_hnry\\\}	xhclak
-					zREonKlw1SelLines_M_hnry	\\\{#insert zREonKlw1SelLines_M_hnry\\\}	xhclak
-					zzMidRplcREKeepWrd1Only	\\\{#insert zzMidRplcREKeepWrd1Only\\\}	xhclak
-				zzMidRplcREElimEmptyLines	\\\{#insert zzMidRplcREElimEmptyLines\\\}	xhcla
-				zzMidRplcRENewlnToNothing	\\\{#insert zzMidRplcRENewlnToNothing\\\}	xhcla
-			Non-empty line count -- xhcln	.	xhcl
-				Var: zvLINE_COUNT	{#SETCLIPBOARD zvLINE_COUNT}{#insert zzBalCBContainsVarNm}	xhcln
-				zREoffGetSetNonEmptyLineCountForCurrentDoc	\\\{#insert zREoffGetSetNonEmptyLineCountForCurrentDoc\\\}	xhcln
-				zREoffGetSetNonEmptyRqdLineCountForCurrentDocXsInCB	\\\{#insert zREoffGetSetNonEmptyRqdLineCountForCurrentDocXsInCB\\\}	xhcln
-				zREonGetSetNonEmptyLineCountForCurrentDoc	\\\{#insert zREonGetSetNonEmptyLineCountForCurrentDoc\\\}	xhcln
-				zREonGetSetNonEmptyRqdLineCountForCurrentDocXsInCB	\\\{#insert zREonGetSetNonEmptyRqdLineCountForCurrentDocXsInCB\\\}	xhcln
-				zzREoffGetSetNonEmptyLineCountForCurrentDoc_M_hnry	\\\{#insert zzREoffGetSetNonEmptyLineCountForCurrentDoc_M_hnry\\\}	xhcln
-				zzREonGetSetNonEmptyLineCountForCurrentDoc_M_hnry	\\\{#insert zzREonGetSetNonEmptyLineCountForCurrentDoc_M_hnry\\\}	xhcln
+Down-enter: dnen	.	xhcla
+Home-backspace: hokn	.	xhcla
+down[-two]-then-delete: d[2]dln	.	xhcla
+Keep 1st-words only -- xhclak	.	xhcla
+Main action: klw1	(*actnonly=klw1*){#SETPHRASE -description zvACTN_NM -content klw1 -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhclak
+zREoffKlw1SelLines_M_hnry	\\\{#insert zREoffKlw1SelLines_M_hnry\\\}	xhclak
+zREonKlw1SelLines_M_hnry	\\\{#insert zREonKlw1SelLines_M_hnry\\\}	xhclak
+zzMidRplcREKeepWrd1Only	\\\{#insert zzMidRplcREKeepWrd1Only\\\}	xhclak
+zzMidRplcREElimEmptyLines	\\\{#insert zzMidRplcREElimEmptyLines\\\}	xhcla
+zzMidRplcRENewlnToNothing	\\\{#insert zzMidRplcRENewlnToNothing\\\}	xhcla
+Non-empty line count -- xhcln	.	xhcl
+Var: zvLINE_COUNT	{#SETCLIPBOARD zvLINE_COUNT}{#insert zzBalCBContainsVarNm}	xhcln
+zREoffGetSetNonEmptyLineCountForCurrentDoc	\\\{#insert zREoffGetSetNonEmptyLineCountForCurrentDoc\\\}	xhcln
+zREoffGetSetNonEmptyRqdLineCountForCurrentDocXsInCB	\\\{#insert zREoffGetSetNonEmptyRqdLineCountForCurrentDocXsInCB\\\}	xhcln
+zREonGetSetNonEmptyLineCountForCurrentDoc	\\\{#insert zREonGetSetNonEmptyLineCountForCurrentDoc\\\}	xhcln
+zREonGetSetNonEmptyRqdLineCountForCurrentDocXsInCB	\\\{#insert zREonGetSetNonEmptyRqdLineCountForCurrentDocXsInCB\\\}	xhcln
+zzREoffGetSetNonEmptyLineCountForCurrentDoc_M_hnry	\\\{#insert zzREoffGetSetNonEmptyLineCountForCurrentDoc_M_hnry\\\}	xhcln
+zzREonGetSetNonEmptyLineCountForCurrentDoc_M_hnry	\\\{#insert zzREonGetSetNonEmptyLineCountForCurrentDoc_M_hnry\\\}	xhcln
 (*       Select, copy -- xhclc   .   xhcl*)
-				zSelLinesDownNotFinalNewline_M_ldwn	\\\{#insert zSelLinesDownNotFinalNewline_M_ldwn\\\}	xhclc
+zSelLinesDownNotFinalNewline_M_ldwn	\\\{#insert zSelLinesDownNotFinalNewline_M_ldwn\\\}	xhclc
 (*    5. Selection, clipboard, undo/redo -- xhcs   .   xhc*)
 (*       Clipboard -- xhcsb   .   xhcs*)
 (*          Copy & cut -- xhcsbc   .   xhcsb*)
-					zSystemCopy	\\\{#insert zSystemCopy\\\}	xhcsbc
-					zSystemCut	\\\{#insert zSystemCut\\\}	xhcsbc
+zSystemCopy	\\\{#insert zSystemCopy\\\}	xhcsbc
+zSystemCut	\\\{#insert zSystemCut\\\}	xhcsbc
 (*          Paste -- xhcsbp   .   xhcsb*)
-					zSystemPaste	\\\{#insert zSystemPaste\\\}	xhcsbp
+zSystemPaste	\\\{#insert zSystemPaste\\\}	xhcsbp
 (*       Undo & redo -- xhcsu   .   xhcs*)
-					zSystemUndo	\\\{#insert zSystemUndo\\\}	xhcsu
+zSystemUndo	\\\{#insert zSystemUndo\\\}	xhcsu
 (*    6. Document, page -- xhcd   .   xhc*)
 (*       Document-windows -- xhcdo   .   xhcd*)
 (*          Go-to specific -- xhcdog   .   xhcdo*)
-					zSystemGTNextDoc	\\\{#insert zSystemGTNextDoc\\\}	xhcdog
-					zSystemGTPrevDoc	\\\{#insert zSystemGTPrevDoc\\\}	xhcdog
+zSystemGTNextDoc	\\\{#insert zSystemGTNextDoc\\\}	xhcdog
+zSystemGTPrevDoc	\\\{#insert zSystemGTPrevDoc\\\}	xhcdog
 (*       Select-all -- xhcda   .   xhcd*)
-				zSelectAllDel	\\\{#insert zSelectAllDel\\\}	xhcda
-				zSelectAllCopy	\\\{#insert zSelectAllCopy\\\}	xhcda
-				zSelectAllCut	\\\{#insert zSelectAllCut\\\}	xhcda
-				zSystemSelectAll	\\\{#insert zSystemSelectAll\\\}	xhcda
+zSelectAllDel	\\\{#insert zSelectAllDel\\\}	xhcda
+zSelectAllCopy	\\\{#insert zSelectAllCopy\\\}	xhcda
+zSelectAllCut	\\\{#insert zSelectAllCut\\\}	xhcda
+zSystemSelectAll	\\\{#insert zSystemSelectAll\\\}	xhcda
 (*       Word-wrap -- xhcdw   .   xhcd*)
-				Explicit state -- xhcdws	.	xhcdw
-					Var: zvWORD_WRAP_ON* -- xhcdwsv (wt)	{#SETCLIPBOARD zvWORD_WRAP_ON}{#insert zzBalCBContainsVarNm}	xhcdws
-						zzvWORD_WRAP_ON_stOff (wf)	\\\{#insert zzvWORD_WRAP_ON_stOff\\\}	xhcdwsv
-						zzvWORD_WRAP_ON_stOn (wn)	\\\{#insert zzvWORD_WRAP_ON_stOn\\\}	xhcdwsv
-					zConfirmWWStatePrompt	\\\{#insert zConfirmWWStatePrompt\\\}	xhcdws
-					zRevertWWToOrigState	\\\{#insert zRevertWWToOrigState\\\}	xhcdws
-					zSetWWStateToTPTxtDefault* -- xhcdwst	\\\{#insert zSetWWStateToTPTxtDefault\\\}	xhcdws
-						zWordWrapOffFromTPDfltState	\\\{#insert zWordWrapOffFromTPDfltState\\\}	xhcdwst
-						zWordWrapOnFromTPDfltState	\\\{#insert zWordWrapOnFromTPDfltState\\\}	xhcdwst
-					zToggleWWAndState_M_wwo* -- xhcdwss	\\\{#insert zToggleWWAndState_M_wwo\\\}	xhcdws
-						zToggleWWSetStateToOff	\\\{#insert zToggleWWSetStateToOff\\\}	xhcdwss
-						zToggleWWSetStateToOff w/ revert	\\\{#insert zToggleWWSetStateToOff\\\}\\\{#insert zRevertWWToOrigState\\\}	xhcdwss
-						zToggleWWSetStateToOn	\\\{#insert zToggleWWSetStateToOn\\\}	xhcdwss
-						zToggleWWSetStateToOn w/ revert	\\\{#insert zToggleWWSetStateToOn\\\}\\\{#insert zRevertWWToOrigState\\\}	xhcdwss
-					zWordWrapOffSaveState	\\\{#insert zWordWrapOffSaveState\\\}	xhcdws
-					zWordWrapOnSaveState	\\\{#insert zWordWrapOnSaveState\\\}	xhcdws
-				zToggleWW* -- xhcdw	\\\{#insert zToggleWW\\\}	xhcd
-				zToggleWWHome (twh)	\\\{#insert zToggleWWHome\\\}	xhcdw
-				zWordWrapOff	\\\{#insert zWordWrapOff\\\}	xhcdw
-				zWordWrapOn	\\\{#insert zWordWrapOn\\\}	xhcdw
+Explicit state -- xhcdws	.	xhcdw
+Var: zvWORD_WRAP_ON* -- xhcdwsv (wt)	{#SETCLIPBOARD zvWORD_WRAP_ON}{#insert zzBalCBContainsVarNm}	xhcdws
+zzvWORD_WRAP_ON_stOff (wf)	\\\{#insert zzvWORD_WRAP_ON_stOff\\\}	xhcdwsv
+zzvWORD_WRAP_ON_stOn (wn)	\\\{#insert zzvWORD_WRAP_ON_stOn\\\}	xhcdwsv
+zConfirmWWStatePrompt	\\\{#insert zConfirmWWStatePrompt\\\}	xhcdws
+zRevertWWToOrigState	\\\{#insert zRevertWWToOrigState\\\}	xhcdws
+zSetWWStateToTPTxtDefault* -- xhcdwst	\\\{#insert zSetWWStateToTPTxtDefault\\\}	xhcdws
+zWordWrapOffFromTPDfltState	\\\{#insert zWordWrapOffFromTPDfltState\\\}	xhcdwst
+zWordWrapOnFromTPDfltState	\\\{#insert zWordWrapOnFromTPDfltState\\\}	xhcdwst
+zToggleWWAndState_M_wwo* -- xhcdwss	\\\{#insert zToggleWWAndState_M_wwo\\\}	xhcdws
+zToggleWWSetStateToOff	\\\{#insert zToggleWWSetStateToOff\\\}	xhcdwss
+zToggleWWSetStateToOff w/ revert	\\\{#insert zToggleWWSetStateToOff\\\}\\\{#insert zRevertWWToOrigState\\\}	xhcdwss
+zToggleWWSetStateToOn	\\\{#insert zToggleWWSetStateToOn\\\}	xhcdwss
+zToggleWWSetStateToOn w/ revert	\\\{#insert zToggleWWSetStateToOn\\\}\\\{#insert zRevertWWToOrigState\\\}	xhcdwss
+zWordWrapOffSaveState	\\\{#insert zWordWrapOffSaveState\\\}	xhcdws
+zWordWrapOnSaveState	\\\{#insert zWordWrapOnSaveState\\\}	xhcdws
+zToggleWW	\\\{#insert zToggleWW\\\}	xhcd
+zToggleWWHome (twh)	\\\{#insert zToggleWWHome\\\}	xhcdw
+zWordWrapOff	\\\{#insert zWordWrapOff\\\}	xhcdw
+zWordWrapOn	\\\{#insert zWordWrapOn\\\}	xhcdw
 (*    7. File -- xhcf   .   xhc*)
 (*       Close -- xhcfc   .   xhcf*)
-				zFcsTPFileClose	\\\{#insert zFcsTPFileClose\\\}	xhcfc
-				zFileCloseDiscardChanges	\\\{#insert zFileCloseDiscardChanges\\\}	xhcfc
+zFcsTPFileClose	\\\{#insert zFcsTPFileClose\\\}	xhcfc
+zFileCloseDiscardChanges	\\\{#insert zFileCloseDiscardChanges\\\}	xhcfc
 (*       New -- xhcfn (and open-dup-close)   .   xhcf*)
-				zFcsTPFileNew	\\\{#insert zFcsTPFileNew\\\}	xhcfn
-				zFileNewPaste -- xhcfnd (open-dup-close)	\\\{#insert zFileNewPaste\\\}	xhcfn
-					zDupCurrFileTextToNewFile	\\\{#insert zDupCurrFileTextToNewFile\\\}	xhcfnd
-					zOpenDupCloseXstgFileTextToNewEmptyCB_M_dirFnm	\\\{#insert zOpenDupCloseXstgFileTextToNewEmptyCB_M_dirFnm\\\}	xhcfnd
-					zOpenDupCloseXstgFileTextToNew_M_dirFnm	\\\{#insert zOpenDupCloseXstgFileTextToNew_M_dirFnm\\\}	xhcfnd
+zFcsTPFileNew	\\\{#insert zFcsTPFileNew\\\}	xhcfn
+zFileNewPaste -- xhcfnd (open-dup-close)	\\\{#insert zFileNewPaste\\\}	xhcfn
+zDupCurrFileTextToNewFile	\\\{#insert zDupCurrFileTextToNewFile\\\}	xhcfnd
+zOpenDupCloseXstgFileTextToNewEmptyCB_M_dirFnm	\\\{#insert zOpenDupCloseXstgFileTextToNewEmptyCB_M_dirFnm\\\}	xhcfnd
+zOpenDupCloseXstgFileTextToNew_M_dirFnm	\\\{#insert zOpenDupCloseXstgFileTextToNew_M_dirFnm\\\}	xhcfnd
 (*       Open -- xhcfo   .   xhcf*)
-				zDirFileOpen_M_dirFnm	\\\{#insert zDirFileOpen_M_dirFnm\\\}	xhcfo
-				zFcsTPFileOpen	\\\{#insert zFcsTPFileOpen\\\}	xhcfo
-				zDirFilePauseQuickOpenSlk_M_dirFnm	\\\{#insert zDirFilePauseQuickOpenSlk_M_dirFnm\\\}	xhcfo
-				zDirFileQuickOpenSlk_M_dirFnm	\\\{#insert zDirFileQuickOpenSlk_M_dirFnm\\\}	xhcfo
-				zvQOPEN_PAUSE_Y_stYes	\\\{#insert zvQOPEN_PAUSE_Y_stYes\\\}	xhcfo
-				zvQOPEN_PAUSE_Y_stES	\\\{#insert zvQOPEN_PAUSE_Y_stES\\\}	xhcfo
-				zDirFileQuickOpenSlk2_M_dirFnm [2-5]	\\\{#insert zDirFileQuickOpenSlk2_M_dirFnm\\\}	xhcfo
+zDirFileOpen_M_dirFnm	\\\{#insert zDirFileOpen_M_dirFnm\\\}	xhcfo
+zFcsTPFileOpen	\\\{#insert zFcsTPFileOpen\\\}	xhcfo
+zDirFilePauseQuickOpenSlk_M_dirFnm	\\\{#insert zDirFilePauseQuickOpenSlk_M_dirFnm\\\}	xhcfo
+zDirFileQuickOpenSlk_M_dirFnm	\\\{#insert zDirFileQuickOpenSlk_M_dirFnm\\\}	xhcfo
+zvQOPEN_PAUSE_Y_stYes	\\\{#insert zvQOPEN_PAUSE_Y_stYes\\\}	xhcfo
+zvQOPEN_PAUSE_Y_stES	\\\{#insert zvQOPEN_PAUSE_Y_stES\\\}	xhcfo
+zDirFileQuickOpenSlk2_M_dirFnm [2-5]	\\\{#insert zDirFileQuickOpenSlk2_M_dirFnm\\\}	xhcfo
 (*       Other -- xhcft   .   xhcf*)
-				About-to-open/insert-file warning -- xhcfta	.	xhcft
-					zPrintAboutToOpenFileWarning_M_pth	\\\{#insert zPrintAboutToOpenFileWarning_M_pth\\\}	xhcfta
-					zPrintDelAboutToOpenFileWarning_M_pth	\\\{#insert zPrintDelAboutToOpenFileWarning_M_pth\\\}	xhcfta
-					zInsFileTextToNewWAboutToWarning_M_dirFnm	\\\{#insert zInsFileTextToNewWAboutToWarning_M_dirFnm\\\}	xhcfta
-					zInsFileTextToNewWAboutToWarning_M_pth	\\\{#insert zInsFileTextToNewWAboutToWarning_M_pth\\\}	xhcfta
-					zInsFileTextWAboutToWarning_M_pth	\\\{#insert zInsFileTextWAboutToWarning_M_pth\\\}	xhcfta
-					Confirm/delete file(s) in dir -- xhcfti	.	xhcft
-						zConfirmOneFileExistsDlgLeaveDlgOpen_M_dirFnm	\\\{#zConfirmOneFileExistsDlgLeaveDlgOpen_M_dirFnm\\\}	xhcfti
-						zConfirmOneFileExistsDlgThenOpen_M_dirFnm	\\\{#insert zConfirmOneFileExistsDlgThenOpen_M_dirFnm\\\}	xhcfti
-						zConfirmOneFileExistsDlg_M_dirFnm	\\\{#insert zConfirmOneFileExistsDlg_M_dirFnm\\\}	xhcfti
-						zDelAllOutFilesDlg_M_dir	\\\{#insert zDelAllOutFilesDlg_M_dir\\\}	xhcfti
-						zDelOneOutFileDlg_M_dirFnm	\\\{#insert zDelOneOutFileDlg_M_dirFnm\\\}	xhcfti
-						zDelOutFilesOnlyNotDirsDlg_M_dir	\\\{#insert zDelOutFilesOnlyNotDirsDlg_M_dir\\\}	xhcfti
-						zzFileOpenDlgGTDirSlpkDelRqstIntroBal_M_dir	\\\{#insert zzFileOpenDlgGTDirSlpkDelRqstIntroBal_M_dir\\\}	xhcfti
-				Navigate to file/directory -- xhcftv	.	xhcft
-					zFileOpenDlgGTDir_M_dir (and open explorer window)	\\\{#insert zFileOpenDlgGTDir_M_dir\\\}	xhcftv
-					zOpenExplorerDirSelectTargetFile_M_dirFnm	\\\{#insert zOpenExplorerDirSelectTargetFile_M_dirFnm\\\}	xhcftv
-					zOpenExplorerDirSelectTarget_M_path	\\\{#insert zOpenExplorerDirSelectTarget_M_path\\\}	xhcftv
-					zOpenExplorerDir_M_dir	\\\{#insert zOpenExplorerDir_M_dir\\\}	xhcftv
-				zInsertFile_M_path	\\\{#insert zInsertFile_M_path\\\}	xhcft
-				Var: zvDIRECTORY* -- xhcftd (and other vars)	{#SETCLIPBOARD zvDIRECTORY}{#insert zzBalCBContainsVarNm}	xhcft
-					Var: zvFILE_NAME	{#SETCLIPBOARD zvFILE_NAME}{#insert zzBalCBContainsVarNm}	xhcftd
-					Var: zvPATH	{#SETCLIPBOARD zvPATH}{#insert zzBalCBContainsVarNm}	xhcftd
-					debugdirfn: zzDebugDirFileNmDlg_M_dirFnm	xhcftd.
-			TextPad File Manager -- xhcfm	.	xhcf
-				Dir-file actions -- xhcfmd	.	xhcfm
-					Var: zvOUT_DIR	{#SETCLIPBOARD zvOUT_DIR}{#insert zzBalCBContainsVarNm}	xhcfmd
-					Var: zvOUT_FNM	{#SETCLIPBOARD zvOUT_FNM}{#insert zzBalCBContainsVarNm}	xhcfmd
-					zFMDlgDirFileCopyOverwriteNoConfirm_M_dirFnmOdr	\\\{#insert zFMDlgDirFileCopyOverwriteNoConfirm_M_dirFnmOdr\\\}	xhcfmd
-					zFMDlgDirFileCopyOverwriteNoConfirm_M_dirFnmOdrOfm	\\\{#insert zFMDlgDirFileCopyOverwriteNoConfirm_M_dirFnmOdrOfm\\\}	xhcfmd
-					zFMDlgDirFileCopy_M_dirFnmOdr	\\\{#insert zFMDlgDirFileCopy_M_dirFnmOdr\\\}	xhcfmd
-					zFMDlgDirFileCopy_M_dirFnmOdrOfm	\\\{#insert zFMDlgDirFileCopy_M_dirFnmOdrOfm\\\}	xhcfmd
-					zFMDlgDirFileDeleteNoConfirm_M_dirFnm	\\\{#insert zFMDlgDirFileDeleteNoConfirm_M_dirFnm\\\}	xhcfmd
-					zvDIRECTORY_stOUT_DIR	\\\{#insert zvDIRECTORY_stOUT_DIR\\\}	xhcfmd
-					zvFILE_NAME_stStarDotTxt	\\\{#insert zvFILE_NAME_stStarDotTxt\\\}	xhcfmd
-				Buttons -- xhcfmb	.	xhcfm
-					zFMBtnCopy	\\\{#insert zFMBtnCopy\\\}	xhcfmb
-					zFMBtnDelete	\\\{#insert zFMBtnDelete\\\}	xhcfmb
-					zFMBtnRename	\\\{#insert zFMBtnRename\\\}	xhcfmb
-					zFMBtnTouch	\\\{#insert zFMBtnTouch\\\}	xhcfmb
-					zFMBtnBrowse	\\\{#insert zFMBtnBrowse\\\}	xhcfmb
-				zFMDlgClose	\\\{#insert zFMDlgClose\\\}	xhcfm
-				zFMDlgOpenViaAltF	\\\{#insert zFMDlgOpenViaAltF\\\}	xhcfm
-				zFcsTPFileManager	\\\{#insert zFcsTPFileManager\\\}	xhcfm
+About-to-open/insert-file warning -- xhcfta	.	xhcft
+zPrintAboutToOpenFileWarning_M_pth	\\\{#insert zPrintAboutToOpenFileWarning_M_pth\\\}	xhcfta
+zPrintDelAboutToOpenFileWarning_M_pth	\\\{#insert zPrintDelAboutToOpenFileWarning_M_pth\\\}	xhcfta
+zInsFileTextToNewWAboutToWarning_M_dirFnm	\\\{#insert zInsFileTextToNewWAboutToWarning_M_dirFnm\\\}	xhcfta
+zInsFileTextToNewWAboutToWarning_M_pth	\\\{#insert zInsFileTextToNewWAboutToWarning_M_pth\\\}	xhcfta
+zInsFileTextWAboutToWarning_M_pth	\\\{#insert zInsFileTextWAboutToWarning_M_pth\\\}	xhcfta
+Confirm/delete file(s) in dir -- xhcfti	.	xhcft
+zConfirmOneFileExistsDlgLeaveDlgOpen_M_dirFnm	\\\{#zConfirmOneFileExistsDlgLeaveDlgOpen_M_dirFnm\\\}	xhcfti
+zConfirmOneFileExistsDlgThenOpen_M_dirFnm	\\\{#insert zConfirmOneFileExistsDlgThenOpen_M_dirFnm\\\}	xhcfti
+zConfirmOneFileExistsDlg_M_dirFnm	\\\{#insert zConfirmOneFileExistsDlg_M_dirFnm\\\}	xhcfti
+zDelAllOutFilesDlg_M_dir	\\\{#insert zDelAllOutFilesDlg_M_dir\\\}	xhcfti
+zDelOneOutFileDlg_M_dirFnm	\\\{#insert zDelOneOutFileDlg_M_dirFnm\\\}	xhcfti
+zDelOutFilesOnlyNotDirsDlg_M_dir	\\\{#insert zDelOutFilesOnlyNotDirsDlg_M_dir\\\}	xhcfti
+zzFileOpenDlgGTDirSlpkDelRqstIntroBal_M_dir	\\\{#insert zzFileOpenDlgGTDirSlpkDelRqstIntroBal_M_dir\\\}	xhcfti
+Navigate to file/directory -- xhcftv	.	xhcft
+zFileOpenDlgGTDir_M_dir (and open explorer window)	\\\{#insert zFileOpenDlgGTDir_M_dir\\\}	xhcftv
+zOpenExplorerDirSelectTargetFile_M_dirFnm	\\\{#insert zOpenExplorerDirSelectTargetFile_M_dirFnm\\\}	xhcftv
+zOpenExplorerDirSelectTarget_M_path	\\\{#insert zOpenExplorerDirSelectTarget_M_path\\\}	xhcftv
+zOpenExplorerDir_M_dir	\\\{#insert zOpenExplorerDir_M_dir\\\}	xhcftv
+zInsertFile_M_path	\\\{#insert zInsertFile_M_path\\\}	xhcft
+Var: zvDIRECTORY* -- xhcftd (and other vars)	{#SETCLIPBOARD zvDIRECTORY}{#insert zzBalCBContainsVarNm}	xhcft
+Var: zvFILE_NAME	{#SETCLIPBOARD zvFILE_NAME}{#insert zzBalCBContainsVarNm}	xhcftd
+Var: zvPATH	{#SETCLIPBOARD zvPATH}{#insert zzBalCBContainsVarNm}	xhcftd
+debugdirfn: zzDebugDirFileNmDlg_M_dirFnm	xhcftd.
+TextPad File Manager -- xhcfm	.	xhcf
+Dir-file actions -- xhcfmd	.	xhcfm
+Var: zvOUT_DIR	{#SETCLIPBOARD zvOUT_DIR}{#insert zzBalCBContainsVarNm}	xhcfmd
+Var: zvOUT_FNM	{#SETCLIPBOARD zvOUT_FNM}{#insert zzBalCBContainsVarNm}	xhcfmd
+zFMDlgDirFileCopyOverwriteNoConfirm_M_dirFnmOdr	\\\{#insert zFMDlgDirFileCopyOverwriteNoConfirm_M_dirFnmOdr\\\}	xhcfmd
+zFMDlgDirFileCopyOverwriteNoConfirm_M_dirFnmOdrOfm	\\\{#insert zFMDlgDirFileCopyOverwriteNoConfirm_M_dirFnmOdrOfm\\\}	xhcfmd
+zFMDlgDirFileCopy_M_dirFnmOdr	\\\{#insert zFMDlgDirFileCopy_M_dirFnmOdr\\\}	xhcfmd
+zFMDlgDirFileCopy_M_dirFnmOdrOfm	\\\{#insert zFMDlgDirFileCopy_M_dirFnmOdrOfm\\\}	xhcfmd
+zFMDlgDirFileDeleteNoConfirm_M_dirFnm	\\\{#insert zFMDlgDirFileDeleteNoConfirm_M_dirFnm\\\}	xhcfmd
+zvDIRECTORY_stOUT_DIR	\\\{#insert zvDIRECTORY_stOUT_DIR\\\}	xhcfmd
+zvFILE_NAME_stStarDotTxt	\\\{#insert zvFILE_NAME_stStarDotTxt\\\}	xhcfmd
+Buttons -- xhcfmb	.	xhcfm
+zFMBtnCopy	\\\{#insert zFMBtnCopy\\\}	xhcfmb
+zFMBtnDelete	\\\{#insert zFMBtnDelete\\\}	xhcfmb
+zFMBtnRename	\\\{#insert zFMBtnRename\\\}	xhcfmb
+zFMBtnTouch	\\\{#insert zFMBtnTouch\\\}	xhcfmb
+zFMBtnBrowse	\\\{#insert zFMBtnBrowse\\\}	xhcfmb
+zFMDlgClose	\\\{#insert zFMDlgClose\\\}	xhcfm
+zFMDlgOpenViaAltF	\\\{#insert zFMDlgOpenViaAltF\\\}	xhcfm
+zFcsTPFileManager	\\\{#insert zFcsTPFileManager\\\}	xhcfm
 (*       Save -- xhcfs   .   xhcf*)
 (*          Save as -- xhcfsa   .   xhcfs*)
-					zDirFileSaveAsNoOverwrite_M_dirFnm	\\\{#insert zDirFileSaveAsNoOverwrite_M_dirFnm\\\}	xhcfsa
-					zDirFileSaveAsWithOverwrite_M_dirFnm	\\\{#insert zDirFileSaveAsWithOverwrite_M_dirFnm\\\}	xhcfsa
-					zFcsTPFileSaveAs	\\\{#insert zFcsTPFileSaveAs\\\}	xhcfsa
-					zFileSaveAs1750slp	\\\{#insert zFileSaveAs1750slp\\\}	xhcfsa
-					zzDirFileSaveAsPreConfirm_M_dirFnm	\\\{#insert zzDirFileSaveAsPreConfirm_M_dirFnm\\\}	xhcfsa
-				Strip-trailing whitespace -- xhcfsw	.	xhcfs
-					zREoffDirFileStripSaveClose_M_dirFnm	\\\{#insert zREoffDirFileStripSaveClose_M_dirFnm\\\}	xhcfsw
-					zREoffDirFileStripSave_M_dirFnm	\\\{#insert zREoffDirFileStripSave_M_dirFnm\\\}	xhcfsw
-					zREoffStripSave	\\\{#insert zREoffStripSave\\\}	xhcfsw
-					zREoffStripSaveClose	\\\{#insert zREoffStripSaveClose\\\}	xhcfsw
-					zREoffStripTrailingWSFromDocIfNotAuto -- xhcfswa	\\\{#insert zREoffStripTrailingWSFromDocIfNotAuto\\\}	xhcfsw
-						zREoffStripTrailingWSFromDoc	\\\{#insert zREoffStripTrailingWSFromDoc\\\}	xhcfswa
-						zREonStripTrailingWSFromDoc	\\\{#insert zREonStripTrailingWSFromDoc\\\}	xhcfswa
-						zREonStripTrailingWSFromDocIfNotAuto	\\\{#insert zREonStripTrailingWSFromDocIfNotAuto\\\}	xhcfswa
-						zzMidRplcREStripTrailingWS	\\\{#insert zzMidRplcREStripTrailingWS\\\}	xhcfswa
-				zDirFileSaveClose_M_dirFnm	\\\{#insert zDirFileSaveClose_M_dirFnm\\\}	xhcfs
-				zDirFileSave_M_dirFnm	\\\{#insert zDirFileSave_M_dirFnm\\\}	xhcfs
-				zFcsTPFileSave	\\\{#insert zFcsTPFileSave\\\}	xhcfs
-				zFileSave1750slp	\\\{#insert zFileSave1750slp\\\}	xhcfs
-				zFileSaveClose	\\\{#insert zFileSaveClose\\\}	xhcfs
-				zzDirFileSavePreConfirm_M_dirFnm	\\\{#insert zzDirFileSavePreConfirm_M_dirFnm\\\}	xhcfs
-			zEscThenFcsTP**	\\\{#insert zEscThenFcsTP\\\}	xhcf
+zDirFileSaveAsNoOverwrite_M_dirFnm	\\\{#insert zDirFileSaveAsNoOverwrite_M_dirFnm\\\}	xhcfsa
+zDirFileSaveAsWithOverwrite_M_dirFnm	\\\{#insert zDirFileSaveAsWithOverwrite_M_dirFnm\\\}	xhcfsa
+zFcsTPFileSaveAs	\\\{#insert zFcsTPFileSaveAs\\\}	xhcfsa
+zFileSaveAs1750slp	\\\{#insert zFileSaveAs1750slp\\\}	xhcfsa
+zzDirFileSaveAsPreConfirm_M_dirFnm	\\\{#insert zzDirFileSaveAsPreConfirm_M_dirFnm\\\}	xhcfsa
+Strip-trailing whitespace -- xhcfsw	.	xhcfs
+zREoffDirFileStripSaveClose_M_dirFnm	\\\{#insert zREoffDirFileStripSaveClose_M_dirFnm\\\}	xhcfsw
+zREoffDirFileStripSave_M_dirFnm	\\\{#insert zREoffDirFileStripSave_M_dirFnm\\\}	xhcfsw
+zREoffStripSave	\\\{#insert zREoffStripSave\\\}	xhcfsw
+zREoffStripSaveClose	\\\{#insert zREoffStripSaveClose\\\}	xhcfsw
+zREoffStripTrailingWSFromDocIfNotAuto -- xhcfswa	\\\{#insert zREoffStripTrailingWSFromDocIfNotAuto\\\}	xhcfsw
+zREoffStripTrailingWSFromDoc	\\\{#insert zREoffStripTrailingWSFromDoc\\\}	xhcfswa
+zREonStripTrailingWSFromDoc	\\\{#insert zREonStripTrailingWSFromDoc\\\}	xhcfswa
+zREonStripTrailingWSFromDocIfNotAuto	\\\{#insert zREonStripTrailingWSFromDocIfNotAuto\\\}	xhcfswa
+zzMidRplcREStripTrailingWS	\\\{#insert zzMidRplcREStripTrailingWS\\\}	xhcfswa
+zDirFileSaveClose_M_dirFnm	\\\{#insert zDirFileSaveClose_M_dirFnm\\\}	xhcfs
+zDirFileSave_M_dirFnm	\\\{#insert zDirFileSave_M_dirFnm\\\}	xhcfs
+zFcsTPFileSave	\\\{#insert zFcsTPFileSave\\\}	xhcfs
+zFileSave1750slp	\\\{#insert zFileSave1750slp\\\}	xhcfs
+zFileSaveClose	\\\{#insert zFileSaveClose\\\}	xhcfs
+zzDirFileSavePreConfirm_M_dirFnm	\\\{#insert zzDirFileSavePreConfirm_M_dirFnm\\\}	xhcfs
+zEscThenFcsTP**	\\\{#insert zEscThenFcsTP\\\}	xhcf

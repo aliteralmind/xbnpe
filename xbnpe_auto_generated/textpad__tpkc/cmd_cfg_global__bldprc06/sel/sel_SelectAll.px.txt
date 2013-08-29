@@ -1,8 +1,0 @@
-zTpkcSelectAllAbrv1C	Slall	zTpkcSelectAllAbrv1C
-zTpkcSlallCmdNameTC	SelectAll	zTpkcSlallCmdNameTC
-zTpkcSlallDfltPhrsNm	zTPSelectAll	zTpkcSlallDfltPhrsNm
-zTpkcSlallCatForCmdAbrvLC	sel	zTpkcSlallCatForCmdAbrvLC
-zTpkcSlallCmdType_mcrTl		zTpkcSlallCmdType_mcrTl
-zTpkcSlallIsBtstrp_yes	yes	zTpkcSlallIsBtstrp_yes
-zTpkcSlallDfltPostKcSlpMils	250	zTpkcSlallDfltPostKcSlpMils
-zTpkcSlallStpsFrmCmdListTop	(*NOTHING. Top command in list*)	zTpkcSlallStpsFrmCmdListTop

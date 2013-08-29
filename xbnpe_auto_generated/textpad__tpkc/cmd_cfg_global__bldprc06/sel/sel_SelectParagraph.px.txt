@@ -1,8 +1,0 @@
-zTpkcSelectParagraphAbrv1C	Slpara	zTpkcSelectParagraphAbrv1C
-zTpkcSlparaCmdNameTC	SelectParagraph	zTpkcSlparaCmdNameTC
-zTpkcSlparaDfltPhrsNm	zTPSelectParagraph	zTpkcSlparaDfltPhrsNm
-zTpkcSlparaCatForCmdAbrvLC	sel	zTpkcSlparaCatForCmdAbrvLC
-zTpkcSlparaCmdType_mcrTl		zTpkcSlparaCmdType_mcrTl
-zTpkcSlparaIsBtstrp_yes		zTpkcSlparaIsBtstrp_yes
-zTpkcSlparaDfltPostKcSlpMils	10	zTpkcSlparaDfltPostKcSlpMils
-zTpkcSlparaStpsFrmCmdListTop	{#insert zPGDN}{#insert zDOWN}	zTpkcSlparaStpsFrmCmdListTop

@@ -1,8 +1,0 @@
-zTpkcEditLowerCaseAbrv1C	Elwc	zTpkcEditLowerCaseAbrv1C
-zTpkcElwcCmdNameTC	EditLowerCase	zTpkcElwcCmdNameTC
-zTpkcElwcDfltPhrsNm	zTPLowerCase	zTpkcElwcDfltPhrsNm
-zTpkcElwcCatForCmdAbrvLC	edit	zTpkcElwcCatForCmdAbrvLC
-zTpkcElwcCmdType_mcrTl		zTpkcElwcCmdType_mcrTl
-zTpkcElwcIsBtstrp_yes		zTpkcElwcIsBtstrp_yes
-zTpkcElwcDfltPostKcSlpMils	10	zTpkcElwcDfltPostKcSlpMils
-zTpkcElwcStpsFrmCmdListTop	{#insert zEND}{#insert zPGUP4}{#insert zDOWN}	zTpkcElwcStpsFrmCmdListTop

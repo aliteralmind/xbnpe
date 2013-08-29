@@ -1,8 +1,0 @@
-zTpkcEditCopyFileNameAbrv1C	Ecpfnm	zTpkcEditCopyFileNameAbrv1C
-zTpkcEcpfnmCmdNameTC	EditCopyFileName	zTpkcEcpfnmCmdNameTC
-zTpkcEcpfnmDfltPhrsNm	zTPCopyFileName	zTpkcEcpfnmDfltPhrsNm
-zTpkcEcpfnmCatForCmdAbrvLC	edit	zTpkcEcpfnmCatForCmdAbrvLC
-zTpkcEcpfnmCmdType_mcrTl		zTpkcEcpfnmCmdType_mcrTl
-zTpkcEcpfnmIsBtstrp_yes		zTpkcEcpfnmIsBtstrp_yes
-zTpkcEcpfnmDfltPostKcSlpMils	10	zTpkcEcpfnmDfltPostKcSlpMils
-zTpkcEcpfnmStpsFrmCmdListTop	{#insert zPGDN2}{#insert zUP}	zTpkcEcpfnmStpsFrmCmdListTop

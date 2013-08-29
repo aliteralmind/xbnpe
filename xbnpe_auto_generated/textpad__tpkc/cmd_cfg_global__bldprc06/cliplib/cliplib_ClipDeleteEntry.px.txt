@@ -1,8 +1,0 @@
-zTpkcClipDeleteEntryAbrv1C	Clde	zTpkcClipDeleteEntryAbrv1C
-zTpkcCldeCmdNameTC	ClipDeleteEntry	zTpkcCldeCmdNameTC
-zTpkcCldeDfltPhrsNm	zTPClipDeleteEntry	zTpkcCldeDfltPhrsNm
-zTpkcCldeCatForCmdAbrvLC	cliplib	zTpkcCldeCatForCmdAbrvLC
-zTpkcCldeCmdType_mcrTl		zTpkcCldeCmdType_mcrTl
-zTpkcCldeIsBtstrp_yes		zTpkcCldeIsBtstrp_yes
-zTpkcCldeDfltPostKcSlpMils	10	zTpkcCldeDfltPostKcSlpMils
-zTpkcCldeStpsFrmCmdListTop	{#insert zDOWN3}	zTpkcCldeStpsFrmCmdListTop

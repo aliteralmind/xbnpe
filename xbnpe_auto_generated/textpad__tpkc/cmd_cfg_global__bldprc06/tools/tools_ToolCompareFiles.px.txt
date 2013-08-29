@@ -1,8 +1,0 @@
-zTpkcToolCompareFilesAbrv1C	Tcmp	zTpkcToolCompareFilesAbrv1C
-zTpkcTcmpCmdNameTC	ToolCompareFiles	zTpkcTcmpCmdNameTC
-zTpkcTcmpDfltPhrsNm	zTPToolCompareFiles	zTpkcTcmpDfltPhrsNm
-zTpkcTcmpCatForCmdAbrvLC	tools	zTpkcTcmpCatForCmdAbrvLC
-zTpkcTcmpCmdType_mcrTl		zTpkcTcmpCmdType_mcrTl
-zTpkcTcmpIsBtstrp_yes		zTpkcTcmpIsBtstrp_yes
-zTpkcTcmpDfltPostKcSlpMils	10	zTpkcTcmpDfltPostKcSlpMils
-zTpkcTcmpStpsFrmCmdListTop	{#insert zEND}{#insert zPGUP}{#insert zUP2}	zTpkcTcmpStpsFrmCmdListTop

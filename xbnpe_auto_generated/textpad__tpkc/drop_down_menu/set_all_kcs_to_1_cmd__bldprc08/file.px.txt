@@ -10,7 +10,7 @@ FilePrint (zTPFilePrint, fprnt)	{#insert zvCMD_ABRV_1C_sfFilePrint}{#insert zTpk
 FilePrintAll (zTPFilePrintAll, fprnta)	{#insert zvCMD_ABRV_1C_sfFilePrintAll}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Fprnta
 FilePrintDefault (zTPFilePrintDefault, fprntd)	{#insert zvCMD_ABRV_1C_sfFilePrintDefault}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Fprntd
 FilePrintPreview (zTPFilePrintPreview, fprntprv)	{#insert zvCMD_ABRV_1C_sfFilePrintPreview}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Fprntprv
-FileQuickOpen (zTPFileQuickOpen, fqopn)	{#insert zvCMD_ABRV_1C_sfFileQuickOpen}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Fqopn
+FileQuickOpen (zTPFileQOpen, fqopn)	{#insert zvCMD_ABRV_1C_sfFileQuickOpen}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Fqopn
 FileRename (zTPFileRename, frenm)	{#insert zvCMD_ABRV_1C_sfFileRename}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Frenm
 FileRevert (zTPFileRevert, frvrt)	{#insert zvCMD_ABRV_1C_sfFileRevert}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Frvrt
 FileSave (zTPFileSave, fsv)	{#insert zvCMD_ABRV_1C_sfFileSave}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Fsv

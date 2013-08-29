@@ -1,8 +1,0 @@
-zTpkcToolExplorerAbrv1C	Txplr	zTpkcToolExplorerAbrv1C
-zTpkcTxplrCmdNameTC	ToolExplorer	zTpkcTxplrCmdNameTC
-zTpkcTxplrDfltPhrsNm	zTPToolExplorer	zTpkcTxplrDfltPhrsNm
-zTpkcTxplrCatForCmdAbrvLC	tools	zTpkcTxplrCatForCmdAbrvLC
-zTpkcTxplrCmdType_mcrTl		zTpkcTxplrCmdType_mcrTl
-zTpkcTxplrIsBtstrp_yes		zTpkcTxplrIsBtstrp_yes
-zTpkcTxplrDfltPostKcSlpMils	10	zTpkcTxplrDfltPostKcSlpMils
-zTpkcTxplrStpsFrmCmdListTop	{#insert zEND}{#insert zPGUP}{#insert zUP}	zTpkcTxplrStpsFrmCmdListTop

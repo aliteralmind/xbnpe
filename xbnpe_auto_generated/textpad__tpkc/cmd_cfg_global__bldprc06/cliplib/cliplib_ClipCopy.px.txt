@@ -1,8 +1,0 @@
-zTpkcClipCopyAbrv1C	Clcp	zTpkcClipCopyAbrv1C
-zTpkcClcpCmdNameTC	ClipCopy	zTpkcClcpCmdNameTC
-zTpkcClcpDfltPhrsNm	zTPClipCopy	zTpkcClcpDfltPhrsNm
-zTpkcClcpCatForCmdAbrvLC	cliplib	zTpkcClcpCatForCmdAbrvLC
-zTpkcClcpCmdType_mcrTl		zTpkcClcpCmdType_mcrTl
-zTpkcClcpIsBtstrp_yes		zTpkcClcpIsBtstrp_yes
-zTpkcClcpDfltPostKcSlpMils	5	zTpkcClcpDfltPostKcSlpMils
-zTpkcClcpStpsFrmCmdListTop	{#insert zDOWN}	zTpkcClcpStpsFrmCmdListTop

@@ -1,8 +1,0 @@
-zTpkcEditIndentMoreAbrv1C	Eindm	zTpkcEditIndentMoreAbrv1C
-zTpkcEindmCmdNameTC	EditIndentMore	zTpkcEindmCmdNameTC
-zTpkcEindmDfltPhrsNm	zTPIndent	zTpkcEindmDfltPhrsNm
-zTpkcEindmCatForCmdAbrvLC	edit	zTpkcEindmCatForCmdAbrvLC
-zTpkcEindmCmdType_mcrTl		zTpkcEindmCmdType_mcrTl
-zTpkcEindmIsBtstrp_yes		zTpkcEindmIsBtstrp_yes
-zTpkcEindmDfltPostKcSlpMils	20	zTpkcEindmDfltPostKcSlpMils
-zTpkcEindmStpsFrmCmdListTop	{#insert zPGDN6}	zTpkcEindmStpsFrmCmdListTop

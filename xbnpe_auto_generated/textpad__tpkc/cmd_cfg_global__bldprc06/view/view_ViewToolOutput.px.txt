@@ -1,8 +1,0 @@
-zTpkcViewToolOutputAbrv1C	Vtlout	zTpkcViewToolOutputAbrv1C
-zTpkcVtloutCmdNameTC	ViewToolOutput	zTpkcVtloutCmdNameTC
-zTpkcVtloutDfltPhrsNm	zTPViewToolOutput	zTpkcVtloutDfltPhrsNm
-zTpkcVtloutCatForCmdAbrvLC	view	zTpkcVtloutCatForCmdAbrvLC
-zTpkcVtloutCmdType_mcrTl		zTpkcVtloutCmdType_mcrTl
-zTpkcVtloutIsBtstrp_yes		zTpkcVtloutIsBtstrp_yes
-zTpkcVtloutDfltPostKcSlpMils	10	zTpkcVtloutDfltPostKcSlpMils
-zTpkcVtloutStpsFrmCmdListTop	{#insert zEND}{#insert zUP2}	zTpkcVtloutStpsFrmCmdListTop

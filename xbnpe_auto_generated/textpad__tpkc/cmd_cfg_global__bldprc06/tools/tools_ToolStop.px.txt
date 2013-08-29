@@ -1,8 +1,0 @@
-zTpkcToolStopAbrv1C	Tstp	zTpkcToolStopAbrv1C
-zTpkcTstpCmdNameTC	ToolStop	zTpkcTstpCmdNameTC
-zTpkcTstpDfltPhrsNm	zTPToolStop	zTpkcTstpDfltPhrsNm
-zTpkcTstpCatForCmdAbrvLC	tools	zTpkcTstpCatForCmdAbrvLC
-zTpkcTstpCmdType_mcrTl		zTpkcTstpCmdType_mcrTl
-zTpkcTstpIsBtstrp_yes		zTpkcTstpIsBtstrp_yes
-zTpkcTstpDfltPostKcSlpMils	10	zTpkcTstpDfltPostKcSlpMils
-zTpkcTstpStpsFrmCmdListTop	{#insert zEND}{#insert zUP}	zTpkcTstpStpsFrmCmdListTop

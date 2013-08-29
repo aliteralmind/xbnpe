@@ -1,8 +1,0 @@
-hobk -- hobk ALT KC	{#insert hobk}	hobk
-hobk1 -- Action: zvLINES_UP_st1, zHomeBkspN_M_vlnu	{#insert zvLINES_UP_st1}{#insert zHomeBkspN_M_vlnu}	hobk1
-hobkf -- inFo on this MINV-Command	{#SETPHRASE -description zvACTION_NM_1C -content Hobk -autotext zvACTION_NM_1C -folder ctvv_folder}{#insert zMnvCmdInformation_M_actm1}	hobkf
-hobkhm -- Phrase: [#SETPHRASE zvLINES_UP=[prompt]], zHomeBkspN_M_vlnu	{#insert zzMnvCmdHobkSetSntpMsg}{#insert zzMnvVarVlnuSetphraseWPrompt_M_sntpmsgp}{#insert zHomeBkspN_M_vlnup}	hobkhm
-hobkm -- Phrase: zHomeBkspN_M_vlnu	{#insert zHomeBkspN_M_vlnup}	hobkm
-hobkn -- Action: Set-num-to-prompt	{#insert zzMnvCmdHobkSetSntpMsg}{#insert zzMnvVarVlnuSetphraseWPrompt_M_sntpmsg}{#insert zHomeBkspN_M_vlnu}	hobkn
-hobktm -- Phrase: zvLINES_UP_st[prompt], zHomeBkspN_M_vlnu	{#insert zzMnvCmdHobkSetSntpMsg}{#insert zzMnvVarVlnuSetToNumWPrompt_M_sntpmsgp}{#insert zHomeBkspN_M_vlnup}	hobktm
-zzMnvCmdHobkSetSntpMsg	{#SETPHRASE -description zvSNT_PROMPT_MSG -content {#insert zzMnvCmdHobkSNTPromptActnMsg} -autotext zvSNT_PROMPT_MSG -folder ctvv_folder}	zzMnvCmdHobkSetSntpMsg

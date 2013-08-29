@@ -1,8 +1,0 @@
-zTpkcWordLeftEndAbrv1C	Crwdle	zTpkcWordLeftEndAbrv1C
-zTpkcCrwdleCmdNameTC	WordLeftEnd	zTpkcCrwdleCmdNameTC
-zTpkcCrwdleDfltPhrsNm	zTPWordLeftEnd	zTpkcCrwdleDfltPhrsNm
-zTpkcCrwdleCatForCmdAbrvLC	cursor	zTpkcCrwdleCatForCmdAbrvLC
-zTpkcCrwdleCmdType_mcrTl		zTpkcCrwdleCmdType_mcrTl
-zTpkcCrwdleIsBtstrp_yes		zTpkcCrwdleIsBtstrp_yes
-zTpkcCrwdleDfltPostKcSlpMils	1	zTpkcCrwdleDfltPostKcSlpMils
-zTpkcCrwdleStpsFrmCmdListTop	{#NONE -chars w -count 2}{#insert z5ThnTSlp}	zTpkcCrwdleStpsFrmCmdListTop

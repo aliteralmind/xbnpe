@@ -1,8 +1,0 @@
-zTpkcViewFullPathsAbrv1C	Vflpth	zTpkcViewFullPathsAbrv1C
-zTpkcVflpthCmdNameTC	ViewFullPaths	zTpkcVflpthCmdNameTC
-zTpkcVflpthDfltPhrsNm	zTPViewFullPaths	zTpkcVflpthDfltPhrsNm
-zTpkcVflpthCatForCmdAbrvLC	view	zTpkcVflpthCatForCmdAbrvLC
-zTpkcVflpthCmdType_mcrTl		zTpkcVflpthCmdType_mcrTl
-zTpkcVflpthIsBtstrp_yes		zTpkcVflpthIsBtstrp_yes
-zTpkcVflpthDfltPostKcSlpMils	10	zTpkcVflpthDfltPostKcSlpMils
-zTpkcVflpthStpsFrmCmdListTop	{#insert zPGDN2}{#insert zUP}	zTpkcVflpthStpsFrmCmdListTop

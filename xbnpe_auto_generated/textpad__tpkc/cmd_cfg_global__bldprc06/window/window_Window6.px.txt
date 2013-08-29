@@ -1,8 +1,0 @@
-zTpkcWindow6Abrv1C	Win6	zTpkcWindow6Abrv1C
-zTpkcWin6CmdNameTC	Window6	zTpkcWin6CmdNameTC
-zTpkcWin6DfltPhrsNm	zTPGTWin6	zTpkcWin6DfltPhrsNm
-zTpkcWin6CatForCmdAbrvLC	window	zTpkcWin6CatForCmdAbrvLC
-zTpkcWin6CmdType_mcrTl		zTpkcWin6CmdType_mcrTl
-zTpkcWin6IsBtstrp_yes		zTpkcWin6IsBtstrp_yes
-zTpkcWin6DfltPostKcSlpMils	10	zTpkcWin6DfltPostKcSlpMils
-zTpkcWin6StpsFrmCmdListTop	{#insert zPGDN}	zTpkcWin6StpsFrmCmdListTop

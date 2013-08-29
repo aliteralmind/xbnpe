@@ -1,8 +1,0 @@
-zTpkcGoToPageAbrv1C	Crgtp	zTpkcGoToPageAbrv1C
-zTpkcCrgtpCmdNameTC	GoToPage	zTpkcCrgtpCmdNameTC
-zTpkcCrgtpDfltPhrsNm	zTPGoToPage	zTpkcCrgtpDfltPhrsNm
-zTpkcCrgtpCatForCmdAbrvLC	cursor	zTpkcCrgtpCatForCmdAbrvLC
-zTpkcCrgtpCmdType_mcrTl		zTpkcCrgtpCmdType_mcrTl
-zTpkcCrgtpIsBtstrp_yes		zTpkcCrgtpIsBtstrp_yes
-zTpkcCrgtpDfltPostKcSlpMils	50	zTpkcCrgtpDfltPostKcSlpMils
-zTpkcCrgtpStpsFrmCmdListTop	{#insert zPGDN2}	zTpkcCrgtpStpsFrmCmdListTop

@@ -1,8 +1,0 @@
-zTpkcEditDeleteAbrv1C	Edl	zTpkcEditDeleteAbrv1C
-zTpkcEdlCmdNameTC	EditDelete	zTpkcEdlCmdNameTC
-zTpkcEdlDfltPhrsNm	zTPDeleteR1c	zTpkcEdlDfltPhrsNm
-zTpkcEdlCatForCmdAbrvLC	edit	zTpkcEdlCatForCmdAbrvLC
-zTpkcEdlCmdType_mcrTl		zTpkcEdlCmdType_mcrTl
-zTpkcEdlIsBtstrp_yes		zTpkcEdlIsBtstrp_yes
-zTpkcEdlDfltPostKcSlpMils	10	zTpkcEdlDfltPostKcSlpMils
-zTpkcEdlStpsFrmCmdListTop	{#insert zPGDN4}	zTpkcEdlStpsFrmCmdListTop

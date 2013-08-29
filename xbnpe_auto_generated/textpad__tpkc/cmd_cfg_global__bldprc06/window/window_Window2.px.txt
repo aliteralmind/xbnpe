@@ -1,8 +1,0 @@
-zTpkcWindow2Abrv1C	Win2	zTpkcWindow2Abrv1C
-zTpkcWin2CmdNameTC	Window2	zTpkcWin2CmdNameTC
-zTpkcWin2DfltPhrsNm	zTPGTWin2	zTpkcWin2DfltPhrsNm
-zTpkcWin2CatForCmdAbrvLC	window	zTpkcWin2CatForCmdAbrvLC
-zTpkcWin2CmdType_mcrTl		zTpkcWin2CmdType_mcrTl
-zTpkcWin2IsBtstrp_yes		zTpkcWin2IsBtstrp_yes
-zTpkcWin2DfltPostKcSlpMils	10	zTpkcWin2DfltPostKcSlpMils
-zTpkcWin2StpsFrmCmdListTop	{#insert zDOWN2}	zTpkcWin2StpsFrmCmdListTop

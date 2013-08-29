@@ -1,8 +1,0 @@
-zTpkcEditRedoAbrv1C	Erdo	zTpkcEditRedoAbrv1C
-zTpkcErdoCmdNameTC	EditRedo	zTpkcErdoCmdNameTC
-zTpkcErdoDfltPhrsNm	zTPRedo	zTpkcErdoDfltPhrsNm
-zTpkcErdoCatForCmdAbrvLC	edit	zTpkcErdoCatForCmdAbrvLC
-zTpkcErdoCmdType_mcrTl		zTpkcErdoCmdType_mcrTl
-zTpkcErdoIsBtstrp_yes		zTpkcErdoIsBtstrp_yes
-zTpkcErdoDfltPostKcSlpMils	10	zTpkcErdoDfltPostKcSlpMils
-zTpkcErdoStpsFrmCmdListTop	{#insert zEND}{#insert zPGUP2}	zTpkcErdoStpsFrmCmdListTop

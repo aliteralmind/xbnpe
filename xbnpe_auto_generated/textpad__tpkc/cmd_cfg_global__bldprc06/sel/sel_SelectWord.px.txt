@@ -1,8 +1,0 @@
-zTpkcSelectWordAbrv1C	Slwd	zTpkcSelectWordAbrv1C
-zTpkcSlwdCmdNameTC	SelectWord	zTpkcSlwdCmdNameTC
-zTpkcSlwdDfltPhrsNm	zTPSelectWord	zTpkcSlwdDfltPhrsNm
-zTpkcSlwdCatForCmdAbrvLC	sel	zTpkcSlwdCatForCmdAbrvLC
-zTpkcSlwdCmdType_mcrTl		zTpkcSlwdCmdType_mcrTl
-zTpkcSlwdIsBtstrp_yes		zTpkcSlwdIsBtstrp_yes
-zTpkcSlwdDfltPostKcSlpMils	10	zTpkcSlwdDfltPostKcSlpMils
-zTpkcSlwdStpsFrmCmdListTop	{#insert zEND}	zTpkcSlwdStpsFrmCmdListTop

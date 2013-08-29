@@ -1,8 +1,0 @@
-zTpkcClipCloseAbrv1C	Clcls	zTpkcClipCloseAbrv1C
-zTpkcClclsCmdNameTC	ClipClose	zTpkcClclsCmdNameTC
-zTpkcClclsDfltPhrsNm	zTPClipClose	zTpkcClclsDfltPhrsNm
-zTpkcClclsCatForCmdAbrvLC	cliplib	zTpkcClclsCatForCmdAbrvLC
-zTpkcClclsCmdType_mcrTl		zTpkcClclsCmdType_mcrTl
-zTpkcClclsIsBtstrp_yes		zTpkcClclsIsBtstrp_yes
-zTpkcClclsDfltPostKcSlpMils	10	zTpkcClclsDfltPostKcSlpMils
-zTpkcClclsStpsFrmCmdListTop	(*NOTHING. Top command in list*)	zTpkcClclsStpsFrmCmdListTop

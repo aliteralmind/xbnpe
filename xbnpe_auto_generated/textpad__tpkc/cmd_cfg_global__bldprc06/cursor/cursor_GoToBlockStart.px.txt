@@ -1,8 +1,0 @@
-zTpkcGoToBlockStartAbrv1C	Crblks	zTpkcGoToBlockStartAbrv1C
-zTpkcCrblksCmdNameTC	GoToBlockStart	zTpkcCrblksCmdNameTC
-zTpkcCrblksDfltPhrsNm	zTPGoToBlockStart	zTpkcCrblksDfltPhrsNm
-zTpkcCrblksCatForCmdAbrvLC	cursor	zTpkcCrblksCatForCmdAbrvLC
-zTpkcCrblksCmdType_mcrTl		zTpkcCrblksCmdType_mcrTl
-zTpkcCrblksIsBtstrp_yes		zTpkcCrblksIsBtstrp_yes
-zTpkcCrblksDfltPostKcSlpMils	10	zTpkcCrblksDfltPostKcSlpMils
-zTpkcCrblksStpsFrmCmdListTop	{#insert zPGDN}{#insert zDOWN3}	zTpkcCrblksStpsFrmCmdListTop

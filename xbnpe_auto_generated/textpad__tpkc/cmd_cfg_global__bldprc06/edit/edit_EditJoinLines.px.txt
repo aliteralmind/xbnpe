@@ -1,8 +1,0 @@
-zTpkcEditJoinLinesAbrv1C	Ejlns	zTpkcEditJoinLinesAbrv1C
-zTpkcEjlnsCmdNameTC	EditJoinLines	zTpkcEjlnsCmdNameTC
-zTpkcEjlnsDfltPhrsNm	zTPJoinLines	zTpkcEjlnsDfltPhrsNm
-zTpkcEjlnsCatForCmdAbrvLC	edit	zTpkcEjlnsCatForCmdAbrvLC
-zTpkcEjlnsCmdType_mcrTl		zTpkcEjlnsCmdType_mcrTl
-zTpkcEjlnsIsBtstrp_yes		zTpkcEjlnsIsBtstrp_yes
-zTpkcEjlnsDfltPostKcSlpMils	10	zTpkcEjlnsDfltPostKcSlpMils
-zTpkcEjlnsStpsFrmCmdListTop	{#insert zEND}{#insert zPGUP4}{#insert zUP}	zTpkcEjlnsStpsFrmCmdListTop

@@ -1,8 +1,0 @@
-zTpkcEditInvertCaseAbrv1C	Einvcs	zTpkcEditInvertCaseAbrv1C
-zTpkcEinvcsCmdNameTC	EditInvertCase	zTpkcEinvcsCmdNameTC
-zTpkcEinvcsDfltPhrsNm	zTPToggleCase	zTpkcEinvcsDfltPhrsNm
-zTpkcEinvcsCatForCmdAbrvLC	edit	zTpkcEinvcsCatForCmdAbrvLC
-zTpkcEinvcsCmdType_mcrTl		zTpkcEinvcsCmdType_mcrTl
-zTpkcEinvcsIsBtstrp_yes		zTpkcEinvcsIsBtstrp_yes
-zTpkcEinvcsDfltPostKcSlpMils	10	zTpkcEinvcsDfltPostKcSlpMils
-zTpkcEinvcsStpsFrmCmdListTop	{#insert zEND}{#insert zPGUP4}{#insert zUP2}	zTpkcEinvcsStpsFrmCmdListTop

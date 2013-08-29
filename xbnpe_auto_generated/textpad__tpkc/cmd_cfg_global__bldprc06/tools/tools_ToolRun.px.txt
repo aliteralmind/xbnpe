@@ -1,8 +1,0 @@
-zTpkcToolRunAbrv1C	Trun	zTpkcToolRunAbrv1C
-zTpkcTrunCmdNameTC	ToolRun	zTpkcTrunCmdNameTC
-zTpkcTrunDfltPhrsNm	zTPToolRun	zTpkcTrunDfltPhrsNm
-zTpkcTrunCatForCmdAbrvLC	tools	zTpkcTrunCatForCmdAbrvLC
-zTpkcTrunCmdType_mcrTl		zTpkcTrunCmdType_mcrTl
-zTpkcTrunIsBtstrp_yes		zTpkcTrunIsBtstrp_yes
-zTpkcTrunDfltPostKcSlpMils	10	zTpkcTrunDfltPostKcSlpMils
-zTpkcTrunStpsFrmCmdListTop	{#insert zEND}{#insert zPGUP}{#insert zDOWN2}	zTpkcTrunStpsFrmCmdListTop

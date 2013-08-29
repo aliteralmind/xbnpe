@@ -1,8 +1,0 @@
-zTpkcWindowSplitAbrv1C	Winsplt	zTpkcWindowSplitAbrv1C
-zTpkcWinspltCmdNameTC	WindowSplit	zTpkcWinspltCmdNameTC
-zTpkcWinspltDfltPhrsNm	zTPWindowSplit	zTpkcWinspltDfltPhrsNm
-zTpkcWinspltCatForCmdAbrvLC	window	zTpkcWinspltCatForCmdAbrvLC
-zTpkcWinspltCmdType_mcrTl		zTpkcWinspltCmdType_mcrTl
-zTpkcWinspltIsBtstrp_yes		zTpkcWinspltIsBtstrp_yes
-zTpkcWinspltDfltPostKcSlpMils	10	zTpkcWinspltDfltPostKcSlpMils
-zTpkcWinspltStpsFrmCmdListTop	{#insert zPGDN3}{#insert zUP2}	zTpkcWinspltStpsFrmCmdListTop

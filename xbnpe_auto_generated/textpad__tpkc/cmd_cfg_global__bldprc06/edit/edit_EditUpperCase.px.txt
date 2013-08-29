@@ -1,8 +1,0 @@
-zTpkcEditUpperCaseAbrv1C	Euprcs	zTpkcEditUpperCaseAbrv1C
-zTpkcEuprcsCmdNameTC	EditUpperCase	zTpkcEuprcsCmdNameTC
-zTpkcEuprcsDfltPhrsNm	zTPUpperCase	zTpkcEuprcsDfltPhrsNm
-zTpkcEuprcsCatForCmdAbrvLC	edit	zTpkcEuprcsCatForCmdAbrvLC
-zTpkcEuprcsCmdType_mcrTl		zTpkcEuprcsCmdType_mcrTl
-zTpkcEuprcsIsBtstrp_yes		zTpkcEuprcsIsBtstrp_yes
-zTpkcEuprcsDfltPostKcSlpMils	10	zTpkcEuprcsDfltPostKcSlpMils
-zTpkcEuprcsStpsFrmCmdListTop	{#insert zEND}{#insert zUP}	zTpkcEuprcsStpsFrmCmdListTop

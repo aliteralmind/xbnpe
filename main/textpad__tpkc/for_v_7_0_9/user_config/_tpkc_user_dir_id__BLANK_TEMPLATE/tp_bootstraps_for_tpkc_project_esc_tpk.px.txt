@@ -1,25 +1,27 @@
 __XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress: Large set of generically useful scripting tools for MS Windows, written in PhraseExpress and TextPad.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
-zTPBookmarkCopyAllEsc	XXX	zTPBookmarkCopyAllEsc
+zTPBookmarkCopyAllEsc	XXX\\\{#sleep 10\\\}	zTPBookmarkCopyAllEsc
 zTPBookmarkCopyAllTPKeys	XXX	zTPBookmarkCopyAllTPKeys
-zTPBookmarkCutAllEsc	XXX	zTPBookmarkCutAllEsc
+zTPBookmarkCutAllEsc	XXX\\\{#sleep 10\\\}	zTPBookmarkCutAllEsc
 zTPBookmarkCutAllTPKeys	XXX	zTPBookmarkCutAllTPKeys
-zTPBookmarkGTNextEsc	XXX	zTPBookmarkGTNextEsc
+zTPBookmarkGTNextEsc	XXX\\\{#sleep 100\\\}	zTPBookmarkGTNextEsc
 zTPBookmarkGTNextTPKeys	XXX	zTPBookmarkGTNextTPKeys
-zTPFFindDlgOpenEsc	XXX	zTPFFindDlgOpenEsc
+zTPBookmarkToggleEsc	XXX\\\{#sleep 10\\\}	zTPBookmarkToggleEsc
+zTPBookmarkToggleTPKeys	XXX	zTPBookmarkToggleTPKeys
+zTPFFindDlgOpenEsc	XXX\\\{#sleep 50\\\}	zTPFFindDlgOpenEsc
 zTPFFindDlgOpenTPKeys	XXX	zTPFFindDlgOpenTPKeys
-zTPFileManagerEsc	XXX	zTPFileManagerEsc
+zTPFileManagerEsc	XXX\\\{#sleep 50\\\}	zTPFileManagerEsc
 zTPFileManagerTPKeys	XXX	zTPFileManagerTPKeys
-zTPFileOpenEsc	XXX	zTPFileOpenEsc
+zTPFileOpenEsc	XXX\\\{#sleep 10\\\}XXX\\\{#sleep 1500\\\}	zTPFileOpenEsc
 zTPFileOpenTPKeys	XXX	zTPFileOpenTPKeys
-zTPFileQOpenEsc	XXX	zTPFileQOpenEsc
+zTPFileQOpenEsc	XXX\\\{#sleep 50\\\}	zTPFileQOpenEsc
 zTPFileQOpenTPKeys	XXX	zTPFileQOpenTPKeys
-zTPFindDlgOpenEsc	XXX	zTPFindDlgOpenEsc
+zTPFindDlgOpenEsc	XXX\\\{#sleep 50\\\}	zTPFindDlgOpenEsc
 zTPFindDlgOpenTPKeys	XXX	zTPFindDlgOpenTPKeys
-zTPFindNextEsc	XXX	zTPFindNextEsc
+zTPFindNextEsc	XXX\\\{#sleep 15\\\}	zTPFindNextEsc
 zTPFindNextTPKeys	XXX	zTPFindNextTPKeys
-zTPGTDlgOpenEsc	XXX	zTPGTDlgOpenEsc
+zTPGTDlgOpenEsc	XXX\\\{#sleep 50\\\}	zTPGTDlgOpenEsc
 zTPGTDlgOpenTPKeys	XXX	zTPGTDlgOpenTPKeys
-zTPPrefsDlgOpenEsc	XXX	zTPPrefsDlgOpenEsc
+zTPPrefsDlgOpenEsc	XXX\\\{#sleep 50\\\}XXX\\\{#sleep 50\\\}	zTPPrefsDlgOpenEsc
 zTPPrefsDlgOpenTPKeys	XXX	zTPPrefsDlgOpenTPKeys
-zTPRplcDlgOpenEsc	XXX	zTPRplcDlgOpenEsc
+zTPRplcDlgOpenEsc	XXX\\\{#sleep 50\\\}	zTPRplcDlgOpenEsc
 zTPRplcDlgOpenTPKeys	XXX	zTPRplcDlgOpenTPKeys

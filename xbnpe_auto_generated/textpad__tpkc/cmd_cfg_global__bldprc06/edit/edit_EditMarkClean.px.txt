@@ -1,8 +1,0 @@
-zTpkcEditMarkCleanAbrv1C	Emkcln	zTpkcEditMarkCleanAbrv1C
-zTpkcEmkclnCmdNameTC	EditMarkClean	zTpkcEmkclnCmdNameTC
-zTpkcEmkclnDfltPhrsNm	zTPMarkClean	zTpkcEmkclnDfltPhrsNm
-zTpkcEmkclnCatForCmdAbrvLC	edit	zTpkcEmkclnCatForCmdAbrvLC
-zTpkcEmkclnCmdType_mcrTl		zTpkcEmkclnCmdType_mcrTl
-zTpkcEmkclnIsBtstrp_yes		zTpkcEmkclnIsBtstrp_yes
-zTpkcEmkclnDfltPostKcSlpMils	10	zTpkcEmkclnDfltPostKcSlpMils
-zTpkcEmkclnStpsFrmCmdListTop	{#insert zEND}{#insert zPGUP4}{#insert zDOWN2}	zTpkcEmkclnStpsFrmCmdListTop

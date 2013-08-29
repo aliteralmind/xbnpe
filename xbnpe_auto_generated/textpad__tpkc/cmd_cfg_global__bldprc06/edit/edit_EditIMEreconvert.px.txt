@@ -1,8 +1,0 @@
-zTpkcEditIMEreconvertAbrv1C	Eimerc	zTpkcEditIMEreconvertAbrv1C
-zTpkcEimercCmdNameTC	EditIMEreconvert	zTpkcEimercCmdNameTC
-zTpkcEimercDfltPhrsNm	zTPIMEreconvert	zTpkcEimercDfltPhrsNm
-zTpkcEimercCatForCmdAbrvLC	edit	zTpkcEimercCatForCmdAbrvLC
-zTpkcEimercCmdType_mcrTl		zTpkcEimercCmdType_mcrTl
-zTpkcEimercIsBtstrp_yes		zTpkcEimercIsBtstrp_yes
-zTpkcEimercDfltPostKcSlpMils	10	zTpkcEimercDfltPostKcSlpMils
-zTpkcEimercStpsFrmCmdListTop	{#insert zPGDN6}{#insert zUP2}	zTpkcEimercStpsFrmCmdListTop

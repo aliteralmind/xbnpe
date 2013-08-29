@@ -1,8 +1,0 @@
-zTpkcWindowCascadeAbrv1C	Wincsc	zTpkcWindowCascadeAbrv1C
-zTpkcWincscCmdNameTC	WindowCascade	zTpkcWincscCmdNameTC
-zTpkcWincscDfltPhrsNm	zTPWindowCascade	zTpkcWincscDfltPhrsNm
-zTpkcWincscCatForCmdAbrvLC	window	zTpkcWincscCatForCmdAbrvLC
-zTpkcWincscCmdType_mcrTl		zTpkcWincscCmdType_mcrTl
-zTpkcWincscIsBtstrp_yes		zTpkcWincscIsBtstrp_yes
-zTpkcWincscDfltPostKcSlpMils	10	zTpkcWincscDfltPostKcSlpMils
-zTpkcWincscStpsFrmCmdListTop	{#insert zPGDN2}{#insert zUP}	zTpkcWincscStpsFrmCmdListTop

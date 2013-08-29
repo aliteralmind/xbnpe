@@ -2,7 +2,6 @@ __XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress: Large se
 __README__	These bootstraps depend on NOTHING else		(*Two tabs to force NO autotext*)
 z5000slp -- Useful for COND target, which MUST be a phrase NAME 	{#sleep 5000}	z5000slp
 z5ThnTSlp	{#sleep 5}{#insert zTSlp}	z5ThnTSlp
-zEtr100slp	{#insert zzEnterTSlp}{#sleep 100}	zEtr100slp
-zKSlpEtr	{#sleep 1000}{#insert zzEnterTSlp}	zKSlpEtr
+zEtr100slp	{#insert zENTER}{#sleep 100}	zEtr100slp
+zKSlpEtr	{#sleep 1000}{#insert zENTER}	zKSlpEtr
 zKSlpEtrKSlp	{#insert zKSlpEtr}{#sleep 1000}	zKSlpEtrKSlp
-zzEnterTSlp	{#ENTER}{#insert zTSlp}	zzEnterTSlp

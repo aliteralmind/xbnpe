@@ -1,8 +1,0 @@
-zTpkcEditShortDateAbrv1C	Eshrtdt	zTpkcEditShortDateAbrv1C
-zTpkcEshrtdtCmdNameTC	EditShortDate	zTpkcEshrtdtCmdNameTC
-zTpkcEshrtdtDfltPhrsNm	zTPShortDate	zTpkcEshrtdtDfltPhrsNm
-zTpkcEshrtdtCatForCmdAbrvLC	edit	zTpkcEshrtdtCatForCmdAbrvLC
-zTpkcEshrtdtCmdType_mcrTl		zTpkcEshrtdtCmdType_mcrTl
-zTpkcEshrtdtIsBtstrp_yes		zTpkcEshrtdtIsBtstrp_yes
-zTpkcEshrtdtDfltPostKcSlpMils	10	zTpkcEshrtdtDfltPostKcSlpMils
-zTpkcEshrtdtStpsFrmCmdListTop	{#insert zEND}{#insert zPGUP}{#insert zUP2}	zTpkcEshrtdtStpsFrmCmdListTop

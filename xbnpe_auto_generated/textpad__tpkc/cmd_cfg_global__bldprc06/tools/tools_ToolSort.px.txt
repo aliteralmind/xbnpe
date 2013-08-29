@@ -1,8 +1,0 @@
-zTpkcToolSortAbrv1C	Tsrt	zTpkcToolSortAbrv1C
-zTpkcTsrtCmdNameTC	ToolSort	zTpkcTsrtCmdNameTC
-zTpkcTsrtDfltPhrsNm	zTPSortDlgOpen	zTpkcTsrtDfltPhrsNm
-zTpkcTsrtCatForCmdAbrvLC	tools	zTpkcTsrtCatForCmdAbrvLC
-zTpkcTsrtCmdType_mcrTl		zTpkcTsrtCmdType_mcrTl
-zTpkcTsrtIsBtstrp_yes		zTpkcTsrtIsBtstrp_yes
-zTpkcTsrtDfltPostKcSlpMils	10	zTpkcTsrtDfltPostKcSlpMils
-zTpkcTsrtStpsFrmCmdListTop	{#insert zEND}{#insert zUP3}	zTpkcTsrtStpsFrmCmdListTop

@@ -1,8 +1,0 @@
-zTpkcSelectCancelAbrv1C	Slcnl	zTpkcSelectCancelAbrv1C
-zTpkcSlcnlCmdNameTC	SelectCancel	zTpkcSlcnlCmdNameTC
-zTpkcSlcnlDfltPhrsNm	zTPSelCancel	zTpkcSlcnlDfltPhrsNm
-zTpkcSlcnlCatForCmdAbrvLC	sel	zTpkcSlcnlCatForCmdAbrvLC
-zTpkcSlcnlCmdType_mcrTl		zTpkcSlcnlCmdType_mcrTl
-zTpkcSlcnlIsBtstrp_yes		zTpkcSlcnlIsBtstrp_yes
-zTpkcSlcnlDfltPostKcSlpMils	10	zTpkcSlcnlDfltPostKcSlpMils
-zTpkcSlcnlStpsFrmCmdListTop	{#insert zPGDN}{#insert zUP2}	zTpkcSlcnlStpsFrmCmdListTop

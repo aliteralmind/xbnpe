@@ -1,8 +1,0 @@
-zTpkcCharLeftAbrv1C	Crl	zTpkcCharLeftAbrv1C
-zTpkcCrlCmdNameTC	CharLeft	zTpkcCrlCmdNameTC
-zTpkcCrlDfltPhrsNm	zTPMoveL1c	zTpkcCrlDfltPhrsNm
-zTpkcCrlCatForCmdAbrvLC	cursor	zTpkcCrlCatForCmdAbrvLC
-zTpkcCrlCmdType_mcrTl		zTpkcCrlCmdType_mcrTl
-zTpkcCrlIsBtstrp_yes		zTpkcCrlIsBtstrp_yes
-zTpkcCrlDfltPostKcSlpMils	1	zTpkcCrlDfltPostKcSlpMils
-zTpkcCrlStpsFrmCmdListTop	(*NOTHING. Top command in list*)	zTpkcCrlStpsFrmCmdListTop

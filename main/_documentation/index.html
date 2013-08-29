@@ -10,7 +10,8 @@
 <HR/>
 
 <P><SPAN STYLE="background-color:#E1E1E1;"><UL>
-	<LI>GitHub: <A HREF="http://github.com/aliteralmind/xbnpe"><B>XBNPE project page</B></A>, <A HREF="https://github.com/aliteralmind/xbnpe/issues">Issue tracker</A>, <A HREF="https://github.com/aliteralmind/xbnpe/wiki">Wiki</A>, <A HREF="https://github.com/aliteralmind/xbnpe/archive/master.zip">latest download</A> (~8.5mb zip)</LI>
+	<LI>GitHub: <A HREF="http://github.com/aliteralmind/xbnpe"><B>XBNPE project page</B></A>, <A HREF="https://github.com/aliteralmind/xbnpe/issues">Issue tracker</A>, <A HREF="https://github.com/aliteralmind/xbnpe/wiki">Wiki</A></LI>
+	<LI><CODE>[<A HREF="#downloads">go</A>]</CODE> &nbsp; XBNPE downloads</LI>
 	<LI><CODE>[<A HREF="http://forums.delphiforums.com/xbnpe">go</A>]</CODE> &nbsp; User-discussion forum</LI>
 	<LI><CODE>[<A HREF="http://xbnpe.jeffyepstein.com">go</A>]</CODE> &nbsp; The most-up-to-date documentation</LI>
 	<LI><CODE>[<A HREF="#lpgl">go</A>]</CODE> &nbsp; XBN-PhraseExpress is released under the <B><U>LPGL 2.1</U></B> <A HREF="../../LICENSE.txt">Full license text</A></LI>
@@ -18,12 +19,13 @@
 
 <HR/>
 
-<P>XBN-PhraseExpress is a large set of generically useful MS Windows scripting tools, written in PhraseExpress and <A HREF="http://textpad.com">TextPad</A>. <A HREF="http://textpad.com">TextPad</A> is the plain-text editor written by Helios Software Solutions. XBNPE is significantly for <I>creating</I> phrases in TextPad--and therefore most phrases are logically only-callable in TextPad. There are, however, many useful features for those developing phrases in any environment, including the PhraseExpress application itself.</P>
+<P>XBN-PhraseExpress is a large set of generically useful MS Windows scripting tools written in PhraseExpress, using <A HREF="http://textpad.com">TextPad</A> as its foundation. TextPad is the plain-text editor written by Helios Software Solutions. XBNPE is significantly for <I>creating</I> phrases in TextPad--and therefore most phrases are logically only-callable in TextPad. There are, however, many useful features for those developing phrases in any environment, including the PhraseExpress application itself.</P>
 
 <P>There is a significant setup necessary in order for XBN-PhraseExpress and TextPad to communicate properly, but it is largely a one-time-only process.</P>
 
-<P><B>XBNPE overview:</B><UL>
+<P><B>XBNPE basics:</B><UL>
 	<LI><CODE>[<A HREF="pex_in_textpad.html">go</A>]</CODE> &nbsp; I only edit my phrases in TextPad <I>(also defines <A HREF="pex_in_textpad.html#tpbs">TextPad-bootstraps</A>)</I></LI>
+	<LI><CODE>[<A HREF="#dircfg">go</A>]</CODE> &nbsp; Global directory configuration</LI>
 	<LI><CODE>[<A HREF="#glblcfg">go</A>]</CODE> &nbsp; XBN-PhraseExpress: global configuration</LI>
 	<LI><CODE>[<A HREF="xbnpe_key_presses__xkp.html">go</A>]</CODE> &nbsp; XBNPE-Key-Presses (XKP)</LI>
 	<LI><CODE>[<A HREF="textpad__tpkc/index.html">go</A>]</CODE> &nbsp; TextPad built-in commands (TPKC) project</LI>
@@ -87,12 +89,55 @@
 
 <P>Configure global directories:</P>
 
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="dircfg"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; XBN-PhraseExpress: Global directory configuration</H2>
+
+<P><B>Your XBNPE global-directory-configuration file:</B>
+<BR> &nbsp; &nbsp; <CODE><A HREF="../xbnpe_xkp/configuration/xbnpe__directory_config_edit_this.px.txt">../xbnpe_xkp/configuration/xbnpe__directory_config_edit_this.px.txt</A></CODE>
+<BR><I>If you copy this url (via right-click), it can be pasted directly into TextPad's open dialog.</I></P>
+
+<P>There is one primary, and one recommended directory to configure into XBN-PhraseExpress.</P>
+
+<H3>Requirements</H3>
+
+<P>All directory-path values, in this or in any directory-configuration variables throughout XBN-PhraseExpress:<UL>
+	<LI>Must end with a down-right slash (<CODE>'\'</CODE>).</LI>
+	<LI>May <I>not</I> be surrounded by double-quotes (<CODE>'<B>&quot;</B>'</CODE>). This implies that any characters (such as spaces) normally requiring the path be surrounded by double-quotes are unacceptable.</LI>
+	<LI>May not contain any <CODE>(*comments*)</CODE> in the phrase-body.</LI>
+</UL></P>
+
+<H2><CODE>zROOT_DIR_XBNPE_PARENT</CODE></H2>
+
+<P>The parent directory in which <CODE>xbnpe</CODE> source-code root was installed. Such as:
+<BR> &nbsp; &nbsp; <CODE>C:\programming\phrase_express\</CODE>
+<BR>Using this example, the TextPad built-in command (TPKC) project-root is
+<BR> &nbsp; &nbsp; <CODE>C:\programming\phrase_express\xbnpe\main\textpad__tpkc\</CODE></P>
+
+<P>This value is critical to most XBN-PhraseExpress projects. The TPKC-build process will not function without this.</P>
+
+<H2><CODE>zWIN_DIR_desktop</CODE></H2>
+
+<P>Recommended but not required. I personally sometimes put test data on the desktop. If your Windows user-name, and therefore your desktop path, has spaces in it, it conflicts with the above no-double-quotes rule, and therefore this value won't be usable to you.</P>
+
+<P>Example value:
+<BR> &nbsp; &nbsp; <CODE>C:\Users\jeffy\Desktop\</CODE></P>
+
+<P><I>Tip: To get your desktop's path, right-click on any non-standard (not the Recycling Bin or Network Neighborhood, for example) file on your desktop, while holding the shift-key. Select &quot;Copy as path&quot;, paste it into a text document, and eliminate the quotes and file-name.</I></P>
 <PRE>
 
 <HR/>
 
 </PRE>
 <A NAME="glblcfg"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; XBN-PhraseExpress: global configuration</H2>
+
+<P><B>Your XBNPE global-configuration file:</B>
+<BR> &nbsp; &nbsp; <CODE><A HREF="../xbnpe_xkp/configuration/xbnpe__global_config.px.txt">../xbnpe_xkp/configuration/xbnpe__global_config.px.txt</A></CODE>
+<BR><I>If you copy this url (via right-click), it can be pasted directly into TextPad's open dialog.</I></P>
 
 <P>Global configuration variables that must be correct, in order for <I>anything</I> in XBN-PhraseExpress to function.</P>
 
@@ -103,7 +148,7 @@
 	<TD ALIGN="right"><B><CODE>zzTextPadWindowName</CODE></B></TD>
 	<TD>The name of the TextPad application's window title, as required by <CODE>{#FOCUS ...}</CODE>. May include asterisks (such as <CODE>&quot;*TextPad*&quot;</CODE>). Used for re-focusing on the main TextPad document window, when opening and closing <I>both TextPad and PhraseExpress</I> dialogs.</TD>
 </TR><TR>
-	<TD ALIGN="right"><B><CODE>zzCurrVersionOfPETextEditorWUndrscrs</CODE></B></TD>
+	<TD ALIGN="right"><B><CODE>zzCurrVersionOfTPWithUnderscores</CODE></B></TD>
 	<TD>The current version of TextPad, using underscores instead of dots. For example, if, in
 	<BR> &nbsp; &nbsp; <CODE>TextPad &gt; Help &gt; About</CODE>
 	<BR>it says version <CODE>&quot;7.0.9&quot;</CODE>, then this value must be <CODE>&quot;7_0_9&quot;</CODE>.
@@ -111,7 +156,7 @@
 	<BR>This is the <I>postfix</I> of the name of the version-specific directory in the <A HREF="textpad_tpkc/index.html">XBNPE-TPKC project</A>.</TD>
 </TR><TR>
 	<TD ALIGN="right"><B><CODE>zzTPTxtDefaultWordWrapOnOrES</CODE></B></TD>
-	<TD><A HREF="plain_text_phrase_files.html#fformat">Plain-text phrase-files</A> are named with the postfix <CODE>&quot;.px.txt&quot;</CODE> and are therefore included in the &quot;Text&quot; document class. If the default <A HREF="cwlpdf/ww_with_state.html">word-wrap</A> state for the text document class is<UL>
+	<TD><A HREF="plain_text_phrase_files.html#fformat">Plain-text phrase-files</A> are named with the postfix <CODE>&quot;.px.txt&quot;</CODE> and are therefore included in <A HREF="pex_in_textpad.html#txtdcsettings">TextPad's &quot;Text&quot; document class</A>. If the default <A HREF="cwlpdf/ww_with_state.html">word-wrap</A> state for the text document class is<UL>
 		<LI><B>checked,</B> then the value of this phrase must be &quot;on&quot;</LI>
 		<LI><B>unchecked,</B> then this must be <I>nothing</I> (the empty-string: <CODE>''</CODE>).</LI>
 	</UL><I>(<U>Screenshot below</U>)</I></TD>
@@ -125,10 +170,26 @@
 	<BR><I>(<U>Screenshot below</U>)</I></TD>
 </TR></TABLE></P>
 
-<P><I><B>Warning:</B> Significant portions of XBNPE (particularly the larger build-processes) will fail unless &quot;<B>Word wrap text &gt; Save with no breaks in lines</B>&quot; is selected.</I></P>
+<P><I><B>Warning:</B> Any processes in XBNPE that save files (particularly the larger build-processes, such as TPKC) will fail unless &quot;<B>Word wrap text &gt; Save with no breaks in lines</B>&quot; is selected.</I></P>
 
 <P><IMG SRC="images/prefs_text_doc_class_ww_strip_ws.jpg" BORDER="1"/></P>
 
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="downloads"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; XBN-PhraseExpress: Downloads</H2>
+
+<H3>XBNPE users</H3>
+
+<P>For those composing their own phrases, using and calling some of the XBNPE-projects:
+<BR> &nbsp; &nbsp; <CODE><A HREF="../../zz_misc_and_pxp/xbnpe_0p8p1.zip">xbnpe_0p8p1.zip</A></CODE></P>
+
+<H3>XBNPE admins and developers</H3>
+
+<P>Those making changes and additions to the XBNPE-project itself should download the latest archive directly from GitHub:
+<BR> &nbsp; &nbsp; <CODE><A HREF="https://github.com/aliteralmind/xbnpe/archive/master.zip">https://github.com/aliteralmind/xbnpe/archive/master.zip</A></CODE></P>
 <PRE>
 
 

@@ -15,6 +15,10 @@
 <P>I do not edit my phrases in the PhraseExpress application. I only edit them in <A HREF="http://textpad.com">TextPad</A> (a plain-text editor by Helios Software Solutions). Whenever I make a change to a phrase, I <A HREF="plain_text_phrase_files.html#import1">import it</A> into the PhraseExpress application before it can be used. This is akin to &quot;compiling&quot; the code.</P>
 
 <P><B>Contents:</B><UL>
+	<LI><B>Required TextPad settings:</B><UL>
+		<LI><CODE>[<A HREF="#randomsettings">go</A>]</CODE> &nbsp; Various requirements of specific processes and functions.</LI>
+		<LI><CODE>[<A HREF="#txtdcsettings">go</A>]</CODE> &nbsp; Text <CODE>&quot;*.txt&quot;</CODE> document class-related settings</LI>
+	</UL></LI>
 	<LI><CODE>[<A HREF="#nopexapp">go</A>]</CODE> &nbsp; Why I do not edit phrases in PhraseExpress</LI>
 	<LI><CODE>[<A HREF="#devenv">go</A>]</CODE> &nbsp; My personal development environment</LI>
 	<LI><CODE>[<A HREF="#tpbs">go</A>]</CODE> &nbsp; XBN-PhraseExpress: <B>TextPad-bootstraps</B></LI>
@@ -27,6 +31,85 @@
 <BR>instead of
 <BR> &nbsp; &nbsp; <CODE>{#CLIPBOARD -paste}</CODE>.</I></P>
 
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="randomsettings"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TextPad settings: Various requirements of specific processes and functions</H2>
+
+<P>In addition to settings related to the <A HREF="#txtdcsettings">text document-class</A>, there are some additional requirements specific to particular features and functions:<UL>
+	<LI>The TPKC-build-process (specifically, sub-procs-02 and 15), and the <A HREF="search_and_replace/index.html#fifxmpls">find-in-files example code</A> expect the find-in-files Search Results window to be <I>undocked</I>. Therefore
+	<BR> &nbsp; &nbsp; <CODE>TextPad &gt; Configure &gt; Preferences &gt; View &gt; Dockable log windows &gt; Search Results</CODE>
+	<BR>must be unchecked during (at least) this process. <I>You are warned of this before the process starts.</I></LI>
+	<LI>The TPKC process (sub-build-proc-15) expects the following menu items to exist, with the indicated trigger-letters:<UL>
+		<LI><CODE>[S]earch &gt; Invert [A]ll Bookmarks</CODE></LI>
+		<LI><CODE>[E]dit &gt; De[L]ete &gt; [B]ookmarked-lines</CODE></LI>
+	</UL>These menu items must exist at least during this process. <I>You are warned of this when the process starts.</I></LI>
+</UL></P>
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="txtdcsettings"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; Required TextPad settings: Text <CODE>&quot;*.txt&quot;</CODE> document class</H2>
+
+<P><A HREF="plain_text_phrase_files.html#fformat">Plain-text phrase-files</A> must have the postfix <CODE>&quot;px.txt&quot;</CODE>. Because of this, phrase-files by default belong in the <CODE>&quot;*.txt&quot;</CODE> plain-text document class:
+<BR> &nbsp; &nbsp; <CODE>TextPad &gt; Configure &gt; Preferences &gt; Document Classes &gt; Text</CODE>
+<BR>There are three critical settings as it relates to XBN-PhraseExpress:<UL>
+	<LI><CODE>[<A HREF="#tptxtdcstrip">go</A>]</CODE> &nbsp; Stripping trailing spaces when saving</LI>
+	<LI><CODE>[<A HREF="#tptxtdcww">go</A>]</CODE> &nbsp; Word-wrapping long lines</LI>
+	<LI><CODE>[<A HREF="#tptxtdcwwhard">go</A>]</CODE> &nbsp; Saving word-wrapped text with no hard-breaks</LI>
+</UL></P>
+
+<P><IMG SRC="images/prefs_text_doc_class_ww_strip_ws.jpg" BORDER="1"/></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="tptxtdcstrip"/><H2><CODE>[<A HREF="#txtdcsettings">BACK</A>]</CODE> &nbsp; TextPad: Text document class setting: Strip trailing spaces from lines when saving</H2>
+
+<P>Setting:
+<BR> &nbsp; &nbsp; <CODE>TextPad &gt; Configure &gt; Preferences &gt; Document class options &gt;  Strip trailing spaces from lines when saving</CODE></P>
+<P>This can be as you wish. Whatever setting you choose, however, it must be reflected in the <A HREF="index.html#glblcfg">XBNPE global-configuration-variable</A>
+<BR> &nbsp; &nbsp; <CODE>zzTPTxtDefaultStripTrailingWSOnOrES</CODE></P>
+
+<P>The consequence of <I>not</I> stripping trailing whitespace (tabs and spaces), is that processes that indeed need to strip trailing whitespace must do so manually. There are specific &quot;<A HREF="cwlpdf/file_manipulation.html#stripsave">strip-save</A>&quot; functions to assist you, which use this global configuration variable to determine if and when it should occur.</P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="tptxtdcww"/><H2><CODE>[<A HREF="#txtdcsettings">BACK</A>]</CODE> &nbsp; TextPad: Text document class setting: Word wrap long lines</H2>
+
+<P>Setting:
+<BR> &nbsp; &nbsp; <CODE>TextPad &gt; Configure &gt; Preferences &gt; Document class options &gt;  Word wrap long lines</CODE></P>
+
+<P>This can also be as you wish, and must also be reflected in a global-configuration-variable:
+<BR> &nbsp; &nbsp; <CODE>zzTPTxtDefaultWordWrapOnOrES</CODE></P>
+
+<P>This is used by the <A HREF="cwlpdf/ww_with_state.html#tptxtdstate">set-word-wrap-based-on-the-TextPad-default</A> phrases, such as
+<BR> &nbsp; &nbsp; <CODE>zWordWrapOffFromTPDfltState</CODE></P>
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="tptxtdcwwhard"/><H2><CODE>[<A HREF="#txtdcsettings">BACK</A>]</CODE> &nbsp; TextPad: Text document class setting: Saving word-wrapped text with no hard-breaks</H2>
+
+<P>Setting:
+<BR> &nbsp; &nbsp; <CODE>TextPad &gt; Configure &gt; Preferences &gt; Document class options &gt; Word wrapped text &gt; Save with no breaks in line</CODE></P>
+
+<P>This setting must be selected (&quot;Save with hard breaks&quot; must be unselected), in order for many of the XBNPE build processes to succeed. In particular, the TPKC-build-process will fail if this setting is on (as will most processes that somehow save files without turning word wrap off first).</P>
+
+
+
 <PRE>
 
 <HR/>
@@ -34,44 +117,25 @@
 </PRE>
 <a name="devenv"/><H3>[<A HREF="#top">top</A>] &nbsp; My development environment</CODE></H3>
 
-<P>In 2013, I discovered the free-and-open-source <A HREF="http://virtuawin.sourceforge.net">VirtuaWin</A>. It creates multiple desktops on a single monitor, effectively simulating multiple monitors. I use this to create two desktops:<OL>
-	<LI>The &quot;main&quot; desktop is for editing code.</LI>
-	<LI>The other desktop is exclusively for importing code into PhraseExpress.</LI>
-</OL>I use the key-commands <CODE>zCASpRIGHT</CODE> to move from desktop one to two, and <CODE>zCASpLEFT</CODE> to move back to desktop one.</P>
+<P>In 2013, I discovered the free-and-open-source <A HREF="http://virtuawin.sourceforge.net">VirtuaWin</A>. It creates multiple desktops on a single monitor, effectively simulating multiple monitors. I use this to create three desktops. I use the key-commands <CODE><A HREF="xbnpe_key_presses__xkp.html">zCASpRIGHT</A></CODE> to move to higher-numbered desktops (such as one to two), and <CODE>zCASpLEFT</CODE> to move the other direction. In general, here is my setup:</P>
 
-<P>In general, here is my setup:</P>
+<H4><U>Desktop one: Viewing documentation</U></H4>
 
-<H4><U>Desktop one: Editing code</U></H4>
+<H4><U>Desktop two: Editing code</U></H4>
 
-<P>I have one or more instances of TextPad open in this desktop.</P>
+<P>I have one or more instances of TextPad open in this desktop. I also have an <A HREF="http://zabkat.com/">Xplorer2</A> window open, to quickly access files. Xplorer2 is a Windows Explorer replacement.</P>
 
-<H4><U>Desktop two: Importing code into PhraseExpress.</U></H4>
+<H4><U>Desktop three: Importing code into PhraseExpress.</U></H4>
 
-<P><I>This is an overview of importing, in the context of my development environment. There are also <A HREF="plain_text_phrase_files.html#import1">step-by-step import instructions</A>.</I></P>
-
-<P>On the left side of this desktop are two Windows Explorer windows, one right on top of the other. Both point to the same directory
+<P>On this desktop, I always have two Windows Explorer windows open. The directory for both is
 <BR> &nbsp; &nbsp; <CODE>{#insert zROOT_DIR_XBNPE_MAIN}</CODE>
-<BR>with one having the following search:
+<BR>One has this search-term:
 <BR> &nbsp; &nbsp; <CODE>*.px.txt datemodified:7/27/2013</CODE> <I>(today's date)</I>
-<BR>and the other with this:
+<BR>and the other has this:
 <BR> &nbsp; &nbsp; <CODE>*_pcddmenu.px.txt datemodified:7/27/2013</CODE>
-<BR>The first folder displays all XBN-PhraseExpress phrase-files, with most-recently-edited at the top (when ordered by date--I always use the &quot;details&quot; view). The second displays only the <A HREF="xbnpe_ddmenus.html#xh"><CODE>'xh...'</CODE> phrase-creator drop-down menu</A> files.</P>
+<BR>These Explorer windows are on the left of my screen, always open (meaning never minimized), and PhraseExpress, when opened, is on their right. These search terms cause <A HREF="plain_text_phrase_files.html#mrchanged">most-recently-edited phrase-files to automatically display</A>. This setup makes <A HREF="plain_text_phrase_files.html#import1">importing</A> the phrase-files that I'm working on as easy as possible.</P>
 
-<P>Note that the ordering of these filter-terms is important. Putting the <CODE>'...px.txt'</CODE> first, shows you at a glance in the taskbar, which window is for which file type. <I>(Of course, if you're coding at 11:59pm, expect everything to disappear in a minute...)</I></P>
-
-<P><IMG SRC="images/taskbar_explorer_w_search_terms.jpg" BORDER="1"/></P>
-
-<P>(See below for an important distinction when importing ddmenus as opposed to general phrase-files.)</P>
-
-<P>When importing one or more phrase-files, I open PhraseExpress on the right side, then drag the files into it.</P>
-
-<P><IMG SRC="images/drag_explorer_to_pex.jpg" BORDER="1"/></P>
-
-<P>To avoid issues with VirtuaWin, I wait until PhraseExpress is completely closed before switching back to desktop one.</P>
-
-<P>When dragging a file into PhraseExpress, that file (which becomes a &quot;.px&quot; folder) adopts the settings of its parent folder. For this reason, I import normal phrases separately from ddmenus--hence the two explorer windows. Normal phrase-files are only imported (dragged) into &quot;normally configured&quot; folders, and ddmenus only into &quot;ddmenu-configured&quot; folders.</P>
-
-<P>There is detailed information on the differences between <A HREF="xbnpe_phrase_types.html">&quot;normal&quot; and ddmenu-item phrase-types</A>, including how to specifically set them up.</P>
+<P>Note that the latter search term is for <A HREF="xbnpe_ddmenus.html#xh">xh-phrase-creator drop-down menu</A> phrase-files. Separating &quot;<A HREF="xbnpe_phrase_types.html#normal">normal</A>&quot; phrase-files from <A HREF="xbnpe_phrase_types.html#ddmitem">drop-down-menu</A> phrase-files (although ddmenu phrase-files can't be filtered out of the general <CODE>&quot;*.px.txt&quot;</CODE> list) is because these phrase-types require different settings in PhraseExpress. For example, ddmenu phrases are &quot;manually confirmed&quot; and normal phrases are not. Importing these phrase types together requires that the settings for one or the other must always be changed after the import is complete. Note that in XBN-PhraseExpress, normal and <CODE>&quot;pcddmenu&quot;</CODE> phrases are always stored in separate locations.</P>
 
 <PRE>
 
@@ -103,7 +167,7 @@
 
 <P>...copying hundreds of phrases in this manner is practically impossible.</P>
 
-<P>In addition, there are significant difficulties associated with <A HREF="plain_text_phrase_files.html#importmulti">importing multiple files</A>. In addition to your code being &quot;trapped&quot; in PhraseExpress, the values in the <A HREF="plain_text_phrase_files.html#2of8">choose-import-action dialog</A> must be chosen on every import, and in the <A HREF="plain_text_phrase_files.html#3of8">import-phrase-format dialog</A>, values must be chosen for every file.</P>
+<P>In addition, there are significant difficulties associated with <A HREF="plain_text_phrase_files.html#importmulti">importing multiple files</A>. In addition to your code being &quot;trapped&quot; in PhraseExpress, the values in the <A HREF="plain_text_phrase_files.html#import2of8">choose-import-action dialog</A> must be chosen on every import, and in the <A HREF="plain_text_phrase_files.html#import3of8">import-phrase-format dialog</A>, values must be chosen for every file.</P>
 
 <PRE>
 
@@ -150,6 +214,7 @@
 	<BR> &nbsp; &nbsp; <CODE>{#insert zXPROOT_DIR_tpkc}/textpad__tpkc/for_v_7_0_9/user_config/</CODE>
 	<BR>!!!</I>).</LI>
 	<LI>Create its corresponding &quot;non-main&quot; phrases (<CODE>&quot;<A HREF="#tpbsesc">Esc</A>&quot;</CODE> and <CODE>&quot;<A HREF="#tpbstpk">TPKeys</A>&quot;</CODE>)</LI>
+	<LI>Add it to the regular expression for marking lines in the tp-all-cmd-list, in the tpbs section in XKP and TPKC.</LI>
 	<LI>Change its raw global config from, for example:
 	<BR> &nbsp; &nbsp; <CODE>BookmarkPrev	zTPBookmarkGTPrev	Srchmkprv	<B>__ES__</B>	100	{#insert zDOWN3}</CODE>
 	<BR>to

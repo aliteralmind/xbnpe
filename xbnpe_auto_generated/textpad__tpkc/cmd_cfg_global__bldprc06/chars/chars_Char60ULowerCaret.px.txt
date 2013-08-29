@@ -1,8 +1,0 @@
-zTpkcChar60ULowerCaretAbrv1C	Chrulc	zTpkcChar60ULowerCaretAbrv1C
-zTpkcChrulcCmdNameTC	Char60ULowerCaret	zTpkcChrulcCmdNameTC
-zTpkcChrulcDfltPhrsNm	zTPChar60ULowerCaret	zTpkcChrulcDfltPhrsNm
-zTpkcChrulcCatForCmdAbrvLC	chars	zTpkcChrulcCatForCmdAbrvLC
-zTpkcChrulcCmdType_mcrTl		zTpkcChrulcCmdType_mcrTl
-zTpkcChrulcIsBtstrp_yes		zTpkcChrulcIsBtstrp_yes
-zTpkcChrulcDfltPostKcSlpMils	1	zTpkcChrulcDfltPostKcSlpMils
-zTpkcChrulcStpsFrmCmdListTop	{#insert zEND}{#insert zPGUP}{#insert zDOWN}	zTpkcChrulcStpsFrmCmdListTop

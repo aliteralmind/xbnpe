@@ -1,8 +1,0 @@
-zTpkcEditAlignRightAbrv1C	Ealr	zTpkcEditAlignRightAbrv1C
-zTpkcEalrCmdNameTC	EditAlignRight	zTpkcEalrCmdNameTC
-zTpkcEalrDfltPhrsNm	zTPAlignRight	zTpkcEalrDfltPhrsNm
-zTpkcEalrCatForCmdAbrvLC	edit	zTpkcEalrCatForCmdAbrvLC
-zTpkcEalrCmdType_mcrTl		zTpkcEalrCmdType_mcrTl
-zTpkcEalrIsBtstrp_yes		zTpkcEalrIsBtstrp_yes
-zTpkcEalrDfltPostKcSlpMils	10	zTpkcEalrDfltPostKcSlpMils
-zTpkcEalrStpsFrmCmdListTop	{#insert zDOWN3}	zTpkcEalrStpsFrmCmdListTop

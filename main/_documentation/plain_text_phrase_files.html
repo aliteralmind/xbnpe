@@ -15,15 +15,60 @@
 <P>This document describes the format of plain-text phrase-files, as used in the XBN-PhraseExpress project, and how to import them. I personally do not edit or create any phrases in the PhraseExpress application. <A HREF="pex_in_textpad.html">I only do so in TextPad</A>.</P>
 
 <P><B>Contents:</B><UL>
-	<LI>[<A HREF="#pformat">go</A>]</CODE> &nbsp; Plain-text phrase format</LI>
-	<LI>[<A HREF="#fformat">go</A>]</CODE> &nbsp; Plain-text phrase-file format</LI>
-	<LI>[<A HREF="#import1">go</A>]</CODE> &nbsp; Step-by-step: <B>Importing one plain-text phrase-file into PhraseExpress</B></LI>
-	<LI>[<A HREF="#importmulti">go</A>]</CODE> &nbsp; Importing multiple phrase-files</LI>
-	<LI>[<A HREF="#troubleshooting">go</A>]</CODE> &nbsp; Troubleshooting import problems</LI>
+	<LI><CODE>[<A HREF="#pformat">go</A>]</CODE> &nbsp; Plain-text phrase format</LI>
+	<LI><CODE>[<A HREF="#fformat">go</A>]</CODE> &nbsp; Plain-text phrase-file format</LI>
+	<LI><CODE>[<A HREF="#import1">go</A>]</CODE> &nbsp; Step-by-step: <B>Importing one plain-text phrase-file into PhraseExpress</B></LI>
+	<LI><CODE>[<A HREF="#mrchanged">go</A>]</CODE> &nbsp; TIP: Auto-display of most-recently changed phrase-files</LI>
+	<LI><CODE>[<A HREF="#importmulti">go</A>]</CODE> &nbsp; Importing multiple phrase-files</LI>
+	<LI><CODE>[<A HREF="#troubleshooting">go</A>]</CODE> &nbsp; Troubleshooting import problems</LI>
 </UL></P>
 
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="mrchanged"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TIP: Auto-display of most-recently changed phrase-files</H2>
+
+<P>When actively developing phrases in an external text-editor, such as <A HREF="pex_in_textpad.html">TextPad</A>, it is useful to have the most recently changed phrase-files always present themselves, so they can be quickly <A HREF="#import1">imported</A>. This is easy to do.</P>
+
+<P><I>(How this fits into <A HREF="pex_in_textpad.html#devenv">my personal development environment</A>. See &quot;desktop three&quot;.)</I></P>
+
+<P><B><CODE><A HREF="#mrchanged">BACK</A> &nbsp; &nbsp; [<A HREF="#mrchanged">PREV</A> -- <A HREF="#mrc2of5">NEXT</A>]</CODE></B> &nbsp; &nbsp; Auto-display of most-recently-changed files: Step-by-step</P>
+
+<P>Open a Windows Explorer window to your root PhraseExpress development directory. This directory likely contains the XBN-PhraseExpress root directory:</P>
+
+<P><IMG SRC="images/explorer_xbnpe_main_no_search.jpg" BORDER="1"/></P>
 
 
+<A NAME="mrc2of5"/><H3><B><CODE><A HREF="#mrchanged">BACK</A> &nbsp; &nbsp; [<A HREF="#mrchanged">PREV</A> -- <A HREF="#mrc3of5">NEXT</A>]</CODE></B> &nbsp; &nbsp; Auto-display of most-recently-changed files: Step-by-step</H3>
+
+Put
+<BR> &nbsp; &nbsp; <CODE>*.px.txt datemodified:8/28/2013</CODE>
+<BR>with today's date, into the search box.
+
+<P><IMG SRC="images/explorer_xbnpe_main_search_initial.jpg" BORDER="1"/></P>
+
+<A NAME="mrc3of5"/><H3><B><CODE><A HREF="#mrchanged">BACK</A> &nbsp; &nbsp; [<A HREF="#mrc2of5">PREV</A> -- <A HREF="#mrc4of5">NEXT</A>]</CODE></B> &nbsp; &nbsp; Auto-display of most-recently-changed files: Step-by-step</H3>
+
+<P>Order by date descending (most recent files at the top) .</P>
+
+<P><IMG SRC="images/explorer_xbnpe_main_search_date_desc_far_right.jpg" BORDER="1"/></P>
+
+<A NAME="mrc4of5"/><H3><B><CODE><A HREF="#mrchanged">BACK</A> &nbsp; &nbsp; [<A HREF="#mrc3of5">PREV</A> -- <A HREF="#mrc5of5">NEXT</A>]</CODE></B> &nbsp; &nbsp; Auto-display of most-recently-changed files: Step-by-step</H3>
+
+<P>If you wish, move the date modified column to the far left (this is my preference), and expand it so you can see the full time-stamp.</P>
+
+<P><IMG SRC="images/explorer_xbnpe_main_search_date_desc_far_left.jpg" BORDER="1"/></P>
+
+
+<A NAME="mrc5of5"/><H3><B><CODE><A HREF="#mrchanged">BACK</A> &nbsp; &nbsp; [<A HREF="#mrc4of5">PREV</A> -- NEXT]</CODE></B> &nbsp; &nbsp; Auto-display of most-recently-changed files: Step-by-step</H3>
+
+<P>Setup is complete. Leave this window open on one side of your monitor. When <A HREF="#import1">importing</A> a phrase file, open the PhraseExpress application on the other side. The most-recently-edited phrase-files can now be easily dragged from this dynamic explorer window into the PhraseExpress application.</P>
+
+<P>Note that writing the folder-search-term with the file-type first makes it easy to identify the window's contents in your taskbar.</P>
+
+<P><IMG SRC="images/taskbar_explorer_w_search_terms.jpg" BORDER="1"/></P>
 <PRE>
 
 <HR/>
@@ -49,7 +94,7 @@ zPrintNYs -- Prints one-or-more 'y's (user prompt)   {#LOOP y -count {#INPUT -he
 
 <P><IMG SRC="images/import_demo_8of8_folder_open.jpg" BORDER="1"/></P>
 
-<P><I>Phrase-files cannot be named with only <CODE>&quot;.px&quot;</CODE> as its extension. PhraseExpress does not recognize files with only <CODE>&quot;.px&quot;</CODE>:</I></P>
+<P>Note that phrase-files cannot be named with only <CODE>&quot;.px&quot;</CODE> as its extension. PhraseExpress does not recognize files with only <CODE>&quot;.px&quot;</CODE>, when attempting to import them:</P>
 
 <P><IMG SRC="images/px_only_doesnt_work.jpg" BORDER="1"/></P>
 
@@ -106,16 +151,16 @@ x</PRE>
 
 <P><I>There are separate instructions for <A HREF="#importmulti">importing many phrase-files</A>.</I></P>
 
-<P>First, open Windows Explorer, and navigate to the directory in which the phrase-file exists. Move that window to the left side of your monitor. Then open PhraseExpress and move it to the right side of the monitor. Navigate to the folder in which the phrase-file should be imported. (In Windows Explorer, I call them &quot;directories&quot;, and in PhraseExpress, I call them &quot;folders&quot;).</P>
+<P>First, open Windows Explorer, and navigate to the directory in which the phrase-file exists (<A HREF="#mrchanged">tip!</A>). Move that window to the left side of your monitor. Then open PhraseExpress and move it to the right side of the monitor. Navigate to the folder in which the phrase-file should be imported. (In Windows Explorer, I call them &quot;directories&quot;, and in PhraseExpress, I call them &quot;folders&quot;).</P>
 
-<a name="1of8"/>
-<P><B><CODE><A HREF="#top">top</A> &nbsp; &nbsp; [<A HREF="#import1">PREV</A> -- <A HREF="#2of8">NEXT</A>]</CODE></B></P>
+<a name="import1of8"/>
+<H3><B><CODE><A HREF="#import1">BACK</A> &nbsp; &nbsp; [<A HREF="#import1">PREV</A> -- <A HREF="#import2of8">NEXT</A>]</CODE></B> &nbsp; &nbsp; Importing one phrase-file: Step-by-step</H3>
 
-<P>Drag one-or-more phrase-files from Explorer to PhraseExpress, directly to the folder in which it should reside</P>
+<P><I>Delete the old folder in PhraseExpress</I> (the one you're about to import!), then drag one-or-more phrase-files from Explorer to PhraseExpress, directly to the folder in which it should reside</P>
 
 <P><IMG SRC="images/import_demo_1of8_drag_windows_to_pex.jpg" BORDER="1"/></P>
-<a name="2of8"/>
-<P><B><CODE><A HREF="#top">top</A> &nbsp; &nbsp; [<A HREF="#1of8">PREV</A> -- <A HREF="#3of8">NEXT</A>]</CODE></B></P>
+<a name="import2of8"/>
+<H3><B><CODE><A HREF="#import1">BACK</A> &nbsp; &nbsp; [<A HREF="#import1of8">PREV</A> -- <A HREF="#import3of8">NEXT</A>]</CODE></B> &nbsp; &nbsp; Importing one phrase-file: Step-by-step</H3>
 
 <P>This pops up the &quot;<B>Select action</B>&quot; dialog. Choose the bottom-most action: <CODE>'Generate phrases for each line of the text file'</CODE>.</P>
 
@@ -124,8 +169,8 @@ x</PRE>
 <P>Unfortunately, there is no way to permanently-configure any of these selections.</P>
 
 <P><IMG SRC="images/import_demo_2of8_select_action.jpg" BORDER="1"/></P>
-<a name="3of8"/>
-<P><B><CODE><A HREF="#top">top</A> &nbsp; &nbsp; [<A HREF="#2of8">PREV</A> -- <A HREF="#4of8">NEXT</A>]</CODE></B></P>
+<a name="import3of8"/>
+<H3><B><CODE><A HREF="#import1">BACK</A> &nbsp; &nbsp; [<A HREF="#import2of8">PREV</A> -- <A HREF="#import4of8">NEXT</A>]</CODE></B> &nbsp; &nbsp; Importing one phrase-file: Step-by-step</H3>
 
 <P>This is the &quot;<B>phrase-format dialog</B>&quot;. The line-format and delimiter must be chosen.</P>
 
@@ -137,32 +182,32 @@ x</PRE>
 <P><I>Unfortunately, when importing <A HREF="#importmulti">multiple files</A>, all the settings in this dialog must be chosen for every file, every time you do an import. This, along with the <A HREF="pex_in_textpad.html#nopexapp">inability to export</A>, are the primary difficulties associated to programming outside of the PhraseExpress application.</I></P>
 
 <P><IMG SRC="images/import_demo_3of8_format_dlg.jpg" BORDER="1"/></P>
-<a name="4of8"/>
-<P><B><CODE><A HREF="#top">top</A> &nbsp; &nbsp; [<A HREF="#3of8">PREV</A> -- <A HREF="#5of8">NEXT</A>]</CODE></B></P>
+<a name="import4of8"/>
+<H3><B><CODE><A HREF="#import1">BACK</A> &nbsp; &nbsp; [<A HREF="#import3of8">PREV</A> -- <A HREF="#import5of8">NEXT</A>]</CODE></B> &nbsp; &nbsp; Importing one phrase-file: Step-by-step</H3>
 
 <P>All available &quot;<B>Order</B>&quot; options. In XBN-PhraseExpress, the only one you'll ever use is
 <BR> &nbsp; &nbsp; <CODE>Description - Delimiter - Phrase text - Delimiter - Autotext</CODE></P>
 <P><IMG SRC="images/import_demo_4of8_format_dd.jpg" BORDER="1"/></P>
-<a name="5of8"/>
-<P><B><CODE><A HREF="#top">top</A> &nbsp; &nbsp; [<A HREF="#4of8">PREV</A> -- <A HREF="#6of8">NEXT</A>]</CODE></B></P>
+<a name="import5of8"/>
+<H3><B><CODE><A HREF="#import1">BACK</A> &nbsp; &nbsp; [<A HREF="#import4of8">PREV</A> -- <A HREF="#import6of8">NEXT</A>]</CODE></B> &nbsp; &nbsp; Importing one phrase-file: Step-by-step</H3>
 
 <P>Once order is chosen, then declare the delimiter character: <CODE>'TAB'</CODE>.</P>
 
 <P>Once the &quot;<B>Order</B>&quot; value is selected in the drop-down, press TAB to go to the &quot;<B>Delimiter</B>&quot; field. Now type the <CODE>'TAB'</CODE> key.</P>
 <P><IMG SRC="images/import_demo_5of8_correct_format_no_delim.jpg" BORDER="1"/></P>
-<a name="6of8"/>
-<P><B><CODE><A HREF="#top">top</A> &nbsp; &nbsp; [<A HREF="#5of8">PREV</A> -- <A HREF="#7of8">NEXT</A>]</CODE></B></P>
+<a name="import6of8"/>
+<H3><B><CODE><A HREF="#import1">BACK</A> &nbsp; &nbsp; [<A HREF="#import5of8">PREV</A> -- <A HREF="#import7of8">NEXT</A>]</CODE></B> &nbsp; &nbsp; Importing one phrase-file: Step-by-step</H3>
 
 <P>Now PhraseExpress knows how to parse this phrase-file, and the individual phrases appear in the dialog. Press <CODE>[<U>O</U>K]</CODE></P>
 
 <P><IMG SRC="images/import_demo_6of8_correct_format_tab_delim.jpg" BORDER="1"/></P>
-<a name="7of8"/>
-<P><B><CODE><A HREF="#top">top</A> &nbsp; &nbsp; [<A HREF="#6of8">PREV</A> -- <A HREF="#8of8">NEXT</A>]</CODE></B></P>
+<a name="import7of8"/>
+<H3><B><CODE><A HREF="#import1">BACK</A> &nbsp; &nbsp; [<A HREF="#import6of8">PREV</A> -- <A HREF="#import8of8">NEXT</A>]</CODE></B> &nbsp; &nbsp; Importing one phrase-file: Step-by-step</H3>
 
 <P>The phrases are imported. Open the folder to see the individual phrases.</P>
 <P><IMG SRC="images/import_demo_7of8_done.jpg" BORDER="1"/></P>
-<a name="8of8"/>
-<P><B><CODE><A HREF="#top">top</A> &nbsp; &nbsp; [<A HREF="#7of8">PREV</A> -- NEXT]</CODE></B></P>
+<a name="import8of8"/>
+<H3><B><CODE><A HREF="#import1">BACK</A> &nbsp; &nbsp; [<A HREF="#import7of8">PREV</A> -- NEXT]</CODE></B> &nbsp; &nbsp; Importing one phrase-file: Step-by-step</H3>
 
 <P>Note the first word in descriptions is the (duplicated) autotext for that phrase.</P>
 <P><IMG SRC="images/import_demo_8of8_folder_open.jpg" BORDER="1"/></P>
@@ -176,7 +221,7 @@ x</PRE>
 </PRE>
 <a name="importmulti"/><H3>[<A HREF="#top">top</A>] &nbsp; Importing multiple phrase-files</CODE></H3>
 
-<P>It is reasonable to import one or a few phrase-files manually. This key-press sequence, as needed in the <A HREF="#3of8">phrase-format dialog</A>,  will help immensely:
+<P>It is reasonable to import one or a few phrase-files manually. This key-press sequence, as needed in the <A HREF="#import3of8">phrase-format dialog</A>,  will help immensely:
 <BR> &nbsp; &nbsp; <CODE>PGDN, UP, TAB, TAB, ENTER</CODE>
 <BR>Importing tens or hundreds of phrase-files (I have to import 332 after running build-process 06 in the TextPad Built-In Commands [TPKC] Project) requires an external--not written in PhraseExpress--script. Here is the script I created in <A HREF="http://www.mjtnet.com">Macro Scheduler</A>:
 <BR> &nbsp; &nbsp; <CODE><A HREF="Import multiple files into PhraseExpress.scp.txt">Import multiple files into PhraseExpress.scp.txt</A></CODE></P>
@@ -205,7 +250,7 @@ x</PRE>
 
 <P>When a phrase is imported, but the phrase doesn't work, here are common import-related problems:<UL>
 	<LI>The phrase <I>wasn't</I> imported, or the phrase-file was not saved before importing.</LI>
-	<LI>An incorrect line-format or tab-delimiter was put into the <A HREF="#3of8">phrase-format dialog</A></LI>
+	<LI>An incorrect line-format or tab-delimiter was put into the <A HREF="#import3of8">phrase-format dialog</A></LI>
 	<LI>There is an extra-or-missing tab in one of the phrases. Use <CODE>'mpfpl'</CODE> or <CODE>'maixbxbx'</CODE> to verify all phrases in a single file.</LI>
 	<LI>The import simply failed. Look at the phrase-file (folder) in PhraseExpress. Is the description, phrase-body, and autotext correct? It is not uncommon to find the phrase-body in the autotext field.</LI>
 	<LI>Double quotes <I>anywhere</I> in the phrase-file, including in comments, will make import fail. Use

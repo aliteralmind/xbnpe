@@ -112,7 +112,7 @@ EditAlignCenter
 EditAlignJustify
 EditAlignLeft
 EditAlignRight          Ctrl+Shift+E
-EditBackspace           Shift+Backspace         Ctrl+Shift+W            Backspace               Ctrl+Alt+Backspace
+EditBackspace           Shift+Backspace         Ctrl+Shift+W            Ctrl+Alt+Backspace      Backspace
 EditCapitalize          Ctrl+Shift+U            Ctrl+Shift+Alt+2
 EditClearAll
 EditCopy                Ctrl+Insert             Ctrl+J

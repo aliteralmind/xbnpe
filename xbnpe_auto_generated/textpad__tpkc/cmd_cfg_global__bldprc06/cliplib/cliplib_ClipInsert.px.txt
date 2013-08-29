@@ -1,8 +1,0 @@
-zTpkcClipInsertAbrv1C	Clins	zTpkcClipInsertAbrv1C
-zTpkcClinsCmdNameTC	ClipInsert	zTpkcClinsCmdNameTC
-zTpkcClinsDfltPhrsNm	zTPClipInsert	zTpkcClinsDfltPhrsNm
-zTpkcClinsCatForCmdAbrvLC	cliplib	zTpkcClinsCatForCmdAbrvLC
-zTpkcClinsCmdType_mcrTl		zTpkcClinsCmdType_mcrTl
-zTpkcClinsIsBtstrp_yes		zTpkcClinsIsBtstrp_yes
-zTpkcClinsDfltPostKcSlpMils	25	zTpkcClinsDfltPostKcSlpMils
-zTpkcClinsStpsFrmCmdListTop	{#insert zPGDN}{#insert zUP}	zTpkcClinsStpsFrmCmdListTop

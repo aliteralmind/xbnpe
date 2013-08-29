@@ -1,8 +1,0 @@
-zTpkcEditPasteLinesAbrv1C	Epstlns	zTpkcEditPasteLinesAbrv1C
-zTpkcEpstlnsCmdNameTC	EditPasteLines	zTpkcEpstlnsCmdNameTC
-zTpkcEpstlnsDfltPhrsNm	zTPPasteLines	zTpkcEpstlnsDfltPhrsNm
-zTpkcEpstlnsCatForCmdAbrvLC	edit	zTpkcEpstlnsCatForCmdAbrvLC
-zTpkcEpstlnsCmdType_mcrTl		zTpkcEpstlnsCmdType_mcrTl
-zTpkcEpstlnsIsBtstrp_yes		zTpkcEpstlnsIsBtstrp_yes
-zTpkcEpstlnsDfltPostKcSlpMils	10	zTpkcEpstlnsDfltPostKcSlpMils
-zTpkcEpstlnsStpsFrmCmdListTop	{#insert zEND}{#insert zPGUP2}{#insert zUP3}	zTpkcEpstlnsStpsFrmCmdListTop

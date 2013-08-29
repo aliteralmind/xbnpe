@@ -23,16 +23,16 @@
 <P><B>Contents:</B><UL>
 	<LI><CODE>[<A HREF="#zup">go</A>]</CODE> &nbsp; Detailed example: <CODE>zUP</CODE></LI>
 	<LI><CODE>[<A HREF="#build">go</A>]</CODE> &nbsp; XKP build process</LI>
-	<LI><CODE>[<A HREF="#tpbs">go</A>]</CODE> &nbsp; TextPad-bootstraps required by the XBNPE-XKP project</LI>
+	<LI><CODE>[<A HREF="#tpbs">go</A>]</CODE> &nbsp; <B>TextPad-bootstraps</B> required by the XBNPE-XKP project</LI>
 </UL></P>
+
+<H3>Phrase-creator drop-down-menu</H3>
+
+<P>Source (indented):
+<BR> &nbsp; &nbsp; <CODE><CODE STYLE="background-color:#E1E1E1;">../textpad__tpkc/non_bootstrap_utils/z_phrase_creator_ddmenus/xkp__pcddmenu.txt</CODE></CODE>
+<BR>Output (unindented):
+<BR> &nbsp; &nbsp; <CODE><CODE STYLE="background-color:#E1E1E1;">../textpad__tpkc/non_bootstrap_utils/z_phrase_creator_ddmenus/z_temp_folder_for_unindenting_ddmenus/xkp__pcddmenu.px.txt</CODE></CODE></P>
 <PRE>
-
-<P>Phrase-creator drop-down-menu</P>
-
-<P><B>Source (indented):</B>
-<BR> &nbsp; &nbsp; <CODE><CODE STYLE="background-color:#E1E1E1;">../../textpad__tpkc/non_bootstrap_utils/z_phrase_creator_ddmenus/xkp__pcddmenu.txt</CODE></CODE>
-<BR><B>Output (unindented):</B>
-<BR> &nbsp; &nbsp; <CODE><CODE STYLE="background-color:#E1E1E1;">../../textpad__tpkc/non_bootstrap_utils/z_phrase_creator_ddmenus/z_temp_folder_for_unindenting_ddmenus/xkp__pcddmenu.px.txt</CODE></CODE></P>
 
 <HR/>
 
@@ -231,6 +231,13 @@
 
 <P>The same as &quot;live&quot;, with only two characters built per &quot;category&quot; (two numbers, two letters, etc.). Use this for diagnostics and demonstration of the build process.</P>
 
+
+
+
+
+
+
+
 <PRE>
 
 <HR/>
@@ -241,13 +248,14 @@
 <P>The XKP project--and therefore the entirety of XBN-PhraseExpress--requires the following <A HREF="pex_in_textpad.html#tpbs">TextPad-bootstraps</A> to exist before installation.</P>
 
 <P><UL>
+	<LI><B>Regex for marking all in the TextPad all-command list:</B>
+	<BR> &nbsp; &nbsp; <CODE>^(EditCopy|EditCut|EditDupLine|FileClose|FileNew|FileSave|DocumentStart|WordRightEnd|EditPaste|SelectAll|WordLeftExtend|WordRightEndExtend|ToggleWordWrap)\b</CODE></LI>
 	<LI><B>Testing function</B> <I>(accessible via <CODE><A HREF="xbnpe_ddmenus.html#xh">xh</A>cck</CODE>)</I><UL>
-		<LI><U>Command:</U> <CODE>zTestAllXKPTextPadBootstraps</CODE></LI>
-		<LI><U>Action:</U> <CODE>testtpbsxkp</CODE></LI>
+		<LI>Command: <CODE>zTestAllXKPTextPadBootstraps</CODE></LI>
+		<LI>Action: <CODE>testtpbsxkp</CODE></LI>
 	</UL></LI>
-	<LI><B><A HREF="plain_text_phrase_files.html#fformat">Phrase-file</A> locations:</B><UL>
-		<LI><U><A HREF="pex_in_textpad.html#tpbs2files">On disk</A>:</U><UL>
-			<LI><B>Directory</B>
+	<LI><B><A HREF="plain_text_phrase_files.html#fformat">Phrase-files</A>:</B><UL>
+			<LI><U><A HREF="pex_in_textpad.html#tpbs2files">On disk</A>:</U>
 			<BR> &nbsp; &nbsp; <CODE>{#insert zXPROOT_DIR_xbnpeXkp}xkp_bootstrap_phrases\xkp_btstrp__textpad__built_in_cmds\</CODE></LI>
 <!-- Originates in xbnpe_key_presses__xkp.html#tpbs...START-->
 			<LI><A HREF="pex_in_textpad.html#tpbsmain">Main</A> phrase-file:
@@ -261,11 +269,13 @@
    XBNPE Key-presses (XKP) & basic utilities &gt;
       XKP bootstrap phrases (1MC) &gt;
          TextPad-bootstraps: Built-in commands</PRE></LI>
+	<LI><B>Actual tp-bootstrap files:</B><UL>
+		<LI>As used by a TextPad &quot;fresh install&quot;: <A HREF="../textpad__tpkc/for_v_7_0_9/user_config/tp_frsh_instl/tp_bootstraps_for_xkp_project.px.txt">main</A>,  <A HREF="../textpad__tpkc/for_v_7_0_9/user_config/tp_frsh_instl/tp_bootstraps_for_xkp_project_esc_tpk.px.txt">non-main</A></LI>
+		<LI>Blank template: <A HREF="../textpad__tpkc/for_v_7_0_9/user_config/_tpkc_user_dir_id__BLANK_TEMPLATE/tp_bootstraps_for_xkp_project.px.txt">main</A>,  <A HREF="../textpad__tpkc/for_v_7_0_9/user_config/_tpkc_user_dir_id__BLANK_TEMPLATE/tp_bootstraps_for_xkp_project_esc_tpk.px.txt">non-main</A></LI>
 	</UL></LI>
-	<LI>The <A HREF="../xbnpe_xkp/xkp_bootstrap_phrases/xkp_btstrp__textpad__built_in_cmds/tp_bootstraps_for_xkp_project.px.txt">default tp-bootstrap phrase-file</A>, as used with a &quot;fresh&quot; TextPad install</LI>
 </UL></P>
 
-<P><TABLE ALIGN="center" WIDTH="100%" BORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#EEEEEE"><TR ALIGN="center" VALIGN="middle">
+<P><TABLE ALIGN="center" BORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#EEEEEE"><TR ALIGN="center" VALIGN="middle">
 	<TD><B><U>Phrase name</U></B></TD>
 	<TD><B><U>Built-in command name</U></B></TD>
 	<TD><B><U>Description</U></B></TD>

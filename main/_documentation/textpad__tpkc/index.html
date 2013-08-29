@@ -17,28 +17,38 @@
 <P>Aside from <A HREF="../xbnpe_key_presses__xkp.html">XKP</A>, <I>no other XBN-PhraseExpress project can function until this build process is complete</I>.</P>
 
 <P><B>Contents:</B><UL>
+	<LI><CODE>[<A HREF="#install">go</A>]</CODE> &nbsp; <B>Installation:</B> All steps necessary to prepare for the build-process</LI>
+	<LI><CODE>[<A HREF="#userbuild">go</A>]</CODE> &nbsp; <B>TPKC-user build-process</B> The final step before the TPKC-project (and all of XBNPE) is fully usable.</LI>
 	<LI><CODE>[<A HREF="tpkc_user_menu.html">go</A>]</CODE> &nbsp; The <B>TPKC user menu</B>, which is used to access all major features</LI>
 	<LI><CODE>[<A HREF="#tpbs">go</A>]</CODE> &nbsp; TextPad-bootstraps required by the XBNPE-TPKC project</LI>
 	<LI><CODE>[<A HREF="tpkc_config_vars.html">go</A>]</CODE> &nbsp; Command configuration variables</LI>
 	<LI><CODE>[<A HREF="#assignkcsbs">go</A>]</CODE> &nbsp; Assigning a new key-command via user-command-configuration: Step-by-step</LI>
-	<LI><CODE>[<A HREF="#userbuildprocs">go</A>]</CODE> &nbsp; <B>Building TPKC: Step-by-step</B> The second-half of the TPKC installation process is &quot;building&quot; it.</LI>
-	<LI><CODE>[<A HREF="tpkc_build_processes.html">go</A>]</CODE> &nbsp; All build processes (for both admins and users): Technical details</LI>
 	<LI><CODE>[<A HREF="#tpacl">go</A>]</CODE> &nbsp; The TextPad all-command list</LI>
+	<LI><CODE>[<A HREF="#tpkc_build_processes.html">go</A>]</CODE> &nbsp; All TPKC build-processes: Technical details for TPKC-admins</LI>
 </UL></P>
 
-<P>Phrase-creator drop-down-menu</P>
+<H4><U>Phrase-creator drop-down-menu</U></H4>
 
 <P><B>Source (indented):</B>
-<BR> &nbsp; &nbsp; <CODE><CODE STYLE="background-color:#E1E1E1;">../../textpad__tpkc/non_bootstrap_utils/z_phrase_creator_ddmenus/textpad__prefs_tpkc__pcddmenu.txt</CODE></CODE>
+<BR> &nbsp; &nbsp; <CODE>{#insert zROOT_DIR_XBNPE}/textpad__tpkc/non_bootstrap_utils/z_phrase_creator_ddmenus/<A HREF="../../textpad__tpkc/non_bootstrap_utils/z_phrase_creator_ddmenus/textpad__prefs_tpkc__pcddmenu.txt">textpad__prefs_tpkc__pcddmenu.txt</A></CODE>
 <BR><B>Output (unindented):</B>
-<BR> &nbsp; &nbsp; <CODE><CODE STYLE="background-color:#E1E1E1;">../../textpad__tpkc/non_bootstrap_utils/z_phrase_creator_ddmenus/z_temp_folder_for_unindenting_ddmenus/textpad__prefs_tpkc__pcddmenu.px.txt</CODE></CODE></P>
+<BR> &nbsp; &nbsp; <CODE>{#insert zROOT_DIR_XBNPE}/textpad__tpkc/non_bootstrap_utils/z_phrase_creator_ddmenus/z_temp_folder_for_unindenting_ddmenus/<A HREF="../../textpad__tpkc/non_bootstrap_utils/z_phrase_creator_ddmenus/z_temp_folder_for_unindenting_ddmenus/textpad__prefs_tpkc__pcddmenu.px.txt">textpad__prefs_tpkc__pcddmenu.px.txt</A></CODE></P>
 
 <PRE>
 
 <HR/>
 
 </PRE>
-<A NAME="userbuildprocs"/><H2><CODE>[<A HREF="#top">top</A> -- PREV / <A HREF="#userbuildprocs2">NEXT</A>]</CODE> &nbsp; The TPKC build-process: Step-by-step</H2>
+<A NAME="install"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; All steps necessary to prepare for the build-process</H2>
+
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="userbuild"/><H2><CODE>[<A HREF="#top">top</A> -- PREV / <A HREF="#userbuild2">NEXT</A>]</CODE> &nbsp; The TPKC build-process: Step-by-step</H2>
 
 <P>The TextPad built-in command (TPKC) project is not usable until it knows all the key-commands you've assigned via
 <BR> &nbsp; &nbsp; <CODE>TextPad &gt; Configure &gt; Preferences &gt; Keyboard</CODE>
@@ -48,7 +58,7 @@
 
 <P>The first step is to <A HREF="#tpaclcreate">generate</A> and <A HREF="#tpacl">validate</A> your &quot;TextPad all-command list&quot; (tp-all-cmd-list or <CODE>tpacl</CODE>). This is the initial input for the entire TPKC (user-only) build process.</P>
 
-<P>(Note that the <I>user only</I> build processes are numbered 10 through 15. Build processes 01 through 09 are for TPKC developers [administrators] only.)</P>
+<P>(Note that the <I>user-only</I> build processes are numbered 10 through 15. Build processes 01 through 09 are for TPKC-administrators [developers] only.)</P>
 
 
 
@@ -62,7 +72,7 @@
 
 <P><I>(Ensuring tp-bootstraps for <B>future</B> projects (snr, ppc, etc.) are configured...consider doing it before you even print out your <CODE>tpacl</CODE>...)</I></P>
 
-<P>The &quot;<B>TextPad all-command list</B>&quot; (or tp-all-cmd-list, or <CODE>tpacl</CODE>), is the input for <A HREF="#userbuildprocs">building the TPKC project</A>.</P>
+<P>The &quot;<B>TextPad all-command list</B>&quot; (or tp-all-cmd-list, or <CODE>tpacl</CODE>), is the input for <A HREF="#userbuild">building the TPKC project</A>.</P>
 
 <P>Here are the <B><A HREF="#tpaclcreate">steps for creating</A></B> the TextPad all-command list.</P>
 
@@ -79,11 +89,23 @@
 
 <H3>The maximum nbs-kc count: <CODE>zTpkcMaxNbsKCsPerCmd</CODE></H3>
 
-<P>No command in your tp-all-cmd-list may have more than <CODE>zTpkcMaxNbsKCsPerCmd</CODE> <I>Non-BootStrap</I> (nbs) key-commands. This is the maximum number that any one key-command can have, <I>after TextPad-bootstrap-kcs are deleted.</I> Before running the build process, your <CODE>tpacl</CODE> still has bootstrap-kcs in it. It is therefore not possible to truly validate this until they are deleted by the build process (TPKC-build-proc-10).</P>
+<P>No command in your tp-all-cmd-list may have more than <CODE>zTpkcMaxNbsKCsPerCmd</CODE> <I>Non-BootStrap</I> (nbs) key-commands. This is the maximum number that any one key-command can have, <I>after TextPad-bootstrap-kcs are deleted.</I> Before running the build process, your <CODE>tpacl</CODE> still has bootstrap-kcs in it. <B>It is therefore not possible to truly validate this</B> until they are deleted by the build process (TPKC-build-proc-10).</P>
 
 <P>The <CODE>tpaclwarnkccount</CODE> finds all commands in your <CODE>tpacl</CODE> having more than <CODE>zTpkcMaxNbsKCsPerCmd</CODE> key-commands, <I>including bootstrap-kcs</I>.</P>
 
+<H3>Commands that it is strongly recommended that you assign key-commands to</H3>
 
+<P>The <A HREF="../search_and_replace/index.html">XBNPE-Search and replace (SNR)</A> project--and all XBNPE projects aside from <A HREF="xbnpe_key_presses__xkp.html">XBNPE-Key-Presses (XKP)</A>--are not usable until the this TPKC project is fully built. In addition, the SNR projects requires that all the following built-in TextPad commands are assigned at least one key-command:
+<BR> &nbsp; &nbsp; <CODE>zTPFindFlag[MC,RE,WW][on,off]</CODE>
+<BR>For example: <CODE>zTPFindFlagMCoff</CODE>. (I personally use
+<BR> &nbsp; &nbsp; <CODE>{#insert zASpFF}{#sleep 25}{#insert zMM}{#sleep 5}</CODE>
+<BR>to turn the MC-flag on (<CODE>&quot;zRR&quot;</CODE> for regex, <CODE>&quot;zWW&quot;</CODE> for whole-word), and
+<BR> &nbsp; &nbsp; <CODE>{#insert zCASpFF}{#sleep 25}{#insert zMM}{#sleep 5}</CODE>
+<BR>to turn it off.)</P>
+
+<P>The <A HREF="#assignkcsbs4"><CODE>newnbskc</CODE> utility</A> (see &quot;notes&quot;) requires <CODE>CharLeftExtend</CODE> (<CODE>zTPSelectL1c</CODE>).</P>
+
+<P><I>Note that all these commands have been pre-assigned in the TextPad &quot;fresh install&quot; tp-all-cmd-list.</I></P>
 <PRE>
 
 <HR/>
@@ -106,31 +128,14 @@
 
 <P>Use <CODE>File &gt; Save As</CODE> to save this output to your tpkc-user-directory (your tpkc-user-dir-name was determined when you installed the TPKC-project):
 <BR> &nbsp; &nbsp; <CODE>{#insert zXPROOT_DIR_tpkc}\for_v_7_0_9\user_config\<I>[YOUR_TPKC_USER_DIR_NAME]</I>\</CODE>
-<BR>Such as:
-<BR> &nbsp; &nbsp; <CODE>{#insert zXPROOT_DIR_tpkc}\for_v_7_0_9\user_config\jeffy\</CODE></LI>
-<BR>And given this name:
-<BR> &nbsp; &nbsp; <CODE>textpad_all_command_list.txt</CODE></P>
+<BR>and given this name:
+<BR> &nbsp; &nbsp; <CODE>textpad_all_command_list.txt</CODE>
+<BR>For example:
+<BR> &nbsp; &nbsp; <CODE>{#insert zXPROOT_DIR_tpkc}\for_v_7_0_9\user_config\jeffy\textpad_all_command_list.txt</CODE></P>
 
 <P>It must be saved in exactly this location, with exactly this name.</P>
 
-<P>Before using this <CODE>tpacl</CODE> for actually <A HREF="#userbuildprocs">building</A> the TPKC-project, its content must be validated.</P>
-
-<H4><U>Recommended commands</U></H4>
-
-<P>It is recommended that the following commands be used, since they are required by other XBNPE projects (those that depend on TPKC already having been installed and built). <I>All these commands have been added to the TextPad &quot;fresh install&quot; tp-all-cmd-list.</I></P>
-
-.................
-
-<PRE STYLE="background-color:#E1E1E1;">MatchCaseClear          Ctrl+Shift+Alt+F, C
-MatchCaseSet            Shift+Alt+F, C
-MatchWordClear          Ctrl+Shift+Alt+F, W
-MatchWordSet            Shift+Alt+F, W
-RegexClear              Ctrl+Shift+Alt+F, R
-RegexSet                Shift+Alt+F, R</PRE>
-<H1>XBNPE: TextPad built-in command (TPKC) project</H1>
-
-zTPSelectL1c
-
+<P>Before using this <CODE>tpacl</CODE> for actually <A HREF="#userbuild">building</A> the TPKC-project, its content must be <A HREF="#tpaclbadkcs">validated</A>.</P>
 
 <PRE>
 
@@ -139,13 +144,13 @@ zTPSelectL1c
 </PRE>
 <A NAME="tpaclbadkcs"/><H2><CODE>[<A HREF="#tpacl">BACK</A>]</CODE> &nbsp; Validating the TextPad all-command list: Illegal key-commands</H2>
 
-<P>There are a small number of specific key-commands that will cause the TPKC-project to fail. These key-commands must be eliminated before attempting the <A HREF="#userbuildprocs">TPKC-build-process</A>. While the build-process itself will succeed with illegal key-commands, when it attempts to assign those key-commands, it will fail without an error message or diagnostic information.</P>
+<P>There are a small number of specific key-commands that will cause the TPKC-project to fail. These key-commands must be eliminated before attempting the <A HREF="#userbuild">TPKC-build-process</A>. While the build-process itself will succeed with illegal key-commands, attempting to atually assign those key-commands will fail, and without an error message or diagnostic information.</P>
 
-<P>You do not need to unassign these key-commands. Just delete them from your tp-all-cmd-list</P>
+<P>Note that you do not need to unassign these key-commands. Just delete them from your tp-all-cmd-list</P>
 
 <H3>Illegal key-presses and key-commands</H3>
 
-<P><I>Single keys listed in this table may not be used at all--with or without modifiers. Note also, that these are <A HREF="../pex_in_textpad.html#tpbstpk">TextPad key-presses</A></I></P>
+<P><I>Unless otherwise stated, single keys listed in this table may not be used at all--with or without modifiers. Note also, that these are <A HREF="../pex_in_textpad.html#tpbstpk">TextPad key-presses</A></I></P>
 
 <P>The <CODE>&quot;tpaclcibkcs&quot;</CODE> utility checks for these illegal key-presses.</P>
 
@@ -163,7 +168,8 @@ zTPSelectL1c
 	<BR>and <CODE>&quot;Num 0&quot;</CODE> through <CODE>&quot;Num 9&quot;</CODE></TD>
 	<TD>PhraseExpress cannot <I>consistently</I> input these into the &quot;Press new shortcut key&quot; field.</TD>
 </TR><TR>
-	<TD><CODE>F1</CODE></TD>
+	<TD><CODE>F1</CODE> (only with <I>no</I> modifiers--with
+	<BR>modifiers acceptable)</TD>
 	<TD>PhraseExpress cannot input this key <I>without also opening the help dialog</I>.</TD>
 </TR></TABLE></P>
 
@@ -174,7 +180,7 @@ zTPSelectL1c
 <HR/>
 
 </PRE>
-<A NAME="bld3of4"/><H2><CODE>[<A HREF="#userbuildprocs">BACK</A>]</CODE> &nbsp; TPKC: Build process: Master 3-of-4 (sub 10-13)</H2>
+<A NAME="bld3of4"/><H2><CODE>[<A HREF="#userbuild">BACK</A>]</CODE> &nbsp; TPKC: Build process: Master 3-of-4 (sub 10-13)</H2>
 
 <P><I><A HREF="tpkc_build_processes.html#zTpkcMasterBuild3of4">Technical details</A></I></P>
 
@@ -194,7 +200,7 @@ zTPSelectL1c
 <HR/>
 
 </PRE>
-<A NAME="bld4of4"/><H2><CODE>[<A HREF="#userbuildprocs">BACK</A>]</CODE> &nbsp; TPKC: Build process: Master 4-of-4 (sub 14 & 15)</H2>
+<A NAME="bld4of4"/><H2><CODE>[<A HREF="#userbuild">BACK</A>]</CODE> &nbsp; TPKC: Build process: Master 4-of-4 (sub 14 & 15)</H2>
 
 <P><I><A HREF="tpkc_build_processes.html#zTpkcMasterBuild4of4">Technical details</A></I></P>
 
@@ -277,10 +283,11 @@ zTPSelectL1c
 
 <A NAME="assignkcsbs3"/><H3><CODE>[<A HREF="#assignkcsbs">back</A> -- <A HREF="#assignkcsbs2">PREV</A> / <A HREF="#assignkcsbs4">NEXT</A>]</CODE> &nbsp; <U>Assigning a new key-command via user-command-configuration: Step-by-step</U></H3>
 
-<P>Open the <A HREF="../plain_text_phrase_files.html#fformat">plain-text phrase-file</A> that contains the <CODE>PageDown</CODE> command: For this example, it user-specific command-configuration for category &quot;Cursor&quot;:
-<BR> &nbsp; &nbsp; <CODE>{#insert zXPROOT_DIR_tpkc}for_v_7_0_9\user_config\<I>[YOUR_TPKC_USER_DIR_NAME]</I>\output\usr_spcfc_cfg__bldproc10thr13\<B><U>cursor</U></B>.px.txt</CODE></P>
-
-<P>For example, here is the <A HREF="../../textpad__tpkc/for_v_7_0_9/user_config/tp_frsh_instl/output/usr_spcfc_cfg__bldproc10thr13/cursor.px.txt">default cursor user-config file</A> for a TextPad &quot;fresh installation&quot; (for when TextPad is just installed, and no custom key-commands have been assigned). The <CODE>PageDown</CODE> command is about half way down the file.</P>
+<P>Open the <A HREF="../plain_text_phrase_files.html#fformat">plain-text phrase-file</A> that contains the <CODE>PageDown</CODE> command. This command is in the &quot;cursor&quot; category:
+<BR> &nbsp; &nbsp; <CODE>{#insert zXPROOT_DIR_tpkc}for_v_7_0_9\user_config\<I>[YOUR_TPKC_USER_DIR_NAME]</I>\output\usr_spcfc_cfg__bldproc10thr13\<B><U>cursor</U></B>.px.txt</CODE>
+<BR>For example:
+<BR> &nbsp; &nbsp; <CODE>{#insert zXPROOT_DIR_tpkc}for_v_7_0_9\user_config\<I>tp_frsh_instl</I>\output\usr_spcfc_cfg__bldproc10thr13\<A HREF="../../textpad__tpkc/for_v_7_0_9/user_config/tp_frsh_instl/output/usr_spcfc_cfg__bldproc10thr13/cursor.px.txt">cursor.px.txt</A></CODE>
+<BR>The <CODE>PageDown</CODE> command is about half way down the file.</P>
 
 <P><B>Notes:</B><UL>
 	<LI>These phrases are <A HREF="phrase_express/phrase_compression.html#one">compressed</A> and ready-for-import.</LI>
@@ -304,7 +311,8 @@ zTPSelectL1c
 <BR> &nbsp; &nbsp; <CODE>zTpkcPageDownNbsKcEsc1	\\\{#insert zPGDN\\\}{#sleep 10}	zTpkcPageDownNbsKcEsc1</CODE></P>
 
 <P><B>Notes:</B><UL>
-	<LI>The <CODE>&quot;newnbskc&quot;</CODE> utility can help create this new nbs-kc phrase. <I><B>Warning:</B> This will only work if the TextPad built-in command <CODE>CharLeftExtend</CODE> (<CODE>zTPSelectL1c</CODE>) has already been assigned a key-command.</I></LI>
+	<LI>The <CODE>&quot;newnbskc&quot;</CODE> utility can help create this new nbs-kc phrase. <I><B>Warning:</B> This will only work if the TextPad built-in command <CODE>CharLeftExtend</CODE> (<CODE>zTPSelectL1c</CODE>) has already been assigned a key-command:</I>
+	<BR> &nbsp; &nbsp; <CODE>TextPad &gt; Configure &gt; Preferences &gt; Keyboard &gt; Categories &gt; &quot;Cursor&quot; &gt; Commands &gt; CharLeftExtend</CODE></LI>
 	<LI>The actual key-press(es) should be an <A HREF="../xbnpe_key_presses__xkp.html#zup">x-key-press</A>, not a raw PhraseExpress key-press</LI>
 </UL></P>
 
@@ -359,37 +367,45 @@ zTPSelectL1c
 
 <P>The TPKC project--and therefore <I>the entirety of XBN-PhraseExpress</I> (excepting the <A HREF="../xbnpe_key_presses__xkp.html">XKP</A> project)--requires the following <A HREF="../pex_in_textpad.html#tpbs">TextPad-bootstraps</A> to exist before installation. This list is in addition to the <A HREF="../xbnpe_key_presses__xkp.html#tpbs">tp-bootstraps for the XKP project</A>.</P>
 
+
+
+
+
 <P><UL>
+	<LI><B>Regex for marking all lines in the TextPad all-command list:</B>
+	<BR> &nbsp; &nbsp; <CODE>^(EditCopyTaggedLines|EditCutTaggedLines|BookmarkNext|BookmarkToggle|SearchFiles|FileManager|FileOpen|FileQuickOpen|SearchFind|SearchFindNext|SearchGoto|Preferences|SearchReplace)\b</CODE></LI>
 	<LI><B>Testing functions</B> <I>(accessible via <CODE><A HREF="xbnpe_ddmenus.html#xh">xh</A>tk</CODE>)</I><UL>
 		<LI><U>TPKC only:</U><UL>
-			<LI><U>Command:</U> <CODE>zTestAllTpkcTextPadBootstraps</CODE></LI>
-			<LI><U>Action:</U> <CODE>testtpbstpkc</CODE></LI>
+			<LI>Command: <CODE>zTestAllTpkcTextPadBootstraps</CODE></LI>
+			<LI>Action: <CODE>testtpbstpkc</CODE></LI>
 		</UL></LI>
 		<LI><U>XKP and then TPKC:</U><UL>
-			<LI><U>Command:</U> <CODE>zTestAllXkpTpkcTPBootstraps</CODE></LI>
-			<LI><U>Action:</U> <CODE>testtpbsxkptpkc</CODE></LI>
+			<LI>Command: <CODE>zTestAllXkpTpkcTPBootstraps</CODE></LI>
+			<LI>Action: <CODE>testtpbsxkptpkc</CODE></LI>
 		</UL></LI>
 	</UL></LI>
-	<LI><B><A HREF="plain_text_phrase_files.html#fformat">Phrase-file</A> locations:</B><UL>
-		<LI><U><A HREF="../pex_in_textpad.html#tpbs2files">On disk</A>:</U><UL>
-			<LI><B>Directory</B>
-			<BR> &nbsp; &nbsp; <CODE>{#insert zXPROOT_DIR_tpkc}for_v_7_0_9\user_config\<I>[YOUR_TPKC_USER_DIR_NAME]</I>\</CODE></LI>
+	<LI><B><A HREF="plain_text_phrase_files.html#fformat">Phrase-files</A>:</B><UL>
+		<LI><U><A HREF="../pex_in_textpad.html#tpbs2files">On disk</A>:</U>
+		<BR> &nbsp; &nbsp; <CODE>{#insert zXPROOT_DIR_tpkc}for_v_7_0_9\user_config\<I>[YOUR_TPKC_USER_DIR_NAME]</I>\</CODE></LI>
 <!-- Originates in textpad_tpkc.html#tpbs...START-->
-			<LI><A HREF="../pex_in_textpad.html#tpbsmain">Main</A> phrase-file:
-			<BR> &nbsp; &nbsp; <CODE>tp_bootstraps_for_xkp_project.px.txt</CODE></LI>
-			<LI>The &quot;non-main&quot; phrase-file (containing the <A HREF="../pex_in_textpad.html#tpbsmain">Escaped</A> and <A HREF="../pex_in_textpad.html#tpbstpkey">TextPad-key-press</A> phrases):
-				<BR> &nbsp; &nbsp; <CODE>tp_bootstraps_for_xkp_project_esc_tpk.px.txt</CODE></LI>
+		<LI><A HREF="../pex_in_textpad.html#tpbsmain">Main</A> phrase-file:
+		<BR> &nbsp; &nbsp; <CODE>tp_bootstraps_for_xkp_project.px.txt</CODE></LI>
+		<LI>The &quot;non-main&quot; phrase-file (containing the <A HREF="../pex_in_textpad.html#tpbsmain">Escaped</A> and <A HREF="../pex_in_textpad.html#tpbstpkey">TextPad-key-press</A> phrases):
+			<BR> &nbsp; &nbsp; <CODE>tp_bootstraps_for_xkp_project_esc_tpk.px.txt</CODE></LI>
 <!-- Originates in textpad_tpkc.html#tpbs...END-->
 		<LI><U>PhraseExpress folder to <A HREF="plain_text_phrase_files.html#import1">import</A> into:</U>
 		<PRE>XBN-PhraseExpress &gt;
    XBNPE: TextPad Built-in commands (TPKC) &gt;
       XBNPE-TPKC: User-specific phrases: <I>[YOUR_TPKC_USER_DIR_NAME]</I></PRE></LI>
 	</UL></LI>
-	<LI>The <A HREF="../../textpad__tpkc/for_v_7_0_9/user_config/_dirs_and_src_for_othr_cmptrs/tp_bootstraps_for_tpkc_project.px.txt">default tp-bootstrap phrase-file</A>, as used with a &quot;fresh&quot; TextPad install</LI>
+	<LI><B>Actual tp-bootstrap files:</B><UL>
+		<LI>As used by a TextPad &quot;fresh install&quot;: <A HREF="../../textpad__tpkc/for_v_7_0_9/user_config/tp_frsh_instl/tp_bootstraps_for_tpkc_project.px.txt">main</A>,  <A HREF="../../textpad__tpkc/for_v_7_0_9/user_config/tp_frsh_instl/tp_bootstraps_for_tpkc_project_esc_tpk.px.txt">non-main</A></LI>
+		<LI>Blank template: <A HREF="../../textpad__tpkc/for_v_7_0_9/user_config/_tpkc_user_dir_id__BLANK_TEMPLATE/tp_bootstraps_for_tpkc_project.px.txt">main</A>,  <A HREF="../../textpad__tpkc/for_v_7_0_9/user_config/_tpkc_user_dir_id__BLANK_TEMPLATE/tp_bootstraps_for_tpkc_project_esc_tpk.px.txt">non-main</A></LI>
+	</UL></LI>
 </UL></LI>
 </UL></P>
 
-<P><TABLE ALIGN="center" WIDTH="100%" BORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#EEEEEE"><TR ALIGN="center" VALIGN="middle">
+<P><TABLE ALIGN="center" BORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#EEEEEE"><TR ALIGN="center" VALIGN="middle">
 	<TD><B><U>Phrase name</U></B></TD>
 	<TD><B><U>Built-in command name</U></B></TD>
 	<TD><B><U>Description</U></B></TD>

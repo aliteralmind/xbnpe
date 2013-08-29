@@ -18,7 +18,7 @@
 		<LI><CODE>[<A HREF="#opensaveclose">go</A>]</CODE> &nbsp; Open, save, and close</LI>
 		<LI><CODE>[<A HREF="#duptext">go</A>]</CODE> &nbsp; Duplicate text to a new file</LI>
 		<LI><CODE>[<A HREF="#ccfn">go</A>]</CODE> &nbsp; Copy (and set) the current file's name and directory</LI>
-		<LI><CODE>[<A HREF="#fmqo">go</A>]</CODE> &nbsp; TextPad's File-manager and Quick-open dialogs</LI>
+		<LI><CODE>[<A HREF="#tpfmqo">go</A>]</CODE> &nbsp; TextPad's File-manager and Quick-open dialogs</LI>
 		<LI><CODE>[<A HREF="#nav">go</A>]</CODE> &nbsp; Navigate via TextPad's open-dialog, or Windows Explorer</LI>
 	</UL></LI>
 	<LI><B>Other:</B><UL>
@@ -29,6 +29,7 @@
 		<LI><CODE>[<A HREF="#zvdirfnm">go</A>]</CODE> &nbsp; <CODE>zvDIRECTORY</CODE> and <CODE>zvFILE_NAME</CODE>: Various utilities</LI>
 		<LI><CODE>[<A HREF="#aboutto">go</A>]</CODE> &nbsp; Print-delete &quot;about to open/insert&quot; warning</LI>
 	</UL></LI>
+	<LI><CODE>[<A HREF="#dirfile">go</A>]</CODE> &nbsp; The concept and benefit of &quot;dir-files&quot;</LI>
 </UL></P>
 
 
@@ -53,6 +54,37 @@
 		<LI><CODE>zzFileNmStarKSlpEtrKSlp</CODE></LI>
 	</UL></LI>
 </UL></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="dirfile"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; The concept and benefit of &quot;dir-files&quot;</H2>
+
+<P>Many XBNPE-file manipulation functions, such as<UL>
+	<LI><CODE>zDirFileOpen_M_dirFnm</CODE></LI>
+	<LI><CODE>zDirFileSave[Close]_M_dirFnm</CODE></LI>
+	<LI><CODE>zDirFileSaveAsWithOverwrite_M_dirFnm</CODE></LI>
+	<LI><CODE>zFileOpenDlgGTDirHighlightFile_M_dirFnm</CODE></LI>
+	<LI><CODE>zOpenDupCloseXstgFileTextToNewEmptyCB_M_dirFnm</CODE></LI>
+	<LI><CODE>zDelOneOutFileDlg_M_dirFnm</CODE></LI>
+</UL>require both of these variables to be set:<UL>
+	<LI><CODE>zvDIRECTORY</CODE></LI>
+	<LI><CODE>zvFILE_NAME</CODE></LI>
+</UL></P>
+
+<P>These open, or otherwise navigate to the target file by<OL>
+	<LI>opening the save (or open) dialog,</LI>
+	<LI>navigating to the directory, by typing <CODE>zvDIRECTORY</CODE> into the dialog's textbox, and then pressing the <CODE>[Open]</CODE> button.</LI>
+	<LI>After the directory is reached, only then it types <CODE>zvFILE_NAME</CODE> into the same textbox, and again presses the <CODE>[Open]</CODE> button.</LI>
+</OL></P>
+
+<P>The benefit of using the &quot;dir-file&quot;, instead of pasting in the full path (<CODE>zvDIRECTORY+zvFILE_NAME</CODE>) at once, is that an incorrectly-named or missing directory is automatically flagged <I>with a modal dialog</I>, preventing the rest of the script from proceeding (it actually does proceed, but the modal dialog suppresses it from doing anything). <I>A screenshot is at the bottom of this section.</I></P>
+
+<P>In addition, the directory-name remains in the dialog's textbox, allowing you to diagnose the specific sub-directory causing the problem.</P>
+
+<P>The <A HREF="#tpfmqo">file-manager and quick-open dialogs</A> do not use this dir-file concept--they directly access the file, using its full path. These are more appropriate, and faster, when it is <I>absolutely known</I> that the file and its directory exist.</P>
 
 <PRE>
 
@@ -121,7 +153,7 @@ file named TWO</PRE>
 <HR/>
 
 </PRE>
-<A NAME="fmqo"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; File manipulation: TextPad's File-manager and Quick-open dialogs</H2>
+<A NAME="tpfmqo"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; File manipulation: TextPad's File-manager and Quick-open dialogs</H2>
 
 <H3>Syntax summary</H3>
 
@@ -432,7 +464,7 @@ file named TWO</PRE>
 <BR>is equivalent to
 <BR> &nbsp; &nbsp; <CODE>zDirFileSaveClose_M_dirFnm</CODE></P>
 
-<P>Strip-save functions should not be used unless<UL>
+<P>It is recommended that the strip-save functions should not be used unless<UL>
 	<LI>trailing spaces are a realistic possibility, and</LI>
 	<LI><I>not</I> stripping them will cause problems.</LI>
 </UL></P>

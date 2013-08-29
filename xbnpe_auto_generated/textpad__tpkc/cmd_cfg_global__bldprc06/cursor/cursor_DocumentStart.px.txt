@@ -1,8 +1,0 @@
-zTpkcDocumentStartAbrv1C	Crdcs	zTpkcDocumentStartAbrv1C
-zTpkcCrdcsCmdNameTC	DocumentStart	zTpkcCrdcsCmdNameTC
-zTpkcCrdcsDfltPhrsNm	zTPGTDocTop	zTpkcCrdcsDfltPhrsNm
-zTpkcCrdcsCatForCmdAbrvLC	cursor	zTpkcCrdcsCatForCmdAbrvLC
-zTpkcCrdcsCmdType_mcrTl		zTpkcCrdcsCmdType_mcrTl
-zTpkcCrdcsIsBtstrp_yes	yes	zTpkcCrdcsIsBtstrp_yes
-zTpkcCrdcsDfltPostKcSlpMils	25	zTpkcCrdcsDfltPostKcSlpMils
-zTpkcCrdcsStpsFrmCmdListTop	{#NONE -chars d -count 3}{#insert z5ThnTSlp}	zTpkcCrdcsStpsFrmCmdListTop

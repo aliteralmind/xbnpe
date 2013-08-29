@@ -1,9 +1,0 @@
-zvCMD_ABRV_1C_sfToolCompareFiles	{#SETPHRASE -description zvCMD_ABRV_1C -content Tcmp -autotext zvCMD_ABRV_1C -folder ctvv_folder}	zvCMD_ABRV_1C_sfToolCompareFiles
-zvCMD_ABRV_1C_sfToolExplorer	{#SETPHRASE -description zvCMD_ABRV_1C -content Txplr -autotext zvCMD_ABRV_1C -folder ctvv_folder}	zvCMD_ABRV_1C_sfToolExplorer
-zvCMD_ABRV_1C_sfToolHTMLValidate	{#SETPHRASE -description zvCMD_ABRV_1C -content Thv -autotext zvCMD_ABRV_1C -folder ctvv_folder}	zvCMD_ABRV_1C_sfToolHTMLValidate
-zvCMD_ABRV_1C_sfToolRerun	{#SETPHRASE -description zvCMD_ABRV_1C -content Trer -autotext zvCMD_ABRV_1C -folder ctvv_folder}	zvCMD_ABRV_1C_sfToolRerun
-zvCMD_ABRV_1C_sfToolRun	{#SETPHRASE -description zvCMD_ABRV_1C -content Trun -autotext zvCMD_ABRV_1C -folder ctvv_folder}	zvCMD_ABRV_1C_sfToolRun
-zvCMD_ABRV_1C_sfToolSort	{#SETPHRASE -description zvCMD_ABRV_1C -content Tsrt -autotext zvCMD_ABRV_1C -folder ctvv_folder}	zvCMD_ABRV_1C_sfToolSort
-zvCMD_ABRV_1C_sfToolSpell	{#SETPHRASE -description zvCMD_ABRV_1C -content Tspl -autotext zvCMD_ABRV_1C -folder ctvv_folder}	zvCMD_ABRV_1C_sfToolSpell
-zvCMD_ABRV_1C_sfToolStop	{#SETPHRASE -description zvCMD_ABRV_1C -content Tstp -autotext zvCMD_ABRV_1C -folder ctvv_folder}	zvCMD_ABRV_1C_sfToolStop
-zvCMD_ABRV_1C_sfToolWildEdit	{#SETPHRASE -description zvCMD_ABRV_1C -content Twedt -autotext zvCMD_ABRV_1C -folder ctvv_folder}	zvCMD_ABRV_1C_sfToolWildEdit

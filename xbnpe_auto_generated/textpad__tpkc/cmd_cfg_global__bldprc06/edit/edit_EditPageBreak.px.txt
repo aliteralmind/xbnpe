@@ -1,8 +1,0 @@
-zTpkcEditPageBreakAbrv1C	Epgbrk	zTpkcEditPageBreakAbrv1C
-zTpkcEpgbrkCmdNameTC	EditPageBreak	zTpkcEpgbrkCmdNameTC
-zTpkcEpgbrkDfltPhrsNm	zTPPageBreak	zTpkcEpgbrkDfltPhrsNm
-zTpkcEpgbrkCatForCmdAbrvLC	edit	zTpkcEpgbrkCatForCmdAbrvLC
-zTpkcEpgbrkCmdType_mcrTl		zTpkcEpgbrkCmdType_mcrTl
-zTpkcEpgbrkIsBtstrp_yes		zTpkcEpgbrkIsBtstrp_yes
-zTpkcEpgbrkDfltPostKcSlpMils	10	zTpkcEpgbrkDfltPostKcSlpMils
-zTpkcEpgbrkStpsFrmCmdListTop	{#insert zEND}{#insert zPGUP3}{#insert zUP}	zTpkcEpgbrkStpsFrmCmdListTop

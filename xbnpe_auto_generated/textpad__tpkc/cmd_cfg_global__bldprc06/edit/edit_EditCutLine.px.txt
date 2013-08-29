@@ -1,8 +1,0 @@
-zTpkcEditCutLineAbrv1C	Ectln	zTpkcEditCutLineAbrv1C
-zTpkcEctlnCmdNameTC	EditCutLine	zTpkcEctlnCmdNameTC
-zTpkcEctlnDfltPhrsNm	zTPCutLine	zTpkcEctlnDfltPhrsNm
-zTpkcEctlnCatForCmdAbrvLC	edit	zTpkcEctlnCatForCmdAbrvLC
-zTpkcEctlnCmdType_mcrTl		zTpkcEctlnCmdType_mcrTl
-zTpkcEctlnIsBtstrp_yes		zTpkcEctlnIsBtstrp_yes
-zTpkcEctlnDfltPostKcSlpMils	10	zTpkcEctlnDfltPostKcSlpMils
-zTpkcEctlnStpsFrmCmdListTop	{#insert zPGDN3}{#insert zDOWN}	zTpkcEctlnStpsFrmCmdListTop

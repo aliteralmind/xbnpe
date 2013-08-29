@@ -1,8 +1,0 @@
-zTpkcEditNewLineBeforeAbrv1C	Enwlnb4	zTpkcEditNewLineBeforeAbrv1C
-zTpkcEnwlnb4CmdNameTC	EditNewLineBefore	zTpkcEnwlnb4CmdNameTC
-zTpkcEnwlnb4DfltPhrsNm	zTPNewLineBefore	zTpkcEnwlnb4DfltPhrsNm
-zTpkcEnwlnb4CatForCmdAbrvLC	edit	zTpkcEnwlnb4CatForCmdAbrvLC
-zTpkcEnwlnb4CmdType_mcrTl		zTpkcEnwlnb4CmdType_mcrTl
-zTpkcEnwlnb4IsBtstrp_yes		zTpkcEnwlnb4IsBtstrp_yes
-zTpkcEnwlnb4DfltPostKcSlpMils	10	zTpkcEnwlnb4DfltPostKcSlpMils
-zTpkcEnwlnb4StpsFrmCmdListTop	{#insert zEND}{#insert zPGUP3}{#insert zUP2}	zTpkcEnwlnb4StpsFrmCmdListTop

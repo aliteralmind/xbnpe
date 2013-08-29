@@ -1,8 +1,0 @@
-zTpkcLineDownExtendAbrv1C	Crlndx	zTpkcLineDownExtendAbrv1C
-zTpkcCrlndxCmdNameTC	LineDownExtend	zTpkcCrlndxCmdNameTC
-zTpkcCrlndxDfltPhrsNm	zTPLineDownExtend	zTpkcCrlndxDfltPhrsNm
-zTpkcCrlndxCatForCmdAbrvLC	cursor	zTpkcCrlndxCatForCmdAbrvLC
-zTpkcCrlndxCmdType_mcrTl		zTpkcCrlndxCmdType_mcrTl
-zTpkcCrlndxIsBtstrp_yes		zTpkcCrlndxIsBtstrp_yes
-zTpkcCrlndxDfltPostKcSlpMils	2	zTpkcCrlndxDfltPostKcSlpMils
-zTpkcCrlndxStpsFrmCmdListTop	{#insert zPGDN2}{#insert zDOWN2}	zTpkcCrlndxStpsFrmCmdListTop

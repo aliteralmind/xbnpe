@@ -1,8 +1,0 @@
-zTpkcEditDelWordAbrv1C	Edlwd	zTpkcEditDelWordAbrv1C
-zTpkcEdlwdCmdNameTC	EditDelWord	zTpkcEdlwdCmdNameTC
-zTpkcEdlwdDfltPhrsNm	zTPDelWord	zTpkcEdlwdDfltPhrsNm
-zTpkcEdlwdCatForCmdAbrvLC	edit	zTpkcEdlwdCatForCmdAbrvLC
-zTpkcEdlwdCmdType_mcrTl		zTpkcEdlwdCmdType_mcrTl
-zTpkcEdlwdIsBtstrp_yes		zTpkcEdlwdIsBtstrp_yes
-zTpkcEdlwdDfltPostKcSlpMils	5	zTpkcEdlwdDfltPostKcSlpMils
-zTpkcEdlwdStpsFrmCmdListTop	{#insert zPGDN5}{#insert zUP}	zTpkcEdlwdStpsFrmCmdListTop

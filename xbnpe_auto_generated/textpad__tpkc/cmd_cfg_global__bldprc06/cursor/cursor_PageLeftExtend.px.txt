@@ -1,8 +1,0 @@
-zTpkcPageLeftExtendAbrv1C	Crpglx	zTpkcPageLeftExtendAbrv1C
-zTpkcCrpglxCmdNameTC	PageLeftExtend	zTpkcCrpglxCmdNameTC
-zTpkcCrpglxDfltPhrsNm	zTPPageLeftExtend	zTpkcCrpglxDfltPhrsNm
-zTpkcCrpglxCatForCmdAbrvLC	cursor	zTpkcCrpglxCatForCmdAbrvLC
-zTpkcCrpglxCmdType_mcrTl		zTpkcCrpglxCmdType_mcrTl
-zTpkcCrpglxIsBtstrp_yes		zTpkcCrpglxIsBtstrp_yes
-zTpkcCrpglxDfltPostKcSlpMils	20	zTpkcCrpglxDfltPostKcSlpMils
-zTpkcCrpglxStpsFrmCmdListTop	{#NONE -chars p -count 4}{#insert z5ThnTSlp}	zTpkcCrpglxStpsFrmCmdListTop

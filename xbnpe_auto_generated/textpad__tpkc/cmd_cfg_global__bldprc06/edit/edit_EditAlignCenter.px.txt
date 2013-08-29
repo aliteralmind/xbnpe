@@ -1,8 +1,0 @@
-zTpkcEditAlignCenterAbrv1C	Ealc	zTpkcEditAlignCenterAbrv1C
-zTpkcEalcCmdNameTC	EditAlignCenter	zTpkcEalcCmdNameTC
-zTpkcEalcDfltPhrsNm	zTPAlignCenter	zTpkcEalcDfltPhrsNm
-zTpkcEalcCatForCmdAbrvLC	edit	zTpkcEalcCatForCmdAbrvLC
-zTpkcEalcCmdType_mcrTl		zTpkcEalcCmdType_mcrTl
-zTpkcEalcIsBtstrp_yes		zTpkcEalcIsBtstrp_yes
-zTpkcEalcDfltPostKcSlpMils	10	zTpkcEalcDfltPostKcSlpMils
-zTpkcEalcStpsFrmCmdListTop	(*NOTHING. Top command in list*)	zTpkcEalcStpsFrmCmdListTop

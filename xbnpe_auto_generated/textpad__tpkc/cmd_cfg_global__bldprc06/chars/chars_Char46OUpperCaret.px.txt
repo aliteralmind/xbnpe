@@ -1,8 +1,0 @@
-zTpkcChar46OUpperCaretAbrv1C	Chrouc	zTpkcChar46OUpperCaretAbrv1C
-zTpkcChroucCmdNameTC	Char46OUpperCaret	zTpkcChroucCmdNameTC
-zTpkcChroucDfltPhrsNm	zTPChar46OUpperCaret	zTpkcChroucDfltPhrsNm
-zTpkcChroucCatForCmdAbrvLC	chars	zTpkcChroucCatForCmdAbrvLC
-zTpkcChroucCmdType_mcrTl		zTpkcChroucCmdType_mcrTl
-zTpkcChroucIsBtstrp_yes		zTpkcChroucIsBtstrp_yes
-zTpkcChroucDfltPostKcSlpMils	1	zTpkcChroucDfltPostKcSlpMils
-zTpkcChroucStpsFrmCmdListTop	{#insert zEND}{#insert zPGUP3}{#insert zUP}	zTpkcChroucStpsFrmCmdListTop

@@ -1,8 +1,0 @@
-zTpkcEditFillBlockAbrv1C	Eflblk	zTpkcEditFillBlockAbrv1C
-zTpkcEflblkCmdNameTC	EditFillBlock	zTpkcEflblkCmdNameTC
-zTpkcEflblkDfltPhrsNm	zTPFillBlock	zTpkcEflblkDfltPhrsNm
-zTpkcEflblkCatForCmdAbrvLC	edit	zTpkcEflblkCatForCmdAbrvLC
-zTpkcEflblkCmdType_mcrTl		zTpkcEflblkCmdType_mcrTl
-zTpkcEflblkIsBtstrp_yes		zTpkcEflblkIsBtstrp_yes
-zTpkcEflblkDfltPostKcSlpMils	10	zTpkcEflblkDfltPostKcSlpMils
-zTpkcEflblkStpsFrmCmdListTop	{#insert zPGDN5}{#insert zDOWN3}	zTpkcEflblkStpsFrmCmdListTop

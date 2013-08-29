@@ -1,8 +1,0 @@
-zTpkcClipSaveBookAbrv1C	Clsb	zTpkcClipSaveBookAbrv1C
-zTpkcClsbCmdNameTC	ClipSaveBook	zTpkcClsbCmdNameTC
-zTpkcClsbDfltPhrsNm	zTPClipSaveBook	zTpkcClsbDfltPhrsNm
-zTpkcClsbCatForCmdAbrvLC	cliplib	zTpkcClsbCatForCmdAbrvLC
-zTpkcClsbCmdType_mcrTl		zTpkcClsbCmdType_mcrTl
-zTpkcClsbIsBtstrp_yes		zTpkcClsbIsBtstrp_yes
-zTpkcClsbDfltPostKcSlpMils	50	zTpkcClsbDfltPostKcSlpMils
-zTpkcClsbStpsFrmCmdListTop	{#insert zEND}{#insert zUP}	zTpkcClsbStpsFrmCmdListTop

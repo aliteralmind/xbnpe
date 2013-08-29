@@ -1,0 +1,67 @@
+R:\jeffy\programming\sandbox\macros\xpe_large_stuff\tpkc_build_proc_videos\00_prep_for_new_tpkc_build.mov
+
+Title:
+XBNPE-TPKC: Build process (1 of ???): Preparation
+
+Description:
+First in a series demonstrating a full XBNPE-TPKC build process.
+
+This video shows how to prepare for a completely new build, by eliminating the auto-generated files from the previous build.
+
+This build is a "test" build, meaning only a subset of TextPad categories are processed. The purpose of a "test" build is for demonstration and testing of the TPKC build process.
+
+There are fifteen build processes (actually sixteen, since 03 is actually two: 03 and 03a), split into four "master" builds: 1of4, 2of4, 3of4, 4of4. The first two master-builds (parts 1 and 2) are for TPKC-administrators only. Parts 3 and 4 are for TPKC-users.
+
+Tags:
+xbnpe,tpkc,XBN-PhraseExpress,xbn,PhraseExpress,TextPad,setup,build
+
+
+-------------
+-------------
+-------------
+-------------
+
+R:\jeffy\programming\sandbox\macros\xpe_large_stuff\tpkc_build_proc_videos\01_tpkc_master_build_1of4.mov
+
+Title:
+XBNPE-TPKC: Build process (2 of ???): Running master-build 1of4
+
+Description:
+Second in a series demonstrating a full XBNPE-TPKC build process. This video shows the execution of master-build-process number 1of4.
+
+------------------------
+The previous video in this series:
+- XBNPE-TPKC: Build process (1 of ???): Preparation
+------------------------
+
+
+Tags:
+xbnpe,tpkc,XBN-PhraseExpress,xbn,PhraseExpress,TextPad,setup,build
+
+
+-------------
+-------------
+-------------
+-------------
+
+R:\jeffy\programming\sandbox\macros\xpe_large_stuff\tpkc_build_proc_videos\02_tpkc_master_build_2of4.mov
+
+Title:
+XBNPE-TPKC: Build process (3 of ???): Running master-build 2of4
+
+Description:
+Third in a series demonstrating a full XBNPE-TPKC build process. This video shows the execution of master-build-process number 2of4.
+
+------------------------
+The previous video in this series:
+- XBNPE-TPKC: Build process (2 of ???): Running master-build 1of4
+------------------------
+
+
+Tags:
+xbnpe,tpkc,XBN-PhraseExpress,xbn,PhraseExpress,TextPad,setup,build
+
+-------------
+-------------
+-------------
+-------------

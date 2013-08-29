@@ -1,8 +1,0 @@
-zTpkcViewStartAbrv1C	Crvws	zTpkcViewStartAbrv1C
-zTpkcCrvwsCmdNameTC	ViewStart	zTpkcCrvwsCmdNameTC
-zTpkcCrvwsDfltPhrsNm	zTPViewStart	zTpkcCrvwsDfltPhrsNm
-zTpkcCrvwsCatForCmdAbrvLC	cursor	zTpkcCrvwsCatForCmdAbrvLC
-zTpkcCrvwsCmdType_mcrTl		zTpkcCrvwsCmdType_mcrTl
-zTpkcCrvwsIsBtstrp_yes		zTpkcCrvwsIsBtstrp_yes
-zTpkcCrvwsDfltPostKcSlpMils	10	zTpkcCrvwsDfltPostKcSlpMils
-zTpkcCrvwsStpsFrmCmdListTop	{#NONE -chars v -count 2}{#insert z5ThnTSlp}	zTpkcCrvwsStpsFrmCmdListTop

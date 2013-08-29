@@ -1,8 +1,0 @@
-zTpkcViewHScrollbarAbrv1C	Vhsb	zTpkcViewHScrollbarAbrv1C
-zTpkcVhsbCmdNameTC	ViewHScrollbar	zTpkcVhsbCmdNameTC
-zTpkcVhsbDfltPhrsNm	zTPViewHScrollbar	zTpkcVhsbDfltPhrsNm
-zTpkcVhsbCatForCmdAbrvLC	view	zTpkcVhsbCatForCmdAbrvLC
-zTpkcVhsbCmdType_mcrTl		zTpkcVhsbCmdType_mcrTl
-zTpkcVhsbIsBtstrp_yes		zTpkcVhsbIsBtstrp_yes
-zTpkcVhsbDfltPostKcSlpMils	10	zTpkcVhsbDfltPostKcSlpMils
-zTpkcVhsbStpsFrmCmdListTop	{#insert zPGDN2}{#insert zDOWN}	zTpkcVhsbStpsFrmCmdListTop
