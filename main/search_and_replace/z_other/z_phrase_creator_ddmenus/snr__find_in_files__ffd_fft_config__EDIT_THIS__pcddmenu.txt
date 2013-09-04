@@ -20,7 +20,7 @@ Phrase-creators: XBN-PhraseExpress -- Call 'xh'   .   zXbnpeCmdPopupRoot
 				User-config'd directories -- xhsfic (must call from 'In files' field!)	.	xhsfi
 					...\macros\	{#insert zTPSelectAll}{#insert zROOT_DIR_XBNPE_PARENT}	xhsfic
 					...\macros\xbnpe\	{#insert zTPSelectAll}{#insert zROOT_DIR_XBNPE_MAIN}	xhsfic
-					...\macros\xbnpe_auto_generated\	{#insert zTPSelectAll}{#insert zROOT_DIR_XBNPE_AG}	xhsfic
+					...\macros\auto_generated\	{#insert zTPSelectAll}{#insert zROOT_DIR_XBNPE_AG}	xhsfic
 				User-config'd file-types -- xhsfil (must call from 'In folder' field!)	.	xhsfi
 					*	{#insert zTPSelectAll}*	xhsfil
 					*.java	{#insert zTPSelectAll}*.java	xhsfil

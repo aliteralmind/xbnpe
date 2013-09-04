@@ -24,14 +24,15 @@
 	<LI><CODE>[<A HREF="#zup">go</A>]</CODE> &nbsp; Detailed example: <CODE>zUP</CODE></LI>
 	<LI><CODE>[<A HREF="#build">go</A>]</CODE> &nbsp; XKP build process</LI>
 	<LI><CODE>[<A HREF="#tpbs">go</A>]</CODE> &nbsp; <B>TextPad-bootstraps</B> required by the XBNPE-XKP project</LI>
+	<LI><CODE>[<A HREF="#rawpexkc">go</A>]</CODE> &nbsp; &quot;Raw&quot; PhraseExpress key-presses</LI>
 </UL></P>
 
 <H3>Phrase-creator drop-down-menu</H3>
 
 <P>Source (indented):
-<BR> &nbsp; &nbsp; <CODE><CODE STYLE="background-color:#E1E1E1;">../textpad__tpkc/non_bootstrap_utils/z_phrase_creator_ddmenus/xkp__pcddmenu.txt</CODE></CODE>
+<BR> &nbsp; &nbsp; <CODE STYLE="background-color:#E1E1E1;">{#insert zROOT_DIR_XBNPE_MAIN}\textpad__tpkc\non_bootstrap_utils\z_phrase_creator_ddmenus\<A HREF="../textpad__tpkc/non_bootstrap_utils/z_phrase_creator_ddmenus/xkp__pcddmenu.txt">xkp__pcddmenu.txt</A></CODE>
 <BR>Output (unindented):
-<BR> &nbsp; &nbsp; <CODE><CODE STYLE="background-color:#E1E1E1;">../textpad__tpkc/non_bootstrap_utils/z_phrase_creator_ddmenus/z_temp_folder_for_unindenting_ddmenus/xkp__pcddmenu.px.txt</CODE></CODE></P>
+<BR> &nbsp; &nbsp; <CODE STYLE="background-color:#E1E1E1;">{#insert zROOT_DIR_XBNPE_MAIN}\textpad__tpkc\non_bootstrap_utils\z_phrase_creator_ddmenus\z_temp_folder_for_unindenting_ddmenus\<A HREF="../textpad__tpkc/non_bootstrap_utils/z_phrase_creator_ddmenus/z_temp_folder_for_unindenting_ddmenus/xkp__pcddmenu.px.txt">xkp__pcddmenu.px.txt</A></CODE></P>
 <PRE>
 
 <HR/>
@@ -248,21 +249,19 @@
 <P>The XKP project--and therefore the entirety of XBN-PhraseExpress--requires the following <A HREF="pex_in_textpad.html#tpbs">TextPad-bootstraps</A> to exist before installation.</P>
 
 <P><UL>
-	<LI><B>Regex for marking all in the TextPad all-command list:</B>
+	<LI><B>Regex for marking all in the <A HREF="textpad__tpkc/index.html#tpacl">TextPad all-command list</A>:</B>
 	<BR> &nbsp; &nbsp; <CODE>^(EditCopy|EditCut|EditDupLine|FileClose|FileNew|FileSave|DocumentStart|WordRightEnd|EditPaste|SelectAll|WordLeftExtend|WordRightEndExtend|ToggleWordWrap)\b</CODE></LI>
 	<LI><B>Testing function</B> <I>(accessible via <CODE><A HREF="xbnpe_ddmenus.html#xh">xh</A>cck</CODE>)</I><UL>
 		<LI>Command: <CODE>zTestAllXKPTextPadBootstraps</CODE></LI>
 		<LI>Action: <CODE>testtpbsxkp</CODE></LI>
 	</UL></LI>
 	<LI><B><A HREF="plain_text_phrase_files.html#fformat">Phrase-files</A>:</B><UL>
-			<LI><U><A HREF="pex_in_textpad.html#tpbs2files">On disk</A>:</U>
+			<LI><U><A HREF="pex_in_textpad.html#tpbslocations">On disk</A>:</U>
 			<BR> &nbsp; &nbsp; <CODE>{#insert zXPROOT_DIR_xbnpeXkp}xkp_bootstrap_phrases\xkp_btstrp__textpad__built_in_cmds\</CODE></LI>
-<!-- Originates in xbnpe_key_presses__xkp.html#tpbs...START-->
 			<LI><A HREF="pex_in_textpad.html#tpbsmain">Main</A> phrase-file:
 			<BR> &nbsp; &nbsp; <CODE>tp_bootstraps_for_xkp_project.px.txt</CODE></LI>
 			<LI>The &quot;non-main&quot; phrase-file (containing the <A HREF="pex_in_textpad.html#tpbsmain">Escaped</A> and <A HREF="pex_in_textpad.html#tpbstpkey">TextPad-key-press</A> phrases):
 				<BR> &nbsp; &nbsp; <CODE>tp_bootstraps_for_xkp_project_esc_tpk.px.txt</CODE></LI>
-<!-- Originates in xbnpe_key_presses__xkp.html#tpbs...END-->
 		</UL></LI>
 		<LI><U>PhraseExpress folder to <A HREF="plain_text_phrase_files.html#import1">import</A> into:</U>
 		<PRE>XBN-PhraseExpress &gt;
@@ -278,63 +277,103 @@
 <P><TABLE ALIGN="center" BORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#EEEEEE"><TR ALIGN="center" VALIGN="middle">
 	<TD><B><U>Phrase name</U></B></TD>
 	<TD><B><U>Built-in command name</U></B></TD>
+	<TD><B><U>Category</U></B></TD>
 	<TD><B><U>Description</U></B></TD>
 </TR><TR>
 	<TD><CODE>zTPCopy</CODE></TD>
 	<TD><CODE>EditCopy</CODE></TD>
+	<TD ALIGN="center"><CODE>Edit</CODE></TD>
 	<TD>Duplicates the currently-selected text into the clipboard</TD>
 </TR><TR>
 	<TD><CODE>zTPCut</CODE></TD>
 	<TD><CODE>EditCut</CODE></TD>
+	<TD ALIGN="center"><CODE>Edit</CODE></TD>
 	<TD>Moves the currently-selected text</TD>
 </TR><TR>
 	<TD><CODE>zTPDupLine</CODE></TD>
 	<TD><CODE>EditDupLine</CODE></TD>
+	<TD ALIGN="center"><CODE>Edit</CODE></TD>
 	<TD>Duplicates the current line (does not copy)</TD>
 </TR><TR>
 	<TD><CODE>zTPFileClose</CODE></TD>
 	<TD><CODE>FileClose</CODE></TD>
+	<TD ALIGN="center"><CODE>File</CODE></TD>
 	<TD>Closes the current file. If unsaved, asks you to save or discard changes, or cancel the close process.</TD>
 </TR><TR>
 	<TD><CODE>zTPFileNew</CODE></TD>
 	<TD><CODE>FileNew</CODE></TD>
+	<TD ALIGN="center"><CODE>File</CODE></TD>
 	<TD>Opens a new document</TD>
 </TR><TR>
 	<TD><CODE>zTPFileSave</CODE></TD>
 	<TD><CODE>FileSave</CODE></TD>
+	<TD ALIGN="center"><CODE>File</CODE></TD>
 	<TD>Saves the current document. If unsaved, pops open the &quot;Open file(s)&quot; dialog.</TD>
 </TR><TR>
 	<TD><CODE>zTPGTDocTop</CODE></TD>
 	<TD><CODE>DocumentStart</CODE></TD>
+	<TD ALIGN="center"><CODE>Cursor</CODE></TD>
 	<TD>Move the cursor to line one, column zero.</TD>
 </TR><TR>
 	<TD><CODE>zTPMoveR1w</CODE></TD>
 	<TD><CODE>WordRightEnd</CODE></TD>
+	<TD ALIGN="center"><CODE>Cursor</CODE></TD>
 	<TD>Move the cursor to just after the final character of the non-whitespace word, closest to its right.</TD>
 </TR><TR>
 	<TD><CODE>zTPPaste</CODE></TD>
 	<TD><CODE>EditPaste</CODE></TD>
+	<TD ALIGN="center"><CODE>Edit</CODE></TD>
 	<TD>Write the value of the clipboard to the current document, replacing any selection.</TD>
 </TR><TR>
 	<TD><CODE>zTPSelectAll</CODE></TD>
 	<TD><CODE>SelectAll</CODE></TD>
+	<TD ALIGN="center"><CODE>Selection</CODE></TD>
 	<TD>Select all text in the document.</TD>
 </TR><TR>
 	<TD><CODE>zTPSelectL1w</CODE></TD>
 	<TD><CODE>WordLeftExtend</CODE></TD>
+	<TD ALIGN="center"><CODE>Cursor</CODE></TD>
 	<TD>Increase the current selection so it includes the non-whitespace word closest to the left of the cursor/current-selection (there may be whitespace between the cursor/current-selection, and the left-word), through its first character.</TD>
 </TR><TR>
 	<TD><CODE>zTPSelectR1w</CODE></TD>
 	<TD><CODE>WordRightExtend</CODE></TD>
+	<TD ALIGN="center"><CODE>Cursor</CODE></TD>
 	<TD>Increase the current selection so it includes the non-whitespace word closest to the right of the cursor/current-selection (there may be whitespace between the cursor/current-selection, and the right-word), through its final character.</TD>
 </TR><TR>
 	<TD><CODE>zTPToggleWW</CODE></TD>
 	<TD><CODE>ToggleWord</CODE></TD>
+	<TD ALIGN="center"><CODE>Configure</CODE></TD>
 	<TD>Toggle's &quot;word-wrap&quot; state.</TD>
 </TD>
 </TR></TABLE></P>
 
+<PRE>
 
+<HR/>
+
+</PRE>
+<A NAME="rawpexkc"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; &quot;Raw&quot; PhraseExpress key-presses</H2>
+
+<P>As in the <A HREF="#zup">detailed example</A>, the x-key-press
+<BR> &nbsp; &nbsp; <CODE>{#insert zUP}</CODE>
+<BR>is equivalent to the &quot;raw&quot; PhraseExpress key-press, followed by a call to <CODE>zTSlp</CODE>:
+<BR> &nbsp; &nbsp; <CODE>{#UP}{#insert zTSlp}</CODE></P>
+
+<P>To obtain a specific &quot;raw&quot; PhraseExpress key-press:<OL>
+	<LI>In the PhraseExpress application, create a new phrase by selecting a folder, and pressing <CODE>Alt+P</CODE></LI>
+	<LI>Right-click anywhere in the phrase-body, and navigate to the following sub-menu item:
+	<BR> &nbsp; &nbsp; <CODE>Macro &gt; Programming &gt; Keyboard &gt; Simulate entering a special key</CODE>
+	<BR><I>(Screenshot at the bottom of this section).</I></LI>
+	<LI>Select from among the options in this dialog
+
+	<P/><IMG SRC="images/simulate_a_keystroke.jpg" BORDER="1"/></LI>
+	<LI>Press <CODE>[OK]</CODE>, and the &quot;raw&quot; PhraseExpress key-press is printed to the phrase's body.</LI>
+	<LI>Alternatively (assuming the <A HREF="xbnpe_key_presses__xkp.html">XKP project</A> is fully installed), you could use one of the <A HREF="phrase_express/phrase_creators_pcc.html#keypress"><CODE>&quot;kr...&quot;</CODE> phrase-creators</A> in the  <A HREF="phrase_express/phrase_creators_pcc.html">XBNPE-Phrase-creator (PCC) project</A></LI>
+</OL></P>
+
+
+
+<P><IMG SRC="images/raw_key_press.jpg" BORDER="1"/></P>
 
 <PRE>
 

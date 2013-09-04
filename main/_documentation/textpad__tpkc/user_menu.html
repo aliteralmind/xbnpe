@@ -121,7 +121,7 @@ Category 'edit' (total commands=67, with-a-kc=32):
 	<LI>does not have any key-command associated to it in the TPKC-project (because it's not a <A HREF="../pex_in_textpad.html#tpbs">TextPad-bootstrap</A> and it has no nbs-kcs),</LI>
 	<LI>but it <I><B>does</B></I> have a (very specific) key-command assigned to it, <I><B>only in</B></I>
 	<BR> &nbsp; &nbsp; <CODE>TextPad &gt; Configure &gt; Preferences &gt; Keyboard</CODE></LI>
-</UL>This &quot;very specific&quot; force-test kc is defined by the master-configuration-variables
+</UL>This &quot;very specific&quot; force-test kc is defined by the <A HREF="master_cfg_vars.html#zForceTestKeyCmd">master-configuration-variables</A>
 <BR> &nbsp; &nbsp; <CODE>zForceTestKeyCmdEsc</CODE>
 <BR>and
 <BR> &nbsp; &nbsp; <CODE>zForceTestKeyCmd</CODE>
@@ -353,7 +353,7 @@ edit > EditCopyTaggedLines  /  zTPBookmarkCopyAll    (ecpbkmlns)
 <P>This qbl is named
 <BR> &nbsp; &nbsp; <CODE>zzTpkcAllCmdsWAKcQbl_<I>[category]</I></CODE>
 <BR>and is written at the bottom of each category's nbs-phrase file, as created by TPKC-build-proc-14:
-<BR> &nbsp; &nbsp; <CODE>{#insert zXPROOT_DIR_tpkc}\for_v_7_0_9\user_config\<I>[YOUR_TPKC_USER_DIR_NAME]</I>\output\nbs_command_phrases__bldproc14\<I>[category]</I>.px.txt</CODE></P>
+<BR> &nbsp; &nbsp; <CODE>{#insert zXPROOT_DIR_tpkc}\for_v_7_0_9\user_config\<I>{#insert zvTPKC_UDIR_NM}</I>\output\nbs_command_phrases__bldproc14\<I>[category]</I>.px.txt</CODE></P>
 
 <H3>Example</H3>
 
@@ -363,7 +363,7 @@ edit > EditCopyTaggedLines  /  zTPBookmarkCopyAll    (ecpbkmlns)
 <BR>[EditBackspace][EditCapitalize][EditCopy][EditCopyAppend][EditCopyFileName][EditCopyTaggedLines][EditCut][EditCutAppend][EditCutTaggedLines][EditDelete][EditDelLine][EditDelLineEnd][EditDelTaggedLines][EditDelWordLeft][EditDelWordRight][EditDupLine][EditIndentLess][EditIndentMore][EditInvertCase][EditLowerCase][EditNewLineAfter][EditNewLineBefore][EditPaste][EditRedo][EditReformat][EditUndo][EditUpperCase]</CODE></P>
 
 <P>This has-a-kc qbl is stored in
-<BR> &nbsp; &nbsp; <CODE>{#insert zXPROOT_DIR_tpkc}\for_v_7_0_9\user_config\<I>[YOUR_TPKC_USER_DIR_NAME]</I>\output\nbs_command_phrases__bldproc14\<U><B>edit</B></U>.px.txt</CODE></P>
+<BR> &nbsp; &nbsp; <CODE>{#insert <A HREF="index.html#zXPROOT_DIR_tpkcUsrCfgUserBase_M_tpkcum">zXPROOT_DIR_tpkcUsrCfgUserBase_M_tpkcum</A>}output\nbs_command_phrases__bldproc14\<U><B>edit</B></U>.px.txt</CODE></P>
 
 <PRE>
 
@@ -525,7 +525,9 @@ edit > EditCopyTaggedLines  /  zTPBookmarkCopyAll    (ecpbkmlns)
 <P>A command's abbreviation may be obtained by looking at its entry in the <A HREF="#tpkcumak1c">assign all-kcs to 1 command drop-down</A>.</P>
 
 <P><B>Contents:</B><UL>
-	<LI><CODE>[<A HREF="#tpkcumac1ctestnbs">go</A>]</CODE> &nbsp; Non-BootStrap (nbs) command test format</LI>
+	<LI><CODE>[<A HREF="#tpkcumac1ctestnbs">go</A>]</CODE> &nbsp; Non-BootStrap (nbs) command test format<UL>
+		<LI><CODE>[<A HREF="#tpkcumac1ctestforce">go</A>]</CODE> &nbsp; &quot;Forcing&quot; an nbs-test</LI>
+	</UL></LI>
 	<LI><CODE>[<A HREF="#tpkcumac1ctesttpbs">go</A>]</CODE> &nbsp; TextPad-bootstraps are not tested by the TPKC-project</LI>
 </UL></P>
 
@@ -570,7 +572,7 @@ edit > EditCopyTaggedLines  /  zTPBookmarkCopyAll    (ecpbkmlns)
 	nbs-kcs=1
 		1: {#insert zCpINS}{#sleep 25}</PRE>
 
-<P>Presenting these key-commands are only possible because they are internally stored in an escaped form <I>(see <A HREF="../pex_in_textpad.html#tpbsesc">tpbs</A>, <A HREF="tpkc_config_vars.html#NbsKcEscNum">nbs</A>)</I>.</P>
+<P>Presenting these key-commands are only possible because they are internally stored in an escaped form <I>(see <A HREF="../pex_in_textpad.html#tpbsesc">tpbs</A>, <A HREF="config_vars.html#NbsKcEscNum">nbs</A>)</I>.</P>
 
 <PRE>
 

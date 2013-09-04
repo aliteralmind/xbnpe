@@ -1,0 +1,195 @@
+<HTML><HEAD>
+	<TITLE>XBNPE: TPKC user-dir</TITLE>
+	<meta name="viewport" content="width=device-width" />
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF"><a name="top"></a>
+
+<P>[<A HREF="index.html">BACK</A>]</CODE></P>
+
+<HR/>
+
+<H1>TPKC user-directory and user-dir-name</H1>
+
+<P>The TPKC user-directory is where all your custom settings are stored. Before it is usable, it must be assigned a name.</P>
+
+<P>Note that, aside from your user-dir-name, these structures are already setup for you.</P>
+
+<P><B>Contents:</B><UL>
+	<LI><CODE>[<A HREF="#ondisk">go</A>]</CODE> &nbsp; On disk directory structure</LI>
+	<LI><CODE>[<A HREF="#pex">go</A>]</CODE> &nbsp; PhraseExpress folder structure</LI>
+	<LI><CODE>[<A HREF="#tpkcudname">go</A>]</CODE> &nbsp; Your TPKC-user-directory name</LI>
+</UL></P>
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="tpkcudname"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TPKC-user-dir: Your TPKC-user-directory name</H2>
+
+<P>XXX</P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="ondisk"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TPKC user-dir: On disk directory structure</H2>
+
+<P>The structure of the TPKC user-directory, as it exists on disk (in Windows):<UL>
+	<LI><CODE>{#insert <A HREF="index.html#zXPROOT_DIR_tpkcUsrCfgUserBase_M_tpkcum">zXPROOT_DIR_tpkcUsrCfgUserBase_M_tpkcum</A>}</CODE><UL>
+		<LI><B><FONT SIZE="+1"><CODE>output\</CODE></FONT></B><UL>
+			<LI><B><FONT SIZE="+1"><CODE>nbs_command_phrases__bldproc14\</CODE></FONT></B><UL>
+				<LI><I>Output file:</I> <CODE>file.px.txt</CODE> &nbsp; &nbsp; <I>(one per-category)</I> &nbsp; &nbsp; <I>(<A HREF="#14file">info</A>)</I></LI>
+			</UL></LI>
+			<LI><B><FONT SIZE="+1"><CODE>usr_spcfc_cfg__bldproc10thr13\</CODE></FONT></B><UL>
+				<LI><B><FONT SIZE="+1"><CODE>indv_cat_lists__bldproc11\</CODE></FONT></B></LI>
+				<LI><B><FONT SIZE="+1"><CODE>raw_user_config__bldproc12\</CODE></FONT></B></LI>
+				<LI><I>Output file:</I> <CODE>file.px.txt</CODE> &nbsp; &nbsp; <I>(one per-category)</I> &nbsp; &nbsp; <I>(<A HREF="#13file">info</A>)</I></LI>
+			</UL></LI>
+			<LI><I>Output file:</I> <CODE>tp_all_active_cmds__bldproc15__pcddmenu.px.txt</CODE> &nbsp; &nbsp; <I>(<A HREF="#15file">info</A>)</I></LI>
+			<LI><I>Output file:</I> <CODE>tp_all_active_cmds__pcddmenu__indented_DO_NOT_IMPORT.txt</CODE></LI>
+		</UL></LI>
+		<LI><I>Input file:</I> <CODE>textpad_all_command_list.txt</CODE> &nbsp; &nbsp; <I>(<A HREF="index.html#tpacl">info</A>)</I></LI>
+		<LI><I>Rqd file:</I> <CODE>tp_bootstraps_for_tpkc_project.px.txt</CODE> &nbsp; &nbsp; <I>(<A HREF="../pex_in_textpad.html#tpbs">info</A>, <A HREF="../pex_in_textpad.html#tpbslocations">locations</A>)</I></LI>
+		<LI><I>Rqd file:</I> <CODE>tp_bootstraps_for_tpkc_project_esc_tpk.px.txt</CODE></LI>
+		<LI><I>Rqd file:</I> <CODE>tp_bootstraps_for_xkp_project.px.txt</CODE></LI>
+		<LI><I>Rqd file:</I> <CODE>tp_bootstraps_for_xkp_project_esc_tpk.px.txt</CODE></LI>
+		<LI><I>Backup:</I> <CODE>XBNPE-TPKC- User-specific phrases- [YOUR_TPKC_USER_DIR_NAME]</CODE> &nbsp; &nbsp; <I>(<A HREF="#pexbkp">info</A>)</I></LI>
+	</UL></LI>
+</UL></P>
+
+<P><I>Note that &quot;output files&quot; are created by the TPKC-build process--not you.</I></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="pex"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TPKC-user-dir: PhraseExpress folder structure</H2>
+
+<P>The structure of the TPKC user-directory, as it exists in the PhraseExpress application:</P>
+
+<PRE>   XBNPE: Parent folder &gt;
+      XBNPE: TextPad built-in commands (TPKC) &gt;
+         XBNPE-TPKC: User-spcfc phrases: [YOUR_TPKC_USER_DIR_NAME] &gt;
+            Nbs TP-phrases [CALL THESE!] (AG:14) & has-a-kc qbl-s     <I>(<A HREF="#14file">info</A>)</I>
+            User-specific command configuration (AG:13)               <I>(<A HREF="#13file">info</A>)</I>
+            z-DDMENU of all active TP-built-ins (AG:15)               <I>(<A HREF="#15file">info</A>)</I></PRE>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="13file"/><H2><CODE>[<A HREF="#ondisk">BACK</A>]</CODE> &nbsp; TPKC user-dir: <CODE>...\output\usr_spcfc_cfg__bldproc10thr13\file.px.txt</CODE></H2>
+
+<P>There is one <A HREF="../plain_text_phrase_files.html#fformat">phrase-file</A> in this directory, for every <A HREF="config_vars.html#catcfg">category</A> that<UL>
+	<LI>has at least one command,</LI>
+	<LI>whose <A HREF="config_vars.html#NbsKcCount">nbs-kc-count</A> is greater than zero</LI>
+	<LI>(whether or not it is a <A HREF="../pex_in_textpad.html#tpbs">TextPad-bootstrap</A>).</LI>
+</UL></P>
+
+<P>As a whole, these phrase-files are known as your &quot;<B>user-specific command-configuration</B>&quot; (or user-cmd-cfg). Whenever you change an nbs-kc in
+<BR> &nbsp; &nbsp; <CODE>TextPad &gt; Configure &gt; Preferences &gt; Keyboard</CODE>
+<BR>that change must be reflected in its user-cmd-cfg category-file. This is required in order for the <A HREF="user_menu.html#tpkcumak1c">assign-kc process</A> to assign key-commands as you expect.</P>
+
+<P>If the <A HREF="../pex_in_textpad.html#tpbs">primary-kc</A> is changed (see &quot;terminology&quot;), then TPKC sub-build-processes-14 must be re-run. However, when it is known that only one-or-a-few categories have been changed, it is possible to execute build-proc-14 with category prompts.</P>
+
+<P>If a command that <I>never</I> had a key-command now does (or you just deleted the final key-command from a no-longer-needed command), then it is strongly-recommended that sub-build-proc-15 also be re-run. This is in order to ensure the <A HREF="../xbnpe_ddmenus.html#xh"><CODE>xh...</CODE> phrase-creator ddmenu</A> is accurate.</P>
+
+<P>(When changing a TextPad-bootstrap, its <A HREF="../pex_in_textpad.html#tpbsmain">main</A>, <A HREF="../pex_in_textpad.html#tpbsesc">escaped</A>, and <A HREF="../pex_in_textpad.html#tpbstpk">tp-key phrases</A> must all be changed, in phrase-files unrelated to user-cmd-cfg.)</P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="14file"/><H2><CODE>[<A HREF="#ondisk">BACK</A>]</CODE> &nbsp; TPKC user-dir: <CODE>...\output\nbs_command_phrases__bldproc14\file.px.txt</CODE></H2>
+
+<P>There is one <A HREF="../plain_text_phrase_files.html#fformat">phrase-file</A> in this directory, for every <A HREF="config_vars.html#catcfg">category</A> that<UL>
+	<LI>has at least one command,</LI>
+	<LI>whose <A HREF="config_vars.html#NbsKcCount">nbs-kc-count</A> is greater than zero, and</LI>
+	<LI><I>is not a <A HREF="../pex_in_textpad.html#tpbs">TextPad-bootstrap</A>.</I></LI>
+</UL></P>
+
+<P>These phrases are the final output of the TPKC project. When <I><B><U>any</U></B></I> phrase (outside of TPKC and XBN-PhraseExpress) need to trigger a specific TextPad built-in command, these nbs-phrases are the ones they should call. The only exceptions are TextPad-bootstraps, which are not included in these phrase-files.</P>
+
+<P>These phrase-files must be <A HREF="../plain_text_phrase_files.html">imported</A> into</P>
+
+<PRE>   XBNPE: Parent folder &gt;
+      XBNPE: TextPad built-in commands (TPKC) &gt;
+         XBNPE-TPKC: User-spcfc phrases: [YOUR_TPKC_USER_DIR_NAME] &gt;
+            Nbs TP-phrases [CALL THESE!] (AG: 14) & has-a-kc qbl-s</PRE>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="15file"/><H2><CODE>[<A HREF="#ondisk">BACK</A>]</CODE> &nbsp; TPKC user-dir: <CODE>...\output\tp_all_active_cmds__bldproc15__pcddmenu.px.txt</CODE></H2>
+
+<P>This <A HREF="../plain_text_phrase_files.html#fformat">phrase-file</A> serves as the foundation to the <A HREF="../xbnpe_ddmenus.html#xh"><CODE>xh...</CODE> phrase-creator ddmenu</A>. This file is equal to
+<BR> &nbsp; &nbsp; <CODE>tp_all_active_cmds__pcddmenu__indented_DO_NOT_IMPORT.txt</CODE>
+<BR>except that it is completely unindented (and is therefore <A HREF="../plain_text_phrase_files.html#import1">importable</A>)</P>
+
+<P>This phrase-file must be imported into</P>
+
+<PRE>   XBNPE: Parent folder &gt;
+      XBNPE: TextPad built-in commands (TPKC) &gt;
+         XBNPE-TPKC: User-spcfc phrases: [YOUR_TPKC_USER_DIR_NAME] &gt;
+            z-DDMENU of all active TP-built-ins (AG:15)</PRE>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="pexbkp"/><H2><CODE>[<A HREF="#ondisk">BACK</A>]</CODE> &nbsp; TPKC user-dir: <CODE>...\output\XBNPE-TPKC- User-specific phrases- [YOUR_TPKC_USER_DIR_NAME]</CODE></H2>
+
+<P>This is the backup file of your PhraseExpress TPKC-user-folder. You are encouraged to back this folder up (by exporting, via right-clicking on the folder in PhraseExpress, and typing <CODE>Ctrl+E</CODE>) to this location after any changes are made (after any phrase-files are imported, as described elsewhere in this document).</P>
+
+<PRE>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</PRE>
+</BODY></HTML>
+
+
+

@@ -1,0 +1,1 @@
+tpbsutildemo	{#SETPHRASE -description zvBTSTRP_PHRS_NM -content zTPCopy -autotext zvBTSTRP_PHRS_NM -folder ctvv_folder}{#insert zTPBtstrpEscPhrsNm_M_bspm}:{#ENTER}{#TAB}{#insert zTPBtstrpEscKC_M_bspm}{#ENTER}{#BKSP}{#insert zTPBtstrpTPKeysPhrsNm_M_bspm}:{#ENTER}{#TAB}{#insert zTPBtstrpTPKeys_M_bspm}{#ENTER}	tpbsutildemo

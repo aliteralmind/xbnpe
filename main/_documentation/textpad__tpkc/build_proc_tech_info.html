@@ -30,7 +30,7 @@
 </PRE>
 <a name="bldprocs"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TPKC-Build: The master and sub-build processes</H2>
 
-<P>There are four master processes, each calling a set of children (or &quot;sub&quot;) processes.</P>
+<P>There are four master processes, each calling a set of children (or &quot;sub&quot;) processes. This section specifically documents each processes input and output, as well as the process itself.</P>
 
 <H3>Master processes</H3>
 
@@ -233,7 +233,7 @@
 <P>This section documents the creation of the raw-global-config from <I>nothing</I>--as if it never existed.</P>
 
 <P><B>Steps, in order:</B><OL>
-	<LI><CODE>[<A HREF="#creatergc_1ovrcfg">go</A>]</CODE> Update the overall configuration</LI>
+	<LI><CODE>[<A HREF="#creatergc_1ovrcfg">go</A>]</CODE> Update the all-category-qbl</LI>
 	<LI><CODE>[<A HREF="#creatergc_2catcfg">go</A>]</CODE> Update category configuration</LI>
 	<LI><CODE>[<A HREF="#creatergc_3rawglblcfg">go</A>]</CODE> Create the raw-global-config</LI>
 </OL></P>
@@ -243,13 +243,11 @@
 <HR/>
 
 </PRE>
-<a name="creatergc_1ovrcfg"/><H3>Step 1: Update the overall configuration</H3>
+<a name="creatergc_1ovrcfg"/><H3>Step 1: Update the all-category-qbl</H3>
 
-<P>Update the <A HREF="config_vars.html#overallcfg">overall configuration</A>, so both
+<P>Update the all-category-qbl
 <BR> &nbsp; &nbsp; <CODE>zTpkcAllCategoryAbrvLCsQbl</CODE>
-<BR>and
-<BR> &nbsp; &nbsp; <CODE>zTpkcCategoryCount</CODE>
-<BR>are correct.</P>
+<BR>to reflect the new category-list.</P>
 
 <PRE>
 
@@ -258,7 +256,7 @@
 </PRE>
 <a name="creatergc_2catcfg"/><H3>Update category configuration</H3>
 
-<P>Update the <A HREF="config_vars.html#catcfg">category configuration</A>, to reflect the values in the overall configuration. The command-list for each category can be retrieved via
+<P>Update the <A HREF="config_vars.html#catcfg">category configuration</A>, to reflect the values in the all-category-qbl (<A HREF="config_vars.html#zTpkcAllCategoryAbrvLCsQbl"><CODE>zTpkcAllCategoryAbrvLCsQbl</CODE></A>). The command-list for each category can be retrieved via
 <BR> &nbsp; &nbsp; <CODE>TextPad &gt; Preferences &gt; Keyboard &gt; [one-category] &gt; [List-button]</CODE>
 <BR>and using only the values in the first column. Get the first column values by turning word-wrap off, checking
 <BR> &nbsp; &nbsp; <CODE>TextPad &gt; Configure &gt; Block Select Mode</CODE>
@@ -269,8 +267,7 @@
 
 <P><I>To prepare for the next step (creating the raw-global-config), save this command-name column into
 <BR> &nbsp; &nbsp; <CODE>zzXPSUB_DIR_tpkcRawCfgGlobal\[cat-abrv].px.txt</CODE>
-<BR>where <CODE>[cat-abrv]</CODE> is as defined in <A HREF="#overallcfg">overall configuration</A> variable
-<BR> &nbsp; &nbsp; <CODE>zTpkcAllCategoryAbrvLCsQbl</CODE></I></P>
+<BR>where <CODE>[cat-abrv]</CODE> is as defined in the all-category-qbl (<A HREF="config_vars.html#zTpkcAllCategoryAbrvLCsQbl"><CODE>zTpkcAllCategoryAbrvLCsQbl</CODE></A>), </I></P>
 
 <P>Now close the document and continue with that same text remaining in the clipboard.</P>
 
@@ -392,8 +389,7 @@ FileManage	zTPFileManager	Fmngr	{#insert zzEmptyStringMarker}	50	\\\{#PGDN\\\}\\
 </PRE>
 <a name="zTpkc01CreateSetCatlVarPhrsFile"/><H2>[<A HREF="#zTpkcMasterBuild1of4">BACK</A>]</CODE> &nbsp; TPKC sub-build process (1/4): <CODE>zTpkc01CreateSetCatlVarPhrsFile</CODE></H2>
 
-<P>Takes all category abbrevations, from the <A HREF="config_vars.html#overallcfg">overall configuration</A> variable
-<BR> &nbsp; &nbsp; <CODE>zTpkcAllCategoryAbrvLCsQbl</CODE>
+<P>Takes all category abbrevations, from the all-category-qbl (<A HREF="config_vars.html#zTpkcAllCategoryAbrvLCsQbl"><CODE>zTpkcAllCategoryAbrvLCsQbl</CODE></A>),
 <BR>and for each category, creates this phrase:
 <BR> &nbsp; &nbsp; <B>-<CODE>zvCAT_ABRV_LC_st[cat-abrv]</CODE>:</B>
 <BR> &nbsp; &nbsp; <CODE>\\\{#SETPHRASE -description zvCAT_ABRV_LC -content [cat-abrv] -autotext zvCAT_ABRV_LC -folder ctvv_folder\\\}</CODE></P>
@@ -450,7 +446,7 @@ FileManage	zTPFileManager	Fmngr	{#insert zzEmptyStringMarker}	50	\\\{#PGDN\\\}\\
 
 <P><UL>
 	<LI><B>File:</B> <CODE>{#insert <A HREF="index.html#zXPROOT_DIR_tpkcBuild">zXPROOT_DIR_tpkcBuild</A>}\part_1of4__glbl_cmd_cfg_frm_raw\03_create_all_all_cmds_in_1_cat_phrase_files.px.txt</CODE></LI>
-	<LI><B>Input:</B> The <A HREF="config_vars.html#overallcfg">overall configuration</A> phrases <CODE>zTpkcAllCategoryAbrvLCsQbl</CODE> and <CODE>zTpkcCategoryCount</CODE></LI>
+	<LI><B>Input:</B> The all-category-qbl (<A HREF="config_vars.html#zTpkcAllCategoryAbrvLCsQbl"><CODE>zTpkcAllCategoryAbrvLCsQbl</CODE></A>).</LI>
 	<LI><B>Output:</B><UL>
 		<LI><B>On disk:</B> <CODE>{#insert zzzTpkc03_outDirPNm}\[cat-abrv].px.txt</CODE></LI>
 		<LI><B>Import phrases into PhraseExpress TPKC folder:</B>
@@ -493,7 +489,7 @@ FileManage	zTPFileManager	Fmngr	{#insert zzEmptyStringMarker}	50	\\\{#PGDN\\\}\\
 
 <P><UL>
 	<LI><B>File:</B> <CODE>{#insert <A HREF="index.html#zXPROOT_DIR_tpkcBuild">zXPROOT_DIR_tpkcBuild</A>}\part_1of4__glbl_cmd_cfg_frm_raw\04_create_all_call_vpm_for_each_cat_and_all_cat_cnt_phrs_file.px.txt</CODE></LI>
-	<LI><B>Input:</B> The <A HREF="config_vars.html#overallcfg">overall configuration</A> phrases <CODE>zTpkcAllCategoryAbrvLCsQbl</CODE> and <CODE>zTpkcCategoryCount</CODE></LI>
+	<LI><B>Input:</B> The all-category-qbl (<A HREF="config_vars.html#zTpkcAllCategoryAbrvLCsQbl"><CODE>zTpkcAllCategoryAbrvLCsQbl</CODE></A>).</LI>
 	<LI><B>Output:</B> <CODE>{#insert zzzTpkc04_outDirPNm}\{#insert zzzTpkc04_outFNm}</CODE></LI>
 	<LI><B>Output:</B><UL>
 		<LI><B>On disk:</B> <CODE>{#insert zzzTpkc03_outDirPNm}\[cat-abrv].px.txt</CODE></LI>
@@ -525,7 +521,7 @@ Both methods anticipate the TPKC-test-mode-flag, including notifying the user, b
 
 <P><UL>
 	<LI><B>File:</B> <CODE>{#insert <A HREF="index.html#zXPROOT_DIR_tpkcBuild">zXPROOT_DIR_tpkcBuild</A>}\part_1of4__glbl_cmd_cfg_frm_raw\05_create_all_call_vpnm_for_each_cmd_in_cat_phrs_fl.px.txt</CODE></LI>
-	<LI><B>Input:</B> The <A HREF="config_vars.html#overallcfg">overall configuration</A> phrases <CODE>zTpkcAllCategoryAbrvLCsQbl</CODE> and <CODE>zTpkcCategoryCount</CODE>, and all raw-global-configuration files: <CODE>{#insert zzXPSUB_DIR_tpkcRawCfgGlobal}</CODE>.</LI>
+	<LI><B>Input:</B> The all-category-qbl (<A HREF="config_vars.html#zTpkcAllCategoryAbrvLCsQbl"><CODE>zTpkcAllCategoryAbrvLCsQbl</CODE></A>), and all raw-global-configuration files: <CODE>{#insert zzXPSUB_DIR_tpkcRawCfgGlobal}</CODE>.</LI>
 	<LI><B>Output:</B><UL>
 		<LI><B>On disk:</B> <CODE>{#insert zzzTpkc05_outDirPNm}\[cat-abrv].px.txt</CODE></LI>
 		<LI><B>Import phrases into PhraseExpress TPKC folder:</B>
@@ -589,29 +585,10 @@ EditCopyAppend	zTPCopyAppend	Ecpapp	__ES__	__ES__	10	\\\{#PGDN\\\}\\\{#insert z5
 
 <P><UL>
 	<LI><B>File:</B> <CODE>{#insert <A HREF="index.html#zXPROOT_DIR_tpkcBuild">zXPROOT_DIR_tpkcBuild</A>}\part_1of4__glbl_cmd_cfg_frm_raw\06_create_global_cmd_cfg_from_raw.px.txt</CODE></LI>
-	<LI><B>Input:</B> The <A HREF="config_vars.html#overallcfg">overall configuration</A> phrases <CODE>zTpkcAllCategoryAbrvLCsQbl</CODE> and <CODE>zTpkcCategoryCount</CODE>, and all raw-global-configuration files: <CODE>{#insert zzXPSUB_DIR_tpkcRawCfgGlobal}</CODE>.</LI>
-	<LI><B>Output:</B> <I>As described below</I></LI>
+	<LI><B>Input:</B> The all-category-qbl (<A HREF="config_vars.html#zTpkcAllCategoryAbrvLCsQbl"><CODE>zTpkcAllCategoryAbrvLCsQbl</CODE></A>), and all raw-global-configuration files: <CODE>{#insert zzXPSUB_DIR_tpkcRawCfgGlobal}</CODE>.</LI>
+	<LI><B>Output:</B> <I><A HREF="config_vars.html#locationsuscc">Documented elsewhere</A></I></LI>
 </UL></P>
 
-<H3>Directories</H3>
-
-<P><B>Raw global command configuration</B>, or &quot;raw-global-config&quot;, is a set of plain text files--there are no PhraseExpress phrases in them.</P>
-
-<P><UL>
-	<LI><B>On disk:</B> <CODE><I></I>zzXPSUB_DIR_tpkcRawCfgGlobal</CODE></LI>
-	<LI><B>PhraseExpress</B> <I>Not applicable</I></LI>
-</UL></P>
-
-<P>Raw-global-config is transformed into the <B>global command configuration</B>. These files do contain phrases.<UL>
-	<LI><B>On disk:</B> <CODE><I></I>{#insert zzzTpkc06_outDirPNm}</CODE></LI>
-	<LI><B>PhraseExpress:</B> <CODE>Command configuration: Global</CODE></LI>
-</UL></P>
-
-<P>Note that each command is stored in its own file, and each category has its own directory within the above directories. For example:<UL>
-	<LI><B>On disk:</B> <CODE>{#insert zzzTpkc06_outDirPNm}\file\FileSave.px.txt</CODE></LI>
-	<LI><B>Import phrases into PhraseExpress TPKC folder:</B>
-	<BR> &nbsp; &nbsp; <CODE>All other TPKC-Project phrases/Other/Command configuration: Global</CODE></LI>
-</UL></P>
 <PRE>
 
 <HR/>

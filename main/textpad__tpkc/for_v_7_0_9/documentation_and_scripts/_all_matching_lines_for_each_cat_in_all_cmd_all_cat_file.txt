@@ -1,0 +1,40 @@
+------------
+Regular expressions used to mark all lines in each category.
+
+   (The items in this table all come from
+      zSUB_vrsn_spcfc__build_proc_11__split_tp_all_cat_file_to_indv_cats_mid_go_re_marks.px.txt
+   in the same directory as this file)
+------------
+
+Characters                                  File
+   ^([^A-Za-z0-9 _] |[^A-Za-z0-9 _]$)          ^File
+      (A single, non-alpha-numeric             ^Workspace
+      character at the beginning,
+      followed by a space OR the            Help
+      end of the line)                         ^Help
+
+Clip Library                                Macro
+   ^Clip                                       ^Macro
+
+Configure                                   Search
+   ^Block                                      ^Bookmark
+   ^Customize                                  ^Incremental
+   ^Preferences                                ^MatchBracket(Extend)?\b
+   ^RightMargin                                ^Match\w+(Clear|Set)\b
+   ^Toggle                                     ^Regex(Clear|Set)\b
+                                               ^Search
+Cursor
+   ^Char                                    Select
+   ^Document                                   ^Select
+   ^GoTo
+   ^Line                                    Tools
+   ^Page                                       ^Tool[^0-9]
+   ^Para
+   ^Tab                                     View
+   ^View(Start|End)                            ^View[^ES]
+   ^Word                                       ^View(Ex|Se|Stat)
+                                               ^Activate
+Edit                                           ^StayOnTop
+   ^Edit
+   ^EmptyClipboard                          Window
+                                               ^Window

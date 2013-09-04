@@ -1,4 +1,4 @@
-OUTPUT_FILE_DIR=R:\jeffy\programming\sandbox\macros\xbnpe_auto_generated\phrase_express\lpd_example_project_tpmd
+OUTPUT_FILE_DIR=R:\jeffy\programming\sandbox\macros\auto_generated\phrase_express\lpd_example_project_tpmd
 OUTPUT_FILE_NAME=zz_tpmd_macro_instances.px.txt
 
 (**)

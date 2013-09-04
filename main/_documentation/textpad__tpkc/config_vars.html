@@ -9,31 +9,127 @@
 
 <HR/>
 
-<P>This document defines all of the configuration variables in the TPKC-project.</P>
+<H1>TPKC: Configuration variables</H1>
+
+<P>This document defines the configuration variables that define a built-in TextPad command, and the categories in which those commands exist.</P>
 
 <P><B>Contents:</B><UL>
-	<LI><B>Command configuration:</B> The configuration variables that, as a whole, define a TextPad built-in command:<UL>
-		<LI><CODE>[<A HREF="#allcatqbl">go</A>]</CODE> &nbsp; <B>Overall:</B> All categories and category count, as a whole.</LI>
-		<LI><CODE>[<A HREF="#catcfg">go</A>]</CODE> &nbsp; <B>Category:</B> A set of commands.</LI>
-		<LI><CODE>[<A HREF="#cmdcfg">go</A>]</CODE> &nbsp; <B>Command:</B> The characteristics of a single command.</LI>
-</UL></LI>
+	<LI><CODE>[<A HREF="#zTpkcAllCategoryAbrvLCsQbl">go</A>]</CODE> &nbsp; <CODE>zTpkcAllCategoryAbrvLCsQbl</CODE>: The universe of command-categories in the TextPad application.</LI>
+	<LI><CODE>[<A HREF="#catcfg">go</A>]</CODE> &nbsp; <B>Category:</B> A set of commands.</LI>
+	<LI><CODE>[<A HREF="#cmdcfg">go</A>]</CODE> &nbsp; <B>Command:</B> The characteristics of a single command.</LI>
+	<LI><CODE>[<A HREF="#locations">go</A>]</CODE> &nbsp; Phrase and file locations</LI>
 </UL></P>
 
+<P>Note that TPKC <A HREF="master_cfg_vars.html">Master-configuration-variables</A> are documented elsewhere.</P>
 
-<H1>TPKC project: Configuration variables</H1>
 
-<P>This document details all configuration variables related to the TextPad built-in commands (TPKC) project.</P>
+
 <PRE>
 
 <HR/>
 
 </PRE>
-<a name="allcatqbl"/>
-<H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TPKC project: All categories and category count</CODE></H2>
+<A NAME="locations"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; Phrase and file locations</H2>
 
-<H2>Category-list configuration: <CODE>zTpkcAllCategoryAbrvLCsQbl</CODE></H2>
+<P>The on-disk and PhraseExpress locations for all command-related phrases:<UL>
+	<LI><CODE>[<A HREF="#locationsallcatlst">go</A>]</CODE> &nbsp; <CODE>zTpkcAllCategoryAbrvLCsQbl</CODE></LI>
+	<LI><CODE>[<A HREF="#locationscat">go</A>]</CODE> &nbsp; Category configuration</LI>
+	<LI><CODE>[<A HREF="#locationsgcc">go</A>]</CODE> &nbsp; Global-command-configuration</LI>
+	<LI><CODE>[<A HREF="#locationsuscc">go</A>]</CODE> &nbsp; User-specific command-configuration</LI>
+</UL></P>
 
-<P><CODE>zTpkcAllCategoryAbrvLCsQbl</CODE> defines the <I>universe of command categories</I> in the TextPad application. This set of categories is exactly equal to those in
+<P>For more information, such as how all these phrases are created, there is technical information about <A HREF="build_proc_tech_info.html#bldprocs">each individual TPKC build-process</A>.</P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="locationsallcatlst"/><H2><CODE>[<A HREF="#locations">BACK</A>]</CODE> &nbsp; <CODE>zTpkcAllCategoryAbrvLCsQbl</CODE> &nbsp; <CODE>[<A HREF="#zTpkcAllCategoryAbrvLCsQbl">go</A>]</CODE></H2>
+
+<P><UL>
+	<LI><U>On disk</U> <I>(the <A HREF="../plain_text_phrase_files.html#fformat">plain-text phrase-file</A>)</I>
+	<BR> &nbsp; &nbsp; <CODE>{#insert <A HREF="../index.html#zROOT_DIR_XBNPE_PARENT">zROOT_DIR_XBNPE_PARENT</A>}/main/textpad_tpkc/for_v_7_0_9/<A HREF="../../textpad__tpkc/for_v_7_0_9/tpkc_all_categories_configuration_7_0_4.px.txt">tpkc_all_categories_configuration_7_0_4.px.txt</A></CODE></LI>
+
+	<LI><U>PhraseExpress</U> (where to <A HREF="../plain_text_phrase_files.html#import1">import</A> the phrase-file)
+	<PRE>   XBNPE: Parent folder &gt;
+      XBNPE: TextPad built-in commands (TPKC) &gt;
+         All other TPKC-Project phrases &gt;
+            Configuration [non usr-spcfc]</PRE></LI>
+</UL></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="locationscat"/><H2><CODE>[<A HREF="#locations">BACK</A>]</CODE> &nbsp; Category configuration &nbsp; <CODE>[<A HREF="#catcfg">go</A>]</CODE></H2>
+
+<P><UL>
+	<LI><U>On disk</U>:
+	<BR> &nbsp; &nbsp; <CODE>{#insert <A HREF="../index.html#zROOT_DIR_XBNPE_PARENT">zROOT_DIR_XBNPE_PARENT</A>}/main/textpad_tpkc/for_v_7_0_9/category_config/<A HREF="../../textpad__tpkc/for_v_7_0_9/category_config/cat_config_file.px.txt">cat_config_file.px.txt</A></CODE> &nbsp; &nbsp; <I>(Replace <CODE>&quot;file&quot;</CODE> with any category in <CODE><A HREF="#zTpkcAllCategoryAbrvLCsQbl">zTpkcAllCategoryAbrvLCsQbl</A></CODE>)</I></LI>
+	<LI><U>PhraseExpress</U>:
+	<PRE>   XBNPE: Parent folder &gt;
+      XBNPE: TextPad built-in commands (TPKC) &gt;
+         All other TPKC-Project phrases &gt;
+            Configuration [non usr-spcfc] &gt;
+               Category</PRE></LI>
+</UL></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="locationsgcc"/><H2><CODE>[<A HREF="#locations">BACK</A>]</CODE> &nbsp; TPKC-cmd-cfg: Locations: Global-command-configuration &nbsp; <CODE>[<A HREF="#cmdcfg">go</A>]</CODE></H2>
+
+<P>Each individual built-in TextPad command has a separate phrase-file. This section uses <CODE>FileSave</CODE> as an example.</P>
+
+<P><UL>
+	<LI><U>On disk</U> &nbsp; &nbsp; <I>(the <A HREF="../plain_text_phrase_files.html#fformat">plain-text phrase-file</A>)</I>:
+	<BR> &nbsp; &nbsp; <CODE>{#insert <A HREF="../index.html#zROOT_DIR_XBNPE_PARENT">zROOT_DIR_XBNPE_PARENT</A>}/auto_generated/textpad_tpkc/cmd_cfg_global__bldprc06/file/<A HREF="../../../auto_generated/textpad__tpkc/cmd_cfg_global__bldprc06/file/file_FileSave.px.txt">file_FileSave.px.txt</A></CODE> &nbsp; &nbsp; <I>(Note the category-name prefixes the file-name.)</I></LI>
+	<LI><U>PhraseExpress</U> (where to <A HREF="../plain_text_phrase_files.html#import1">import</A> the phrase-file)
+	<PRE>   XBNPE: Parent folder &gt;
+      XBNPE: TextPad built-in commands (TPKC) &gt;
+         All other TPKC-Project phrases &gt;
+            Configuration [non usr-spcfc] &gt;
+               Global &gt;
+               	<I>[category name]</I></PRE></LI>
+</UL></P>
+
+<P>This output is specifically created by <A HREF="build_proc_tech_info.html#zTpkc06CreateGlobalCommandConfigFromRaw">sub-build-process-06</A>.</P>
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="locationsuscc"/><H2><CODE>[<A HREF="#locations">BACK</A>]</CODE> &nbsp; TPKC-cmd-cfg: Locations: User-specific command-configuration &nbsp; <CODE>[<A HREF="#cmdcfg">go</A>]</CODE></H2>
+
+<P><UL>
+	<LI><U>On disk</U> &nbsp; &nbsp; <I>(the <A HREF="../plain_text_phrase_files.html#fformat">plain-text phrase-file</A>)</I>:
+	<BR> &nbsp; &nbsp; <CODE>{#insert <A HREF="index.html#zXPROOT_DIR_tpkcUsrCfgUserBase_M_tpkcum">zXPROOT_DIR_tpkcUsrCfgUserBase_M_tpkcum</A>}output/usr_spcfc_cfg__bldproc10thr13/<A HREF="../../textpad__tpkc/for_v_7_0_9/user_config/tp_frsh_instl/output/usr_spcfc_cfg__bldproc10thr13/file.px.txt">file.px.txt</A></CODE> &nbsp; &nbsp; <I>(Replace <CODE>&quot;file&quot;</CODE> with any category in <CODE><A HREF="#zTpkcAllCategoryAbrvLCsQbl">zTpkcAllCategoryAbrvLCsQbl</A></CODE>)</I></LI>
+	<LI><U>PhraseExpress</U> (where to <A HREF="../plain_text_phrase_files.html#import1">import</A> the phrase-file)
+	<PRE>   XBNPE: Parent folder &gt;
+      XBNPE: TextPad built-in commands (TPKC) &gt;
+      	XBNPE-TPKC: User-spcfc phrases: [YOUR_TPKC_USER_DIR_NAME] &gt;
+            User-specific command configuration</PRE></LI>
+</UL></P>
+
+<P>This output is specifically created by <A HREF="build_proc_tech_info.html#zTpkc13CreateUsrSpcfcCmdConfigFromRaw">sub-build-process-13</A>.</P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="zTpkcAllCategoryAbrvLCsQbl"/>
+<H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TPKC: Cmd-cfg-vars: <CODE>zTpkcAllCategoryAbrvLCsQbl</CODE></CODE></H2>
+
+<P><I>[Go to <A HREF="#locationsallcatlst">locations</A>]</I></P>
+
+<P>The <A HREF="../search_and_replace/square_bracketed_lists.html">sQuare-Bracketed List</A> (qbl) that defines the <I>universe of command categories</I> in the TextPad application. This set of categories is exactly equal to those in
 <BR> &nbsp; &nbsp; <CODE>TextPad &gt; Configure &gt; Preferences &gt; Keyboard &gt; Category</CODE>
 <BR>and in the same order, with the exceptions that it<UL>
 	<LI>uses abbreviated and lowercase names, and</LI>
@@ -43,24 +139,11 @@
 <P>As of version 7.0.9, its value is
 <BR> &nbsp; &nbsp; <CODE>[file][edit][search][view][tools][macros][config][window][help][cursor][sel][cliplib][chars]</CODE>
 
-<P>For each value in this <A HREF="../search_and_replace/square_bracketed_lists.html">sQuare-Bracketed List (QBL)</A>, there is a corresponding <A HREF="#catcfg">category configuration</A>.</P>
+<P>For each value in this qbl, there is a corresponding set of <A HREF="#catcfg">category configuration</A>.</P>
 
-<P>Note that this all-categories-qbl may be <A HREF="tpkc_build_processes.html#livevtest">overridden</A>, so that the <I>entire</I> project may be built with an <I>exact subset</I> of these categories, for the purposes of testing and demonstration.</P>
+<P>This category-universe may be overridden by the <A HREF="master_cfg_vars.html">master-configuration-variable</A> &nbsp; <CODE><A HREF="master_cfg_vars.html#zTpkcBuildModeTestOrLive">zTpkcBuildModeTestOrLive</A></CODE>.</P>
 
-<H3>Locations</H3>
-
-<P><UL>
-	<LI><B>On disk</B> (<A HREF="../plain_text_phrase_files.html#fformat">phrase-file</A>):
-	<BR> &nbsp; &nbsp; <CODE>{#insert zROOT_DIR_XBNPE_MAIN}textpad__tpkc\for_v_7_0_9\tpkc_all_categories_configuration_7_0_4.px.txt</CODE></LI>
-	<LI><B>In PhraseExpress:</B>
-	<PRE>XBN-PhraseExpress &gt;
-   XBNPE: TextPad built-in commands (TPKC) &gt;
-      All other TPKC-Project phrases &gt;
-         Configuration [non-usr-spcfc] &gt;
-            tpkc_all_categories_configuration_7_0_4.px</PRE></LI>
-</UL></P>
-
-<P><I><CODE>zTpkcAllCategoryAbrvLCsQbl</CODE> is the only phrase in the file.</I></P>
+<P><B>Testing override:</B> This all-category-qbl may be <A HREF="build_proc_tech_info.html#livevtest">overridden</A>, so that the <I>entire</I> project may be built with an <I>exact subset</I> of these categories, for the purposes of testing and demonstration.</P>
 
 
 <PRE>
@@ -71,6 +154,8 @@
 <a name="catcfg"/>
 <H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TPKC project: Category configuration</CODE></H2>
 
+<P><I>[Go to <A HREF="#locationscat">locations</A>]</I></P>
+
 <P>Each category is defined by six configuration variables:<UL>
 	<LI><CODE>[<A HREF="#AbrvLC">go</A>]</CODE> &nbsp; <B><CODE>zTpkc[cat-name]AbrvLC</CODE>:</B> Lowercase abbreviation</LI>
 	<LI><CODE>[<A HREF="#AllCmdsQbl">go</A>]</CODE> &nbsp; <B><CODE>zTpkc[abrv]AllCmdsQbl</CODE>:</B> Square Bracketed List of all command names.</LI>
@@ -78,7 +163,7 @@
 	<LI><CODE>[<A HREF="#HasUserCrtdCmds_yes">go</A>]</CODE> &nbsp; <B><CODE>zTpkc[abrv]HasUserCrtdCmds_yes</CODE>:</B> Does this category allow user-created commands?</LI>
 	<LI><CODE>[<A HREF="#GTStpsFrmCatLstTp">go</A>]</CODE> &nbsp; <B><CODE>zTpkc[abrv]GTStpsFrmCatLstTp</CODE>:</B> Navigational steps from the top of the Category-list</LI>
 	<LI><CODE>[<A HREF="#NameLC">go</A>]</CODE> &nbsp; <B><CODE>zTpkc[abrv]NameLC</CODE>:</B> The full name of this category, as defined By TextPad</LI>
-</UL>Where <CODE>'[abrv]'</CODE> is one of the members of the <A HREF="#allcatqbl">overall configuration</A> variable
+</UL>Where <CODE>'[abrv]'</CODE> is one of the members of the <A HREF="#zTpkcAllCategoryAbrvLCsQbl">overall configuration</A> variable
 <BR> &nbsp; &nbsp; <CODE>zTpkcAllCategoryAbrvLCsQbl</CODE>
 <BR>and <CODE>'[cat-name]'</CODE> is the value of <CODE>zTpkc[abrv]NameLC</CODE></P>
 
@@ -156,13 +241,13 @@
 
 <P><UL>
 	<LI><B>Example name:</B> <CODE>zTpkcEditGTStpsFrmCatLstTp</CODE></LI>
-	<LI><B>Example value:</B> <CODE>\\\{#DOWN\\\}\\\{#insert z5ThnTSlp\\\}</CODE></LI>
+	<LI><B>Example value:</B> <CODE>{#DOWN}{#insert z5ThnTSlp}</CODE></LI>
 </UL></P>
 
 <P>The specific navigational commands from the top of the Category list
 <BR> &nbsp; &nbsp; <CODE>TextPad &gt; Configure &gt; Preferences &gt; Keyboard &gt; Category</CODE>
 <BR>to this category. It is highly recommended that each step be followed by
-<BR> &nbsp; &nbsp; <CODE>\\\{#insert z5ThnTSlp\\\}</CODE></P>
+<BR> &nbsp; &nbsp; <CODE>{#insert z5ThnTSlp}</CODE></P>
 
 <PRE>
 
@@ -189,6 +274,8 @@
 </PRE>
 <a name="cmdcfg"/>
 <H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TPKC project: Command configuration</CODE></H2>
+
+<P><I>[Go to locations: <A HREF="#locationsgcc">global</A>, <A HREF="#locationsuscc">user</A>]</I></P>
 
 <P>Every built-in TextPad command has a specific set of &quot;global&quot; and &quot;user-specific&quot; configuration variables.<UL>
 	<LI><B>Global command configuration</B> has the same value for all users.</LI>
@@ -332,7 +419,7 @@ The only exception is the 'characters' category. TextPad does not assign any nam
 	<LI><B>Example phrase name:</B> <CODE>zzTpkcEalrDfltPostKcSlpMils</CODE></LI>
 </UL></P>
 
-<P>The default number of milliseconds to sleep after the command's key-command is pressed. This must be a positive integer that is valid for the \\\{#sleep ...\\\} command (greater than zero). This sleep command is implemented in the nbs-phrase, as output by tpkc-build-process 14.</P>
+<P>The default number of milliseconds to sleep after the command's key-command is pressed. This must be a positive integer that is valid for the {#sleep ...} command (greater than zero). This sleep command is implemented in the nbs-phrase, as output by tpkc-build-process 14.</P>
 
 <PRE>
 
@@ -344,7 +431,7 @@ The only exception is the 'characters' category. TextPad does not assign any nam
 
 <P><UL>
 	<LI><B>Example phrase name:</B> <CODE>zzTpkcEalrStpsFrmCmdListTop</CODE></LI>
-	<LI><B>Example value:</B> <CODE>\\\{#DOWN -count 3\\\}\\\{#insert z5ThnTSlp\\\}</CODE></LI>
+	<LI><B>Example value:</B> <CODE>{#DOWN -count 3}{#insert z5ThnTSlp}</CODE></LI>
 </UL></P>
 
 <P>The specific navigational steps necessary to get to this command in the command list:
@@ -362,13 +449,13 @@ The only exception is the 'characters' category. TextPad does not assign any nam
 	<LI><B>Example phrase-name</B>: <CODE>zzTpkcFileCloseNbsKcCount</CODE></LI>
 </UL></P>
 
-<P>The number of <I>non-boostrap</I> key-commands assigned to this built-in TextPad command. Must be an integer zero or greater. For every number above zero, there must be a corresponding <B><CODE>zzTpkc[name]NbsKcEsc#</CODE></B> variable. For example, if
+<P>The number of <I>Non-<A HREF="../pex_in_textpad.html#tpbs">BootStrap</A></I> key-commands (nbs-kcs) assigned to this built-in TextPad command. Must be an integer zero or greater. For every number above zero, there must be a corresponding <A HREF="#NbsKcEscNum"><CODE>zzTpkc[name]NbsKcEsc#</CODE></A> variable. For example, if
 <BR> &nbsp; &nbsp; <CODE>zzTpkcFileCloseNbsKcCount</CODE>
 is <CODE>3</CODE>, then the following must exist:<UL>
 	<LI><CODE>zzTpkcFileCloseNbsKcEsc1</CODE></LI>
 	<LI><CODE>zzTpkcFileCloseNbsKcEsc2</CODE></LI>
 	<LI><CODE>zzTpkcFileCloseNbsKcEsc3</CODE></LI>
-</UL>When <CODE>'0'</CODE>, then all <CODE>zzTpkcFileCloseNbsKcEsc#</CODE> variables are ignored.</P>
+</UL>When <CODE>zzTpkcFileCloseNbsKcCount</CODE> is <CODE>'0'</CODE>, then all <CODE>zzTpkcFileCloseNbsKcEsc#</CODE> variables are ignored.</P>
 
 <PRE>
 
@@ -380,71 +467,12 @@ is <CODE>3</CODE>, then the following must exist:<UL>
 
 <P><UL>
 	<LI><B>Example phrase-name</B>: <CODE>zzTpkcFileCloseNbsKcEsc1</CODE></LI>
-	<LI><B>Example value:</B> <CODE>\\\\\\{#insert zCpF12\\\\\\}\\\\\\{#sleep 25\\\\\\}\\\\\\{#insert zCpF9\\\\\\}</CODE></LI>
+	<LI><B>Example value:</B> <CODE>\\\{#insert zCpF12\\\}\\\{#sleep 25\\\}\\\{#insert zCpF9\\\}\\\{#sleep 100\\\}</CODE></LI>
 </UL></P>
 
-<P>The specific key-command that triggers (should trigger) the command. This value must be escaped (the escaped version is printed for diagnostic purposes).</P>
+<P>The specific key-command that triggers (should trigger) the command. There must be one of these variables for every number that <A HREF="#NbsKcCount"><CODE>zzTpkc[name]NbsKcCount</CODE></A> is above zero.</P>
 
-<P>There must be one of these variables for every number that <A HREF="#NbsKcCount"><CODE>zzTpkc[name]NbsKcCount</CODE></A> is above zero.</P>
-
-
-<H1>TextPad built-in commands (TPKC): Non-command master configuration</H1>
-
-<P>There are five &quot;master&quot; configuration variables in the TPKC-Project, all of which are editable by you:<UL>
-	<LI>[<A HREF="#zTpkcMaxNbsKCsPerCmd">go</A>]</CODE> &nbsp; <CODE>zTpkcMaxNbsKCsPerCmd</CODE></LI>
-	<LI>[<A HREF="#zTpkcMillsBtwMultiKeyKCs">go</A>]</CODE> &nbsp; <CODE>zTpkcMillsBtwMultiKeyKCs</CODE></LI>
-	<LI>[<A HREF="#zTpkcAllCategoryAbrvLCsQbl_FORTESTMODE">go</A>]</CODE> &nbsp; <CODE>zTpkcAllCategoryAbrvLCsQbl_FORTESTMODE</CODE></LI>
-	<LI>[<A HREF="#zTpkcBuildModeTestOrLive">go</A>]</CODE> &nbsp; <CODE>zTpkcBuildModeTestOrLive</CODE></LI>
-</UL></P>
-
-<PRE>
-
-<HR/>
-
-</PRE>
-<A NAME="zTpkcMaxNbsKCsPerCmd"/>
-<H2>TPKC master-config: <CODE>zTpkcMaxNbsKCsPerCmd</CODE></H2>
-
-<P><UL>
-	<LI><B>Value requirements:</B> Must be an integer greater than zero.</LI>
-	<LI><B>Current value:</B> <CODE>{#insert zTpkcMaxNbsKCsPerCmd}</CODE></LI>
-	<LI><B>Used by:</B> Build processes 12 and 13</LI>
-</UL></P>
-
-<P>The maximum number of Non-BootStrap (nbs) key-commands that are actually assigned to any built-in TextPad command. In the following example, the <CODE>File/FileNew</CODE> command has three key-commands associated to it (as displayed in the &quot;Current keys&quot; list-box):</P>
-
-<IMG SRC="master_configuration\preferences_dialog_file_new_cmd.jpg"/>
-
-<P>This value <I>must</I> be greater than the maximum number of key-commands <I>actually</I> associated to a any one command in the TextPad preferences dialog. However, note that all bootstrap-kcs are deleted from the tp-all-command list before ever being used by build-processes 12 and 13.</P>
-<PRE>
-
-<HR/>
-
-</PRE>
-<A NAME="zTpkcMillsBtwMultiKeyKCs"/>
-<H2>TPKC master-config: <CODE>zTpkcMillsBtwMultiKeyKCs</CODE></H2>
-
-
-
-<PRE>
-
-<HR/>
-
-</PRE>
-<A NAME="zTpkcAllCategoryAbrvLCsQbl_FORTESTMODE"/>
-<H2>TPKC master-config: <CODE>zTpkcAllCategoryAbrvLCsQbl_FORTESTMODE</CODE></H2>
-
-
-
-<PRE>
-
-<HR/>
-
-</PRE>
-<A NAME="zTpkcBuildModeTestOrLive"/>
-<H2>TPKC master-config: <CODE>zTpkcBuildModeTestOrLive</CODE></H2>
-
-
+<P>This value must be escaped (the escaped version is printed for diagnostic purposes, among other reasons), and must end with a <I>minimal</I> amount of sleep, so PhraseExpress does not contiune until the command has completed executing. For key-commands with multiple key-presses (as the example above), each key-press should be separated by <A HREF="master_cfg_vars.html#zTpkcMillsBtwMultiKeyKCs"><CODE>zTpkcMillsBtwMultiKeyKCs</CODE></A> milliseconds.</P>
 
 
 

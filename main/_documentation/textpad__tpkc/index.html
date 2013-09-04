@@ -19,13 +19,35 @@
 <P><B>Contents:</B><UL>
 	<LI><CODE>[<A HREF="#install">go</A>]</CODE> &nbsp; <B>Installation:</B> All steps necessary to prepare for the build-process</LI>
 	<LI><CODE>[<A HREF="#userbuild">go</A>]</CODE> &nbsp; <B>TPKC-user build-process</B> The final step before the TPKC-project (and all of XBNPE) is fully usable.</LI>
-	<LI><CODE>[<A HREF="tpkc_user_menu.html">go</A>]</CODE> &nbsp; The <B>TPKC user menu</B>, which is used to access all major features</LI>
+	<LI><CODE>[<A HREF="user_menu.html">go</A>]</CODE> &nbsp; The <B>TPKC user menu</B>, which is used to access all major features</LI>
+	<LI><CODE>[<A HREF="master_cfg_vars.html">go</A>]</CODE> &nbsp; Master configuration variables</LI>
 	<LI><CODE>[<A HREF="#tpbs">go</A>]</CODE> &nbsp; TextPad-bootstraps required by the XBNPE-TPKC project</LI>
-	<LI><CODE>[<A HREF="tpkc_config_vars.html">go</A>]</CODE> &nbsp; Command configuration variables</LI>
+	<LI><CODE>[<A HREF="config_vars.html">go</A>]</CODE> &nbsp; Command configuration variables</LI>
 	<LI><CODE>[<A HREF="#assignkcsbs">go</A>]</CODE> &nbsp; Assigning a new key-command via user-command-configuration: Step-by-step</LI>
 	<LI><CODE>[<A HREF="#tpacl">go</A>]</CODE> &nbsp; The TextPad all-command list</LI>
-	<LI><CODE>[<A HREF="#tpkc_build_processes.html">go</A>]</CODE> &nbsp; All TPKC build-processes: Technical details for TPKC-admins</LI>
+	<LI><CODE>[<A HREF="build_proc_tech_info.html">go</A>]</CODE> &nbsp; All TPKC build-processes: Technical details for TPKC-admins</LI>
+	<LI><CODE>[<A HREF="#locations">go</A>]</CODE> &nbsp; File and phrase locations</LI>
+	<LI><CODE>[<A HREF="user_dir_and_name.html">go</A>]</CODE> &nbsp; The TPKC user-directory, and user-dir-name</LI>
 </UL></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="locations"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TPKC: File and phrase locations</H2>
+
+<A NAME="zXPROOT_DIR_tpkcUsrCfgUserBase_M_tpkcum"/><H2><CODE>zXPROOT_DIR_tpkcUsrCfgUserBase_M_tpkcum</CODE></H2>
+
+<P>As of 9/3/2013, this is equal to
+<BR> &nbsp; &nbsp; <CODE>{#insert <A HREF="../index.html#zROOT_DIR_XBNPE_PARENT">zROOT_DIR_XBNPE_PARENT</A>}\xbnpe\main\textpad__tpkc\for_v_7_0_9\user_config\<I>{#insert zvTPKC_UDIR_NM}</I>\</CODE></P>
+
+<P><I>Throughout this documentation, it is assumed that <CODE>zvTPKC_UDIR_NM</CODE> is <CODE>&quot;tp_frsh_instl&quot;</CODE></I></P>
+
+<A NAME="zXPROOT_DIR_tpkcBuild"/><H2><CODE>zXPROOT_DIR_tpkcBuild</CODE></H2>
+
+<P>As of 9/3/2013, this is equal to
+<BR> &nbsp; &nbsp; <CODE>{#insert zROOT_DIR_XBNPE_PARENT}\xbnpe\main\textpad__tpkc\build\</CODE></P>
 
 <H4><U>Phrase-creator drop-down-menu</U></H4>
 
@@ -33,6 +55,8 @@
 <BR> &nbsp; &nbsp; <CODE>{#insert zROOT_DIR_XBNPE}/textpad__tpkc/non_bootstrap_utils/z_phrase_creator_ddmenus/<A HREF="../../textpad__tpkc/non_bootstrap_utils/z_phrase_creator_ddmenus/textpad__prefs_tpkc__pcddmenu.txt">textpad__prefs_tpkc__pcddmenu.txt</A></CODE>
 <BR><B>Output (unindented):</B>
 <BR> &nbsp; &nbsp; <CODE>{#insert zROOT_DIR_XBNPE}/textpad__tpkc/non_bootstrap_utils/z_phrase_creator_ddmenus/z_temp_folder_for_unindenting_ddmenus/<A HREF="../../textpad__tpkc/non_bootstrap_utils/z_phrase_creator_ddmenus/z_temp_folder_for_unindenting_ddmenus/textpad__prefs_tpkc__pcddmenu.px.txt">textpad__prefs_tpkc__pcddmenu.px.txt</A></CODE></P>
+
+
 
 <PRE>
 
@@ -89,7 +113,7 @@
 
 <H3>The maximum nbs-kc count: <CODE>zTpkcMaxNbsKCsPerCmd</CODE></H3>
 
-<P>No command in your tp-all-cmd-list may have more than <CODE>zTpkcMaxNbsKCsPerCmd</CODE> <I>Non-BootStrap</I> (nbs) key-commands. This is the maximum number that any one key-command can have, <I>after TextPad-bootstrap-kcs are deleted.</I> Before running the build process, your <CODE>tpacl</CODE> still has bootstrap-kcs in it. <B>It is therefore not possible to truly validate this</B> until they are deleted by the build process (TPKC-build-proc-10).</P>
+<P>No command in your tp-all-cmd-list may have more than <CODE><A HREF="master_cfg_vars.html#zTpkcMaxNbsKCsPerCmd">zTpkcMaxNbsKCsPerCmd</A></CODE> <I>Non-BootStrap</I> (nbs) key-commands (<CODE>zTpkcMaxNbsKCsPerCmd</CODE> is a TPKC <A HREF="master_cfg_vars.html">master-configuration-variable</A>). This is the maximum number that any one key-command can have, <I>after TextPad-bootstrap-kcs are deleted.</I> Before running the build process, your <CODE>tpacl</CODE> still has bootstrap-kcs in it. <B>It is therefore not possible to truly validate this</B> until they are deleted by the build process (TPKC-build-proc-10).</P>
 
 <P>The <CODE>tpaclwarnkccount</CODE> finds all commands in your <CODE>tpacl</CODE> having more than <CODE>zTpkcMaxNbsKCsPerCmd</CODE> key-commands, <I>including bootstrap-kcs</I>.</P>
 
@@ -182,7 +206,7 @@
 </PRE>
 <A NAME="bld3of4"/><H2><CODE>[<A HREF="#userbuild">BACK</A>]</CODE> &nbsp; TPKC: Build process: Master 3-of-4 (sub 10-13)</H2>
 
-<P><I><A HREF="tpkc_build_processes.html#zTpkcMasterBuild3of4">Technical details</A></I></P>
+<P><I><A HREF="build_proc_tech_info.html#zTpkcMasterBuild3of4">Technical details</A></I></P>
 
 <P>The first (user-only) build-process in the TPKC-project reads your &quot;TextPad all-command list&quot;, and el</P>
 
@@ -193,7 +217,7 @@
 </PRE>
 <A NAME="bld10"/><H2><CODE>[<A HREF="#bld3of4">BACK</A>]</CODE> &nbsp; TPKC: Build process 10: Eliminate bootstrap-kcs from TP-all-cmd list</H2>
 
-<P><I><A HREF="tpkc_build_processes.html#zTpkc10ElimBtstrpKCsFromTpAllCatLst">Technical details</A></I></P>
+<P><I><A HREF="build_proc_tech_info.html#zTpkc10ElimBtstrpKCsFromTpAllCatLst">Technical details</A></I></P>
 
 <PRE>
 
@@ -202,7 +226,7 @@
 </PRE>
 <A NAME="bld4of4"/><H2><CODE>[<A HREF="#userbuild">BACK</A>]</CODE> &nbsp; TPKC: Build process: Master 4-of-4 (sub 14 & 15)</H2>
 
-<P><I><A HREF="tpkc_build_processes.html#zTpkcMasterBuild4of4">Technical details</A></I></P>
+<P><I><A HREF="build_proc_tech_info.html#zTpkcMasterBuild4of4">Technical details</A></I></P>
 
 <PRE>
 
@@ -211,7 +235,7 @@
 </PRE>
 <A NAME="bld14"/><H2><CODE>[<A HREF="#bld4of4">BACK</A>]</CODE> &nbsp; TPKC: Build process 14: Create nbs-phrases from imported usr-cmd-cfg</H2>
 
-<P><I><A HREF="tpkc_build_processes.html#zTpkc14CreateNbsPhrssAndWKcQBLsFrmUSCC">Technical details</A></I></P>
+<P><I><A HREF="build_proc_tech_info.html#zTpkc14CreateNbsPhrssAndWKcQBLsFrmUSCC">Technical details</A></I></P>
 
 
 <PRE>
@@ -221,7 +245,7 @@
 </PRE>
 <A NAME="bld15"/><H2><CODE>[<A HREF="#bld4of4">BACK</A>]</CODE> &nbsp; TPKC: Build process 15: Create all-active tp-commands phrase-creator ddmenu</H2>
 
-<P><I><A HREF="tpkc_build_processes.html#zTpkc15CrtAllActvTPCmdsDDMenuFromAll">Technical details</A></I></P>
+<P><I><A HREF="build_proc_tech_info.html#zTpkc15CrtAllActvTPCmdsDDMenuFromAll">Technical details</A></I></P>
 
 
 <PRE>
@@ -231,7 +255,7 @@
 </PRE>
 <A NAME="bld11"/><H2><CODE>[<A HREF="#bld3of4">BACK</A>]</CODE> &nbsp; TPKC: Build process 11: Split nbs-only-tp-all-cmd-list into cat-cmd-lists</H2>
 
-<P><I><A HREF="tpkc_build_processes.html#zTpkc11SplitNbsAllLstToIndvCatLsts">Technical details</A></I></P>
+<P><I><A HREF="build_proc_tech_info.html#zTpkc11SplitNbsAllLstToIndvCatLsts">Technical details</A></I></P>
 
 <PRE>
 
@@ -240,7 +264,7 @@
 </PRE>
 <A NAME="bld12"/><H2><CODE>[<A HREF="#bld3of4">BACK</A>]</CODE> &nbsp; TPKC: Build process 12: Create raw-usr-cfg  from cat-lists</H2>
 
-<P><I><A HREF="tpkc_build_processes.html#zTpkc12CreateRawUsrCfgFromIndvCatLists">Technical details</A></I></P>
+<P><I><A HREF="build_proc_tech_info.html#zTpkc12CreateRawUsrCfgFromIndvCatLists">Technical details</A></I></P>
 
 <PRE>
 
@@ -249,7 +273,7 @@
 </PRE>
 <A NAME="bld13"/><H2><CODE>[<A HREF="#bld3of4">BACK</A>]</CODE> &nbsp; TPKC: Build process 13: Create user-cmd-cfg from raw-usr-cfg</H2>
 
-<P><I><A HREF="tpkc_build_processes.html#zTpkc13CreateUsrSpcfcCmdConfigFromRaw">Technical details</A></I></P>
+<P><I><A HREF="build_proc_tech_info.html#zTpkc13CreateUsrSpcfcCmdConfigFromRaw">Technical details</A></I></P>
 
 <PRE>
 
@@ -372,7 +396,7 @@
 
 
 <P><UL>
-	<LI><B>Regex for marking all lines in the TextPad all-command list:</B>
+	<LI><B>Regex for marking all lines in the <A HREF="#tpacl">TextPad all-command list</A>:</B>
 	<BR> &nbsp; &nbsp; <CODE>^(EditCopyTaggedLines|EditCutTaggedLines|BookmarkNext|BookmarkToggle|SearchFiles|FileManager|FileOpen|FileQuickOpen|SearchFind|SearchFindNext|SearchGoto|Preferences|SearchReplace)\b</CODE></LI>
 	<LI><B>Testing functions</B> <I>(accessible via <CODE><A HREF="xbnpe_ddmenus.html#xh">xh</A>tk</CODE>)</I><UL>
 		<LI><U>TPKC only:</U><UL>
@@ -385,14 +409,12 @@
 		</UL></LI>
 	</UL></LI>
 	<LI><B><A HREF="plain_text_phrase_files.html#fformat">Phrase-files</A>:</B><UL>
-		<LI><U><A HREF="../pex_in_textpad.html#tpbs2files">On disk</A>:</U>
+		<LI><U><A HREF="../pex_in_textpad.html#tpbslocations">On disk</A>:</U>
 		<BR> &nbsp; &nbsp; <CODE>{#insert zXPROOT_DIR_tpkc}for_v_7_0_9\user_config\<I>[YOUR_TPKC_USER_DIR_NAME]</I>\</CODE></LI>
-<!-- Originates in textpad_tpkc.html#tpbs...START-->
 		<LI><A HREF="../pex_in_textpad.html#tpbsmain">Main</A> phrase-file:
 		<BR> &nbsp; &nbsp; <CODE>tp_bootstraps_for_xkp_project.px.txt</CODE></LI>
 		<LI>The &quot;non-main&quot; phrase-file (containing the <A HREF="../pex_in_textpad.html#tpbsmain">Escaped</A> and <A HREF="../pex_in_textpad.html#tpbstpkey">TextPad-key-press</A> phrases):
 			<BR> &nbsp; &nbsp; <CODE>tp_bootstraps_for_xkp_project_esc_tpk.px.txt</CODE></LI>
-<!-- Originates in textpad_tpkc.html#tpbs...END-->
 		<LI><U>PhraseExpress folder to <A HREF="plain_text_phrase_files.html#import1">import</A> into:</U>
 		<PRE>XBN-PhraseExpress &gt;
    XBNPE: TextPad Built-in commands (TPKC) &gt;
@@ -408,58 +430,72 @@
 <P><TABLE ALIGN="center" BORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#EEEEEE"><TR ALIGN="center" VALIGN="middle">
 	<TD><B><U>Phrase name</U></B></TD>
 	<TD><B><U>Built-in command name</U></B></TD>
+	<TD><B><U>Category</U></B></TD>
 	<TD><B><U>Description</U></B></TD>
 </TR><TR>
 	<TD><CODE>zTPBookmarkCopyAll</CODE></TD>
 	<TD><CODE>EditCopyTaggedLines</CODE></TD>
+	<TD ALIGN="center"><CODE>Edit</CODE></TD>
 	<TD>Copies all lines currently tagged with a bookmark.</TD>
 </TR><TR>
 	<TD><CODE>zTPBookmarkCutAll</CODE></TD>
 	<TD><CODE>EditCutTaggedLines</CODE></TD>
+	<TD ALIGN="center"><CODE>Edit</CODE></TD>
 	<TD>Cuts all lines currently tagged with a bookmark.</TD>
 </TR><TR>
 	<TD><CODE>zTPBookmarkGTNext</CODE></TD>
 	<TD><CODE>BookmarkNext</CODE></TD>
+	<TD ALIGN="center"><CODE>Search</CODE></TD>
 	<TD>Goes to the next bookmarked line, if any.</TD>
 </TR><TR>
 	<TD><CODE>zTPBookmarkToggle</CODE></TD>
 	<TD><CODE>BookmarkToggle</CODE></TD>
+	<TD ALIGN="center"><CODE>Search</CODE></TD>
 	<TD>Marks the currently-UN-marked line, or un-marks the currently-marked line.</TD>
 </TR><TR>
 	<TD><CODE>zTPFFindDlgOpen</CODE></TD>
 	<TD><CODE>SearchFiles</CODE></TD>
+	<TD ALIGN="center"><CODE>Search</CODE></TD>
 	<TD>Opens the <CODE>&quot;Find In Files&quot;</CODE> dialog.</TD>
 </TR><TR>
 	<TD><CODE>zTPFileOpen</CODE></TD>
 	<TD><CODE>FileOpen</CODE></TD>
+	<TD ALIGN="center"><CODE>File</CODE></TD>
 	<TD>Opens the <CODE>&quot;Open file(s)&quot;</CODE> dialog.</TD>
 </TR><TR>
 	<TD><CODE>zTPFindDlgOpen</CODE></TD>
 	<TD><CODE>SearchFind</CODE></TD>
+	<TD ALIGN="center"><CODE>Search</CODE></TD>
 	<TD>Opens the <CODE>&quot;Find&quot;</CODE> dialog</TD>
 </TR><TR>
 	<TD><CODE>zTPFileManager</CODE></TD>
 	<TD><CODE>FileManager</CODE></TD>
+	<TD ALIGN="center"><CODE>File</CODE></TD>
 	<TD>Opens the <CODE>&quot;Manage Files&quot;</CODE> dialog.</TD>
 </TR><TR>
 	<TD><CODE>zTPFileQOpen</CODE></TD>
 	<TD><CODE>FileQuickOpen</CODE></TD>
+	<TD ALIGN="center"><CODE>File</CODE></TD>
 	<TD>Opens the <CODE>&quot;Quick Open File&quot;</CODE> dialog.</TD>
 </TR><TR>
 	<TD><CODE>zTPFindNext</CODE></TD>
 	<TD><CODE>SearchFindNext</CODE></TD>
+	<TD ALIGN="center"><CODE>Search</CODE></TD>
 	<TD>With the find-dialog closed, finds the next search-term down.</TD>
 </TR><TR>
 	<TD><CODE>zTPGTDlgOpen</CODE></TD>
 	<TD><CODE>SearchGoto</CODE></TD>
+	<TD ALIGN="center"><CODE>Search</CODE></TD>
 	<TD>Opens the <CODE>&quot;Go To&quot;</CODE> dialog.</TD>
 </TR><TR>
 	<TD><CODE>zTPPrefsDlgOpen</CODE></TD>
 	<TD><CODE>Preferences</CODE></TD>
+	<TD ALIGN="center"><CODE>Configure</CODE></TD>
 	<TD>Opens the <CODE>&quot;Preferences&quot;</CODE> dialog.</TD>
 </TR><TR>
 	<TD><CODE>zTPRplcDlgOpen</CODE></TD>
 	<TD><CODE>SearchReplace</CODE></TD>
+	<TD ALIGN="center"><CODE>Search</CODE></TD>
 	<TD>Opens the <CODE>&quot;Replace&quot;</CODE> dialog</TD>
 </TR></TABLE></P>
 

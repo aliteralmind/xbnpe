@@ -1,14 +1,14 @@
 __XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress: Large set of generically useful scripting tools for MS Windows, written in PhraseExpress and TextPad.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
-zTPCopy -- TextPad built-in command: EditCopy	{#CTRL -chars c}{#insert zTSlp}{#sleep 10}	zTPCopy
-zTPCut -- TextPad built-in command: EditCut	{#CTRL -chars x}{#insert zTSlp}	zTPCut
-zTPDupLine -- TextPad built-in command: EditDupLine	{#CTRL {#ALT {#SHIFT -chars v}}}{#insert zTSlp}	zTPDupLine
-zTPFileClose -- TextPad built-in command: FileClose	{#CTRL -chars w}{#insert zTSlp}	zTPFileClose
-zTPFileNew -- TextPad built-in command: FileNew	{#CTRL -chars n}{#insert zTSlp}	zTPFileNew
-zTPFileSave -- TextPad built-in command: FileSave	{#CTRL -chars s}{#insert zTSlp}	zTPFileSave
-zTPGTDocTop -- TextPad built-in command: DocumentStart	{#CTRL {#HOME}}{#insert zTSlp}	zTPGTDocTop
-zTPMoveR1w -- TextPad built-in command: WordRightEnd	{#CTRL {#RIGHT}}{#insert zTSlp}	zTPMoveR1w
-zTPPaste -- TextPad built-in command: EditPaste	{#CTRL -chars v}{#sleep 10}{#insert zTSlp}	zTPPaste
-zTPSelectAll -- TextPad built-in command: SelectAll	{#CTRL -chars a}{#insert zTSlp}	zTPSelectAll
-zTPSelectL1w -- TextPad built-in command: WordLeftExtend	{#CTRL {#SHIFT -chars b}}{#insert zTSlp}	zTPSelectL1w
-zTPSelectR1w -- TextPad built-in command: WordRightEndExtend	{#CTRL {#SHIFT {#RIGHT}}}{#insert zTSlp}	zTPSelectR1w
-zTPToggleWW -- TextPad built-in command: ToggleWordWrap	{#CTRL -chars q}{#insert zTSlp}{#sleep 25}{#NONE -chars w}{#insert zTSlp}{#sleep 50}	zTPToggleWW
+zTPCopy -- TextPad built-in command: Edit > EditCopy	{#CTRL -chars c}{#insert zTSlp}{#sleep 10}	zTPCopy
+zTPCut -- TextPad built-in command: Edit > EditCut	{#CTRL -chars x}{#insert zTSlp}	zTPCut
+zTPDupLine -- TextPad built-in command: Edit > EditDupLine	{#CTRL {#ALT {#SHIFT -chars v}}}{#insert zTSlp}	zTPDupLine
+zTPFileClose -- TextPad built-in command: File > FileClose	{#CTRL -chars w}{#insert zTSlp}	zTPFileClose
+zTPFileNew -- TextPad built-in command: File > FileNew	{#CTRL -chars n}{#insert zTSlp}	zTPFileNew
+zTPFileSave -- TextPad built-in command: File > FileSave	{#CTRL -chars s}{#insert zTSlp}	zTPFileSave
+zTPGTDocTop -- TextPad built-in command: Cursor > DocumentStart	{#CTRL {#HOME}}{#insert zTSlp}	zTPGTDocTop
+zTPMoveR1w -- TextPad built-in command: Cursor > WordRightEnd	{#CTRL {#RIGHT}}{#insert zTSlp}	zTPMoveR1w
+zTPPaste -- TextPad built-in command: Edit > EditPaste	{#CTRL -chars v}{#sleep 10}{#insert zTSlp}	zTPPaste
+zTPSelectAll -- TextPad built-in command: Selection > SelectAll	{#CTRL -chars a}{#insert zTSlp}	zTPSelectAll
+zTPSelectL1w -- TextPad built-in command: Cursor > WordLeftExtend	{#CTRL {#SHIFT -chars b}}{#insert zTSlp}	zTPSelectL1w
+zTPSelectR1w -- TextPad built-in command: Cursor > WordRightEndExtend	{#CTRL {#SHIFT {#RIGHT}}}{#insert zTSlp}	zTPSelectR1w
+zTPToggleWW -- TextPad built-in command: Configure > ToggleWordWrap	{#CTRL -chars q}{#insert zTSlp}{#sleep 25}{#NONE -chars w}{#insert zTSlp}{#sleep 50}	zTPToggleWW

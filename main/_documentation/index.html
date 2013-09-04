@@ -15,6 +15,7 @@
 	<LI><CODE>[<A HREF="http://forums.delphiforums.com/xbnpe">go</A>]</CODE> &nbsp; User-discussion forum</LI>
 	<LI><CODE>[<A HREF="http://xbnpe.jeffyepstein.com">go</A>]</CODE> &nbsp; The most-up-to-date documentation</LI>
 	<LI><CODE>[<A HREF="#lpgl">go</A>]</CODE> &nbsp; XBN-PhraseExpress is released under the <B><U>LPGL 2.1</U></B> <A HREF="../../LICENSE.txt">Full license text</A></LI>
+	<LI><CODE>[<A HREF="install.html">go</A>]</CODE> &nbsp; Installation and requirements</LI>
 </UL></SPAN></P>
 
 <HR/>
@@ -73,23 +74,6 @@
 <P>You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA</CODE></P>
 
 <P><I><A HREF="../../LICENSE.txt"><B>Full license text</B></A></I></P>
-
-<PRE>
-
-<HR/>
-
-</PRE>
-<A NAME="install"/><H2><CODE>[<A HREF="#YYY">BACK</A>]</CODE> &nbsp; XBN-PhraseExpress: Installation</H2>
-
-<P>Install TextPad. XBNPE is verified with TextPad version <CODE>7.0.9</CODE>. It <I>should</I> work with all <CODE>7.*</CODE> versions. It will not work with earlier versions.</P>
-
-<P>Install PhraseExpress. XBNPE was built with &quot;PhraseExpress Standard v9.1.41s&quot;. It <I>may</I> work with other <CODE>9.*</CODE> versions of PhraseExpress. It will not work with earlier versions.</P>
-
-<P>Download and install XBN-PhraseExpress.</P>
-
-<P>Configure global directories:</P>
-
-
 <PRE>
 
 <HR/>
@@ -97,11 +81,10 @@
 </PRE>
 <A NAME="dircfg"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; XBN-PhraseExpress: Global directory configuration</H2>
 
-<P><B>Your XBNPE global-directory-configuration file:</B>
-<BR> &nbsp; &nbsp; <CODE><A HREF="../xbnpe_xkp/configuration/xbnpe__directory_config_edit_this.px.txt">../xbnpe_xkp/configuration/xbnpe__directory_config_edit_this.px.txt</A></CODE>
-<BR><I>If you copy this url (via right-click), it can be pasted directly into TextPad's open dialog.</I></P>
-
-<P>There is one primary, and one recommended directory to configure into XBN-PhraseExpress.</P>
+<P>There are two global directory configuration variables that must be configured before XBN-PhraseExpress can function:<UL>
+	<LI><CODE>[<A HREF="#zROOT_DIR_XBNPE_PARENT">go</A>]</CODE> &nbsp; <B><CODE>zROOT_DIR_XBNPE_PARENT</CODE>:</B> Required</LI>
+	<LI><CODE>[<A HREF="#desktopdir">go</A>]</CODE> &nbsp; <B><CODE>zWIN_DIR_DESKTOP</CODE>:</B> Optional but recommended</LI>
+</UL></P>
 
 <H3>Requirements</H3>
 
@@ -111,16 +94,61 @@
 	<LI>May not contain any <CODE>(*comments*)</CODE> in the phrase-body.</LI>
 </UL></P>
 
-<H2><CODE>zROOT_DIR_XBNPE_PARENT</CODE></H2>
+<H3>Locations</H3>
 
-<P>The parent directory in which <CODE>xbnpe</CODE> source-code root was installed. Such as:
+<P><UL>
+	<LI><U>On disk</U> <I>(<A HREF="plain_text_phrase_files.html#fformat">plain-text phrase-file</A>)</I>
+	<BR> &nbsp; &nbsp; <CODE>{#insert zROOT_DIR_XBNPE_MAIN}/xbnpe_xkp/configuration/<A HREF="../xbnpe_xkp/configuration/xbnpe__directory_config_edit_this.px.txt">xbnpe__directory_config_edit_this.px.txt</A></CODE>
+	<BR><I>(If this documentation web-page is locally installed, this url may be right-click-copied, and then pasted into TextPad's open dialog.)</I></LI>
+	<LI><U>PhraseExpress folder</U> <I>(to <A HREF="plain_text_phrase_files.html#import1">import</A> to)</I>
+	<PRE>XBNPE: Parent folder &gt;
+   XBN-PhraseExpress &gt;
+      XBNPE-Key-presses (XKP) & basic utilities &gt;
+         Directory and global configuration</PRE></LI>
+</UL></P>
+
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="zROOT_DIR_XBNPE_PARENT"/><H2><CODE>[<A HREF="#dircfg">BACK</A>]</CODE> &nbsp; XBNPE: Global-directory-config: <CODE>zROOT_DIR_XBNPE_PARENT</CODE></H2>
+
+<P>The parent directory in which <CODE>xbnpe</CODE> source-code root was <A HREF="install.html#install4of5">installed</A>. Such as:
 <BR> &nbsp; &nbsp; <CODE>C:\programming\phrase_express\</CODE>
 <BR>Using this example, the TextPad built-in command (TPKC) project-root is
 <BR> &nbsp; &nbsp; <CODE>C:\programming\phrase_express\xbnpe\main\textpad__tpkc\</CODE></P>
 
-<P>This value is critical to most XBN-PhraseExpress projects. The TPKC-build process will not function without this.</P>
+<P>This value is critical to most XBN-PhraseExpress projects. For example, neither the <A HREF="xbnpe_key_presses__xkp.html">XKP</A> or <A HREF="textpad__tpkc/index.html">TPKC</A>-build processes can function without this.</P>
 
-<H2><CODE>zWIN_DIR_desktop</CODE></H2>
+<H2><CODE>zROOT_DIR_XBNPE_MAIN</CODE></H2>
+
+<P><B><CODE>zROOT_DIR_XBNPE_MAIN</CODE></B> is a directory-variable is <I>derived</I> from
+<BR> &nbsp; &nbsp; <CODE>zROOT_DIR_XBNPE_PARENT</CODE>
+<BR>and is the location where the main <I>and hard-coded</I> XBNPE-code resides (I directly create these phrases). Specifically, <CODE>zROOT_DIR_XBNPE_MAIN</CODE> is equal to
+<BR> &nbsp; &nbsp; <CODE>{#insert zROOT_DIR_XBNPE_PARENT}xbnpe\main\</CODE></P>
+
+<P><I>Do not edit the value of <CODE>zROOT_DIR_XBNPE_MAIN</CODE> !</I></P>
+
+<H2><CODE>zROOT_DIR_XBNPE_AG</CODE></H2>
+
+<P><B><CODE>zROOT_DIR_XBNPE_AG</CODE></B> is a directory-variable is <I>derived</I> from
+<BR> &nbsp; &nbsp; <CODE>zROOT_DIR_XBNPE_PARENT</CODE>
+<BR>and is the location where the main <I>auto-generated</I> phrases are stored (these phrases are created by other phrases). Specifically it is equal to
+<BR> &nbsp; &nbsp; <CODE>{#insert zROOT_DIR_XBNPE_PARENT}xbnpe\auto_generated\</CODE></P>
+
+<P><I>Do not edit the value of <CODE>zROOT_DIR_XBNPE_AG</CODE> !</I></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="desktopdir"/><H2><CODE>[<A HREF="#dircfg">BACK</A>]</CODE> &nbsp; XBNPE: Global-directory-config: <CODE>zROOT_DIR_XBNPE_PARENT</CODE></H2>
+
+<H2><CODE>zWIN_DIR_DESKTOP</CODE></H2>
 
 <P>Recommended but not required. I personally sometimes put test data on the desktop. If your Windows user-name, and therefore your desktop path, has spaces in it, it conflicts with the above no-double-quotes rule, and therefore this value won't be usable to you.</P>
 
@@ -135,25 +163,25 @@
 </PRE>
 <A NAME="glblcfg"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; XBN-PhraseExpress: global configuration</H2>
 
-<P><B>Your XBNPE global-configuration file:</B>
-<BR> &nbsp; &nbsp; <CODE><A HREF="../xbnpe_xkp/configuration/xbnpe__global_config.px.txt">../xbnpe_xkp/configuration/xbnpe__global_config.px.txt</A></CODE>
-<BR><I>If you copy this url (via right-click), it can be pasted directly into TextPad's open dialog.</I></P>
 
-<P>Global configuration variables that must be correct, in order for <I>anything</I> in XBN-PhraseExpress to function.</P>
+<H3>Locations</H3>
+
+<P><UL>
+	<LI><U>On disk</U> <I>(<A HREF="plain_text_phrase_files.html#fformat">plain-text phrase-file</A>)</I>
+	<BR> &nbsp; &nbsp; <CODE>{#insert <CODE><A HREF="#zROOT_DIR_XBNPE_PARENT">zROOT_DIR_XBNPE_MAIN</A></CODE>}/xbnpe_xkp/configuration/<A HREF="../xbnpe_xkp/configuration/xbnpe__global_config_edit_this.px.txt">xbnpe__global_config_edit_this.px.txt</A></CODE>
+	<BR><I>(If this documentation web-page is locally installed, this url may be right-click-copied, and then pasted into TextPad's open dialog.)</I></LI>
+	<LI><U>PhraseExpress folder</U> <I>(to <A HREF="plain_text_phrase_files.html#import1">import</A> to)</I>
+	<PRE>XBNPE: Parent folder &gt;
+   XBN-PhraseExpress &gt;
+      XBNPE-Key-presses (XKP) & basic utilities &gt;
+         Directory and global configuration</PRE></LI>
+</UL></P>
+
+<P>Global configuration variables required in order for <I>anything</I> in XBN-PhraseExpress to function. These values are set during <I>(see: <A HREF="install.html#install2of5">TextPad-and-XBNPE installation</A>).</I></P>
 
 <P><TABLE ALIGN="center" BORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#EEEEEE"><TR ALIGN="center" VALIGN="middle">
 	<TD><B><U>Variable</U></B></TD>
 	<TD><B><U>Description and requirements</U></B></TD>
-</TR><TR>
-	<TD ALIGN="right"><B><CODE>zzTextPadWindowName</CODE></B></TD>
-	<TD>The name of the TextPad application's window title, as required by <CODE>{#FOCUS ...}</CODE>. May include asterisks (such as <CODE>&quot;*TextPad*&quot;</CODE>). Used for re-focusing on the main TextPad document window, when opening and closing <I>both TextPad and PhraseExpress</I> dialogs.</TD>
-</TR><TR>
-	<TD ALIGN="right"><B><CODE>zzCurrVersionOfTPWithUnderscores</CODE></B></TD>
-	<TD>The current version of TextPad, using underscores instead of dots. For example, if, in
-	<BR> &nbsp; &nbsp; <CODE>TextPad &gt; Help &gt; About</CODE>
-	<BR>it says version <CODE>&quot;7.0.9&quot;</CODE>, then this value must be <CODE>&quot;7_0_9&quot;</CODE>.
-	<BR>
-	<BR>This is the <I>postfix</I> of the name of the version-specific directory in the <A HREF="textpad_tpkc/index.html">XBNPE-TPKC project</A>.</TD>
 </TR><TR>
 	<TD ALIGN="right"><B><CODE>zzTPTxtDefaultWordWrapOnOrES</CODE></B></TD>
 	<TD><A HREF="plain_text_phrase_files.html#fformat">Plain-text phrase-files</A> are named with the postfix <CODE>&quot;.px.txt&quot;</CODE> and are therefore included in <A HREF="pex_in_textpad.html#txtdcsettings">TextPad's &quot;Text&quot; document class</A>. If the default <A HREF="cwlpdf/ww_with_state.html">word-wrap</A> state for the text document class is<UL>

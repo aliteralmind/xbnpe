@@ -1,14 +1,3 @@
 __XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress: Large set of generically useful scripting tools for MS Windows, written in PhraseExpress and TextPad.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
-(*
-   Required by phrase-creator-ddmenu-utils...START
-      PM_DDMENU_DIRID_FILENMPHRSNM_HDRAUTOTXT=tpkc/zzPmdmFNmPreTpkcOther/xhoy
-   Required by phrase-creator-ddmenu-utils...END
-*)
-zROOT_DIR_XBNPE	{#insert zROOT_DIR_XBNPE_PARENT}xbnpe\	zROOT_DIR_XBNPE
-zROOT_DIR_XBNPE_MAIN	{#insert zROOT_DIR_XBNPE}main\	zROOT_DIR_XBNPE_MAIN
-zXPROOT_DIR_AG_temp	{#insert zROOT_DIR_XBNPE_AG}{#insert zzXPSUB_DIR_temp}	zXPROOT_DIR_AG_temp
-zROOT_DIR_XBNPE_AG	{#insert zROOT_DIR_XBNPE_AG_PARENT}auto_generated\	zROOT_DIR_XBNPE_AG
-zROOT_DIR_XBNPE_AG_PARENT	{#insert zROOT_DIR_XBNPE}	zROOT_DIR_XBNPE_AG_PARENT
-zXPROOT_DIR_xbnpeXkp	{#insert zROOT_DIR_XBNPE_MAIN}{#insert zzXPSUB_DIR_xbnpeXkp}	zXPROOT_DIR_xbnpeXkp
-zzXPSUB_DIR_temp	zz_temp\	zzXPSUB_DIR_temp
-zzXPSUB_DIR_xbnpeXkp	xbnpe_xkp\	zzXPSUB_DIR_xbnpeXkp
+zzTPTxtDefaultWordWrapOnOrES -- TP > Config > Prefs > Doc cls > txt > ww	on	zzTPTxtDefaultWordWrapOnOrES
+zzTPTxtDefaultStripTrailingWSOnOrES -- TP > Config > Prefs > Doc cls > txt > Strp trl ws	on	zzTPTxtDefaultStripTrailingWSOnOrES

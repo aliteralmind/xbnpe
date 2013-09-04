@@ -3,5 +3,5 @@ tpmdreadllcf	{#insert zvPRNTBL_YN_OVERIDE_TO_Y_ONFF_stOn}{#insert zFindDialogFla
 zzTpmdProcessNextMacroInstance_M_reon	{#insert zzREonFindVerifyBypassEmptyOkBSC_M_rqsxReon}{#insert zzTpmdReadAllLLIsThenDelBlk}{#insert zAllImprtblPhrssWVarVals_M_pjDtvKeys}	zzTpmdProcessNextMacroInstance_M_reon
 zzTpmdReadAllLLIsThenDelBlk	{#insert zzTpmdPnvt_readRequiredLLI}{#insert zzTpmdMcrv1_readRequiredLLI}{#insert zzTpmdLivt_readRequiredLLI}{#insert zzTpmdKc_readRequiredLLI}{#insert zzTpmdStps_readRequiredLLI}{#insert zSpUP5}{#insert zDEL}	zzTpmdReadAllLLIsThenDelBlk
 zzTpmdDirSaveImportableMacroInstFile	{#insert zFileSave1750slp}{#insert zvOUT_DIR}{#insert zKSlpEtrKSlp}{#insert zvOUTPUT_FILE_NAME}{#sleep 1000}{#insert zENTER}	zzTpmdDirSaveImportableMacroInstFile
-tfptudllc	{#setclipboard {#insertfile {#insert zWIN_DIR_desktop}zz_tpmd_demo_llconfig.txt}}{#insert zTPPaste}	tfptudllc
-tfptudlpdc	{#setclipboard {#insertfile {#insert zWIN_DIR_desktop}tpmd_lpd_config.txt}}{#insert zTPPaste}	tfptudlpdc
+tfptudllc	{#setclipboard {#insertfile {#insert zWIN_DIR_DESKTOP}zz_tpmd_demo_llconfig.txt}}{#insert zTPPaste}	tfptudllc
+tfptudlpdc	{#setclipboard {#insertfile {#insert zWIN_DIR_DESKTOP}tpmd_lpd_config.txt}}{#insert zTPPaste}	tfptudlpdc
