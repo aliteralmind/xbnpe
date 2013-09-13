@@ -39,7 +39,7 @@
 
 		<zip destfile="${bkp_zip_path}" duplicate="fail"
 				basedir="${sandbox_parent}"
-				excludes=".git*, .git*\**"
+				excludes="**\.git*, **\.git*\**"
 				includes="xbnpe\**"/>
 	</target>
 
