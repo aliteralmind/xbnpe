@@ -1,0 +1,175 @@
+<HTML><HEAD>
+	<TITLE></TITLE>
+	<meta name="viewport" content="width=device-width" />
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF"><a name="top"></a>
+
+<A NAME="mrchanged"/><H2><CODE>[<A HREF="phrase_file.html">BACK</A>]</CODE> &nbsp; TIP: Auto-display of most-recently changed phrase-files (Windows Explorer)</H2>
+
+<P><I>[<A HREF="#mrcx2">Alternative steps</A> using the Windows Explorer replacement Xplorer2]</I></P>
+
+<P>When actively developing phrases in an external text-editor, such as <A HREF="pex_in_textpad.html">TextPad</A>, it is useful to have the most recently changed phrase-files always present themselves, so they can be quickly <A HREF="phrase_file_import1.html">imported</A>. This is easy to do.</P>
+
+<P>(See: &quot;Desktop three&quot; in <A HREF="pex_in_textpad.html#devenv">my personal development environment</A>)</P>
+
+<H2><B><CODE><A HREF="#mrchanged">BACK</A> &nbsp; &nbsp; [PREV -- <A HREF="#mrchanged02">NEXT</A>]</CODE></B> &nbsp; &nbsp; Auto-display of most-recently-changed files: Step-by-step (Windows Explorer)</H2>
+
+<P>Open a Windows Explorer window to your root PhraseExpress development directory. This directory likely contains the XBN-PhraseExpress root directory:</P>
+
+<P><IMG SRC="images/explorer_xbnpe_main_no_search.jpg" BORDER="1"/></P>
+
+
+<A NAME="mrchanged02"/><H2><B><CODE><A HREF="#mrchanged">BACK</A>  &nbsp; &nbsp; [<A HREF="#mrchanged">PREV</A> -- <A HREF="#mrchanged03">NEXT</A>]</CODE></B> &nbsp; &nbsp; Auto-display of most-recently-changed files: Step-by-step (Windows Explorer)</H2>
+
+Put
+<BR> &nbsp; &nbsp; <CODE>*.px.txt datemodified:8/28/2013</CODE>
+<BR>with today's date, into the search box.
+
+<P><IMG SRC="images/explorer_xbnpe_main_search_initial.jpg" BORDER="1"/></P>
+
+<A NAME="mrchanged03"/><H2><B><CODE><A HREF="#mrchanged">BACK</A>  &nbsp; &nbsp; [<A HREF="#mrchanged02">PREV</A> -- <A HREF="#mrchanged04">NEXT</A>]</CODE></B> &nbsp; &nbsp; Auto-display of most-recently-changed files: Step-by-step (Windows Explorer)</H2>
+
+<P>Order by date descending (most recent files at the top) .</P>
+
+<P><IMG SRC="images/explorer_xbnpe_main_search_date_desc_far_right.jpg" BORDER="1"/></P>
+
+<A NAME="mrchanged04"/><H2><B><CODE><A HREF="#mrchanged">BACK</A>  &nbsp; &nbsp; [<A HREF="#mrchanged03">PREV</A> -- <A HREF="#mrchanged05">NEXT</A>]</CODE></B> &nbsp; &nbsp; Auto-display of most-recently-changed files: Step-by-step (Windows Explorer)</H2>
+
+<P>If you wish, move the date modified column to the far left (this is my preference), and expand it so you can see the full time-stamp.</P>
+
+<P><IMG SRC="images/explorer_xbnpe_main_search_date_desc_far_left.jpg" BORDER="1"/></P>
+
+
+<A NAME="mrchanged05"/><H2><B><CODE><A HREF="#mrchanged">BACK</A>  &nbsp; &nbsp; [<A HREF="#mrchanged04">PREV</A> -- NEXT]</CODE></B> &nbsp; &nbsp; Auto-display of most-recently-changed files: Step-by-step (Windows Explorer)</H2>
+
+<P>Setup is complete. Leave this window open on one side of your monitor. When <A HREF="phrase_file_import1.html">importing</A> a phrase file, open the PhraseExpress application on the other side. The most-recently-edited phrase-files can now be easily dragged from this dynamic explorer window into the PhraseExpress application.</P>
+
+<P>Note that writing the folder-search-term with the file-type first makes it easy to identify the window's contents in your taskbar.</P>
+
+<P><IMG SRC="images/taskbar_explorer_w_search_terms.jpg" BORDER="1"/></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="mrcx2"/><H2><CODE>[<A HREF="phrase_file.html">BACK</A>]</CODE> &nbsp; TIP: Auto-display of most-recently changed phrase-files (Xplorer2)</H2>
+
+<P><I>[go to <A HREF="#mrcx201">one-time setup</A>,&nbsp; <A HREF="#mrcx204">using</A>,&nbsp; <A HREF="#mrchanged">alternative steps</A> for Windows Explorer]</CODE></I></P>
+
+<P>I use <A HREF="http://zabkat.com">Xplorer2</A> instead of Windows Explorer. This section show you how to list the most recently changed files using Xplorer2.</P>
+
+<P>The advantage of Xplorer2 is that the search terms can be very specific. The searches in this section only show phrase-files changed in the last thirty minutes--Windows Explorer can only say &quot;today&quot; (everything disappears at midnight). Also, <A HREF="../devpex/xbnpe_ddmenus.html#xh">pcddmenu</A>-phrase-files are excluded from the non-pcddmenu list--in Windows Explorer, they are intermixed.</P>
+
+<P>The disadvantage is that search results must be manually refreshed.</P>
+
+<A NAME="mrcx201"/><H2><CODE><A HREF="#mrcx2">BACK</A> &nbsp; &nbsp; [PREV -- <A HREF="#mrcx202">NEXT</A>]</CODE></B> &nbsp; &nbsp; Auto-display of most-recently-changed files: Step-by-step (Xplorer2)</H2>
+
+<H3>One-time setup</H3>
+
+<P><I>These instructions are tailored to XBN-PhraseExpress developers--those wishing to alter or add to the XBN-PhraseExpress project itself. However, this is useable by anyone, simply by changing the search-directory, &quot;Predefined&quot; names, and the save-files as appropriate for your own PhraseExpress development directory. You will also need to create <A HREF="#mrcx205">utilities</A> for your particular save-files.</I></P>
+
+<P><OL>
+	<LI>Open Xplorer2, and navigate to the root folder of your PhraseExpress development. Here's mine:
+	<BR> &nbsp; &nbsp; <CODE>{#insert <A HREF="../global_config.html#zROOT_DIR_XBNPE_MAIN">zROOT_DIR_XBNPE_MAIN</A>}</CODE></LI>
+	<LI>Activate the menu item
+	<BR> &nbsp; &nbsp; <CODE>Xplorer2 &gt; Tools &gt; Search files...</CODE></LI>
+	<LI>This opens an empty &quot;scrap container&quot; (a virtual window containing shortcuts), and an empty search-terms dialog on top of it:</LI>
+</OL></P>
+
+<P><IMG SRC="images/x2_search_terms_blank.jpg" BORDER="1"/></P>
+
+<A NAME="mrcx202"/><H2><B><CODE><A HREF="#mrcx2">BACK</A> &nbsp; &nbsp; [<A HREF="#mrcx201">PREV</A> -- <A HREF="#mrcx203">NEXT</A>]</CODE></B> &nbsp; &nbsp; Auto-display of most-recently-changed files: Step-by-step (Xplorer2)</H2>
+
+<P>Create the following search terms and save it as a &quot;Predefined&quot; search, with the name
+<BR> &nbsp; &nbsp; <CODE>XBNPE: Modified 30 min, code</CODE>
+<BR>In the Xplorer2 manual (manual-version 2.1.0.1-1--download it via
+<BR> &nbsp; &nbsp; <CODE>Xplorer2 &gt; Help &gt; Contents</CODE>
+<BR>), these instructions are on page 130, in the section &quot;Composing a search&quot;</P>
+
+<P>Once named, Press <CODE>[OK]</CODE> to activate it. Position this window in the upper left of your screen. <I>The rest of these instructions assume that at least one file was found.</I></P>
+
+<P><IMG SRC="images/x2_search_terms_px_txt.jpg" BORDER="1"/></P>
+
+<A NAME="mrcx203"/><H2><B><CODE><A HREF="#mrcx2">BACK</A> &nbsp; &nbsp; [<A HREF="#mrcx202">PREV</A> -- <A HREF="#mrcx204">NEXT</A>]</CODE></B> &nbsp; &nbsp; Auto-display of most-recently-changed files: Step-by-step (Xplorer2)</H2>
+
+<P>To activate <I>and refresh</I> this search, the search terms must be saved to a file (scrap-containers are static snapshots, they do not auto-refresh). Note that &quot;Predefined&quot; search terms are saved internally in Xplorer2, not to a file.</P>
+
+<P>In the scrap-container (which contains at least one search-result!), activate
+<BR> &nbsp; &nbsp; <CODE>Tools &gt; Save search</CODE>
+<BR>Navigate to
+<BR> &nbsp; &nbsp; <CODE>{#insert <A HREF="../global_config.html#zROOT_DIR_XBNPE">zROOT_DIR_XBNPE</A>}zz_misc_and_pxp\</CODE>
+<BR>and save it as
+<BR> &nbsp; &nbsp; <CODE>xplorer2_search__px_txt_edited_last_30min.x2fnd</CODE>
+<BR>overwriting the current file (which is hard-coded to the directories on my computer).</P>
+
+<A NAME="mrcx204"/><H2><B><CODE><A HREF="#mrcx2">BACK</A> &nbsp; &nbsp; [<A HREF="#mrcx203">PREV</A> -- <A HREF="#mrcx205">NEXT</A>]</CODE></B> &nbsp; &nbsp; Auto-display of most-recently-changed files: Step-by-step (Xplorer2)</H2>
+
+<P>For <A HREF="../devpex/xbnpe_ddmenus.html#xh">pcddmenu</A> files, repeat the previous steps with the following:<UL>
+	<LI>The below search terms</LI>
+	<LI>Predefined name: <CODE>&quot;XBNPE: Modified 30 min, pcddmenu&quot;</CODE></LI>
+	<LI>File-name: <CODE>xplorer2_search__pcddmenu_px_txt_edited_last_30min.x2fnd</CODE></LI>
+</UL>Activate the search and move the window to just underneath the other one.</P>
+
+<P><IMG SRC="images/x2_search_terms_pcddmenu_px_txt.jpg" BORDER="1"/></P>
+
+<A NAME="mrcx205"/><H2><B><CODE><A HREF="#mrcx2">BACK</A> &nbsp; &nbsp; [<A HREF="#mrcx204">PREV</A> -- NEXT]</CODE></B> &nbsp; &nbsp; Auto-display of most-recently-changed files: Step-by-step (Xplorer2)</H2>
+
+<H3>Using</H3>
+
+<P>Once setup, and assuming you have saved your search-files to the exact directory and file-names above, the following XBN-PhraseExpress utilities will automatically open these searches for you:<UL>
+	<LI><CODE>zActivateMrcPcddmenuXplorer2Search</CODE> &nbsp; &nbsp; <I>(default key-command: <CODE><A HREF="xkp.html#2mods">zASpF3</A></CODE>)</I></LI>
+	<LI><CODE>zActivateMrcPxTxtXplorer2Search</CODE> &nbsp; &nbsp; <I>(default key-command: <CODE>zCASpF3</CODE></A></CODE>)</I></LI>
+</UL></P>
+
+<P>For users wanting to create this utility for their own PhraseExpress development directory, simply open your save-file. For example:
+<BR> &nbsp; &nbsp; <CODE>{#OPEN <I>[your-pex-dev-dir]</I>/most_recently_changed_pex_code.x2fnd}</CODE></P>
+
+<H4><U>Example lifecycle</U></H4>
+
+<P><OL>
+	<LI>Edit code</LI>
+	<LI>Activate the search with one of the above key-commands</LI>
+	<LI>Open PhraseExpress</LI>
+	<LI>Drag the phrase-files into PhraseExpress to import them</LI>
+	<LI>Close PhraseExpress</LI>
+	<LI>Close the scrap-container window (unless you're going to keep editing the same file[s])</LI>
+</OL></P>
+
+
+
+<PRE>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</PRE>
+</BODY></HTML>
+
+
+

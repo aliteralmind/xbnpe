@@ -1,0 +1,179 @@
+<HTML><HEAD>
+	<TITLE>XBNPE: Word-wrap with state</TITLE>
+	<meta name="viewport" content="width=device-width" />
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF"><a name="top"></a>
+
+
+<P>[<A HREF="../index.html#tasks">BACK</A>]<CODE> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </CODE><I>(XBN-PhraseExpress is released under the <A HREF="../index.html#lpgl">LPGL 2.1</A>)</I>
+
+<HR/>
+
+<H1>XBNPE: Word-wrap with state</H1>
+
+<P>This document describes all XBNPE-word-wrap functionality, including keeping track of state, as far as that is possible.</P>
+
+<P><B>Contents:</B><UL>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#basic">GO</A></B></FONT>]</CODE> &nbsp; Basic functions</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#tptxtdstate">GO</A></B></FONT>]</CODE> &nbsp; TextPad's default word-wrap state for text-documents</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#saverevert">GO</A></B></FONT>]</CODE> &nbsp; Save current state and revert back to it</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#stateprompt">GO</A></B></FONT>]</CODE> &nbsp; Prompting the user for the current state</LI>
+</UL></P>
+
+<P><I>(see: <A HREF="../generic/phrase_set_syntax.html">understanding syntax summary</A>. Phrase-creator ddmenu: <CODE><A HREF="../devpex/xbnpe_ddmenus.html#xh">xh</A>cdw</CODE>).</I></P>
+
+<P>In order to turn word-wrap on and off reliably, it is necessary for PhraseExpress to keep track of its state: <I>Is it currently on or off?</I>. While it is impossible for PhraseExpress to know if the user has<UL>
+	<LI>manually turned it on it TextPad (bypassing the internal state-update), or</LI>
+	<LI>switched to a different document (which may or may not be a PhraseExpress <A HREF="../basics/phrase_file.html#fformat">document</A>), or</LI>
+	<LI>even to a different instance of TextPad.</LI>
+</UL>there are some limited situations in which word-wrap state can be confidently controlled. For other situations, it is sometimes necessary to prompt the user for the current state.</P>
+
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="tptxtdstate"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; Word-Wrap: TextPad's default state for text-documents</H2>
+
+<H3>Syntax summary</H3>
+
+<P><UL>
+	<LI><CODE>zWordWrap[On,Off]FromTPDfltState</CODE></LI>
+	<LI><CODE>zSetWWStateToTPTxtDefault</CODE></LI>
+	<LI><CODE>zzvWORD_WRAP_ON_stTPTxtDefault</CODE></LI>
+</UL></P>
+
+<P>When a text-document is opened, it's word-wrap state is defined by the XBNPE global configuration variable
+<BR> &nbsp; &nbsp; <A HREF="../global_config.html"><CODE>zzTPTxtDefaultWordWrapOnOrES</CODE></A></P>
+
+<P>When it is known that a document was just opened (and word-wrap was unchanged by the user), use
+<BR> &nbsp; &nbsp; <CODE>{#insert zWordWrapOffFromTPDfltState}</CODE>
+<BR>or
+<BR> &nbsp; &nbsp; <CODE>{#insert zSetWWStateToTPTxtDefault} ... {#insert zWordWrapOff}</CODE>
+<BR>to confidently turn word-wrap off.</P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="saverevert"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; Word-Wrap: Save current state and revert back to it</H2>
+
+<H3>Syntax summary</H3>
+
+<P><UL>
+	<LI><CODE>zWordWrap[On,Off]SaveState</CODE></LI>
+	<LI><CODE>zRevertWWToOrigState</CODE></LI>
+</UL></P>
+
+<P>To temporarily change word-wrap state, but revert back to the previous state (which may or may not be the same):</P>
+
+<PRE STYLE="background-color:#E1E1E1;">{#insert zWordWrapOffSaveState}
+...
+<I>Freely turn word-wrap on and off here, using anything BUT the save-state/restore phrases.</I>
+...
+{#insert zRevertWWToOrigState}</PRE>
+
+<P>Note: There are alternative ways of saving state when <A HREF="#stateprompt">prompting the user</A> for the current ww-state.</P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="stateprompt"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; Word-Wrap: Prompting the user for the current state</H2>
+
+<H3>Syntax Summary</H3>
+
+<P><UL>
+	<LI><CODE>zConfirmWWStatePrompt</CODE></LI>
+	<LI><CODE>zSetNumberOfWWsToRecheckState</CODE> &nbsp; &nbsp; <I>(Shortcut: <CODE>swwrc</CODE>)</I></LI>
+	<LI><CODE>zToggleWWMaybeRecheckState</CODE></LI>
+	<LI><CODE>zWWOnSaveStateMaybeRecheck</CODE> &nbsp; &nbsp; <I>(for <A HREF="#saverevert">save-revert</A>)</I></LI>
+	<LI><CODE>zWWOff[Hm]SvStateMaybeRecheck</CODE> &nbsp; &nbsp; <I>(for save-revert)</I></LI>
+	<LI><CODE>zWordWrap[On,Off]MaybeRecheckState</CODE></LI>
+</UL></P>
+
+<P>The only way to truly know the current word-wrap state is by prompting the user. For processes that open text documents and then <I>immediately process them</I>, TextPad <A HREF="#tptxtdstate">default-state</A> may be sufficient. For <A HREF="../basics/xbnpe_phrase_types.html#action">actions</A> that may be used randomly and frequently (such as <A HREF="../devpex/c2pl.html#one"><CODE>c2pl</CODE></A> or <CODE>dnen</CODE>), it may be necessary to prompt the user.</P>
+
+<P>It is possible to prompt the user for word-wrap state every <I>n-th</I> time a process is run, such as <I>every</I> time, or every fifth time. The default is every time. To change this, use
+<BR> &nbsp; &nbsp; <CODE>swwrc</CODE>
+<BR>(the <CODE>&quot;wt&quot;</CODE> action tells you both the current state-check count, and reminds of you the <CODE>swwrc</CODE> shortcut to change the count). Whenever the actual word-wrap state is manually set by the user (such as with <CODE>&quot;wn&quot;</CODE> or <CODE>&quot;wf&quot;</CODE>), this count is reset (if it was <CODE>&quot;2/4&quot;</CODE>, for checking every fourth time, it is reset to <CODE>&quot;0/4&quot;</CODE>).</P>
+
+<P><I>Only processes needing to prompt the user for word-wrap state (whether every time or every tenth time) should use these functions.</I> Processes that do not ever want to prompt the user for word-wrap state should use functions elsewhere in this document.</P>
+
+<P>Finally, note that the when-to-prompt-count is global. All phrases taking advantage of this prompt-the-user-for-ww-state functionality use the same internal counters. Changing it for one changes it for all (both the &quot;n-th&quot; number, and the &quot;current&quot; number).</P>
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="basic"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; Word-wrap with state: Basic functions</H2>
+
+<H3>Syntax Summary</H3>
+
+<P><UL>
+	<LI><CODE>zToggleWW[[Home,AndState_M_wwo]]</CODE></LI>
+	<LI><CODE>zToggleWWSetStateTo[On,Off]</CODE></LI>
+	<LI><CODE>zWordWrap[On,Off]</CODE></LI>
+	<LI><CODE>zzvWORD_WRAP_ON_st[On,Off]</CODE></LI>
+</UL></P>
+
+<P>Word-wrap state is stored in the <A HREF="../basics/xbnpe_phrase_types.html#variable">variable</A>
+<BR> &nbsp; &nbsp; <CODE>zvWORD_WRAP_ON</CODE>
+<BR>(if on, it's equal to <CODE>&quot;on&quot;</CODE> [without the quotes]. If off: <CODE>&quot;&quot;</CODE>)</P>
+
+<P>To toggle word-wrap and update this state, use either
+<BR> &nbsp; &nbsp; <CODE>zToggleWW</CODE>
+<BR>or
+<BR> &nbsp; &nbsp; <CODE>zToggleWWAndState_M_wwo</CODE></P>
+
+<P>To turn it on or off, use
+<BR> &nbsp; &nbsp; <CODE>zWordWrapOn</CODE>
+<BR>or
+<BR> &nbsp; &nbsp; <CODE>zWordWrapOff</CODE>
+<BR>If the previous state is equal to the desired one, nothing happens.</P>
+
+
+
+
+
+<PRE>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</PRE>
+</BODY></HTML>
+
+
+

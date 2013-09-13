@@ -1,0 +1,1492 @@
+<!-- See build_minv/ztranslate_minv_html.px.txt -->
+<HTML><HEAD>
+   <TITLE>MINV-Commands (XBN-PhraseExpress)</TITLE>
+	<meta name="viewport" content="width=device-width" />
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF"><A NAME="top"></a>
+
+<P>[<A HREF="../index.html#future">BACK</A>]<CODE> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </CODE><I>(XBN-PhraseExpress is released under the <A HREF="../index.html#lpgl">LPGL 2.1</A>)</I>
+
+<HR/>
+
+<H1>Project is complete, but needs to be re-hooked into the updated XBNPE. Phrases in this documentation need to be replaced with static text.</H1>
+
+<H1>XBN-PhraseExpress: MINV-Commands</H1>
+
+
+<P>A MINV-Command is a phrase that can be called repeatedly--a loop. More than a loop, however, each MINV-Command includes a large set of utilities for executing the command, printing literal phrase-calls to it, and for diagnostics. At the heart of a MINV-Command is its &quot;Master Phrase&quot;, and the &quot;MINV-Variable&quot; required by it.</P>
+
+<P><I>The MINV-Command project is based on the <A HREF="zidx_xfile__large_project_database.html">Large Project Database (LPD) Framework</A>.</I></P>
+
+<P>A MINV-Command provides for three main phrase-types:<UL>
+	<LI><B>Commands:</B> Phrases that are triggered by <I>other phrases</I> (such as <CODE>&quot;zENTER2&quot;</CODE> or <CODE>&quot;zENTER3&quot;</CODE>, which prints two or three new-lines at the cursor).</LI>
+	<LI><B>Actions:</B> Shortcuts to commands, intended for direct use by human beings (<CODE>&quot;etr5&quot;</CODE>, which prints five new-lines <I>right now</I>).</LI>
+	<LI><B>Phrase Creators:</B> Actions that do nothing more than print <I>literal phrase-calls</I> to commands. (<CODE>&quot;etr{#insert zzMnvSynPstMainPhrsCrtr}2&quot;</CODE>, or <CODE>&quot;etr{#insert zzMnvSynPstMainPhrsCrtr}3&quot;</CODE>, the latter of which results in
+	<BR> &nbsp; &nbsp; <CODE>\\\{#insert zENTER3\\\}</CODE>)</LI>
+</UL>Each of these three phrase-types are optional, but at least one is required.</P>
+
+<a name="toc"/>
+<P><B>Contents</B><UL>
+	<LI><CODE>[<A HREF="#video">GO</A>]</CODE> &nbsp; Introduction video: <CODE>&quot;hobk&quot;</CODE></LI>
+	<LI><CODE>[<A HREF="#intro">GO</A>]</CODE> &nbsp; Introduction by example: <CODE>&quot;etr#&quot;</CODE></LI>
+	<LI><CODE>[<A HREF="#mainfuncs">GO</A>]</CODE> &nbsp; The main functions for configuring and building MINV-Commands</LI>
+	<LI><B>MINV-Commands</B><UL>
+		<LI><CODE>[<A HREF="#sbscmdcreate">GO</A>]</CODE> &nbsp; Step-By-Step: Creating a command from scratch</LI>
+		<LI><CODE>[<A HREF="#sbscmduse">GO</A>]</CODE> &nbsp; Step-By-Step: Using a newly-created command</LI>
+		<LI><CODE>[<A HREF="#cmdcvuniverse">GO</A>]</CODE> &nbsp; The universe of MINV-Command configuration-variables</LI>
+	</UL></LI>
+	<LI><B>MINV-Variables</B><UL>
+		<LI><CODE>[<A HREF="#sbsvarcreate">GO</A>]</CODE> &nbsp; Step-By-Step: Creating a variable from scratch</LI>
+		<LI><CODE>[<A HREF="#varcvuniverse">GO</A>]</CODE> &nbsp; The universe of MINV-Variable configuration-variables</LI>
+	</UL></LI>
+	<LI><B>Technical documentation:</B><UL>
+		<LI><CODE>[<A HREF="#mpsyntaxindepth">GO</A>]</CODE> &nbsp; Syntax for a MINV-Command Master-Phrase's description</LI>
+		<LI><CODE>[<A HREF="#howiorg">GO</A>]</CODE> &nbsp; How I organize my MINV-Command files</LI>
+		<LI><CODE>[<A HREF="_bmnv__config_file_config__cmd.txt">GO</A>]</CODE> &nbsp; The lpd-config-file for MINV-Commands</LI>
+		<LI><CODE>[<A HREF="_bmnv__config_file_config__var.txt">GO</A>]</CODE> &nbsp; The lpd-config-file for MINV-Variables</LI>
+	</UL></LI>
+</UL></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+
+<A NAME="video"/>
+<H2>MINV-Commands: Introduction video (1 of 2): <CODE>&quot;hobk&quot;</CODE> &nbsp; <CODE>[<A HREF="#toc">top</A>]</CODE></H2>
+
+<P>This video is a demonstration of the creation of a simple MINV-Command, from design all the way through use (split into two videos). Specifically, this creates the <CODE>&quot;hobk&quot;</CODE> command, which is executes HOME-BACKSPACE multiple times, for the purpose of joining many lines together (you call it from the end of the last line). <CODE>&quot;hobk&quot;</CODE> is something you might want to do <I>right now</I>. It is not something that other phrases will likely ever call. Hence, it is only an &quot;action&quot;. <I>Note that these videos assume that the MINV-Variable is already created.</I></P>
+
+<iframe width="630" height="473" src="http://www.youtube.com/embed/ikhBpoAzqdo" frameborder="0" allowfullscreen></iframe>
+
+<H2>MINV-Commands: Introduction video (2 of 2): <CODE>&quot;hobk&quot;</CODE></H2>
+<iframe width="630" height="473" src="http://www.youtube.com/embed/9zjD60kzgLM" frameborder="0" allowfullscreen></iframe>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+
+<A NAME="intro"/>
+<H2><U>Introduction by example: <CODE>&quot;etr#&quot;</CODE></U> &nbsp; &nbsp; <CODE>[<A HREF="#toc">top</A>]</CODE></H2>
+
+<P>This section will demonstrate a MINV-Command that simply prints one-or-more newlines at the cursor. It will be abbreviated <CODE>&quot;etr&quot;</CODE>. Unlike <CODE>&quot;hobk&quot;</CODE> in the <A HREF="#video">video</A>, this <CODE>etr</CODE> command is not an action--why type <CODE>'e'</CODE> <CODE>'t'</CODE> <CODE>'r'</CODE> <CODE>[trigger-char]</CODE>, when you could just press the enter key?</P>
+
+<P>The <CODE>&quot;etr#&quot;</CODE> command defines a <I>range</I> of commands that can be called from other phrases. We'll define the most common numbers to be one-through-five--this is its <B>&quot;<A HREF="#cgmin">Command Range</A></B>&quot;. This means that all the following phrases are avaliable:
+<BR> &nbsp; &nbsp; -<B><CODE>zENTER1</CODE></B>
+<BR> &nbsp; &nbsp; <CODE>\\\{#insert zvLINES_DOWN_st1\\\}\\\{#insert zENTERN_M_vlnd\\\}</CODE>
+<BR> &nbsp; &nbsp; -<B><CODE>zENTER2</CODE></B>
+<BR> &nbsp; &nbsp; <CODE>\\\{#insert zvLINES_DOWN_st2\\\}\\\{#insert zENTERN_M_vlnd\\\}</CODE>
+<BR> &nbsp; &nbsp; -<B><CODE>zENTER3</CODE></B>
+<BR> &nbsp; &nbsp; <CODE>\\\{#insert zvLINES_DOWN_st3\\\}\\\{#insert zENTERN_M_vlnd\\\}</CODE>
+<BR> &nbsp; &nbsp; -<B><CODE>zENTER4</CODE></B>
+<BR> &nbsp; &nbsp; <CODE>\\\{#insert zvLINES_DOWN_st4\\\}\\\{#insert zENTERN_M_vlnd\\\}</CODE>
+<BR> &nbsp; &nbsp; -<B><CODE>zENTER5</CODE></B>
+<BR> &nbsp; &nbsp; <CODE>\\\{#insert zvLINES_DOWN_st5\\\}\\\{#insert zENTERN_M_vlnd\\\}</CODE></P>
+
+<P>Where <CODE>zvLINES_DOWN_st2</CODE> sets the variable <CODE>&quot;zvLINES_DOWN&quot;</CODE> to <B>2</B><BR> &nbsp; &nbsp; <CODE>\\\{#SETPHRASE -description zvLINES_DOWN -content <B>1</B> -autotext zvLINES_DOWN -folder ctvv_folder\\\}</CODE>
+<BR>and <CODE>zENTERN_M_vlnd</CODE> is equal to
+<BR> &nbsp; &nbsp; <CODE>\\\{#LOOP \\\{#ENTER\\\} -count \\\{#insert zvLINES_DOWN\\\}}</CODE></P>
+
+<P>So, ultimately, this MINV-Command is a simple loop, where enter is pressed multiple times, with the number of presses defined by <CODE>zvLINES_DOWN</CODE>.</P>
+
+<p style = "background-color: #EEEEEE"><I>Realistically, these commands would be implemented as a direct calls, such as
+<BR> &nbsp; &nbsp; -<CODE><B>zENTER1</B></CODE>
+<BR> &nbsp; &nbsp; <CODE>\\\{#ENTER\\\}</CODE>
+<BR> &nbsp; &nbsp; -<CODE><B>zENTER2</B></CODE>
+<BR> &nbsp; &nbsp; <CODE>\\\{#ENTER -count 2\\\}</CODE></I></P>
+
+<A NAME="intromasterphrase"/>
+<H3><U>Introduction: Master Phrase</U></H3>
+
+<P>All MINV-Commands have a <B><U>Master Phrase</U></B>, which, generally speaking, is the <I>single location</I> where all logic resides. The master-phrase for <CODE>&quot;etr#&quot;</CODE> is
+<BR> &nbsp; &nbsp; -<B><CODE>zENTERN_M_vlnd</CODE></B>
+<BR> &nbsp; &nbsp; <CODE>\\\{#LOOP \\\{#ENTER\\\} -count \\\{#insert zvLINES_DOWN\\\}}</CODE></P>
+
+<P><I>(Note that
+<BR> &nbsp; &nbsp; <CODE>\\\{#ENTER -count \\\{#insert zvLINES_DOWN\\\}}</CODE>
+<BR>does not work.)</I></P>
+
+<P>The end of the <A HREF="#mpn">master-phrase's <U>name</U></A> is <CODE>&quot;_M_vlnd&quot;</CODE>, which is an indication that the <B><U>MINV-Variable</U></B> needed by this command is named
+<BR> &nbsp; &nbsp; <CODE>zvLINES_DOWN</CODE>
+<BR>(<CODE>&quot;vlnd&quot;</CODE> is its abbreviation, as configured elsewhere). This is just a naming convention I've decided on, for both in and out of the MINV-project.</P>
+
+<P>Every master-phrase requires a single <A HREF="#introvar">MINV-Variable</A> in order to function properly.</P>
+
+<P>The MINV master-phrase allows for a MINV-Command to be executed with <I>any number</I> (1 or greater), without having to write additional phrases. The most-commonly-needed numbers are defined by the command-range (1-5) and, for each of these numbers, a specific command (<CODE>zENTER[1-5]</CODE>) and phrase-creator (<CODE>etr{#insert zzMnvSynPstMainPhrsCrtr}[1-5]</CODE>) is provided.</P>
+
+<P>(Were this command also an &quot;action&quot;, then <CODE>etr[1-5]</CODE> would also be avaliable--conversely, actions are the <U>only</U> kind of phrases available in <CODE>&quot;hobk&quot;</CODE>, as demonstrated in the above video.)</P>
+
+<P>Unusual numbers can also be executed, by setting the MINV-Variable
+<BR> &nbsp; &nbsp; <CODE>\\\{#SETPHRASE -description zvLINES_DOWN -content 15 -autotext zvLINES_DOWN -folder ctvv_folder\\\}</CODE>
+<BR>and then calling the master-phrase.
+<BR> &nbsp; &nbsp; <CODE>\\\{#insert zENTERN_M_vlnd\\\}</CODE></P>
+
+<P>There are numerous utilities to help you create these phrase-calls. See the next section, as well as the &quot;phrase-creators&quot; listed in the &quot;<A HREF="#synsumover">Syntax summary: Overview</A>&quot; section.</P>
+
+<P>In addition, the master-phrase also has a literal version of itself:
+<BR> &nbsp; &nbsp; -<B><CODE>zENTERN_M_vlndp</CODE></B>
+<BR> &nbsp; &nbsp; <CODE>\\\{#insert zENTERN_M_vlnd\\\}</CODE>
+<BR>as well as doubly-literal:
+<BR> &nbsp; &nbsp; -<B><CODE>zENTERN_M_vlndq</CODE></B>
+<BR> &nbsp; &nbsp; <CODE>\\\{#insert zENTERN_M_vlndp\\\}</CODE>
+<BR>which are used in phrase-creators, as described in the <A HREF="#intropit">intro-putting-it-together</A> section.</P>
+
+<A NAME="intropc"/>
+<H3><U>Introduction: Phrase Creators</U></H3>
+
+<P>A <B>&quot;Phrase Creator</B>&quot; assists you in writing PhraseExpress code. A MINV-Command can provide both regular and literal phrase-creators.</P>
+<P>A regular phrase-creator prints out a <I>literal phrase-call</I> to a MINV-Command. For example, <CODE>&quot;etr{#insert zzMnvSynPstMainPhrsCrtr}2&quot;</CODE> prints this at the cursor:
+<BR> &nbsp; &nbsp; <CODE>\\\{#insert zENTER2\\\}</CODE>
+<BR>A <B>literal phrase-creator</B> prints out a <I>doubly</I>-literal phrase-call: <CODE>&quot;etr{#insert zzMnvSynPstLtrlPhrsCrtr}3&quot;</CODE> prints
+<BR> &nbsp; &nbsp; <CODE>\\\\\\{#insert zENTER3\\\\\\}</CODE></P>
+
+<P>Phrase-creators use the same command-range (which, for <CODE>&quot;etr#&quot;</CODE>, is 1-5), so here are available regular phrase-creators:<UL>
+	<LI><CODE>&quot;etr{#insert zzMnvSynPstMainPhrsCrtr}1&quot;</CODE> which <I>prints out</I> <CODE>\\\{#insert zENTER1\\\}</CODE></LI>
+	<LI><CODE>&quot;etr{#insert zzMnvSynPstMainPhrsCrtr}2&quot;</CODE>: <CODE>\\\{#insert zENTER2\\\}</CODE></LI>
+	<LI><CODE>&quot;etr{#insert zzMnvSynPstMainPhrsCrtr}3&quot;</CODE>: <CODE>\\\{#insert zENTER3\\\}</CODE></LI>
+	<LI><CODE>&quot;etr{#insert zzMnvSynPstMainPhrsCrtr}4&quot;</CODE>: <CODE>\\\{#insert zENTER4\\\}</CODE></LI>
+	<LI><CODE>&quot;etr{#insert zzMnvSynPstMainPhrsCrtr}5&quot;</CODE>: <CODE>\\\{#insert zENTER5\\\}</CODE></LI>
+</UL>and all literal phrase-creators:<UL>
+	<LI><CODE>&quot;etr{#insert zzMnvSynPstLtrlPhrsCrtr}1&quot;</CODE> which prints <CODE>\\\\\\{#insert zENTER1\\\\\\}</CODE></LI>
+	<LI><CODE>&quot;etr{#insert zzMnvSynPstLtrlPhrsCrtr}2&quot;</CODE>: <CODE>\\\\\\{#insert zENTER2\\\\\\}</CODE></LI>
+	<LI><CODE>&quot;etr{#insert zzMnvSynPstLtrlPhrsCrtr}3&quot;</CODE>: <CODE>\\\\\\{#insert zENTER3\\\\\\}</CODE></LI>
+	<LI><CODE>&quot;etr{#insert zzMnvSynPstLtrlPhrsCrtr}4&quot;</CODE>: <CODE>\\\\\\{#insert zENTER4\\\\\\}</CODE></LI>
+	<LI><CODE>&quot;etr{#insert zzMnvSynPstLtrlPhrsCrtr}5&quot;</CODE>: <CODE>\\\\\\{#insert zENTER5\\\\\\}</CODE></LI>
+</UL></P>
+
+<P><I>For more information about phrase-creators, see the <A HREF="#synsumpc"><CODE>&quot;{#insert zzMnvSynPstNumSetphrsCallMstr}&quot;</CODE>, <CODE>&quot;{#insert zzMnvSynPstSetToNumCallMstr}&quot;</CODE>, and <CODE>&quot;{#insert zzMnvSynPstSetphrsToPromptCallMstr}&quot;</CODE></A> commands, as well as the <CODE>[<A HREF="#pcon">PhraseCreators_on</A>]</CODE> configuration-variable.</I></P>
+
+<A NAME="introvar"/>
+<H3><U>Introduction: MINV-Variable</U></H3>
+
+<P>Each MINV-Command uses a single <B>&quot;MINV-Variable</B>&quot;. A MINV-Variable is nothing more than a phrase where the entire body is an integer (1 or greater). Specifically, the master-phrase of a MINV-Command requires a particular MINV-Variable to run properly.
+<BR> &nbsp; &nbsp; <CODE>zENTERN_M_vlnd</CODE>
+<BR>requires
+<BR> &nbsp; &nbsp; <CODE>zvLINES_DOWN</CODE>
+<BR>as denoted by the <CODE>&quot;_M_vlnd&quot;</CODE> (<CODE>&quot;vlnd&quot;</CODE> is its configured abbreviation).</P>
+
+<P>A MINV-Variable, however, may be used by multiple MINV-Commands. While each command has its own command-range, each MINV-Variable has a &quot;Variable Range&quot;. The variable-range is a <I>superset of all the command ranges</I>, of all those MINV-Commands that <I>use</I> this variable. In other words, the command-range of every command that uses this variable, must be fully, and inclusively, contained in the variable-range.</P>
+
+<P>The variable range of <CODE>zvLINES_DOWN</CODE> is configured to be 1 through 10. There is an action and phrase-creator utility for each number in the range, which is a shortcut to the appropriate <CODE>SETPHRASE</CODE>. Here are all available actions:<UL>
+	<LI>-<CODE>zvLINES_DOWN_st1</CODE>
+	<BR><CODE>\\\{#SETPHRASE -description zvLINES_DOWN -content <B>1</B> -autotext zvLINES_DOWN -folder ctvv_folder\\\}</CODE></LI>
+	<LI>-<CODE>zvLINES_DOWN_st2</CODE>
+	<BR><CODE>\\\{#SETPHRASE -description zvLINES_DOWN -content <B>2</B> -autotext zvLINES_DOWN -folder ctvv_folder\\\}</CODE></LI>
+	<LI><I>And so on:</I> <CODE>zvLINES_DOWN_st3</CODE>, <CODE>zvLINES_DOWN_st4</CODE>, <CODE>zvLINES_DOWN_st5</CODE>, <CODE>zvLINES_DOWN_st6</CODE>, <CODE>zvLINES_DOWN_st7</CODE>, <CODE>zvLINES_DOWN_st8</CODE>, <CODE>zvLINES_DOWN_st9</CODE>, <CODE>zvLINES_DOWN_st10</CODE></LI>
+</UL>phrase-creators:<UL>
+	<LI><CODE>zvLINES_DOWN_st1p</CODE> is equal to
+	<BR> &nbsp; &nbsp; <CODE>\\\\\\{#SETPHRASE -description zvLINES_DOWN -content <B>1</B> -autotext zvLINES_DOWN -folder ctvv_folder\\\\\\}</CODE></LI>
+	<LI><I>And so on:</I> <CODE>zvLINES_DOWN_st2p</CODE>, <CODE>zvLINES_DOWN_st3p</CODE>, <CODE>zvLINES_DOWN_st4p</CODE>, <CODE>zvLINES_DOWN_st5p</CODE>, <CODE>zvLINES_DOWN_st6p</CODE>, <CODE>zvLINES_DOWN_st7p</CODE>, <CODE>zvLINES_DOWN_st8p</CODE>, <CODE>zvLINES_DOWN_st9p</CODE>, <CODE>zvLINES_DOWN_st10p</CODE></LI>
+</UL>and literal phrase-creators:<UL>
+	<LI><CODE>zvLINES_DOWN_st1q</CODE> is equal to
+	<BR> &nbsp; &nbsp; <CODE>\\\\\\{#SETPHRASE -description zvLINES_DOWN -content <B>1</B> -autotext zvLINES_DOWN -folder ctvv_folder\\\\\\}</CODE></LI>
+	<LI><I>And so on:</I> <CODE>zvLINES_DOWN_st2q</CODE>, <CODE>zvLINES_DOWN_st3q</CODE>, <CODE>zvLINES_DOWN_st4q</CODE>, <CODE>zvLINES_DOWN_st5q</CODE>, <CODE>zvLINES_DOWN_st6q</CODE>, <CODE>zvLINES_DOWN_st7q</CODE>, <CODE>zvLINES_DOWN_st8q</CODE>, <CODE>zvLINES_DOWN_st9q</CODE>, <CODE>zvLINES_DOWN_st10q</CODE></LI>
+</UL></P>
+
+<A NAME="intropit"/>
+<H3><U>Introduction: Putting it together</U> &nbsp; &nbsp; <CODE>[<A HREF="#toc">top</A>]</CODE></H3>
+
+<P>To circle back around to MINV-Commands: All MINV-Commands take advantage of these <CODE>&quot;_st#&quot;</CODE> phrases:<UL>
+	<LI><B>Command: </B><CODE>&quot;zENTER2&quot;</CODE> is generally expected to equal
+	<BR> &nbsp; &nbsp; <CODE>\\\{#insert zvLINES_DOWN_st2\\\}\\\{#insert zENTERN_M_vlnd\\\}</CODE></LI>
+	<LI>And, when there are <I>no commands</I>:<UL>
+		<LI><B>Action: </B><CODE>&quot;etr2&quot;</CODE>:
+		<BR> &nbsp; &nbsp; <CODE>\\\{#insert zvLINES_DOWN_st2\\\}\\\{#insert zENTERN_M_vlnd\\\}</CODE></LI>
+		<LI><B>Phrase-creator: </B><CODE>&quot;etr{#insert zzMnvSynPstMainPhrsCrtr}2&quot;</CODE>:
+		<BR> &nbsp; &nbsp; <CODE>\\\{#insert zvLINES_DOWN_st2p\\\}\\\{#insert zENTERN_M_vlndp\\\}</CODE></LI>
+		<LI><B>Literal phrase-creator: </B><CODE>&quot;etr{#insert zzMnvSynPstLtrlPhrsCrtr}2&quot;</CODE>:
+		<BR> &nbsp; &nbsp; <CODE>\\\{#insert zvLINES_DOWN_st2q\\\}\\\{#insert zENTERN_M_vlndq\\\}</CODE></LI></LI>
+	</UL>
+</UL><I>(These are the phrase's <U>contents</U>--their <U>uninterpreted</U> phrase-bodies.)</I></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+
+<A NAME="sbsvarcreate"/>
+<H3><U>Step-By-Step: Creating a MINV-Variable from scratch</U> &nbsp; &nbsp; <CODE>[<A HREF="#toc">top</A>]</CODE></H3>
+
+<P>In order to create a MINV-Variable, it must first be configured, and then built.</P>
+
+<P><I>In this section, we're going to create a variable named <CODE>zvLINES_DOWN</CODE>, with an abbreviation of <CODE>&quot;vlnd&quot;</CODE>, and a variable-range (or &quot;set-to&quot;, or <CODE>&quot;_st#&quot;</CODE> range) of one through ten.</I></P>
+
+<H4><U>Step 1: Configure the MINV-Variable</U></H4>
+
+<P>In a new text document, call <CODE>&quot;kctmnvv&quot;</CODE>. This prints a <I>blank configuration template</I> for a MINV-Variable. (When it prompts you for the public and private keys, answer both with <CODE>&quot;vlnd&quot;</CODE>.) Here is its output:</P>
+
+<PRE STYLE="background-color:#E1E1E1;">zzMnvVarVlndAbrv1C
+Vlnd
+zzMnvVarVlndPNAbrv1C
+Vlnd
+zzMnvVarVlndIntrnlVarName
+
+zzMnvVarVlndRangeMin
+
+zzMnvVarVlndRangeMax</PRE>
+
+These phrases are &quot;uncompressed&quot;, because the autotext is on the first line, with its value (phrase-body) immediately following. Fill in the remaining values:
+
+<PRE STYLE="background-color:#E1E1E1;">zzMnvVarVlndAbrv1C
+Vlnd
+zzMnvVarVlndPNAbrv1C
+Vlnd
+zzMnvVarVlndIntrnlVarName
+<B>zvLINES_DOWN</B>
+zzMnvVarVlndRangeMin
+<B>1</B>
+zzMnvVarVlndRangeMax
+<B>10</B></PRE>
+
+Place the cursor before <CODE>&quot;zzMnvVarVlndAbrv1C&quot;</CODE> and &quot;compress&quot; these phrases with the command <CODE>&quot;c2pl5&quot;</CODE>. Here are the resulting phrases, which are ready to be imported into PhraseExpress:
+
+<PRE STYLE="background-color:#E1E1E1;">zzMnvVarVlndAbrv1C	Vlnd	zzMnvVarVlndAbrv1C
+zzMnvVarVlndPNAbrv1C	Vlnd	zzMnvVarVlndPNAbrv1C
+zzMnvVarVlndIntrnlVarName	zvLINES_DOWN	zzMnvVarVlndIntrnlVarName
+zzMnvVarVlndRangeMin	1	zzMnvVarVlndRangeMin
+zzMnvVarVlndRangeMax	10	zzMnvVarVlndRangeMax</PRE>
+
+<P>Save this file as
+<BR> &nbsp; &nbsp; <CODE>enter__mnv_configuration.px.txt</CODE>
+<BR>and <A HREF="..\zGLOBAL\zidx_xfile__import_steps.html">import it into PhraseExpress</A>.</P>
+
+<H4>Step 2: <U>Build the MINV-Variable phrases</U></H4>
+
+<P>Open a new plain-text document, and call this phrase: <B><CODE>'<A HREF="#mnvvag">mnvvag</A>'</CODE></B> (when prompted, enter <CODE>&quot;vlnd&quot;</CODE>). This generates all MINV-Variable phrases (about 30 phrases).Save this  file as
+<BR> &nbsp; &nbsp; <CODE>enter__mnv_auto_generated.px.txt</CODE>
+and <A HREF="..\zGLOBAL\zidx_xfile__import_steps.html">import it</A>.</P>
+
+<P>The MINV-Variable is now ready to use. <I>Generally speaking, MINV-Variable phrases are only used by the phrases that are output by the <CODE>'<A HREF="#mnvcag">mnvcag</A>'</CODE> command. They are not used directly.</I></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+
+
+<A NAME="sbscmdcreate"/>
+<H3><U>Step-By-Step: Creating a MINV-Command from scratch</U> &nbsp; &nbsp; <CODE>[<A HREF="#toc">top</A>]</CODE></H3>
+
+<P>In order to create a MINV-Command, there are four steps:<OL>
+	<LI><A HREF="#sbsvarcreate">Configure and build the needed MINV-Variable</A>, if it's not already</LI>
+	<LI>Configure the command</LI>
+	<LI>&quot;Build&quot; the command</LI>
+	<LI>Compose the body of the master-phrase and all numbered commands</LI>
+</OL></P>
+
+<P>This section will walk through this process for creating the <CODE>&quot;etr#&quot;</CODE> MINV-Command from the introduction section. <I>If any of these phrases exist in PhraseExpress (configuration, auto-generated, or otherwise), they must first be deleted.</I></P>
+
+<P>Save this file as
+<BR> &nbsp; &nbsp; <CODE>enter__mnv_configuration.px.txt</CODE>
+<BR>It will be imported in the next step.</P>
+
+<A NAME="sbscreatecfgcmd"/>
+<H4><U>2: Configure the MINV-Command</U></H4>
+
+Here is the entire set of configuration-variables for the 'etr#' MINV-Command. (In the <A HREF="zidx_xfile__large_project_database.html">Large Project Database [LPD] Framework</A>, this is called a MINV-Command &quot;data-instance&quot;.)
+
+<P><I>All these variables are discussed in detail in the <A HREF="#cmdcvuniverse">universe-of-config-vars</A> section</I></P>
+
+<P><TABLE ALIGN="center" BORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#EEEEEE"><TR ALIGN="center" VALIGN="middle">
+	<TD><B><U>Phrase Name</U></B></TD>
+	<TD><B><U>Value</U></B></TD>
+	<TD><B><U>Description</U></B></TD>
+</TR><TR ALIGN="left" BGCOLOR="#FFFFFF">
+	<TD COLSPAN="3" ALIGN="center"><I>These are important to understand in this introduction section</I></TD>
+</TR><TR ALIGN="left">
+	<TD><CODE>zzMnvCmdEtr<U><A HREF="#actm1">ActionName1C</A></U></CODE></TD>
+	<TD><CODE>Etr</CODE></TD>
+	<TD>The action-name, with the first letter capitalized.</TD>
+</TR><TR ALIGN="left">
+	<TD><CODE>zzMnvCmdEtr<U><A HREF="#cmdon">Commands_on</A></U></CODE></TD>
+	<TD><CODE>on</CODE></TD>
+	<TD>This MINV-Command is a &quot;command&quot;.</TD>
+</TR><TR ALIGN="left">
+	<TD><CODE>zzMnvCmdEtr<U><A HREF="#acton">Actions_on</A></U></CODE></TD>
+	<TD>&nbsp;</TD>
+	<TD>This MINV-Command is not an &quot;action&quot;.</TD>
+</TR><TR ALIGN="left">
+	<TD><CODE>zzMnvCmdEtr<U><A HREF="#pcon">PhraseCreators_on</A></U></CODE></TD>
+	<TD><CODE>on</CODE></TD>
+	<TD>This MINV-Command is <I>also</I> a &quot;phrase-creator&quot;.</TD>
+</TR><TR ALIGN="left">
+	<TD><CODE>zzMnvCmdEtr<U><A HREF="#mpn">MasterPhraseNm</A></U></CODE></TD>
+	<TD><CODE>zENTERN_M_vlnd</CODE></TD>
+	<TD>It is recommended that this equal
+	<BR><CODE>z[NamePreNum]N[NamePostNum]_M_[VarAbrv1CForCmd]</CODE></TD>
+</TR><TR ALIGN="left">
+	<TD><CODE>zzMnvCmdEtr<U><A HREF="#cgmin">RangeMin</A></U></CODE></TD>
+	<TD><CODE>1</CODE></TD>
+	<TD>The lowest number in the range of available action/command/phrase-creator phrases.</TD>
+</TR><TR ALIGN="left">
+	<TD><CODE>zzMnvCmdEtr<U>RangeMax</U></CODE></TD>
+	<TD><CODE>5</CODE></TD>
+	<TD>&nbsp;</TD>
+</TR><TR ALIGN="left">
+	<TD><CODE>zzMnvCmdEtr<U><A HREF="#cnmpre">NamePreNum</A></U></CODE></TD>
+	<TD><CODE>zENTER</CODE></TD>
+	<TD>The portion of the command-name, that precedes the number.</TD>
+</TR><TR ALIGN="left">
+	<TD><CODE>zzMnvCmdEtr<U>NamePostNum</U></CODE></TD>
+	<TD>&nbsp;</TD>
+	<TD>The portion of the command-name, that follows the number. In this case, nothing does.</TD>
+</TR><TR ALIGN="left">
+	<TD><CODE>zzMnvCmdEtr<U><A HREF="#varv1">VarAbrv1CForCmd</A></U></CODE></TD>
+	<TD><CODE>Vlnd</CODE></TD>
+	<TD>The MINV-Variable abbreviation, as configured elsewhere.</TD>
+</TR><TR ALIGN="left">
+	<TD><CODE>zzMnvCmdEtr<U><A HREF="#pnv1">PNmAbrv1C</A></U></CODE></TD>
+	<TD><CODE>Etr</CODE></TD>
+	<TD>For now, just make this equal to the <CODE>[ActionName1C]</CODE></TD>
+</TR><TR ALIGN="left" BGCOLOR="#FFFFFF">
+	<TD COLSPAN="3" ALIGN="center"><I>You don't need to understand these just yet. All of these have no value (their value/phrase-body is empty-string--''--or <B>nothing</B>)</I></TD>
+</TR><TR ALIGN="left">
+	<TD COLSPAN="3"><CODE>zzMnvCmdEtr<U>NNLTargetNum</U>
+	<BR>zzMnvCmdEtr<U>PCActOffPst_pES</U>
+	<BR>zzMnvCmdEtr<U>LiteralStyle_esyc</U>
+	<BR>zzMnvCmdEtr<U>SNTPromptActnMsg</U>
+	<BR>zzMnvCmdEtr<U>NoNumAlias_on</U>
+	<BR>zzMnvCmdEtr<U>SNTPromptActn_on</U>
+	<BR>zzMnvCmdEtr<U>NNLCmdIfIntrnl_yes</U>
+	<BR>zzMnvCmdEtr<U>NNLCmdXtrnl_yes</U></CODE></TD>
+</TR></TABLE></P>
+
+To create this, place the cursor at the bottom of
+<BR> &nbsp; &nbsp; <CODE>enter__mnv_configuration.px.txt</CODE>
+<a name="kctmnvc"/><BR>and call <CODE>&quot;kctmnvc&quot;</CODE>. This prints out a MINV-Command data-instance. It will prompt you for both the public and private keys. Answer both with <CODE>&quot;etr&quot;</CODE>.
+
+<PRE STYLE="background-color:#E1E1E1;">zzMnvCmdEtrActionName1C
+Etr
+zzMnvCmdEtrPNmAbrv1C
+Etr
+zzMnvCmdEtrCommands_on
+
+zzMnvCmdEtrActions_on
+
+zzMnvCmdEtrPhraseCreators_on
+
+zzMnvCmdEtrNoNumAlias_on
+
+zzMnvCmdEtrSNTPromptActn_on
+
+zzMnvCmdEtrNNLCmdIfIntrnl_yes
+
+zzMnvCmdEtrNNLCmdXtrnl_yes
+
+zzMnvCmdEtrMasterPhraseNm
+
+zzMnvCmdEtrRangeMin
+
+zzMnvCmdEtrRangeMax
+
+zzMnvCmdEtrNamePreNum
+
+zzMnvCmdEtrNamePostNum
+
+zzMnvCmdEtrNNLTargetNum
+
+zzMnvCmdEtrVarAbrv1CForCmd
+
+zzMnvCmdEtrPCActOffPst_pES
+
+zzMnvCmdEtrLiteralStyle_esyc
+
+zzMnvCmdEtrSNTPromptActnMsg
+
+</PRE>
+
+<P>Fill in the values as specified in the above table, then place the cursor before <CODE>&quot;zzMnvCmdEtrActionName1C&quot;</CODE> and &quot;compress&quot; them with <CODE>&quot;c2pl19&quot;</CODE>. The result:</P>
+
+<PRE STYLE="background-color:#E1E1E1;">zzMnvCmdEtrActionName1C	Etr	zzMnvCmdEtrActionName1C
+zzMnvCmdEtrPNmAbrv1C	Etr	zzMnvCmdEtrPNmAbrv1C
+zzMnvCmdEtrCommands_on	on	zzMnvCmdEtrCommands_on
+zzMnvCmdEtrActions_on	on	zzMnvCmdEtrActions_on
+zzMnvCmdEtrPhraseCreators_on	on	zzMnvCmdEtrPhraseCreators_on
+zzMnvCmdEtrNoNumAlias_on		zzMnvCmdEtrNoNumAlias_on
+zzMnvCmdEtrSNTPromptActn_on		zzMnvCmdEtrSNTPromptActn_on
+zzMnvCmdEtrNNLCmdIfIntrnl_yes		zzMnvCmdEtrNNLCmdIfIntrnl_yes
+zzMnvCmdEtrNNLCmdXtrnl_yes		zzMnvCmdEtrNNLCmdXtrnl_yes
+zzMnvCmdEtrMasterPhraseNm	zENTERN_M_vlnd	zzMnvCmdEtrMasterPhraseNm
+zzMnvCmdEtrRangeMin	1	zzMnvCmdEtrRangeMin
+zzMnvCmdEtrRangeMax	5	zzMnvCmdEtrRangeMax
+zzMnvCmdEtrNamePreNum	zENTER	zzMnvCmdEtrNamePreNum
+zzMnvCmdEtrNamePostNum		zzMnvCmdEtrNamePostNum
+zzMnvCmdEtrNNLTargetNum		zzMnvCmdEtrNNLTargetNum
+zzMnvCmdEtrVarAbrv1CForCmd	Vlnd	zzMnvCmdEtrVarAbrv1CForCmd
+zzMnvCmdEtrPCActOffPst_pES		zzMnvCmdEtrPCActOffPst_pES
+zzMnvCmdEtrLiteralStyle_esyc		zzMnvCmdEtrLiteralStyle_esyc
+zzMnvCmdEtrSNTPromptActnMsg		zzMnvCmdEtrSNTPromptActnMsg</PRE>
+
+<P>Save this as
+<BR> &nbsp; &nbsp; <CODE>enter__mnv_configuration.px.txt</CODE>
+<BR>and <A HREF="..\zGLOBAL\zidx_xfile__import_steps.html">import it into PhraseExpress</A>.</P>
+
+<H4><U>3: &quot;Build&quot; the MINV-Command</U></H4>
+
+<P>Now that the MINV-Command is completely configured, including its MINV-Variable, we are now ready to finish. There four more things to do, each of which is relatively simple:<OL>
+	<LI>Build the MINV-Variable phrases</LI>
+	<LI>Build the MINV-Command phrases</LI>
+	<LI>Print the descriptions for all commands and the master-phrase</LI>
+	<LI>Actually compose the master-phrase and command-phrases</LI>
+</OL></P>
+
+<H4>Step 2: <U>Build the MINV-Command phrases</U></H4>
+
+<P>Immediately below the just-created MINV-Phrases, create the MINV-Command phrases (about 20 phrases), by calling <B><CODE>'<A HREF="#mnvcag">mnvcag</A>'</CODE></B>. When prompted, anwser <CODE>&quot;etr&quot;</CODE>.</P>
+
+<P><I>Save this document as
+<BR> &nbsp; &nbsp; <CODE>enter__mnv_auto_generated.px.txt</CODE>
+<BR>and <A HREF="#importsteps">import</A> it into PhraseExpress before proceeding.</I></P>
+
+<H4>Step 3: <U>Print the descriptions for all commands and the master-phrase</U></H4>
+
+<P>Open a new plain-text document. At the top, call this phrase: <B><CODE>'<A HREF="#mnvcmp">mnvcmp</A>'</CODE></B> (when prompted, enter <CODE>&quot;etr&quot;</CODE>). This generates the master-phrase description, followed by all command descriptions.</P>
+
+<PRE STYLE="background-color:#E1E1E1;"><FONT STYLE="background-color:#FFFF99">1.</FONT>  zENTERN_M_vlnd -(**)- etr[p,q]#, etr[f,[[h,t,r]]m], vlnd[[p,f]]
+<FONT STYLE="background-color:#FFFF99">2.</FONT>  (*Needs zvLINES_DOWN (var-abrv-lc=vlnd, var-phrs-nm-abrv=Vlnd). This command: (action-name-lc=etr, cmd-phrs-nm-abrv=Etr)*)
+<FONT STYLE="background-color:#FFFF99">3.</FONT>  zENTER1 -- etr[p,q]1
+<FONT STYLE="background-color:#FFFF99">4.</FONT>  zENTER2 -- etr[p,q]2
+<FONT STYLE="background-color:#FFFF99">5.</FONT>  zENTER3 -- etr[p,q]3
+<FONT STYLE="background-color:#FFFF99">6.</FONT>  zENTER4 -- etr[p,q]4
+<FONT STYLE="background-color:#FFFF99">7.</FONT>  zENTER5 -- etr[p,q]5</PRE>
+
+<P>What do each of these lines mean?<OL>
+	<LI>The name of the master-phrase (it's autotext), as configured above. This is followed by the MINV-Command's <I>syntax summary</I>, which tells us all the available MINV phrases (commands, actions, phrase-creators, and other utilities). This will be discussed in the next section (step 4).</LI>
+	<LI>The comment intended for the beginning of the master-phrase's phrase-body (the &quot;block-start comment&quot;). It contains additional diagnostic information.</LI>
+	<LI>Lines 3 through the end are the MINV-Command descriptions.</LI>
+</OL></P>
+
+<H4>Step 4: <U>Actually compose the master-phrase and command-phrases</U></H4>
+
+<P><I>The commands--both the master-phrase and (if on) all numbered commands--are always created by you. While <CODE>'<A HREF="#mnvcmp">mnvcmp</A>'</CODE> generates their descriptions, you define the phrase-bodies. Actions and phrase-creators, are always <B>automatically and fully</B> generated by the <CODE>'<A HREF="mnvcag">mnvcag</A>'</CODE> process.</I></P>
+
+<P>As shown in the <A HREF="#intromasterphrase">introduction</A>, the master-phrase for the <CODE>&quot;etr#&quot;</CODE> MINV-Command is a simple loop:
+<BR> &nbsp; &nbsp; <CODE>\\\{#LOOP \\\{#ENTER\\\} -count \\\{#insert zvLINES_DOWN\\\}}</CODE></P>
+
+<P>Type this immediately following the block-start-comment.</P>
+
+<P>At the end of line 3 (<CODE>&quot;zENTER1 -- ...&quot;</CODE>) press enter, and then run the <B><CODE>&quot;etr{#insert zzMnvSynPstSetToNumCallMstr}&quot;</CODE></B> utility in that new line. This prompts your for the desired number, which you should respond with &quot;1&quot;. It prints out the following:
+<BR> &nbsp; &nbsp; <CODE>\\\{#insert zvLINES_DOWN_st1\\\}\\\{#insert zENTERN_M_vlnd\\\}</CODE></P>
+
+<P>This text can be duplicated for each command. Just change the number as appropriate.</P>
+
+<P>Here is the completed code:</P>
+
+<PRE STYLE="background-color:#E1E1E1;">1.  zENTERN_M_vlnd -(**)- etr[p,q]#, etr[f,[[h,t,r]]m], vlnd[[p,f]]
+2.  (*Needs zvLINES_DOWN (var-abrv-lc=vlnd, var-phrs-nm-abrv=Vlnd). This command: (action-name-lc=etr, cmd-phrs-nm-abrv=Etr)*)\\\{#LOOP \\\{#ENTER\\\} -count \\\{#insert zvLINES_DOWN\\\}}
+3.  zENTER1 -- etr[p,q]1
+4.  \\\{#insert zvLINES_DOWN_st1\\\}\\\{#insert zENTERN_M_vlnd\\\}
+5.  zENTER2 -- etr[p,q]2
+6.  \\\{#insert zvLINES_DOWN_st2\\\}\\\{#insert zENTERN_M_vlnd\\\}
+7.  zENTER3 -- etr[p,q]3
+8.  \\\{#insert zvLINES_DOWN_st3\\\}\\\{#insert zENTERN_M_vlnd\\\}
+9.  zENTER4 -- etr[p,q]4
+10. \\\{#insert zvLINES_DOWN_st4\\\}\\\{#insert zENTERN_M_vlnd\\\}
+11. zENTER5 -- etr[p,q]5
+12. \\\{#insert zvLINES_DOWN_st5\\\}\\\{#insert zENTERN_M_vlnd\\\}</PRE>
+
+<P>Compress these lines with <CODE>&quot;c2pl6&quot;</CODE>, save the file as
+<BR> &nbsp; &nbsp; <CODE>enter.px.txt</CODE>
+<BR>and <A HREF="#importsteps">import</A> it into PhraseExpress.</P>
+
+<P>The MINV-Command is now ready for use.</P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+
+
+<A NAME="sbscmduse"/>
+<H3><U>Step-By-Step: Using a newly-created command <B><CODE>&quot;etr&quot;</CODE></B> MINV-Command</U> &nbsp; &nbsp; <CODE>[<A HREF="#toc">top</A>]</CODE></H3>
+
+<P>Now that the <CODE>&quot;etr#&quot;</CODE> command has been fully configured and built, it is ready for use.</P>
+
+<A NAME="synsumover"/>
+<H4>Syntax sumary: Overview</H4>
+
+<P>The master-phrase description contains a <I>syntax summary</I> of all the available MINV-Commands:</P>
+
+<PRE>zENTERN_M_vlnd -(**)- etr[p,q]#, etr[f,[[h,t,r]]m], vlnd[[p,f]]</PRE>
+
+<P>Specifically, this syntax implies the following:<UL>
+	<LI><B><CODE>etr[p,q]#</CODE></B> &nbsp; <CODE>[<A HREF="#synsumaction">go</A>]</CODE><UL>
+		<LI><CODE>etr{#insert zzMnvSynPstMainPhrsCrtr}#</CODE>: Phrase-creator</LI>
+		<LI><CODE>etr{#insert zzMnvSynPstLtrlPhrsCrtr}#</CODE>: Literal phrase-creator</LI>
+	</UL></LI>
+	<LI><B><CODE>etr[f,[[h,t,r]]m]</CODE></B> &nbsp; <CODE>[<A HREF="#synsumpc">go</A>]</CODE><UL>
+		<LI><CODE>etr{#insert zzMnvSynPstCmdInfoSyntax}</CODE>: inFormation</LI>
+		<LI>Phrase-creators:<UL>
+			<LI><CODE>etr{#insert zzMnvSynPstNumSetphrsCallMstr}</CODE></LI>
+			<LI><CODE>etr{#insert zzMnvSynPstSetToNumCallMstr}</CODE></LI>
+			<LI><CODE>etr{#insert zzMnvSynPstSetphrsToPromptCallMstr}</CODE></LI>
+		</UL></LI>
+	</UL></LI>
+	<LI><B><CODE>vlnd[[p,f]]</CODE></B>: MINV-Variable utilities &nbsp; <CODE>[<A HREF="#synsumvar">go</A>]</CODE><UL>
+		<LI><CODE>vlnd</CODE>: Prints the current value (for diagonstics)</LI>
+		<LI><CODE>vlndp</CODE>: Phrase-creator</LI>
+		<LI><CODE>vlndf</CODE>: inFormation</LI>
+	</UL></LI>
+</UL></P>
+
+<P><I>For in-depth documentation on how this syntax-summary--and the <CODE>&quot;etr[p,q]#&quot;</CODE> portion in particular--is generated, see &quot;<A HREF="#mpsyntaxindepth">Technical documentation: Syntax for a MINV-Command Master-Phrase's description</A>&quot;</I></P>
+
+
+<A NAME="synsumaction"/>
+<H3>Detail: <U><B><CODE>etr[p,q]#</CODE></B></U> &nbsp; &nbsp; <CODE>[<A HREF="#synsumover">back</A>]</CODE></H3>
+
+<P><UL>
+	<LI><CODE>etr{#insert zzMnvSynPstMainPhrsCrtr}#</CODE>: Phrase-creator</LI>
+	<LI><CODE>etr{#insert zzMnvSynPstLtrlPhrsCrtr}#</CODE>: Literal phrase-creator</LI>
+</UL></P>
+
+<P>Depending on how you configure you MINV-Command, this is the one portion of the syntax-summary that may be different. For example, were this MINV-Command also an action, this syntax would instead be
+<BR> &nbsp; &nbsp; <CODE>etr[[{#insert zzMnvSynPstMainPhrsCrtr},{#insert zzMnvSynPstLtrlPhrsCrtr}]]#</CODE>
+<BR>meaning the <CODE>&quot;{#insert zzMnvSynPstMainPhrsCrtr}&quot;</CODE>-or-<CODE>&quot;{#insert zzMnvSynPstLtrlPhrsCrtr}&quot;</CODE> is optional--and therefore the action
+<BR> &nbsp; &nbsp; <CODE>etr#</CODE>
+<BR>(such as <CODE>&quot;etr3&quot;</CODE>) is also available.</P>
+
+<H4><CODE><B><U>etr{#insert zzMnvSynPstMainPhrsCrtr}#</U></B></CODE></H4>
+
+<P>Prints out a <I>literal phrase-call</I> to this MINV-Command. This is a <B>Phrase Creator</B>, which assists in composing PhraseExpress code. For example, <CODE>&quot;etr{#insert zzMnvSynPstMainPhrsCrtr}3&quot;</CODE> prints
+<BR> &nbsp; &nbsp; <CODE>\\\{#insert zENTER3\\\}</CODE>
+<BR>at the cursor.</P>
+
+<H4><CODE><B><U>etr{#insert zzMnvSynPstLtrlPhrsCrtr}#</U></B></CODE></H4>
+
+<P>Prints a <I>doubly</I>-literal phrase-call to an enter-command. For example, <CODE>&quot;etr{#insert zzMnvSynPstLtrlPhrsCrtr}3&quot;</CODE> prints
+<BR> &nbsp; &nbsp; <CODE><CODE>\\\\\\{#insert zENTER3\\\\\\}</CODE></CODE>
+<BR>at the cursor.</P>
+
+<A NAME="synsumpc"/>
+<H3>Detail: <U><B><CODE>etr[f,[[h,t,r]]m]</CODE></B></U> &nbsp; &nbsp; <CODE>[<A HREF="#synsumover">back</A>]</CODE></H3>
+
+<P><UL>
+	<LI><CODE>etr{#insert zzMnvSynPstCmdInfoSyntax}</CODE>: inFormation</LI>
+	<LI>Phrase-creators:<UL>
+		<LI><CODE>etr{#insert zzMnvSynPstMstrPhrsNm}</CODE></LI>
+		<LI><CODE>etr{#insert zzMnvSynPstNumSetphrsCallMstr}</CODE></LI>
+		<LI><CODE>etr{#insert zzMnvSynPstSetToNumCallMstr}</CODE></LI>
+		<LI><CODE>etr{#insert zzMnvSynPstSetphrsToPromptCallMstr}</CODE></LI>
+	</UL>
+</UL></P>
+
+<P><B>See also:</B><UL>
+	<LI><B>Phrase-creators:</B> the <A HREF="#intropc">introduction</A>, and the <CODE>[<A HREF="#pcon">PhraseCreators_on</A>]</CODE> configuration-variable</LI>
+</UL></P>
+
+<H4><U><CODE>etr{#insert zzMnvSynPstCmdInfoSyntax}</CODE></U></H4>
+
+Prints out the MINV-Command configuration in human-readable form:
+
+<PRE STYLE="background-color:#E1E1E1;">MINV-Command
+   -ActionName1C: Etr
+   -Range: min=1, max=5
+   -MINV-Variable
+      -Abrv1C: Vlnd
+      -IntrnlVarName: zvLINES_DOWN
+      -'_st#' range: min=1, max=10
+      -PNAbrv1C (lowercase): Vlnd
+   -Commands are ON
+      -Command name: pre-num='zENTER', post-num=''
+   -Actions are ON
+   -Phrase-creators are ON
+      -LiteralStyle_esyc:
+   -No-number-alias is OFF
+   -MasterPhraseNm: zENTERN_M_vlnd
+   -PNAbrv1C: Vlnd</PRE>
+
+<H4><U><CODE>etr{#insert zzMnvSynPstMstrPhrsNm}</CODE></U></H4>
+
+<P>Prints a phrase-call to the master-phrase. For example:
+<BR> &nbsp; &nbsp; <CODE>\\\{#insert zENTERN_M_vlnd\\\}</CODE></P>
+<H4><U><CODE>etr{#insert zzMnvSynPstNumSetphrsCallMstr}</CODE></U></H4>
+
+<P>A special phrase-creator that can execute this MINV-Command with <I>any</I> number (1 or greater)--regardless of the command-range. It manually sets the MINV-Variable to a specific number, for which you are prompted, and then calls the master-phrase. For example:
+<BR> &nbsp; &nbsp; <CODE>\\\{#SETPHRASE -description zvLINES_DOWN -content 15 -autotext zvLINES_DOWN -folder ctvv_folder\\\}\\\{#insert zENTERN_M_vlnd\\\}</CODE></P>
+
+<H4><U><CODE>etr{#insert zzMnvSynPstSetToNumCallMstr}</CODE></U></H4>
+
+<P>This is the same as <CODE>&quot;etr{#insert zzMnvSynPstNumSetphrsCallMstr}&quot;</CODE>, with a shortcut to the <CODE>SETPHRASE</CODE>:
+<BR> &nbsp; &nbsp; <CODE>\\\{#insert zvLINES_DOWN_st8\\\}\\\{#insert zENTERN_M_vlnd\\\}</CODE></P>
+
+<P><I>(This number must be in the <A HREF="#vgmin">variable-range</A>, which we've configured as 1-10.)</I></P>
+
+<H4><U><CODE>etr{#insert zzMnvSynPstSetphrsToPromptCallMstr}</CODE></U></H4>
+
+<P>The same as <CODE>&quot;etr{#insert zzMnvSynPstNumSetphrsCallMstr}&quot;</CODE>, but for when you want to prompt <I>your users</I> for the number.
+<BR> &nbsp; &nbsp; <CODE>\\\{#insert zvLINES_DOWN_stPrompt\\\}\\\{#insert zENTERN_M_vlnd\\\}</CODE></P>
+
+<P><I>The <CODE>&quot;{#insert zzMnvSynPstNumSetphrsCallMstr}&quot;</CODE>, <CODE>&quot;{#insert zzMnvSynPstSetToNumCallMstr}&quot;</CODE>, and <CODE>&quot;{#insert zzMnvSynPstSetphrsToPromptCallMstr}&quot;</CODE> phrase-creators are available in <B>all</B> MINV-Commands, regardless if <A HREF="#pcon">phrase-creators are <CODE>&quot;on&quot;</CODE></A><A NAME="pcon"/> or not</I></P>
+
+<A NAME="synsumvar"/>
+<H3>Detail: <U><B><CODE>vlnd[[p,f]]</CODE></B></U> &nbsp; &nbsp; <CODE>[<A HREF="#synsumover">back</A>]</CODE></H3>
+<P><UL>
+	<LI><CODE>vlnd</CODE>: Prints the current value (for diagonstics)</LI>
+	<LI><CODE>vlndp</CODE>: Phrase-creator</LI>
+	<LI><CODE>vlndf</CODE>: inFormation</LI>
+</UL></P>
+
+<H4><U><CODE>vlnd</CODE></U></H4>
+
+<P>Prints the current value, for diagnostic purposes.</P>
+
+<P>This prints the value from the last time the variable was <I>set</I>. Phrase-creators, although they <I>print</I> a value, they do not actually set the variable. For example: calling <CODE>&quot;etr3&quot;</CODE>, then <CODE>&quot;etr{#insert zzMnvSynPstMainPhrsCrtr}2&quot;</CODE>, and then <CODE>&quot;vlnd&quot;</CODE>, results in '3'.</P>
+
+
+<H4><U><CODE>vlndp</CODE></U></H4>
+
+<P>Prints a literal phrase-call to this MINV-Variable:
+<BR> &nbsp; &nbsp; <CODE>\\\{#insert zvLINES_DOWN\\\}</CODE></P>
+
+<H4><U><CODE>vlndf</CODE></U></H4>
+
+<P>Prints the MINV-Variable configuration in a more human-readable form. This is an exact subset of the MINV-Command information:</P>
+<PRE STYLE="background-color:#E1E1E1;">MINV-Variable
+   -Abrv1C: Vlnd
+   -IntrnlVarName: zvLINES_DOWN
+   -'_st#' range: min=1, max=10
+   -PNAbrv1C (lowercase): Vlnd</PRE>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+
+
+<A NAME="cmdcvuniverse"/>
+<H2>The universe of MINV-Command configuration-variables &nbsp; &nbsp; <CODE>[<A HREF="#toc">top</A>]</CODE></H2>
+
+<P>As introduced under <A HREF="#sbscreatecfgcmd">step two</A> in the above <A HREF="#sbscmdcreate">creating-the-example</A> section, there is a specific universe of configuration-variables that makes up a MINV-Command. This section describes each variable in detail.</P>
+
+<P><I>Also see the <A HREF="#varcvuniverse">universe of MINV-Variable config-vars</A></I></P>
+
+<P><I>The <CODE>&quot;etr#&quot;</CODE> MINV-Command has this specific &quot;action-name&quot; configuration-variable
+<BR> &nbsp; &nbsp; <CODE>zzMnvCmdEtrActionName1C</CODE>
+<BR>The type of this configuration-variable--its &quot;<B>CV-Type</B>&quot;--is
+<BR> &nbsp; &nbsp; <CODE>ActionName1C</CODE>.
+<BR>All configuration-variables, for all MINV-Commands, are named with this syntax:<OL>
+	<LI><CODE>zzMnvCmd</CODE></LI>
+	<LI><I>the MINV-Commands <A HREF="#pnv1">private-key</A></I></LI>
+	<LI>The cv-type, such as <CODE>&quot;ActionName1C&quot;</CODE> or <CODE>&quot;RangeMin&quot;</CODE></LI>
+</OL></I></P>
+
+<A NAME="cvuniversetoc"/>
+<H3>All cv-types in the MINV-Command project&nbsp; <CODE>[<A HREF="#cmdcvuniverse">back</A>]</CODE></H3>
+
+<P><I>Sub-types are listed indented under their parent.</I></P>
+
+<UL>
+	<LI><CODE>[<A HREF="#actm1">go</A>] ActionName1C</CODE></LI>
+	<LI><CODE>[<A HREF="#mpn">go</A>] MasterPhraseNm</CODE></LI>
+	<LI><CODE>[<A HREF="#cgmin">go</A>] RangeMin and RangeMax</CODE></LI>
+	<LI><CODE>[<A HREF="#varv1">go</A>] VarAbrv1CForCmd</CODE></LI>
+	<LI><CODE>[<A HREF="#cmdon">go</A>] Commands_on</CODE><UL>
+		<LI><CODE>NNLCmdIfIntrnl_yes</CODE></LI>
+		<LI><CODE>NNLCmdXtrnl_yes</CODE></LI>
+		<LI><CODE>NamePreNum</CODE> and <CODE>NamePostNum</CODE></LI>
+	</UL></LI>
+	<LI><CODE>[<A HREF="#acton">go</A>] <CODE>Actions_on</CODE></CODE><UL>
+		<LI><CODE>SNTPromptActn_on</CODE><UL>
+			<LI><CODE>SNTPromptActnMsg</CODE></LI>
+		</UL></LI>
+	</UL></LI>
+	<LI><CODE>[<A HREF="#pcon">go</A>] PhraseCreators_on</CODE><UL>
+		<LI><CODE>PCActOffPst_pES</CODE></LI>
+		<LI><CODE>LiteralStyle_esyc</CODE></LI>
+	</UL></LI>
+	<LI><CODE>[<A HREF="#nnlon">go</A>] NoNumAlias_on</CODE><UL>
+		<LI><CODE>NNLTargetNum</CODE></LI>
+	</UL></LI>
+	<LI><CODE>[<A HREF="#pnv1">go</A>] PNmAbrv1C</CODE></LI>
+</UL>
+
+<A NAME="actm1"/>
+<H2><U>MINV-Command cv-type: <CODE>[ActionName1C]</CODE></U> <CODE>[<A HREF="#cvuniversetoc">back</A>]</CODE></H2>
+
+<UL>
+	<LI><B>Example value:</B> <CODE>&quot;Etr&quot;</CODE></LI>
+	<LI><B>Requirements:</B> Must be alpha-numeric, at least one character in length, where the first character is uppercase, and all others are lowercase. Must be unique among all MINV-Commands.</LI>
+	<LI><B>Recommendation:</B> Should be as short-as-possible, as long as it is easy to remember.</LI>
+	<LI><B>Internal variable name:</B> <CODE>zvACTION_NM_1C</CODE></LI>
+</UL></P>
+
+<P>This MINV-Command's <B>Public Key</B>. This is the unique identifier for a MINV-Command, as used by you and your users. Whenever a process is run for, or on, a specific MINV-Command, this public key is always the first piece of information needed.</P>
+
+<P>In most cases, only the lowercase version is needed. However, it is stored internally with the first character [<CODE>&quot;1C&quot;</CODE>] as uppercase.</P>
+
+<P><I>The term &quot;key&quot; here refers to a database--where each data-instance, or <U>row in a table</U>, has a uniquely-identifying <U>primary key</U>. This &quot;public&quot; and &quot;private&quot; key terminology is not related in any way to encryption.</I></P>
+
+<A NAME="mpn"/>
+<H2><U>MINV-Command cv-type: <CODE>[MasterPhraseNm]</CODE></U> &nbsp; <CODE>[<A HREF="#cvuniversetoc">back</A>]</CODE></H2>
+
+<P><UL>
+	<LI><B>Example value:</B> <CODE>zENTERN_M_vlnd</CODE></LI>
+	<LI><B>Requirements:</B> Must be alpha-numeric, and at least one character in length. Must be unique among all MINV-Commands.</LI>
+	<LI><B>Internal variable name:</B> <CODE>zvMSTR_PHRS_NM</CODE></LI>
+</UL></P>
+
+<P>The full name (and autotext) of the MINV-Command's <A HREF="#intromasterphrase">Master Phrase</A>. The master-phrase is, generally speaking, the single location where all logic for a MINV-Command is written.</P>
+
+<P>It is recommended that this name be equal to
+<BR> &nbsp; &nbsp; <CODE>z[<A HREF="#cmdon">NamePreNum</A>]N[NamePostNum]_M_[VarAbrv1CForCmd]</CODE>
+<BR>When commands are off, and therefore there is no pre- or post-num name, then its name should be short-but-descriptive. It is always recommended to have the <CODE>'N'</CODE> and <CODE>'_M_[<A HREF="#varv1">VarAbrv1CForCmd</A>]'</CODE>.</P>
+
+<P><CODE>&quot;_M_[VarAbrv1CForCmd]&quot;</CODE> is an XBN-PhraseExpress naming convention, that implies that the phrase requires the variable, whose abbreviation is <CODE>&quot;[VarAbrv1CForCmd]&quot;</CODE>, to be properly set, in order for this function to work as documented. It is strongly recommended that this variable-abbreviation should be equal to the value of this MINV-Command's <CODE><A HREF="#varv1">[VarAbrv1CForCmd]</A></CODE> (except lowercase).</P>
+
+<A NAME="cgmin"/>
+<H2><U>MINV-Command cv-type: <CODE>[RangeMin]</CODE> and <CODE>[RangeMax]</CODE></U> &nbsp; <CODE>[<A HREF="#cvuniversetoc">back</A>]</CODE></H2>
+
+<P><UL>
+	<LI><B>Example values:</B> min=<CODE>1</CODE>, max=<CODE>5</CODE></LI>
+	<LI><B>Requirements:</B> Both must be an integer greater-than-or-equal-to one. <CODE>[RangeMax]</CODE> must be greater-than-or-equal-to <CODE>[RangeMin]</CODE>, and both must be fully-contained, inclusively, in the MINV-Variable's range.</LI>
+	<LI><B>Internal variable names:</B> <CODE>zvCMD_RANGE_MIN</CODE> and <CODE>zvCMD_RANGE_MAX</CODE></LI>
+</UL></P>
+
+<P>As described in the <A HREF="#intro">introduction</A>, this is the MINV-Command's range of most-commonly-used numbers. For each number in this range there is provided a shortcut command, action, and phrase-creator. Such as, when the range is min=1, max=5, then the available commands (assuming <A HREF="#cmdon">commands are on</A>) are, for example:
+<BR> &nbsp; &nbsp; <CODE>zENTER1</CODE>, <CODE>zENTER2</CODE>, <CODE>zENTER3</CODE>, <CODE>zENTER4</CODE>, <CODE>zENTER5</CODE>
+<BR>actions (when <A HREF="#acton">on</A>):
+<BR> &nbsp; &nbsp; <CODE>etr1</CODE>, <CODE>etr2</CODE>, <CODE>etr3</CODE>, <CODE>etr4</CODE>, <CODE>etr5</CODE>
+<BR>and phrase-creators (when <A HREF="#pcon">on</A>):
+<BR> &nbsp; &nbsp; <CODE>etr{#insert zzMnvSynPstMainPhrsCrtr}1</CODE>, <CODE>etr{#insert zzMnvSynPstMainPhrsCrtr}2</CODE>, <CODE>etr{#insert zzMnvSynPstMainPhrsCrtr}3</CODE>, <CODE>etr{#insert zzMnvSynPstMainPhrsCrtr}4</CODE>, <CODE>etr{#insert zzMnvSynPstMainPhrsCrtr}5</CODE></P>
+
+<P>The smallest-possible range for a MINV-Command is where the minimum and maximum are equal (all likely <CODE>'1'</CODE>).</P>
+
+<A NAME="varv1"/>
+<H2><U>MINV-Command cv-type: <CODE>[VarAbrv1CForCmd]</CODE></U> &nbsp; <CODE>[<A HREF="#cvuniversetoc">back</A>]</CODE></H2>
+
+<P><UL>
+	<LI><B>Example value:</B> <CODE>Vlnd</CODE></I></LI>
+	<LI><B>Requirements:</B> Must be equal to the value of the needed MINV-Variable's (public-key) abbreviation.</LI>
+	<LI><B>Internal variable name:</B> <CODE>zvVAR_ABRV_1C</CODE></LI>
+</UL></P>
+
+<P>The public key of the MINV-Variable required by this MINV-Command. This is the <I>link</I> between a command and it's variable. Where each MINV-Command uses exactly one MINV-Variable, each variable may be used by multiple commands. It is strongly recommended that this value (in lowercase form) be at the end of the <A HREF="#mpn">master-phrase name</A> (for example <CODE>&quot;zENTERN_M_vlnd&quot;</CODE>).</P>
+
+<P>Specifically, this is equal to the value of a MINV-Variable's public-key, as defined by its <CODE>zzMnvVar<I>[private-key]</I>Abrv1C</CODE> config-var. For example, the MINV-Variable whose public key is <I>named</I> <CODE>zzMnvVarVlndAbrv1C</CODE> which has a value--phrase-body--of <CODE>&quot;Vlnd&quot;</CODE> (in this case, the private-key is equal to the public-key).</P>
+
+<A NAME="cmdon"/>
+<H2><U>MINV-Command cv-type: <CODE>[Commands_on]</CODE></U> &nbsp; <CODE>[<A HREF="#cvuniversetoc">back</A>]</CODE></H2>
+
+<P>Sub cv-types (only used when <CODE>&quot;Commands_on&quot;</CODE> is 'on'):<UL>
+	<LI><CODE>NNLCmdIfIntrnl_yes</CODE> &nbsp; <CODE>[<A HREF="#nnlciy">go</A>]</CODE></LI>
+	<LI><CODE>NNLCmdXtrnl_yes</CODE> &nbsp; <CODE>[<A HREF="#nnlcxy">go</A>]</CODE></LI>
+	<LI><CODE>NamePreNum</CODE> and <CODE>NamePostNum</CODE> &nbsp; <CODE>[<A HREF="#cnmpre">go</A>]</CODE></LI>
+	<LI><B>Internal variable name:</B> <CODE>zvCOMMANDS_ON</CODE></LI>
+</UL></P>
+
+
+<P>Should commands be printed? If yes, then this must equal <CODE>&quot;on&quot;</CODE> (no quotes). If no, then the value should be <I>nothing</I> (the empty-string: <CODE>''</CODE>).</P>
+
+<P>A command is a phrase directly called by <I>other phrases</I>. In the <A HREF="#video">introduction-video</A>, the <CODE>&quot;hobk&quot;</CODE> MINV-Command is not a &quot;command&quot;, because it is unlikely to be called from another phrase. However, the MINV-Command <A HREF="#intro"><CODE>&quot;etr&quot;</CODE></A> is definitely going to be called from other phrases, and is therefore a &quot;command&quot;.</P>
+
+<A NAME="nnlciy"/>
+<H3><U><CODE>[Commands_on]</CODE> sub-cv-type: <CODE>[NNLCmdIfIntrnl_yes]</CODE></U> &nbsp; <CODE>[<A HREF="#cmdon">back</A>]</CODE></H3>
+
+<P><UL>
+	<LI><B>Only applicable when:</B> <CODE>[Commands_on]</CODE> and <CODE>[<A HREF="#nnlon">NoNumAlias_on</A>]</CODE> are both 'on', and <CODE>[<A HREF="#nnlcxy">NNLCmdXtrnl_yes</A>]</CODE> is the <I>off</I></LI>
+	<LI><B>Internal variable name:</B> <CODE>zvNNL_INTRNLC_YES</CODE></LI>
+</UL></P>
+
+<P>If the no-number-alias &quot;command&quot; for this MINV-Command is internal, and it should be printed, then set <CODE>[NNLCmdIfIntrnl_yes]</CODE> to <CODE>&quot;yes&quot;</CODE> (without the quotes). Otherwise, when it is unwanted, set this to <I>nothing</I> (the empty-string, '', meaning <I>no</I>).</P>
+
+<P><B>An example of when an internal no-num-alias is <U><I>un</I></U>wanted:</B> An example command might be <CODE>&quot;zCopyL1w&quot;</CODE>, where the number is always desired. I don't want to use the &quot;no number&quot; version of this command: <CODE>&quot;zCopyLw&quot;</CODE>.</P>
+
+<P>This does something very simple. When <CODE>&quot;yes&quot;</CODE>, then <CODE>'<A HREF="#mnvcmp">mnvcmp</A>'</CODE> process will print the no-num-alias command's description. When <I>no</I>, it's suppressed.</P>
+
+<H4><CODE>&quot;yes&quot;</CODE> example</H4>
+
+<P>Here is the example output of <CODE>&quot;mnvcmp&quot;</CODE>:</P>
+
+<PRE STYLE="background-color:#E1E1E1;">zENTERN_M_vlnd -(**)- etr[p,q]#, etr[f,[[h,t,r]]m], vlnd[[p,f]]
+(*Needs zvLINES_DOWN (var-abrv-lc=vlnd, var-phrs-nm-abrv=Vlnd). This command: (action-name-lc=etr, cmd-phrs-nm-abrv=Etr)*)
+zENTER -- etr[p,q]
+zENTER1 -- etr[p,q]1
+zENTER2 -- etr[p,q]2
+zENTER3 -- etr[p,q]3
+zENTER4 -- etr[p,q]4
+zENTER5 -- etr[p,q]5</PRE>
+
+<H4><I>no</I> example</H4>
+
+<PRE STYLE="background-color:#E1E1E1;">zENTERN_M_vlnd -(**)- etr[p,q]#, etr[f,[[h,t,r]]m], vlnd[[p,f]]
+(*Needs zvLINES_DOWN (var-abrv-lc=vlnd, var-phrs-nm-abrv=Vlnd). This command: (action-name-lc=etr, cmd-phrs-nm-abrv=Etr)*)
+zENTER1 -- etr[p,q]1
+zENTER2 -- etr[p,q]2
+zENTER3 -- etr[p,q]3
+zENTER4 -- etr[p,q]4
+zENTER5 -- etr[p,q]5</PRE>
+
+<A NAME="nnlcxy"/>
+<H3><U><CODE>[Commands_on]</CODE> sub-cv-type: <CODE>[NNLCmdXtrnl_yes]</CODE></U> &nbsp; <CODE>[<A HREF="#cmdon">back</A>]</CODE></H3>
+
+<P><UL>
+	<LI><B>Only applicable when:</B>  <CODE>[Commands_on]</CODE> and <CODE>[<A HREF="#nnlon">NoNumAlias_on</A>]</CODE> are both 'on'.</LI>
+	<LI><B>See:</B> <CODE>[<A HREF="#nnlciy">NNLCmdIfIntrnl_yes</A>]</CODE></LI>
+	<LI><B>Internal variable name:</B> <CODE>zvNNLC_XTRNL_YES</CODE></LI>
+</UL></P>
+
+<P>If the no-number-alias of this MINV-Command is created somewhere other than the file in which the master-phrase and commands exist, then it is considered <B>external</B>. An example is <CODE>&quot;zENTER&quot;</CODE>, which is a fundamental phrase (essentially equal to <CODE>\\\{#ENTER\\\}</CODE>), that existed before the MINV-Command project was ever conceived. This is its <I>external no-number-alias.</I></P>
+
+<P>When external, set this to <CODE>&quot;yes&quot;</CODE> (no quotes). When internal, set this to <I>nothing</I> (empty-string, <CODE>''</CODE>, meaning <I>no</I>.)</P>
+
+<P>A <CODE>&quot;yes&quot;</CODE> value causes the lowest-number command (the command-shortcut having the number equal to <CODE>[<A HREF="#cgmin">RangeMin</A>]</CODE>, such as <CODE>&quot;zENTER1&quot;</CODE>) to be an <I>alias</I> to the external no-num-alias. For example:
+<BR> &nbsp; &nbsp; <CODE>-<B>zENTER1</B> -- zENTER ALT KC</CODE>
+<BR> &nbsp; &nbsp; <CODE>\\\{#insert zENTER\\\}</CODE>
+<BR>in this case, this lowest-numbered command will <I>not</I> be one of the command descriptions printed via <CODE>'<A HREF="#mnvcmp">mnvcmp</A>'</CODE>. Instead, it will be printed as part of the <CODE>'<A HREF="#mnvcag">mnvcag</A>'</CODE> (auto-generated) process.</P>
+
+<P>When <I>no</I>, then the lowest-numbered command will be printed by <CODE>&quot;mnvcmp&quot;</CODE>. For example:
+<BR> &nbsp; &nbsp; <CODE>-<B>zENTER1</B> -- etr[p]1</CODE></P>
+
+<A NAME="cnmpre"/>
+<H3><U><CODE>[Commands_on]</CODE> sub-cv-type: <CODE>[NamePreNum]</CODE> and <CODE>[NamePostNum]</CODE></U> &nbsp; <CODE>[<A HREF="#cmdon">back</A>]</CODE></H3>
+
+<P><UL>
+	<LI><B>Example values:</B> pre=<CODE>&quot;zENTER&quot;</CODE>, post=<CODE>''</CODE> (<I>nothing</I>--the empty-string)</LI>
+	<LI><B>Only applicable when:</B>  <CODE>[Commands_on]</CODE> is 'on'.</LI>
+	<LI><B>Requirements:</B> Must have a <I>total</I> a length of at least 1. In other-words, <I>both</I> may not be the empty-string.</LI>
+	<LI><B>Recommendation:</B> It is strongly recommended that <CODE>[NamePreNum]</CODE> begin with a <CODE>'z'</CODE>, which is a naming convention implying that this should only be called by other phrases.</LI>
+	<LI><B>See:</B> <CODE>[<A HREF="#mpn">MasterPhraseNm</A>]</CODE>, <CODE>[<A HREF="#nnlon">NoNumAlias_on</A>]</CODE></LI>
+	<LI><B>Internal variable names:</B> <CODE>zvCMD_NAME_PRE_NUM</CODE> and <CODE>zvCMD_NAME_POST_NUM</CODE></LI>
+</UL></P>
+
+<P>These two configuration-variables together, along with a specific number, form a MINV-Command's &quot;command&quot; name. Using the example values (and assuming a <A HREF="#cgmin">command range</A> of one through five), then these are the available commands (whose descriptions are printed via <CODE>&quot;mnvcmp&quot;</CODE>):
+<BR> &nbsp; &nbsp; <CODE>zENTER1</CODE>, <CODE>zENTER2</CODE>, <CODE>zENTER3</CODE>, <CODE>zENTER4</CODE>, <CODE>zENTER5</CODE></P>
+
+
+<A NAME="acton"/>
+<H2><U>MINV-Command cv-type: <CODE>[Actions_on]</CODE></U> &nbsp; <CODE>[<A HREF="#cvuniversetoc">back</A>]</CODE></H2>
+
+<P>Sub cv-type (only used when <CODE>&quot;Actions_on&quot;</CODE> is 'on'):<UL>
+	<LI><CODE>SNTPromptActn_on</CODE> &nbsp; <CODE>[<A HREF="#sntpaon">go</A>]</CODE> -- Sub cv-type (only used when <CODE>[SNTPromptActn_on]</CODE> is 'on'):<UL>
+		<LI><CODE>SNTPromptActnMsg</CODE> &nbsp; <CODE>[<A HREF="#sntpamsg">go</A>]</CODE></LI>
+	</UL></LI>
+	<LI><B>Internal variable name:</B> <CODE>zvACTIONS_ON</CODE></LI>
+</UL></P>
+
+<P>Should action-phrases be printed? If yes, then set this to <CODE>&quot;on&quot;</CODE>. Otherwise, set this to the empty-string (<I>nothing</I>, '', meaning <I>off</I>).</P>
+
+<P>An &quot;action&quot; is something that is done <I>right now</I>. It is not something that is called from another phrase. Rather, it is intended to be called by you--a human*. For example, the <CODE>&quot;etr#&quot;</CODE> MINV-Command from the <A HREF="#intro">introduction</A> is <I>not</I> an action--hence, <CODE>zzMnvCmdEtrActions_on</CODE> is <I>off</I>. <I>(Why type <CODE>'e'</CODE> <CODE>'t'</CODE> <CODE>'r'</CODE> [trigger-char], when you could just press the ENTER button?)</I></P>
+
+<P>However, were this configuration-variable turned <CODE>&quot;on&quot;</CODE> (and assuming a <A HREF="#cgmin">command range</A> of one-to-five), the following actions would be created:
+<BR> &nbsp; &nbsp; <CODE>etr1</CODE>, <CODE>etr2</CODE>, <CODE>etr3</CODE>, <CODE>etr4</CODE>, <CODE>etr5</CODE>
+<BR>Each of these is equal to the appropriate <CODE>zENTER#</CODE> command (<CODE>&quot;etr4&quot;</CODE> is equivalent to <CODE>&quot;zENTER4&quot;</CODE>). The action-name is defined by <CODE>[<A HREF="#actml">ActionName1C</A>]</CODE>.</P>
+
+<P><B>Action-only example:</B> The <A HREF="#video">introduction video</A> discusses a MINV-Command (<CODE>&quot;hobk&quot;</CODE>, for repeated home-backspaces, for joining multiple lines) that is <I>only</I> an action--something that is <I>only</I> useful <I>right now</I>. It is not useful to any other phrases.</P>
+
+<P><I><B>*</B>(While an action-phrase can obviously be called from another phrase, the intention is that the name of an action-phrase is a shortcut--an abbreviation intended for temporary-use. <A HREF="#cnmpre">Command-names</A>, on the other hand, are intended to be more explicit and descriptive, hence making the code that might use them more self-documenting.)</I></P>
+
+<A NAME="sntpaon"/>
+<H3><U><CODE>[Actions_on]</CODE> sub-cv-type: <CODE>[SNTPromptActn_on]</CODE></U> &nbsp; <CODE>[<A HREF="#acton">back</A>]</CODE></H3>
+
+<P><UL>
+	<LI><B>Only applicable when:</B>  <CODE>[Actions_on]</CODE> is 'on'.</LI>
+	<LI><B>Internal variable name:</B> <CODE>zvSNTP_ACTN_ON</CODE></LI>
+</UL></P>
+
+<P>Should the Set-Number-To-Prompt Action also be printed? If yes, then set this to <CODE>&quot;on&quot;</CODE>. Otherwise, set this to <I>nothing</I> (the empty-string, <CODE>''</CODE>, meaning <I>off</I>).</P>
+
+<P>In addition to the numbered actions (<CODE>&quot;etr1&quot;</CODE> through <CODE>&quot;etr5&quot;</CODE>), there is also the option to have an action that prompts you for the desired number. The number you respond with can be any integer, one or greater. The message with which you are prompted is defined by <CODE>[<A HREF="#sntpamsg">SNTPromptActnMsg</A>]</CODE>.</P>
+
+<P>This prompting occurs in a simple <CODE>\\\{#INPUT...\\\}</CODE> (single-line) dialog.</P>
+
+<P>The phrase-name of the sntp-action is <CODE>'[<A HREF="#actml">ActionName1C</A>]{#insert zzMnvSynPstSetNumToPrompt}'</CODE>. For example, <CODE>&quot;etrn&quot;</CODE></P>
+
+<A NAME="sntpamsg"/>
+<H3><U><CODE>[SNTPromptActn_on]</CODE> sub-cv-type: <CODE>[SNTPromptActnMsg]</CODE></U> &nbsp; <CODE>[<A HREF="#acton">back</A>]</CODE></H3>
+
+<P><UL>
+	<LI><B>Only applicable when:</B>  <CODE>[Actions_on]</CODE> and <CODE>[SNTPromptActn_on]</CODE> are both 'on'.</LI>
+	<LI><B>Internal variable name:</B> <CODE>zvSNT_PROMPT_MSG</CODE></LI>
+</UL></P>
+
+<P>The text that displays in the <CODE>\\\{#INPUT...\\\}</CODE> (single-line) dialog, for the Set-Number-To-Prompt action dialog.</P>
+
+<A NAME="pcon"/>
+<H2><U>MINV-Command cv-type: <CODE>[PhraseCreators_on]</CODE></U> &nbsp; <CODE>[<A HREF="#cvuniversetoc">back</A>]</CODE></H2>
+
+<P>Sub cv-types (applicable only when <CODE>[PhraseCreators_on]</CODE> are <CODE>&quot;on&quot;</CODE>):<UL>
+	<LI><CODE>[PCActOffPst_pES]</CODE> &nbsp; <CODE>[<A HREF="#pcafp">go</A>]</CODE></LI>
+	<LI><CODE>[LiteralStyle_esyc]</CODE> &nbsp; <CODE>[<A HREF="#ltry">go</A>]</CODE></LI>
+	<LI><B>Internal variable name:</B> <CODE>zvPHRS_CRTRS_ON</CODE></LI>
+</UL></P>
+
+<P>If phrase-creators should be printed, set this to <CODE>&quot;on&quot;</CODE>. Otherwise, set this to <I>nothing</I> (the empty-string, <CODE>''</CODE>, meaning <I>off</I>).</P>
+
+<P>As stated in the <A HREF="#intropc">introduction</A>, a <B>Phrase Creator</B> is a utility for quickly generating PhraseExpress code. Specifically, it helps you to easily create calls to <I>this</I> MINV-Command, for any number--regardless if that number is in or out of the <A HREF="#cgmin">command range</A>.</P>
+
+<P>For the <CODE>&quot;etr#&quot;</CODE> MINV-Command, when <CODE>[PhraseCreators_on]</CODE> is <CODE>&quot;on&quot;</CODE> (and assuming a <A HREF="#cgmin">command range</A> of one-to-five), the following phrase-creators are available:
+<BR> &nbsp; &nbsp; <CODE>etr{#insert zzMnvSynPstMainPhrsCrtr}1</CODE>, <CODE>etr{#insert zzMnvSynPstMainPhrsCrtr}2</CODE>, <CODE>etr{#insert zzMnvSynPstMainPhrsCrtr}3</CODE>, <CODE>etr{#insert zzMnvSynPstMainPhrsCrtr}4</CODE>, <CODE>etr{#insert zzMnvSynPstMainPhrsCrtr}5</CODE>
+<BR>Each of these prints out a <I>literal phrase-call</I> to the appropriate <CODE>zENTER#</CODE> command. For example, <CODE>&quot;etr{#insert zzMnvSynPstMainPhrsCrtr}4&quot;</CODE> prints this at the cursor
+<BR> &nbsp; &nbsp; <CODE>\\\{#insert zENTER4\\\}</CODE>
+<BR>The action-name--the <CODE>&quot;etr&quot;</CODE> portion of <CODE>&quot;etr{#insert zzMnvSynPstMainPhrsCrtr}4&quot;</CODE>--is defined by <CODE>[<A HREF="#actml">ActionName1C</A>]</CODE>.</P>
+
+<P>For printing phrase-calls outside of the command range, use the <A HREF="#synsumpc"><CODE>&quot;{#insert zzMnvSynPstNumSetphrsCallMstr}&quot;</CODE>, <CODE>&quot;{#insert zzMnvSynPstSetToNumCallMstr}&quot;</CODE>, and <CODE>&quot;rm&quot;</CODE></A> commands.</P>
+
+<P>Note that the resulting phrase-calls for the default phrase-creators--for the numbers in the command range--such as <CODE>&quot;etr{#insert zzMnvSynPstMainPhrsCrtr}4&quot;</CODE>...
+<BR> &nbsp; &nbsp; <CODE>\\\{#insert zENTER4\\\}</CODE>
+<BR>...are much more concise when compared to the output of the <CODE>&quot;{#insert zzMnvSynPstNumSetphrsCallMstr}&quot;</CODE> command:
+<BR> &nbsp; &nbsp; <CODE>\\\{#SETPHRASE -description zvLINES_DOWN -content 4 -autotext zvLINES_DOWN -folder ctvv_folder\\\}\\\{#insert zENTERN_M_vlnd\\\}</CODE>
+<BR>This is especially true when <A HREF="#cmdon">commands are <CODE>&quot;on&quot;</CODE></A>, as they are in this example.</P>
+
+<P>Even when commands are <I>off</I>, phrase creators are still more concise. For example, when commands are off, here is the output for <I>both</I> <CODE>&quot;etr{#insert zzMnvSynPstMainPhrsCrtr}4&quot;</CODE> <I>and</I> for <CODE>&quot;etr{#insert zzMnvSynPstSetToNumCallMstr}&quot;</CODE> (when answering <CODE>'4'</CODE> at the prompt):
+<BR> &nbsp; &nbsp; <CODE>\\\{#insert zvLINES_DOWN_st4\\\}\\\{#insert zENTERN_M_vlnd\\\}</CODE></P>
+
+<A NAME="pcafp"/>
+<H3><U><CODE>[PhraseCreators_on]</CODE> sub-cv-type: <CODE>[PCActOffPst_pES]</CODE></U> &nbsp; <CODE>[<A HREF="#pcon">back</A>]</CODE></H3>
+
+<P><UL>
+	<LI><B>Only applicable when:</B> <CODE>[PhraseCreators_on]</CODE> is <CODE>&quot;on&quot;</CODE> and <CODE>[Actions_on]</CODE> is <I>off</I> (equal to the empty-string--<CODE>''</CODE>)</LI>
+	<LI><B>Internal variable name:</B> <CODE>zvPCAF_PST_PORES</CODE></LI>
+</UL></P>
+
+<P>If the name of basic phrase-creators should be postfixed with <CODE>&quot;{#insert zzMnvSynPstMainPhrsCrtr}&quot;</CODE>, then set this to <CODE>&quot;{#insert zzMnvSynPstMainPhrsCrtr}&quot;</CODE> (without the quotes). Otherwise, set this to the empty-string (<CODE>''</CODE>, or <I>nothing</I>).</P>
+
+<P>Setting this to the empty-string is a nice shortcut for the most commonly used <I>non-action</I> MINV-Commands (which I actually use for <CODE>&quot;etr&quot;</CODE>, <CODE>&quot;bsk&quot;</CODE> [the backspace char], <CODE>&quot;dle&quot;</CODE> [delete], and <CODE>&quot;tbb&quot;</CODE> [tab]).</P>
+
+<P><B><U>Examples</U></B></P>
+
+<P><B>When <CODE>[PCActOffPst_pES]</CODE> is equal to <CODE>&quot;{#insert zzMnvSynPstMainPhrsCrtr}&quot;</CODE></B>, the name of basic phrase-creators is <CODE>'[<A HREF="#actml">ActionName1C</A>]{#insert zzMnvSynPstMainPhrsCrtr}#'</CODE> (such as <CODE>&quot;etr{#insert zzMnvSynPstMainPhrsCrtr}3&quot;</CODE>, which prints this at the cursor:
+<BR> &nbsp; &nbsp; <CODE>\\\{#insert zENTER3\\\}</CODE>
+<BR>), and the name of <A HREF="#ltry">literal</A> phrase creators is <CODE>&quot;[ActionName1C]{#insert zzMnvSynPstLtrlPhrsCrtr}#&quot;</CODE> (such as <CODE>&quot;etr{#insert zzMnvSynPstLtrlPhrsCrtr}3&quot;</CODE>, which prints either this [when the literal-style is <CODE>&quot;curly&quot;</CODE>]:
+<BR> &nbsp; &nbsp; <CODE>\\\\\\{#insert zENTER3\\\\\\}</CODE>
+<BR>or [when the literal-style is <CODE>&quot;command&quot;</CODE>]:
+<BR> &nbsp; &nbsp; <CODE>\\\{#insert zENTER3{#insert zzMnvSynPstMainPhrsCrtr}\\\}</CODE>
+<BR>).</P>
+
+<P><B>When, however, <CODE>[PCActOffPst_pES]</CODE> is equal to the empty-string</B> (<CODE>''</CODE>--or <I>nothing</I>), then name of basic phrase-creators is <I>equal</I> to the action-name (such as <CODE>&quot;etr3&quot;</CODE>, which prints this at the cursor:
+<BR> &nbsp; &nbsp; <CODE>\\\{#insert zENTER3\\\}</CODE>
+<BR>), and the name of <A HREF="#ltry">literal</A> phrase creators is <CODE>&quot;[ActionName1C]{#insert zzMnvSynPstMainPhrsCrtr}#&quot;</CODE> (such as <CODE>&quot;etr{#insert zzMnvSynPstMainPhrsCrtr}3&quot;</CODE>, which has the same output as the above <CODE>&quot;etr{#insert zzMnvSynPstLtrlPhrsCrtr}3&quot;</CODE>).</P>
+
+<P><I>To reiterate, this feature is only useable when <A HREF="#acton">actions</A> are <B>off</B>.</I></P>
+
+<A NAME="ltry"/>
+<H3><U><CODE>[PhraseCreators_on]</CODE> sub-cv-type: <CODE>[LiteralStyle_esyc]</CODE></U> &nbsp; <CODE>[<A HREF="#pcon">back</A>]</CODE></H3>
+
+<P><UL>
+	<LI><B>Only applicable when:</B> <CODE>[PhraseCreators_on]</CODE> is <CODE>&quot;on&quot;</CODE>.</LI>
+	<LI><B>Internal variable name:</B> <CODE>zvLTRL_STYL_ESYC</CODE></LI>
+</UL></P>
+
+<P>If there should be <I>only</I> basic phrase-creators (see <CODE>[<A HREF="#pcafp">PCActOffPst_pES</A>]</CODE> for examples of both basic and literal phrase creators), then set this to the empty-string (<CODE>''</CODE>, or <I>nothing</I>, meaning <I>off</I>). When literal phrase-creators are wanted, then set this to <I>either</I> <B><CODE>&quot;curly&quot;</CODE></B> or <B><CODE>&quot;command&quot;</CODE></B>.</P>
+
+<P><B><U>Curly-style</U></B></P>
+
+<P>A <U><CODE>&quot;curly&quot;</CODE>-style</U> literal phrase-call is one that simply escapes the open- and close-curlys. Such as <CODE>&quot;etrq3&quot;</CODE>, which prints this at the cursor:
+<BR> &nbsp; &nbsp; <CODE>\\\\\\{#insert zENTER3\\\\\\}</CODE></P>
+
+<P><B><U>Command-style</U></B></P>
+
+<P>A <B><U><CODE>&quot;command&quot;</CODE> style</U></B> literal-phrase call is recommended only for the most-commonly-used MINV-Commands, such as <CODE>&quot;etr&quot;</CODE>, <CODE>&quot;bsk&quot;</CODE> (printing the backspace key multiple times), <CODE>&quot;dle&quot;</CODE> (delete), and <CODE>&quot;tbb&quot;</CODE> (tab). The benefit of a <CODE>&quot;command&quot;</CODE>-style literal phrase-call, is that the six escape characters (<CODE>'\'</CODE>) are replaced with a single <CODE>&quot;{#insert zzMnvSynPstMainPhrsCrtr}&quot;</CODE>. For example, <CODE>&quot;etrq3&quot;</CODE> prints this
+<BR> &nbsp; &nbsp; <CODE>\\\{#insert zENTER3p\\\}</CODE>
+<BR>This is made possible by creating a duplicate set of commands, giving each a <CODE>&quot;{#insert zzMnvSynPstMainPhrsCrtr}&quot;</CODE>-postfix. For example, if these are the default commands (assuming a <A HREF="#cgmin">command range</A> of 1-5)
+<BR> &nbsp; &nbsp; <CODE>zENTER1</CODE>, <CODE>zENTER2</CODE>, <CODE>zENTER3</CODE>, <CODE>zENTER4</CODE>, <CODE>zENTER5</CODE>
+<BR>then these extra commands are automatically created (as part of the <CODE>'<A HREF="#mnvcag">mnvcag</A>'</CODE> process)
+<BR> &nbsp; &nbsp; <CODE>zENTER1{#insert zzMnvSynPstMainPhrsCrtr}</CODE>, <CODE>zENTER2{#insert zzMnvSynPstMainPhrsCrtr}</CODE>, <CODE>zENTER3{#insert zzMnvSynPstMainPhrsCrtr}</CODE>, <CODE>zENTER4{#insert zzMnvSynPstMainPhrsCrtr}</CODE>, <CODE>zENTER5{#insert zzMnvSynPstMainPhrsCrtr}</CODE>
+<BR>where each is equal to a <I>phrase-call</I> to it's non-{#insert zzMnvSynPstMainPhrsCrtr} cousin. For example, <CODE>&quot;zENTER4{#insert zzMnvSynPstMainPhrsCrtr}&quot;</CODE> is <I>equal to</I>
+<BR> &nbsp; &nbsp; <CODE>\\\\\\{#insert zENTER4\\\\\\}</CODE>
+<BR>and therefore <I>prints out</I>
+<BR> &nbsp; &nbsp; <CODE>\\\{#insert zENTER4\\\}</CODE></P>
+
+
+<A NAME="nnlon"/>
+<H2><U>MINV-Command cv-type: <CODE>[NoNumAlias_on]</CODE></U> &nbsp; <CODE>[<A HREF="#cvuniversetoc">back</A>]</CODE></H2>
+
+<P><UL>
+	<LI>Sub cv-type (only used when <CODE>&quot;NoNumAlias_on&quot;</CODE> is <CODE>&quot;on&quot;</CODE>):<UL>
+		<LI><CODE>SNTPromptActn_on</CODE> &nbsp; <CODE>[<A HREF="#nnlg">go</A>]</CODE></LI>
+	</UL></LI>
+	<LI><B>Internal variable name:</B> <CODE>zvNO_NUM_ALIAS_ON</CODE></LI>
+	<LI>See: <CODE>[<A HREF="#nnlcxy">NNLCmdXtrnl_yes</A>]</CODE>, <CODE>[<A HREF="#nnlciy">NNLCmdIfIntrnl_yes</A>]</CODE></LI>
+</UL></P>
+
+<P>If a no-number alias is desired, set this to <CODE>&quot;on&quot;</CODE>. Otherwise, set this to the empty-string (nothing--''--meaning <I>off</I>).</P>
+
+<P>There is a potential no-number-alias for each of the three main phrase-types: <A HREF="#cmdon">commands</A>, <A HREF="#acton">actions</A>, and <A HREF="#pcon">phrase-creators</A>. When a particular type is <I>off</I>, then its no-number-alias is not printed (when <U>commands</U> are <I>off</I>, there is no no-number-<U>command</U>).</P>
+
+<P>The main actions (as well as commands and phrase-creators) each have a number, as defined by the <A HREF="#cgmin">command range</A>. For example:
+<BR> &nbsp; &nbsp; <CODE>etr1</CODE>, <CODE>etr2</CODE>, <CODE>etr3</CODE>, <CODE>etr4</CODE>, <CODE>etr5</CODE>
+<BR>The no-number-alias command is <CODE>etr</CODE>, and is equivalent to
+<BR> &nbsp; &nbsp; <CODE>\\\{#insert zENTER[<A HREF="#nnlg">NNLTargetNum</A>]\\\}</CODE></P>
+
+<A NAME="nnlg"/>
+<H3><U><CODE>[NoNumAlias_on]</CODE> sub-cv-type: <CODE>[NNLTargetNum]</CODE></U> &nbsp; <CODE>[<A HREF="#pcon">back</A>]</CODE></H3>
+
+<P><UL>
+	<LI><B>Only applicable when:</B> <CODE>[NoNumAlias_on]</CODE> is <CODE>&quot;on&quot;</CODE></LI>
+	<LI><B>Internal variable name:</B> <CODE>zvNNL_TGT_NUM</CODE></LI>
+</UL></P>
+
+<P>When <A HREF="#nnlon">no-number-aliases</A> are <CODE>&quot;on&quot;</CODE>, then this is the <I>target number</I> for it. The <I>name</I> of the no-number alias has <I>no number</I>, of course, so it needs to explicitely be given a target.</P>
+
+<P><B>Requirements:</B> This must equal a number in the <A HREF="#cgmin">command range</A>. The only exception is when <A HREF="#cmdon">commands are <CODE>&quot;on&quot;</CODE></A>, in which case this may also equal <I>nothing</I> (the empty-string--''). <I>In the latter situation, the target for both the no-num-<U>action</U> and no-num-phrase-<U>creator</U> is the no-num-<U>command</U>.</I></P>
+
+<P><B>When the target-number is empty-string</B>, then only the <I>description</I> of the no-number-command is automatically generated (by <CODE>'<A HREF="#mnvcmp">mnvcmp</A>'</CODE>)--its phrase-body is manually created by you. Therefore the no-num-command is <I>targeted</I> by you (to, in most cases, either the master-phrase or an existing numbered-command).</P>
+
+<P><B>When the target-number is a <I>number</I>,</B> then the no-num-command is automatically generated by <CODE>&quot;mnvcag&quot;</CODE>.</P>
+
+<P>In all cases, however, the no-num-action and no-num-phrase-creator are both automatically generated by <CODE>'<A HREF="#mnvcag">mnvcag</A>'</CODE>.</P>
+
+<A NAME="pnv1"/>
+<H2><U>MINV-Command cv-type: <CODE>[PNmAbrv1C]</CODE></U> &nbsp; <CODE>[<A HREF="#cvuniversetoc">back</A>]</CODE></H2>
+
+<P><UL>
+	<LI><B>Requirements:</B> Must be alpha-numeric, where the first character is uppercase, and all others are lowercase. Must be unique among all MINV-Commands.</LI>
+	<LI><B>Recommendation:</B> When the action-name is short (four characters or less), the private-key should equal it. Otherwise, the private-key should be an abbreviated version of the public-key</LI>
+	<LI><B>Internal variable name:</B> <CODE>zvCMD_PNMV_1C</CODE></LI>
+</UL></P>
+
+<P>The MINV-Command's private key, which is only used in the <I>phrase-names</I> of this command's configuration-variables (to distinguish the config-vars of one MINV-Command from another). The <A HREF="#actm1">action name</A> is the <I>public key</I>. Once configured, this is never again used by you, and should never be altered.</P>.</P>
+
+<P><I>For further information on private and public-keys, see <A HREF="zidx_xfile__large_project_database.html#pubvprivkey">this section</A> in the <A HREF="zidx_xfile__large_project_database.html">LPD-Framework documentation</A></I></P>
+
+<A NAME="mainfuncs"/>
+<H2>The main functions for configuring and building MINV-Commands &nbsp; &nbsp; <CODE>[<A HREF="#toc">top</A>]</CODE></H2>
+
+<P>All of these processes can be seen in action, in both the <A HREF="#video">introduction video</A>, and in the <A HREF="#sbscreatecfgcmd">step-by-step section</A> (starting below the table of configuration-variables).</P>
+
+<P>The main MINV-Command processes are:<UL>
+	<LI><CODE><FONT COLOR="white">[go]</FONT> </CODE><B><CODE>&quot;kctmnvc&quot;</CODE></B> and <B><CODE>&quot;kctmnvv&quot;</CODE>:</B> Print out a blank configuration template for a MINV-Command and MINV-Variable, respectively.  <I>These are actually LPD-Framework project-utilities.</I></LI>
+	<LI><CODE>[<A HREF="#mnvcmp">go</A>] </CODE><B><CODE>&quot;mnvcmp&quot;</CODE>:</B> Generate master-phrase and command descriptions</LI>
+	<LI><CODE>[<A HREF="#mnvcag">go</A>] </CODE><B><CODE>&quot;mnvcag&quot;</CODE>:</B> Generate all MINV-Command phrases from existing configuration</LI>
+	<LI><CODE>[<A HREF="#mnvvag">go</A>] </CODE><B><CODE>&quot;mnvvag&quot;</CODE>:</B> Generate all MINV-Variable phrases from existing configuration</LI>
+</UL></P>
+
+
+<A NAME="mnvcmp"/>
+<H3><U><B><CODE>&quot;mnvcmp&quot;</CODE>:</B> Generate master-phrase and command descriptions</U> &nbsp; <CODE>[<A HREF="#mainfuncs">back</A>]</CODE></H3>
+
+<H4><U><B>Overview</B></U></H4>
+
+<P><UL>
+	<LI><B><CODE>'<U>mnvcmp</U>'</CODE>:</B> The main function for a single MINV-Command. Here are all its <B>sub-routines:</B><UL>
+		<LI><B><CODE>'<U>mnvmpd</U>'</CODE>:</B> Generates the master-phrase description only.</LI>
+		<LI><B><CODE>'<U>mnvcmdd</U>'</CODE>:</B> Generates the command-descriptions only. If commands are <I>off</I>, then a dialog will popup instead.</LI>
+	</UL></LI>
+	<LI><B><CODE>'<U>mnvcmpll</U>'</CODE>:</B> The main function for multiple MINV-Commands</LI>
+</UL></P>
+
+<P><B><CODE>'<U>mnvcmp</U>'</CODE></B> prompts you for the MINV-Command's <A HREF="#actm1">action name</A>, in lowercase-form (such as <CODE>&quot;etr#&quot;</CODE> or <CODE>&quot;hobk&quot;</CODE>). It then generates that command's <A HREF="#intromasterphrase">master-phrase</A> description and--if <A HREF="#cmdon">commands are <CODE>&quot;on&quot;</CODE></A>--all of its command descriptions.</P>
+
+<P>To run this for multiple MINV-Commands, use <B><CODE>'<U>mnvcmpll</U>'</CODE></B> (<CODE>&quot;ll&quot;</CODE> for <I>Line List</I>), where the action-names are listed at the cursor, one per line. When calling this, the cursor should be before the top-most action-name, and there should be no empty-lines between. These &quot;pre-written&quot; action names are in lieu of prompting.</P>
+
+<H4><U>Detail</U></H4>
+
+<P>The master-phrase contains the MINV-Command's <A HREF="#synsumover">syntax summary</A>, along with some diagnostic information. The master-phrase body is written manually by you, and should immediately follow the diagnostic-information comment.</P>
+
+<P>Here is the output for the MINV-Command <CODE>&quot;etr#&quot;</CODE> (for which <A HREF="#cmdon">commands are <CODE>&quot;on&quot;</CODE></A>, and the <A HREF="#cgmin">command range</A> is one through five):
+
+<PRE STYLE="background-color:#E1E1E1;">zENTERN_M_vlnd -(**)- etr[p,q]#, etr[f,[[h,t,r]]m], vlnd[[p,f]]
+(*Needs zvLINES_DOWN (var-abrv-lc=vlnd, var-phrs-nm-abrv=Vlnd). This command: (action-name-lc=etr, cmd-phrs-nm-abrv=Etr)*)
+zENTER1 -- etr[p,q]1
+zENTER2 -- etr[p,q]2
+zENTER3 -- etr[p,q]3
+zENTER4 -- etr[p,q]4
+zENTER5 -- etr[p,q]5</PRE>
+
+<A NAME="mnvcag"/>
+<H3><U><B><CODE>&quot;mnvcag&quot;</CODE>:</B> Generate all MINV-Command phrases from existing configuration</U> &nbsp; <CODE>[<A HREF="#mainfuncs">back</A>]</CODE></H3>
+
+<P><B>Sub-functions:</B><UL>
+	<LI><B><CODE>&quot;mnvact&quot;</CODE>:</B> Generates all of the <A HREF="#acton">actions</A>.</LI>
+	<LI><B><CODE>&quot;mnvapc&quot;</CODE>:</B> Generates All of the <A HREF="#intropc">regular and literal</A> Phrase-Creators (<A HREF="#ltry"><CODE>&quot;command&quot;</CODE>-style</A> literal-commands are generated by <CODE>&quot;mnvoag&quot;</CODE>).</LI>
+	<LI><B><CODE>&quot;mnvbpc&quot;</CODE>:</B> Generates only the regular (Basic) Phrase-Creators. If there are no phrase-creators, a dialog will tell you this.</LI>
+	<LI><B><CODE>&quot;mnvlpc&quot;</CODE>:</B> Generates only Literal Phrase-Creators. If there are no literal phrase-creators (if the literal-style is <I>off</I>), a dialog will tell you this.</LI>
+	<LI><B><CODE>&quot;mnvoag&quot;</CODE>:</B> Generates all the other phrases <I>not</I> generated by <CODE>&quot;mnvapc&quot;</CODE> (see &quot;The specific phrases generated by <CODE>&quot;mnvoag&quot;</CODE>&quot;, below)</LI>
+</UL></P>
+
+<P><B><CODE>&quot;mnvcag&quot;</CODE></B> outputs all non-command phrases for your MINV-Command. The only thing <I>not</I> created by this process is the master-phrase and numbered-command descriptions (see <CODE>'<A HREF="#mnvcmp">mnvcmp</A>'</CODE>).</P>
+
+<P>Just call this in a new plain-text file, and <A HREF="..\zGLOBAL\zidx_xfile__import_steps.html">import it into PhraseExpress</A>. This output should not be altered in any way, at any time. When a MINV-Command's configuration changes, then all existing phrases should be eliminated, and then fully-regenerated.</P>
+
+<P>To execute this process against multiple action-names, use <B><CODE>&quot;mnvcagll&quot;</CODE></B>. Call this in a text-document, with the cursor immediately before an action-name, with zero-or-more action-names on subsequent lines (no spaces). The <I>only</I> text on each line must be the (lowercase) action-name.</P>
+
+<H4><U>Output for the <A HREF="#intro">example <CODE>&quot;etr&quot;</CODE> MINV-Command</A></U></H4>
+
+<P><I>Note that there are no actions, as configured. Also note that in actual output, all comment-lines are bookmarked, so they can be quickly deleted.</I></P>
+
+<PRE STYLE="background-color:#E1E1E1;">(*Utilities, literal master-phrase and command-style commands, and external nnl-command. NOTE -- Command range: min=1, max=5*)
+etrm -- Phrase: zENTERN_M_vlnd	\\\\\\{#insert zENTERN_M_vlndp\\\\\\}	etrm
+etrtm -- Phrase: zvLINES_DOWN_st[prompt], zENTERN_M_vlnd	\\\{#insert zzMnvCmdEtrSetSntpMsg\\\}\\\{#insert zzMnvVarVlndSetToNumWPrompt_M_sntpmsgp\\\}\\\{#insert zENTERN_M_vlndp\\\}	etrtm
+etrhm -- Phrase: [#SETPHRASE zvLINES_DOWN=[prompt]], zENTERN_M_vlnd	\\\{#insert zzMnvCmdEtrSetSntpMsg\\\}\\\{#insert zzMnvVarVlndSetphraseWPrompt_M_sntpmsgp\\\}\\\{#insert zENTERN_M_vlndp\\\}	etrhm
+etrrm -- Phrase: zvLINES_DOWN_stPrompt, zENTERN_M_vlnd	\\\\\\{#insert zvLINES_DOWN_stPrompt\\\\\\}\\\{#insert zENTERN_M_vlndp\\\}	etrrm
+etrf -- inFo on this MINV-Command	\\\{#SETPHRASE -description zvACTION_NM_1C -content Etr -autotext zvACTION_NM_1C -folder ctvv_folder\\\}\\\{#insert zMnvCmdInformation_M_actm1\\\}	etrf
+zENTERN_M_vlndp	\\\\\\{#insert zENTERN_M_vlnd\\\\\\}	zENTERN_M_vlndp
+zENTERN_M_vlndq	\\\\\\{#insert zENTERN_M_vlndp\\\\\\}	zENTERN_M_vlndq
+zzMnvCmdEtrSetSntpMsg	\\\{#SETPHRASE -description zvSNT_PROMPT_MSG -content \\\{#insert zzMnvCmdEtrSNTPromptActnMsg\\\} -autotext zvSNT_PROMPT_MSG -folder ctvv_folder\\\}	zzMnvCmdEtrSetSntpMsg
+(*Action phrases proper*)
+(*Phrase creators*)
+etrp -- Phrase: zENTER	\\\\\\{#insert zENTER\\\\\\}	etrp
+etrp1 -- Phrase: zENTER1	\\\\\\{#insert zENTER1\\\\\\}	etrp1
+etrp2 -- Phrase	\\\\\\{#insert zENTER2\\\\\\}	etrp2
+etrp3 -- Phrase	\\\\\\{#insert zENTER3\\\\\\}	etrp3
+etrp4 -- Phrase	\\\\\\{#insert zENTER4\\\\\\}	etrp4
+etrp5 -- Phrase	\\\\\\{#insert zENTER5\\\\\\}	etrp5
+etrq -- Literal phrase: zENTER	\\\\\\\\\{#insert zENTER\\\\\\\\\}	etrq
+etrq1 -- Literal phrase: zENTER1	\\\\\\\\\{#insert zENTER1\\\\\\\\\}	etrq1
+etrq2 -- Literal phrase	\\\\\\\\\{#insert zENTER2\\\\\\\\\}	etrq2
+etrq3 -- Literal phrase	\\\\\\\\\{#insert zENTER3\\\\\\\\\}	etrq3
+etrq4 -- Literal phrase	\\\\\\\\\{#insert zENTER4\\\\\\\\\}	etrq4
+etrq5 -- Literal phrase	\\\\\\\\\{#insert zENTER5\\\\\\\\\}	etrq5</PRE>
+
+<P>Documentation on these specific phrases:<UL>
+	<LI><CODE>&quot;etr{#insert zzMnvSynPstMstrPhrsNm}&quot;</CODE>, <CODE>&quot;etr{#insert zzMnvSynPstSetToNumCallMstr}&quot;</CODE>, <CODE>&quot;etr{#insert zzMnvSynPstNumSetphrsCallMstr}&quot;</CODE>, <CODE>&quot;etr{#insert zzMnvSynPstSetphrsToPromptCallMstr}&quot;</CODE>, <CODE>&quot;etr{#insert zzMnvSynPstCmdInfoSyntax}&quot;</CODE>: <A HREF="#synsumpc">Syntax summary detail: <U><CODE>etr[f,[[h,t,r]]m]</CODE></U></A></LI>
+	<LI><CODE>&quot;zENTERN_M_vlndp&quot;</CODE>, <CODE>&quot;zENTERN_M_vlndq&quot;</CODE>: At the bottom of the <A HREF="#intromasterphrase">master-phrase introduction</A>.</LI>
+	<LI><CODE>&quot;etrp&quot;</CODE>, <CODE>&quot;etrp1..5&quot;</CODE>, <CODE>&quot;etrq&quot;</CODE>, <CODE>&quot;etrq1..5&quot;</CODE>: <A HREF="#intropc">phrase-creator introduction</A></LI>
+	<LI><CODE>&quot;zzMnvCmdEtrSetSntpMsg&quot;</CODE>: <I>Internal use only.</I></LI>
+</UL></P>
+
+<P>In addition to the above, when the individual feature is active, this also creates...</P>
+
+<H4><U>Action phrases</U> (when <A HREF="#acton">actions are <CODE>&quot;on&quot;</CODE></A>)</H4>
+
+<PRE STYLE="background-color:#E1E1E1;">etr -- Phrase: zENTER	\\\{#insert zENTER\\\}	etr
+etr1 -- Phrase: zENTER1	\\\{#insert zENTER1\\\}	etr1
+etr2 -- Phrase	\\\{#insert zENTER2\\\}	etr2
+etr3 -- Phrase	\\\{#insert zENTER3\\\}	etr3
+etr4 -- Phrase	\\\{#insert zENTER4\\\}	etr4
+etr5 -- Phrase	\\\{#insert zENTER5\\\}	etr5</PRE>
+
+
+<H4><U><CODE>&quot;command&quot;</CODE>-style literal commands</U> (when the <A HREF="#ltry">literal phrase-creator style</A> is <CODE>&quot;command&quot;</CODE>)</H4>
+<PRE STYLE="background-color:#E1E1E1;">zENTER1p -- Phrase: zENTER1	\\\\\\{#insert zENTER1\\\\\\}	zENTER1p
+zENTER2p -- Phrase	\\\\\\{#insert zENTER2\\\\\\}	zENTER2p
+zENTER3p -- Phrase	\\\\\\{#insert zENTER3\\\\\\}	zENTER3p
+zENTER4p -- Phrase	\\\\\\{#insert zENTER4\\\\\\}	zENTER4p
+zENTER5p -- Phrase	\\\\\\{#insert zENTER5\\\\\\}	zENTER5p</PRE>
+
+<H4><U>The specific phrases generated by <CODE>&quot;mnvoag&quot;</CODE></U></H4>
+
+<P><B><CODE>&quot;mnvoag&quot;</CODE>:</B> Generates all the other phrases <I>not</I> generated by <CODE>&quot;mnvapc&quot;</CODE> (see below) (when applicable--all these assume an action name of <CODE>&quot;etr&quot;</CODE>):<UL>
+	<LI>The <A HREF="#nnlcxy">external no-num-alias command</A></LI>
+	<LI>The <A HREF="#sntpaon">set-number-to-prompt action</A></LI>
+	<LI>The <A HREF="#nnlon">no-number-alias action</A></LI>
+	<LI>The literal and doubly-literal master-phrases (see the bottom of the <A HREF="#intromasterphrase">master-phrase introduction</A>)</LI>
+	<LI>The <A HREF="#synsumpc">special phrase-creators</A>: <CODE>&quot;etr{#insert zzMnvSynPstMstrPhrsNm}&quot;</CODE>, <CODE>&quot;etr{#insert zzMnvSynPstSetToNumCallMstr}&quot;</CODE>, <CODE>&quot;etr{#insert zzMnvSynPstNumSetphrsCallMstr}&quot;</CODE>, <CODE>&quot;etr{#insert zzMnvSynPstSetphrsToPromptCallMstr}&quot;</CODE>, <CODE>&quot;etr{#insert zzMnvSynPstCmdInfoSyntax}&quot;</CODE></LI>
+	<LI><A HREF="#ltry"><CODE>&quot;command&quot;</CODE>-style</A> literal commands</LI>
+	<LI>The internal-only utility: <CODE>&quot;zzMnvCmdEtrSetSntpMsg&quot;</CODE></LI>
+</UL></P>
+
+<A NAME="mnvvag"/>
+<H3><U><B><CODE>&quot;mnvcag&quot;</CODE>:</B> Generate all MINV-Variable phrases from existing configuration</U> &nbsp; <CODE>[<A HREF="#mainfuncs">back</A>]</CODE></H3>
+
+<P><B>Sub-functions:</B><UL>
+	<LI><B><CODE>&quot;mnvvas&quot;</CODE>:</B> Prints All Set-to-number (<CODE>&quot;_st#&quot;</CODE>) actions and phrase-creators.</LI>
+	<LI><B><CODE>&quot;mnvvsa&quot;</CODE>:</B> Prints all Set-to-number (<CODE>&quot;_st#&quot;</CODE>) Actions</LI>
+	<LI><B><CODE>&quot;mnvvsp&quot;</CODE>:</B> Prints all set-to-number (<CODE>&quot;_st#&quot;</CODE>) Phrase-creators</LI>
+	<LI><B><CODE>&quot;mnvvug&quot;</CODE>:</B> Prints all other (mostly internal-only) Utility phrases.</LI>
+</UL></P>
+
+<P>Prints all phrases needed by the MINV-Variable (and therefore by all MINV-Command's that use it). Just call this in a new plain-text file, and <A HREF="..\zGLOBAL\zidx_xfile__import_steps.html">import it into PhraseExpress</A>. This output should not be altered in any way, at any time. When a MINV-Variable's configuration changes, then all existing phrases should be eliminated, and then fully-regenerated.</P>
+
+<P>To execute this process against multiple action-names, use <B><CODE>&quot;mnvvagll&quot;</CODE></B>. Call this in a text-document, with the cursor immediately before an action-name, with zero-or-more action-names on subsequent lines (no spaces). The <I>only</I> text on each line must be the (lowercase) action-name.</P>
+
+<P><I>Note that in actual output, all comment-lines are bookmarked, so they can be quickly deleted.</I></P>
+
+<PRE STYLE="background-color:#E1E1E1;">(*MINV-Variable: Utilities. NOTE -- Variable-range: min=1, max=10*)
+vlnd -- zvLINES_DOWN ALT KC (for diagnostics)	\\\{#insert zvLINES_DOWN\\\}	vlnd
+vlndp -- Phrase: zvLINES_DOWN	\\\\\\{#insert zvLINES_DOWN\\\\\\}	vlndp
+vlndf -- inFo on this MINV-Variable	\\\{#SETPHRASE -description zvVAR_ABRV_1C -content Vlnd -autotext zvVAR_ABRV_1C -folder ctvv_folder\\\}\\\{#insert zMnvVarInformation_M_vrv1\\\}	vlndf
+vlndr -- Phrase: zvLINES_DOWN_stPrompt	\\\\\\{#insert zvLINES_DOWN_stPrompt\\\\\\}	vlndr
+
+zvLINES_DOWN_stPrompt -- Does NOT use [SNTPromptActnMsg]	\\\{#SETPHRASE -description zvLINES_DOWN -content \\\{#INPUT -head Set zvLINES_DOWN to? -single\\\} -autotext zvLINES_DOWN -folder ctvv_folder\\\}	zvLINES_DOWN_stPrompt
+(*MINV-Variable: Internal only*)
+zzMnvVarVlndSetToNumWPrompt_M_sntpmsgp -- Phrase: zvLINES_DOWN_st[prompt]	\\\{#insert zzMnvVarVlndSetNumToPromptCIOutOfRng_M_sntpmsg}\\\{#insert zvLINES_DOWN_st\\\{#insert zvNUMBER\\\}\\\\\\}	zzMnvVarVlndSetToNumWPrompt_M_sntpmsgp
+zzMnvVarVlndSetphraseWPrompt_M_sntpmsgp -- Phrase: [SETPHRASE zvLINES_DOWN=[prompt]]	\\\{#insert zzMnvVarVlndSetNumToPromptCILTOne_M_sntpmsg}\\\{#SETPHRASE -description zvLINES_DOWN -content \\\{#insert zvNUMBER\\\} -autotext zvLINES_DOWN -folder ctvv_folder\\\\\\}	zzMnvVarVlndSetphraseWPrompt_M_sntpmsgp
+
+zzMnvVarVlndSetNumToPromptCIOutOfRng_M_sntpmsg	\\\{#insert zvVAR_PNMV_1C_stVlnd\\\}\\\{#insert zzMnvSetNumToPromptCIOutOfRng_M_sntpmsgVpn1\\\}	zzMnvVarVlndSetNumToPromptCIOutOfRng_M_sntpmsg
+zzMnvVarVlndSetphraseWPrompt_M_sntpmsg -- Action: [SETPHRASE zvLINES_DOWN=[prompt]]	\\\{#insert zzMnvVarVlndSetNumToPromptCILTOne_M_sntpmsg\\\}\\\{#SETPHRASE -description zvLINES_DOWN -content \\\{#insert zvNUMBER\\\} -autotext zvLINES_DOWN -folder ctvv_folder\\\}	zzMnvVarVlndSetphraseWPrompt_M_sntpmsg
+zzMnvVarVlndSetNumToPromptCILTOne_M_sntpmsg	\\\{#insert zvVAR_PNMV_1C_stVlnd\\\}\\\{#insert zzMnvSetNumToPromptCILTOne_M_sntpmsgVpn1\\\}	zzMnvVarVlndSetNumToPromptCILTOne_M_sntpmsg
+zvVAR_PNMV_1C_stVlnd	\\\{#SETPHRASE -description zvVAR_PNMV_1C -content Vlnd -autotext
+zvVAR_PNMV_1C -folder ctvv_folder\\\}	zvVAR_PNMV_1C_stVlnd
+(*MINV-Variable: Set-to-number actions*)
+zvLINES_DOWN_st1 -- Sets zvLINES_DOWN to 1	\\\{#SETPHRASE -description zvLINES_DOWN -content 1 -autotext zvLINES_DOWN -folder ctvv_folder\\\}	zvLINES_DOWN_st1
+zvLINES_DOWN_st2	\\\{#SETPHRASE -description zvLINES_DOWN -content 2 -autotext zvLINES_DOWN -folder ctvv_folder\\\}	zvLINES_DOWN_st2
+zvLINES_DOWN_st3	\\\{#SETPHRASE -description zvLINES_DOWN -content 3 -autotext zvLINES_DOWN -folder ctvv_folder\\\}	zvLINES_DOWN_st3
+zvLINES_DOWN_st4	\\\{#SETPHRASE -description zvLINES_DOWN -content 4 -autotext zvLINES_DOWN -
+folder ctvv_folder\\\}	zvLINES_DOWN_st4
+zvLINES_DOWN_st5	\\\{#SETPHRASE -description zvLINES_DOWN -content 5 -autotext zvLINES_DOWN -folder ctvv_folder\\\}	zvLINES_DOWN_st5
+zvLINES_DOWN_st6	\\\{#SETPHRASE -description zvLINES_DOWN -content 6 -autotext zvLINES_DOWN -folder ctvv_folder\\\}	zvLINES_DOWN_st6
+zvLINES_DOWN_st7	\\\{#SETPHRASE -description zvLINES_DOWN -content 7 -autotext zvLINES_DOWN -folder ctvv_folder\\\}	zvLINES_DOWN_st7
+zvLINES_DOWN_st8	\\\{#SETPHRASE -description zvLINES_DOWN -content 8 -autotext zvLINES_DOWN -folder ctvv_folder\\\}	zvLINES_DOWN_st8
+zvLINES_DOWN_st9	\\\{#SETPHRASE -description zvLINES_DOWN -content 9 -autotext zvLINES_DOWN -folder ctvv_folder\\\}	zvLINES_DOWN_st9
+
+zvLINES_DOWN_st10	\\\{#SETPHRASE -description zvLINES_DOWN -content 10 -autotext zvLINES_DOWN -folder ctvv_folder\\\}	zvLINES_DOWN_st10
+(*MINV-Variable: Set-to-number phrase-creators*)
+zvLINES_DOWN_st1p -- Phrase: zvLINES_DOWN_st1	\\\\\\{#insert zvLINES_DOWN_st1\\\\\\}	zvLINES_DOWN_st1p
+zvLINES_DOWN_st2p -- Phrase	\\\\\\{#insert zvLINES_DOWN_st2\\\\\\}	zvLINES_DOWN_st2p
+zvLINES_DOWN_st3p -- Phrase	\\\\\\{#insert zvLINES_DOWN_st3\\\\\\}	zvLINES_DOWN_st3p
+zvLINES_DOWN_st4p -- Phrase	\\\\\\{#insert zvLINES_DOWN_st4\\\\\\}	zvLINES_DOWN_st4p
+zvLINES_DOWN_st5p -- Phrase	\\\\\\{#insert zvLINES_DOWN_st5\\\\\\}	zvLINES_DOWN_st5p
+zvLINES_DOWN_st6p -- Phrase	\\\\\\{#insert zvLINES_DOWN_st6\\\\\\}	zvLINES_DOWN_st6p
+zvLINES_DOWN_st7p -- Phrase	\\\\\\{#insert zvLINES_DOWN_st7\\\\\\}	zvLINES_DOWN_st7p
+zvLINES_DOWN_st8p -- Phrase	\\\\\\{#insert zvLINES_DOWN_st8\\\\\\}	zvLINES_DOWN_st8p
+zvLINES_DOWN_st9p -- Phrase	\\\\\\{#insert zvLINES_DOWN_st9\\\\\\}	zvLINES_DOWN_st9p
+zvLINES_DOWN_st10p -- Phrase	\\\\\\{#insert zvLINES_DOWN_st10\\\\\\}	zvLINES_DOWN_st10p</PRE>
+
+
+
+<P>Documentation on these commands:<UL>
+	<LI><CODE>&quot;vlnd&quot;</CODE>, <CODE>&quot;vlndp&quot;</CODE>, <CODE>&quot;vlndf&quot;</CODE>: <A HREF="#synsumvar">Syntax summary detail: <U><CODE>vlnd[[p,f]]</CODE></U></A></LI>
+	<LI><CODE>&quot;vlndr&quot;</CODE>: Prints a literal phrase-call to <CODE>&quot;zvLINES_DOWN_stPrompt&quot;</CODE></LI>
+	<LI><CODE>&quot;zvLINES_DOWN_st[1..10]&quot;</CODE>: Used by <A HREF="#acton">actions</A> and <A HREF="#pcon">phrase-creators</A> (but only when <A HREF="#cmdon">commands are <I>off</I></A>), and by the <CODE>&quot;etr{#insert zzMnvSynPstSetToNumCallMstr}&quot;</CODE> and <CODE>&quot;etr{#insert zzMnvSynPstNumSetphrsCallMstr}&quot;</CODE> phrases, as described in <A HREF="#synsumpc">Syntax summary detail: <U><CODE>etr[f,[[h,t,r]]m]</CODE></U></A></LI>
+	<LI><CODE>&quot;zvLINES_DOWN_st[1..10]p&quot;</CODE>: Used by <A HREF="#pcon">literal phrase-creators</A> only (and only when <A HREF="#cmdon">commands are <I>off</I></A>)</LI>
+</UL></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+
+
+
+<A NAME="varcvuniverse"/>
+<H2>The universe of configuration-variables that make up a MINV-Variable &nbsp; &nbsp; <CODE>[<A HREF="#toc">top</A>]</CODE></H2>
+
+<P>There are exactly five cv-types that make up a MINV-Variable:<UL>
+	<LI><CODE>[<A HREF="#vpn1">go</A>] PNAbrv1C</CODE></LI>
+</UL></P>
+
+<A NAME="vpn1"/>
+<H3><U>MINV-Variable cv-type: <CODE>[PNAbrv1C]</CODE></U> &nbsp; <CODE>[<A HREF="#varcvuniverse">back</A>]</CODE></H3>
+
+
+<P><UL>
+	<LI><B>Example value:</B> <CODE>&quot;Vlnd&quot;</CODE></LI>
+	<LI><B>Requirements:</B> Must be alpha-numeric, at least one character in length, where the first character is uppercase, and all others are lowercase. Must be unique among all MINV-Variables.</LI>
+	<LI><B>Recommendation:</B> Should be no more than three-or-four characters in length. When this <A HREF="#vrv1">public-key</A> is short, this should be equal to it. When longer, this should be an abbreviated version of it.</LI>
+	<LI><B>Internal variable name:</B> <CODE>zvVAR_PNMV_1C</CODE></LI>
+</UL></P>
+
+
+<P>The MINV-Variable's private-key, which is only used in the <I>phrase-names</I> of this variable's configuration-variables (to distinguish the config-vars of one variable from another). The <A HREF="#vrv1">variable-abbreviation</A> is the <I>public key</I>. Once configured, this is never again used by you, and should never be altered.</P>
+
+<A NAME="vrv1"/>
+<H3><U>MINV-Variable cv-type: <CODE>[Abrv1C]</CODE></U> &nbsp; <CODE>[<A HREF="#varcvuniverse">back</A>]</CODE></H3>
+
+
+<P><UL>
+	<LI><B>Example value:</B> <CODE>&quot;Vlnd&quot;</CODE></LI>
+	<LI><B>Requirements:</B> Must be alpha-numeric, at least one character in length, where the first character is uppercase, and all others are lowercase. Must be unique among all MINV-Variables.</LI>
+	<LI><B>Recommendation:</B> Should be as short-as-possible, as long as it is easy to remember.</LI>
+	<LI><B>Internal variable name:</B> <CODE>zvVAR_ABRV_1C</CODE></LI>
+</UL></P>
+
+<P>This MINV-Variable's <B>Public Key</B>. This is the unique identifier for a MINV-Variable, as used by you and your users. Whenever a process is run for, or on, a specific MINV-Command, this public key is always the first piece of information needed.</P>
+
+<P>In most cases, only the lowercase version is needed. However, it is stored internally with the first character [<CODE>&quot;1C&quot;</CODE>] as uppercase.</P>
+
+<A NAME="vivn"/>
+<H3><U>MINV-Variable cv-type: <CODE>[IntrnlVarName]</CODE></U> &nbsp; <CODE>[<A HREF="#varcvuniverse">back</A>]</CODE></H3>
+
+
+<P><UL>
+	<LI><B>Example value:</B> <CODE>&quot;zvLINES_DOWN&quot;</CODE></LI>
+	<LI><B>Requirements:</B> Must be at least one character in length, and unique among all MINV-Variables.</LI>
+	<LI><B>Recommendation:</B> It is strongly recommended that this begin with <CODE>&quot;zv&quot;</CODE>--a naming-convention meaning <I>temporary variable</I>--and be followed by all-capital letters, divided by underscores. It should be reasonably descriptive, but terse.</LI>
+	<LI><B>Internal variable name:</B> <CODE>zvVAR_IVAR_NAME</CODE></LI>
+</UL></P>
+
+<P>The name of the <B>&quot;Temporary Internal Variable</B>&quot; for this MINV-Variable. This is the name of the phrase that will store the number (integer), as needed by the MINV-Command's <A HREF="#intromasterphrase">master-phrase</A>. While this is just a normal phrase like any other, it is considered a &quot;temporary internal variable&quot;, because it treaated as temporary, because it is <I>only used during a process</I> (such as a call to <CODE>&quot;etr3&quot;</CODE>, during which the temporary variable <CODE>&quot;zvLINES_DOWN&quot;</CODE> is set to <CODE>'3'</CODE>). Once the process is complete, this variable may be safely deleted or altered.</P>
+
+
+<A NAME="vgmin"/>
+<H3><U>MINV-Variable cv-type: <CODE>[RangeMin]</CODE> and <CODE>[RangeMax]</CODE></U> &nbsp; <CODE>[<A HREF="#varcvuniverse">back</A>]</CODE></H3>
+
+<P><UL>
+	<LI>Requirements: Must be an <I>integer</I> greater than zero, and min must be less-than-or-equal-to max. In addition, this range must fully contain (inclusively) <I>every</I> <A HREF="#cgmin">command-range</A>, of <I>every</I> MINV-Command that uses this variable. In other words, the variable's min must be less-than-or-equal-to every command's min, and the variable's max must be greater-than-or-equal-to every command's max.</LI>
+	<LI><B>Internal variable names:</B> <CODE>zvVAR_RANGE_MIN</CODE> and <CODE>zvVAR_RANGE_MAX</CODE></LI>
+</UL></P>
+
+<P>This is the MINV-Variable's <B>&quot;Variable Range</B>&quot;, which defines which set-to-number (&quot;_st#&quot;) phrases are printed. For example, a minimum of 1 and maximum of 10 results in these set-to-number phrases being created by <CODE>'<A HREF="#mnvvag">mnvvag</A>'</CODE>: <CODE>zvLINES_DOWN_st[1..10]</CODE></P>
+
+<P><I>Also see the <A HREF="#cmdcvuniverse">universe of MINV-Command configuration-variables</A></I></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+
+
+<A NAME="howiorg"/>
+<H2>MINV-Commands: Technical documentation: How I organize my MINV-Command files &nbsp; <CODE>[<A HREF="#toc">top</A>]</CODE></H2>
+
+<P>I currently have more than 100 MINV-Commands. This is how I organize my files.</P>
+
+<H3>Files on disk (outside of the PhraseExpress application)</H3>
+
+<H4><U>Commands and configuration</U></H4>
+
+<P>This describes where all files that I <I>manually create</I> are stored: the MINV-Commands themselves (the master-phrase and all numbered commands), and their configuration.</P>
+
+<P>My PhraseExpress macros (their plain-text import files) are split into broad categories. Here is a subset:<UL>
+	<LI><CODE>R:\jeffy\programming\sandbox\macros\</CODE><UL>
+		<LI><CODE>xbn_phrasexpress\</CODE><UL>
+			<LI><CODE>char_word_line_para_doc_file\</CODE> &nbsp; <I>(phrases to move/cut/copy/etc by character or by word...)</I>
+			<LI><CODE>java\</CODE> &nbsp; <I>(phrases for generating java-code)</I></LI>
+		</UL></LI>
+	</UL></LI>
+</UL></P>
+
+<P>Within each of these directories, there is a <CODE>&quot;minv&quot;</CODE> folder. This is the folder where all MINV-Command and MINV-Variable configuration is placed. Multiple configurations exist in a single file (as long as there's no more than around sixty lines/phrases), but command-configuration is never in the same file as variable-configuration. For example,
+<BR> &nbsp; &nbsp; <CODE>...\xbn_phrasexpress\char_word_line_para_doc_file\<B>mnv_cfg_cmd__line</B>.px.txt</CODE>
+<BR>contains the configuration for the <CODE>&quot;etr#&quot;</CODE>, among other line-based MINV-Commands, and
+<BR> &nbsp; &nbsp; <CODE>...\xbn_phrasexpress\char_word_line_para_doc_file\<B>mnv_cfg_var__cwlpdf</B>.px.txt</CODE>
+<BR>contains the configuration for <I>all</I> MINV-Variables used throughout <CODE>&quot;char_word_line_para_doc_file&quot;</CODE>.</P>
+
+<P>Outside of the <CODE>&quot;minv&quot;</CODE> folder are the main master-phrase-and-numbered-commands files. <BR> &nbsp; &nbsp; <CODE>...\xbn_phrasexpress\char_word_line_para_doc_file\enter.px.txt</CODE>
+<BR>contains the phrases
+<BR> &nbsp; &nbsp; <CODE>zENTERN_M_vlnd</CODE>
+<BR>and
+<BR> &nbsp; &nbsp; <CODE>zENTER1</CODE>, <CODE>zENTER2</CODE>, <CODE>zENTER3</CODE>, <CODE>zENTER4</CODE>, <CODE>zENTER5</CODE></P>
+
+<H4><U>Automatically-generated files</U></H4>
+
+<P>Files that are exclusively generated by a process (files that I do not edit, even in the slightest) are kept in a completely separate directory structure--one that mirrors <CODE>xbn_phrase_express\</CODE>:<UL>
+	<LI><CODE>R:\jeffy\programming\sandbox\macros\</CODE><UL>
+		<LI><CODE>auto_generated\</CODE><UL>
+			<LI><CODE>char_word_line_para_doc_file\</CODE></LI>
+			<LI><CODE>java\</CODE></LI>
+		</UL></LI>
+	</UL></LI>
+</UL></P>
+
+
+<P>In each of these folders as well, is a <CODE>&quot;minv&quot;</CODE> directory, that contains all the output from the <CODE>'<A HREF="#mnvcag">mnvcag</A>'</CODE> and <CODE>'<A HREF="#mnvvag">mnvvag</A>'</CODE> processes. MINV-Variable output (<CODE>&quot;mnvvag&quot;</CODE>) is always in different files than MINV-Command output. However, as long as the file is not too large, multiple MINV-Variable outputs are often placed in the same file. For example:
+<BR> &nbsp; &nbsp; <CODE>auto_generated\char_word_line_para_doc_file\<B>mnv_ag_cmd__enter.px.txt</B></CODE>
+<BR>contains all <CODE>&quot;mnvcag&quot;</CODE> output for the <CODE>&quot;etr#&quot;</CODE> MINV-Command, and
+<BR> &nbsp; &nbsp; <CODE>auto_generated\char_word_line_para_doc_file\<B>mnv_ag_var__chars_left.px.txt</B></CODE>
+<BR>contains all the <CODE>&quot;mnvvag&quot;</CODE> output for <CODE>zvCHARS_LEFT</CODE>.</P>
+
+<H3>Folders inside the PhraseExpress application</H3>
+
+<P>The directory structure in the PhraseExpres app is conceptually the same as on disk:<UL>
+	<LI><CODE>XBN-PhraseExpress/</CODE><UL>
+		<LI><CODE>Char, word, line, paragraph, doc, file/</CODE></LI>
+		<LI><CODE>Java/</CODE></LI>
+	</UL></LI>
+</UL></P>
+
+<P>However, in each of these directories is a folder named
+<BR> &nbsp; &nbsp; <CODE>zMINV -- cfg & auto-gen</CODE>
+<BR>which itself contains these two directories:<UL>
+	<LI><CODE>MINV: Configuration</CODE></LI>
+	<LI><CODE>MINV: Auto-generated</CODE></LI>
+</UL></P>
+
+<P>All &quot;main&quot; files (containing master-phrases and numbered commands) exist outside of thes &quot;MINV&quot; directories--directly in the &quot;topic&quot; folder. For example
+<BR> &nbsp; &nbsp; <CODE>XBN-PhraseExpress/Char, word, line, paragraph, doc, file/<B>enter.px</B></CODE></P>
+
+<P>The <CODE>MINV: Configuration</CODE> directory contains all
+<BR> &nbsp; &nbsp; <CODE>mnv_cfg_*</CODE> files, such as<UL>
+	<LI><CODE>XBN-PhraseExpress/zMINV -- cfg & auto-gen/MINV: Configuration/<B>mnv_cfg_cmd__line</B>.px</CODE></LI>
+	<LI><CODE>XBN-PhraseExpress/zMINV -- cfg & auto-gen/MINV: Configuration/<B>mnv_cfg_var__cwlpdf</B>.px</CODE></LI>
+</UL></P>
+
+<P>The <CODE>MINV: Auto-generated</CODE> directory contains all
+<BR> &nbsp; &nbsp; <CODE>mnv_ag_*</CODE> files, such as<UL>
+	<LI><CODE>XBN-PhraseExpress/zMINV -- cfg & auto-gen/MINV: Auto-generated/<B>mnv_ag_var__chars_left</B>.px</CODE></LI>
+	<LI><CODE>XBN-PhraseExpress/zMINV -- cfg & auto-gen/MINV: Auto-generated/<B>mnv_ag_var__chars_left</B>.px</CODE></LI>
+</UL></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+
+
+<a name="mpsyntaxindepth"/>
+<H3>MINV-Commands: Technical documentation: Syntax for a MINV-Command Master-Phrase's description &nbsp; <CODE>[<A HREF="#toc">top</A>]</CODE></H3>
+
+<P>This section assumes the following example command:<UL>
+	<LI><B>Action name:</B> <CODE>etr</CODE></LI>
+   <LI><B>MINV-Variable abbreviation:</B> <CODE>vlnd</CODE></LI>
+   <LI><B>MINV-Variable's internal-variable name</B> <CODE>zvLINES_DOWN</CODE></LI>
+</UL></P>
+
+<P>If actions and the set-number-to-prompt action are both <CODE>&quot;on&quot;</CODE>:
+<BR> &nbsp; &nbsp; <CODE>etr&lt;...&gt;#, etr[{#insert zzMnvSynPstSetNumToPrompt},{#insert zzMnvSynPstCmdInfoSyntax},[[{#insert zzMnvSynPstNumSetphrsPreCallMstr},{#insert zzMnvSynPstSetToNumPreCallMstr},{#insert zzMnvSynPstSetphrsToPrompt}]]{#insert zzMnvSynPstMstrPhrsNm}], vlnd[[{#insert zzMnvSynPstMainPhrsCrtr},{#insert zzMnvSynPstVarInfoSyntax}]]</CODE>
+<BR>Otherwise:
+<BR> &nbsp; &nbsp; <CODE>etr&lt;...&gt;#, etr[{#insert zzMnvSynPstCmdInfoSyntax},[[{#insert zzMnvSynPstNumSetphrsPreCallMstr},{#insert zzMnvSynPstSetToNumPreCallMstr}]]{#insert zzMnvSynPstMstrPhrsNm}], vlnd[[{#insert zzMnvSynPstMainPhrsCrtr},{#insert zzMnvSynPstVarInfoSyntax}]]</CODE></P>
+
+<P>The contents of <CODE>&quot;&lt;...&gt;&quot;</CODE> is detailed in the following table.</P>
+
+<P><B>Key:</B><UL>
+	<LI><B><CODE>ACT</CODE></B>=<A HREF="#acton">Actions <CODE>&quot;on&quot;</CODE></A> or <I>off</I>?  (<CODE>zvACTIONS_ON</CODE>)</LI>
+	<LI><B><CODE>sntpa</CODE></B>=<A HREF="#sntpaon">Set-Number-To-Prompt action</A> <CODE>&quot;on&quot;</CODE> or <I>off</I>? (<CODE>zvSNTP_ACTN_ON</CODE>)</LI>
+	<LI><B><CODE>PC</CODE></B>=<A HREF="#pcon">Phrase-Creators <CODE>&quot;on&quot;</CODE></A> or <I>off</I>?  (<CODE>zvPHRS_CRTRS_ON</CODE>)</LI>
+	<LI><B><CODE>p/es</CODE></B>=<A HREF="#pcafp">Phrase-creator postfix</A> <CODE>&quot;{#insert zzMnvSynPstMainPhrsCrtr}&quot;</CODE> or <CODE>''</CODE> (empty-string)? (<CODE>zvPCAF_PST_PORES</CODE>)</LI>
+	<LI><B><CODE>ltry</CODE></B>=<A HREF="#ltry">Literal phrase-creator style</A> <I>off</I> or <I>on</I>? (<CODE>zvLTRL_STYL_ESYC</CODE>) <I>(note that <I>on</I> simply means <B>not</B> <I>off</I>--in other words: <CODE>&quot;curly&quot;</CODE> or <CODE>&quot;command&quot;</CODE>)</I></LI>
+</UL></P>
+
+<P><B>Notes:</B><UL>
+	<LI><B><CODE>sntpa</CODE></B> is not applicable when actions (<CODE>act</CODE>) are <I>off</I></LI>
+	<LI><B><CODE>ltry</CODE></B> is not applicable when phrase-creators are <I>off</I></LI>
+	<LI><B><CODE>p/es</CODE></B> is not applicable unless phrase-creators are <CODE>&quot;on&quot;</CODE> and actions are <I>off</I></LI>
+</UL></P>
+
+<PRE STYLE="background-color:#E1E1E1;">ACT  sntpa      PC   p/es  ltry            SYNTAX
+-------------------------------            ------
+on    on        on         off             [[n,{#insert zzMnvSynPstMainPhrsCrtr}]]
+on    on        on         on              [[n,{#insert zzMnvSynPstMainPhrsCrtr},{#insert zzMnvSynPstLtrlPhrsCrtr}]]
+on    on        off                        [n]
+on    off       on         off             [{#insert zzMnvSynPstMainPhrsCrtr}]
+on    off       on         on              [[{#insert zzMnvSynPstMainPhrsCrtr},{#insert zzMnvSynPstLtrlPhrsCrtr}]]
+on    off       off                        ''
+off             on    {#insert zzMnvSynPstMainPhrsCrtr}    off             {#insert zzMnvSynPstMainPhrsCrtr}
+off             on    {#insert zzMnvSynPstMainPhrsCrtr}    on              [{#insert zzMnvSynPstMainPhrsCrtr},{#insert zzMnvSynPstLtrlPhrsCrtr}]
+off             on    ''   off             *
+off             on    ''   on              [*,{#insert zzMnvSynPstMainPhrsCrtr}]
+off             off                        n/a (post-actm-syntax phrases never called)</PRE>
+
+<P>(The asterisk, <CODE>'*'</CODE>, indicates that the phrase-creator has <I>no postfix</I>--its name is entirely equal to the <A HREF="#actm1">action-name</A>. Since this is only possible when actions are <I>off</I>, this is not a conflict. This point is reiterated in the <A HREF="#intromasterphrase">master-phrase</A>'s body comment.)</P>
+
+<P>These are all the possible commands, some of which are not available, depending on the above syntax (note that a number between <CODE>[<A HREF="#cgmin">CmdRangeMin</A>]</CODE> and <CODE>[CmdRangeMax]</CODE> can be appended where '#' is printed below--and when <CODE>[<A HREF="#nnlon">NoNumAlias_onff</A>]</CODE> is <CODE>&quot;on&quot;</CODE>, then <I>no number</I> (the empty-string--<CODE>''</CODE>--<I>nothing</I>) is also legal in its place):<UL>
+	<LI><B><U><CODE>etr#</CODE></U>:</B> Executes the command <CODE>zENTER#</CODE> (unless actions are <I>off</I> and the pc-postfix is <CODE>''</CODE>, in which case this is instead the phrase-creator)</LI>
+	<LI><B><U><CODE>etr{#insert zzMnvSynPstMainPhrsCrtr}#</CODE></U>:</B> Prints a <I>call</I> to the command, when phrase-creators are <CODE>&quot;on&quot;</CODE>, and <CODE>&quot;{#insert zzMnvSynPstMainPhrsCrtr}&quot;</CODE> is the phrase-creator postfix. When <A HREF="#cmdon">commands are <I>off</I></A>, this is instead equivalent to <CODE>&quot;etr{#insert zzMnvSynPstSetToNumCallMstr}&quot;</CODE></LI>
+	<LI><B><U><CODE>etr{#insert zzMnvSynPstSetNumToPrompt}</CODE></U>:</B> Run the set-number-to-prompt action</LI>
+	<LI><B><U><CODE>etr{#insert zzMnvSynPstCmdInfoSyntax}</CODE></U>:</B> Prints diagnostic information for the MINV-Command</LI>
+	<LI><B><U><CODE><A HREF="#synsumpc">etr{#insert zzMnvSynPstNumSetphrsCallMstr}</A></CODE></U>:</B> Prints a literal <CODE>SETPHRASE</CODE> for the MINV-Variable (you are prompted for the number), and then a literal-call to the master-phrase</LI>
+	<LI><B><U><CODE>etr{#insert zzMnvSynPstSetToNumCallMstr}</CODE></U>:</B> Prints a literal-call to <CODE>zvLINES_DOWN_st#</CODE> (you are prompted for the number), and then to the master-phrase</LI>
+	<LI><B><U><CODE>etr{#insert zzMnvSynPstSetphrsToPromptCallMstr}</CODE></U>:</B> Prints a literal-call to <CODE>zvLINES_DOWN_stPrompt</CODE>, and then to the master-phrase</LI>
+	<LI><B><U><CODE>etr{#insert zzMnvSynPstMstrPhrsNm}</CODE></U>:</B> Prints a literal phrase-call to the master-phrase</LI>
+	<LI><B><U><CODE>vlnd</CODE></U>:</B> Prints the <I>value</I> of the MINV-Variable (for diagnostics)</LI>
+	<LI><B><U><CODE>vlnd{#insert zzMnvSynPstMainPhrsCrtr}</CODE></U>:</B> Prints a literal phrase-call to the MINV-Variable: <CODE>\\\{#insert zvLINES_DOWN\\\}</CODE></LI>
+	<LI><B><U><CODE>vlnd{#insert zzMnvSynPstVarInfoSyntax}</CODE></U>:</B> Prints diagnostic information for the MINV-Variable <CODE>zvLINES_DOWN</CODE></P></LI>
+</UL></P>
+
+<PRE>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</PRE>
+</BODY></HTML>
+
+
+
+

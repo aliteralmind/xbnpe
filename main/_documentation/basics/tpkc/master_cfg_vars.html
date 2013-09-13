@@ -1,0 +1,178 @@
+<HTML><HEAD>
+	<TITLE>TPKC: Master-cfg-vars</TITLE>
+	<meta name="viewport" content="width=device-width" />
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF"><a name="top"></a>
+
+
+<P>[<A HREF="index.html">BACK</A>]</CODE></P>
+
+<HR/>
+
+<H1>TPKC: Master configuration variables</H1>
+
+<P>These critical settings customize the behavior of the TextPad built-in command (TPKC) project. They are collectively called the TPKC &quot;Master Configuration Variables&quot;, or tpkc-master-cfg-vars.</P>
+
+<P><B>Contents:</B><UL>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#zForceTestKeyCmd">GO</A></B></FONT>]</CODE> &nbsp; <CODE>zForceTestKeyCmd[Esc]</CODE></LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#zTpkcAllCategoryAbrvLCsQbl_FORTESTMODE">GO</A></B></FONT>]</CODE> &nbsp; <CODE>zTpkcAllCategoryAbrvLCsQbl_FORTESTMODE</CODE></LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#zTpkcBuildModeTestOrLive">GO</A></B></FONT>]</CODE> &nbsp; <CODE>zTpkcBuildModeTestOrLive</CODE></LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#zTpkcMaxNbsKCsPerCmd">GO</A></B></FONT>]</CODE> &nbsp; <CODE>zTpkcMaxNbsKCsPerCmd</CODE></LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#zTpkcMillsBtwMultiKeyKCs">GO</A></B></FONT>]</CODE> &nbsp; <CODE>zTpkcMillsBtwMultiKeyKCs</CODE></LI>
+</UL></P>
+
+<P>Note that TPKC <A HREF="config_vars.html">command-configuration-variables</A> are documented elsewhere.</P>
+
+<H3>Locations</H3>
+
+<P><UL>
+	<LI><U>On disk</U> <I>(the <A HREF="../phrase_file.html#fformat">phrase-file</A>)</I>
+<BR> &nbsp; &nbsp; <CODE>{#insert <A HREF="../../global_config.html#zROOT_DIR_XBNPE_MAIN">zROOT_DIR_XBNPE_MAIN</A>}\textpad_tpkc\master_and_dir_config\<A HREF="../../../textpad__tpkc/master_and_dir_config/tpkc__master_configuration.px.txt">tpkc__master_configuration.px.txt</A></CODE></LI>
+<LI><U>PhraseExpress</U> (where to <A HREF="../phrase_file_import1.html">import</A> the phrase-file)
+<PRE>    XBNPE: Parent folder
+<I>(<A HREF="index.html#inpex">go</A>)</I>   XBNPE-TPKC: TextPad built-in commands &gt;
+          All other TPKC phrases &gt;
+             Configuration [non user-spcfc]</PRE></LI>
+</UL></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="zForceTestKeyCmd"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TPKC master-cfg-var: <CODE>zForceTestKeyCmd</CODE></H2>
+
+<P>The key-command used to &quot;<A HREF="user_menu.html#tpkcumac1ctestforce">force</A>&quot; a TPKC <A HREF="user_menu.html#tpkcumuptest1">nbs-command test</A>. Not unlike <A HREF="../tpbs.html">TextPad-bootstraps</A>, this also has a required corresponding &quot;escaped&quot; version:
+<BR> &nbsp; &nbsp; <CODE>zForceTestKeyCmdEsc</CODE></P>
+
+<P>For example, if <CODE>zForceTestKeyCmd</CODE> is equal to
+<BR> &nbsp; &nbsp; <CODE>{#insert zASpOO}</CODE>
+<BR>then <CODE>zForceTestKeyCmdEsc</CODE> must be equal to
+<BR> &nbsp; &nbsp; <CODE>\\\{#insert zASpOO\\\}</CODE></P>
+
+<H3>Requirements</H3>
+
+<P><UL>
+	<LI><I>This specific key-command (sequence of key-presses, independent of sleep) may not be used by any command, <B>as configured in the TPKC-project</B>.</I> Specifically, it may not be equal to the tp-bootstrap command, nor any of it nbs-kcs.</LI>
+	<LI>It is strongly-recommended that each key-press be an <A HREF="../xkp.html">x-key-press</A>.</LI>
+	<LI>When this key-command has multiple key-presses. Each key-press should be separated by <CODE><A HREF="#zTpkcMillsBtwMultiKeyKCs">zTpkcMillsBtwMultiKeyKCs</A></CODE> milliseconds of sleep.</LI>
+	<LI>It is not necessarily required to have sleep at they very end of this phrase, since it is always called in isolation (a message-box is popped up after each TPKC-nbs-test).</LI>
+</UL></P>
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="zTpkcAllCategoryAbrvLCsQbl_FORTESTMODE"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TPKC master-cfg-var: <CODE>zTpkcAllCategoryAbrvLCsQbl_FORTESTMODE</CODE></H2>
+
+<P><B>Requirements:</B> Must be an exact subset of <CODE><A HREF="config_vars.html#zTpkcAllCategoryAbrvLCsQbl">zTpkcAllCategoryAbrvLCsQbl</A></CODE></P>
+
+<P>The <A HREF="../../tasks/qbl.html">sQuare-Bracketed-List</A> defining the universe of TextPad command categories, used only when building the TPKC-project in &quot;<A HREF="build_proc_tech_info.html#livevtest">test mode</A>&quot;. Specifically, when <CODE><A HREF="#zTpkcBuildModeTestOrLive">zTpkcBuildModeTestOrLive</A></CODE> is <CODE>&quot;live&quot;</CODE>, then the universe of TextPad categories is defined instead by
+<BR> &nbsp; &nbsp; <CODE>zTpkcAllCategoryAbrvLCsQbl</CODE>
+<BR>When <CODE>zTpkcBuildModeTestOrLive</CODE> is <CODE>&quot;test&quot;</CODE>, the universe is defined by this master-cfg-var:
+<BR> &nbsp; &nbsp; <CODE>zTpkcAllCategoryAbrvLCsQbl_FORTESTMODE</CODE></P>
+
+<P>As of TextPad version <CODE>7.0.9</CODE>, the value of
+<BR> &nbsp; &nbsp; <CODE>zTpkcAllCategoryAbrvLCsQbl</CODE>
+<BR>is
+<BR> &nbsp; &nbsp; <CODE>[file][edit][search][view][tools][macros][config][window][help][cursor][sel][cliplib][chars]</CODE></P>
+
+<P><CODE>zTpkcAllCategoryAbrvLCsQbl_FORTESTMODE</CODE> must be an <I>exact subset</I> of <CODE>zTpkcAllCategoryAbrvLCsQbl</CODE>. For example:
+<BR> &nbsp; &nbsp; <CODE>[file][config][help]</CODE></P>
+
+<P>The purpose of this test-set of categories is for testing and demonstrating the TPKC-build process.</P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="zTpkcBuildModeTestOrLive"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TPKC master-cfg-var: <CODE>zTpkcBuildModeTestOrLive</CODE></H2>
+
+<P><B>Requirements:</B> Must be equal to <CODE>&quot;live&quot;</CODE> or <CODE>&quot;test&quot;</CODE></P>
+
+<P>Determines whether the current TPKC-build is in <A HREF="build_proc_tech_info.html#livevtest">&quot;live&quot; or &quot;test&quot; mode</A>. When equal to <CODE>&quot;live&quot;</CODE>, the universe of TextPad command categories is defined by
+<BR> &nbsp; &nbsp; <CODE>zTpkcAllCategoryAbrvLCsQbl</CODE>
+<BR>When <CODE>&quot;test&quot;</CODE>, the universe is instead defined by the TPKC master-configuration-variable
+<BR> &nbsp; &nbsp; <CODE><A HREF="#zTpkcAllCategoryAbrvLCsQbl_FORTESTMODE">zTpkcAllCategoryAbrvLCsQbl_FORTESTMODE</A></CODE></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="zTpkcMaxNbsKCsPerCmd"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TPKC master-cfg-var: <CODE>zTpkcMaxNbsKCsPerCmd</CODE></H2>
+
+<P><B>Requirements:</B> Must be an integer greater than zero.</P>
+
+<P>The maximum number of key-commands that any one built-in TextPad command may have, <I>after all <A HREF="../tpbs.html#terminology">bootstrap key-commands</A> have been deleted.</I> This is validated by the TPKC-build-process (<A HREF="sub_build_proc2.html#10">sub-build-proc-10</A>), which specifically analyzes your TextPad <A HREF="tpacl.html">all-command-list</A>. (Note that a larger number will make the TPKC-build process slower. The default is <CODE>5</CODE>.)</P>
+
+<P><B>Convenience utility</B> <I>(<CODE><A HREF="../../devpex/xbnpe_ddmenus.html#xh">xh</A>tk</CODE>)</I>: To <I>sort of</I> validate the number of nbs-kcs in your tp-all-cmd-list, open the file, and within it, execute
+<BR> &nbsp; &nbsp; <CODE>tpaclwarnkccount</CODE>
+<BR>Since your tp-all-cmd-list contains bootstrap-kcs, it not possible to truly validate this. If this utility gives you a &quot;SUCCESS&quot; message, then you can be assured that it is indeed good. However, it is possible for this utility to give you a &quot;false negative&quot;, because its counting includes your bootstrap-kcs, and it shouldn't (it can't know).</P>
+
+<P>The nbs-kc count validation at the end of sub-build-proc-10 is accurate.</P>
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="zTpkcMillsBtwMultiKeyKCs"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TPKC master-cfg-var: <CODE>zTpkcMillsBtwMultiKeyKCs</CODE></H2>
+
+<P><UL>
+	<LI><B>Requirement:</B> Must be an integer greater than zero (a number valid for <CODE>{#sleep ...}</CODE>)</LI>
+	<LI><B>See:</B> The global-config-variable <A HREF="config_vars.html#DfltPostKcSlpMils"><CODE>zTpkc[abrv]DfltPostKcSlpMils</CODE></A></LI>
+</UL></P>
+
+
+
+<P>The number of milliseconds to sleep between multi-key key commands. For example, if your TextPad <A HREF="tpacl.html">all-command-list</A> has this command-line:
+<BR> &nbsp; &nbsp; <CODE>FileCloseAll &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;Ctrl+F12, Ctrl+F9</CODE>
+<BR>and <CODE>zTpkcMillsBtwMultiKeyKCs</CODE> is equal to <CODE>25</CODE>, then the TPKC-build-process translates it into this <A HREF="../tpbs.html#terminology">nbs-phrase</A>:</P>
+
+<PRE STYLE="background-color:#E1E1E1;">zTPFileCloseAll
+   {#insert zCpF12}{#sleep 25}{#insert zCpF9}</PRE>
+
+<P>You are free to change this millisecond-value once the nbs-phrase is created. This is also the recommended value for between key-presses in the <A HREF="../tpbs2.html#mainp">main</A> and <A HREF="../tpbs2.html#escp">escaped phrases</A> in your <A HREF="../tpbs.html">TextPad-bootstraps</A> .</P>
+
+<P><I>(The phrase-name for the command <CODE>FileCloseAll</CODE> is configured to be <CODE>zTPFileCloseAll</CODE>.)</P>
+
+
+
+<PRE>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</PRE>
+</BODY></HTML>
+
+
+

@@ -81,14 +81,14 @@ EditCopyAsHTML
 EditCopyFileName
 EditCopyLine
 EditCopyLineAppend
-EditCopyTaggedLines     Ctrl+Shift+Alt+E
+EditCopyTaggedLines     Ctrl+Shift+Alt+.
 EditCopyWord
 EditCopyWordAppend
-EditCut                 Ctrl+X                  Shift+Delete
+EditCut                 Shift+Delete            Ctrl+X
 EditCutAppend           Ctrl+Shift+X
 EditCutLine
 EditCutLineAppend
-EditCutTaggedLines      Ctrl+Shift+Alt+W
+EditCutTaggedLines      Ctrl+Shift+Alt+,
 EditCutWord
 EditCutWordAppend
 EditDelete              Delete
@@ -99,7 +99,7 @@ EditDelTaggedLines
 EditDelWord
 EditDelWordLeft         Ctrl+Backspace
 EditDelWordRight        Ctrl+Delete
-EditDupLine             Ctrl+Shift+Alt+V
+EditDupLine             Ctrl+Shift+Alt+K
 EditFillBlock
 EditIMEreconvert
 EditIndentLess          Ctrl+Shift+,
@@ -112,14 +112,14 @@ EditJoinLines           Ctrl+J
 EditLongDate
 EditLowerCase           Ctrl+L
 EditMarkClean
-EditNewLineAfter
-EditNewLineBefore
+EditNewLineAfter        Ctrl+Enter
+EditNewLineBefore       Ctrl+Shift+Enter
 EditPageBreak           Ctrl+Shift+L
 EditPaste               Ctrl+V                  Shift+Insert
 EditPasteBlock
 EditPasteHTML
 EditPasteLines
-EditPopupContext        Shift+F10
+EditPopupContext        Apps                    Shift+F10
 EditPopupDateTime       Ctrl+F10
 EditRedo                Ctrl+Y
 EditRedoAll             Ctrl+Shift+Y
@@ -134,7 +134,7 @@ EditUndo                Alt+Backspace           Ctrl+Z
 EditUndoAll             Ctrl+Shift+Z
 EditUpperCase           Ctrl+U
 EmptyClipboard
-FileClose               Ctrl+W
+FileClose               Alt+W
 FileCloseAll
 FileExit
 FileGoTo                Ctrl+Shift+G
@@ -160,7 +160,7 @@ GoToBlockStart
 GoToColumn
 GoToLine
 GoToPage
-Help
+Help                    F1
 HelpFAQ
 HelpOrdering
 HelpSupport
@@ -196,8 +196,8 @@ MacroRecord             Ctrl+Shift+R
 MacroSave
 MatchBracket            Ctrl+M
 MatchBracketExtend      Ctrl+Shift+M
-MatchCaseClear          Ctrl+Shift+Alt+F, M
-MatchCaseSet            Shift+Alt+F, M
+MatchCaseClear          Ctrl+Shift+Alt+F, C
+MatchCaseSet            Shift+Alt+F, C
 MatchWordClear          Ctrl+Shift+Alt+F, W
 MatchWordSet            Shift+Alt+F, W
 Ñ
@@ -299,7 +299,7 @@ ToolRerun
 ToolRun
 ToolSort                F9
 ToolSpell               F7
-ToolStop                Ctrl+Shift+Alt+X
+ToolStop                Ctrl+Break
 ToolWildEdit
 Ú
 ú
@@ -319,7 +319,7 @@ ViewFullScreen
 ViewHScrollbar          Ctrl+Q, H
 ViewInBrowser
 ViewLineNumbers         Ctrl+Q, L
-ViewProperties
+ViewProperties          Ctrl+Apps               Alt+Enter
 ViewReplaceDialogBox
 ViewSearchResults       Shift+F11
 ViewStart               Alt+Home
@@ -328,22 +328,22 @@ ViewTabSelector
 ViewToolOutput          Ctrl+F11
 ViewVisibleSpaces       Ctrl+Q, I
 ViewVScrollbar          Ctrl+Q, V
-Window1
-Window10
-Window2
-Window3
-Window4
-Window5
-Window6
-Window7
-Window8
-Window9
+Window1                 Ctrl+Num 1
+Window10                Ctrl+Num 0
+Window2                 Ctrl+Num 2
+Window3                 Ctrl+Num 3
+Window4                 Ctrl+Num 4
+Window5                 Ctrl+Num 5
+Window6                 Ctrl+Num 6
+Window7                 Ctrl+Num 7
+Window8                 Ctrl+Num 8
+Window9                 Ctrl+Num 9
 WindowArrangeIcons
 WindowCascade
-WindowNext
+WindowNext              Ctrl+Tab
 WindowPaneNext          F6
 WindowPanePrev          Shift+F6
-WindowPrev
+WindowPrev              Ctrl+Shift+Tab
 WindowSplit
 WindowTileHorz
 WindowTileVert
@@ -353,10 +353,10 @@ WordLeft                Ctrl+B                  Ctrl+Left
 WordLeftEnd             Ctrl+D
 WordLeftEndExtend       Ctrl+Shift+D
 WordLeftExtend          Ctrl+Shift+B            Ctrl+Shift+Left
-WordRight
-WordRightEnd            Ctrl+Right
-WordRightEndExtend      Ctrl+Shift+Right
-WordRightExtend         Ctrl+Shift+W
+WordRight               Ctrl+Right              Ctrl+W
+WordRightEnd            Alt+Right
+WordRightEndExtend      Shift+Alt+Right
+WordRightExtend         Ctrl+Shift+Right        Ctrl+Shift+W
 WorkspaceClose
 WorkspaceOpen
 WorkspaceSave

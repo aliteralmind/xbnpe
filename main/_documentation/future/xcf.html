@@ -1,0 +1,284 @@
+<!--xcffile=15/z_snr_qbl_doc_examples/_snrdoctestall-->
+<HTML><HEAD>
+	<TITLE>XBNPE: XCF-project</TITLE>
+	<meta name="viewport" content="width=device-width" />
+<STYLE TYPE="text/css">
+	<!--
+		.yellowHL {background: #FFFF99; color: #000000;}
+		-->
+</STYLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF"><a name="top"></a>
+
+<P>[<A HREF="../index.html#future">BACK</A>]<CODE> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </CODE><I>(XBN-PhraseExpress is released under the <A HREF="../index.html#lpgl">LPGL 2.1</A>)</I>
+
+<HR/>
+
+<H1><I>This is a work in progress. I actually use everything as described in this document (given it's a work in progress!), but significant portions of <CODE>xcfbuild</CODE> are unfinished.</I></H1>
+
+<H1>XBNPE: Example code framework (XCF) project</H1>
+
+<P>An &quot;XCF documentation file&quot; (or &quot;XCF-file&quot;) is a plain HTML file containing PhraseExpress example code. Each piece of example-code in an XCF-file, called an &quot;XCF-example&quot;, is automatically created into an actually-usable (&quot;executable&quot;) phrase--so that it may be called by your users. In addition, all the XCF-examples in a single XCF-file may be executed as a whole: one after the other, in order to ensure the example code is working as expected.</P>
+
+<P>In all cases, an XCF-example snippet is written <I>once</I>, in a <I>single location</I>: The HTML documentation file. Whenever a change is made to an XCF-example, its XCF-file must be re-processed, in order to re-create its executable phrases.</P>
+
+<P><B>XCF-example code:</B><UL>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#display">GO</A></B></FONT>]</CODE> &nbsp; <B>As displayed</B> in documentation</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#htmlsource">GO</A></B></FONT>]</CODE> &nbsp; <B>HTML source code</B><UL>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#openmarker">GO</A></B></FONT>]</CODE> &nbsp; Open marker</LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#closemarker">GO</A></B></FONT>]</CODE> &nbsp; Close marker</LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#lenbs">GO</A></B></FONT>]</CODE> &nbsp; Line-ending non-breaking spaces</LI>
+	</UL></LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#executable">GO</A></B></FONT>]</CODE> &nbsp; <B>Executable phrases:</B><UL>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#exeplain">GO</A></B></FONT>]</CODE> &nbsp; Plain executable</LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#exewsc">GO</A></B></FONT>]</CODE> &nbsp; <CODE>&quot;wsc&quot;</CODE> executable</LI>
+	</UL></LI>
+</UL></P>
+
+<P><B>XCF-file:</B><UL>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#exeall">GO</A></B></FONT>]</CODE> &nbsp; Test all examples in an XCF-file</LI>
+</UL></P>
+
+
+
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="display"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; XCF-example: Display-version</H2>
+
+<P><I><B>XCF-example:</B> <CODE>[display, <A HREF="#htmlsource">HTML source</A>, <A HREF="#executable">executable phrases</A>]</CODE></I></P>
+
+<P>This is how an XCF-example looks in documentation:</P>
+
+<!--Add empty lines before '*Go:*' and before '*Output:*'...START-->
+<PRE STYLE="background-color:#E1E1E1;"><!--xcfexample...START  //  dq1quotient:{#ENTER}--><B><U>dq1quotient</U></B>
+(*Input:*)
+            {#SETPHRASE -description&nbsp;
+   zvDIVIDEND_TOP -content&nbsp;
+   <B>65</B>&nbsp;
+            -autotext zvDIVIDEND_TOP -folder ctvv_folder}{#SETPHRASE -description&nbsp;
+   zvDIVISOR_BTM -content&nbsp;
+   10&nbsp;
+            -autotext zvDIVISOR_BTM -folder ctvv_folder}
+
+(*Go:*)
+   {#insert zQuotient_M_divisorDividend}
+
+(*Output:*)
+   {#insert zvDIVIDEND_TOP}/{#insert zvDIVISOR_BTM}={#insert zvQUOTIENT}<!--xcfexample...END  //  {#ENTER}{#insert zBalDoneSlk2}--></PRE>
+<!--Add empty lines before '*Go:*' and before '*Output:*'...end-->
+
+<P>(It divides 65 by 10, ignoring any remainder. Output is stored in <CODE>zvQUOTIENT</CODE>.) This example may be <A HREF="#executable">executed</A> with either<UL>
+	<LI><CODE>dq1quotient</CODE></LI>
+	<LI><CODE>dq1quotientwsc</CODE></LI>
+</UL></P>
+
+<P><I>(This XCF-example is duplicated from
+<BR> &nbsp; &nbsp; <CODE><A HREF="../tasks/divisor_quotient.html#quotient">../tasks/divisor_quotient.html#quotient</A></CODE>)</I></P>
+
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+
+
+<A NAME="executable"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; XCF-example: Executable</H2>
+
+<P><I><B>XCF-example:</B> <CODE>[<A HREF="#display">display</A>, <A HREF="#htmlsource">HTML source</A>, executable phrases]</CODE>
+<BR><B>Executable:</B> <CODE>[<A HREF="#exeplain">plain</A>, <A HREF="#exewsc">wsc</A>, <A HREF="#exeall">all</A>]</CODE></I></P>
+
+<P>There are three types of executable phrases created by the
+<BR> &nbsp; &nbsp; <CODE>xcfbuild</CODE>
+<BR>process. Two phrases allow each XCF-example to be individually executed, and one additional phrase allows all examples in an XCF-file to be executed together.<UL>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#exeplain">GO</A></B></FONT>]</CODE> &nbsp; <B>Plain executable:</B> Execute the XCF-example, exactly as displayed in the documentation.</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#exewsc">GO</A></B></FONT>]</CODE> &nbsp; <B><CODE>&quot;wsc&quot;</CODE> executable:</B> The same as the plain-executable, with additional setup and cleanup code.</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#exeall">GO</A></B></FONT>]</CODE> &nbsp; <B>Test all XCF-examples in an XCF-file:</B> Calls each example's <CODE>wsc</CODE>-executable, one after the other. This may also perform some overall setup and cleanup operations, as needed by all examples. Running this <CODE>&quot;exe-all&quot;</CODE> phrase is to verify all examples in an XCF-file work as intended.</LI>
+</UL></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="exeplain"/><H2><CODE>[<A HREF="#executable">BACK</A>]</CODE> &nbsp; XCF-example: Executable: Plain</H2>
+
+<P><I><B>XCF-example:</B> <CODE>[<A HREF="#display">display</A>, <A HREF="#htmlsource">HTML source</A>, executable phrases]</CODE>
+<BR><B>Executable:</B> <CODE>[plain, <A HREF="#exewsc">wsc</A>, <A HREF="#exeall">all</A>]</CODE></I></P>
+
+<P>With the exception of spacing (indentation and empty lines), this phrase is no different than the <A HREF="#display">display-version</A>:</P>
+
+<P><CODE STYLE="background-color:#E1E1E1;"><B><U>dq1quotient</U></B>
+<BR>(*Input:*){#SETPHRASE -description zvDIVIDEND_TOP -content 65 -autotext zvDIVIDEND_TOP -folder ctvv_folder}{#SETPHRASE -description zvDIVISOR_BTM -content 10 -autotext zvDIVISOR_BTM -folder ctvv_folder}(*Go:*){#insert zQuotient_M_divisorDividend}(*Output:*){#insert zvDIVIDEND_TOP}/{#insert zvDIVISOR_BTM}={#insert zvQUOTIENT}</CODE></P>
+
+<P>(This is displayed in <A HREF="../devpex/c2pl.html#one">uncompressed</A> format. Also see: <A HREF="../basics/phrase_file_import1.html">import steps</A>.)</P>
+
+<P><I>The XCF-plain-executable phrase is intended to be called with all expected setup already completed. If necessary, this setup must be described before or after the XCF-example itself. In general, XCF-examples should be called from within a new document.</I></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="exewsc"/><H2><CODE>[<A HREF="#executable">BACK</A>]</CODE> &nbsp; XCF-example: Executable: <CODE>&quot;wsc&quot;</CODE>: With-setup-and-cleanup</H2>
+
+<P><I><B>XCF-example:</B> <CODE>[<A HREF="#display">display</A>, <A HREF="#htmlsource">HTML source</A>, executable phrases]</CODE>
+<BR><B>Executable:</B> <CODE>[<A HREF="#exeplain">plain</A>, wsc, <A HREF="#exeall">all</A>]</CODE></I></P>
+
+<P>The &quot;with-setup-and-cleanup&quot; (&quot;wsc&quot;) executable phrase calls the plain-executable, with some setup and cleanup code before and after the call. For example:</P>
+
+<P><CODE STYLE="background-color:#E1E1E1;"><B><U>dq1quotientwsc</U></B>
+<BR>dq1quotient:{#ENTER}{#insert dq1quotient}{#ENTER}{#insert zBalDoneSlk2}</CODE></P>
+
+<P>Setup and cleanup code is defined in the XCF-example <A HREF="#openmarker">open</A> and <A HREF="#closemarker">close markers</A>.</P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="exeall"/><H2><CODE>[<A HREF="#executable">BACK</A>]</CODE> &nbsp; XCF-example: Executable: All examples in an XCF-File</H2>
+
+<P><I><B>XCF-example:</B> <CODE>[<A HREF="#display">display</A>, <A HREF="#htmlsource">HTML source</A>, executable phrases]</CODE>
+<BR><B>Executable:</B> <CODE>[<A HREF="#exeplain">plain</A>, <A HREF="#exewsc">wsc</A>, all]</CODE></I></P>
+
+<PRE STYLE="background-color:#E1E1E1;"><B><U>_divisorquotienttestall</U></B>
+{#insert dq1quotientwsc}{#insert dq2qmodwsc}{#insert dq3qmod1ifwsc}{#insert dq4qmod1ifblkwsc}{#insert dq5splitevengroupswsc}</PRE>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="htmlsource"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; XCF-example: HTML source-code</H2>
+
+<P><I><B>XCF-example:</B> <CODE>[<A HREF="#display">display</A>, HTML source, <A HREF="#executable">executable phrases</A>]</CODE>
+<BR><B>HTML source:</B> <CODE>[<A HREF="#openmarker">open marker</A>, <A HREF="#lenbs">line-ending non-breaking spaces</A>, <A HREF="#closemarker">close marker</A>]</CODE></I></P>
+
+<P>Here is the HTML source code for the <A HREF="#display">example</A> XCF-example:</P>
+
+<PRE STYLE="background-color:#E1E1E1;">&lt;PRE&gt;<SPAN CLASS="yellowHL">&lt;!--xcfexample...START  //  dq1quotient:{#ENTER}--&gt;</SPAN>&lt;B&gt;&lt;U&gt;dq1quotient&lt;/U&gt;&lt;/B&gt;
+(*Input:*)
+            {#SETPHRASE -description<SPAN CLASS="yellowHL">&amp;nbsp;</SPAN>
+   zvDIVIDEND_TOP -content<SPAN CLASS="yellowHL">&amp;nbsp;</SPAN>
+   &lt;B&gt;65&lt;/B&gt;<SPAN CLASS="yellowHL">&amp;nbsp;</SPAN>
+            -autotext zvDIVIDEND_TOP -folder ctvv_folder}{#SETPHRASE -description<SPAN CLASS="yellowHL">&amp;nbsp;</SPAN>
+   zvDIVISOR_BTM -content<SPAN CLASS="yellowHL">&amp;nbsp;</SPAN>
+   &lt;B&gt;10&lt;/B&gt;<SPAN CLASS="yellowHL">&amp;nbsp;</SPAN>
+            -autotext zvDIVISOR_BTM -folder ctvv_folder}
+
+(*Go:*)
+   {#insert zQuotient_M_divisorDividend}
+
+(*Output:*)
+   {#insert zvDIVIDEND_TOP}/{#insert zvDIVISOR_BTM}={#insert zvQUOTIENT}<SPAN CLASS="yellowHL">&lt;!--xcfexample...END  //  {#ENTER}{#insert zBalDoneSlk2}--&gt;&lt;/PRE&gt;</SPAN></PRE>
+
+<P>XCF-specific portions are highlighted. Aside from the raw PhraseExpress code, there are three critical hidden elements that make up an XCF-example. The <A HREF="#openmarker">open marker</A>:
+<BR> &nbsp; &nbsp; <CODE>&lt;!--xcfexample...START  // ...--&gt;</CODE>
+<BR><A HREF="#lenbs">line-ending non-breaking spaces</A>:
+<BR> &nbsp; &nbsp; <B><CODE>&amp;nbsp;</CODE></B>
+<BR>and <A HREF="#closemarker">close marker</A>:
+<BR> &nbsp; &nbsp; <CODE>&lt;!--xcfexample...END  // ...--&gt;&lt;/PRE&gt;</CODE></P>
+
+<P><I>Also note that indentation is done with three spaces. While tabs are acceptable, they result in more severe indentation.</I></P>
+
+<P>The open and close markers contain set-up and clean-up code, that is only used in the <A HREF="#executable"><CODE>&quot;...wsc&quot;</CODE> executable phrase</A>.</P>
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="openmarker"/><H2><CODE>[<A HREF="#htmlsource">BACK</A>]</CODE> &nbsp; XCF-example: HTML source: Open marker</H2>
+<P><I><B>XCF-example:</B> <CODE>[<A HREF="#display">display</A>, HTML source, <A HREF="#executable">executable phrases</A>]</CODE>
+<BR><B>HTML source:</B> <CODE>[open marker, <A HREF="#lenbs">line-ending non-breaking spaces</A>, <A HREF="#closemarker">close marker</A>]</CODE></I></P>
+
+<P>All XCF-examples must be preceded by an open-marker:</P>
+
+<PRE STYLE="background-color:#E1E1E1;">&lt;!--xcfexample...START  // ...--&gt;</PRE>
+
+<P>Any <I>set-up</I> code must be declared following the slash-slash-space (<CODE>&quot;// &quot;</CODE>). Although not required, it is strongly recommended that something always be done. At a minimum, consider notifying your users of the about-to-be-executed code. For examples that print output:
+<BR> &nbsp; &nbsp; <CODE>&lt;!--xcfexample...START  // dq1quotient:{#ENTER}--&gt;</CODE>
+<BR>For examples with no printed output:
+<BR> &nbsp; &nbsp; <CODE>&lt;!--xcfexample...START  // {#BALLOON -title Please wait... -text Beginning nameofxcfexample}--&gt;</CODE></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="lenbs"/><H2><CODE>[<A HREF="#htmlsource">BACK</A>]</CODE> &nbsp; XCF-example: HTML source: Line-ending non-breaking spaces</H2>
+
+<P><I><B>XCF-example:</B> <CODE>[<A HREF="#display">display</A>, HTML source, <A HREF="#executable">executable phrases</A>]</CODE>
+<BR><B>HTML source:</B> <CODE>[<A HREF="#openmarker">open marker</A>, line-ending non-breaking spaces, <A HREF="#closemarker">close marker</A>]</CODE></I></P>
+
+<PRE STYLE="background-color:#E1E1E1;">            {#SETPHRASE -description<SPAN CLASS="yellowHL">&amp;nbsp;</SPAN>
+   zvDIVIDEND_TOP -content<SPAN CLASS="yellowHL">&amp;nbsp;</SPAN>
+   &lt;B&gt;65&lt;/B&gt;<SPAN CLASS="yellowHL">&amp;nbsp;</SPAN>
+</PRE>
+
+<P>Line-ending non-breaking spaces are required to preserve proper spacing in PhraseExpress <A HREF="#executable">executable</A> code that, when <I><A HREF="#display">displayed</A></I>, are separated by line-breaks. These non-breaking spaces also allow XCF-example-code to be selected and copied directly from within a web-browser. Once<OL>
+	<LI>fully unindented, and</LI>
+	<LI>reformatted (such that newlines are replaced with <I>nothing</I>),</LI>
+</OL>the code will be equivalent to the executable phrase. (Note that the phrases name must be separated from the phrase-body.)</P>
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="closemarker"/><H2><CODE>[<A HREF="#htmlsource">BACK</A>]</CODE> &nbsp; XCF-example: HTML source: Close marker</H2>
+<P><I><B>XCF-example:</B> <CODE>[<A HREF="#display">display</A>, HTML source, <A HREF="#executable">executable phrases</A>]</CODE>
+<BR><B>HTML source:</B> <CODE>[<A HREF="#openmarker">open marker</A>, <A HREF="#lenbs">line-ending non-breaking spaces</A>, close marker]</CODE></I></P>
+
+<P>All XCF-examples must be followed by a close-marker:</P>
+
+<PRE STYLE="background-color:#E1E1E1;">&lt;!--xcfexample...END  // ...--&gt;</PRE>
+
+<P>Any <I>clean-up</I> code must be declared following the slash-slash-space (<CODE>&quot;// &quot;</CODE>). Although not required, it is strongly recommended that something always be done..............</P>
+
+<PRE>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</PRE>
+</BODY></HTML>
+
+<!--xcfexample, sub-phrases...START
+zzSnrXmplInputGTTop_goodThrBad
+good{#insert zENTER}not so good{#insert zENTER}bad{#insert zENTER}very bad{#insert zENTER}good enough{#ENTER}{#insert zTPGTDocTop}
+zzSnrXmplInputAThenZInRandomTxt
+aaa{#insert zENTER}bbb{#insert zENTER}ccc  xxx{#insert zENTER}ddd  yyy  xxx{#insert zENTER}eee  zzz{#ENTER}xxx  aaa{#ENTER}
+   xcfexample, sub-phrases...END-->

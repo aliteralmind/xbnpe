@@ -1,0 +1,226 @@
+<!--xcffile=4/z_other__divisor_quotient_doc_examples/_divisorquotienttestall--><HTML><HEAD>
+   <TITLE>XBNPE: Advanced division</TITLE>
+   <meta name="viewport" content="width=device-width" />
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF"><a name="top"></a>
+
+<P>[<A HREF="../index.html#tasks">BACK</A>]<CODE> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </CODE><I>(XBN-PhraseExpress is released under the <A HREF="../index.html#lpgl">LPGL 2.1</A>)</I>
+
+<HR/>
+
+<H1>XBNPE: Advanced division (divisor/quotient)</H1>
+
+<P>For a listing of all division-related functions, see <CODE>'<A HREF="../devpex/xbnpe_ddmenus.html#xh">xh</A>omq'</CODE>. To see a detailed demonstration of divisor/quotient functionality, see <CODE>&quot;quotientmoddemo&quot;</CODE>.</P>
+
+<P><B>65/10 examples, returining:</B><UL>
+   <LI><CODE>[<FONT SIZE="+1"><B><A HREF="#quotient">GO</A></B></FONT>]</CODE> &nbsp; Quotient only</LI>
+   <LI><CODE>[<FONT SIZE="+1"><B><A HREF="#quotmod">GO</A></B></FONT>]</CODE> &nbsp; Quotient plus modulus</LI>
+   <LI><CODE>[<FONT SIZE="+1"><B><A HREF="#quotmodif">GO</A></B></FONT>]</CODE> &nbsp; Quotient plus modulus and 1-if-mod-flag</LI>
+   <LI><CODE>[<FONT SIZE="+1"><B><A HREF="#quotmodifblk">GO</A></B></FONT>]</CODE> &nbsp; Quotient plus modulus, 1-if-mod-flag, and total-block-count<UL>
+   	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#quotmodifblkx1">GO</A></B></FONT>]</CODE> &nbsp; Example 1/2: Trivial</LI>
+   	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#quotmodifblkx2">GO</A></B></FONT>]</CODE> &nbsp; Example 2/2: More realistic</LI>
+   </UL></LI>
+</UL></P>
+
+<P><I>All example code in this document is <A HREF="../index.html#tasks">live</A>. Here is the <A HREF="z_other__divisor_quotient_doc_examples.px.txt">phrase-file</A> containing all examples.</I></B></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="quotient"/><H3>[<A HREF="#top">top</A>]</CODE> &nbsp; &nbsp; 65/10: Quotient-only</H3>
+
+<P>Basic division. Remainder is ignored.</P>
+
+<!--Must duplicate to
+		future/xcf.html#snippet
+	...START-->
+<PRE STYLE="background-color:#E1E1E1;"><!--xcfexample...START  //  dq1quotient:{#ENTER}--><B><U>dq1quotient</U></B>
+(*Input:*)
+            {#SETPHRASE -description&nbsp;
+   zvDIVIDEND_TOP -content&nbsp;
+   <B>65</B>&nbsp;
+            -autotext zvDIVIDEND_TOP -folder ctvv_folder}{#SETPHRASE -description&nbsp;
+   zvDIVISOR_BTM -content&nbsp;
+   <B>10</B>&nbsp;
+            -autotext zvDIVISOR_BTM -folder ctvv_folder}
+(*Go:*)
+   {#insert zQuotient_M_divisorDividend}
+(*Output:*)
+   {#insert zvDIVIDEND_TOP}/{#insert zvDIVISOR_BTM}={#insert zvQUOTIENT}<!--xcfexample...END  //  {#ENTER}{#insert zBalDoneSlk2}--></PRE>
+<!--Must duplicate to
+		future/xcf.html#snippet
+	...END-->
+
+<P><B>Output:</B> <CODE>65/10=6</CODE></P>
+
+<a name="quotmod"/><H3>[<A HREF="#top">top</A>]</CODE> &nbsp; &nbsp; 65/10: Quotient and modulus</H3>
+
+<P>Division with remainder.</P>
+
+<PRE STYLE="background-color:#E1E1E1;"><!--xcfexample...START  //  dq2qmod:{#ENTER}--><B><U>dq2qmod</U></B>
+(*Input:*)
+            {#SETPHRASE -description&nbsp;
+   zvDIVIDEND_TOP -content&nbsp;
+   <B>65</B>&nbsp;
+            -autotext zvDIVIDEND_TOP -folder ctvv_folder}{#SETPHRASE -description&nbsp;
+   zvDIVISOR_BTM -content&nbsp;
+   <B>10</B>&nbsp;
+            -autotext zvDIVISOR_BTM -folder ctvv_folder}
+(*Go:*)
+   {#insert zQuotientModulo_M_divisorDividend}
+(*Output:*)
+   {#insert zvDIVIDEND_TOP}/{#insert zvDIVISOR_BTM}={#insert zvQUOTIENT},&nbsp;
+    remainder {#insert zvMODULO}<!--xcfexample...END  //  {#ENTER}--></PRE>
+
+<P><B>Output:</B> <CODE>65/10=6, remainder 5</CODE></P>
+
+<a name="quotmodif"/><H3>[<A HREF="#top">top</A>]</CODE> &nbsp; &nbsp; 65/10: Quotient, modulus and 1-if-mod-flag</H3>
+
+<P>Division with remainder, and an &quot;if-remainder&quot; flag.</P>
+
+<P><CODE>&quot;zv1_IF_MOD_GT0&quot;</CODE> is a flag representing <I>if there is a remainder</I>. It is set to<UL>
+   <LI><B>If there is a remainder:</B> <CODE>1</CODE></LI>
+   <LI><B>If there is no remainder:</B> <CODE>0</CODE></LI>
+</UL></P>
+
+<PRE STYLE="background-color:#E1E1E1;"><!--xcfexample...START  //  dq3qmod1if:{#ENTER}--><B><U>dq3qmod1if</U></B>
+(*Input:*)
+            {#SETPHRASE -description
+   zvDIVIDEND_TOP -content&nbsp;
+   <B>65</B>&nbsp;
+            -autotext zvDIVIDEND_TOP -folder ctvv_folder}{#SETPHRASE -description&nbsp;
+   zvDIVISOR_BTM -content&nbsp;
+   <B>10</B>&nbsp;
+            -autotext zvDIVISOR_BTM -folder ctvv_folder}
+(*Go:*)
+   {#insert zQuotientModulo1IfMod_M_divisorDividend}
+(*Output:*)
+   {#insert zvDIVIDEND_TOP}/{#insert zvDIVISOR_BTM}={#insert zvQUOTIENT},&nbsp;
+    remainder {#insert zvMODULO} (if-mod-flag={#insert zv1_IF_MOD_GT0})<!--xcfexample...END  //  {#ENTER}--></PRE>
+
+<P><B>Output:</B> <CODE>65/10=6, remainder 5 (if-mod-flag=1)</CODE></P>
+
+<a name="quotmodifblk"/><H3>[<A HREF="#top">top</A>]</CODE> &nbsp; &nbsp; 65/10: Quotient, modulus, 1-if-mod-flag, and total-block-count</H3>
+
+<P><I>[Go to <A HREF="#quotmodifblkx1">example 1</A>, <A HREF="#quotmodifblkx2">example 2</A>]</I></P>
+
+<P>&quot;Total blocks&quot; (<CODE>&quot;zvTTL_DIV_BLKS&quot;</CODE>) is the <U>quotient</U>, plus<UL>
+   <LI><B>If there is a remainder:</B> <CODE>1</CODE></LI>
+   <LI><B>If there is no remainder:</B> <CODE>0</CODE></LI>
+</UL>Specifically:
+<BR> &nbsp; &nbsp; <CODE>zvQUOTIENT + <A HREF="#quotmodif">zv1_IF_MOD_GT0</A></CODE></P>
+
+<P>Total-block-count is used to process a set of <I>things</I>, handling them in groups of <I>at most</I> a certain size (as defined by the divisor), without neglecting those items in the remainder group.</P>
+
+
+<a name="quotmodifblkx1"/><H4>[<A HREF="#quotmodifblk">BACK</A>]</CODE> &nbsp; &nbsp; 65/10: Total-block-count: Example 1/2: Trivial</H4>
+
+<PRE STYLE="background-color:#E1E1E1;"><!--xcfexample...START  //  dq4qmod1ifblk:{#ENTER}--><B><U>dq4qmod1ifblk</U></B>
+(*Input:*)
+            {#SETPHRASE -description&nbsp;
+   zvDIVIDEND_TOP -content&nbsp;
+   <B>65</B>&nbsp;
+            -autotext zvDIVIDEND_TOP -folder ctvv_folder}{#SETPHRASE -description&nbsp;
+   zvDIVISOR_BTM -content&nbsp;
+   <B>10</B>&nbsp;
+            -autotext zvDIVISOR_BTM -folder ctvv_folder}
+(*Go:*)
+   {#insert zQuotientModulo1IfModTtlBlks_M_divisorDividend}
+(*Output:*)
+   {#insert zvDIVIDEND_TOP}/{#insert zvDIVISOR_BTM}={#insert zvQUOTIENT},&nbsp;
+    remainder {#insert zvMODULO} (if-mod-flag={#insert zv1_IF_MOD_GT0},&nbsp;
+    total-blocks={#insert zvTTL_DIV_BLKS})<!--xcfexample...END  //  {#ENTER}--></PRE>
+
+<P><B>Output:</B> <CODE>65/10=6, remainder 5 (if-mod-flag=1, total-blocks=7)</CODE></P>
+
+
+<a name="quotmodifblkx2"/><H4>[<A HREF="#quotmodifblk">BACK</A>]</CODE> &nbsp; &nbsp; 65/10: Total-block-count: Example 2/2: More realistic</H4>
+
+<PRE STYLE="background-color:#E1E1E1;"><!--xcfexample...START  //  dq5splitevengroups:{#ENTER}--><B><U>dq5splitevengroups</U></B>
+(*Init:*)
+            {#SETPHRASE -description
+   zvSOME_XS -content&nbsp;
+   <B>xxxxxxxxxxxxxxxxxxxxxx</B>&nbsp;
+            -autotext zvSOME_XS -folder ctvv_folder}{#SETPHRASE -description&nbsp;
+   zvDIVIDEND_TOP -content&nbsp;
+   <B>{#LENGTH {#insert zvSOME_XS}}</B>&nbsp;
+            -autotext zvDIVIDEND_TOP -folder ctvv_folder}{#SETPHRASE -description&nbsp;
+   zvDIVISOR_BTM -content&nbsp;
+   <B>5</B>&nbsp;
+            -autotext zvDIVISOR_BTM -folder ctvv_folder}
+(*Determine group count:*)
+   {#insert zQuotientModulo1IfModTtlBlks_M_divisorDividend}
+Dividing {#insert zvDIVIDEND_TOP} x-s into groups of,&nbsp;
+   AT MAXIMUM, {#insert zvDIVISOR_BTM}.{#ENTER}
+   {#insert zvDIVIDEND_TOP}/{#insert zvDIVISOR_BTM}={#insert zvQUOTIENT},&nbsp;
+   remainder {#insert zvMODULO} (if-mod-flag={#insert zv1_IF_MOD_GT0},&nbsp;
+   total-blocks={#insert zvTTL_DIV_BLKS}){#ENTER -count 2}
+(*Output:*)
+   {#LOOP {#insert zzSplitNextXGroup_M_xsDvsr} -count {#insert zvTTL_DIV_BLKS}}
+
+<B><U>zzSplitNextXGroup_M_xsDvsr</U></B> -- Needs zvSOME_XS, zvDIVISOR_BTM
+(*Get current group to clipboard, update all-Xs var:*)
+   {#SETCLIPBOARD&nbsp;
+      {#SUBSTR {#insert zvSOME_XS}&nbsp;
+         -from 0&nbsp;
+         -count&nbsp;
+            {#insert zvDIVISOR_BTM}}}
+                  {#SETPHRASE -description&nbsp;
+   zvSOME_XS -content&nbsp;
+   <B>{#SUBSTR {#insert zvSOME_XS}&nbsp;
+      -from {#CALC {#insert zvDIVISOR_BTM} + 1 -round 0 -thousands none}&nbsp;
+      -count {#CALC {#LENGTH {#insert zvSOME_XS}} - {#insert zvDIVISOR_BTM} -round 0 -thousands none}}</B>&nbsp;
+                  -autotext zvSOME_XS -folder ctvv_folder}
+(*Output:*)
+   {#INSERTCLIPBOARD}{#ENTER}<!--xcfexample...END  //  --></PRE>
+
+<P><B>Output:</B></P>
+
+<HR/>
+<PRE>Dividing 22 x-s into groups of, AT MAXIMUM, 5.
+22/5=4, remainder 2 (if-mod-flag=1, total-blocks=5)
+
+xxxxx
+xxxxx
+xxxxx
+xxxxx
+xx</PRE>
+<HR/>
+
+<PRE>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</PRE>
+</BODY></HTML>
+
+
+

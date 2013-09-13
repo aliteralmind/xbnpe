@@ -6,15 +6,24 @@
 <BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF"><a name="top"></a>
 
 
-<P>[<A HREF="index.html">BACK</A>]</CODE></P>
+<P>[<A HREF="index.html#start">BACK</A>]</CODE></P>
 
 <HR/>
 
 <H1>XBN-PhraseExpress installation: Step-by-step</H1>
 
-<P>This section describes the specific steps necessary for installing XBN-PhraseExpress, up-through-and-including the XKP and TPKC projects.</P>
+<P>This documentation describes the specific steps necessary for installing XBN-PhraseExpress, up-through the <A HREF="basics/xkp.html">XKP</A> and <A HREF="basics/tpkc/index.html">TPKC</A> projects, including &quot;building&quot; the TPKC-project.</P>
+<P><I><CENTER><A HREF="#01tp"><FONT SIZE="+5"><B>START</B></FONT></A></CENTER></I></P>
 
-<P><I><A HREF="#install">START</A></I></P>
+<P><B>Notes:</B><UL>
+	<LI>XBN-PhraseExpress was developed and tested exclusively in:
+	<BR> &nbsp; &nbsp; <CODE>Microsoft Windows 7 Home Premium (32-bit)</CODE>
+	<BR> &nbsp; &nbsp; <CODE>Version 6.1.7601 Service Pack 1 Build 7601</CODE></LI>
+	<LI>The PhraseExpress professional license is not required in order to use XBN-PhraseExpress</LI>
+	<LI>Although it requires little interaction, the <A HREF="install2.html#15tpbs">final step</A> in this process takes more than an hour, during which time you may not use your computer. <A HREF="basics/tpkc/tpkc_user_dir.html#remoterequest">I can do this step for you</A>.</LI>
+</UL></P>
+<P>
+
 
 <PRE>
 
@@ -28,30 +37,25 @@
 <HR/>
 
 </PRE>
-<a name="install"/><H3><B><CODE><A HREF="#top">top</A> &nbsp; &nbsp; [PREV -- <A HREF="#install2of5">NEXT</A>]</CODE></B> &nbsp; &nbsp; XBN-PhraseExpress installation: Step-by-step</H3>
+<a name="01tp"/><H2><B><CODE><A HREF="#top">top</A> &nbsp; &nbsp; [PREV -- <A HREF="#03pe">NEXT</A>]</CODE></B> &nbsp; &nbsp; XBN-PhraseExpress installation: Step-by-step</H2>
 
-<H3>Install TextPad</H3>
+<H3>Install and configure TextPad</H3>
 
 <P><UL>
 	<LI><U>Recommended version:</U> <A HREF="http://textpad.com/download/index.html#downloads">Download version <CODE>7.0.9</CODE></A> from <CODE><A HREF="http://textpad.com">textpad.com</A></CODE>.</LI>
 	<LI><U>Minimum version required:</U> Any version <CODE>7.*.*</CODE>.</LI>
 </UL></P>
 
+<P>Open TextPad and properly configure the <A HREF="basics/pex_in_textpad.html#txtdcsettings">Text Document Class</A>, as required by XBN-PhraseExpress. The specific settings you make here are needed in a <A HREF="install2.html#12gcv">future step</A>.</P>
+
+<P>It is recommended that you <A HREF="basics/pex_in_textpad.html#backupkcs">backup</A> your current key-command setup, and that the status-bar is displayed:
+<BR> &nbsp; &nbsp; <CODE>TextPad &gt; View &gt; Status Bar</CODE></P>
 <PRE>
 
 <HR/>
 
 </PRE>
-<A NAME="install2of5"/><H3><B><CODE><A HREF="#top">top</A> &nbsp; &nbsp; [<A HREF="#install">PREV</A> -- <A HREF="#install3of5">NEXT</A>]</CODE></B> &nbsp; &nbsp; XBN-PhraseExpress installation: Step-by-step</H3>
-
-<P>In TextPad, properly configure the <A HREF="pex_in_textpad.html#txtdcsettings">Text Document Class</A>, as required by XBN-PhraseExpress.The specific settings you make here are needed in a <A HREF="#install12of5">future step</A>.</P>
-
-<PRE>
-
-<HR/>
-
-</PRE>
-<A NAME="install3of5"/><H3><B><CODE><A HREF="#top">top</A> &nbsp; &nbsp; [<A HREF="#install2of5">PREV</A> -- <A HREF="#install4of5">NEXT</A>]</CODE></B> &nbsp; &nbsp; XBN-PhraseExpress installation: Step-by-step</H3>
+<A NAME="03pe"/><H2><B><CODE><A HREF="#top">top</A> &nbsp; &nbsp; [<A HREF="#01tp">PREV</A> -- <A HREF="#04impxpe">NEXT</A>]</CODE></B> &nbsp; &nbsp; XBN-PhraseExpress installation: Step-by-step</H2>
 
 <H3>Install PhraseExpress</H3>
 <P><UL>
@@ -59,24 +63,31 @@
 	<LI><U>Minimum version required:</U> XBN-PhraseExpress <I>should</I> work with all versions of PhraseExpress starting with <CODE>v9.*.*</CODE>.</LI>
 </UL></P>
 
+<P>It is recommended to <A HREF="basics/xbnpe_phrase_types.html#ddmconfig">configure drop-down-menu phrases</A> (pop-up-heirarchies) in the same manner as presented throughout this documentation.</P>
+
+<P>All XBNPE documentation expects that you are in PhraseExpress &quot;Expert mode&quot;. If this button says &quot;Easy mode&quot;, then you are indeed in expert-mode (the button is for switching back to easy mode). If it says &quot;Expert mode&quot;, then click it.</P>
+
+<P><IMG SRC="images/easy_expert_mode_button.jpg" BORDER="1"/></P>
+
 <PRE>
 
 <HR/>
 
 </PRE>
-<A NAME="install4of5"/><H3><B><CODE><A HREF="#top">top</A> &nbsp; &nbsp; [<A HREF="#install3of5">PREV</A> -- <A HREF="#install5of5">NEXT</A>]</CODE></B> &nbsp; &nbsp; XBN-PhraseExpress installation: Step-by-step</H3>
+<A NAME="04impxpe"/><H2><B><CODE><A HREF="#top">top</A> &nbsp; &nbsp; [<A HREF="#03pe">PREV</A> -- <A HREF="#05openpe">NEXT</A>]</CODE></B> &nbsp; &nbsp; XBN-PhraseExpress installation: Step-by-step</H2>
 
-<P><A HREF="#downloads">Download XBN-PhraseExpress</A>. Extract the download-archive into, for example:
+<P><A HREF="index.html#downloads">Download XBN-PhraseExpress</A>. Extract the download-archive into, for example:
 <BR> &nbsp; &nbsp; <CODE>C:\programming\phrase_express\</CODE>
 <BR>such that the root of the newly-extracted directory is
-<BR> &nbsp; &nbsp; <CODE>C:\programming\phrase_express\xbnpe\</CODE>
-<BR>Note that
-<BR> &nbsp; &nbsp; <CODE>C:\programming\phrase_express\</CODE>
-<BR>is called the <B><U>XBNPE &quot;parent&quot; directory</U></B>, and
-<BR> &nbsp; &nbsp; <CODE>C:\programming\phrase_express\xbnpe\</CODE>
-<BR>is called the <B><U>XBNPE &quot;root&quot; directory</U></B>.</P>
+<BR> &nbsp; &nbsp; <CODE>C:\programming\phrase_express\xbnpe\</CODE></P>
 
-<P>Keep these values in mind for a <A HREF="#install11of5">future</A> step.</P>
+<P>Note that
+<BR> &nbsp; &nbsp; <CODE>C:\programming\phrase_express\</CODE>
+<BR>is called the <A HREF="global_config.html#zROOT_DIR_XBNPE_PARENT">XBNPE &quot;parent&quot; directory</A>, and
+<BR> &nbsp; &nbsp; <CODE>C:\programming\phrase_express\xbnpe\</CODE>
+<BR>is called the <A HREF="global_config.html#zROOT_DIR_XBNPE_MAIN">XBNPE &quot;main&quot; directory</A>.</P>
+
+<P>These values are needed in a <A HREF="install2.html#12gcv">future</A> step.</P>
 
 <P>The <I>source-code</I> for XBN-PhraseExpress is now properly installed.</P>
 
@@ -85,9 +96,9 @@
 <HR/>
 
 </PRE>
-<A NAME="install5of5"/><H3><B><CODE><A HREF="#top">top</A> &nbsp; &nbsp; [<A HREF="#install4of5">PREV</A> -- <A HREF="#install6of5">NEXT</A>]</CODE></B> &nbsp; &nbsp; XBN-PhraseExpress installation: Step-by-step</H3>
+<A NAME="05openpe"/><H2><B><CODE><A HREF="#top">top</A> &nbsp; &nbsp; [<A HREF="#04impxpe">PREV</A> -- <A HREF="#06impxpea">NEXT</A>]</CODE></B> &nbsp; &nbsp; XBN-PhraseExpress installation: Step-by-step</H2>
 
-<P>Open the PhraseExpress application by clicking on the red exclamation point (inside a white &quot;speech bubble&quot;), right click on any item <I>above <CODE>&quot;Create new phrase&quot;</CODE></I>, then select &quot;Edit element&quot;</P>
+<P>Open the PhraseExpress application by clicking on the red exclamation point (inside a white &quot;speech bubble&quot;), <I>right-click</I> on any item above &quot;Create new phrase&quot;, then select <CODE>&quot;Edit element&quot;</CODE></P>
 
 <P><IMG SRC="images/install_open_pex.jpg" BORDER="1"/></P>
 
@@ -96,9 +107,9 @@
 <HR/>
 
 </PRE>
-<A NAME="install6of5"/><H3><B><CODE><A HREF="#top">top</A> &nbsp; &nbsp; [<A HREF="#install5of5">PREV</A> -- <A HREF="#install7of5">NEXT</A>]</CODE></B> &nbsp; &nbsp; XBN-PhraseExpress installation: Step-by-step</H3>
+<A NAME="06impxpea"/><H2><B><CODE><A HREF="#top">top</A> &nbsp; &nbsp; [<A HREF="#05openpe">PREV</A> -- <A HREF="#06impxpeb">NEXT</A>]</CODE></B> &nbsp; &nbsp; XBN-PhraseExpress installation: Step-by-step</H2>
 
-<P>Right-click on the root of your PhraseExpress heirachy (mine is named <CODE>&quot;jeffy&quot;</CODE>), and select
+<P>Right-click on the root of your PhraseExpress heirachy (mine is <CODE>&quot;jeffy&quot;</CODE>), and select
 <BR> &nbsp; &nbsp; <CODE>Import &gt; PhraseExpress phrase file</CODE></P>
 
 <P><IMG SRC="images/install_import_xbnpe_parent_a.jpg" BORDER="1"/></P>
@@ -108,9 +119,9 @@
 <HR/>
 
 </PRE>
-<A NAME="install7of5"/><H3><B><CODE><A HREF="#top">top</A> &nbsp; &nbsp; [<A HREF="#install6of5">PREV</A> -- <A HREF="#install8of5">NEXT</A>]</CODE></B> &nbsp; &nbsp; XBN-PhraseExpress installation: Step-by-step</H3>
+<A NAME="06impxpeb"/><H2><B><CODE><A HREF="#top">top</A> &nbsp; &nbsp; [<A HREF="#06impxpea">PREV</A> -- <A HREF="#08impxpec">NEXT</A>]</CODE></B> &nbsp; &nbsp; XBN-PhraseExpress installation: Step-by-step</H2>
 
-<P>Navigate to to your XBNPE <A HREF="#install4of5">installation parent directory</A>, such as
+<P>Navigate to to your XBNPE <A HREF="#04impxpe">installation parent directory</A>, such as
 <BR> &nbsp; &nbsp; <CODE>C:\programming\phrase_express\</CODE>
 <BR>then into the
 <BR> &nbsp; &nbsp; <CODE>xbnpe\zz_misc_and_pxp\</CODE>
@@ -124,7 +135,7 @@
 <HR/>
 
 </PRE>
-<A NAME="install8of5"/><H3><B><CODE><A HREF="#top">top</A> &nbsp; &nbsp; [<A HREF="#install7of5">PREV</A> -- <A HREF="#install9of5">NEXT</A>]</CODE></B> &nbsp; &nbsp; XBN-PhraseExpress installation: Step-by-step</H3>
+<A NAME="08impxpec"/><H2><B><CODE><A HREF="#top">top</A> &nbsp; &nbsp; [<A HREF="#06impxpeb">PREV</A> -- <A HREF="install2.html#09impxped">NEXT</A>]</CODE></B> &nbsp; &nbsp; XBN-PhraseExpress installation: Step-by-step</H2>
 
 <P>Once selected, the phrases will be imported.</P>
 
@@ -132,76 +143,6 @@
 
 <PRE>
 
-<HR/>
-
-</PRE>
-<A NAME="install9of5"/><H3><B><CODE><A HREF="#top">top</A> &nbsp; &nbsp; [<A HREF="#install8of5">PREV</A> -- <A HREF="#install10of5">NEXT</A>]</CODE></B> &nbsp; &nbsp; XBN-PhraseExpress installation: Step-by-step</H3>
-
-<P>Before it completes, you will be asked to import duplicate phrases or not. Press <CODE>[Yes]</CODE>.</P>
-
-<P>(&quot;Duplicate&quot; is defined as &quot;has the same phrase-name&quot;. While it is unlikely that there are duplicate phrases, this at least gives you the opportunity to choose between those duplicates during future execution. Eventually this allows you to resolve those conflicts, by either deleting a truly-duplicate phrase, or changing the name of a <I>different</I> phrase that happens to have the same name--along with all its phrase-calls.)</P>
-
-<P><IMG SRC="images/install_exclude_dup_phrases.jpg" BORDER="1"/></P>
-
-<PRE>
-
-<HR/>
-
-</PRE>
-<A NAME="install10of5"/><H3><B><CODE><A HREF="#top">top</A> &nbsp; &nbsp; [<A HREF="#install9of5">PREV</A> -- <A HREF="#install11of5">NEXT</A>]</CODE></B> &nbsp; &nbsp; XBN-PhraseExpress installation: Step-by-step</H3>
-
-<P>All XBN-PhraseExpress phrases are now in the PhraseExpress application. Proceed to the next step.</P>
-
-<P><IMG SRC="images/install_import_xbnpe_parent_c.jpg" BORDER="1"/></P>
-
-
-<PRE>
-
-<HR/>
-
-</PRE>
-<A NAME="install11of5"/><H3><B><CODE><A HREF="#top">top</A> &nbsp; &nbsp; [<A HREF="#install10of5">PREV</A> -- <A HREF="#install12of5">NEXT</A>]</CODE></B> &nbsp; &nbsp; XBN-PhraseExpress installation: Step-by-step</H3>
-
-<H3>Set the installation directory into XBN-PhraseExpress</H3>
-
-<P>XBN-PhraseExpress must be taught your XBNPE <A HREF="#install4of5">&quot;parent&quot; installation directory</A>. This is done by setting the value of the
-<BR> &nbsp; &nbsp; <CODE>zROOT_DIR_XBNPE_MAIN</CODE>
-<BR>XBNPE <A HREF="index.html#dircfg">global-directory-configuration-variable</A>, and importing its phrase-file (replacing the old version).</P>
-
-<P><I>It is strongly recommended that you edit these values in the on-disk text-files (<A HREF="plain_text_phrase_files.html#fformat">plain-text phrase-files</A>), and then <A HREF="plain_text_phrase_files.html#import1">import</A> them. This is true when editing any values during this configuration process, and throughout much of the projects in XBN-PhraseExpress. Editing phrases directly in the PhraseExpress application, <B><U>at least during this installation processes</U></B>, is strongly discouraged.</I></P>
-<PRE>
-
-<HR/>
-
-</PRE>
-<A NAME="install12of5"/><H3><B><CODE><A HREF="#top">top</A> &nbsp; &nbsp; [<A HREF="#install11of5">PREV</A> -- <A HREF="#install13of5">NEXT</A>]</CODE></B> &nbsp; &nbsp; XBN-PhraseExpress installation: Step-by-step</H3>
-
-<H3>Set critical TextPad configuration items</H3>
-
-<P>XBN-PhraseExpress must be taught two critical configuration settings in TextPad's <A HREF="pex_in_textpad.html#txtdcsettings">Text Document Class</A>, as determined in a <A HREF="#install2of5">previous step</A>. These values must be set into the<UL>
-	<LI><CODE>zzTPTxtDefaultWordWrapOnOrES</CODE></LI>
-	<LI><CODE>zzTPTxtDefaultStripTrailingWSOnOrES</CODE></LI>
-</UL>XBNPE <A HREF="index.html#glblcfg">global-configuration-variables</A>, and that phrase-file must be imported (overwriting the old version).</P>
-
-<P>At a bare minimum, XBN-PhraseExpress is now installed. Proceed to the next step to install the foundational XBNPE projects.</P>
-
-<PRE>
-
-<HR/>
-
-</PRE>
-<A NAME="install13of5"/><H3><B><CODE><A HREF="#top">top</A> &nbsp; &nbsp; [<A HREF="#install12of5">PREV</A> -- <A HREF="#install14of5">NEXT</A>]</CODE></B> &nbsp; &nbsp; XBN-PhraseExpress installation: Step-by-step</H3>
-
-<H3>Installing the XBNPE-Key-Presses (XKP) project</H3>
-
-<P>The <A HREF="xbnpe_key_presses__xkp.html">XKP</A> project is critical to almost everything in XBN-PhraseExpress.</P>
-
-<P>Follow these instructions to install it:</P>
-
-<P>To complete its installation, all of <A HREF="xbnpe_key_presses__xkp.html#tpbs">its TextPad-bootstraps</A> (as listed at the bottom of the section) must be properly configured.</P>
-
-
-pex_in_textpad.html#tpbs
 
 
 
@@ -215,7 +156,7 @@ pex_in_textpad.html#tpbs
 
 
 
-<PRE>
+
 
 
 

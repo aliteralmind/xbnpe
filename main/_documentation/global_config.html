@@ -1,0 +1,193 @@
+<HTML><HEAD>
+	<TITLE></TITLE>
+	<meta name="viewport" content="width=device-width" />
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF"><a name="top"></a>
+
+<P>[<A HREF="index.html#start">BACK</A>]</CODE></P>
+
+<HR/>
+
+<H1>XBN-PhraseExpress: Global configuration variables</H1>
+
+<P>There are four global configuration variables required in order for <I>anything</I> in XBN-PhraseExpress to function properly. These values are set during XBNPE <A HREF="install2.html#12gcv">installation</A>.</I></P>
+
+<H3>Locations</H3>
+
+<P><UL>
+	<LI><U>On disk</U> <I>(<A HREF="basics/phrase_file.html#fformat">phrase-file</A>)</I>
+	<BR> &nbsp; &nbsp; <CODE>{#insert <CODE><A HREF="#zROOT_DIR_XBNPE_MAIN">zROOT_DIR_XBNPE_MAIN</A></CODE>}\xbnpe_xkp\configuration\<A HREF="../xbnpe_xkp/configuration/xbnpe__global_config_edit_this.px.txt">xbnpe__global_config_edit_this.px.txt</A></CODE></LI>
+	<LI><U>PhraseExpress folder</U> <I>(to <A HREF="basics/phrase_file_import1.html">import</A> to)</I>
+	<PRE>XBNPE: Parent folder &gt;
+   XBN-PhraseExpress &gt;
+      XBNPE-XKP: X-key-presses & basic utilities &gt;
+         <B>Directory and global configuration</B></PRE></LI>
+</UL></P>
+
+<H3>XBNPE global-configuration-variables</H3>
+
+<P><TABLE ALIGN="center" BORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#EEEEEE"><TR ALIGN="center" VALIGN="middle">
+	<TD><B><U>Variable</U></B></TD>
+	<TD><B><U>Description and requirements</U></B></TD>
+</TR><TR>
+	<TD ALIGN="right"><B><CODE>zROOT_DIR_XBNPE_PARENT</CODE></B></TD>
+	<TD>The full path of the parent-directory in which XBN-PhraseExpress is installed. <I><A HREF="#zROOT_DIR_XBNPE_PARENT">Further details</A></I>
+
+		<H4><U>Directory-path variable requirements</U></H4>
+
+		<P/>All directory-path values, in this or any directory-configuration variables throughout XBN-PhraseExpress:<UL>
+			<LI>Must end with a down-right slash (<CODE>'\'</CODE>).</LI>
+			<LI>May <I>not</I> be surrounded by double-quotes (<CODE>'<B>&quot;</B>'</CODE>). This implies that any characters (such as spaces) normally requiring that the path be surrounded by double-quotes are unacceptable.</LI>
+			<LI>May not contain any <CODE>(*comments*)</CODE> in the phrase-body.</LI>
+		</UL>
+
+	</TD>
+</TR><TR>
+	<TD ALIGN="right"><B><CODE>zWIN_DIR_DESKTOP</CODE></B></TD>
+	<TD>Your Windows desktop directory-path. <I><A HREF="#zWIN_DIR_DESKTOP">Further details</A></I></TD>
+</TR><TR>
+	<TD ALIGN="right"><B><CODE>zzTPTxtDefaultWordWrapOnOrES</CODE></B></TD>
+	<TD><A HREF="basics/phrase_file.html#fformat">Plain-text phrase-files</A> are named with the postfix <CODE>&quot;.px.txt&quot;</CODE> and are therefore included in <A HREF="basics/pex_in_textpad.html#txtdcsettings">TextPad's &quot;Text&quot; document class</A>. If the default <A HREF="basics/pex_in_textpad.html#tptxtdcww">word-wrap</A> state for the text document class is<UL>
+		<LI><B>checked,</B> then the value of this phrase must be &quot;on&quot;</LI>
+		<LI><B>unchecked,</B> then this must be <I>nothing</I> (the empty-string: <CODE>''</CODE>).</LI>
+	</UL><I>(<U>Screenshot below</U>)</I></TD>
+</TR><TR>
+	<TD ALIGN="right"><B><CODE>zzTPTxtDefaultStripTrailingWSOnOrES</CODE></B></TD>
+	<TD>If the Text document class setting &quot;<A HREF="basics/pex_in_textpad.html#tptxtdcstrip">Strip trailing spaces</A> from lines when saving&quot; is<UL>
+		<LI><B>checked,</B> then the value of this phrase must be &quot;on&quot;</LI>
+		<LI><B>unchecked,</B> then this must be <I>nothing</I> (the empty-string: <CODE>''</CODE>).</LI>
+	</UL>This refers to whitespace being at the end (right-side) of each line. Both tabs and spaces are stripped.
+	<BR>
+	<BR><I>(<U>Screenshot below</U>)</I></TD>
+</TR></TABLE></P>
+
+<P><I><B>Warning:</B> Any processes in XBNPE that save files (particularly the larger build-processes, such as TPKC) will fail unless &quot;<B>Word wrap text &gt; Save with no breaks in lines</B>&quot; is selected.</I></P>
+
+<P><IMG SRC="images/prefs_text_doc_class_ww_strip_ws.jpg" BORDER="1"/></P>
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="zROOT_DIR_XBNPE_PARENT"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; XBNPE: Global-config-var: <CODE>zROOT_DIR_XBNPE_PARENT</CODE></H2>
+
+<P>The full path of the parent directory in which <CODE>xbnpe</CODE> source-code root was <A HREF="install.html#04impxpe">installed</A>. Such as:
+<BR> &nbsp; &nbsp; <CODE>C:\programming\phrase_express\</CODE>
+<BR>Using this example, the TextPad built-in command (TPKC) project-root is
+<BR> &nbsp; &nbsp; <CODE>C:\programming\phrase_express\xbnpe\main\textpad__tpkc\</CODE></P>
+
+<P>This value is critical to most XBN-PhraseExpress projects. For example, neither the <A HREF="basics/xkp.html">XKP</A> or <A HREF="basics/tpkc/index.html">TPKC</A>-build processes can function without this.</P>
+
+<P><CODE>zROOT_DIR_XBNPE_PARENT</CODE> has three main sub-directories:<UL>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#zROOT_DIR_XBNPE">GO</A></B></FONT>]</CODE> &nbsp; <CODE>zROOT_DIR_XBNPE</CODE></LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#zROOT_DIR_XBNPE_MAIN">GO</A></B></FONT>]</CODE> &nbsp; <CODE>zROOT_DIR_XBNPE_MAIN</CODE></LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#zROOT_DIR_XBNPE_AG">GO</A></B></FONT>]</CODE> &nbsp; <CODE>zROOT_DIR_XBNPE_AG</CODE></LI>
+</UL></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="zROOT_DIR_XBNPE"/><H2><CODE>[<A HREF="#zROOT_DIR_XBNPE_PARENT">BACK</A>]</CODE> &nbsp; <CODE>..._PARENT</CODE> main sub-directory: <CODE>zROOT_DIR_XBNPE</CODE></H2>
+
+<P><B><CODE>zROOT_DIR_XBNPE</CODE></B> is a directory-variable is <I>derived</I> from
+<BR> &nbsp; &nbsp; <CODE>zROOT_DIR_XBNPE_PARENT</CODE>
+<BR>This directory contains all non-<A HREF="#zROOT_DIR_XBNPE_AG">auto-generated</A> code and documentation.</P>
+
+<P>Specifically, it is equal to
+<BR> &nbsp; &nbsp; <CODE>{#insert <A HREF="#zROOT_DIR_XBNPE_PARENT">zROOT_DIR_XBNPE_PARENT</A>}xbnpe\</CODE>
+<BR>For example:
+<BR> &nbsp; &nbsp; <CODE>C:\programming\phrase_express\xbnpe\</CODE></P>
+
+<P><I>Do not edit the value of <CODE>zROOT_DIR_XBNPE</CODE> !</I></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="zROOT_DIR_XBNPE_MAIN"/><H2><CODE>[<A HREF="#zROOT_DIR_XBNPE_PARENT">BACK</A>]</CODE> &nbsp; <CODE>..._PARENT</CODE> main sub-directory: <CODE>zROOT_DIR_XBNPE_MAIN</CODE></H2>
+
+<P><B><CODE>zROOT_DIR_XBNPE_MAIN</CODE></B> is a directory-variable is <I>derived</I> from
+<BR> &nbsp; &nbsp; <CODE>zROOT_DIR_XBNPE</CODE>
+<BR>This is where the main <I>and hard-coded</I> XBNPE-code resides (I directly create these phrases).</P>
+
+<P>Specifically, it is equal to
+<BR> &nbsp; &nbsp; <CODE>{#insert <A HREF="#zROOT_DIR_XBNPE">zROOT_DIR_XBNPE</A>}main\</CODE>
+<BR>For example:
+<BR> &nbsp; &nbsp; <CODE>C:\programming\phrase_express\xbnpe\main\</CODE></P>
+
+<P><I>Do not edit the value of <CODE>zROOT_DIR_XBNPE_MAIN</CODE> !</I></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="zROOT_DIR_XBNPE_AG"/><H2><CODE>[<A HREF="#zROOT_DIR_XBNPE_PARENT">BACK</A>]</CODE> &nbsp; <CODE>..._PARENT</CODE> main sub-directory: <CODE>zROOT_DIR_XBNPE_AG</CODE></H2>
+
+<P><B><CODE>zROOT_DIR_XBNPE_AG</CODE></B> is a directory-variable is <I>derived</I> from
+<BR> &nbsp; &nbsp; <CODE>zROOT_DIR_XBNPE</CODE>
+<BR>This is where the main <I>auto-generated</I> phrases are stored (these phrases are created by other phrases). </P>
+
+<P>Specifically it is equal to
+<BR> &nbsp; &nbsp; <CODE>{#insert <A HREF="#zROOT_DIR_XBNPE">zROOT_DIR_XBNPE</A>}auto_generated\</CODE>
+<BR>For example:
+<BR> &nbsp; &nbsp; <CODE>C:\programming\phrase_express\xbnpe\auto_generated\</CODE></P>
+
+<P><I>Do not edit the value of <CODE>zROOT_DIR_XBNPE_AG</CODE> !</I></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="zWIN_DIR_DESKTOP"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; XBNPE: Global-config-var: <CODE>zWIN_DIR_DESKTOP</CODE></H2>
+
+<P>Optional. I happen put test data on the desktop. If your Windows user-name, and therefore your desktop path, has spaces in it, it conflicts with the no-double-quotes rule, and therefore this value won't be usable to you.</P>
+
+<P>Example value:
+<BR> &nbsp; &nbsp; <CODE>C:\Users\jeffy\Desktop\</CODE></P>
+
+<P><I>Tip: To get your desktop's path, right-click on any non-standard file on your desktop (not the Recycling Bin or Network Neighborhood, for example), while holding the shift-key. Select &quot;Copy as path&quot;, paste it into a text document, and eliminate the quotes and file-name.</I></P>
+
+
+
+<PRE>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</PRE>
+</BODY></HTML>
+
+
+

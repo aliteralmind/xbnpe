@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuracion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFiles>
+    <string>..\..\..\..\build\macros\xbnpe\documentation\main\_documentation\index.html</string>
+  </SourceFiles>
+  <Compilar>true</Compilar>
+  <DirectorioDestino>..\main\_documentation\index-project</DirectorioDestino>
+  <HtmlCabecera />
+  <HtmlPie />
+  <TituloAyuda />
+  <NivelCorte>0</NivelCorte>
+  <GenerarWeb>false</GenerarWeb>
+  <ArchivosAdicionales>
+    <string>..\..\..\..\build\macros\xbnpe\documentation\main\_documentation</string>
+    <string>..\..\..\..\build\macros\xbnpe\documentation\main\_documentation\cwlpdf</string>
+    <string>..\..\..\..\build\macros\xbnpe\documentation\main\_documentation\other</string>
+    <string>..\..\..\..\build\macros\xbnpe\documentation\main\_documentation\phrase_express</string>
+    <string>..\..\..\..\build\macros\xbnpe\documentation\main\_documentation\search_and_replace</string>
+    <string>..\..\..\..\build\macros\xbnpe\documentation\main\_documentation\textpad__tpkc</string>
+    <string>..\..\..\..\build\macros\xbnpe\documentation\main\textpad__tpkc</string>
+    <string>..\..\..\..\build\macros\xbnpe\documentation\zz_misc_and_pxp</string>
+  </ArchivosAdicionales>
+  <AbrirProyecto>false</AbrirProyecto>
+  <DirectorioWeb>..\main\_documentation\index-web</DirectorioWeb>
+  <NivelArbolContenidos>0</NivelArbolContenidos>
+  <NivelTemasIndice>0</NivelTemasIndice>
+  <ArchivoAyuda>..\..\..\..\build\macros\xbnpe\documentation\main\_documentation\xbnpe.chm</ArchivoAyuda>
+  <CommandLine />
+  <GeneratePdf>false</GeneratePdf>
+  <PdfPath>..\main\_documentation\index.pdf</PdfPath>
+  <WebKeywords />
+  <WebDescription />
+  <WebHeaderFile />
+  <WebFooterFile />
+  <GenerateSitemap>false</GenerateSitemap>
+  <WebBase />
+  <ChangeFrequency>monthly</ChangeFrequency>
+  <WebLanguage>English</WebLanguage>
+  <ConfigurationVersion>1.6</ConfigurationVersion>
+  <FullTextSearch>false</FullTextSearch>
+  <PdfGeneration>OfficeAddin</PdfGeneration>
+  <GenerateXps>false</GenerateXps>
+  <XpsPath>..\main\_documentation\index.xps</XpsPath>
+  <GenerateJavaHelp>false</GenerateJavaHelp>
+  <JavaHelpPath>..\main\_documentation\index.jar</JavaHelpPath>
+  <HeadTagFile />
+  <ChmLocaleID>1033</ChmLocaleID>
+</Configuracion>

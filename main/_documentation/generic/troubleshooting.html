@@ -1,0 +1,291 @@
+<HTML><HEAD>
+	<TITLE>PhraseExpress: Troubleshooting</TITLE>
+	<meta name="viewport" content="width=device-width" />
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF"><a name="top"></a>
+
+<P>[<A HREF="../index.html#generic">BACK</A>]<CODE> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </CODE><I>(XBN-PhraseExpress is released under the <A HREF="../index.html#lpgl">LPGL 2.1</A>)</I>
+
+<HR/>
+
+<H1>PhraseExpress: Troubleshooting and work-arounds</H1>
+
+<P>This document describes generic (unrelated to XBN-PhraseExpress) PhraseExpress problems you may encounter, with workarounds when possible.</P>
+
+<P><B>Contents:</B><UL>
+	<LI><B>Problems:</B><UL>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#dashparamname">GO</A></B></FONT>]</CODE> &nbsp; When parameter values contain dash-parameter-name</LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#dlgtextbox">GO</A></B></FONT>]</CODE> &nbsp; Typing &quot;directly&quot; into a non-Pex dialog textbox is unreliable</LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#spacehitsdlgbtn">GO</A></B></FONT>]</CODE> &nbsp; Typing a <CODE>{#SPACE}</CODE> dismisses a non-Pex dialog</LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#intermittent">GO</A></B></FONT>]</CODE> &nbsp; Other intermittent but consistent problems</LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#specialcharsstp">GO</A></B></FONT>]</CODE> &nbsp; Special characters in <CODE>SETPHRASE</CODE> and <CODE>SETCLIPBOARD</CODE></LI>
+	</UL></LI>
+	<LI><B>Documented elsewhere:</B><UL>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="../devpex/debugging.html">GO</A></B></FONT>]</CODE> &nbsp; XBNPE-debugging utilities</LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="../basics/phrase_file.html#troubleshooting">GO</A></B></FONT>]</CODE> &nbsp; Problems related to importing a phrase-file</LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="pex_built_in_functions.html">GO</A></B></FONT>]</CODE> &nbsp; Problems related to specific PhraseExpress functions</LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="../tasks/snr.html#issues">GO</A></B></FONT>]</CODE> &nbsp; Search-and-replace specific issues</LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="wishes.html">GO</A></B></FONT>]</CODE> &nbsp; My most important PhraseExpress enhancement requests</LI>
+	</UL></LI>
+</UL></LI></P>
+
+<P>In general, when PhraseExpress behaves in a truly bizarre manner, just restart it. Some examples may include<UL>
+	<LI>No dialogs open at all. PhraseExpress has lost its &quot;handle&quot; on window-focusing.</LI>
+	<LI>No phrases work at all. Calling its autotext or clicking on its key-command (hotkey) do nothing.</LI>
+</UL></P>
+
+<HR WIDTH="25%" ALIGN="left"/>
+
+<P>And NEVER hit the escape-key when you're in the PhraseExpress application.</P>
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="dashparamname"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; Problem: When parameter values contain dash-parameter-name</H2>
+
+<H4>The problem</H4>
+
+<P><I>[go to <A HREF="#dashparamnamesol">solution</A>, <A HREF="#dashparamnamephrs">testing phrases</A>]</I></P>
+
+<P><CODE STYLE="background-color:#E1E1E1;">{#SUBSTR GET-THE-STRING-FROM-HERE-TO-THERE -from 21 -count 13}</CODE></P>
+
+<P>Output: <I>nothing</I></P>
+
+<P>The reason is the string-being-searched contains
+<BR> &nbsp; &nbsp; <CODE>&quot;-FROM&quot;</CODE>
+<BR>and
+<BR> &nbsp; &nbsp; <CODE>&quot;-TO&quot;</CODE>
+<BR>which is confusing PhraseExpress: Which is the &quot;real&quot; <CODE>&quot;-from&quot;</CODE> parameter? (As far as <CODE>&quot;-to&quot;</CODE>, which is not a legal parameter, your guess is as good as mine.)</P>
+
+<P><IMG SRC="images/substr_with_dash_from.jpg" BORDER="1"/></P>
+
+<P>As noted below, this is a problem with <I>all PhraseExpress functions that have dash-parameters.</I></P>
+
+<P>To emphasize the issue, here is the output from some variations:</P>
+
+<H4>Tilde-from, dash-to</H4>
+
+<P><CODE STYLE="background-color:#E1E1E1;">{#SUBSTR GET-THE-STRING~FROM-HERE-TO-THERE -from 21 -count 13}</CODE></P>
+
+<P>Output: <I>nothing</I></P>
+
+<H4>(Asc-)dash-from, tilde-to--including via a phrase-call</H4>
+
+<P><CODE STYLE="background-color:#E1E1E1;">{#SUBSTR GET-THE-STRING-FROM-HERE~TO-THERE -from 21 -count 13}</CODE>
+<BR><CODE STYLE="background-color:#E1E1E1;">{#SUBSTR GET-THE-STRING{#asc 45}FROM-HERE~TO-THERE -from 21 -count 13}</CODE>
+<BR><CODE STYLE="background-color:#E1E1E1;">{#SUBSTR {#insert zTestStrDshFrmTldTo} -from 21 -count 13}</CODE></P>
+
+<P><I>Where <CODE>&quot;zTestStrDshFrmTldTo&quot;</CODE> is equal to
+<BR> &nbsp; &nbsp; <CODE>GET-THE-STRING-FROM-HERE~TO-THERE</CODE></I></P>
+
+<P>Output: <CODE>&quot;GET-THE-STRIN&quot;</CODE></P>
+
+<a name="dashparamnamesol"/><H3><CODE>[<A HREF="#dashparamname">BACK</A>]</CODE> &nbsp; <U>The solution</U></H3>
+
+<P>The solution--which is impossible--is to never have an input string that, when using <CODE>&quot;SUBSTRING&quot;</CODE>, contains <CODE>&quot;-from&quot;</CODE> or <CODE>&quot;-to&quot;</CODE>.</P>
+
+<P><CODE STYLE="background-color:#E1E1E1;">{#SUBSTR GET-THE-STRING~FROM-HERE~TO-THERE -from 21 -count 13}</CODE></P>
+<P>Output: <CODE>&quot;HERE~TO-THERE&quot;</CODE></P>
+
+
+<P><B>This is a problem with <I><U>all</U></I> PhraseExpress functions that have parameters</B> (<CODE>COND</CODE>, <CODE>REPLACE</CODE>, <CODE>LOOP</CODE>, <CODE>INPUT</CODE>, etc.). For example:
+<BR> &nbsp; &nbsp; <CODE>{#MSGBOX -head Some-text -text Some-more-text}</CODE></P>
+
+<P><IMG SRC="images/mbx_with_dash_param_problem.jpg" BORDER="1"/></P>
+
+<P>Since you are largely in control of the text in <CODE>&quot;MSGBOX&quot;</CODE>-s and <CODE>&quot;BALLOON&quot;</CODE>-s, it is strongly recommended that you use tildes (<CODE>'~'</CODE>) in lieu of dashes.</P>
+
+<P>The ability to <A HREF="wishes.html#escapestr">escape strings</A> would solve this problem:</P>
+
+<a name="dashparamnamephrs"/><H3><CODE>[<A HREF="#dashparamname">BACK</A>]</CODE> &nbsp; <U>Testing phrases</U></H3>
+
+<PRE STYLE="background-color:#E1E1E1;">zTestSubstr1WDshFrmTo
+{#SUBSTR GET-THE-STRING-FROM-HERE-TO-THERE -from 21 -count 13}
+zTestSubstr2WTldFrmDshTo
+{#SUBSTR GET-THE-STRING~FROM-HERE-TO-THERE -from 21 -count 13}
+zTestSubstr3WDshFrmTldTo
+{#SUBSTR GET-THE-STRING-FROM-HERE~TO-THERE -from 21 -count 13}
+zTestSubstr4WTldFrmTo
+{#SUBSTR GET-THE-STRING~FROM-HERE~TO-THERE -from 21 -count 13}
+zTestSubstr5WAscDshFrmTldTo
+{#SUBSTR GET-THE-STRING{#asc 45}FROM-HERE~TO-THERE -from 21 -count 13}
+zTestSubstr6WDshFrmTldToWPhrsCl
+{#SUBSTR {#insert zTestStrDshFrmTldTo} -from 21 -count 13}
+zzTestStrDshFrmTldTo
+GET-THE-STRING-FROM-HERE~TO-THERE</PRE>
+
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="dlgtextbox"/><H2>[<A HREF="#top">top</A>] &nbsp; Typing &quot;directly&quot; into a non-Pex dialog textbox is unreliable</H2>
+
+<P>Intermittently, when PhraseExpress &quot;directly&quot; types text into a dialog's textbox, it instead prints that text into the document-proper--or in the case of modal dialogs, such as &quot;Open File(s)&quot;, it causes DINGs.</P>
+
+<P>For example, while this works most of the time (assuming <CODE>&quot;xxx&quot;</CODE> exists):</P>
+
+<PRE STYLE="background-color:#E1E1E1;"><!--xcfexample...START  //  {#BALLOON -title findnextx -text About to start}{#sleep 2000}--><B><U>findnextx</U></B>
+{#insert zFcsTP<A HREF="../tasks/snr.html#findxmpls">Find</A>DlgOpen}
+   xxx
+   {#insert zFindBtnNext}
+{#insert zFindDlgClose}</PRE>
+
+<P>This works all of the time:</P>
+
+<PRE STYLE="background-color:#E1E1E1;"><!--xcfexample...START  //  {#BALLOON -title findnextxv -text About to start}{#sleep 2000}--><B><U>findnextxv</U></B>
+{#insert zFcsTPFindDlgOpen}
+   {#SETPHRASE -description zvFIND_WHAT -content <B>xxx</B> -autotext zvFIND_WHAT -folder ctvv_folder}
+      {#insert zvFIND_WHAT}
+   {#insert zFindBtnNext}
+{#insert zFindDlgClose}</PRE>
+
+<P>This is called <B>&quot;set-printing&quot;</B>: Setting and then immediately printing (and usually, discarding) a <A HREF="../basics/xbnpe_phrase_types.html#variable">variable</A>.<UL>
+	<LI>The <CODE>&quot;zFIND_WHAT&quot;</CODE> set-print can be easily created with <CODE>&quot;fwhatp&quot;</CODE>.</LI>
+	<LI>The <CODE>&quot;zvRPLC_WITH&quot;</CODE> set-print can be created with <CODE>&quot;rwithp&quot;</CODE></LI>
+	<LI>The <CODE>&quot;stpr&quot;</CODE> utility, when called from immediately following a <CODE>SETPHRASE</CODE>, creates the &quot;print&quot; call for that setphrase.</LI>
+</UL></P>
+
+<P>An alternative to set-printing is simply to call a phrase containing the find-text. Such as:</P>
+
+<PRE STYLE="background-color:#E1E1E1;"><!--xcfexample...START  //  {#BALLOON -title findnextxp -text About to start}{#sleep 2000}--><B><U>findnextxp</U></B>
+{#insert zFcsTPFindDlgOpen}
+      {#insert zQxxxQ}
+   {#insert zFindBtnNext}
+{#insert zFindDlgClose}
+
+<B><U>zQxxxQ</U></B>
+xxx</PRE>
+
+<P>While this makes the find code more readable, it also massively increases the number of potential single-use-only (and trivial static-string-only) phrases.</P>
+
+<H4><U>Exceptions</U></H4>
+
+<P>In situations, for example, when making a long series of replacements, the various set-prints would make the code unreadable. In this case, declaring each search-term in a separate phrase-call may be desirable. Another situation where set-prints may be undesirable, is when (for example) the search-term contains logic (that is, phrase-calls), or is particularly long.</P>
+
+<P>In addition, when curlys must be typed into a dialog textbox (which is common when searching for PhraseExpress code!) the curlys must be <I>doubly-escaped</I>. This quickly becomes unreadable, and is another reason to use a phrase-call instead. <I>It is also impossible to put a literal <CODE>SETPHRASE</CODE> inside an actual <CODE>SETPHRASE</CODE>...trust me.</I></P>
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="intermittent"/><H2>[<A HREF="#top">top</A>] &nbsp; Other intermittent but consistent problems</H2>
+
+<P>Some problems happen only some of the time, but they do consistently occur:<UL>
+	<LI>No phrases work at all. Typing the autotext or clicking the hotkeys (key-command) for <I>any</I> phrase does nothing. The <B>solution</B> is to restart PhraseExpress.</LI>
+	<LI>Typing text overwrites the clipboard with that text. For example
+	<BR> &nbsp; &nbsp; <CODE>{#SETCLIPBOARD there}hello {#INSERTCLIPBOARD}.</CODE>
+	<BR>prints
+	<BR> &nbsp; &nbsp; <CODE>hello hello</CODE>
+	<BR>The <B>solution</B> is to set the text to a variable/phrase then call the phrase (instead of typing it), or to use the clipboard <I>before</I> the text is printed.
+	<BR>&nbsp;</LI>
+	<LI>The mouse is frozen at random points, both during and after phrase-execution. The <B>solution</B> is to<UL>
+		<LI><B>During phrase exceution:</B> Hit the <CODE>&quot;Caps Lock&quot;</CODE> key <I>twice</I>. Note that <CODE>&quot;Esc&quot;</CODE> cancels the process, and <CODE>&quot;Space&quot;</CODE> dismisses any currently-displayed dialog box.</LI>
+		<LI><B>After phrase exceution:</B> Hit the <CODE>&quot;Esc&quot;</CODE> key--<I>as long as the PhraseExpress application is not <B>both</B> open and focused on.</I></LI>
+	</UL></LI>
+</UL></P>
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="spacehitsdlgbtn"/><H2>[<A HREF="#top">top</A>] &nbsp; Typing a <CODE>{#SPACE}</CODE> dismisses a non-Pex dialog</H2>
+
+<P>When a modal <I>non-PhraseExpress</I> dialog is open, and it is dismissed unexpectedly, check to see that a call to <CODE>&quot;{#SPACE}&quot;</CODE> is not being typed during that time. For example:</P>
+
+<P><CODE STYLE="background-color:#E1E1E1;">{#insert zTPFindDlgOpen}text definitely not in the document{#insert zFindBtnNext}some{#SPACE}more text{#insert zFindBtnNext}{#insert zFindDlgClose}</CODE></P>
+
+<P>When clicking the find-next button the <I>first time</I>, it causes a modal &quot;cannot-find&quot; dialog to appear. The call to <CODE>&quot;{#SPACE}&quot;</CODE> in the next search term dismisses that dialog, resulting in only <CODE>&quot;more text&quot;</CODE> being found.</P>
+
+<P>This problem only occurs when using <CODE>&quot;{#SPACE}&quot;</CODE>. Neither
+<BR> &nbsp; &nbsp; <CODE>some more text</CODE>
+<BR>nor
+<BR> &nbsp; &nbsp; <CODE>some{#asc 32}more text</CODE>
+<BR>cause the problem.</P>
+
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="specialcharsstp"/><H2>[<A HREF="#top">top</A>] &nbsp; Special characters in <CODE>SETPHRASE</CODE> and <CODE>SETCLIPBOARD</CODE></H2>
+
+<P><I>[jump to <A HREF="#specialcharsstpsol">solution</A>, <A HREF="#specialcharsstpcrly">curly-problem</A>]</I></P>
+
+<P>Attempting
+<BR> &nbsp; &nbsp; <CODE>{#SETCLIPBOARD {#ENTER}x{#TAB}}</CODE>
+<BR>results in a newline and tab being printed <I>while the phrase is executing</I>. The clipboard is set only to <CODE>'x'</CODE>.</P>
+
+<P>For example:
+<BR> &nbsp; &nbsp; <CODE>Hello {#SETCLIPBOARD {#ENTER}Kermit{#TAB}}there, {#INSERTCLIPBOARD}.</CODE>
+<BR>results in</P>
+
+<PRE STYLE="background-color:#E1E1E1;">Hello
+	there, Kermit.</PRE>
+
+<P>The problem is <I>similar</I> when using <CODE>SETPHARSE</CODE>:</P>
+
+<P><CODE STYLE="background-color:#E1E1E1;">Hello {#SETPHRASE -description zvNAME -content {#ENTER}Kermit{#TAB} -autotext zvNAME -folder ctvv_folder}there, {#insert zvNAME}.</CODE></P>
+
+<P>The result:
+<BR><CODE STYLE="background-color:#E1E1E1;">&nbsp;
+<BR>	Hello	there, Kermit.</CODE></P>
+
+<a name="specialcharsstpsol"/><H3><CODE>[<A HREF="#specialcharsstp">BACK</A>]</CODE> &nbsp; The solution</H3>
+
+<P><I>Doubly</I>-escaping the enter and tab achieve what you want:</P>
+
+<P><CODE STYLE="background-color:#E1E1E1;">Hello {#SETPHRASE -description zvNAME -content \\\\\\{#ENTER\\\\\\}Kermit\\\\\\{#TAB\\\\\\} -autotext zvNAME -folder ctvv_folder}there, {#insert zvNAME}.</CODE></P>
+
+<P>The result:
+<BR><CODE>Hello there,
+	Kermit.</CODE></P>
+
+<a name="specialcharsstpcrly"/><H3><CODE>[<A HREF="#specialcharsstp">BACK</A>]</CODE> &nbsp; Curly's as well must be escaped when using <CODE>SETPHRASE</CODE> and <CODE>SETCLIPBOARD</CODE></H3>
+
+<P>Setting stray curlys (<CODE>'{'</CODE> and <CODE>'}'</CODE>) into <CODE>SETPHRASE</CODE> and <CODE>SETCLIPBOARD</CODE> will likely cause incorrect interpretation, because PhraseExpress will not know where one phrase ends and another begins--such as the <CODE>SETPHRASE</CODE> itself!</P>
+
+<P>Unfortunately, doubly-escaping does not solve the problem:</P>
+
+<P><CODE STYLE="background-color:#E1E1E1;">Hello {#SETCLIPBOARD \\\\\\{Kermit\\\\\\}}there, {#INSERTCLIPBOARD}.</CODE></P>
+
+<P>Results in:
+<BR><CODE>Hello there, \\\\\\{Kermit}.</CODE></P>
+
+<P>This is simply a problem to be avoided.</P>
+
+<PRE>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</PRE>
+</BODY></HTML>
+
+
+

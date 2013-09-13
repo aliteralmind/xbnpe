@@ -1,0 +1,212 @@
+<HTML><HEAD>
+	<TITLE>XBNPE: TPKC build</TITLE>
+	<meta name="viewport" content="width=device-width" />
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF"><a name="top"></a>
+
+<a name="bldrgc"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TPKC-build: Before everything else: Manually creating the raw-global-configuration</H2>
+
+<P><UL>
+	<LI><B>File:</B> <I>None</I></LI>
+	<LI><B>Input:</B> Each category's command list.</LI>
+	<LI><B>Output:</B> <CODE>zzXPSUB_DIR_tpkcRawCfgGlobal\[cat-abrv].txt</CODE></LI>
+</UL></P>
+
+<P>Before the TPKC project can be built, its &quot;Raw Global Command Configuration&quot; (or &quot;raw-global-config&quot;) must be created. This is a largely manual process--very little of it is automated. However, it is only necessary to do this <I>entire</I> process once. When a new version of TextPad is released, if it eliminates, adds, renames, or fundamentally changes any built-in command, these output files must be updated to reflect it--and then the TPKC project must be re-built.</P>
+
+<P>The raw-global-config is stored in <CODE>zzXPSUB_DIR_tpkcRawCfgGlobal</CODE></P>
+
+<P>This section documents the creation of the raw-global-config from <I>nothing</I>--as if it never existed.</P>
+
+<P><B>Steps, in order:</B><OL>
+	<LI><CODE>[<A HREF="#creatergc_1ovrcfg">go</A>]</CODE> Update the all-category-qbl</LI>
+	<LI><CODE>[<A HREF="#creatergc_2catcfg">go</A>]</CODE> Update category configuration</LI>
+	<LI><CODE>[<A HREF="#creatergc_3rawglblcfg">go</A>]</CODE> Create the raw-global-config</LI>
+</OL></P>
+
+<H4><U>Warning</U></H4>
+
+<P>The TPKC-build-process will fail if there are any empty-lines anywhere in the raw-global-config files.</P>
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="creatergc_1ovrcfg"/><H3>Step 1: Update the all-category-qbl</H3>
+
+<P>Update the all-category-qbl
+<BR> &nbsp; &nbsp; <CODE><A HREF="config_vars.html#zTpkcAllCategoryAbrvLCsQbl">zTpkcAllCategoryAbrvLCsQbl</A></CODE>
+<BR>to reflect the new category-list.</P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="creatergc_2catcfg"/><H3>Update category configuration</H3>
+
+<P>Update the <A HREF="config_vars.html#catcfg">category configuration</A>, to reflect the values in the all-category-qbl (<A HREF="config_vars.html#zTpkcAllCategoryAbrvLCsQbl"><CODE>zTpkcAllCategoryAbrvLCsQbl</CODE></A>). The command-list for each category can be retrieved via
+<BR> &nbsp; &nbsp; <CODE>TextPad &gt; Preferences &gt; Keyboard &gt; [one-category] &gt; [List-button]</CODE>
+<BR>and using only the values in the first column. Get the first column values by turning word-wrap off, checking
+<BR> &nbsp; &nbsp; <CODE>TextPad &gt; Configure &gt; Block Select Mode</CODE>
+<BR>and then selecting the column with the mouse. Alternatively, use this regex replacement:<UL>
+	<LI><B>Find what:</B> <CODE>^([^ ]+) .+$</CODE></LI>
+	<LI><B>Replace with:</B> <CODE>$1</CODE></LI>
+</UL></P>
+
+<P><I>To prepare for the next step (creating the raw-global-config), save this command-name column into
+<BR> &nbsp; &nbsp; <CODE>zzXPSUB_DIR_tpkcRawCfgGlobal\[cat-abrv].px.txt</CODE>
+<BR>where <CODE>[cat-abrv]</CODE> is as defined in the all-category-qbl (<A HREF="config_vars.html#zTpkcAllCategoryAbrvLCsQbl"><CODE>zTpkcAllCategoryAbrvLCsQbl</CODE></A>), </I></P>
+
+<P>Now close the document and continue with that same text remaining in the clipboard.</P>
+
+<H4><U>Creating the category's command list: <CODE><A HREF="config_vars.html#AllCmdsQbl">zTpkc[cat-abrv]AllCmdsQbl</A></CODE></U></H4>
+
+<P>In the category-confg file
+<BR> &nbsp; &nbsp; <B>-<CODE>zzXPSUB_DIR_tpkcConfigCategory\[cat-abrv].px.txt</CODE></B>
+<BR>replace the value of
+<BR> &nbsp; &nbsp; <CODE>zTpkc[cat-abrv]AllCmdsQbl</CODE>
+<BR>with the list currently in the clipboard. To transform this column of command names in to a Square-Bracketed List (qb-list) as expected, select the column and then use these two regex replacements:<OL>
+	<LI>Surround each with square brackets:<UL>
+			<LI><B>Find what:</B> <CODE>^(.+)$</CODE></LI>
+			<LI><B>Replace with:</B> <CODE>[$1]</CODE></LI>
+	</UL></LI>
+	<LI>Eliminate all new-lines:<UL>
+			<LI><B>Find what:</B> <CODE>\n</CODE></LI>
+			<LI><B>Replace with:</B> <I>nothing</I></LI>
+	</UL></LI>
+</OL></P>
+
+<a name="charcatcmdnameexception"/><H4><U>Command-name exception for 'Characters' category</U></H4>
+
+<P>The command names for the Characters category, as assigned by TextPad
+<BR> &nbsp; &nbsp; <CODE>TextPad &gt; Preferences &gt; Keyboard &gt; Categories &gt; <I>&quot;Characters&quot;</I> &gt; Commands</CODE>
+<BR>Are not appropriate for the TPKC project. This is the only category in which this is an issue. Instead, as of version 7.0.9, use <A HREF="../../../textpad__tpkc/for_v_7_0_9/documentation_and_scripts/_char_category_cmd_name_alternatives.txt">these alternatives</A>.</P>
+
+<P>Note each name starts with <CODE>&quot;Char##&quot;</CODE> (zero-padded for numbers less than ten), to ensure the ordering is exactly the same as the original list.</P>
+
+
+
+
+
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="creatergc_3rawglblcfg"/><H3>Create the raw-global-configuration</H3>
+
+<P>In the previous step, you duplicated the command-name column to
+<BR> &nbsp; &nbsp; <CODE>zzXPSUB_DIR_tpkcRawCfgGlobal\[cat-abrv].px.txt</CODE>
+<BR>After this final step, these files become the raw-global-config.</P>
+
+<P>For example (assuming TextPad version 7.0.9), here are the first five lines from
+<BR> &nbsp; &nbsp; <CODE>{#insert zzXPSUB_DIR_tpkcRawCfgGlobal}file.txt</CODE></P>
+
+<PRE>FileClose
+FileCloseAll
+FileExit
+FileGoTo
+FileManage</PRE>
+
+<P>This needs to be transformed to the following:</P>
+
+<PRE>FileClose	zTPFileClose	Fcls	yes	50	(*NOTHING! No steps! This command is the top-most command in the list.*)
+FileCloseAll	zTPFileCloseAll	Fclsa	{#insert zzEmptyStringMarker}	50	\\\{#DOWN\\\}\\\{#insert z5ThnTSlp\\\}
+FileExit	zTPFileExit	Fxit	{#insert zzEmptyStringMarker}	{#insert zzEmptyStringMarker}	\\\{#DOWN -count 2\\\}\\\{#insert z5ThnTSlp\\\}
+FileGoTo	zTPFileOpenSelPath	Fgoto	{#insert zzEmptyStringMarker}	100	\\\{#DOWN -count 3\\\}\\\{#insert z5ThnTSlp\\\}
+FileManage	zTPFileManager	Fmngr	{#insert zzEmptyStringMarker}	50	\\\{#PGDN\\\}\\\{#insert z5ThnTSlp\\\}\\\{#UP -count 2\\\}\\\{#insert z5ThnTSlp\\\}</PRE>
+
+<P>Columns:<OL>
+	<LI>Command name</LI>
+	<LI>The default phrase name. This will be assigned to the <A HREF="config_vars.html#globalcmd">command-configuration</A> variable
+	<BR> &nbsp; &nbsp; <CODE><A HREF="config_vars.html#DfltPhrsNm">zTpkc[abrv]DfltPhrsNm</A></CODE></LI>
+	<LI>The command abbreviation:
+	<BR> &nbsp; &nbsp; <CODE><A HREF="config_vars.html#Abrv1C">zTpkc[abrv]Abrv1C</A></CODE></LI>
+	<LI>Is this a bootstrap command/does this command have a bootstrap key-command? If yes, <CODE>&quot;yes&quot;</CODE>, otherwise <CODE>''</CODE>.
+	<BR> &nbsp; &nbsp; <CODE><A HREF="config_vars.html#IsBtstrp_yes">zTpkc[abrv]IsBtstrp_yes</A></CODE></LI>
+	<LI>The specific navigational steps, from the top of its command-list
+	<BR> &nbsp; &nbsp; <CODE>TextPad &gt; Preferences &gt; Keyboard &gt; [Category name] &gt; Commands</CODE>
+	<BR>to <I>this</I> command. If this command <I>is</I> the top command, then this should be a comment saying so (empty-string is not allowed). Note that each step is a raw PhraseExpress function-call (and not its XBN-PhraseExpress alternative, such as
+	<BR> &nbsp; &nbsp; <CODE>{#insert zDOWN}</CODE>
+	<BR>), and each step is followed by a call to <CODE>z5ThnTSlp</CODE>.
+	<BR> &nbsp; &nbsp; <CODE><A HREF="config_vars.html#StpsFrmCmdListTop">zTpkc[abrv]StpsFrmCmdListTop</A></CODE></LI>
+</OL></P>
+
+<H4><U>Notes on determining the values of each column</U></H4>
+
+<P><OL>
+	<LI><B>Default phrase name:</B> At first, simply consider making this equal to
+	<BR> &nbsp; &nbsp; <CODE>zTP[command-name]</CODE>
+	<BR>then tailor as necessary.</LI>
+	<LI><B>The command abbreviation:</B> You'll need to manually and individually decide on each abbreviation.</LI>
+	<LI><B>Is this a bootstrap command?</B> Default to empty-string, then tailor as necessary.</LI>
+</OL></P>
+
+<P><B>Determining the go-to-command-from-list-top steps.</B></P>
+
+<P><OL>
+	<LI>In each raw-config document, with word-wrap off and
+	<BR> &nbsp; &nbsp; <CODE>Textpad &gt; Configure &gt; Block select mode</CODE>
+	<BR>on (checked), copy the first column (the command names) from each document, and paste them all into a SINGLE document. Use
+	<BR> &nbsp; &nbsp; <CODE>TextPad &gt; Configure &gt; Block Select Mode</CODE>
+	<BR>to put them all into <A HREF="all_cmd_nms_2_cols.txt">two columns</A> (it looks much cleaner when viewed in TextPad).</LI>
+	<LI>ALSO use these first-column texts to create each of the <CODE>[zTpkc*AllCmdsQbl]</CODE> (and its corresponding <CODE>[zTpkc*CmdCount]</CODE>) variables in <CODE>[zzXPSUB_DIR_tpkcConfigCategory]</CODE></LI>
+	Print out this document and use it to determine the go-to-command-from-Commands-list-top, as demonstrated in
+	<BR> &nbsp; &nbsp; <CODE><A HREF="all_cmd_nms_2_cols.pdf">all_cmd_nms_2_cols.pdf</A></CODE>
+	<BR>Once all the <CODE>HOME</CODE>, <CODE>END</CODE>, <CODE>PGUP#</CODE>, and <CODE>PGDN#</CODE>-s are determined, the rest are simply an <CODE>UP#</CODE>-or-<CODE>DOWN#</CODE> away from that original <CODE>HOME</CODE> (or <CODE>END</CODE>, or <CODE>PGUP#</CODE>, or <CODE>PGDN#</CODE>). Use empty-lines and bookmarks to make this easier, as demonstrated here:
+	<P><IMG SRC="images/assinging_each_cmd_to_gt_steps_from_list_top_starting_point.JPG"/></P>
+	<LI>Using both
+	<BR> &nbsp; &nbsp; <CODE>[zXPROOT_DIR_tpkcRawCfgGlobal][category-abrv].px.txt</CODE>
+	<BR>and the concepts in this <A HREF="all_cmd_nms_2_cols.pdf">pdf</A>, write the go-to-cmd-from-list-top phrases. in the <I>last</I> column (in place of the &quot;<CODE>X<!---->XX</CODE>&quot;-s). Use raw PhraseExpress function calls and follow each with <CODE>[z5ThnSlp]</CODE>. For example:
+	<BR> &nbsp; &nbsp; <CODE>\\\{#PGDN -count 3\\\}\\\{#insert z5ThnSlp\\\}\\\{#UP\\\}\\\{#insert z5ThnSlp\\\}</CODE></LI>
+	<LI>This is now considered the TPKC's &quot;raw global configuration&quot;. It needs to be processed by
+	<BR> &nbsp; &nbsp; <CODE>zTpkcCreateAllGlblCmdCfgFilesForAllCats</CODE></LI>
+</OL></P>
+
+<P><B>For categories where every command name starts with the same letter</B> (such as Edit and Window), the commands <CODE>END</CODE>, <CODE>PGDN</CODE>, and <CODE>PGUP</CODE> will be the basis. For example, to get to <CODE>EditCutLine</CODE>, use these steps:
+<BR> &nbsp; &nbsp; <CODE>\\\{#PGDN -count 3\\\}\\\{#insert z5ThnSlp\\\}\\\{#DOWN\\\}\\\{#insert z5ThnSlp\\\}</CODE></P>
+
+<P>For categories with commands having multiple starting characters (such as Search, Configure, and Cursor), the first character can be used in its place. For example, to get to <CODE>MatchBracketExtend</CODE>, use these steps:
+<BR> &nbsp; &nbsp; <CODE>m\\\{#insert z5ThnSlp\\\}\\\{#DOWN\\\}\\\{#insert z5ThnSlp\\\}</CODE></P>
+
+
+<PRE>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</PRE>
+</BODY></HTML>
+
+
+

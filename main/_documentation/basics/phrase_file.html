@@ -1,0 +1,182 @@
+<HTML><HEAD>
+	<TITLE>XBNPE: Importing & phrase format</TITLE>
+	<meta name="viewport" content="width=device-width" />
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF"><a name="top"></a>
+
+<P>[<A HREF="../index.html#basics">BACK</A>]<CODE> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </CODE><I>(XBN-PhraseExpress is released under the <A HREF="../index.html#lpgl">LPGL 2.1</A>)</I>
+
+<HR/>
+
+<H1>XBN-PhraseExpress</H1>
+<H2>Plain-text phrase-files: Format and how to import</H2>
+
+<P>This document describes the format of plain-text phrase-files, as used in the XBN-PhraseExpress project, and how to import them. I do not edit or create any phrases in the PhraseExpress application. <A HREF="pex_in_textpad.html">I only do so in TextPad</A>.</P>
+
+<P><B>Contents:</B><UL>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#pformat">GO</A></B></FONT>]</CODE> &nbsp; Plain-text phrase format</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#fformat">GO</A></B></FONT>]</CODE> &nbsp; Plain-text phrase-file format</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="phrase_file_import1.html">GO</A></B></FONT>]</CODE> &nbsp; Step-by-step: <B>Importing one plain-text phrase-file into PhraseExpress</B></LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="phrase_file_mrc_tip.html#mrchanged">GO</A></B></FONT>]</CODE> &nbsp; TIP: Auto-display of most-recently changed phrase-files &nbsp; &nbsp; <I>(<A HREF="phrase_file_mrc_tip.html#mrcx2">alternative steps</A> for Xplorer2)</I></LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#importmulti">GO</A></B></FONT>]</CODE> &nbsp; Importing multiple phrase-files</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#troubleshooting">GO</A></B></FONT>]</CODE> &nbsp; Troubleshooting import problems</LI>
+</UL></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="fformat"/><H3>[<A HREF="#top">top</A>] &nbsp; Plain-text phrase-file format</CODE></H3>
+
+An example phrase-file, where each line contains one <A HREF="#pformat">phrase</A>:
+
+<PRE STYLE="background-color:#E1E1E1;">(*
+   The phrases in this file print some letters
+*)
+zPrintAnX -- Prints a lowercase 'x'   x   zPrintAnX
+
+zPrintAY -- Prints a lowercase 'y'   y   zPrintAY
+zPrintNYs -- Prints one-or-more 'y's (user prompt)   {#LOOP y -count {#INPUT -head How many y-s? -single}}   zPrintAY</PRE>
+
+<P>Empty lines are okay. Note that tabs in the comment will cause incorrect, or entirely empty, phrases to be imported (one for every line in the comment that contains a tab).</P>
+
+<P>Phrase files are postfixed with <CODE>&quot;px.txt&quot;</CODE>. For example
+<BR> &nbsp; &nbsp; <CODE>print_some_letters.px.txt</CODE>
+<BR>After importing, the <CODE>&quot;.txt&quot;</CODE> is stripped off:</P>
+
+<P><IMG SRC="images/import_demo_8of8_folder_open.jpg" BORDER="1"/></P>
+
+<P>Note that phrase-files cannot be named with only <CODE>&quot;.px&quot;</CODE> as its extension. PhraseExpress does not recognize files with only <CODE>&quot;.px&quot;</CODE>, when attempting to import them:</P>
+
+<P><IMG SRC="images/px_only_doesnt_work.jpg" BORDER="1"/></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="pformat"/><H3>[<A HREF="#top">top</A>] &nbsp; Plain-text phrase format</CODE></H3>
+
+<P>Here's a plain-text phrase (in <A HREF="../devpex/c2pl.html">compressed</A> format):</P>
+
+<PRE STYLE="background-color:#E1E1E1;">zPrintAnX -- Prints a lowercase 'x'   x   zPrintAnX</PRE>
+
+<P>There are three fields, each separated by tabs:<OL>
+	<LI><B>Description:</B>
+	<BR> &nbsp; &nbsp; <CODE>zPrintAnX -- Prints a lowercase 'x'</CODE></LI>
+	<LI><B>Value</B> (its phrase-body):
+	<BR> &nbsp; &nbsp; <CODE>x</CODE></LI>
+	<LI><B>Autotext:</B>
+	<BR> &nbsp; &nbsp; <CODE>zPrintAnX</CODE></LI>
+</OL></P>
+
+<P>A phrase is only <A HREF="phrase_file_import1.html">importable</A> when contained in a single line. Multiple phrases may exist in a <A HREF="#fformat">phrase-file</A>.</P>
+
+<P>The autotext is intentionally duplicated in the first word in the description. This is called the <B>&quot;description-autotext&quot;</B>, and it is required. Everything after it
+<BR> &nbsp; &nbsp; <CODE>&quot; -- Prints a lowercase 'x'&quot;</CODE>
+<BR>is optional. The reason for this duplication is so, when browsing the phrases in the PhraseExpress application, it is obvious which phrase you're looking at--only the description is displayed when browsing the phrase-heirarchy.</P>
+
+<P><IMG SRC="images/z_print_an_x.jpg" BORDER="1"/></P>
+
+<P>Most phrases in XBN-PhraseExpress have this autotext-redundancy.</P>
+
+<P>In addition, phrases with this redundant-autotext can take advantage of the <A HREF="../devpex/c2pl.html"><CODE>&quot;c2pl&quot;</CODE> utilities</A>. When composing phrases, I write them in a two-line format: the first line being the description (with the first word autotext), the second the phrase-body:</P>
+
+
+<PRE STYLE="background-color:#E1E1E1;">zPrintAnX -- Prints a lowercase 'x'
+x</PRE>
+
+<P>Putting the cursor in the description line, and then running <CODE>&quot;c2pl&quot;</CODE>, &quot;compresses&quot; this two-line phrase into a one-line--and importable--format:</P>
+
+<PRE STYLE="background-color:#E1E1E1;">zPrintAnX -- Prints a lowercase 'x'   x   zPrintAnX</PRE>
+
+<P>Because of this &quot;compression&quot;, the description-autotext is critical, and the autotext itself is derived from it. <I>In other words, do not edit or create the autotext field, only create and edit the description-autotext.</I></P>
+
+<P>To verify phrases conform to this format, use the <CODE>&quot;mpfpl&quot;</CODE> action (see <CODE>&quot;xhpc&quot;</CODE>). <CODE>&quot;mpfpl&quot;</CODE> bookmarks all properly-formatted lines in the current <A HREF="#fformat">phrase-file</A>. The remaining, un-marked lines are badly-formatted meaning, for example, they contain too many or too few tabs, or the autotext field is not equal to the description-autotext.</P>
+
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="importmulti"/><H3>[<A HREF="#top">top</A>] &nbsp; Importing multiple phrase-files</CODE></H3>
+
+<P>It is reasonable to import one or a few phrase-files manually. This key-press sequence, as needed in the <A HREF="phrase_file_import1.html#import03">phrase-format dialog</A>,  will help immensely:
+<BR> &nbsp; &nbsp; <CODE>PGDN, UP, TAB, TAB, ENTER</CODE>
+<BR>Importing tens or hundreds of phrase-files (as of TextPad <CODE>7.0.9</CODE>, there are 332 output by <A HREF="tpkc/sub_build_proc.html#06">TPKC sub-build-proc 06</A>) requires an external--not written in PhraseExpress--script. Here is the script for <A HREF="http://www.mjtnet.com">Macro Scheduler</A>:
+<BR> &nbsp; &nbsp; <CODE><A HREF="../../../zz_misc_and_pxp/Import multiple files into PhraseExpress.scp.txt">Import multiple files into PhraseExpress.scp.txt</A></CODE></P>
+
+<P>(Rename this to
+<BR> &nbsp; &nbsp; <CODE>&quot;Import multiple files into PhraseExpress.scp&quot;</CODE>
+<BR>before importing it into Macro Scheduler.)</P>
+
+<P>This is useful even when importing a single file. I happen trigger it with <CODE>&quot;zCASpACCENT&quot;</CODE>, and then input the number of phrase-files.</P>
+
+<P>Be aware that this script is not perfect, and it is likely that none could be. Importing particularly large files, especially, will likely fail (extremely large phrase-files should be avoided). That is, at least one phrase file will likely be corrupted with, for example, the phrase-body actually in the autotext field. (The TPKC <A HREF="tpkc/sub_build_proc.html#07">sub-build-proc-07</A> immediately follows 06, and does nothing but verify these imports--it generally finds between 0 and 5 errors).</P>
+
+<HR WIDTH="20%" ALIGN="left"/>
+
+<P><I>If you come up with an alternative script, I would be pleased to list it here.
+<BR> &nbsp; &nbsp; <CODE>aliteralmind-xbn <B>AT</B> yahoo.com</CODE></I></P>
+
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="troubleshooting"/><H3>[<A HREF="#top">top</A>] &nbsp; Troubleshooting import problems</CODE></H3>
+
+<P>When a phrase is imported, but the phrase doesn't work, here are common import-related problems:<UL>
+	<LI>The phrase <I>wasn't</I> imported, or the phrase-file was not saved before importing.</LI>
+	<LI>An incorrect line-format or tab-delimiter was put into the <A HREF="phrase_file_import1.html#import03">phrase-format dialog</A></LI>
+	<LI>There is an extra-or-missing tab in one of the phrases. Use <CODE>&quot;mpfpl&quot;</CODE> or <CODE>&quot;maixbxbx&quot;</CODE> to verify all phrases in a single file.</LI>
+	<LI>The import simply failed. Look at the phrase-file (folder) in PhraseExpress. Is the description, phrase-body, and autotext correct? It is not uncommon to find the phrase-body in the autotext field.</LI>
+	<LI>Double quotes <I>anywhere</I> in the phrase-file, including in comments, will make import fail. Use
+	<BR> &nbsp; &nbsp; <CODE>{#insert zAscQQ}</CODE>
+	<BR>(<CODE>{#asc 34}</CODE>) (or simply a single-quote) instead.</LI>
+	<LI>Some lines were left <A HREF="../devpex/c2pl.html">uncompressed</A> (see the bottom of the <A HREF="#pformat">phrase-format</A> section).</LI>
+	<LI>PhraseExpress just went <A HREF="../generic/troubleshooting.html">kablooee</A>, and needs to be restarted. In my experience, this happens a few times a week in heavy use.</LI>
+</UL></P>
+
+<P><I>There is a separate document regarding non-import-related <A HREF="../generic/troubleshooting.html">problems</A>.</I></P>
+
+<PRE>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</PRE>
+</BODY></HTML>
+
+
+

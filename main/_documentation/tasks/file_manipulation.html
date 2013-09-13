@@ -1,0 +1,504 @@
+<HTML><HEAD>
+	<TITLE>XBNPE: File-manipulation</TITLE>
+	<meta name="viewport" content="width=device-width" />
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF"><a name="top"></a>
+
+
+<P>[<A HREF="../index.html#tasks">BACK</A>]<CODE> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </CODE><I>(XBN-PhraseExpress is released under the <A HREF="../index.html#lpgl">LPGL 2.1</A>)</I>
+
+<HR/>
+
+<H1>XBNPE-CWLPDF: File manipulation</H1>
+
+<P><B>Contents:</B><UL>
+	<LI><B>Main</B>:<UL>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#saveas">GO</A></B></FONT>]</CODE> &nbsp; Save as</LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#opensaveclose">GO</A></B></FONT>]</CODE> &nbsp; Open, save, and close</LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#duptext">GO</A></B></FONT>]</CODE> &nbsp; Duplicate text to a new file</LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#ccfn">GO</A></B></FONT>]</CODE> &nbsp; Copy (and set) the current file's name and directory</LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#tpfmqo">GO</A></B></FONT>]</CODE> &nbsp; TextPad's File-manager and Quick-open dialogs</LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#nav">GO</A></B></FONT>]</CODE> &nbsp; Navigate via TextPad's open-dialog, or Windows Explorer</LI>
+	</UL></LI>
+	<LI><B>Other:</B><UL>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#confirmdel">GO</A></B></FONT>]</CODE> &nbsp; Confirm-input and delete-about-to-be-output</LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#insert">GO</A></B></FONT>]</CODE> &nbsp; Insert (and interpret) file-text</LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#stripsave">GO</A></B></FONT>]</CODE> &nbsp; Strip save: Strip trailing whitespace before saving</LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#splitsave1ln">GO</A></B></FONT>]</CODE> &nbsp; Split-save, with 1st-lines as the file-name</LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#zvdirfnm">GO</A></B></FONT>]</CODE> &nbsp; <CODE>zvDIRECTORY</CODE> and <CODE>zvFILE_NAME</CODE>: Various utilities</LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#aboutto">GO</A></B></FONT>]</CODE> &nbsp; Print-delete &quot;about to open/insert&quot; warning</LI>
+	</UL></LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#dirfile">GO</A></B></FONT>]</CODE> &nbsp; The concept and benefit of &quot;dir-files&quot;</LI>
+</UL></P>
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="zvdirfnm"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; File manipulation: <CODE>zvDIRECTORY</CODE> and <CODE>zvFILE_NAME</CODE>: Various utilities</H2>
+
+<H3>Syntax summary</H3>
+
+<P><UL>
+	<LI>CWLPDF<UL>
+		<LI><I><CODE>(none)</CODE></I></LI>
+	</UL></LI>
+	<LI>TPKC:<UL>
+		<LI><CODE>debugdirfn</CODE></LI>
+		<LI><CODE>zvDIRECTORY_st[ES,OUT_DIR]</CODE></LI>
+		<LI><CODE>zvFILE_NAME_st[OUT_FNM,StarDot[Px]Txt]</CODE></LI>
+		<LI><CODE>zvOUT_FNM_st[ES,StarDot[Px]Txt]</CODE></LI>
+		<LI><CODE>zzFileNmStarSlkEtrSlk</CODE></LI>
+	</UL></LI>
+</UL></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="dirfile"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; The concept and benefit of &quot;dir-files&quot;</H2>
+
+<P>Many XBNPE-file manipulation functions, such as<UL>
+	<LI><CODE>zDirFileOpen_M_dirFnm</CODE></LI>
+	<LI><CODE>zDirFileSave[Close]_M_dirFnm</CODE></LI>
+	<LI><CODE>zDirFileSaveAsWithOverwrite_M_dirFnm</CODE></LI>
+	<LI><CODE>zFileOpenDlgGTDirHighlightFile_M_dirFnm</CODE></LI>
+	<LI><CODE>zOpenDupCloseXstgFileTextToNewEmptyCB_M_dirFnm</CODE></LI>
+	<LI><CODE>zDelOneOutFileDlg_M_dirFnm</CODE></LI>
+</UL>require both of these variables to be set:<UL>
+	<LI><CODE>zvDIRECTORY</CODE></LI>
+	<LI><CODE>zvFILE_NAME</CODE></LI>
+</UL></P>
+
+<P>These attempt to open, or otherwise navigate to, the target file by<OL>
+	<LI>opening the save (or open) dialog,</LI>
+	<LI>navigating to the directory, by typing <CODE>zvDIRECTORY</CODE> into the dialog's textbox, and then pressing the <CODE>[Open]</CODE> button.</LI>
+	<LI>After the directory is reached, only then it types <CODE>zvFILE_NAME</CODE> into the same textbox, and again presses the <CODE>[Open]</CODE> button.</LI>
+</OL></P>
+
+<P>The benefit of using the &quot;dir-file&quot;, instead of pasting in the full path (<CODE>zvDIRECTORY+zvFILE_NAME</CODE>) at once, is that an incorrectly-named or missing directory is automatically flagged <I>with a modal dialog</I>, preventing the rest of the script from proceeding (it actually does proceed, but the modal dialog suppresses it from doing anything). <I>A screenshot is at the bottom of this section.</I></P>
+
+<P>In addition, the directory-name remains in the dialog's textbox, allowing you to diagnose the specific sub-directory causing the problem.</P>
+
+<P>The <A HREF="#tpfmqo">file-manager and quick-open dialogs</A> do not use this dir-file concept--they directly access the file, using its full path. These are more appropriate, and faster, when it is <I>absolutely known</I> that the file and its directory exist.</P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="splitsave1ln"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; File manipulation: Split-save 1st-line file-name</H2>
+
+<H3>Syntax summary (<CODE><A HREF="../devpex/xbnpe_ddmenus.html#xh">xh</A>cftl</CODE>)</H3>
+
+<P><UL>
+	<LI>CWLPDF<UL>
+		<LI><CODE>splitsave1ln[demo]</CODE></LI>
+	</UL></LI>
+	<LI>TPKC:<UL>
+		<LI><I><CODE>(none)</CODE></I></LI>
+	</UL></LI>
+</UL></P>
+
+<H4><U>1ln-master-file</U></H4>
+
+<P>A &quot;1ln-master-file&quot; contains the text for multiple files. The text for each file is contained on contiguous lines (no empty-lines) called a &quot;line-list blocx&quot;, and each file's line-list-block is separated by one or more empty lines. In addition, the first line in each block is name of that file.</P>
+
+<P><CODE>splitsave1ln</CODE> takes a 1ln-master and splits it into individual files (the master-file is left untouched). You are first prompted for the output-directory, <I>which is strongly recommended to be in the clipboard before starting this process.</I></P>
+
+<P>This is useful when creating a large set of phrases used in a single project. An example is the large number of <A HREF="snr.html#findsyn">search and replace</A> open/close/flag-setting/button-pressing phrases. I personally consider the 1ln-master to be the <B>primary</B> file--meaning I only edit the 1ln-master, and resplit it (overwriting old split-files) at every change.</P>
+
+<H4><U>Example</U></H4>
+<P>This 1ln-master...</P>
+
+<PRE STYLE="background-color:#E1E1E1;">ss1ln_demo_file_1.txt
+Hello
+there
+I'm the
+file named ONE
+
+ss1ln_demo_file_2.txt
+Hello
+there
+I'm the
+file named TWO
+
+<I>...and so on...</I></PRE>
+
+<P>...is split into these files:</P>
+
+<P><CODE><B>ss1ln_demo_file_1.txt</B></CODE>:</P>
+<PRE STYLE="background-color:#E1E1E1;">Hello
+there
+I'm the
+file named ONE</PRE>
+
+
+<P><CODE><B>ss1ln_demo_file_2.txt</B></CODE>:</P>
+
+<PRE STYLE="background-color:#E1E1E1;">
+Hello
+there
+I'm the
+file named TWO</PRE>
+
+<P><I>...and so on...</I></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="tpfmqo"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; File manipulation: TextPad's File-manager and Quick-open dialogs</H2>
+
+<H3>Syntax summary</H3>
+
+<P><UL>
+	<LI>CWLPDF<UL>
+		<LI><I><CODE>(none)</CODE></I></LI>
+	</UL></LI>
+	<LI>TPKC:<UL>
+		<LI><B>Quick open</B> (<CODE><A HREF="../devpex/xbnpe_ddmenus.html#xh">xh</A>cfo</CODE>):<UL>
+			<LI><CODE>zDirFileQuickOpenSlk[[2-5]]_M_dirFnm</CODE></LI>
+			<LI><CODE>zTPFileQOpen</CODE>**</LI>
+		</UL><B>File manager</B> (<CODE>xhcfm</CODE>):<UL>
+			<LI><CODE>zFMDlgDirFileCopy_M_dirFnmOdr[Ofm]</CODE></LI>
+			<LI><CODE>zFMDlgDirFileDeleteNoConfirm_M_dirFnm</CODE></LI>
+			<LI><CODE>zFMDlgOpenViaAltF</CODE></LI>
+			<LI><CODE>zFMBtn[Browse,Copy,Delete,Rename,Touch]</CODE></LI>
+			<LI><CODE>zFMDlgClose</CODE></LI>
+			<LI><CODE>zFcsTPFileManager</CODE></LI>
+			<LI><CODE>zTPFileManager</CODE>**</LI>
+		</UL></LI>
+	</UL></LI>
+</UL></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="opensaveclose"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; File manipulation: Open, save, and close</H2>
+
+<H3>Syntax summary</H3>
+
+<P><UL>
+	<LI>CWLPDF<UL>
+		<LI><I><CODE>(none)</CODE></I></LI>
+	</UL></LI>
+	<LI>TPKC:<UL>
+		<LI><B>Open</B> (<CODE><A HREF="../devpex/xbnpe_ddmenus.html#xh">xh</A>cfc</CODE>)<UL>
+			<LI><CODE>zDirFileOpen_M_dirFnm</CODE></LI>
+			<LI><CODE>zFcsTPFileOpen</CODE></LI>
+			<LI><CODE>zTPFileOpen</CODE>**</LI>
+			<LI><CODE>zTPFileOpenSelPath</CODE></LI>
+		</UL></LI>
+		<LI><B>Save</B> (<CODE>xhcfs</CODE>)<UL>
+			<LI><CODE>zDirFileSave[Close]_M_dirFnm</CODE></LI>
+			<LI><CODE>zFileSaveClose</CODE></LI>
+			<LI><CODE>zzDirFileSavePreConfirm_M_dirFnm</CODE></LI>
+		</UL></LI>
+		<LI><B>Close</B> (<CODE>xhcfc</CODE>)<UL>
+			<LI><CODE>zFcsTPFileClose</CODE></LI>
+			<LI><CODE>zFileCloseDiscardChanges</CODE></LI>
+			<LI><CODE>zTPFileClose</CODE>**</LI>
+			<LI><CODE>zTPFileCloseAll</CODE></LI>
+		</UL></LI>
+	</UL></LI>
+</UL></P>
+
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="saveas"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; File manipulation: Save as</H2>
+
+<H3>Syntax summary (<CODE><A HREF="../devpex/xbnpe_ddmenus.html#xh">xh</A>cfsa</CODE>)</H3>
+
+<P><UL>
+	<LI>CWLPDF project:<UL>
+		<LI><CODE>zDirFileSaveAsNoOverwrite_M_<A HREF="#zvdirfnm">dirFnm</A></CODE></LI>
+		<LI><CODE>zDirFileSaveAsOverwrite_M_dirFnmTxpy</CODE></LI>
+		<LI><CODE>zDirFileSaveAsWithOverwrite_M_dirFnm</CODE></LI>
+		<LI><CODE>zDirFileSaveAsWithTgtXstsYNPrompt_M_dirFnm</CODE></LI>
+		<LI><CODE>zFcsTPFileSaveAs</CODE></LI>
+		<LI><CODE>zFileSaveAs1750slp</CODE></LI>
+		<LI><CODE>zvTGT_XSTS_PRMPT_Y_st[Yes,ES]</CODE></LI>
+		<LI><CODE>zzDirFileSaveAsPreConfirm_M_dirFnm</CODE></LI>
+		<LI><CODE>zz500SlpEnd500SlpBkspKslpEtr[50slpY]</CODE></LI>
+	</UL></LI>
+	<LI>TPKC project:<UL>
+		<LI><CODE>zTPFileSaveAs</CODE></LI>
+	</UL></LI>
+</UL></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="ccfn"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; File manipulation: Copy (and set) the current file's name and directory</H2>
+
+<H3>Syntax summary (primary, <CODE><A HREF="../devpex/xbnpe_ddmenus.html#xh">xh</A>cff</CODE>)</H3>
+
+<P><UL>
+	<LI>CWLPDF project:<UL>
+		<LI><CODE>zCopySetCurrDir[FileName]REoffDown</CODE></LI>
+		<LI><CODE>zCopySetCurrFileName[PreExt]REoffDown</CODE></LI>
+		<LI><CODE>zGetCBPreDot</CODE></LI>
+		<LI><CODE>zzCopyFilePathToNewFlFindCutSet[Dir,FNm]REoff</CODE></LI>
+	</UL></LI>
+	<LI>TPKC project:<UL>
+		<LI><CODE>zTPCopyFileName</CODE></LI>
+	</UL></LI>
+</UL></P>
+
+
+<P>The <CODE>&quot;zCopySetCurr&quot;</CODE> functions copy the currently-open document's file name and/or directory, and also sets the value(s) into
+<BR> &nbsp; &nbsp; <CODE>zvDIRECTORY</CODE>
+<BR>and
+<BR> &nbsp; &nbsp; <CODE>zvFILE_NAME</CODE></P>
+
+<P><B>Warning:</B> This only works in files that have already been saved.</P>
+
+<H3>Syntax summary (secondary, <CODE><A HREF="../devpex/xbnpe_ddmenus.html#xh">xh</A>cfft</CODE>)</H3>
+
+<P><UL>
+	<LI>CWLPDF:<UL>
+		<LI><CODE>zCopyFileNameFromSaveAsDlg[PasteIntoOpenDlg]</CODE></LI>
+		<LI><CODE>zCopyFileNameWPxTxtFromSaveAsDlg</CODE></LI>
+	</UL></LI>
+	<LI>TPKC:<UL>
+		<LI><I><CODE>(none)</CODE></I></LI>
+	</UL></LI>
+</UL></P>
+
+<P>Alternative functions for obtaining the current file name (name only).</P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="insert"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; Insert (and interpret) file-text</H2>
+
+<H3>Syntax summary</H3>
+
+<P><UL>
+	<LI>CWLPDF:<UL>
+		<LI><B>Main:</B><UL>
+			<LI><CODE>zDirFileSaveInsfileSelf_M_dirFnm</CODE></LI>
+			<LI><CODE>zInsFileTextWAboutToWarning_M_dirFnm</CODE></LI>
+			<LI><CODE>zInsFileToCBPasteFromPathInCB</CODE></LI>
+			<LI><CODE>zInsertFileToCBThenPaste_M_fpth</CODE></LI>
+			<LI><CODE>zInsertFile_M_dirFnm</CODE></LI>
+		</UL></LI>
+		<LI><B>Failure-detection:</B><UL>
+			<LI><CODE>zvEXPECTED_WORD_A_st1stWrdLastLine_M_wwo</CODE></LI>
+			<LI><CODE>zvEXPECTED_WORD_Z_stLastWrdLastLine</CODE></LI>
+			<LI><CODE>zAtEOD_cibFirstWrdInLastLine_M_xwrda</CODE></LI>
+			<LI><CODE>zAtEOD_cibLastWordInDoc_M_xwrdz</CODE></LI>
+		</UL></LI>
+	</UL></LI>
+	<LI>TPKC:<UL>
+		<LI><CODE>zInsFileTextToNewW<A HREF="#aboutto">AboutToWarning</A>_M_dirFnm</CODE></LI>
+		<LI><CODE>zInsFileTextToNewWAboutToWarning_M_pth</CODE></LI>
+		<LI><CODE>zInsFileTextWAboutToWarning_M_pth</CODE></LI>
+		<LI><CODE>zInsertFile_M_path</CODE></LI>
+	</UL>
+</UL></P>
+
+<P><I><B>Warning:</B> There is a major issue related to <A HREF="../generic/pex_built_in_functions.html#insertfile"><CODE>INSERTFILE</CODE></A>-s</I></P>
+
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="aboutto"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; File manipulation: Print-delete &quot;about to open/insert&quot; warning</H2>
+
+
+<H3>Syntax summary</H3>
+
+<P><UL>
+	<LI>CWLPDF:<UL>
+		<LI><CODE>zPrint[Del]AboutToOpenFileWarning_M_dirFnm</CODE></LI>
+	</UL></LI>
+	<LI>TPKC:<UL>
+		<LI><CODE>zPrint[Del]AboutToOpenFileWarning_M_pth</CODE></LI>
+	</UL>
+</UL></P>
+
+<P>A useful <A HREF="../devpex/debugging.html">diagnostic tool</A> that is recommended for use both in testing and live processing.</P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="nav"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; File manipulation: Navigate via TextPad's open-dialog, or Windows Explorer</H2>
+
+
+<H3>Syntax summary (<CODE><A HREF="../devpex/xbnpe_ddmenus.html#xh">xh</A>cftv</CODE>)</H3>
+
+<P><UL>
+	<LI>CWLPDF:<UL>
+		<LI><CODE>zOpenExplorerDirWithYNPrompt_M_dir</CODE></LI>
+		<LI><CODE>zOpenExplorerDirYesNoOrPrompt_M_oynpDir</CODE></LI>
+		<LI><CODE>zvOPEN_YN_OR_PRMPT_st[Yes,No,QpromptQ]</CODE></LI>
+	</UL></LI>
+	<LI>TPKC:<UL>
+		<LI><CODE>zFileOpenDlgGTDirHighlightFile_M_dirFnm</CODE></LI>
+		<LI><CODE>zFileOpenDlgGTDir[Slk]_M_dir</CODE></LI>
+		<LI><CODE>zOpenExplorerDirSelectTargetFile_M_dirFnm</CODE></LI>
+		<LI><CODE>zOpenExplorerDirSelectTarget_M_path</CODE></LI>
+		<LI><CODE>zOpenExplorerDir_M_dir</CODE></LI>
+		<LI><CODE>zzFileOpenDlgGTDirSlpkDelRqstIntroBal_M_dir</CODE></LI>
+	</UL></LI>
+</UL></P>
+
+
+
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="duptext"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; File manipulation: Duplicate text to a new file</H2>
+
+<H3>Syntax summary (<CODE><A HREF="../devpex/xbnpe_ddmenus.html#xh">xh</A>cfn</CODE>)</H3>
+
+<P><UL>
+	<LI>CWLPDF:<UL>
+		<LI><CODE>zDupCurrFileTextToNewCloseOrig</CODE></LI>
+		<LI><CODE>zDupCurrFileTextToNewFileEmptyCB</CODE></LI>
+		<LI><CODE>zDupTextToEODIntoNewFile[[WW]GTTop]</CODE></LI>
+		<LI><CODE>zUndo2DupCurrFileTextToNewFileCloseOrig</CODE></LI>
+	</UL></LI>
+	<LI>TPKC:<UL>
+		<LI><CODE>zDupCurrFileTextToNewFile</CODE></LI>
+		<LI><CODE>zFileNewPaste</CODE></LI>
+		<LI><CODE>zOpenDupCloseXstgFileTextToNewEmptyCB_M_dirFnm</CODE></LI>
+		<LI><CODE>zOpenDupCloseXstgFileTextToNew_M_dirFnm</CODE></LI>
+	</UL></LI>
+</UL></P>
+
+
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="confirmdel"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; File manipulation: Confirm-input and delete-about-to-be-output</H2>
+
+<H3>Syntax summary (<CODE><A HREF="../devpex/xbnpe_ddmenus.html#xh">xh</A>cfn</CODE>)</H3>
+
+<P><UL>
+	<LI>CWLPDF:<UL>
+		<LI><I><CODE>(none)</CODE></I></LI>
+	</UL></LI>
+	<LI>TPKC:<UL>
+		<LI><CODE>zConfirmOneFileExistsDlg[[LeaveDlg,Then]]Open_M_dirFnm</CODE></LI>
+		<LI><CODE>zDelAllOutFilesDlg_M_dir</CODE></LI>
+		<LI><CODE>zDelOneOutFileDlg_M_dirFnm</CODE></LI>
+		<LI><CODE>zDelOutFilesOnlyNotDirsDlg_M_dir</CODE></LI>
+		<LI><CODE>zzDebugDirFileNmDlg_M_dirFnm</CODE></LI>
+		<LI><CODE>zzDelAllOutFilesRqst_M_outdir</CODE> &nbsp; &nbsp; <I>(deprecated--use <CODE>zDelAllOutFilesDlg_M_dir</CODE>)</I></LI>
+	</UL></LI>
+</UL></P>
+
+
+
+
+
+
+
+
+
+
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="stripsave"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; File manipulation: Strip save</H2>
+
+<H3>Syntax summary (<CODE><A HREF="../devpex/xbnpe_ddmenus.html#xh">xh</A>cfsw</CODE>)</H3>
+
+<P><UL>
+	<LI>CWLPDF:<UL>
+		<LI><I><CODE>(none)</CODE></I></LI>
+	</UL></LI>
+	<LI>TPKC:<UL>
+		<LI><CODE>zREoffDirFileStripSave[Close]_M_<A HREF="#zvdirfnm">dirFnm</A></CODE></LI>
+		<LI><CODE>zREoffStripSave[Close]</CODE></LI>
+		<LI><CODE>zRE[on,off]StripTrailingWSFromDoc[IfNotAuto]</CODE></LI>
+		<LI><CODE>zz<A HREF="snr.html#midrplc">MidRplcRE</A>StripTrailingWS</CODE></LI>
+	</UL></LI>
+</UL></P>
+
+
+<P>The XBNPE <A HREF="../global_config.html">global-configuration-variable</A> <CODE>zzTPTxtDefaultStripTrailingWSOnOrES</CODE> declares whether trailing whitespace is stripped when saving <A HREF="../basics/phrase_file.html#fformat">phrase-files</A>. When not stripped by TextPad, it may be necessary to manually eliminate trailing whitespace.</P>
+
+<P>These &quot;strip-save&quot; functions automatically strip trailing whitespace, by a regex replacement, <I>only if <CODE>zzTPTxtDefaultStripTrailingWSOnOrES</CODE> is nothing</I> (the empty-string, <CODE>''</CODE>, meaning it is <B>off</B> and unchecked). When <CODE>&quot;on&quot;</CODE>, then
+<BR> &nbsp; &nbsp; <CODE>zREoffDirFileStripSave_M_dirFnm</CODE>
+<BR>is equivalent to
+<BR> &nbsp; &nbsp; <CODE>zDirFileSave_M_dirFnm</CODE>
+<BR>and
+<BR> &nbsp; &nbsp; <CODE>zREoffDirFileStripSaveClose_M_dirFnm</CODE>
+<BR>is equivalent to
+<BR> &nbsp; &nbsp; <CODE>zDirFileSaveClose_M_dirFnm</CODE></P>
+
+<P>It is recommended that the strip-save functions should not be used unless<UL>
+	<LI>trailing spaces are a realistic possibility, and</LI>
+	<LI><I>not</I> stripping them will cause problems.</LI>
+</UL></P>
+<PRE>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</PRE>
+</BODY></HTML>
+
+
+

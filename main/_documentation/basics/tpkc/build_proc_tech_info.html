@@ -1,0 +1,354 @@
+<HTML><HEAD>
+   <TITLE>XBNPE: TPKC build</TITLE>
+	<meta name="viewport" content="width=device-width" />
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF"><A NAME="top"></a>
+
+<P>[<A HREF="index.html">BACK</A>]<CODE> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </CODE><I>(XBN-PhraseExpress is released under the <A HREF="../../index.html#lpgl">LPGL 2.1</A>)</I>
+
+<HR/>
+
+<H1>XBNPE: The TPKC-build-process: Techincal details for administrators only</H1>
+
+<P>This document is intended only for those altering the XBNPE (TPKC) project itself, or needing to understanding its technical details. There is also TPKC-build-process <A HREF="index.html#userbuild">information for TPKC-users</A>.</P>
+
+<P><B>Contents:</B><UL>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="../pex_in_textpad.html">GO</A></B></FONT>]</CODE> &nbsp; <I>All TPKC build processes occur entirely in TextPad.</I></LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="build_proc_tech_info2.html#bldrgc">GO</A></B></FONT>]</CODE> &nbsp; Before everything else: Manually creating the raw-global-configuration</LI>
+	<LI><B>All master and sub-build processes</B><UL>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#bldprocs">GO</A></B></FONT>]</CODE> &nbsp; Technical documentation</LI>
+		<LI><B>Videos</B> (all in <CODE>&quot;test-mode&quot;</CODE>):<UL>
+			<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#m1of4_videoa">GO</A></B></FONT>]</CODE> &nbsp; Eliminating all old auto-generated files, to prepare for a new build (and setting build-mode to &quot;test&quot;)</LI>
+			<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#m1of4_videob">GO</A></B></FONT>]</CODE> &nbsp; Running master-proc 1of4</LI>
+			<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#m2of4_video">GO</A></B></FONT>]</CODE> &nbsp; Running master-proc 2of4</LI>
+		</UL></LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#import3">GO</A></B></FONT>]</CODE> &nbsp; Import locations and choosing a TPKC version</LI>
+	</UL></LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#fullvraw">GO</A></B></FONT>]</CODE> &nbsp; <B>Full versus RAW:</B> Phrases to execute one TPKC-build-process only</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#livevtest">GO</A></B></FONT>]</CODE> &nbsp; <B>Live versus test build:</B> Building the entire TPKC-Project, or only part, for testing and demonstration purposes</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#inpex">GO</A></B></FONT>]</CODE> &nbsp; PhraseExpress folder structure</LI>
+</UL></P>
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="inpex"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TPKC-build: PhraseExpress folder structure</H2>
+
+<PRE>   XBNPE: Parent folder &gt;
+      XBN-PhraseExpress &gt;
+<I>(<A HREF="index.html#inpex">go</A>)</I>     XBNPE-TPKC: TextPad built-in commands &gt;
+            All other TPKC phrases (8AG:1,2,3,3a,4,5,8,9) &gt;
+               <FONT SIZE="+2"><B>Build process</B></FONT> [Disable this branch when fully built] (1AG:2) &gt;
+<I>(<A HREF="#m1of4">info</A>)</I>            Part 1of4: Generate global command config
+<I>(<A HREF="#m2of4">info</A>)</I>            Part 2of4: Verify global-cmd-ccfg, prep for usr-cmd-cfg
+<I>(<A HREF="#m3of4">info</A>)</I>            Part 3of4: Generate user-cfg from tpacl (1AG:2)
+                     zSUB (1AG:2 // 2 vrsn-spcfc)
+<I>(<A HREF="#m4of4">info</A>)</I>            Part 4of4: Create nbs-phrss & tp-pcddmenu
+                     zSUB
+<I>(<A HREF="#imp3other">go</A>)</I>           z-Auto-generated (AG) output (multiple builds, only 1 enabled)</PRE>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="import3"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TPKC-build: Import locations and choosing a TPKC version</H2>
+
+<P>All TPKC-build output (called &quot;auto-generated&quot; or &quot;AG&quot; files) is <A HREF="../phrase_file_import1.html">imported</A> to one of three PhraseExpress folders:<UL>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="user_menu2.html#inpex">GO</A></B></FONT>]</CODE> &nbsp; The TPKC-user-menu, </LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="tpkc_user_dir.html#inpex">GO</A></B></FONT>]</CODE> &nbsp; the TPKC-user-directory, or</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#imp3other">GO</A></B></FONT>]</CODE> &nbsp; the &quot;other-AG-output&quot; folder.</LI>
+</UL><I>(See &quot;Switching TPKC versions&quot;)</I></P>
+
+<P>In each of these three locations, there is (should be!) a &quot;live&quot; build folder. There may also be zero or more &quot;test&quot; folders (each with a unique set of categories processed). In all cases, there must be the <I>exact same set</I> of version-folders. For example, if the &quot;other-AG-output&quot; folder contains these three build-versions:<UL>
+	<LI><CODE>LIVE build</CODE></LI>
+	<LI><CODE>Test build (file, config, tools)</CODE></LI>
+	<LI><CODE>Test build (edit only)</CODE></LI>
+</UL>then the TPKC-user-menu and -directory must also contain these three versions. Exactly one version--the same version in each location--<B><I>must</I></B> be enabled at any one time (to enable, right click on the folder and check &quot;Enable Autotext/Hotkeys&quot;).</P>
+
+<H3>Logical versus virtual AG locations</H3>
+
+<P>In PhraseExpress, many folders throughout the TPKC project are postfixed with, for example:
+<BR> &nbsp; &nbsp; <CODE>&quot;Other (4AG: 1,4,5,9)&quot;</CODE>
+<BR>This indicates that there are <I>four sets</I> of auto-generated output, as created by TPKC sub-build-processes <A HREF="sub_build_proc.html#01">01</A>, <A HREF="sub_build_proc.html#04">04</A>, <A HREF="sub_build_proc.html#05">05</A>, and <A HREF="sub_build_proc.html#09">09</A>. <I>This is not where these output-phrase-files go</I> (it used to be). However, since these locations are where these files <I>logically</I> reside (and therefore describe which phrases, in which folders, need them), these AG-postfixes remain.</P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="imp3other"/><H2><CODE>[<A HREF="#import3">BACK</A>]</CODE> &nbsp; TPKC-build: Import locations: &quot;Other-AG-output&quot; folder</H2>
+
+<P>Contains all auto-generated files not in the <A HREF="tpkc_user_dir.html#inpex">TPKC-user-directory</A> or -<A HREF="user_menu2.html#inpex">user-menu</A>. Key:<UL>
+	<LI><B><CODE>indv</CODE>:</B> The processes that output a single <A HREF="../phrase_file.html#fformat">phrase-file</A>. Import these file directly into the &quot;indv&quot; folder.</LI>
+	<LI><B><CODE>ddmenu</CODE>:</B> Processes that output phrases needed by the TPKC-user-menu (and should be imported there instead).</LI>
+</UL></P>
+
+<PRE>&nbsp;
+    XBNPE: Parent folder
+       XBNPE-TPKC: TextPad built-in commands &gt;
+          All other TPKC phrases &gt;
+<I>(<A HREF="#inpex">go</A>)</I>         Build process
+                z-Auto-generated output
+                   TPKC-build-AG: LIVE build
+                      master-build 1of4 (indv:1,2,4, ddmenu:3,3a)
+                         05: Call VPM for each cmd in 1 cat
+                         06: Global command configuration
+                            <I>[1 folder per-<A HREF="config_vars.html#zTpkcAllCategoryAbrvLCsQbl">category</A>]</I>
+                      master-build 2of4 (no output:7, ddmenu:8)
+                         09: Set cmd1 var to 1 cmd
+                   TPKC-build-AG: Test build
+                      <I>[...same...]</I></PRE>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="bldprocs"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TPKC-build: The master and sub-build processes</H2>
+
+<P>There are four master processes, each calling a set of children (or &quot;sub&quot;) processes. This section specifically documents each processes input and output, as well as the process itself.</P>
+
+<H3>Master processes</H3>
+
+<P>The four master processes, the first two of which are executed only by the TPKC-admin, the second two by every TPKC-user:<OL>
+	<LI>[<A HREF="#m1of4">go</A>]</CODE> &nbsp; <B><CODE>zTpkcMasterBuild1of4</CODE>:</B> Broadly speaking, this reads in the <A HREF="build_proc_tech_info2.html#bldrgc">raw-global configuration</A>, and generates the <A HREF="config_vars.html#globalcmd">global-command-configuration</A></LI>
+	<LI>[<A HREF="#m2of4">go</A>]</CODE> &nbsp; <B><CODE>zTpkcMasterBuild2of4</CODE>:</B> Verifies the imported global-command-config, and prepares for creating user-command-config.</LI>
+	<LI>[<A HREF="#m3of4">go</A>]</CODE> &nbsp; <B><CODE>zTpkcMasterBuild3of4</CODE>:</B> Reads in the TextPad all-command list, and generates user-command-configuration.</LI>
+	<LI>[<A HREF="#m4of4">go</A>]</CODE> &nbsp; <B><CODE>zTpkcMasterBuild4of4</CODE>:</B> Reads in user-command-config, and generates the Non-BootStrap (nbs) phrases, and the active-tp-command ddmenu.</LI>
+</OL></P>
+
+<P>After each process is complete, all output <I>phrases</I> must be imported to their appropriate locations in the PhraseExpress application. For example, the output of <A HREF="sub_build_proc.html#03">build-process-03</A> is indicated in PhraseExpress by <CODE>&quot;AG:03&quot;</CODE> in its destination folder's description.</P>
+
+<P><IMG SRC="images/output_phrase_destination_example_ag3.jpg" BORDER="1"/></P>
+
+<P>Note that process <A HREF="sub_build_proc.html#07">07</A> has no output at all, and processes <A HREF="sub_build_proc2.html#10">10</A>, <A HREF="sub_build_proc2.html#11">11</A>, and <A HREF="sub_build_proc2.html#12">12</A> have no <I>importable</I> output.</P>
+
+<P><I>An alternative method to triggering these build processes, is via <CODE>'<A HREF="../../devpex/xbnpe_ddmenus.html#xh">xh</A>tkab'</CODE>.</I></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="m1of4"/><H2>TPKC-build: <CODE>zTpkcMasterBuild1of4</CODE></H2>
+
+<P><I><CODE>[<A HREF="#top">top</A>, <A HREF="#bldprocs">BACK</A>, 1of4, <A HREF="#m2of4">2of4</A>, <A HREF="#m3of4">3of4</A>, <A HREF="#m4of4">4of4</A>]</CODE></I></P>
+
+
+<P><I>See below for two videos demonstrating preparing for, and then running this master-build-process 1-of-4.</I></P>
+
+<P><CODE>&quot;zTpkcMasterBuild1of4&quot;</CODE> calls each of the following, in order:<UL>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="sub_build_proc.html#01">GO</A></B></FONT>]</CODE> &nbsp; <CODE>zTpkc01CreateSetCatlVarPhrsFile</CODE></LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="sub_build_proc.html#02">GO</A></B></FONT>]</CODE> &nbsp; <CODE>zTpkc02CreateTPBtstrpQblAndMrkRGCRegex</CODE></LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="sub_build_proc.html#03">GO</A></B></FONT>]</CODE> &nbsp; <CODE>zTpkc03CreateAll_allCmdsIn1CatPhrsFiles</CODE></LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="sub_build_proc.html#03a">GO</A></B></FONT>]</CODE> &nbsp; <CODE>zTpkc03aCreate_AllCmdsAllCats_PhrsFile</CODE></LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="sub_build_proc.html#04">GO</A></B></FONT>]</CODE> &nbsp; <CODE>zTpkc04CreatePhrsFl_callVPMForEachCatAndAllCatCnt</CODE></LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="sub_build_proc.html#05">GO</A></B></FONT>]</CODE> &nbsp; <CODE>zTpkc05CreateAll_callVPMForAllCmdsInCat_pFls</CODE></LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="sub_build_proc.html#06">GO</A></B></FONT>]</CODE> &nbsp; <B><CODE>zTpkc06CreateGlobalCommandConfigFromRaw</CODE></B></LI>
+</UL>
+
+<P>To open all output directories in Windows Explorer windows, use
+<BR> &nbsp; &nbsp; <CODE>zzzTpkcBuld1of4OpenAllOutputDirs</CODE>
+<BR>This is to make the importing of this processes output easier. This is automatically triggered (after confirming with you) at the end of the process.</P>
+
+<H3>Preparing for a completely new build.</H3>
+
+<A NAME="m1of4_videoa"/><H3><CODE>[<A HREF="#m1of4">BACK</A>]</CODE> &nbsp; Video: Eliminating all old auto-generated files, to prepare for a new build (and setting build-mode to &quot;<A HREF="#livevtest">test</A>&quot;)</H3>
+
+<P><A HREF="http://www.youtube.com/watch?v=bJhGRHuNmrg">Watch</A></P>
+
+<A NAME="m1of4_videob"/><H3><CODE>[<A HREF="#m1of4">BACK</A>]</CODE> &nbsp; Video: Running TPKC-build master-process 1of4 (in test mode)</H3>
+
+<P><A HREF="http://www.youtube.com/watch?v=MURynk_FfL4">Watch</A></P>
+
+<P><B>Addendum:</B> The <A HREF="#import3">locations</A> into which auto-generated files are placed has changed.</P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="m2of4"/><H2>TPKC-build: <CODE>zTpkcMasterBuild2of4</CODE></H2>
+
+<P><I><CODE>[<A HREF="#top">top</A>, <A HREF="#bldprocs">BACK</A>, <A HREF="#m1of4">1of4</A>, 2of4, <A HREF="#m3of4">3of4</A>, <A HREF="#m4of4">4of4</A>]</CODE></I></P>
+
+
+<P><CODE>&quot;zTpkcMasterBuild2of4&quot;</CODE> calls each of the following, in order:<UL>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="sub_build_proc.html#07">GO</A></B></FONT>]</CODE> &nbsp; <B><CODE>zTpkc07VerifyImportedGlobalCmdCfg</CODE></B></LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="sub_build_proc.html#08">GO</A></B></FONT>]</CODE> &nbsp; <CODE>zTpkc08CreateSetAllKCsTo1CmdPhraseFiles</CODE></LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="sub_build_proc2.html#09">GO</A></B></FONT>]</CODE> &nbsp; <CODE>zTpkc09CreateAllSetCmd1VarPhraseFiles</CODE></LI>
+</UL></P>
+
+<P>To open all output directories in Windows Explorer windows, use
+<BR> &nbsp; &nbsp; <CODE>zzzTpkcBuld2of4OpenAllOutputDirs</CODE></P>
+
+<A NAME="m2of4_video"/><H3><CODE>[<A HREF="#m2of4">BACK</A>]</CODE> &nbsp; Video: Running TPKC-build master-process 2of4 (in <A HREF="#livevtest">test mode</A>)</H3>
+
+<P><A HREF="http://www.youtube.com/watch?v=NePqea7XxM4">Watch</A></P>
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="m3of4"/><H2>TPKC-build: <CODE>zTpkcMasterBuild3of4</CODE></H2>
+
+<P><I><CODE>[<A HREF="#top">top</A>, <A HREF="#bldprocs">BACK</A>, <A HREF="#m1of4">1of4</A>, <A HREF="#m2of4">2of4</A>, 3of4, <A HREF="#m4of4">4of4</A>]</CODE></I></P>
+
+<P><CODE>&quot;zTpkcMasterBuild3of4&quot;</CODE> calls each of the following, in order:<UL>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="sub_build_proc2.html#10">GO</A></B></FONT>]</CODE> &nbsp; <CODE>zTpkc10ElimBtstrpKCsFromTpAllCatLst</CODE></LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="sub_build_proc2.html#11">GO</A></B></FONT>]</CODE> &nbsp; <CODE>zTpkc11SplitNbsAllLstToIndvCatLsts</CODE></LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="sub_build_proc2.html#12">GO</A></B></FONT>]</CODE> &nbsp; <CODE>zTpkc12CreateRawUsrCfgFromIndvCatLists</CODE></LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="sub_build_proc2.html#13">GO</A></B></FONT>]</CODE> &nbsp; <CODE>zTpkc13CreateUsrSpcfcCmdConfigFromRaw</CODE></LI>
+</UL></P>
+
+
+<P>To open all output directories in Windows Explorer windows, use
+<BR> &nbsp; &nbsp; <CODE>zzzTpkc13OutroDlgMaybeOpenOutDir</CODE>
+<BR>This is used instead of (the non-existant!)
+<BR> &nbsp; &nbsp; <CODE>zzzTpkcBuld3of4OpenAllOutputDirs</CODE>
+<BR>because the only <I>importable</I> output generated is by
+<BR> &nbsp; &nbsp; <CODE>zTpkc13CreateUsrSpcfcCmdConfigFromRaw</CODE></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="m4of4"/><H2>TPKC-build: <CODE>zTpkcMasterBuild4of4</CODE></H2>
+
+<P><I><CODE>[<A HREF="#top">top</A>, <A HREF="#bldprocs">BACK</A>, <A HREF="#m1of4">1of4</A>, <A HREF="#m2of4">2of4</A>, <A HREF="#m3of4">3of4</A>, 4of4]</CODE></I></P>
+
+<P><CODE>&quot;zTpkcMasterBuild4of4&quot;</CODE> calls the following, in order:<UL>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="sub_build_proc2.html#14">GO</A></B></FONT>]</CODE> &nbsp; <CODE>zTpkc14CreateNbsPhrssAndWKcQBLsFrmUSCC</CODE></LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="sub_build_proc2.html#15">GO</A></B></FONT>]</CODE> &nbsp; <CODE>zTpkc15CrtAllActvTPCmdsDDMenuFromAll</CODE></LI>
+</UL></P>
+
+<P>To open all output directories in Windows Explorer windows, use
+<BR> &nbsp; &nbsp; <CODE>zzzTpkcBuld4of4OpenAllOutputDirs</CODE></P>
+
+
+
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="fullvraw"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; Full versus RAW: Phrases to execute one TPKC-build-process only</H2>
+
+<H3>Full</H3>
+
+<P>Each build sub-process (01 through 15) is executed by its master. For example, sub-build <CODE>'<A HREF="sub_build_proc.html#02">02</A>'</CODE> is executed by the <CODE>'<A HREF="#m1of4">1of4</A>'</CODE> master process. A <B>Full Run</B> of a sub-process goes through its entire setup (its &quot;exclusive&quot; setup), in order to ensure that it will run properly. For example:<UL>
+	<LI>Confirm output files do not exist (you are prompted to delete them)</LI>
+	<LI>Confirm input files <I>do</I> exist.</LI>
+	<LI>Other warnings and checks specific to the sub-process.</LI>
+</UL>Each master process runs the &quot;exclusive&quot; setup for all its child- (sub-)processes before executing them in order.</P>
+
+<H3>RAW</H3>
+
+<P>Each sub-build also has a &quot;RAW&quot; process, which is the &quot;core&quot; of its functionality. Specifically, it is the part that executes after all setup is complete. This is useful for testing and diagnostics only.</P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="livevtest"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; Live versus test build: Building the entire TPKC-Project, or only part, for testing and demonstration purposes</H2>
+
+<P><TABLE ALIGN="center" BORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#EEEEEE"><TR ALIGN="center" VALIGN="middle">
+	<TD><I>(As of TextPad version 7.0.9)</I></TD>
+	<TD><B><U>Live</U></B></TD>
+	<TD><B><U>Test</U></B>
+	<BR><I>(using the below &quot;good test build&quot;)</I></TD>
+</TR><TR ALIGN="center" VALIGN="middle">
+	<TD ALIGN="left"><B>Number of categories</B></TD>
+	<TD><CODE>13</CODE></TD>
+	<TD><CODE>3</CODE></TD>
+</TR><TR ALIGN="center" VALIGN="middle">
+	<TD ALIGN="left"><B>Number of commands</B></TD>
+	<TD><CODE>332</CODE></TD>
+	<TD><CODE>44</CODE></TD>
+</TR><TR ALIGN="center" VALIGN="middle">
+	<TD ALIGN="left"><B>Build-time: ADMIN-ONLY</B>
+	<BR>(sub-build-procs <A HREF="sub_build_proc.html#01">01</A> through <A HREF="sub_build_proc2.html#09">09</A>)
+	<BR><I>(Very rough!)</I></TD>
+	<TD><CODE>1 hour, 25 minutes.</CODE></TD>
+	<TD><CODE>30 minutes</CODE></TD>
+</TR><TR ALIGN="center" VALIGN="middle">
+	<TD ALIGN="left"><B>Build-time: USER-ONLY</B>
+	<BR>(sub-build-procs <A HREF="sub_build_proc2.html#10">10</A> through <A HREF="sub_build_proc2.html#15">15</A>)
+	<BR><I>(Very rough!)</I></TD>
+	<TD><CODE>45 minutes.</CODE></TD>
+	<TD><CODE>25 minutes</CODE></TD>
+</TR><TR ALIGN="center" VALIGN="middle">
+	<TD ALIGN="left"><B>Functional differences</B></TD>
+	<TD><I>n/a</I></TD>
+	<TD>Repeated reminder-dialogs that this build is in test-mode.</TD>
+</TR></TABLE></P>
+
+<P>Normally, the above processes build the TPKC-Project for all categories, as defined by
+<BR> &nbsp; &nbsp; <A HREF="config_vars.html#zTpkcAllCategoryAbrvLCsQbl"><CODE>zTpkcAllCategoryAbrvLCsQbl</CODE></A>
+<BR>For demonstration or diagnostic purposes, they may instead be run on a sub-set of these categories. When this is desired, set
+<BR> &nbsp; &nbsp; <CODE><A HREF="master_cfg_vars.html#zTpkcAllCategoryAbrvLCsQbl_FORTESTMODE">zTpkcAllCategoryAbrvLCsQbl_FORTESTMODE</A></CODE>
+<BR>to <I>an exact subset</I> of <CODE>zTpkcAllCategoryAbrvLCsQbl</CODE>, and then turn the test-category flag on, by setting
+<BR> &nbsp; &nbsp; <CODE><A HREF="master_cfg_vars.html#zTpkcBuildModeTestOrLive">zTpkcBuildModeTestOrLive</A></CODE>
+<BR>to <CODE>&quot;test&quot;</CODE>. When set to <CODE>&quot;live&quot;</CODE>, then all categories are built.</P>
+
+<H3>WARNING</H3>
+
+<P><I>Building the TPKC-Project in 'test' mode is <B>permanent</B>. Once test-mode is set, it <I><B>must not</B></I> be changed unless the <B>entire</B> tpkc project is rebuilt, starting at <A HREF="sub_build_proc.html#01">sub-proc-01</A>.</I></P>
+
+<H3>Good test build <CODE>[file][config][help]</CODE></H3>
+
+<P>Good for demonstrating the build-process, and for documentation videos. <CODE>&quot;file&quot;</CODE> is a moderately-large category and contains a bootstrap. <CODE>&quot;config&quot;</CODE> contains a bootsrap and has few commands, and <CODE>&quot;help&quot;</CODE> has no kcs at all (in my setup anyway), and has few commands.</P>
+
+<P><I>This test-category flag will work for any individual process, as well as for the overall build process.</I></P>
+
+<H3>My workflow</H3>
+<P>What I do when executing a test-build:<OL>
+	<LI>On disk, zip and backup the entire auto-generated directory
+	<BR> &nbsp; &nbsp; <B>-<CODE>zzXPSUB_DIR_tpNonMacroKeyCmds</CODE>:</B>
+	<BR> &nbsp; &nbsp; <CODE>{#insert zzXPSUB_DIR_tpNonMacroKeyCmds}</CODE>
+	<BR>(name it something like <CODE>&quot;tpkc_full_build_ag_dir__20130605.zip&quot;</CODE>)</LI>
+	<LI>In PhraseExpress, duplicate the entire TPKC directory
+	<BR> &nbsp; &nbsp; <CODE>XBN-PhraseExpress/XBNPE: TextPad Built-in commands (TPKC)</CODE>
+	<BR>(select the folder and type Ctrl+D), delete ALL auto-generated files in the duplicate, and disable the original branch (select-then-right-click the folder, and uncheck 'Activate autotext/hotkeys'). <I>Unfortunately, all folders will be out of order (should you choose to keep it, you'll need to manually sort each one, via right-click, <CODE>sort &gt; By description &gt; A-Z</CODE>)</I></LI>
+	<LI>When the test is complete, delete the test folder/directory, and recover the original branches.</LI>
+</OL></P>
+
+<PRE>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</PRE>
+</BODY></HTML>
+
+
+

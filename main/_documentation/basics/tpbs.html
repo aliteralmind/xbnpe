@@ -1,0 +1,595 @@
+<HTML><HEAD>
+	<TITLE>XBNPE: tp-bootstraps</TITLE>
+	<meta name="viewport" content="width=device-width" />
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF"><a name="top"></a>
+
+
+<P>[<A HREF="../index.html#basics">BACK</A>]</CODE></P>
+
+<HR/>
+
+<H1>XBNPE: TextPad-bootstraps</H1>
+
+<P>The most fundamental concept in XBN-PhraseExpress is &quot;TextPad-bootstraps&quot;. Before almost anything in XBN-PhraseExpress can function, TextPad-bootstraps must be installed. TextPad-bootstraps are commands that are built into the TextPad application, such as
+<BR> &nbsp; &nbsp; <CODE>TextPad &gt; Configure &gt; Preferences &gt; Keyboard &gt; Categories &gt; &quot;Edit&quot; &gt; Commands &gt; &quot;<B><U>EditCopy</U></B>&quot;</CODE>
+<BR>Only the <A HREF="xkp.html">XKP</A> and <A HREF="tpkc/index.html">TPKC</A> projects have TextPad-bootstraps. While other projects require certain built-in TextPad commands, these are &quot;non-bootstrap&quot; (nbs) commands, and are installed in a different way.</P>
+
+<P><B>Contents:</B><UL>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#depend">GO</A></B></FONT>]</CODE> &nbsp; XBN-PhraseExpress project dependencies</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#format">GO</A></B></FONT>]</CODE> &nbsp; TextPad-bootstraps: Format and specifications &nbsp; &nbsp; <I>(3 phrases: <A HREF="#mainp">main</A>, <A HREF="#escp">escaped</A>, <A HREF="#tpkp">tp-key-press</A>)</I></LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#locations">GO</A></B></FONT>]</CODE> &nbsp; Phrase and file locations</LI>
+	<LI><B>Installing a TextPad bootstrap:</B><UL>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#install">GO</A></B></FONT>]</CODE> &nbsp; Step-by-step (pre XKP and TPKC installation)</LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="tpkc/user_cmd_cfg.html#assignkcs">GO</A></B></FONT>]</CODE> &nbsp; Step-by-step (post XKP and TPKC installation: nbs-commands)</LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#promote">GO</A></B></FONT>]</CODE> &nbsp; <I>For XBNPE-developers only:</I> Promoting an nbs-command to a tp-bootstrap</LI>
+	</UL></LI>
+	<LI><B>TextPad-bootstraps</B> as required by<UL>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="xkp.html#tpbs">GO</A></B></FONT>]</CODE> &nbsp; The XKP-project</LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="tpkc/index.html#tpbs">GO</A></B></FONT>]</CODE> &nbsp; The TPKC-project</LI>
+	</UL></LI>
+</UL></P>
+
+<P>In TextPad version 7.0.9, there are 332 built-in commands. 26 of them are TextPad-bootstraps (8%).</P>
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="install"/><H2><CODE>[<A HREF="#top">top</A>] &nbsp; <B>[PREV -- <A HREF="#install2">NEXT</A>]</B></CODE> &nbsp; &nbsp; Installing all TextPad-bootstraps: Step-by-step</H2>
+
+<P>This section describes how install TextPad bootstraps <I>and</I> the <A HREF="#terminology">nbs-commands</A> as required by the XBNPE-Search and replace (<A HREF="../tasks/snr.html">SNR</A>) project (the <CODE>&quot;Clear&quot;</CODE> and <CODE>&quot;Set&quot;</CODE> commands).</P>
+
+<P><I>This and the next three steps are also used to prepare for a TPKC <A HREF="tpkc/tpkc_user_dir.html#remoterequest">remote-build request</A>.</I></P>
+
+<P><A HREF="tpkc/tpacl.html">Print out</A> the TextPad all-command-list (there's no need to save it at this time).</P>
+
+<P>Mark all lines containing TextPad-bootstraps (and SNR-required commands):<OL>
+	<LI>Open the find dialog</LI>
+	<LI>Check <CODE>&quot;Regular expression&quot;</CODE></LI>
+	<LI>Put this regex into the find-what field:
+	<BR> &nbsp; &nbsp; <CODE>^(BookmarkNext|BookmarkToggle|DocumentStart|EditCopy|EditCopyTaggedLines|EditCut|EditCutTaggedLines|EditDupLine|EditPaste|FileClose|FileManage|FileNew|FileOpen|FileQuickOpen|FileSave|MatchCaseClear|MatchCaseSet|MatchWordClear|MatchWordSet|Preferences|RegexClear|RegexSet|SearchFiles|SearchFind|SearchFindNext|SearchGoto|SearchReplace|SelectAll|ToggleWordWrap|WordLeftExtend|WordRightEnd|WordRightEndExtend)\b</CODE></LI>
+	<LI>Press the <CODE>[Mark All]</CODE> button</LI>
+	<LI>Close the find-dialog</LI>
+	<LI>Copy all bookmarks with
+	<BR> &nbsp; &nbsp; <CODE>TextPad &gt; Edit &gt; Copy Other &gt; Bookmarked lines</CODE></LI>
+	<LI>Close the document</LI>
+	<LI>Paste the lines into a new document.</LI>
+</OL></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="install2"/><H2><B><CODE>[<A HREF="#install">BACK</A>] &nbsp; [<A HREF="#install">PREV</A> -- <A HREF="#install3">NEXT</A>]</CODE></B> &nbsp; &nbsp; Installing all TextPad-bootstraps: Step-by-step</H2>
+
+<P>If the previous step is done immediately after installing TextPad, below is the result. Notice there are twelve commands that have no key-commands.</P>
+
+<PRE STYLE="background-color:#E1E1E1;">BookmarkNext            F2
+BookmarkToggle          Ctrl+F2
+DocumentStart           Ctrl+Home
+EditCopy                Ctrl+C                  Ctrl+Insert
+EditCopyTaggedLines
+EditCut                 Shift+Delete            Ctrl+X
+EditCutTaggedLines
+EditDupLine
+EditPaste               Ctrl+V                  Shift+Insert
+FileClose
+FileManage              F3
+FileNew                 Ctrl+N
+FileOpen                Ctrl+O
+FileQuickOpen           Ctrl+Shift+O
+FileSave                Ctrl+S
+MatchCaseClear
+MatchCaseSet
+MatchWordClear
+MatchWordSet
+Preferences             Ctrl+Q, P
+RegexClear
+RegexSet
+SearchFiles             Ctrl+F5
+SearchFind              F5
+SearchFindNext          Ctrl+F
+SearchGoto              Ctrl+G
+SearchReplace           F8
+SelectAll               Ctrl+A
+ToggleWordWrap          Ctrl+Q, W
+WordLeftExtend          Ctrl+Shift+B            Ctrl+Shift+Left
+WordRightEnd
+WordRightEndExtend</PRE>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="install3"/><H2><B><CODE>[<A HREF="#install">BACK</A>] &nbsp; [<A HREF="#install2">PREV</A> -- <A HREF="#install4">NEXT</A>]</CODE></B> &nbsp; &nbsp; Installing all TextPad-bootstraps: Step-by-step</H2>
+
+<P>Each unassigned command must be given at least one key-command in
+<BR> &nbsp; &nbsp; <CODE>TextPad &gt; Configure &gt; Preferences &gt; Keyboard</CODE></P>
+
+<P>Here they are ordered by category:<UL>
+	<LI><B>File:</B> <CODE>FileClose</CODE>, <CODE>FileManage</CODE>, <CODE>FileNew</CODE>, <CODE>FileOpen</CODE>, <CODE>FileQuickOpen</CODE>, <CODE>FileSave</CODE></LI>
+	<LI><B>Edit:</B> <CODE>EditCopy</CODE>, <CODE>EditCopyTaggedLines</CODE>, <CODE>EditCut</CODE>, <CODE>EditCutTaggedLines</CODE>, <CODE>EditDupLine</CODE>, <CODE>EditPaste</CODE></LI>
+	<LI><B>Search:</B> <CODE>BookmarkNext</CODE>, <CODE>BookmarkToggle</CODE>, <CODE>MatchCaseClear</CODE>, <CODE>MatchCaseSet</CODE>, <CODE>MatchWordClear</CODE>, <CODE>MatchWordSet</CODE>, <CODE>RegexClear</CODE>, <CODE>RegexSet</CODE>, <CODE>SearchFiles</CODE>, <CODE>SearchFind</CODE>, <CODE>SearchFindNext</CODE>, <CODE>SearchGoto</CODE>, <CODE>SearchReplace</CODE>, </LI>
+	<LI><B>Configure:</B> <CODE>Preferences</CODE>, <CODE>ToggleWordWrap</CODE></LI>
+	<LI><B>Cursor:</B> <CODE>DocumentStart</CODE>, <CODE>WordLeftExtend</CODE>, <CODE>WordRightEnd</CODE>, <CODE>WordRightEndExtend</CODE></LI>
+	<LI><B>Selection:</B> <CODE>SelectAll</CODE></LI>
+</UL>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="install4"/><H2><B><CODE>[<A HREF="#install">BACK</A>] &nbsp; [<A HREF="#install3">PREV</A> -- NEXT]</CODE></B> &nbsp; &nbsp; Installing all TextPad-bootstraps: Step-by-step</H2>
+
+<P>If you are preparing for a remote-build request, <A HREF="tpkc/tpkc_user_dir.html#rr2">proceed here</A>.</P>
+
+<P>If you are installing TextPad-bootstraps, <A HREF="#install5">proceed here</A>.
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="install5"/><H2><B><CODE>[<A HREF="#install">BACK</A>] &nbsp; [<A HREF="#install4">PREV</A> -- <A HREF="#install6">NEXT</A>]</CODE></B> &nbsp; &nbsp; Installing all TextPad-bootstraps: Step-by-step</H2>
+
+<H3>Create TextPad-bootstrap phrases for the XKP-project</H3>
+
+<P>Reprint your TextPad all-command-list (by repeating the first three steps: <A HREF="#install">one</A>, <A HREF="#install2">two</A>, <A HREF="#install3">three</A>), but use this regex to only mark <A HREF="xkp.html#tpbs">TextPad-bootstraps in the XKP-project</A>:
+<BR> &nbsp; &nbsp; <CODE>^(EditCopy|EditCut|EditDupLine|FileClose|FileNew|FileSave|DocumentStart|WordRightEnd|EditPaste|SelectAll|WordLeftExtend|WordRightEndExtend|ToggleWordWrap)\b
+</CODE>
+<BR>Here is the result from the <CODE><A HREF="tpkc/tpkc_user_dir.html#tudn">&quot;tp_frsh_instl&quot;</A></CODE> tp-all-cmd-list (see the bottom of the linked section):</P>
+
+<PRE STYLE="background-color:#E1E1E1;">DocumentStart           Ctrl+Home
+EditCopy                Ctrl+C                  Ctrl+Insert
+EditCut                 Shift+Delete            Ctrl+X
+EditDupLine             Ctrl+Shift+Alt+K
+EditPaste               Ctrl+V                  Shift+Insert
+FileClose               Alt+W
+FileNew                 Ctrl+N
+FileSave                Ctrl+S
+SelectAll               Ctrl+A
+ToggleWordWrap          Ctrl+Q, W
+WordLeftExtend          Ctrl+Shift+B            Ctrl+Shift+Left
+WordRightEnd            Alt+Right
+WordRightEndExtend      Shift+Alt+Right</PRE>
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="install6"/><H2><B><CODE>[<A HREF="#install">BACK</A>] &nbsp; [<A HREF="#install5">PREV</A> -- <A HREF="#install7">NEXT</A>]</CODE></B> &nbsp; &nbsp; Installing all TextPad-bootstraps: Step-by-step</H2>
+
+<H3>Create TextPad-bootstrap phrases for the XKP-project</H3>
+
+<P><OL>
+	<LI>For each of these commands, choose its <A HREF="#terminology">primary key-command</A>. That is, delete all key-commands but the one you consider the &quot;best&quot;. All remaining key-commands (the nbs-kcs) are processed at a later time.</LI>
+	<LI>Using this list as a guide (example below), translate each command into a TextPad-bootstrap, by creating its <A HREF="#format">three phrases</A>. <I><B>Duplicate</B></I> and save these phrase-files to your root TPKC-user-directory (<A HREF="#locations">locations</A>)--do not edit the phrase-files until they are in <I>your</I> user-directory. <I>Note the <CODE>&quot;tp_frsh_instl&quot;</CODE> and &quot;blank template&quot; file-sets to get you started (choose one or the other, whichever works best given your key-command setup).</I></LI>
+	<LI>As noted in the <A HREF="#mainp">main phrase</A>, the XKP project requires <A HREF="xkp.html#rawpexkc">&quot;raw&quot; PhraseExpress key-presses</A>.</LI>
+</OL></P>
+
+
+<PRE STYLE="background-color:#E1E1E1;">DocumentStart           Ctrl+Home
+EditCopy                Ctrl+C
+EditCut                 Ctrl+X
+EditDupLine             Ctrl+Shift+Alt+K
+EditPaste               Ctrl+V
+FileClose               Alt+W
+FileNew                 Ctrl+N
+FileSave                Ctrl+S
+SelectAll               Ctrl+A
+ToggleWordWrap          Ctrl+Q, W
+WordLeftExtend          Ctrl+Shift+Left
+WordRightEnd            Alt+Right
+WordRightEndExtend      Shift+Alt+Right</PRE>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="install7"/><H2><B><CODE>[<A HREF="#install">BACK</A>] &nbsp; [<A HREF="#install6">PREV</A> -- <A HREF="#install8">NEXT</A>]</CODE></B> &nbsp; &nbsp; Installing all TextPad-bootstraps: Step-by-step</H2>
+
+<H3>Creating the TextPad-bootstraps for the TPKC-project</H3>
+
+<P>Repeat the steps for tp-bootstraps as required by the TPKC-project. Here is the regex to mark all lines:
+<BR> &nbsp; &nbsp; <CODE>^(EditCopyTaggedLines|EditCutTaggedLines|BookmarkNext|BookmarkToggle|SearchFiles|FileManage|FileOpen|FileQuickOpen|SearchFind|SearchFindNext|SearchGoto|Preferences|SearchReplace)\b</CODE>
+<BR>As described in the <A HREF="#mainp">main-phrase</A>, TPKC-bootstraps must have <A HREF="xkp.html">x-key-presses</A>.</P>
+
+<PRE STYLE="background-color:#E1E1E1;">BookmarkNext            F2
+BookmarkToggle          Ctrl+F2
+EditCopyTaggedLines     Ctrl+Shift+Alt+.
+EditCutTaggedLines      Ctrl+Shift+Alt+,
+FileManage              F3
+FileOpen                Ctrl+O
+FileQuickOpen           Ctrl+Shift+O
+Preferences             Ctrl+Q, P
+SearchFiles             Ctrl+F5
+SearchFind              F5
+SearchFindNext          Ctrl+F
+SearchGoto              Ctrl+G
+SearchReplace           F8</PRE>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="install8"/><H2><B><CODE>[<A HREF="#install">BACK</A>] &nbsp; [<A HREF="#install7">PREV</A> -- NEXT]</CODE></B> &nbsp; &nbsp; Installing all TextPad-bootstraps: Step-by-step</H2>
+
+<P>Import the four bootstrap phrase-files to your TPKC-user-directory in PhraseExpress (<A HREF="#locations">locations</A>).</P>
+
+<P>Test all TextPad-bootstraps by executing the <A HREF="#utilities">utility</A>
+<BR> &nbsp; &nbsp; <CODE>testtpbsxkptpkc</CODE>
+<BR>Follow the instructions carefully.</P>
+
+<H1>DONE.</H1>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="format"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TextPad-bootstraps: Format and specifications</H2>
+
+<P>Each TextPad-bootstrap has three phrases:<UL>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#mainp">GO</A></B></FONT>]</CODE> &nbsp; Main</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#escp">GO</A></B></FONT>]</CODE> &nbsp; Escaped</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#tpkp">GO</A></B></FONT>]</CODE> &nbsp; TextPad-keypress</LI>
+</UL>The values of these three phrases are conceptually equal: They each represent, in three different formats, the single key-command (the <A HREF="#terminology">bootstrap-key-command</A>) associated to a particular built-in TextPad command--one that happens to be a TextPad-bootstrap. All main phrases (for a single project--either <A HREF="xkp.html">XKP</A> or <A HREF="tpkc/index.html">TPKC</A>) are <A HREF="#locations">stored</A> in a single phrase-file. The &quot;non-main&quot; phrases are stored in another file. All three phrases are critical to XBN-PhraseExpress.</P>
+
+<H3>Example TextPad-bootstrap</H3>
+
+<P><I>Displayed in <A HREF="../devpex/c2pl.html#one">uncompressed</A> format. See <A HREF="phrase_file.html#pformat">phrase-format specifications</A></I></P>
+
+<H4><U>Main</U></H4>
+
+<PRE STYLE="background-color:#E1E1E1;"><B><U>zTPCopy</U></B> -- TextPad built-in command: Edit &gt; <B>EditCopy</B>
+{#CTRL -chars c}{#insert zTSlp}{#sleep 10}</PRE>
+
+<H4><U>Non-main</U></H4>
+
+<PRE STYLE="background-color:#E1E1E1;"><B><U>zTPCopyEsc</U></B>
+\\\{#CTRL -chars c\\\}\\\{#insert zTSlp\\\}\\\{#sleep 10\\\}
+<B><U>zTPCopyTPKeys</U></B>
+Ctrl+C</PRE>
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="locations"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TextPad-bootstraps: Phrase and file locations</H2>
+
+<P>All TextPad-bootstraps, for both the <A HREF="xkp.html">XKP</A> and <A HREF="tpkc/index.html">TPKC</A> projects are stored in a single directory: the root directory of your <A HREF="tpkc/tpkc_user_dir.html">TPKC-user-directory</A>.<UL>
+	<LI><B>On disk</B> (<A HREF="phrase_file.html#fformat">phrase-files</A>)<UL>
+		<LI><U>Directory:</U> <CODE>{#insert <A HREF="tpkc/tpkc_user_dir.html#zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn">zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn</A>}</CODE><UL>
+			<LI><A HREF="#mainp">Main</A> phrase-files:
+			<BR> &nbsp; &nbsp; <CODE>tp_bootstraps_for_xkp_project.px.txt</CODE> &nbsp; &nbsp; <I>(<A HREF="../../textpad__tpkc/for_v_7_0_9/user_config/tp_frsh_instl/tp_bootstraps_for_xkp_project.px.txt">tpfi</A>--for tpkc-user-dir name=<CODE>&quot;tp_frsh_instl&quot;</CODE>, <A HREF="../../textpad__tpkc/for_v_7_0_9/user_config/TPKC_USER_DIR_NAME/tp_bootstraps_for_xkp_project.px.txt">blank template</A>)</I>
+			<BR> &nbsp; &nbsp; <CODE>tp_bootstraps_for_tpkc_project.px.txt</CODE> &nbsp; &nbsp; <I>(<A HREF="../../textpad__tpkc/for_v_7_0_9/user_config/tp_frsh_instl/tp_bootstraps_for_tpkc_project.px.txt">tpfi</A>, <A HREF="../../textpad__tpkc/for_v_7_0_9/user_config/TPKC_USER_DIR_NAME/tp_bootstraps_for_tpkc_project.px.txt">template</A>)</I></LI>
+			<LI>&quot;Non-main&quot; (<A HREF="#escp">escaped</A> and <A HREF="#tpkp">TextPad-key-press</A>) phrase-files:
+				<BR> &nbsp; &nbsp; <CODE>tp_bootstraps_for_xkp_project_esc_tpk.px.txt</CODE> &nbsp; &nbsp; <I>(<A HREF="../../textpad__tpkc/for_v_7_0_9/user_config/tp_frsh_instl/tp_bootstraps_for_xkp_project_esc_tpk.px.txt">tpfi</A>, <A HREF="../../textpad__tpkc/for_v_7_0_9/user_config/TPKC_USER_DIR_NAME/tp_bootstraps_for_xkp_project_esc_tpk.px.txt">template</A>)</I>
+				<BR> &nbsp; &nbsp; <CODE>tp_bootstraps_for_tpkc_project_esc_tpk.px.txt</CODE> &nbsp; &nbsp; <I>(<A HREF="../../textpad__tpkc/for_v_7_0_9/user_config/tp_frsh_instl/tp_bootstraps_for_tpkc_project_esc_tpk.px.txt">tpfi</A>, <A HREF="../../textpad__tpkc/for_v_7_0_9/user_config/TPKC_USER_DIR_NAME/tp_bootstraps_for_tpkc_project_esc_tpk.px.txt">template</A>)</I></LI>
+			</UL></LI>
+		</UL></LI>
+		<LI><B>PhraseExpress folder</B> (to <A HREF="phrase_file_import1.html">import</A> into)
+		<PRE>    XBNPE: Parent-folder &gt;
+       XBN-PhraseExpress &gt;
+<I>(<A HREF="tpkc/index.html#inpex">go</A>)</I>      XBNPE-TPKC: TextPad Built-in commands &gt;
+             XBNPE-TPKC: User-specific phrases: <I>[TPKC_USER_DIR_NAME]</I>
+                <B>TextPad-bootstraps</B></PRE></LI>
+	</UL></LI>
+</UL></P>
+
+<P><I>Splitting TextPad-bootstraps into these two files makes <A HREF="tpkc/tpkc_user_dir.html#remotebuild">remote-builds</A> possible.</I></P>
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="depend"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; XBN-PhraseExpress project dependencies</H2>
+
+
+<P>The most fundamental project in XBN-PhraseExpress is the
+<BR> &nbsp; &nbsp; XBNPE-Key-presses (<A HREF="xkp.html">XKP</A>) project
+<BR>The only project that directly depends on it is the
+<BR> &nbsp; &nbsp; TextPad built-in command (<A HREF="tpkc/index.html">TPKC</A>) project
+<BR>All other projects in XBN-PhraseExpress depend (directly) on TPKC.</P>
+
+<P>These two foundational projects depend on <A HREF="tpbs.html">TextPad-bootstraps</A>. There are TextPad-bootstraps exclusive to the XKP-project, and some exclusive to TPKC. These projects cannot be installed until their tp-bootstraps are installed first. TextPad-bootstraps are built-in TextPad commands that must be manually installed by you.</P>
+
+<P><I>No other XBN-PhraseExpress projects have TextPad-bootstraps.</I> Other projects, such as
+<BR> &nbsp; &nbsp; XBNPE-Search and Replace (<A HREF="../tasks/snr.html">SNR</A>)
+<BR>also require certain built-in TextPad commands to exist, but they are considered &quot;non-bootstrap&quot; (nbs) commands and are <A HREF="tpkc/user_cmd_cfg.html#assignkcs">configured</A> in a different way: in your TPKC <A HREF="tpkc/user_cmd_cfg.html">user-specific</A> command-configuration.</P>
+
+<P>(The SNR-project is the only project directly dependent on TPKC. All other XBN-PhraseExpress projects depend on SNR.)</P>
+
+<P><IMG SRC="images/dependency_tree.jpg" BORDER="1"/></P>
+
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="mainp"/><H2><CODE>[<A HREF="#format">BACK</A>]</CODE> &nbsp; TextPad-bootstrap: Main phrase</H2>
+
+<P>The main TextPad-bootstrap phrase is what actually triggers a built-in TextPad command. You are encouraged to call these phrases from your own PhraseExpress code. The main phrases (for each project) are <A HREF="#locations">stored</A> in a single phrase-file.</P>
+
+<H3>XKP-project example</H3>
+
+<PRE STYLE="background-color:#E1E1E1;"><B><U>zTPCopy</U></B> -- TextPad built-in command: Edit &gt; <B>EditCopy</B>
+{#CTRL -chars c}{#insert zTSlp}{#sleep 10}</PRE>
+
+<P><I>The XKP-project requires <A HREF="xkp.html#rawpexkc">&quot;raw&quot; PhraseExpress key-presses</A> in the phrase body, where each key-press is followed by a call to <CODE><A HREF="../devpex/debugging.html#kpspeed">zTSlp</A></CODE></I></P>
+
+<H3>TPKC-project example</H3>
+
+<PRE STYLE="background-color:#E1E1E1;"><B><U>zTPFileOpen</U></B> -- TextPad built-in command: File &gt; <B>FileOpen</B>
+{#insert zCpOO}{#sleep 1750}</PRE>
+
+<P><I>The TPKC-project requires <A HREF="xkp.html">x-key-presses</A> (each of which integrate <CODE>zTSlp</CODE>).</I></P>
+
+<H3>Requirements</H3>
+
+<P><UL>
+	<LI><B>Phrase name:</B> By convention, the phrase-name for <I>all</I> built-in TextPad commands must begin with <CODE>&quot;zTP&quot;</CODE>. Example:
+	<BR> &nbsp; &nbsp; <CODE>zTPCopy</CODE></LI>
+	<LI><B>Description:</B> States the specific TextPad command triggered by this phrase and its category. Example:
+	<BR> &nbsp; &nbsp; <CODE>&nbsp;-- TextPad built-in command: Edit &gt; EditCopy</CODE>
+	<BR>It is strongly recommended that the description is in exactly this format.</LI>
+	<LI><B>Value:</B> The value--phrase-body--is the specific (set of) key-press(es) that <I>actually triggers</I> the built-in TextPad command<UL>
+		<LI>Each individual key-press must be followed by a call to <CODE><A HREF="../devpex/debugging.html#kpspeed">zTSlp</A></CODE></LI>
+		<LI>For key-commands with multiple key-presses, there must be some sleep between each. The default value is stored in the TPKC <A HREF="tpkc/master_cfg_vars.html">master-configuration-variable</A>
+		<BR> &nbsp; &nbsp; <CODE><A HREF="tpkc/master_cfg_vars.html#zTpkcMillsBtwMultiKeyKCs">zTpkcMillsBtwMultiKeyKCs</A></CODE></LI>
+		<LI>Must end with a <I>minimal</I> amount of sleep, so that PhraseExpress does not continue until the command has finished executing. This should be an amount satisfactory for <I>most situations</I>. For extreme situations, append extra sleep after calling it. For example:
+		<BR> &nbsp; &nbsp; <CODE>{#insert zTPCopy}{#sleep 50}</CODE>
+		<BR>The default value is stored in the command's <A HREF="tpkc/config_vars.html#globalcmd">global-command configuration-variable</A>
+		<BR> &nbsp; &nbsp; <CODE><A HREF="tpkc/config_vars.html#DfltPostKcSlpMils">zTpkc[abrv]DfltPostKcSlpMils</A></CODE></LI>
+	</UL></LI>
+</UL></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="escp"/><H2><CODE>[<A HREF="#format">BACK</A>]</CODE> &nbsp; TextPad-bootstrap: Escaped (literalized) phrase</H2>
+
+<P>The escaped TextPad-bootstrap phrase is <I>exactly equal</I> to its <A HREF="#mainp">main phrase</A>, except that all curlys are escaped. This and the <A HREF="#tpkp">TextPad-key-press phrase</A> are considered the &quot;non-main&quot; tp-bootstrap phrases, and are both <A HREF="#locations">stored</A> together in a single phrase-file. The escaped tp-bootstrap phrase<UL>
+	<LI>Is used to <A HREF="../generic/wishes.html#ltrl">literally display</A> the key-command to the user, for <A HREF="tpkc/user_menu2.html#tpkcumakcdt">diagnostic purposes</A>.</LI>
+	<LI>Helps make a <A HREF="tpkc/tpkc_user_dir.html#remotebuild">remote TPKC-user-build</A> possible.</LI>
+	<LI>Is used by the TPKC <A HREF="tpkc/index.html#userbuild">user-build-process</A> (sub-build-proc-<A HREF="tpkc/sub_build_proc2.html#10">10</A>) to delete all <A HREF="#terminology">bootstrap-key-commands</A> from the TextPad <A HREF="tpkc/tpacl.html">all-command-list</A>.</LI>
+</UL></P>
+
+<H3>Example</H3>
+<PRE STYLE="background-color:#E1E1E1;"><B><U>zTPCopyEsc</U></B>
+\\\{#CTRL -chars c\\\}\\\{#insert zTSlp\\\}\\\{#sleep 10\\\}</PRE>
+
+<H3>Requirements</H3>
+
+<P><UL>
+	<LI><B>Name:</B> Must be equal to the name of the tp-bootstrap's <A HREF="#mainp">main phrase</A>, with <CODE>&quot;Esc&quot;</CODE> at the end.
+	<BR>Example: <CODE>&quot;zTPCopyEsc&quot;</CODE></LI>
+	<LI><B>Value:</B> Must be <I>exactly</I> equal to the main-phrase, where each open and close-curly is <A HREF="../devpex/xpc.html#escaped">escaped</A>. For example, if the main-phrase's value is equal to
+	<BR> &nbsp; &nbsp; <CODE>{#CTRL -chars c}{#insert zTSlp}{#sleep 10}</CODE>
+	<BR>then the value of this escaped-phrase must be
+	<BR> &nbsp; &nbsp; <CODE>\\\{#CTRL -chars c\\\}\\\{#insert zTSlp\\\}\\\{#sleep 10\\\}</CODE></LI>
+</UL></P>
+
+<P><I>(There are <A HREF="#utilities">utilities</A> to assist you.)</I></P>
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="tpkp"/><H2><CODE>[<A HREF="#format">BACK</A>]</CODE> &nbsp; TextPad-bootstrap: TextPad key-press phrase</H2>
+
+<P>The TextPad-key-press phrase in a TextPad-bootstrap has the same key-press(es) as its <A HREF="#escp">escaped</A> and <A HREF="#mainp">main</A> counterparts, but with key-presses as specified in
+<BR> &nbsp; &nbsp; <CODE>TextPad &gt; Configure &gt; Preferences &gt; Keyboard</CODE>
+<BR>Specifically, it contains the exact key-press(es) as printed in the <A HREF="tpkc/tpacl.html">TextPad all-command-list</A>. This and the escaped phrase are <A HREF="#locations">stored</A> together in a single file.</P>
+
+<H3>Example</H3>
+<PRE STYLE="background-color:#E1E1E1;"><U>zTPCopyTPKeys</U></B>
+Ctrl+C</PRE>
+
+<H3>Requirements</H3>
+
+<P><B>Name:</B> Must be equal to the name of the <A HREF="#mainp">main</A> tp-bootstrap phrase, with <CODE>&quot;TPKeys&quot;</CODE> at the end. Example:
+<BR> &nbsp; &nbsp; <CODE>zTPCopyTPKeys</CODE></P>
+
+<H4><U>Value</U></H4>
+
+<P>Must be the exact value printed in the <A HREF="tpkc/tpacl.html">TextPad all-command-list</A>, for this particular command. For example, the built-in TextPad command
+<BR> &nbsp; &nbsp; <CODE>EditCopy</CODE>
+<BR>is a TextPad-bootstrap. Its <A HREF="#mainp">main-phrase</A> name is
+<BR> &nbsp; &nbsp; <CODE>zTPCopy</CODE>
+<BR>An example key-command is
+<BR> &nbsp; &nbsp; <CODE>Ctrl+C</CODE>
+<BR>as listed in
+<BR> &nbsp; &nbsp; <CODE>TextPad &gt; Configure &gt; Preferences &gt; Keyboard &gt; Categories &gt; &quot;Edit&quot; &gt; Commands &gt; &quot;EditCopy&quot;</CODE></P>
+
+<P><I><A HREF="tpbs.html#install5">More examples</A> (note the 1 multi-key key-command)</I></P>
+
+<P>Since the value of this phrase is not PhraseExpress code, it should therefore have no SLEEP or calls to <CODE><A HREF="../devpex/debugging.html#kpspeed">zTSlp</A></CODE>. TP-key-press phrases are used by the first step of the first TPKC <A HREF="tpkc/index.html#userbuild01">user-build-process</A> (<A HREF="tpkc/sub_build_proc2.html#10">sub-proc-10</A>) to delete all <A HREF="#terminology">bootstrap-kcs</A> from the tp-all-cmd-list.</P>
+
+<P>Below are two screenshots.<OL>
+	<LI>The TextPad preferences dialog, displaying the <CODE>&quot;EditCopy&quot;</CODE> command, and its key-command <CODE>&quot;Ctrl+C&quot;</CODE> (the first is its bootstrap-kc, the rest its nbs-kcs)</LI>
+	<LI>A portion of the tp-all-cmd-list containing <CODE>EditCopy</CODE>.</LI>
+</OL></P>
+
+<P><IMG SRC="images/edit_copy_kc_in_tp_prefs.jpg" BORDER="1"/></P>
+
+<P><IMG SRC="tpkc/images/tpkc_all_cmd_list_for_edit_copy.jpg" BORDER="1"/></P>
+
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="utilities"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TextPad-bootstraps: Utilities</H2>
+
+<H3>Verification of all TextPad-bootstraps (<CODE><A HREF="../devpex/xbnpe_ddmenus.html#xh">xh</A>tk</CODE>)</H3>
+
+<P>Follow all instructions carefully.<UL>
+	<LI><CODE>testtpbsxkp</CODE>: Verifies all XKP-required tp-bootstraps.</LI>
+	<LI><CODE>testtpbstpkc</CODE>: Verifies all TPKC-required tp-bootstraps.</LI>
+	<LI><CODE>testtpbsxkptpkc</CODE>: Calls <CODE>testtpbsxkp</CODE> and then <CODE>testtpkeyphrasec</CODE>.</LI>
+</UL></P>
+
+<H3>Name and value of &quot;non-main&quot; tp-bootstrap phrases (<CODE>xhtb</CODE>)</H3>
+
+<P>All these utilities require the name of the <A HREF="#mainp">main</A> tp-bootstrap phrase to be in a <A HREF="xbnpe_phrase_types.html#variable">variable</A> named
+<BR> &nbsp; &nbsp; <CODE>zvBTSTRP_PHRS_NM</CODE></P>
+
+<P><UL>
+	<LI><B><CODE>zTPBtstrpEscKC_M_bspm</CODE>:</B> Gets the <A HREF="#escp">escaped key-command</A>, <I>after unescaping it</I></LI>
+	<LI><B><CODE>zTPBtstrpEscPhrsNm_M_bspm</CODE>:</B> Gets the name of the phrase containing the escaped key-command.</LI>
+	<LI><B><CODE>zTPBtstrpTPKeys_M_bspm</CODE>:</B> Gets the value of the <A HREF="#tpkp">TextPad key-press</A>.</LI>
+	<LI><B><CODE>zTPBtstrpTPKeysPhrsNm_M_bspm</CODE>:</B> Gets the name of the phrase containing the TextPad key-press.</LI>
+</UL></P>
+
+<H3><A HREF="../index.html#tasks">Live</A> example</H3>
+
+<PRE STYLE="background-color:#E1E1E1;"><!--xcfexample...START  //  {#BALLOON -title tpbsutildemo -text About to start}{#sleep 2000}--><B><U>tpbsutildemo</U></B>
+   {#SETPHRASE -description zvBTSTRP_PHRS_NM -content zTPCopy -autotext zvBTSTRP_PHRS_NM -folder ctvv_folder}
+   {#insert zTPBtstrpEscPhrsNm_M_bspm}:{#ENTER}{#TAB}
+      {#insert zTPBtstrpEscKC_M_bspm}{#ENTER}{#BKSP}
+   {#insert zTPBtstrpTPKeysPhrsNm_M_bspm}:{#ENTER}{#TAB}
+      {#insert zTPBtstrpTPKeys_M_bspm}{#ENTER}<!--xcfexample...END  //  XXX--></PRE>
+
+<P>Output:</P>
+
+<PRE STYLE="background-color:#E1E1E1;">zTPCopyEsc:
+   {#CTRL -chars c}{#insert <A HREF="../devpex/debugging.html#kpspeed">zTSlp</A>}{#sleep 10}
+zTPCopyTPKeys:
+   Ctrl+C</PRE>
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="terminology"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TextPad-bootstraps: Terminology</H2>
+
+<P>A &quot;<B>TextPad-bootstrap</B>&quot; is a built-in TextPad command that is critical to either the XKP or TPKC-project. The key-command assigned to a TextPad-bootstrap is called a <B>&quot;bootstrap key-command&quot;</B>. Any other key-commands assigned to a tp-bootstrap (or <I>any</I> key-command assigned to <I>any</I> other built-in TextPad command), are each called a &quot;<B>Non-BootStrap key-command</B>&quot; or &quot;Non-BootStrap kc&quot;, or <CODE>&quot;<B>nbs-kc</B>&quot;</CODE>.</P>
+
+<P>A &quot;<B>Non-BootStrap command</B>&quot;, or &quot;<B>nbs-command</B>&quot;, is simply a command that is not a tp-bootstrap--whether or not it has a key-commands assigned to it. An &quot;<B>nbs-phrase</B>&quot; is a phrase that triggers a non-bootstrap command.</P>
+
+<P>The &quot;<B>primary key-command</B>&quot; for a TextPad command is:<UL>
+	<LI><B>if it is a tp-bootstrap:</B> The bootstrap-kc</LI>
+	<LI><B>if it is not a tp-bootsrap:</B> nbs-kc number one.</LI>
+</UL>If it has no kc-s (is not a bootstrap, and its nbs-kc count is zero), it has no primary-kc.</P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="promote"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; <I>For XBNPE-developers only:</I> Promoting an nbs-command to a tp-bootstrap</H2>
+
+<P><I>(See: <A HREF="#locations">locations</A>)</I></P>
+
+<P><OL>
+	<LI>Remove that TextPad command from its current location (its current phrase-file), and place it into the <A HREF="#mainp">main</A> tp-bootstrap file for either the <A HREF="xkp.html">XKP</A> or <A HREF="tpkc/index.html">TPKC</A> project (<I>for <B>all</B> users in
+	<BR> &nbsp; &nbsp; <CODE>{#insert zXPROOT_DIR_tpkc}/textpad__tpkc/for_v_7_0_9/user_config/</CODE>
+	<BR>!!!</I>).</LI>
+	<LI>Create its corresponding &quot;non-main&quot; phrases (<CODE>&quot;<A HREF="#escp">Esc</A>&quot;</CODE> and <CODE>&quot;<A HREF="#tpkp">TPKeys</A>&quot;</CODE>)</LI>
+	<LI>Add it to the regular expression for marking lines in the tp-all-cmd-list, in the tpbs section in XKP and TPKC.</LI>
+	<LI>Change its raw global config from, for example:
+	<BR> &nbsp; &nbsp; <CODE>BookmarkPrev	zTPBookmarkGTPrev	Srchmkprv	<B>__ES__</B>	100	{#insert zDOWN3}</CODE>
+	<BR>to
+	<BR> &nbsp; &nbsp; <CODE>BookmarkPrev	zTPBookmarkGTPrev	Srchmkprv	<B>yes</B>	100	{#insert zDOWN3}</CODE>
+	<BR>and either<UL>
+		<LI>Run the entire TPKC-build-process from  <A HREF="tpkc/sub_build_proc.html#02">sub-build-proc 02</A> through <A HREF="tpkc/sub_build_proc2.html#14">14</A>, </LI>
+		<LI>or:<OL>
+			<LI>Run TPKC-build-process 02.</LI>
+			<LI>Update (for example)
+			<BR> &nbsp; &nbsp; <CODE>zTpkcSrchmkprvIsBtstrp_yes</CODE>
+			<BR>in
+			<BR> &nbsp; &nbsp; <CODE>{#insert zXPROOT_DIR_AG_tpkc}\cmd_cfg_global__bldprc06\search\search_BookmarkPrev.px.txt</CODE>
+			<BR>from <I>nothing</I> (the empty-string) to &quot;<B>yes</B>&quot;.</LI>
+			<LI>Import both
+			<BR> &nbsp; &nbsp; <CODE>search_BookmarkPrev.px.txt</CODE>
+			<BR>and the phrase-file output by build-proc-02.</LI>
+		</OL></LI>
+	</UL></LI>
+	<LI>Add a test to the appropriate tp-bootstrap testing script (either
+	<BR> &nbsp; &nbsp; <CODE>zTestAllXKPTextPadBootstraps</CODE>
+	<BR>or
+	<BR> &nbsp; &nbsp; <CODE>zTestAllTpkcTextPadBootstraps</CODE>
+	<BR>). If this command was in the TPKC project, and is being moved to the XKP project, then its <A HREF="tpkc/user_menu.html#tpkcumac1ctest">TPKC-test</A> must be changed from <A HREF="tpkc/user_menu.html#tpkcumac1ctestnbs">Non-BootStrap</A> to <A HREF="tpkc/user_menu.html#tpkcumac1ctesttpbs">bootstrap</A>.</LI>
+	<LI>Delete all TPKC-nbs phrase files (as output by build-proc-14). <I>(At the very least, delete these tp-bootstrap phrases from them, at least in PhraseExpress. <B>Not</B> deleting them will cause conflicts when running the tp-bootstrap test in the next step.)</I></LI>
+	<LI>Import the new tp-bootstrap tests and run it!</LI>
+	<LI>All tp-bootstraps, <I>regardless which project they are bootstraps for</I>, are listed in the TPKC ddmenu-file:
+	<BR> &nbsp; &nbsp; <CODE>{#insert zXPROOT_DIR_tpkc}/textpad__tpkc/for_v_7_0_9/user_config/<A HREF="../../textpad__tpkc/for_v_7_0_9/user_config/tp_ALL_cmds_pcddmenu.txt">tp_ALL_cmds_pcddmenu</A>.txt</CODE>
+	<BR>(This is the <U>input</U> file for TPKC-build-proc-15.) If not there yet, add <CODE>&quot;[BS]&quot;</CODE> to its ddmenu-entry.</LI>
+	<LI>Run TPKC-build-processes 10 through 14 (and, less critically, 15)--<I>for all users</I>.</LI>
+	</OL></LI>
+	<LI>Notify all users of this change and the steps they need to take. They're not going to like you very much.</LI>
+	<LI>Change the number of tpbs-s documented at the bottom of <CODE><A HREF="tpkc/sub_build_proc.html#02">sub_build_proc.html#02</A></CODE>.</LI>
+</OL></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="charsnot"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; Commands in the &quot;Characters&quot; category may not be TextPad-bootstraps</H2>
+
+<P>The &quot;Characters&quot; category is the only one in which commands do not have names. Instead, the &quot;name&quot; of each command is the character itself. This is unacceptable to the <A HREF="tpkc/index.html">TPKC-project</A>. The TPKC-build process (<A HREF="tpkc/sub_build_proc2.html#11">sub-build-proc-11</A>) therefore changes each to a <A HREF="../../textpad__tpkc/for_v_7_0_9/documentation_and_scripts/_char_category_cmd_name_alternatives.txt">specific name</A>**. For example, <CODE>'Ã'</CODE> is changed to <CODE>&quot;Char14AUpperTilde&quot;</CODE>. Since this translation does not occur until after the TPKC-project is installed <I>and built</I> (meaning all build processes from <A HREF="tpkc/sub_build_proc.html#02">02</A> through <A HREF="tpkc/sub_build_proc2.html#14">14</A> are successfully executed), no commands in this category may not be used as TextPad-bootstraps, until after all TPKC build processes have been successfully executed.</P>
+
+<P>This restriction only applies to the XKP and TPKC projects.</P>
+
+<P>**(see the bottom of <A HREF="tpkc/build_proc_tech_info2.html#creatergc_2catcfg">section two</A>, under <A HREF="tpkc/build_proc_tech_info2.html#bldrgc">TPKC-build: Before everything else: Manually creating the raw-global-configuration</A>, in the TPKC-build-process <A HREF="tpkc/build_proc_tech_info.html">technical documentation</A>)</P>
+
+<P><IMG SRC="images/char_cat_in_tp_prefs.jpg" BORDER="1"/></P>
+
+
+<PRE>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</PRE>
+</BODY></HTML>
+
+
+

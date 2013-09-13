@@ -1,0 +1,191 @@
+<HTML><HEAD>
+	<TITLE>XBNPE: Debugging</TITLE>
+	<meta name="viewport" content="width=device-width" />
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF"><a name="top"></a>
+
+<P>[<A HREF="../index.html#devpex">BACK</A>]<CODE> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </CODE><I>(XBN-PhraseExpress is released under the <A HREF="../index.html#lpgl">LPGL 2.1</A>)</I>
+
+<HR/>
+
+<H2>XBNPE: Debugging and diagnostic utilities</H2>
+
+<P><B>Contents:</B><UL>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#tracefreeze">GO</A></B></FONT>]</CODE> &nbsp; Process tracing and freezing</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#kpspeed">GO</A></B></FONT>]</CODE> &nbsp; Changing execution speed (and <CODE>&quot;zTSlp&quot;</CODE>)</LI>
+	<LI>Documented elsewhere:<UL>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="../generic/troubleshooting.html">GO</A></B></FONT>]</CODE> &nbsp; Generic PhraseExpress Troubleshooting</LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="../basics/tpkc/user_menu.html#tpkcumakcdt">GO</A></B></FONT>]</CODE> &nbsp; All debugging tools in the TPKC project</LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="cpcb.html#cpwl">GO</A></B></FONT>]</CODE> &nbsp; Executing phrase-names next to the cursor: <CODE>cpwl</CODE> and <CODE>cplnn</CODE></LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="xpc.html#ins">GO</A></B></FONT>]</CODE> &nbsp; <B><CODE>insqs</CODE>:</B> <CODE>&quot;X='{#insert X}'&quot;</CODE></LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="../tasks/file_manipulation.html#aboutto">GO</A></B></FONT>]</CODE> &nbsp; File manipulation: Print-delete &quot;about to open/insert&quot; warning</LI>
+	</UL></LI>
+</UL></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="tracefreeze"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; XBNPE debugging: Process tracing and freezing with <CODE>alertbox[1-10]</CODE></H2>
+
+<P><CODE>alertbox</CODE>-es provide the ability to narrow down the location at which a problem is occuring (&quot;tracing&quot;), and stopping execution temporarily to analyze the current state (&quot;freezing&quot;). Insert <CODE>alertbox</CODE>-es them as necessary, using the <CODE>&quot;pab[1-10]&quot;</CODE> actions. For example,
+<BR> &nbsp; &nbsp; <CODE>pab3</CODE>
+<BR>is the <A HREF="xpc.html">phrase-creator</A> for the <A HREF="../basics/xbnpe_phrase_types.html#command">command</A>
+<BR> &nbsp; &nbsp; <CODE>{#insert alertbox3}</CODE>
+<BR>which pops up a simple dialog box at that point, containing only the number three.</P>
+
+<P><I>(Note that <CODE>alertbox</CODE>-es are an exception to the <CODE>'z'</CODE>-prefix naming-convention for commands.)</I></P>
+
+<H3>Find all <CODE>alertbox</CODE> phrase-calls: <CODE>fnpab</CODE></H3>
+
+<P><CODE>fnpab</CODE> is an <A HREF="../basics/xbnpe_phrase_types.html#action">action</A> that sets the search term to
+<BR> &nbsp; &nbsp; <CODE>alertbox[0-9]+</CODE>
+<BR>allowing you to quickly find (and delete) all <CODE>alertbox</CODE>-es in the code.</P>
+
+<H3>Warning: <CODE>alertbox</CODE>-es in the find-dialog changes focus</H3>
+
+<P>Note that, when in the find-dialog (or replace or find-in-files dialogs), using an <CODE>alertbox</CODE> causes focus to change to the find-what textbox, and for <I>selects the entire search-term</I>.</P>
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="kpspeed"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; XBNPE debugging: Changing execution speed (and <CODE>&quot;zTSlp&quot;</CODE>)</CODE></H2>
+
+<P><I>[go to <A HREF="#kptemp">temporary</A>, <A HREF="#kppermanent">permanent</A>]</I></P>
+
+<P>The most powerful diagnostic tool in XBN-PhraseExpress is the ability to slow or speed up execution of <I>anything and everything</I>, whether the code is created by you, or is among the already-existing XBNPE projects and processes. Key-press speed is made possible by the <A HREF="../basics/xkp.html">XBNPE-Key-Press (XKP) project</A>. Each x-key-press is equivalent to its default PhraseExpress key-press, with an additional call to
+<BR> &nbsp; &nbsp; <CODE>zTSlp</CODE>
+<BR>For example,
+<BR> &nbsp; &nbsp; <CODE>{#insert zCpHOME}</CODE>
+<BR>is equal to
+<BR> &nbsp; &nbsp; <CODE>{#CTRL {#HOME}}{#insert zTSlp}</CODE></P>
+
+<P><TABLE ALIGN="center" BORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#EEEEEE"><TR ALIGN="center" VALIGN="middle">
+	<TD><B><U>Speed</U></B></TD>
+	<TD><B><U>Contents of <CODE>zTSlp</CODE></U></B></TD>
+	<TD><B><U><A HREF="../basics/xbnpe_phrase_types.html#action">Action</A></U></B></TD>
+	<TD><B><U><A HREF="xpc.html">Phrase-creator</A></U></B></TD>
+	<TD><B><U><A HREF="../basics/xbnpe_phrase_types.html#command">Command</A></U></B></TD>
+</TR><TR ALIGN="center">
+	<TD ROWSPAN="2" VALIGN="middle" ALIGN="right"><B>Fast</B></TD>
+	<TD><I>not-applicable</I></TD>
+	<TD><CODE>kpf</CODE></TD>
+	<TD><CODE>kfp</CODE></TD>
+	<TD><CODE>zKeyPressFast</CODE></TD>
+</TR><TR>
+	<TD COLSPAN="4" ALIGN="middle"><I>During &quot;fast&quot; execution speed, the <CODE>zTSlp</CODE> phrase <I>does not exist</I>, and therefore has minimal overhead.</I></TD>
+</TR><TR ALIGN="center">
+	<TD ROWSPAN="2" VALIGN="middle" ALIGN="right"><B>Medium</B></TD>
+	<TD><CODE>{#sleep 250}</CODE></TD>
+	<TD><CODE>kpm</CODE></TD>
+	<TD><CODE>kmp</CODE></TD>
+	<TD><CODE>zKeyPressMedium</CODE></TD>
+</TR><TR>
+	<TD COLSPAN="4" ALIGN="middle"><I>After each key-press, there is a quarter-second pause.</I></TD>
+</TR><TR ALIGN="center">
+	<TD VALIGN="middle" ALIGN="right"><B>Slow</B></TD>
+	<TD><CODE>{#sleep 500}</CODE></TD>
+	<TD><CODE>kps</CODE></TD>
+	<TD><CODE>ksp</CODE></TD>
+	<TD><CODE>zKeyPressSlow</CODE></TD>
+</TR><TR ALIGN="center">
+	<TD VALIGN="middle" ALIGN="right"><B>Super-Slow</B></TD>
+	<TD><CODE>{#sleep 1000}</CODE></TD>
+	<TD><CODE>kpss</CODE></TD>
+	<TD><CODE>kssp</CODE></TD>
+	<TD><CODE>zKeyPressSuperSlow</CODE></TD>
+</TR><TR ALIGN="center">
+	<TD VALIGN="middle" ALIGN="right"><B>Glacial</B></TD>
+	<TD><CODE>{#sleep 2000}</CODE></TD>
+	<TD><CODE>kpg</CODE></TD>
+	<TD><CODE>kgp</CODE></TD>
+	<TD><CODE>zKeyPressGlacial</CODE></TD>
+</TR></TABLE></P>
+
+<P><B>Notes:</B><UL>
+	<LI>Each &quot;action&quot; and &quot;command&quot; in the above table immediately changes key-press speed globally--for <I>everything</I>, both in, and created with, XBN-PhraseExpress.</LI>
+	<LI>Each command is accessible in the <A HREF="../devpex/xbnpe_ddmenus.html#user">XBNPE user-menu</A> (choose
+	<BR> &nbsp; &nbsp; &quot;Key-press [execution] speeds&quot;
+	<BR>). To determine the current speed, use <CODE>'<B>kpt</B>'</CODE>. <CODE>kpt</CODE> also presents a complete syntax to speed-related actions (aside from the below <CODE>&quot;fnkp&quot;</CODE>).</LI>
+	<LI>Aside from fast-mode, each of the above commands are equivalent to
+<BR> &nbsp; &nbsp; <CODE>{#SETPHRASE -description zvMILLS -content <B><I><CODE>[the-sleep-number-as-in-the-above-table]</CODE></I></B> -autotext zvMILLS -folder ctvv_folder}{#insert zKeyPressSpeedSetToMills_M_mils}</CODE></LI>
+</UL></P>
+
+<a name="kptemp"/><H4><CODE>[<A HREF="#kpspeed">BACK</A>]</CODE> &nbsp; <U>To temporarily slow down a portion of your code</U></H4>
+
+<PRE STYLE="background-color:#E1E1E1;">(*At the very beginning:*){#insert zKeyPressFast}
+   ...<I>stuff that already works</I>...
+{#insert zKeyPressSlow}
+   ...<I>stuff that needs to be analyzed</I>...
+{#insert zKeyPressFast}</PRE>
+
+<P>To quickly find (and delete) all calls to
+<BR> &nbsp; &nbsp; <CODE>'zKeyPress<I>[anything]</I>'</CODE>
+<BR>use <B><CODE>&quot;fnkp&quot;</CODE></B> <I>(this is not, and cannot be, mentioned in syntax listing)</I>.</P>
+
+<a name="kppermanent"/><H4><CODE>[<A HREF="#kpspeed">BACK</A>]</CODE> &nbsp; <U>To permanently (or to offer your users the <I>possibility</I> to) slow down execution...</U></H4>
+
+<P>...of a portion of your code, <I>yet still respect the currently-chosen global-speed-setting</I>:</P>
+<PRE STYLE="background-color:#E1E1E1;">   ...<I>stuff that should definitely go fast (by default)</I>...
+{#insert zKeyPressSpeedSave}
+{#insert zKeyPressSlow}
+   <I>...portion to slow down...</I>
+{#insert zKeyPressSpeedRevert}</PRE>
+
+<P>or:</P>
+
+<P>Allow your user to call any of the following:<UL>
+	<LI><CODE>zKPSpeedRequestFast</CODE></LI>
+	<LI><CODE>zKPSpeedRequestMedium</CODE></LI>
+	<LI><CODE>zKPSpeedRequestSlow</CODE></LI>
+	<LI><CODE>zKPSpeedRequestSuperSlow</CODE></LI>
+	<LI><CODE>zKPSpeedRequestGlacial</CODE></LI>
+</UL></P>
+
+<P>And then, eventually a process is executed:</P>
+
+<PRE STYLE="background-color:#E1E1E1;">
+{#insert zKPSpeedSaveSetToRqstd}
+
+<I>   ...Do some stuff at the requested speed...</I>
+
+{#insert zKeyPressSpeedRevert}</PRE>
+
+<P>Note that <CODE>zKPSpeedRequest*</CODE> is a global variable. Changing it in one application automatically changes it in another.</P>
+<PRE>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</PRE>
+</BODY></HTML>
+
+
+

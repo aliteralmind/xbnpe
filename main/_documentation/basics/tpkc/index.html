@@ -1,0 +1,322 @@
+<HTML><HEAD>
+	<TITLE>XBNPE: TPKC</TITLE>
+	<meta name="viewport" content="width=device-width" />
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF"><a name="top"></a>
+
+
+<P>[<A HREF="../../index.html#basics">BACK</A>]<CODE> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </CODE><I>(XBN-PhraseExpress is released under the <A HREF="../../index.html#lpgl">LPGL 2.1</A>)</I>
+
+<HR/>
+
+<H1>XBNPE: TextPad built-in command (TPKC-project)</H1>
+
+<P>The TextPad built-in command (TPKC) project is how PhraseExpress communicates with TextPad. Using the TPKC project gives your PhraseExpress code direct access to its more than three hundred &quot;built in&quot; commands (including <A HREF="../../tasks/file_manipulation.html">file manipulation</A> and <A HREF="../../tasks/snr.html">search and replace</A>).</P>
+
+<P>The TPKC-project must be installed (as part of the overall XBN-PhraseExpress <A HREF="../../install.html">installation</A>), and then &quot;built&quot;. The TPKC user-build-process takes more than an hour, but it requires minimal user-interaction, and is a largely one-time-only process--and <A HREF="tpkc_user_dir.html#remoterequest"><I>I can run it for you</I>!</A>. (Also, if you just installed TextPad and have no custom key-commands, then you <A HREF="../../install2.html#14atudn">do not need</A> to run the build at all.) Aside from the XBNPE-key-presses (<A HREF="../xkp.html">XKP</A>) project, <A HREF="../tpbs.html#depend">no other</A> XBN-PhraseExpress project can function until the TPKC user-build-process is complete.</P>
+
+<P><B>Contents:</B><UL>
+	<LI><B>Installing and configuration:</B><UL>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#userbuild">GO</A></B></FONT>]</CODE> &nbsp; The TPKC user-build process: Step-by-step</LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="master_cfg_vars.html">GO</A></B></FONT>]</CODE> &nbsp; Master configuration variables</LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#tpbs">GO</A></B></FONT>]</CODE> &nbsp; TextPad-bootstraps required by the XBNPE-TPKC project</LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="tpacl.html">GO</A></B></FONT>]</CODE> &nbsp; The TextPad all-command list</LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="build_proc_tech_info.html">GO</A></B></FONT>]</CODE> &nbsp; All TPKC build-processes: Technical information (admins only)</LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#zXPROOT_DIR_tpkcBuild">GO</A></B></FONT>]</CODE> &nbsp; The TPKC-build directory </LI>
+	</UL></LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="user_menu.html">GO</A></B></FONT>]</CODE> &nbsp; The <B>TPKC user menu</B>, which is used to access all major features</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="config_vars.html">GO</A></B></FONT>]</CODE> &nbsp; Category and global-command configuration</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="user_cmd_cfg.html">GO</A></B></FONT>]</CODE> &nbsp; User-specific command-configuration</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="tpkc_user_dir.html">GO</A></B></FONT>]</CODE> &nbsp; The TPKC user-directory, and user-dir-name</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#inpex">GO</A></B></FONT>]</CODE> &nbsp; PhraseExpress folder structure</LI>
+</UL></P>
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="pcddmenu"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TPKC: Phrase-creator drop-down-menu</H2>
+
+<P><B>Source (indented):</B>
+<BR> &nbsp; &nbsp; <CODE>{#insert <A HREF="../../global_config.html#zROOT_DIR_XBNPE_MAIN">zROOT_DIR_XBNPE_MAIN</A>}/textpad__tpkc/non_bootstrap_utils/z_phrase_creator_ddmenus/<A HREF="../../../textpad__tpkc/non_bootstrap_utils/z_phrase_creator_ddmenus/textpad__prefs_tpkc__pcddmenu.txt">textpad__prefs_tpkc__pcddmenu.txt</A></CODE>
+<BR><B>Output:</B><UL>
+	<LI><U>On disk</U> (unindented <A HREF="../phrase_file.html#fformat">phrase-file</A>):
+	<BR> &nbsp; &nbsp; <CODE>{#insert zROOT_DIR_XBNPE_MAIN}/textpad__tpkc/non_bootstrap_utils/z_phrase_creator_ddmenus/z_temp_folder_for_unindenting_ddmenus/<A HREF="../../../textpad__tpkc/non_bootstrap_utils/z_phrase_creator_ddmenus/z_temp_folder_for_unindenting_ddmenus/textpad__prefs_tpkc__pcddmenu.px.txt">textpad__prefs_tpkc__pcddmenu.px.txt</A></CODE></LI>
+	<LI><U>PhraseExpress folder</U> (to <A HREF="../phrase_file_import1.html">import</A> to):</P>
+
+<PRE>    XBNPE: Parent folder &gt;
+       XBN-PhraseExpress &gt;
+<I>(<A HREF="#inpex">go</A>)</I>      XBNPE-TPKC: TextPad built-in commands &gt;
+             Non-bootstrap utilities (only for use after TPKC is built) &gt;
+                <FONT SIZE="+1"><B>z-Phrase-creator DDMenus</B></FONT></PRE></LI>
+</UL>
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="inpex"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TPKC: PhraseExpress folder structure</H2>
+
+<PRE>    XBNPE: Parent folder &gt;
+       XBN-PhraseExpress &gt;
+          XBNPE-TPKC: TextPad built-in commands &gt;
+             All other TPKC phrases (8AG:1,2,3,3a,4,5,8,9) &gt;
+<I>(<A HREF="build_proc_tech_info.html#inpex">go</A>)</I>            Build process [Disable this branch when fully built] (1AG:2)
+                Configuration [non-usr-spcfc] (1AG:6) &gt;
+<I>(<A HREF="config_vars.html#globalcmd">info</A>)</I>             Command: Category
+                   Directory
+                Other (4AG:1,4,5,9) &gt;
+                   DDMenu: Backend &gt;
+<I>(<A HREF="user_menu.html#tpkcumuptest1">info</A>)</I>                _Test each nbs command
+                   Dynamic config-vars
+                   zSUB (2AG:1,4)
+<I>(<A HREF="user_menu2.html#inpex">go</A>)</I>            TextPad built-in commands [DDMENU]
+                Word completion -- MANUAL CONFIRMATION
+             Non-bootstrap utilities (only for use after TPKC is built) &gt;
+                SNR: Go-to dialog
+<I>(<A HREF="#pcddmenu">go</A>)</I>            z-Phrase-creator DDMenus
+             TPKC bootstrap phrases &gt;
+                CWLPDF
+                Other
+                PhraseExpress
+                SNR
+                TextPad-bootstrap utilities (see usr-spcfc phrss)
+<I>(<A HREF="tpkc_user_dir.html#inpex">go</A>)</I>         XBNPE-TPKC: User-specific phrases: [TPKC_USER_DIR_NAME] &gt;</PRE>
+
+
+
+</PRE>
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="zXPROOT_DIR_tpkcBuild"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; <CODE>zXPROOT_DIR_tpkcBuild</CODE></H2>
+
+<P>As of 9/3/2013, this is equal to
+<BR> &nbsp; &nbsp; <CODE>{#insert zROOT_DIR_XBNPE_MAIN}textpad__tpkc\build\</CODE></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="userbuild"/><H2><CODE><A HREF="#top">top</A> &nbsp; &nbsp; [PREV / <A HREF="#userbuild01">NEXT</A>]</CODE> &nbsp; The TPKC user-build process: Step-by-step</H2>
+
+<P><B>Requirements:</B> This section describes the <A HREF="../../install2.html#15tpbs">final step</A> (number 3 in the list) of the overall XBN-PhraseExpress installation process. This section assumes that you have never run the TPKC-build process before--or you wish to do a full-refresh of your TextPad key-command configuration.</P>
+
+<P><I>If your <A HREF="tpkc_user_dir.html#tudn">TPKC-user-dir name</A> is <CODE>&quot;tp_frsh_instl&quot;</CODE>, then you do not need to run this process at all. <A HREF="../../install2.html#14atudn">It has already been done for you</A>.)</I></P>
+
+<HR style="margin-left:0px" WIDTH="25%"/>
+
+<P><B>Note to TPKC-admins:</B> This documentation section is for TPKC-<I>users</I> only, who execute the TPKC sub-build-processes <A HREF="sub_build_proc2.html#10">10</A> through <A HREF="sub_build_proc2.html#15">15</A>. Build processes <A HREF="sub_build_proc.html#01">01</A> through <A HREF="sub_build_proc2.html#09">09</A> are for TPKC-administrators only--these first nine (really, ten) processes are completely built before XBN-PhraseExpress is ever <A HREF="../../index.html#downloads">downloaded</A> by a user. There is additional <A HREF="build_proc_tech_info.html">technical information</A>.</P>
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="userbuild01"/><H2><B><CODE><A HREF="#userbuild">BACK</A> &nbsp; &nbsp; [<A HREF="#userbuild">PREV</A> -- <A HREF="#userbuild02">NEXT</A>]</CODE></B> &nbsp; &nbsp; The TPKC user-build process: Step-by-step</H2>
+
+<P>The first step is to <A HREF="tpacl.html">print, validate, and then save</A> your &quot;TextPad all-command list&quot;.</P>
+
+<P>Then, in the <A HREF="user_menu.html">TPKC-user-menu</A>, execute</P>
+
+<PRE>TextPad built-in command (TPKC) project &gt;
+   <A HREF="user_menu.html#tpkcumubp">z-User-build processes</A> &gt;
+      TPKC user-build process ONE of 2</PRE>
+
+<P>This creates the <A HREF="user_cmd_cfg.html">user-specific</A> command-configuration, which must imported to its <A HREF="tpkc_user_dir.html#13file">required location</A>. <I>Overwrite (delete) any existing folders when importing.</I></P>
+
+<P>This process takes about 45 minutes. There is minimal interaction required. <B><I>Do not touch your computer during this time.</I></B></P>
+
+<P>Once complete, import all phrase-files (there is one phrase-file per TextPad command-category) to their <A HREF="tpkc_user_dir.html#13file">required location</A>. <I>Overwrite (delete) any existing folders when importing.</I></P>
+
+<H3>Video: The first-half of the TPKC-build-process (test-mode)</H3>
+
+<H2>...TO-DO...</H2>
+
+<P>This video demonstrates the first-half of the TPKC-build process, including<OL>
+	<LI>preparation of the TextPad <A HREF="tpacl.html">all-command-list</A></LI>
+	<LI>deleting output from a previous build,</LI>
+	<LI>actually running the process, and then</LI>
+	<LI><A HREF="../phrase_file_import1.html">importing</A> all output <A HREF="../phrase_file.html#fformat">phrase-files</A></LI>
+</OL>Note that the build-process in this video is in &quot;<A HREF="build_proc_tech_info.html#livevtest">test mode</A>&quot;. It is an <I>actual</I> build, but it only processes a small subset of commands. Since your build is in &quot;live mode&quot;, it will take significantly longer.</P>
+
+<P><I>(Admins only: This entails sub-build-processes <A HREF="sub_build_proc2.html#10">10</A> through <A HREF="sub_build_proc2.html#13">13</A>.)</I></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="userbuild02"/><H2><B><CODE><A HREF="#userbuild">BACK</A> &nbsp; &nbsp; [<A HREF="#userbuild01">PREV</A> -- NEXT]</CODE></B> &nbsp; &nbsp; The TPKC user-build process: Step-by-step</H2>
+
+<P>In the <A HREF="user_menu.html">TPKC-user-menu</A>, execute</P>
+
+<PRE>TextPad built-in command (TPKC) project &gt;
+   <A HREF="user_menu.html#tpkcumubp">z-User-build processes</A> &gt;
+      TPKC user-build process TWO of 2</PRE>
+
+<P>This creates the <A HREF="../tpbs.html#terminology">nbs-phrases</A>, and the all-active TextPad phrase-creator ddmenu.</P>
+
+<P>This process takes about 25 minutes. There is minimal interaction required. <B><I>Do not touch your computer during this time.</I></B></P>
+
+<P>When the output from both processes are imported to their required locations (for <A HREF="tpkc_user_dir.html#14file">sub-build-proc-14</A> and <A HREF="tpkc_user_dir.html#15file">sub-build-proc-15</A>). <I>Overwrite (delete) any existing folders when importing.</I></P>
+
+<P><A HREF="tpkc_user_dir.html#backup">Backup</A> your TPKC-user-directory</P>
+
+<H1>DONE.</H1>
+
+<H3>Video: The second-half of the TPKC-build-process (test-mode)</H3>
+
+<H2>...TO-DO...</H2>
+
+<P>This video demonstrates the second-half of the TPKC-build process, including...</P>
+
+<P><I>(Admins only: This entails sub-build-processes <A HREF="sub_build_proc2.html#14">14</A> through <A HREF="sub_build_proc2.html#15">15</A>.)</I></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="tpbs"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; XBNPE-TPKC: Required TextPad-bootstraps</H2>
+
+<P>The TPKC project--and therefore, excepting the <A HREF="../xkp.html">XKP</A> project, <I>the entirety of XBN-PhraseExpress</I>--requires the below <A HREF="../tpbs.html">TextPad-bootstraps</A> to be <A HREF="../tpbs.html#install">installed</A> before the TPKC-project itself can be installed. This list is in addition to the <A HREF="../xkp.html#tpbs">tp-bootstraps for the XKP project</A>.</P>
+
+<P><UL>
+	<LI><B>Regex for marking all lines in the <A HREF="tpacl.html">TextPad all-command list</A>:</B>
+	<BR> &nbsp; &nbsp; <CODE>^(EditCopyTaggedLines|EditCutTaggedLines|BookmarkNext|BookmarkToggle|SearchFiles|FileManage|FileOpen|FileQuickOpen|SearchFind|SearchFindNext|SearchGoto|Preferences|SearchReplace)\b</CODE></LI>
+	<LI><B>Testing functions</B> <I>(accessible via <CODE><A HREF="../../devpex/xbnpe_ddmenus.html#xh">xh</A>tk</CODE>)</I><UL>
+		<LI><U>TPKC only:</U><UL>
+			<LI>Command: <CODE>zTestAllTpkcTextPadBootstraps</CODE></LI>
+			<LI>Action: <CODE>testtpbstpkc</CODE></LI>
+		</UL></LI>
+		<LI><U>XKP and then TPKC:</U><UL>
+			<LI>Command: <CODE>zTestAllXkpTpkcTPBootstraps</CODE></LI>
+			<LI>Action: <CODE>testtpbsxkptpkc</CODE></LI>
+		</UL></LI>
+	</UL></LI>
+	<LI><B>Phrase-files:</B><UL>
+		<LI>As used by a TextPad &quot;fresh install&quot;: <A HREF="../../../textpad__tpkc/for_v_7_0_9/user_config/tp_frsh_instl/tp_bootstraps_for_tpkc_project.px.txt">main</A>,  <A HREF="../../../textpad__tpkc/for_v_7_0_9/user_config/tp_frsh_instl/tp_bootstraps_for_tpkc_project_esc_tpk.px.txt">non-main</A></LI>
+		<LI>Blank template: <A HREF="../../../textpad__tpkc/for_v_7_0_9/user_config/TPKC_USER_DIR_NAME/tp_bootstraps_for_tpkc_project.px.txt">main</A>,  <A HREF="../../../textpad__tpkc/for_v_7_0_9/user_config/TPKC_USER_DIR_NAME/tp_bootstraps_for_tpkc_project_esc_tpk.px.txt">non-main</A></LI>
+	</UL></LI>
+</UL></LI>
+</UL></P>
+
+<P><TABLE ALIGN="center" BORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#EEEEEE"><TR ALIGN="center" VALIGN="middle">
+	<TD><B><U>Phrase name</U></B></TD>
+	<TD><B><U>Built-in command name</U></B></TD>
+	<TD><B><U>Category</U></B></TD>
+	<TD><B><U>Description</U></B></TD>
+</TR><TR>
+	<TD><CODE>zTPBookmarkCopyAll</CODE></TD>
+	<TD><CODE>EditCopyTaggedLines</CODE></TD>
+	<TD ALIGN="center"><CODE>Edit</CODE></TD>
+	<TD>Copies all lines currently tagged with a bookmark.</TD>
+</TR><TR>
+	<TD><CODE>zTPBookmarkCutAll</CODE></TD>
+	<TD><CODE>EditCutTaggedLines</CODE></TD>
+	<TD ALIGN="center"><CODE>Edit</CODE></TD>
+	<TD>Cuts all lines currently tagged with a bookmark.</TD>
+</TR><TR>
+	<TD><CODE>zTPBookmarkGTNext</CODE></TD>
+	<TD><CODE>BookmarkNext</CODE></TD>
+	<TD ALIGN="center"><CODE>Search</CODE></TD>
+	<TD>Goes to the next bookmarked line, if any.</TD>
+</TR><TR>
+	<TD><CODE>zTPBookmarkToggle</CODE></TD>
+	<TD><CODE>BookmarkToggle</CODE></TD>
+	<TD ALIGN="center"><CODE>Search</CODE></TD>
+	<TD>Marks the currently-UN-marked line, or un-marks the currently-marked line.</TD>
+</TR><TR>
+	<TD><CODE>zTPFFindDlgOpen</CODE></TD>
+	<TD><CODE>SearchFiles</CODE></TD>
+	<TD ALIGN="center"><CODE>Search</CODE></TD>
+	<TD>Opens the <CODE>&quot;Find In Files&quot;</CODE> dialog.</TD>
+</TR><TR>
+	<TD><CODE>zTPFileOpen</CODE></TD>
+	<TD><CODE>FileOpen</CODE></TD>
+	<TD ALIGN="center"><CODE>File</CODE></TD>
+	<TD>Opens the <CODE>&quot;Open file(s)&quot;</CODE> dialog.</TD>
+</TR><TR>
+	<TD><CODE>zTPFindDlgOpen</CODE></TD>
+	<TD><CODE>SearchFind</CODE></TD>
+	<TD ALIGN="center"><CODE>Search</CODE></TD>
+	<TD>Opens the <CODE>&quot;Find&quot;</CODE> dialog</TD>
+</TR><TR>
+	<TD><CODE>zTPFileManager</CODE></TD>
+	<TD><CODE>FileManage</CODE></TD>
+	<TD ALIGN="center"><CODE>File</CODE></TD>
+	<TD>Opens the <CODE>&quot;Manage Files&quot;</CODE> dialog.</TD>
+</TR><TR>
+	<TD><CODE>zTPFileQOpen</CODE></TD>
+	<TD><CODE>FileQuickOpen</CODE></TD>
+	<TD ALIGN="center"><CODE>File</CODE></TD>
+	<TD>Opens the <CODE>&quot;Quick Open File&quot;</CODE> dialog.</TD>
+</TR><TR>
+	<TD><CODE>zTPFindNext</CODE></TD>
+	<TD><CODE>SearchFindNext</CODE></TD>
+	<TD ALIGN="center"><CODE>Search</CODE></TD>
+	<TD>With the find-dialog closed, finds the next search-term down.</TD>
+</TR><TR>
+	<TD><CODE>zTPGTDlgOpen</CODE></TD>
+	<TD><CODE>SearchGoto</CODE></TD>
+	<TD ALIGN="center"><CODE>Search</CODE></TD>
+	<TD>Opens the <CODE>&quot;Go To&quot;</CODE> dialog.</TD>
+</TR><TR>
+	<TD><CODE>zTPPrefsDlgOpen</CODE></TD>
+	<TD><CODE>Preferences</CODE></TD>
+	<TD ALIGN="center"><CODE>Configure</CODE></TD>
+	<TD>Opens the <CODE>&quot;Preferences&quot;</CODE> dialog.</TD>
+</TR><TR>
+	<TD><CODE>zTPRplcDlgOpen</CODE></TD>
+	<TD><CODE>SearchReplace</CODE></TD>
+	<TD ALIGN="center"><CODE>Search</CODE></TD>
+	<TD>Opens the <CODE>&quot;Replace&quot;</CODE> dialog</TD>
+</TR></TABLE></P>
+
+
+<PRE>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</PRE>
+</BODY></HTML>
+
+
+

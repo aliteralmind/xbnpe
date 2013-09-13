@@ -1,0 +1,215 @@
+<HTML><HEAD>
+	<TITLE></TITLE>
+	<meta name="viewport" content="width=device-width" />
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF"><a name="top"></a>
+
+
+<A NAME="09impxped"/><H2><B><CODE><A HREF="install.html">top</A> &nbsp; &nbsp; [<A HREF="install.html#08impxpec">PREV</A> -- <A HREF="#10impxpee">NEXT</A>]</CODE></B> &nbsp; &nbsp; XBN-PhraseExpress installation: Step-by-step</H2>
+
+<P>Before it completes, you will be asked to suppress duplicate phrases. Press <CODE>[No]</CODE>.</P>
+
+<P>(&quot;Duplicate&quot; is defined as &quot;has the same phrase-name&quot;. While it is unlikely that there are duplicate phrases, this at least gives you the opportunity to choose between them during some future execution. Eventually this allows you to resolve those conflicts, by either deleting a truly-duplicate phrase, or changing the name of a <I>different</I> phrase that happens to have the same name--along with all its phrase-calls.)</P>
+
+<P><IMG SRC="images/install_exclude_dup_phrases.jpg" BORDER="1"/></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="10impxpee"/><H2><B><CODE><A HREF="install.html">top</A> &nbsp; &nbsp; [<A HREF="#09impxped">PREV</A> -- <A HREF="#12gcv">NEXT</A>]</CODE></B> &nbsp; &nbsp; XBN-PhraseExpress installation: Step-by-step</H2>
+
+<P>All XBN-PhraseExpress phrases are now in the PhraseExpress application. Proceed to the next step.</P>
+
+<P><IMG SRC="images/install_import_xbnpe_parent_c.jpg" BORDER="1"/></P>
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="12gcv"/><H2><B><CODE><A HREF="install.html">top</A> &nbsp; &nbsp; [<A HREF="#10impxpee">PREV</A> -- <A HREF="#12p1tudn">NEXT</A>]</CODE></B> &nbsp; &nbsp; XBN-PhraseExpress installation: Step-by-step</H2>
+
+<P>There are four XBNPE &quot;<A HREF="global_config.html">global-configuration-variables</A>&quot; that must be set:<UL>
+	<LI><CODE>zROOT_DIR_XBNPE_PARENT</CODE></LI>
+	<LI><CODE>zWIN_DIR_DESKTOP</CODE> &nbsp; &nbsp; <I>(optional)</I></LI>
+	<LI><CODE>zzTPTxtDefaultWordWrapOnOrES</CODE></LI>
+	<LI><CODE>zzTPTxtDefaultStripTrailingWSOnOrES</CODE></LI>
+</UL>Note the phrase-file location and the PhraseExpress folder to which it needs to be imported. Set the values in the text-file and then import it to its required location in PhraseExpress.</P>
+
+<P><B>Warning:</B> It is strongly recommended that you edit these values in the on-disk text-files (plain-text phrase-files), and then import them. This is true when editing any values during this configuration process, and throughout much of the projects in XBN-PhraseExpress. Editing phrases directly in the PhraseExpress application, <I><U>at they very least, during this installation processes</U></I>, is strongly discouraged.</P>
+
+<P>XBN-PhraseExpress--at least at a bare-minimum--is now installed.</P>
+
+<P>Proceed to the next step to install the foundational XBNPE projects.</P>
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="12p1tudn"/><H2><B><CODE><A HREF="install.html">top</A> &nbsp; &nbsp; [<A HREF="#12gcv">PREV</A> -- NEXT]</CODE></B> &nbsp; &nbsp; XBN-PhraseExpress installation: Step-by-step</H2>
+
+<P>Set your <A HREF="basics/tpkc/tpkc_user_dir.html#tudn">TPKC-user-directory name</A> into its phrase-file, and import import it to its required location in PhraseExpress.</P>
+
+<P>If you have no custom key-commands, and have chosen the <CODE>&quot;tp_frsh_instl&quot;</CODE> TPKC-user-dir name, then <A HREF="#14atudn">proceed here</A>.</P>
+
+<P>Otherwise, <A HREF="#15tpbs">proceed here</A>.</P>
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="14atudn"/><H2><B><CODE><A HREF="install.html">top</A> &nbsp; &nbsp; [<A HREF="#12p1tudn">PREV</A> -- <A HREF="#14atudnb">NEXT</A>]</CODE></B> &nbsp; &nbsp; XBN-PhraseExpress installation: Step-by-step</H2>
+
+<P>Since you have no custom-commands, almost all of the rest of the installation process has been done for you. Follow this and the next step to complete your installation.</P>
+
+<P>Assign the following key-commands in
+<BR> &nbsp; &nbsp; <CODE>TextPad &gt; Config &gt; Preferences &gt; Keyboard &gt; Categories &gt; &quot;Search&quot; &gt; Commands</CODE></P>
+
+<P><TABLE ALIGN="center" BORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#EEEEEE"><TR ALIGN="center" VALIGN="middle">
+	<TD><B><U>Command</U></B></TD>
+	<TD><B><U>Key-command</U></B></TD>
+</TR><TR>
+	<TD><CODE>RegexSet</CODE></TD>
+	<TD><CODE>Ctrl+Alt+F, R</CODE></TD>
+</TR><TR>
+	<TD><CODE>RegexClear</CODE></TD>
+	<TD><CODE>Ctrl+Shift+Alt+F, R</CODE></TD>
+</TR><TR>
+	<TD><CODE>MatchCaseSet</CODE></TD>
+	<TD><CODE>Ctrl+Alt+F, C</CODE></TD>
+</TR><TR>
+	<TD><CODE>MatchCaseClear</CODE></TD>
+	<TD><CODE>Ctrl+Shift+Alt+F, C</CODE></TD>
+</TR><TR>
+	<TD><CODE>MatchWordSet</CODE></TD>
+	<TD><CODE>Ctrl+Alt+F, W</CODE></TD>
+</TR><TR>
+	<TD><CODE>MatchWordClear</CODE></TD>
+	<TD><CODE>Ctrl+Shift+Alt+F, W</CODE></TD>
+</TR></TABLE></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="14atudnb"/><H2><B><CODE><A HREF="install.html">top</A> &nbsp; &nbsp; [<A HREF="#14atudn">PREV</A> -- NEXT]</CODE></B> &nbsp; &nbsp; XBN-PhraseExpress installation: Step-by-step</H2>
+
+<P>Enable the <CODE>&quot;tp_frsh_instl&quot;</CODE> <A HREF="basics/tpkc/tpkc_user_dir.html#inpex">PhraseExpress TPKC-user-directory</A> (right-click on it, and check &quot;Enable Autotext/Hotkeys&quot;)...</P>
+
+<PRE>    XBNPE: Parent folder &gt;
+<I>(<A HREF="index.html#inpex">go</A>)</I>   XBNPE-TPKC: TextPad built-in commands &gt;
+          <FONT SIZE="+1"><B>XBNPE-TPKC: User-spcfc phrases: tp_frsh_instll</B></FONT></PRE>
+
+<P>...and <I>disable</I> all other
+<BR> &nbsp; &nbsp; <CODE>XBNPE-TPKC: User-spcfc phrases: ...</CODE>
+<BR>directories (right-click on each, and uncheck &quot;Enable Autotext/Hotkeys&quot;).</P>
+
+<P>This PhraseExpress folder corresponds with its <A HREF="basics/tpkc/tpkc_user_dir.html#ondisk">on-disk counterpart</A>.</P>
+
+<H1>DONE.</H1>
+
+<P><A HREF="#test">Test your installation</A>.</P>
+
+<PRE>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<HR/>
+
+</PRE>
+<A NAME="15tpbs"/><H2><B><CODE><A HREF="install.html">top</A> &nbsp; &nbsp; [<A HREF="#12p1tudn">PREV</A> -- NEXT]</CODE></B> &nbsp; &nbsp; XBN-PhraseExpress installation: Step-by-step</H2>
+
+<P>The final four steps. Brace yourself.</P>
+
+<P><I>(<A HREF="basics/tpkc/tpkc_user_dir.html#remoterequest">I can do all of these steps for you</A>!)</I></P>
+
+<H3>1. Setup TPKC-user-directory structures</H3>
+
+
+<P><A HREF="basics/tpkc/tpkc_user_dir.html#setup">Setup</A> your <A HREF="basics/tpkc/tpkc_user_dir.html">TPKC-user-directory</A> structures, based the TPKC-user-directory name you declared in the previous step. Note that much of these structures are already created.</P>
+
+<H3>2. Install all TextPad-bootstraps</H3>
+
+<P><A HREF="basics/tpbs.html#install">Setup</A> all the <A HREF="basics/xkp.html#tpbs">TextPad-bootstraps for the XKP-project</A> and then setup all the <A HREF="basics/tpbs.html">TextPad-bootstraps for the TPKC-project</A>.</P>
+
+<P>The XKP and TPKC-projects are now fully-installed. Now it is time to teach XBN-PhraseExpress <I>your</I> custom TextPad key-commands.</P>
+
+<H3>3. Run the TPKC user-build-process</H3>
+
+<P>The final step is to run the TPKC <A HREF="basics/tpkc/index.html#userbuild">user-build process</A>, and import its output phrase-files. There are two parts, and they take a total of around an hour and twenty minutes. They are largely interaction-free, but you may not touch your computer while they are running.</P>
+
+<H1>DONE.</H1>
+
+<P><A HREF="#test">Test your installation</A>.</P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="test"/><H2><CODE><A HREF="install.html">top</A> &nbsp; &nbsp; [<A HREF="#14atudn">PREV</A> / <A HREF="#15tpbs">PREV</A> -- NEXT]</CODE> &nbsp; XBN-PhraseExpress: Test your installation</H2>
+
+<P>To verify that XBN-PhraseExpress is properly installed, execute these utilities in order:<OL>
+	<LI><CODE>testtpbsxkptpkc</CODE>: Verifies all TextPad-bootstraps. <I><A HREF="basics/tpbs.html#utilities">more info</A></I></LI>
+	<LI><CODE>vtpkcuds</CODE>: Verifies your on-disk TPKC-user-directory. <I><A HREF="basics/tpkc/tpkc_user_dir.html#zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn">more info</A></I></LI>
+	<LI>Assign all key-commands to a <A HREF="basics/tpkc/user_menu.html#tpkcumak1c">single TextPad command</A>. For those with many custom key-commands, the true test is to reset all key-commands with
+	<BR> &nbsp; &nbsp; <CODE>TextPad &gt; Configure &gt; Preferences &gt; Keyboard &gt; Categories &gt; &quot;All&quot; &gt; [Reset-All button]</CODE>
+	<BR>and then <A HREF="basics/tpkc/user_menu.html#tpkcumacacaakc">re-assign</A> them. Once complete, TextPad should behave exactly the same.</LI>
+</OL></P>
+
+<P>You may also wish to disable all <A HREF="index.html#dkcs">default XBNPE key-commands</A> at this time.</P>
+
+
+<PRE>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</PRE>
+</BODY></HTML>
+
+
+

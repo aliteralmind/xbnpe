@@ -1,0 +1,121 @@
+<HTML><HEAD>
+	<TITLE>XBNPE: DDMenus</TITLE>
+	<meta name="viewport" content="width=device-width" />
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF"><a name="top"></a>
+
+<P>[<A HREF="../index.html#devpex">BACK</A>]<CODE> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </CODE><I>(XBN-PhraseExpress is released under the <A HREF="../index.html#lpgl">LPGL 2.1</A>)</I>
+
+<HR/>
+
+<H1>XBN-PhraseExpress: Drop-down menus (DDMenu)</H1>
+
+<P>There are two main drop-down menus (heirarchical pop-up menus) made available by XBN-PhraseExpress:<UL>
+	<LI>[<A HREF="#xh">go</A>]</CODE> &nbsp; The <CODE>&quot;xh...&quot;</CODE> phrase-creator ddmenu</LI>
+	<LI>[<A HREF="#user">go</A>]</CODE> &nbsp; The XBN-PhraseExpress user-menu</LI>
+</UL></P>
+
+<P>Drop-down menu phrases must be <A HREF="../basics/xbnpe_phrase_types.html#ddmitem">configured</A> in a particular way.</P>
+
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="xh"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; &nbsp; The phrase-creator ddmenu (<CODE>&quot;xh...&quot;</CODE>)</H2>
+
+<P>XBN-PhraseExpress provides a drop-down menu (a heirarchical pop-up menu) containing most available phrases in the XBN-PhraseExpress project. It is created and maintained with the <A HREF="../tasks/pmdm.html">Phrase-creator drop-down-menu utilities (PMDM)</A>.</P>
+
+<P>By default, it is triggered by typing <CODE>&quot;xh&quot;</CODE>. Clicking on most any phrase will print a call to it. This is therefore a <I>phrase-creator</I> ddmenu (also see the <A HREF="xpc.html">XBNPE Phrase-creator (PCC) project</A>). Some items may provide extra functionality, such as printing a corresponding close-phrase (as demonstrated below, with <CODE>&quot;xhsro6&quot;</CODE>).</P>
+
+<P>While most items in this xh-ddmenu print phrase-calls, there are exceptions. For example, all individual (and &quot;master&quot;) build process in the TextPad Built-In Commands (TPKC) project (via <CODE>&quot;xhtkab&quot;</CODE>) are actually triggered when clicked on. <I>Note that accessing the TPKC-build-processes in this manner (and any of the <CODE>&quot;xhtk&quot;</CODE> phrases) are intended for TPKC-administrators only. TPKC <B>users</B> should only access their build processes via the <A HREF="#user">XBN-PhraseExpress user-menu</A>.</I></P>
+
+<H4><U>Demonstration: <CODE>&quot;xhsro6&quot;</CODE></U></H4>
+
+<P><I>Note these menus are <A HREF="../basics/xbnpe_phrase_types.html#ddmconfig">configured</A> to have a particular appearance and behavior.</I></P>
+
+<P><OL>
+	<LI><IMG SRC="images/xh.jpg" BORDER="1"/></LI>
+	<LI><IMG SRC="images/xhs.jpg" BORDER="1"/></LI>
+	<LI><IMG SRC="images/xhsr.jpg" BORDER="1"/></LI>
+	<LI><IMG SRC="images/xhsro.jpg" BORDER="1"/></LI>
+	<LI><IMG SRC="images/xhsro6.jpg" BORDER="1"/></LI>
+	<LI><IMG SRC="images/xhsro6yes.jpg" BORDER="1"/></LI>
+</OL></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="user"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; &nbsp; The XBN-PhraseExpress user-menu</H2>
+
+<P>Major functionality for XBNPE users is listed in the &quot;XBNPE User Menu&quot;.</P>
+
+<P><IMG SRC="images/caspdnrs.jpg"/></P>
+
+<H3>Default key-command</H3>
+
+<P>The default key-command for the XBNPE user-menu is
+<BR> &nbsp; &nbsp; <CODE><A HREF="../basics/xkp.html#3and4mods">zCASpDNR_SLASH</A></CODE></P>
+
+<P>The XBNPE user-menu is the only key-command assignment outside of the <A HREF="../index.html#dkcs">XBNPE-Default key-commands</A> folder. This one key-command is assigned to the <I>entire folder</I> (the phrase-file itself, after importing):</P>
+
+<P><UL>
+	<LI><U>On disk</U> <I>(<A HREF="../basics/phrase_file.html#fformat">phrase-files</A>)</I>
+	<BR> &nbsp; &nbsp; <CODE>{#insert <CODE><A HREF="../global_config.html#zROOT_DIR_XBNPE">zROOT_DIR_XBNPE</A></CODE>}\z__xbnpe_user_menu__forHotKeys_only.px.txt</CODE></LI>
+	<LI><U>PhraseExpress folder</U> <I>(to <A HREF="../basics/phrase_file_import1.html">import</A> to)</I>
+	<PRE>XBNPE: Parent folder &gt;
+   <B>z-XBNPE: For HotKeys only</B></PRE></LI>
+</UL></P>
+
+<H4><U>Consequence of consolidating all XBNPE-user-menu key-command phrases</U></H4>
+
+<P>Normally, these phrases would be in their logical locations throughout the XBNPE folder-heirarchy. For example,
+<BR> &nbsp; &nbsp; <CODE>TextPad built-in commands (TPKC) project</CODE>
+<BR>would reside in</P>
+
+<PRE>    XBNPE: Parent folder &gt;
+       XBN-PhraseExpress &gt;
+<I>(<A HREF="../basics/tpkc/index.html#inpex">go</A>)</I>      XBNPE-TPKC: TextPad built-in commands &gt;
+             XBNPE-TPKC: User-spcfc phrases: <I>[TPKC_USER_DIR_NAME]</I> &gt;
+                <A HREF="../basics/tpkc/tpkc_user_dir.html#15file">z-DDMENU of all active TP-built-ins (AG:15)</A></PRE>
+
+<P>Putting it there would allow you to navigate the entire menu with the arrow-keys, but it would also require changing the key-command in all these locations. The consequence of putting them all into this one phrase-file, is that one of the four choices must be made by manually selecting it (via the enter-key) before any sub-choices are displayed.</P>
+<PRE>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</PRE>
+</BODY></HTML>
+
+
+

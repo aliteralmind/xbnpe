@@ -1,0 +1,236 @@
+<HTML><HEAD>
+	<TITLE>XBNPE-TPKC: User-spcfc-cmd-cfg</TITLE>
+	<meta name="viewport" content="width=device-width" />
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF"><a name="top"></a>
+
+
+<P>[<A HREF="index.html">BACK</A>]</CODE></P>
+
+<HR/>
+
+<H1>TPKC: User-specific command-configuration</H1>
+
+<P>Your TPKC user-specific command-configuration (or &quot;user-spcfc-cmd-cfg&quot;) is where you manage and configure your <A HREF="../tpbs.html#terminology">Non-BootStrap key-commands</A> (nbs-kcs). User-spcfc-cmd-cfg does not exist until after <A HREF="index.html#userbuild01">TPKC user-build-process 1-of-2</A> is complete and its output imported.</P>
+
+<P>User-specific command-configuration is different for every user, reflecting their particular installation of TextPad. It is complemented by the TPKC <A HREF="config_vars.html#globalcmd">global-command-configuration</A>, which is the same for all users.</P>
+
+<P><B>Contents:</B><UL>
+	<LI>Specifications for both user-specific command-configuration variables:<UL>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#NbsKcCount">GO</A></B></FONT>]</CODE> &nbsp; <B><CODE>zzTpkc[name]NbsKcCount</CODE>:</B> The number of non-bootstrap key-commands.</LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#NbsKcEscNum">GO</A></B></FONT>]</CODE> &nbsp; <B><CODE>zzTpkc[name]NbsKcEsc#</CODE>:</B> A specific and <I>escaped</I> nbs key-command.</LI>
+	</UL></LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#assignkcs">GO</A></B></FONT>]</CODE> &nbsp; Assigning a new key-command via user-command-configuration: Step-by-step</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="tpkc_user_dir.html#13file">GO</A></B></FONT>]</CODE> &nbsp; Phrase and file locations <I>(documented elsewhere)</I></LI>
+</UL></P>
+
+<P><B>Key:</B><UL>
+	<LI><B><CODE>[name]</CODE></B> is the value of <CODE>zTpkc[abrv]CmdNameTC</CODE></LI>
+	<LI><B><CODE>[abrv]</CODE></B> is the value of <CODE>zTpkc[name]Abrv1C</CODE></LI>
+</UL></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="NbsKcCount"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TPKC user-specific config: <CODE>zzTpkc[name]NbsKcCount</CODE></H2>
+
+<P><UL>
+	<LI><B>Example phrase-name</B>: <CODE>zzTpkcFileCloseNbsKcCount</CODE></LI>
+</UL></P>
+
+<P>The number of <A HREF="../tpbs.html#terminology">Non-BootStrap key-commands</A> (nbs-kcs) assigned to this built-in TextPad command. Must be an integer zero or greater. For every number above zero, there must be a corresponding <A HREF="#NbsKcEscNum"><CODE>zzTpkc[name]NbsKcEsc#</CODE></A> variable. For example, if
+<BR> &nbsp; &nbsp; <CODE>zzTpkcFileCloseNbsKcCount</CODE>
+is <CODE>3</CODE>, then the following must exist:<UL>
+	<LI><CODE>zzTpkcFileCloseNbsKcEsc1</CODE></LI>
+	<LI><CODE>zzTpkcFileCloseNbsKcEsc2</CODE></LI>
+	<LI><CODE>zzTpkcFileCloseNbsKcEsc3</CODE></LI>
+</UL>When <CODE>zzTpkcFileCloseNbsKcCount</CODE> is <CODE>'0'</CODE>, then all <CODE>zzTpkcFileCloseNbsKcEsc#</CODE> variables are ignored--and should not exist.</P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="NbsKcEscNum"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TPKC user-specific config: <CODE>zzTpkc[name]NbsKcEsc#</CODE></H2>
+
+<P><UL>
+	<LI><B>Example phrase-name</B>: <CODE>zzTpkcFileCloseNbsKcEsc1</CODE></LI>
+	<LI><B>Example value:</B> <CODE>\\\{#insert zCpF12\\\}\\\{#sleep 25\\\}\\\{#insert zCpF9\\\}\\\{#sleep 100\\\}</CODE></LI>
+</UL></P>
+
+<P>The specific key-command that triggers (should trigger) the command. There must be one of these variables for every number that <A HREF="#NbsKcCount"><CODE>zzTpkc[name]NbsKcCount</CODE></A> is above zero.</P>
+
+<H3>Value (phrase-body) requirements</H3>
+
+<P>The value must<UL>
+	<LI>Contain only <A HREF="../xkp.html">x-key-presses</A></LI>
+	<LI>Be <A HREF="../../devpex/xpc.html#escaped">escaped</A></LI>
+	<LI>For key-commands with multiple key-presses, there must be some sleep between each. See the TPKC master-configuration-variable <A HREF="master_cfg_vars.html#zTpkcMillsBtwMultiKeyKCs"><CODE>zTpkcMillsBtwMultiKeyKCs</CODE></A> for more information.</LI>
+</UL><I>Having this value escaped makes <A HREF="tpkc_user_dir.html#remotebuild">remote-builds</A> possible.</I></P>
+
+<P>It must also end with a <I>minimal</I> amount of sleep, so that PhraseExpress does not continue until the command has finished executing. This should be an amount satisfactory for <I>most situations</I>. For extreme situations, append extra sleep after calling it. For example:
+<BR> &nbsp; &nbsp; <CODE>{#insert zTPCopy}{#sleep 50}</CODE>
+<BR>Note that the default amount of post-kc sleep milliseconds is defined by the XBNPE <A HREF="config_vars.html#globalcmd">global-config-var</A>
+<BR> &nbsp; &nbsp; <CODE><A HREF="config_vars.html#DfltPostKcSlpMils">zTpkc<I>[cmd-abrv]</I>DfltPostKcSlpMils</A></CODE></P>
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="assignkcs"/><H2><CODE>[<A HREF="#top">top</A> -- PREV / <A HREF="#assignkcs2">NEXT</A>]</CODE> &nbsp; Assigning a new key-command via user-command-configuration: Step-by-step</H2>
+
+<P>This section describes how to install a TextPad command<OL>
+	<LI>after all <A HREF="../tpbs.html">TextPad-bootstraps</A> have been <A HREF="../tpbs.html#install">installed</A>,</LI>
+	<LI>and the TPKC-project is fully built.</LI>
+</OL></P>
+
+<P>As an example, these instructions assign the command
+<BR> &nbsp; &nbsp; <CODE>Cursor &gt; PageDown</CODE>
+<BR>to this key-command
+<BR> &nbsp; &nbsp; <A HREF="../xkp.html#1mod"><CODE>zCpPGDN</CODE></A>
+<BR>which is the is the <A HREF="../xkp.html">x-key-press</A> equivalent of the <A HREF="../tpbs2.html#tpkp">TextPad key-press</A>
+<BR> &nbsp; &nbsp; <CODE>Ctrl+Pgdown</CODE></P>
+
+<P>Further, this section also assumes that there is already one key-command assigned to it:
+<BR> &nbsp; &nbsp; <CODE>zPGDN</CODE></P>
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="assignkcs1"/><H2><CODE>[<A HREF="#assignkcs">back</A> -- <A HREF="#assignkcs">PREV</A> / <A HREF="#assignkcs2">NEXT</A>]</CODE> &nbsp; Assigning a new key-command via user-command-configuration: Step-by-step</H2>
+
+<P>The first step is to actually assign the key-command in TextPad. Go to
+<BR> &nbsp; &nbsp; <CODE>Textpad &gt; Configure &gt; Preferences &gt; Keyboard &gt; Categories &gt; &quot;<U>Cursor</U>&quot; &gt; Commands &gt; &quot;<U>PageDown</U>&quot;</CODE>
+<BR>and type the key-command into the &quot;Press new shortcut key&quot; field.</P>
+
+<P><IMG SRC="images/assign_kc_sbs_pagedown_in_prefs_unassigned.jpg" BORDER="1"/></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="assignkcs2"/><H2><CODE>[<A HREF="#assignkcs">back</A> -- <A HREF="#assignkcs1">PREV</A> / <A HREF="#assignkcs3">NEXT</A>]</CODE> &nbsp; Assigning a new key-command via user-command-configuration: Step-by-step</H2>
+
+<P>Press the <CODE>[Assign]</CODE> button. Now the key-command is listed in the &quot;Current keys&quot; list-box. To commit this change, press the <CODE>[OK]</CODE> button, which also dismisses the Preferences dialog. (To commit this change to the Windows registry, close and then re-open TextPad.)</P>
+
+<P><IMG SRC="images/assign_kc_sbs_pagedown_in_prefs_assigned.jpg" BORDER="1"/></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="assignkcs3"/><H2><CODE>[<A HREF="#assignkcs">back</A> -- <A HREF="#assignkcs2">PREV</A> / <A HREF="#assignkcs4">NEXT</A>]</CODE> &nbsp; Assigning a new key-command via user-command-configuration: Step-by-step</H2>
+
+<P>In TextPad, open the user-specific command-config file (the <A HREF="../phrase_file.html#fformat">phrase-file</A>) that contains the <CODE>PageDown</CODE> command. This particular command is in the &quot;cursor&quot; category:
+<BR> &nbsp; &nbsp; <CODE>{#insert <A HREF="tpkc_user_dir.html#zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn">zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn</A>}output\user_spcfc_cfg__bldproc10thr13\<A HREF="../../../textpad__tpkc/for_v_7_0_9/user_config/tp_frsh_instl/output/user_spcfc_cfg__bldproc10thr13/cursor.px.txt"><B><U>cursor</U></B>.px.txt</A></CODE>
+<BR>(The <CODE>PageDown</CODE> command is about half way down the file.)</P>
+
+<P><B>Notes:</B><UL>
+	<LI>These phrases are <A HREF="../../devpex/c2pl.html#one">compressed</A> and ready-for-import.</LI>
+	<LI>This phrase-file is originally created by the <A HREF="index.html#userbuild01">first TPKC build-process</A>.</LI>
+	<LI>This key-command must be unique among all TextPad built-in commands. There is no automated way to enforce this. However, there are numerous <A HREF="user_menu.html#tpkcumakcdt">debugging tools</A> to help you diagnose conflicts.</LI>
+</UL></P>
+
+<H1>TODO: Update this to reflect Ctrl+Pgdown as SECOND kc.....**WITH** ending-sleep, right?!</H1>
+<P><IMG SRC="images/assign_kc_sbs_pagedown_cursor_usr_cfg_file.jpg" BORDER="1"/></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="assignkcs4"/><H2><CODE>[<A HREF="#assignkcs">back</A> -- <A HREF="#assignkcs3">PREV</A> / <A HREF="#assignkcs5">NEXT</A>]</CODE> &nbsp; Assigning a new key-command via user-command-configuration: Step-by-step</H2>
+
+<P>Increment the command's &quot;Non-BootStrap&quot; key-command  <A HREF="#NbsKcCount">(nbs-kc) count variable</A> from
+<BR> &nbsp; &nbsp; <CODE>zTpkcPageDownNbsKcCount &nbsp; <B>1</B> &nbsp; zTpkcPageDownNbsKcCount</CODE>
+<BR>to
+<BR> &nbsp; &nbsp; <CODE>zTpkcPageDownNbsKcCount &nbsp; <B>2</B> &nbsp; zTpkcPageDownNbsKcCount</CODE>
+</P>
+
+<P>And create its new <A HREF="#NbsKcEscNum">nbs-key-command phrase</A>:
+<BR> &nbsp; &nbsp; <CODE>zTpkcPageDownNbsKcEsc2	\\\{#insert <A HREF="../xkp.html#1mod">zCpPGDN</A>\\\}\\\{#sleep 10\\\}	zTpkcPageDownNbsKcEsc2</CODE><BR>The convenience utility <I>(<CODE><A HREF="../../devpex/xbnpe_ddmenus.html#xh">xh</A>tk</CODE>)</I>
+<BR> &nbsp; &nbsp; <CODE>newnbskc</CODE>
+<BR>can create this phrase for you (replace <CODE>&quot;XXX&quot;</CODE> with the <I><A HREF="../../devpex/xpc.html#escaped">escaped</A></I> key-command). Note that the <A HREF="config_vars.html#DfltPostKcSlpMils">default post-kc milliseconds</A> is automatically printed. Feel free to change it.
+<BR><I><B>Warning:</B> <CODE>newnbskc</CODE> <A HREF="tpacl.html#recommended">will only work</A> if the TextPad built-in command
+<BR> &nbsp; &nbsp; <CODE>Cursor &gt; CharLeftExtend</CODE>
+<BR>(<CODE>zTPSelectL1c</CODE>) has already been assigned a key-command.</I></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="assignkcs5"/><H2><CODE>[<A HREF="#assignkcs">back</A> -- <A HREF="#assignkcs4">PREV</A> / NEXT]</CODE> &nbsp; Assigning a new key-command via user-command-configuration: Step-by-step</H2>
+
+<P><A HREF="../phrase_file_import1.html">Import</A> the phrase-file(s) containing the new key-command(s) to their proper <A HREF="tpkc_user_dir.html#13file">location</A>, and then execute the necessary build-process(es):</P>
+
+<H3>Do I need to re-create the <A HREF="../tpbs.html#terminology">nbs-phrases</A>?</H3>
+
+<P>If a command's <A HREF="../tpbs.html#terminology">primary key-command</A> was changed (added, changed, or deleted), then TPKC user-build-process 2-of-2 must be run again, in order to re-create its nbs-phrase. To run this process for all categories, execute (in the <A HREF="user_menu.html">TPKC-user-menu</A>):</P>
+
+<PRE>TextPad built-in commands (TPKC) project &gt;
+   <A HREF="user_menu.html#tpkcumubp">z-User-build processes</A> &gt;
+      TPKC user-build process TWO of 2: **All**</PRE>
+
+<P>To run it for specific categories only, execute</P>
+
+<PRE>   z-User-build processes &gt;
+      <B>User-build 2/2: Nbs-phrases only w/ cat-prompts</B></PRE>
+
+<P>and then (if a command was added or deleted, as discussed in the next section):</P>
+
+<PRE>   z-User-build processes &gt;
+      <B>User-build 2/2: TP-phrase-creator-ddmenu only</B></PRE>
+
+<P>After any of these build-processes are run, its output must be <A HREF="../phrase_file_import1.html">imported</A></P>
+
+<H3>Do I need to re-build the active-tp-commands ddmenu?</H3>
+
+<P>Only if a command was added or deleted. Meaning<UL>
+	<LI>it is <I>not</I> a <A HREF="../tpbs.html">TextPad-bootstrap</A>, and</LI>
+	<LI>its nbs-kc-count (<CODE><A HREF="#NbsKcCount">zTpkc*NbsKcCount</A></CODE>) <I>was</I> one, and is now zero (or was zero, and is now one).</LI>
+</UL>While this is not required for the TPKC (or anything in XBN-PhraseExpress) project to <I>function</I>, it forms the basis of the <CODE><A HREF="../../devpex/xbnpe_ddmenus.html#xh">xh</A></CODE> phrase-creator ddmenu. It is therefore strongly recommended that this process be run when necessary.</P>
+
+
+<PRE>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</PRE>
+</BODY></HTML>
+
+
+

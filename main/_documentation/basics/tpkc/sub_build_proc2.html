@@ -1,0 +1,321 @@
+<HTML><HEAD>
+	<TITLE>TPKC-sub-build-processes</TITLE>
+	<meta name="viewport" content="width=device-width" />
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF"><a name="top"></a>
+
+<a name="09"/><H2><CODE>zTpkc09CreateAllSetCmd1VarPhraseFiles</CODE></H2>
+
+<P><I><CODE>[<A HREF="build_proc_tech_info.html">top</A>, <A HREF="build_proc_tech_info.html#bldprocs">*of4</A>, <A HREF="build_proc_tech_info.html#m1of4">1of4</A>, <A HREF="build_proc_tech_info.html#m2of4"><FONT SIZE="+2"><B>2of4</B></FONT></A>, <A HREF="build_proc_tech_info.html#m3of4">3of4</A>, <A HREF="build_proc_tech_info.html#m4of4">4of4</A>]
+<BR> &nbsp; &nbsp; &nbsp;[<A HREF="sub_build_proc.html#07">07</A>, <A HREF="sub_build_proc.html#08">08</A>, 09]</CODE></I></P>
+
+<P><UL>
+	<LI><B>File:</B> <CODE>{#insert <A HREF="index.html#zXPROOT_DIR_tpkcBuild">zXPROOT_DIR_tpkcBuild</A>}\part_2of4__vrfy_gbl_prep_for_usr_cfg\09_create_all_set_cmd1_vars_phrase_files.px.txt</CODE></LI>
+	<LI><B>Input:</B> Raw-global-config: <CODE>{#insert zzXPSUB_DIR_tpkcRawCfgGlobal}</CODE></LI>
+	<LI><B>Output:</B><UL>
+		<LI><U>On disk</U> (<A HREF="../phrase_file.html#fformat">phrase-files</A>)
+		<BR> &nbsp; &nbsp; <CODE>{#insert zzzTpkc09_outDirPNm}\{#insert zzzTpkc09_outDirPNm}</CODE></LI>
+		<LI><U>PhraseExpress folder</U> (to <A HREF="phrase_file_import1.html">import</A> to): <A HREF="build_proc_tech_info.html#imp3other">other-AG-output</A> folder</LI>
+	</UL></LI>
+</UL></P>
+
+<P>Creates all the <CODE>&quot;zvCMD_ABRV_1C_st...&quot;</CODE> phrases, which are used by <I>most</I> user-facing phrases in the TPKC-Project</P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="10"/><H2><CODE>zTpkc10ElimBtstrpKCsFromTpAllCatLst</CODE></H2>
+
+<P><I><CODE>[<A HREF="build_proc_tech_info.html">top</A>, <A HREF="build_proc_tech_info.html#bldprocs">*of4</A>, <A HREF="build_proc_tech_info.html#m1of4">1of4</A>, <A HREF="build_proc_tech_info.html#m2of4">2of4</A>, <A HREF="build_proc_tech_info.html#m3of4"><FONT SIZE="+2"><B>3of4</B></FONT></A>, <A HREF="build_proc_tech_info.html#m4of4">4of4</A>]
+<BR> &nbsp; &nbsp; &nbsp;[10, <A HREF="#11">11</A>, <A HREF="#12">12</A>, <A HREF="#13">13</A>]</CODE></I></P>
+
+<P><UL>
+	<LI><B>Process:</B><UL>
+		<LI><U>File</U>: <CODE>{#insert <A HREF="index.html#zXPROOT_DIR_tpkcBuild">zXPROOT_DIR_tpkcBuild</A>}\part_3of4__usr_cfg_frm_all_cmd_list\10_eliminate_nbs_kcs_from_tp_all_cat_list.px.txt</CODE></LI>
+	</UL></LI>
+	<LI><B>Input:</B> The TextPad <A HREF="tpacl.html">all-command-list</A></LI>
+	<LI><B>Output:</B><UL>
+		<LI><U>On disk</U> <I>(plain text)</I>:
+		<BR> &nbsp; &nbsp; <CODE>{#insert <A HREF="tpkc_user_dir.html#zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn">zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn</A>}/output/user_spcfc_cfg__bldproc10thr13/<A HREF="../../../textpad__tpkc/for_v_7_0_9/user_config/tp_frsh_instl/output/user_spcfc_cfg__bldproc10thr13/_tp_all_cmd_list__nbs_only__bldprc10.txt">_tp_all_cmd_list__nbs_only__bldprc10.txt</A></CODE></LI>
+		<LI><U>PhraseExpress folder</U> (to <A HREF="phrase_file_import1.html">import</A> to): <I>Not-applicable</I></LI>
+		</UL></LI>
+</UL></P>
+
+<P>Takes the &quot;TextPad <A HREF="tpacl.html">all-command-list</A>&quot; and eliminates all <A HREF="../tpbs.html#terminology">bootstrap key-commands</A> from it. This prevents multiple phrases calling triggering the same key-command.</P>
+
+<P><I>(This build-process requires the command-abrv-qbl and mark-all-bootstrap-commands regex, as created by <A HREF="sub_build_proc.html#02">build-process 02</A>.)</I></P>
+
+<H3>All TextPad-bootstrap kc report</H3>
+
+<P>Because this process depends so heavily on user-configured phrases, they must be verified. There is an optional report on all tp-bootstrap-kcs printed at the start of this process, displaying the value of each tp-bootstrap's <A HREF="../tpbs2.html#escphrase">escaped</A> and <A HREF="../tpbs2.html#tpkeyphrase">TextPad-keys</A> phrases, and its line in the tp-all-cmd-list (note that the actual key-command cannot be analyzed, because <A HREF="http://en.wikipedia.org/wiki/Observer_effect_(physics)">attempting to analyze it will actually execute it</A>). This may optionally be printed before the deletion process starts. It is also printed if any error is discovered during the deletion process.</P>
+
+<P>Note that if the report detects any errors, it will complete, but not proceed to the actual build-process.</P>
+
+<P>This report takes a good five-to-seven seconds per command.</P>
+
+<H3>Actually deleting the bootstrap key-commands</H3>
+
+<P>After the optional report is printed, key-commands are actually deleted. On the first potential error, the process aborts, and the full report is printed.</P>
+
+<P>Otherwise, all bootstrap key-commands are successfully deleted, and the output is saved into an &quot;_nbs_only&quot; output file. This output is used only by process 11--it does not contain phrases and is therefore not imported.</P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="11"/><H2><CODE>zTpkc11SplitNbsAllLstToIndvCatLsts</CODE></H2>
+
+<P><I><CODE>[<A HREF="build_proc_tech_info.html">top</A>, <A HREF="build_proc_tech_info.html#bldprocs">*of4</A>, <A HREF="build_proc_tech_info.html#m1of4">1of4</A>, <A HREF="build_proc_tech_info.html#m2of4">2of4</A>, <A HREF="build_proc_tech_info.html#m3of4"><FONT SIZE="+2"><B>3of4</B></FONT></A>, <A HREF="build_proc_tech_info.html#m4of4">4of4</A>]
+<BR> &nbsp; &nbsp; &nbsp;[<A HREF="#10">10</A>, 11, <A HREF="#12">12</A>, <A HREF="#13">13</A>]</CODE></I></P>
+
+<P><UL>
+	<LI><B>Process:</B><UL>
+		<LI><U>File</U>: <CODE>{#insert <A HREF="index.html#zXPROOT_DIR_tpkcBuild">zXPROOT_DIR_tpkcBuild</A>}\part_3of4__usr_cfg_frm_all_cmd_list\11_split_nbs_all_cat_lst_to_indv_cats.px.txt</CODE></LI>
+	</UL></LI>
+	<LI><B>Input:</B> The output of <CODE><A HREF="#10">zTpkc10ElimBtstrpKCsFromTpAllCatLst</A></CODE></LI>
+	<LI><B>Output:</B><UL>
+		<LI><U>On disk</U> <I>(plain text)</I>:<UL>
+			<LI><CODE>{#insert <A HREF="tpkc_user_dir.html#zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn">zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn</A>}/output/user_spcfc_cfg__bldproc10thr13/indv_cat_lists__bldproc11/<A HREF="../../../textpad__tpkc/for_v_7_0_9/user_config/tp_frsh_instl/output/user_spcfc_cfg__bldproc10thr13/indv_cat_lists__bldproc11/file.txt">file.txt</A></CODE> &nbsp; &nbsp; <I>(Replace <CODE>&quot;file&quot;</CODE> with any category in <CODE><A HREF="config_vars.html#zTpkcAllCategoryAbrvLCsQbl">zTpkcAllCategoryAbrvLCsQbl</A></CODE>)</I></LI>
+			<LI>One additional file, containing all lines in the TextPad <A HREF="tpacl.html">all-command-list</A> that are user-created macros or tools or, in a <A HREF="build_proc_tech_info.html#livevtest">test-build</A>, all commands in ignored categories.</LI>
+		</UL>
+		<LI><U>PhraseExpress folder</U> (to <A HREF="phrase_file_import1.html">import</A> to): <I>Not-applicable</I></LI>
+	</UL></LI>
+</UL></P>
+
+<P></P>
+
+<P>For each catetgory, the <A HREF="tpacl.html">tp-all-command-list</A> is searched for the lines <A HREF="../../../textpad__tpkc/for_v_7_0_9/documentation_and_scripts/_all_matching_lines_for_each_cat_in_all_cmd_all_cat_file.txt">as specified in this file</A>. Those lines are marked, cut, and then pasted into a new file, named <CODE>[cat-abrv].txt</CODE>.</P>
+
+<P>Since the <A HREF="build_proc_tech_info2.html#charcatcmdnameexception">character category is an exception</A>, the characters in this category-file's first column must be changed to TPKC-project-appropriate command names.</P>
+
+<P>Before closing the file, all command-names are verified to ensure they are exactly as expected. This is mostly to catch badly-named macros and tools that may conflict with actual built-in commands. The sub-script that verifies the command names is
+<BR> &nbsp; &nbsp; <CODE>zzVerifyCatCmdsInCurrUsrCfgFile_M_catl</CODE>
+<BR>which is in the file
+<BR> &nbsp; &nbsp; <CODE>zSUB__verify_cmd_names_in_raw_usr_cfg_generic.px.txt</CODE></P>
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="12"/><H2><CODE>zTpkc12CreateRawUsrCfgFromIndvCatLists</CODE></H2>
+
+<P><I><CODE>[<A HREF="build_proc_tech_info.html">top</A>, <A HREF="build_proc_tech_info.html#bldprocs">*of4</A>, <A HREF="build_proc_tech_info.html#m1of4">1of4</A>, <A HREF="build_proc_tech_info.html#m2of4">2of4</A>, <A HREF="build_proc_tech_info.html#m3of4"><FONT SIZE="+2"><B>3of4</B></FONT></A>, <A HREF="build_proc_tech_info.html#m4of4">4of4</A>]
+<BR> &nbsp; &nbsp; &nbsp;[<A HREF="#10">10</A>, <A HREF="#11">11</A>, 12, <A HREF="#13">13</A>]</CODE></I></P>
+
+<P><UL>
+	<LI><B>Process:</B><UL>
+		<LI><U>File</U>: <CODE>{#insert <A HREF="index.html#zXPROOT_DIR_tpkcBuild">zXPROOT_DIR_tpkcBuild</A>}\part_3of4__usr_cfg_frm_all_cmd_list\12_create_raw_usr_cfg_from_indv_cat_lists.px.txt</CODE></LI>
+	</UL></LI>
+	<LI><B>Input:</B> The output of <CODE><A HREF="#11">zTpkc11SplitNbsAllLstToIndvCatLsts</A></CODE></LI>
+	<LI><B>Output:</B><UL>
+		<LI><U>On disk</U> <I>(plain text)</I>:
+		<BR> &nbsp; &nbsp; <CODE>{#insert <A HREF="tpkc_user_dir.html#zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn">zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn</A>}/output/user_spcfc_cfg__bldproc10thr13/raw_user_config__bldproc12/<A HREF="../../../textpad__tpkc/for_v_7_0_9/user_config/tp_frsh_instl/output/user_spcfc_cfg__bldproc10thr13/raw_user_config__bldproc12/file.txt">file.txt</A></CODE> &nbsp; &nbsp; <I>(Replace <CODE>&quot;file&quot;</CODE> with any category in <CODE>zTpkcAllCategoryAbrvLCsQbl</CODE>)</I></LI>
+		<LI><U>PhraseExpress folder</U> (to <A HREF="phrase_file_import1.html">import</A> to): <I>Not-applicable</I></LI>
+	</UL></LI>
+</UL></P>
+
+<P>This process makes a large number of replacements (as of August 2013: 96) in <I>every</I> individual-category-list file, transforming into the raw user configuration, or &quot;raw-user-config&quot;.</P>
+
+<H3>Details</H3>
+
+<P>Here is a portion of the <CODE>search.txt</CODE> raw-user-config (for version 7.0.9, and assuming none of these are bootstrap key-commands):</P>
+
+<PRE>SearchFindPrevious      F2                      Shift+F2                Alt+F2
+SearchGoto              Ctrl+Shift+G
+SearchJumpNext
+SearchJumpPrev
+SearchOpenAll           Ctrl+F12, Ctrl+F8
+SearchReplace           F5</PRE>
+
+<P>Notes:<UL>
+	<LI><CODE>SearchFindPrevious</CODE> has three key-commands.</LI>
+	<LI><CODE>SearchGoto</CODE>, <CODE>SearchOpenAll</CODE>, and <CODE>SearchReplace</CODE> each have one</LI>
+	<LI><CODE>SearchJumpNext</CODE> and <CODE>SearchJumpPrev</CODE> both have zero.</LI>
+	<LI>Each item (the command-name, and all its key-commands) are separated from the each other with <I>two or more spaces</I>.</LI>
+	<LI>The commands with zero key-commands have <I>nothing</I> following the command-name (just a line-break).</LI>
+</UL></P>
+
+<P>In this step, via a large series of search and replaces (some regex, some not), all these lines are transformed to the following:</P>
+
+<PRE>SearchFindPrevious	3   \\\{#insert zF2\\\}   \\\{#insert zSpF2\\\}   \\\{#insert zApF2\\\}
+SearchGoto   1   \\\{#insert zCSpGG\\\}
+SearchJumpNext   0
+SearchJumpPrev   0
+SearchOpenAll   1   \\\{#insert zCpF12\\\}\\\{#sleep 25\\\}\\\{#insert zCpF8\\\}
+SearchReplace   1   \\\{#insert zF5\\\}</PRE>
+
+<P>Column two is the <B><A HREF="user_cmd_cfg.html#NbsKcCount">nbs-key-command count</A></B>, and columns three and all following are the key-commands in XBN-PhraseExpress function-calls. All items are tab-delimited.</P>
+
+<P>This is now the <B>raw user configuration</B>.</P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="13"/><H2><CODE>zTpkc13CreateUsrSpcfcCmdConfigFromRaw</CODE></H2>
+
+<P><I><CODE>[<A HREF="build_proc_tech_info.html">top</A>, <A HREF="build_proc_tech_info.html#bldprocs">*of4</A>, <A HREF="build_proc_tech_info.html#m1of4">1of4</A>, <A HREF="build_proc_tech_info.html#m2of4">2of4</A>, <A HREF="build_proc_tech_info.html#m3of4"><FONT SIZE="+2"><B>3of4</B></FONT></A>, <A HREF="build_proc_tech_info.html#m4of4">4of4</A>]
+<BR> &nbsp; &nbsp; &nbsp;[<A HREF="#10">10</A>, <A HREF="#11">11</A>, <A HREF="#12">12</A>, 13]</CODE></I></P>
+
+<P>Transforms each raw-user-config file into the TPKC user-specific command configuration, which is its final form, and is imported into PhraseExpress.</P>
+
+<P><I>(Continues below.)</I></P>
+
+<P><UL>
+	<LI><B>Process:</B><UL>
+		<LI><U>File</U>: <CODE>{#insert <A HREF="index.html#zXPROOT_DIR_tpkcBuild">zXPROOT_DIR_tpkcBuild</A>}\part_3of4__usr_cfg_frm_all_cmd_list\XXX.px.txt</CODE></LI>
+	</UL></LI>
+	<LI><B>Input:</B> The output from <CODE><A HREF="#12">zTpkc12CreateRawUsrCfgFromIndvCatLists</A></CODE> (ignoring the &quot;user-created&quot; file)</LI>
+	<LI><B>Output:</B> <A HREF="tpkc_user_dir.html#13file"><I>Documented elsewhere</I></A></LI>
+</UL></P>
+
+<P>As in process 12, here is an example snippet of raw-user-config (from <CODE>search.txt</CODE>, from TextPad 7.0.9):</P>
+
+<PRE>SearchFindPrevious	3   \\\{#insert zF2\\\}   \\\{#insert zSpF2\\\}   \\\{#insert zApF2\\\}
+SearchGoto   1   \\\{#insert zCSpGG\\\}
+SearchJumpNext   0
+SearchJumpPrev   0
+SearchOpenAll   1   \\\{#insert zCpF12\\\}\\\{#insert zCpF8\\\}
+SearchReplace   1   \\\{#insert zF5\\\}</PRE>
+
+<P>First duplicate the raw-user-config into a new file. All following steps take place in the new file.</P>
+
+<H4><U>Split all key-commands into separate lines</U></H4>
+
+<PRE>SearchFindPrevious	3
+\\\{#insert zF2\\\}
+\\\{#insert zSpF2\\\}
+\\\{#insert zApF2\\\}
+SearchGoto   1
+\\\{#insert zCSpGG\\\}
+SearchJumpNext   0
+SearchJumpPrev   0
+SearchOpenAll   1
+\\\{#insert zCpF12\\\}\\\{#sleep 25\\\}\\\{#insert zCpF8\\\}
+SearchReplace   1
+\\\{#insert zF5\\\}</PRE>
+
+<P>This first replaces all zero-count lines with, for example
+<BR> &nbsp; &nbsp; <CODE>zzTpkcSearchJumpNextNbsKcCount	0	zzTpkcSearchJumpNextNbsKcCount</CODE></P>
+
+<P>Thene it marks all non-zero lines, counts how many, and then processes each in a loop. This pre-checking of the non-zero line count, is an optimization which anticipates <I>approximately less than fifty percent</I> of the 332 commands are actually assigned...if significantly-more than fifty percent have key-commands, this optimization turns into a moderate deficit.</P>
+
+<P>Starting at the top-most it reads in the command name and nbs-key-command count number, and print the nbs-kc-count configuration variable. For each, it creates the nbs-kc-count phrase
+<BR> &nbsp; &nbsp; <CODE>zzTpkcSearchFindPreviousNbsKcCount	3	zzTpkcSearchFindPreviousNbsKcCount</CODE>
+<BR>and then does a sub-loop for each kc line below it (the loop counter is the just-read-in number). The end result in the user-specific command-configuration.</P>
+
+<PRE>zzTpkcSearchFindPreviousNbsKcCount	3	zzTpkcSearchFindPreviousNbsKcCount
+zzTpkcSearchFindPreviousNbsKcEsc1	\\\{#insert zF2\\\}\\\{#insert zTSlp\\\}	zzTpkcSearchFindPreviousNbsKcEsc1
+zzTpkcSearchFindPreviousNbsKcEsc2	\\\{#insert zSpF2\\\}\\\{#insert zTSlp\\\}	zzTpkcSearchFindPreviousNbsKcEsc2
+zzTpkcSearchFindPreviousNbsKcEsc3	\\\{#insert zApF2\\\}\\\{#insert zTSlp\\\}	zzTpkcSearchFindPreviousNbsKcEsc3</PRE>
+
+<P>This file is then saved, with the same name, in the final output directory, as specified at the top of this section.</P>
+
+<P>This is now the final form of the user-specific <A HREF="config_vars.html#globalcmd">command configuration</A>.</P>
+
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="14"/><H2><CODE>zTpkc14CreateNbsPhrssAndWKcQBLsFrmUSCC</CODE></H2>
+
+<P><I><CODE>[<A HREF="build_proc_tech_info.html">top</A>, <A HREF="build_proc_tech_info.html#bldprocs">*of4</A>, <A HREF="build_proc_tech_info.html#m1of4">1of4</A>, <A HREF="build_proc_tech_info.html#m2of4">2of4</A>, <A HREF="build_proc_tech_info.html#m3of4">3of4</A>, <A HREF="build_proc_tech_info.html#m4of4"><FONT SIZE="+2"><B>4of4</B></FONT></A>]
+<BR> &nbsp; &nbsp; &nbsp;[14, <A HREF="#15">15</A>]</CODE></I></P>
+
+
+
+
+
+<P>Creates a phrase for each built-in TextPad command, so your external phrases can call them, and therefore trigger individual TextPad commands. This does not create phrases for any <A HREF="../tpbs.html">TextPad-bootstraps</A>, since they existed before the TPKC-Project was ever installed. For all Non-BootStrap (nbs) commands, this always uses the <I>first</I> configured command: <CODE>&quot;zzTpkc*NbsKcEsc1&quot;</CODE>.</P>
+
+<P>If the <A HREF="../tpbs.html#terminology">primary key-command</A> has changed, then process 14 must be run again.
+
+<P><UL>
+	<LI><B>File:</B> <CODE>{#insert <A HREF="index.html#zXPROOT_DIR_tpkcBuild">zXPROOT_DIR_tpkcBuild</A>}\part_4of4__nbs_phrss_and_cmd_ddmenu\14_create_nbs_cmd_phrss_frm_user_cmd_cfg.px.txt</CODE></LI>
+	<LI><B>Input:</B> The user-specific command configuration, as imported into PhraseExpress (no on-disk files are needed).</LI>
+	<LI><B>Output:</B><UL>
+		<LI><U>On disk</U> (<A HREF="../phrase_file.html#fformat">phrase-files</A>):
+		<BR> &nbsp; &nbsp; <CODE>{#insert zzzTpkc14_outDirPNm_M_tudn}\[cat-abrv].px.txt</CODE></I></LI>
+		<LI><U>PhraseExpress folder</U> (to <A HREF="phrase_file_import1.html">import</A> to): <A HREF="tpkc_user_dir.html#inpex">TPKC-user-directory</A></LI>
+	</UL></LI>
+</UL></P>
+
+<P><I><A HREF="tpkc_user_dir.html#14file">More information</A></I></P>
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="15"/><H2><CODE>zTpkc15CrtAllActvTPCmdsDDMenuFromAll</CODE></H2>
+
+<P><I><CODE>[<A HREF="build_proc_tech_info.html">top</A>, <A HREF="build_proc_tech_info.html#bldprocs">*of4</A>, <A HREF="build_proc_tech_info.html#m1of4">1of4</A>, <A HREF="build_proc_tech_info.html#m2of4">2of4</A>, <A HREF="build_proc_tech_info.html#m3of4">3of4</A>, <A HREF="build_proc_tech_info.html#m4of4"><FONT SIZE="+2"><B>4of4</B></FONT></A>]
+<BR> &nbsp; &nbsp; &nbsp;[<A HREF="#14">14</A>, 15]</CODE></I></P>
+
+<P>Creates the foundation of the <A HREF="../../devpex/xbnpe_ddmenus.html#xh">xh phrase-creator drop-down-menu</A>. While this is not required for the TPKC-project to function, not creating this severely limits the usefulness of the xh-phrase-creator ddmenu, and it is therefore strongly recommended that it be created.</P>
+
+<P>Specifically, this process inserts all <I>active</I> TextPad built-in commands at their appropriate locations within the ddmenu. It eliminates all built-in-commands that have no key-command assigned to them.</P>
+
+<P>Since both the indented and unindented versions of this output is saved, you can always update the indented version, <I>duplicate</I> its text to the unindented version (unindent it!), and then import it again.</P>
+
+<P><I>This requires the command-abrv qbl as created by <A HREF="sub_build_proc.html#02">build-process 02</A>.</I></P>
+
+<P><UL>
+	<LI><B>File:</B> <CODE>{#insert <A HREF="index.html#zXPROOT_DIR_tpkcBuild">zXPROOT_DIR_tpkcBuild</A>}\part_4of4__nbs_phrss_and_cmd_ddmenu\15_create_command_drop_down_menu.px.txt</CODE></LI>
+	<LI><B>Input:</B> The (nbs) output files from <A HREF="#14">process 14</A>: <CODE>{#insert zzzTpkc14_outDirPNm_M_tudn}\[cat-abrv].px.txt</CODE> <I>(note categories may be merged when they have few nbs-phrases--such as <CODE>search_view.px.txt</CODE>)</I></LI>
+	<LI><B>Output:</B><UL>
+		<LI><B>Indented (on disk only):</B> <CODE>{#insert zzTpkc15_outDirPNm_M_tudn}\{#insert zzzTpkc15_outFNmIndented}</CODE></LI>
+		</UL></LI>
+		<LI><B>Unindented:</B><UL>
+			<LI><U>On disk</U> (<A HREF="../phrase_file.html#fformat">phrase-files</A>)
+			<BR> &nbsp; &nbsp; <CODE>{#insert zzTpkc15_outDirPNm_M_tudn}\{#insert zzzTpkc14_hasAKc_outFNm}</CODE></LI>
+			<LI><U>PhraseExpress folder</U> (to <A HREF="phrase_file_import1.html">import</A> to): <A HREF="tpkc_user_dir.html#inpex">TPKC-user-directory</A></LI>
+		</UL></LI>
+</UL></P>
+
+
+<PRE>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</PRE>
+</BODY></HTML>
+
+
+

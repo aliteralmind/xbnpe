@@ -1,0 +1,203 @@
+<HTML><HEAD>
+	<TITLE>Pex: Built-in functions</TITLE>
+	<meta name="viewport" content="width=device-width" />
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF"><a name="top"></a>
+
+<P>[<A HREF="../index.html#generic">BACK</A>]<CODE> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </CODE><I>(XBN-PhraseExpress is released under the <A HREF="../index.html#lpgl">LPGL 2.1</A>)</I>
+
+<HR/>
+
+<H1>PhraseExpress: Documentation and notes on specific built-in Pex functionality</H1>
+
+<P><B>Contents:</B><UL>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#keypresscount">GO</A></B></FONT>]</CODE> &nbsp; No variables or phrase calls in key-press <CODE>&quot;-count&quot;</CODE> field.</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#balloon">GO</A></B></FONT>]</CODE> &nbsp; <CODE>BALLOON</CODE></LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="cond_tag.html">GO</A></B></FONT>]</CODE> &nbsp; <CODE>COND</CODE> <I>(in-depth)</I></LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#insertfile">GO</A></B></FONT>]</CODE> &nbsp; <CODE>INSERTFILE</CODE></LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#msgbox">GO</A></B></FONT>]</CODE> &nbsp; <CODE>MSGBOX</CODE> &nbsp; &nbsp; <I>(<A HREF="#mbxchoices">user-prompted execution-path</A>)</I></LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#targetcomparison">GO</A></B></FONT>]</CODE> &nbsp; Targets: <CODE>MSGBOX</CODE>, <CODE>COND</CODE>, <CODE>loop</CODE></LI>
+</UL></P>
+
+<P><I>For PhraseExpress language-issues not specific to any one function, see <CODE><A HREF="troubleshooting.html">troubleshooting.html</A></CODE>.</I></P>
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="targetcomparison"/><H2>[<A HREF="#top">top</A>] &nbsp; Targets: <CODE>MSGBOX</CODE>, <CODE>COND</CODE>, <CODE>LOOP</CODE></H2>
+
+<P>Some functions require their targets (the phrases to call under certain conditions) be either phrase calls:
+<BR> &nbsp; &nbsp; <CODE>{#insert zPhraseToCall}</CODE>
+<BR>or only phrase names:
+<BR> &nbsp; &nbsp; <CODE>zPhraseToCall</CODE></P>
+
+<P><TABLE ALIGN="center" BORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#EEEEEE"><TR ALIGN="center" VALIGN="middle">
+	<TD><B><U>Function</U></B></TD>
+	<TD><B><U>Target parameters</U></B></TD>
+	<TD><B><U>Target is phrase-name or phrase-call?</U></B></TD>
+</TR><TR ALIGN="center">
+	<TD ALIGN="right"><B><U><A HREF="#msgbox">MSGBOX</A></U></B></TD>
+	<TD><CODE>&quot;-ok&quot;</CODE>, <CODE>&quot;-yes&quot;</CODE>, <CODE>&quot;-no&quot;</CODE>, <CODE>&quot;-cancel&quot;</CODE></TD>
+	<TD>Phrase name only</TD>
+</TR><TR ALIGN="center">
+	<TD ALIGN="right"><B><U><A HREF="cond_tag.html">COND</A></U></B></TD>
+	<TD><CODE>&quot;-then&quot;</CODE>, <CODE>&quot;-else&quot;</CODE></TD>
+	<TD>Phrase name only</TD>
+</TR><TR ALIGN="center">
+	<TD ALIGN="right"><B><U>LOOP</U></B></TD>
+	<TD>The &quot;action&quot;, immediately following &quot;<CODE>{#LOOP </CODE>&quot;</TD>
+	<TD>Phrase-call</TD>
+</TR></TABLE></P>
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="msgbox"/><H2>[<A HREF="#top">top</A>] &nbsp; Built-in PhraseExpress function: <CODE>MSGBOX</CODE></H2>
+
+<P><I>[Go to <A HREF="#mbxchoices">choice-flow</A>]</I></P>
+<P><UL>
+	<LI>The <A HREF="#targetcomparison">target</A> of a <CODE>MSGBOX</CODE> (in the <CODE>&quot;-ok&quot;</CODE>, <CODE>&quot;-yes&quot;</CODE>, <CODE>&quot;-no&quot;</CODE>, and/or <CODE>&quot;-cancel&quot;</CODE> parameters) must be the phrase-name only.</LI>
+	<LI>Note that, along with <A HREF="#balloon"><CODE>BALLOON</CODE>-s</A>, comments in the text of a <CODE>MSGBOX</CODE> are <A HREF="wishes.html#cmtmbx">literally displayed</A>.</LI>
+</UL></P>
+
+<H4>Problem: <CODE>&quot; -defaultok&quot;</CODE> immediately following <CODE>&quot;-cancel&quot;</CODE></H4>
+
+<CODE>&quot; -defaultok&quot;</CODE> at the end of a <CODE>MSGBOX</CODE> <I>that has a cancel option right before it</I>, causes the cancel option's <I>target</I> to be ignored (never called), although the button is still displayed.
+
+<PRE STYLE="background-color:#E1E1E1;">{#MSGBOX -head default ok test -text default ok test -ok zQokQ -cancel zQcancelQ -defaultok}
+zQokQ
+ok
+zQcancelQ
+cancel</PRE>
+
+<A NAME="mbxchoices"/><H3><CODE>[<A HREF="#msgbox">BACK</A>]</CODE> &nbsp; <CODE>MSGBOX</CODE>: User-prompted execution-path</H3>
+
+<P>How to create a choice-stream via user-prompts:</P>
+
+<PRE STYLE="background-color:#E1E1E1;">{#MSGBOX -text [OK]=Dog, [CANCEL]=Cat -ok zDogPhrase -cancel zCatPhrase}
+<B><U>zDogPhrase</U></B>
+   {#MSGBOX -head Dog! -text Dog!}
+<B><U>zCatPhrase</U></B>
+   {#MSGBOX -head Cat! -text Cat!}</PRE>
+
+<P>For sub-choices, replace <CODE>&quot;zDogPhrase&quot;</CODE> with another multi-choice dialog.</P>
+
+<PRE STYLE="background-color:#E1E1E1;"><B><U>zDogPhrase</U></B>
+   {#MSGBOX -text What kind of dog? [YES]=Daschaund, [NO]=Dalmation, [CANCEL]=Bulldog -yes zQDaschaundQ -no zQDalmationQ -cancel zQBulldogQ}
+<B><U>zQDaschaundQ</U></B>
+   Daschaund
+<B><U>zQDalmationQ</U></B>
+   Dalmation
+<B><U>zQBulldogQ</U></B>
+   Bulldog</PRE>
+
+<P>To return the <I>name</I> (type) of the dog, that return-text must be in a <A HREF="#targetcomparison">separate phrase</A>.</P>
+
+<a name="balloon"/><H2>[<A HREF="#top">top</A>] &nbsp; Built-in PhraseExpress function: <CODE>BALLOON</CODE></H2>
+
+<P>Note that, along with <A HREF="#msgbox"><CODE>MSGBOX</CODE>-s</A>, comments in the text of a <CODE>BALLOON</CODE> are <A HREF="wishes.html#cmtmbx">literally displayed</A>.</P>
+
+<P>There is no way to print <I>nothing</I> when clicking on <CODE>BALLOON</CODE>. The <CODE>&quot;-text&quot;</CODE> value always print out, unless there is also text in the <CODE>&quot;-onclick&quot;</CODE> parameter, in which case that prints out in its place.</P>
+
+<P>There is also no way to <I>dismiss</I> the balloon when clicking on it.</P>
+
+<P><I>(7/20/2013: <A HREF="http://www.phraseexpress.com/phpBB3/viewtopic.php?f=138&t=11534">http://www.phraseexpress.com/phpBB3/viewtopic.php?f=138&t=11534</A>)</I></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="keypresscount"/><H2>[<A HREF="#top">top</A>] &nbsp; No variables or phrase calls in key-press <CODE>&quot;-count&quot;</CODE> field.</H2>
+
+
+<PRE STYLE="background-color:#E1E1E1;">{#UP -count {#insert zvNUMBER}}</PRE>
+
+<P>is not allowed. The <CODE>&quot;-count&quot;</CODE> field must be a static number, such as
+<BR> &nbsp; &nbsp; <CODE>{#UP -count 3}</CODE></P>
+
+<P>A workaround is to put the key-press into a loop</P>
+
+<PRE STYLE="background-color:#E1E1E1;">{#LOOP {#UP} -count 3}</PRE>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="insertfile"/><H2>[<A HREF="#top">top</A>] &nbsp; <CODE>INSERTFILE</CODE></H2>
+
+<P><I>[Go to <A HREF="#ifldetect">failure-detection tool</A>]</I></P>
+
+<P><B>Problem:</B> If there is a <A HREF="wishes.html#cmtmbx">comment in the path</A> (such as in a variable that defines a portion of that path), <CODE>INSERTFILE</CODE> will not work.</P>
+
+<H3>Long <CODE>INSERTFILE</CODE>-s are unreliable</H3>
+
+<P>When using <CODE>INSERTFILE</CODE> for even moderately-large files, they randomly fail. Specifically, near the bottom of the document, you will get garbled (meaningless) text. There is no solution that I can find, except to not use <CODE>INSERTFILE</CODE>. The alternative I've come up with is to open the desired file
+<BR> &nbsp; &nbsp; <CODE>{#insert zDirFileOpen_M_dirFnm}</CODE>
+<BR>and copy that text into a new file, closing the original:
+<BR> &nbsp; &nbsp; <CODE>{#insert zDupCurrFileTextToNewCloseOrig}</CODE></P>
+
+<P><I>Note:<UL>
+	<LI><CODE>&quot;zDirFileOpen_M_dirFnm&quot;</CODE> requires the <A HREF="../basics/xbnpe_phrase_types.html#variable">variables</A> <CODE>&quot;zvDIRECTORY&quot;</CODE> and <CODE>&quot;zvFILE_NAME&quot;</CODE>.</LI>
+	<LI><CODE>&quot;zDupCurrFileTextToNewCloseOrig&quot;</CODE> is part of the <B>XBNPE-Char, word, line, para, doc, file (CWLPDF)</B> project.</LI>
+</UL></I></P>
+
+<a name="ifldetect"/><H4><CODE>[<A HREF="#insertfile">BACK</A>]</CODE> &nbsp; Tool to detect a failed <CODE>INSERTFILE</CODE></H4>
+
+<P><I><B>Warning:</B> Needs to be further tested!</I></P>
+
+<P>There is a testing tool to verify an INSERTFILE, and crash gracefully when it fails. It only works when there is no whitespace at the start and/or end of the last line (although there may be completely-empty lines after it), and only when you know exactly the text (the first and/or last words) in the last line will be, after the <CODE>INSERTFILE</CODE> is completed.</P>
+
+<P>Before executing the <CODE>INSERTFILE</CODE>, it must be determined what<UL>
+	<LI>the first-word-in-the-last-line <U>will</U> be (after the <CODE>INSERTFILE</CODE> is executed), and (or) what</LI>
+	<LI>the <I>last</I>-word-in-the-last-line will be.</LI>
+</UL>Set these words into the required variables:</P>
+
+<P><CODE STYLE="background-color:#E1E1E1;">{#insert zvEXPECTED_WORD_A_st1stWrdLastLine_M_wwo}{#insert zvEXPECTED_WORD_Z_stLastWrdLastLine}</CODE></P>
+
+<P>Actually insert the file. Call <CODE>INSERTFILE</CODE>.</P>
+
+<P>To validate it, call these functions:</P>
+<P><CODE STYLE="background-color:#E1E1E1;">{#insert zAtEOD_cibFirstWrdInLastLine_M_xwrda}{#insert zAtEOD_cibLastWordInDoc_M_xwrdz}</CODE></P>
+<PRE>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</PRE>
+</BODY></HTML>
+
+
+

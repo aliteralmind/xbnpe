@@ -1,0 +1,327 @@
+<HTML><HEAD>
+	<TITLE>TPKC-sub-build-processes</TITLE>
+	<meta name="viewport" content="width=device-width" />
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF"><a name="top"></a>
+
+
+<P>[<A HREF="build_proc_tech_info.html">BACK</A>]</CODE></P>
+
+<HR/>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="01"/><H2><CODE>zTpkc01CreateSetCatlVarPhrsFile</CODE></H2>
+
+<P><I><CODE>[<A HREF="build_proc_tech_info.html">top</A>, <A HREF="build_proc_tech_info.html#bldprocs">*of4</A>, <A HREF="build_proc_tech_info.html#m1of4"><FONT SIZE="+2"><B>1of4</B></FONT></A>, <A HREF="build_proc_tech_info.html#m2of4">2of4</A>, <A HREF="build_proc_tech_info.html#m3of4">3of4</A>, <A HREF="build_proc_tech_info.html#m4of4">4of4</A>]
+<BR> &nbsp; &nbsp; &nbsp;[01, <A HREF="#02">02</A>, <A HREF="#03">03</A>, <A HREF="#03a">03a</A>, <A HREF="#04">04</A>, <A HREF="#05">05</A>, <A HREF="#06">06</A>]</CODE></I></P>
+
+
+<P>Takes all category abbrevations, from the all-category-qbl (<A HREF="config_vars.html#zTpkcAllCategoryAbrvLCsQbl"><CODE>zTpkcAllCategoryAbrvLCsQbl</CODE></A>),
+<BR>and for each category, creates this phrase:
+<BR> &nbsp; &nbsp; <B>-<CODE>zvCAT_ABRV_LC_st[cat-abrv]</CODE>:</B>
+<BR> &nbsp; &nbsp; <CODE>{#SETPHRASE -description zvCAT_ABRV_LC -content [cat-abrv] -autotext zvCAT_ABRV_LC -folder ctvv_folder}</CODE></P>
+
+<P><UL>
+	<LI><B>File:</B> <CODE>{#insert <A HREF="index.html#zXPROOT_DIR_tpkcBuild">zXPROOT_DIR_tpkcBuild</A>}\part_1of4__glbl_cmd_cfg_frm_raw\01_create_all_set_catl_vars_phrs_file.px.txt</CODE></LI>
+	<LI><B>Input:</B> <A HREF="config_vars.html#zTpkcAllCategoryAbrvLCsQbl"><CODE>zTpkcAllCategoryAbrvLCsQbl</CODE></A></LI>
+	<LI><B>Output:</B><UL>
+		<LI><U>On disk</U> (1 <A HREF="../phrase_file.html#fformat">phrase-file</A>)
+		<BR> &nbsp; &nbsp; <CODE>{#insert zzzTpkc01_outDirPNm}\{#insert zzzTpkc01_outFNm}</CODE></LI>
+		<LI><U>PhraseExpress folder</U> (to <A HREF="phrase_file_import1.html">import</A> to): <A HREF="build_proc_tech_info.html#imp3other">other-AG-output</A> folder</LI>
+	</UL></LI>
+</UL></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="02"/><H2><CODE>zTpkc02CreateTPBtstrpQblAndMrkRGCRegex</CODE></H2>
+
+<P><I><CODE>[<A HREF="build_proc_tech_info.html">top</A>, <A HREF="build_proc_tech_info.html#bldprocs">*of4</A>, <A HREF="build_proc_tech_info.html#m1of4"><FONT SIZE="+2"><B>1of4</B></FONT></A>, <A HREF="build_proc_tech_info.html#m2of4">2of4</A>, <A HREF="build_proc_tech_info.html#m3of4">3of4</A>, <A HREF="build_proc_tech_info.html#m4of4">4of4</A>]
+<BR> &nbsp; &nbsp; &nbsp;[<A HREF="#01">01</A>, 02, <A HREF="#03">03</A>, <A HREF="#03a">03a</A>, <A HREF="#04">04</A>, <A HREF="#05">05</A>, <A HREF="#06">06</A>]</CODE></I></P>
+
+
+<P>The first step in the <I>user</I>-build-process (sub-build-proc-<A HREF="sub_build_proc2.html#10">10</A>) is to eliminate bootstrap key-commands from the tp-all-command-list. In order to do this, the TextPad-bootstrap phrases, <I>as configured by the user</I>, must be deemed trustworthy. This build-process (02) creates two phrases required by build-process-10.</P>
+
+<I>(Continues below.)</I>
+
+<P><UL>
+	<LI><B>File:</B> <CODE>{#insert <A HREF="index.html#zXPROOT_DIR_tpkcBuild">zXPROOT_DIR_tpkcBuild</A>}\part_1of4__glbl_cmd_cfg_frm_raw\02_create_btstrp_qbl_and_mrk_lns_regex.px.txt</CODE></LI>
+	<LI><B>Input:</B> The raw-global-config files:
+	<BR> &nbsp; &nbsp; <CODE>{#insert zzXPSUB_DIR_tpkcRawCfgGlobal}\[cat-abrv].txt</CODE></LI>
+	<LI><B>Output:</B><UL>
+		<LI><U>On disk</U> (1 <A HREF="../phrase_file.html#fformat">phrase-files</A>)
+		<BR> &nbsp; &nbsp; <CODE>{#insert zzzTpkc02_outDirPNm}\{#insert zzzTpkc02_outFNm}</CODE></LI>
+		<LI><U>PhraseExpress folder</U> (to <A HREF="phrase_file_import1.html">import</A> to): <A HREF="build_proc_tech_info.html#imp3other">other-AG-output</A> folder</LI>
+	</UL></LI>
+</UL></P>
+
+<P>The first is a <A HREF="../../tasks/qbl.html">sQuare-Bracketed List</A> (qbl), containing all command-abbreviations <I>as they exist in the raw-global-configuration</I>. The raw-global-config has trustworthy data, and is therefore used to independently verify the user's bootstraps. (This is also used by <A HREF="sub_build_proc2.html#15">process-15</A>).</P>
+
+<P>Example bootstrap raw-global-config line:
+<BR> &nbsp; &nbsp; <CODE>EditCopyTaggedLines	zTPBookmarkCopyAll	Ecpbkmlns	__ES__	yes	25	{#PGDN -count 2}{#insert z5ThnTSlp}{#DOWN -count 2}{#insert z5ThnTSlp}</CODE></P>
+
+<P>The second phrase created by build-02, is a regular expression that marks all bootstrap lines, as they exist in the tp-all-cmd-list at once. Specifically, it is an alternation containing the full TextPad built-in command-name of each TextPad-bootstrap, anchored between line-start and a word-boundary. For example
+<BR> &nbsp; &nbsp; <CODE>^(CmdName1|CmdName2|CmdName3|CmdName4|CmdName5|CmdName6|...)\b</CODE>
+<BR><I>As of 8/15/2013, there are twenty-six <A HREF="../tpbs.html">TextPad-bootstraps</A> (out of 332 total--around 7%), so the length of this regex is not a concern. I actually tested it with a many-times-longer regex, and it worked.</I></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="03"/><H2><CODE>zTpkc03CreateAll_allCmdsIn1CatPhrsFiles</CODE></H2>
+
+<P><I><CODE>[<A HREF="build_proc_tech_info.html">top</A>, <A HREF="build_proc_tech_info.html#bldprocs">*of4</A>, <A HREF="build_proc_tech_info.html#m1of4"><FONT SIZE="+2"><B>1of4</B></FONT></A>, <A HREF="build_proc_tech_info.html#m2of4">2of4</A>, <A HREF="build_proc_tech_info.html#m3of4">3of4</A>, <A HREF="build_proc_tech_info.html#m4of4">4of4</A>]
+<BR> &nbsp; &nbsp; &nbsp;[<A HREF="#01">01</A>, <A HREF="#02">02</A>, 03, <A HREF="#03a">03a</A>, <A HREF="#04">04</A>, <A HREF="#05">05</A>, <A HREF="#06">06</A>]</CODE></I></P>
+
+<P>Creates the phrases directly-accessible to the user, via the drop-down menu, to execute something against <I>all commands in a single category</I>.</P>
+
+<P><UL>
+	<LI><B>File:</B> <CODE>{#insert <A HREF="index.html#zXPROOT_DIR_tpkcBuild">zXPROOT_DIR_tpkcBuild</A>}\part_1of4__glbl_cmd_cfg_frm_raw\03_create_all_all_cmds_in_1_cat_phrase_files.px.txt</CODE></LI>
+	<LI><B>Input:</B> The all-category-qbl (<A HREF="config_vars.html#zTpkcAllCategoryAbrvLCsQbl"><CODE>zTpkcAllCategoryAbrvLCsQbl</CODE></A>).</LI>
+	<LI><B>Output:</B><UL>
+		<LI><U>On disk</U> (1 <A HREF="../phrase_file.html#fformat">phrase-file</A> per-category)
+		<BR> &nbsp; &nbsp; <CODE>{#insert zzzTpkc03_outDirPNm}\[cat-abrv].px.txt</CODE></LI>
+		<LI><U>PhraseExpress folder</U> (to <A HREF="phrase_file_import1.html">import</A> to): <A HREF="user_menu2.html#inpex">TPKC-user-menu</A></LI>
+	</UL></LI>
+</UL></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="03a"/><H2><CODE>zTpkc03aCreate_AllCmdsAllCats_PhrsFile</CODE></H2>
+
+<P><I><CODE>[<A HREF="build_proc_tech_info.html">top</A>, <A HREF="build_proc_tech_info.html#bldprocs">*of4</A>, <A HREF="build_proc_tech_info.html#m1of4"><FONT SIZE="+2"><B>1of4</B></FONT></A>, <A HREF="build_proc_tech_info.html#m2of4">2of4</A>, <A HREF="build_proc_tech_info.html#m3of4">3of4</A>, <A HREF="build_proc_tech_info.html#m4of4">4of4</A>]
+<BR> &nbsp; &nbsp; &nbsp;[<A HREF="#01">01</A>, <A HREF="#02">02</A>, <A HREF="#03">03</A>, 03a, <A HREF="#04">04</A>, <A HREF="#05">05</A>, <A HREF="#06">06</A>]</CODE></I></P>
+
+<P>Creates the phrases to execute against all-commands-in-all-categories.</P>
+
+<P><UL>
+	<LI><B>File:</B> <CODE>{#insert <A HREF="index.html#zXPROOT_DIR_tpkcBuild">zXPROOT_DIR_tpkcBuild</A>}\part_1of4__glbl_cmd_cfg_frm_raw\03a_create_all_cmds_in_all_cats_phrase_file.px.txt</CODE></LI>
+	<LI><B>Input:</B> <CODE>{#insert zzzTpkc03a_inDirPNm}\{#insert zzzTpkc03a_inFNm}</CODE></LI>
+	<LI><B>Output:</B><UL>
+		<LI><U>On disk</U> (1 <A HREF="../phrase_file.html#fformat">phrase-file</A>)
+		<BR> &nbsp; &nbsp; <CODE>{#insert zzzTpkc03a_outDirPNm}\{#insert zzzTpkc03a_outFNm}</CODE></LI>
+		<LI><U>PhraseExpress folder</U> (to <A HREF="phrase_file_import1.html">import</A> to): <A HREF="user_menu2.html#inpex">TPKC-user-menu</A></LI>
+	</UL></LI>
+</UL></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="04"/><H2><CODE>zTpkc04CreatePhrsFl_callVPMForEachCatAndAllCatCnt</CODE></H2>
+
+<P><I><CODE>[<A HREF="build_proc_tech_info.html">top</A>, <A HREF="build_proc_tech_info.html#bldprocs">*of4</A>, <A HREF="build_proc_tech_info.html#m1of4"><FONT SIZE="+2"><B>1of4</B></FONT></A>, <A HREF="build_proc_tech_info.html#m2of4">2of4</A>, <A HREF="build_proc_tech_info.html#m3of4">3of4</A>, <A HREF="build_proc_tech_info.html#m4of4">4of4</A>]
+<BR> &nbsp; &nbsp; &nbsp;[<A HREF="#01">01</A>, <A HREF="#02">02</A>, <A HREF="#03">03</A>, <A HREF="#03a">03a</A>, 04, <A HREF="#05">05</A>, <A HREF="#06">06</A>]</CODE></I></P>
+
+<P>Creates a single phrase, named <B><CODE>zzTpkcCallPhrsNmForEachCat_M_catpm</CODE></B>, that, for every category in the TPKC-Project:<OL>
+	<LI>Sets its abbrevation to <CODE>zvCAT_ABRV_LC</CODE>, and then</LI>
+	<LI>executes the phrase whose <I>name</I> is in the variable <CODE>zvPNM_FOR_CAT</CODE>.</LI>
+</OL></P>
+
+<I>(Continues below.)</I>
+
+<P><UL>
+	<LI><B>File:</B> <CODE>{#insert <A HREF="index.html#zXPROOT_DIR_tpkcBuild">zXPROOT_DIR_tpkcBuild</A>}\part_1of4__glbl_cmd_cfg_frm_raw\04_create_all_call_vpm_for_each_cat_and_all_cat_cnt_phrs_file.px.txt</CODE></LI>
+	<LI><B>Input:</B> The all-category-qbl (<A HREF="config_vars.html#zTpkcAllCategoryAbrvLCsQbl"><CODE>zTpkcAllCategoryAbrvLCsQbl</CODE></A>).</LI>
+	<LI><B>Output:</B> <CODE>{#insert zzzTpkc04_outDirPNm}\{#insert zzzTpkc04_outFNm}</CODE></LI>
+	<LI><B>Output:</B><UL>
+		<LI><U>On disk</U> (1 <A HREF="../phrase_file.html#fformat">phrase-file</A>)
+		<BR> &nbsp; &nbsp; <CODE>{#insert zzzTpkc03_outDirPNm}\[cat-abrv].px.txt</CODE></LI>
+		<LI><U>PhraseExpress folder</U> (to <A HREF="phrase_file_import1.html">import</A> to):  <A HREF="build_proc_tech_info.html#imp3other">other-AG-output</A> folder</LI>
+	</UL></LI>
+</UL></P>
+
+<P>Iterating through the actual-or-test all-cat-list qbl, as in</P>
+
+<PRE>{#insert zvQB_STR_LIST_stAllTpkcCatsOrForTestModeFcsTP}{#LOOP {#insert zzzWrtNxtCallPNmInVarFor1Cat_catqbl} -count {#insert zzTpkcCategoryCountForLiveOrTestMode}}</PRE>
+
+is required in all build processes zTpkc06CreateGlobalCommandConfigFromRaw 06 and before. Iterating through a qbl is slow.
+
+After process 6, once all output is imported--both in the remaining build processes, AND in any user-facing processes--use this alternative:
+
+<PRE>{#SETPHRASE -description zvPNM_FOR_CAT -content zzzTpkcCrtNextStCmd1VarPhrsFile_M_catqbl -autotext zvPNM_FOR_CAT -folder ctvv_folder}{#insert zzTpkcCallPhrsNmForEachCat_M_catpm}</PRE>
+
+Both methods anticipate the TPKC-test-mode-flag, including notifying the user, but the second method is much faster, and has the additional benefit of *not* depending on the TPKC-test-mode-flag (zTpkcBuildModeTestOrLive), which, while being critical during build processes zTpkc01CreateSetCatlVarPhrsFile 01-through-06, is unused at all other times.
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="05"/><H2><CODE>zTpkc05CreateAll_callVPMForAllCmdsInCat_pFls</CODE></H2>
+
+<P><I><CODE>[<A HREF="build_proc_tech_info.html">top</A>, <A HREF="build_proc_tech_info.html#bldprocs">*of4</A>, <A HREF="build_proc_tech_info.html#m1of4"><FONT SIZE="+2"><B>1of4</B></FONT></A>, <A HREF="build_proc_tech_info.html#m2of4">2of4</A>, <A HREF="build_proc_tech_info.html#m3of4">3of4</A>, <A HREF="build_proc_tech_info.html#m4of4">4of4</A>]
+<BR> &nbsp; &nbsp; &nbsp;[<A HREF="#01">01</A>, <A HREF="#02">02</A>, <A HREF="#03">03</A>, <A HREF="#03a">03a</A>, <A HREF="#04">04</A>, 05, <A HREF="#06">06</A>]</CODE></I></P>
+
+<P>Creates a phrase similar to that created by <CODE><A HREF="#04">zTpkc04CreatePhrsFl_callVPMForEachCatAndAllCatCnt</A></CODE>, except this works for all commands in a single category.</P>
+
+<P><UL>
+	<LI><B>File:</B> <CODE>{#insert <A HREF="index.html#zXPROOT_DIR_tpkcBuild">zXPROOT_DIR_tpkcBuild</A>}\part_1of4__glbl_cmd_cfg_frm_raw\05_create_all_call_vpnm_for_each_cmd_in_cat_phrs_fl.px.txt</CODE></LI>
+	<LI><B>Input:</B> The all-category-qbl (<A HREF="config_vars.html#zTpkcAllCategoryAbrvLCsQbl"><CODE>zTpkcAllCategoryAbrvLCsQbl</CODE></A>), and all raw-global-configuration files: <CODE>{#insert zzXPSUB_DIR_tpkcRawCfgGlobal}</CODE>.</LI>
+	<LI><B>Output:</B><UL>
+		<LI><U>On disk</U> (1 <A HREF="../phrase_file.html#fformat">phrase-file</A> per-category)
+		<BR> &nbsp; &nbsp; <CODE>{#insert zzzTpkc05_outDirPNm}\[cat-abrv].px.txt</CODE></LI>
+		<LI><U>PhraseExpress folder</U> (to <A HREF="phrase_file_import1.html">import</A> to): <A HREF="build_proc_tech_info.html#imp3other">other-AG-output</A> folder</LI>
+	</UL></LI>
+</UL></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="06"/><H2><CODE>zTpkc06CreateGlobalCommandConfigFromRaw</CODE></H2>
+
+<P><I><CODE>[<A HREF="build_proc_tech_info.html">top</A>, <A HREF="build_proc_tech_info.html#bldprocs">*of4</A>, <A HREF="build_proc_tech_info.html#m1of4"><FONT SIZE="+2"><B>1of4</B></FONT></A>, <A HREF="build_proc_tech_info.html#m2of4">2of4</A>, <A HREF="build_proc_tech_info.html#m3of4">3of4</A>, <A HREF="build_proc_tech_info.html#m4of4">4of4</A>]
+<BR> &nbsp; &nbsp; &nbsp;[<A HREF="#01">01</A>, <A HREF="#02">02</A>, <A HREF="#03">03</A>, <A HREF="#03a">03a</A>, <A HREF="#04">04</A>, <A HREF="#05">05</A>, 06]</CODE></I></P>
+
+<P>Transforms raw-global-config lines, such as</P>
+
+<PRE STYLE="background-color:#EEEEEE;">EditCopy	zTPCopy	Ecp	__ES__	yes	10	{#PGDN}{#insert z5ThnTSlp}{#DOWN}{#insert z5ThnTSlp}
+EditCopyAppend	zTPCopyAppend	Ecpapp	__ES__	__ES__	10	{#PGDN}{#insert z5ThnTSlp}{#DOWN -count 3}{#insert z5ThnTSlp}</PRE>
+<P>into these two global-command configuration phrase-files:</P>
+
+
+
+<P><TABLE ALIGN="center" BORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#FFFFFF"><TR ALIGN="left" VALIGN="middle">
+	<TD><H4><U><CENTER>edit_EditCopy.px.txt</CENTER></U></H4>
+<PRE STYLE="background-color:#EEEEEE;">
+<B><U>zTpkcEditCopyAbrv1C</U></B>
+   Ecp
+<B><U>zTpkcEcpCmdNameTC</U></B>
+   EditCopy
+<B><U>zTpkcEcpDfltPhrsNm</U></B>
+   zTPCopy
+<B><U>zTpkcEcpCatForCmdAbrvLC</U></B>
+   edit
+<B><U>zTpkcEcpCmdType_mcrTl</U></B>
+   <I>nothing</I>
+<B><U>zTpkcEcpIsBtstrp_yes</U></B>
+   yes
+<B><U>zTpkcEcpDfltPostKcSlpMils</U></B>
+   25
+<B><U>zTpkcEcpStpsFrmCmdListTop</U></B>
+   {#insert zPGDN}{#insert zDOWN}</PRE></TD>
+	<TD><H4><U><CENTER>edit_EditCopyAppend.px.txt</CENTER></U></H4>
+<PRE STYLE="background-color:#EEEEEE;">
+<B><U>zTpkcEditCopyAppendAbrv1C</U></B>
+   Ecpapp
+<B><U>zTpkcEcpappCmdNameTC</U></B>
+   EditCopyAppend
+<B><U>zTpkcEcpappDfltPhrsNm</U></B>
+   zTPCopyAppend
+<B><U>zTpkcEcpappCatForCmdAbrvLC</U></B>
+   edit
+<B><U>zTpkcEcpappCmdType_mcrTl</U></B>
+   <I>nothing</I>
+<B><U>zTpkcEcpappIsBtstrp_yes</U></B>
+   <I>nothing</I>
+<B><U>zTpkcEcpappDfltPostKcSlpMils</U></B>
+   50
+<B><U>zTpkcEcpappStpsFrmCmdListTop</U></B>
+   {#insert zPGDN}{#insert zDOWN3}</PRE></TD>
+</TR></TABLE></P>
+
+<P><UL>
+	<LI><B>File:</B> <CODE>{#insert <A HREF="index.html#zXPROOT_DIR_tpkcBuild">zXPROOT_DIR_tpkcBuild</A>}\part_1of4__glbl_cmd_cfg_frm_raw\06_create_global_cmd_cfg_from_raw.px.txt</CODE></LI>
+	<LI><B>Input:</B> The all-category-qbl (<A HREF="config_vars.html#zTpkcAllCategoryAbrvLCsQbl"><CODE>zTpkcAllCategoryAbrvLCsQbl</CODE></A>), and all raw-global-configuration files: <CODE>{#insert zzXPSUB_DIR_tpkcRawCfgGlobal}</CODE>.</LI>
+	<LI><B>Output:</B> <I><A HREF="tpkc_user_dir.html#13file">Documented elsewhere</A></I></LI>
+</UL></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="07"/><H2><CODE>zTpkc07VerifyImportedGlobalCmdCfg</CODE></H2>
+
+<P><I><CODE>[<A HREF="build_proc_tech_info.html">top</A>, <A HREF="build_proc_tech_info.html#bldprocs">*of4</A>, <A HREF="build_proc_tech_info.html#m1of4">1of4</A>, <A HREF="build_proc_tech_info.html#m2of4"><FONT SIZE="+2"><B>2of4</B></FONT></A>, <A HREF="build_proc_tech_info.html#m3of4">3of4</A>, <A HREF="build_proc_tech_info.html#m4of4">4of4</A>]
+<BR> &nbsp; &nbsp; &nbsp;[07, <A HREF="#08">08</A>, <A HREF="sub_build_proc2.html#09">09</A>]</CODE></I></P>
+
+<P><UL>
+	<LI><B>File:</B> <CODE>{#insert <A HREF="index.html#zXPROOT_DIR_tpkcBuild">zXPROOT_DIR_tpkcBuild</A>}\part_2of4__vrfy_gbl_prep_for_usr_cfg\07_verify_imported_global_cmd_cfg.px.txt</CODE></LI>
+	<LI><B>Input:</B><UL>
+		<LI><U>On disk</U> (<A HREF="../phrase_file.html#fformat">phrase-files</A>)
+		<BR> &nbsp; &nbsp; <CODE><I></I>{#insert zzXPSUB_DIR_tpkcRawCfgGlobal}</CODE></LI>
+		Global comand configuration, as imported into PhraseExpress
+	</UL></LI>
+	<LI><B>Output:</B> <I>none</I></LI>
+</UL></P>
+
+<P>Verifies that all global command configuration phrases were successfully imported into PhraseExpress. This reads in the raw-global-config files, similarly to <A HREF="#06">build process 06</A>. For each read-in item, it checks to see that its phrase exists, and equals the read-in string. This checks all items <I>except</I> the from-list-top steps (since there's no way to read in the code (the UN-escaped) versions of those steps, in order to compare them).</P>
+
+<P>This process has no output, beyond informing you, the person running and monitoring the build process. Improperly-imported commands are logged into  a separate file.</P>
+
+<P>The reason for this check is because <A HREF="../phrase_file.html#importmulti">importing hundreds of phrase text-files</A> is a fragile process. It is not unusual for at least a few of the imports to become corrupted.</P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="08"/><H2><CODE>zTpkc08CreateSetAllKCsTo1CmdPhraseFiles</CODE></H2>
+
+<P><I><CODE>[<A HREF="build_proc_tech_info.html">top</A>, <A HREF="build_proc_tech_info.html#bldprocs">*of4</A>, <A HREF="build_proc_tech_info.html#m1of4">1of4</A>, <A HREF="build_proc_tech_info.html#m2of4"><FONT SIZE="+2"><B>2of4</B></FONT></A>, <A HREF="build_proc_tech_info.html#m3of4">3of4</A>, <A HREF="build_proc_tech_info.html#m4of4">4of4</A>]
+<BR> &nbsp; &nbsp; &nbsp;[<A HREF="#07">07</A>, 08, <A HREF="sub_build_proc2.html#09">09</A>]</CODE></I></P>
+
+<P><UL>
+	<LI><B>File:</B> <CODE>{#insert <A HREF="index.html#zXPROOT_DIR_tpkcBuild">zXPROOT_DIR_tpkcBuild</A>}\part_2of4__vrfy_gbl_prep_for_usr_cfg\08_create_all_set_all_kcs_to_1_cmd_phrs_fls.px.txt</CODE></LI>
+	<LI><B>Input:</B> Raw-global-config: <CODE>{#insert zzXPSUB_DIR_tpkcRawCfgGlobal}</CODE></LI>
+	<LI><B>Output:</B><UL>
+		<LI><U>On disk</U> (<A HREF="../phrase_file.html#fformat">phrase-files</A>)
+		<BR> &nbsp; &nbsp; <CODE>{#insert zzzTpkc08_outDirPNm}\{#insert zzzTpkc08_outFNm}</CODE></LI>
+		<LI><U>PhraseExpress folder</U> (to <A HREF="phrase_file_import1.html">import</A> to): <A HREF="build_proc_tech_info.html#imp3other">other-AG-output</A> folder</LI>
+	</UL></LI>
+</UL></P>
+
+<P>Creates single phrase for every command, to assign all key-commands (both bootstrap and non) to it.</P>
+
+
+
+<PRE>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</PRE>
+</BODY></HTML>
+
+
+

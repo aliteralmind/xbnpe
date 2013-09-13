@@ -1,0 +1,206 @@
+<HTML><HEAD>
+	<TITLE>XBNPE-TPKC: tpacl</TITLE>
+	<meta name="viewport" content="width=device-width" />
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF"><a name="top"></a>
+
+
+<P>[<A HREF="index.html">BACK</A>]</CODE></P>
+
+<HR/>
+
+<H1>The TextPad all-command-list</H1>
+
+<P>The &quot;TextPad all-command-list&quot; (or &quot;tp-all-cmd-list&quot;, or <CODE>&quot;tpacl&quot;</CODE>) is a textual list of every built-in TextPad command, and every one of their key-commands. It is also the input for the TPKC-build-process (the output is your <A HREF="user_cmd_cfg.html">user-specific</A> command-configuration). The TPKC-build-process takes advantage of the fact that this is a <I>more-than-one-space</I> delimited list--that is, each command and each of its key-commands is separated by <I>at least two spaces</I>.</P>
+
+<P><B>Contents:</B><UL>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#format">GO</A></B></FONT>]</CODE> &nbsp; Format of the tp-all-cmd-list</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#examples">GO</A></B></FONT>]</CODE> &nbsp; Example <CODE>tpacl</CODE>-s</LI>
+	<LI><B>Requirements and recommendations</B>:<UL>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#maxnbskcs">GO</A></B></FONT>]</CODE> &nbsp; Requirement: Maximum allowed nbs-kcs per command</LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#legalkps">GO</A></B></FONT>]</CODE> &nbsp; Requirement: Legal key-presses</LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#recommended">GO</A></B></FONT>]</CODE> &nbsp; Recommended commands to assign key-commands to</LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#messy">GO</A></B></FONT>]</CODE> &nbsp; Messy unorganized requirements</LI>
+	</UL></LI>
+</UL></P>
+
+<H3>Printing and saving the TextPad all-command-list</H3>
+
+<P>To print the tp-all-cmd-list, use
+<BR> &nbsp; &nbsp; <CODE>TextPad &gt; Configure &gt; Preferences &gt; Keyboard &gt; Categories &gt; &quot;All&quot; &gt; [List-button]</CODE>
+<BR>This is printed into a read-only document called &quot;Tool Output&quot;. Save this document to its required location in your <A HREF="tpkc_user_dir.html">TPKC-user-directory</A>:
+<BR> &nbsp; &nbsp; <CODE>{#insert <A HREF="tpkc_user_dir.html#zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn">zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn</A>}</CODE>
+<BR>with this exact name:
+<BR> &nbsp; &nbsp; <CODE>tp_all_command_list.txt</CODE></P>
+
+<P>(By definition, the TextPad all-command-list is created only when selecting the <CODE>&quot;All&quot;</CODE> category.)</P>
+
+<P><IMG SRC="images/tpacl_prefs_dlg_all_cat_slctd.jpg" BORDER="1"/></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="recommended"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; Recommended commands to assign key-commands to</H2>
+
+<P>After installing and building XBN-PhraseExpress (which includes installing the <A HREF="../xkp.html">XKP</A> and TPKC-projects), you may want to install others. These projects--in addition to depending on all <A HREF="../tpbs.html">TextPad-bootstraps</A> each have their own required TextPad commands. Before these other projects are usable, their <A HREF="#recommended">required commands</A> must be installed (assigned at least one key-command). The following is a list of those non-TPKC projects and phrases, and the built-in TextPad built-in commands they require:<UL>
+	<LI><B><A HREF="../../tasks/snr.html">XBNPE-Search and replace</A> (SNR-project):</B>
+		<BR> &nbsp; &nbsp; <B><FONT SIZE="+2"><CODE>zTPFindFlag[MC,RE,WW][on,off]</CODE></FONT></B>
+		<BR>For example: <CODE>zTPFindFlagMCoff</CODE>. (I use
+		<BR> &nbsp; &nbsp; <CODE>{#insert zASpFF}{#sleep 25}{#insert zMM}{#sleep 5}</CODE>
+		<BR>to turn the MC-flag on (<CODE>&quot;zRR&quot;</CODE> for regex, <CODE>&quot;zWW&quot;</CODE> for whole-word), and
+		<BR> &nbsp; &nbsp; <CODE>{#insert zCASpFF}{#sleep 25}{#insert zMM}{#sleep 5}</CODE>
+		<BR>to turn it off.)</LI>
+	<LI><A HREF="user_cmd_cfg.html#assignkcs4"><CODE>newnbskc</CODE> utility</A> (see &quot;notes&quot;):
+	<BR> &nbsp; &nbsp; <CODE>CharLeftExtend</CODE> (<CODE>zTPSelectL1c</CODE>)</LI>
+</UL></P>
+
+<P><I>Note that each of these commands are already assigned in the TextPad &quot;fresh-install&quot; all-command-list.</I></P>
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="examples"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TextPad all-command-list: Examples</H2>
+
+<P><A HREF="../../../textpad__tpkc/for_v_7_0_9/user_config/jeffy/textpad_all_command_list.txt">My <CODE>tpacl</CODE></A>.</P>
+
+<P>The following is a snippet of the <A HREF="../../../textpad__tpkc/for_v_7_0_9/user_config/tp_frsh_instl/textpad_all_command_list.txt">&quot;TextPad fresh-install&quot; <CODE>tpacl</CODE></A></P>
+
+<P><IMG SRC="images/tpkc_all_cmd_list_for_edit_copy.jpg" BORDER="1"/></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="format"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TP-all-cmd-list: Format</H2>
+
+<P>The top two lines in the TextPad all-command-list are always the header line followed by a blank line:</P>
+
+<PRE STYLE="background-color:#E1E1E1;">COMMANDS:               KEYS:
+&nbsp;</PRE>
+
+<P>Each line below it is one line per-command, in alphabetical order. Which commands are present is dependant on which category was chosen when the <CODE>tpacl</CODE> is printed. (By definition, the <CODE>tpacl</CODE> is only when the <CODE>&quot;All&quot;</CODE> category is selected. See the top of this document for details.)</P>
+
+<P><IMG SRC="images/tpacl_prefs_dlg_all_cat_slctd.jpg" BORDER="1"/></P>
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="maxnbskcs"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TP-all-cmd-list: Requirement: Maximum allowed nbs-kcs per command</H2>
+
+<P>Each command has a maximum-allowable number of <A HREF="../tpbs.html#terminology">Non-BootStrap</A> key-commands that may be assigned to it. This maximum is defined by the TPKC master-configuration-variable <A HREF="master_cfg_vars.html#zTpkcMaxNbsKCsPerCmd"><CODE>zTpkcMaxNbsKCsPerCmd</CODE></A> (note the covenience utility <CODE>&quot;tpaclwarnkccount&quot;</CODE>).</P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="legalkps"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TP-all-cmd-list: Requirement: Legal key-presses</H2>
+
+<P>There are a small number of specific key-commands that will cause the TPKC-project to fail. These key-commands must be eliminated before attempting the <A HREF="index.html#userbuild">TPKC-build-process</A>. While the build-process itself will succeed with illegal key-commands, attempting to actually assign those key-commands will fail, and without any error message or diagnostic information.</P>
+
+<P><I>You do not need to unassign these key-commands in TextPad</I>. Just delete them from your tp-all-cmd-list</P>
+
+<P><B>Convenience utility</B> <I>(<CODE><A HREF="../../devpex/xbnpe_ddmenus.html#xh">xh</A>tk</CODE>)</I>: To validate your tp-all-cmd-list for illegal key-presses, open it and then within it, execute
+<BR> &nbsp; &nbsp; <CODE>tpaclcibkcs</CODE></P>
+
+<P><B>Illegal key-presses</B> &nbsp; &nbsp; <I>(these are all <A HREF="../tpbs2.html#tpkeyphrase">TP-Key-Press[es]</A>)</I><UL>
+	<LI>PhraseExpress cannot input these into the &quot;Press new shortcut key&quot; field <I>(screenshot below)</I>:<UL>
+		<LI><CODE>Break</CODE>*</LI>
+		<LI><CODE>Tab</CODE>*</LI>
+		<LI><CODE>Ctrl+Shift+0</CODE></LI>
+	</UL></LI>
+	<LI>PhraseExpress cannot <I>consistently</I> input these into the &quot;Press new shortcut key&quot; field:<UL>
+		<LI><CODE>Apps</CODE>*</LI>
+		<LI><CODE>Enter</CODE>*</LI>
+		<LI><CODE>&quot;Num 0&quot;</CODE> through <CODE>&quot;Num 9&quot;</CODE></LI>
+	</UL></LI>
+	<LI>PhraseExpress cannot input this key <U>without also opening the help dialog</U>:<UL>
+		<LI><CODE>F1</CODE> &nbsp; &nbsp; <I>(only with <B>no</B> modifiers--with modifiers acceptable)</I></LI>
+	</UL></LI>
+</UL></P>
+
+<P><B><FONT SIZE="+2">*</FONT> With or without <I>any</I> modifiers.</B></P>
+
+<P><IMG SRC="images/prefs_press_new_shortcut_key_field.jpg" BORDER="1"/></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="messy"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; Messy unorganized requirements</H2>
+
+<P><I>These are old but accurate notes. They need to be integrated into the rest of this documentation.</I></P>
+
+<P>Only BUILT-IN commands are recognized. Therefore, only the following nine commands must exist in the file:<UL>
+	<LI>ToolCompareFiles</LI>
+	<LI>ToolExplorer</LI>
+	<LI>ToolHTMLValidate</LI>
+	<LI>ToolRerun</LI>
+	<LI>ToolRun</LI>
+	<LI>ToolSort</LI>
+	<LI>ToolSpell</LI>
+	<LI>ToolStop</LI>
+	<LI>ToolWildEdit</LI>
+</UL><BR>Delete all other commands.</P>
+
+<P>Also note that ALL commands in the 'Tools' category--both in the tools.txt file AND in
+<BR> &nbsp; &nbsp; <CODE>TextPad &gt; Preferences &gt; Keyboard &gt; Categories &gt; Tools</CODE>
+must start with a letter LOWER than 't'. In other words, commands starting with U, V, W, X, Y, or Z MUST not exist. This is critical to the TPKC project to actually working!</P>
+
+<H3>Special notes for 'Macros' category</H3>
+
+<P>Similar to 'tools.txt', 'macros.txt' may only contain the following five commands:<UL>
+	<LI>MacroMultiplay</LI>
+	<LI>MacroPause</LI>
+	<LI>MacroPlay</LI>
+	<LI>MacroRecord</LI>
+	<LI>MacroSave</LI>
+</UL></P>
+
+<P>In addition, your macros MUST not start with an 'M', and your tools MUST not start with ANY of these letters: 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' (in other-words, 'T' and anything that comes AFTER it). Although THIS build process (zTpkcSplitAllListToIndvCatFiles) will not fail--and will not detect this problem--actually assigning your key-commands for the BUILT-IN commands will fail.</P>
+
+<PRE>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</PRE>
+</BODY></HTML>
+
+
+

@@ -1,0 +1,186 @@
+<HTML><HEAD>
+	<TITLE>PhraseExpress: Enhancement requests</TITLE>
+	<meta name="viewport" content="width=device-width" />
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF"><a name="top"></a>
+
+<P>[<A HREF="../index.html#generic">BACK</A>]<CODE> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </CODE><I>(XBN-PhraseExpress is released under the <A HREF="../index.html#lpgl">LPGL 2.1</A>)</I>
+
+<HR/>
+
+<H1>My most important PhraseExpress enhancement requests</H1>
+
+<P>Here are the enhancement requests I consider most important to PhraseExpress development. Many of them would eliminate some of the <A HREF="troubleshooting.html">problems</A> you may encounter.<UL>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#inscount">GO</A></B></FONT>]</CODE> &nbsp; Allow for <CODE>&quot;-count&quot;</CODE> inside <CODE>{#insert ...}</CODE></LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#escapestr">GO</A></B></FONT>]</CODE> &nbsp; Escape strings</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#ltrl">GO</A></B></FONT>]</CODE> &nbsp; Get the un-interpreted code from a phrase</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#strict">GO</A></B></FONT>]</CODE> &nbsp; Optional strict-execution mode</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#inf">GO</A></B></FONT>]</CODE> &nbsp; Handle infinite loops with &quot;max-iteration&quot; config-var</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#ccunfound">GO</A></B></FONT>]</CODE> &nbsp; Color-code unfound phrases, only when explicitely-requested from within in a single phrase</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#cmtmbx">GO</A></B></FONT>]</CODE> &nbsp; Allow comments in a <CODE>MSGBOX</CODE>, <CODE>BALLOON</CODE>, and an <CODE>INSERTFILE</CODE>'s path</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#ascfromchar">GO</A></B></FONT>]</CODE> &nbsp; Get the ascii-code for a provided character</LI>
+</UL></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="inscount"/><H3>[<A HREF="#top">top</A>] &nbsp; Pex enhancement request: Allow for <CODE>&quot;-count&quot;</CODE> inside <CODE>{#insert ...}</CODE></H3>
+
+<P>A very helpful shortcut for
+<BR> &nbsp; &nbsp; <CODE>{#LOOP {#insert zSomePhrase} -count 3}</CODE>
+<BR>would be
+<BR> &nbsp; &nbsp; <CODE>{#insert zSomePhrase -count 3}</CODE>
+<BR>and, ideally, the <A HREF="pex_built_in_functions.html#keypresscount">count parameter would allow variables</A>.</P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="inf"/><H3>[<A HREF="#top">top</A>] &nbsp; Pex enhancement request: Handle infinite loops with &quot;max-iteration&quot; config-var</H3>
+
+<P>Infinite loops (such as when a phrase calls nothing but itself), cause PhraseExpress to crash. The following global settings would alleviate this problem:</P>
+
+<PRE STYLE="background-color:#E1E1E1;">Maximum recursive iterations (set to -1 for no maximum): <B>[<I><U>put-number-here</U></I>]</B>
+   When maximum reached
+      ( ) Stop execution with an error dialog
+      (o) Ask user to either continue or stop execution</PRE>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="escapestr"/><H3>[<A HREF="#top">top</A>] &nbsp; Pex enhancement request: Escape strings</H3>
+
+<P>To prevent the problem of <A HREF="troubleshooting.html#dashparamname">parameter-values containing dash-parameter-names</A>:</P>
+
+<P><CODE STYLE="background-color:#E1E1E1;">{#SUBSTR {#ESCAPESTRING GET-THE-STRING~FROM-HERE~TO-THERE} -from 21 -count 13}</CODE></P>
+
+<P>In addition, it would be nice to have some way to put <A HREF="troubleshooting.html#specialcharsstpcrly">literal curly's into <CODE>SETPHRASE</CODE>-s and <CODE>CLIPBOARD</CODE>-s</A>.</P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="ltrl"/><H3>[<A HREF="#top">top</A>] &nbsp; Pex enhancement request: Get the un-interpreted code from a phrase</H3>
+<H3></H3>
+
+<PRE STYLE="background-color:#E1E1E1;"><B><U>zPrintSomeStuff</U></B>
+   {#insert zPrintAnX}yz</PRE>
+
+<P>Calling
+<BR> &nbsp; &nbsp; <CODE>{#insert zPrintSomeStuff}</CODE>
+<BR>results in <CODE>&quot;xyz&quot;</CODE></P>
+
+<P>There is no current way to display a phrases uninterpreted code.</P>
+
+<P>As someone who develops many phrases <I>that generate other phrases</I> (that is, they print PhraseExpress code into text-files), it would be invaluable to be able call a phrase with</P>
+<P><CODE STYLE="background-color:#E1E1E1;">{#INSERTLITERAL zPrintSomeStuff}</CODE>
+<BR>which would print that phrases <I>source code</I>:
+<BR> &nbsp; &nbsp; <CODE>{#insert zPrintAnX}yz</CODE></P>
+
+<P>A benefit of accessing uninterpreted code, would be to save and then restore the clipboard, for the sake of processes that must temporarily overwrite it. In addition, since I use the Dvorak keyboard layout, it is not possible to use
+<BR> &nbsp; &nbsp; <CODE>{#CLIPBOARD -paste}</CODE>
+<BR>This must be used in its place...
+<BR> &nbsp; &nbsp; <CODE>{#INSERTCLIPBOARD}</CODE>
+<BR>...which is <I>always interpreted</I>--it's a big headache.</P>
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="strict"/><H3>[<A HREF="#top">top</A>] &nbsp; Pex enhancement request: Optional strict-execution mode</H3>
+
+<P>Easily the biggest help from a debugging point of view, would be the ability to <I>immediately fail</I> when a called-phrase is not found, with a modal dialog containing diagnostic information, and a button to go directly to the <A HREF="#ccunfound">phrase containing the problem-call</A>.</P>
+
+<P>I see this being implemented in two ways.</P>
+
+<H3>Global setting, local override</H3>
+
+<P>This implementation is only possible if it would not result in dramatic slowdown. If it could indeed be fast, then I would personally always turn it on (<CODE>&quot;strict=yes&quot;</CODE>).</P>
+
+<P>This strictness would be overridable <I>only from within <B>individual</B> phrase-calls</I>:
+<BR> &nbsp; &nbsp; <CODE>{#insert -nostrict zPhraseThatMayOrMayNotExist}</CODE></P>
+
+<H3>Local setting only</H3>
+
+<P>If the global implementation is not possible (or is simply set to <CODE>&quot;strict=no&quot;</CODE>), then strictness could be turned on in a single phrase, by placing these at the beginning and end:
+<BR> &nbsp; &nbsp; <CODE>{#STRICT -on}</CODE>
+<BR>or
+<BR> &nbsp; &nbsp; <CODE>{#STRICT -off}</CODE></P>
+
+<P>(Placing these permanently in numerous phrases would result in this mode being turned on and off uncontrollably.)</P>
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="ccunfound"/><H3>[<A HREF="#top">top</A>] &nbsp; Pex enhancement request: Color-code unfound phrases, only when explicitely-requested from within in a single phrase</H3>
+
+<P>This is secondary, although very complementary to the request for <A HREF="#strict">strict mode</A>.</P>
+
+<P>When in PhraseExpress and viewing a <I>single</I> phrase, I wish I could push a <CODE>&quot;[Validate Calls]&quot;</CODE> button, which would run through all this phrases code. If any call is referring to a phrase that does not exist, it would be highlighted it in a bright and configurable color.</P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="cmtmbx"/><H3>[<A HREF="#top">top</A>] &nbsp; Pex enhancement request: Allow comments in a <CODE>MSGBOX</CODE>, <CODE>BALLOON</CODE>, and an <CODE>INSERTFILE</CODE>'s path</H3>
+
+<P>Currently, when a comment is part of the <CODE>&quot;-text&quot;</CODE> field, in either a <CODE>MSGBOX</CODE> or <CODE>BALLOON</CODE>, it is literally-displayed.</P>
+
+<P><CODE STYLE="background-color:#E1E1E1;">{#MSGBOX -head Hello -text Hello there (*A comment*)}</CODE></P>
+
+<P><IMG SRC="images/mbx_with_cmt.jpg" BORDER="1"/></P>
+
+<P>Displaying comments literally severely limits the ability to document your code, especially when the contents being displayed happen to multiple phrase-calls deep.</P>
+
+<P>In addition, comments anywhere in the path of an <CODE><A HREF="pex_built_in_functions.html#insertfile">INSERTFILE</A></CODE> prevents the file from being read.</P>
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="ascfromchar"/><H3>[<A HREF="#ascfromchar">BACK</A>] &nbsp; Get the ascii-code for a provided character</H3>
+
+<P>Given a specific character, it would be useful to automatically get its acsii-code returned. For example:</P>
+
+<PRE STYLE="background-color:#E1E1E1;">{#COND -if {#asc 69} = {#ASCFORCHAR E}
+   -then Same character
+   -else Different character}</PRE>
+
+<PRE>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</PRE>
+</BODY></HTML>
+
+
+

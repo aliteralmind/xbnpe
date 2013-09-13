@@ -1,7 +1,0 @@
-(*
-   The phrases in this file print some letters
-*)
-zPrintAnX -- Prints a lowercase 'x'	x	zPrintAnX
-
-zPrintAY -- Prints a lowercase 'y'	y	zPrintAY
-zPrintNYs -- Prints one-or-more 'y's (user prompt)	{#LOOP y -count {#INPUT -head How many y-s? -single}}	zPrintAY

@@ -1,0 +1,176 @@
+<!--xcffile=1/z_qbl_doc_examples/_qbldoctestall-->
+<HTML><HEAD>
+	<TITLE>XBNPE: QB-List</TITLE>
+	<meta name="viewport" content="width=device-width" />
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF"><a name="top"></a>
+
+<P>[<A HREF="../index.html#tasks">BACK</A>]<CODE> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </CODE><I>(XBN-PhraseExpress is released under the <A HREF="../index.html#lpgl">LPGL 2.1</A>)</I>
+
+<HR/>
+
+<H1>XBNPE-SNR: sQuare-Bracketed Lists (QBL)</H2>
+
+<P>A sQuare-Bracketed List (qb-list, or &quot;qbl&quot;), is a PhraseExpress plain-text string-iterator. For a list of all available qbl-functions, see <CODE>&quot;<A HREF="../devpex/xbnpe_ddmenus.html#xh">xh</A>skq&quot;</CODE>. To see a demonstration of qb-lists, use <CODE>&quot;qbldemo&quot;</CODE></P>
+
+<P><B>Contents:</B><UL>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#basic">GO</A></B></FONT>]</CODE> &nbsp; A basic example</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#length">GO</A></B></FONT>]</CODE> &nbsp; Determining and storing qbl-length</LI>
+	<LI><B>Sorting and line-lists:</B><UL>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#lltoqbl">GO</A></B></FONT>]</CODE> &nbsp; <CODE>lltoqbl</CODE></LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#qbltoll">GO</A></B></FONT>]</CODE> &nbsp; <CODE>qbltoll</CODE></LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#sortqblstar">GO</A></B></FONT>]</CODE> &nbsp; <CODE>sortqbl[cb[n],doc]</CODE></LI>
+	</UL></LI>
+</UL></P>
+
+
+<P><I>The examples in this document are <A HREF="../index.html#tasks">live</A>. Here is the <A HREF="z_qbl_doc_examples.px.txt">phrase-file</A> containing the example.</I></P>
+
+<H4>Two warnings</H4>
+
+<P><OL>
+	<LI>QBL's are only usable for <I>static strings only</I> (strings that contain no PhraseExpress code, whether escaped or not). Every time a qbl is extracted from or accessed in any way, its entire contents are <I>interpreted</I>. This makes it effectively impossible for qbl-s to hold anything but static strings.</LI>
+	<LI>QBL extraction is slow. It is best suited for situations where each list-item has significant process done on it.</LI>
+</OL></P>
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="basic"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; &nbsp; QB-Lists: A basic example</H2>
+
+<P>A simple qb-list:</P>
+
+<P><CODE STYLE="background-color:#E1E1E1;">[one][two][three][four][five][six][seven][eight]</CODE></P>
+
+<P>A simple iterator:</P>
+
+<PRE STYLE="background-color:#E1E1E1;"><!--xcfexample...START  //  dq1quotient:{#ENTER}--><B><U>dq1quotient</U></B>
+(*Input:*)
+   {#SETPHRASE -description zvDIVIDEND_TOP -content 65 -autotext zvDIVIDEND_TOP -folder ctvv_folder}
+   {#SETPHRASE -description zvDIVISOR_BTM -content 10 -autotext zvDIVISOR_BTM -folder ctvv_folder}
+(*Go:*)
+   {#insert <B>zQuotient_M_divisorDividend</B>}
+(*Output:*)
+   {#insert zvDIVIDEND_TOP}/{#insert zvDIVISOR_BTM}={#insert zvQUOTIENT}<!--xcfexample...END  //  {#ENTER}--></PRE>
+
+<P>Its output:</P>
+
+<PRE STYLE="background-color:#E1E1E1;">one
+two
+three
+four
+five
+six
+seven
+eight</PRE>
+
+<P>Notes:<OL>
+	<LI>On the first iteration, <CODE>zExtrElimSetStrSetQBL_M_qbl</CODE> sets<UL>
+		<LI><B><CODE>zvQB_STRING</CODE>:</B> to <CODE>&quot;[one]&quot;</CODE></LI>
+		<LI><B><CODE>zvSTRING</CODE>:</B> to <CODE>&quot;one&quot;</CODE></LI>
+		<LI><B><CODE>zvQB_STR_LIST</CODE>:</B> to <CODE>&quot;[two][three][four][five][six][seven][eight]&quot;</CODE></LI>
+	</UL></LI>
+	<LI><CODE>zQblLenFromSelf_M_qbl</CODE> is the <I>current</I> length of the qbl. Since, in this example, <CODE>zQblLenFromSelf_M_qbl</CODE> is only called before the first extraction, it is appropriate.</LI>
+</OL></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="lltoqbl"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> QBL sorting utilities and qbl-to-line-list transnformation</H2>
+
+<H2><CODE>lltoqbl</CODE></H2>
+
+<P>When the <I>entire</I> contents of a document is nothing but the <I>body</I> of a sQuare-Bracketed List, such as
+<BR> &nbsp; &nbsp; <CODE>[one][two][three][four][five][six][seven][eight]</CODE>
+<BR>(meaning <I>nothing</I> else is in the document, no empty lines or whitespace, nor the qbl's phrase-name), then use <CODE>&quot;<B>qbltoll</B>&quot;</CODE> to transform it to a &quot;line-list&quot;:</P>
+
+<PRE STYLE="background-color:#E1E1E1;">one
+two
+three
+four
+five
+six
+seven
+eight</PRE>
+
+<A NAME="qbltoll"/><H2><CODE>[<A HREF="#lltoqbl">BACK</A>]</CODE> &nbsp; QBL sorting utility: <CODE>qbltoll</CODE></H2 >
+
+<P>Does the opposite of <CODE>lltoqbl</CODE>. It takes a document containing <I>only</I> a line-list of static strings (no whitespace or blank lines--unless you want that whitespace in the qbl itself)...</P>
+
+<PRE STYLE="background-color:#E1E1E1;">one
+two
+three
+four
+five
+six
+seven
+eight</PRE>
+
+<P>...and creates a qbl from it:
+<BR> &nbsp; &nbsp; <CODE>[one][two][three][four][five][six][seven][eight]</CODE></P>
+
+<A NAME="sortqblstar"/><H2><CODE>[<A HREF="#lltoqbl">BACK</A>]</CODE> &nbsp; QBL sorting utilities: <CODE>sortqbl[cb[n],doc]</CODE></H2>
+
+<P>Generally speaking, <CODE>&quot;sortqbl*&quot;</CODE> executes <CODE>qbltoll</CODE>, and then <CODE>lltoqbl</CODE>. There are three variations:<UL>
+	<LI><B><CODE>sortqbldoc</CODE>:</B> Sorts a qbl that is the <I>only</I> text in a document (only its phrase-body, not any whitespace, empty lines, or its phrase-name).</LI>
+	<LI><B><CODE>sortqblcb</CODE>:</B> Sorts a qbl whose phrase-body is in the clipboard.</LI>
+	<LI><B><CODE>sortqblcbn</CODE>:</B> Sorts a qbl whose phrase-<I>name</I> is in the clipboard. Both this and <CODE>sortqblcb</CODE> open a temporary new document.</LI>
+</UL></P>
+
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="length"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; &nbsp; QBL: Determining and storing length</H2>
+
+<H3><CODE>zQblLenFromSelf_M_qbl</CODE></H3>
+
+<P>Obtains the <I>current</I> length from <CODE>zvQB_STR_LIST</CODE>. This is determined by replacing all open brackets (<CODE>&quot;[&quot;</CODE>) with <I>nothing</I>, and then comparing the original length with the new. Note that the qb-list remains untouched.</P>
+
+<H3><CODE>zvQBL_LENGTH</CODE></H3>
+
+<P>When the <I>original</I> qbl-length is needed after the first extraction occurs, use the following instead of <CODE>zQblLenFromSelf_M_qbl</CODE>:<UL>
+	<LI><B><CODE>zvQBL_LENGTH_stCurrSelfLen</CODE>:</B> Sets the variable <CODE>zvQBL_LENGTH</CODE> to the current length of <CODE>zvQB_STR_LIST</CODE></LI>
+	<LI><B><CODE>zvQBL_LENGTH_addCurrSelfLen</CODE>:</B> Adds the current-list's length.</LI>
+</UL></P>
+<PRE>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</PRE>
+</BODY></HTML>
+
+
+
