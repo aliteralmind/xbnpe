@@ -1,0 +1,238 @@
+
+
+<HTML><HEAD>
+	<TITLE></TITLE>
+	<meta name="viewport" content="width=device-width" />
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF">
+
+<a name="install"/><H2><CODE>[<A HREF="tpbs.html">top</A>] &nbsp; <B>[PREV -- <A HREF="#install2">NEXT</A>]</B></CODE> &nbsp; &nbsp; Installing all TextPad-bootstraps: Step-by-step</H2>
+
+<P>This section describes how install TextPad bootstraps <I>and</I> the <A HREF="tpbs.html#terminology">nbs-commands</A> as required by the XBNPE-Search and replace (<A HREF="../tasks/snr.html">SNR</A>) project (the <CODE>&quot;Clear&quot;</CODE> and <CODE>&quot;Set&quot;</CODE> commands).</P>
+
+<P><I>This and the next three steps are also used to prepare for a TPKC <A HREF="tpkc/tpkc_user_dir.html#remoterequest">remote-build request</A>.</I></P>
+
+<P><A HREF="tpkc/tpacl.html">Print out</A> the TextPad all-command-list (there's no need to save it at this time).</P>
+
+<P>Mark all lines containing TextPad-bootstraps (and SNR-required commands):<OL>
+	<LI>Open the find dialog</LI>
+	<LI>Check <CODE>&quot;Regular expression&quot;</CODE></LI>
+	<LI>Put this regex into the find-what field:
+	<BR> &nbsp; &nbsp; <CODE>^(BookmarkNext|BookmarkToggle|DocumentStart|EditCopy|EditCopyTaggedLines|EditCut|EditCutTaggedLines|EditDupLine|EditPaste|FileClose|FileManage|FileNew|FileOpen|FileQuickOpen|FileSave|MatchCaseClear|MatchCaseSet|MatchWordClear|MatchWordSet|Preferences|RegexClear|RegexSet|SearchFiles|SearchFind|SearchFindNext|SearchGoto|SearchReplace|SelectAll|ToggleWordWrap|WordLeftExtend|WordRightEnd|WordRightEndExtend)\b</CODE></LI>
+	<LI>Press the <CODE>[Mark All]</CODE> button</LI>
+	<LI>Close the find-dialog</LI>
+	<LI>Copy all bookmarks with
+	<BR> &nbsp; &nbsp; <CODE>TextPad &gt; Edit &gt; Copy Other &gt; Bookmarked lines</CODE></LI>
+	<LI>Close the document</LI>
+	<LI>Paste the lines into a new document.</LI>
+</OL></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="install2"/><H2><B><CODE>[<A HREF="#install">BACK</A>] &nbsp; [<A HREF="#install">PREV</A> -- <A HREF="#install3">NEXT</A>]</CODE></B> &nbsp; &nbsp; Installing all TextPad-bootstraps: Step-by-step</H2>
+
+<P>If the previous step is done immediately after installing TextPad, below is the result. Notice there are twelve commands that have no key-commands.</P>
+
+<PRE STYLE="background-color:#E1E1E1;">BookmarkNext            F2
+BookmarkToggle          Ctrl+F2
+DocumentStart           Ctrl+Home
+EditCopy                Ctrl+C                  Ctrl+Insert
+EditCopyTaggedLines
+EditCut                 Shift+Delete            Ctrl+X
+EditCutTaggedLines
+EditDupLine
+EditPaste               Ctrl+V                  Shift+Insert
+FileClose
+FileManage              F3
+FileNew                 Ctrl+N
+FileOpen                Ctrl+O
+FileQuickOpen           Ctrl+Shift+O
+FileSave                Ctrl+S
+MatchCaseClear
+MatchCaseSet
+MatchWordClear
+MatchWordSet
+Preferences             Ctrl+Q, P
+RegexClear
+RegexSet
+SearchFiles             Ctrl+F5
+SearchFind              F5
+SearchFindNext          Ctrl+F
+SearchGoto              Ctrl+G
+SearchReplace           F8
+SelectAll               Ctrl+A
+ToggleWordWrap          Ctrl+Q, W
+WordLeftExtend          Ctrl+Shift+B            Ctrl+Shift+Left
+WordRightEnd
+WordRightEndExtend</PRE>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="install3"/><H2><B><CODE>[<A HREF="#install">BACK</A>] &nbsp; [<A HREF="#install2">PREV</A> -- <A HREF="#install4">NEXT</A>]</CODE></B> &nbsp; &nbsp; Installing all TextPad-bootstraps: Step-by-step</H2>
+
+<P>Each unassigned command must be given at least one key-command in
+<BR> &nbsp; &nbsp; <CODE>TextPad &gt; Configure &gt; Preferences &gt; Keyboard</CODE></P>
+
+<P>Here they are ordered by category:<UL>
+	<LI><B>File:</B> <CODE>FileClose</CODE>, <CODE>FileManage</CODE>, <CODE>FileNew</CODE>, <CODE>FileOpen</CODE>, <CODE>FileQuickOpen</CODE>, <CODE>FileSave</CODE></LI>
+	<LI><B>Edit:</B> <CODE>EditCopy</CODE>, <CODE>EditCopyTaggedLines</CODE>, <CODE>EditCut</CODE>, <CODE>EditCutTaggedLines</CODE>, <CODE>EditDupLine</CODE>, <CODE>EditPaste</CODE></LI>
+	<LI><B>Search:</B> <CODE>BookmarkNext</CODE>, <CODE>BookmarkToggle</CODE>, <CODE>MatchCaseClear</CODE>, <CODE>MatchCaseSet</CODE>, <CODE>MatchWordClear</CODE>, <CODE>MatchWordSet</CODE>, <CODE>RegexClear</CODE>, <CODE>RegexSet</CODE>, <CODE>SearchFiles</CODE>, <CODE>SearchFind</CODE>, <CODE>SearchFindNext</CODE>, <CODE>SearchGoto</CODE>, <CODE>SearchReplace</CODE>, </LI>
+	<LI><B>Configure:</B> <CODE>Preferences</CODE>, <CODE>ToggleWordWrap</CODE></LI>
+	<LI><B>Cursor:</B> <CODE>DocumentStart</CODE>, <CODE>WordLeftExtend</CODE>, <CODE>WordRightEnd</CODE>, <CODE>WordRightEndExtend</CODE></LI>
+	<LI><B>Selection:</B> <CODE>SelectAll</CODE></LI>
+</UL>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="install4"/><H2><B><CODE>[<A HREF="#install">BACK</A>] &nbsp; [<A HREF="#install3">PREV</A> -- NEXT]</CODE></B> &nbsp; &nbsp; Installing all TextPad-bootstraps: Step-by-step</H2>
+
+<P>If you are preparing for a remote-build request, <A HREF="tpkc/tpkc_user_dir.html#rr2">proceed here</A>.</P>
+
+<P>If you are installing TextPad-bootstraps, <A HREF="#install5">proceed here</A>.
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="install5"/><H2><B><CODE>[<A HREF="#install">BACK</A>] &nbsp; [<A HREF="#install4">PREV</A> -- <A HREF="#install6">NEXT</A>]</CODE></B> &nbsp; &nbsp; Installing all TextPad-bootstraps: Step-by-step</H2>
+
+<H3>Create TextPad-bootstrap phrases for the XKP-project</H3>
+
+<P>Reprint your TextPad all-command-list (by repeating the first three steps: <A HREF="#install">one</A>, <A HREF="#install2">two</A>, <A HREF="#install3">three</A>), but use this regex to only mark <A HREF="xkp.html#tpbs">TextPad-bootstraps in the XKP-project</A>:
+<BR> &nbsp; &nbsp; <CODE>^(EditCopy|EditCut|EditDupLine|FileClose|FileNew|FileSave|DocumentStart|WordRightEnd|EditPaste|SelectAll|WordLeftExtend|WordRightEndExtend|ToggleWordWrap)\b
+</CODE>
+<BR>Here is the result from the <CODE><A HREF="tpkc/tpkc_user_dir.html#tudn">&quot;tp_frsh_instl&quot;</A></CODE> tp-all-cmd-list (see the bottom of the linked section):</P>
+
+<PRE STYLE="background-color:#E1E1E1;">DocumentStart           Ctrl+Home
+EditCopy                Ctrl+C                  Ctrl+Insert
+EditCut                 Shift+Delete            Ctrl+X
+EditDupLine             Ctrl+Shift+Alt+K
+EditPaste               Ctrl+V                  Shift+Insert
+FileClose               Alt+W
+FileNew                 Ctrl+N
+FileSave                Ctrl+S
+SelectAll               Ctrl+A
+ToggleWordWrap          Ctrl+Q, W
+WordLeftExtend          Ctrl+Shift+B            Ctrl+Shift+Left
+WordRightEnd            Alt+Right
+WordRightEndExtend      Shift+Alt+Right</PRE>
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="install6"/><H2><B><CODE>[<A HREF="#install">BACK</A>] &nbsp; [<A HREF="#install5">PREV</A> -- <A HREF="#install7">NEXT</A>]</CODE></B> &nbsp; &nbsp; Installing all TextPad-bootstraps: Step-by-step</H2>
+
+<H3>Create TextPad-bootstrap phrases for the XKP-project</H3>
+
+<P><OL>
+	<LI>For each of these commands, choose its <A HREF="tpbs.html#terminology">primary key-command</A>. That is, delete all key-commands but the one you consider the &quot;best&quot;. All remaining key-commands (the nbs-kcs) are processed at a later time.</LI>
+	<LI>Using this list as a guide (example below), translate each command into a TextPad-bootstrap, by creating its <A HREF="tpbs.html#format">three phrases</A>. <I><B>Duplicate</B></I> and save these phrase-files to your root TPKC-user-directory (<A HREF="tpbs.html#locations">locations</A>)--do not edit the phrase-files until they are in <I>your</I> user-directory. <I>Note the <CODE>&quot;tp_frsh_instl&quot;</CODE> and &quot;blank template&quot; file-sets to get you started (choose one or the other, whichever works best given your key-command setup).</I></LI>
+	<LI>As noted in the <A HREF="tpbs_format.html#mainp">main phrase</A>, the XKP project requires <A HREF="xkp.html#rawpexkc">&quot;raw&quot; PhraseExpress key-presses</A>.</LI>
+</OL></P>
+
+
+<PRE STYLE="background-color:#E1E1E1;">DocumentStart           Ctrl+Home
+EditCopy                Ctrl+C
+EditCut                 Ctrl+X
+EditDupLine             Ctrl+Shift+Alt+K
+EditPaste               Ctrl+V
+FileClose               Alt+W
+FileNew                 Ctrl+N
+FileSave                Ctrl+S
+SelectAll               Ctrl+A
+ToggleWordWrap          Ctrl+Q, W
+WordLeftExtend          Ctrl+Shift+Left
+WordRightEnd            Alt+Right
+WordRightEndExtend      Shift+Alt+Right</PRE>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="install7"/><H2><B><CODE>[<A HREF="#install">BACK</A>] &nbsp; [<A HREF="#install6">PREV</A> -- <A HREF="#install8">NEXT</A>]</CODE></B> &nbsp; &nbsp; Installing all TextPad-bootstraps: Step-by-step</H2>
+
+<H3>Creating the TextPad-bootstraps for the TPKC-project</H3>
+
+<P>Repeat the steps for tp-bootstraps as required by the TPKC-project. Here is the regex to mark all lines:
+<BR> &nbsp; &nbsp; <CODE>^(EditCopyTaggedLines|EditCutTaggedLines|BookmarkNext|BookmarkToggle|SearchFiles|FileManage|FileOpen|FileQuickOpen|SearchFind|SearchFindNext|SearchGoto|Preferences|SearchReplace)\b</CODE>
+<BR>As described in the <A HREF="tpbs_format.html#mainp">main-phrase</A>, TPKC-bootstraps must have <A HREF="xkp.html">x-key-presses</A>.</P>
+
+<PRE STYLE="background-color:#E1E1E1;">BookmarkNext            F2
+BookmarkToggle          Ctrl+F2
+EditCopyTaggedLines     Ctrl+Shift+Alt+.
+EditCutTaggedLines      Ctrl+Shift+Alt+,
+FileManage              F3
+FileOpen                Ctrl+O
+FileQuickOpen           Ctrl+Shift+O
+Preferences             Ctrl+Q, P
+SearchFiles             Ctrl+F5
+SearchFind              F5
+SearchFindNext          Ctrl+F
+SearchGoto              Ctrl+G
+SearchReplace           F8</PRE>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="install8"/><H2><B><CODE>[<A HREF="#install">BACK</A>] &nbsp; [<A HREF="#install7">PREV</A> -- NEXT]</CODE></B> &nbsp; &nbsp; Installing all TextPad-bootstraps: Step-by-step</H2>
+
+<P>Import the four bootstrap phrase-files to your TPKC-user-directory in PhraseExpress (<A HREF="tpbs.html#locations">locations</A>).</P>
+
+<P>Test all TextPad-bootstraps by executing the <A HREF="tpbs.html#utilities">utility</A>
+<BR> &nbsp; &nbsp; <CODE>testtpbsxkptpkc</CODE>
+<BR>Follow the instructions carefully.</P>
+
+<H1>DONE.</H1>
+
+
+<PRE>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</PRE>
+</BODY></HTML>
+
+
+

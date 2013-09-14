@@ -21,7 +21,7 @@
 		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#maxnbskcs">GO</A></B></FONT>]</CODE> &nbsp; Requirement: Maximum allowed nbs-kcs per command</LI>
 		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#legalkps">GO</A></B></FONT>]</CODE> &nbsp; Requirement: Legal key-presses</LI>
 		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#recommended">GO</A></B></FONT>]</CODE> &nbsp; Recommended commands to assign key-commands to</LI>
-		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#messy">GO</A></B></FONT>]</CODE> &nbsp; Messy unorganized requirements</LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#usercreated">GO</A></B></FONT>]</CODE> &nbsp; Requirement: User-created macros and tools</LI>
 	</UL></LI>
 </UL></P>
 
@@ -36,7 +36,7 @@
 
 <P>(By definition, the TextPad all-command-list is created only when selecting the <CODE>&quot;All&quot;</CODE> category.)</P>
 
-<P><IMG SRC="images/tpacl_prefs_dlg_all_cat_slctd.jpg" BORDER="1"/></P>
+<P><IMG SRC="../../images/basics/tpkc/tpacl_prefs_dlg_all_cat_slctd.jpg" BORDER="1"/></P>
 
 <PRE>
 
@@ -71,7 +71,7 @@
 
 <P>The following is a snippet of the <A HREF="../../../textpad__tpkc/for_v_7_0_9/user_config/tp_frsh_instl/textpad_all_command_list.txt">&quot;TextPad fresh-install&quot; <CODE>tpacl</CODE></A></P>
 
-<P><IMG SRC="images/tpkc_all_cmd_list_for_edit_copy.jpg" BORDER="1"/></P>
+<P><IMG SRC="../../images/basics/tpkc/tpkc_all_cmd_list_for_edit_copy.jpg" BORDER="1"/></P>
 
 <PRE>
 
@@ -87,7 +87,7 @@
 
 <P>Each line below it is one line per-command, in alphabetical order. Which commands are present is dependant on which category was chosen when the <CODE>tpacl</CODE> is printed. (By definition, the <CODE>tpacl</CODE> is only when the <CODE>&quot;All&quot;</CODE> category is selected. See the top of this document for details.)</P>
 
-<P><IMG SRC="images/tpacl_prefs_dlg_all_cat_slctd.jpg" BORDER="1"/></P>
+<P><IMG SRC="../../images/basics/tpkc/tpacl_prefs_dlg_all_cat_slctd.jpg" BORDER="1"/></P>
 
 
 <PRE>
@@ -113,7 +113,7 @@
 <P><B>Convenience utility</B> <I>(<CODE><A HREF="../../devpex/xbnpe_ddmenus.html#xh">xh</A>tk</CODE>)</I>: To validate your tp-all-cmd-list for illegal key-presses, open it and then within it, execute
 <BR> &nbsp; &nbsp; <CODE>tpaclcibkcs</CODE></P>
 
-<P><B>Illegal key-presses</B> &nbsp; &nbsp; <I>(these are all <A HREF="../tpbs2.html#tpkeyphrase">TP-Key-Press[es]</A>)</I><UL>
+<P><B>Illegal key-presses</B> &nbsp; &nbsp; <I>(these are all <A HREF="../tpbs_format.html#tpkp">TP-Key-Press[es]</A>)</I><UL>
 	<LI>PhraseExpress cannot input these into the &quot;Press new shortcut key&quot; field <I>(screenshot below)</I>:<UL>
 		<LI><CODE>Break</CODE>*</LI>
 		<LI><CODE>Tab</CODE>*</LI>
@@ -131,18 +131,16 @@
 
 <P><B><FONT SIZE="+2">*</FONT> With or without <I>any</I> modifiers.</B></P>
 
-<P><IMG SRC="images/prefs_press_new_shortcut_key_field.jpg" BORDER="1"/></P>
+<P><IMG SRC="../../images/basics/tpkc/prefs_press_new_shortcut_key_field.jpg" BORDER="1"/></P>
 
 <PRE>
 
 <HR/>
 
 </PRE>
-<A NAME="messy"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; Messy unorganized requirements</H2>
+<A NAME="usercreated"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; Requirement: User-created macros and tools</H2>
 
-<P><I>These are old but accurate notes. They need to be integrated into the rest of this documentation.</I></P>
-
-<P>Only BUILT-IN commands are recognized. Therefore, only the following nine commands must exist in the file:<UL>
+<P>The TPKC-project only recognizes built-in commands (not user-created macros or tools, nor example macros or tools, as exist when TextPad is first installed). Therefore, only the following nine commands are recognized:<UL>
 	<LI>ToolCompareFiles</LI>
 	<LI>ToolExplorer</LI>
 	<LI>ToolHTMLValidate</LI>
@@ -152,15 +150,11 @@
 	<LI>ToolSpell</LI>
 	<LI>ToolStop</LI>
 	<LI>ToolWildEdit</LI>
-</UL><BR>Delete all other commands.</P>
+</UL></P>
 
-<P>Also note that ALL commands in the 'Tools' category--both in the tools.txt file AND in
-<BR> &nbsp; &nbsp; <CODE>TextPad &gt; Preferences &gt; Keyboard &gt; Categories &gt; Tools</CODE>
-must start with a letter LOWER than 't'. In other words, commands starting with U, V, W, X, Y, or Z MUST not exist. This is critical to the TPKC project to actually working!</P>
+<P>In addition, user-created tools must start with a letter lower than <CODE>'t'</CODE>--not <CODE>'t'</CODE> through <CODE>'z'</CODE>.</P>
 
-<H3>Special notes for 'Macros' category</H3>
-
-<P>Similar to 'tools.txt', 'macros.txt' may only contain the following five commands:<UL>
+<P>Similar to the Tools category, only these five Macro-category commands are recognized:<UL>
 	<LI>MacroMultiplay</LI>
 	<LI>MacroPause</LI>
 	<LI>MacroPlay</LI>
@@ -168,8 +162,9 @@ must start with a letter LOWER than 't'. In other words, commands starting with 
 	<LI>MacroSave</LI>
 </UL></P>
 
-<P>In addition, your macros MUST not start with an 'M', and your tools MUST not start with ANY of these letters: 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' (in other-words, 'T' and anything that comes AFTER it). Although THIS build process (zTpkcSplitAllListToIndvCatFiles) will not fail--and will not detect this problem--actually assigning your key-commands for the BUILT-IN commands will fail.</P>
+<P>In addition, the names of your user-created macros may not start with an <CODE>'m'</CODE>.</P>
 
+<P>Finally, the names of both user-created tools and macros may not match any of <A HREF="../../../textpad__tpkc/for_v_7_0_9/documentation_and_scripts/_all_matching_lines_for_each_cat_in_all_cmd_all_cat_file.txt">these regular expressions</A> (as described by <A HREF="sub_build_proc2.html#11">sub-build-proc-11</A>). While the TPKC-build-process will succeed, <A HREF="user_menu2.html#tpkcumak1c">assigning key-commands</A> will fail.</P>
 <PRE>
 
 

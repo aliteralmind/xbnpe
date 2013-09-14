@@ -85,15 +85,15 @@ is <CODE>3</CODE>, then the following must exist:<UL>
 <A NAME="assignkcs"/><H2><CODE>[<A HREF="#top">top</A> -- PREV / <A HREF="#assignkcs2">NEXT</A>]</CODE> &nbsp; Assigning a new key-command via user-command-configuration: Step-by-step</H2>
 
 <P>This section describes how to install a TextPad command<OL>
-	<LI>after all <A HREF="../tpbs.html">TextPad-bootstraps</A> have been <A HREF="../tpbs.html#install">installed</A>,</LI>
+	<LI>after all <A HREF="../tpbs.html">TextPad-bootstraps</A> have been <A HREF="../tpbs_install.html">installed</A>,</LI>
 	<LI>and the TPKC-project is fully built.</LI>
 </OL></P>
 
 <P>As an example, these instructions assign the command
 <BR> &nbsp; &nbsp; <CODE>Cursor &gt; PageDown</CODE>
 <BR>to this key-command
-<BR> &nbsp; &nbsp; <A HREF="../xkp.html#1mod"><CODE>zCpPGDN</CODE></A>
-<BR>which is the is the <A HREF="../xkp.html">x-key-press</A> equivalent of the <A HREF="../tpbs2.html#tpkp">TextPad key-press</A>
+<BR> &nbsp; &nbsp; <A HREF="../xkp_zup.html#1mod"><CODE>zCpPGDN</CODE></A>
+<BR>which is the is the <A HREF="../xkp.html">x-key-press</A> equivalent of the <A HREF="../tpbs_format.html#tpkp">TextPad key-press</A>
 <BR> &nbsp; &nbsp; <CODE>Ctrl+Pgdown</CODE></P>
 
 <P>Further, this section also assumes that there is already one key-command assigned to it:
@@ -109,7 +109,7 @@ is <CODE>3</CODE>, then the following must exist:<UL>
 <BR> &nbsp; &nbsp; <CODE>Textpad &gt; Configure &gt; Preferences &gt; Keyboard &gt; Categories &gt; &quot;<U>Cursor</U>&quot; &gt; Commands &gt; &quot;<U>PageDown</U>&quot;</CODE>
 <BR>and type the key-command into the &quot;Press new shortcut key&quot; field.</P>
 
-<P><IMG SRC="images/assign_kc_sbs_pagedown_in_prefs_unassigned.jpg" BORDER="1"/></P>
+<P><IMG SRC="../../images/basics/tpkc/assign_kc_sbs_pagedown_in_prefs_unassigned.jpg" BORDER="1"/></P>
 
 <PRE>
 
@@ -120,7 +120,7 @@ is <CODE>3</CODE>, then the following must exist:<UL>
 
 <P>Press the <CODE>[Assign]</CODE> button. Now the key-command is listed in the &quot;Current keys&quot; list-box. To commit this change, press the <CODE>[OK]</CODE> button, which also dismisses the Preferences dialog. (To commit this change to the Windows registry, close and then re-open TextPad.)</P>
 
-<P><IMG SRC="images/assign_kc_sbs_pagedown_in_prefs_assigned.jpg" BORDER="1"/></P>
+<P><IMG SRC="../../images/basics/tpkc/assign_kc_sbs_pagedown_in_prefs_assigned.jpg" BORDER="1"/></P>
 
 <PRE>
 
@@ -136,11 +136,11 @@ is <CODE>3</CODE>, then the following must exist:<UL>
 <P><B>Notes:</B><UL>
 	<LI>These phrases are <A HREF="../../devpex/c2pl.html#one">compressed</A> and ready-for-import.</LI>
 	<LI>This phrase-file is originally created by the <A HREF="index.html#userbuild01">first TPKC build-process</A>.</LI>
-	<LI>This key-command must be unique among all TextPad built-in commands. There is no automated way to enforce this. However, there are numerous <A HREF="user_menu.html#tpkcumakcdt">debugging tools</A> to help you diagnose conflicts.</LI>
+	<LI>This key-command must be unique among all TextPad built-in commands. There is no automated way to enforce this. However, there are numerous <A HREF="user_menu2.html#tpkcumakcdt">debugging tools</A> to help you diagnose conflicts.</LI>
 </UL></P>
 
 <H1>TODO: Update this to reflect Ctrl+Pgdown as SECOND kc.....**WITH** ending-sleep, right?!</H1>
-<P><IMG SRC="images/assign_kc_sbs_pagedown_cursor_usr_cfg_file.jpg" BORDER="1"/></P>
+<P><IMG SRC="../../images/basics/tpkc/assign_kc_sbs_pagedown_cursor_usr_cfg_file.jpg" BORDER="1"/></P>
 
 <PRE>
 
@@ -156,7 +156,7 @@ is <CODE>3</CODE>, then the following must exist:<UL>
 </P>
 
 <P>And create its new <A HREF="#NbsKcEscNum">nbs-key-command phrase</A>:
-<BR> &nbsp; &nbsp; <CODE>zTpkcPageDownNbsKcEsc2	\\\{#insert <A HREF="../xkp.html#1mod">zCpPGDN</A>\\\}\\\{#sleep 10\\\}	zTpkcPageDownNbsKcEsc2</CODE><BR>The convenience utility <I>(<CODE><A HREF="../../devpex/xbnpe_ddmenus.html#xh">xh</A>tk</CODE>)</I>
+<BR> &nbsp; &nbsp; <CODE>zTpkcPageDownNbsKcEsc2	\\\{#insert <A HREF="../xkp_zup.html#1mod">zCpPGDN</A>\\\}\\\{#sleep 10\\\}	zTpkcPageDownNbsKcEsc2</CODE><BR>The convenience utility <I>(<CODE><A HREF="../../devpex/xbnpe_ddmenus.html#xh">xh</A>tk</CODE>)</I>
 <BR> &nbsp; &nbsp; <CODE>newnbskc</CODE>
 <BR>can create this phrase for you (replace <CODE>&quot;XXX&quot;</CODE> with the <I><A HREF="../../devpex/xpc.html#escaped">escaped</A></I> key-command). Note that the <A HREF="config_vars.html#DfltPostKcSlpMils">default post-kc milliseconds</A> is automatically printed. Feel free to change it.
 <BR><I><B>Warning:</B> <CODE>newnbskc</CODE> <A HREF="tpacl.html#recommended">will only work</A> if the TextPad built-in command
@@ -177,7 +177,7 @@ is <CODE>3</CODE>, then the following must exist:<UL>
 <P>If a command's <A HREF="../tpbs.html#terminology">primary key-command</A> was changed (added, changed, or deleted), then TPKC user-build-process 2-of-2 must be run again, in order to re-create its nbs-phrase. To run this process for all categories, execute (in the <A HREF="user_menu.html">TPKC-user-menu</A>):</P>
 
 <PRE>TextPad built-in commands (TPKC) project &gt;
-   <A HREF="user_menu.html#tpkcumubp">z-User-build processes</A> &gt;
+   <A HREF="user_menu2.html#tpkcumubp">z-User-build processes</A> &gt;
       TPKC user-build process TWO of 2: **All**</PRE>
 
 <P>To run it for specific categories only, execute</P>

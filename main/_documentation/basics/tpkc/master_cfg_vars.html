@@ -43,7 +43,7 @@
 </PRE>
 <A NAME="zForceTestKeyCmd"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TPKC master-cfg-var: <CODE>zForceTestKeyCmd</CODE></H2>
 
-<P>The key-command used to &quot;<A HREF="user_menu.html#tpkcumac1ctestforce">force</A>&quot; a TPKC <A HREF="user_menu.html#tpkcumuptest1">nbs-command test</A>. Not unlike <A HREF="../tpbs.html">TextPad-bootstraps</A>, this also has a required corresponding &quot;escaped&quot; version:
+<P>The key-command used to &quot;<A HREF="user_menu.html#tpkcumac1ctestforce">force</A>&quot; a TPKC <A HREF="user_menu2.html#tpkcumuptest1">nbs-command test</A>. Not unlike <A HREF="../tpbs.html">TextPad-bootstraps</A>, this also has a required corresponding &quot;escaped&quot; version:
 <BR> &nbsp; &nbsp; <CODE>zForceTestKeyCmdEsc</CODE></P>
 
 <P>For example, if <CODE>zForceTestKeyCmd</CODE> is equal to
@@ -54,9 +54,9 @@
 <H3>Requirements</H3>
 
 <P><UL>
-	<LI><I>This specific key-command (sequence of key-presses, independent of sleep) may not be used by any command, <B>as configured in the TPKC-project</B>.</I> Specifically, it may not be equal to the tp-bootstrap command, nor any of it nbs-kcs.</LI>
+	<LI><I>This specific key-command (sequence of key-presses, independent of sleep) may not be assigned to any command, <B>as configured in the TPKC-project</B>.</I> That is, it may not be equal to the <A HREF="../tpbs_format.html#mainp">key-command</A> of any <A HREF="../tpbs.html">TextPad-bootstrap</A>, nor the <A HREF="../tpbs.html#terminology">nbs-kc</A> of <I>any</I> command (as specified in your <A HREF="user_cmd_cfg.html">user-specific</A> command-configuration).</LI>
 	<LI>It is strongly-recommended that each key-press be an <A HREF="../xkp.html">x-key-press</A>.</LI>
-	<LI>When this key-command has multiple key-presses. Each key-press should be separated by <CODE><A HREF="#zTpkcMillsBtwMultiKeyKCs">zTpkcMillsBtwMultiKeyKCs</A></CODE> milliseconds of sleep.</LI>
+	<LI>When this key-command has multiple key-presses, they should be separated by some sleep (the default value is <CODE><A HREF="#zTpkcMillsBtwMultiKeyKCs">zTpkcMillsBtwMultiKeyKCs</A></CODE> milliseconds).</LI>
 	<LI>It is not necessarily required to have sleep at they very end of this phrase, since it is always called in isolation (a message-box is popped up after each TPKC-nbs-test).</LI>
 </UL></P>
 
@@ -70,9 +70,9 @@
 
 <P><B>Requirements:</B> Must be an exact subset of <CODE><A HREF="config_vars.html#zTpkcAllCategoryAbrvLCsQbl">zTpkcAllCategoryAbrvLCsQbl</A></CODE></P>
 
-<P>The <A HREF="../../tasks/qbl.html">sQuare-Bracketed-List</A> defining the universe of TextPad command categories, used only when building the TPKC-project in &quot;<A HREF="build_proc_tech_info.html#livevtest">test mode</A>&quot;. Specifically, when <CODE><A HREF="#zTpkcBuildModeTestOrLive">zTpkcBuildModeTestOrLive</A></CODE> is <CODE>&quot;live&quot;</CODE>, then the universe of TextPad categories is defined instead by
+<P>The <A HREF="../../tasks/qbl.html">sQuare-Bracketed-List</A> that define the universe of TextPad command categories, used only when TPKC-project is/was built in &quot;<A HREF="build_proc_tech_info.html#livevtest">test mode</A>&quot;. Specifically, when <CODE><A HREF="#zTpkcBuildModeTestOrLive">zTpkcBuildModeTestOrLive</A></CODE> is <CODE>&quot;live&quot;</CODE>, the universe is defined instead by
 <BR> &nbsp; &nbsp; <CODE>zTpkcAllCategoryAbrvLCsQbl</CODE>
-<BR>When <CODE>zTpkcBuildModeTestOrLive</CODE> is <CODE>&quot;test&quot;</CODE>, the universe is defined by this master-cfg-var:
+<BR>When <CODE>zTpkcBuildModeTestOrLive</CODE> is <CODE>&quot;test&quot;</CODE>, it is defined by this master-cfg-var:
 <BR> &nbsp; &nbsp; <CODE>zTpkcAllCategoryAbrvLCsQbl_FORTESTMODE</CODE></P>
 
 <P>As of TextPad version <CODE>7.0.9</CODE>, the value of
@@ -80,7 +80,7 @@
 <BR>is
 <BR> &nbsp; &nbsp; <CODE>[file][edit][search][view][tools][macros][config][window][help][cursor][sel][cliplib][chars]</CODE></P>
 
-<P><CODE>zTpkcAllCategoryAbrvLCsQbl_FORTESTMODE</CODE> must be an <I>exact subset</I> of <CODE>zTpkcAllCategoryAbrvLCsQbl</CODE>. For example:
+<P><CODE>zTpkcAllCategoryAbrvLCsQbl_FORTESTMODE</CODE> must be an <I>exact subset</I> of <CODE>zTpkcAllCategoryAbrvLCsQbl</CODE> (with at least one category). For example:
 <BR> &nbsp; &nbsp; <CODE>[file][config][help]</CODE></P>
 
 <P>The purpose of this test-set of categories is for testing and demonstrating the TPKC-build process.</P>
@@ -136,7 +136,7 @@
 <PRE STYLE="background-color:#E1E1E1;">zTPFileCloseAll
    {#insert zCpF12}{#sleep 25}{#insert zCpF9}</PRE>
 
-<P>You are free to change this millisecond-value once the nbs-phrase is created. This is also the recommended value for between key-presses in the <A HREF="../tpbs2.html#mainp">main</A> and <A HREF="../tpbs2.html#escp">escaped phrases</A> in your <A HREF="../tpbs.html">TextPad-bootstraps</A> .</P>
+<P>You are free to change this millisecond-value once the nbs-phrase is created. This is also the recommended value for between key-presses in the <A HREF="../tpbs_format.html#mainp">main</A> and <A HREF="../tpbs_format.html#escp">escaped phrases</A> in your <A HREF="../tpbs.html">TextPad-bootstraps</A> .</P>
 
 <P><I>(The phrase-name for the command <CODE>FileCloseAll</CODE> is configured to be <CODE>zTPFileCloseAll</CODE>.)</P>
 

@@ -59,7 +59,7 @@
 <HR/>
 
 </PRE>
-<a name="remoterequest"/><H2><CODE>[<A HREF="#top">top</A>] &nbsp; <B>[PREV -- <A HREF="../tpbs.html#install">NEXT</A>]</B></CODE> &nbsp; &nbsp; TPKC remote-build request: Step-by-step</H2>
+<a name="remoterequest"/><H2><CODE>[<A HREF="#top">top</A>] &nbsp; <B>[PREV -- <A HREF="../tpbs_install.html">NEXT</A>]</B></CODE> &nbsp; &nbsp; TPKC remote-build request: Step-by-step</H2>
 
 <P>To avoid the pain of having to run the full TPKC <A HREF="index.html#userbuild01">user-build-process</A> yourself (which takes a good hour-plus), I am willing to run <A HREF="#remotebuild">it</A> for you.</P>
 
@@ -67,7 +67,7 @@
 
 <P>First it is necessary to ensure that all the built-in TextPad commands, as required by XBN-PhraseExpress, are assigned at least one key-command in your installation of TextPad.</P>
 
-<P>Proceed to the <A HREF="../tpbs.html#install">next step</A>.</P>
+<P>Proceed to the <A HREF="../tpbs_install.html">next step</A>.</P>
 
 <PRE>
 
@@ -82,7 +82,7 @@
 <HR/>
 
 </PRE>
-<a name="rr2"/><H2><CODE>[<A HREF="#remoterequest">BACK</A>] &nbsp; <B>[<A HREF="../tpbs.html#install4">PREV</A> -- NEXT]</B></CODE> &nbsp; &nbsp; TPKC remote-build request: Step-by-step</H2>
+<a name="rr2"/><H2><CODE>[<A HREF="#remoterequest">BACK</A>] &nbsp; <B>[<A HREF="../tpbs_install.html#install4">PREV</A> -- NEXT]</B></CODE> &nbsp; &nbsp; TPKC remote-build request: Step-by-step</H2>
 
 <P>To complete your request:<OL>
 	<LI><A HREF="tpacl.html">Print and save</A> your TextPad all-command-list</LI>
@@ -105,7 +105,7 @@
 <A NAME="remotebuild"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TPKC-user-dir: Remote build <I>(<A HREF="#remoterequest">request one now!</A>)</I></H2>
 
 <P>To execute the <A HREF="index.html#userbuild01">TPKC user-build-process</A> for someone else, without disturbing your own setup:<OL>
-	<LI>Disable your own TPKC-user-directory (<A HREF="#inpex">in PhraseExpress</A>, right-click on the folder and check &quot;Enable Autotext/Hotkeys&quot;), but re-enable your <A HREF="../tpbs2.html#locations">main</A> TextPad-bootstrap phrase-files.</LI>
+	<LI>Disable your own TPKC-user-directory (<A HREF="#inpex">in PhraseExpress</A>, right-click on the folder and check &quot;Enable Autotext/Hotkeys&quot;), but re-enable your <A HREF="../tpbs.html#locations">main</A> TextPad-bootstrap phrase-files.</LI>
 	<LI><A HREF="#setup">Setup</A> and then enable the other person's TPKC-user-directory, but then disable <I>their</I> main tp-bootstrap phrase-files.</LI>
 	<LI>Execute the TPKC user-build-process, importing all files to their TPKC-user-dir.</LI>
 	<LI>Export their PhraseExpress TPKC-user-dir to their <A HREF="#ondisk">on-disk</A> TPKC-user-dir (in the output directory)</LI>
@@ -115,7 +115,7 @@
 
 <P>There are three things that make it possible to execute the TPKC user-build-process for other users:<UL>
 	<LI>The <A HREF="#tudn">TPKC-user-directory name</A> is stored directly in its TPKC-user-directory. Simply enabling the desired directory (and disabling all others) activates its name.</LI>
-	<LI>All <A HREF="user_cmd_cfg.html#NbsKcEscNum">key-commands</A> in your <A HREF="user_cmd_cfg.html">user-specific</A> command-configuration (and the <A HREF="../tpbs.html#escp">escaped</A> TextPad-bootstrap phrases) are <A HREF="../../devpex/xpc.html#escaped">escaped</A>.</LI>
+	<LI>All <A HREF="user_cmd_cfg.html#NbsKcEscNum">key-commands</A> in your <A HREF="user_cmd_cfg.html">user-specific</A> command-configuration (and the <A HREF="../tpbs_format.html#escp">escaped</A> TextPad-bootstrap phrases) are <A HREF="../../devpex/xpc.html#escaped">escaped</A>.</LI>
 	<LI><A HREF="../tpbs.html">TextPad-bootstraps</A> are split into <A HREF="../tpbs.html#locations">two files</A>.</LI>
 </UL></P>
 <PRE>
@@ -143,7 +143,7 @@
 
 <P><UL>
 	<LI><CODE>tpkcudcb</CODE>: Sets your TPKC-user-directory path into the clipboard. This is intended to be pasted into the file-save or file-open dialogs.</LI>
-	<LI><CODE>vtpkcuds</CODE>: Verifies your on-disk TPKC-user-directory. Call it from within a TextPad document. <B>Warning:</B> Requires all <A HREF="../tpbs.html">TextPad-bootstraps</A> to be <A HREF="../tpbs.html#install">installed</A>.</LI>
+	<LI><CODE>vtpkcuds</CODE>: Verifies your on-disk TPKC-user-directory. Call it from within a TextPad document. <B>Warning:</B> Requires all <A HREF="../tpbs.html">TextPad-bootstraps</A> to be <A HREF="../tpbs_install.html">installed</A>.</LI>
 </UL></P>
 <PRE>
 
@@ -319,13 +319,13 @@
 
 <P>As a whole, these phrase-files are known as your &quot;user-specific command-configuration&quot; (or user-cmd-cfg). Whenever you change an nbs-kc in
 <BR> &nbsp; &nbsp; <CODE>TextPad &gt; Configure &gt; Preferences &gt; Keyboard</CODE>
-<BR>that change must be reflected in its user-cmd-cfg category-file. This is required in order for the <A HREF="user_menu.html#tpkcumak1c">assign-kc process</A> to assign key-commands as you expect.</P>
+<BR>that change must be reflected in its user-cmd-cfg category-file. This is required in order for the <A HREF="user_menu2.html#tpkcumak1c">assign-kc process</A> to assign key-commands as you expect.</P>
 
 <P>If the <A HREF="../tpbs.html#terminology">primary-kc</A> is changed, then TPKC sub-build-processes-14 must be re-run. However, when it is known that only one-or-a-few categories have been changed, it is possible to execute build-proc-14 with category prompts.</P>
 
 <P>If a command that <I>never</I> had a key-command now does (or you just deleted the final key-command from a no-longer-needed command), then it is strongly-recommended that sub-build-proc-15 also be re-run. This is in order to ensure the <A HREF="../../devpex/xbnpe_ddmenus.html#xh"><CODE>xh...</CODE> phrase-creator ddmenu</A> is accurate.</P>
 
-<P>(When changing a TextPad-bootstrap, its <A HREF="../tpbs2.html#mainp">main</A>, <A HREF="../tpbs2.html#escp">escaped</A>, and <A HREF="../tpbs2.html#tpkp">tp-key phrases</A> must all be changed, in phrase-files unrelated to user-cmd-cfg.)</P>
+<P>(When changing a TextPad-bootstrap, its <A HREF="../tpbs_format.html#mainp">main</A>, <A HREF="../tpbs_format.html#escp">escaped</A>, and <A HREF="../tpbs_format.html#tpkp">tp-key phrases</A> must all be changed, in phrase-files unrelated to user-cmd-cfg.)</P>
 
 <PRE>
 

@@ -12,9 +12,9 @@
 
 <H1>XBNPE: TextPad built-in command (TPKC-project)</H1>
 
-<P>The TextPad built-in command (TPKC) project is how PhraseExpress communicates with TextPad. Using the TPKC project gives your PhraseExpress code direct access to its more than three hundred &quot;built in&quot; commands (including <A HREF="../../tasks/file_manipulation.html">file manipulation</A> and <A HREF="../../tasks/snr.html">search and replace</A>).</P>
+<P>The TextPad built-in command (TPKC) project is what PhraseExpress uses to communicate with TextPad. Using the TPKC project gives your PhraseExpress code direct access to its more than three hundred &quot;built in&quot; commands (which, in turn, facilitates <A HREF="../../tasks/file_manipulation.html">file manipulation</A> and <A HREF="../../tasks/snr.html">search and replace</A>).</P>
 
-<P>The TPKC-project must be installed (as part of the overall XBN-PhraseExpress <A HREF="../../install.html">installation</A>), and then &quot;built&quot;. The TPKC user-build-process takes more than an hour, but it requires minimal user-interaction, and is a largely one-time-only process--and <A HREF="tpkc_user_dir.html#remoterequest"><I>I can run it for you</I>!</A>. (Also, if you just installed TextPad and have no custom key-commands, then you <A HREF="../../install2.html#14atudn">do not need</A> to run the build at all.) Aside from the XBNPE-key-presses (<A HREF="../xkp.html">XKP</A>) project, <A HREF="../tpbs.html#depend">no other</A> XBN-PhraseExpress project can function until the TPKC user-build-process is complete.</P>
+<P>The TPKC-project must be installed (as part of the overall XBN-PhraseExpress <A HREF="../../install.html">installation</A>), and then &quot;built&quot;. The TPKC user-build-process takes more than an hour, but it requires minimal user-interaction, and is largely a one-time-only process--and <A HREF="tpkc_user_dir.html#remoterequest"><I>I can run it for you</I>!</A>. (Also, if you just installed TextPad and have no custom key-commands, then you <A HREF="../../install2.html#14atudn">do not need</A> to run the build at all.) Aside from the XBNPE-key-presses (<A HREF="../xkp.html">XKP</A>) project, <A HREF="../tpbs.html#depend">no other</A> XBN-PhraseExpress project can function until the TPKC user-build-process is complete.</P>
 
 <P><B>Contents:</B><UL>
 	<LI><B>Installing and configuration:</B><UL>
@@ -72,7 +72,7 @@
                    Directory
                 Other (4AG:1,4,5,9) &gt;
                    DDMenu: Backend &gt;
-<I>(<A HREF="user_menu.html#tpkcumuptest1">info</A>)</I>                _Test each nbs command
+<I>(<A HREF="user_menu2.html#tpkcumuptest1">info</A>)</I>                _Test each nbs command
                    Dynamic config-vars
                    zSUB (2AG:1,4)
 <I>(<A HREF="user_menu2.html#inpex">go</A>)</I>            TextPad built-in commands [DDMENU]
@@ -101,7 +101,7 @@
 <A NAME="zXPROOT_DIR_tpkcBuild"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; <CODE>zXPROOT_DIR_tpkcBuild</CODE></H2>
 
 <P>As of 9/3/2013, this is equal to
-<BR> &nbsp; &nbsp; <CODE>{#insert zROOT_DIR_XBNPE_MAIN}textpad__tpkc\build\</CODE></P>
+<BR> &nbsp; &nbsp; <CODE>{#insert <A HREF="../../global_config.html#zROOT_DIR_XBNPE_MAIN">zROOT_DIR_XBNPE_MAIN</A>}textpad__tpkc\build\</CODE></P>
 
 <PRE>
 
@@ -131,7 +131,7 @@
 <P>Then, in the <A HREF="user_menu.html">TPKC-user-menu</A>, execute</P>
 
 <PRE>TextPad built-in command (TPKC) project &gt;
-   <A HREF="user_menu.html#tpkcumubp">z-User-build processes</A> &gt;
+   <A HREF="user_menu2.html#tpkcumubp">z-User-build processes</A> &gt;
       TPKC user-build process ONE of 2</PRE>
 
 <P>This creates the <A HREF="user_cmd_cfg.html">user-specific</A> command-configuration, which must imported to its <A HREF="tpkc_user_dir.html#13file">required location</A>. <I>Overwrite (delete) any existing folders when importing.</I></P>
@@ -163,7 +163,7 @@
 <P>In the <A HREF="user_menu.html">TPKC-user-menu</A>, execute</P>
 
 <PRE>TextPad built-in command (TPKC) project &gt;
-   <A HREF="user_menu.html#tpkcumubp">z-User-build processes</A> &gt;
+   <A HREF="user_menu2.html#tpkcumubp">z-User-build processes</A> &gt;
       TPKC user-build process TWO of 2</PRE>
 
 <P>This creates the <A HREF="../tpbs.html#terminology">nbs-phrases</A>, and the all-active TextPad phrase-creator ddmenu.</P>
@@ -191,7 +191,7 @@
 </PRE>
 <A NAME="tpbs"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; XBNPE-TPKC: Required TextPad-bootstraps</H2>
 
-<P>The TPKC project--and therefore, excepting the <A HREF="../xkp.html">XKP</A> project, <I>the entirety of XBN-PhraseExpress</I>--requires the below <A HREF="../tpbs.html">TextPad-bootstraps</A> to be <A HREF="../tpbs.html#install">installed</A> before the TPKC-project itself can be installed. This list is in addition to the <A HREF="../xkp.html#tpbs">tp-bootstraps for the XKP project</A>.</P>
+<P>The TPKC project--and therefore, excepting the <A HREF="../xkp.html">XKP</A> project, <I>the entirety of XBN-PhraseExpress</I>--requires the below <A HREF="../tpbs.html">TextPad-bootstraps</A> to be <A HREF="../tpbs_install.html">installed</A> before the TPKC-project itself can be installed. This list is in addition to the <A HREF="../xkp.html#tpbs">tp-bootstraps for the XKP project</A>.</P>
 
 <P><UL>
 	<LI><B>Regex for marking all lines in the <A HREF="tpacl.html">TextPad all-command list</A>:</B>
