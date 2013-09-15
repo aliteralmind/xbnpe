@@ -3,25 +3,25 @@ zTPCopyEsc	\\\{#CTRL -chars c\\\}\\\{#insert zTSlp\\\}	zTPCopyEsc
 zTPCopyTPKeys	Ctrl+C	zTPCopyTPKeys
 zTPCutEsc	\\\{#CTRL -chars x\\\}\\\{#insert zTSlp\\\}	zTPCutEsc
 zTPCutTPKeys	Ctrl+X	zTPCutTPKeys
-zTPDupLineEsc	\\\{#CTRL \\\{#ALT \\\{#SHIFT -chars v\\\}\\\}\\\}\\\{#insert zTSlp\\\}	zTPDupLineEsc
-zTPDupLineTPKeys	Ctrl+Shift+Alt+V	zTPDupLineTPKeys
-zTPFileCloseEsc	\\\{#CTRL -chars w\\\}\\\{#insert zTSlp\\\}	zTPFileCloseEsc
-zTPFileCloseTPKeys	Ctrl+W	zTPFileCloseTPKeys
+zTPDupLineEsc	\\\{#CTRL \\\{#ALT \\\{#SHIFT -chars k\\\}\\\}\\\}\\\{#insert zTSlp\\\}	zTPDupLineEsc
+zTPDupLineTPKeys	Ctrl+Shift+Alt+K	zTPDupLineTPKeys
+zTPFileCloseEsc	\\\{#ALT -chars w\\\}\\\{#insert zTSlp\\\}	zTPFileCloseEsc
+zTPFileCloseTPKeys	Alt+W	zTPFileCloseTPKeys
 zTPFileNewEsc	\\\{#CTRL -chars n\\\}\\\{#insert zTSlp\\\}	zTPFileNewEsc
 zTPFileNewTPKeys	Ctrl+N	zTPFileNewTPKeys
 zTPFileSaveEsc	\\\{#CTRL -chars s\\\}\\\{#insert zTSlp\\\}	zTPFileSaveEsc
 zTPFileSaveTPKeys	Ctrl+S	zTPFileSaveTPKeys
 zTPGTDocTopEsc	\\\{#CTRL \\\{#HOME\\\}\\\}\\\{#insert zTSlp\\\}	zTPGTDocTopEsc
 zTPGTDocTopTPKeys	Ctrl+Home	zTPGTDocTopTPKeys
-zTPMoveR1wEsc	\\\{#CTRL \\\{#RIGHT\\\}\\\}\\\{#insert zTSlp\\\}	zTPMoveR1wEsc
-zTPMoveR1wTPKeys	Ctrl+Right	zTPMoveR1wTPKeys
+zTPMoveR1wEsc	\\\{#ALT \\\{#RIGHT\\\}\\\}\\\{#insert zTSlp\\\}	zTPMoveR1wEsc
+zTPMoveR1wTPKeys	Alt+Right	zTPMoveR1wTPKeys
 zTPPasteEsc	\\\{#CTRL -chars v\\\}\\\{#sleep 10\\\}\\\{#insert zTSlp\\\}	zTPPasteEsc
 zTPPasteTPKeys	Ctrl+V	zTPPasteTPKeys
 zTPSelectAllEsc	\\\{#CTRL -chars a\\\}\\\{#insert zTSlp\\\}	zTPSelectAllEsc
 zTPSelectAllTPKeys	Ctrl+A	zTPSelectAllTPKeys
-zTPSelectL1wEsc	\\\{#CTRL \\\{#SHIFT -chars b\\\}\\\}\\\{#insert zTSlp\\\}	zTPSelectL1wEsc
-zTPSelectL1wTPKeys	Ctrl+Shift+B	zTPSelectL1wTPKeys
-zTPSelectR1wEsc	\\\{#CTRL \\\{#SHIFT \\\{#RIGHT\\\}\\\}\\\}\\\{#insert zTSlp\\\}	zTPSelectR1wEsc
-zTPSelectR1wTPKeys	Ctrl+Shift+Right	zTPSelectR1wTPKeys
+zTPSelectL1wEsc	\\\{#CTRL \\\{#SHIFT \\\{#LEFT\\\}\\\}\\\}\\\{#insert zTSlp\\\}	zTPSelectL1wEsc
+zTPSelectL1wTPKeys	Ctrl+Shift+Left	zTPSelectL1wTPKeys
+zTPSelectR1wEsc	\\\{#ALT \\\{#SHIFT \\\{#RIGHT\\\}\\\}\\\}\\\{#insert zTSlp\\\}	zTPSelectR1wEsc
+zTPSelectR1wTPKeys	Shift+Alt+Right	zTPSelectR1wTPKeys
 zTPToggleWWEsc	\\\{#CTRL -chars q\\\}\\\{#insert zTSlp\\\}\\\{#sleep 25\\\}\\\{#NONE -chars w\\\}\\\{#insert zTSlp\\\}\\\{#sleep 50\\\}	zTPToggleWWEsc
 zTPToggleWWTPKeys	Ctrl+Q, W	zTPToggleWWTPKeys

@@ -21,7 +21,7 @@
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#tudn">GO</A></B></FONT>]</CODE> &nbsp; The TPKC-user-directory name</LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#ondisk">GO</A></B></FONT>]</CODE> &nbsp; On disk directory structure</LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#inpex">GO</A></B></FONT>]</CODE> &nbsp; PhraseExpress folder structure</LI>
-	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#setup">GO</A></B></FONT>]</CODE> &nbsp; Setting up your TPKC-user-directory name, and the required structures: Step-by-step &nbsp; &nbsp; <I>(and <A HREF="#backup">backing it up</A>)</I></LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#setup">GO</A></B></FONT>]</CODE> &nbsp; Setting up your TPKC-user-directory structures: Step-by-step &nbsp; &nbsp; <I>(and <A HREF="#backup">backing it up</A>)</I></LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn">GO</A></B></FONT>]</CODE> &nbsp; The root path of your TPKC-user-directory: Variable and related <B>utilities</B></LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#remotebuild">GO</A></B></FONT>]</CODE> &nbsp; Remote build &nbsp; &nbsp; <I>(<A HREF="#remoterequest">request</A> and <A HREF="#installremote">installation</A>)</I></LI>
 </UL></P>
@@ -37,7 +37,7 @@
 
 <P>After your <A HREF="#remoterequest">remote build</A> has been processed, you will receive your TPKC-user-directory in a compressed (zip) file. To install it:<OL>
 	<LI>Unzip the archive into the TPKC-user-dir <A HREF="#zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn">parent directory</A>.</LI>
-	<LI>Open PhraseExpress ant select the folder
+	<LI>Open PhraseExpress and select the folder
 	<PRE>XBNPE: Parent folder &gt;
    XBN-PhraseExpress &gt;
       <B>XBNPE-TPKC: TextPad built-in commands</B>     <I>(<A HREF="index.html#inpex">go</A>)</I></PRE></LI>
@@ -87,10 +87,10 @@
 <P>To complete your request:<OL>
 	<LI><A HREF="tpacl.html">Print and save</A> your TextPad all-command-list</LI>
 	<LI>Post it to the <A HREF="http://forums.delphiforums.com/xbnpe/messages/?msg=19.1">XBNPE user-forums</A>, and</LI>
-	<LI>state your preferred <A HREF="#tudn">TPKC-user-dir name</A>.</LI>
+	<LI>State your preferred <A HREF="#tudn">TPKC-user-dir name</A>.</LI>
 </OL>I will respond to your post with your TPKC-user-directory, which will be contained in a zip file.</P>
 
-<P><I>If you prefer to correspond privately, use the forum's&quot;private message&quot; functionality (my username is &quot;Jeff (aliteralmind)&quot;), or email
+<P><I>If you prefer to correspond privately, use the forum's&quot;private message&quot; functionality (my username is <CODE>&quot;aliteralmind&quot;</CODE>), or email
 <BR> &nbsp; &nbsp; <CODE>aliteralmind DASH xbnpe AT yahoo DOT com</CODE></I></P>
 
 <H1>DONE.</H1>
@@ -196,7 +196,7 @@
 <HR/>
 
 </PRE>
-<a name="setup"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; Setting up your TPKC-user-directory name, and the required directory/folder structures: Step-by-step</H2>
+<a name="setup"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; Setting up your TPKC-user-directory structures: Step-by-step</H2>
 
 <P>This section describes how to set up your TPKC-user-directory, both <A HREF="#ondisk">on-disk</A> and <A HREF="#inpex">in-PhraseExpress</A>. It is expected that your <A HREF="#tudn">TPKC-user-directory name</A> has been both setup and imported.</P>
 
@@ -210,13 +210,17 @@
 	<BR>and disable all other
 	<BR> &nbsp; &nbsp; <CODE>XBNPE-TPKC: User-spcfc phrases: ...</CODE>
 	<BR>folders.</LI>
+	<LI>Double-click on your folder (the one you just enabled) to expand it. Disable all folders named
+	<BR> &nbsp; &nbsp; <CODE>TPKC-user-build: Auto-generated -- ...</CODE>
+	<BR>except
+	<BR> &nbsp; &nbsp; <CODE>TPKC-user-build: Auto-generated -- LIVE</CODE></LI>
 	<LI>Change
 	<BR> &nbsp; &nbsp; <CODE>[TPKC_USER_DIR_NAME]</CODE>
 	<BR>to your actual TPKC-user-directory name (the value of <CODE>zzTpkcUserDirName</CODE>).</LI>
 	<LI>Close PhraseExpress.</LI>
 	<LI>In Windows Explorer, navigate to the TPKC-user-dir <A HREF="#zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn">parent-directory</A>.</LI>
 	<LI>You will be using the <CODE>&quot;TPKC_USER_DIR_NAME&quot;</CODE> directory, which contains blank phrase-templates, for both TextPad-bootstraps. Change the name of this folder to your TPKC-user-dir name.</LI>
-	<LI><A HREF="#backup">Back it up</A> Back it on up.</LI>
+	<LI><A HREF="#backup">Back it up</A>. Back it on up.</LI>
 </OL></P>
 
 
@@ -231,6 +235,10 @@
 	and disable all other
 	<BR> &nbsp; &nbsp; <CODE>XBNPE-TPKC: User-spcfc phrases: ...</CODE>
 	<BR>folders (enable by right-clicking the folder, and checking &quot;Enable Autotext/Hotkeys&quot;).</LI>
+	<LI>Double-click on your folder (the one you just enabled) to expand it. Disable all folders named
+	<BR> &nbsp; &nbsp; <CODE>TPKC-user-build: Auto-generated -- ...</CODE>
+	<BR>except
+	<BR> &nbsp; &nbsp; <CODE>TPKC-user-build: Auto-generated -- LIVE</CODE></LI>
 	<LI>Close PhraseExpress.</LI>
 	<LI>In Windows Explorer, navigate to the TPKC-user-dir <A HREF="#zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn">parent-directory</A>. Your on-disk TPKC-user-directory is also named <CODE>&quot;tp_frsh_instl&quot;</CODE>. It is ready to use.</LI>
 	<LI><A HREF="#backup">Back it up</A>.</LI>

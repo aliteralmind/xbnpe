@@ -1,2 +1,2 @@
 zXPROOT_DIR_xbnpeDocRoot	{#insert zROOT_DIR_XBNPE_MAIN}{#insert zzXPSUB_DIR_xbnpeDocRoot}	zXPROOT_DIR_xbnpeDocRoot
-zzXPSUB_DIR_xbnpeDocRoot	_documentation\	zzXPSUB_DIR_xbnpeDocRoot
+zzXPSUB_DIR_xbnpeDocRoot	_docs\	zzXPSUB_DIR_xbnpeDocRoot
