@@ -153,7 +153,7 @@
 
 <PRE>{#SETPHRASE -description zvPNM_FOR_CAT -content zzzTpkcCrtNextStCmd1VarPhrsFile_M_catqbl -autotext zvPNM_FOR_CAT -folder ctvv_folder}{#insert zzTpkcCallPhrsNmForEachCat_M_catpm}</PRE>
 
-<P>Both methods anticipate the TPKC-test-mode-flag, including notifying the user, but the second method is much faster, and has the additional benefit of *not* depending on the TPKC-test-mode-flag (zTpkcBuildModeTestOrLive), which, while being critical during build processes zTpkc01CreateSetCatlVarPhrsFile 01-through-06, is unused at all other times.</P>
+<P>Both methods anticipate the TPKC-test-mode-flag, including notifying the user, but the second method is much faster, and has the additional benefit of *not* depending on the current build-version (<A HREF="master_cfg_vars.html#zzTpkcBuildVersionName"><CODE>zzTpkcBuildVersionName</CODE></A>), which, while being critical during build processes zTpkc01CreateSetCatlVarPhrsFile 01-through-06, is unused at all other times.</P>
 
 
 <PRE>

@@ -26,8 +26,10 @@
 		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#import3">GO</A></B></FONT>]</CODE> &nbsp; Import locations and choosing a TPKC version</LI>
 	</UL></LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#fullvraw">GO</A></B></FONT>]</CODE> &nbsp; <B>Full versus RAW:</B> Phrases to execute one TPKC-build-process only</LI>
-	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#livevtest">GO</A></B></FONT>]</CODE> &nbsp; <B>Live versus test build:</B> Building the entire TPKC-Project, or only part, for testing and demonstration purposes</LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#inpex">GO</A></B></FONT>]</CODE> &nbsp; PhraseExpress folder structure</LI>
+	<LI><B>Documented elsewhere:</B><UL>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="master_cfg_vars.html#zzTpkcBuildVersionName">GO</A></B></FONT>]</CODE> &nbsp; Building the TPKC-Project for testing and demonstration purposes</LI>
+	</UL></LI>
 </UL></P>
 <PRE>
 
@@ -66,7 +68,7 @@
 <BR> &nbsp; &nbsp; <CODE>{#insert <A HREF="tpkc_user_dir.html#zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn">zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn</A>}output_test3\</CODE>
 <BR>or one of its sub-directories. <CODE>&quot;test3&quot;</CODE> is its &quot;build-version&quot;.</P>
 
-At a minimum, there must be a &quot;live&quot; version (although it's name does not have to be exactly <CODE>&quot;live&quot;</CODE>). There may also be zero or more &quot;<A HREF="#livevtest">test</A>&quot; versions, each representing a different subset of categories.</P>
+At a minimum, there must be a &quot;live&quot; version (although it's name does not have to be exactly <CODE>&quot;live&quot;</CODE>). There may also be zero or more &quot;<A HREF="master_cfg_vars.html#zzTpkcBuildVersionName">test</A>&quot; versions, each representing a different subset of categories.</P>
 
 <P>These phrase-files are then <A HREF="../phrase_file_import1.html">imported</A> to one of these three PhraseExpress folders (see &quot;switching TPKC versions&quot;):<UL>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="user_menu2.html#inpex">GO</A></B></FONT>]</CODE> &nbsp; The TPKC-user-menu, </LI>
@@ -172,7 +174,7 @@ At a minimum, there must be a &quot;live&quot; version (although it's name does 
 
 <H3>Preparing for a completely new build.</H3>
 
-<A NAME="m1of4_videoa"/><H3><CODE>[<A HREF="#m1of4">BACK</A>]</CODE> &nbsp; Video: Eliminating all old auto-generated files, to prepare for a new build (and setting build-mode to &quot;<A HREF="#livevtest">test</A>&quot;)</H3>
+<A NAME="m1of4_videoa"/><H3><CODE>[<A HREF="#m1of4">BACK</A>]</CODE> &nbsp; Video: Eliminating all old auto-generated files, to prepare for a new build (and setting build-mode to &quot;<A HREF="master_cfg_vars.html#zzTpkcBuildVersionName">test</A>&quot;)</H3>
 
 <P><A HREF="http://www.youtube.com/watch?v=bJhGRHuNmrg">Watch</A></P>
 
@@ -201,7 +203,7 @@ At a minimum, there must be a &quot;live&quot; version (although it's name does 
 <P>To open all output directories in Windows Explorer windows, use
 <BR> &nbsp; &nbsp; <CODE>zzzTpkcBuld2of4OpenAllOutputDirs</CODE></P>
 
-<A NAME="m2of4_video"/><H3><CODE>[<A HREF="#m2of4">BACK</A>]</CODE> &nbsp; Video: Running TPKC-build master-process 2of4 (in <A HREF="#livevtest">test mode</A>)</H3>
+<A NAME="m2of4_video"/><H3><CODE>[<A HREF="#m2of4">BACK</A>]</CODE> &nbsp; Video: Running TPKC-build master-process 2of4 (in <A HREF="master_cfg_vars.html#zzTpkcBuildVersionName">test mode</A>)</H3>
 
 <P><A HREF="http://www.youtube.com/watch?v=NePqea7XxM4">Watch</A></P>
 <PRE>
