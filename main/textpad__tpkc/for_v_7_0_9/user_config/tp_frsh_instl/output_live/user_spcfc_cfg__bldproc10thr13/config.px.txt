@@ -1,0 +1,19 @@
+zTpkcBlockSelectOffNbsKcCount	0	zTpkcBlockSelectOffNbsKcCount
+zTpkcBlockSelectOnNbsKcCount	0	zTpkcBlockSelectOnNbsKcCount
+zTpkcCustomizeToolbarsNbsKcCount	0	zTpkcCustomizeToolbarsNbsKcCount
+zTpkcPreferencesNbsKcCount	0	zTpkcPreferencesNbsKcCount
+zTpkcRightMarginDecNbsKcCount	0	zTpkcRightMarginDecNbsKcCount
+zTpkcRightMarginIncNbsKcCount	0	zTpkcRightMarginIncNbsKcCount
+zTpkcRightMarginSetNbsKcCount	1	zTpkcRightMarginSetNbsKcCount
+zTpkcRightMarginSetNbsKcEsc1	\\\{#insert zCpQQ\\\}\\\{#sleep 25\\\}\\\{#insert zRR\\\}\\\{#sleep 5\\\}	zTpkcRightMarginSetNbsKcEsc1
+zTpkcToggleBlockSelectNbsKcCount	1	zTpkcToggleBlockSelectNbsKcCount
+zTpkcToggleBlockSelectNbsKcEsc1	\\\{#insert zCpQQ\\\}\\\{#sleep 25\\\}\\\{#insert zBB\\\}\\\{#sleep 5\\\}	zTpkcToggleBlockSelectNbsKcEsc1
+zTpkcToggleInsertModeNbsKcCount	1	zTpkcToggleInsertModeNbsKcCount
+zTpkcToggleInsertModeNbsKcEsc1	\\\{#insert zINS\\\}\\\{#sleep 5\\\}	zTpkcToggleInsertModeNbsKcEsc1
+zTpkcToggleReadOnlyNbsKcCount	1	zTpkcToggleReadOnlyNbsKcCount
+zTpkcToggleReadOnlyNbsKcEsc1	\\\{#insert zCpQQ\\\}\\\{#sleep 25\\\}\\\{#insert zEE\\\}\\\{#sleep 5\\\}	zTpkcToggleReadOnlyNbsKcEsc1
+zTpkcToggleSyncScrollNbsKcCount	1	zTpkcToggleSyncScrollNbsKcCount
+zTpkcToggleSyncScrollNbsKcEsc1	\\\{#insert zCpQQ\\\}\\\{#sleep 25\\\}\\\{#insert zYY\\\}\\\{#sleep 5\\\}	zTpkcToggleSyncScrollNbsKcEsc1
+zTpkcToggleUndoNbsKcCount	1	zTpkcToggleUndoNbsKcCount
+zTpkcToggleUndoNbsKcEsc1	\\\{#insert zCpQQ\\\}\\\{#sleep 25\\\}\\\{#insert zUU\\\}\\\{#sleep 5\\\}	zTpkcToggleUndoNbsKcEsc1
+zTpkcToggleWordWrapNbsKcCount	0	zTpkcToggleWordWrapNbsKcCount

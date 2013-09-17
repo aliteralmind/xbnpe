@@ -36,8 +36,9 @@ zInitAllQBListVars	{#insert zSetQBListAndStrToEmpty}{#SETPHRASE -description zvQ
 zLineListToSquareBracketedList	{#BALLOON -title lltoqbl -text Cursor must be in the line of the top-most element.}{#insert zHOME}{#LOOP [{#END}]{#DEL} -count {#INPUT -head How many lines? -single}}	zLineListToSquareBracketedList
 zLineListToSquareBracketedList_M_qblen -- zvQBL_LENGTH	{#insert zHOME}{#LOOP [{#END}]{#DEL} -count {#insert zvQBL_LENGTH}}	zLineListToSquareBracketedList_M_qblen
 
-zQblLenFromSelf_M_qbl -- Needs zvQB_STR_LIST	{#SETPHRASE -description zvORIG_STR_LEN -content {#LENGTH {#insert zvQB_STR_LIST}} -autotext zvORIG_STR_LEN -folder ctvv_folder}{#SETPHRASE -description zvWITHOUT_OPEN_SQBS -content {#REPLACE {#insert zvQB_STR_LIST} -oldtext [ -newtext} -autotext zvWITHOUT_OPEN_SQBS -folder ctvv_folder}{#CALC {#insert zvORIG_STR_LEN} - {#LENGTH {#insert zvWITHOUT_OPEN_SQBS}} -round 0 -thousands none}	zQblLenFromSelf_M_qbl
+zQblLenFromSelf_M_qbl -- zvQBL2=zvQB_STR_LIST, zQblLenFromSelf_M_qbl2	{#SETPHRASE -description zvQBL2 -content {#insert zvQB_STR_LIST} -autotext zvQBL2 -folder ctvv_folder}{#insert zQblLenFromSelf_M_qbl2}	zQblLenFromSelf_M_qbl
 
+zQblLenFromSelf_M_qbl2 -- Needs zvQBL2. '2' to avoid re-assigning zvQBL	{#SETPHRASE -description zvORIG_STR_LEN -content {#LENGTH {#insert zvQBL2}} -autotext zvORIG_STR_LEN -folder ctvv_folder}{#SETPHRASE -description zvWITHOUT_OPEN_SQBS -content {#REPLACE {#insert zvQBL2} -oldtext [ -newtext} -autotext zvWITHOUT_OPEN_SQBS -folder ctvv_folder}{#CALC {#insert zvORIG_STR_LEN} - {#LENGTH {#insert zvWITHOUT_OPEN_SQBS}} -round 0 -thousands none}	zQblLenFromSelf_M_qbl2
 zREoffRplcQblOnlyDocToLineList -- Transforms [a][b][c] to a\nb\nc	{#insert zFcsTPRplcDlgOpen}{#insert zzInFindWhatREoff_rplcOpenQBWNothingClsQBWNewlnTDscope_reOn}{#insert zFindFlagRETglRAW}(*re OFF*){#insert zRplcDlgClose}	zREoffRplcQblOnlyDocToLineList
 
 zREonRplcQblOnlyDocToLineList	{#insert zTPRplcDlgOpen}{#insert zFindFlagRETgl}(*RE off*){#insert zzInFindWhatREoff_rplcOpenQBWNothingClsQBWNewlnTDscope_reOn}{#insert zRplcDlgClose}	zREonRplcQblOnlyDocToLineList

@@ -1,0 +1,8 @@
+zTpkcWindow4Abrv1C	Win4	zTpkcWindow4Abrv1C
+zTpkcWin4CmdNameTC	Window4	zTpkcWin4CmdNameTC
+zTpkcWin4DfltPhrsNm	zTPGTWin4	zTpkcWin4DfltPhrsNm
+zTpkcWin4CatForCmdAbrvLC	window	zTpkcWin4CatForCmdAbrvLC
+zTpkcWin4CmdType_mcrTl		zTpkcWin4CmdType_mcrTl
+zTpkcWin4IsBtstrp_yes		zTpkcWin4IsBtstrp_yes
+zTpkcWin4DfltPostKcSlpMils	10	zTpkcWin4DfltPostKcSlpMils
+zTpkcWin4StpsFrmCmdListTop	{#insert zPGDN}{#insert zUP2}	zTpkcWin4StpsFrmCmdListTop

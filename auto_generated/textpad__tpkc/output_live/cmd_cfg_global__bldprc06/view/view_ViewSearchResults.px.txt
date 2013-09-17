@@ -1,0 +1,8 @@
+zTpkcViewSearchResultsAbrv1C	Vsrchr	zTpkcViewSearchResultsAbrv1C
+zTpkcVsrchrCmdNameTC	ViewSearchResults	zTpkcVsrchrCmdNameTC
+zTpkcVsrchrDfltPhrsNm	zTPViewSearchResults	zTpkcVsrchrDfltPhrsNm
+zTpkcVsrchrCatForCmdAbrvLC	view	zTpkcVsrchrCatForCmdAbrvLC
+zTpkcVsrchrCmdType_mcrTl		zTpkcVsrchrCmdType_mcrTl
+zTpkcVsrchrIsBtstrp_yes		zTpkcVsrchrIsBtstrp_yes
+zTpkcVsrchrDfltPostKcSlpMils	10	zTpkcVsrchrDfltPostKcSlpMils
+zTpkcVsrchrStpsFrmCmdListTop	{#insert zEND}{#insert zPGUP}{#insert zDOWN}	zTpkcVsrchrStpsFrmCmdListTop

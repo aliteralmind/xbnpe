@@ -1,0 +1,8 @@
+zTpkcMacroRecordAbrv1C	Mcrrcrd	zTpkcMacroRecordAbrv1C
+zTpkcMcrrcrdCmdNameTC	MacroRecord	zTpkcMcrrcrdCmdNameTC
+zTpkcMcrrcrdDfltPhrsNm	zTPMacroRecordToggle	zTpkcMcrrcrdDfltPhrsNm
+zTpkcMcrrcrdCatForCmdAbrvLC	macros	zTpkcMcrrcrdCatForCmdAbrvLC
+zTpkcMcrrcrdCmdType_mcrTl		zTpkcMcrrcrdCmdType_mcrTl
+zTpkcMcrrcrdIsBtstrp_yes		zTpkcMcrrcrdIsBtstrp_yes
+zTpkcMcrrcrdDfltPostKcSlpMils	10	zTpkcMcrrcrdDfltPostKcSlpMils
+zTpkcMcrrcrdStpsFrmCmdListTop	{#NONE -chars m -count 4}{#insert z5ThnTSlp}	zTpkcMcrrcrdStpsFrmCmdListTop

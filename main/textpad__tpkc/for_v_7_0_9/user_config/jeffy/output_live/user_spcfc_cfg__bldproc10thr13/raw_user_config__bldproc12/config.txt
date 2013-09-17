@@ -1,0 +1,13 @@
+BlockSelectOff	0
+BlockSelectOn	0
+CustomizeToolbars	0
+Preferences	0
+RightMarginDec	0
+RightMarginInc	0
+RightMarginSet	0
+ToggleBlockSelect	0
+ToggleInsertMode	1	\\\{#insert zINS\\\}
+ToggleReadOnly	1	\\\{#insert zCASpF5\\\}
+ToggleSyncScroll	0
+ToggleUndo	0
+ToggleWordWrap	0

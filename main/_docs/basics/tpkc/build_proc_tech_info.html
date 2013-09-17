@@ -56,17 +56,29 @@
 </PRE>
 <A NAME="import3"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TPKC-build: Import locations and choosing a TPKC version</H2>
 
-<P>All TPKC-build output (called &quot;auto-generated&quot; or &quot;AG&quot; files) is <A HREF="../phrase_file_import1.html">imported</A> to one of three PhraseExpress folders:<UL>
+<P>The TPKC <A HREF="master_cfg_vars.html">master-configuration-variable</A>
+<BR> &nbsp; &nbsp; <CODE><A HREF="master_cfg_vars.html#zzTpkcBuildVersionName">zzTpkcBuildVersionName</A></CODE>
+<BR>represents the <I>currently active</I></P>
+
+<P>The TPKC <A HREF="index.html#userbuild01">user-build-process</A> writes its output (&quot;auto-generated&quot;, or &quot;AG&quot;) phrase-files into one of the <A HREF="tpkc_user_dir.html#ondisk">on-disk</A> <CODE>&quot;output_*&quot;</CODE> folders in your TPKC-user-directory. Which one is determined by the TPKC <A HREF="master_cfg_vars.html">master-configuration-variable</A>
+<BR> &nbsp; &nbsp; <CODE><A HREF="master_cfg_vars.html#zzTpkcBuildVersionName">zzTpkcBuildVersionName</A></CODE>
+<BR>For example, if <CODE>&quot;zzTpkcBuildVersionName&quot;</CODE> is <CODE>&quot;test3&quot;</CODE>, then all user-build output is written to
+<BR> &nbsp; &nbsp; <CODE>{#insert <A HREF="tpkc_user_dir.html#zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn">zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn</A>}output_test3\</CODE>
+<BR>or one of its sub-directories. <CODE>&quot;test3&quot;</CODE> is its &quot;build-version&quot;.</P>
+
+At a minimum, there must be a &quot;live&quot; version (although it's name does not have to be exactly <CODE>&quot;live&quot;</CODE>). There may also be zero or more &quot;<A HREF="#livevtest">test</A>&quot; versions, each representing a different subset of categories.</P>
+
+<P>These phrase-files are then <A HREF="../phrase_file_import1.html">imported</A> to one of these three PhraseExpress folders (see &quot;switching TPKC versions&quot;):<UL>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="user_menu2.html#inpex">GO</A></B></FONT>]</CODE> &nbsp; The TPKC-user-menu, </LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="tpkc_user_dir.html#inpex">GO</A></B></FONT>]</CODE> &nbsp; the TPKC-user-directory, or</LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#imp3other">GO</A></B></FONT>]</CODE> &nbsp; the &quot;other-AG-output&quot; folder.</LI>
-</UL><I>(See &quot;Switching TPKC versions&quot;)</I></P>
-
-<P>In each of these three locations, there is (should be!) a &quot;live&quot; build folder. There may also be zero or more &quot;test&quot; folders (each with a unique set of categories processed). In all cases, there must be the <I>exact same set</I> of version-folders. For example, if the &quot;other-AG-output&quot; folder contains these three build-versions:<UL>
+</UL>In each of these three locations, there is the exact same set of versions as there are on-disk <CODE>&quot;output_*&quot;</CODE> folders in the <A HREF="tpkc_user_dir.html#ondisk">TPKC-user-directory</A>. For example, these TPKC-user-directory output folders<UL>
+	<LI><CODE>output_live</CODE></LI>
+	<LI><CODE>output_test</CODE></LI>
+</UL>correspond to the following versions in <I>all</I> three PhraseExpress locations above:<UL>
 	<LI><CODE>LIVE build</CODE></LI>
 	<LI><CODE>Test build (file, config, tools)</CODE></LI>
-	<LI><CODE>Test build (edit only)</CODE></LI>
-</UL>then the TPKC-user-menu and -directory must also contain these three versions. Exactly one version--the same version in each location--<B><I>must</I></B> be enabled at any one time (to enable, right click on the folder and check &quot;Enable Autotext/Hotkeys&quot;).</P>
+</UL>The current version, as defined by <CODE>zzTpkcBuildVersionName</CODE>, <B><I>must</I></B> be enabled in all of these locations (to enable, right click on the folder and check &quot;Enable Autotext/Hotkeys&quot;). All other versions must be disabled.</P>
 
 <H3>Logical versus virtual AG locations</H3>
 
@@ -79,12 +91,9 @@
 <HR/>
 
 </PRE>
-<A NAME="imp3other"/><H2><CODE>[<A HREF="#import3">BACK</A>]</CODE> &nbsp; TPKC-build: Import locations: &quot;Other-AG-output&quot; folder</H2>
+<A NAME="imp3other"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TPKC-build: Import locations: &quot;Other-AG-output&quot; folder</H2>
 
-<P>Contains all auto-generated files not in the <A HREF="tpkc_user_dir.html#inpex">TPKC-user-directory</A> or -<A HREF="user_menu2.html#inpex">user-menu</A>. Key:<UL>
-	<LI><B><CODE>indv</CODE>:</B> The processes that output a single <A HREF="../phrase_file.html#fformat">phrase-file</A>. Import these file directly into the &quot;indv&quot; folder.</LI>
-	<LI><B><CODE>ddmenu</CODE>:</B> Processes that output phrases needed by the TPKC-user-menu (and should be imported there instead).</LI>
-</UL></P>
+<P>Contains all auto-generated files not in the <A HREF="tpkc_user_dir.html#inpex">TPKC-user-directory</A> or -<A HREF="user_menu2.html#inpex">user-menu</A>.</P>
 
 <PRE>&nbsp;
     XBNPE: Parent folder
@@ -99,9 +108,16 @@
                             <I>[1 folder per-<A HREF="config_vars.html#zTpkcAllCategoryAbrvLCsQbl">category</A>]</I>
                       master-build 2of4 (no output:7, ddmenu:8)
                          09: Set cmd1 var to 1 cmd
-                   TPKC-build-AG: Test build
-                      <I>[...same...]</I></PRE>
+                   TPKC-build-AG: FGH-test           <I>(file, config, help categories)</I>
+                      <I>...same directory structure...</I></PRE>
 
+<P><B>Key:</B><UL>
+	<LI><B><CODE>indv</CODE>:</B> The processes that output a single <A HREF="../phrase_file.html#fformat">phrase-file</A>. Import these file directly into the &quot;indv&quot; folder.</LI>
+	<LI><B><CODE>ddmenu</CODE>:</B> Processes that output phrases needed by the TPKC-user-menu (and should be imported there instead).</LI>
+</UL></P>
+
+<P>The <CODE>&quot;LIVE&quot;</CODE> and <CODE>&quot;FGH-TEST&quot;</CODE> folders facilitate <A HREF="master_cfg_vars.html#switchv">switching</A> between TPKC-build versions. Exactly one version (either fgh or live) must be enabled at any one time. Which version should be enabled is determined by the TPKC master-config-variable
+<BR> &nbsp; &nbsp; <CODE><A HREF="master_cfg_vars.html#zzTpkcBuildVersionName">zzTpkcBuildVersionName</A></CODE></P>
 <PRE>
 
 <HR/>
@@ -251,74 +267,6 @@
 <H3>RAW</H3>
 
 <P>Each sub-build also has a &quot;RAW&quot; process, which is the &quot;core&quot; of its functionality. Specifically, it is the part that executes after all setup is complete. This is useful for testing and diagnostics only.</P>
-
-<PRE>
-
-<HR/>
-
-</PRE>
-<a name="livevtest"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; Live versus test build: Building the entire TPKC-Project, or only part, for testing and demonstration purposes</H2>
-
-<P><TABLE ALIGN="center" BORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#EEEEEE"><TR ALIGN="center" VALIGN="middle">
-	<TD><I>(As of TextPad version 7.0.9)</I></TD>
-	<TD><B><U>Live</U></B></TD>
-	<TD><B><U>Test</U></B>
-	<BR><I>(using the below &quot;good test build&quot;)</I></TD>
-</TR><TR ALIGN="center" VALIGN="middle">
-	<TD ALIGN="left"><B>Number of categories</B></TD>
-	<TD><CODE>13</CODE></TD>
-	<TD><CODE>3</CODE></TD>
-</TR><TR ALIGN="center" VALIGN="middle">
-	<TD ALIGN="left"><B>Number of commands</B></TD>
-	<TD><CODE>332</CODE></TD>
-	<TD><CODE>44</CODE></TD>
-</TR><TR ALIGN="center" VALIGN="middle">
-	<TD ALIGN="left"><B>Build-time: ADMIN-ONLY</B>
-	<BR>(sub-build-procs <A HREF="sub_build_proc.html#01">01</A> through <A HREF="sub_build_proc2.html#09">09</A>)
-	<BR><I>(Very rough!)</I></TD>
-	<TD><CODE>1 hour, 25 minutes.</CODE></TD>
-	<TD><CODE>30 minutes</CODE></TD>
-</TR><TR ALIGN="center" VALIGN="middle">
-	<TD ALIGN="left"><B>Build-time: USER-ONLY</B>
-	<BR>(sub-build-procs <A HREF="sub_build_proc2.html#10">10</A> through <A HREF="sub_build_proc2.html#15">15</A>)
-	<BR><I>(Very rough!)</I></TD>
-	<TD><CODE>45 minutes.</CODE></TD>
-	<TD><CODE>25 minutes</CODE></TD>
-</TR><TR ALIGN="center" VALIGN="middle">
-	<TD ALIGN="left"><B>Functional differences</B></TD>
-	<TD><I>n/a</I></TD>
-	<TD>Repeated reminder-dialogs that this build is in test-mode.</TD>
-</TR></TABLE></P>
-
-<P>Normally, the above processes build the TPKC-Project for all categories, as defined by
-<BR> &nbsp; &nbsp; <A HREF="config_vars.html#zTpkcAllCategoryAbrvLCsQbl"><CODE>zTpkcAllCategoryAbrvLCsQbl</CODE></A>
-<BR>For demonstration or diagnostic purposes, they may instead be run on a sub-set of these categories. When this is desired, set
-<BR> &nbsp; &nbsp; <CODE><A HREF="master_cfg_vars.html#zTpkcAllCategoryAbrvLCsQbl_FORTESTMODE">zTpkcAllCategoryAbrvLCsQbl_FORTESTMODE</A></CODE>
-<BR>to <I>an exact subset</I> of <CODE>zTpkcAllCategoryAbrvLCsQbl</CODE>, and then turn the test-category flag on, by setting
-<BR> &nbsp; &nbsp; <CODE><A HREF="master_cfg_vars.html#zTpkcBuildModeTestOrLive">zTpkcBuildModeTestOrLive</A></CODE>
-<BR>to <CODE>&quot;test&quot;</CODE>. When set to <CODE>&quot;live&quot;</CODE>, then all categories are built.</P>
-
-<H3>WARNING</H3>
-
-<P><I>Building the TPKC-Project in 'test' mode is <B>permanent</B>. Once test-mode is set, it <I><B>must not</B></I> be changed unless the <B>entire</B> tpkc project is rebuilt, starting at <A HREF="sub_build_proc.html#01">sub-proc-01</A>.</I></P>
-
-<H3>Good test build <CODE>[file][config][help]</CODE></H3>
-
-<P>Good for demonstrating the build-process, and for documentation videos. <CODE>&quot;file&quot;</CODE> is a moderately-large category and contains a bootstrap. <CODE>&quot;config&quot;</CODE> contains a bootsrap and has few commands, and <CODE>&quot;help&quot;</CODE> has no kcs at all (in my setup anyway), and has few commands.</P>
-
-<P><I>This test-category flag will work for any individual process, as well as for the overall build process.</I></P>
-
-<H3>My workflow</H3>
-<P>What I do when executing a test-build:<OL>
-	<LI>On disk, zip and backup the entire auto-generated directory
-	<BR> &nbsp; &nbsp; <B>-<CODE>zzXPSUB_DIR_tpNonMacroKeyCmds</CODE>:</B>
-	<BR> &nbsp; &nbsp; <CODE>{#insert zzXPSUB_DIR_tpNonMacroKeyCmds}</CODE>
-	<BR>(name it something like <CODE>&quot;tpkc_full_build_ag_dir__20130605.zip&quot;</CODE>)</LI>
-	<LI>In PhraseExpress, duplicate the entire TPKC directory
-	<BR> &nbsp; &nbsp; <CODE>XBN-PhraseExpress/XBNPE: TextPad Built-in commands (TPKC)</CODE>
-	<BR>(select the folder and type Ctrl+D), delete ALL auto-generated files in the duplicate, and disable the original branch (select-then-right-click the folder, and uncheck 'Activate autotext/hotkeys'). <I>Unfortunately, all folders will be out of order (should you choose to keep it, you'll need to manually sort each one, via right-click, <CODE>sort &gt; By description &gt; A-Z</CODE>)</I></LI>
-	<LI>When the test is complete, delete the test folder/directory, and recover the original branches.</LI>
-</OL></P>
 
 <PRE>
 

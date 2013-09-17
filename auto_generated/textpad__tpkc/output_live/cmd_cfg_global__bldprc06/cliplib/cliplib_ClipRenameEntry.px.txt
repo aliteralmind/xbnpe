@@ -1,0 +1,8 @@
+zTpkcClipRenameEntryAbrv1C	Clre	zTpkcClipRenameEntryAbrv1C
+zTpkcClreCmdNameTC	ClipRenameEntry	zTpkcClreCmdNameTC
+zTpkcClreDfltPhrsNm	zTPClipRenameEntry	zTpkcClreDfltPhrsNm
+zTpkcClreCatForCmdAbrvLC	cliplib	zTpkcClreCatForCmdAbrvLC
+zTpkcClreCmdType_mcrTl		zTpkcClreCmdType_mcrTl
+zTpkcClreIsBtstrp_yes		zTpkcClreIsBtstrp_yes
+zTpkcClreDfltPostKcSlpMils	50	zTpkcClreDfltPostKcSlpMils
+zTpkcClreStpsFrmCmdListTop	{#insert zEND}{#insert zUP2}	zTpkcClreStpsFrmCmdListTop

@@ -1,0 +1,8 @@
+zTpkcFileSaveAndCloseAbrv1C	Fsvcl	zTpkcFileSaveAndCloseAbrv1C
+zTpkcFsvclCmdNameTC	FileSaveAndClose	zTpkcFsvclCmdNameTC
+zTpkcFsvclDfltPhrsNm	zTPFileSaveAndClose	zTpkcFsvclDfltPhrsNm
+zTpkcFsvclCatForCmdAbrvLC	file	zTpkcFsvclCatForCmdAbrvLC
+zTpkcFsvclCmdType_mcrTl		zTpkcFsvclCmdType_mcrTl
+zTpkcFsvclIsBtstrp_yes		zTpkcFsvclIsBtstrp_yes
+zTpkcFsvclDfltPostKcSlpMils	100	zTpkcFsvclDfltPostKcSlpMils
+zTpkcFsvclStpsFrmCmdListTop	{#insert zEND}{#insert zPGUP}{#insert zUP}	zTpkcFsvclStpsFrmCmdListTop

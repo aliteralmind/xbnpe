@@ -1,0 +1,8 @@
+zTpkcActivateSelectorAbrv1C	Vas	zTpkcActivateSelectorAbrv1C
+zTpkcVasCmdNameTC	ActivateSelector	zTpkcVasCmdNameTC
+zTpkcVasDfltPhrsNm	zTPActivateSelector	zTpkcVasDfltPhrsNm
+zTpkcVasCatForCmdAbrvLC	view	zTpkcVasCatForCmdAbrvLC
+zTpkcVasCmdType_mcrTl		zTpkcVasCmdType_mcrTl
+zTpkcVasIsBtstrp_yes		zTpkcVasIsBtstrp_yes
+zTpkcVasDfltPostKcSlpMils	10	zTpkcVasDfltPostKcSlpMils
+zTpkcVasStpsFrmCmdListTop	{#insert zPGDN}{#insert zUP2}	zTpkcVasStpsFrmCmdListTop

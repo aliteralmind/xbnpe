@@ -1,0 +1,8 @@
+zTpkcSelectEndAbrv1C	Slend	zTpkcSelectEndAbrv1C
+zTpkcSlendCmdNameTC	SelectEnd	zTpkcSlendCmdNameTC
+zTpkcSlendDfltPhrsNm	zTPSelEnd	zTpkcSlendDfltPhrsNm
+zTpkcSlendCatForCmdAbrvLC	sel	zTpkcSlendCatForCmdAbrvLC
+zTpkcSlendCmdType_mcrTl		zTpkcSlendCmdType_mcrTl
+zTpkcSlendIsBtstrp_yes		zTpkcSlendIsBtstrp_yes
+zTpkcSlendDfltPostKcSlpMils	10	zTpkcSlendDfltPostKcSlpMils
+zTpkcSlendStpsFrmCmdListTop	{#insert zPGDN}{#insert zUP}	zTpkcSlendStpsFrmCmdListTop

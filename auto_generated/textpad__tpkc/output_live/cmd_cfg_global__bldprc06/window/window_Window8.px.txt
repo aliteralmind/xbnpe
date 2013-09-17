@@ -1,0 +1,8 @@
+zTpkcWindow8Abrv1C	Win8	zTpkcWindow8Abrv1C
+zTpkcWin8CmdNameTC	Window8	zTpkcWin8CmdNameTC
+zTpkcWin8DfltPhrsNm	zTPGTWin8	zTpkcWin8DfltPhrsNm
+zTpkcWin8CatForCmdAbrvLC	window	zTpkcWin8CatForCmdAbrvLC
+zTpkcWin8CmdType_mcrTl		zTpkcWin8CmdType_mcrTl
+zTpkcWin8IsBtstrp_yes		zTpkcWin8IsBtstrp_yes
+zTpkcWin8DfltPostKcSlpMils	10	zTpkcWin8DfltPostKcSlpMils
+zTpkcWin8StpsFrmCmdListTop	{#insert zPGDN}{#insert zDOWN2}	zTpkcWin8StpsFrmCmdListTop

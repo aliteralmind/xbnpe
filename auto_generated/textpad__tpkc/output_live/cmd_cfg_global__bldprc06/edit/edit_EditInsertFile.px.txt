@@ -1,0 +1,8 @@
+zTpkcEditInsertFileAbrv1C	Einsf	zTpkcEditInsertFileAbrv1C
+zTpkcEinsfCmdNameTC	EditInsertFile	zTpkcEinsfCmdNameTC
+zTpkcEinsfDfltPhrsNm	zTPInsertFile	zTpkcEinsfDfltPhrsNm
+zTpkcEinsfCatForCmdAbrvLC	edit	zTpkcEinsfCatForCmdAbrvLC
+zTpkcEinsfCmdType_mcrTl		zTpkcEinsfCmdType_mcrTl
+zTpkcEinsfIsBtstrp_yes		zTpkcEinsfIsBtstrp_yes
+zTpkcEinsfDfltPostKcSlpMils	100	zTpkcEinsfDfltPostKcSlpMils
+zTpkcEinsfStpsFrmCmdListTop	{#insert zPGDN6}{#insert zDOWN}	zTpkcEinsfStpsFrmCmdListTop

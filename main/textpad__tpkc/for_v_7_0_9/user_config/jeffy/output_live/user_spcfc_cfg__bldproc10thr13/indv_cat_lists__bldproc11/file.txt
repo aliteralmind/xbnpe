@@ -1,0 +1,25 @@
+FileClose
+FileCloseAll            Ctrl+F12, Ctrl+F9
+FileExit
+FileGoTo                Ctrl+Shift+Alt+O
+FileManage
+FileNew                 Ctrl+N                  Ctrl+Shift+Alt+N
+FileOpen                Ctrl+O
+FilePageSetup
+FilePrint               Ctrl+P
+FilePrintAll            Ctrl+Shift+Alt+P
+FilePrintDefault
+FilePrintPreview        Ctrl+Shift+P
+FileQuickOpen
+FileRename
+FileRevert
+FileSave
+FileSaveAll             Ctrl+Shift+S            Ctrl+F12, Ctrl+F12
+FileSaveAndClose        Ctrl+Shift+Alt+F12, Ctrl+Shift+Alt+F9
+FileSaveAs              Shift+F12, Shift+F12
+FileSend
+FileStatistics          Ctrl+F1
+WorkspaceClose
+WorkspaceOpen
+WorkspaceSave
+WorkspaceSaveAs         Shift+Alt+O

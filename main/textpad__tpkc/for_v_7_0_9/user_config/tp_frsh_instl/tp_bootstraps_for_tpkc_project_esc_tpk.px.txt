@@ -9,7 +9,7 @@ zTPBookmarkToggleEsc	\\\{#insert zCpF2\\\}\\\{#sleep 10\\\}	zTPBookmarkToggleEsc
 zTPBookmarkToggleTPKeys	Ctrl+F2	zTPBookmarkToggleTPKeys
 zTPFFindDlgOpenEsc	\\\{#insert zCpF5\\\}\\\{#sleep 50\\\}	zTPFFindDlgOpenEsc
 zTPFFindDlgOpenTPKeys	Ctrl+F5	zTPFFindDlgOpenTPKeys
-zTPFileManagerEsc	\\\{#insert F3\\\}\\\{#sleep 50\\\}	zTPFileManagerEsc
+zTPFileManagerEsc	\\\{#insert zF3\\\}\\\{#sleep 50\\\}	zTPFileManagerEsc
 zTPFileManagerTPKeys	F3	zTPFileManagerTPKeys
 zTPFileOpenEsc	\\\{#insert zCpOO\\\}\\\{#sleep 1750\\\}	zTPFileOpenEsc
 zTPFileOpenTPKeys	Ctrl+O	zTPFileOpenTPKeys

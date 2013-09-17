@@ -1,0 +1,8 @@
+zTpkcFileSaveAsAbrv1C	Fsvas	zTpkcFileSaveAsAbrv1C
+zTpkcFsvasCmdNameTC	FileSaveAs	zTpkcFsvasCmdNameTC
+zTpkcFsvasDfltPhrsNm	zTPFileSaveAs	zTpkcFsvasDfltPhrsNm
+zTpkcFsvasCatForCmdAbrvLC	file	zTpkcFsvasCatForCmdAbrvLC
+zTpkcFsvasCmdType_mcrTl		zTpkcFsvasCmdType_mcrTl
+zTpkcFsvasIsBtstrp_yes		zTpkcFsvasIsBtstrp_yes
+zTpkcFsvasDfltPostKcSlpMils	1750	zTpkcFsvasDfltPostKcSlpMils
+zTpkcFsvasStpsFrmCmdListTop	{#insert zEND}{#insert zPGUP}	zTpkcFsvasStpsFrmCmdListTop

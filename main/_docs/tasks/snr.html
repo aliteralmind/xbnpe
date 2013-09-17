@@ -24,6 +24,7 @@
 <P>This document lists all available phrases related to search and replacement, in syntax-summary form. Each category also has a variety of example code.</P>
 
 <P><B>Contents:</B><UL>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#install">GO</A></B></FONT>]</CODE> &nbsp; Installation</LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#projectdepend">GO</A></B></FONT>]</CODE> &nbsp; The XBNPE projects in which particular phrases are actually available</LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#issues">GO</A></B></FONT>]</CODE> &nbsp; Potential issues to keep in mind when using search-and-replace functionality</LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#midrplc">GO</A></B></FONT>]</CODE> &nbsp; Mid-replacements</LI>
@@ -76,7 +77,20 @@
 <BR>The RE-call (to turn it off) must be manually added:
 <BR> &nbsp; &nbsp; <CODE>{#insert zRplcDlgOpenRE}{#insert zRplcFieldWith}{#insert zRplcDlgClose<B><U>RE</U></B>}</CODE></P>
 
+<PRE>
 
+<HR/>
+
+</PRE>
+<A NAME="install"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; Search and replace: Installation</H2>
+
+<P>The SNR-project is <A HREF="../basics/tpbs.html#depend">dependant</A> on both the <A HREF="../basics/xkp.html">XKP</A> and <A HREF="../basics/tpkc/index.html">TPKC</A> projects being fully installed and built. All other projects in XBN-PhraseExpress are directly dependant on SNR.</P>
+
+<P>To verify the built-in TextPad commands (<A HREF="../basics/tpbs.html#terminology">nbs phrases</A>) required by the SNR-project--and therefore verify its installation--<A HREF="../index.html#execute">execute</A>
+<BR> &nbsp; &nbsp; <CODE>verifysnrnbs</CODE>
+<BR>To further verify, run the examples in this document.</P>
+
+<P>To uninstall SNR, disable or delete its folder. Disable by right-clicking on the folder and checking &quot;Enable Autotext/Hotkeys&quot;.</P>
 
 <PRE>
 

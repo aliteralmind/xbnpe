@@ -1,0 +1,8 @@
+zTpkcToolHTMLValidateAbrv1C	Thv	zTpkcToolHTMLValidateAbrv1C
+zTpkcThvCmdNameTC	ToolHTMLValidate	zTpkcThvCmdNameTC
+zTpkcThvDfltPhrsNm	zTPToolHTMLValidate	zTpkcThvDfltPhrsNm
+zTpkcThvCatForCmdAbrvLC	tools	zTpkcThvCatForCmdAbrvLC
+zTpkcThvCmdType_mcrTl		zTpkcThvCmdType_mcrTl
+zTpkcThvIsBtstrp_yes		zTpkcThvIsBtstrp_yes
+zTpkcThvDfltPostKcSlpMils	10	zTpkcThvDfltPostKcSlpMils
+zTpkcThvStpsFrmCmdListTop	{#insert zEND}{#insert zPGUP}	zTpkcThvStpsFrmCmdListTop

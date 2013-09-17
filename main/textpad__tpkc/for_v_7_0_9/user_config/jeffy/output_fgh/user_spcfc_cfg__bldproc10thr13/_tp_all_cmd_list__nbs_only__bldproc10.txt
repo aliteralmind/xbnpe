@@ -1,0 +1,426 @@
+COMMANDS:               KEYS:
+
+"-tag_selR1             Ctrl+9
+#-qq_mL1
+$-qq_mR1
+%-sqbrackets_insert     Ctrl+Y
+(-tag_mL1               Ctrl+C
+)-tag_mR1               Ctrl+R
+*-tag_insert_empty_single
+,-word_all_cap_prev_word
+.-word_delR5            Alt+Delete
+/-word_mR5              Alt+Right
+?-word_selL5            Shift+Alt+Left
+@-qq_insert
+]-tag_prev_word_to_dbl
+^-tag_find_prev_href_thr_qqCtrl+Shift+Alt+0
+__secrets_sjja to printable
+_TagSelectL1            Ctrl+8
+`-paren_mR1
+{-tag_prev_word_to_dbl_with_newline_btw
+}-tag_prev_word_to_singleCtrl+E
+~-parens_insert         Ctrl+B
+¡
+¿
+<-word_delL5            Alt+Backspace
+=-word_selR5            Shift+Alt+Right
+>-word_mL5              Alt+Left
+?
+?
+?
+0-paren_mL1
+1-mark_xxx_find_up      Ctrl+Home
+2-mark_yyy_find_down    Alt+Pgup
+3-mark_yyy_find_up      Alt+Insert
+4-mark_zzz_find_down
+5-mark_zzz_find_up
+6-paragraph_go_to_end
+7-paragraph_go_to_start
+8-paragraph_select_thr_end
+9-paragraph_select_thr_start
+Á
+á
+À
+à
+Â
+â
+Ä
+ä
+Ã
+ã
+Å
+å
+a-chr_delL5
+ActivateClipLib
+ActivateDocument
+ActivateExplorer
+ActivateSearchResults   Alt+4
+ActivateSelector
+ActivateToolOutput      Alt+5
+Æ
+æ
+b-chr_delR5
+BlockSelectOff
+BlockSelectOn
+BookmarkClearAll        Ctrl+Shift+F2           Ctrl+Shift+Alt+-
+BookmarkInvertAll       Shift+Alt+.
+BookmarkNext            Alt+P
+BookmarkPrev            Alt+,
+BookmarkToggle          Alt+.
+Ç
+ç
+c-chr_mL5
+CharLeft                Left                    Ctrl+T
+CharLeftExtend          Ctrl+W                  Ctrl+Shift+Left
+CharRight               Right
+CharRightExtend         Ctrl+V                  Ctrl+Shift+Right
+ClipClose
+ClipCopy
+ClipDeleteBook
+ClipDeleteEntry
+ClipEditBook
+ClipInsert
+ClipNewBook
+ClipPaste
+ClipRefresh
+ClipRenameBook
+ClipRenameEntry
+ClipSaveBook
+ClipSortEntries
+Compile Java: BUILD     Ctrl+4
+Compile Java: BUILD all Ctrl+3
+Compile Java: HERE      Ctrl+1
+Compile Java: HERE all  Ctrl+2
+CustomizeToolbars
+Ð
+ð
+d-chr_mR5
+DocumentEnd             Ctrl+Shift+Alt+Down
+DocumentEndExtend       Ctrl+Shift+End          Ctrl+Shift+Alt+Pgdown
+DocumentStart           Ctrl+Shift+Alt+Up
+DocumentStartExtend     Ctrl+Shift+Home         Ctrl+Shift+Alt+Pgup
+É
+é
+È
+è
+Ê
+ê
+Ë
+ë
+e-chr_selL5
+EditAlignCenter
+EditAlignJustify
+EditAlignLeft
+EditAlignRight          Ctrl+Shift+E
+EditBackspace           Shift+Backspace         Ctrl+Shift+W            Ctrl+Alt+Backspace      Backspace
+EditCapitalize          Ctrl+Shift+U            Ctrl+Shift+Alt+2
+EditClearAll
+EditCopy                Ctrl+Insert             Ctrl+J
+EditCopyAllFileNames
+EditCopyAppend          Ctrl+Shift+C            Alt+J
+EditCopyAsHTML
+EditCopyFileName        Ctrl+Shift+F
+EditCopyLine
+EditCopyLineAppend
+EditCopyTaggedLines     Ctrl+Shift+Alt+.
+EditCopyWord
+EditCopyWordAppend
+EditCut                 Shift+Delete            Ctrl+X                  Ctrl+Q
+EditCutAppend           Ctrl+Shift+X            Alt+Q
+EditCutLine
+EditCutLineAppend
+EditCutTaggedLines      Ctrl+Shift+Alt+,
+EditCutWord
+EditCutWordAppend
+EditDelete              Ctrl+Shift+V            Delete
+EditDelLine             Ctrl+F
+EditDelLineEnd          Ctrl+Shift+Delete
+EditDelSelection
+EditDelTaggedLines      Ctrl+Shift+Alt+Delete
+EditDelWord
+EditDelWordLeft         Ctrl+Shift+M            Ctrl+Backspace
+EditDelWordRight        Ctrl+Shift+Z            Ctrl+Delete
+EditDupLine             Ctrl+Shift+Alt+K
+EditFillBlock
+EditIMEreconvert
+EditIndentLess          Ctrl+Shift+,            Ctrl+F9
+EditIndentMore          Ctrl+Shift+.            Ctrl+F10
+EditInsertFile
+EditInsertFileName
+EditInsertStatistics
+EditInvertCase          Ctrl+Shift+Alt+1
+EditJoinLines
+EditLongDate
+EditLowerCase           Alt+2
+EditMarkClean
+EditNewLineAfter
+EditNewLineBefore
+EditPageBreak           Ctrl+Shift+L
+EditPaste               Shift+Insert            Ctrl+K
+EditPasteBlock
+EditPasteHTML
+EditPasteLines
+EditPopupContext        Shift+F10
+EditPopupDateTime
+EditRedo                Alt+;
+EditRedoAll             Ctrl+Shift+Y
+EditReformat            Ctrl+Shift+J            Ctrl+Shift+Alt+F11
+EditSentenceCase
+EditShortDate
+EditSplitLines          Ctrl+Alt+J
+EditTime
+EditTranspose
+EditTransposeWords      Ctrl+Shift+T
+EditUndo                Ctrl+;
+EditUndoAll             Ctrl+Shift+Alt+Z
+EditUpperCase           Ctrl+U                  Alt+1
+EmptyClipboard
+explorer.exe $Dir
+f-chr_selR5
+FileClose
+FileCloseAll            Ctrl+F12, Ctrl+F9
+FileExit
+FileGoTo                Ctrl+Shift+Alt+O
+FileManage
+FileNew                 Ctrl+N                  Ctrl+Shift+Alt+N
+FileOpen                Ctrl+O
+FilePageSetup
+FilePrint               Ctrl+P
+FilePrintAll            Ctrl+Shift+Alt+P
+FilePrintDefault
+FilePrintPreview        Ctrl+Shift+P
+FileQuickOpen
+FileRename
+FileRevert
+FileSave
+FileSaveAll             Ctrl+Shift+S            Ctrl+F12, Ctrl+F12
+FileSaveAndClose        Ctrl+Shift+Alt+F12, Ctrl+Shift+Alt+F9
+FileSaveAs              Shift+F12, Shift+F12
+FileSend
+FileStatistics          Ctrl+F1
+g-java_del_param_names_4fqp
+GoToBlockEnd
+GoToBlockStart
+GoToColumn
+GoToLine
+GoToPage
+Help
+HelpFAQ
+HelpOrdering
+HelpSupport
+HelpTip
+HelpWWW
+h-java_del_param_names_4tv
+Í
+í
+Ì
+ì
+Î
+î
+Ï
+ï
+i-java_del_param_types
+IncrementalFind         Ctrl+I                  Shift+F3
+IncrementalFindNext
+IncrementalFindPrev
+j-java_func_sel_rt_name_open_paren
+k-java_find_comma_space
+-line_moveDown10
+-line_moveUp10
+LineDown                Down
+LineDownExtend          Shift+Down
+LineEnd                 End                     Ctrl+Space
+LineEndExtend           Shift+End               Ctrl+Shift+Space
+LineLeft                Home
+LineLeftExtend          Shift+Home
+LineScrollDown          Ctrl+Up
+LineScrollUp            Ctrl+Down
+LineStart
+LineStartExtend
+LineUp                  Up
+LineUpExtend            Shift+Up
+l-java_find_non_comma_space
+MacroMultiplay
+MacroPause
+MacroPlay
+MacroRecord             Ctrl+Shift+R            Ctrl+Shift+Alt+F1
+MacroSave               Ctrl+Alt+F1
+MatchBracket            Ctrl+\
+MatchBracketExtend      Ctrl+Shift+\
+MatchCaseClear          Ctrl+Shift+Alt+F, C
+MatchCaseSet            Shift+Alt+F, C
+MatchWordClear          Ctrl+Shift+Alt+F, W
+MatchWordSet            Shift+Alt+F, W
+Ñ
+ñ
+n-java_func_goto_next
+Ó
+ó
+Ò
+ò
+Ô
+ô
+Ö
+ö
+Õ
+õ
+Ø
+ø
+o-java_func_goto_prev
+Open TODO.txt           Ctrl+6
+PageDown                Pgdown
+PageDownExtend          Shift+Pgdown
+PageLeft                Ctrl+Pgup
+PageLeftExtend          Ctrl+Shift+Pgup
+PageRight               Ctrl+Pgdown
+PageRightExtend         Ctrl+Shift+Pgdown
+PageUp                  Pgup
+PageUpExtend            Shift+Pgup
+ParaDown                Shift+Alt+Down
+ParaDownExtend          Ctrl+Shift+Down
+ParaUp                  Shift+Alt+Up
+ParaUpExtend            Ctrl+Shift+Up
+p-java_select_super_class_name
+Preferences
+q-java_select_this_class_name
+Regexbuddy
+RegexClear              Ctrl+Shift+Alt+F, R
+RegexSet                Shift+Alt+F, R
+RightMarginDec
+RightMarginInc
+RightMarginSet
+r-java_sel_thr_sig_end
+Run Java Applet
+Run Java Application
+SearchFiles             Alt+F5
+SearchFind              F3
+SearchFindNext          F4                      Shift+F4                Alt+F4
+SearchFindPrevious      F2                      Shift+F2                Alt+F2
+SearchGoto              Ctrl+Shift+G
+SearchJumpNext          Ctrl+Alt+F4             Ctrl+Shift+Alt+F4
+SearchJumpPrev          Ctrl+Alt+F2             Ctrl+Shift+Alt+F2
+SearchOpenAll           Ctrl+F12, Ctrl+F8
+SearchReplace           F8                      F5
+SearchReplaceNext       Ctrl+F8                 Shift+F5
+SelectAll               Ctrl+A
+SelectBeginBlock
+SelectBeginLine
+SelectBeginStream
+SelectCancel
+SelectEnd
+SelectLine              Ctrl+Alt+A
+SelectParagraph         Alt+A
+SelectSwapEnds
+SelectWord              Ctrl+Shift+A
+s-line_scrollDown20     Alt+Down
+ß
+StayOnTop
+TabLeft
+ToggleBlockSelect
+ToggleInsertMode        Insert
+ToggleReadOnly          Ctrl+Shift+Alt+F5
+ToggleSyncScroll
+ToggleUndo
+ToggleWordWrap
+Tool05                  Ctrl+5
+Tool07
+Tool12
+Tool13
+Tool14
+Tool15
+Tool16
+Tool17
+Tool18
+Tool19
+Tool20
+Tool21
+Tool22
+Tool23
+Tool24
+Tool25
+Tool26
+Tool27
+Tool28
+Tool29
+Tool30
+Tool31
+Tool32
+ToolCompareFiles
+ToolExplorer            Alt+F3
+ToolHTMLValidate
+ToolRerun
+ToolRun
+ToolSort                Ctrl+Alt+F6
+ToolSpell
+ToolStop                Ctrl+Shift+Alt+X
+ToolWildEdit
+Ú
+ú
+Ù
+ù
+Û
+û
+Ü
+ü
+u-line_scrollDown5
+ViewClipLib             Ctrl+F3
+ViewDocSelector
+ViewEnd                 Alt+End
+ViewExplorer
+ViewFindDialogBox
+ViewFullPaths
+ViewFullScreen
+ViewHScrollbar
+ViewInBrowser
+ViewLineNumbers
+ViewProperties
+ViewReplaceDialogBox
+ViewSearchResults       Shift+F11
+ViewStart               Alt+Home
+ViewStatusBar
+ViewTabSelector
+ViewToolOutput          Ctrl+F11
+ViewVisibleSpaces       F9, F8
+ViewVScrollbar
+v-line_scrollUp20       Alt+Up
+Window1
+Window10
+Window2
+Window3
+Window4
+Window5
+Window6
+Window7
+Window8
+Window9
+WindowArrangeIcons
+WindowCascade
+WindowNext
+WindowPaneNext
+WindowPanePrev
+WindowPrev
+WindowSplit
+WindowTileHorz
+WindowTileVert
+WindowToggleIcon
+WindowToggleZoom
+w-line_scrollUp5
+WordLeft                Ctrl+Left               Ctrl+H
+WordLeftEnd             Ctrl+D
+WordLeftEndExtend       Ctrl+Shift+D
+WordLeftExtend          Ctrl+Shift+B            Shift+Left              Ctrl+M
+WordRight
+WordRightEnd            Ctrl+Right              Ctrl+S
+WordRightEndExtend      Shift+Right             Ctrl+Z
+WordRightExtend
+WorkspaceClose
+WorkspaceOpen
+WorkspaceSave
+WorkspaceSaveAs         Shift+Alt+O
+x-mark_vvv_find_down    Ctrl+Alt+End
+Ý
+ý
+ÿ
+y-mark_vvv_find_up      Ctrl+Alt+Home
+z-mark_xxx_find_down    Ctrl+End
+[-tag_mR2               Ctrl+0

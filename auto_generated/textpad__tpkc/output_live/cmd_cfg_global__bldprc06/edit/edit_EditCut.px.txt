@@ -1,0 +1,8 @@
+zTpkcEditCutAbrv1C	Ect	zTpkcEditCutAbrv1C
+zTpkcEctCmdNameTC	EditCut	zTpkcEctCmdNameTC
+zTpkcEctDfltPhrsNm	zTPCut	zTpkcEctDfltPhrsNm
+zTpkcEctCatForCmdAbrvLC	edit	zTpkcEctCatForCmdAbrvLC
+zTpkcEctCmdType_mcrTl		zTpkcEctCmdType_mcrTl
+zTpkcEctIsBtstrp_yes	yes	zTpkcEctIsBtstrp_yes
+zTpkcEctDfltPostKcSlpMils	25	zTpkcEctDfltPostKcSlpMils
+zTpkcEctStpsFrmCmdListTop	{#insert zPGDN3}{#insert zUP}	zTpkcEctStpsFrmCmdListTop

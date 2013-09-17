@@ -1,0 +1,8 @@
+zTpkcViewEndAbrv1C	Crvwe	zTpkcViewEndAbrv1C
+zTpkcCrvweCmdNameTC	ViewEnd	zTpkcCrvweCmdNameTC
+zTpkcCrvweDfltPhrsNm	zTPViewEnd	zTpkcCrvweDfltPhrsNm
+zTpkcCrvweCatForCmdAbrvLC	cursor	zTpkcCrvweCatForCmdAbrvLC
+zTpkcCrvweCmdType_mcrTl		zTpkcCrvweCmdType_mcrTl
+zTpkcCrvweIsBtstrp_yes		zTpkcCrvweIsBtstrp_yes
+zTpkcCrvweDfltPostKcSlpMils	10	zTpkcCrvweDfltPostKcSlpMils
+zTpkcCrvweStpsFrmCmdListTop	{#insert zVV}	zTpkcCrvweStpsFrmCmdListTop

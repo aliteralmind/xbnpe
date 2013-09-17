@@ -1,0 +1,8 @@
+zTpkcMacroPlayAbrv1C	Mcrply	zTpkcMacroPlayAbrv1C
+zTpkcMcrplyCmdNameTC	MacroPlay	zTpkcMcrplyCmdNameTC
+zTpkcMcrplyDfltPhrsNm	zTPMacroPlay	zTpkcMcrplyDfltPhrsNm
+zTpkcMcrplyCatForCmdAbrvLC	macros	zTpkcMcrplyCatForCmdAbrvLC
+zTpkcMcrplyCmdType_mcrTl		zTpkcMcrplyCmdType_mcrTl
+zTpkcMcrplyIsBtstrp_yes		zTpkcMcrplyIsBtstrp_yes
+zTpkcMcrplyDfltPostKcSlpMils	10	zTpkcMcrplyDfltPostKcSlpMils
+zTpkcMcrplyStpsFrmCmdListTop	{#NONE -chars m -count 3}{#insert z5ThnTSlp}	zTpkcMcrplyStpsFrmCmdListTop

@@ -1,0 +1,8 @@
+zTpkcEditUndoAllAbrv1C	Eudoa	zTpkcEditUndoAllAbrv1C
+zTpkcEudoaCmdNameTC	EditUndoAll	zTpkcEudoaCmdNameTC
+zTpkcEudoaDfltPhrsNm	zTPUndoAll	zTpkcEudoaDfltPhrsNm
+zTpkcEudoaCatForCmdAbrvLC	edit	zTpkcEudoaCatForCmdAbrvLC
+zTpkcEudoaCmdType_mcrTl		zTpkcEudoaCmdType_mcrTl
+zTpkcEudoaIsBtstrp_yes		zTpkcEudoaIsBtstrp_yes
+zTpkcEudoaDfltPostKcSlpMils	10	zTpkcEudoaDfltPostKcSlpMils
+zTpkcEudoaStpsFrmCmdListTop	{#insert zEND}{#insert zUP2}	zTpkcEudoaStpsFrmCmdListTop

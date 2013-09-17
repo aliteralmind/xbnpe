@@ -1,0 +1,8 @@
+zTpkcFileQuickOpenAbrv1C	Fqopn	zTpkcFileQuickOpenAbrv1C
+zTpkcFqopnCmdNameTC	FileQuickOpen	zTpkcFqopnCmdNameTC
+zTpkcFqopnDfltPhrsNm	zTPFileQOpen	zTpkcFqopnDfltPhrsNm
+zTpkcFqopnCatForCmdAbrvLC	file	zTpkcFqopnCatForCmdAbrvLC
+zTpkcFqopnCmdType_mcrTl		zTpkcFqopnCmdType_mcrTl
+zTpkcFqopnIsBtstrp_yes	yes	zTpkcFqopnIsBtstrp_yes
+zTpkcFqopnDfltPostKcSlpMils	50	zTpkcFqopnDfltPostKcSlpMils
+zTpkcFqopnStpsFrmCmdListTop	{#insert zPGDN2}	zTpkcFqopnStpsFrmCmdListTop

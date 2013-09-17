@@ -1,0 +1,8 @@
+zTpkcFileSaveAbrv1C	Fsv	zTpkcFileSaveAbrv1C
+zTpkcFsvCmdNameTC	FileSave	zTpkcFsvCmdNameTC
+zTpkcFsvDfltPhrsNm	zTPFileSave	zTpkcFsvDfltPhrsNm
+zTpkcFsvCatForCmdAbrvLC	file	zTpkcFsvCatForCmdAbrvLC
+zTpkcFsvCmdType_mcrTl		zTpkcFsvCmdType_mcrTl
+zTpkcFsvIsBtstrp_yes	yes	zTpkcFsvIsBtstrp_yes
+zTpkcFsvDfltPostKcSlpMils	50	zTpkcFsvDfltPostKcSlpMils
+zTpkcFsvStpsFrmCmdListTop	{#insert zEND}{#insert zPGUP}{#insert zUP3}	zTpkcFsvStpsFrmCmdListTop

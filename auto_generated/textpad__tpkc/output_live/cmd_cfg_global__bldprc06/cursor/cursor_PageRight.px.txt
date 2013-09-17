@@ -1,0 +1,8 @@
+zTpkcPageRightAbrv1C	Crpgr	zTpkcPageRightAbrv1C
+zTpkcCrpgrCmdNameTC	PageRight	zTpkcCrpgrCmdNameTC
+zTpkcCrpgrDfltPhrsNm	zTPPageRight	zTpkcCrpgrDfltPhrsNm
+zTpkcCrpgrCatForCmdAbrvLC	cursor	zTpkcCrpgrCatForCmdAbrvLC
+zTpkcCrpgrCmdType_mcrTl		zTpkcCrpgrCmdType_mcrTl
+zTpkcCrpgrIsBtstrp_yes		zTpkcCrpgrIsBtstrp_yes
+zTpkcCrpgrDfltPostKcSlpMils	10	zTpkcCrpgrDfltPostKcSlpMils
+zTpkcCrpgrStpsFrmCmdListTop	{#insert zEND}{#insert zPGUP3}	zTpkcCrpgrStpsFrmCmdListTop

@@ -1,0 +1,8 @@
+zTpkcFilePageSetupAbrv1C	Fpgstp	zTpkcFilePageSetupAbrv1C
+zTpkcFpgstpCmdNameTC	FilePageSetup	zTpkcFpgstpCmdNameTC
+zTpkcFpgstpDfltPhrsNm	zTPFilePageSetup	zTpkcFpgstpDfltPhrsNm
+zTpkcFpgstpCatForCmdAbrvLC	file	zTpkcFpgstpCatForCmdAbrvLC
+zTpkcFpgstpCmdType_mcrTl		zTpkcFpgstpCmdType_mcrTl
+zTpkcFpgstpIsBtstrp_yes		zTpkcFpgstpIsBtstrp_yes
+zTpkcFpgstpDfltPostKcSlpMils	50	zTpkcFpgstpDfltPostKcSlpMils
+zTpkcFpgstpStpsFrmCmdListTop	{#insert zPGDN}{#insert zDOWN}	zTpkcFpgstpStpsFrmCmdListTop

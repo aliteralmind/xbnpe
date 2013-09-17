@@ -130,6 +130,9 @@
 <P>As of 9/3/2013, this is equal to
 <BR> &nbsp; &nbsp; <CODE>{#insert <A HREF="../../global_config.html#zROOT_DIR_XBNPE_MAIN">zROOT_DIR_XBNPE_MAIN</A>}textpad__tpkc\for_v_7_0_9\user_config\{#insert <A HREF="#tudn">zzTpkcUserDirName</A>}\</CODE></P>
 
+<P>For example:
+<BR> &nbsp; &nbsp; <CODE>C:\programming\phrase_express\xbnpe\main\textpad__tpkc\for_v_7_0_9\user_config\tp_frsh_instl\</CODE></P>
+
 <P><I>Throughout this documentation, it is assumed that <CODE>zzTpkcUserDirName</CODE> is equal to
 <BR> &nbsp; &nbsp; <CODE>&quot;tp_frsh_instl&quot;</CODE></I></P>
 
@@ -253,7 +256,7 @@
 
 <P>The structure of the TPKC user-directory, as it exists on disk (in Windows):<UL>
 	<LI><CODE>{#insert <A HREF="#zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn">zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn</A>}</CODE><UL>
-		<LI><B><FONT SIZE="+1"><CODE>output\</CODE></FONT></B><UL>
+		<LI><B><FONT SIZE="+1"><CODE>output_live\</CODE></FONT></B><UL>
 			<LI><B><FONT SIZE="+1"><CODE>nbs_command_phrases__bldproc14\</CODE></FONT></B> &nbsp; &nbsp; <I>(<A HREF="#14file">info</A>)</I><UL>
 				<LI><I>Output file:</I> <CODE>file.px.txt</CODE> &nbsp; &nbsp; <I>(one per-category)</I></LI>
 			</UL></LI>
@@ -265,6 +268,7 @@
 			<LI><I>Output file:</I> <CODE>tp_all_active_cmds__bldproc15__pcddmenu.px.txt</CODE> &nbsp; &nbsp; <I>(<A HREF="#15file">info</A>)</I></LI>
 			<LI><I>Output file:</I> <CODE>tp_all_active_cmds__pcddmenu__indented_DO_NOT_IMPORT.txt</CODE></LI>
 		</UL></LI>
+		<LI><B><FONT SIZE="+1"><CODE>output_test\</CODE></FONT></B> &nbsp; &nbsp; <I>(...same structure...)</I></LI>
 		<LI><I>Input file:</I> <CODE>textpad_all_command_list.txt</CODE> &nbsp; &nbsp; <I>(<A HREF="tpacl.html">info</A>)</I></LI>
 		<LI><I>Rqd file:</I> <CODE>tp_bootstraps_for_<I>[xkp,tpkc]</I>_project<I>[_esc_tpk]</I>.px.txt</CODE> &nbsp; &nbsp; <I>(<A HREF="../tpbs.html">info</A>)</I></LI>
 		<LI><I>Rqd file:</I> <CODE>z_tpkc_user_directory_name.px.txt</CODE> &nbsp; &nbsp; <I>(<A HREF="#tudn">info</A>)</I></LI>
@@ -272,7 +276,12 @@
 	</UL></LI>
 </UL></P>
 
-<P><I>Note that &quot;output files&quot; are created by the TPKC-build process--not you. Also note that the TPKC-user-dir name is only required in order for the TPKC build-process to function. Having, or not having, a TPKC-user-dir name does not affect the functionality of the four TextPad-bootstrap phrase-files.</I></P>
+<P>All &quot;output_*&quot; files are created by the TPKC <A HREF="index.html#userbuild01">user-build-process</A>. All <CODE>tp_bootstraps_*</CODE> files and the <CODE>textpad_all_command_list.txt</CODE> are created by you.</P>
+
+<H3>Multiple <CODE>&quot;output_*&quot;</CODE> version directories</H3>
+
+<P>Each <CODE>&quot;output_*&quot;</CODE> directory represents the unique set of categories processed by the TPKC <A HREF="index.html#userbuild01">user-build-process</A>. This is its &quot;version&quot;. The currently-active version is defined by the TPKC <A HREF="master_cfg_vars.html">master-configuration-variable</A>
+<BR> &nbsp; &nbsp; <CODE><A HREF="master_cfg_vars.html#zzTpkcBuildVersionName">zzTpkcBuildVersionName</A></CODE></P>
 
 <PRE>
 
@@ -292,17 +301,12 @@
 <I>(<A HREF="#14file">info</A>)</I>             Nbs TP-phrases [CALL THESE!] (AG:14) & has-a-kc qbl-s
 <I>(<A HREF="#13file">info</A>)</I>             User-specific command configuration (AG:13)
 <I>(<A HREF="#15file">info</A>)</I>             z-DDMENU of all active TP-built-ins (AG:15)
-                TPKC-user-build: Auto-generated -- test &gt;
-                   Nbs TP-phrases [CALL THESE!] (AG:14) & has-a-kc qbl-s
-                   User-specific command configuration (AG:13)
-                   z-DDMENU of all active TP-built-ins (AG:15)</PRE>
+                TPKC-user-build: Auto-generated -- FGH-test &gt;     <I>(file, config, help categories)</I>
+                   <I>...same directory structure...</I></PRE>
 
-<H3>Switching TPKC versions</H3>
+<P>The <CODE>&quot;LIVE&quot;</CODE> and <CODE>&quot;FGH-TEST&quot;</CODE> folders facilitate <A HREF="master_cfg_vars.html#switchv">switching</A> between TPKC-build versions. Exactly one version (either fgh or live) must be enabled at any one time. Which version should be enabled is determined by the TPKC master-config-variable
+<BR> &nbsp; &nbsp; <CODE><A HREF="master_cfg_vars.html#zzTpkcBuildVersionName">zzTpkcBuildVersionName</A></CODE></P>
 
-<P>Exactly one of the following folders must be <A HREF="build_proc_tech_info.html#import3">enabled</A> at all times (right-click on the folder and check &quot;Enable Autotext/Hotkeys&quot;):<UL>
-	<LI><CODE>TPKC-user-build: Auto-generated -- LIVE</CODE></LI>
-	<LI><CODE>TPKC-user-build: Auto-generated -- test</CODE></LI>
-</UL>Unless you know what you're doing, or are told to do otherwise, leave the &quot;live&quot; folder active.</P>
 <PRE>
 
 <HR/>
@@ -315,7 +319,7 @@
 <P><B>Phrase and file locations:</B><UL>
 	<LI><A HREF="#ondisk">On disk</A><I> (<A HREF="../phrase_file.html#fformat">phrase-file</A>)</I>:
 	<BR> &nbsp; &nbsp; <CODE>{#insert <A HREF="tpkc_user_dir.html#zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn">zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn</A>}output\user_spcfc_cfg__bldproc10thr13\<A HREF="../../../textpad__tpkc/for_v_7_0_9/user_config/tp_frsh_instl/output/user_spcfc_cfg__bldproc10thr13/file.px.txt">file.px.txt</A></CODE>
-	<BR> &nbsp; &nbsp; &nbsp; &nbsp; <I>(Replace <CODE>&quot;file&quot;</CODE> with any category in <CODE><A HREF="config_vars.html#zTpkcAllCategoryAbrvLCsQbl">zTpkcAllCategoryAbrvLCsQbl</A></CODE>)</I></LI>
+	<BR> &nbsp; &nbsp; &nbsp; &nbsp; <I>(Replace <CODE>&quot;file&quot;</CODE> with any category in <CODE><A HREF="config_vars.html#zzTpkcBuildVersionCatAbrvs">zzTpkcBuildVersionCatAbrvs</A></CODE>)</I></LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#inpex">GO</A></B></FONT>]</CODE> &nbsp; In PhraseExpress <I>(where to <A HREF="../phrase_file_import1.html">import</A> to)</I>: <A HREF="tpkc_user_dir.html#inpex">TPKC-user-directory</A></LI>
 </UL></P>
 
@@ -342,12 +346,12 @@
 </PRE>
 <a name="14file"/><H2><CODE>[<A HREF="#ondisk">BACK</A>]</CODE> &nbsp; TPKC user-dir: <CODE>...\output\nbs_command_phrases__bldproc14\file.px.txt</CODE></H2>
 
-<P>This directory contains the <A HREF="../tpbs.html#terminology">nbs-phrases</A> for all built-in TextPad commands to which you have assigned at least one key-command. These files are output by <A HREF="sub_build_proc2.html#14">sub-build-proc-14</A>, which is part of the <A HREF="index.html#userbuild02">TPKC user-build-process part 2/2</A>.</P>
+<P>This directory contains the <A HREF="../tpbs.html#terminology">nbs-phrases</A> for all built-in TextPad commands to which you have assigned at least one key-command. These files are output by <A HREF="sub_build_proc2.html#14">sub-build-proc-14</A>, which is part of the <A HREF="index.html#userbuild01">TPKC user-build-process part 2/2</A>.</P>
 
 <P><B>Phrase and file locations:</B><UL>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#ondisk">GO</A></B></FONT>]</CODE> &nbsp;  <I>(<A HREF="../phrase_file.html#fformat">phrase-file</A>)</I>:
 	<BR> &nbsp; &nbsp; <CODE>{#insert <A HREF="tpkc_user_dir.html#zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn">zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn</A>}output\nbs_command_phrases__bldproc14\<A HREF="../../../textpad__tpkc/for_v_7_0_9/user_config/tp_frsh_instl/output/nbs_command_phrases__bldproc14/file.px.txt">file.px.txt</A></CODE>
-	<BR> &nbsp; &nbsp; &nbsp; &nbsp; <I>(Replace <CODE>&quot;file&quot;</CODE> with any category in <CODE><A HREF="config_vars.html#zTpkcAllCategoryAbrvLCsQbl">zTpkcAllCategoryAbrvLCsQbl</A></CODE>)</I></LI>
+	<BR> &nbsp; &nbsp; &nbsp; &nbsp; <I>(Replace <CODE>&quot;file&quot;</CODE> with any category in <CODE><A HREF="config_vars.html#zzTpkcBuildVersionCatAbrvs">zzTpkcBuildVersionCatAbrvs</A></CODE>)</I></LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#inpex">GO</A></B></FONT>]</CODE> &nbsp; In PhraseExpress <I>(where to <A HREF="../phrase_file_import1.html">import</A> to)</I>: <A HREF="tpkc_user_dir.html#inpex">TPKC-user-directory</A></LI>
 </UL></P>
 
@@ -366,7 +370,7 @@
 </PRE>
 <a name="15file"/><H2><CODE>[<A HREF="#ondisk">BACK</A>]</CODE> &nbsp; TPKC user-dir: <CODE>...\output\tp_all_active_cmds__bldproc15__pcddmenu.px.txt</CODE></H2>
 
-<P>This phrase-file serves as the foundation to the <A HREF="../../devpex/xbnpe_ddmenus.html#xh"><CODE>xh...</CODE> phrase-creator ddmenu</A>. It output by <A HREF="sub_build_proc2.html#15">sub-build-proc-15</A>, which is part of the <A HREF="index.html#userbuild02">TPKC user-build-process part 2/2</A>.</P>
+<P>This phrase-file serves as the foundation to the <A HREF="../../devpex/xbnpe_ddmenus.html#xh"><CODE>xh...</CODE> phrase-creator ddmenu</A>. It output by <A HREF="sub_build_proc2.html#15">sub-build-proc-15</A>, which is part of the <A HREF="index.html#userbuild01">TPKC user-build-process part 2/2</A>.</P>
 
 <P><B>Phrase and file locations:</B><UL>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#ondisk">GO</A></B></FONT>]</CODE> &nbsp; On-disk <I>(<A HREF="../phrase_file.html#fformat">phrase-file</A>)</I>:

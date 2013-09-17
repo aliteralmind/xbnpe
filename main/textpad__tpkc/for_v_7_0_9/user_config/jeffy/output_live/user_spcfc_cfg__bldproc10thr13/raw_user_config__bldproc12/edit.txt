@@ -1,0 +1,67 @@
+EditAlignCenter	0
+EditAlignJustify	0
+EditAlignLeft	0
+EditAlignRight	1	\\\{#insert zCSpEE\\\}
+EditBackspace	4	\\\{#insert zSpBKSP\\\}	\\\{#insert zCSpWW\\\}	\\\{#insert zCApBKSP\\\}	\\\{#insert zBKSP\\\}
+EditCapitalize	2	\\\{#insert zCSpUU\\\}	\\\{#insert zCASpTWO\\\}
+EditClearAll	0
+EditCopy	1	\\\{#insert zCpINS\\\}
+EditCopyAllFileNames	0
+EditCopyAppend	2	\\\{#insert zCSpCC\\\}	\\\{#insert zApJJ\\\}
+EditCopyAsHTML	0
+EditCopyFileName	1	\\\{#insert zCSpFF\\\}
+EditCopyLine	0
+EditCopyLineAppend	0
+EditCopyTaggedLines	0
+EditCopyWord	0
+EditCopyWordAppend	0
+EditCut	2	\\\{#insert zSpDEL\\\}	\\\{#insert zCpXX\\\}
+EditCutAppend	2	\\\{#insert zCSpXX\\\}	\\\{#insert zApQQ\\\}
+EditCutLine	0
+EditCutLineAppend	0
+EditCutTaggedLines	0
+EditCutWord	0
+EditCutWordAppend	0
+EditDelete	2	\\\{#insert zCSpVV\\\}	\\\{#insert zDEL\\\}
+EditDelLine	1	\\\{#insert zCpFF\\\}
+EditDelLineEnd	1	\\\{#insert zCSpDEL\\\}
+EditDelSelection	0
+EditDelTaggedLines	1	\\\{#insert zCASpDEL\\\}
+EditDelWord	0
+EditDelWordLeft	2	\\\{#insert zCSpMM\\\}	\\\{#insert zCpBKSP\\\}
+EditDelWordRight	2	\\\{#insert zCSpZZ\\\}	\\\{#insert zCpDEL\\\}
+EditDupLine	0
+EditFillBlock	0
+EditIMEreconvert	0
+EditIndentLess	2	\\\{#insert zCSpCOMMA\\\}	\\\{#insert zCpF9\\\}
+EditIndentMore	2	\\\{#insert zCSpPERIOD\\\}	\\\{#insert zCpF10\\\}
+EditInsertFile	0
+EditInsertFileName	0
+EditInsertStatistics	0
+EditInvertCase	1	\\\{#insert zCASpONE\\\}
+EditJoinLines	0
+EditLongDate	0
+EditLowerCase	1	\\\{#insert zApTWO\\\}
+EditMarkClean	0
+EditNewLineAfter	0
+EditNewLineBefore	0
+EditPageBreak	1	\\\{#insert zCSpLL\\\}
+EditPaste	1	\\\{#insert zSpINS\\\}
+EditPasteBlock	0
+EditPasteHTML	0
+EditPasteLines	0
+EditPopupContext	1	\\\{#insert zSpF10\\\}
+EditPopupDateTime	0
+EditRedo	1	\\\{#insert zApSEMI_COLON\\\}
+EditRedoAll	1	\\\{#insert zCSpYY\\\}
+EditReformat	2	\\\{#insert zCSpJJ\\\}	\\\{#insert zCASpF11\\\}
+EditSentenceCase	0
+EditShortDate	0
+EditSplitLines	1	\\\{#insert zCApJJ\\\}
+EditTime	0
+EditTranspose	0
+EditTransposeWords	1	\\\{#insert zCSpTT\\\}
+EditUndo	1	\\\{#insert zCpSEMI_COLON\\\}
+EditUndoAll	1	\\\{#insert zCASpZZ\\\}
+EditUpperCase	2	\\\{#insert zCpUU\\\}	\\\{#insert zApONE\\\}
+EmptyClipboard	0

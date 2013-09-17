@@ -1,0 +1,8 @@
+zTpkcActivateClipLibAbrv1C	Vacl	zTpkcActivateClipLibAbrv1C
+zTpkcVaclCmdNameTC	ActivateClipLib	zTpkcVaclCmdNameTC
+zTpkcVaclDfltPhrsNm	zTPActivateClipLib	zTpkcVaclDfltPhrsNm
+zTpkcVaclCatForCmdAbrvLC	view	zTpkcVaclCatForCmdAbrvLC
+zTpkcVaclCmdType_mcrTl		zTpkcVaclCmdType_mcrTl
+zTpkcVaclIsBtstrp_yes		zTpkcVaclIsBtstrp_yes
+zTpkcVaclDfltPostKcSlpMils	10	zTpkcVaclDfltPostKcSlpMils
+zTpkcVaclStpsFrmCmdListTop	(*NOTHING. Top command in list*)	zTpkcVaclStpsFrmCmdListTop

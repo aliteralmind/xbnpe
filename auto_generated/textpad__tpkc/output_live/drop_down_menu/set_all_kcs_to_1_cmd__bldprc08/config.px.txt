@@ -1,0 +1,13 @@
+BlockSelectOff (zTPBlockSelectOff, cfgblkself)	{#insert zvCMD_ABRV_1C_sfBlockSelectOff}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Cfgblkself
+BlockSelectOn (zTPBlockSelectOn, cfgblkseln)	{#insert zvCMD_ABRV_1C_sfBlockSelectOn}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Cfgblkseln
+CustomizeToolbars (zTPCustomizeToolbars, cfgcstmztbs)	{#insert zvCMD_ABRV_1C_sfCustomizeToolbars}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Cfgcstmztbs
+Preferences (zTPPrefsDlgOpen, cfgprfsdlg)	{#insert zvCMD_ABRV_1C_sfPreferences}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Cfgprfsdlg
+RightMarginDec (zTPRightMarginDec, cfgrmrgdec)	{#insert zvCMD_ABRV_1C_sfRightMarginDec}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Cfgrmrgdec
+RightMarginInc (zTPRightMarginInc, cfgrmrginc)	{#insert zvCMD_ABRV_1C_sfRightMarginInc}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Cfgrmrginc
+RightMarginSet (zTPRightMarginSet, cfgrmrgset)	{#insert zvCMD_ABRV_1C_sfRightMarginSet}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Cfgrmrgset
+ToggleBlockSelect (zTPToggleBlockSelect, cfgtgblksel)	{#insert zvCMD_ABRV_1C_sfToggleBlockSelect}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Cfgtgblksel
+ToggleInsertMode (zTPToggleInsertMode, cfgtgins)	{#insert zvCMD_ABRV_1C_sfToggleInsertMode}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Cfgtgins
+ToggleReadOnly (zTPToggleReadOnly, cfgtgro)	{#insert zvCMD_ABRV_1C_sfToggleReadOnly}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Cfgtgro
+ToggleSyncScroll (zTPToggleSyncScroll, cfgtgsyncscr)	{#insert zvCMD_ABRV_1C_sfToggleSyncScroll}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Cfgtgsyncscr
+ToggleUndo (zTPToggleUndo, cfgtgudo)	{#insert zvCMD_ABRV_1C_sfToggleUndo}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Cfgtgudo
+ToggleWordWrap (zTPToggleWW, cfgtgww)	{#insert zvCMD_ABRV_1C_sfToggleWordWrap}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Cfgtgww

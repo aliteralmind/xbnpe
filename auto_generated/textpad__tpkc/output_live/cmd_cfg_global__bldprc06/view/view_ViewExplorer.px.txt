@@ -1,0 +1,8 @@
+zTpkcViewExplorerAbrv1C	Vxpl	zTpkcViewExplorerAbrv1C
+zTpkcVxplCmdNameTC	ViewExplorer	zTpkcVxplCmdNameTC
+zTpkcVxplDfltPhrsNm	zTPViewExplorer	zTpkcVxplDfltPhrsNm
+zTpkcVxplCatForCmdAbrvLC	view	zTpkcVxplCatForCmdAbrvLC
+zTpkcVxplCmdType_mcrTl		zTpkcVxplCmdType_mcrTl
+zTpkcVxplIsBtstrp_yes		zTpkcVxplIsBtstrp_yes
+zTpkcVxplDfltPostKcSlpMils	10	zTpkcVxplDfltPostKcSlpMils
+zTpkcVxplStpsFrmCmdListTop	{#insert zVV}{#insert zDOWN2}	zTpkcVxplStpsFrmCmdListTop

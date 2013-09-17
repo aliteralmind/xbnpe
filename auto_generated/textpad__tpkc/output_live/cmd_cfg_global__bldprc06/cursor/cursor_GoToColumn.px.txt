@@ -1,0 +1,8 @@
+zTpkcGoToColumnAbrv1C	Crgtc	zTpkcGoToColumnAbrv1C
+zTpkcCrgtcCmdNameTC	GoToColumn	zTpkcCrgtcCmdNameTC
+zTpkcCrgtcDfltPhrsNm	zTPGoToColumn	zTpkcCrgtcDfltPhrsNm
+zTpkcCrgtcCatForCmdAbrvLC	cursor	zTpkcCrgtcCatForCmdAbrvLC
+zTpkcCrgtcCmdType_mcrTl		zTpkcCrgtcCmdType_mcrTl
+zTpkcCrgtcIsBtstrp_yes		zTpkcCrgtcIsBtstrp_yes
+zTpkcCrgtcDfltPostKcSlpMils	5	zTpkcCrgtcDfltPostKcSlpMils
+zTpkcCrgtcStpsFrmCmdListTop	{#insert zPGDN2}{#insert zUP2}	zTpkcCrgtcStpsFrmCmdListTop

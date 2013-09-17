@@ -1,0 +1,8 @@
+zTpkcToggleInsertModeAbrv1C	Cfgtgins	zTpkcToggleInsertModeAbrv1C
+zTpkcCfgtginsCmdNameTC	ToggleInsertMode	zTpkcCfgtginsCmdNameTC
+zTpkcCfgtginsDfltPhrsNm	zTPToggleInsertMode	zTpkcCfgtginsDfltPhrsNm
+zTpkcCfgtginsCatForCmdAbrvLC	config	zTpkcCfgtginsCatForCmdAbrvLC
+zTpkcCfgtginsCmdType_mcrTl		zTpkcCfgtginsCmdType_mcrTl
+zTpkcCfgtginsIsBtstrp_yes		zTpkcCfgtginsIsBtstrp_yes
+zTpkcCfgtginsDfltPostKcSlpMils	5	zTpkcCfgtginsDfltPostKcSlpMils
+zTpkcCfgtginsStpsFrmCmdListTop	{#NONE -chars t -count 2}{#insert z5ThnTSlp}	zTpkcCfgtginsStpsFrmCmdListTop

@@ -14,7 +14,7 @@
 
 <P>The TextPad built-in command (TPKC) project is what PhraseExpress uses to communicate with TextPad. Using the TPKC project gives your PhraseExpress code direct access to its more than three hundred &quot;built in&quot; commands (which, in turn, facilitates <A HREF="../../tasks/file_manipulation.html">file manipulation</A> and <A HREF="../../tasks/snr.html">search and replace</A>).</P>
 
-<P>The TPKC-project must be installed (as part of the overall XBN-PhraseExpress <A HREF="../../install.html">installation</A>), and then &quot;built&quot;. The TPKC user-build-process takes more than an hour, but it requires minimal user-interaction, and is largely a one-time-only process--and <A HREF="tpkc_user_dir.html#remoterequest"><I>I can run it for you</I>!</A>. (Also, if you just installed TextPad and have no custom key-commands, then you <A HREF="../../install2.html#14atudn">do not need</A> to run the build at all.) Aside from the XBNPE-key-presses (<A HREF="../xkp.html">XKP</A>) project, <A HREF="../tpbs.html#depend">no other</A> XBN-PhraseExpress project can function until the TPKC user-build-process is complete.</P>
+<P>The TPKC-project must be installed (as part of the overall XBN-PhraseExpress <A HREF="../../install.html">installation</A>), and then &quot;built&quot;. The TPKC user-build-process takes more than an hour, but requires minimal user-interaction, and is largely a one-time-only process--and <A HREF="tpkc_user_dir.html#remoterequest"><I>I can run it for you</I>!</A>. (Also, if you just installed TextPad and have no custom key-commands, then you <A HREF="../../install2.html#14atudn">do not need</A> to run it at all.) Aside from the XBNPE-key-presses (<A HREF="../xkp.html">XKP</A>) project, <A HREF="../tpbs.html#depend">no other</A> XBN-PhraseExpress project can function until the TPKC user-build-process is complete.</P>
 
 <P><B>Contents:</B><UL>
 	<LI><B>Installing and configuration:</B><UL>
@@ -103,6 +103,21 @@
 <P>As of 9/3/2013, this is equal to
 <BR> &nbsp; &nbsp; <CODE>{#insert <A HREF="../../global_config.html#zROOT_DIR_XBNPE_MAIN">zROOT_DIR_XBNPE_MAIN</A>}textpad__tpkc\build\</CODE></P>
 
+<P>For example:
+<BR> &nbsp; &nbsp; <CODE>C:\programming\phrase_express\xbnpe\main\textpad__tpkc\build\</CODE></P>
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="zXPROOT_DIR_AG_tpkc_M_bvm"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; <CODE>zXPROOT_DIR_AG_tpkc_M_bvm</CODE></H2>
+
+<P>As of 9/3/2013, this is equal to
+<BR> &nbsp; &nbsp; <CODE>{#insert <A HREF="../../global_config.html#zROOT_DIR_XBNPE_AG">zROOT_DIR_XBNPE_AG</A>}textpad__tpkc\output_{#insert <A HREF="master_cfg_vars.html#zzTpkcBuildVersionName">zzTpkcBuildVersionName</A>}\</CODE></P>
+
+<P>For example:
+<BR> &nbsp; &nbsp; <CODE>C:\programming\phrase_express\xbnpe\auto_generated\textpad__tpkc\output_live\</CODE></P>
+
 <PRE>
 
 <HR/>
@@ -116,7 +131,7 @@
 
 <HR style="margin-left:0px" WIDTH="25%"/>
 
-<P><B>Note to TPKC-admins:</B> This documentation section is for TPKC-<I>users</I> only, who execute the TPKC sub-build-processes <A HREF="sub_build_proc2.html#10">10</A> through <A HREF="sub_build_proc2.html#15">15</A>. Build processes <A HREF="sub_build_proc.html#01">01</A> through <A HREF="sub_build_proc2.html#09">09</A> are for TPKC-administrators only--these first nine (really, ten) processes are completely built before XBN-PhraseExpress is ever <A HREF="../../index.html#downloads">downloaded</A> by a user. There is additional <A HREF="build_proc_tech_info.html">technical information</A>.</P>
+<P><B>Technical info:</B> This documentation section is for TPKC-<I>users</I> only, who execute the TPKC sub-build-processes <A HREF="sub_build_proc2.html#10">10</A> through <A HREF="sub_build_proc2.html#15">15</A>. Build processes <A HREF="sub_build_proc.html#01">01</A> through <A HREF="sub_build_proc2.html#09">09</A> are for TPKC-administrators only--these first nine (really, ten) processes are completely built before XBN-PhraseExpress is ever <A HREF="../../index.html#downloads">downloaded</A> by a user. There is additional <A HREF="build_proc_tech_info.html">technical information</A>.</P>
 
 
 <PRE>
@@ -136,9 +151,7 @@
 
 <P>This creates the <A HREF="user_cmd_cfg.html">user-specific</A> command-configuration, which must imported to its <A HREF="tpkc_user_dir.html#13file">required location</A>. <I>Overwrite (delete) any existing folders when importing.</I></P>
 
-<P>This process takes about 45 minutes. There is minimal interaction required. <B><I>Do not touch your computer during this time.</I></B></P>
-
-<P>Once complete, import all phrase-files (there is one phrase-file per TextPad command-category) to their <A HREF="tpkc_user_dir.html#13file">required location</A>. <I>Overwrite (delete) any existing folders when importing.</I></P>
+<P>For a <A HREF="master_cfg_vars.html#zzTpkcBuildVersionName">live</A> build, this takes about 25 minutes. There is minimal interaction required. <B><I>Do not touch your computer during this time.</I></B></P>
 
 <H3>Video: The first-half of the TPKC-build-process (test-mode)</H3>
 
@@ -149,9 +162,7 @@
 	<LI>deleting output from a previous build,</LI>
 	<LI>actually running the process, and then</LI>
 	<LI><A HREF="../phrase_file_import1.html">importing</A> all output <A HREF="../phrase_file.html#fformat">phrase-files</A></LI>
-</OL>Note that the build-process in this video is in &quot;<A HREF="build_proc_tech_info.html#livevtest">test mode</A>&quot;. It is an <I>actual</I> build, but it only processes a small subset of commands. Since your build is in &quot;live mode&quot;, it will take significantly longer.</P>
-
-<P><I>(Admins only: This entails sub-build-processes <A HREF="sub_build_proc2.html#10">10</A> through <A HREF="sub_build_proc2.html#13">13</A>.)</I></P>
+</OL>Note that the build-process in this video is in &quot;<A HREF="master_cfg_vars.html#goodtestbuild">test mode</A>&quot;. It is an <I>actual</I> build, but it only processes a small subset of commands. Since your build is in &quot;live mode&quot;, it will take significantly longer.</P>
 
 <PRE>
 
@@ -168,7 +179,7 @@
 
 <P>This creates the <A HREF="../tpbs.html#terminology">nbs-phrases</A>, and the all-active TextPad phrase-creator ddmenu.</P>
 
-<P>This process takes about 25 minutes. There is minimal interaction required. <B><I>Do not touch your computer during this time.</I></B></P>
+<P>For a live build, this takes about 25 minutes. There is minimal interaction required. <B><I>Do not touch your computer during this time.</I></B></P>
 
 <P>When the output from both processes are imported to their required locations (for <A HREF="tpkc_user_dir.html#14file">sub-build-proc-14</A> and <A HREF="tpkc_user_dir.html#15file">sub-build-proc-15</A>). <I>Overwrite (delete) any existing folders when importing.</I></P>
 
@@ -181,8 +192,6 @@
 <H2>...TO-DO...</H2>
 
 <P>This video demonstrates the second-half of the TPKC-build process, including...</P>
-
-<P><I>(Admins only: This entails sub-build-processes <A HREF="sub_build_proc2.html#14">14</A> through <A HREF="sub_build_proc2.html#15">15</A>.)</I></P>
 
 <PRE>
 

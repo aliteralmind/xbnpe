@@ -1,0 +1,8 @@
+zTpkcFileStatisticsAbrv1C	Fstat	zTpkcFileStatisticsAbrv1C
+zTpkcFstatCmdNameTC	FileStatistics	zTpkcFstatCmdNameTC
+zTpkcFstatDfltPhrsNm	zTPFileStatistics	zTpkcFstatDfltPhrsNm
+zTpkcFstatCatForCmdAbrvLC	file	zTpkcFstatCatForCmdAbrvLC
+zTpkcFstatCmdType_mcrTl		zTpkcFstatCmdType_mcrTl
+zTpkcFstatIsBtstrp_yes		zTpkcFstatIsBtstrp_yes
+zTpkcFstatDfltPostKcSlpMils	5	zTpkcFstatDfltPostKcSlpMils
+zTpkcFstatStpsFrmCmdListTop	{#insert zEND}{#insert zPGUP}{#insert zDOWN2}	zTpkcFstatStpsFrmCmdListTop

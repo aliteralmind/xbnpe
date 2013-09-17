@@ -1,0 +1,8 @@
+zTpkcViewVScrollbarAbrv1C	Vvsb	zTpkcViewVScrollbarAbrv1C
+zTpkcVvsbCmdNameTC	ViewVScrollbar	zTpkcVvsbCmdNameTC
+zTpkcVvsbDfltPhrsNm	zTPViewVScrollbar	zTpkcVvsbDfltPhrsNm
+zTpkcVvsbCatForCmdAbrvLC	view	zTpkcVvsbCatForCmdAbrvLC
+zTpkcVvsbCmdType_mcrTl		zTpkcVvsbCmdType_mcrTl
+zTpkcVvsbIsBtstrp_yes		zTpkcVvsbIsBtstrp_yes
+zTpkcVvsbDfltPostKcSlpMils	10	zTpkcVvsbDfltPostKcSlpMils
+zTpkcVvsbStpsFrmCmdListTop	{#insert zEND}	zTpkcVvsbStpsFrmCmdListTop

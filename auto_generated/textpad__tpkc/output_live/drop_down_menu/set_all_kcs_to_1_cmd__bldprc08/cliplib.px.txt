@@ -1,0 +1,13 @@
+ClipClose (zTPClipClose, clcls)	{#insert zvCMD_ABRV_1C_sfClipClose}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Clcls
+ClipCopy (zTPClipCopy, clcp)	{#insert zvCMD_ABRV_1C_sfClipCopy}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Clcp
+ClipDeleteBook (zTPClipDeleteBook, cldb)	{#insert zvCMD_ABRV_1C_sfClipDeleteBook}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Cldb
+ClipDeleteEntry (zTPClipDeleteEntry, clde)	{#insert zvCMD_ABRV_1C_sfClipDeleteEntry}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Clde
+ClipEditBook (zTPClipEditBook, cleb)	{#insert zvCMD_ABRV_1C_sfClipEditBook}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Cleb
+ClipInsert (zTPClipInsert, clins)	{#insert zvCMD_ABRV_1C_sfClipInsert}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Clins
+ClipNewBook (zTPClipNewBook, clnb)	{#insert zvCMD_ABRV_1C_sfClipNewBook}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Clnb
+ClipPaste (zTPClipPaste, clp)	{#insert zvCMD_ABRV_1C_sfClipPaste}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Clp
+ClipRefresh (zTPClipRefresh, clrf)	{#insert zvCMD_ABRV_1C_sfClipRefresh}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Clrf
+ClipRenameBook (zTPClipRenameBook, clrb)	{#insert zvCMD_ABRV_1C_sfClipRenameBook}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Clrb
+ClipRenameEntry (zTPClipRenameEntry, clre)	{#insert zvCMD_ABRV_1C_sfClipRenameEntry}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Clre
+ClipSaveBook (zTPClipSaveBook, clsb)	{#insert zvCMD_ABRV_1C_sfClipSaveBook}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Clsb
+ClipSortEntries (zTPClipSortEntries, clsrt)	{#insert zvCMD_ABRV_1C_sfClipSortEntries}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Clsrt

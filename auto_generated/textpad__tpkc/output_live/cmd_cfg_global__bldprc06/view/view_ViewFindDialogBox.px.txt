@@ -1,0 +1,8 @@
+zTpkcViewFindDialogBoxAbrv1C	Vfdlg	zTpkcViewFindDialogBoxAbrv1C
+zTpkcVfdlgCmdNameTC	ViewFindDialogBox	zTpkcVfdlgCmdNameTC
+zTpkcVfdlgDfltPhrsNm	zTPViewFindDialogBox	zTpkcVfdlgDfltPhrsNm
+zTpkcVfdlgCatForCmdAbrvLC	view	zTpkcVfdlgCatForCmdAbrvLC
+zTpkcVfdlgCmdType_mcrTl		zTpkcVfdlgCmdType_mcrTl
+zTpkcVfdlgIsBtstrp_yes		zTpkcVfdlgIsBtstrp_yes
+zTpkcVfdlgDfltPostKcSlpMils	10	zTpkcVfdlgDfltPostKcSlpMils
+zTpkcVfdlgStpsFrmCmdListTop	{#insert zPGDN2}{#insert zUP2}	zTpkcVfdlgStpsFrmCmdListTop

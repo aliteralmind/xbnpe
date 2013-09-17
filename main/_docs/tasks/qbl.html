@@ -134,6 +134,10 @@ eight</PRE>
 
 <P>Obtains the <I>current</I> length from <CODE>zvQB_STR_LIST</CODE>. This is determined by replacing all open brackets (<CODE>&quot;[&quot;</CODE>) with <I>nothing</I>, and then comparing the original length with the new. Note that the qb-list remains untouched.</P>
 
+<P>An alternative is
+<BR> &nbsp; &nbsp; <CODE>zQblLenFromSelf_M_qbl2</CODE>
+<BR>which analyzes the variable <CODE>zvQBL2</CODE>. Use this when <CODE>zvQB_STR_LIST</CODE> cannot be overwritten (<CODE>zQblLenFromSelf_M_qbl</CODE> actually calls this).</P>
+
 <H3><CODE>zvQBL_LENGTH</CODE></H3>
 
 <P>When the <I>original</I> qbl-length is needed after the first extraction occurs, use the following instead of <CODE>zQblLenFromSelf_M_qbl</CODE>:<UL>

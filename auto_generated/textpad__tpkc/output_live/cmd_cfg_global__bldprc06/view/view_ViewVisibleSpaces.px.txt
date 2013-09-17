@@ -1,0 +1,8 @@
+zTpkcViewVisibleSpacesAbrv1C	Vvspc	zTpkcViewVisibleSpacesAbrv1C
+zTpkcVvspcCmdNameTC	ViewVisibleSpaces	zTpkcVvspcCmdNameTC
+zTpkcVvspcDfltPhrsNm	zTPVisibleSpaces	zTpkcVvspcDfltPhrsNm
+zTpkcVvspcCatForCmdAbrvLC	view	zTpkcVvspcCatForCmdAbrvLC
+zTpkcVvspcCmdType_mcrTl		zTpkcVvspcCmdType_mcrTl
+zTpkcVvspcIsBtstrp_yes		zTpkcVvspcIsBtstrp_yes
+zTpkcVvspcDfltPostKcSlpMils	10	zTpkcVvspcDfltPostKcSlpMils
+zTpkcVvspcStpsFrmCmdListTop	{#insert zEND}{#insert zUP}	zTpkcVvspcStpsFrmCmdListTop

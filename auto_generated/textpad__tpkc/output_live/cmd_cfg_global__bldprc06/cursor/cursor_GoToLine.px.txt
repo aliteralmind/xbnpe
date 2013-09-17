@@ -1,0 +1,8 @@
+zTpkcGoToLineAbrv1C	Crgtl	zTpkcGoToLineAbrv1C
+zTpkcCrgtlCmdNameTC	GoToLine	zTpkcCrgtlCmdNameTC
+zTpkcCrgtlDfltPhrsNm	zTPGoToLine	zTpkcCrgtlDfltPhrsNm
+zTpkcCrgtlCatForCmdAbrvLC	cursor	zTpkcCrgtlCatForCmdAbrvLC
+zTpkcCrgtlCmdType_mcrTl		zTpkcCrgtlCmdType_mcrTl
+zTpkcCrgtlIsBtstrp_yes		zTpkcCrgtlIsBtstrp_yes
+zTpkcCrgtlDfltPostKcSlpMils	50	zTpkcCrgtlDfltPostKcSlpMils
+zTpkcCrgtlStpsFrmCmdListTop	{#insert zPGDN2}{#insert zUP}	zTpkcCrgtlStpsFrmCmdListTop

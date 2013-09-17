@@ -1,0 +1,8 @@
+zTpkcHelpFAQAbrv1C	Hfaq	zTpkcHelpFAQAbrv1C
+zTpkcHfaqCmdNameTC	HelpFAQ	zTpkcHfaqCmdNameTC
+zTpkcHfaqDfltPhrsNm	zTPHelpFAQ	zTpkcHfaqDfltPhrsNm
+zTpkcHfaqCatForCmdAbrvLC	help	zTpkcHfaqCatForCmdAbrvLC
+zTpkcHfaqCmdType_mcrTl		zTpkcHfaqCmdType_mcrTl
+zTpkcHfaqIsBtstrp_yes		zTpkcHfaqIsBtstrp_yes
+zTpkcHfaqDfltPostKcSlpMils	10	zTpkcHfaqDfltPostKcSlpMils
+zTpkcHfaqStpsFrmCmdListTop	{#insert zDOWN}	zTpkcHfaqStpsFrmCmdListTop

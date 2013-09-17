@@ -1,0 +1,8 @@
+zTpkcFileManageAbrv1C	Fmngr	zTpkcFileManageAbrv1C
+zTpkcFmngrCmdNameTC	FileManage	zTpkcFmngrCmdNameTC
+zTpkcFmngrDfltPhrsNm	zTPFileManager	zTpkcFmngrDfltPhrsNm
+zTpkcFmngrCatForCmdAbrvLC	file	zTpkcFmngrCatForCmdAbrvLC
+zTpkcFmngrCmdType_mcrTl		zTpkcFmngrCmdType_mcrTl
+zTpkcFmngrIsBtstrp_yes	yes	zTpkcFmngrIsBtstrp_yes
+zTpkcFmngrDfltPostKcSlpMils	50	zTpkcFmngrDfltPostKcSlpMils
+zTpkcFmngrStpsFrmCmdListTop	{#insert zPGDN}{#insert zUP2}	zTpkcFmngrStpsFrmCmdListTop

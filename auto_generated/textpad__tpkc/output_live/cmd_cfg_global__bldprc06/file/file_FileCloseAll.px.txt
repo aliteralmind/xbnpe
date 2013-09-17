@@ -1,0 +1,8 @@
+zTpkcFileCloseAllAbrv1C	Fclsa	zTpkcFileCloseAllAbrv1C
+zTpkcFclsaCmdNameTC	FileCloseAll	zTpkcFclsaCmdNameTC
+zTpkcFclsaDfltPhrsNm	zTPFileCloseAll	zTpkcFclsaDfltPhrsNm
+zTpkcFclsaCatForCmdAbrvLC	file	zTpkcFclsaCatForCmdAbrvLC
+zTpkcFclsaCmdType_mcrTl		zTpkcFclsaCmdType_mcrTl
+zTpkcFclsaIsBtstrp_yes		zTpkcFclsaIsBtstrp_yes
+zTpkcFclsaDfltPostKcSlpMils	250	zTpkcFclsaDfltPostKcSlpMils
+zTpkcFclsaStpsFrmCmdListTop	{#insert zDOWN}	zTpkcFclsaStpsFrmCmdListTop

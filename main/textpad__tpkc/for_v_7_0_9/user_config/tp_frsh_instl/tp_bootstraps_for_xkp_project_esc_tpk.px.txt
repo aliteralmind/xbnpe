@@ -3,8 +3,8 @@ zTPCopyEsc	\\\{#CTRL -chars c\\\}\\\{#insert zTSlp\\\}	zTPCopyEsc
 zTPCopyTPKeys	Ctrl+C	zTPCopyTPKeys
 zTPCutEsc	\\\{#CTRL -chars x\\\}\\\{#insert zTSlp\\\}	zTPCutEsc
 zTPCutTPKeys	Ctrl+X	zTPCutTPKeys
-zTPDupLineEsc	\\\{#CTRL \\\{#ALT \\\{#SHIFT -chars k\\\}\\\}\\\}\\\{#insert zTSlp\\\}	zTPDupLineEsc
-zTPDupLineTPKeys	Ctrl+Shift+Alt+K	zTPDupLineTPKeys
+zTPDupLineEsc	\\\{#CTRL \\\{#ALT \\\{#SHIFT -chars v\\\}\\\}\\\}\\\{#insert zTSlp\\\}	zTPDupLineEsc
+zTPDupLineTPKeys	Ctrl+Shift+Alt+V	zTPDupLineTPKeys
 zTPFileCloseEsc	\\\{#ALT -chars w\\\}\\\{#insert zTSlp\\\}	zTPFileCloseEsc
 zTPFileCloseTPKeys	Alt+W	zTPFileCloseTPKeys
 zTPFileNewEsc	\\\{#CTRL -chars n\\\}\\\{#insert zTSlp\\\}	zTPFileNewEsc

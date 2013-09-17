@@ -1,3 +1,0 @@
-zzTpkcCallPhrsNmForEachCat_M_catpm -- Needs zvPNM_FOR_CAT	{#insert zzTpkcPostBldProc06TestModeWarningDlg}{#insert zvCAT_ABRV_LC_stFile}{#insert zzCallVPMForCat}{#insert zvCAT_ABRV_LC_stConfig}{#insert zzCallVPMForCat}{#insert zvCAT_ABRV_LC_stHelp}{#insert zzCallVPMForCat}	zzTpkcCallPhrsNmForEachCat_M_catpm
-zzTpkcTotalCmdsInAllCatsForTestOrLivePost06 -- Utility: Sum of all zzTpCmdsInCatCount_*	{#CALC {#insert zTpkcFileCmdCount} + {#insert zTpkcConfigCmdCount} + {#insert zTpkcHelpCmdCount} -round 0 -thousands none}	zzTpkcTotalCmdsInAllCatsForTestOrLivePost06
-zTpkcPost06TotCatCount	3	zTpkcPost06TotCatCount

@@ -1,0 +1,6 @@
+Help (zTPHelp, hmain)	{#insert zvCMD_ABRV_1C_sfHelp}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Hmain
+HelpFAQ (zTPHelpFAQ, hfaq)	{#insert zvCMD_ABRV_1C_sfHelpFAQ}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Hfaq
+HelpOrdering (zTPHelpOrdering, hrdr)	{#insert zvCMD_ABRV_1C_sfHelpOrdering}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Hrdr
+HelpSupport (zTPHelpSupport, hsprt)	{#insert zvCMD_ABRV_1C_sfHelpSupport}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Hsprt
+HelpTip (zTPHelpTip, htip)	{#insert zvCMD_ABRV_1C_sfHelpTip}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Htip
+HelpWWW (zTPHelpWWW, hwww)	{#insert zvCMD_ABRV_1C_sfHelpWWW}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Hwww

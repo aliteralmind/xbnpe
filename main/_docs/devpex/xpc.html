@@ -16,11 +16,11 @@
 
 <H1>XBNPE Phrase-creator (XPC) project</H1>
 
-<P>A phrase-creator is one of the four main <A HREF="../basics/xbnpe_phrase_types.html">XBNPE &quot;normal&quot; phrase-types</A>.</P>
+<P>A phrase-creator is one of the four &quot;<A HREF="../basics/xbnpe_phrase_types.html">normal</A>&quot; phrase-types.</P>
 
-<P>A &quot;phrase creator&quot; is an <A HREF="../basics/xbnpe_phrase_types.html#action">action</A> that serves a single purpose: Printing a call to another phrase or to a standard PhraseExpress function. In addition to this project, also see the <A HREF="../devpex/xbnpe_ddmenus.html#xh"><CODE>&quot;xh...&quot;</CODE> drop-down menu</A>.</P>
+<P>A &quot;phrase creator&quot; is an <A HREF="../basics/xbnpe_phrase_types.html#action">action</A> that serves a single purpose: Printing a call to another phrase, or to a standard PhraseExpress function. <I>(See: <A HREF="../devpex/xbnpe_ddmenus.html#xh"><CODE>&quot;xh...&quot;</CODE></A> phrase-creator drop-down menu)</I></P>
 
-<P><I>This documentation is by example. Most phrase-creators end by presenting the user with a <CODE>&quot;BALLOON&quot;</CODE> containing further information and <A HREF="../generic/phrase_set_syntax.html">syntax</A>. This is the only phrase-type that (always) does this, since it is the only type that is intended for use <B>directly by the user</B> and executes <B>right now</B>.</I></P>
+<P><I>This documentation is by example. Most phrase-creators end by presenting the user with a <CODE>&quot;BALLOON&quot;</CODE> containing further information and <A HREF="../generic/phrase_set_syntax.html">syntax</A>.</I></P>
 
 <P><B>Contents:</B><UL>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#keypress">GO</A></B></FONT>]</CODE> &nbsp; Raw PhraseExpress key-presses</LI>
@@ -36,6 +36,8 @@
 </PRE>
 <a name="keypress"/><H3><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; XBNPE-XPC: Examples: Raw PhraseExpress key-presses</H3>
 
+<P><I>(See: <A HREF="../basics/xkp.html#rawpexkc">&quot;Raw&quot; PhraseExpress key-presses</A>)</I></P>
+
 <P><UL>
 	<LI><B><CODE>krk</CODE>:</B> A raw key-press, unmodified.
 	<BR> &nbsp; &nbsp; <CODE>{#<U><I><B><SPAN CLASS="greyHL">[cursor]</SPAN></B></I></U>}</CODE>
@@ -44,13 +46,13 @@
 	<BR> &nbsp; &nbsp; <CODE>{#CTRL {#SHIFT {#<U><I><B><SPAN CLASS="greyHL">[cursor]</SPAN></B></I></U>}}}</CODE></LI>
 	<LI><B><CODE>krha</CODE>:</B> Same as <CODE>&quot;krka&quot;</CODE>, for a specific and <I>printable</I> key.
 	<BR> &nbsp; &nbsp; <CODE>{#ALT -chars <U><I><B><SPAN CLASS="greyHL">[cursor]</SPAN></B></I></U>}</CODE></LI>
-	<LI><B><CODE>kru</CODE>:</B> Same as <CODE>&quot;krh&quot;</CODE>, with the additional <CODE>&quot; -count&quot;</CODE> parameter.
+	<LI><B><CODE>kru</CODE>:</B> Same as <CODE>&quot;krh&quot;</CODE>, with the <CODE>&quot; -count&quot;</CODE> parameter.
 	<BR> &nbsp; &nbsp; <CODE>{#NONE -chars <U><I><B><SPAN CLASS="greyHL">[cursor]</SPAN></B></I></U> -count XXX}</CODE></LI>
 	<LI><B><CODE>krnl</CODE>:</B> Same as <CODE>&quot;krkl&quot;</CODE>, with the <CODE>&quot; -count&quot;</CODE> parameter.
 	<BR> &nbsp; &nbsp; <CODE>{#LWIN {#<U><I><B><SPAN CLASS="greyHL">[cursor]</SPAN></B></I></U> -count XXX}}</CODE></LI>
 	<LI><B><CODE>krxs</CODE>:</B> Same as <CODE>&quot;krks&quot;</CODE>, where <I>nothing</I> is modified.
 	<BR> &nbsp; &nbsp; <CODE>{#SHIFT <U><I><B><SPAN CLASS="greyHL">[cursor]</SPAN></B></I></U>}</CODE>
-	<BR>This is intended for when the to-be-modified key is in the clipboard. Follow this by pasting it.</LI>
+	<BR>This is for when the to-be-modified key is in the clipboard. Follow this by pasting it.</LI>
 </UL></P>
 
 <P><I>This list is not complete. Using any of these phrase-creators will present you with a complete syntax-summary.</I></P>
@@ -60,7 +62,7 @@
 <HR/>
 
 </PRE>
-<a name="ins"/><H3><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; XBNPE-XPC: Examples: The most fundamental phrase: {#insert ...}</H3>
+<a name="ins"/><H3><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; XBNPE-XPC: Examples: The most fundamental phrase: <CODE>{#insert ...}</CODE></H3>
 
 <P>The <CODE>&quot;insert&quot;</CODE> tag is the most basic <A HREF="#func">PhraseExpress function</A>.</P>
 
@@ -98,7 +100,7 @@ zPhraseName5
 zPhraseName6
 zPhraseName7</PRE>
 
-<P>Into this</P>
+<P>To this</P>
 
 <P><CODE STYLE="background-color:#E1E1E1;">{#insert zPhraseName1}{#insert zPhraseName2}{#insert zPhraseName3}{#insert zPhraseName4}{#insert zPhraseName5}{#insert zPhraseName6}{#insert zPhraseName7}<U><I><B><SPAN CLASS="greyHL">[cursor]</SPAN></B></I></U></CODE></P>
 
@@ -117,7 +119,7 @@ zPhraseName7</PRE>
 	<LI><B><CODE>lop</CODE>:</B>
 	<BR> &nbsp; &nbsp; <CODE>{#LOOP <U><I><B><SPAN CLASS="greyHL">[cursor]</SPAN></B></I></U> -count XXX}</CODE></LI>
 	<LI><B><CODE>cqdit</CODE>:</B>
-	<BR> &nbsp; &nbsp; <CODE>{#COND -if {#insert <U><I><B>[paste]</B></I></U>} <U><I><B><SPAN CLASS="greyHL">[cursor]</SPAN></B></I></U> -then YYY -else YYY}</CODE></LI>
+	<BR> &nbsp; &nbsp; <CODE>{#COND -if {#insert <U><I><B>[paste]</B></I></U>} <U><I><B><SPAN CLASS="greyHL">[cursor]</SPAN></B></I></U> -then XXX -else XXX}</CODE></LI>
 	<LI><B><CODE>cilb</CODE>:</B>
 	<BR> &nbsp; &nbsp; <CODE>{#CALC <U><I><B>[paste]</B></I></U> <U><I><B><SPAN CLASS="greyHL">[cursor]</SPAN></B></I></U> -round 0 -thousands none}</CODE></LI>
 	<LI><B><CODE>ifl</CODE>:</B>
@@ -131,19 +133,19 @@ zPhraseName7</PRE>
 <P><I>This list is not complete. Using any of these phrase-creators will present you with a complete syntax-summary.</I></P>
 
 
-<P>A listing of all &quot;main&quot; XPC phrase-creators can be obtained via <CODE>'<A HREF="../devpex/xbnpe_ddmenus.html#xh">xh</A>pcp'</CODE>. This is a very abbreviated listing of the available functions. Specifically, these are the &quot;main&quot; phrase-creators that, when used, pop-up a <CODE>&quot;BALLOON&quot;</CODE> containing information and a complete <A HREF="../generic/phrase_set_syntax.html">syntax-summary</A> on all related phrases.</P>
+<P>A listing of all &quot;main&quot; XPC phrase-creators can be obtained via <CODE>'<A HREF="../devpex/xbnpe_ddmenus.html#xh">xh</A>pcp'</CODE>. These &quot;main&quot; phrase-creators, when used, pop-up a <CODE>&quot;BALLOON&quot;</CODE> containing information and a complete <A HREF="../generic/phrase_set_syntax.html">syntax-summary</A> on all related phrases.</P>
 
 <PRE>
 
 <HR/>
 
 </PRE>
-<a name="escaped"/><H3><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; XBNPE-XPC: Examples: Escaped-ness</H3>
+<a name="escaped"/><H3><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; XBNPE-XPC: Escaped-ness</H3>
 
 <P>PhraseExpress code is escaped by inserting three down-right-slashes (<CODE>&quot;\\\&quot;</CODE>) before all open and close curlys:
 <BR> &nbsp; &nbsp; <CODE>\\\{</CODE>
 <BR> &nbsp; &nbsp; <CODE>\\\}</CODE>
-<BR>Unescaping is simply removing the three slashes immediately preceeding the curly.</P>
+<BR>Unescaping is done by simply removing the three slashes <I>immediately preceeding</I> the curly.</P>
 
 <P><I>All</I> phrase-creators in the XPC-project may be followed by a <CODE>'p'</CODE> or <CODE>'q'</CODE>, for printing the phrases at a specific level of escaped-ness. Escaped-ness is critical when literally displaying PhraseExpress code, when creating phrases <I>that create phrases</I>, and also when storing PhraseExpress code into <A HREF="../basics/xbnpe_phrase_types.html#variable">variables</A> or the clipboard. There are up to ten levels of escaped-ness available.</P>
 

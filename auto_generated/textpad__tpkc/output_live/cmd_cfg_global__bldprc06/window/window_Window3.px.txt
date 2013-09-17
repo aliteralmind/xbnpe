@@ -1,0 +1,8 @@
+zTpkcWindow3Abrv1C	Win3	zTpkcWindow3Abrv1C
+zTpkcWin3CmdNameTC	Window3	zTpkcWin3CmdNameTC
+zTpkcWin3DfltPhrsNm	zTPGTWin3	zTpkcWin3DfltPhrsNm
+zTpkcWin3CatForCmdAbrvLC	window	zTpkcWin3CatForCmdAbrvLC
+zTpkcWin3CmdType_mcrTl		zTpkcWin3CmdType_mcrTl
+zTpkcWin3IsBtstrp_yes		zTpkcWin3IsBtstrp_yes
+zTpkcWin3DfltPostKcSlpMils	10	zTpkcWin3DfltPostKcSlpMils
+zTpkcWin3StpsFrmCmdListTop	{#insert zDOWN3}	zTpkcWin3StpsFrmCmdListTop

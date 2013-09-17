@@ -1,0 +1,7 @@
+zTPFileOpenSelPath -- FileGoTo (Fgoto)	{#insert zCSpGG}{#sleep 100}	zTPFileOpenSelPath
+zTPFilePrint -- FilePrint (Fprnt)	{#insert zCpPP}{#sleep 50}	zTPFilePrint
+zTPFilePrintPreview -- FilePrintPreview (Fprntprv)	{#insert zCSpPP}{#sleep 100}	zTPFilePrintPreview
+zTPFileSaveAll -- FileSaveAll (Fsval)	{#insert zCSpSS}{#sleep 1000}	zTPFileSaveAll
+zTPFileSaveAs -- FileSaveAs (Fsvas)	{#insert zF12}{#sleep 1750}	zTPFileSaveAs
+zTPFileStatistics -- FileStatistics (Fstat)	{#insert zCpF1}{#sleep 5}	zTPFileStatistics
+zzTpkcAllCmdsWAKcQbl_file	[FileClose][FileGoTo][FileManage][FileNew][FileOpen][FilePrint][FilePrintPreview][FileQuickOpen][FileSave][FileSaveAll][FileSaveAs][FileStatistics]	zzTpkcAllCmdsWAKcQbl_file

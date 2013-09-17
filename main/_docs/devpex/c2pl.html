@@ -12,7 +12,7 @@
 <H1>XBN-PhraseExpress: Phrase &quot;compression&quot;:</H1>
 <H2><CODE>&quot;c2pl&quot;</CODE> and related utilities &nbsp; &nbsp; <I>(<CODE><A HREF="../devpex/xbnpe_ddmenus.html#xh">xh</A>pcc</CODE>)</I></H2>
 
-<P>XBN-PhraseExpress is developed exclusively in text-files (and specifically in <A HREF="../basics/pex_in_textpad.html">TextPad</A>). To review, the final <A HREF="../basics/phrase_file.html#pformat">format</A> of most phrases is</P>
+<P>XBN-PhraseExpress is developed exclusively in text-files (and specifically in <A HREF="../basics/pex_in_textpad.html">TextPad</A>). To review, the <A HREF="../basics/phrase_file.html#pformat">format</A> of a compressed phrase is</P>
 
 <P>&nbsp; &nbsp; <CODE>[description-autotext] -- rest of description[TAB]phrase-body[TAB]autotext</CODE></P>
 
@@ -20,7 +20,7 @@
 
 <PRE STYLE="background-color:#E1E1E1;">zPrintAnX -- Prints a lowercase 'x'	x	zPrintAnX</PRE>
 
-<P>This one-line phrase is called &quot;compressed&quot;, and is ready for import into PhraseExpress. This is its &quot;un-compressed&quot; counterpart:</P>
+<P>This one-line phrase is called &quot;compressed&quot;, and is ready for import into PhraseExpress. This is the same phrase in &quot;un-compressed&quot; (two-line) form:</P>
 
 <PRE STYLE="background-color:#E1E1E1;">zPrintAnX -- Prints a lowercase 'x'
 x</PRE>
@@ -34,7 +34,7 @@ x</PRE>
 </UL></P>
 
 <P><I>All avaliable compression-related actions, including the full available <A HREF="../generic/phrase_set_syntax.html">syntax</A>, are listed in the phrase-creator ddmenu: <CODE><A HREF="../devpex/xbnpe_ddmenus.html#xh">xh</A>pcc</CODE>. Also note that all functions in this document <A HREF="../tasks/ww_with_state.html#stateprompt">prompt the user for word-wrap state</A>.</I></P>
-xhpcc
+
 <PRE>
 
 <HR/>
@@ -51,7 +51,7 @@ x</PRE>
 
 <H3>Compression: <CODE>&quot;c2pl&quot;</CODE></H3>
 
-<P>Place the cursor in line one and execute <CODE>&quot;c2pl&quot;</CODE> (type <CODE>&quot;c2pl&quot;</CODE>, and its configured postfix, which by default is the accent key: <CODE>'<B>`</B>'</CODE>--<CODE>zACCENT</CODE>), and it is &quot;compressed&quot; into one-line (delimited by tabs):</P>
+<P>Place the cursor in the top line, and <A HREF="../index.html#execute">execute</A> <CODE>&quot;c2pl&quot;</CODE>. It is &quot;compressed&quot; into one-line (delimited by tabs):</P>
 
 <PRE STYLE="background-color:#E1E1E1;">zPrintAnX -- Prints a lowercase 'x'	x	zPrintAnX</PRE>
 
@@ -59,7 +59,7 @@ x</PRE>
 
 <H3>Uncompression: <CODE>&quot;u2pl&quot;</CODE></H3>
 
-Place the cursor anywhere in the one-line version, and execute <CODE>&quot;u2pl&quot;</CODE>. This converts it back to the two-line version.
+<P>Place the cursor anywhere in the compressed phrase, and execute <CODE>&quot;u2pl&quot;</CODE>. This converts it back to the two-line version.</P>
 
 <H3>Re-compression: <CODE>&quot;r2pl&quot;</CODE></H3>
 
@@ -96,7 +96,7 @@ zPrint3Xs -- zPrintAnX, three times
 
 <H3>Compression: <CODE>&quot;c2pl*&quot;</CODE></H3>
 
-<P>To compress them, place the cursor in the first line and execute either <CODE>&quot;c2pl5&quot;</CODE> (type <CODE>&quot;c2pl5&quot;</CODE>, and its configured postfix, which by default is the accent key: <CODE>'<B>`</B>'</CODE>--<CODE>zACCENT</CODE>) or <CODE>&quot;c2pln&quot;</CODE> (providing a <CODE>'5'</CODE> at the prompt). This climbs through each phrase, compressing them one by one. The cursor is left at the bottom.</P>
+<P>To compress them, place the cursor in the first line and <A HREF="../index.html#execute">execute</A> either <CODE>&quot;c2pl5&quot;</CODE>  or <CODE>&quot;c2pln&quot;</CODE> (provide a <CODE>'5'</CODE> at the prompt). This climbs through each phrase, compressing them one by one. The cursor is left at the bottom.</P>
 
 <PRE STYLE="background-color:#E1E1E1;">zPrintAnX -- Prints a lowercase 'x'	x	zPrintAnX
 zPrintALowerX -- zPrintAnX ALT KC	{#insert zPrintAnX}	zPrintALowerX
@@ -107,7 +107,7 @@ zPrint3Xs -- zPrintAnX, three times	{#insert zPrint2Xs}{#insert zPrintAnX}	zPrin
 
 <H3>Uncompression: <CODE>&quot;u2pl*&quot;</CODE></H3>
 
-<P>To uncompress the phrases, place the cursor in the top phrase, and execute <CODE>&quot;u2pln&quot;</CODE> (giving a <CODE>'5'</CODE> at the prompt), or place the cursor <I>anywhere</I>, and execute <CODE>&quot;u2plall&quot;</CODE>. <CODE>&quot;u2plall&quot;</CODE> assumes <I>every</I> line in the phrase-file is a phrase-line.</P>
+<P>To uncompress the phrases, place the cursor in the top phrase, and execute <CODE>&quot;u2pln&quot;</CODE> (provide a <CODE>'5'</CODE> at the prompt), or place the cursor <I>anywhere</I>, and execute <CODE>&quot;u2plall&quot;</CODE> (this assumes that <I>every</I> line in the phrase-file is a phrase-line!).</P>
 
 <P>Uncompression is done with a regular expression repalcement. Although it will likely work even when there are non-phrase-lines in the selected range (the regular expression has a strict format) it is a risk.</P>
 

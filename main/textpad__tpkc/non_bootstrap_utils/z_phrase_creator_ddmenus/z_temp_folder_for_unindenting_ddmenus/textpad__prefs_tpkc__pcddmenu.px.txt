@@ -176,12 +176,13 @@ Var: zvCMD_ABRV_1C (& other variables) -- xhtkav	{#SETCLIPBOARD zvCMD_ABRV_1C}{#
 Var: zvCAT_ABRV_LC	{#SETCLIPBOARD zvCAT_ABRV_LC}{#insert zzBalCBContainsVarNm}	xhtkav
 Directories (primary only) -- xhtkd	.	xhtk
 zXPROOT_DIR_AG_tpkc	\\\{#insert zXPROOT_DIR_AG_tpkc\\\}	xhtkd
+zXPROOT_DIR_AG_tpkc_M_bvm	\\\{#insert zXPROOT_DIR_AG_tpkc_M_bvm\\\}	xhtkd
 zXPROOT_DIR_AG_tpkcNonBootstrapCmdPhrss	\\\{#insert zXPROOT_DIR_AG_tpkcNonBootstrapCmdPhrss\\\}	xhtkd
 zXPROOT_DIR_tpkc	\\\{#insert zXPROOT_DIR_tpkc\\\}	xhtkd
 zXPROOT_DIR_tpkcBuild	\\\{#insert zXPROOT_DIR_tpkcBuild\\\}	xhtkd
 zXPROOT_DIR_tpkcDropDownMenu	\\\{#insert zXPROOT_DIR_tpkcDropDownMenu\\\}	xhtkd
 zXPROOT_DIR_tpkcRawCfgGlobal	\\\{#insert zXPROOT_DIR_tpkcRawCfgGlobal\\\}	xhtkd
-zXPROOT_DIR_tpkcUsrCfgOutputBase_M_tudn	\\\{#insert zXPROOT_DIR_tpkcUsrCfgOutputBase_M_tudn\\\}	xhtkd
+zXPROOT_DIR_tpkcUsrCfgOutputBase_M_tudnBmvt	\\\{#insert zXPROOT_DIR_tpkcUsrCfgOutputBase_M_tudnBmvt\\\}	xhtkd
 zXPROOT_DIR_tpkcUsrCfgParent	\\\{#insert zXPROOT_DIR_tpkcUsrCfgParent\\\}	xhtkd
 zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn	\\\{#insert zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn\\\}	xhtkd
 zXPROOT_DIR_tpkcVrsnSpcfcFls	\\\{#insert zXPROOT_DIR_tpkcVrsnSpcfcFls\\\}	xhtkd

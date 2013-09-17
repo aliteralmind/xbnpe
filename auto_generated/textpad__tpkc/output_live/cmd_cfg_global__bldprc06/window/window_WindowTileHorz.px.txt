@@ -1,0 +1,8 @@
+zTpkcWindowTileHorzAbrv1C	Wintlh	zTpkcWindowTileHorzAbrv1C
+zTpkcWintlhCmdNameTC	WindowTileHorz	zTpkcWintlhCmdNameTC
+zTpkcWintlhDfltPhrsNm	zTPWindowTileHorz	zTpkcWintlhDfltPhrsNm
+zTpkcWintlhCatForCmdAbrvLC	window	zTpkcWintlhCatForCmdAbrvLC
+zTpkcWintlhCmdType_mcrTl		zTpkcWintlhCmdType_mcrTl
+zTpkcWintlhIsBtstrp_yes		zTpkcWintlhIsBtstrp_yes
+zTpkcWintlhDfltPostKcSlpMils	10	zTpkcWintlhDfltPostKcSlpMils
+zTpkcWintlhStpsFrmCmdListTop	{#insert zPGDN3}{#insert zUP}	zTpkcWintlhStpsFrmCmdListTop

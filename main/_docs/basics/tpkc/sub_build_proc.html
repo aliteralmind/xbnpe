@@ -145,15 +145,15 @@
 
 <P>Iterating through the actual-or-test all-cat-list qbl, as in</P>
 
-<PRE>{#insert zvQB_STR_LIST_stAllTpkcCatsOrForTestModeFcsTP}{#LOOP {#insert zzzWrtNxtCallPNmInVarFor1Cat_catqbl} -count {#insert zzTpkcCategoryCountForLiveOrTestMode}}</PRE>
+<PRE>{#insert zvQBL_stTpkcAllCatvForBuildVersion}{#LOOP {#insert zzzWrtNxtCallPNmInVarFor1Cat_catqbl} -count {#insert zzTpkcCategoryCountForLiveOrTestMode}}</PRE>
 
-is required in all build processes zTpkc06CreateGlobalCommandConfigFromRaw 06 and before. Iterating through a qbl is slow.
+<P>is required in all build processes zTpkc06CreateGlobalCommandConfigFromRaw 06 and before. Iterating through a qbl is slow.</P>
 
-After process 6, once all output is imported--both in the remaining build processes, AND in any user-facing processes--use this alternative:
+<P>After process 6, once all output is imported--both in the remaining build processes, AND in any user-facing processes--use this alternative:</P>
 
 <PRE>{#SETPHRASE -description zvPNM_FOR_CAT -content zzzTpkcCrtNextStCmd1VarPhrsFile_M_catqbl -autotext zvPNM_FOR_CAT -folder ctvv_folder}{#insert zzTpkcCallPhrsNmForEachCat_M_catpm}</PRE>
 
-Both methods anticipate the TPKC-test-mode-flag, including notifying the user, but the second method is much faster, and has the additional benefit of *not* depending on the TPKC-test-mode-flag (zTpkcBuildModeTestOrLive), which, while being critical during build processes zTpkc01CreateSetCatlVarPhrsFile 01-through-06, is unused at all other times.
+<P>Both methods anticipate the TPKC-test-mode-flag, including notifying the user, but the second method is much faster, and has the additional benefit of *not* depending on the TPKC-test-mode-flag (zTpkcBuildModeTestOrLive), which, while being critical during build processes zTpkc01CreateSetCatlVarPhrsFile 01-through-06, is unused at all other times.</P>
 
 
 <PRE>

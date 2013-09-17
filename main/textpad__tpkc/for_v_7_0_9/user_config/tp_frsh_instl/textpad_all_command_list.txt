@@ -99,7 +99,7 @@ EditDelTaggedLines
 EditDelWord
 EditDelWordLeft         Ctrl+Backspace
 EditDelWordRight        Ctrl+Delete
-EditDupLine             Ctrl+Shift+Alt+K
+EditDupLine             Ctrl+Shift+Alt+V
 EditFillBlock
 EditIMEreconvert
 EditIndentLess          Ctrl+Shift+,
@@ -112,14 +112,14 @@ EditJoinLines           Ctrl+J
 EditLongDate
 EditLowerCase           Ctrl+L
 EditMarkClean
-EditNewLineAfter        Ctrl+Enter
-EditNewLineBefore       Ctrl+Shift+Enter
+EditNewLineAfter
+EditNewLineBefore
 EditPageBreak           Ctrl+Shift+L
 EditPaste               Ctrl+V                  Shift+Insert
 EditPasteBlock
 EditPasteHTML
 EditPasteLines
-EditPopupContext        Apps                    Shift+F10
+EditPopupContext        Shift+F10
 EditPopupDateTime       Ctrl+F10
 EditRedo                Ctrl+Y
 EditRedoAll             Ctrl+Shift+Y
@@ -160,7 +160,7 @@ GoToBlockStart
 GoToColumn
 GoToLine
 GoToPage
-Help                    F1
+Help
 HelpFAQ
 HelpOrdering
 HelpSupport
@@ -299,7 +299,7 @@ ToolRerun
 ToolRun
 ToolSort                F9
 ToolSpell               F7
-ToolStop                Ctrl+Break
+ToolStop
 ToolWildEdit
 Ú
 ú
@@ -319,7 +319,7 @@ ViewFullScreen
 ViewHScrollbar          Ctrl+Q, H
 ViewInBrowser
 ViewLineNumbers         Ctrl+Q, L
-ViewProperties          Ctrl+Apps               Alt+Enter
+ViewProperties
 ViewReplaceDialogBox
 ViewSearchResults       Shift+F11
 ViewStart               Alt+Home
@@ -328,22 +328,22 @@ ViewTabSelector
 ViewToolOutput          Ctrl+F11
 ViewVisibleSpaces       Ctrl+Q, I
 ViewVScrollbar          Ctrl+Q, V
-Window1                 Ctrl+Num 1
-Window10                Ctrl+Num 0
-Window2                 Ctrl+Num 2
-Window3                 Ctrl+Num 3
-Window4                 Ctrl+Num 4
-Window5                 Ctrl+Num 5
-Window6                 Ctrl+Num 6
-Window7                 Ctrl+Num 7
-Window8                 Ctrl+Num 8
-Window9                 Ctrl+Num 9
+Window1
+Window10
+Window2
+Window3
+Window4
+Window5
+Window6
+Window7
+Window8
+Window9
 WindowArrangeIcons
 WindowCascade
-WindowNext              Ctrl+Tab
+WindowNext
 WindowPaneNext          F6
 WindowPanePrev          Shift+F6
-WindowPrev              Ctrl+Shift+Tab
+WindowPrev
 WindowSplit
 WindowTileHorz
 WindowTileVert

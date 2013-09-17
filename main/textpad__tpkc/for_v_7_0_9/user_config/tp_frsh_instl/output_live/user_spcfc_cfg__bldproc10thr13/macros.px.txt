@@ -1,0 +1,8 @@
+zTpkcMacroMultiplayNbsKcCount	1	zTpkcMacroMultiplayNbsKcCount
+zTpkcMacroMultiplayNbsKcEsc1	\\\{#insert zCpF7\\\}\\\{#sleep 10\\\}	zTpkcMacroMultiplayNbsKcEsc1
+zTpkcMacroPauseNbsKcCount	0	zTpkcMacroPauseNbsKcCount
+zTpkcMacroPlayNbsKcCount	1	zTpkcMacroPlayNbsKcCount
+zTpkcMacroPlayNbsKcEsc1	\\\{#insert zCpRR\\\}\\\{#sleep 10\\\}	zTpkcMacroPlayNbsKcEsc1
+zTpkcMacroRecordNbsKcCount	1	zTpkcMacroRecordNbsKcCount
+zTpkcMacroRecordNbsKcEsc1	\\\{#insert zCSpRR\\\}\\\{#sleep 10\\\}	zTpkcMacroRecordNbsKcEsc1
+zTpkcMacroSaveNbsKcCount	0	zTpkcMacroSaveNbsKcCount

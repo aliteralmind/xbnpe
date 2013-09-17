@@ -1,0 +1,8 @@
+zTpkcToggleReadOnlyAbrv1C	Cfgtgro	zTpkcToggleReadOnlyAbrv1C
+zTpkcCfgtgroCmdNameTC	ToggleReadOnly	zTpkcCfgtgroCmdNameTC
+zTpkcCfgtgroDfltPhrsNm	zTPToggleReadOnly	zTpkcCfgtgroDfltPhrsNm
+zTpkcCfgtgroCatForCmdAbrvLC	config	zTpkcCfgtgroCatForCmdAbrvLC
+zTpkcCfgtgroCmdType_mcrTl		zTpkcCfgtgroCmdType_mcrTl
+zTpkcCfgtgroIsBtstrp_yes		zTpkcCfgtgroIsBtstrp_yes
+zTpkcCfgtgroDfltPostKcSlpMils	5	zTpkcCfgtgroDfltPostKcSlpMils
+zTpkcCfgtgroStpsFrmCmdListTop	{#NONE -chars t -count 3}{#insert z5ThnTSlp}	zTpkcCfgtgroStpsFrmCmdListTop

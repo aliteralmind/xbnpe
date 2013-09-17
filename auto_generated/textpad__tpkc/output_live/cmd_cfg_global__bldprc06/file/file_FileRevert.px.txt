@@ -1,0 +1,8 @@
+zTpkcFileRevertAbrv1C	Frvrt	zTpkcFileRevertAbrv1C
+zTpkcFrvrtCmdNameTC	FileRevert	zTpkcFrvrtCmdNameTC
+zTpkcFrvrtDfltPhrsNm	zTPFileRevert	zTpkcFrvrtDfltPhrsNm
+zTpkcFrvrtCatForCmdAbrvLC	file	zTpkcFrvrtCatForCmdAbrvLC
+zTpkcFrvrtCmdType_mcrTl		zTpkcFrvrtCmdType_mcrTl
+zTpkcFrvrtIsBtstrp_yes		zTpkcFrvrtIsBtstrp_yes
+zTpkcFrvrtDfltPostKcSlpMils	50	zTpkcFrvrtDfltPostKcSlpMils
+zTpkcFrvrtStpsFrmCmdListTop	{#insert zPGDN2}{#insert zDOWN2}	zTpkcFrvrtStpsFrmCmdListTop

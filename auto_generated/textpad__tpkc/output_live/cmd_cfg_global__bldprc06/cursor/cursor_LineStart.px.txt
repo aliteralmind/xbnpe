@@ -1,0 +1,8 @@
+zTpkcLineStartAbrv1C	Crlnst	zTpkcLineStartAbrv1C
+zTpkcCrlnstCmdNameTC	LineStart	zTpkcCrlnstCmdNameTC
+zTpkcCrlnstDfltPhrsNm	zTPLineHome	zTpkcCrlnstDfltPhrsNm
+zTpkcCrlnstCatForCmdAbrvLC	cursor	zTpkcCrlnstCatForCmdAbrvLC
+zTpkcCrlnstCmdType_mcrTl		zTpkcCrlnstCmdType_mcrTl
+zTpkcCrlnstIsBtstrp_yes		zTpkcCrlnstIsBtstrp_yes
+zTpkcCrlnstDfltPostKcSlpMils	1	zTpkcCrlnstDfltPostKcSlpMils
+zTpkcCrlnstStpsFrmCmdListTop	{#insert zPP}{#UP -count 4}{#insert z5ThnTSlp}	zTpkcCrlnstStpsFrmCmdListTop

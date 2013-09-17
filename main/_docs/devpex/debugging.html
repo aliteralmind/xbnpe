@@ -30,13 +30,13 @@
 </PRE>
 <A NAME="tracefreeze"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; XBNPE debugging: Process tracing and freezing with <CODE>alertbox[1-10]</CODE></H2>
 
-<P><CODE>alertbox</CODE>-es provide the ability to narrow down the location at which a problem is occuring (&quot;tracing&quot;), and stopping execution temporarily to analyze the current state (&quot;freezing&quot;). Insert <CODE>alertbox</CODE>-es them as necessary, using the <CODE>&quot;pab[1-10]&quot;</CODE> actions. For example,
+<P><CODE>alertbox</CODE>-es are <A HREF="../basics/xbnpe_phrase_types.html#command">commands</A> that help discover where a problem is occuring in your code (&quot;tracing&quot;), and also for temporarily stopping execution to analyze the current state (&quot;freezing&quot;). Insert <CODE>alertbox</CODE>-es them as necessary, using the <CODE>&quot;pab[1-10]&quot;</CODE> actions. For example,
 <BR> &nbsp; &nbsp; <CODE>pab3</CODE>
 <BR>is the <A HREF="xpc.html">phrase-creator</A> for the <A HREF="../basics/xbnpe_phrase_types.html#command">command</A>
 <BR> &nbsp; &nbsp; <CODE>{#insert alertbox3}</CODE>
 <BR>which pops up a simple dialog box at that point, containing only the number three.</P>
 
-<P><I>(Note that <CODE>alertbox</CODE>-es are an exception to the <CODE>'z'</CODE>-prefix naming-convention for commands.)</I></P>
+<P><I>(<CODE>alertbox</CODE>es are an exception to the command's <CODE>'z'</CODE>-prefix naming convention.)</I></P>
 
 <H3>Find all <CODE>alertbox</CODE> phrase-calls: <CODE>fnpab</CODE></H3>
 
@@ -46,7 +46,7 @@
 
 <H3>Warning: <CODE>alertbox</CODE>-es in the find-dialog changes focus</H3>
 
-<P>Note that, when in the find-dialog (or replace or find-in-files dialogs), using an <CODE>alertbox</CODE> causes focus to change to the find-what textbox, and for <I>selects the entire search-term</I>.</P>
+<P>Note that, when in the find-dialog (or replace or find-in-files dialogs), using an <CODE>alertbox</CODE> causes focus to change to the find-what textbox, and <I>selects the entire search-term</I>.</P>
 
 
 <PRE>

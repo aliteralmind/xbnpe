@@ -1,0 +1,5 @@
+MacroMultiplay (zTPMacroMultiplay, mcrmply)	{#insert zvCMD_ABRV_1C_sfMacroMultiplay}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Mcrmply
+MacroPause (zTPMacroPause, mcrpaus)	{#insert zvCMD_ABRV_1C_sfMacroPause}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Mcrpaus
+MacroPlay (zTPMacroPlay, mcrply)	{#insert zvCMD_ABRV_1C_sfMacroPlay}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Mcrply
+MacroRecord (zTPMacroRecordToggle, mcrrcrd)	{#insert zvCMD_ABRV_1C_sfMacroRecord}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Mcrrcrd
+MacroSave (zTPMacroSaveDlgOpen, mcrsv)	{#insert zvCMD_ABRV_1C_sfMacroSave}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Mcrsv

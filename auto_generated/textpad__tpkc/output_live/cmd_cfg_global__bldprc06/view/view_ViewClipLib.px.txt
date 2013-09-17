@@ -1,0 +1,8 @@
+zTpkcViewClipLibAbrv1C	Vcl	zTpkcViewClipLibAbrv1C
+zTpkcVclCmdNameTC	ViewClipLib	zTpkcVclCmdNameTC
+zTpkcVclDfltPhrsNm	zTPViewClipLib	zTpkcVclDfltPhrsNm
+zTpkcVclCatForCmdAbrvLC	view	zTpkcVclCatForCmdAbrvLC
+zTpkcVclCmdType_mcrTl		zTpkcVclCmdType_mcrTl
+zTpkcVclIsBtstrp_yes		zTpkcVclIsBtstrp_yes
+zTpkcVclDfltPostKcSlpMils	10	zTpkcVclDfltPostKcSlpMils
+zTpkcVclStpsFrmCmdListTop	{#insert zVV}	zTpkcVclStpsFrmCmdListTop

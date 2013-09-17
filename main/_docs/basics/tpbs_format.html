@@ -13,11 +13,11 @@
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#mainp">GO</A></B></FONT>]</CODE> &nbsp; Main</LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#escp">GO</A></B></FONT>]</CODE> &nbsp; Escaped</LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#tpkp">GO</A></B></FONT>]</CODE> &nbsp; TextPad-keypress</LI>
-</UL>The values of these three phrases are conceptually equal: They each represent, in three different formats, the single key-command (the <A HREF="#terminology">bootstrap-key-command</A>) associated to a particular built-in TextPad command--one that happens to be a TextPad-bootstrap. All main phrases (for a single project--either <A HREF="xkp.html">XKP</A> or <A HREF="tpkc/index.html">TPKC</A>) are <A HREF="#locations">stored</A> in a single phrase-file. The &quot;non-main&quot; phrases are stored in another file. All three phrases are critical to XBN-PhraseExpress.</P>
+</UL>The values of these three phrases are conceptually equal: They each represent, in three different formats, the single key-command (the <A HREF="tpbs.html#terminology">bootstrap-key-command</A>) associated to a particular built-in TextPad command--one that happens to be a TextPad-bootstrap. All main phrases (for a single project--either <A HREF="xkp.html">XKP</A> or <A HREF="tpkc/index.html">TPKC</A>) are <A HREF="tpbs.html#locations">stored</A> in a single phrase-file. The &quot;non-main&quot; phrases are stored in another file. All three phrases are critical to XBN-PhraseExpress.</P>
 
 <H3>Example TextPad-bootstrap</H3>
 
-<P><I>Displayed in <A HREF="../devpex/c2pl.html#one">uncompressed</A> format. See <A HREF="../phrase_file.html#pformat">phrase-format specifications</A></I></P>
+<P><I>Displayed in <A HREF="../devpex/c2pl.html#one">uncompressed</A> format. See <A HREF="phrase_file.html#pformat">phrase-format specifications</A></I></P>
 
 <H4><U>Main</U></H4>
 
@@ -37,7 +37,7 @@ Ctrl+C</PRE>
 </PRE>
 <A NAME="mainp"/><H2><CODE>[<A HREF="#format">BACK</A>]</CODE> &nbsp; TextPad-bootstrap: Main phrase</H2>
 
-<P>The main TextPad-bootstrap phrase is what actually triggers a built-in TextPad command. You are encouraged to call these phrases from your own PhraseExpress code. The main phrases (for each project) are <A HREF="#locations">stored</A> in a single phrase-file.</P>
+<P>The main TextPad-bootstrap phrase is what actually triggers a built-in TextPad command. You are encouraged to call these phrases from your own PhraseExpress code. The main phrases (for each project) are <A HREF="tpbs.html#locations">stored</A> in a single phrase-file.</P>
 
 <H3>XKP-project example</H3>
 
@@ -79,10 +79,10 @@ Ctrl+C</PRE>
 </PRE>
 <A NAME="escp"/><H2><CODE>[<A HREF="#format">BACK</A>]</CODE> &nbsp; TextPad-bootstrap: Escaped (literalized) phrase</H2>
 
-<P>The escaped TextPad-bootstrap phrase is <I>exactly equal</I> to its <A HREF="#mainp">main phrase</A>, except that all curlys are escaped. This and the <A HREF="#tpkp">TextPad-key-press phrase</A> are considered the &quot;non-main&quot; tp-bootstrap phrases, and are both <A HREF="#locations">stored</A> together in a single phrase-file. The escaped tp-bootstrap phrase<UL>
+<P>The escaped TextPad-bootstrap phrase is <I>exactly equal</I> to its <A HREF="#mainp">main phrase</A>, except that all curlys are escaped. This and the <A HREF="#tpkp">TextPad-key-press phrase</A> are considered the &quot;non-main&quot; tp-bootstrap phrases, and are both <A HREF="tpbs.html#locations">stored</A> together in a single phrase-file. The escaped tp-bootstrap phrase<UL>
 	<LI>Is used to <A HREF="../generic/wishes.html#ltrl">literally display</A> the key-command to the user, for <A HREF="tpkc/user_menu2.html#tpkcumakcdt">diagnostic purposes</A>.</LI>
 	<LI>Helps make a <A HREF="tpkc/tpkc_user_dir.html#remotebuild">remote TPKC-user-build</A> possible.</LI>
-	<LI>Is used by the TPKC <A HREF="tpkc/index.html#userbuild">user-build-process</A> (sub-build-proc-<A HREF="tpkc/sub_build_proc2.html#10">10</A>) to delete all <A HREF="#terminology">bootstrap-key-commands</A> from the TextPad <A HREF="tpkc/tpacl.html">all-command-list</A>.</LI>
+	<LI>Is used by the TPKC <A HREF="tpkc/index.html#userbuild">user-build-process</A> (sub-build-proc-<A HREF="tpkc/sub_build_proc2.html#10">10</A>) to delete all <A HREF="tpbs.html#terminology">bootstrap-key-commands</A> from the TextPad <A HREF="tpkc/tpacl.html">all-command-list</A>.</LI>
 </UL></P>
 
 <H3>Example</H3>
@@ -100,7 +100,7 @@ Ctrl+C</PRE>
 	<BR> &nbsp; &nbsp; <CODE>\\\{#CTRL -chars c\\\}\\\{#insert zTSlp\\\}\\\{#sleep 10\\\}</CODE></LI>
 </UL></P>
 
-<P><I>(There are <A HREF="#utilities">utilities</A> to assist you.)</I></P>
+<P><I>(There are <A HREF="tpbs.html#utilities">utilities</A> to assist you.)</I></P>
 
 
 <PRE>
@@ -112,7 +112,7 @@ Ctrl+C</PRE>
 
 <P>The TextPad-key-press phrase in a TextPad-bootstrap has the same key-press(es) as its <A HREF="#escp">escaped</A> and <A HREF="#mainp">main</A> counterparts, but with key-presses as specified in
 <BR> &nbsp; &nbsp; <CODE>TextPad &gt; Configure &gt; Preferences &gt; Keyboard</CODE>
-<BR>Specifically, it contains the exact key-press(es) as printed in the <A HREF="tpkc/tpacl.html">TextPad all-command-list</A>. This and the escaped phrase are <A HREF="#locations">stored</A> together in a single file.</P>
+<BR>Specifically, it contains the exact key-press(es) as printed in the <A HREF="tpkc/tpacl.html">TextPad all-command-list</A>. This and the escaped phrase are <A HREF="tpbs.html#locations">stored</A> together in a single file.</P>
 
 <H3>Example</H3>
 <PRE STYLE="background-color:#E1E1E1;"><U>zTPCopyTPKeys</U></B>
@@ -136,7 +136,7 @@ Ctrl+C</PRE>
 
 <P><I><A HREF="tpbs_install.html#install5">More examples</A> (note the 1 multi-key key-command)</I></P>
 
-<P>Since the value of this phrase is not PhraseExpress code, it should therefore have no SLEEP or calls to <CODE><A HREF="../devpex/debugging.html#kpspeed">zTSlp</A></CODE>. TP-key-press phrases are used by the first step of the first TPKC <A HREF="tpkc/index.html#userbuild01">user-build-process</A> (<A HREF="tpkc/sub_build_proc2.html#10">sub-proc-10</A>) to delete all <A HREF="#terminology">bootstrap-kcs</A> from the tp-all-cmd-list.</P>
+<P>Since the value of this phrase is not PhraseExpress code, it should therefore have no SLEEP or calls to <CODE><A HREF="../devpex/debugging.html#kpspeed">zTSlp</A></CODE>. TP-key-press phrases are used by the first step of the first TPKC <A HREF="tpkc/index.html#userbuild01">user-build-process</A> (<A HREF="tpkc/sub_build_proc2.html#10">sub-proc-10</A>) to delete all <A HREF="tpbs.html#terminology">bootstrap-kcs</A> from the tp-all-cmd-list.</P>
 
 <P>Below are two screenshots.<OL>
 	<LI>The TextPad preferences dialog, displaying the <CODE>&quot;EditCopy&quot;</CODE> command, and its key-command <CODE>&quot;Ctrl+C&quot;</CODE> (the first is its bootstrap-kc, the rest its nbs-kcs)</LI>
@@ -145,7 +145,7 @@ Ctrl+C</PRE>
 
 <P><IMG SRC="../images/basics/edit_copy_kc_in_tp_prefs.jpg" BORDER="1"/></P>
 
-<P><IMG SRC="tpkc/images/tpkc_all_cmd_list_for_edit_copy.jpg" BORDER="1"/></P>
+<P><IMG SRC="../images/basics/tpkc/tpkc_all_cmd_list_for_edit_copy.jpg" BORDER="1"/></P>
 
 
 

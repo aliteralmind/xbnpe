@@ -1,0 +1,9 @@
+ToolCompareFiles (zTPToolCompareFiles, tcmp)	{#insert zvCMD_ABRV_1C_sfToolCompareFiles}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Tcmp
+ToolExplorer (zTPToolExplorer, txplr)	{#insert zvCMD_ABRV_1C_sfToolExplorer}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Txplr
+ToolHTMLValidate (zTPToolHTMLValidate, thv)	{#insert zvCMD_ABRV_1C_sfToolHTMLValidate}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Thv
+ToolRerun (zTPToolRerun, trer)	{#insert zvCMD_ABRV_1C_sfToolRerun}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Trer
+ToolRun (zTPToolRun, trun)	{#insert zvCMD_ABRV_1C_sfToolRun}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Trun
+ToolSort (zTPSortDlgOpen, tsrt)	{#insert zvCMD_ABRV_1C_sfToolSort}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Tsrt
+ToolSpell (zTPToolSpell, tspl)	{#insert zvCMD_ABRV_1C_sfToolSpell}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Tspl
+ToolStop (zTPToolStop, tstp)	{#insert zvCMD_ABRV_1C_sfToolStop}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Tstp
+ToolWildEdit (zTPToolWildEdit, twedt)	{#insert zvCMD_ABRV_1C_sfToolWildEdit}{#insert zTpkcAsgnAllKCsTo1CmdOrNoKcsDlg_M_cmd1Kcpf}	zzTpkcAsgnAllKCsTo1Cmd_Twedt

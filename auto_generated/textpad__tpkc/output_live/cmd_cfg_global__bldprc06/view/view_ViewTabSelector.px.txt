@@ -1,0 +1,8 @@
+zTpkcViewTabSelectorAbrv1C	Vtbsl	zTpkcViewTabSelectorAbrv1C
+zTpkcVtbslCmdNameTC	ViewTabSelector	zTpkcVtbslCmdNameTC
+zTpkcVtbslDfltPhrsNm	zTPViewTabSelector	zTpkcVtbslDfltPhrsNm
+zTpkcVtbslCatForCmdAbrvLC	view	zTpkcVtbslCatForCmdAbrvLC
+zTpkcVtbslCmdType_mcrTl		zTpkcVtbslCmdType_mcrTl
+zTpkcVtbslIsBtstrp_yes		zTpkcVtbslIsBtstrp_yes
+zTpkcVtbslDfltPostKcSlpMils	10	zTpkcVtbslDfltPostKcSlpMils
+zTpkcVtbslStpsFrmCmdListTop	{#insert zEND}{#insert zUP3}	zTpkcVtbslStpsFrmCmdListTop

@@ -63,6 +63,7 @@ Phrase-creators: XBN-PhraseExpress -- xh   .   zXbnpeCmdPopupRoot
 						zXPROOT_DIR_AG_xkpOutputRoot
 					zXPROOT_DIR_tpkc -- xhoymmt	\\\{#insert zXPROOT_DIR_tpkc\\\}	xhoymm
 						zXPROOT_DIR_AG_tpkc	\\\{#insert zXPROOT_DIR_AG_tpkc\\\}	xhoymmt
+						zXPROOT_DIR_AG_tpkc_M_bvm	\\\{#insert zXPROOT_DIR_AG_tpkc_M_bvm\\\}	xhoymmt
 						zXPROOT_DIR_tpkcVrsnSpcfcFls -- xhoymmtv	\\\{#insert zXPROOT_DIR_tpkcVrsnSpcfcFls\\\}	xhoymmt
 							zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn -- Needs zvTPKC_UDIR_NM	\\\{#insert zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn\\\}	xhoymmtv
 			zWIN_DIR_DESKTOP	\\\{#insert zWIN_DIR_DESKTOP\\\}	xhoym

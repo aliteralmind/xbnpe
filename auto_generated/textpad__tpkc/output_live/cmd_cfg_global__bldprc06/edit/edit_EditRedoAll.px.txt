@@ -1,0 +1,8 @@
+zTpkcEditRedoAllAbrv1C	Erdoall	zTpkcEditRedoAllAbrv1C
+zTpkcErdoallCmdNameTC	EditRedoAll	zTpkcErdoallCmdNameTC
+zTpkcErdoallDfltPhrsNm	zTPRedoAll	zTpkcErdoallDfltPhrsNm
+zTpkcErdoallCatForCmdAbrvLC	edit	zTpkcErdoallCatForCmdAbrvLC
+zTpkcErdoallCmdType_mcrTl		zTpkcErdoallCmdType_mcrTl
+zTpkcErdoallIsBtstrp_yes		zTpkcErdoallIsBtstrp_yes
+zTpkcErdoallDfltPostKcSlpMils	10	zTpkcErdoallDfltPostKcSlpMils
+zTpkcErdoallStpsFrmCmdListTop	{#insert zEND}{#insert zPGUP2}{#insert zDOWN}	zTpkcErdoallStpsFrmCmdListTop

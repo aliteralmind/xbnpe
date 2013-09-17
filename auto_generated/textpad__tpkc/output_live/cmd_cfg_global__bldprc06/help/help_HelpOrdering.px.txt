@@ -1,0 +1,8 @@
+zTpkcHelpOrderingAbrv1C	Hrdr	zTpkcHelpOrderingAbrv1C
+zTpkcHrdrCmdNameTC	HelpOrdering	zTpkcHrdrCmdNameTC
+zTpkcHrdrDfltPhrsNm	zTPHelpOrdering	zTpkcHrdrDfltPhrsNm
+zTpkcHrdrCatForCmdAbrvLC	help	zTpkcHrdrCatForCmdAbrvLC
+zTpkcHrdrCmdType_mcrTl		zTpkcHrdrCmdType_mcrTl
+zTpkcHrdrIsBtstrp_yes		zTpkcHrdrIsBtstrp_yes
+zTpkcHrdrDfltPostKcSlpMils	10	zTpkcHrdrDfltPostKcSlpMils
+zTpkcHrdrStpsFrmCmdListTop	{#insert zDOWN2}	zTpkcHrdrStpsFrmCmdListTop

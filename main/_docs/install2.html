@@ -37,6 +37,8 @@
 	<LI><CODE>zzTPTxtDefaultStripTrailingWSOnOrES</CODE></LI>
 </UL>Note the phrase-file location and the PhraseExpress folder to which it needs to be imported. Set the values in the text-file and then import it to its required location in PhraseExpress.</P>
 
+<P>Verify the directory values by copying the phrase-name (such as <CODE>&quot;zROOT_DIR_XBNPE_PARENT&quot;</CODE>) and then, <I>in the open-dialog's &quot;File name&quot; field</I>, <A HREF="index.html#execute">executing</A> <CODE>&quot;<A HREF="devpex/cpcb.html">cpcb</A>&quot;</CODE>, and pressing enter to confirm it.</P>
+
 <P><B>Warning:</B> It is strongly recommended that you edit these values in the on-disk text-files (plain-text phrase-files), and then import them. This is true when editing any values during this configuration process, and throughout much of the projects in XBN-PhraseExpress. Editing phrases directly in the PhraseExpress application, <I><U>at they very least, during this installation processes</U></I>, is strongly discouraged.</P>
 
 <P>XBN-PhraseExpress--at least at a bare-minimum--is now installed.</P>
@@ -68,10 +70,7 @@
 <P>Since you have no custom key-commands, almost all of the rest of the installation process has been done for you. Follow this and the next step to complete your installation.</P>
 
 <P>Assign exactly the following, in
-<BR> &nbsp; &nbsp; <CODE>TextPad &gt; Config &gt; Preferences &gt; Keyboard</CODE>
-<BR>Test all these commands (except <CODE>&quot;*Match&quot;</CODE> and <CODE>&quot;*Set&quot;</CODE>), along with <A HREF="basics/tpbs_install.html#install2">some other</A> critical ones, by executing
-<BR> &nbsp; &nbsp; <CODE>testtpbsxkptpkc</CODE>
-<BR>Follow the instructions closely.</P>
+<BR> &nbsp; &nbsp; <CODE>TextPad &gt; Config &gt; Preferences &gt; Keyboard</CODE></P>
 
 <P><TABLE ALIGN="center" BORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#EEEEEE"><TR ALIGN="center" VALIGN="middle">
 	<TD><B><U>Category</U></B></TD>
@@ -191,7 +190,7 @@
 </PRE>
 <A NAME="test"/><H2><CODE><A HREF="install.html">top</A> &nbsp; &nbsp; [<A HREF="#14atudn">PREV</A> / <A HREF="#15tpbs">PREV</A> -- NEXT]</CODE> &nbsp; XBN-PhraseExpress: Test your installation</H2>
 
-<P>To verify that XBN-PhraseExpress is properly installed, execute these utilities in order:<OL>
+<P>To verify that XBN-PhraseExpress is properly installed, <A HREF="index.html#execute">execute</A> these utilities in order, in a new TextPad document:<OL>
 	<LI><CODE>testtpbsxkptpkc</CODE>: Verifies all TextPad-bootstraps. <I><A HREF="basics/tpbs.html#utilities">more info</A></I></LI>
 	<LI><CODE>vtpkcuds</CODE>: Verifies your on-disk TPKC-user-directory. <I><A HREF="basics/tpkc/tpkc_user_dir.html#zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn">more info</A></I></LI>
 	<LI>Assign all key-commands to a <A HREF="basics/tpkc/user_menu2.html#tpkcumak1c">single TextPad command</A>. For those with many custom key-commands, the true test is to reset all key-commands with

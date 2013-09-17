@@ -1,0 +1,8 @@
+zTpkcEditPasteHTMLAbrv1C	Epsthtm	zTpkcEditPasteHTMLAbrv1C
+zTpkcEpsthtmCmdNameTC	EditPasteHTML	zTpkcEpsthtmCmdNameTC
+zTpkcEpsthtmDfltPhrsNm	zTPPasteHTML	zTpkcEpsthtmDfltPhrsNm
+zTpkcEpsthtmCatForCmdAbrvLC	edit	zTpkcEpsthtmCatForCmdAbrvLC
+zTpkcEpsthtmCmdType_mcrTl		zTpkcEpsthtmCmdType_mcrTl
+zTpkcEpsthtmIsBtstrp_yes		zTpkcEpsthtmIsBtstrp_yes
+zTpkcEpsthtmDfltPostKcSlpMils	10	zTpkcEpsthtmDfltPostKcSlpMils
+zTpkcEpsthtmStpsFrmCmdListTop	{#insert zEND}{#insert zPGUP3}{#insert zDOWN2}	zTpkcEpsthtmStpsFrmCmdListTop

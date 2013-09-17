@@ -1,0 +1,8 @@
+zTpkcFileExitAbrv1C	Fxit	zTpkcFileExitAbrv1C
+zTpkcFxitCmdNameTC	FileExit	zTpkcFxitCmdNameTC
+zTpkcFxitDfltPhrsNm	zTPFileExit	zTpkcFxitDfltPhrsNm
+zTpkcFxitCatForCmdAbrvLC	file	zTpkcFxitCatForCmdAbrvLC
+zTpkcFxitCmdType_mcrTl		zTpkcFxitCmdType_mcrTl
+zTpkcFxitIsBtstrp_yes		zTpkcFxitIsBtstrp_yes
+zTpkcFxitDfltPostKcSlpMils	1000	zTpkcFxitDfltPostKcSlpMils
+zTpkcFxitStpsFrmCmdListTop	{#insert zDOWN2}	zTpkcFxitStpsFrmCmdListTop

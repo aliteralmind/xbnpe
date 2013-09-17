@@ -1,0 +1,8 @@
+zTpkcChar61UUpperUmlautAbrv1C	Chruuu	zTpkcChar61UUpperUmlautAbrv1C
+zTpkcChruuuCmdNameTC	Char61UUpperUmlaut	zTpkcChruuuCmdNameTC
+zTpkcChruuuDfltPhrsNm	zTPChar61UUpperUmlaut	zTpkcChruuuDfltPhrsNm
+zTpkcChruuuCatForCmdAbrvLC	chars	zTpkcChruuuCatForCmdAbrvLC
+zTpkcChruuuCmdType_mcrTl		zTpkcChruuuCmdType_mcrTl
+zTpkcChruuuIsBtstrp_yes		zTpkcChruuuIsBtstrp_yes
+zTpkcChruuuDfltPostKcSlpMils	1	zTpkcChruuuDfltPostKcSlpMils
+zTpkcChruuuStpsFrmCmdListTop	{#insert zEND}{#insert zPGUP}{#insert zDOWN2}	zTpkcChruuuStpsFrmCmdListTop

@@ -1,0 +1,8 @@
+zTpkcParaDownExtendAbrv1C	Crprdx	zTpkcParaDownExtendAbrv1C
+zTpkcCrprdxCmdNameTC	ParaDownExtend	zTpkcCrprdxCmdNameTC
+zTpkcCrprdxDfltPhrsNm	zTPParaDownExtend	zTpkcCrprdxDfltPhrsNm
+zTpkcCrprdxCatForCmdAbrvLC	cursor	zTpkcCrprdxCatForCmdAbrvLC
+zTpkcCrprdxCmdType_mcrTl		zTpkcCrprdxCmdType_mcrTl
+zTpkcCrprdxIsBtstrp_yes		zTpkcCrprdxIsBtstrp_yes
+zTpkcCrprdxDfltPostKcSlpMils	10	zTpkcCrprdxDfltPostKcSlpMils
+zTpkcCrprdxStpsFrmCmdListTop	{#insert zEND}{#insert zPGUP2}{#insert zUP}	zTpkcCrprdxStpsFrmCmdListTop

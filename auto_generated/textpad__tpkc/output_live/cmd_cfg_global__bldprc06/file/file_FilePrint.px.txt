@@ -1,0 +1,8 @@
+zTpkcFilePrintAbrv1C	Fprnt	zTpkcFilePrintAbrv1C
+zTpkcFprntCmdNameTC	FilePrint	zTpkcFprntCmdNameTC
+zTpkcFprntDfltPhrsNm	zTPFilePrint	zTpkcFprntDfltPhrsNm
+zTpkcFprntCatForCmdAbrvLC	file	zTpkcFprntCatForCmdAbrvLC
+zTpkcFprntCmdType_mcrTl		zTpkcFprntCmdType_mcrTl
+zTpkcFprntIsBtstrp_yes		zTpkcFprntIsBtstrp_yes
+zTpkcFprntDfltPostKcSlpMils	50	zTpkcFprntDfltPostKcSlpMils
+zTpkcFprntStpsFrmCmdListTop	{#insert zPGDN}{#insert zDOWN2}	zTpkcFprntStpsFrmCmdListTop

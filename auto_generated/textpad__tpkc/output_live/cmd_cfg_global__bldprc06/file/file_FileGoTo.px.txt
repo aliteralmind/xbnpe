@@ -1,0 +1,8 @@
+zTpkcFileGoToAbrv1C	Fgoto	zTpkcFileGoToAbrv1C
+zTpkcFgotoCmdNameTC	FileGoTo	zTpkcFgotoCmdNameTC
+zTpkcFgotoDfltPhrsNm	zTPFileOpenSelPath	zTpkcFgotoDfltPhrsNm
+zTpkcFgotoCatForCmdAbrvLC	file	zTpkcFgotoCatForCmdAbrvLC
+zTpkcFgotoCmdType_mcrTl		zTpkcFgotoCmdType_mcrTl
+zTpkcFgotoIsBtstrp_yes		zTpkcFgotoIsBtstrp_yes
+zTpkcFgotoDfltPostKcSlpMils	100	zTpkcFgotoDfltPostKcSlpMils
+zTpkcFgotoStpsFrmCmdListTop	{#insert zDOWN3}	zTpkcFgotoStpsFrmCmdListTop

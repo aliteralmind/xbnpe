@@ -1,0 +1,8 @@
+zTpkcEditCopyWordAbrv1C	Ecpwd	zTpkcEditCopyWordAbrv1C
+zTpkcEcpwdCmdNameTC	EditCopyWord	zTpkcEcpwdCmdNameTC
+zTpkcEcpwdDfltPhrsNm	zTPCopyWord	zTpkcEcpwdDfltPhrsNm
+zTpkcEcpwdCatForCmdAbrvLC	edit	zTpkcEcpwdCatForCmdAbrvLC
+zTpkcEcpwdCmdType_mcrTl		zTpkcEcpwdCmdType_mcrTl
+zTpkcEcpwdIsBtstrp_yes		zTpkcEcpwdIsBtstrp_yes
+zTpkcEcpwdDfltPostKcSlpMils	10	zTpkcEcpwdDfltPostKcSlpMils
+zTpkcEcpwdStpsFrmCmdListTop	{#insert zPGDN2}{#insert zDOWN3}	zTpkcEcpwdStpsFrmCmdListTop

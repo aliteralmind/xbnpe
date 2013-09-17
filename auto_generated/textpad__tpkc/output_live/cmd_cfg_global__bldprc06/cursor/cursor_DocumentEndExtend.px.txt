@@ -1,0 +1,8 @@
+zTpkcDocumentEndExtendAbrv1C	Crdcex	zTpkcDocumentEndExtendAbrv1C
+zTpkcCrdcexCmdNameTC	DocumentEndExtend	zTpkcCrdcexCmdNameTC
+zTpkcCrdcexDfltPhrsNm	zTPSTDocBottom	zTpkcCrdcexDfltPhrsNm
+zTpkcCrdcexCatForCmdAbrvLC	cursor	zTpkcCrdcexCatForCmdAbrvLC
+zTpkcCrdcexCmdType_mcrTl		zTpkcCrdcexCmdType_mcrTl
+zTpkcCrdcexIsBtstrp_yes		zTpkcCrdcexIsBtstrp_yes
+zTpkcCrdcexDfltPostKcSlpMils	50	zTpkcCrdcexDfltPostKcSlpMils
+zTpkcCrdcexStpsFrmCmdListTop	{#NONE -chars d -count 2}{#insert z5ThnTSlp}	zTpkcCrdcexStpsFrmCmdListTop

@@ -1,0 +1,8 @@
+zTpkcFileSendAbrv1C	Fsnd	zTpkcFileSendAbrv1C
+zTpkcFsndCmdNameTC	FileSend	zTpkcFsndCmdNameTC
+zTpkcFsndDfltPhrsNm	zTPFileSend	zTpkcFsndDfltPhrsNm
+zTpkcFsndCatForCmdAbrvLC	file	zTpkcFsndCatForCmdAbrvLC
+zTpkcFsndCmdType_mcrTl		zTpkcFsndCmdType_mcrTl
+zTpkcFsndIsBtstrp_yes		zTpkcFsndIsBtstrp_yes
+zTpkcFsndDfltPostKcSlpMils	1000	zTpkcFsndDfltPostKcSlpMils
+zTpkcFsndStpsFrmCmdListTop	{#insert zEND}{#insert zPGUP}{#insert zDOWN}	zTpkcFsndStpsFrmCmdListTop

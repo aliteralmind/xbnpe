@@ -16,7 +16,7 @@ zzTestXkpTpbsSelR1w	{#HOME}{#sleep 2000}{#SETPHRASE -description zvBTSTRP_PHRS_N
 
 zzTestXkpTpbsSelL1w	Hello{#sleep 1000}{#SETPHRASE -description zvBTSTRP_PHRS_NM -content zTPSelectL1w -autotext zvBTSTRP_PHRS_NM -folder ctvv_folder}{#insert {#insert zvBTSTRP_PHRS_NM}}{#sleep 2000}{#SETPHRASE -description zvMSG -content The word was selected. -autotext zvMSG -folder ctvv_folder}{#insert zTpbsTestDlg_M_bpsmMsg}	zzTestXkpTpbsSelL1w
 
-zzTestXkpTpbsFileNew	{#SETPHRASE -description zvBTSTRP_PHRS_NM -content zTPFileNew -autotext zvBTSTRP_PHRS_NM -folder ctvv_folder}{#insert {#insert zvBTSTRP_PHRS_NM}}{#SETPHRASE -description zvMSG -content A new document was just opened. -autotext zvMSG -folder ctvv_folder}{#insert zTpbsTestDlg_M_bpsmMsg}	zzTestXkpTpbsFileNew
+zzTestXkpTpbsFileNew	{#SETPHRASE -description zvBTSTRP_PHRS_NM -content zTPFileNew -autotext zvBTSTRP_PHRS_NM -folder ctvv_folder}{#insert {#insert zvBTSTRP_PHRS_NM}}{#SETPHRASE -description zvMSG -content A new document was just opened.  //  If the mouse is 'stuck', click the CAPS-LOCK key *twice*. -autotext zvMSG -folder ctvv_folder}{#insert zTpbsTestDlg_M_bpsmMsg}	zzTestXkpTpbsFileNew
 
 zzEscTpkPostfixCIEitherES_M_bspm -- Needs zvBTSTRP_PHRS_NM (starts w/ 2 spaces)	  //  {#insert zTPBtstrpEscPhrsNm_M_bspm}='{#insert zTPBtstrpEscKCGetOrCIES_M_bspm}', {#insert zTPBtstrpTPKeysPhrsNm_M_bspm}='{#insert zTPBtstrpTPKeysKCGetOrCIES_M_bspm}'	zzEscTpkPostfixCIEitherES_M_bspm
 (*

@@ -12,14 +12,20 @@
 
 <H1>TPKC: Master configuration variables</H1>
 
-<P>These critical settings customize the behavior of the TextPad built-in command (TPKC) project. They are collectively called the TPKC &quot;Master Configuration Variables&quot;, or tpkc-master-cfg-vars.</P>
+<P>These critical settings customize the behavior of the TextPad built-in command (TPKC) project. They are collectively called the TPKC &quot;Master Configuration Variables&quot;.</P>
 
 <P><B>Contents:</B><UL>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#zForceTestKeyCmd">GO</A></B></FONT>]</CODE> &nbsp; <CODE>zForceTestKeyCmd[Esc]</CODE></LI>
-	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#zTpkcAllCategoryAbrvLCsQbl_FORTESTMODE">GO</A></B></FONT>]</CODE> &nbsp; <CODE>zTpkcAllCategoryAbrvLCsQbl_FORTESTMODE</CODE></LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#zTpkcBuildModeTestOrLive">GO</A></B></FONT>]</CODE> &nbsp; <CODE>zTpkcBuildModeTestOrLive</CODE></LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#zTpkcMaxNbsKCsPerCmd">GO</A></B></FONT>]</CODE> &nbsp; <CODE>zTpkcMaxNbsKCsPerCmd</CODE></LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#zTpkcMillsBtwMultiKeyKCs">GO</A></B></FONT>]</CODE> &nbsp; <CODE>zTpkcMillsBtwMultiKeyKCs</CODE></LI>
+	<LI><CODE>[<A HREF="#zzTpkcBuildVersionName"><FONT SIZE="+1"><B>GO</B></FONT></A>]</CODE> &nbsp; <CODE>zzTpkcBuildVersionName</CODE><UL>
+		<LI><CODE>[<A HREF="#zzTpkcBuildVersionCatAbrvs"><FONT SIZE="+1"><B>GO</B></FONT></A>]</CODE> &nbsp; <CODE>zzTpkcBuildVersionCatAbrvs</CODE>
+		<LI><CODE>[<A HREF="#goodtestbuild"><FONT SIZE="+1"><B>GO</B></FONT></A>]</CODE> &nbsp; A good test-build: <CODE>[file][config][help]</CODE></LI>
+		<LI><CODE>[<A HREF="#switchv"><FONT SIZE="+1"><B>GO</B></FONT></A>]</CODE> &nbsp; Switching between TPKC-build-process versions</LI>
+		<LI><CODE>[<A HREF="#bvfolders"><FONT SIZE="+1"><B>GO</B></FONT></A>]</CODE> &nbsp; Same versions in all locations</LI>
+	</UL></LI>
+	</LI>
 </UL></P>
 
 <P>Note that TPKC <A HREF="config_vars.html">command-configuration-variables</A> are documented elsewhere.</P>
@@ -60,44 +66,219 @@
 	<LI>It is not necessarily required to have sleep at they very end of this phrase, since it is always called in isolation (a message-box is popped up after each TPKC-nbs-test).</LI>
 </UL></P>
 
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="zzTpkcBuildVersionName"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TPKC master-cfg-var: <CODE>zzTpkcBuildVersionName</CODE></H2>
+
+<P><UL>
+	<LI><B>Requirements:</B> Must be a valid (portion of a) directory-name, such that none of its characters (such as spaces) require the overall path to be surrounded by double-quotes.</LI>
+	<LI><B>Example values:</B> <CODE>&quot;live&quot;</CODE> or <CODE>&quot;fgh&quot;</CODE></LI>
+</UL></P>
+
+<P>Represents the <I>currently-active</I> TPKC-build &quot;version&quot;, and is specifically the postfix of<UL>
+	<LI>the category-subset config-variable	<BR> &nbsp; &nbsp; <CODE><A HREF="#zzTpkcBuildVersionCatAbrvs">zzTpkcBuildVersionCatAbrvs_*</A></CODE></LI>
+	<LI>and the two on-disk output (auto-generated--<CODE>&quot;AG&quot;</CODE>) phrase-file locations:<UL>
+	<LI><B>Sub-build-processes <A HREF="sub_build_proc.html#01">01</A> through <A HREF="sub_build_proc2.html#09">09</A></B> <I>(<A HREF="build_proc_tech_info.html">admin-only</A>)</I>
+	<BR> &nbsp; &nbsp; <CODE>{#insert <A HREF="index.html#zXPROOT_DIR_AG_tpkc_M_bvm">zXPROOT_DIR_AG_tpkc_M_bvm</A>}</CODE></LI>
+	<LI><B>Sub-build-processes <A HREF="sub_build_proc2.html#10">10</A> through <A HREF="sub_build_proc2.html#15">15</A></B> <I>(<A HREF="index.html#userbuild01">user-only</A>)</I>
+	<BR> &nbsp; &nbsp; <CODE>{#insert <A HREF="tpkc_user_dir.html#zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn">zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn</A>}output_{#insert zzTpkcBuildVersionName}\</CODE>
+	<BR>For example:
+	<BR> &nbsp; &nbsp; <CODE>C:\programming\phrase_express\xbnpe\main\textpad__tpkc\for_v_7_0_9\user_config\tp_frsh_instl\output_live\</CODE></LI>
+</UL></LI>
+</UL></P>
+
+<P>In addition, the three PhraseExpress folder-locations (where the above phrase-files are <A HREF="../phrase_file_import1.html">imported</A>), must each have a <A HREF="#bvfolders">corresponding</A> version-folder:<UL>
+	<LI><B>Sub-build-proces 01 through 09:</B><UL>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="tpkc_user_dir.html#inpex">GO</A></B></FONT>]</CODE> &nbsp; the TPKC-user-directory, or</LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="build_proc_tech_info.html#imp3other">GO</A></B></FONT>]</CODE> &nbsp; the &quot;other-AG-output&quot; folder.</LI>
+	</UL></LI>
+	<LI><B>Sub-build-procs 10 through 15:</B><UL>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="user_menu2.html#inpex">GO</A></B></FONT>]</CODE> &nbsp; The TPKC-user-menu</LI>
+	</UL></LI>
+</UL>All locations, both on-disk and in PhraseExpress, must have the <I>exact same versions</I>.</P>
+
+<P><I>(See: <A HREF="#switchv">Switching</A> between versions.)</I></P>
 
 <PRE>
 
 <HR/>
 
 </PRE>
-<A NAME="zTpkcAllCategoryAbrvLCsQbl_FORTESTMODE"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TPKC master-cfg-var: <CODE>zTpkcAllCategoryAbrvLCsQbl_FORTESTMODE</CODE></H2>
+<A NAME="zzTpkcBuildVersionCatAbrvs"/><H2><CODE>[<A HREF="#zzTpkcBuildVersionName">BACK</A>]</CODE> &nbsp; TPKC-build-version: TPKC master-cfg-var: <CODE>zzTpkcBuildVersionCatAbrvs_*</CODE></H2>
 
-<P><B>Requirements:</B> Must be an exact subset of <CODE><A HREF="config_vars.html#zTpkcAllCategoryAbrvLCsQbl">zTpkcAllCategoryAbrvLCsQbl</A></CODE></P>
+<P><UL>
+	<LI><B>Requirements:</B> Must be an exact subset of, or equal to, <CODE><A HREF="config_vars.html#zTpkcAllCategoryAbrvLCsQbl">zTpkcAllCategoryAbrvLCsQbl</A></CODE>.</LI>
+	<LI><B>Example value:</B> <CODE>[file][config][help]</CODE> &nbsp; &nbsp; <I>(this is a <A HREF="#goodtestbuild">good test-build</A>)</I></LI>
+</UL></P>
 
-<P>The <A HREF="../../tasks/qbl.html">sQuare-Bracketed-List</A> that define the universe of TextPad command categories, used only when TPKC-project is/was built in &quot;<A HREF="build_proc_tech_info.html#livevtest">test mode</A>&quot;. Specifically, when <CODE><A HREF="#zTpkcBuildModeTestOrLive">zTpkcBuildModeTestOrLive</A></CODE> is <CODE>&quot;live&quot;</CODE>, the universe is defined instead by
-<BR> &nbsp; &nbsp; <CODE>zTpkcAllCategoryAbrvLCsQbl</CODE>
-<BR>When <CODE>zTpkcBuildModeTestOrLive</CODE> is <CODE>&quot;test&quot;</CODE>, it is defined by this master-cfg-var:
-<BR> &nbsp; &nbsp; <CODE>zTpkcAllCategoryAbrvLCsQbl_FORTESTMODE</CODE></P>
+<P>The set of categories used by a specific <A HREF="build_proc_tech_info.html">TPKC-build-process</A>. This is called its &quot;version&quot;. The <I>currently active</I> version is determined by
+<BR> &nbsp; &nbsp; <CODE><A HREF="#zzTpkcBuildVersionName">zzTpkcBuildVersionName</A></CODE>
+<BR>If <CODE>zzTpkcBuildVersionName</CODE> is <CODE>&quot;live&quot;</CODE>, then
+<BR> &nbsp; &nbsp; <CODE>zzTpkcBuildVersionCatAbrvs_live</CODE>
+<BR>is the currently active category-set. You can <A HREF="#switchv">switch versions</A> at any time.</P>
 
-<P>As of TextPad version <CODE>7.0.9</CODE>, the value of
-<BR> &nbsp; &nbsp; <CODE>zTpkcAllCategoryAbrvLCsQbl</CODE>
-<BR>is
-<BR> &nbsp; &nbsp; <CODE>[file][edit][search][view][tools][macros][config][window][help][cursor][sel][cliplib][chars]</CODE></P>
+<P><I><B>Exactly one version must be called <CODE>&quot;live&quot;</CODE></B></I>--meaning there must be a phrase named
+<BR> &nbsp; &nbsp; <CODE>zzTpkcBuildVersionCatAbrvs_live</CODE>
+<BR>and its contents must be <I>equal</I> to
+<BR> &nbsp; &nbsp; <CODE>{#insert zTpkcAllCategoryAbrvLCsQbl}</CODE>
+<BR>All other versions, if any, are different flavors of testing-and-demonstration versions.</P>
+<PRE>
 
-<P><CODE>zTpkcAllCategoryAbrvLCsQbl_FORTESTMODE</CODE> must be an <I>exact subset</I> of <CODE>zTpkcAllCategoryAbrvLCsQbl</CODE> (with at least one category). For example:
-<BR> &nbsp; &nbsp; <CODE>[file][config][help]</CODE></P>
+<HR/>
 
-<P>The purpose of this test-set of categories is for testing and demonstrating the TPKC-build process.</P>
+</PRE>
+<a name="bvfolders"/><H2><CODE>[<A HREF="#zzTpkcBuildVersionName">BACK</A>]</CODE> &nbsp; TPKC-build-version: Same versions in all locations.</H2>
+
+<P><I>[In PhraseExpress: <A HREF="#bvfud">user-dir</A>, <A HREF="#bvfum">user-menu</A>, <A HREF="#bvfo">other</A>]</I></P>
+
+<P>By default, there are two available TPKC-build versions. They are represented by the master-configuration-variables
+<BR> &nbsp; &nbsp; <CODE><A HREF="#zzTpkcBuildVersionCatAbrvs">zzTpkcBuildVersionCatAbrvs_live</A></CODE> &nbsp; &nbsp; <I>(<CODE>&quot;live&quot;</CODE> is a required version)</I>
+<BR>and
+<BR> &nbsp; &nbsp; <CODE>zzTpkcBuildVersionCatAbrvs_fgh</CODE></P>
+
+<P><CODE>zzTpkcBuildVersionCatAbrvs_live</CODE> is equal to
+<BR> &nbsp; &nbsp; <CODE>{#insert <A HREF="config_vars.html#zTpkcAllCategoryAbrvLCsQbl">zTpkcAllCategoryAbrvLCsQbl</A>}</CODE>
+<BR>and <CODE>zzTpkcBuildVersionCatAbrvs_fgh</CODE> is equal to
+<BR> &nbsp; &nbsp; <CODE>[file][config][help]</CODE>
+<BR>(which is a <A HREF="#goodtestbuild">good test build</A>). The <I>currently active</I> version is determined by
+<BR> &nbsp; &nbsp; <CODE><A HREF="#zzTpkcBuildVersionName">zzTpkcBuildVersionName</A></CODE></P>
+
+<P>In all locations, both on-disk and in PhraseExpress, the <I>exact same versions</I> (<CODE>&quot;live&quot;</CODE> and <CODE>&quot;fgh&quot;</CODE>) must be present. The current version only
+<BR>must be enabled (right-click the folder and check
+<BR> &nbsp; &nbsp; &quot;Enable Autotext/Hotkeys&quot;
+<BR>), with all other versions disabled.</P>
+
+<P>Using the above, they are represented by these on-disk directories:<UL>
+	<LI><CODE>...\xbnpe\auto_generated\textpad__tpkc\output_fgh</CODE></LI>
+	<LI><CODE>...\xbnpe\auto_generated\textpad__tpkc\output_live</CODE></LI>
+</UL>and<UL>
+	<LI><CODE>...\xbnpe\main\textpad__tpkc\for_v_7_0_9\user_config\tp_frsh_instl\output_fgh</CODE></LI>
+	<LI><CODE>...\xbnpe\main\textpad__tpkc\for_v_7_0_9\user_config\tp_frsh_instl\output_live</CODE></LI>
+</UL></P>
+
+<P>And in each of these PhraseExpress folders (where each version-folder has exactly the same sub-directories):</P>
+</P>
+<a name="bvfud"/><H4><CODE>[<A HREF="#bvfolders">BACK</A>]</CODE> &nbsp; <U>TPKC-user-directory</U> &nbsp; &nbsp; <I>(<A HREF="tpkc_user_dir.html">info</A>)</I></H4>
+
+<PRE>    XBNPE: Parent folder &gt;
+       XBN-PhraseExpress &gt;
+<I>(<A HREF="index.html#inpex">go</A>)</I>      XBNPE-TPKC: TextPad built-in commands &gt;
+<I>(<A HREF="tpkc_user_dir.html#inpex">go</A>)</I>         XBNPE-TPKC: User-spcfc phrases: <I>[TPKC_USER_DIR_NAME]</I> &gt;
+                TextPad-bootstraps
+                TPKC-user-build: Auto-generated -- <FONT SIZE="+1"><B>LIVE</B></FONT> &gt;
+                TPKC-user-build: Auto-generated -- <FONT SIZE="+1"><B>FGH-test</B></FONT> &gt;</PRE>
+
+<a name="bvfum"/><H4><CODE>[<A HREF="#bvfolders">BACK</A>]</CODE> &nbsp; <U>TPKC user-menu</U> &nbsp; &nbsp; <I>(<A HREF="user_menu.html">info</A>)</I></H4>
+
+<PRE>    XBNPE: Parent folder &gt;
+       XBN-PhraseExpress &gt;
+          XBNPE-TPKC: TextPad built-in commands &gt;
+             All other TPKC phrases (8AG:1,2,3,3a,4,5,8,9) &gt;
+<I>(<A HREF="user_menu2.html#inpex">go</A>)</I>            TextPad built-in commands [DDMENU]
+                   All cmds in 1 cat (AG:3) -- FGH-TEST
+                   All cmds in 1 cat (AG:3)                   <I>(live)</I>
+                   Assign al KCs to 1 cmd (AG:8) -- FGH-TEST
+                   Assign al KCs to 1 cmd (AG:8)
+                   ...</PRE>
+
+<a name="bvfo"/><H4><CODE>[<A HREF="#bvfolders">BACK</A>]</CODE> &nbsp; <U>Other AG-files</U></H4>
+
+<PRE>    XBNPE: Parent folder
+       XBNPE-TPKC: TextPad built-in commands &gt;
+          All other TPKC phrases &gt;
+<I>(<A HREF="build_proc_tech_info.html#inpex">go</A>)</I>         Build process
+<I>(<A HREF="build_proc_tech_info.html#imp3other">go</A>)</I>                z-Auto-generated output
+                   TPKC-build-AG: LIVE build
+                   TPKC-build-AG: FGH-test</PRE>
 
 <PRE>
 
 <HR/>
 
 </PRE>
-<A NAME="zTpkcBuildModeTestOrLive"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TPKC master-cfg-var: <CODE>zTpkcBuildModeTestOrLive</CODE></H2>
+<A NAME="switchv"/><H2><CODE>[<A HREF="#zzTpkcBuildVersionName">BACK</A>]</CODE> &nbsp; TPKC-build-version: Switching between versions</H2>
 
-<P><B>Requirements:</B> Must be equal to <CODE>&quot;live&quot;</CODE> or <CODE>&quot;test&quot;</CODE></P>
+<P>To switch between TPKC-build versions:</P>
 
-<P>Determines whether the current TPKC-build is in <A HREF="build_proc_tech_info.html#livevtest">&quot;live&quot; or &quot;test&quot; mode</A>. When equal to <CODE>&quot;live&quot;</CODE>, the universe of TextPad command categories is defined by
-<BR> &nbsp; &nbsp; <CODE>zTpkcAllCategoryAbrvLCsQbl</CODE>
-<BR>When <CODE>&quot;test&quot;</CODE>, the universe is instead defined by the TPKC master-configuration-variable
-<BR> &nbsp; &nbsp; <CODE><A HREF="#zTpkcAllCategoryAbrvLCsQbl_FORTESTMODE">zTpkcAllCategoryAbrvLCsQbl_FORTESTMODE</A></CODE></P>
+<P>Change the TPKC master-configuration-variable
+<BR> &nbsp; &nbsp; <CODE><A HREF="#zzTpkcBuildVersionName">zzTpkcBuildVersionName</A></CODE>
+<BR>to the desired version. All available versions are determined by the existence of the master-config-vars named
+<BR> &nbsp; &nbsp; <CODE><A HREF="#zzTpkcBuildVersionCatAbrvs">zzTpkcBuildVersionCatAbrvs_*</A></CODE>
+<BR>For example, set
+<BR> &nbsp; &nbsp; <CODE>zzTpkcBuildVersionName</CODE>
+<BR>to <CODE>&quot;fgh&quot;</CODE>, which refers to
+<BR> &nbsp; &nbsp; <CODE>zzTpkcBuildVersionCatAbrvs_fgh</CODE>
+<BR>which is equal to
+<BR> &nbsp; &nbsp; <CODE>[file][config][help]</CODE> &nbsp; &nbsp; <I>(see: <A HREF="#goodtestbuild">good test build</A>)</I></P>
+
+<P>(<I>This section assumes that this version has indeed been built--both by admins [sub-build-procs <A HREF="sub_build_proc.html#01">01</A> through <A HREF="sub_build_proc2.html#09">09</A>] and <A HREF="index.html#userbuild01">users</A> [<A HREF="sub_build_proc2.html#10">10</A>-<A HREF="sub_build_proc2.html#15">15</A>]--and that all on-disk and in-PhraseExpress directory structures exist!</I> To create a new build-version, simply create the new <CODE>zzTpkcBuildVersionCatAbrvs_*</CODE> variable and all its corresponding structures, then run the entire build-process for it.)</P>
+
+<P>This now refers to
+<BR> &nbsp; &nbsp; <CODE>...\xbnpe\auto_generated\textpad__tpkc\output_fgh</CODE>
+<BR>and
+<BR> &nbsp; &nbsp; <CODE>...\xbnpe\main\textpad__tpkc\for_v_7_0_9\user_config\tp_frsh_instl\output_fgh</CODE>
+<BR></P>
+
+<P>In PhraseExpress the following locations must have their <A HREF="#bvfolders">corresponding</A> version folders enabled:<UL>
+	<LI><A HREF="#bvfum">TPKC-user-menu</A>: Enable <I>and display</I> both <CODE>FGH-TEST</CODE> folders:<UL>
+		<LI>To enable: right-click on each folder and check
+		<BR> &nbsp; &nbsp; &quot;Enable Autotext/Hotkeys&quot;
+		<BR>To display: Check
+		<BR> &nbsp; &nbsp; &quot;Display in pop-up menu&quot;
+		<BR></LI>
+		<LI>Disable and hide all other version-folders. <I>The user-menu is the only location where items must be hidden or displayed.</I></LI>
+	</UL></LI>
+	<LI>In both the <A HREF="#bvfud">TPKC-user-directory</A> and the &quot;<A HREF="#bvfo">other</A>&quot; folders: Enable the <CODE>FGH-TEST</CODE> folder, and disable all other version-folders.</LI>
+</UL></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="goodtestbuild"/><H2><CODE>[<A HREF="#zzTpkcBuildVersionName">BACK</A>]</CODE> &nbsp; TPKC-build-version: Good test build: <CODE>[file][config][help]</CODE></H2>
+
+<P>The <A HREF="#zzTpkcBuildVersionCatAbrvs">category-subset</A>
+<BR> &nbsp; &nbsp; <CODE>[file][config][help]</CODE>
+<BR>is good for testing and demonstrating the build-process.<UL>
+	<LI><CODE>&quot;file&quot;</CODE> is a moderately-large category and contains a <A HREF="../tpbs.html">TextPad-bootstrap</A>.</LI>
+	<LI><CODE>&quot;config&quot;</CODE> contains a tp-bootsrap and has few commands, and</LI>
+	<LI><CODE>&quot;help&quot;</CODE> has no kcs at all (in my setup anyway), and few commands.</LI>
+</UL>Comparing a live (full) build against this category-subset:</P>
+
+<P><TABLE ALIGN="center" BORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#EEEEEE"><TR ALIGN="center" VALIGN="middle">
+	<TD><I>(As of TextPad version 7.0.9)</I></TD>
+	<TD><B><U>ALL categories</U></B></TD>
+	<TD><B><FONT SIZE="+1"><CODE>[file][config][help]</CODE></FONT> only</B></TD>
+</TR><TR ALIGN="center" VALIGN="middle">
+	<TD ALIGN="left"><B>Number of categories</B></TD>
+	<TD><CODE>13</CODE></TD>
+	<TD><CODE>3</CODE></TD>
+</TR><TR ALIGN="center" VALIGN="middle">
+	<TD ALIGN="left"><B>Number of commands</B></TD>
+	<TD><CODE>332</CODE></TD>
+	<TD><CODE>44</CODE></TD>
+</TR><TR ALIGN="center" VALIGN="middle">
+	<TD ALIGN="left"><B>Build-time: ADMIN-ONLY</B>
+	<BR>(sub-build-procs <A HREF="sub_build_proc.html#01">01</A> through <A HREF="sub_build_proc2.html#09">09</A>)
+	<BR><I>(Very rough!)</I></TD>
+	<TD><CODE>1 hour, 25 minutes.</CODE></TD>
+	<TD><CODE>30 minutes</CODE></TD>
+</TR><TR ALIGN="center" VALIGN="middle">
+	<TD ALIGN="left"><B>Build-time: USER-ONLY</B>
+	<BR>(sub-build-procs <A HREF="sub_build_proc2.html#10">10</A> through <A HREF="sub_build_proc2.html#15">15</A>)
+	<BR><I>(Very rough!)</I></TD>
+	<TD><CODE>45 minutes.</CODE></TD>
+	<TD><CODE>25 minutes</CODE></TD>
+</TR><TR ALIGN="center" VALIGN="middle">
+	<TD ALIGN="left"><B>Functional differences</B></TD>
+	<TD><I>n/a</I></TD>
+	<TD>Repeated reminder-dialogs that this is in &quot;test&quot;-mode.</TD>
+</TR></TABLE></P>
+
 
 <PRE>
 
