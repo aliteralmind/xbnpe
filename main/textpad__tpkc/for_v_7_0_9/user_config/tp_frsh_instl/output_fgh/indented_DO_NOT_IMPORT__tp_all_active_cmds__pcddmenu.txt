@@ -1,0 +1,145 @@
+(*
+   *DUPLICATE* this document, unindent every line in it, then import it with the following settings:
+      - No prefix
+      - Manual confirmation
+      - Assign the key-command (hotkey) to the first phrase
+   **All these phrases must be manually maintained.
+*)
+(*
+
+   ---*WARNINGS*---
+
+   No COMMAND may also be a heading line, the top 'XBN-PhraseExpress' line is specifically searched for, so its text must not be altered (and <--**that** 'XBN-Phr...' must not equal it exactly, or IT will be found instead).
+
+   So basically, don't mess with this file!
+
+   Also note that fidmb never processes this file. Therefore all phrase-bodies must already be populated.
+
+   ------
+
+Phrase-creators: XBN-PhraseExpress -- xh   .   zXbnpeCmdPopupRoot
+   Phrase-creators: TextPad-specific -- xht   .   xh*)
+		Help -- xhth	.	xht
+		Macros -- xhtm	.	xht
+(*    Other -- xhtt   .   xht*)
+		Sub-windows -- xhtw	.	xht
+			Cliplib -- xhtwp	.	xhtw
+				Book -- xhtwpb	.	xhtwp
+				Entry -- xhtwpe	.	xhtwp
+			Document selector -- xhtl	.	xht
+			Main document -- xhtd	.	xht
+				zTPToggleSyncScroll	\\\{#insert zTPToggleSyncScroll\\\}	xhtd
+		Tools -- xhtt	.	xht
+		Specific -- xhtts	.	xhtt
+		zTPPrefsDlgOpen [BS]	\\\{#insert zTPPrefsDlgOpen\\\}	xht
+(* PC: CWLPDF: Char, word, line, para, doc, file -- xhc   .   xh*)
+(*    1. Char -- xhcc   .   xhc*)
+			Special characters -- xhccp	.	xhcc
+				A -- xhccpa	.	xhccp
+				C-E -- xhccpc	.	xhccp
+				I-N -- xhccpi	.	xhccp
+				O -- xhccpo	.	xhccp
+				S-U -- xhccps	.	xhccp
+				Y & other -- xhccpy	.	xhccp
+(*       Alter -- xhcca   .   xhcc*)
+(*       Move -- xhccm   .   xhcc*)
+(*       Select -- xhccs   .   xhcc*)
+(*    2. Word -- xhcw   .   xhc*)
+(*       Alter -- xhcwa   .   xhcw*)
+(*          Cut, delete -- xhcwax   .   xhcwa*)
+					TextPad built-ins -- xhcwaxt	.	xhcwax
+(*          Other -- xhcwat   .   xhcwa*)
+(*       Move -- xhcwm   .   xhcw*)
+(*       Select & copy -- xhcws   .   xhcw*)
+				Current word -- xhcwsr	.	xhcws
+(*          Select -- xhcwss   .   xhcws*)
+(*          Select-copy -- xhcwsp   .   xhcws*)
+(*          Copy -- xhcwsc   .   xhcws*)
+(*    3. Line -- xhcl   .   xhc*)
+(*       Alter -- xhcla   .   xhcl*)
+(*          Cut, copy, delete -- xhclax   .   xhcla*)
+(*          Indent -- xhclai   .   xhcla*)
+(*          Other -- xhclat   .   xhcla*)
+(*          Sort -- xhclas   .   xhcla*)
+(*       Move -- xhclm   .   xhcl*)
+(*       Select -- xhclc   .   xhcl*)
+(*    4. Para -- xhcp   .   xhc*)
+(*       Move -- xhcpm   .   xhcp*)
+(*       Select -- xhcps   .   xhcp*)
+(*    5. Selection, clipboard, undo/redo -- xhcs   .   xhc*)
+(*       Clipboard -- xhcsb   .   xhcs*)
+(*          Copy & cut -- xhcsbc   .   xhcsb*)
+(*          Paste -- xhcsbp   .   xhcsb*)
+(*       Undo & redo -- xhcsu   .   xhcs*)
+				zTPToggleUndo	\\\{#insert zTPToggleUndo\\\}	xhcsu
+(*       Alter selection (& meta) -- xhcss   .   xhcs*)
+(*          Change case -- xhcssc   .   xhcss*)
+(*          Other -- xhcsst   .   xhcss*)
+					Align -- xhcssta	.	xhcsst
+(*          Block selection mode -- xhcssk   .   xhcss*)
+					zTPToggleBlockSelect	\\\{#insert zTPToggleBlockSelect\\\}	xhcssk
+(*    6. Document, page -- xhcd   .   xhc*)
+(*       Document-windows -- xhcdo   .   xhcd*)
+				Arrange, cascade, tile -- xhcdoa	.	xhcdo
+(*          Go-to specific -- xhcdog   .   xhcdo*)
+					Numbered -- xhcdogn	.	xhcdog
+				Other -- xhcdoo	.	xhcdo
+			Other -- xhcdt	.	xhcd
+				Right margin -- xhcdtm	.	xhcdt
+					zTPRightMarginSet	\\\{#insert zTPRightMarginSet\\\}	xhcdtm
+(*       Page up/down left/right -- xhcdp   .   xhcd*)
+				Extend -- xhcdpx	.	xhcdp
+(*       Select-all -- xhcda   .   xhcd*)
+(*       Top & bottom -- xhcdm   .   xhcd*)
+(*       Word-wrap -- xhcdw   .   xhcd*)
+				zTPToggleWW [BS] (tw[p])	\\\{#insert zTPToggleWW\\\}	xhcdw
+(*    7. File -- xhcf   .   xhc*)
+(*       Close -- xhcfc   .   xhcf*)
+				zTPFileClose [BS]	\\\{#insert zTPFileClose\\\}	xhcfc
+(*       New -- xhcfn   .   xhcf*)
+				zTPFileNew [BS]	\\\{#insert zTPFileNew\\\}	xhcfn
+(*       Open -- xhcfo   .   xhcf*)
+				zTPFileOpen [BS]	\\\{#insert zTPFileOpen\\\}	xhcfo
+				zTPFileOpenSelPath	\\\{#insert zTPFileOpenSelPath\\\}	xhcfo
+				zTPFileQOpen [BS]	\\\{#insert zTPFileQOpen\\\}	xhcfo
+(*       Save -- xhcfs   .   xhcf*)
+				TextPad built-ins -- xhcfst	.	xhcfs
+					zTPFileSave [BS]	\\\{#insert zTPFileSave\\\}	xhcfst
+					zTPFileSaveAll	\\\{#insert zTPFileSaveAll\\\}	xhcfst
+(*          Save as -- xhcfsa   .   xhcfs*)
+					zTPFileSaveAs	\\\{#insert zTPFileSaveAs\\\}	xhcfsa
+(*       Other -- xhcft   .   xhcf*)
+				Print -- xhcftp	.	xhcft
+					zTPFilePrint	\\\{#insert zTPFilePrint\\\}	xhcftp
+					zTPFilePrintPreview	\\\{#insert zTPFilePrintPreview\\\}	xhcftp
+				Workspace -- xhcftw	.	xhcft
+				Other -- xhcftt	.	xhcft
+					zTPFile... -- xhcfttf	(*fidmb never processes this file. If it did, this comment would be required in order for it to NOT recognize this line.*).	xhcftt
+						zTPFileManager [BS]	\\\{#insert zTPFileManager\\\}	xhcfttf
+						zTPFileStatistics	\\\{#insert zTPFileStatistics\\\}	xhcfttf
+					zTPToggleInsertMode	\\\{#insert zTPToggleInsertMode\\\}	xhcftt
+					zTPToggleReadOnly	\\\{#insert zTPToggleReadOnly\\\}	xhcftt
+(*    8. Other -- xhct   .   xhc*)
+(* Phrase-creators: Other -- xho   .   xh*)
+		View -- xhov	.	xho
+		Date & time -- xhod	.	xho
+(* Phrase-creators: Search & replace -- xhs   .   xh*)
+(*    SNR: Bookmarks -- xhsm   .   xhs*)
+(*       All bookmarks -- xhsma   .   xhsm*)
+(*    SNR: Brackets -- xhse   .   xhs*)
+(*    SNR: Find -- xhsf   .   xhs*)
+(*       Buttons -- xhsfb (& next/prev)   .   xhsf*)
+(*       Flags -- xhsff   .   xhsf*)
+(*          Set 1 on/off -- xhsffs (Out-of-dlg only, TextPad built-ins)   .   xhsff*)
+			Incremental find -- xhsfr	.	xhsf
+(*       Open -- xhsfo   .   xhsf*)
+(*       SNR: Find In Files -- xhsfi   .   xhsf*)
+(*          Open -- xhsfio   .   xhsfi*)
+(*          Search results -- xhsfir   .   xhsfi*)
+(*    SNR: Replace -- xhsr   .   xhs*)
+(*       Buttons -- xhsrb   .   xhsr*)
+(*       Open -- xhsro   .   xhsr*)
+(*       Other -- xhsrt   .   xhsr*)
+(*    SNR: Go-to dialog -- xhsg   .   xhs*)
+(*       Open -- xhsgo   .   xhsg*)
+				Open w/ specific unit -- xhsgof	.	xhsgo

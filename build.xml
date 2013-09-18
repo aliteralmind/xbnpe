@@ -13,9 +13,9 @@
 
 
 	<target name="publish">
-		<echo>Calls "docs" and then "userzip".</echo>
-		<antcall target="docs"/>
+		<echo>Calls "userzip" and then "docs".</echo>
 		<antcall target="userzip"/>
+		<antcall target="docs"/>
 	</target>
 
 	<target name="bublish">

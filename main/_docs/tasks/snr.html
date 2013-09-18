@@ -86,9 +86,17 @@
 
 <P>The SNR-project is <A HREF="../basics/tpbs.html#depend">dependant</A> on both the <A HREF="../basics/xkp.html">XKP</A> and <A HREF="../basics/tpkc/index.html">TPKC</A> projects being fully installed and built. All other projects in XBN-PhraseExpress are directly dependant on SNR.</P>
 
+<P>All result-related functionality for <A HREF="tasks/snr.html#fifsyn">find-in-files</A> requires that search-results are <I>not</I> docked in TextPad:
+	<BR> &nbsp; &nbsp; <CODE>TextPad &gt; Configure &gt; Preferences &gt; View &gt; Dockable log windows &gt; Search Results</CODE></LI>
+
+
+<H4><U>Verify installation</U></H4>
+
 <P>To verify the built-in TextPad commands (<A HREF="../basics/tpbs.html#terminology">nbs phrases</A>) required by the SNR-project--and therefore verify its installation--<A HREF="../index.html#execute">execute</A>
 <BR> &nbsp; &nbsp; <CODE>verifysnrnbs</CODE>
 <BR>To further verify, run the examples in this document.</P>
+
+<H4><U>Uninstall</U></H4>
 
 <P>To uninstall SNR, disable or delete its folder. Disable by right-clicking on the folder and checking &quot;Enable Autotext/Hotkeys&quot;.</P>
 
@@ -602,8 +610,8 @@
 				<BR>bbb
 				<BR>ccc  <SPAN CLASS="greyHL">xxx
 				<BR>ddd  yyy  xxx
-				<BR>eee  zzz
-				<BR>xxx  aaa</SPAN></CODE></TD>
+				<BR>eee  zzz</SPAN>
+				<BR>xxx  aaa</CODE></TD>
 		</TR></TABLE>
 	</TD>
 </TR></TABLE></P>
@@ -652,9 +660,9 @@
 	</UL></LI>
 	<LI><B>All button/handle-no-replacements:</B><UL>
 		<LI><CODE>zBalPostRplcHnrDingAlert</CODE></LI>
-		<LI><CODE>zRplcBtnAllAD[NoConfirm][Hnr][RAW]</CODE></LI>
-		<LI><CODE>zRplcBtnAllAD[NoConfirm]_hnr[RAW]If_M_hnry</CODE> &nbsp; &nbsp; <I>(Needs <CODE>zvHNR_YES</CODE>)</I></LI>
-		<LI><CODE>zRplcBtnAllAD[raw]</CODE></LI>
+		<LI><CODE>zADAlreadyOn_rplcBtnAll[NoConfirm][Hnr][RAW]</CODE></LI>
+		<LI><CODE>zADAlreadyOn_rplcBtnAll[NoConfirm]_hnr[RAW]If_M_hnry</CODE> &nbsp; &nbsp; <I>(Needs <CODE>zvHNR_YES</CODE>)</I></LI>
+		<LI><CODE>zADAlreadyOn_rplcBtnAll[raw]</CODE></LI>
 		<LI><CODE>zRplcBtnAll[RAW]</CODE></LI>
 		<LI><CODE>zRplcBtnAll[Sel,TD][Hnr[RAW]]</CODE></LI>
 		<LI><CODE>zRplcBtnAll[Sel,TD]_hnr[RAW]If_M_hnry</CODE></LI>

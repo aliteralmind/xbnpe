@@ -77,9 +77,12 @@ zTpkcWordLeftEndNbsKcEsc1	\\\{#insert zCpDD\\\}\\\{#sleep 1\\\}	zTpkcWordLeftEnd
 zTpkcWordLeftEndExtendNbsKcCount	1	zTpkcWordLeftEndExtendNbsKcCount
 zTpkcWordLeftEndExtendNbsKcEsc1	\\\{#insert zCSpDD\\\}\\\{#sleep 2\\\}	zTpkcWordLeftEndExtendNbsKcEsc1
 zTpkcWordLeftExtendNbsKcCount	1	zTpkcWordLeftExtendNbsKcCount
-zTpkcWordLeftExtendNbsKcEsc1	\\\{#insert zCSpLEFT\\\}\\\{#sleep 2\\\}	zTpkcWordLeftExtendNbsKcEsc1
-zTpkcWordRightNbsKcCount	0	zTpkcWordRightNbsKcCount
+zTpkcWordLeftExtendNbsKcEsc1	\\\{#insert zCSpBB\\\}\\\{#sleep 2\\\}	zTpkcWordLeftExtendNbsKcEsc1
+zTpkcWordRightNbsKcCount	2	zTpkcWordRightNbsKcCount
+zTpkcWordRightNbsKcEsc1	\\\{#insert zCpRIGHT\\\}\\\{#sleep 1\\\}	zTpkcWordRightNbsKcEsc1
+zTpkcWordRightNbsKcEsc2	\\\{#insert zCpWW\\\}\\\{#sleep 1\\\}	zTpkcWordRightNbsKcEsc2
 zTpkcWordRightEndNbsKcCount	0	zTpkcWordRightEndNbsKcCount
 zTpkcWordRightEndExtendNbsKcCount	0	zTpkcWordRightEndExtendNbsKcCount
-zTpkcWordRightExtendNbsKcCount	1	zTpkcWordRightExtendNbsKcCount
-zTpkcWordRightExtendNbsKcEsc1	\\\{#insert zCSpWW\\\}\\\{#sleep 2\\\}	zTpkcWordRightExtendNbsKcEsc1
+zTpkcWordRightExtendNbsKcCount	2	zTpkcWordRightExtendNbsKcCount
+zTpkcWordRightExtendNbsKcEsc1	\\\{#insert zCSpRIGHT\\\}\\\{#sleep 2\\\}	zTpkcWordRightExtendNbsKcEsc1
+zTpkcWordRightExtendNbsKcEsc2	\\\{#insert zCSpWW\\\}\\\{#sleep 2\\\}	zTpkcWordRightExtendNbsKcEsc2

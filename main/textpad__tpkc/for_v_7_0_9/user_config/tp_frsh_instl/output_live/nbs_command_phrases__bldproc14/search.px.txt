@@ -3,8 +3,8 @@ zTPBookmarkGTPrev -- BookmarkPrev (Srchmkprv)	{#insert zSpF2}{#sleep 100}	zTPBoo
 zTPIncrementalFind -- IncrementalFind (Srchifnd)	{#insert zCpII}{#sleep 10}	zTPIncrementalFind
 zTPMatchBracket -- MatchBracket (Srchmtchbrk)	{#insert zCpMM}{#sleep 10}	zTPMatchBracket
 zTPMatchBracketExtend -- MatchBracketExtend (Srchmtchbrkx)	{#insert zCSpMM}{#sleep 10}	zTPMatchBracketExtend
-zTPFindFlagMCoff -- MatchCaseClear (Srchmtchcsclr)	{#insert zCASpFF}{#sleep 25}{#insert zMM}{#sleep 5}	zTPFindFlagMCoff
-zTPFindFlagMCon -- MatchCaseSet (Srchmtchcsst)	{#insert zASpFF}{#sleep 25}{#insert zMM}{#sleep 5}	zTPFindFlagMCon
+zTPFindFlagMCoff -- MatchCaseClear (Srchmtchcsclr)	{#insert zCASpFF}{#sleep 25}{#insert zCC}{#sleep 5}	zTPFindFlagMCoff
+zTPFindFlagMCon -- MatchCaseSet (Srchmtchcsst)	{#insert zASpFF}{#sleep 25}{#insert zCC}{#sleep 5}	zTPFindFlagMCon
 zTPFindFlagWWoff -- MatchWordClear (Srchmtchwdclr)	{#insert zCASpFF}{#sleep 25}{#insert zWW}{#sleep 5}	zTPFindFlagWWoff
 zTPFindFlagWWon -- MatchWordSet (Srchmtchwdst)	{#insert zASpFF}{#sleep 25}{#insert zWW}{#sleep 5}	zTPFindFlagWWon
 zTPFindFlagREoff -- RegexClear (Srchreclr)	{#insert zCASpFF}{#sleep 25}{#insert zRR}{#sleep 5}	zTPFindFlagREoff
@@ -13,4 +13,4 @@ zTPFindPrev -- SearchFindPrevious (Srchfprv)	{#insert zCSpFF}{#sleep 10}	zTPFind
 zTPSearchJumpNext -- SearchJumpNext (Srchjnxt)	{#insert zF4}{#sleep 50}	zTPSearchJumpNext
 zTPSearchJumpPrev -- SearchJumpPrev (Srchjprv)	{#insert zSpF4}{#sleep 50}	zTPSearchJumpPrev
 zTPReplaceNext -- SearchReplaceNext (Srchrplcnxt)	{#insert zCpF8}{#sleep 25}	zTPReplaceNext
-zzTpkcAllCmdsWAKcQbl_search	[BookmarkClearAll][BookmarkNext][BookmarkPrev][IncrementalFind][MatchBracket][MatchBracketExtend][MatchCaseClear][MatchCaseSet][MatchWordClear][MatchWordSet][RegexClear][RegexSet][SearchFiles][SearchFind][SearchFindNext][SearchFindPrevious][SearchGoto][SearchJumpNext][SearchJumpPrev][SearchReplace][SearchReplaceNext]	zzTpkcAllCmdsWAKcQbl_search
+zzTpkcAllCmdsWAKcQbl_search	[BookmarkClearAll][BookmarkNext][BookmarkPrev][BookmarkToggle][IncrementalFind][MatchBracket][MatchBracketExtend][MatchCaseClear][MatchCaseSet][MatchWordClear][MatchWordSet][RegexClear][RegexSet][SearchFiles][SearchFind][SearchFindNext][SearchFindPrevious][SearchGoto][SearchJumpNext][SearchJumpPrev][SearchReplace][SearchReplaceNext]	zzTpkcAllCmdsWAKcQbl_search

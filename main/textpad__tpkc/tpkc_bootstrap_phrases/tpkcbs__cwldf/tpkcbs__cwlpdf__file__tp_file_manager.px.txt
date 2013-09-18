@@ -1,0 +1,22 @@
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+zFMBtnBrowse	{#insert zApBB}{#sleep 50}	zFMBtnBrowse
+zFMBtnCopy -- Opens dlg, focuses on 'To:' textbox	{#insert zApCC}{#sleep 50}	zFMBtnCopy
+zFMBtnDelete	{#insert zApDD}{#sleep 50}	zFMBtnDelete
+zFMBtnRename	{#insert zApRR}{#sleep 50}	zFMBtnRename
+zFMBtnTouch	{#insert zApTT}{#sleep 50}	zFMBtnTouch
+zFMDlgClose	{#FOCUS Manage Files}{#insert zEscThenFcsTP}{#sleep 50}	zFMDlgClose
+zFMDlgDirFileCopyOverwriteNoConfirm_M_dirFnmOdr	{#insert zvOUT_FNM_stES}{#insert zFMDlgDirFileCopyOverwriteNoConfirm_M_dirFnmOdrOfm}	zFMDlgDirFileCopyOverwriteNoConfirm_M_dirFnmOdr
+zFMDlgDirFileCopyOverwriteNoConfirm_M_dirFnmOdrOfm	{#BALLOON -title Overwrite **WARNING** -text Overwriting the destination file without further confirmation. This will fail if the destination file exists.}{#insert zzFMDlgDirFileCopyPreOverwriteConfirm_M_dirFnmOdrOfm}{#sleep 1500}{#insert zENTER}{#sleep 1000}{#insert zEscThenFcsTPSlk}	zFMDlgDirFileCopyOverwriteNoConfirm_M_dirFnmOdr
+zFMDlgDirFileCopy_M_dirFnmOdr -- Needs zvDIRECTORY, zvFILE_NAME, zvOUT_DIR	{#insert zvOUT_FNM_stES}{#insert zFMDlgDirFileCopy_M_dirFnmOdrOfm}	zFMDlgDirFileCopy_M_dirFnmOdr
+zFMDlgDirFileCopy_M_dirFnmOdrOfm -(*!*)- Needs zvDIRECTORY, zvFILE_NAME, zvOUT_DIR, zvOUT_FNM	(*Only use this when it is KNOWN that AT LEAST the directories (both of them) exist, and NO destination files exist.*){#insert zzFMDlgDirFileCopyPreOverwriteConfirm_M_dirFnmOdrOfm}(*<--*IF* the destination file existed, the overwrite confirm would go here.*){#insert zFMDlgClose}{#sleep 500}	zFMDlgDirFileCopy_M_dirFnmOdrOfm
+zFMDlgDirFileDeleteNoConfirm_M_dirFnm -(*!*)- Needs zvDIRECTORY, zvFILE_NAME	(*Only use this when it is KNOWN that AT LEAST the directory exists.*){#insert zFcsTPFileManager}{#sleep 1000}{#insert zvDIRECTORY}{#sleep 1000}{#insert zvFILE_NAME}{#sleep 1000}{#insert zFMBtnDelete}{#sleep 2000}{#insert zENTER}{#sleep 1000}{#insert zFMDlgClose}{#sleep 1000}	zFMDlgDirFileDeleteNoConfirm_M_dirFnm
+zFMDlgOpenViaAltF	{#insert zzApF50slp}{#insert zGG}{#sleep 50}	zFMDlgOpenViaAltF
+zFcsTPFileManager	{#insert zFocusOnTextPadWindow}{#insert zTPFileManager}	zFcsTPFileManager
+zvDIRECTORY_stOUT_DIR -- zvDIRECTORY = zvOUT_DIR	{#SETPHRASE -description zvDIRECTORY -content {#insert zvOUT_DIR} -autotext zvDIRECTORY -folder ctvv_folder}	zvDIRECTORY_stOUT_DIR
+zvFILE_NAME_stOUT_FNM	{#SETPHRASE -description zvFILE_NAME -content {#insert zvOUT_FNM} -autotext zvFILE_NAME -folder ctvv_folder}	zvFILE_NAME_stOUT_FNM
+zvFILE_NAME_stStarDotPxTxt	{#SETPHRASE -description zvFILE_NAME -content *.px.txt -autotext zvFILE_NAME -folder ctvv_folder}	zvFILE_NAME_stStarDotPxTxt
+zvFILE_NAME_stStarDotTxt	{#SETPHRASE -description zvFILE_NAME -content *.txt -autotext zvFILE_NAME -folder ctvv_folder}	zvFILE_NAME_stStarDotTxt
+zvOUT_FNM_stES	{#SETPHRASE -description zvOUT_FNM -content -autotext zvOUT_FNM -folder ctvv_folder}	zvOUT_FNM_stES
+zvOUT_FNM_stStarDotPxTxt	{#SETPHRASE -description zvOUT_FNM -content *.px.txt -autotext zvOUT_FNM -folder ctvv_folder}	zvOUT_FNM_stStarDotPxTxt
+zvOUT_FNM_stStarDotTxt	{#SETPHRASE -description zvOUT_FNM -content *.txt -autotext zvOUT_FNM -folder ctvv_folder}	zvOUT_FNM_stStarDotTxt
+zzFMDlgDirFileCopyPreOverwriteConfirm_M_dirFnmOdrOfm	{#insert zFcsTPFileManager}{#sleep 1000}{#insert zvDIRECTORY}{#sleep 1000}{#insert zvFILE_NAME}{#sleep 1000}{#insert zFMBtnCopy}(*In 'To:' field*){#sleep 1000}{#insert zvOUT_DIR}{#sleep 1250}{#insert zvOUT_FNM}{#sleep 1250}{#insert zENTER}{#sleep 1000}	zzFMDlgDirFileCopyPreOverwriteConfirm_M_dirFnmOdrOfm

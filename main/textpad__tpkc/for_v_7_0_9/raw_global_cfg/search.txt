@@ -18,7 +18,7 @@ SearchFiles	zTPFFindDlgOpen	Srchfls	yes	10	{#insert zSS}
 SearchFind	zTPFindDlgOpen	Srchfind	yes	10	{#insert zSS}{#insert zDOWN}
 SearchFindNext	zTPFindNext	Srchfnxt	yes	10	{#insert zSS}{#insert zDOWN2}
 SearchFindPrevious	zTPFindPrev	Srchfprv	__ES__	10	{#insert zEND}{#insert zPGUP}
-SearchGoto	zTPGTDlgOpen	Srchgoto	__ES__	10	{#insert zEND}{#insert zPGUP}{#insert zDOWN}
+SearchGoto	zTPGTDlgOpen	Srchgoto	yes	10	{#insert zEND}{#insert zPGUP}{#insert zDOWN}
 SearchJumpNext	zTPSearchJumpNext	Srchjnxt	__ES__	50	{#insert zEND}{#insert zPGUP}{#insert zDOWN2}
 SearchJumpPrev	zTPSearchJumpPrev	Srchjprv	__ES__	50	{#insert zEND}{#insert zUP3}
 SearchOpenAll	zTPFFindOpenAll	Srchopnall	__ES__	2000	{#insert zEND}{#insert zUP2}

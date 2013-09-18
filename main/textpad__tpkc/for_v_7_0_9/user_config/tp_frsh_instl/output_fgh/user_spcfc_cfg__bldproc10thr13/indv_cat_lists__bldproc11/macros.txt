@@ -1,5 +1,0 @@
-MacroMultiplay          Ctrl+F7
-MacroPause
-MacroPlay               Ctrl+R
-MacroRecord             Ctrl+Shift+R
-MacroSave

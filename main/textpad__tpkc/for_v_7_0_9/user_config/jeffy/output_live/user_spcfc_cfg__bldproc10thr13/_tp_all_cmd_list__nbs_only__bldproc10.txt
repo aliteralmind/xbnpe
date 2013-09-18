@@ -296,7 +296,7 @@ SearchFiles
 SearchFind
 SearchFindNext                                Shift+F4                Alt+F4
 SearchFindPrevious      F2                      Shift+F2                Alt+F2
-SearchGoto              Ctrl+Shift+G
+SearchGoto
 SearchJumpNext          Ctrl+Alt+F4             Ctrl+Shift+Alt+F4
 SearchJumpPrev          Ctrl+Alt+F2             Ctrl+Shift+Alt+F2
 SearchOpenAll           Ctrl+F12, Ctrl+F8

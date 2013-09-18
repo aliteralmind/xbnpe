@@ -5,5 +5,5 @@ ToolRerun
 ToolRun
 ToolSort                F9
 ToolSpell               F7
-ToolStop                Ctrl+Shift+Alt+X
+ToolStop
 ToolWildEdit

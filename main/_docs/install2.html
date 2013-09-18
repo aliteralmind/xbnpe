@@ -125,15 +125,22 @@
 </PRE>
 <A NAME="14atudnb"/><H2><B><CODE><A HREF="install.html">top</A> &nbsp; &nbsp; [<A HREF="#14atudn">PREV</A> -- NEXT]</CODE></B> &nbsp; &nbsp; XBN-PhraseExpress installation: Step-by-step</H2>
 
-<P>Enable the <CODE>&quot;tp_frsh_instl&quot;</CODE> <A HREF="basics/tpkc/tpkc_user_dir.html#inpex">PhraseExpress TPKC-user-directory</A> (right-click on it, and check &quot;Enable Autotext/Hotkeys&quot;)...</P>
+<P>Disable all TPKC-user-directories in PhraseExpress, except for yours. These folders are named
+<BR> &nbsp; &nbsp; <CODE>XBNPE-TPKC: User-spcfc phrases: ...</CODE>
+<BR>and are located in:</P>
 
 <PRE>    XBNPE: Parent folder &gt;
-<I>(<A HREF="basics/tpkc/index.html#inpex">go</A>)</I>   XBNPE-TPKC: TextPad built-in commands &gt;
-          <FONT SIZE="+1"><B>XBNPE-TPKC: User-spcfc phrases: tp_frsh_instll</B></FONT></PRE>
+       XBN-PhraseExpress &gt;
+          XBNPE-TPKC: TextPad built-in commands     <I>(<A HREF="basics/tpkc/index.html#inpex">go</A>)</I></PRE>
 
-<P>...and <I>disable</I> all other
-<BR> &nbsp; &nbsp; <CODE>XBNPE-TPKC: User-spcfc phrases: ...</CODE>
-<BR>directories (right-click on each, and uncheck &quot;Enable Autotext/Hotkeys&quot;).</P>
+<P>Yours is named
+<BR> &nbsp; &nbsp; <CODE>XBNPE-TPKC: User-spcfc phrases: <FONT SIZE="+1"><B>tp_frsh_instl</B></FONT></CODE></P>
+
+<P>Disable all sub-folders in it, named
+<BR> &nbsp; &nbsp; <CODE>TPKC-user-build: Auto-generated -- ...</CODE>
+<BR>except for
+<BR> &nbsp; &nbsp; <CODE>TPKC-user-build: Auto-generated -- <FONT SIZE="+1"><B>LIVE</B></FONT></CODE></P>
+
 
 <P>This PhraseExpress folder corresponds with its <A HREF="basics/tpkc/tpkc_user_dir.html#ondisk">on-disk counterpart</A>.</P>
 
@@ -177,7 +184,7 @@
 
 <H3>3. Run the TPKC user-build-process</H3>
 
-<P>The final step is to run the TPKC <A HREF="basics/tpkc/index.html#userbuild">user-build process</A>, and import its output phrase-files. There are two parts, and they take a total of around an hour and twenty minutes. They are largely interaction-free, but you may not touch your computer while they are running.</P>
+<P>The final step is to run the TPKC <A HREF="basics/tpkc/index.html#userbuild">user-build process</A>, and import its output phrase-files. There are two parts, and they take an hour to complete. They are largely interaction-free, but you may not touch your computer while they are running.</P>
 
 <H1>DONE.</H1>
 
@@ -191,8 +198,10 @@
 <A NAME="test"/><H2><CODE><A HREF="install.html">top</A> &nbsp; &nbsp; [<A HREF="#14atudn">PREV</A> / <A HREF="#15tpbs">PREV</A> -- NEXT]</CODE> &nbsp; XBN-PhraseExpress: Test your installation</H2>
 
 <P>To verify that XBN-PhraseExpress is properly installed, <A HREF="index.html#execute">execute</A> these utilities in order, in a new TextPad document:<OL>
-	<LI><CODE>testtpbsxkptpkc</CODE>: Verifies all TextPad-bootstraps. <I><A HREF="basics/tpbs.html#utilities">more info</A></I></LI>
-	<LI><CODE>vtpkcuds</CODE>: Verifies your on-disk TPKC-user-directory. <I><A HREF="basics/tpkc/tpkc_user_dir.html#zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn">more info</A></I></LI>
+	<LI><CODE>testtpbsxkptpkc</CODE> <I>(<A HREF="devpex/xbnpe_ddmenus.html#xh">xh</A>tk)</I>: Verifies all TextPad-bootstraps. <I><A HREF="basics/tpbs.html#utilities">more info</A></I></LI>
+	<LI><A HREF="tasks/snr.html#install">Verify</A> the nbs-phrases required by the XBNPE-Search and replace (SNR) project with
+	<BR> &nbsp; &nbsp; <CODE>verifysnrnbs</CODE> &nbsp; &nbsp; <I>(xhs)</I></LI>
+	<LI><CODE>vtpkcuds</CODE> <I>(xhtk)</I>: Verifies your on-disk TPKC-user-directory. <I><A HREF="basics/tpkc/tpkc_user_dir.html#zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn">more info</A></I></LI>
 	<LI>Assign all key-commands to a <A HREF="basics/tpkc/user_menu2.html#tpkcumak1c">single TextPad command</A>. For those with many custom key-commands, the true test is to reset all key-commands with
 	<BR> &nbsp; &nbsp; <CODE>TextPad &gt; Configure &gt; Preferences &gt; Keyboard &gt; Categories &gt; &quot;All&quot; &gt; [Reset-All button]</CODE>
 	<BR>and then <A HREF="basics/tpkc/user_menu2.html#tpkcumacacaakc">re-assign</A> them. Once complete, TextPad should behave exactly the same.</LI>

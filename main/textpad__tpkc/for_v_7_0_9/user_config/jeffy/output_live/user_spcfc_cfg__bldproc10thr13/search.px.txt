@@ -37,8 +37,7 @@ zTpkcSearchFindPreviousNbsKcCount	3	zTpkcSearchFindPreviousNbsKcCount
 zTpkcSearchFindPreviousNbsKcEsc1	\\\{#insert zF2\\\}\\\{#sleep 10\\\}	zTpkcSearchFindPreviousNbsKcEsc1
 zTpkcSearchFindPreviousNbsKcEsc2	\\\{#insert zSpF2\\\}\\\{#sleep 10\\\}	zTpkcSearchFindPreviousNbsKcEsc2
 zTpkcSearchFindPreviousNbsKcEsc3	\\\{#insert zApF2\\\}\\\{#sleep 10\\\}	zTpkcSearchFindPreviousNbsKcEsc3
-zTpkcSearchGotoNbsKcCount	1	zTpkcSearchGotoNbsKcCount
-zTpkcSearchGotoNbsKcEsc1	\\\{#insert zCSpGG\\\}\\\{#sleep 10\\\}	zTpkcSearchGotoNbsKcEsc1
+zTpkcSearchGotoNbsKcCount	0	zTpkcSearchGotoNbsKcCount
 zTpkcSearchJumpNextNbsKcCount	2	zTpkcSearchJumpNextNbsKcCount
 zTpkcSearchJumpNextNbsKcEsc1	\\\{#insert zCApF4\\\}\\\{#sleep 50\\\}	zTpkcSearchJumpNextNbsKcEsc1
 zTpkcSearchJumpNextNbsKcEsc2	\\\{#insert zCASpF4\\\}\\\{#sleep 50\\\}	zTpkcSearchJumpNextNbsKcEsc2

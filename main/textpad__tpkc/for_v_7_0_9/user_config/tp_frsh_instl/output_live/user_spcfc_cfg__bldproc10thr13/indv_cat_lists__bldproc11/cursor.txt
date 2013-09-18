@@ -41,8 +41,8 @@ ViewStart               Alt+Home
 WordLeft                Ctrl+B                  Ctrl+Left
 WordLeftEnd             Ctrl+D
 WordLeftEndExtend       Ctrl+Shift+D
-WordLeftExtend                      Ctrl+Shift+Left
-WordRight
+WordLeftExtend          Ctrl+Shift+B
+WordRight               Ctrl+Right              Ctrl+W
 WordRightEnd
 WordRightEndExtend
-WordRightExtend         Ctrl+Shift+W
+WordRightExtend         Ctrl+Shift+Right        Ctrl+Shift+W

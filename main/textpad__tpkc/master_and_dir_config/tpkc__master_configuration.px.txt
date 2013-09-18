@@ -5,4 +5,4 @@ zzTpkcBuildVersionCatAbrvs_fgh -(*4DLG*)- TEST BUILD: File, config, help	[file][
 zzTpkcBuildVersionCatAbrvs_live -(*4DLG*)-	{#insert zTpkcAllCategoryAbrvLCsQbl}	zzTpkcBuildVersionCatAbrvs_live
 zTpkcMaxNbsKCsPerCmd -- Max number of Non-BootStrap key-cmds per TP-cmd	5	zTpkcMaxNbsKCsPerCmd
 zTpkcMillsBtwMultiKeyKCs -- Sleep milliseconds between multi-key kcs	25	zTpkcMillsBtwMultiKeyKCs
-zzTpkcBuildVersionName -- Currently-active build-version	fgh	zzTpkcBuildVersionName
+zzTpkcBuildVersionName -- Currently-active build-version	live	zzTpkcBuildVersionName

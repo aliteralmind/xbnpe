@@ -18,7 +18,7 @@ SearchFiles	0
 SearchFind	0
 SearchFindNext	2	\\\{#insert zSpF4\\\}	\\\{#insert zApF4\\\}
 SearchFindPrevious	3	\\\{#insert zF2\\\}	\\\{#insert zSpF2\\\}	\\\{#insert zApF2\\\}
-SearchGoto	1	\\\{#insert zCSpGG\\\}
+SearchGoto	0
 SearchJumpNext	2	\\\{#insert zCApF4\\\}	\\\{#insert zCASpF4\\\}
 SearchJumpPrev	2	\\\{#insert zCApF2\\\}	\\\{#insert zCASpF2\\\}
 SearchOpenAll	1	\\\{#insert zCpF12\\\}\\\{#sleep 25\\\}\\\{#insert zCpF8\\\}

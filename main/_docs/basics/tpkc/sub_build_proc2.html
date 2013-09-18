@@ -56,6 +56,8 @@
 
 <P>This report takes a good five-to-seven seconds per command.</P>
 
+<P><B>Weird problem:</B> In my Windows account, this doesn't happen. In a newly installed windows account on my same machine (setup exclusively for XBNPE testing), it happens. The report behaves <I>really weird</I> when the text is directly printed (&quot;XBNPE: &nbsp;&quot;, &quot;TextPad key-press: &quot;, and one other thing). The only thing that makes it work is to <A HREF="generic/troubleshooting.html#dlgtextbox">set-print</A> these literal-strings. This problem also occurs in process <A HREF="#11">11</A>.</P>
+
 <H3>Actually deleting the bootstrap key-commands</H3>
 
 <P>After the optional report is printed, key-commands are actually deleted. On the first potential error, the process aborts, and the full report is printed.</P>
@@ -90,7 +92,7 @@
 
 <P>For each catetgory, the <A HREF="tpacl.html">tp-all-command-list</A> is searched for the lines <A HREF="../../../textpad__tpkc/for_v_7_0_9/documentation_and_scripts/_all_matching_lines_for_each_cat_in_all_cmd_all_cat_file.txt">as specified in this file</A>. Those lines are marked, cut, and then pasted into a new file, named <CODE>[cat-abrv].txt</CODE>.</P>
 
-<P>Since the <A HREF="build_proc_tech_info2.html#charcatcmdnameexception">character category is an exception</A>, the characters in this category-file's first column must be changed to TPKC-project-appropriate command names.</P>
+<P>Since the <A HREF="build_proc_tech_info2.html#charcatcmdnameexception">character category is an exception</A>, the characters in this category-file's first column must be changed to TPKC-project-appropriate command names. The same &quot;weird problem&quot; occurs when assigning command names to the characters, as does in the bootstrap-report in process <A HREF="#10">10</A> (the same solution as well).</P>
 
 <P>Before closing the file, all command-names are verified to ensure they are exactly as expected. This is mostly to catch badly-named macros and tools that may conflict with actual built-in commands. The sub-script that verifies the command names is
 <BR> &nbsp; &nbsp; <CODE>zzVerifyCatCmdsInCurrUsrCfgFile_M_catl</CODE>

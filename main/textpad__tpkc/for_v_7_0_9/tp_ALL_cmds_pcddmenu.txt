@@ -7,13 +7,15 @@
 *)
 (*
 
-   ---*WARNINGS*---
+   ---tp_ALL_cmds_pcddmenu.txt *WARNINGS*---
 
-   No COMMAND may also be a heading line, the top 'XBN-PhraseExpress' line is specifically searched for, so its text must not be altered (and <--**that** 'XBN-Phr...' must not equal it exactly, or IT will be found instead).
+   NOTE: These warnings only apply to 'tp_ALL_cmds_pcddmenu.txt'. This is the file as it exists BEFORE it is processed by the TPKC user-build-process (sub-proc-15). The *OUTPUT* of this process (which also contains this comment, but is no longer named 'tp_ALL_cmds_pcddmenu.txt') may be freely edited.
 
-   So basically, don't mess with this file!
+   - No COMMAND may *also* be a heading line.
 
-   Also note that fidmb never processes this file. Therefore all phrase-bodies must already be populated.
+   - The top-most 'XBN-PhraseExpress' line is specifically searched for, so its text must not be altered (and <--**that** 'XBN-Phr...' must not equal it exactly, or IT will be found instead).
+
+   - 'fidmb' never processes this file. Therefore all phrase-bodies must already be populated.
 
    ------
 

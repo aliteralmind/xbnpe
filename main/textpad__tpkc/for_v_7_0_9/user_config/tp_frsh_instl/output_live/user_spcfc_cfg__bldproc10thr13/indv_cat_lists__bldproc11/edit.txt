@@ -15,7 +15,7 @@ EditCopyLineAppend
 EditCopyTaggedLines
 EditCopyWord
 EditCopyWordAppend
-EditCut                                   Shift+Delete
+EditCut                 Shift+Delete
 EditCutAppend           Ctrl+Shift+X
 EditCutLine
 EditCutLineAppend

@@ -41,6 +41,11 @@ zPreBracketSelCopy	\\\{#insert zPreBracketSelCopy\\\}	xhses
 zPreBracketSelect	\\\{#insert zPreBracketSelect\\\}	xhses
 zMatchBracket2	\\\{#insert zMatchBracket2\\\}	xhse
 zMatchBracketExtend2	\\\{#insert zMatchBracketExtend2\\\}	xhse
+(*    SNR: Bookmarks -- xhsm   .   xhs*)
+(*       zCopyMarkedLinesToNewFile -- xhsmn   .   xhsm*)
+zREoffCopyCountMarkedLines	\\\{#insert zREoffCopyCountMarkedLines\\\}	xhsmn
+zREonCopyCountMarkedLines	\\\{#insert zREonCopyCountMarkedLines\\\}	xhsmn
+verifysnrnbs	(*actnonly=verifysnrnbs*){#SETPHRASE -description zvACTN_NM -content verifysnrnbs -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhs
 (*
 Phrase-creators: Other -- xho   .   xh
 XBNPE main directories -- xhoy   .   xho

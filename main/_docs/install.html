@@ -19,8 +19,8 @@
 	<BR> &nbsp; &nbsp; <CODE>Microsoft Windows 7 Home Premium (32-bit)</CODE>
 	<BR> &nbsp; &nbsp; <CODE>Version 6.1.7601 Service Pack 1 Build 7601</CODE></LI>
 	<LI>The PhraseExpress professional license is not required in order to use XBN-PhraseExpress</LI>
-	<LI>Although it requires little interaction, the <A HREF="install2.html#15tpbs">final step</A> in this process takes more than an hour, during which time you may not use your computer. <A HREF="basics/tpkc/tpkc_user_dir.html#remoterequest"><I>I can do this step for you</I></A>.</LI>
-	<LI>Although thoroughly tested, XBN-PhraseExpress is in beta. Please <A HREF="basics/pex_in_textpad.html#backupkcs">backup</A> your TextPad settings before proceeding, and report any problems in the <A HREF="https://github.com/aliteralmind/xbnpe/issues">issue tracker</A>.</LI>
+	<LI>The <A HREF="install2.html#15tpbs">final step</A> in this process takes an hour, during which time you may not use your computer. <A HREF="basics/tpkc/tpkc_user_dir.html#remoterequest"><I>I can do this step for you</I></A>.</LI>
+	<LI>XBN-PhraseExpress is in beta. It is thoroughly tested on a single machine, in two Windows accounts--one with my own key-command setup, one with a fresh-installation of TextPad. <A HREF="basics/pex_in_textpad.html#backupkcs">backup</A> your TextPad settings before proceeding. Please help improve XBN-PhraseExpress by reporting any obvious problems in the <A HREF="https://github.com/aliteralmind/xbnpe/issues">issue tracker</A>.</LI>
 </UL></P>
 
 <P><I><CENTER><A HREF="#01tp"><FONT SIZE="+5"><B>START</B></FONT></A></CENTER></I></P>
@@ -49,8 +49,16 @@
 
 <P>Open TextPad and properly configure the <A HREF="basics/pex_in_textpad.html#txtdcsettings">Text Document Class</A>, as required by XBN-PhraseExpress. The specific settings you make here are needed in a <A HREF="install2.html#12gcv">future step</A>.</P>
 
-<P>It is recommended that you <A HREF="basics/pex_in_textpad.html#backupkcs">backup</A> your current key-command setup, and that the status-bar is displayed:
-<BR> &nbsp; &nbsp; <CODE>TextPad &gt; View &gt; Status Bar</CODE></P>
+<P>It is recommended that<UL>
+	<LI>Your current key-command setup is <A HREF="basics/pex_in_textpad.html#backupkcs">backed up</A> </LI>
+	<LI>The status-bar is displayed:
+	<BR> &nbsp; &nbsp; <CODE>TextPad &gt; View &gt; Status Bar</CODE></LI>
+	<LI>Line-numbers are displayed by default:
+	<BR> &nbsp; &nbsp; <CODE>TextPad &gt; Configure &gt; Preferences &gt; View &gt; Line numbers</CODE></LI>
+	<LI>It is required that search-results are <I>not</I> docked:
+	<BR> &nbsp; &nbsp; <CODE>TextPad &gt; Configure &gt; Preferences &gt; View &gt; Dockable log windows &gt; Search Results</CODE>
+	<BR>This is strictly only necessary for the last step in this installation (the TPKC user-build-process), and much of the <A HREF="tasks/snr.html#fifsyn">find-in-files</A> functionality in the <A HREF="tasks/snr.html">SNR-project</A>.</LI>
+</UL></P>
 <PRE>
 
 <HR/>
@@ -124,7 +132,7 @@
 
 <P>Navigate to to your XBNPE <A HREF="#04impxpe">installation parent directory</A>, such as
 <BR> &nbsp; &nbsp; <CODE>C:\programming\phrase_express\</CODE>
-<BR>then into the
+<BR>then into
 <BR> &nbsp; &nbsp; <CODE>xbnpe\zz_misc_and_pxp\</CODE>
 <BR>sub-directory, and select the XBN-PhraseExpress &quot;parent&quot; folder.</P>
 

@@ -3,5 +3,4 @@ zTPToolExplorer -- ToolExplorer (Txplr)	{#insert zApF3}{#sleep 10}	zTPToolExplor
 zTPToolHTMLValidate -- ToolHTMLValidate (Thv)	{#insert zCpZERO}{#sleep 10}	zTPToolHTMLValidate
 zTPSortDlgOpen -- ToolSort (Tsrt)	{#insert zF9}{#sleep 10}	zTPSortDlgOpen
 zTPToolSpell -- ToolSpell (Tspl)	{#insert zF7}{#sleep 10}	zTPToolSpell
-zTPToolStop -- ToolStop (Tstp)	{#insert zCASpXX}{#sleep 10}	zTPToolStop
-zzTpkcAllCmdsWAKcQbl_tools	[ToolCompareFiles][ToolExplorer][ToolHTMLValidate][ToolSort][ToolSpell][ToolStop]	zzTpkcAllCmdsWAKcQbl_tools
+zzTpkcAllCmdsWAKcQbl_tools	[ToolCompareFiles][ToolExplorer][ToolHTMLValidate][ToolSort][ToolSpell]	zzTpkcAllCmdsWAKcQbl_tools

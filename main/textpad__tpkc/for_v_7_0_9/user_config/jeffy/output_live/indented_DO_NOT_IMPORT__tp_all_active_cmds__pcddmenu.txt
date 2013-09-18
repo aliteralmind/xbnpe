@@ -19,36 +19,22 @@
 
 Phrase-creators: XBN-PhraseExpress -- xh   .   zXbnpeCmdPopupRoot
    Phrase-creators: TextPad-specific -- xht   .   xh*)
-		Help -- xhth	.	xht
 		Macros -- xhtm	.	xht
 			zTPMacroRecordToggle	\\\{#insert zTPMacroRecordToggle\\\}	xhtm
 			zTPMacroSaveDlgOpen	\\\{#insert zTPMacroSaveDlgOpen\\\}	xhtm
 (*    Other -- xhtt   .   xht*)
 			zTPPopupContext	\\\{#insert zTPPopupContext\\\}	xhtt
 		Sub-windows -- xhtw	.	xht
-			Cliplib -- xhtwp	.	xhtw
-				Book -- xhtwpb	.	xhtwp
-				Entry -- xhtwpe	.	xhtwp
-				zTPViewClipLib	\\\{#insert zTPViewClipLib\\\}	xhtwp
-			Document selector -- xhtl	.	xht
-			Main document -- xhtd	.	xht
-				zTPVisibleSpaces	\\\{#insert zTPVisibleSpaces\\\}	xhtd
+			zTPViewClipLib	\\\{#insert zTPViewClipLib\\\}	xhtw
+			zTPVisibleSpaces	\\\{#insert zTPVisibleSpaces\\\}	xhtd
 		Tools -- xhtt	.	xht
 			zTPActivateToolOutput	\\\{#insert zTPActivateToolOutput\\\}	xhtt
+			zTPToolExplorer	\\\{#insert zTPToolExplorer\\\}	xhtt
 			zTPToolStop	\\\{#insert zTPToolStop\\\}	xhtt
 			zTPViewToolOutput	\\\{#insert zTPViewToolOutput\\\}	xhtt
-		Specific -- xhtts	.	xhtt
-				zTPToolExplorer	\\\{#insert zTPToolExplorer\\\}	xhtts
 		zTPPrefsDlgOpen [BS]	\\\{#insert zTPPrefsDlgOpen\\\}	xht
 (* PC: CWLPDF: Char, word, line, para, doc, file -- xhc   .   xh*)
 (*    1. Char -- xhcc   .   xhc*)
-			Special characters -- xhccp	.	xhcc
-				A -- xhccpa	.	xhccp
-				C-E -- xhccpc	.	xhccp
-				I-N -- xhccpi	.	xhccp
-				O -- xhccpo	.	xhccp
-				S-U -- xhccps	.	xhccp
-				Y & other -- xhccpy	.	xhccp
 (*       Alter -- xhcca   .   xhcc*)
 				zTPDeleteL1c	\\\{#insert zTPDeleteL1c\\\}	xhcca
 				zTPDeleteR1c	\\\{#insert zTPDeleteR1c\\\}	xhcca
@@ -138,12 +124,8 @@ Phrase-creators: XBN-PhraseExpress -- xh   .   zXbnpeCmdPopupRoot
 				zTPReformatSelection	\\\{#insert zTPReformatSelection\\\}	xhcss
 (*    6. Document, page -- xhcd   .   xhc*)
 (*       Document-windows -- xhcdo   .   xhcd*)
-				Arrange, cascade, tile -- xhcdoa	.	xhcdo
 (*          Go-to specific -- xhcdog   .   xhcdo*)
-					Numbered -- xhcdogn	.	xhcdog
-				Other -- xhcdoo	.	xhcdo
 			Other -- xhcdt	.	xhcd
-				Right margin -- xhcdtm	.	xhcdt
 				zTPPageBreak	\\\{#insert zTPPageBreak\\\}	xhcdt
 (*       Page up/down left/right -- xhcdp   .   xhcd*)
 				Extend -- xhcdpx	.	xhcdp
@@ -202,7 +184,6 @@ Phrase-creators: XBN-PhraseExpress -- xh   .   zXbnpeCmdPopupRoot
 		View -- xhov	.	xho
 			zTPLineScrollDown	\\\{#insert zTPLineScrollDown\\\}	xhov
 			zTPLineScrollUp	\\\{#insert zTPLineScrollUp\\\}	xhov
-		Date & time -- xhod	.	xho
 (* Phrase-creators: Search & replace -- xhs   .   xh*)
 (*    SNR: Bookmarks -- xhsm   .   xhs*)
 (*       All bookmarks -- xhsma   .   xhsm*)

@@ -41,8 +41,8 @@ ViewStart	1	\\\{#insert zApHOME\\\}
 WordLeft	2	\\\{#insert zCpBB\\\}	\\\{#insert zCpLEFT\\\}
 WordLeftEnd	1	\\\{#insert zCpDD\\\}
 WordLeftEndExtend	1	\\\{#insert zCSpDD\\\}
-WordLeftExtend	1	\\\{#insert zCSpLEFT\\\}
-WordRight	0
+WordLeftExtend	1	\\\{#insert zCSpBB\\\}
+WordRight	2	\\\{#insert zCpRIGHT\\\}	\\\{#insert zCpWW\\\}
 WordRightEnd	0
 WordRightEndExtend	0
-WordRightExtend	1	\\\{#insert zCSpWW\\\}
+WordRightExtend	2	\\\{#insert zCSpRIGHT\\\}	\\\{#insert zCSpWW\\\}

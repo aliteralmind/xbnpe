@@ -1,5 +1,0 @@
-MacroMultiplay	1	\\\{#insert zCpF7\\\}
-MacroPause	0
-MacroPlay	1	\\\{#insert zCpRR\\\}
-MacroRecord	1	\\\{#insert zCSpRR\\\}
-MacroSave	0

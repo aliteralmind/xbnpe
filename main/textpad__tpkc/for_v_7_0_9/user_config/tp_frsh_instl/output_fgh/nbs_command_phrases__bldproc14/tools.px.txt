@@ -1,7 +1,0 @@
-zTPToolCompareFiles -- ToolCompareFiles (Tcmp)	{#insert zCpF9}{#sleep 10}	zTPToolCompareFiles
-zTPToolExplorer -- ToolExplorer (Txplr)	{#insert zApF3}{#sleep 10}	zTPToolExplorer
-zTPToolHTMLValidate -- ToolHTMLValidate (Thv)	{#insert zCpZERO}{#sleep 10}	zTPToolHTMLValidate
-zTPSortDlgOpen -- ToolSort (Tsrt)	{#insert zF9}{#sleep 10}	zTPSortDlgOpen
-zTPToolSpell -- ToolSpell (Tspl)	{#insert zF7}{#sleep 10}	zTPToolSpell
-zTPToolStop -- ToolStop (Tstp)	{#insert zCASpXX}{#sleep 10}	zTPToolStop
-zzTpkcAllCmdsWAKcQbl_tools	[ToolCompareFiles][ToolExplorer][ToolHTMLValidate][ToolSort][ToolSpell][ToolStop]	zzTpkcAllCmdsWAKcQbl_tools

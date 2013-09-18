@@ -5,5 +5,5 @@ ToolRerun	0
 ToolRun	0
 ToolSort	1	\\\{#insert zF9\\\}
 ToolSpell	1	\\\{#insert zF7\\\}
-ToolStop	1	\\\{#insert zCASpXX\\\}
+ToolStop	0
 ToolWildEdit	0

@@ -14,9 +14,9 @@ zTpkcMatchBracketNbsKcEsc1	\\\{#insert zCpMM\\\}\\\{#sleep 10\\\}	zTpkcMatchBrac
 zTpkcMatchBracketExtendNbsKcCount	1	zTpkcMatchBracketExtendNbsKcCount
 zTpkcMatchBracketExtendNbsKcEsc1	\\\{#insert zCSpMM\\\}\\\{#sleep 10\\\}	zTpkcMatchBracketExtendNbsKcEsc1
 zTpkcMatchCaseClearNbsKcCount	1	zTpkcMatchCaseClearNbsKcCount
-zTpkcMatchCaseClearNbsKcEsc1	\\\{#insert zCASpFF\\\}\\\{#sleep 25\\\}\\\{#insert zMM\\\}\\\{#sleep 5\\\}	zTpkcMatchCaseClearNbsKcEsc1
+zTpkcMatchCaseClearNbsKcEsc1	\\\{#insert zCASpFF\\\}\\\{#sleep 25\\\}\\\{#insert zCC\\\}\\\{#sleep 5\\\}	zTpkcMatchCaseClearNbsKcEsc1
 zTpkcMatchCaseSetNbsKcCount	1	zTpkcMatchCaseSetNbsKcCount
-zTpkcMatchCaseSetNbsKcEsc1	\\\{#insert zASpFF\\\}\\\{#sleep 25\\\}\\\{#insert zMM\\\}\\\{#sleep 5\\\}	zTpkcMatchCaseSetNbsKcEsc1
+zTpkcMatchCaseSetNbsKcEsc1	\\\{#insert zASpFF\\\}\\\{#sleep 25\\\}\\\{#insert zCC\\\}\\\{#sleep 5\\\}	zTpkcMatchCaseSetNbsKcEsc1
 zTpkcMatchWordClearNbsKcCount	1	zTpkcMatchWordClearNbsKcCount
 zTpkcMatchWordClearNbsKcEsc1	\\\{#insert zCASpFF\\\}\\\{#sleep 25\\\}\\\{#insert zWW\\\}\\\{#sleep 5\\\}	zTpkcMatchWordClearNbsKcEsc1
 zTpkcMatchWordSetNbsKcCount	1	zTpkcMatchWordSetNbsKcCount
@@ -30,8 +30,7 @@ zTpkcSearchFindNbsKcCount	0	zTpkcSearchFindNbsKcCount
 zTpkcSearchFindNextNbsKcCount	0	zTpkcSearchFindNextNbsKcCount
 zTpkcSearchFindPreviousNbsKcCount	1	zTpkcSearchFindPreviousNbsKcCount
 zTpkcSearchFindPreviousNbsKcEsc1	\\\{#insert zCSpFF\\\}\\\{#sleep 10\\\}	zTpkcSearchFindPreviousNbsKcEsc1
-zTpkcSearchGotoNbsKcCount	1	zTpkcSearchGotoNbsKcCount
-zTpkcSearchGotoNbsKcEsc1	\\\{#insert zCpGG\\\}\\\{#sleep 10\\\}	zTpkcSearchGotoNbsKcEsc1
+zTpkcSearchGotoNbsKcCount	0	zTpkcSearchGotoNbsKcCount
 zTpkcSearchJumpNextNbsKcCount	1	zTpkcSearchJumpNextNbsKcCount
 zTpkcSearchJumpNextNbsKcEsc1	\\\{#insert zF4\\\}\\\{#sleep 50\\\}	zTpkcSearchJumpNextNbsKcEsc1
 zTpkcSearchJumpPrevNbsKcCount	1	zTpkcSearchJumpPrevNbsKcCount
