@@ -293,8 +293,6 @@
 
 <P>The single asterisk indicates that <CODE>zTPFindPrev</CODE> is available <I>only if <B>you</B> have assigned it a key-command</I> in TextPad (and that key-command is properly assigned in your user-command-configuration). Two asterisks indicate that the phrase is a &quot;TextPad bootstrap&quot; (for either the <A HREF="../basics/xkp.html">XKP</A> or TPKC projects), and are therefore always available.</P>
 
-<P>Therefore, since the Tex</P>
-
 <PRE>
 
 <HR/>
@@ -564,7 +562,7 @@
 
 <A NAME="findxmplftst"/><H3><CODE>[<A HREF="#findxmpls">BACK</A>]</CODE> &nbsp; <U>Find start token, select through end token</U></H3>
 
-<P>In the following document, with the cursor at the top, find &quot;<CODE>xxx</CODE>&quot;, and then select through &quot;<CODE>zzz</CODE>&quot;.</P>
+<P>In the following document, with the cursor at the top, find &quot;<CODE>xxx</CODE>&quot;, and then select through &quot;<CODE>zzz</CODE>&quot;. <I>(<B><A HREF="../demo_video.html">video demo</A></B>)</I></P>
 
 <P><TABLE ALIGN="center" WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0" BGCOLOR="#FFFFFF"><TR ALIGN="center" VALIGN="middle">
 	<TD>
@@ -582,10 +580,9 @@
 
 <PRE STYLE="background-color:#E1E1E1;"><!--xcfexample...START  //  (*File is empty. Create input.*){#insert zKeyPressFast}{#insert zzSnrXmplInputAThenZInRandomTxt}{#insert zTPGTDocTop}{#BALLOON -title Please wait... -text snr06findselxtoz}{#insert zSlk2KPSpeedSetToRequested}--><B><U>snr06findselxtoz</U></B>
 (*Pre-check, warning, and prep:*)
-   {#insert zFindDialogFlagPreCheckMCOnly}
-   {#BALLOON -title WARNING -text Warning: This example&nbsp;
-     code will FAIL unless 'xxx' exists in this document, and&nbsp;
-     'zzz' exists somewhere after it.}
+   {#insert zFindDialogFlagPreCheck}
+   {#BALLOON -title WARNING -text Warning: This will fail&nbsp;
+      unless 'xxx' exists, and 'zzz' exists after it.}
 	{#insert zTPGTDocTop}
 
 {#insert zFindDlgOpenDownMCOnly}
@@ -600,6 +597,7 @@
       <B>zzz</B>&nbsp;
             -autotext zvFIND_WHAT -folder ctvv_folder}{#insert zvFIND_WHAT}
       {#insert zFindXSBtnNextXS}
+      {#insert zFindFlagWrapSearchTgl}(*Clean up*)
 {#insert zFindDlgClose}<!--xcfexample...END  //  {#insert zBalDoneSlk2SelAllDel}--></PRE>
 
 

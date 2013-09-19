@@ -141,7 +141,9 @@ GET-THE-STRING-FROM-HERE~TO-THERE</PRE>
 
 <PRE STYLE="background-color:#E1E1E1;"><!--xcfexample...START  //  {#BALLOON -title findnextxv -text About to start}{#sleep 2000}--><B><U>findnextxv</U></B>
 {#insert zFcsTPFindDlgOpen}
-   {#SETPHRASE -description zvFIND_WHAT -content <B>xxx</B> -autotext zvFIND_WHAT -folder ctvv_folder}
+         {#SETPHRASE -description zvFIND_WHAT -content
+   <B>xxx</B>
+            -autotext zvFIND_WHAT -folder ctvv_folder}
       {#insert zvFIND_WHAT}
    {#insert zFindBtnNext}
 {#insert zFindDlgClose}</PRE>
