@@ -4,11 +4,12 @@ Title:
 XBN-PhraseExpress: Composing Pex in TextPad demo
 
 Description:
-Demonstrates composing PhraseExpress code in TextPad using XBN-PhraseExpress. This specifically re-creates an example code already existing in the documentation:
+Demonstrates composing PhraseExpress code in TextPad using XBN-PhraseExpress. This re-creates an already-existing example code.
 
 http://www.jeffyepstein.com/docs/computer/programming/xbnpe/main/_docs/tasks/snr.html#findxmplftst
 
-In particular, this demontrations search and replace functionality, the xh-phrase-creator ddmenu, and basic phrase-file management issues.
+In particular, this demontrates search and replace, the xh-phrase-creator ddmenu, and basic phrase-file management.
+
 
 Tags
 xbnpe,tpkc,XBN-PhraseExpress,xbn,PhraseExpress,TextPad,demo,xh
