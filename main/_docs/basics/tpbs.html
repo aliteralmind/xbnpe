@@ -46,7 +46,7 @@
 	<LI><B>On disk</B> (<A HREF="phrase_file.html#fformat">phrase-files</A>)<UL>
 		<LI><U>Directory:</U> <CODE>{#insert <A HREF="tpkc/tpkc_user_dir.html#zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn">zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn</A>}</CODE><UL>
 			<LI><A HREF="tpbs_format.html#mainp">Main</A> phrase-files:
-			<BR> &nbsp; &nbsp; <CODE>tp_bootstraps_for_xkp_project.px.txt</CODE> &nbsp; &nbsp; <I>(<A HREF="../../textpad__tpkc/for_v_7_0_9/user_config/tp_frsh_instl/tp_bootstraps_for_xkp_project.px.txt">tpfi</A>--for tpkc-user-dir name=<CODE>&quot;tp_frsh_instl&quot;</CODE>, <A HREF="../../textpad__tpkc/for_v_7_0_9/user_config/TPKC_USER_DIR_NAME/tp_bootstraps_for_xkp_project.px.txt">blank template</A>)</I>
+			<BR> &nbsp; &nbsp; <CODE>tp_bootstraps_for_xkp_project.px.txt</CODE> &nbsp; &nbsp; <I>(<A HREF="../../textpad__tpkc/for_v_7_0_9/user_config/tp_frsh_instl/tp_bootstraps_for_xkp_project.px.txt">tpfi</A>--for tpkc-user-dir name=&quot;<CODE>tp_frsh_instl</CODE>&quot;, <A HREF="../../textpad__tpkc/for_v_7_0_9/user_config/TPKC_USER_DIR_NAME/tp_bootstraps_for_xkp_project.px.txt">blank template</A>)</I>
 			<BR> &nbsp; &nbsp; <CODE>tp_bootstraps_for_tpkc_project.px.txt</CODE> &nbsp; &nbsp; <I>(<A HREF="../../textpad__tpkc/for_v_7_0_9/user_config/tp_frsh_instl/tp_bootstraps_for_tpkc_project.px.txt">tpfi</A>, <A HREF="../../textpad__tpkc/for_v_7_0_9/user_config/TPKC_USER_DIR_NAME/tp_bootstraps_for_tpkc_project.px.txt">template</A>)</I></LI>
 			<LI>&quot;Non-main&quot; (<A HREF="tpbs_format.html#escp">escaped</A> and <A HREF="tpbs_format.html#tpkp">TextPad-key-press</A>) phrase-files:
 				<BR> &nbsp; &nbsp; <CODE>tp_bootstraps_for_xkp_project_esc_tpk.px.txt</CODE> &nbsp; &nbsp; <I>(<A HREF="../../textpad__tpkc/for_v_7_0_9/user_config/tp_frsh_instl/tp_bootstraps_for_xkp_project_esc_tpk.px.txt">tpfi</A>, <A HREF="../../textpad__tpkc/for_v_7_0_9/user_config/TPKC_USER_DIR_NAME/tp_bootstraps_for_xkp_project_esc_tpk.px.txt">template</A>)</I>
@@ -142,7 +142,7 @@ zTPCopyTPKeys:
 </PRE>
 <A NAME="terminology"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TextPad-bootstraps: Terminology</H2>
 
-<P>A &quot;<B>TextPad-bootstrap</B>&quot; is a built-in TextPad command that is critical to either the XKP or TPKC-project. The key-command assigned to a TextPad-bootstrap is called a <B>&quot;bootstrap key-command&quot;</B>. Any other key-commands assigned to a tp-bootstrap (or <I>any</I> key-command assigned to <I>any</I> other built-in TextPad command), are each called a &quot;<B>Non-BootStrap key-command</B>&quot; or &quot;Non-BootStrap kc&quot;, or <CODE>&quot;<B>nbs-kc</B>&quot;</CODE>.</P>
+<P>A &quot;<B>TextPad-bootstrap</B>&quot; is a built-in TextPad command that is critical to either the XKP or TPKC-project. The key-command assigned to a TextPad-bootstrap is called a <B>&quot;bootstrap key-command&quot;</B>. Any other key-commands assigned to a tp-bootstrap (or <I>any</I> key-command assigned to <I>any</I> other built-in TextPad command), are each called a &quot;<B>Non-BootStrap key-command</B>&quot; or &quot;Non-BootStrap kc&quot;, or &quot;<CODE><B>nbs-kc</B></CODE>&quot;.</P>
 
 <P>A &quot;<B>Non-BootStrap command</B>&quot;, or &quot;<B>nbs-command</B>&quot;, is simply a command that is not a tp-bootstrap--whether or not it has a key-commands assigned to it. An &quot;<B>nbs-phrase</B>&quot; is a phrase that triggers a non-bootstrap command.</P>
 
@@ -164,7 +164,7 @@ zTPCopyTPKeys:
 	<LI>Remove that TextPad command from its current location (its current phrase-file), and place it into the <A HREF="tpbs_format.html#mainp">main</A> tp-bootstrap file for either the <A HREF="xkp.html">XKP</A> or <A HREF="tpkc/index.html">TPKC</A> project (<I>for <B>all</B> users in
 	<BR> &nbsp; &nbsp; <CODE>{#insert zXPROOT_DIR_tpkc}/textpad__tpkc/for_v_7_0_9/user_config/</CODE>
 	<BR>!!!</I>).</LI>
-	<LI>Create its corresponding &quot;non-main&quot; phrases (<CODE>&quot;<A HREF="tpbs_format.html#escp">Esc</A>&quot;</CODE> and <CODE>&quot;<A HREF="tpbs_format.html#tpkp">TPKeys</A>&quot;</CODE>)</LI>
+	<LI>Create its corresponding &quot;non-main&quot; phrases (&quot;<CODE><A HREF="tpbs_format.html#escp">Esc</A></CODE>&quot; and &quot;<CODE><A HREF="tpbs_format.html#tpkp">TPKeys</A></CODE>&quot;)</LI>
 	<LI>Add it to the regular expression for marking lines in the tp-all-cmd-list, in the tpbs section in XKP and TPKC.</LI>
 	<LI>Change its raw global config from, for example:
 	<BR> &nbsp; &nbsp; <CODE>BookmarkPrev	zTPBookmarkGTPrev	Srchmkprv	<B>__ES__</B>	100	{#insert zDOWN3}</CODE>
@@ -193,7 +193,7 @@ zTPCopyTPKeys:
 	<LI>Import the new tp-bootstrap tests and run it!</LI>
 	<LI>All tp-bootstraps, <I>regardless which project they are bootstraps for</I>, are listed in the TPKC ddmenu-file:
 	<BR> &nbsp; &nbsp; <CODE>{#insert zXPROOT_DIR_tpkc}/textpad__tpkc/for_v_7_0_9/user_config/<A HREF="../../textpad__tpkc/for_v_7_0_9/user_config/tp_ALL_cmds_pcddmenu.txt">tp_ALL_cmds_pcddmenu</A>.txt</CODE>
-	<BR>(This is the <U>input</U> file for TPKC-build-proc-15.) If not there yet, add <CODE>&quot;[BS]&quot;</CODE> to its ddmenu-entry.</LI>
+	<BR>(This is the <U>input</U> file for TPKC-build-proc-15.) If not there yet, add &quot;<CODE>[BS]</CODE>&quot; to its ddmenu-entry.</LI>
 	<LI>Run TPKC-build-processes 10 through 14 (and, less critically, 15)--<I>for all users</I>.</LI>
 	</OL></LI>
 	<LI>Notify all users of this change and the steps they need to take. They're not going to like you very much.</LI>
@@ -207,7 +207,7 @@ zTPCopyTPKeys:
 </PRE>
 <A NAME="charsnot"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; Commands in the &quot;Characters&quot; category may not be TextPad-bootstraps</H2>
 
-<P>The &quot;Characters&quot; category is the only one in which commands do not have names. Instead, the &quot;name&quot; of each command is the character itself. This is unacceptable to the <A HREF="tpkc/index.html">TPKC-project</A>. The TPKC-build process (<A HREF="tpkc/sub_build_proc2.html#11">sub-build-proc-11</A>) therefore changes each to a <A HREF="../../textpad__tpkc/for_v_7_0_9/documentation_and_scripts/_char_category_cmd_name_alternatives.txt">specific name</A>**. For example, <CODE>'Ã'</CODE> is changed to <CODE>&quot;Char14AUpperTilde&quot;</CODE>. Since this translation does not occur until after the TPKC-project is installed <I>and built</I> (meaning all build processes from <A HREF="tpkc/sub_build_proc.html#02">02</A> through <A HREF="tpkc/sub_build_proc2.html#14">14</A> are successfully executed), no commands in this category may not be used as TextPad-bootstraps, until after all TPKC build processes have been successfully executed.</P>
+<P>The &quot;Characters&quot; category is the only one in which commands do not have names. Instead, the &quot;name&quot; of each command is the character itself. This is unacceptable to the <A HREF="tpkc/index.html">TPKC-project</A>. The TPKC-build process (<A HREF="tpkc/sub_build_proc2.html#11">sub-build-proc-11</A>) therefore changes each to a <A HREF="../../textpad__tpkc/for_v_7_0_9/documentation_and_scripts/_char_category_cmd_name_alternatives.txt">specific name</A>**. For example, <CODE>'Ã'</CODE> is changed to &quot;<CODE>Char14AUpperTilde</CODE>&quot;. Since this translation does not occur until after the TPKC-project is installed <I>and built</I> (meaning all build processes from <A HREF="tpkc/sub_build_proc.html#02">02</A> through <A HREF="tpkc/sub_build_proc2.html#14">14</A> are successfully executed), no commands in this category may not be used as TextPad-bootstraps, until after all TPKC build processes have been successfully executed.</P>
 
 <P>This restriction only applies to the XKP and TPKC projects.</P>
 

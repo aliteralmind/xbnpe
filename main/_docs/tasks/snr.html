@@ -120,7 +120,7 @@
 
 <H3>Example</H3>
 
-<P>Eliminate everything in a line, except its first word (this particular mid-replacement requires the regex flag to be turned on, hence <CODE>&quot;zzMidRplcRE&quot;</CODE>):</P>
+<P>Eliminate everything in a line, except its first word (this particular mid-replacement requires the regex flag to be turned on, hence &quot;<CODE>zzMidRplcRE</CODE>&quot;):</P>
 
 <!-- Duplicate of zzMidRplcREKeepWrd1Only...START
 		Only the original is an XCF-example!!
@@ -162,7 +162,7 @@
 
 <P>Significant issues to keep in mind when working with search-and-replace:<UL>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#issueflags">GO</A></B></FONT>]</CODE> &nbsp; Specific flag-control</LI>
-	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#issuefww">GO</A></B></FONT>]</CODE> &nbsp; The Whole-words (<CODE>&quot;WW&quot;</CODE>) flag must sometimes be &quot;forced&quot; on</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#issuefww">GO</A></B></FONT>]</CODE> &nbsp; The Whole-words (&quot;<CODE>WW</CODE>&quot;) flag must sometimes be &quot;forced&quot; on</LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#issuehnr">GO</A></B></FONT>]</CODE> &nbsp; Handling the potential for no matches found</LI>
 </UL>Addressed in other documents:<UL>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="../generic/troubleshooting.html#dlgtextbox">GO</A></B></FONT>]</CODE> &nbsp; Typing directly into a dialog's textbox is unreliable</LI>
@@ -236,14 +236,14 @@
 <P>Opening a dialog blindly, such as with
 <BR> &nbsp; &nbsp; <CODE>{#insert zFcsTPFindDlgOpen}</CODE>
 <BR>adopts the currently-set flags. The only flags that can be directly controlled are<UL>
-	<LI>Match-case (<CODE>&quot;MC&quot;</CODE>),</LI>
-	<LI>Regular-expression (<CODE>&quot;RE&quot;</CODE>),</LI>
-	<LI>Whole-words (<CODE>&quot;WW&quot;</CODE>),</LI>
+	<LI>Match-case (&quot;<CODE>MC</CODE>&quot;),</LI>
+	<LI>Regular-expression (&quot;<CODE>RE</CODE>&quot;),</LI>
+	<LI>Whole-words (&quot;<CODE>WW</CODE>&quot;),</LI>
 	<LI>and all the radio-button settings (down, up, hex, text, etc.)</LI>
 </UL>While it is not possible to know the current state of any flag, the ones in this list can be explicitly turned on or off (or selected) at any time, without regard to their current states. There are some exceptions, such as the need to sometimes <A HREF="#issuefww">&quot;force&quot; word-wrap</A> on, and also:<UL>
-	<LI><CODE>&quot;WW&quot;</CODE> and <CODE>&quot;RE&quot;</CODE> are mutually-exclusive. They may never be on at the same time.</LI>
-	<LI>The &quot;Wrap searches&quot; (<CODE>&quot;WrapSearch&quot;</CODE>) flag is disabled (unselected, unchecked) by TextPad, when extend-search (<CODE>&quot;XS&quot;</CODE>) is turned on. However, there is a way to turn both on (although I'm not sure the purpose of doing so): Turn the <CODE>&quot;XS&quot;</CODE> flag on, then close-and-reopen the find dialog. The <CODE>WrapSearch</CODE> flag is now clickable.</LI>
-	<LI>The &quot;In all documents&quot; <CODE>&quot;AD&quot;</CODE> flag (for <A HREF="#bkmksyn">marking lines</A> in all open documents) is turned off by TextPad whenever the find-dialog is closed.</LI>
+	<LI>&quot;<CODE>WW</CODE>&quot; and &quot;<CODE>RE</CODE>&quot; are mutually-exclusive. They may never be on at the same time.</LI>
+	<LI>The &quot;Wrap searches&quot; (&quot;<CODE>WrapSearch</CODE>&quot;) flag is disabled (unselected, unchecked) by TextPad, when extend-search (&quot;<CODE>XS</CODE>&quot;) is turned on. However, there is a way to turn both on (although I'm not sure the purpose of doing so): Turn the &quot;<CODE>XS</CODE>&quot; flag on, then close-and-reopen the find dialog. The <CODE>WrapSearch</CODE> flag is now clickable.</LI>
+	<LI>The &quot;In all documents&quot; &quot;<CODE>AD</CODE>&quot; flag (for <A HREF="#bkmksyn">marking lines</A> in all open documents) is turned off by TextPad whenever the find-dialog is closed.</LI>
 </UL></P>
 
 <P>For all other flags, the user must be relied upon to confirm the current state. To instruct your user to set the find-flags to their defaults, use
@@ -264,7 +264,7 @@
 
 <P><IMG SRC="../images/tasks/find_ww_unclickable.jpg" BORDER="1"/></P>
 
-<P>The only way to turn it on, is by first deleting the search term. This is the purpose of the <CODE>"ForceWW"</CODE> flag. Whereas the (<CODE>&quot;WW&quot;</CODE>) flag is &quot;settable&quot;, meaning changeable <I>when the find (or replace or find-in-files) dialog is closed</I>, the <CODE>&quot;ForceWW&quot;</CODE> flag is only usable when the dialog is open.</P>
+<P>The only way to turn it on, is by first deleting the search term. This is the purpose of the <CODE>"ForceWW"</CODE> flag. Whereas the (&quot;<CODE>WW</CODE>&quot;) flag is &quot;settable&quot;, meaning changeable <I>when the find (or replace or find-in-files) dialog is closed</I>, the &quot;<CODE>ForceWW</CODE>&quot; flag is only usable when the dialog is open.</P>
 
 <P>Note that
 <BR> &nbsp; &nbsp; <CODE>{#insert zTPFindFlagWWon}</CODE>
@@ -286,7 +286,7 @@
 <BR>or
 <BR> &nbsp; &nbsp; &quot;XBNPE-TextPad built-in commands (TPKC) project&quot;</P>
 
-<P>The name of some phrases under the TPKC project begin with <CODE>&quot;zTP&quot;</CODE>, which are the <I>built-in</I> TextPad commands. and some of these  followed by a single asterisk (<CODE>&quot;*&quot;</CODE>), while others are followed by two asterisks. Note that asterisks exist only under the TPKC project, and only for <I>built-in TextPad commands</I> (hence the <CODE>&quot;zTP&quot;</CODE>). For example, the find dialog lists these two phrases (phrase syntaxes) under TPKC:<UL>
+<P>The name of some phrases under the TPKC project begin with &quot;<CODE>zTP</CODE>&quot;, which are the <I>built-in</I> TextPad commands. and some of these  followed by a single asterisk (&quot;<CODE>*</CODE>&quot;), while others are followed by two asterisks. Note that asterisks exist only under the TPKC project, and only for <I>built-in TextPad commands</I> (hence the &quot;<CODE>zTP</CODE>&quot;). For example, the find dialog lists these two phrases (phrase syntaxes) under TPKC:<UL>
 	<LI><CODE>zTPFindNext</CODE>**</LI>
 	<LI><CODE>zTPFindPrev</CODE></LI>
 </UL></P>
@@ -383,7 +383,7 @@
 
 <A NAME="bkmkxmplloop"/><H3><CODE>[<A HREF="#bkmkxmpls">BACK</A>]</CODE> &nbsp; <U>Loop based on mark-count</U></H3>
 
-<P>Take the following file and, using a loop, surround all lines containing the word &quot;good&quot; with <CODE>&quot;[[[&quot;</CODE> and <CODE>&quot;]]]&quot;</CODE>. The number of bookmarked lines is determined, and then each marked line is processed in a loop.</P>
+<P>Take the following file and, using a loop, surround all lines containing the word &quot;good&quot; with &quot;<CODE>[[[</CODE>&quot; and &quot;<CODE>]]]</CODE>&quot;. The number of bookmarked lines is determined, and then each marked line is processed in a loop.</P>
 
 <P><TABLE ALIGN="center" WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0"><TR ALIGN="center" VALIGN="middle">
 	<TD>
@@ -500,7 +500,7 @@
 		<LI><CODE>zFcsTPFindDlgOpen</CODE></LI>
 		<LI><CODE>zFindBtnMarkAll[ThnEtr]</CODE> &nbsp; <I>(see bookmarks)</I></LI>
 		<LI><CODE>zFindBtnNext[[2-5]]</CODE></LI>
-		<LI><CODE>zFind[MC,RE,WW,XS]BtnNext[MC,RE,WW,XS]</CODE> &nbsp; &nbsp; <I>(Options must match. For example: <CODE>&quot;zFindMCBtnNextMC&quot;</CODE>)</I></LI>
+		<LI><CODE>zFind[MC,RE,WW,XS]BtnNext[MC,RE,WW,XS]</CODE> &nbsp; &nbsp; <I>(Options must match. For example: &quot;<CODE>zFindMCBtnNextMC</CODE>&quot;)</I></LI>
 		<LI><CODE>zFindDlgClose</CODE></LI>
 		<LI><CODE>zFindFieldWhat</CODE></LI>
 		<LI><CODE>zTPFindDlgOpen</CODE>**</LI>
@@ -526,16 +526,16 @@
 <P><I>[go to <A HREF="#findsyn">syntax</A>]</I></P>
 
 <P><B>Contents:</B><UL>
-	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#findxmplnextx">GO</A></B></FONT>]</CODE> &nbsp; Find next <CODE>&quot;xxx&quot;</CODE></LI>
-	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#findxmplnextx3up">GO</A></B></FONT>]</CODE> &nbsp; Find the third <CODE>&quot;xxx&quot;</CODE> up</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#findxmplnextx">GO</A></B></FONT>]</CODE> &nbsp; Find next &quot;<CODE>xxx</CODE>&quot;</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#findxmplnextx3up">GO</A></B></FONT>]</CODE> &nbsp; Find the third &quot;<CODE>xxx</CODE>&quot; up</LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#findxmplftst">GO</A></B></FONT>]</CODE> &nbsp; Find start-token, select through end-token</LI>
 </UL></P>
 
 
 
-<A NAME="findxmplnextx"/><H3><CODE>[<A HREF="#findxmpls">BACK</A>]</CODE> &nbsp; <U>Example: Find next <CODE>&quot;xxx&quot;</CODE></U></H3>
+<A NAME="findxmplnextx"/><H3><CODE>[<A HREF="#findxmpls">BACK</A>]</CODE> &nbsp; <U>Example: Find next &quot;<CODE>xxx</CODE>&quot;</U></H3>
 
-<P>This only works when <CODE>&quot;xxx&quot;</CODE> is found.</P>
+<P>This only works when &quot;<CODE>xxx</CODE>&quot; is found.</P>
 
 <PRE STYLE="background-color:#E1E1E1;"><!--xcfexample...START  //  (*File is empty. Create input.*){#insert zKeyPressFast}{#insert zzSnrXmplInputAThenZInRandomTxt}{#insert zTPGTDocTop}{#BALLOON -title Please wait... -text snr04findnextx}{#insert zSlk2KPSpeedSetToRequested}--><B><U>snr04findnextx</U></B>
 {#insert zFcsTPFindDlgOpen}
@@ -545,9 +545,9 @@
    {#insert zFindBtnNext}
 {#insert zFindDlgClose}<!--xcfexample...END  //  {#insert zBalDoneSlk2SelAllDel}--></PRE>
 
-<A NAME="findxmplnextx3up"/><H3><CODE>[<A HREF="#findxmpls">BACK</A>]</CODE> &nbsp; <U>Example: Find the third <CODE>&quot;xxx&quot;</CODE> up</U></H3>
+<A NAME="findxmplnextx3up"/><H3><CODE>[<A HREF="#findxmpls">BACK</A>]</CODE> &nbsp; <U>Example: Find the third &quot;<CODE>xxx</CODE>&quot; up</U></H3>
 
-<P>This only works when 3 <CODE>&quot;xxx&quot;</CODE>-s exist above the cursor (or at least one is found, and <CODE>WrapSearch</CODE> is on).</P>
+<P>This only works when 3 &quot;<CODE>xxx</CODE>&quot;-s exist above the cursor (or at least one is found, and <CODE>WrapSearch</CODE> is on).</P>
 
 <PRE STYLE="background-color:#E1E1E1;"><!--xcfexample...START  //  (*File is empty. Create input.*){#insert zKeyPressFast}{#insert zzSnrXmplInputAThenZInRandomTxt}{#BALLOON -title Please wait... -text snr05findnextx3up}{#insert zSlk2KPSpeedSetToRequested}--><B><U>snr05findnextx3up</U></B>
 {#insert zFindDlgOpenUp}
@@ -557,14 +557,14 @@
    {#insert zFindBtnNext3}
 {#insert zFindDlgCloseDown}(*Clean up: Down is considered 'default'*)<!--xcfexample...END  //  {#insert zBalDoneSlk2SelAllDel}--></PRE>
 
-<P>As in all cases after a find or replacement is made, now that <CODE>&quot;xxx&quot;</CODE> is the search term, and while the dialog is closed, the following can be used:
+<P>As in all cases after a find or replacement is made, now that &quot;<CODE>xxx</CODE>&quot; is the search term, and while the dialog is closed, the following can be used:
 <BR> &nbsp; &nbsp; <CODE>zTPFind[Next,Prev]</CODE>
 <BR> &nbsp; &nbsp; <CODE>zFind[Next,Prev][2-5]</CODE>
 <BR></P>
 
 <A NAME="findxmplftst"/><H3><CODE>[<A HREF="#findxmpls">BACK</A>]</CODE> &nbsp; <U>Find start token, select through end token</U></H3>
 
-<P>In the following document, with the cursor at the top, find <CODE>&quot;xxx&quot;</CODE>, and then select through <CODE>&quot;zzz&quot;</CODE>.</P>
+<P>In the following document, with the cursor at the top, find &quot;<CODE>xxx</CODE>&quot;, and then select through &quot;<CODE>zzz</CODE>&quot;.</P>
 
 <P><TABLE ALIGN="center" WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0" BGCOLOR="#FFFFFF"><TR ALIGN="center" VALIGN="middle">
 	<TD>
@@ -683,17 +683,17 @@
 <P><I>[go to <A HREF="#rplcsyn">syntax</A>]</I></P>
 
 <P><B>Contents:</B><UL>
-	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#rplcxmplnext">GO</A></B></FONT>]</CODE> &nbsp; Replace next <CODE>&quot;xxx&quot;</CODE> (basic)</LI>
-	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#rplcxmplallbasic">GO</A></B></FONT>]</CODE> &nbsp; Replace all <CODE>&quot;xxx&quot;</CODE>-s in the document (basic)</LI>
-	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#rplcxmplallhnr">GO</A></B></FONT>]</CODE> &nbsp; Replace all <CODE>&quot;xxx&quot;</CODE>-s, <A HREF="#issuehnr">handling</A> no matches</LI>
-	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#rplcxmplallhnropt">GO</A></B></FONT>]</CODE> &nbsp; Replace all <CODE>&quot;xxx&quot;</CODE>-s, optionally handling no matches</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#rplcxmplnext">GO</A></B></FONT>]</CODE> &nbsp; Replace next &quot;<CODE>xxx</CODE>&quot; (basic)</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#rplcxmplallbasic">GO</A></B></FONT>]</CODE> &nbsp; Replace all &quot;<CODE>xxx</CODE>&quot;-s in the document (basic)</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#rplcxmplallhnr">GO</A></B></FONT>]</CODE> &nbsp; Replace all &quot;<CODE>xxx</CODE>&quot;-s, <A HREF="#issuehnr">handling</A> no matches</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#rplcxmplallhnropt">GO</A></B></FONT>]</CODE> &nbsp; Replace all &quot;<CODE>xxx</CODE>&quot;-s, optionally handling no matches</LI>
 </UL></P>
 
 
 
-<A NAME="rplcxmplnext"/><H3><CODE>[<A HREF="#rplcxmpls">BACK</A>]</CODE> &nbsp; <U>Example: Replace the next <CODE>&quot;xxx&quot;</CODE> (basic implementation)</U></H3>
+<A NAME="rplcxmplnext"/><H3><CODE>[<A HREF="#rplcxmpls">BACK</A>]</CODE> &nbsp; <U>Example: Replace the next &quot;<CODE>xxx</CODE>&quot; (basic implementation)</U></H3>
 
-<P>This works if <CODE>&quot;xxx&quot;</CODE> exists, and the cursor is before it:</P>
+<P>This works if &quot;<CODE>xxx</CODE>&quot; exists, and the cursor is before it:</P>
 
 <PRE STYLE="background-color:#E1E1E1;"><!--xcfexample...START  //  (*File is empty. Create input.*){#insert zKeyPressFast}{#insert zzSnrXmplInputAThenZInRandomTxt}{#insert zTPGTDocTop}{#BALLOON -title Please wait... -text snr07rplcnextx}{#insert zSlk2KPSpeedSetToRequested}--><B><U>snr07rplcnextx</U></B>
 {#insert zFcsTPRplcDlgOpen}
@@ -708,9 +708,9 @@
    {#insert zRplcBtnFindThenRplc}
 {#insert zRplcDlgClose}<!--xcfexample...END  //  {#insert zBalDoneSlk2SelAllDel}--></PRE>
 
-<A NAME="rplcxmplallbasic"/><H3><CODE>[<A HREF="#rplcxmpls">BACK</A>]</CODE> &nbsp; <U>Example: Replace all <CODE>&quot;xxx&quot;</CODE>-s in the document (basic implementation)</U></H3>
+<A NAME="rplcxmplallbasic"/><H3><CODE>[<A HREF="#rplcxmpls">BACK</A>]</CODE> &nbsp; <U>Example: Replace all &quot;<CODE>xxx</CODE>&quot;-s in the document (basic implementation)</U></H3>
 
-<P>This works if <CODE>&quot;xxx&quot;</CODE> exists:</P>
+<P>This works if &quot;<CODE>xxx</CODE>&quot; exists:</P>
 
 <PRE STYLE="background-color:#E1E1E1;"><!--xcfexample...START  //  (*File is empty. Create input.*){#insert zKeyPressFast}{#insert zzSnrXmplInputAThenZInRandomTxt}{#BALLOON -title Please wait... -text snr08rplcallxs}{#insert zSlk2KPSpeedSetToRequested}--><B><U>snr08rplcallxs</U></B>
 {#insert zFcsTPRplcDlgOpen}
@@ -724,9 +724,9 @@
    {#insert zRplcBtnAllTD}
 {#insert zRplcDlgClose}<!--xcfexample...END  //  {#insert zBalDoneSlk2SelAllDel}--></PRE>
 
-<A NAME="rplcxmplallhnr"/><H3><CODE>[<A HREF="#rplcxmpls">BACK</A>]</CODE> &nbsp; <U>Example: Replace all <CODE>&quot;xxx&quot;</CODE>-s, handling no matches</U></H3>
+<A NAME="rplcxmplallhnr"/><H3><CODE>[<A HREF="#rplcxmpls">BACK</A>]</CODE> &nbsp; <U>Example: Replace all &quot;<CODE>xxx</CODE>&quot;-s, handling no matches</U></H3>
 
-<P>This works even if <CODE>&quot;xxx&quot;</CODE> is not found (it <A HREF="#issuehnr">handles</A> the potential of no-matches):</P>
+<P>This works even if &quot;<CODE>xxx</CODE>&quot; is not found (it <A HREF="#issuehnr">handles</A> the potential of no-matches):</P>
 
 <PRE STYLE="background-color:#E1E1E1;"><!--xcfexample...START  //  (*File is empty. Create input.*){#insert zKeyPressFast}{#insert zzSnrXmplInputAThenZInRandomTxt}{#BALLOON -title Please wait... -text snr09rplcallxshnr}{#insert zSlk2KPSpeedSetToRequested}--><B><U>snr09rplcallxshnr</U></B>
 {#insert zFcsTPRplcDlgOpen}
@@ -740,14 +740,14 @@
    {#insert zRplcBtnAllTDHnr}
 {#insert zRplcDlgClose}<!--xcfexample...END  //  {#insert zBalDoneSlk2SelAllDel}--></PRE>
 
-<P>In addition to the time it takes to do this extra &quot;handling&quot; step, the consequence of using the <CODE>&quot;Hnr&quot;</CODE>-version is an audible &quot;ding&quot; when the search-term is found, and two when not.</P>
+<P>In addition to the time it takes to do this extra &quot;handling&quot; step, the consequence of using the &quot;<CODE>Hnr</CODE>&quot;-version is an audible &quot;ding&quot; when the search-term is found, and two when not.</P>
 
 
-<A NAME="rplcxmplallhnropt"/><H3><CODE>[<A HREF="#rplcxmpls">BACK</A>]</CODE> &nbsp; <U>Example: Replace all <CODE>&quot;xxx&quot;</CODE>-s, <I>optionally</I> handling no matches</U></H3>
+<A NAME="rplcxmplallhnropt"/><H3><CODE>[<A HREF="#rplcxmpls">BACK</A>]</CODE> &nbsp; <U>Example: Replace all &quot;<CODE>xxx</CODE>&quot;-s, <I>optionally</I> handling no matches</U></H3>
 
 <P>This optionally <A HREF="#issuehnr">handles</A> the potential for no-matches, based on the value of <CODE>zvHNR_YES</CODE>. To<UL>
 	<LI>handle potential no-matches, set this <A HREF="../basics/xbnpe_phrase_types.html#variable">variable</A> to <CODE>''</CODE> (<I>nothing</I>--the empty-string).</LI>
-	<LI><I>not</I> handle potential no-matches--and therefore require at least one match--set this to <CODE>&quot;yes&quot;</CODE>. <I>Use this when it is <B>known</B> that there is at least one match. Choosing this will cause the process (the below example) to fail when there are no matches.</I></LI>
+	<LI><I>not</I> handle potential no-matches--and therefore require at least one match--set this to &quot;<CODE>yes</CODE>&quot;. <I>Use this when it is <B>known</B> that there is at least one match. Choosing this will cause the process (the below example) to fail when there are no matches.</I></LI>
 </UL></P>
 
 <PRE STYLE="background-color:#E1E1E1;"><!--xcfexample...START  //  (*File is empty. Create input.*){#insert zKeyPressFast}{#insert zzSnrXmplInputAThenZInRandomTxt}{#BALLOON -title Please wait... -text snr10rplcallxshnr}{#insert zSlk2KPSpeedSetToRequested}--><B><U>snr10rplcallxshnr</U></B>
@@ -818,7 +818,7 @@
 		<LI><CODE>zFFindDlgOpenViaAltS</CODE></LI>
 	</UL></LI>
 	<LI><B>Buttons and fields:</B><UL>
-		<LI><CODE>zFFindBtnDefaults[FilesOnly][SubDirsTgl][RAW]</CODE> &nbsp; &nbsp; <I>(<CODE>&quot;RAW&quot;</CODE> is only useable with another option)</I></LI>
+		<LI><CODE>zFFindBtnDefaults[FilesOnly][SubDirsTgl][RAW]</CODE> &nbsp; &nbsp; <I>(&quot;<CODE>RAW</CODE>&quot; is only useable with another option)</I></LI>
 		<LI><CODE>zFFindBtnFindSlp[250,1500,3000,5000]</CODE></LI>
 		<LI><CODE>zFFindField[Dir,FileType,What]xhsfib</CODE></LI>
 	</UL></LI>
@@ -851,7 +851,7 @@
 
 <P><B>Contents:</B><UL>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#fifxmplxsrp">GO</A></B></FONT>]</CODE> &nbsp; Find lines, duplicate search result, eliminate search-result metadata-text</LI>
-	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#fifxmplcurrfile">GO</A></B></FONT>]</CODE> &nbsp; Search the current file only, then restore original <CODE>&quot;In folder&quot;</CODE> and <CODE>&quot;In files&quot;</CODE> parameters</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#fifxmplcurrfile">GO</A></B></FONT>]</CODE> &nbsp; Search the current file only, then restore original &quot;<CODE>In folder</CODE>&quot; and &quot;<CODE>In files</CODE>&quot; parameters</LI>
 </UL></P>
 
 <P>Note that these examples will processes <I>all previous search results</I> if the special Search Results document happens to be open (see item three under &quot;<A HREF="#issues">Some other issues</A>&quot;). Also, the examples in this section require the <A HREF="../basics/pex_in_textpad.html#randomsettings">Search Results window to <B>not</B> be docked</A>.</P>
@@ -866,7 +866,7 @@
 </PRE>
 <A NAME="fifxmplxsrp"/><H2><CODE>[<A HREF="#fifxmpls">BACK</A>]</CODE> &nbsp; Find lines, duplicate search result, eliminate search-result metadata-text</H2>
 
-<P>Searches all <CODE>&quot;*.txt&quot;</CODE> files in a single directory (not sub-directories), obtaining all lines where the <I>first word in the line is at least six characters</I> in length. The search result text is then copied to a new file, and the<UL>
+<P>Searches all &quot;<CODE>*.txt</CODE>&quot; files in a single directory (not sub-directories), obtaining all lines where the <I>first word in the line is at least six characters</I> in length. The search result text is then copied to a new file, and the<UL>
 	<LI> <I>file-path-line-number prefix</I>,</LI>
 	<LI>&quot;Searching for: ...&quot; header, and</LI>
 	<LI>&quot;Found ... occurrance(s) in...&quot; footer</LI>
@@ -919,11 +919,11 @@ ghij klmn</PRE>
 <HR/>
 
 </PRE>
-<A NAME="fifxmplcurrfile"/><H2><CODE>[<A HREF="#fifxmpls">BACK</A>]</CODE> &nbsp; Search the current file only, then restore original <CODE>&quot;In folder&quot;</CODE> and <CODE>&quot;In files&quot;</CODE> parameters</H2>
+<A NAME="fifxmplcurrfile"/><H2><CODE>[<A HREF="#fifxmpls">BACK</A>]</CODE> &nbsp; Search the current file only, then restore original &quot;<CODE>In folder</CODE>&quot; and &quot;<CODE>In files</CODE>&quot; parameters</H2>
 
-<P>Use the find-in-files dialog to search the currently-open file only, for lines beginning with words at least six characters in length. After the search is complete, save the previous values of the <CODE>&quot;In folder&quot;</CODE> and <CODE>&quot;In files&quot;</CODE> parameters.</P>
+<P>Use the find-in-files dialog to search the currently-open file only, for lines beginning with words at least six characters in length. After the search is complete, save the previous values of the &quot;<CODE>In folder</CODE>&quot; and &quot;<CODE>In files</CODE>&quot; parameters.</P>
 
-<P><I>(I saw this suggested in the TextPad user-forum. I can't find the original post, or I'd thank that user. It would be useful to assign a key-command to <CODE>&quot;zFFindOpenForCurrFile&quot;</CODE> and another to <CODE>&quot;zFFindRestoreOrigDirFNmsClose_M_dirFnm&quot;</CODE>.)</I></P>
+<P><I>(I saw this suggested in the TextPad user-forum. I can't find the original post, or I'd thank that user. It would be useful to assign a key-command to &quot;<CODE>zFFindOpenForCurrFile</CODE>&quot; and another to &quot;<CODE>zFFindRestoreOrigDirFNmsClose_M_dirFnm</CODE>&quot;.)</I></P>
 
 <PRE STYLE="background-color:#E1E1E1;"><!--xcfexample...START  //  (*Input files already exist.*){#SETPHRASE -description zvDIRECTORY -content {#insert zXPROOT_DIR_xbnpeDocRoot}search_and_replace\snr_example_input_files\fif\ -autotext zvDIRECTORY -folder ctvv_folder}{#SETPHRASE -description zvFILE_NAME -content abcd.txt -autotext zvFILE_NAME -folder ctvv_folder}{#insert zDirFileOpen_M_dirFnm}{#BALLOON -title Please wait... -text snr12fifthisfile}{#insert zSlk2KPSpeedSetToRequested}--><B><U>snr12fifthisfile</U></B>
 {#insert zCopySetCurrDirFileNameREoffDown}
@@ -937,7 +937,7 @@ ghij klmn</PRE>
 {#insert zFindDlgCloseRE}(*&lt;--Find!*)
 <!--xcfexample...END  //  {#insert zBalDoneSlk2}(*Close search results:*){#insert zFcsTPFileClose}{#sleep 1000}(*Input file:*){#insert zFcsTPFileClose}--></PRE>
 
-<P><I><B>Warning:</B> TextPad does not commit changes to the dir/file parameters <B>unless a search is done</B>. Although <CODE>&quot;zFFindRestoreOrigDirFNmsClose_M_dirFnm&quot;</CODE> successfully restores the saved parameter values, because no search is done before closing the dialog, they revert back the <U>this-file</U> values.</I></P>
+<P><I><B>Warning:</B> TextPad does not commit changes to the dir/file parameters <B>unless a search is done</B>. Although &quot;<CODE>zFFindRestoreOrigDirFNmsClose_M_dirFnm</CODE>&quot; successfully restores the saved parameter values, because no search is done before closing the dialog, they revert back the <U>this-file</U> values.</I></P>
 
 <PRE>
 
@@ -957,7 +957,7 @@ ghij klmn</PRE>
 <P><UL>
 	<LI><CODE>zGTDlgGoClose</CODE></LI>
 	<LI><CODE>zGT[DlgOpen]Flag[Bookmark,Byte,Column,Line,Page][Extend]</CODE></LI>
-	<LI><CODE>zGTDlgOpen[[Bookmark,Byte,Column,Line,Page]][Extend]Go_M_gtn</CODE> &nbsp; &nbsp; <I>(Needs <CODE>zvGT_REL_NUM</CODE>. Example values: <CODE>&quot;30&quot;</CODE>, <CODE>&quot;+5&quot;</CODE>, <CODE>&quot;-25&quot;</CODE>)</I></LI>
+	<LI><CODE>zGTDlgOpen[[Bookmark,Byte,Column,Line,Page]][Extend]Go_M_gtn</CODE> &nbsp; &nbsp; <I>(Needs <CODE>zvGT_REL_NUM</CODE>. Example values: &quot;<CODE>30</CODE>&quot;, &quot;<CODE>+5</CODE>&quot;, &quot;<CODE>-25</CODE>&quot;)</I></LI>
 	<LI><CODE>zGT[DlgOpen]FlagExtend[RAW]</CODE></LI>
 	<LI><CODE>zTPGTDlgOpen</CODE>**</LI>
 	<LI><CODE>zGTDlgOpenViaAltS</CODE></LI>

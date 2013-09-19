@@ -11,14 +11,14 @@
 
 <H1>XBNPE-Key-Press (XKP) project</H2>
 
-<P>An XBNPE-key-press (XKP) is a wrapper for a normal PhraseExpress key-press. An &quot;xbn-key-press&quot; or &quot;x-key-press&quot; provides for code that is both easier to read, and can be easily debugged by changing its <A HREF="../devpex/debugging.html#kpspeed">execution speed</A> at any time. Since the <A HREF="../generic/wishes.html#inscount"><CODE>&quot;insert&quot;</CODE> tag does not allow for the <CODE>&quot;-count&quot;</CODE> parameter</A>, the XKP project only provides for individual key-presses (<CODE>zUP</CODE> and not <CODE>zUP3</CODE>).</P>
+<P>An XBNPE-key-press (XKP) is a wrapper for a normal PhraseExpress key-press. An &quot;xbn-key-press&quot; or &quot;x-key-press&quot; provides for code that is both easier to read, and can be easily debugged by changing its <A HREF="../devpex/debugging.html#kpspeed">execution speed</A> at any time. Since the <A HREF="../generic/wishes.html#inscount">&quot;<CODE>insert</CODE>&quot; tag does not allow for the &quot;<CODE>-count</CODE>&quot; parameter</A>, the XKP project only provides for individual key-presses (<CODE>zUP</CODE> and not <CODE>zUP3</CODE>).</P>
 
-<P>An x-key-presses can be modified in any manner, using <CODE>&quot;CTRL&quot;</CODE>, <CODE>&quot;ALT&quot;</CODE>, <CODE>&quot;SHIFT&quot;</CODE>, and, optionally <CODE>&quot;LWIN&quot;</CODE> or <CODE>&quot;RWIN&quot;</CODE>. For example:
+<P>An x-key-presses can be modified in any manner, using &quot;<CODE>CTRL</CODE>&quot;, &quot;<CODE>ALT</CODE>&quot;, &quot;<CODE>SHIFT</CODE>&quot;, and, optionally &quot;<CODE>LWIN</CODE>&quot; or &quot;<CODE>RWIN</CODE>&quot;. For example:
 <BR> &nbsp; &nbsp; <CODE>zCSpUP</CODE>
 <BR>which is equivalent to
 <BR> &nbsp; &nbsp; <CODE>{#CTRL {#SHIFT {#UP}}}{#insert zTSlp}</CODE></P>
 
-<P>For a listing of all available keys, see <CODE>'<A HREF="../devpex/xbnpe_ddmenus.html#xh">xh</A>cckp'</CODE>. For administrator (build) related processes for XKP project, see <CODE>&quot;xhcck&quot;</CODE>.</P>
+<P>For a listing of all available keys, see <CODE>'<A HREF="../devpex/xbnpe_ddmenus.html#xh">xh</A>cckp'</CODE>. For administrator (build) related processes for XKP project, see &quot;<CODE>xhcck</CODE>&quot;.</P>
 
 <P><B>Contents:</B><UL>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="xkp_zup.html#zup">GO</A></B></FONT>]</CODE> &nbsp; Detailed example: <CODE>zUP</CODE></LI>
@@ -39,16 +39,16 @@
 <HR/>
 
 </PRE>
-<a name="rwininstall"/><H2>[<A HREF="#top">top</A>] &nbsp; XBNPE-Key-Presses: Installing <CODE>&quot;RWIN&quot;</CODE> modifiers</H2>
+<a name="rwininstall"/><H2>[<A HREF="#top">top</A>] &nbsp; XBNPE-Key-Presses: Installing &quot;<CODE>RWIN</CODE>&quot; modifiers</H2>
 
-<P>By default, <CODE>&quot;LWIN&quot;</CODE> modifiers are <A HREF="xkp_zup.html#1mod">installed-but-disabled</A>. <CODE>&quot;RWIN&quot;</CODE> modifiers are not installed. To install them, follow these steps:<OL>
+<P>By default, &quot;<CODE>LWIN</CODE>&quot; modifiers are <A HREF="xkp_zup.html#1mod">installed-but-disabled</A>. &quot;<CODE>RWIN</CODE>&quot; modifiers are not installed. To install them, follow these steps:<OL>
 	<LI>Duplicate the entire <CODE>LWIN</CODE> branch, by right-clicking on
 		<BR> &nbsp; &nbsp; <CODE>XBN-PhraseExpress/XBNPE Key-presses (XKP) & basic utilities/XBNPE Key-presses (XKP)/x-key-presses: *Only* LWin modifiers</CODE>
-		<BR>and selecting <CODE>&quot;Duplicate&quot;</CODE>.</LI>
+		<BR>and selecting &quot;<CODE>Duplicate</CODE>&quot;.</LI>
 	<LI>Make the following replacements on the new branch:<OL>
-		<LI><CODE>&quot;LWIN&quot;</CODE> <CODE>--&gt;</CODE> <CODE>&quot;RWIN&quot;</CODE>,</LI>
-		<LI><CODE>&quot;Lwin&quot;</CODE> <CODE>--&gt;</CODE> <CODE>&quot;Rwin&quot;</CODE>, and</LI>
-		<LI><CODE>&quot;Lp&quot;</CODE> <CODE>--&gt;</CODE> <CODE>&quot;Rp&quot;</CODE>.</LI>
+		<LI>&quot;<CODE>LWIN</CODE>&quot; <CODE>--&gt;</CODE> &quot;<CODE>RWIN</CODE>&quot;,</LI>
+		<LI>&quot;<CODE>Lwin</CODE>&quot; <CODE>--&gt;</CODE> &quot;<CODE>Rwin</CODE>&quot;, and</LI>
+		<LI>&quot;<CODE>Lp</CODE>&quot; <CODE>--&gt;</CODE> &quot;<CODE>Rp</CODE>&quot;.</LI>
 	</OL>Replacement settings:<UL>
 		<LI><B>Fields checked:</B> Description, phrase-body, autotext. (Not hotkey)</LI>
 		<LI><B>Other checked settings:</B> Match case, Include sub-folders.</LI>
@@ -114,14 +114,14 @@
 <BR> &nbsp; &nbsp; <CODE>!@#$%^&*()</CODE>
 <BR>This file contains all the special characters on the keyboard for which you do NOT press shift. Hence, none of the following characters are in this project:
 <BR> &nbsp; &nbsp; <CODE>&gt;&lt;&quot;_+?}{</CODE>
-<BR>Also note that <CODE>ENTER</CODE>, <CODE>TAB</CODE>, and <CODE>SPACE</CODE> are in the <CODE>&quot;raw_command_keys&quot;</CODE> input file, because they are not compatible with
-<BR> &nbsp; &nbsp; <CODE>&quot;-chars [CHAR]&quot;</CODE></P>
+<BR>Also note that <CODE>ENTER</CODE>, <CODE>TAB</CODE>, and <CODE>SPACE</CODE> are in the &quot;<CODE>raw_command_keys</CODE>&quot; input file, because they are not compatible with
+<BR> &nbsp; &nbsp; &quot;<CODE>-chars [CHAR]</CODE>&quot;</P>
 
 
 <P><B>Executing the build process:</B> <CODE>buildxkp</CODE><OL>
 	<LI>Delete ALL files from the above output directories (only delete files, not directories)</LI>
 	<LI>Open a new document in TextPad, and type
-	<BR> &nbsp; &nbsp; <CODE>&quot;buildxkp`&quot;</CODE>.</LI>
+	<BR> &nbsp; &nbsp; &quot;<CODE>buildxkp`</CODE>&quot;.</LI>
 	<LI>You are asked which modifier-types should be generated:<UL>
 		<LI>Non-LWin-modified phrases only,</LI>
 		<LI>LWin-modified phrases only, or</LI>
@@ -255,7 +255,7 @@
 
 	<P/><IMG SRC="../images/basics/simulate_a_keystroke.jpg" BORDER="1"/></LI>
 	<LI>Press <CODE>[OK]</CODE>, and the &quot;raw&quot; PhraseExpress key-press is printed to the phrase's body.</LI>
-	<LI>Alternatively (assuming the <A HREF="xkp.html">XKP project</A> is fully installed), you could use one of the <A HREF="../devpex/xpc.html#keypress"><CODE>&quot;kr...&quot;</CODE> phrase-creators</A> in the  <A HREF="../devpex/xpc.html">XBNPE-Phrase-creator (PCC) project</A></LI>
+	<LI>Alternatively (assuming the <A HREF="xkp.html">XKP project</A> is fully installed), you could use one of the <A HREF="../devpex/xpc.html#keypress">&quot;<CODE>kr...</CODE>&quot; phrase-creators</A> in the  <A HREF="../devpex/xpc.html">XBNPE-Phrase-creator (PCC) project</A></LI>
 </OL></P>
 
 

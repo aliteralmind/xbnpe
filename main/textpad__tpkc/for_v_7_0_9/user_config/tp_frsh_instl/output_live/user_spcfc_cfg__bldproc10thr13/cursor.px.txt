@@ -43,7 +43,7 @@ zTpkcLineUpExtendNbsKcEsc1	\\\{#insert zSpUP\\\}\\\{#sleep 2\\\}	zTpkcLineUpExte
 zTpkcPageDownNbsKcCount	1	zTpkcPageDownNbsKcCount
 zTpkcPageDownNbsKcEsc1	\\\{#insert zPGDN\\\}\\\{#sleep 10\\\}	zTpkcPageDownNbsKcEsc1
 zTpkcPageDownExtendNbsKcCount	1	zTpkcPageDownExtendNbsKcCount
-zTpkcPageDownExtendNbsKcEsc1	\\\{#insert zSpPGDN\\\}\\\{#sleep 20\\\}	zTpkcPageDownExtendNbsKcEsc1
+zTpkcPageDownExtendNbsKcEsc1	\\\{#insert zCpPGDN\\\}\\\{#sleep 20\\\}	zTpkcPageDownExtendNbsKcEsc1
 zTpkcPageLeftNbsKcCount	1	zTpkcPageLeftNbsKcCount
 zTpkcPageLeftNbsKcEsc1	\\\{#insert zCpPGUP\\\}\\\{#sleep 10\\\}	zTpkcPageLeftNbsKcEsc1
 zTpkcPageLeftExtendNbsKcCount	1	zTpkcPageLeftExtendNbsKcCount

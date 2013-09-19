@@ -12,7 +12,7 @@
 <H1>My most important PhraseExpress enhancement requests</H1>
 
 <P>Here are the enhancement requests I consider most important to PhraseExpress development. Many of them would eliminate some of the <A HREF="troubleshooting.html">problems</A> you may encounter.<UL>
-	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#inscount">GO</A></B></FONT>]</CODE> &nbsp; Allow for <CODE>&quot;-count&quot;</CODE> inside <CODE>{#insert ...}</CODE></LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#inscount">GO</A></B></FONT>]</CODE> &nbsp; Allow for &quot;<CODE>-count</CODE>&quot; inside <CODE>{#insert ...}</CODE></LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#escapestr">GO</A></B></FONT>]</CODE> &nbsp; Escape strings</LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#ltrl">GO</A></B></FONT>]</CODE> &nbsp; Get the un-interpreted code from a phrase</LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#strict">GO</A></B></FONT>]</CODE> &nbsp; Optional strict-execution mode</LI>
@@ -27,7 +27,7 @@
 <HR/>
 
 </PRE>
-<a name="inscount"/><H3>[<A HREF="#top">top</A>] &nbsp; Pex enhancement request: Allow for <CODE>&quot;-count&quot;</CODE> inside <CODE>{#insert ...}</CODE></H3>
+<a name="inscount"/><H3>[<A HREF="#top">top</A>] &nbsp; Pex enhancement request: Allow for &quot;<CODE>-count</CODE>&quot; inside <CODE>{#insert ...}</CODE></H3>
 
 <P>A very helpful shortcut for
 <BR> &nbsp; &nbsp; <CODE>{#LOOP {#insert zSomePhrase} -count 3}</CODE>
@@ -75,7 +75,7 @@
 
 <P>Calling
 <BR> &nbsp; &nbsp; <CODE>{#insert zPrintSomeStuff}</CODE>
-<BR>results in <CODE>&quot;xyz&quot;</CODE></P>
+<BR>results in &quot;<CODE>xyz</CODE>&quot;</P>
 
 <P>There is no current way to display a phrases uninterpreted code.</P>
 
@@ -102,14 +102,14 @@
 
 <H3>Global setting, local override</H3>
 
-<P>This implementation is only possible if it would not result in dramatic slowdown. If it could indeed be fast, then I would personally always turn it on (<CODE>&quot;strict=yes&quot;</CODE>).</P>
+<P>This implementation is only possible if it would not result in dramatic slowdown. If it could indeed be fast, then I would personally always turn it on (&quot;<CODE>strict=yes</CODE>&quot;).</P>
 
 <P>This strictness would be overridable <I>only from within <B>individual</B> phrase-calls</I>:
 <BR> &nbsp; &nbsp; <CODE>{#insert -nostrict zPhraseThatMayOrMayNotExist}</CODE></P>
 
 <H3>Local setting only</H3>
 
-<P>If the global implementation is not possible (or is simply set to <CODE>&quot;strict=no&quot;</CODE>), then strictness could be turned on in a single phrase, by placing these at the beginning and end:
+<P>If the global implementation is not possible (or is simply set to &quot;<CODE>strict=no</CODE>&quot;), then strictness could be turned on in a single phrase, by placing these at the beginning and end:
 <BR> &nbsp; &nbsp; <CODE>{#STRICT -on}</CODE>
 <BR>or
 <BR> &nbsp; &nbsp; <CODE>{#STRICT -off}</CODE></P>
@@ -126,7 +126,7 @@
 
 <P>This is secondary, although very complementary to the request for <A HREF="#strict">strict mode</A>.</P>
 
-<P>When in PhraseExpress and viewing a <I>single</I> phrase, I wish I could push a <CODE>&quot;[Validate Calls]&quot;</CODE> button, which would run through all this phrases code. If any call is referring to a phrase that does not exist, it would be highlighted it in a bright and configurable color.</P>
+<P>When in PhraseExpress and viewing a <I>single</I> phrase, I wish I could push a &quot;<CODE>[Validate Calls]</CODE>&quot; button, which would run through all this phrases code. If any call is referring to a phrase that does not exist, it would be highlighted it in a bright and configurable color.</P>
 
 <PRE>
 
@@ -135,7 +135,7 @@
 </PRE>
 <a name="cmtmbx"/><H3>[<A HREF="#top">top</A>] &nbsp; Pex enhancement request: Allow comments in a <CODE>MSGBOX</CODE>, <CODE>BALLOON</CODE>, and an <CODE>INSERTFILE</CODE>'s path</H3>
 
-<P>Currently, when a comment is part of the <CODE>&quot;-text&quot;</CODE> field, in either a <CODE>MSGBOX</CODE> or <CODE>BALLOON</CODE>, it is literally-displayed.</P>
+<P>Currently, when a comment is part of the &quot;<CODE>-text</CODE>&quot; field, in either a <CODE>MSGBOX</CODE> or <CODE>BALLOON</CODE>, it is literally-displayed.</P>
 
 <P><CODE STYLE="background-color:#E1E1E1;">{#MSGBOX -head Hello -text Hello there (*A comment*)}</CODE></P>
 

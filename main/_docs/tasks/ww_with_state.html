@@ -101,7 +101,7 @@
 
 <P>It is possible to prompt the user for word-wrap state every <I>n-th</I> time a process is run, such as <I>every</I> time, or every fifth time. The default is every time. To change this, use
 <BR> &nbsp; &nbsp; <CODE>swwrc</CODE>
-<BR>(the <CODE>&quot;wt&quot;</CODE> action tells you both the current state-check count, and reminds of you the <CODE>swwrc</CODE> shortcut to change the count). Whenever the actual word-wrap state is manually set by the user (such as with <CODE>&quot;wn&quot;</CODE> or <CODE>&quot;wf&quot;</CODE>), this count is reset (if it was <CODE>&quot;2/4&quot;</CODE>, for checking every fourth time, it is reset to <CODE>&quot;0/4&quot;</CODE>).</P>
+<BR>(the &quot;<CODE>wt</CODE>&quot; action tells you both the current state-check count, and reminds of you the <CODE>swwrc</CODE> shortcut to change the count). Whenever the actual word-wrap state is manually set by the user (such as with &quot;<CODE>wn</CODE>&quot; or &quot;<CODE>wf</CODE>&quot;), this count is reset (if it was &quot;<CODE>2/4</CODE>&quot;, for checking every fourth time, it is reset to &quot;<CODE>0/4</CODE>&quot;).</P>
 
 <P><I>Only processes needing to prompt the user for word-wrap state (whether every time or every tenth time) should use these functions.</I> Processes that do not ever want to prompt the user for word-wrap state should use functions elsewhere in this document.</P>
 
@@ -126,7 +126,7 @@
 
 <P>Word-wrap state is stored in the <A HREF="../basics/xbnpe_phrase_types.html#variable">variable</A>
 <BR> &nbsp; &nbsp; <CODE>zvWORD_WRAP_ON</CODE>
-<BR>(if on, it's equal to <CODE>&quot;on&quot;</CODE> [without the quotes]. If off: <CODE>&quot;&quot;</CODE>)</P>
+<BR>(if on, it's equal to &quot;<CODE>on</CODE>&quot; [without the quotes]. If off: <CODE>&quot;&quot;</CODE>)</P>
 
 <P>To toggle word-wrap and update this state, use either
 <BR> &nbsp; &nbsp; <CODE>zToggleWW</CODE>

@@ -12,7 +12,7 @@
 
 <H1>XBNPE: TextPad built-in command (TPKC-project)</H1>
 
-<P>The TextPad built-in command (TPKC) project is what PhraseExpress uses to communicate with TextPad. Using the TPKC project gives your PhraseExpress code direct access to its more than three hundred &quot;built in&quot; commands (which, in turn, facilitates <A HREF="../../tasks/file_manipulation.html">file manipulation</A> and <A HREF="../../tasks/snr.html">search and replace</A>).</P>
+<P>The TextPad built-in command (TPKC) project is what PhraseExpress uses to communicate with TextPad. Using the TPKC project gives your PhraseExpress code direct access to its more than three hundred &quot;built in&quot; commands (which, in turn, facilitates <A HREF="../../tasks/file_manipulation.html">file manipulation</A> and <A HREF="../../tasks/snr.html">search and replace</A>, among other functionality).</P>
 
 <P>The TPKC-project must be installed (as part of the overall XBN-PhraseExpress <A HREF="../../install.html">installation</A>), and then &quot;built&quot;. The TPKC user-build-process takes an hour, but requires minimal user-interaction, and is largely a one-time-only process--and <A HREF="tpkc_user_dir.html#remoterequest"><I>I can run it for you</I>!</A>. (Also, if you just installed TextPad and have no custom key-commands, then you <A HREF="../../install2.html#14atudn">do not need</A> to run it at all.) Aside from the XBNPE-key-presses (<A HREF="../xkp.html">XKP</A>) project, <A HREF="../tpbs.html#depend">no other</A> XBN-PhraseExpress project can function until the TPKC user-build-process is complete.</P>
 
@@ -125,9 +125,13 @@
 </PRE>
 <A NAME="userbuild"/><H2><CODE><A HREF="#top">top</A> &nbsp; &nbsp; [PREV / <A HREF="#userbuild01">NEXT</A>]</CODE> &nbsp; The TPKC user-build process: Step-by-step</H2>
 
-<P><B>Requirements:</B> This section describes the <A HREF="../../install2.html#15tpbs">final step</A> (number 3 in the list) of the overall XBN-PhraseExpress installation process. This section assumes that you have never run the TPKC-build process before--or you wish to do a full-refresh of your TextPad key-command configuration.</P>
+<P><B>Requirements:</B> This section describes the <A HREF="../../install2.html#15tpbs">final step</A> (number 3 in the list) of the overall XBN-PhraseExpress installation process. This section assumes that<UL>
+	<LI>You have never run the TPKC-build process before, or</LI>
+	<LI>You wish to do a full-refresh of your TextPad key-command configuration, or</LI>
+	<LI>There is a major new TextPad version released, <I>which added, deleted, or fundamentally changed</I> its built-in command-set.</LI>
+</UL></P>
 
-<P><I>If your <A HREF="tpkc_user_dir.html#tudn">TPKC-user-dir name</A> is <CODE>&quot;tp_frsh_instl&quot;</CODE>, then you do not need to run this process at all. <A HREF="../../install2.html#14atudn">It has already been done for you</A>.)</I></P>
+<P><I>If your <A HREF="tpkc_user_dir.html#tudn">TPKC-user-dir name</A> is &quot;<CODE>tp_frsh_instl</CODE>&quot;, then you do not need to run this process at all. <A HREF="../../install2.html#14atudn">It has already been done for you</A>.)</I></P>
 
 <HR style="margin-left:0px" WIDTH="25%"/>
 
@@ -162,7 +166,7 @@
 	<LI>deleting output from a previous build,</LI>
 	<LI>actually running the process, and then</LI>
 	<LI><A HREF="../phrase_file_import1.html">importing</A> all output <A HREF="../phrase_file.html#fformat">phrase-files</A></LI>
-</OL>Note that the build-process in this video is in &quot;<A HREF="master_cfg_vars.html#goodtestbuild">test mode</A>&quot;. It is an <I>actual</I> build, but it only processes a small subset of commands. Since your build is in &quot;live mode&quot;, it will take significantly longer.</P>
+</OL>Note that the build-process in this video is in &quot;<A HREF="master_cfg_vars.html#goodtestbuild">test mode</A>&quot;. It is an <I>actual</I> build, but only processes a small subset of commands. Since your build is in &quot;live mode&quot;, it will take significantly longer.</P>
 
 <PRE>
 
@@ -187,12 +191,13 @@
 
 <H1>DONE.</H1>
 
+<P>Now that the TPKC user-build-process is complete, any further <A HREF="user_cmd_cfg.html#assignkcs">changes</A> to your key-commands is now done through your user-specific command configuration.</P>
+
 <H3>Video: The second-half of the TPKC-build-process (test-mode)</H3>
 
 <H2>...TO-DO...</H2>
 
 <P>This video demonstrates the second-half of the TPKC-build process, including...</P>
-
 <PRE>
 
 <HR/>
@@ -251,27 +256,27 @@
 	<TD><CODE>zTPFFindDlgOpen</CODE></TD>
 	<TD><CODE>SearchFiles</CODE></TD>
 	<TD ALIGN="center"><CODE>Search</CODE></TD>
-	<TD>Opens the <CODE>&quot;Find In Files&quot;</CODE> dialog.</TD>
+	<TD>Opens the &quot;<CODE>Find In Files</CODE>&quot; dialog.</TD>
 </TR><TR>
 	<TD><CODE>zTPFileOpen</CODE></TD>
 	<TD><CODE>FileOpen</CODE></TD>
 	<TD ALIGN="center"><CODE>File</CODE></TD>
-	<TD>Opens the <CODE>&quot;Open file(s)&quot;</CODE> dialog.</TD>
+	<TD>Opens the &quot;<CODE>Open file(s)</CODE>&quot; dialog.</TD>
 </TR><TR>
 	<TD><CODE>zTPFindDlgOpen</CODE></TD>
 	<TD><CODE>SearchFind</CODE></TD>
 	<TD ALIGN="center"><CODE>Search</CODE></TD>
-	<TD>Opens the <CODE>&quot;Find&quot;</CODE> dialog</TD>
+	<TD>Opens the &quot;<CODE>Find</CODE>&quot; dialog</TD>
 </TR><TR>
 	<TD><CODE>zTPFileManager</CODE></TD>
 	<TD><CODE>FileManage</CODE></TD>
 	<TD ALIGN="center"><CODE>File</CODE></TD>
-	<TD>Opens the <CODE>&quot;Manage Files&quot;</CODE> dialog.</TD>
+	<TD>Opens the &quot;<CODE>Manage Files</CODE>&quot; dialog.</TD>
 </TR><TR>
 	<TD><CODE>zTPFileQOpen</CODE></TD>
 	<TD><CODE>FileQuickOpen</CODE></TD>
 	<TD ALIGN="center"><CODE>File</CODE></TD>
-	<TD>Opens the <CODE>&quot;Quick Open File&quot;</CODE> dialog.</TD>
+	<TD>Opens the &quot;<CODE>Quick Open File</CODE>&quot; dialog.</TD>
 </TR><TR>
 	<TD><CODE>zTPFindNext</CODE></TD>
 	<TD><CODE>SearchFindNext</CODE></TD>
@@ -281,17 +286,17 @@
 	<TD><CODE>zTPGTDlgOpen</CODE></TD>
 	<TD><CODE>SearchGoto</CODE></TD>
 	<TD ALIGN="center"><CODE>Search</CODE></TD>
-	<TD>Opens the <CODE>&quot;Go To&quot;</CODE> dialog.</TD>
+	<TD>Opens the &quot;<CODE>Go To</CODE>&quot; dialog.</TD>
 </TR><TR>
 	<TD><CODE>zTPPrefsDlgOpen</CODE></TD>
 	<TD><CODE>Preferences</CODE></TD>
 	<TD ALIGN="center"><CODE>Configure</CODE></TD>
-	<TD>Opens the <CODE>&quot;Preferences&quot;</CODE> dialog.</TD>
+	<TD>Opens the &quot;<CODE>Preferences</CODE>&quot; dialog.</TD>
 </TR><TR>
 	<TD><CODE>zTPRplcDlgOpen</CODE></TD>
 	<TD><CODE>SearchReplace</CODE></TD>
 	<TD ALIGN="center"><CODE>Search</CODE></TD>
-	<TD>Opens the <CODE>&quot;Replace&quot;</CODE> dialog</TD>
+	<TD>Opens the &quot;<CODE>Replace</CODE>&quot; dialog</TD>
 </TR></TABLE></P>
 
 

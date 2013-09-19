@@ -11,7 +11,7 @@
 
 <H1>XBNPE-Phrase-creator drop-down-menu utilities (PMDM)</H2>
 
-<P>The PMDM-project is a set of utilites for creating and maintaining <A HREF="../devpex/xpc.html">phrase-creator</A> drop-down-menus. A phrase-creator drop-down-menu is a heirarchical listing of all the phrases made available by one or more projects. Clicking on one prints a phrase-call to it. Specifically, the <A HREF="../devpex/xbnpe_ddmenus.html#xh">XBNPE <CODE>&quot;xh...&quot;</CODE> drop-down menu</A> is created with these utilities.</P>
+<P>The PMDM-project is a set of utilites for creating and maintaining <A HREF="../devpex/xpc.html">phrase-creator</A> drop-down-menus. A phrase-creator drop-down-menu is a heirarchical listing of all the phrases made available by one or more projects. Clicking on one prints a phrase-call to it. Specifically, the <A HREF="../devpex/xbnpe_ddmenus.html#xh">XBNPE &quot;<CODE>xh...</CODE>&quot; drop-down menu</A> is created with these utilities.</P>
 
 <P><B>Contents:</B><UL>
 
@@ -23,14 +23,14 @@
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#static">GO</A></B></FONT>]</CODE> &nbsp; One ddmenu, defined in many locations</LI>
 </UL></P>
 
-<P>For a listing of all available phrases in the PMDM project, see <CODE>&quot;xhpm&quot;</CODE>.</P>
+<P>For a listing of all available phrases in the PMDM project, see &quot;<CODE>xhpm</CODE>&quot;.</P>
 
 <HR/>
 
 </PRE>
 <a name="static"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; One ddmenu, defined in many locations</H2>
 
-<P>There is only <I>one</I> <CODE>&quot;xh...&quot;</CODE> phrase-creator menu, despite its pieces being defined in many locations throughout XBN-PhraseExpress. The only thing linking these items together is its autotexts.</P>
+<P>There is only <I>one</I> &quot;<CODE>xh...</CODE>&quot; phrase-creator menu, despite its pieces being defined in many locations throughout XBN-PhraseExpress. The only thing linking these items together is its autotexts.</P>
 
 <P>This in one file:</P>
 
@@ -57,17 +57,17 @@ Functions the same as these phrases split into two files:
 	<LI><CODE>'c'</CODE> only transforms command lines.</LI>
 	<LI><CODE>'a'</CODE> only transforms action lines.</LI>
 	<LI><CODE>'v'</CODE> only transforms variable lines.</LI>
-</UL>The <B><CODE>&quot;fidmbt&quot;</CODE></B> process reverses this transformation (changes ready-to-import phrases back to <CODE>'.'</CODE>-s), and also has the same [c,a,v] options.</P>
+</UL>The <B>&quot;<CODE>fidmbt</CODE>&quot;</B> process reverses this transformation (changes ready-to-import phrases back to <CODE>'.'</CODE>-s), and also has the same [c,a,v] options.</P>
 
-<P><B>Complete syntax:</B> <CODE>&quot;fidmbsyn&quot;</CODE></P>
+<P><B>Complete syntax:</B> &quot;<CODE>fidmbsyn</CODE>&quot;</P>
 
 <H3><U><CODE>pidd*</CODE></U></H3>
 
-<P>Transforms one-or-more state-2 ddmenu-files to <A HREF="#ddf3of3">state-3</A>. See <CODE>&quot;piddsyn&quot;</CODE> for comprehensive syntax.</P>
+<P>Transforms one-or-more state-2 ddmenu-files to <A HREF="#ddf3of3">state-3</A>. See &quot;<CODE>piddsyn</CODE>&quot; for comprehensive syntax.</P>
 
-<P><I>As a convenience, this also asks if <CODE>&quot;fidmb&quot;</CODE> should be run on every file, therefore transforming state-1 ddmenu-files directly into state-3.</I></P>
+<P><I>As a convenience, this also asks if &quot;<CODE>fidmb</CODE>&quot; should be run on every file, therefore transforming state-1 ddmenu-files directly into state-3.</I></P>
 
-<P><B>Complete syntax:</B> <CODE>&quot;piddsyn&quot;</CODE></P>
+<P><B>Complete syntax:</B> &quot;<CODE>piddsyn</CODE>&quot;</P>
 
 <H3><U><CODE>gtddm</CODE></U></H3>
 
@@ -77,14 +77,14 @@ Functions the same as these phrases split into two files:
 
 <P>Intended for use in a ddmenu file, although may be used in any phrase-file. Calling this bookmarks all &quot;properly-formatted&quot; phrases, where a properly-formatted is defined in the most generic sense:
 <BR> &nbsp; &nbsp; start-of-line, indentation, text, tab, text, tab, text, end-of-line
-<BR>While this is useable in normal (unindented) phrase-files, the more strictly-formatted <CODE>&quot;mpfpl&quot;</CODE> is recommended in its place.</P>
+<BR>While this is useable in normal (unindented) phrase-files, the more strictly-formatted &quot;<CODE>mpfpl</CODE>&quot; is recommended in its place.</P>
 
-<P>To validate all phrases in <I>all open documents</I>, use the <CODE>&quot;[a]&quot;</CODE> option: <CODE>maixbxbxa</CODE>.</P>
+<P>To validate all phrases in <I>all open documents</I>, use the &quot;<CODE>[a]</CODE>&quot; option: <CODE>maixbxbxa</CODE>.</P>
 <H3><U><CODE>ddm[p]fsc</CODE></U></H3>
 
-<P><B><CODE>&quot;ddmfsc&quot;</CODE>:</B> Prints a blank <A HREF="#ddmfmarker">ddmenu-file marker</A>.</P>
+<P><B>&quot;<CODE>ddmfsc</CODE>&quot;:</B> Prints a blank <A HREF="#ddmfmarker">ddmenu-file marker</A>.</P>
 
-<P><B><CODE>&quot;ddmpfsc&quot;</CODE>:</B> Prints a blank <A HREF="#ddmpfmarker">ddmenu phrase-file marker</A>.</P>
+<P><B>&quot;<CODE>ddmpfsc</CODE>&quot;:</B> Prints a blank <A HREF="#ddmpfmarker">ddmenu phrase-file marker</A>.</P>
 
 
 
@@ -103,7 +103,7 @@ Functions the same as these phrases split into two files:
 <BR> &nbsp; &nbsp; <CODE>zzTpCmdAbrv1C[Nm]_M_cmdm	\\\{#insert <B><U>zzTpCmdAbrv1C_M_cmdm</U></B>\\\}	xhtkm</CODE>
 <BR>When selecting this item, it prints
 <BR> &nbsp; &nbsp; <CODE>{#insert zzTpCmdAbrv1C_M_cmdm}</CODE>
-<BR>The <CODE>&quot;[Nm]&quot;</CODE> simply indicates that, to get the <I>name</I> of the abbreviation <I>phrase</I> (instead of the abbreviation itself), add <CODE>&quot;Nm&quot;</CODE> immediately before the first underscore.</P>
+<BR>The &quot;<CODE>[Nm]</CODE>&quot; simply indicates that, to get the <I>name</I> of the abbreviation <I>phrase</I> (instead of the abbreviation itself), add &quot;<CODE>Nm</CODE>&quot; immediately before the first underscore.</P>
 
 <P>Here is that ddmenu-item phrase in <A HREF="#state1of3">state-1</A>:</P>
 <PRE STYLE="background-color:#E1E1E1;">zzTpCmdAbrv1C[Nm]_M_cmdm	.	xhtkm</PRE>
@@ -135,11 +135,11 @@ Functions the same as these phrases split into two files:
 
 <P>Clicking on a command ddmenu-item prints out a call to it. The majority of items in a phrase-creator-ddmenu are commands. <I>(For general information on the command phrase-type, see <CODE><A HREF="../basics/xbnpe_phrase_types.html#command">../basics/xbnpe_phrase_types.html#command</A></CODE>.)</I></P>
 
-<P><I>Note that <CODE>&quot;[BS]&quot;</CODE> next to a command-item, means that item is a TextPad-Bootstrap.</I></P>
+<P><I>Note that &quot;<CODE>[BS]</CODE>&quot; next to a command-item, means that item is a TextPad-Bootstrap.</I></P>
 
 <H3>Example</H3>
 
-<P>Clicking <CODE>&quot;zBallonDone&quot;</CODE> (see <CODE>&quot;xhpcb&quot;</CODE>) prints this at the cursor:
+<P>Clicking &quot;<CODE>zBallonDone</CODE>&quot; (see &quot;<CODE>xhpcb</CODE>&quot;) prints this at the cursor:
 <BR> &nbsp; &nbsp; <CODE>{#insert zBalloonDone}</CODE></P>
 
 <H3>DDMenu phrase-format: <A HREF="#state1of3">State-1</A></H3>
@@ -156,7 +156,7 @@ Functions the same as these phrases split into two files:
 
 <P><CODE STYLE="background-color:#E1E1E1;"> &nbsp; &nbsp; zBalloonDone	.	xhpcb</CODE></P>
 
-<P>This format is recognized by the <A HREF="#mainprocs"><CODE>&quot;fidmb&quot;</CODE> process</A>. After executing <CODE>&quot;fidmb&quot;</CODE>, this phrase is changed to its <A HREF="#ddf2of3">final form</A>:</P>
+<P>This format is recognized by the <A HREF="#mainprocs">&quot;<CODE>fidmb</CODE>&quot; process</A>. After executing &quot;<CODE>fidmb</CODE>&quot;, this phrase is changed to its <A HREF="#ddf2of3">final form</A>:</P>
 
 <P><CODE STYLE="background-color:#E1E1E1;"> &nbsp; &nbsp; zBalloonDone	\\\{#insert zBalloonDone\\\}	xhpcb</CODE></P>
 
@@ -174,7 +174,7 @@ Functions the same as these phrases split into two files:
 
 <H3>Example</H3>
 
-<P><I>Clicking on <CODE>&quot;Var: zvDIRECTORY&quot;</CODE> (see <CODE>&quot;xhcf&quot;</CODE>) copies that variable-name into the clipboard.</I></P>
+<P><I>Clicking on &quot;<CODE>Var: zvDIRECTORY</CODE>&quot; (see &quot;<CODE>xhcf</CODE>&quot;) copies that variable-name into the clipboard.</I></P>
 
 <H3>DDMenu phrase-format: <A HREF="#state1of3">State-1</A></H3>
 
@@ -192,7 +192,7 @@ Functions the same as these phrases split into two files:
 
 <P><CODE STYLE="background-color:#E1E1E1;"> &nbsp; Var: zvDIRECTORY* -- xhcfv (and other vars)	{#SETCLIPBOARD zvDIRECTORY}{#insert zzBalCBContainsVarNm}	xhpcb</CODE></P>
 
-<P>This causes the variable-name to be placed in the clipboard, and informs the user of such, with a <CODE>BALLOON</CODE>. Note that the asterisk (<CODE>'*'</CODE>) and following <CODE>&quot;-- xhcfv&quot;</CODE> indicates that there are sub-items (and +-two asterisks next to an item <I>of any type</I> indicates that the item is duplicated from its original ddmenu-position).</P>
+<P>This causes the variable-name to be placed in the clipboard, and informs the user of such, with a <CODE>BALLOON</CODE>. Note that the asterisk (<CODE>'*'</CODE>) and following &quot;<CODE>-- xhcfv</CODE>&quot; indicates that there are sub-items (and +-two asterisks next to an item <I>of any type</I> indicates that the item is duplicated from its original ddmenu-position).</P>
 
 
 
@@ -214,7 +214,7 @@ Functions the same as these phrases split into two files:
 
 <P>Clicking on
 <BR> &nbsp; &nbsp; <CODE>Main action: klw1</CODE>
-<BR>Asks you if you want to copy <CODE>&quot;klw1&quot;</CODE> into to the clipboard and then execute it, or just copy it.</P>
+<BR>Asks you if you want to copy &quot;<CODE>klw1</CODE>&quot; into to the clipboard and then execute it, or just copy it.</P>
 
 <P><I>Note that when multiple actions are displayed in a single item, it responds with <I>nothing</I> (it prints a dot).</I></P>
 
@@ -254,8 +254,8 @@ Functions the same as these phrases split into two files:
 <H3>Example</H3>
 
 <P>Clicking on
-<BR> &nbsp; &nbsp; <CODE>&quot;fidmb: zFillInAllDDMenuTbDtTbBodies&quot;</CODE>
-<BR>(see <CODE>&quot;xhpm&quot;</CODE>) prompts you to copy-and-then-execute <CODE>&quot;fidmb&quot;</CODE>, copy it only, or print this:
+<BR> &nbsp; &nbsp; &quot;<CODE>fidmb: zFillInAllDDMenuTbDtTbBodies</CODE>&quot;
+<BR>(see &quot;<CODE>xhpm</CODE>&quot;) prompts you to copy-and-then-execute &quot;<CODE>fidmb</CODE>&quot;, copy it only, or print this:
 <BR> &nbsp; &nbsp; <CODE>{#insert zFillInAllDDMenuTbDtTbBodies}</CODE></P>
 
 <P><I>Note that when multiple actions are displayed in a single item, it responds with <I>nothing</I> (it prints a dot).</I></P>
@@ -293,7 +293,7 @@ Functions the same as these phrases split into two files:
 
 <P><IMG SRC="../images/tasks/xhpcpfs.jpg" BORDER="1"/></P>
 
-<P><I>Note the popup displaying the <CODE>'.'</CODE>, indicating that it does (effectively) nothing.</I> However, executing the <CODE>&quot;gth&quot;</CODE> phrase-creator first prints this at the cursor
+<P><I>Note the popup displaying the <CODE>'.'</CODE>, indicating that it does (effectively) nothing.</I> However, executing the &quot;<CODE>gth</CODE>&quot; phrase-creator first prints this at the cursor
 <BR> &nbsp; &nbsp; <CODE>{#LENGTH }</CODE>
 <BR>and ends by popping up this balloon, which contains the complete syntax for many other string-related phrase-creators:</P>
 
@@ -311,14 +311,14 @@ Functions the same as these phrases split into two files:
 </PRE>
 <a name="ddmfile"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; DDMenu file</H2>
 
-<P>The items in a phrase-creator ddmenu can be of any of the basic &quot;<A HREF="../basics/xbnpe_phrase_types.html#normal">normal</A>&quot; phrase-types: <A HREF="#command">commands</A>, <A HREF="#actiononly">action-only</A>, <A HREF="#actioncmd">action-command</A>, <A HREF="#variable">variables</A>, and <A HREF="#ddmipc">phrase-creators</A>. It can also be an additional <A HREF="#ddmicustom">custom type</A>, which really means &quot;not any other type&quot;. Each item-type responds in a certain way when selected, and each has a specific required phrase-format, in order for the <A HREF="#mainprocs"><CODE>&quot;fidmb&quot;</CODE> process</A> to recognize it.</P>
+<P>The items in a phrase-creator ddmenu can be of any of the basic &quot;<A HREF="../basics/xbnpe_phrase_types.html#normal">normal</A>&quot; phrase-types: <A HREF="#command">commands</A>, <A HREF="#actiononly">action-only</A>, <A HREF="#actioncmd">action-command</A>, <A HREF="#variable">variables</A>, and <A HREF="#ddmipc">phrase-creators</A>. It can also be an additional <A HREF="#ddmicustom">custom type</A>, which really means &quot;not any other type&quot;. Each item-type responds in a certain way when selected, and each has a specific required phrase-format, in order for the <A HREF="#mainprocs">&quot;<CODE>fidmb</CODE>&quot; process</A> to recognize it.</P>
 
 <P><B>Contents:</B><UL>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#ddmfmarker">GO</A></B></FONT>]</CODE> &nbsp; The phrase-creator ddmenu-file marker</LI>
 	<LI>A drop-down-menu-file has three distinct states. In order, they are:<OL>
-		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#state1of3">GO</A></B></FONT>]</CODE> &nbsp; Pre <CODE>&quot;fidmb&quot;</CODE>, pre <CODE>&quot;pidd*&quot;</CODE></LI>
-		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#ddf2of3">GO</A></B></FONT>]</CODE> &nbsp; Post <CODE>&quot;fidmb&quot;</CODE>, pre <CODE>&quot;pidd*&quot;</CODE></LI>
-		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#ddf3of3">GO</A></B></FONT>]</CODE> &nbsp; Post <CODE>&quot;pidd*&quot;</CODE></LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#state1of3">GO</A></B></FONT>]</CODE> &nbsp; Pre &quot;<CODE>fidmb</CODE>&quot;, pre &quot;<CODE>pidd*</CODE>&quot;</LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#ddf2of3">GO</A></B></FONT>]</CODE> &nbsp; Post &quot;<CODE>fidmb</CODE>&quot;, pre &quot;<CODE>pidd*</CODE>&quot;</LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#ddf3of3">GO</A></B></FONT>]</CODE> &nbsp; Post &quot;<CODE>pidd*</CODE>&quot;</LI>
 	</OL></LI>
 </UL></P>
 
@@ -330,13 +330,13 @@ Functions the same as these phrases split into two files:
 <P><TABLE ALIGN="center" BORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#EEEEEE"><TR ALIGN="center" VALIGN="top">
 	<TD>&nbsp;</TD>
 	<TD><B><U>State 1</U>
-	<BR>Pre <CODE>&quot;fidmb&quot;</CODE>
-	<BR>Pre <CODE>&quot;pidd*&quot;</CODE></B></TD>
+	<BR>Pre &quot;<CODE>fidmb</CODE>&quot;
+	<BR>Pre &quot;<CODE>pidd*</CODE>&quot;</B></TD>
 	<TD><B><U>State 2</U>
-	<BR>Post <CODE>&quot;fidmb&quot;</CODE>
-	<BR>Pre <CODE>&quot;pidd*&quot;</CODE></B></TD>
+	<BR>Post &quot;<CODE>fidmb</CODE>&quot;
+	<BR>Pre &quot;<CODE>pidd*</CODE>&quot;</B></TD>
 	<TD><B><U>State 3</U>
-	<BR>Post <CODE>&quot;pidd*&quot;</CODE></B></TD>
+	<BR>Post &quot;<CODE>pidd*</CODE>&quot;</B></TD>
 </TR><TR ALIGN="center">
 	<TD ALIGN="right"><B>Phrase-name</B></TD>
 	<TD COLSPAN="2"><CODE>...pcddmenu.txt</CODE></TD>
@@ -370,19 +370,19 @@ Functions the same as these phrases split into two files:
 <HR/>
 
 </PRE>
-<a name="ddidconfig"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; The DDMenu directory-id (<CODE>&quot;ddid&quot;</CODE>) configuration variables</H2>
+<a name="ddidconfig"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; The DDMenu directory-id (&quot;<CODE>ddid</CODE>&quot;) configuration variables</H2>
 
 <P>Each directory of ddmenu-files is defined by a set of configuration variables. These variables form the heart of the PMDM project, linking <A HREF="#ddmfile">ddmenu-files</A> to their various <A HREF="#phrasefile">phrase-files</A>. It is <I>expected</I> that every ddmenu-file existing in a single windows directory (and single PhraseExpress folder) is also contained in the config-vars for a single ddmenu-directory id.</P>
 
-<H3>Universe of <CODE>&quot;ddid&quot;</CODE> configuration variables</H3>
+<H3>Universe of &quot;<CODE>ddid</CODE>&quot; configuration variables</H3>
 
-<P>The ddmenu directory-id is abbreviated <CODE>&quot;ddid&quot;</CODE>. This id (such as <CODE>&quot;tpkc&quot;</CODE> in the TextPad built-in commands [TPKC] project) is part of the <I>name</I> of these configuration variables. Using <CODE>&quot;tpkc&quot;</CODE> as an example, here is the universe of ddmenu-config-vars:<UL>
+<P>The ddmenu directory-id is abbreviated &quot;<CODE>ddid</CODE>&quot;. This id (such as &quot;<CODE>tpkc</CODE>&quot; in the TextPad built-in commands [TPKC] project) is part of the <I>name</I> of these configuration variables. Using &quot;<CODE>tpkc</CODE>&quot; as an example, here is the universe of ddmenu-config-vars:<UL>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#zzAllFilePrefixesInDDMenuDirQbl_tpkc">GO</A></B></FONT>]</CODE> &nbsp; <B><CODE>zzAllFilePrefixesInDDMenuDirQbl_tpkc</CODE>:</B> The file-name prefix for all ddmenu-files in this directory.</LI>
 	<B><CODE>[<FONT SIZE="+1"><B><A HREF="#zzDDMenuDir_tpkc">GO</A></B></FONT>]</CODE> &nbsp; <CODE>zzDDMenuDir_tpkc</CODE>:</B> The path in which these ddmenu-files exist <I>on disk</I> (in Windows).</LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#zzPmdmFNmPreTpkcCwlpdf">GO</A></B></FONT>]</CODE> &nbsp; <B><CODE>zzPmdmFNmPreTpkcCwlpdf</CODE>:</B> The file-name prefix for a single ddmenu-file. <I>One per-ddmenu-file</I></LI>
 </UL></P>
 
-<a name="ddidconfigfile"/><H3><CODE>[<A HREF="#ddidconfig">BACK</A>]</CODE> &nbsp; The <CODE>&quot;ddid&quot;</CODE> configuration file</H3>
+<a name="ddidconfigfile"/><H3><CODE>[<A HREF="#ddidconfig">BACK</A>]</CODE> &nbsp; The &quot;<CODE>ddid</CODE>&quot; configuration file</H3>
 
 <P>These configuration variables, for a single ddmenu directory, are defined in a file named
 <BR> &nbsp; &nbsp; <CODE>zz_tpkc__pcddmenu_config.px.txt</CODE>
@@ -391,7 +391,7 @@ Functions the same as these phrases split into two files:
 <BR>&quot;<A HREF="../basics/xbnpe_phrase_types.html#normal">normal</A>&quot; phrase-files should be stored <I>outside</I> of the actual ddmenu-directory, since its settings must be different from the <A HREF="../basics/xbnpe_phrase_types.html#ddmitem">ddmenu-files</A> themselves.</P>
 
 <P>Here is the actual content of the file
-<BR> &nbsp; &nbsp; <CODE>&quot;...\xbnpe\textpad__tpkc\non_bootstrap_utils\zz_tpkc__pcddmenu_config.px.txt&quot;</CODE>
+<BR> &nbsp; &nbsp; &quot;<CODE>...\xbnpe\textpad__tpkc\non_bootstrap_utils\zz_tpkc__pcddmenu_config.px.txt</CODE>&quot;
 <BR>(as of July 2013. Displayed in <A HREF="../devpex/c2pl.html#one">uncompressed</A> form for clarity):</P>
 
 <PRE STYLE="background-color:#E1E1E1;"><B>zzAllFilePrefixesInDDMenuDirQbl_tpkc</B>
@@ -426,7 +426,7 @@ xbnpe_base_pcddmenu</PRE>
 </PRE>
 <a name="zzAllFilePrefixesInDDMenuDirQbl_tpkc"/><H3><CODE>[<A HREF="#ddidconfig">BACK</A>]</CODE> &nbsp; DDMenu config-var: <CODE>zzAllFilePrefixesInDDMenuDirQbl_tpkc</CODE></H3>
 
-<P>The sQuare-Bracketed List of all ddmenu-file <I>prefixes</I> (no extensions, such as <CODE>&quot;.txt&quot;</CODE> or <CODE>&quot;.px.txt&quot;</CODE>) in this ddmenu-directory. The <I>name</I> of this phrase--everything following the underscore--defines this ddmenu-directory's identifier. In this example, it is <CODE>&quot;tpkc&quot;</CODE></P>
+<P>The sQuare-Bracketed List of all ddmenu-file <I>prefixes</I> (no extensions, such as &quot;<CODE>.txt</CODE>&quot; or &quot;<CODE>.px.txt</CODE>&quot;) in this ddmenu-directory. The <I>name</I> of this phrase--everything following the underscore--defines this ddmenu-directory's identifier. In this example, it is &quot;<CODE>tpkc</CODE>&quot;</P>
 
 <P>Example value:</P>
 
@@ -434,7 +434,7 @@ xbnpe_base_pcddmenu</PRE>
 
 <P>Each of these variables is the <A HREF="#zzPmdmFNmPreTpkcCwlpdf">file-name prefix</A> of a single ddmenu-file.</P>
 
-<P>This qbl-list (or qb-list) is used by the <CODE>&quot;piddd*&quot;</CODE> utility, to prepare <I>all</I> ddmenu-files in this directory at once.</P>
+<P>This qbl-list (or qb-list) is used by the &quot;<CODE>piddd*</CODE>&quot; utility, to prepare <I>all</I> ddmenu-files in this directory at once.</P>
 
 
 <PRE>
@@ -444,10 +444,10 @@ xbnpe_base_pcddmenu</PRE>
 </PRE>
 <a name="zzDDMenuDir_tpkc"/><H3><CODE>[<A HREF="#ddidconfig">BACK</A>]</CODE> &nbsp; DDMenu config-var: <CODE>zzDDMenuDir_tpkc</CODE></H3>
 
-<P>The full-path of the directory in which this ddid's DDMenu-files exist. This should be defined with one of the XBNPE <CODE>&quot;zXROOT_DIR_*&quot;</CODE> variables. Example value:
+<P>The full-path of the directory in which this ddid's DDMenu-files exist. This should be defined with one of the XBNPE &quot;<CODE>zXROOT_DIR_*</CODE>&quot; variables. Example value:
 <BR> &nbsp; &nbsp; <CODE>{#insert zXPROOT_DIR_tpkc}non_bootstrap_utils\z_phrase_creator_ddmenus\</CODE></P>
 
-<P>The foundation of the <CODE>&quot;zXPROOT_DIR_*&quot;</CODE> variables is located in
+<P>The foundation of the &quot;<CODE>zXPROOT_DIR_*</CODE>&quot; variables is located in
 <BR> &nbsp; &nbsp; <CODE>...\xbnpe\xbnpe_xkp\configuration\xbnpe__directory_config_edit_this.px.txt</CODE></P>
 
 <PRE>
@@ -458,10 +458,10 @@ xbnpe_base_pcddmenu</PRE>
 <a name="zzPmdmFNmPreTpkcCwlpdf"/><H3><CODE>[<A HREF="#ddidconfig">BACK</A>]</CODE> &nbsp; DDMenu config-var: <CODE>zzPmdmFNmPreTpkcCwlpdf</CODE></H3>
 
 
-<P><CODE>&quot;zzPmdmFNmPreTpkcCwlpdf&quot;</CODE> is the file-name prefix for &quot;cwlpdf&quot;-related phrases (functionality related to the &quot;XBNPE-Char, Word, Line, Para, Doc, File&quot; project). Each ddmenu-file in this ddmenu-directory must have its own <CODE>&quot;zzPmdmFNmPreTpkc...&quot;</CODE> configuration variable (change <CODE>&quot;Cwlpdf&quot;</CODE> to something appriate). This phrase-name is in the format<OL>
-	<LI><B>Prefix:</B> <CODE>&quot;zzPmdmFNmPre&quot;</CODE></LI>
-	<LI><B>This ddmenu-directory's <CODE>&quot;ddid&quot;</CODE>, 1-cased:</B> <CODE>&quot;Tpkc&quot;</CODE></LI>
-	<LI><B>The unique ddmenu-file-name identifier</B>, such as <CODE>&quot;Cwlpdf&quot;</CODE></LI>
+<P>&quot;<CODE>zzPmdmFNmPreTpkcCwlpdf</CODE>&quot; is the file-name prefix for &quot;cwlpdf&quot;-related phrases (functionality related to the &quot;XBNPE-Char, Word, Line, Para, Doc, File&quot; project). Each ddmenu-file in this ddmenu-directory must have its own &quot;<CODE>zzPmdmFNmPreTpkc...</CODE>&quot; configuration variable (change &quot;<CODE>Cwlpdf</CODE>&quot; to something appriate). This phrase-name is in the format<OL>
+	<LI><B>Prefix:</B> &quot;<CODE>zzPmdmFNmPre</CODE>&quot;</LI>
+	<LI><B>This ddmenu-directory's &quot;<CODE>ddid</CODE>&quot;, 1-cased:</B> &quot;<CODE>Tpkc</CODE>&quot;</LI>
+	<LI><B>The unique ddmenu-file-name identifier</B>, such as &quot;<CODE>Cwlpdf</CODE>&quot;</LI>
 </OL></P>
 
 <PRE>
@@ -488,7 +488,7 @@ xbnpe_base_pcddmenu</PRE>
 
 <P>The only critical line is
 <BR> &nbsp; &nbsp; <CODE>PM_DDMENU_DIR_ID=<I><B>[ddmenu-directory-id]</B></I></CODE>
-<BR>where <CODE>&quot;[ddmenu-directory-id]&quot;</CODE> is equal to, for example, in the TextPad built-in commands (TPKC) project, <CODE>&quot;tpkc&quot;</CODE>. this value is defined in the <A HREF="#ddidconfig">ddmenu-dir-id config file</A></P>
+<BR>where &quot;<CODE>[ddmenu-directory-id]</CODE>&quot; is equal to, for example, in the TextPad built-in commands (TPKC) project, &quot;<CODE>tpkc</CODE>&quot;. this value is defined in the <A HREF="#ddidconfig">ddmenu-dir-id config file</A></P>
 
 <P>This is the link between this ddmenu-file, and all its <A HREF="#phrasefile">phrase-files</A>--that is, all phrase-files whose phrases are listed in this ddmenu.</P>
 
@@ -515,36 +515,36 @@ xbnpe_base_pcddmenu</PRE>
 <P>The name of the ddmenu-phrase-file marker is
 <BR> &nbsp; &nbsp; <B><CODE>PM_DDMENU_DIRID_FILENMPHRSNM_HDRAUTOTXT</CODE></B>
 <BR>and is followed immediately (no whitespace) with an equal-sign, and then immediately by three up-right-slash delimited values:<OL>
-	<LI><B>The ddmenu-directory-id (<CODE>&quot;ddid&quot;</CODE>):</B> The <A HREF="#zzAllFilePrefixesInDDMenuDirQbl_tpkc">configured</A> identifier of the <I>directory</I> of this phrase-file's DDMenu-file. The <CODE>ddid</CODE> of this ddmenu-phrase-file is <CODE>&quot;pex&quot;</CODE></LI>
-	<LI><B>The phrase-name of the ddmenu-file's prefix:</B> This is the phrase-name that stores the file-name-prefix (everything before the <CODE>&quot;.txt&quot;</CODE>) of this phrase-file's DDMenu-file. For this ddmenu-phrase-file, it is
+	<LI><B>The ddmenu-directory-id (&quot;<CODE>ddid</CODE>&quot;):</B> The <A HREF="#zzAllFilePrefixesInDDMenuDirQbl_tpkc">configured</A> identifier of the <I>directory</I> of this phrase-file's DDMenu-file. The <CODE>ddid</CODE> of this ddmenu-phrase-file is &quot;<CODE>pex</CODE>&quot;</LI>
+	<LI><B>The phrase-name of the ddmenu-file's prefix:</B> This is the phrase-name that stores the file-name-prefix (everything before the &quot;<CODE>.txt</CODE>&quot;) of this phrase-file's DDMenu-file. For this ddmenu-phrase-file, it is
 	<BR> &nbsp; &nbsp; <CODE>zzPmdmFNmPreDocXmpl</CODE>
 	<BR>which is equal to
 	<BR> &nbsp; &nbsp; <B><CODE>pcddmenu_example__pcddmenu</CODE></B></LI>
 	<LI><B>The header-autotext</B> for these phrases, as they exist in the ddmenu. In the
 	<BR> &nbsp; &nbsp; <CODE>pcddmenu_example__pcddmenu.txt</CODE>
-	<BR>ddmenu, these phrases are listed in the section whose autotext is <CODE>&quot;xhomxn&quot;</CODE></LI>
+	<BR>ddmenu, these phrases are listed in the section whose autotext is &quot;<CODE>xhomxn</CODE>&quot;</LI>
 </OL></P>
 
-<P>The benifit of this ddmenu-phrase-file marker, is the ablity to execute <CODE>&quot;gtddm&quot;</CODE>. This automatically opens <I>this</I> phrase-file's ddmenu, and navigates to the specific section within that ddmenu-file, where <I>these</I> phrases exist. Specifically, it opens the file, then searches for its header line:
-<BR> &nbsp; &nbsp; <CODE>&quot; -- xhomxn&quot;</CODE>.</P>
+<P>The benifit of this ddmenu-phrase-file marker, is the ablity to execute &quot;<CODE>gtddm</CODE>&quot;. This automatically opens <I>this</I> phrase-file's ddmenu, and navigates to the specific section within that ddmenu-file, where <I>these</I> phrases exist. Specifically, it opens the file, then searches for its header line:
+<BR> &nbsp; &nbsp; &quot;<CODE> -- xhomxn</CODE>&quot;.</P>
 
 <PRE>
 
 <HR/>
 
 </PRE>
-<a name="state1of3"/><H2><CODE>[<A HREF="#ddmfile">BACK</A>]</CODE> &nbsp; DDMenu-state 1 of 3: Pre <CODE>&quot;fidmb&quot;</CODE>, pre <CODE>&quot;pidd*&quot;</CODE></H2>
+<a name="state1of3"/><H2><CODE>[<A HREF="#ddmfile">BACK</A>]</CODE> &nbsp; DDMenu-state 1 of 3: Pre &quot;<CODE>fidmb</CODE>&quot;, pre &quot;<CODE>pidd*</CODE>&quot;</H2>
 
-<P>This is the &quot;original&quot; state of the ddmenu file--before it is processed by either <CODE>&quot;fidmb&quot;</CODE> or <CODE>&quot;pidd*&quot;</CODE>. In this state, the phrase-body of <I>at least one</I> <A HREF="#command">command</A>, <A HREF="#actiononly">actiononly</A>, <A HREF="#actioncmd">action-command</A>, or <A HREF="#variable">variable</A> ddmenu line-item is equal to a dot (<CODE>'.'</CODE>). </P>
+<P>This is the &quot;original&quot; state of the ddmenu file--before it is processed by either &quot;<CODE>fidmb</CODE>&quot; or &quot;<CODE>pidd*</CODE>&quot;. In this state, the phrase-body of <I>at least one</I> <A HREF="#command">command</A>, <A HREF="#actiononly">actiononly</A>, <A HREF="#actioncmd">action-command</A>, or <A HREF="#variable">variable</A> ddmenu line-item is equal to a dot (<CODE>'.'</CODE>). </P>
 
-<P>Therefore, these items will do nothing when selected. The <CODE>&quot;fidmb&quot;</CODE> process transforms these dot-only phrase-bodies to their appropriate values. Once executed, each of these line-items will do as documented in each ddmenu-item type's section.</P>
+<P>Therefore, these items will do nothing when selected. The &quot;<CODE>fidmb</CODE>&quot; process transforms these dot-only phrase-bodies to their appropriate values. Once executed, each of these line-items will do as documented in each ddmenu-item type's section.</P>
 
 <H3><CODE>[<A HREF="#state1of3">BACK</A>]</CODE> &nbsp; Example ddmenu file in state 1</H3>
 
 <P>Below is a trivial phrase-creator drop-down-menu, containing only commands.</P>
 
 <P>File name:
-<BR><CODE>&quot;...\xbnpe\phrase_express\z_phrase_creator_ddmenus\pcddmenu_example__pcddmenu.txt&quot;</CODE></P>
+<BR>&quot;<CODE>...\xbnpe\phrase_express\z_phrase_creator_ddmenus\pcddmenu_example__pcddmenu.txt</CODE>&quot;</P>
 
 <PRE STYLE="background-color:#E1E1E1;">(*
    Required by phrase-creator-ddmenu-utils...START
@@ -575,17 +575,17 @@ xbnpe_base_pcddmenu</PRE>
 <HR/>
 
 </PRE>
-<a name="ddf2of3"/><H2><CODE>[<A HREF="#ddmfile">BACK</A>]</CODE> &nbsp; DDMenu-state 2 of 3: Post <CODE>&quot;fidmb&quot;</CODE>, pre <CODE>&quot;pidd*&quot;</CODE></H2>
+<a name="ddf2of3"/><H2><CODE>[<A HREF="#ddmfile">BACK</A>]</CODE> &nbsp; DDMenu-state 2 of 3: Post &quot;<CODE>fidmb</CODE>&quot;, pre &quot;<CODE>pidd*</CODE>&quot;</H2>
 
 
 <P>All <A HREF="#command">command</A>, <A HREF="#actiononly">action-only</A>, <A HREF="#actioncmd">action-command</A>, or <A HREF="#variable">variable</A> ddmenu line-item have been processed--their phrase-bodies are no longer dots.</P>
 
 <H3><CODE>[<A HREF="#ddf2of3">BACK</A>]</CODE> &nbsp; Example ddmenu file in state 2</H3>
 
-<P>Here is the example ddmenu-file, after being processed by <CODE>&quot;fidmb&quot;</CODE>:</P>
+<P>Here is the example ddmenu-file, after being processed by &quot;<CODE>fidmb</CODE>&quot;:</P>
 
 <P>File name:
-<BR><CODE>&quot;...\xbnpe\phrase_express\z_phrase_creator_ddmenus\pcddmenu_example__pcddmenu.txt&quot;</CODE></P>
+<BR>&quot;<CODE>...\xbnpe\phrase_express\z_phrase_creator_ddmenus\pcddmenu_example__pcddmenu.txt</CODE>&quot;</P>
 
 <PRE STYLE="background-color:#E1E1E1;">(*
    Required by phrase-creator-ddmenu-utils...START
@@ -609,15 +609,15 @@ xbnpe_base_pcddmenu</PRE>
 				zExamplePhrase4	\\\{#insert zExamplePhrase4\\\} xhomxn
 			zTheMainExamplePhrase	\\\{#insert zTheMainExamplePhrase\\\} xhomx</PRE>
 
-<P>The entire file is still unimportable, since it is indented. Now it is time to execute <CODE>&quot;pidd*&quot;</CODE>.</P>
+<P>The entire file is still unimportable, since it is indented. Now it is time to execute &quot;<CODE>pidd*</CODE>&quot;.</P>
 <PRE>
 
 <HR/>
 
 </PRE>
-<a name="ddf3of3"/><H2><CODE>[<A HREF="#ddmfile">BACK</A>]</CODE> &nbsp; DDMenu-state 3 of 3: Post <CODE>&quot;pidd*&quot;</CODE></H2>
+<a name="ddf3of3"/><H2><CODE>[<A HREF="#ddmfile">BACK</A>]</CODE> &nbsp; DDMenu-state 3 of 3: Post &quot;<CODE>pidd*</CODE>&quot;</H2>
 
-<P>The unindented ddmenu-file has been processed by the <CODE>&quot;pidd*&quot;</CODE> utility. This duplicates and then unindents the file. It is now ready to be imported and used.</P>
+<P>The unindented ddmenu-file has been processed by the &quot;<CODE>pidd*</CODE>&quot; utility. This duplicates and then unindents the file. It is now ready to be imported and used.</P>
 
 <H3><CODE>[<A HREF="#state1of3">BACK</A>]</CODE> &nbsp; Example ddmenu file in state 3</H3>
 
@@ -646,12 +646,12 @@ zExamplePhrase3	\\\{#insert zExamplePhrase3\\\} xhomxn
 zExamplePhrase4	\\\{#insert zExamplePhrase4\\\} xhomxn
 zTheMainExamplePhrase	\\\{#insert zTheMainExamplePhrase\\\} xhomx</PRE>
 
-<H3>A phrase-creator ddmenu file, before executing <CODE>&quot;fidmb&quot;</CODE></H3>
+<H3>A phrase-creator ddmenu file, before executing &quot;<CODE>fidmb</CODE>&quot;</H3>
 
 <P>Below is a trivial phrase-creator drop-down-menu, containing only <A HREF="#command">commands</A>.</P>
 
 <P>File name:
-<BR><CODE>&quot;...\xbnpe\phrase_express\z_phrase_creator_ddmenus\pcddmenu_example__pcddmenu.txt&quot;</CODE></P>
+<BR>&quot;<CODE>...\xbnpe\phrase_express\z_phrase_creator_ddmenus\pcddmenu_example__pcddmenu.txt</CODE>&quot;</P>
 
 <PRE STYLE="background-color:#E1E1E1;">(*
    Required by phrase-creator-ddmenu-utils...START
@@ -675,13 +675,13 @@ zTheMainExamplePhrase	\\\{#insert zTheMainExamplePhrase\\\} xhomx</PRE>
 				zExamplePhrase4	. xhomxn
 			zTheMainExamplePhrase	. xhomx</PRE>
 
-<P>Typing <CODE>&quot;xhomxn&quot;</CODE> lists all the <CODE>&quot;zExamplePhrase#&quot;</CODE> phrases (try it now, from within TextPad). Note that these phrases are automatically integrated into the overall <CODE>&quot;xh&quot;</CODE> heirarchy, just by nature of the autotexts assigned to them. Also note that the parent branches delcared in the comment are created in other <CODE>&quot;__pcddmenu.txt&quot;</CODE> documents.
+<P>Typing &quot;<CODE>xhomxn</CODE>&quot; lists all the &quot;<CODE>zExamplePhrase#</CODE>&quot; phrases (try it now, from within TextPad). Note that these phrases are automatically integrated into the overall &quot;<CODE>xh</CODE>&quot; heirarchy, just by nature of the autotexts assigned to them. Also note that the parent branches delcared in the comment are created in other &quot;<CODE>__pcddmenu.txt</CODE>&quot; documents.
 
 <P><I>These phrases do not actually exist. Although the phrase-calls are printed, actually calling them does nothing.</I></P>
 
 <H3>Viewing this demo ddmenu branch, step-by-step</H3>
 
-<P><B>Typing <CODE>&quot;xhom&quot;</CODE>:</B>
+<P><B>Typing &quot;<CODE>xhom</CODE>&quot;:</B>
 <BR> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <IMG SRC="../images/tasks/xhom.jpg"/></P>
 <P><B>Adding <CODE>'x'</CODE>:</B>
 <BR> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <IMG SRC="../images/tasks/xhomx.jpg"/></P>

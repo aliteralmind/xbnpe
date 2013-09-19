@@ -14,9 +14,9 @@
 
 <P><I>[go to <A HREF="#notes">notes</A>]</I></P>
 
-<P>The <CODE>{#COND}</CODE> command outputs text, depending on a condition. Specifically, if its <CODE>&quot;-if&quot;</CODE> condition is<UL>
-	<LI><B>met:</B> text in the <CODE><CODE>&quot;-then&quot;</CODE></CODE> clause is output</LI>
-	<LI><B>not met:</B> text in the <CODE>&quot;-else&quot;</CODE> clause is output</LI>
+<P>The <CODE>{#COND}</CODE> command outputs text, depending on a condition. Specifically, if its &quot;<CODE>-if</CODE>&quot; condition is<UL>
+	<LI><B>met:</B> text in the <CODE>&quot;<CODE>-then</CODE>&quot;</CODE> clause is output</LI>
+	<LI><B>not met:</B> text in the &quot;<CODE>-else</CODE>&quot; clause is output</LI>
 </UL>The real power of a <CODE>{#COND}</CODE> command is in deciding the <I>name</I> of a phrase to be executed.</P>
 
 <P><I>All example code is &quot;<A HREF="../index.html#livexmpl">live</A>&quot;.</I> Here is the <A HREF="z_pe__cond_tag_doc_examples.px.txt">phrase-file</A> containing all these examples.</P>
@@ -30,7 +30,7 @@
    -then 3 LT 1&nbsp;
    -else 3 GTOE 1}<!--xcfexample...END  //  {#ENTER}--></PRE>
 
-<P>Execute <CODE>&quot;cond01simple&quot;</CODE> and this is output:
+<P>Execute &quot;<CODE>cond01simple</CODE>&quot; and this is output:
 <BR> &nbsp; &nbsp; <CODE>3 GTOE 1</CODE></P>
 
 <P>(Note that both</P>
@@ -49,7 +49,7 @@
 
 <P>fail--they do not execute at all.)</P>
 
-<P>Importantly, ALL phrases in the <CODE>&quot;-then&quot;</CODE> and <CODE>&quot;-else&quot;</CODE> clauses are executed--regardless the condition. While, executing <CODE>&quot;cond04callins&quot;</CODE> results in the same output <I>(note that symbols are still not okay, even in called phrases)</I>...</P>
+<P>Importantly, ALL phrases in the &quot;<CODE>-then</CODE>&quot; and &quot;<CODE>-else</CODE>&quot; clauses are executed--regardless the condition. While, executing &quot;<CODE>cond04callins</CODE>&quot; results in the same output <I>(note that symbols are still not okay, even in called phrases)</I>...</P>
 
 <PRE STYLE="background-color:#E1E1E1;"><!--xcfexample...START  //  cond04callins:{#ENTER}--><B><U>cond04callins</U></B>
 {#COND -if 3 &lt; 1&nbsp;
@@ -60,7 +60,7 @@
 <B><U>z3nlt1</U></B>
 3 GTOE 1<!--xcfexample...END  //  {#ENTER}--></PRE>
 
-<P>...it is not ideal, since the all phrases in BOTH the <CODE>&quot;-then&quot;</CODE> and <CODE>&quot;-else&quot;</CODE> clauses are executed--the output of the <CODE>&quot;-then&quot;</CODE> clause is suppressed, but it is STILL executed. To demonstrate this, execute <CODE>&quot;cond05callinsdbgs&quot;</CODE>:</P>
+<P>...it is not ideal, since the all phrases in BOTH the &quot;<CODE>-then</CODE>&quot; and &quot;<CODE>-else</CODE>&quot; clauses are executed--the output of the &quot;<CODE>-then</CODE>&quot; clause is suppressed, but it is STILL executed. To demonstrate this, execute &quot;<CODE>cond05callinsdbgs</CODE>&quot;:</P>
 
 <PRE STYLE="background-color:#E1E1E1;"><!--xcfexample...START  //  cond05callinsdbgs:{#ENTER}--><B><U>cond05callinsdbgs</U></B>
 {#COND -if 3 &lt; 1&nbsp;
@@ -104,7 +104,7 @@ Your name, {#insert zYourNamePrompt}, has more than five characters.
 <B><U>zNameIsLTOE5Chars</U></B>
 Your name, {#insert zYourNamePrompt}, has exactly (or less-than) five characters.<!--xcfexample...END  //  {#ENTER}--></PRE>
 
-<P>Call <CODE>&quot;cond07namelen&quot;</CODE>, and this is output:
+<P>Call &quot;<CODE>cond07namelen</CODE>&quot;, and this is output:
 <BR> &nbsp; &nbsp; <CODE>Your name, Humphrey, has more than five characters.</CODE></P>
 
 
@@ -116,7 +116,7 @@ Your name, {#insert zYourNamePrompt}, has exactly (or less-than) five characters
 </PRE>
 <a name="notes"/><H2>[<A HREF="#top">top</A>] &nbsp; <CODE>COND</CODE> tag: Notes and observations</H2>
 
-<P>If any of the following <I>unescaped</I> characters are in your <CODE>&quot;-if&quot;</CODE> condition, the <CODE>COND</CODE> tag will fail: =, !, &lt;, &gt;.</P>
+<P>If any of the following <I>unescaped</I> characters are in your &quot;<CODE>-if</CODE>&quot; condition, the <CODE>COND</CODE> tag will fail: =, !, &lt;, &gt;.</P>
 
 <PRE STYLE="background-color:#E1E1E1;">CHAR    ASC#
 ---------------------
@@ -126,7 +126,7 @@ Your name, {#insert zYourNamePrompt}, has exactly (or less-than) five characters
 &gt;       {#asc 62}
 </PRE>
 
-<P>Here is a working example with escaped symbols in the <CODE>&quot;-if&quot;</CODE> condition:</P>
+<P>Here is a working example with escaped symbols in the &quot;<CODE>-if</CODE>&quot; condition:</P>
 
 <PRE STYLE="background-color:#E1E1E1;"><!--xcfexample...START  //  cond08escif:{#ENTER}--><B><U>cond08escif</U></B>
 {#COND -if \\\&lt;hello\\\&gt; = \\\&lt;hello\\\&gt;&nbsp;
@@ -168,7 +168,7 @@ z LTOE 9
 
 <HR/>
 
-<P>Comments on either side of the <CODE>&quot;-if&quot;</CODE> parameter</P>
+<P>Comments on either side of the &quot;<CODE>-if</CODE>&quot; parameter</P>
 
 <PRE STYLE="background-color:#E1E1E1;"><!--xcfexample...START  //  cond10ifcmt:{#ENTER}--><B><U>cond10ifcmt</U></B>
 {#COND -if yes == yes(*a test comment*)&nbsp;
@@ -182,7 +182,7 @@ z LTOE 9
    -then YES&nbsp;
    -else NO}<!--xcfexample...END  //  {#ENTER}--></PRE>
 
-<P>Works in some situations, and doesn't in others. It is strongly recommended that you avoid comments in the <CODE>&quot;-if&quot;</CODE> clause, and always have spaces around the comparator.</P>
+<P>Works in some situations, and doesn't in others. It is strongly recommended that you avoid comments in the &quot;<CODE>-if</CODE>&quot; clause, and always have spaces around the comparator.</P>
 
 <H4>Example</H4>
 

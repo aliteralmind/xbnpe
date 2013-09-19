@@ -74,12 +74,12 @@
 
 <P><UL>
 	<LI><B>Requirements:</B> Must be a valid (portion of a) directory-name, such that none of its characters (such as spaces) require the overall path to be surrounded by double-quotes.</LI>
-	<LI><B>Example values:</B> <CODE>&quot;live&quot;</CODE> or <CODE>&quot;fgh&quot;</CODE></LI>
+	<LI><B>Example values:</B> &quot;<CODE>live</CODE>&quot; or &quot;<CODE>fgh</CODE>&quot;</LI>
 </UL></P>
 
 <P>Represents the <I>currently-active</I> TPKC-build &quot;version&quot;, and is specifically the postfix of<UL>
 	<LI>the category-subset config-variable	<BR> &nbsp; &nbsp; <CODE><A HREF="#zzTpkcBuildVersionCatAbrvs">zzTpkcBuildVersionCatAbrvs_*</A></CODE></LI>
-	<LI>and the two on-disk output (auto-generated--<CODE>&quot;AG&quot;</CODE>) phrase-file locations:<UL>
+	<LI>and the two on-disk output (auto-generated--&quot;<CODE>AG</CODE>&quot;) phrase-file locations:<UL>
 	<LI><B>Sub-build-processes <A HREF="sub_build_proc.html#01">01</A> through <A HREF="sub_build_proc2.html#09">09</A></B> <I>(<A HREF="build_proc_tech_info.html">admin-only</A>)</I>
 	<BR> &nbsp; &nbsp; <CODE>{#insert <A HREF="index.html#zXPROOT_DIR_AG_tpkc_M_bvm">zXPROOT_DIR_AG_tpkc_M_bvm</A>}</CODE></LI>
 	<LI><B>Sub-build-processes <A HREF="sub_build_proc2.html#10">10</A> through <A HREF="sub_build_proc2.html#15">15</A></B> <I>(<A HREF="index.html#userbuild01">user-only</A>)</I>
@@ -115,11 +115,11 @@
 
 <P>The set of categories used by a specific <A HREF="build_proc_tech_info.html">TPKC-build-process</A>. This is called its &quot;version&quot;. The <I>currently active</I> version is determined by
 <BR> &nbsp; &nbsp; <CODE><A HREF="#zzTpkcBuildVersionName">zzTpkcBuildVersionName</A></CODE>
-<BR>If <CODE>zzTpkcBuildVersionName</CODE> is <CODE>&quot;live&quot;</CODE>, then
+<BR>If <CODE>zzTpkcBuildVersionName</CODE> is &quot;<CODE>live</CODE>&quot;, then
 <BR> &nbsp; &nbsp; <CODE>zzTpkcBuildVersionCatAbrvs_live</CODE>
 <BR>is the currently active category-set. You can <A HREF="#switchv">switch versions</A> at any time.</P>
 
-<P><I><B>Exactly one version must be called <CODE>&quot;live&quot;</CODE></B></I>--meaning there must be a phrase named
+<P><I><B>Exactly one version must be called &quot;<CODE>live</CODE>&quot;</B></I>--meaning there must be a phrase named
 <BR> &nbsp; &nbsp; <CODE>zzTpkcBuildVersionCatAbrvs_live</CODE>
 <BR>and its contents must be <I>equal</I> to
 <BR> &nbsp; &nbsp; <CODE>{#insert zTpkcAllCategoryAbrvLCsQbl}</CODE>
@@ -134,7 +134,7 @@
 <P><I>[In PhraseExpress: <A HREF="#bvfud">user-dir</A>, <A HREF="#bvfum">user-menu</A>, <A HREF="#bvfo">other</A>]</I></P>
 
 <P>By default, there are two available TPKC-build versions. They are represented by the master-configuration-variables
-<BR> &nbsp; &nbsp; <CODE><A HREF="#zzTpkcBuildVersionCatAbrvs">zzTpkcBuildVersionCatAbrvs_live</A></CODE> &nbsp; &nbsp; <I>(<CODE>&quot;live&quot;</CODE> is a required version)</I>
+<BR> &nbsp; &nbsp; <CODE><A HREF="#zzTpkcBuildVersionCatAbrvs">zzTpkcBuildVersionCatAbrvs_live</A></CODE> &nbsp; &nbsp; <I>(&quot;<CODE>live</CODE>&quot; is a required version)</I>
 <BR>and
 <BR> &nbsp; &nbsp; <CODE>zzTpkcBuildVersionCatAbrvs_fgh</CODE></P>
 
@@ -145,7 +145,7 @@
 <BR>(which is a <A HREF="#goodtestbuild">good test build</A>). The <I>currently active</I> version is determined by
 <BR> &nbsp; &nbsp; <CODE><A HREF="#zzTpkcBuildVersionName">zzTpkcBuildVersionName</A></CODE></P>
 
-<P>In all locations, both on-disk and in PhraseExpress, the <I>exact same versions</I> (<CODE>&quot;live&quot;</CODE> and <CODE>&quot;fgh&quot;</CODE>) must be present. The current version only
+<P>In all locations, both on-disk and in PhraseExpress, the <I>exact same versions</I> (&quot;<CODE>live</CODE>&quot; and &quot;<CODE>fgh</CODE>&quot;) must be present. The current version only
 <BR>must be enabled (right-click the folder and check
 <BR> &nbsp; &nbsp; &quot;Enable Autotext/Hotkeys&quot;
 <BR>), with all other versions disabled.</P>
@@ -208,7 +208,7 @@
 <BR> &nbsp; &nbsp; <CODE><A HREF="#zzTpkcBuildVersionCatAbrvs">zzTpkcBuildVersionCatAbrvs_*</A></CODE>
 <BR>For example, set
 <BR> &nbsp; &nbsp; <CODE>zzTpkcBuildVersionName</CODE>
-<BR>to <CODE>&quot;fgh&quot;</CODE>, which refers to
+<BR>to &quot;<CODE>fgh</CODE>&quot;, which refers to
 <BR> &nbsp; &nbsp; <CODE>zzTpkcBuildVersionCatAbrvs_fgh</CODE>
 <BR>which is equal to
 <BR> &nbsp; &nbsp; <CODE>[file][config][help]</CODE> &nbsp; &nbsp; <I>(see: <A HREF="#goodtestbuild">good test build</A>)</I></P>
@@ -243,9 +243,9 @@
 <P>The <A HREF="#zzTpkcBuildVersionCatAbrvs">category-subset</A>
 <BR> &nbsp; &nbsp; <CODE>[file][config][help]</CODE>
 <BR>is good for testing and demonstrating the build-process.<UL>
-	<LI><CODE>&quot;file&quot;</CODE> is a moderately-large category and contains a <A HREF="../tpbs.html">TextPad-bootstrap</A>.</LI>
-	<LI><CODE>&quot;config&quot;</CODE> contains a tp-bootsrap and has few commands, and</LI>
-	<LI><CODE>&quot;help&quot;</CODE> has no kcs at all (in my setup anyway), and few commands.</LI>
+	<LI>&quot;<CODE>file</CODE>&quot; is a moderately-large category and contains a <A HREF="../tpbs.html">TextPad-bootstrap</A>.</LI>
+	<LI>&quot;<CODE>config</CODE>&quot; contains a tp-bootsrap and has few commands, and</LI>
+	<LI>&quot;<CODE>help</CODE>&quot; has no kcs at all (in my setup anyway), and few commands.</LI>
 </UL>Comparing a live (full) build against this category-subset:</P>
 
 <P><TABLE ALIGN="center" BORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#EEEEEE"><TR ALIGN="center" VALIGN="middle">

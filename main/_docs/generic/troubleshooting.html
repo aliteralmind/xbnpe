@@ -56,10 +56,10 @@
 <P>Output: <I>nothing</I></P>
 
 <P>The reason is the string-being-searched contains
-<BR> &nbsp; &nbsp; <CODE>&quot;-FROM&quot;</CODE>
+<BR> &nbsp; &nbsp; &quot;<CODE>-FROM</CODE>&quot;
 <BR>and
-<BR> &nbsp; &nbsp; <CODE>&quot;-TO&quot;</CODE>
-<BR>which is confusing PhraseExpress: Which is the &quot;real&quot; <CODE>&quot;-from&quot;</CODE> parameter? (As far as <CODE>&quot;-to&quot;</CODE>, which is not a legal parameter, your guess is as good as mine.)</P>
+<BR> &nbsp; &nbsp; &quot;<CODE>-TO</CODE>&quot;
+<BR>which is confusing PhraseExpress: Which is the &quot;real&quot; &quot;<CODE>-from</CODE>&quot; parameter? (As far as &quot;<CODE>-to</CODE>&quot;, which is not a legal parameter, your guess is as good as mine.)</P>
 
 <P><IMG SRC="../images/generic/substr_with_dash_from.jpg" BORDER="1"/></P>
 
@@ -79,17 +79,17 @@
 <BR><CODE STYLE="background-color:#E1E1E1;">{#SUBSTR GET-THE-STRING{#asc 45}FROM-HERE~TO-THERE -from 21 -count 13}</CODE>
 <BR><CODE STYLE="background-color:#E1E1E1;">{#SUBSTR {#insert zTestStrDshFrmTldTo} -from 21 -count 13}</CODE></P>
 
-<P><I>Where <CODE>&quot;zTestStrDshFrmTldTo&quot;</CODE> is equal to
+<P><I>Where &quot;<CODE>zTestStrDshFrmTldTo</CODE>&quot; is equal to
 <BR> &nbsp; &nbsp; <CODE>GET-THE-STRING-FROM-HERE~TO-THERE</CODE></I></P>
 
-<P>Output: <CODE>&quot;GET-THE-STRIN&quot;</CODE></P>
+<P>Output: &quot;<CODE>GET-THE-STRIN</CODE>&quot;</P>
 
 <a name="dashparamnamesol"/><H3><CODE>[<A HREF="#dashparamname">BACK</A>]</CODE> &nbsp; <U>The solution</U></H3>
 
-<P>The solution--which is impossible--is to never have an input string that, when using <CODE>&quot;SUBSTRING&quot;</CODE>, contains <CODE>&quot;-from&quot;</CODE> or <CODE>&quot;-to&quot;</CODE>.</P>
+<P>The solution--which is impossible--is to never have an input string that, when using &quot;<CODE>SUBSTRING</CODE>&quot;, contains &quot;<CODE>-from</CODE>&quot; or &quot;<CODE>-to</CODE>&quot;.</P>
 
 <P><CODE STYLE="background-color:#E1E1E1;">{#SUBSTR GET-THE-STRING~FROM-HERE~TO-THERE -from 21 -count 13}</CODE></P>
-<P>Output: <CODE>&quot;HERE~TO-THERE&quot;</CODE></P>
+<P>Output: &quot;<CODE>HERE~TO-THERE</CODE>&quot;</P>
 
 
 <P><B>This is a problem with <I><U>all</U></I> PhraseExpress functions that have parameters</B> (<CODE>COND</CODE>, <CODE>REPLACE</CODE>, <CODE>LOOP</CODE>, <CODE>INPUT</CODE>, etc.). For example:
@@ -97,7 +97,7 @@
 
 <P><IMG SRC="../images/generic/mbx_with_dash_param_problem.jpg" BORDER="1"/></P>
 
-<P>Since you are largely in control of the text in <CODE>&quot;MSGBOX&quot;</CODE>-s and <CODE>&quot;BALLOON&quot;</CODE>-s, it is strongly recommended that you use tildes (<CODE>'~'</CODE>) in lieu of dashes.</P>
+<P>Since you are largely in control of the text in &quot;<CODE>MSGBOX</CODE>&quot;-s and &quot;<CODE>BALLOON</CODE>&quot;-s, it is strongly recommended that you use tildes (<CODE>'~'</CODE>) in lieu of dashes.</P>
 
 <P>The ability to <A HREF="wishes.html#escapestr">escape strings</A> would solve this problem:</P>
 
@@ -129,7 +129,7 @@ GET-THE-STRING-FROM-HERE~TO-THERE</PRE>
 
 <P>Intermittently, when PhraseExpress &quot;directly&quot; types text into a dialog's textbox, it instead prints that text into the document-proper--or in the case of modal dialogs, such as &quot;Open File(s)&quot;, it causes DINGs.</P>
 
-<P>For example, while this works most of the time (assuming <CODE>&quot;xxx&quot;</CODE> exists):</P>
+<P>For example, while this works most of the time (assuming &quot;<CODE>xxx</CODE>&quot; exists):</P>
 
 <PRE STYLE="background-color:#E1E1E1;"><!--xcfexample...START  //  {#BALLOON -title findnextx -text About to start}{#sleep 2000}--><B><U>findnextx</U></B>
 {#insert zFcsTP<A HREF="../tasks/snr.html#findxmpls">Find</A>DlgOpen}
@@ -147,9 +147,9 @@ GET-THE-STRING-FROM-HERE~TO-THERE</PRE>
 {#insert zFindDlgClose}</PRE>
 
 <P>This is called <B>&quot;set-printing&quot;</B>: Setting and then immediately printing (and usually, discarding) a <A HREF="../basics/xbnpe_phrase_types.html#variable">variable</A>.<UL>
-	<LI>The <CODE>&quot;zFIND_WHAT&quot;</CODE> set-print can be easily created with <CODE>&quot;fwhatp&quot;</CODE>.</LI>
-	<LI>The <CODE>&quot;zvRPLC_WITH&quot;</CODE> set-print can be created with <CODE>&quot;rwithp&quot;</CODE></LI>
-	<LI>The <CODE>&quot;stpr&quot;</CODE> utility, when called from immediately following a <CODE>SETPHRASE</CODE>, creates the &quot;print&quot; call for that setphrase.</LI>
+	<LI>The &quot;<CODE>zFIND_WHAT</CODE>&quot; set-print can be easily created with &quot;<CODE>fwhatp</CODE>&quot;.</LI>
+	<LI>The &quot;<CODE>zvRPLC_WITH</CODE>&quot; set-print can be created with &quot;<CODE>rwithp</CODE>&quot;</LI>
+	<LI>The &quot;<CODE>stpr</CODE>&quot; utility, when called from immediately following a <CODE>SETPHRASE</CODE>, creates the &quot;print&quot; call for that setphrase.</LI>
 </UL></P>
 
 <P>An alternative to set-printing is simply to call a phrase containing the find-text. Such as:</P>
@@ -186,8 +186,8 @@ xxx</PRE>
 	<BR>The <B>solution</B> is to set the text to a variable/phrase then call the phrase (instead of typing it), or to use the clipboard <I>before</I> the text is printed.
 	<BR>&nbsp;</LI>
 	<LI>The mouse is frozen at random points, both during and after phrase-execution. The <B>solution</B> is to<UL>
-		<LI><B>During phrase exceution:</B> Hit the <CODE>&quot;Caps Lock&quot;</CODE> key <I>twice</I>. Note that <CODE>&quot;Esc&quot;</CODE> cancels the process, and <CODE>&quot;Space&quot;</CODE> dismisses any currently-displayed dialog box.</LI>
-		<LI><B>After phrase exceution:</B> Hit the <CODE>&quot;Esc&quot;</CODE> key--<I>as long as the PhraseExpress application is not <B>both</B> open and focused on.</I></LI>
+		<LI><B>During phrase exceution:</B> Hit the &quot;<CODE>Caps Lock</CODE>&quot; key <I>twice</I>. Note that &quot;<CODE>Esc</CODE>&quot; cancels the process, and &quot;<CODE>Space</CODE>&quot; dismisses any currently-displayed dialog box.</LI>
+		<LI><B>After phrase exceution:</B> Hit the &quot;<CODE>Esc</CODE>&quot; key--<I>as long as the PhraseExpress application is not <B>both</B> open and focused on.</I></LI>
 	</UL></LI>
 </UL></P>
 
@@ -199,13 +199,13 @@ xxx</PRE>
 </PRE>
 <a name="spacehitsdlgbtn"/><H2>[<A HREF="#top">top</A>] &nbsp; Typing a <CODE>{#SPACE}</CODE> dismisses a non-Pex dialog</H2>
 
-<P>When a modal <I>non-PhraseExpress</I> dialog is open, and it is dismissed unexpectedly, check to see that a call to <CODE>&quot;{#SPACE}&quot;</CODE> is not being typed during that time. For example:</P>
+<P>When a modal <I>non-PhraseExpress</I> dialog is open, and it is dismissed unexpectedly, check to see that a call to &quot;<CODE>{#SPACE}</CODE>&quot; is not being typed during that time. For example:</P>
 
 <P><CODE STYLE="background-color:#E1E1E1;">{#insert zTPFindDlgOpen}text definitely not in the document{#insert zFindBtnNext}some{#SPACE}more text{#insert zFindBtnNext}{#insert zFindDlgClose}</CODE></P>
 
-<P>When clicking the find-next button the <I>first time</I>, it causes a modal &quot;cannot-find&quot; dialog to appear. The call to <CODE>&quot;{#SPACE}&quot;</CODE> in the next search term dismisses that dialog, resulting in only <CODE>&quot;more text&quot;</CODE> being found.</P>
+<P>When clicking the find-next button the <I>first time</I>, it causes a modal &quot;cannot-find&quot; dialog to appear. The call to &quot;<CODE>{#SPACE}</CODE>&quot; in the next search term dismisses that dialog, resulting in only &quot;<CODE>more text</CODE>&quot; being found.</P>
 
-<P>This problem only occurs when using <CODE>&quot;{#SPACE}&quot;</CODE>. Neither
+<P>This problem only occurs when using &quot;<CODE>{#SPACE}</CODE>&quot;. Neither
 <BR> &nbsp; &nbsp; <CODE>some more text</CODE>
 <BR>nor
 <BR> &nbsp; &nbsp; <CODE>some{#asc 32}more text</CODE>

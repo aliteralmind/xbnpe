@@ -13,7 +13,7 @@
 <H1>XBN-PhraseExpress: Creating and managing PhraseExpress code</H1>
 <H2>CPCB: Call phrase-name in ClipBoard</H2>
 
-<P><CODE>&quot;cpcb&quot;</CODE> is an <A HREF="../basics/xbnpe_phrase_types.html#action">action</A> that executes the phrase-name currently in the clipboard, and can also execute a very limited set of raw PhraseExpress code. Complete <CODE>&quot;cpcb&quot;</CODE> syntax (via <CODE>&quot;cpcbsyn&quot;</CODE>) is displayed after executing the <CODE>cpcb</CODE> phrase itself.</P>
+<P>&quot;<CODE>cpcb</CODE>&quot; is an <A HREF="../basics/xbnpe_phrase_types.html#action">action</A> that executes the phrase-name currently in the clipboard, and can also execute a very limited set of raw PhraseExpress code. Complete &quot;<CODE>cpcb</CODE>&quot; syntax (via &quot;<CODE>cpcbsyn</CODE>&quot;) is displayed after executing the <CODE>cpcb</CODE> phrase itself.</P>
 
 <P><B>Contents:</B><UL>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#cpcb">GO</A></B></FONT>]</CODE> &nbsp; <CODE>cpcb</CODE>: The &quot;main&quot; CPCB utility</LI>
@@ -29,15 +29,15 @@
 </PRE>
 <A NAME="cpcb"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; <CODE>cpcb</CODE>: The &quot;main&quot; CPCB utility</H2>
 
-<P>Executing <CODE>&quot;cpcb&quot;</CODE>, in turn, executes the phrase whose <I>name</I> is in the clipboard. For example, with
+<P>Executing &quot;<CODE>cpcb</CODE>&quot;, in turn, executes the phrase whose <I>name</I> is in the clipboard. For example, with
 <BR> &nbsp; &nbsp; <CODE>zTPFindDlgOpen</CODE>
 <BR>in the clipboard, the find dialog opens. It concludes by displaying a <CODE>BALLOON</CODE> containing complete <CODE>cpcb</CODE>-related syntax.</P>
 
-<P>All other <CODE>cpcb</CODE> variations, as listed throughout this document, ultimately call <CODE>cpcb</CODE>--or, more accurately, its &quot;raw&quot; command: <CODE>&quot;zCallPhraseNameInCB&quot;</CODE>, which does not display the syntax balloon.</P>
+<P>All other <CODE>cpcb</CODE> variations, as listed throughout this document, ultimately call <CODE>cpcb</CODE>--or, more accurately, its &quot;raw&quot; command: &quot;<CODE>zCallPhraseNameInCB</CODE>&quot;, which does not display the syntax balloon.</P>
 
 <H4><U><CODE>[x] option</CODE> -- Suppressing the syntax-summary balloon</U></H4>
 
-<P>To suppress the syntax-balloon, add the <B><CODE>'x'</CODE> option</B>: <CODE>&quot;cpcbx&quot;</CODE>. The <CODE>[x]</CODE> option is required when the process being called happens to also end with a balloon. Without it, the <CODE>cpcb</CODE>-s balloon suppresses it.</P>
+<P>To suppress the syntax-balloon, add the <B><CODE>'x'</CODE> option</B>: &quot;<CODE>cpcbx</CODE>&quot;. The <CODE>[x]</CODE> option is required when the process being called happens to also end with a balloon. Without it, the <CODE>cpcb</CODE>-s balloon suppresses it.</P>
 
 <H4><U>Using <CODE>cpcb</CODE> to execute code directly</U></H4>
 
@@ -57,7 +57,7 @@
 
 <P>Copies the word immediately next to the cursor, returns it to its original position, then executes <CODE>cbcb</CODE>. Adding the <CODE>'x'</CODE> option instead executes <CODE>cpcbx</CODE><UL>
 	<LI><B><CODE>cpwl</CODE>:</B> Copy word-left, <CODE><A HREF="#cpcb">cpcb</A></CODE>
-	<BR><I>This is useful when <A HREF="debugging.html">debugging</A> a large process. Put the processes phrase-name into a new document, place the cursor after it, and execute <CODE>&quot;cpwlx&quot;</CODE> to start it.</I></LI>
+	<BR><I>This is useful when <A HREF="debugging.html">debugging</A> a large process. Put the processes phrase-name into a new document, place the cursor after it, and execute &quot;<CODE>cpwlx</CODE>&quot; to start it.</I></LI>
 	<LI><B><CODE>cpwr</CODE>:</B> Copy word-right, <CODE>cpcb</CODE></LI>
 	<LI><B><CODE>cpln</CODE>:</B> Copy word-left, <CODE>{#ENTER}</CODE>, <CODE>cpcb</CODE></LI>
 	<LI><B><CODE>cplq</CODE>:</B> Copy word-left, type <CODE>'='</CODE>, <CODE>cpcb</CODE></LI>
@@ -65,7 +65,7 @@
 
 <H2><CODE>cplnn</CODE></H2>
 
-<P>Another useful debugging utility. Calls <CODE>cpln</CODE> for a &quot;line-list&quot; of phrase-names. Execute this with the cursor immediately-following the top-most phrase-name. For example, executing <CODE>&quot;cplnn&quot;</CODE> with these (bogus! non-existing!) phrase-names...</LI>
+<P>Another useful debugging utility. Calls <CODE>cpln</CODE> for a &quot;line-list&quot; of phrase-names. Execute this with the cursor immediately-following the top-most phrase-name. For example, executing &quot;<CODE>cplnn</CODE>&quot; with these (bogus! non-existing!) phrase-names...</LI>
 
 <PRE STYLE="background-color:#E1E1E1;">zPrintAnX<I><B><U>[CURSOR]</U></B></I>
 zPrintAnX

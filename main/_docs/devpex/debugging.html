@@ -13,12 +13,12 @@
 
 <P><B>Contents:</B><UL>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#tracefreeze">GO</A></B></FONT>]</CODE> &nbsp; Process tracing and freezing</LI>
-	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#kpspeed">GO</A></B></FONT>]</CODE> &nbsp; Changing execution speed (and <CODE>&quot;zTSlp&quot;</CODE>)</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#kpspeed">GO</A></B></FONT>]</CODE> &nbsp; Changing execution speed (and &quot;<CODE>zTSlp</CODE>&quot;)</LI>
 	<LI>Documented elsewhere:<UL>
 		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="../generic/troubleshooting.html">GO</A></B></FONT>]</CODE> &nbsp; Generic PhraseExpress Troubleshooting</LI>
 		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="../basics/tpkc/user_menu2.html#tpkcumakcdt">GO</A></B></FONT>]</CODE> &nbsp; All debugging tools in the TPKC project</LI>
 		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="cpcb.html#cpwl">GO</A></B></FONT>]</CODE> &nbsp; Executing phrase-names next to the cursor: <CODE>cpwl</CODE> and <CODE>cplnn</CODE></LI>
-		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="xpc.html#ins">GO</A></B></FONT>]</CODE> &nbsp; <B><CODE>insqs</CODE>:</B> <CODE>&quot;X='{#insert X}'&quot;</CODE></LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="xpc.html#ins">GO</A></B></FONT>]</CODE> &nbsp; <B><CODE>insqs</CODE>:</B> &quot;<CODE>X='{#insert X}'</CODE>&quot;</LI>
 		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="../tasks/file_manipulation.html#aboutto">GO</A></B></FONT>]</CODE> &nbsp; File manipulation: Print-delete &quot;about to open/insert&quot; warning</LI>
 	</UL></LI>
 </UL></P>
@@ -30,7 +30,7 @@
 </PRE>
 <A NAME="tracefreeze"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; XBNPE debugging: Process tracing and freezing with <CODE>alertbox[1-10]</CODE></H2>
 
-<P><CODE>alertbox</CODE>-es are <A HREF="../basics/xbnpe_phrase_types.html#command">commands</A> that help discover where a problem is occuring in your code (&quot;tracing&quot;), and also for temporarily stopping execution to analyze the current state (&quot;freezing&quot;). Insert <CODE>alertbox</CODE>-es them as necessary, using the <CODE>&quot;pab[1-10]&quot;</CODE> actions. For example,
+<P><CODE>alertbox</CODE>-es are <A HREF="../basics/xbnpe_phrase_types.html#command">commands</A> that help discover where a problem is occuring in your code (&quot;tracing&quot;), and also for temporarily stopping execution to analyze the current state (&quot;freezing&quot;). Insert <CODE>alertbox</CODE>-es them as necessary, using the &quot;<CODE>pab[1-10]</CODE>&quot; actions. For example,
 <BR> &nbsp; &nbsp; <CODE>pab3</CODE>
 <BR>is the <A HREF="xpc.html">phrase-creator</A> for the <A HREF="../basics/xbnpe_phrase_types.html#command">command</A>
 <BR> &nbsp; &nbsp; <CODE>{#insert alertbox3}</CODE>
@@ -54,7 +54,7 @@
 <HR/>
 
 </PRE>
-<A NAME="kpspeed"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; XBNPE debugging: Changing execution speed (and <CODE>&quot;zTSlp&quot;</CODE>)</CODE></H2>
+<A NAME="kpspeed"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; XBNPE debugging: Changing execution speed (and &quot;<CODE>zTSlp</CODE>&quot;)</CODE></H2>
 
 <P><I>[go to <A HREF="#kptemp">temporary</A>, <A HREF="#kppermanent">permanent</A>]</I></P>
 
@@ -111,7 +111,7 @@
 	<LI>Each &quot;action&quot; and &quot;command&quot; in the above table immediately changes key-press speed globally--for <I>everything</I>, both in, and created with, XBN-PhraseExpress.</LI>
 	<LI>Each command is accessible in the <A HREF="../devpex/xbnpe_ddmenus.html#user">XBNPE user-menu</A> (choose
 	<BR> &nbsp; &nbsp; &quot;Key-press [execution] speeds&quot;
-	<BR>). To determine the current speed, use <CODE>'<B>kpt</B>'</CODE>. <CODE>kpt</CODE> also presents a complete syntax to speed-related actions (aside from the below <CODE>&quot;fnkp&quot;</CODE>).</LI>
+	<BR>). To determine the current speed, use <CODE>'<B>kpt</B>'</CODE>. <CODE>kpt</CODE> also presents a complete syntax to speed-related actions (aside from the below &quot;<CODE>fnkp</CODE>&quot;).</LI>
 	<LI>Aside from fast-mode, each of the above commands are equivalent to
 <BR> &nbsp; &nbsp; <CODE>{#SETPHRASE -description zvMILLS -content <B><I><CODE>[the-sleep-number-as-in-the-above-table]</CODE></I></B> -autotext zvMILLS -folder ctvv_folder}{#insert zKeyPressSpeedSetToMills_M_mils}</CODE></LI>
 </UL></P>
@@ -126,7 +126,7 @@
 
 <P>To quickly find (and delete) all calls to
 <BR> &nbsp; &nbsp; <CODE>'zKeyPress<I>[anything]</I>'</CODE>
-<BR>use <B><CODE>&quot;fnkp&quot;</CODE></B> <I>(this is not, and cannot be, mentioned in syntax listing)</I>.</P>
+<BR>use <B>&quot;<CODE>fnkp</CODE>&quot;</B> <I>(this is not, and cannot be, mentioned in syntax listing)</I>.</P>
 
 <a name="kppermanent"/><H4><CODE>[<A HREF="#kpspeed">BACK</A>]</CODE> &nbsp; <U>To permanently (or to offer your users the <I>possibility</I> to) slow down execution...</U></H4>
 

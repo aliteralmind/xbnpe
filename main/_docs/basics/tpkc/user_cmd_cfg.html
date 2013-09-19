@@ -84,9 +84,9 @@ is <CODE>3</CODE>, then the following must exist:<UL>
 </PRE>
 <A NAME="assignkcs"/><H2><CODE>[<A HREF="#top">top</A> -- PREV / <A HREF="#assignkcs2">NEXT</A>]</CODE> &nbsp; Assigning a new key-command via user-command-configuration: Step-by-step</H2>
 
-<P>This section describes how to install a TextPad command<OL>
+<P>This section describes how to install a TextPad command...<OL>
 	<LI>after all <A HREF="../tpbs.html">TextPad-bootstraps</A> have been <A HREF="../tpbs_install.html">installed</A>,</LI>
-	<LI>and the TPKC-project is fully built.</LI>
+	<LI>and the TPKC-project is fully built (you have successfully run the TPKC <A HREF="index.html#userbuild01">user-build-process</A>).</LI>
 </OL></P>
 
 <P>As an example, these instructions assign the command
@@ -139,7 +139,6 @@ is <CODE>3</CODE>, then the following must exist:<UL>
 	<LI>This key-command must be unique among all TextPad built-in commands. There is no automated way to enforce this. However, there are numerous <A HREF="user_menu2.html#tpkcumakcdt">debugging tools</A> to help you diagnose conflicts.</LI>
 </UL></P>
 
-<H1>TODO: Update this to reflect Ctrl+Pgdown as SECOND kc.....**WITH** ending-sleep, right?!</H1>
 <P><IMG SRC="../../images/basics/tpkc/assign_kc_sbs_pagedown_cursor_usr_cfg_file.jpg" BORDER="1"/></P>
 
 <PRE>
@@ -158,7 +157,7 @@ is <CODE>3</CODE>, then the following must exist:<UL>
 <P>And create its new <A HREF="#NbsKcEscNum">nbs-key-command phrase</A>:
 <BR> &nbsp; &nbsp; <CODE>zTpkcPageDownNbsKcEsc2	\\\{#insert <A HREF="../xkp_zup.html#1mod">zCpPGDN</A>\\\}\\\{#sleep 10\\\}	zTpkcPageDownNbsKcEsc2</CODE><BR>The convenience utility <I>(<CODE><A HREF="../../devpex/xbnpe_ddmenus.html#xh">xh</A>tk</CODE>)</I>
 <BR> &nbsp; &nbsp; <CODE>newnbskc</CODE>
-<BR>can create this phrase for you (replace <CODE>&quot;XXX&quot;</CODE> with the <I><A HREF="../../devpex/xpc.html#escaped">escaped</A></I> key-command). Note that the <A HREF="config_vars.html#DfltPostKcSlpMils">default post-kc milliseconds</A> is automatically printed. Feel free to change it.
+<BR>can create this phrase for you (replace &quot;<CODE>XXX</CODE>&quot; with the <I><A HREF="../../devpex/xpc.html#escaped">escaped</A></I> key-command). Note that the <A HREF="config_vars.html#DfltPostKcSlpMils">default post-kc milliseconds</A> is automatically printed. Feel free to change it.
 <BR><I><B>Warning:</B> <CODE>newnbskc</CODE> <A HREF="tpacl.html#recommended">will only work</A> if the TextPad built-in command
 <BR> &nbsp; &nbsp; <CODE>Cursor &gt; CharLeftExtend</CODE>
 <BR>(<CODE>zTPSelectL1c</CODE>) has already been assigned a key-command.</I></P>
@@ -172,9 +171,11 @@ is <CODE>3</CODE>, then the following must exist:<UL>
 
 <P><A HREF="../phrase_file_import1.html">Import</A> the phrase-file(s) containing the new key-command(s) to their proper <A HREF="tpkc_user_dir.html#13file">location</A>, and then execute the necessary build-process(es):</P>
 
-<H3>Do I need to re-create the <A HREF="../tpbs.html#terminology">nbs-phrases</A>?</H3>
+<H3>Do I need to re-create the nbs-phrases?</H3>
 
-<P>If a command's <A HREF="../tpbs.html#terminology">primary key-command</A> was changed (added, changed, or deleted), then TPKC user-build-process 2-of-2 must be run again, in order to re-create its nbs-phrase. To run this process for all categories, execute (in the <A HREF="user_menu.html">TPKC-user-menu</A>):</P>
+<P><I>Need to do a <A HREF="index.html#userbuild">full refresh</A> from your TextPad <A HREF="tpacl.html">all-cmd-list</A>?</I></P>
+
+<P>If a command's <A HREF="../tpbs.html#terminology">primary key-command</A> was changed (added, changed, or deleted), then TPKC user-build-process <A HREF="index.html#userbuild02">2-of-2</A> must be run again, in order to re-create its nbs-phrase. To run this process for all categories, execute (via the <A HREF="user_menu.html">TPKC-user-menu</A>):</P>
 
 <PRE>TextPad built-in commands (TPKC) project &gt;
    <A HREF="user_menu2.html#tpkcumubp">z-User-build processes</A> &gt;

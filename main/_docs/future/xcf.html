@@ -32,7 +32,7 @@
 	</UL></LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#executable">GO</A></B></FONT>]</CODE> &nbsp; <B>Executable phrases:</B><UL>
 		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#exeplain">GO</A></B></FONT>]</CODE> &nbsp; Plain executable</LI>
-		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#exewsc">GO</A></B></FONT>]</CODE> &nbsp; <CODE>&quot;wsc&quot;</CODE> executable</LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#exewsc">GO</A></B></FONT>]</CODE> &nbsp; &quot;<CODE>wsc</CODE>&quot; executable</LI>
 	</UL></LI>
 </UL></P>
 
@@ -99,8 +99,8 @@
 <BR> &nbsp; &nbsp; <CODE>xcfbuild</CODE>
 <BR>process. Two phrases allow each XCF-example to be individually executed, and one additional phrase allows all examples in an XCF-file to be executed together.<UL>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#exeplain">GO</A></B></FONT>]</CODE> &nbsp; <B>Plain executable:</B> Execute the XCF-example, exactly as displayed in the documentation.</LI>
-	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#exewsc">GO</A></B></FONT>]</CODE> &nbsp; <B><CODE>&quot;wsc&quot;</CODE> executable:</B> The same as the plain-executable, with additional setup and cleanup code.</LI>
-	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#exeall">GO</A></B></FONT>]</CODE> &nbsp; <B>Test all XCF-examples in an XCF-file:</B> Calls each example's <CODE>wsc</CODE>-executable, one after the other. This may also perform some overall setup and cleanup operations, as needed by all examples. Running this <CODE>&quot;exe-all&quot;</CODE> phrase is to verify all examples in an XCF-file work as intended.</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#exewsc">GO</A></B></FONT>]</CODE> &nbsp; <B>&quot;<CODE>wsc</CODE>&quot; executable:</B> The same as the plain-executable, with additional setup and cleanup code.</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#exeall">GO</A></B></FONT>]</CODE> &nbsp; <B>Test all XCF-examples in an XCF-file:</B> Calls each example's <CODE>wsc</CODE>-executable, one after the other. This may also perform some overall setup and cleanup operations, as needed by all examples. Running this &quot;<CODE>exe-all</CODE>&quot; phrase is to verify all examples in an XCF-file work as intended.</LI>
 </UL></P>
 
 <PRE>
@@ -127,7 +127,7 @@
 <HR/>
 
 </PRE>
-<A NAME="exewsc"/><H2><CODE>[<A HREF="#executable">BACK</A>]</CODE> &nbsp; XCF-example: Executable: <CODE>&quot;wsc&quot;</CODE>: With-setup-and-cleanup</H2>
+<A NAME="exewsc"/><H2><CODE>[<A HREF="#executable">BACK</A>]</CODE> &nbsp; XCF-example: Executable: &quot;<CODE>wsc</CODE>&quot;: With-setup-and-cleanup</H2>
 
 <P><I><B>XCF-example:</B> <CODE>[<A HREF="#display">display</A>, <A HREF="#htmlsource">HTML source</A>, executable phrases]</CODE>
 <BR><B>Executable:</B> <CODE>[<A HREF="#exeplain">plain</A>, wsc, <A HREF="#exeall">all</A>]</CODE></I></P>
@@ -189,7 +189,7 @@
 
 <P><I>Also note that indentation is done with three spaces. While tabs are acceptable, they result in more severe indentation.</I></P>
 
-<P>The open and close markers contain set-up and clean-up code, that is only used in the <A HREF="#executable"><CODE>&quot;...wsc&quot;</CODE> executable phrase</A>.</P>
+<P>The open and close markers contain set-up and clean-up code, that is only used in the <A HREF="#executable">&quot;<CODE>...wsc</CODE>&quot; executable phrase</A>.</P>
 <PRE>
 
 <HR/>
@@ -203,7 +203,7 @@
 
 <PRE STYLE="background-color:#E1E1E1;">&lt;!--xcfexample...START  // ...--&gt;</PRE>
 
-<P>Any <I>set-up</I> code must be declared following the slash-slash-space (<CODE>&quot;// &quot;</CODE>). Although not required, it is strongly recommended that something always be done. At a minimum, consider notifying your users of the about-to-be-executed code. For examples that print output:
+<P>Any <I>set-up</I> code must be declared following the slash-slash-space (&quot;<CODE>// </CODE>&quot;). Although not required, it is strongly recommended that something always be done. At a minimum, consider notifying your users of the about-to-be-executed code. For examples that print output:
 <BR> &nbsp; &nbsp; <CODE>&lt;!--xcfexample...START  // dq1quotient:{#ENTER}--&gt;</CODE>
 <BR>For examples with no printed output:
 <BR> &nbsp; &nbsp; <CODE>&lt;!--xcfexample...START  // {#BALLOON -title Please wait... -text Beginning nameofxcfexample}--&gt;</CODE></P>
@@ -242,7 +242,7 @@
 
 <PRE STYLE="background-color:#E1E1E1;">&lt;!--xcfexample...END  // ...--&gt;</PRE>
 
-<P>Any <I>clean-up</I> code must be declared following the slash-slash-space (<CODE>&quot;// &quot;</CODE>). Although not required, it is strongly recommended that something always be done..............</P>
+<P>Any <I>clean-up</I> code must be declared following the slash-slash-space (&quot;<CODE>// </CODE>&quot;). Although not required, it is strongly recommended that something always be done..............</P>
 
 <PRE>
 

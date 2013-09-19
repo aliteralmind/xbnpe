@@ -36,12 +36,12 @@ zvCVT_FRMV_1C_setFROM_pjDtvNkcur</PRE>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#basicdefs">GO</A></B></FONT>]</CODE> &nbsp; Basic definitions</LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#globalivars">GO</A></B></FONT>]</CODE> &nbsp; Global internal-variables</LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#cfgfile">GO</A></B></FONT>]</CODE> &nbsp; LPD Configuration-File</LI>
-	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#plpdcf">GO</A></B></FONT>]</CODE> &nbsp; <CODE>&quot;plpdcf&quot;</CODE>: The central LPD-Framework process.</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#plpdcf">GO</A></B></FONT>]</CODE> &nbsp; &quot;<CODE>plpdcf</CODE>&quot;: The central LPD-Framework process.</LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#cvtutils">GO</A></B></FONT>]</CODE> &nbsp; CV-Type metadata and utilities</LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#keyutils">GO</A></B></FONT>]</CODE> &nbsp; Public and private-key utilities</LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#prjmeta">GO</A></B></FONT>]</CODE> &nbsp; LPD-Project Metadata</LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#prjutils">GO</A></B></FONT>]</CODE> &nbsp; LPD-Project Utilities</LI>
-	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#xmplprjtpmd">GO</A></B></FONT>]</CODE> &nbsp; Example LPD-Project: TextPad Macro Creator (<CODE>&quot;Tpmd&quot;</CODE>)</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#xmplprjtpmd">GO</A></B></FONT>]</CODE> &nbsp; Example LPD-Project: TextPad Macro Creator (&quot;<CODE>Tpmd</CODE>&quot;)</LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#multityped">GO</A></B></FONT>]</CODE> &nbsp; Multi-Typed LPD-Projects</LI>
 </UL></P>
 
@@ -55,17 +55,17 @@ zvCVT_FRMV_1C_setFROM_pjDtvNkcur</PRE>
 <a name="xmplprjtpmd"/>
 <H2><U>Example LPD-Project: TextPad Macro Creator</U> &nbsp; &nbsp; <CODE>[<A HREF="#top">top</A>]</CODE></H2>
 
-<P>The <B>&quot;TextPad Macro Creator</B>&quot; is an lpd-project that defines, records, and assigns key-commands to macros in the <A HREF="http://textpad.com">TextPad</A> plain-text text editor. This is an actual XBN-PhraseExpress project, with a project-abbreviation of <CODE>&quot;Tpm&quot;</CODE> and single &quot;macro&quot; data-type, which is abbreviated <CODE>''</CODE> (the empty-string--<I>nothing</I>).</P>
+<P>The <B>&quot;TextPad Macro Creator</B>&quot; is an lpd-project that defines, records, and assigns key-commands to macros in the <A HREF="http://textpad.com">TextPad</A> plain-text text editor. This is an actual XBN-PhraseExpress project, with a project-abbreviation of &quot;<CODE>Tpm</CODE>&quot; and single &quot;macro&quot; data-type, which is abbreviated <CODE>''</CODE> (the empty-string--<I>nothing</I>).</P>
 
 <P>This lpd-framework documentation uses a simplified version of this TextPad Macro Creator project, where the<UL>
-	<LI><B>project-abbreviation</B> equals <CODE>&quot;Tpmd&quot;</CODE> <I>(<CODE>'d'</CODE> for &quot;Demo&quot;)</I>, and</LI>
+	<LI><B>project-abbreviation</B> equals &quot;<CODE>Tpmd</CODE>&quot; <I>(<CODE>'d'</CODE> for &quot;Demo&quot;)</I>, and</LI>
 	<LI>the <B>data-type abbreviation</B> equals <CODE>''</CODE> <I>(there is only )</I></LI>
 </UL></P>
 
 <a name="tpmddatainst"/>
 <H4><U>Example TextPad Macro Creator data-instance</U> &nbsp; <CODE>[<A HREF="#xmplprjtpmd">back</A>]</CODE></H4>
 
-<P>Here is an example &quot;macro <A HREF="#basicdefs">data-instance</A>&quot; in the TextPad Macro Creator project. This particular macro finds the previous &quot;x-mark&quot; (<CODE>&quot;XXX&quot;</CODE>), going up.</P>
+<P>Here is an example &quot;macro <A HREF="#basicdefs">data-instance</A>&quot; in the TextPad Macro Creator project. This particular macro finds the previous &quot;x-mark&quot; (&quot;<CODE>XXX</CODE>&quot;), going up.</P>
 
 <PRE STYLE="background-color:#E1E1E1;">
 -<B><U>zzTpmdGtpxLivePNPostTC</U></B>
@@ -81,10 +81,10 @@ Gtpx</PRE>
 
 <P>This data-instance has five cv-types, as defined in the below lpd-config-file: <CODE>[LivePNPostTC]</CODE>, <CODE>[KeyCommand]</CODE>, <CODE>[Steps]</CODE>, <CODE>[MacroAbrv1C]</CODE>, <CODE>[PhrsNmAbrv1C]</CODE></P>
 
-<P><I>Realistically, I would make the value of the public and private-keys equal: <CODE>&quot;Gtpx&quot;</CODE>. I'm making them different here for clarification.</I></P>
+<P><I>Realistically, I would make the value of the public and private-keys equal: &quot;<CODE>Gtpx</CODE>&quot;. I'm making them different here for clarification.</I></P>
 
 <a name="tpmdcfgfile"/>
-<H4><U>The entire <CODE>&quot;Tpmd&quot;</CODE> lpd-config-file</U> &nbsp; <CODE>[<A HREF="#xmplprjtpmd">back</A>]</CODE></H4>
+<H4><U>The entire &quot;<CODE>Tpmd</CODE>&quot; lpd-config-file</U> &nbsp; <CODE>[<A HREF="#xmplprjtpmd">back</A>]</CODE></H4>
 
 <PRE STYLE="background-color:#E1E1E1;">{#insert zzInlineCVOutDir}={#insert zXPROOT_DIR_AG_phraseExpress}lpd_example_project_tpmd
 {#insert zzInlineCVPrjAbrv1C}=Tpmd
@@ -153,7 +153,7 @@ The explicit steps necessary to RECORD this macro. When the current installation
 
 <H3><U><CODE>zvCVT_FRMV_1C</CODE></U></H3>
 
-<P>Holds the <A HREF="#cfprvkl2frm1">post-from <CODE>&quot;_M_&quot;</CODE> abbreviation</A></P>
+<P>Holds the <A HREF="#cfprvkl2frm1">post-from &quot;<CODE>_M_</CODE>&quot; abbreviation</A></P>
 
 <H3><U>When put together...</U></H3>
 
@@ -194,10 +194,10 @@ The explicit steps necessary to RECORD this macro. When the current installation
 <BR> &nbsp; &nbsp; <CODE>zzMnvCmdEtrActionName1C</CODE>
 <BR>This phrase-name is in the format
 <BR> &nbsp; &nbsp; <CODE>zz[project][data-type][key][cv-type]</CODE><UL>
-	<LI><B>[project]:</B> The MINV-Command project is abbreviated <CODE>&quot;Mnv&quot;</CODE></LI>
-	<LI><B>[data-type]:</B> This particular project has <A HREF="#multityped">two data-types</A>: <I>command</I>, abbreviated <CODE>&quot;Cmd&quot;</CODE>, and <I>variable</I>, abbreviated <CODE>&quot;Var&quot;</CODE>. For projects with only a single data-type, it is possible for this to be the empty-string (<CODE>''</CODE>, or <I>nothing</I>).</LI>
-	<LI><B>[key]:</B> This config var is for the &quot;enter&quot; MINV-Command. In other words, in the MINV-Command project, this is the &quot;enter&quot; data-instance. It's key is <CODE>&quot;Etr&quot;</CODE>.</LI>
-	<LI><B>[cv-type]:</B> The cv-type of this configuration-variable is <CODE>&quot;ActionName1C&quot;</CODE>.</LI>
+	<LI><B>[project]:</B> The MINV-Command project is abbreviated &quot;<CODE>Mnv</CODE>&quot;</LI>
+	<LI><B>[data-type]:</B> This particular project has <A HREF="#multityped">two data-types</A>: <I>command</I>, abbreviated &quot;<CODE>Cmd</CODE>&quot;, and <I>variable</I>, abbreviated &quot;<CODE>Var</CODE>&quot;. For projects with only a single data-type, it is possible for this to be the empty-string (<CODE>''</CODE>, or <I>nothing</I>).</LI>
+	<LI><B>[key]:</B> This config var is for the &quot;enter&quot; MINV-Command. In other words, in the MINV-Command project, this is the &quot;enter&quot; data-instance. It's key is &quot;<CODE>Etr</CODE>&quot;.</LI>
+	<LI><B>[cv-type]:</B> The cv-type of this configuration-variable is &quot;<CODE>ActionName1C</CODE>&quot;.</LI>
 </UL>
 
 <P>One additional and unrelated definition: When a string is in <B>&quot;One Case</B>&quot; form, its first character is uppercase, and all others are lowercase.</P>
@@ -242,7 +242,7 @@ The explicit steps necessary to RECORD this macro. When the current installation
 <a name="cfgfile"/>
 <H2><U>LPD-Framework: LPD Configuration-File</U> &nbsp; &nbsp; <CODE>[<A HREF="#top">top</A>]</CODE></H2>
 
-<P>The lpd-config-file is the heart of your project's database. The <CODE>'<A HREF="#plpdcf">plpdcf</A>'</CODE> process reads this document, and generates everything from it. In most cases, any changes made to this configuration requires that the <CODE>&quot;plpdcf&quot;</CODE> process must be re-run.</P>
+<P>The lpd-config-file is the heart of your project's database. The <CODE>'<A HREF="#plpdcf">plpdcf</A>'</CODE> process reads this document, and generates everything from it. In most cases, any changes made to this configuration requires that the &quot;<CODE>plpdcf</CODE>&quot; process must be re-run.</P>
 
 <P>Here is a <A HREF="#tpmdcfgfile">complete lpd-config-file</A> for the <A HREF="#xmplprjtpmd">example TextPad Macro Creator project</A>, which defines, records, and assigns key-commands to macros in the TextPad plain-text editor.</P>
 
@@ -266,7 +266,7 @@ DATA_TYPE_ABRV_1C=...
 (**)
 ...</PRE>
 
-<P><I>Aside from the dots (<CODE>&quot;...&quot;</CODE>), this was generated with <CODE>'<A HREF="#plpdcf">blanklpdcf</A>'</CODE></I></P>
+<P><I>Aside from the dots (&quot;<CODE>...</CODE>&quot;), this was generated with <CODE>'<A HREF="#plpdcf">blanklpdcf</A>'</CODE></I></P>
 
 <a name="cfgfiletoc"/>
 <P>There are four sections in this document &nbsp; &nbsp; <CODE>[<A HREF="#cfgfile">back</A>]</CODE><OL>
@@ -311,8 +311,8 @@ DATA_TYPE_ABRV_1C=...
 <P><B>Project metadata access phrase:</B> <CODE>[<A HREF="#mddt1">DataTypeAbrv1C</A>]</CODE></P>
 
 <P>The type of <A HREF="#basicdefs">data-instance</A> represented by the configuration-variables in this LPD-config-file. Along with the project-abbreviation, this is used in a lot of phrase names, and should therefore be short--no more than four characters. For example, in the MINV-Command project, there are two data-types<UL>
-	<LI><I>commands</I>, abbreviated <CODE>&quot;Cmd&quot;</CODE>, and</LI>
-	<LI><I>variables</I>, abbreviated <CODE>&quot;Var&quot;</CODE></LI>
+	<LI><I>commands</I>, abbreviated &quot;<CODE>Cmd</CODE>&quot;, and</LI>
+	<LI><I>variables</I>, abbreviated &quot;<CODE>Var</CODE>&quot;</LI>
 </UL></P>
 
 <P><B>When your project only has one data-type</B>, then its abbreviation may be set to the empty-string (<CODE>''</CODE>, or <I>nothing</I>). Doing so is recommended.</P>
@@ -336,7 +336,7 @@ DATA_TYPE_ABRV_1C=...
 
 <P>The private key cv-type block must be preceded by a comment that begins:
 <BR> &nbsp; &nbsp; <CODE>(*{#insert zzRqdCmtStartPrivKey}</CODE>
-<BR>It must begin with <I>exactly</I> this text, but may have additional text following it, including line breaks. The only other requirement is that the final two characters in the line <I>immediately preceding</I> line <CODE>&quot;2.&quot;</CODE> must be the close-comment characters: <CODE>&quot;*)&quot;</CODE></P>
+<BR>It must begin with <I>exactly</I> this text, but may have additional text following it, including line breaks. The only other requirement is that the final two characters in the line <I>immediately preceding</I> line &quot;<CODE>2.</CODE>&quot; must be the close-comment characters: &quot;<CODE>*)</CODE>&quot;</P>
 
 <P><B>Legal example 1</B></P>
 
@@ -356,11 +356,11 @@ DATA_TYPE_ABRV_1C=...
 	<LI><B>CV-Type metadata access phrase:</B> <A HREF="#cvtufrm1"><CODE>...cvtFromAbrv1C</CODE></A></LI>
 </UL></P>
 
-<P>The <B>&quot;Post-From Abbreviation</B>&quot; (post <CODE>&quot;_M_&quot;</CODE>), which is called the <B>&quot;From Abrv</B>&quot;, serves two purposes. From the point of view of your lpd-project's users, this is the text that follows <CODE>&quot;_M_&quot;</CODE> (or <CODE>&quot;_st&quot;</CODE>) in phrase names (such as
+<P>The <B>&quot;Post-From Abbreviation</B>&quot; (post &quot;<CODE>_M_</CODE>&quot;), which is called the <B>&quot;From Abrv</B>&quot;, serves two purposes. From the point of view of your lpd-project's users, this is the text that follows &quot;<CODE>_M_</CODE>&quot; (or &quot;<CODE>_st</CODE>&quot;) in phrase names (such as
 <BR> &nbsp; &nbsp; <CODE>zDoSomething_M_pnv1</CODE>
 <BR>) when a particular <A HREF="#cvtuivn">internal-variable</A> must be set, in order for the phrase to function properly. This is a naming convention used throughout XBN-PhraseExpress.</P>
 
-<P><I>For lpd-project developers only</I>, the from-abrv also is the unique identifier for most of the phrase <I>names</I> of a <A HREF="#cvtutils">cv-type's metadata</A>. For example, take the &quot;phrase-name-abbreviation&quot; cv-type (abbreviated <CODE>&quot;Pnv1&quot;</CODE>) in the <A HREF="#tpmdcfgfile">example TextPad Macro Creator project</A>. Here are all of its metadata phrases:<UL>
+<P><I>For lpd-project developers only</I>, the from-abrv also is the unique identifier for most of the phrase <I>names</I> of a <A HREF="#cvtutils">cv-type's metadata</A>. For example, take the &quot;phrase-name-abbreviation&quot; cv-type (abbreviated &quot;<CODE>Pnv1</CODE>&quot;) in the <A HREF="#tpmdcfgfile">example TextPad Macro Creator project</A>. Here are all of its metadata phrases:<UL>
 	<LI><CODE>zzTpmd<U>Pnv1</U>_cfgValue_M_key</CODE></LI>
 	<LI><CODE>zzTpmd<U>Pnv1</U>_cfgVarPNmPost</CODE></LI>
 	<LI><CODE>zzTpmd<U>Pnv1</U>_intrnlVarNm</CODE></LI>
@@ -372,7 +372,7 @@ DATA_TYPE_ABRV_1C=...
 	<LI><CODE>zzTpmd<U>Pnv1</U>_keyCVTFromAbrv1C</CODE></LI>
 </UL>The only phrase whose phrase-name is not identified by the from-abrv, is the phrase whose <I>value</I> is the from-abrv:
 <BR> &nbsp; &nbsp; <CODE>zzTpmd<U>PhrsNmAbrv1C</U>_cvtFromAbrv1C</CODE>
-<BR>This name of this one phrase is uniquely identified by the phrase-name postfix (<CODE>&quot;PhrsNmAbrv1C&quot;</CODE>), as discussed in the next section. Conversely, the <I>value</I> of the phrase-name-postfix is stored in a phrase whose name is uniquely identified by the from-abrv:
+<BR>This name of this one phrase is uniquely identified by the phrase-name postfix (&quot;<CODE>PhrsNmAbrv1C</CODE>&quot;), as discussed in the next section. Conversely, the <I>value</I> of the phrase-name-postfix is stored in a phrase whose name is uniquely identified by the from-abrv:
 <BR> &nbsp; &nbsp; <CODE>zzTpmd<U>Pnv1</U>_cfgVarPNmPost</CODE></P>
 
 <P><I>Where a <A HREF="#basicdefs">data-instance</A> has a <A HREF="#mdprvk">private-key</A>, the cv-type metadata has the post-from abbreviation.</I></P>
@@ -392,7 +392,7 @@ DATA_TYPE_ABRV_1C=...
 
 <P>For lpd-project <I>developers</I> only, the phrase-name postfix also as the unique portion of the single <A HREF="#cvtutils">cv-type's utilty</A> that stores the <I>value</I> of the from-abrv. For example:
 <BR> &nbsp; &nbsp; <CODE>zzTpmd<U>PhrsNmAbrv1C</U>_cvtFromAbrv1C</CODE>
-<BR>whose value is <CODE>&quot;Prv1&quot;</CODE></P>
+<BR>whose value is &quot;<CODE>Prv1</CODE>&quot;</P>
 
 <P>Conversely, the phrase-name postfix itself is stored in a phrase whose name is uniquely identified by the from-abrv:
 <BR> &nbsp; &nbsp; <CODE>zzTpmd<U>Pnv1</U>_cfgVarPNmPost</CODE></P>
@@ -422,11 +422,11 @@ DATA_TYPE_ABRV_1C=...
 
 <P>The name of the phrase that can validate <I>values</I> of this cv-type. When no validation is wanted, set this to
 <BR> &nbsp; &nbsp; <CODE>{#insert zzValidateValueUnwantedFlag}</CODE>
-<BR>Otherwise, set this to the <I>name</I> of the phrase that will do the validation. It is strongly recommended that the phrase end with <CODE>&quot;_M_self&quot;</CODE> (at least <CODE>&quot;self&quot;</CODE>), indicating that the value must be set into its <A HREF="#cvtuivn">internal-variable</A>.</P>
+<BR>Otherwise, set this to the <I>name</I> of the phrase that will do the validation. It is strongly recommended that the phrase end with &quot;<CODE>_M_self</CODE>&quot; (at least &quot;<CODE>self</CODE>&quot;), indicating that the value must be set into its <A HREF="#cvtuivn">internal-variable</A>.</P>
 
 <P>This phrase is never called by the lpd-framework. It is merely stored.</P>
 
-<P>This may require other cv-types as well, depending on the order in which you plan to read in the configuration-variables. It is up to you to ensure all variables are set as required in the from-clause (<CODE>&quot;_M_...&quot;</CODE>).</P>
+<P>This may require other cv-types as well, depending on the order in which you plan to read in the configuration-variables. It is up to you to ensure all variables are set as required in the from-clause (&quot;<CODE>_M_...</CODE>&quot;).</P>
 
 <a name="cfprvkl6hfd"/>
 <H4><U>Line 6: Help for dialog</U> &nbsp; &nbsp; <CODE>[<A HREF="#cfprvk">back</A>]</CODE></H4>
@@ -455,7 +455,7 @@ DATA_TYPE_ABRV_1C=...
 <a name="cfnkcvs"/>
 <H3><U>LPD-Config-File: All non-key cv-types</U> &nbsp; &nbsp; <CODE>[<A HREF="#cfgfiletoc">back</A>]</CODE></H3>
 
-<P>All non-key cv-types (<CODE>&quot;nkcv&quot;</CODE>) exist immediately after the public-key. This section must begin with this exact comment (no extra text allowed):
+<P>All non-key cv-types (&quot;<CODE>nkcv</CODE>&quot;) exist immediately after the public-key. This section must begin with this exact comment (no extra text allowed):
 <BR> &nbsp; &nbsp; <CODE>(*{#insert zzRqdCmtStartAllNKVarsBelow}*)</CODE></P>
 
 <P>After this is followed by each cv-type block. For example:</P>
@@ -472,7 +472,7 @@ DATA_TYPE_ABRV_1C=...
 
 <H4><U>Line 1: Potentially-empty comment</U></H4>
 
-<P>While this comment is required, it may be empty. As with the private and public key, it may contain additional text, as long as the line <I>immediately preceeding</I> line two ends with <CODE>&quot;*)&quot;</CODE>, and there is no other '*)' between it and the comment-start.</P>
+<P>While this comment is required, it may be empty. As with the private and public key, it may contain additional text, as long as the line <I>immediately preceeding</I> line two ends with &quot;<CODE>*)</CODE>&quot;, and there is no other '*)' between it and the comment-start.</P>
 
 <H4><U>Line 5: Printable flag</U></H4>
 
@@ -502,16 +502,16 @@ DATA_TYPE_ABRV_1C=...
 <P>The <CODE>'<A HREF="#plpdcf">plpdcf</A>'</CODE> process generates a large set of utility functions tailored to your lpd-project. Some of these phrases are intented to be called directly by you (&quot;actions&quot;), while others are intended for calling only from other phrases (&quot;commands&quot;).</P>
 
 <P>The phrases generated fall into these categories:<UL>
-	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#pjudbgx">GO</A></B></FONT>]</CODE> &nbsp; Print diagnostics at the cursor: <B><CODE>&quot;dxctpmd&quot;</CODE></B>, <B><CODE>&quot;dxvtpmd&quot;</CODE></B></LI>
-	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#pjudbgd">GO</A></B></FONT>]</CODE> &nbsp; Display diagnostics in a dialog: <B><CODE>&quot;dgctpmd&quot;</CODE></B>, <B><CODE>&quot;dgvtpmd&quot;</CODE></B></LI>
-	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#pjudphrs">GO</A></B></FONT>]</CODE> &nbsp; Print phrases: <B><CODE>&quot;kcttpmd&quot;</CODE></B>, <B><CODE>&quot;mpctpmd&quot;</CODE></B>, <B><CODE>&quot;mpvtpmd&quot;</CODE></B>, <B><CODE>&quot;upctpmd&quot;</CODE></B>, <B><CODE>&quot;upvtpmd&quot;</CODE></B></LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#pjudbgx">GO</A></B></FONT>]</CODE> &nbsp; Print diagnostics at the cursor: <B>&quot;<CODE>dxctpmd</CODE>&quot;</B>, <B>&quot;<CODE>dxvtpmd</CODE>&quot;</B></LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#pjudbgd">GO</A></B></FONT>]</CODE> &nbsp; Display diagnostics in a dialog: <B>&quot;<CODE>dgctpmd</CODE>&quot;</B>, <B>&quot;<CODE>dgvtpmd</CODE>&quot;</B></LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#pjudphrs">GO</A></B></FONT>]</CODE> &nbsp; Print phrases: <B>&quot;<CODE>kcttpmd</CODE>&quot;</B>, <B>&quot;<CODE>mpctpmd</CODE>&quot;</B>, <B>&quot;<CODE>mpvtpmd</CODE>&quot;</B>, <B>&quot;<CODE>upctpmd</CODE>&quot;</B>, <B>&quot;<CODE>upvtpmd</CODE>&quot;</B></LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#pjudkeys">GO</A></B></FONT>]</CODE> &nbsp; Private- and public-keys</LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#pjunkcv">GO</A></B></FONT>]</CODE> &nbsp; Set internal-variables of non-key config-vars</LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#pjunnmcall">GO</A></B></FONT>]</CODE> &nbsp; CV-Types: Phrase names and phrase-calls</LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#pjuother">GO</A></B></FONT>]</CODE> &nbsp; Other utilities</LI>
 	</UL></P>
 
-<P><I>(This section assumes you are using the <A HREF="#xmplprjtpmd">example TextPad Macro Creator</A> project, hence <CODE>&quot;tpmd&quot;</CODE> in actions, and <CODE>&quot;Tpmd&quot;</CODE> in commands.)</I></P>
+<P><I>(This section assumes you are using the <A HREF="#xmplprjtpmd">example TextPad Macro Creator</A> project, hence &quot;<CODE>tpmd</CODE>&quot; in actions, and &quot;<CODE>Tpmd</CODE>&quot; in commands.)</I></P>
 
 <a name="pjudbgx"/>
 <H3>LPD-Project-based utilities: Print diagnostics at the cursor &nbsp; <CODE>[<A HREF="#prjutils">back</A>]</CODE></H3>
@@ -520,8 +520,8 @@ DATA_TYPE_ABRV_1C=...
 
 <P><UL>
 	<LI><B>Actions:</B><UL>
-		<LI><B><CODE>&quot;dxctpmd&quot;</CODE>:</B> Prompts for the public key, then prints the diagnostics for an <I>existing</I> data-instance (the <CODE>'c'</CODE> in <CODE>&quot;dxc&quot;</CODE> stands for Configuration-variables).</LI>
-		<LI><B><CODE>&quot;dxvtpmd&quot;</CODE>:</B> Prints diagnostics for the data-instance <I>currently in memory</I>--meaning all values currently in the lpd-projects <A HREF="#cvtuivn">internal-variables</A>.</LI>
+		<LI><B>&quot;<CODE>dxctpmd</CODE>&quot;:</B> Prompts for the public key, then prints the diagnostics for an <I>existing</I> data-instance (the <CODE>'c'</CODE> in &quot;<CODE>dxc</CODE>&quot; stands for Configuration-variables).</LI>
+		<LI><B>&quot;<CODE>dxvtpmd</CODE>&quot;:</B> Prints diagnostics for the data-instance <I>currently in memory</I>--meaning all values currently in the lpd-projects <A HREF="#cvtuivn">internal-variables</A>.</LI>
 	</UL></LI>
 	<LI><B>Commands:</B><UL>
 		<LI><B><CODE>zTpmdDbgTxtAllCfgVars_M_keys</CODE>:</B> Prints diagnostics for the MINV-Command data-instance (their Configuration-variables) whose <A HREF="#mdpubk">public</A> and <A HREF="#mdprvk">private-key</A> values as currently stored in their respective internal-variables.</LI>
@@ -535,7 +535,7 @@ DATA_TYPE_ABRV_1C=...
 <P>Prints the values of all configuration-variable in a single data-instance. The output is tailored for a <CODE>MSGBOX</CODE> dialog. <I>(See <A HREF="#pjudbgx">Display diagnostics at the cursor</A>)</I></P>
 
 <P><UL>
-	<LI><B>Actions:</B> <CODE>&quot;dgctpmd&quot;</CODE>, <CODE>&quot;dgvtpmd&quot;</CODE></LI>
+	<LI><B>Actions:</B> &quot;<CODE>dgctpmd</CODE>&quot;, &quot;<CODE>dgvtpmd</CODE>&quot;</LI>
 	<LI><B>Commands:</B> <CODE>zTpmdDbgDlgTxtAllCfgVars_M_ALL</CODE>, <CODE>zTpmdDbgDlgTxtAllCfgVars_M_keys</CODE></LI>
 </UL></P>
 
@@ -551,16 +551,16 @@ DATA_TYPE_ABRV_1C=...
 <a name="pjudphrs"/>
 <H3>LPD-Project-based utilities: Print phrases &nbsp; <CODE>[<A HREF="#prjutils">back</A>]</CODE></H3>
 <P><UL>
-	<LI><B>Actions:</B> <CODE>'<A HREF="#kcttpmd">kcttpmd</A>'</CODE>, <CODE>'<A HREF="#mpctpmd">mpctpmd</A>'</CODE>, <CODE>&quot;mpvtpmd&quot;</CODE>, <CODE>'<A HREF="#upctpmd">upctpmd</A>'</CODE>, <CODE>&quot;upvtpmd&quot;</CODE></LI>
+	<LI><B>Actions:</B> <CODE>'<A HREF="#kcttpmd">kcttpmd</A>'</CODE>, <CODE>'<A HREF="#mpctpmd">mpctpmd</A>'</CODE>, &quot;<CODE>mpvtpmd</CODE>&quot;, <CODE>'<A HREF="#upctpmd">upctpmd</A>'</CODE>, &quot;<CODE>upvtpmd</CODE>&quot;</LI>
 	<LI><B>Command:</B> <CODE>zTpmdBlankCfgVarTmpl_M_keys</CODE>: Prints out a blank configuration template when the keys are known.</LI>
 </UL></P>
 
 <a name="kcttpmd"/>
-<H4><U>LPD-Project utility: Print phrases: <CODE>&quot;kcttpmd&quot;</CODE></U> &nbsp; <CODE>[<A HREF="#pjudphrs">back</A>]</CODE></H4>
+<H4><U>LPD-Project utility: Print phrases: &quot;<CODE>kcttpmd</CODE>&quot;</U> &nbsp; <CODE>[<A HREF="#pjudphrs">back</A>]</CODE></H4>
 
-<P>A critical function for creating new data-instances. This prompts you for the new <A HREF="#basicdefs">public and private keys</A>, and then prints out a &quot;blanK Configuration Template&quot;. This prints out all configuration-variables in the lpd-project, with blank values. To finish creating the data-instance, fill in the remaining values, &quot;compress&quot; the lines (with <CODE>&quot;c2pl5&quot;</CODE>), and then <A HREF="../../zGLOBAL/zidx_xfile__import_steps.html">import</A> the file into PhraseExpress.</P>
+<P>A critical function for creating new data-instances. This prompts you for the new <A HREF="#basicdefs">public and private keys</A>, and then prints out a &quot;blanK Configuration Template&quot;. This prints out all configuration-variables in the lpd-project, with blank values. To finish creating the data-instance, fill in the remaining values, &quot;compress&quot; the lines (with &quot;<CODE>c2pl5</CODE>&quot;), and then <A HREF="../../zGLOBAL/zidx_xfile__import_steps.html">import</A> the file into PhraseExpress.</P>
 
-<P>Here is the output for the <A HREF="#xmplprjtpmd">example TextPad Macro Creator</A> project (public key=<CODE>&quot;mymcrspubk&quot;</CODE>, private-key=<CODE>&quot;mymcrsprivk&quot;</CODE>):</P>
+<P>Here is the output for the <A HREF="#xmplprjtpmd">example TextPad Macro Creator</A> project (public key=&quot;<CODE>mymcrspubk</CODE>&quot;, private-key=&quot;<CODE>mymcrsprivk</CODE>&quot;):</P>
 
 <PRE STYLE="background-color:#E1E1E1;">zzTpmdMymcrsprivkMacroAbrv1C
 Mymcrspubk
@@ -573,19 +573,19 @@ zzTpmdMymcrsprivkKeyCommand
 zzTpmdMymcrsprivkSteps
 </PRE>
 
-<P>This output is &quot;uncompressed&quot; (phrase-names on the first line, values/phrase-bodies on the following line). Fill in the values, place the cursor in the first line, then compress it with <CODE>&quot;c2pl5&quot;</CODE>. Here is another <A HREF="zidx_xfile__minv.html#kctmnvc">example output</A> for the &quot;command&quot; data-type in the MINV-Command project (scroll down to see a demonstration of the <CODE>&quot;c2pl&quot;</CODE> command).</P>
+<P>This output is &quot;uncompressed&quot; (phrase-names on the first line, values/phrase-bodies on the following line). Fill in the values, place the cursor in the first line, then compress it with &quot;<CODE>c2pl5</CODE>&quot;. Here is another <A HREF="zidx_xfile__minv.html#kctmnvc">example output</A> for the &quot;command&quot; data-type in the MINV-Command project (scroll down to see a demonstration of the &quot;<CODE>c2pl</CODE>&quot; command).</P>
 
 <a name="mpctpmd"/>
-<H4><U>LPD-Project utility: Print &quot;compressed&quot; phrases: <CODE>&quot;mpctpmd&quot;</CODE> and <CODE>&quot;mpvtpmd&quot;</CODE></U> &nbsp; <CODE>[<A HREF="#pjudphrs">back</A>]</CODE></H4>
+<H4><U>LPD-Project utility: Print &quot;compressed&quot; phrases: &quot;<CODE>mpctpmd</CODE>&quot; and &quot;<CODE>mpvtpmd</CODE>&quot;</U> &nbsp; <CODE>[<A HREF="#pjudphrs">back</A>]</CODE></H4>
 
 <P>The <CODE>'<B>mpctpmd</B>'</CODE> and <CODE>'<B>mpvtpmd</B>'</CODE> actions print out coMpressed and iMportable phrases for a single data instance (hence, <CODE>'<B>M</B>pc'</CODE> and <CODE>'<B>M</B>pv'</CODE>).<UL>
-	<LI><CODE>&quot;mpctpmd&quot;</CODE> is for an <I>existing</I> data-instance (one that is already imported into PhraseExpress)--hence <CODE>'mp<B>C</B>'</CODE>, meaning Configuration-variables.</LI>
-	<LI>The <CODE>&quot;mpvtpmd&quot;</CODE> prints importable phrases for the data-instance currently <A HREF="#cvtuivn">loaded into memory</A>.</LI>
+	<LI>&quot;<CODE>mpctpmd</CODE>&quot; is for an <I>existing</I> data-instance (one that is already imported into PhraseExpress)--hence <CODE>'mp<B>C</B>'</CODE>, meaning Configuration-variables.</LI>
+	<LI>The &quot;<CODE>mpvtpmd</CODE>&quot; prints importable phrases for the data-instance currently <A HREF="#cvtuivn">loaded into memory</A>.</LI>
 </UL></P>
 
-<P><I>The &quot;uncompressed&quot; equivalents for these utilities are <CODE>&quot;upctpmd&quot;</CODE> and <CODE>&quot;upvtpmd&quot;</CODE>, as discussed in the next section.</I></P>
+<P><I>The &quot;uncompressed&quot; equivalents for these utilities are &quot;<CODE>upctpmd</CODE>&quot; and &quot;<CODE>upvtpmd</CODE>&quot;, as discussed in the next section.</I></P>
 
-<P>Here is the example output of <CODE>&quot;mpctpmd&quot;</CODE>, for the go-to-prev-x macro (for the public-key prompt, answer <CODE>&quot;gtprevx&quot;</CODE>):</P>
+<P>Here is the example output of &quot;<CODE>mpctpmd</CODE>&quot;, for the go-to-prev-x macro (for the public-key prompt, answer &quot;<CODE>gtprevx</CODE>&quot;):</P>
 
 <PRE STYLE="background-color:#E1E1E1;">zzTpmdGtprevxPhrsNmAbrv1C	Gtpx	zzTpmdGtprevxPhrsNmAbrv1C
 zzTpmdGtpxMacroAbrv1C	Gtprevx	zzTpmdGtpxMacroAbrv1C
@@ -596,9 +596,9 @@ zzTpmdGtpxSteps	__VALUE_NOT_PRINTABLE__	zzTpmdGtpxSteps</PRE>
 <P>The key-command and steps cv-types are not <A HREF="#cvtuprntblflg">printable</A>. Since these phrase-values contain phrase <I>calls</I>, it is not possible to safely duplicate or print these values.</P>
 
 <a name="upctpmd"/>
-<H4><U>LPD-Project utility: Print &quot;uncompressed&quot; phrases: <CODE>&quot;upctpmd&quot;</CODE> and <CODE>&quot;upvtpmd&quot;</CODE></U> &nbsp; <CODE>[<A HREF="#pjudphrs">back</A>]</CODE></H4>
+<H4><U>LPD-Project utility: Print &quot;uncompressed&quot; phrases: &quot;<CODE>upctpmd</CODE>&quot; and &quot;<CODE>upvtpmd</CODE>&quot;</U> &nbsp; <CODE>[<A HREF="#pjudphrs">back</A>]</CODE></H4>
 
-<P>These actions are the same as  <CODE>&quot;mpctpmd&quot;</CODE> and <CODE>&quot;mpvtpmd&quot;</CODE>, except the output phrases are &quot;uncompressed&quot; (phrase-name on line one, value on line two). Here is the example output of <CODE>&quot;upctpmd&quot;</CODE>, for the go-to-prev-x macro (for the public-key prompt, answer <CODE>&quot;gtprevx&quot;</CODE>):</P>
+<P>These actions are the same as  &quot;<CODE>mpctpmd</CODE>&quot; and &quot;<CODE>mpvtpmd</CODE>&quot;, except the output phrases are &quot;uncompressed&quot; (phrase-name on line one, value on line two). Here is the example output of &quot;<CODE>upctpmd</CODE>&quot;, for the go-to-prev-x macro (for the public-key prompt, answer &quot;<CODE>gtprevx</CODE>&quot;):</P>
 
 <PRE STYLE="background-color:#E1E1E1;">zzTpmdGtprevxPhrsNmAbrv1C
 Gtpx
@@ -701,13 +701,13 @@ __VALUE_NOT_PRINTABLE__</PRE>
 
 	<P>The number in the phrase-name is determined by the cv-type's <A HREF="#cvtunkcvnum"><CODE>...nkcvListNum</CODE></A> metadata value. The <I>value</I> returned by this utility is a <I>literal phrase-call</I> to either<UL>
 		<LI><B>When the cv-type is <A HREF="#cvtuprntblflg">printable</A>:</B> the configuration-variable itself (which, when called, returns its value).</LI>
-		<LI><B>When non-printable:</B>; The &quot;non-printable&quot; flag: <CODE>zzLpdValueNotPrintable</CODE>, which equals <CODE>&quot;{#insert zzLpdValueNotPrintable}&quot;</CODE></LI>
+		<LI><B>When non-printable:</B>; The &quot;non-printable&quot; flag: <CODE>zzLpdValueNotPrintable</CODE>, which equals &quot;<CODE>{#insert zzLpdValueNotPrintable}</CODE>&quot;</LI>
 	</UL></P>
 
-	<P><I>Note this returns a call to a configuration-variable for a <B>specific data-instance</B>--hence the <A HREF="#basicdefs">private-key</A> is required, as specified by the <CODE>&quot;Prvk&quot;</CODE> portion of the phrase name:
+	<P><I>Note this returns a call to a configuration-variable for a <B>specific data-instance</B>--hence the <A HREF="#basicdefs">private-key</A> is required, as specified by the &quot;<CODE>Prvk</CODE>&quot; portion of the phrase name:
 	<BR> &nbsp; &nbsp; <CODE>'zTpmdNkcv1PCall_M_lvc<U>Prvk</U>'</CODE></I></P>
 
-	<P>Note that in all cases, the special <B><CODE>zvLTRL_LVL_CHAR</CODE></B> internal-variable (which is required, as specified by <CODE>&quot;..._M_lvc...&quot;</CODE>) determines the level of escaped-ness. It may equal any of the following:<UL>
+	<P>Note that in all cases, the special <B><CODE>zvLTRL_LVL_CHAR</CODE></B> internal-variable (which is required, as specified by &quot;<CODE>..._M_lvc...</CODE>&quot;) determines the level of escaped-ness. It may equal any of the following:<UL>
 		<LI>The empty-string (<CODE>''</CODE>, or <I>nothing</I>), meaning a <I>literal-phrase-call</I> should be an printed.</LI>
 		<LI><CODE>'p'</CODE>, meaning a <I>doubly</I> literal phrase call.</LI>
 		<LI><CODE>'q'</CODE>, meaning a <I>triply</I> literal phrase call.</LI>
@@ -729,7 +729,7 @@ __VALUE_NOT_PRINTABLE__</PRE>
 
 <P>Each LPD-project has a set of metadata associated to it, which is automatically generated by the <CODE>'<A HREF="#plpdcf">plpdcf</A>'</CODE> process. This information exists in the <B>&quot;LPD Project-Metadata</B>&quot; file.</P>
 
-<P><I>This section assumes you are using the MINV-Command project (<CODE>&quot;zzMnvCmd&quot;</CODE>)</I></P>
+<P><I>This section assumes you are using the MINV-Command project (&quot;<CODE>zzMnvCmd</CODE>&quot;)</I></P>
 
 <H4><U>&quot;Easy-access&quot; functions</U></H4>
 
@@ -802,7 +802,7 @@ __VALUE_NOT_PRINTABLE__</PRE>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#kuset">GO</A></B></FONT>]</CODE> &nbsp; Setting internal-variables</LI>
 </UL></P>
 
-<P>Most utilities in this section require both the <A HREF="#mdpj1">project</A> and <A HREF="#mddt1">data-type</A> abbreviations to be set--hence the <CODE>&quot;_M_pjDtv&quot;</CODE>. Additional required values are listed under each utility.</P>
+<P>Most utilities in this section require both the <A HREF="#mdpj1">project</A> and <A HREF="#mddt1">data-type</A> abbreviations to be set--hence the &quot;<CODE>_M_pjDtv</CODE>&quot;. Additional required values are listed under each utility.</P>
 
 <P>Here are the specific utilities for creating <B>new instances</B> (these commands are all already listed in the above categories):<UL>
 	<LI><A HREF="#kuprompts">Prompts</A>:<UL>
@@ -924,16 +924,16 @@ __VALUE_NOT_PRINTABLE__</PRE>
 
 <H4>Key-Utility: <U><CODE>zvCVT_FRMV_1C_stPrvk_M_pjDtv</CODE></U></H4>
 
-<P>Sets the post-from (<CODE>&quot;_M_&quot;</CODE>) abbreviation of the <A HREF="#mdprvk">private-key</A> into <A HREF="#globalivars"><CODE>zvCVT_FRMV_1C</CODE></A>.</P>
+<P>Sets the post-from (&quot;<CODE>_M_</CODE>&quot;) abbreviation of the <A HREF="#mdprvk">private-key</A> into <A HREF="#globalivars"><CODE>zvCVT_FRMV_1C</CODE></A>.</P>
 
 <H4>Key-Utility: <U><CODE>zvCVT_FRMV_1C_stPubk_M_pjDtv</CODE></U></H4>
 
-<P>Sets the post-from (<CODE>&quot;_M_&quot;</CODE>) abbreviation of the <A HREF="#mdpubk">public-key</A>'s into <A HREF="#globalivars"><CODE>zvCVT_FRMV_1C</CODE></A></P>
+<P>Sets the post-from (&quot;<CODE>_M_</CODE>&quot;) abbreviation of the <A HREF="#mdpubk">public-key</A>'s into <A HREF="#globalivars"><CODE>zvCVT_FRMV_1C</CODE></A></P>
 
 <H4>Key-Utility: <U><CODE>zzPrivKPNmFromPubKValueOnly_M_pjDtvPrvkfrm1</CODE></U></H4>
 
 <P><UL>
-	<LI><B>Other required <A HREF="#cvtuivn">internal-variables</A>:</B> The post-from <CODE>&quot;_M_&quot;</CODE> abbreviation must currently be set for the private-key (see <CODE>zvCVT_FRMV_1C_stPrvk_M_pjDtv</CODE>).</LI>
+	<LI><B>Other required <A HREF="#cvtuivn">internal-variables</A>:</B> The post-from &quot;<CODE>_M_</CODE>&quot; abbreviation must currently be set for the private-key (see <CODE>zvCVT_FRMV_1C_stPrvk_M_pjDtv</CODE>).</LI>
 </UL></P>
 
 <P>Returns the private-key's <A HREF="#cvtuvvpnm">configuration-variable name</A>.</P>
@@ -941,7 +941,7 @@ __VALUE_NOT_PRINTABLE__</PRE>
 <H4>Key-Utility: <U><CODE>zzPrivKValueFromPubKValueOnly_M_pjDtFrm1</CODE></U></H4>
 
 <P><UL>
-	<LI><B>Other required <A HREF="#cvtuivn">internal-variables</A>:</B> The post-from <CODE>&quot;_M_&quot;</CODE> abbreviation must currently be set (in <A HREF="#globalivars"><CODE>zvCVT_FRMV_1C</CODE></A>) for the private-key (see <CODE>zvCVT_FRMV_1C_stPrvk_M_pjDtv</CODE>).</LI>
+	<LI><B>Other required <A HREF="#cvtuivn">internal-variables</A>:</B> The post-from &quot;<CODE>_M_</CODE>&quot; abbreviation must currently be set (in <A HREF="#globalivars"><CODE>zvCVT_FRMV_1C</CODE></A>) for the private-key (see <CODE>zvCVT_FRMV_1C_stPrvk_M_pjDtv</CODE>).</LI>
 </UL></P>
 
 Returns the <I>value</I> of the private-key. This is equivalent to
@@ -990,7 +990,7 @@ Returns the <I>value</I> of the private-key. This is equivalent to
 <H3><U>CV-Type metadata and utilities: <CODE>..._cvtFromAbrv1C</CODE></U> &nbsp; <CODE>[<A HREF="#cvtutils">back</A>]</CODE></H3>
 
 <P><UL>
-	<LI><B>Example full phrase-name:</B> <CODE>zzTpmdKeyCommand_cvtFromAbrv1C</CODE> <I>(note that this is the only cv-type metadata phrase-name that does <B>not</B> contain the cv-type's <A HREF="#cfprvkl2frm1">from-abrv</A>--<CODE>&quot;Kc&quot;</CODE>)</I></LI>
+	<LI><B>Example full phrase-name:</B> <CODE>zzTpmdKeyCommand_cvtFromAbrv1C</CODE> <I>(note that this is the only cv-type metadata phrase-name that does <B>not</B> contain the cv-type's <A HREF="#cfprvkl2frm1">from-abrv</A>--&quot;<CODE>Kc</CODE>&quot;)</I></LI>
 	<LI><B>Easy access function:</B> <I>n/a</I></LI>
 	<LI><B>LPD-Config-file line:</B> <A HREF="#cfprvkl2frm1">Post-from (&quot;_M_&quot;) abbreviation</A></LI>
 </UL></P>
@@ -1049,7 +1049,7 @@ Returns the <I>value</I> of the private-key. This is equivalent to
 		</TR></TABLE>	</TD>
 </TR></TABLE></P>
 
-<P>These variables are &quot;temporary&quot; because they are treated as such. They are only used during the life of a process. Once that process is complete, all may be safely deleted. Temporary-internal-variables are an XBN-PhraseExpress convention, and are named beginning with <CODE>&quot;zv&quot;</CODE>, and are followed with all-uppercase words, divided by underscores.</P>
+<P>These variables are &quot;temporary&quot; because they are treated as such. They are only used during the life of a process. Once that process is complete, all may be safely deleted. Temporary-internal-variables are an XBN-PhraseExpress convention, and are named beginning with &quot;<CODE>zv</CODE>&quot;, and are followed with all-uppercase words, divided by underscores.</P>
 
 <H4><U>Loading a data-instance into memory, versus directly reading config-vars</U></H4>
 
@@ -1059,14 +1059,14 @@ Returns the <I>value</I> of the private-key. This is equivalent to
 <BR> &nbsp; &nbsp; <A HREF="#pjudkeys"><CODE>zTpmdPromptSetPubSetPrivKeys</CODE></A>
 <BR>which prompts you for the macro's public-key, and then accessing each config-var with
 <BR> &nbsp; &nbsp; <A HREF="#cvtuvalue"><CODE>..._cfgValue_M_key</CODE></A>
-<BR>For example, the macro's <CODE>&quot;LivePNPostTC&quot;</CODE> (used when <I>other</I> phrases want to execute a macro) is accessed with
+<BR>For example, the macro's &quot;<CODE>LivePNPostTC</CODE>&quot; (used when <I>other</I> phrases want to execute a macro) is accessed with
 <BR> &nbsp; &nbsp; <CODE>zzTpmdPnv1_cfgValue_M_key</CODE></P>
 
-<H4><U>For the public-key only: Extra lowercase-version internal-variable (<CODE>&quot;..._LC&quot;</CODE>)</U></H4>
+<H4><U>For the public-key only: Extra lowercase-version internal-variable (&quot;<CODE>..._LC</CODE>&quot;)</U></H4>
 
-<P>For the public-key only, there is an additional internal-variable, which exists to have a lowercase-version of the public-key always avaliable. Internally, the public-key is always stored as &quot;one case&quot; (<CODE>&quot;1C&quot;</CODE>), meaning the first character is uppercase, and all others are lower. For example, here is the internal-variable of the public-key as configured for the MINV-Command project:
+<P>For the public-key only, there is an additional internal-variable, which exists to have a lowercase-version of the public-key always avaliable. Internally, the public-key is always stored as &quot;one case&quot; (&quot;<CODE>1C</CODE>&quot;), meaning the first character is uppercase, and all others are lower. For example, here is the internal-variable of the public-key as configured for the MINV-Command project:
 <BR> &nbsp; &nbsp; <CODE>zvACTION_NM_1C</CODE>
-<BR>Its lowercase version has the same name, with <CODE>&quot;_LC&quot;</CODE> appended:
+<BR>Its lowercase version has the same name, with &quot;<CODE>_LC</CODE>&quot; appended:
 <BR> &nbsp; &nbsp; <CODE>zvACTION_NM_1C_LC</CODE></P>
 
 <P>This lowercase-version is automatically created by the lpd-framework, whenever the public-key is prompted-for (or otherwise set). You do not configure or create this in any way, it is based on the existing public-key cv-type. <I>(See <A HREF="#kuprompts"><CODE>zPromptSetPublicKeyInclLC_M_pjDtv</CODE></A>.)</I></P>
@@ -1147,7 +1147,7 @@ Returns the <I>value</I> of the private-key. This is equivalent to
 	<LI><B>Example full phrase-name:</B> <CODE>zzTpmdKc_cfgValue_M_key</CODE></LI>
 	<LI><B>Easy access functions:</B><UL>
 		<LI><B>Ignores <A HREF="#cvtuprntblflg">printable</A> flag:</B> <CODE>zCfgValue_M_pjDtFrm1Key</CODE></LI>
-		<LI><B>Uses printable flag:</B> <CODE>zCfgValueIfPrntbl_M_pjDtFrm1Key</CODE> <I>(If not printable: <CODE>&quot;{#insert zzLpdValueNotPrintable}&quot;</CODE>...this <B>does</B> use the printable-flag override)</I></LI>
+		<LI><B>Uses printable flag:</B> <CODE>zCfgValueIfPrntbl_M_pjDtFrm1Key</CODE> <I>(If not printable: &quot;<CODE>{#insert zzLpdValueNotPrintable}</CODE>&quot;...this <B>does</B> use the printable-flag override)</I></LI>
 	</UL></LI>
 </UL></P>
 
@@ -1162,7 +1162,7 @@ Returns the <I>value</I> of the private-key. This is equivalent to
 <H3><U>CV-Type metadata and utilities: &nbsp; <CODE>zvCVT_FRMV_1C_stTpmdKc</CODE></U> &nbsp; <CODE>[<A HREF="#cvtutils">back</A>]</CODE></H3>
 <P><B>Easy access function:</B> <CODE>zCVTFromAbrv1C_M_pjDtPnmpst</CODE></P>
 
-<P>Sets this cv-type's post-from (<CODE>&quot;_M_&quot;</CODE>) abbreviation into <A HREF="#globalivars"><CODE>zvCVT_FRMV_1C</CODE></A>.</P>
+<P>Sets this cv-type's post-from (&quot;<CODE>_M_</CODE>&quot;) abbreviation into <A HREF="#globalivars"><CODE>zvCVT_FRMV_1C</CODE></A>.</P>
 
 <PRE>
 
@@ -1172,20 +1172,20 @@ Returns the <I>value</I> of the private-key. This is equivalent to
 
 
 <a name="plpdcf"/>
-<H2><U><CODE>&quot;plpdcf&quot;</CODE>: The central LPD-Framework process</U> &nbsp; &nbsp; <CODE>[<A HREF="#top">top</A>]</CODE></H2>
+<H2><U>&quot;<CODE>plpdcf</CODE>&quot;: The central LPD-Framework process</U> &nbsp; &nbsp; <CODE>[<A HREF="#top">top</A>]</CODE></H2>
 
-<P><B><CODE>&quot;plpdcf&quot;</CODE></B> (&quot;Process the LPD Config-File&quot;) is the central process in the lpd-framework--it essentially creates your database, based on the configuration in the <A HREF="#cfgfile">lpd-config-file</A>. The result of the <CODE>&quot;plpdcf&quot;</CODE> process is a directory full of <I>plain text files</I>:<UL>
+<P><B>&quot;<CODE>plpdcf</CODE>&quot;</B> (&quot;Process the LPD Config-File&quot;) is the central process in the lpd-framework--it essentially creates your database, based on the configuration in the <A HREF="#cfgfile">lpd-config-file</A>. The result of the &quot;<CODE>plpdcf</CODE>&quot; process is a directory full of <I>plain text files</I>:<UL>
 	<LI><A HREF="#cvtutils">metadata and utilities</A> for each cv-type (one file per-cv-type)</LI>
 	<LI><A HREF="#prjmeta">metadata</A> for the project as a whole (one file)</LI>
 	<LI><A HREF="#prjutils">utilities</A> explicitely tailored to the project (one file)</LI>
 </UL>Each line in these text-files is an individual phrase. Once all files are <A HREF="../../zGLOBAL/zidx_xfile__import_steps.html">imported</A> into PhraseExpress, they may be used as specified throughout this documentation.</P>
 
 <P><B>Sub functions and utilities:</B><UL>
-	<LI><B><CODE>&quot;blanklpdcf&quot;</CODE>:</B> Prints out an empty lpd-config-file.</LI>
-	<LI><B><CODE>&quot;plpdcfm&quot;</CODE>:</B> Writes project-metadata file only</LI>
-	<LI><B><CODE>&quot;plpdcfmu&quot;</CODE>:</B> Writes project-metadata and utility files</LI>
-	<LI><B><CODE>&quot;plpdcfps&quot;</CODE>:</B> Writes cv-type utility files only</LI>
-	<LI><B><CODE>&quot;plpdcfu&quot;</CODE>:</B> Writes project-utility files only</LI>
+	<LI><B>&quot;<CODE>blanklpdcf</CODE>&quot;:</B> Prints out an empty lpd-config-file.</LI>
+	<LI><B>&quot;<CODE>plpdcfm</CODE>&quot;:</B> Writes project-metadata file only</LI>
+	<LI><B>&quot;<CODE>plpdcfmu</CODE>&quot;:</B> Writes project-metadata and utility files</LI>
+	<LI><B>&quot;<CODE>plpdcfps</CODE>&quot;:</B> Writes cv-type utility files only</LI>
+	<LI><B>&quot;<CODE>plpdcfu</CODE>&quot;:</B> Writes project-utility files only</LI>
 </UL></P>
 
 <P><I>This process takes some time. On my computer, it takes an average of thirty seconds per cv-type to complete the entire process. However, this is a one-time process. The only time it needs to be run again, is when a change is made to the lpd-config-file.</I></P>
@@ -1194,7 +1194,7 @@ Returns the <I>value</I> of the private-key. This is equivalent to
 	<TD><H4><U>Known Issues</U></H4>
 	<UL>
 		<LI>The project-utilities file is incorrectly based on project metadata <I>that has already been imported into PhraseExpress</I>. -- <B>Workaround:</B> Generate the project-metadata, import it, then generate the project-utilities.</LI>
-		<LI>A mis-formatted line in any cv-type's config-block will cause the entire process to fail. -- <B>Workaround:</B> Run the metadata-only sub-process, <CODE>&quot;plpdcfm&quot;</CODE>, which reads (much more) quickly through all cv-types, and crashes at the first error found. Once the metadata-file starts printing, quit the process (with the ESC-key) at any point before the file is saved.</LI>
+		<LI>A mis-formatted line in any cv-type's config-block will cause the entire process to fail. -- <B>Workaround:</B> Run the metadata-only sub-process, &quot;<CODE>plpdcfm</CODE>&quot;, which reads (much more) quickly through all cv-types, and crashes at the first error found. Once the metadata-file starts printing, quit the process (with the ESC-key) at any point before the file is saved.</LI>
 	</UL></TD>
 </TR></TABLE>
 

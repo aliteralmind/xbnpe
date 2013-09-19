@@ -12,7 +12,7 @@
 
 <H1>The TextPad all-command-list</H1>
 
-<P>The &quot;TextPad all-command-list&quot; (or &quot;tp-all-cmd-list&quot;, or <CODE>&quot;tpacl&quot;</CODE>) is a textual list of every built-in TextPad command, and every one of their key-commands. It is also the input for the TPKC-build-process (the output is your <A HREF="user_cmd_cfg.html">user-specific</A> command-configuration). The TPKC-build-process takes advantage of the fact that this is a <I>more-than-one-space</I> delimited list--that is, each command and each of its key-commands is separated by <I>at least two spaces</I>.</P>
+<P>The &quot;TextPad all-command-list&quot; (or &quot;tp-all-cmd-list&quot;, or &quot;<CODE>tpacl</CODE>&quot;) is a textual list of every built-in TextPad command, and every one of their key-commands. It is also the input for the TPKC-build-process (the output is your <A HREF="user_cmd_cfg.html">user-specific</A> command-configuration). The TPKC-build-process takes advantage of the fact that this is a <I>more-than-one-space</I> delimited list--that is, each command and each of its key-commands is separated by <I>at least two spaces</I>.</P>
 
 <P><B>Contents:</B><UL>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#format">GO</A></B></FONT>]</CODE> &nbsp; Format of the tp-all-cmd-list</LI>
@@ -34,7 +34,7 @@
 <BR>with this exact name:
 <BR> &nbsp; &nbsp; <CODE>tp_all_command_list.txt</CODE></P>
 
-<P>(By definition, the TextPad all-command-list is created only when selecting the <CODE>&quot;All&quot;</CODE> category.)</P>
+<P>(By definition, the TextPad all-command-list is created only when selecting the &quot;<CODE>All</CODE>&quot; category.)</P>
 
 <P><IMG SRC="../../images/basics/tpkc/tpacl_prefs_dlg_all_cat_slctd.jpg" BORDER="1"/></P>
 
@@ -50,7 +50,7 @@
 		<BR> &nbsp; &nbsp; <B><FONT SIZE="+2"><CODE>zTPFindFlag[MC,RE,WW][on,off]</CODE></FONT></B>
 		<BR>For example: <CODE>zTPFindFlagMCoff</CODE>. (I use
 		<BR> &nbsp; &nbsp; <CODE>{#insert zASpFF}{#sleep 25}{#insert zMM}{#sleep 5}</CODE>
-		<BR>to turn the MC-flag on (<CODE>&quot;zRR&quot;</CODE> for regex, <CODE>&quot;zWW&quot;</CODE> for whole-word), and
+		<BR>to turn the MC-flag on (&quot;<CODE>zRR</CODE>&quot; for regex, &quot;<CODE>zWW</CODE>&quot; for whole-word), and
 		<BR> &nbsp; &nbsp; <CODE>{#insert zCASpFF}{#sleep 25}{#insert zMM}{#sleep 5}</CODE>
 		<BR>to turn it off.)</LI>
 	<LI><A HREF="user_cmd_cfg.html#assignkcs4"><CODE>newnbskc</CODE> utility</A> (see &quot;notes&quot;):
@@ -85,7 +85,7 @@
 <PRE STYLE="background-color:#E1E1E1;">COMMANDS:               KEYS:
 &nbsp;</PRE>
 
-<P>Each line below it is one line per-command, in alphabetical order. Which commands are present is dependant on which category was chosen when the <CODE>tpacl</CODE> is printed. (By definition, the <CODE>tpacl</CODE> is only when the <CODE>&quot;All&quot;</CODE> category is selected. See the top of this document for details.)</P>
+<P>Each line below it is one line per-command, in alphabetical order. Which commands are present is dependant on which category was chosen when the <CODE>tpacl</CODE> is printed. (By definition, the <CODE>tpacl</CODE> is only when the &quot;<CODE>All</CODE>&quot; category is selected. See the top of this document for details.)</P>
 
 <P><IMG SRC="../../images/basics/tpkc/tpacl_prefs_dlg_all_cat_slctd.jpg" BORDER="1"/></P>
 
@@ -97,7 +97,7 @@
 </PRE>
 <A NAME="maxnbskcs"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TP-all-cmd-list: Requirement: Maximum allowed nbs-kcs per command</H2>
 
-<P>Each command has a maximum-allowable number of <A HREF="../tpbs.html#terminology">Non-BootStrap</A> key-commands that may be assigned to it. This maximum is defined by the TPKC master-configuration-variable <A HREF="master_cfg_vars.html#zTpkcMaxNbsKCsPerCmd"><CODE>zTpkcMaxNbsKCsPerCmd</CODE></A> (note the covenience utility <CODE>&quot;tpaclwarnkccount&quot;</CODE>).</P>
+<P>Each command has a maximum-allowable number of <A HREF="../tpbs.html#terminology">Non-BootStrap</A> key-commands that may be assigned to it. This maximum is defined by the TPKC master-configuration-variable <A HREF="master_cfg_vars.html#zTpkcMaxNbsKCsPerCmd"><CODE>zTpkcMaxNbsKCsPerCmd</CODE></A> (note the covenience utility &quot;<CODE>tpaclwarnkccount</CODE>&quot;).</P>
 
 <PRE>
 
@@ -122,7 +122,7 @@
 	<LI>PhraseExpress cannot <I>consistently</I> input these into the &quot;Press new shortcut key&quot; field:<UL>
 		<LI><CODE>Apps</CODE>*</LI>
 		<LI><CODE>Enter</CODE>*</LI>
-		<LI><CODE>&quot;Num 0&quot;</CODE> through <CODE>&quot;Num 9&quot;</CODE></LI>
+		<LI>&quot;<CODE>Num 0</CODE>&quot; through &quot;<CODE>Num 9</CODE>&quot;</LI>
 	</UL></LI>
 	<LI>PhraseExpress cannot input this key <U>without also opening the help dialog</U>:<UL>
 		<LI><CODE>F1</CODE> &nbsp; &nbsp; <I>(only with <B>no</B> modifiers--with modifiers acceptable)</I></LI>

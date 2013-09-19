@@ -20,7 +20,7 @@
 	</UL></LI>
 </UL></P>
 
-<P>Creates all the <CODE>&quot;zvCMD_ABRV_1C_st...&quot;</CODE> phrases, which are used by <I>most</I> user-facing phrases in the TPKC-Project</P>
+<P>Creates all the &quot;<CODE>zvCMD_ABRV_1C_st...</CODE>&quot; phrases, which are used by <I>most</I> user-facing phrases in the TPKC-Project</P>
 
 <PRE>
 
@@ -81,7 +81,7 @@
 	<LI><B>Input:</B> The output of <CODE><A HREF="#10">zTpkc10ElimBtstrpKCsFromTpAllCatLst</A></CODE></LI>
 	<LI><B>Output:</B><UL>
 		<LI><U>On disk</U> <I>(plain text)</I>:<UL>
-			<LI><CODE>{#insert <A HREF="tpkc_user_dir.html#zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn">zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn</A>}/output/user_spcfc_cfg__bldproc10thr13/indv_cat_lists__bldproc11/<A HREF="../../../textpad__tpkc/for_v_7_0_9/user_config/tp_frsh_instl/output/user_spcfc_cfg__bldproc10thr13/indv_cat_lists__bldproc11/file.txt">file.txt</A></CODE> &nbsp; &nbsp; <I>(Replace <CODE>&quot;file&quot;</CODE> with any category in <CODE><A HREF="config_vars.html#zTpkcAllCategoryAbrvLCsQbl">zTpkcAllCategoryAbrvLCsQbl</A></CODE>)</I></LI>
+			<LI><CODE>{#insert <A HREF="tpkc_user_dir.html#zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn">zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn</A>}/output/user_spcfc_cfg__bldproc10thr13/indv_cat_lists__bldproc11/<A HREF="../../../textpad__tpkc/for_v_7_0_9/user_config/tp_frsh_instl/output/user_spcfc_cfg__bldproc10thr13/indv_cat_lists__bldproc11/file.txt">file.txt</A></CODE> &nbsp; &nbsp; <I>(Replace &quot;<CODE>file</CODE>&quot; with any category in <CODE><A HREF="config_vars.html#zTpkcAllCategoryAbrvLCsQbl">zTpkcAllCategoryAbrvLCsQbl</A></CODE>)</I></LI>
 			<LI>One additional file, containing all lines in the TextPad <A HREF="tpacl.html">all-command-list</A> that are user-created macros or tools or, in a <A HREF="master_cfg_vars.html#goodtestbuild">test-build</A>, all commands in ignored categories.</LI>
 		</UL>
 		<LI><U>PhraseExpress folder</U> (to <A HREF="../phrase_file_import1.html">import</A> to): <I>Not-applicable</I></LI>
@@ -117,7 +117,7 @@
 	<LI><B>Input:</B> The output of <CODE><A HREF="#11">zTpkc11SplitNbsAllLstToIndvCatLsts</A></CODE></LI>
 	<LI><B>Output:</B><UL>
 		<LI><U>On disk</U> <I>(plain text)</I>:
-		<BR> &nbsp; &nbsp; <CODE>{#insert <A HREF="tpkc_user_dir.html#zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn">zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn</A>}/output/user_spcfc_cfg__bldproc10thr13/raw_user_config__bldproc12/<A HREF="../../../textpad__tpkc/for_v_7_0_9/user_config/tp_frsh_instl/output/user_spcfc_cfg__bldproc10thr13/raw_user_config__bldproc12/file.txt">file.txt</A></CODE> &nbsp; &nbsp; <I>(Replace <CODE>&quot;file&quot;</CODE> with any category in <CODE>zTpkcAllCategoryAbrvLCsQbl</CODE>)</I></LI>
+		<BR> &nbsp; &nbsp; <CODE>{#insert <A HREF="tpkc_user_dir.html#zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn">zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn</A>}/output/user_spcfc_cfg__bldproc10thr13/raw_user_config__bldproc12/<A HREF="../../../textpad__tpkc/for_v_7_0_9/user_config/tp_frsh_instl/output/user_spcfc_cfg__bldproc10thr13/raw_user_config__bldproc12/file.txt">file.txt</A></CODE> &nbsp; &nbsp; <I>(Replace &quot;<CODE>file</CODE>&quot; with any category in <CODE>zTpkcAllCategoryAbrvLCsQbl</CODE>)</I></LI>
 		<LI><U>PhraseExpress folder</U> (to <A HREF="../phrase_file_import1.html">import</A> to): <I>Not-applicable</I></LI>
 	</UL></LI>
 </UL></P>
@@ -238,7 +238,7 @@ zzTpkcSearchFindPreviousNbsKcEsc3	\\\{#insert zApF2\\\}\\\{#insert zTSlp\\\}	zzT
 
 
 
-<P>Creates a phrase for each built-in TextPad command, so your external phrases can call them, and therefore trigger individual TextPad commands. This does not create phrases for any <A HREF="../tpbs.html">TextPad-bootstraps</A>, since they existed before the TPKC-Project was ever installed. For all Non-BootStrap (nbs) commands, this always uses the <I>first</I> configured command: <CODE>&quot;zzTpkc*NbsKcEsc1&quot;</CODE>.</P>
+<P>Creates a phrase for each built-in TextPad command, so your external phrases can call them, and therefore trigger individual TextPad commands. This does not create phrases for any <A HREF="../tpbs.html">TextPad-bootstraps</A>, since they existed before the TPKC-Project was ever installed. For all Non-BootStrap (nbs) commands, this always uses the <I>first</I> configured command: &quot;<CODE>zzTpkc*NbsKcEsc1</CODE>&quot;.</P>
 
 <P>If the <A HREF="../tpbs.html#terminology">primary key-command</A> has changed, then process 14 must be run again.
 

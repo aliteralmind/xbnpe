@@ -7,6 +7,8 @@
 
 <H1>XBN-PhraseExpress</H1>
 
+<P><I><CODE>[<A HREF="#start">start</A>, <A HREF="#basics">basics</A>, <A HREF="#devpex">devpex</A>, <A HREF="#tasks">tasks</A>, <A HREF="#generic">generic</A>, <A HREF="#future">future</A>]</CODE></I></P>
+
 <P>XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in <A HREF="http://phraseexpress.com">PhraseExpress</A>*, using the plain-text editor <A HREF="http://textpad.com">TextPad</A> as its foundation. XBNPE is significantly for <I>creating</I> phrases in TextPad, and therefore many phrases are logically only-callable in a TextPad document. There are, however, many useful features for those developing phrases in any environment, including the PhraseExpress application itself.</P>
 
 <P>There is a significant setup necessary in order for XBN-PhraseExpress and TextPad to communicate properly, but it is largely a one-time-only process.</P>
@@ -31,13 +33,13 @@
 </PRE>
 <A NAME="start"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; XBN-PhraseExpress: Getting started</H2>
 
-<P><UL>
+<P><I><CODE>[start, <A HREF="#basics">basics</A>, <A HREF="#devpex">devpex</A>, <A HREF="#tasks">tasks</A>, <A HREF="#generic">generic</A>, <A HREF="#future">future</A>]</CODE></I><UL>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="http://github.com/aliteralmind/xbnpe">GO</A></B></FONT>]</CODE> &nbsp; GitHub project page &nbsp; &nbsp; <I>(<A HREF="https://github.com/aliteralmind/xbnpe/issues">issue tracker</A>, <A HREF="https://github.com/aliteralmind/xbnpe/wiki">wiki</A>)</I></LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="http://forums.delphiforums.com/xbnpe">GO</A></B></FONT>]</CODE> &nbsp; User-discussion forum</LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="http://xbnpe.jeffyepstein.com">GO</A></B></FONT>]</CODE> &nbsp; The most-up-to-date documentation</LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#lpgl">GO</A></B></FONT>]</CODE> &nbsp; XBN-PhraseExpress is released under the LPGL 2.1 <A HREF="../../LICENSE.txt">Full license text</A></LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="install.html">GO</A></B></FONT>]</CODE> &nbsp; <B>Installation</B><UL>
-		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#downloads">GO</A></B></FONT>]</CODE> &nbsp; Downloads</LI>
+		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#downloads">GO</A></B></FONT>]</CODE> &nbsp; Downloads &nbsp; &nbsp; <I>(<A HREF="release_notes.html">release notes</A>)</I></LI>
 		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="global_config.html">GO</A></B></FONT>]</CODE> &nbsp; Global configuration variables</LI>
 		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#dkcs">GO</A></B></FONT>]</CODE> &nbsp; Default key-commands</LI>
 		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="install2.html#test">GO</A></B></FONT>]</CODE> &nbsp; Verification</LI>
@@ -84,7 +86,7 @@
 </PRE>
 <A NAME="basics"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; XBN-PhraseExpress: The basics</H2>
 
-<P><UL>
+<P><I><CODE>[<A HREF="#start">start</A>, basics, <A HREF="#devpex">devpex</A>, <A HREF="#tasks">tasks</A>, <A HREF="#generic">generic</A>, <A HREF="#future">future</A>]</CODE></I><UL>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="basics/pex_in_textpad.html">GO</A></B></FONT>]</CODE> &nbsp; I only edit my phrases in TextPad</LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="basics/tpbs.html">GO</A></B></FONT>]</CODE> &nbsp; TextPad-bootstraps: A fundamental concept</LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="basics/phrase_file.html">GO</A></B></FONT>]</CODE> &nbsp; Plain-text phrase-files: Their format and how to <A HREF="basics/phrase_file_import1.html">import</A>.</LI>
@@ -102,8 +104,8 @@
 </PRE>
 <A NAME="devpex"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; XBN-PhraseExpress: Developing with XBN-PhraseExpress</H2>
 
-<P><UL>
-	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="devpex/xbnpe_ddmenus.html">GO</A></B></FONT>]</CODE> &nbsp; <CODE>&quot;xh...&quot;</CODE> phrase-creator ddmenu (and the XBNPE user-menu)</LI>
+<P><I><CODE>[<A HREF="#start">start</A>, <A HREF="#basics">basics</A>, devpex, <A HREF="#tasks">tasks</A>, <A HREF="#generic">generic</A>, <A HREF="#future">future</A>]</CODE></I><UL>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="devpex/xbnpe_ddmenus.html">GO</A></B></FONT>]</CODE> &nbsp; &quot;<CODE>xh...</CODE>&quot; phrase-creator ddmenu (and the XBNPE user-menu)</LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="devpex/xpc.html">GO</A></B></FONT>]</CODE> &nbsp; XBNPE-Phrase-creators (XPC) project</LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="devpex/c2pl.html">GO</A></B></FONT>]</CODE> &nbsp; Phrase &quot;compression&quot;: <CODE>c2pl</CODE> and related utilities</LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="devpex/cpcb.html">GO</A></B></FONT>]</CODE> &nbsp; Call Phrase-name in ClipBoard: <CODE>cpcb</CODE> and related utilities</LI>
@@ -118,7 +120,7 @@
 </PRE>
 <A NAME="tasks"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; XBN-PhraseExpress: Specific tasks</H2>
 
-<P><UL>
+<P><I><CODE>[<A HREF="#start">start</A>, <A HREF="#basics">basics</A>, <A HREF="#devpex">devpex</A>, tasks, <A HREF="#generic">generic</A>, <A HREF="#future">future</A>]</CODE></I><UL>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="tasks/file_manipulation.html">GO</A></B></FONT>]</CODE> &nbsp; File manipulation</LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="tasks/snr.html">GO</A></B></FONT>]</CODE> &nbsp; Search and replace (SNR): <I>Find, replace, find-in-files, go-to dialog, and bookmarks</I></LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="tasks/divisor_quotient.html">GO</A></B></FONT>]</CODE> &nbsp; Advanced division (divisor/quotient)</LI>
@@ -129,15 +131,15 @@
 
 <A NAME="livexmpl"/><H3>XBNPE: Live example code</H3>
 
-<P>All example code throughout XBN-PhraseExpress documentation is &quot;live&quot;--it can be executed in a new TextPad document. Adding <CODE>&quot;wsc&quot;</CODE> to the end of any example-code phrase-name, also executes necessary setup and cleanup. <A HREF="tasks/snr.html#findxmplftst">For example</A>: <CODE>&quot;snr06findselxtoz&quot;</CODE>, and <CODE>&quot;snr06findselxtoz<B><U>wsc</U></B>&quot;</CODE>.</P>
+<P>All example code throughout XBN-PhraseExpress documentation is &quot;live&quot;--it can be executed in a new TextPad document. Adding &quot;<CODE>wsc</CODE>&quot; to the end of any example-code phrase-name, also executes necessary setup and cleanup. <A HREF="tasks/snr.html#findxmplftst">For example</A>: &quot;<CODE>snr06findselxtoz</CODE>&quot;, and &quot;<CODE>snr06findselxtoz<B><U>wsc</U></B></CODE>&quot;.</P>
 
 <P>This is made possible by the <A HREF="#future">as-of-yet-unfinished</A> XBNPE-Example-code framework (XCF-project).</P>
 
 <P>Note that example code is presented in <A HREF="http://www.regular-expressions.info/freespacing.html">free-spacing mode</A> (inspired by Mastering Regular Expressions author <A HREF="http://regex.info">Jeffrey E. F. Friedl</A>). You can also copy the example code yourself, directly off of a documentation webpage. To make it usable:<OL>
-	<LI>Select and copy it with your mouse, and paste it into a new text document (save it as a <A HREF="basics/phrase_file.html#fformat">phrase-file</A> named <CODE>&quot;<I>something</I>.px.txt&quot;</CODE>)</LI>
+	<LI>Select and copy it with your mouse, and paste it into a new text document (save it as a <A HREF="basics/phrase_file.html#fformat">phrase-file</A> named &quot;<CODE><I>something</I>.px.txt</CODE>&quot;)</LI>
 	<LI>Eliminate all line-breaks and indentation, except for the line-break between the phrase-name and body. Spaces at the <I>end</I> of lines must be preserved (there are hidden non-breaking spaces--<CODE>&quot;&amp;nbsp;&quot;</CODE> in the HTML source code, at the end of source lines where necessary).</LI>
-	<LI>Since the phrase already exists, its name must be changed. Consider adding a unique postfix, such as your initials (<CODE>&quot;snr06findselxtoz&quot;</CODE> <CODE>--&gt;</CODE> <CODE>&quot;snr06findselxtozjf&quot;</CODE>)</LI>
-	<LI>This is now an <A HREF="devpex/c2pl.html#one">uncompressed</A> phrase. Compress it with <CODE>&quot;c2pl&quot;</CODE>.</LI>
+	<LI>Since the phrase already exists, its name must be changed. Consider adding a unique postfix, such as your initials (&quot;<CODE>snr06findselxtoz</CODE>&quot; <CODE>--&gt;</CODE> &quot;<CODE>snr06findselxtozjf</CODE>&quot;)</LI>
+	<LI>This is now an <A HREF="devpex/c2pl.html#one">uncompressed</A> phrase. Compress it with &quot;<CODE>c2pl</CODE>&quot;.</LI>
 	<LI><A HREF="basics/phrase_file_import1.html">Import</A> <CODE><I>something</I>.px.txt</CODE>.</LI>
 </OL></P>
 
@@ -150,7 +152,7 @@
 </PRE>
 <A NAME="generic"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; XBN-PhraseExpress: Generic (non XBNPE) documentation</H2>
 
-<P><UL>
+<P><I><CODE>[<A HREF="#start">start</A>, <A HREF="#basics">basics</A>, <A HREF="#devpex">devpex</A>, <A HREF="#tasks">tasks</A>, generic, <A HREF="#future">future</A>]</CODE></I><UL>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="http://phraseexpress.wikia.com/wiki/PhraseExpress_Wiki">GO</A></B></FONT>]</CODE> &nbsp; <B>PhraseExpress wiki</B> &nbsp; &nbsp; <I>(please contribute!)</I></LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="http://www.phraseexpress.com/docs9/09/manual.htm">GO</A></B></FONT>]</CODE> &nbsp; Official PhraseExpress documentation</LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="generic/pex_built_in_functions.html">GO</A></B></FONT>]</CODE> &nbsp; Specific PhraseExpress built-in functions, including in-depth documentation on the <A HREF="generic/cond_tag.html"><CODE>COND</CODE> tag</A>.</LI>
@@ -166,7 +168,7 @@
 </PRE>
 <A NAME="future"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; XBN-PhraseExpress: Unfinished and future projects</H2>
 
-<P><UL>
+<P><I><CODE>[<A HREF="#start">start</A>, <A HREF="#basics">basics</A>, <A HREF="#devpex">devpex</A>, <A HREF="#tasks">tasks</A>, <A HREF="#generic">generic</A>, future]</CODE></I><UL>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="future/xcf.html">GO</A></B></FONT>]</CODE> &nbsp; Example code framework (XCF) project</LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="future/minv.html">GO</A></B></FONT>]</CODE> &nbsp; MINV-Commands: Automated creation and management of repeating commands</LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="future/lpd.html">GO</A></B></FONT>]</CODE> &nbsp; Large project database framework (LPD) project.</LI>
@@ -203,13 +205,13 @@
 <H3>XBNPE users</H3>
 
 <P>For those composing their own phrases, using and calling some of the XBNPE-projects:
-<BR> &nbsp; &nbsp; <CODE><A HREF="../../zz_misc_and_pxp/xbnpe_0p8p1_beta.zip">xbnpe_0p8p1_beta.zip</A> &nbsp; &nbsp; <I>(~8mb)</I></CODE>
-<BR>This contains all documentation, plain-text phrase-files, PhraseExpress <CODE>&quot;*.pxp&quot;</CODE> files, and some other files that may be useful to the general user.</P>
+<BR> &nbsp; &nbsp; <CODE><A HREF="../../zz_misc_and_pxp/xbnpe_0p8p2_beta.zip">xbnpe_0p8p2_beta.zip</A></CODE> &nbsp; &nbsp; <I>(~8mb, <A HREF="release_notes.html#0p8p1_beta">release notes</A>)</I>
+<BR>This contains all documentation, plain-text phrase-files, PhraseExpress &quot;<CODE>*.pxp</CODE>&quot; files, and some other files that may be useful to the general user.</P>
 
 <H3>XBNPE developers</H3>
 
 <P>For those making changes and additions to the XBNPE-project itself:
-<BR> &nbsp; &nbsp; <CODE><A HREF="https://github.com/aliteralmind/xbnpe/archive/master.zip">https://github.com/aliteralmind/xbnpe/archive/master.zip</A> &nbsp; &nbsp; <I>(~50mb)</I></CODE>
+<BR> &nbsp; &nbsp; <CODE><A HREF="https://github.com/aliteralmind/xbnpe/archive/master.zip">https://github.com/aliteralmind/xbnpe/archive/master.zip</A></CODE> &nbsp; &nbsp; <I>(~50mb)</I>
 <BR>In addition to the above, this contains all git-related files, and all build-only related documents (such as video-metadata for youtube, and <CODE>build.xml</CODE>).</P>
 
 <PRE>

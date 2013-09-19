@@ -12,7 +12,7 @@
 
 <H1>XBNPE-SNR: sQuare-Bracketed Lists (QBL)</H2>
 
-<P>A sQuare-Bracketed List (qb-list, or &quot;qbl&quot;), is a PhraseExpress plain-text string-iterator. For a list of all available qbl-functions, see <CODE>&quot;<A HREF="../devpex/xbnpe_ddmenus.html#xh">xh</A>skq&quot;</CODE>. To see a demonstration of qb-lists, use <CODE>&quot;qbldemo&quot;</CODE></P>
+<P>A sQuare-Bracketed List (qb-list, or &quot;qbl&quot;), is a PhraseExpress plain-text string-iterator. For a list of all available qbl-functions, see &quot;<CODE><A HREF="../devpex/xbnpe_ddmenus.html#xh">xh</A>skq</CODE>&quot;. To see a demonstration of qb-lists, use &quot;<CODE>qbldemo</CODE>&quot;</P>
 
 <P><B>Contents:</B><UL>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#basic">GO</A></B></FONT>]</CODE> &nbsp; A basic example</LI>
@@ -68,9 +68,9 @@ eight</PRE>
 
 <P>Notes:<OL>
 	<LI>On the first iteration, <CODE>zExtrElimSetStrSetQBL_M_qbl</CODE> sets<UL>
-		<LI><B><CODE>zvQB_STRING</CODE>:</B> to <CODE>&quot;[one]&quot;</CODE></LI>
-		<LI><B><CODE>zvSTRING</CODE>:</B> to <CODE>&quot;one&quot;</CODE></LI>
-		<LI><B><CODE>zvQB_STR_LIST</CODE>:</B> to <CODE>&quot;[two][three][four][five][six][seven][eight]&quot;</CODE></LI>
+		<LI><B><CODE>zvQB_STRING</CODE>:</B> to &quot;<CODE>[one]</CODE>&quot;</LI>
+		<LI><B><CODE>zvSTRING</CODE>:</B> to &quot;<CODE>one</CODE>&quot;</LI>
+		<LI><B><CODE>zvQB_STR_LIST</CODE>:</B> to &quot;<CODE>[two][three][four][five][six][seven][eight]</CODE>&quot;</LI>
 	</UL></LI>
 	<LI><CODE>zQblLenFromSelf_M_qbl</CODE> is the <I>current</I> length of the qbl. Since, in this example, <CODE>zQblLenFromSelf_M_qbl</CODE> is only called before the first extraction, it is appropriate.</LI>
 </OL></P>
@@ -86,7 +86,7 @@ eight</PRE>
 
 <P>When the <I>entire</I> contents of a document is nothing but the <I>body</I> of a sQuare-Bracketed List, such as
 <BR> &nbsp; &nbsp; <CODE>[one][two][three][four][five][six][seven][eight]</CODE>
-<BR>(meaning <I>nothing</I> else is in the document, no empty lines or whitespace, nor the qbl's phrase-name), then use <CODE>&quot;<B>qbltoll</B>&quot;</CODE> to transform it to a &quot;line-list&quot;:</P>
+<BR>(meaning <I>nothing</I> else is in the document, no empty lines or whitespace, nor the qbl's phrase-name), then use &quot;<CODE><B>qbltoll</B></CODE>&quot; to transform it to a &quot;line-list&quot;:</P>
 
 <PRE STYLE="background-color:#E1E1E1;">one
 two
@@ -115,7 +115,7 @@ eight</PRE>
 
 <A NAME="sortqblstar"/><H2><CODE>[<A HREF="#lltoqbl">BACK</A>]</CODE> &nbsp; QBL sorting utilities: <CODE>sortqbl[cb[n],doc]</CODE></H2>
 
-<P>Generally speaking, <CODE>&quot;sortqbl*&quot;</CODE> executes <CODE>qbltoll</CODE>, and then <CODE>lltoqbl</CODE>. There are three variations:<UL>
+<P>Generally speaking, &quot;<CODE>sortqbl*</CODE>&quot; executes <CODE>qbltoll</CODE>, and then <CODE>lltoqbl</CODE>. There are three variations:<UL>
 	<LI><B><CODE>sortqbldoc</CODE>:</B> Sorts a qbl that is the <I>only</I> text in a document (only its phrase-body, not any whitespace, empty lines, or its phrase-name).</LI>
 	<LI><B><CODE>sortqblcb</CODE>:</B> Sorts a qbl whose phrase-body is in the clipboard.</LI>
 	<LI><B><CODE>sortqblcbn</CODE>:</B> Sorts a qbl whose phrase-<I>name</I> is in the clipboard. Both this and <CODE>sortqblcb</CODE> open a temporary new document.</LI>
@@ -132,7 +132,7 @@ eight</PRE>
 
 <H3><CODE>zQblLenFromSelf_M_qbl</CODE></H3>
 
-<P>Obtains the <I>current</I> length from <CODE>zvQB_STR_LIST</CODE>. This is determined by replacing all open brackets (<CODE>&quot;[&quot;</CODE>) with <I>nothing</I>, and then comparing the original length with the new. Note that the qb-list remains untouched.</P>
+<P>Obtains the <I>current</I> length from <CODE>zvQB_STR_LIST</CODE>. This is determined by replacing all open brackets (&quot;<CODE>[</CODE>&quot;) with <I>nothing</I>, and then comparing the original length with the new. Note that the qb-list remains untouched.</P>
 
 <P>An alternative is
 <BR> &nbsp; &nbsp; <CODE>zQblLenFromSelf_M_qbl2</CODE>

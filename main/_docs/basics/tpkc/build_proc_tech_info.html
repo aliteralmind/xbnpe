@@ -18,7 +18,7 @@
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="build_proc_tech_info2.html#bldrgc">GO</A></B></FONT>]</CODE> &nbsp; Before everything else: Manually creating the raw-global-configuration</LI>
 	<LI><B>All master and sub-build processes</B><UL>
 		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#bldprocs">GO</A></B></FONT>]</CODE> &nbsp; Technical documentation</LI>
-		<LI><B>Videos</B> (all in <CODE>&quot;test-mode&quot;</CODE>):<UL>
+		<LI><B>Videos</B> (all in &quot;<CODE>test-mode</CODE>&quot;):<UL>
 			<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#m1of4_videoa">GO</A></B></FONT>]</CODE> &nbsp; Eliminating all old auto-generated files, to prepare for a new build (and setting build-mode to &quot;test&quot;)</LI>
 			<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#m1of4_videob">GO</A></B></FONT>]</CODE> &nbsp; Running master-proc 1of4</LI>
 			<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#m2of4_video">GO</A></B></FONT>]</CODE> &nbsp; Running master-proc 2of4</LI>
@@ -62,19 +62,19 @@
 <BR> &nbsp; &nbsp; <CODE><A HREF="master_cfg_vars.html#zzTpkcBuildVersionName">zzTpkcBuildVersionName</A></CODE>
 <BR>represents the <I>currently active</I></P>
 
-<P>The TPKC <A HREF="index.html#userbuild01">user-build-process</A> writes its output (&quot;auto-generated&quot;, or &quot;AG&quot;) phrase-files into one of the <A HREF="tpkc_user_dir.html#ondisk">on-disk</A> <CODE>&quot;output_*&quot;</CODE> folders in your TPKC-user-directory. Which one is determined by the TPKC <A HREF="master_cfg_vars.html">master-configuration-variable</A>
+<P>The TPKC <A HREF="index.html#userbuild01">user-build-process</A> writes its output (&quot;auto-generated&quot;, or &quot;AG&quot;) phrase-files into one of the <A HREF="tpkc_user_dir.html#ondisk">on-disk</A> &quot;<CODE>output_*</CODE>&quot; folders in your TPKC-user-directory. Which one is determined by the TPKC <A HREF="master_cfg_vars.html">master-configuration-variable</A>
 <BR> &nbsp; &nbsp; <CODE><A HREF="master_cfg_vars.html#zzTpkcBuildVersionName">zzTpkcBuildVersionName</A></CODE>
-<BR>For example, if <CODE>&quot;zzTpkcBuildVersionName&quot;</CODE> is <CODE>&quot;test3&quot;</CODE>, then all user-build output is written to
+<BR>For example, if &quot;<CODE>zzTpkcBuildVersionName</CODE>&quot; is &quot;<CODE>test3</CODE>&quot;, then all user-build output is written to
 <BR> &nbsp; &nbsp; <CODE>{#insert <A HREF="tpkc_user_dir.html#zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn">zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn</A>}output_test3\</CODE>
-<BR>or one of its sub-directories. <CODE>&quot;test3&quot;</CODE> is its &quot;build-version&quot;.</P>
+<BR>or one of its sub-directories. &quot;<CODE>test3</CODE>&quot; is its &quot;build-version&quot;.</P>
 
-At a minimum, there must be a &quot;live&quot; version (although it's name does not have to be exactly <CODE>&quot;live&quot;</CODE>). There may also be zero or more &quot;<A HREF="master_cfg_vars.html#zzTpkcBuildVersionName">test</A>&quot; versions, each representing a different subset of categories.</P>
+At a minimum, there must be a &quot;live&quot; version (although it's name does not have to be exactly &quot;<CODE>live</CODE>&quot;). There may also be zero or more &quot;<A HREF="master_cfg_vars.html#zzTpkcBuildVersionName">test</A>&quot; versions, each representing a different subset of categories.</P>
 
 <P>These phrase-files are then <A HREF="../phrase_file_import1.html">imported</A> to one of these three PhraseExpress folders (see &quot;switching TPKC versions&quot;):<UL>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="user_menu2.html#inpex">GO</A></B></FONT>]</CODE> &nbsp; The TPKC-user-menu, </LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="tpkc_user_dir.html#inpex">GO</A></B></FONT>]</CODE> &nbsp; the TPKC-user-directory, or</LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#imp3other">GO</A></B></FONT>]</CODE> &nbsp; the &quot;other-AG-output&quot; folder.</LI>
-</UL>In each of these three locations, there is the exact same set of versions as there are on-disk <CODE>&quot;output_*&quot;</CODE> folders in the <A HREF="tpkc_user_dir.html#ondisk">TPKC-user-directory</A>. For example, these TPKC-user-directory output folders<UL>
+</UL>In each of these three locations, there is the exact same set of versions as there are on-disk &quot;<CODE>output_*</CODE>&quot; folders in the <A HREF="tpkc_user_dir.html#ondisk">TPKC-user-directory</A>. For example, these TPKC-user-directory output folders<UL>
 	<LI><CODE>output_live</CODE></LI>
 	<LI><CODE>output_test</CODE></LI>
 </UL>correspond to the following versions in <I>all</I> three PhraseExpress locations above:<UL>
@@ -85,7 +85,7 @@ At a minimum, there must be a &quot;live&quot; version (although it's name does 
 <H3>Logical versus virtual AG locations</H3>
 
 <P>In PhraseExpress, many folders throughout the TPKC project are postfixed with, for example:
-<BR> &nbsp; &nbsp; <CODE>&quot;Other (4AG: 1,4,5,9)&quot;</CODE>
+<BR> &nbsp; &nbsp; &quot;<CODE>Other (4AG: 1,4,5,9)</CODE>&quot;
 <BR>This indicates that there are <I>four sets</I> of auto-generated output, as created by TPKC sub-build-processes <A HREF="sub_build_proc.html#01">01</A>, <A HREF="sub_build_proc.html#04">04</A>, <A HREF="sub_build_proc.html#05">05</A>, and <A HREF="sub_build_proc2.html#09">09</A>. <I>This is not where these output-phrase-files go</I> (it used to be). However, since these locations are where these files <I>logically</I> reside (and therefore describe which phrases, in which folders, need them), these AG-postfixes remain.</P>
 
 <PRE>
@@ -118,7 +118,7 @@ At a minimum, there must be a &quot;live&quot; version (although it's name does 
 	<LI><B><CODE>ddmenu</CODE>:</B> Processes that output phrases needed by the TPKC-user-menu (and should be imported there instead).</LI>
 </UL></P>
 
-<P>The <CODE>&quot;LIVE&quot;</CODE> and <CODE>&quot;FGH-TEST&quot;</CODE> folders facilitate <A HREF="master_cfg_vars.html#switchv">switching</A> between TPKC-build versions. Exactly one version (either fgh or live) must be enabled at any one time. Which version should be enabled is determined by the TPKC master-config-variable
+<P>The &quot;<CODE>LIVE</CODE>&quot; and &quot;<CODE>FGH-TEST</CODE>&quot; folders facilitate <A HREF="master_cfg_vars.html#switchv">switching</A> between TPKC-build versions. Exactly one version (either fgh or live) must be enabled at any one time. Which version should be enabled is determined by the TPKC master-config-variable
 <BR> &nbsp; &nbsp; <CODE><A HREF="master_cfg_vars.html#zzTpkcBuildVersionName">zzTpkcBuildVersionName</A></CODE></P>
 <PRE>
 
@@ -138,7 +138,7 @@ At a minimum, there must be a &quot;live&quot; version (although it's name does 
 	<LI>[<A HREF="#m4of4">go</A>]</CODE> &nbsp; <B><CODE>zTpkcMasterBuild4of4</CODE>:</B> Reads in user-command-config, and generates the Non-BootStrap (nbs) phrases, and the active-tp-command ddmenu.</LI>
 </OL></P>
 
-<P>After each process is complete, all output <I>phrases</I> must be imported to their appropriate locations in the PhraseExpress application. For example, the output of <A HREF="sub_build_proc.html#03">build-process-03</A> is indicated in PhraseExpress by <CODE>&quot;AG:03&quot;</CODE> in its destination folder's description.</P>
+<P>After each process is complete, all output <I>phrases</I> must be imported to their appropriate locations in the PhraseExpress application. For example, the output of <A HREF="sub_build_proc.html#03">build-process-03</A> is indicated in PhraseExpress by &quot;<CODE>AG:03</CODE>&quot; in its destination folder's description.</P>
 
 <P><IMG SRC="../../images/basics/tpkc/output_phrase_destination_example_ag3.jpg" BORDER="1"/></P>
 
@@ -158,7 +158,7 @@ At a minimum, there must be a &quot;live&quot; version (although it's name does 
 
 <P><I>See below for two videos demonstrating preparing for, and then running this master-build-process 1-of-4.</I></P>
 
-<P><CODE>&quot;zTpkcMasterBuild1of4&quot;</CODE> calls each of the following, in order:<UL>
+<P>&quot;<CODE>zTpkcMasterBuild1of4</CODE>&quot; calls each of the following, in order:<UL>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="sub_build_proc.html#01">GO</A></B></FONT>]</CODE> &nbsp; <CODE>zTpkc01CreateSetCatlVarPhrsFile</CODE></LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="sub_build_proc.html#02">GO</A></B></FONT>]</CODE> &nbsp; <CODE>zTpkc02CreateTPBtstrpQblAndMrkRGCRegex</CODE></LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="sub_build_proc.html#03">GO</A></B></FONT>]</CODE> &nbsp; <CODE>zTpkc03CreateAll_allCmdsIn1CatPhrsFiles</CODE></LI>
@@ -194,7 +194,7 @@ At a minimum, there must be a &quot;live&quot; version (although it's name does 
 <P><I><CODE>[<A HREF="#top">top</A>, <A HREF="#bldprocs">BACK</A>, <A HREF="#m1of4">1of4</A>, 2of4, <A HREF="#m3of4">3of4</A>, <A HREF="#m4of4">4of4</A>]</CODE></I></P>
 
 
-<P><CODE>&quot;zTpkcMasterBuild2of4&quot;</CODE> calls each of the following, in order:<UL>
+<P>&quot;<CODE>zTpkcMasterBuild2of4</CODE>&quot; calls each of the following, in order:<UL>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="sub_build_proc.html#07">GO</A></B></FONT>]</CODE> &nbsp; <B><CODE>zTpkc07VerifyImportedGlobalCmdCfg</CODE></B></LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="sub_build_proc.html#08">GO</A></B></FONT>]</CODE> &nbsp; <CODE>zTpkc08CreateSetAllKCsTo1CmdPhraseFiles</CODE></LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="sub_build_proc2.html#09">GO</A></B></FONT>]</CODE> &nbsp; <CODE>zTpkc09CreateAllSetCmd1VarPhraseFiles</CODE></LI>
@@ -217,7 +217,7 @@ At a minimum, there must be a &quot;live&quot; version (although it's name does 
 
 <P><I><CODE>[<A HREF="#top">top</A>, <A HREF="#bldprocs">BACK</A>, <A HREF="#m1of4">1of4</A>, <A HREF="#m2of4">2of4</A>, 3of4, <A HREF="#m4of4">4of4</A>]</CODE></I></P>
 
-<P><CODE>&quot;zTpkcMasterBuild3of4&quot;</CODE> calls each of the following, in order:<UL>
+<P>&quot;<CODE>zTpkcMasterBuild3of4</CODE>&quot; calls each of the following, in order:<UL>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="sub_build_proc2.html#10">GO</A></B></FONT>]</CODE> &nbsp; <CODE>zTpkc10ElimBtstrpKCsFromTpAllCatLst</CODE></LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="sub_build_proc2.html#11">GO</A></B></FONT>]</CODE> &nbsp; <CODE>zTpkc11SplitNbsAllLstToIndvCatLsts</CODE></LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="sub_build_proc2.html#12">GO</A></B></FONT>]</CODE> &nbsp; <CODE>zTpkc12CreateRawUsrCfgFromIndvCatLists</CODE></LI>
@@ -241,7 +241,7 @@ At a minimum, there must be a &quot;live&quot; version (although it's name does 
 
 <P><I><CODE>[<A HREF="#top">top</A>, <A HREF="#bldprocs">BACK</A>, <A HREF="#m1of4">1of4</A>, <A HREF="#m2of4">2of4</A>, <A HREF="#m3of4">3of4</A>, 4of4]</CODE></I></P>
 
-<P><CODE>&quot;zTpkcMasterBuild4of4&quot;</CODE> calls the following, in order:<UL>
+<P>&quot;<CODE>zTpkcMasterBuild4of4</CODE>&quot; calls the following, in order:<UL>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="sub_build_proc2.html#14">GO</A></B></FONT>]</CODE> &nbsp; <CODE>zTpkc14CreateNbsPhrssAndWKcQBLsFrmUSCC</CODE></LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="sub_build_proc2.html#15">GO</A></B></FONT>]</CODE> &nbsp; <CODE>zTpkc15CrtAllActvTPCmdsDDMenuFromAll</CODE></LI>
 </UL></P>

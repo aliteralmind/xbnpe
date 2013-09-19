@@ -56,7 +56,7 @@ Ctrl+C</PRE>
 <H3>Requirements</H3>
 
 <P><UL>
-	<LI><B>Phrase name:</B> By convention, the phrase-name for <I>all</I> built-in TextPad commands must begin with <CODE>&quot;zTP&quot;</CODE>. Example:
+	<LI><B>Phrase name:</B> By convention, the phrase-name for <I>all</I> built-in TextPad commands must begin with &quot;<CODE>zTP</CODE>&quot;. Example:
 	<BR> &nbsp; &nbsp; <CODE>zTPCopy</CODE></LI>
 	<LI><B>Description:</B> States the specific TextPad command triggered by this phrase and its category. Example:
 	<BR> &nbsp; &nbsp; <CODE>&nbsp;-- TextPad built-in command: Edit &gt; EditCopy</CODE>
@@ -92,8 +92,8 @@ Ctrl+C</PRE>
 <H3>Requirements</H3>
 
 <P><UL>
-	<LI><B>Name:</B> Must be equal to the name of the tp-bootstrap's <A HREF="#mainp">main phrase</A>, with <CODE>&quot;Esc&quot;</CODE> at the end.
-	<BR>Example: <CODE>&quot;zTPCopyEsc&quot;</CODE></LI>
+	<LI><B>Name:</B> Must be equal to the name of the tp-bootstrap's <A HREF="#mainp">main phrase</A>, with &quot;<CODE>Esc</CODE>&quot; at the end.
+	<BR>Example: &quot;<CODE>zTPCopyEsc</CODE>&quot;</LI>
 	<LI><B>Value:</B> Must be <I>exactly</I> equal to the main-phrase, where each open and close-curly is <A HREF="../devpex/xpc.html#escaped">escaped</A>. For example, if the main-phrase's value is equal to
 	<BR> &nbsp; &nbsp; <CODE>{#CTRL -chars c}{#insert zTSlp}{#sleep 10}</CODE>
 	<BR>then the value of this escaped-phrase must be
@@ -120,7 +120,7 @@ Ctrl+C</PRE>
 
 <H3>Requirements</H3>
 
-<P><B>Name:</B> Must be equal to the name of the <A HREF="#mainp">main</A> tp-bootstrap phrase, with <CODE>&quot;TPKeys&quot;</CODE> at the end. Example:
+<P><B>Name:</B> Must be equal to the name of the <A HREF="#mainp">main</A> tp-bootstrap phrase, with &quot;<CODE>TPKeys</CODE>&quot; at the end. Example:
 <BR> &nbsp; &nbsp; <CODE>zTPCopyTPKeys</CODE></P>
 
 <H4><U>Value</U></H4>
@@ -139,7 +139,7 @@ Ctrl+C</PRE>
 <P>Since the value of this phrase is not PhraseExpress code, it should therefore have no SLEEP or calls to <CODE><A HREF="../devpex/debugging.html#kpspeed">zTSlp</A></CODE>. TP-key-press phrases are used by the first step of the first TPKC <A HREF="tpkc/index.html#userbuild01">user-build-process</A> (<A HREF="tpkc/sub_build_proc2.html#10">sub-proc-10</A>) to delete all <A HREF="tpbs.html#terminology">bootstrap-kcs</A> from the tp-all-cmd-list.</P>
 
 <P>Below are two screenshots.<OL>
-	<LI>The TextPad preferences dialog, displaying the <CODE>&quot;EditCopy&quot;</CODE> command, and its key-command <CODE>&quot;Ctrl+C&quot;</CODE> (the first is its bootstrap-kc, the rest its nbs-kcs)</LI>
+	<LI>The TextPad preferences dialog, displaying the &quot;<CODE>EditCopy</CODE>&quot; command, and its key-command &quot;<CODE>Ctrl+C</CODE>&quot; (the first is its bootstrap-kc, the rest its nbs-kcs)</LI>
 	<LI>A portion of the tp-all-cmd-list containing <CODE>EditCopy</CODE>.</LI>
 </OL></P>
 
