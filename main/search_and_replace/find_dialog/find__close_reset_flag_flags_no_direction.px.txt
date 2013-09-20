@@ -12,6 +12,7 @@ zFindDlgCloseMCWWXS	{#insert zFindFlagXSTgl}{#insert zFindDlgClose}{#insert zFin
 zFindDlgCloseMCXS	{#insert zFindDlgCloseXS}{#insert zTPFindFlagMCoff}	zFindDlgCloseMCXS
 zFindDlgCloseRE	{#insert zFindDlgClose}{#insert zTPFindFlagREoff}	zFindDlgCloseRE
 zFindDlgCloseREXS	{#insert zFindDlgCloseXS}{#insert zTPFindFlagREoff}	zFindDlgCloseREXS
+zFindDlgCloseWS	{#insert zFindFlagWrapSearchTglRAW}{#insert zFindDlgClose}	zFindDlgCloseWS
 zFindDlgCloseWW	{#insert zFindDlgClose}{#insert zTPFindFlagWWoff}	zFindDlgCloseWW
 zFindDlgCloseWWXS	{#insert zFindDlgCloseXS}{#insert zTPFindFlagWWoff}	zFindDlgCloseWWXS
 zFindDlgCloseXS	{#insert zFindFlagXSTgl}{#insert zFindDlgClose}	zFindDlgCloseXS

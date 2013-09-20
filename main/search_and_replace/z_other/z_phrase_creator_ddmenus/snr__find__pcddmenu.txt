@@ -73,11 +73,13 @@ Phrase-creators: XBN-PhraseExpress -- Call 'xh'   .   zXbnpeCmdPopupRoot
 				zFindNextPromptedString	{#insert zFindNextPromptedString}	xhsft
 				zFindPrevPromptedString	{#insert zFindPrevPromptedString}	xhsft
 				zFindFlagsMConOnlyThenPreCheck	\\\{#insert zFindFlagsMConOnlyThenPreCheck\\\}	xhsft
+				zFindFlagPreCheckOnlyXSoff	\\\{#insert zFindFlagPreCheckOnlyXSoff\\\}	xhsft
 				zFindGoXSOpenRplc	\\\{#insert zFindGoXSOpenRplc\\\}	xhsft
 (*       Close -- xhsfc   .   xhsf*)
 				...then set 1 flag -- xhsfca	.	xhsfc
 					zFindDlgCloseMC	\\\{#insert zFindDlgCloseMC\\\}	xhsfca
 					zFindDlgCloseRE	\\\{#insert zFindDlgCloseRE\\\}	xhsfca
+					zFindDlgCloseWS	\\\{#insert zFindDlgCloseWS\\\}	xhsfca
 					zFindDlgCloseWW	\\\{#insert zFindDlgCloseWW\\\}	xhsfca
 					zFindDlgCloseXS	\\\{#insert zFindDlgCloseXS\\\}	xhsfca
 				...then set 2+ flags -- xhsfcb	.	xhsfc

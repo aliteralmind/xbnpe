@@ -189,6 +189,7 @@ zREoffStripTrailingWSFromDoc	\\\{#insert zREoffStripTrailingWSFromDoc\\\}	xhcfsw
 zREonStripTrailingWSFromDoc	\\\{#insert zREonStripTrailingWSFromDoc\\\}	xhcfswa
 zREonStripTrailingWSFromDocIfNotAuto	\\\{#insert zREonStripTrailingWSFromDocIfNotAuto\\\}	xhcfswa
 zzMidRplcREStripTrailingWS	\\\{#insert zzMidRplcREStripTrailingWS\\\}	xhcfswa
+zzMidRplcREStripTrailingWSWDingBal	\\\{#insert zzMidRplcREStripTrailingWSWDingBal\\\}	xhcfswa
 zDirFileSaveClose_M_dirFnm	\\\{#insert zDirFileSaveClose_M_dirFnm\\\}	xhcfs
 zDirFileSave_M_dirFnm	\\\{#insert zDirFileSave_M_dirFnm\\\}	xhcfs
 zFcsTPFileSave	\\\{#insert zFcsTPFileSave\\\}	xhcfs

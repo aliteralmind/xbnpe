@@ -86,9 +86,8 @@
 
 <P>The SNR-project is <A HREF="../basics/tpbs.html#depend">dependant</A> on both the <A HREF="../basics/xkp.html">XKP</A> and <A HREF="../basics/tpkc/index.html">TPKC</A> projects being fully installed and built. All other projects in XBN-PhraseExpress are directly dependant on SNR.</P>
 
-<P>All result-related functionality for <A HREF="tasks/snr.html#fifsyn">find-in-files</A> requires that search-results are <I>not</I> docked in TextPad:
+<P>All result-related functionality for <A HREF="tasks/snr.html#fifsyn">find-in-files</A> requires that search-results are <A HREF="../basics/pex_in_textpad.html#settings"><I>not</I> docked</A> in TextPad:
 	<BR> &nbsp; &nbsp; <CODE>TextPad &gt; Configure &gt; Preferences &gt; View &gt; Dockable log windows &gt; Search Results</CODE></LI>
-
 
 <H4><U>Verify installation</U></H4>
 
@@ -248,10 +247,14 @@
 
 <P>For all other flags, the user must be relied upon to confirm the current state. To instruct your user to set the find-flags to their defaults, use
 <BR> &nbsp; &nbsp; <CODE>{#insert zFindFlagsMConOnlyThenPreCheck}</CODE>
-<BR>Two variations (<I>both useable in TPKC, before this SNR-project is installed</I>):<UL>
-	<LI><CODE>{#insert zFindDialogFlagPreCheck}</CODE></LI>
-	<LI><CODE>{#insert zFindDialogFlagPreCheckMCOnly}</CODE></LI>
-</UL></P>
+<BR>Variations:<UL>
+	<LI>TPKC-project:
+	<BR> &nbsp; &nbsp; <CODE>zFindDialogFlagPreCheck[MCOnly]</CODE></LI>
+	<LI>SNR-project:
+	<BR> &nbsp; &nbsp; <CODE>zFindDialogFlagPreCheckXSoff</CODE>
+	<BR> &nbsp; &nbsp; <CODE>zFindFlagsMConOnlyThenPreCheck</CODE></LI>
+</UL>
+<BR> &nbsp; &nbsp; </P></P>
 
 <PRE>
 
@@ -460,8 +463,9 @@
 	<LI><B>Buttons (and find/next):</B><UL>
 		<LI><CODE>zFind[Next,Prev][2-5]</CODE></LI>
 	</UL></LI>
-	<LI><B>Open:</B><UL>
+	<LI><B>Open/Close:</B><UL>
 		<LI><CODE>zFindDlgClose[[Down,Up]][MC][[RE,WW]][XS]</CODE></LI>
+		<LI><CODE>zFindDlgCloseWS</CODE> &nbsp; &nbsp; <I>(<CODE>WrapSearch</CODE>)</I></LI>
 		<LI><CODE>zFindDlgOpen[[Down,Up]]MCOnly</CODE></LI>
 		<LI><CODE>zFindDlgOpen[[Down,Up]][MC][[RE,[Force]WW]][XS]</CODE></LI>
 	</UL></LI>
@@ -477,6 +481,7 @@
 <!--Originates in find-syntax section...END-->
 		<LI><CODE>zFindFlagADBtnMarkAD[RAW]</CODE></LI>
 		<LI><CODE>zFindFlagsMConOnlyThenPreCheck</CODE></LI>
+		<LI><CODE>zFindDialogFlagPreCheckXSoff</CODE></LI>
 		<LI><CODE>zFindGoXSOpenRplc</CODE></LI>
 		<LI><CODE>zFindNextPromptedString</CODE></LI>
 		<LI><CODE>zFindNonWSCharUpREoff</CODE></LI>
@@ -577,10 +582,9 @@
 	</TD>
 </TR></TABLE></P>
 
-
 <PRE STYLE="background-color:#E1E1E1;"><!--xcfexample...START  //  (*File is empty. Create input.*){#insert zKeyPressFast}{#insert zzSnrXmplInputAThenZInRandomTxt}{#insert zTPGTDocTop}{#BALLOON -title Please wait... -text snr06findselxtoz}{#insert zSlk2KPSpeedSetToRequested}--><B><U>snr06findselxtoz</U></B>
 (*Pre-check, warning, and prep:*)
-   {#insert zFindDialogFlagPreCheck}
+   {#insert zFindDialogFlagPreCheckXSoff}
    {#BALLOON -title WARNING -text Warning: This will fail&nbsp;
       unless 'xxx' exists, and 'zzz' exists after it.}
 	{#insert zTPGTDocTop}
@@ -597,8 +601,7 @@
       <B>zzz</B>&nbsp;
             -autotext zvFIND_WHAT -folder ctvv_folder}{#insert zvFIND_WHAT}
       {#insert zFindXSBtnNextXS}
-      {#insert zFindFlagWrapSearchTgl}(*Clean up*)
-{#insert zFindDlgClose}<!--xcfexample...END  //  {#insert zBalDoneSlk2SelAllDel}--></PRE>
+      {#insert zFindDlgCloseWS}<!--xcfexample...END  //  {#insert zBalDoneSlk2SelAllDel}--></PRE>
 
 
 <P><TABLE ALIGN="center" WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0" BGCOLOR="#FFFFFF"><TR ALIGN="center" VALIGN="middle">
@@ -852,7 +855,7 @@
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#fifxmplcurrfile">GO</A></B></FONT>]</CODE> &nbsp; Search the current file only, then restore original &quot;<CODE>In folder</CODE>&quot; and &quot;<CODE>In files</CODE>&quot; parameters</LI>
 </UL></P>
 
-<P>Note that these examples will processes <I>all previous search results</I> if the special Search Results document happens to be open (see item three under &quot;<A HREF="#issues">Some other issues</A>&quot;). Also, the examples in this section require the <A HREF="../basics/pex_in_textpad.html#randomsettings">Search Results window to <B>not</B> be docked</A>.</P>
+<P>Note that these examples will processes <I>all previous search results</I> if the special Search Results document happens to be open (see item three under &quot;<A HREF="#issues">Some other issues</A>&quot;). Also, the examples in this section require the <A HREF="../basics/pex_in_textpad.html#settings">Search Results window to <B>not</B> be docked</A>.</P>
 
 
 

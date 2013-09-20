@@ -14,24 +14,55 @@
 <P>I do not edit my phrases in the PhraseExpress application. I only edit them in <A HREF="http://textpad.com">TextPad</A> (a plain-text editor by Helios Software Solutions). Whenever I make a change to a phrase, I <A HREF="phrase_file_import1.html">import it</A> into the PhraseExpress application before it can be used. This is akin to &quot;compiling&quot; the code.</P>
 
 <P><B>Contents:</B><UL>
-	<LI><B>Required TextPad settings:</B><UL>
-		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#randomsettings">GO</A></B></FONT>]</CODE> &nbsp; Various requirements of specific processes and functions.</LI>
-		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#txtdcsettings">GO</A></B></FONT>]</CODE> &nbsp; Text &quot;<CODE>*.txt</CODE>&quot; document class-related settings</LI>
-		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#backupkcs">GO</A></B></FONT>]</CODE> &nbsp; Backup your TextPad key-command setup</LI>
-	</UL></LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#nopexapp">GO</A></B></FONT>]</CODE> &nbsp; Why I do not edit phrases in PhraseExpress</LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#devenv">GO</A></B></FONT>]</CODE> &nbsp; My personal development environment</LI>
+	<LI><CODE>[<A HREF="#settings"><FONT SIZE="+1"><B>GO</B></FONT></A>]</CODE> &nbsp; <B>Required and recommended TextPad settings:</B></LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="#backupkcs">GO</A></B></FONT>]</CODE> &nbsp; Backup your TextPad key-command setup</LI>
 	<LI><B>Documented elsewhere:</B><UL>
 		<LI><CODE>[<FONT SIZE="+1"><B><A HREF="tpbs.html">GO</A></B></FONT>]</CODE> &nbsp; XBN-PhraseExpress: <B>TextPad-bootstraps</B></LI>
 	</UL></LI>
 </UL></P>
 
-<P>While XBN-PhraseExpress is tailored to creating and editing code in TextPad, although there are large portions of it that may be taken andvantage of by those developing exclusively in the PhraseExpress application (or elsewhere).</P>
+<P>While XBN-PhraseExpress is tailored to creating and editing code in TextPad, there are large portions of it that may be taken advantage of by those developing exclusively in the PhraseExpress application (or elsewhere).</P>
 
 <P><I>Also note that I use the <A HREF="http://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard">Dvorak</A> keyboard layout, which may explain the otherwise unweildy autotexts I've chosen, and <B>does</B> explain why
 <BR> &nbsp; &nbsp; <CODE>{#insert zTPPaste}</CODE>
 <BR>must be used instead of
 <BR> &nbsp; &nbsp; <CODE>{#CLIPBOARD -paste}</CODE>.</I></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="settings"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; XBNPE: TextPad: Required and recommended settings</H2>
+
+<P><UL>
+</UL></P>
+
+<H3>Required</H3>
+
+<P><UL>
+	<LI><A HREF="#txtdcsettings">Four settings</A> in the text (&quot;<CODE>*.txt</CODE>&quot;) document class</LI>
+	<LI>Search-results must be un-docked:
+	<BR> &nbsp; &nbsp; <CODE>TextPad &gt; Configure &gt; Preferences &gt; View &gt; Dockable log windows &gt; Search Results</CODE>
+	<BR><I>This is strictly only necessary for the last step in this installation (the TPKC <A HREF="tpkc/index.html#userbuild01">user-build-process</A>), and much of the <A HREF="../tasks/snr.html#fifsyn">find-in-files</A> functionality in the <A HREF="../tasks/snr.html">SNR-project</A>.</I> Note that you are warned of this requirement before the build-processes start.</LI>
+	<LI>The TPKC process (tpkc/<A HREF="sub_build_proc.html#15">sub-build-proc-15</A>) expects the following menu items to exist, with the indicated trigger-letters:<UL>
+		<LI><CODE>[S]earch &gt; Invert [A]ll Bookmarks</CODE></LI>
+		<LI><CODE>[E]dit &gt; De[L]ete &gt; [B]ookmarked-lines</CODE></LI>
+	</UL></LI>
+</UL></P>
+
+<H3>Recommended</H3>
+
+<P>It is recommend that:<UL>
+	<LI>The status-bar is displayed:
+	<BR> &nbsp; &nbsp; <CODE>TextPad &gt; View &gt; Status Bar</CODE></LI>
+	<LI>Line-numbers are displayed by default:
+	<BR> &nbsp; &nbsp; <CODE>TextPad &gt; Configure &gt; Preferences &gt; View &gt; Line numbers</CODE></LI>
+</UL></P>
+
+
 
 <PRE>
 
@@ -48,25 +79,7 @@
 <HR/>
 
 </PRE>
-<A NAME="randomsettings"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; TextPad settings: Various requirements of specific processes and functions</H2>
-
-<P>In addition to settings related to the <A HREF="#txtdcsettings">text document-class</A>, there are some additional requirements specific to particular features and functions:<UL>
-	<LI>The TPKC-build-process (specifically, <A HREF="tpkc/sub_build_proc.html#02">sub-procs-02</A> and <A HREF="tpkc/sub_build_proc2.html#15">15</A>), and the <A HREF="../tasks/snr.html#fifxmpls">find-in-files example code</A> expect the find-in-files Search Results window to be <I>undocked</I>. Therefore
-	<BR> &nbsp; &nbsp; <CODE>TextPad &gt; Configure &gt; Preferences &gt; View &gt; Dockable log windows &gt; Search Results</CODE>
-	<BR>must be unchecked during (at least) this process.</LI>
-	<LI>The TPKC process (sub-build-proc-15) expects the following menu items to exist, with the indicated trigger-letters:<UL>
-		<LI><CODE>[S]earch &gt; Invert [A]ll Bookmarks</CODE></LI>
-		<LI><CODE>[E]dit &gt; De[L]ete &gt; [B]ookmarked-lines</CODE></LI>
-	</UL>These menu items must exist at least during this process.</LI>
-</UL></P>
-
-<P><I>You are warned of these requirements this before the process starts.</I></P>
-<PRE>
-
-<HR/>
-
-</PRE>
-<A NAME="txtdcsettings"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; Required TextPad settings: Text &quot;<CODE>*.txt</CODE>&quot; document class</H2>
+<A NAME="txtdcsettings"/><H2><CODE>[<A HREF="#settings">BACK</A>]</CODE> &nbsp; Required TextPad settings: Text &quot;<CODE>*.txt</CODE>&quot; document class</H2>
 
 <P><A HREF="phrase_file.html#fformat">Plain-text phrase-files</A> must have the postfix &quot;<CODE>px.txt</CODE>&quot;. Because of this, phrase-files by default belong in the &quot;<CODE>*.txt</CODE>&quot; plain-text document class:
 <BR> &nbsp; &nbsp; <CODE>TextPad &gt; Configure &gt; Preferences &gt; Document Classes &gt; Text</CODE>

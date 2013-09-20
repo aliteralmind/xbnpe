@@ -1,4 +1,4 @@
-<!--xcffile=1/z_qbl_doc_examples/_qbldoctestall-->
+<!--xcffile=1/z_qbl_doc_example/_qbldoctestall-->
 <HTML><HEAD>
 	<TITLE>XBNPE: QB-List</TITLE>
 	<meta name="viewport" content="width=device-width" />
@@ -25,13 +25,13 @@
 </UL></P>
 
 
-<P><I>The examples in this document are <A HREF="../index.html#tasks">live</A>. Here is the <A HREF="z_qbl_doc_examples.px.txt">phrase-file</A> containing the example.</I></P>
+<P><I>The example in this document is <A HREF="../index.html#tasks">live</A>. Here is its <A HREF="z_qbl_doc_example.px.txt">phrase-file</A>.</I></P>
 
 <H4>Two warnings</H4>
 
 <P><OL>
 	<LI>QBL's are only usable for <I>static strings only</I> (strings that contain no PhraseExpress code, whether escaped or not). Every time a qbl is extracted from or accessed in any way, its entire contents are <I>interpreted</I>. This makes it effectively impossible for qbl-s to hold anything but static strings.</LI>
-	<LI>QBL extraction is slow. It is best suited for situations where each list-item has significant process done on it.</LI>
+	<LI>QBL extraction is slow. It is best suited for situations where each list-item has significant processing done on it.</LI>
 </OL></P>
 <PRE>
 
@@ -46,14 +46,14 @@
 
 <P>A simple iterator:</P>
 
-<PRE STYLE="background-color:#E1E1E1;"><!--xcfexample...START  //  dq1quotient:{#ENTER}--><B><U>dq1quotient</U></B>
-(*Input:*)
-   {#SETPHRASE -description zvDIVIDEND_TOP -content 65 -autotext zvDIVIDEND_TOP -folder ctvv_folder}
-   {#SETPHRASE -description zvDIVISOR_BTM -content 10 -autotext zvDIVISOR_BTM -folder ctvv_folder}
-(*Go:*)
-   {#insert <B>zQuotient_M_divisorDividend</B>}
-(*Output:*)
-   {#insert zvDIVIDEND_TOP}/{#insert zvDIVISOR_BTM}={#insert zvQUOTIENT}<!--xcfexample...END  //  {#ENTER}--></PRE>
+<PRE STYLE="background-color:#E1E1E1;"><!--xcfexample...START  //  qblsimple:{#ENTER}--><B><U>qblsimple</U></B>
+{#SETPHRASE -description zvQB_STR_LIST&nbsp;
+   -content [one][two][three][four][five][six][seven][eight]&nbsp;
+   -autotext zvQB_STR_LIST -folder ctvv_folder}
+{#LOOP&nbsp;
+   {#insert zExtrElimSetStrSetQBL_M_qbl}
+   {#insert zvSTRING}{#ENTER}&nbsp;
+   -count {#insert zQblLenFromSelf_M_qbl}}<!--xcfexample...END  //  {#insert zBalloonDone}--></PRE>
 
 <P>Its output:</P>
 

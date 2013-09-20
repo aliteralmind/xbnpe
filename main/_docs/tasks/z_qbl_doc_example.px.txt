@@ -1,0 +1,2 @@
+qblsimplewsc	qblsimple:{#ENTER}{#insert qblsimple}{#insert zBalloonDone}	qblsimplewsc
+qblsimple	{#SETPHRASE -description zvQB_STR_LIST -content [one][two][three][four][five][six][seven][eight] -autotext zvQB_STR_LIST -folder ctvv_folder}{#LOOP {#insert zExtrElimSetStrSetQBL_M_qbl}{#insert zvSTRING}{#ENTER} -count {#insert zQblLenFromSelf_M_qbl}}	qblsimple
