@@ -56,7 +56,7 @@
 	<target name="userzip">
 			 <echo>Create the downloadable zip-archive for XBNPE-users. People wanting to directly develop the XBNPE project can download the archive from GitHub.</echo>
 
-		<delete file="${user_zip_path}"/>
+		<!--Keep old versions-->
 
 		<zip destfile="${user_zip_path}" duplicate="fail"
 				basedir="${sandbox_parent}"
