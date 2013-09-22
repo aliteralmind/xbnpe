@@ -1,0 +1,8 @@
+---------------
+
+"offoff" can't be correct in
+
+zzHighlightPromptNonKeyCountREonIf -(**)- Turns and leaves RE on	(*Count is not needed if ONLY the utility file is being written.*){#insert {#COND -if {#insert zvPHRS_SET__METADATA_ONFF} = offoff -then zFindDlgOpenRETglClose -else zzHighlightPromptNonKeyCountREon}}	zzHighlightPromptNonKeyCountREonIf
+
+---------------
+

@@ -1,6 +1,6 @@
 __**WARNING**__: All phrases in this folder were created by 'plpdcf'. DO NOT EDIT.	.		(*Extra tab to allow for empty-string autotext*)
 zvMACRO_STEPS_sfKey	{#SETPHRASE -description zvMACRO_STEPS -content {#insert zzTpmdStps_cfgValue_M_key} -autotext zvMACRO_STEPS -folder ctvv_folder}	zvMACRO_STEPS_sfKey
-zzTpmdStps_cfgValue_M_key	{#insert {#insert zzTpmdStps_cfgVarPhrsName_M_key}}	zzTpmdStps_cfgValue_M_key
+zzTpmdStps_cfgValue_M_key	{#insert {#insert zzTpmdStps_cfgVarPhrsName_M_key	zzTpmdStps_cfgValue_M_key
 zzTpmdSteps_cvtFromAbrv1C	Stps	zzTpmdSteps_cvtFromAbrv1C
 zzTpmdStps_cfgVarPNmPost	Steps	zzTpmdStps_cfgVarPNmPost
 zzTpmdStps_intrnlVarNm	zvMACRO_STEPS	zzTpmdStps_intrnlVarNm

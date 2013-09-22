@@ -100,7 +100,7 @@ Phrase: .
 						zToggleWWSetStateToOn w/ revert	\\\{#insert zToggleWWSetStateToOn\\\}\\\{#insert zRevertWWToOrigState\\\}	xhcdwss
 					zWordWrapOffSaveState	\\\{#insert zWordWrapOffSaveState\\\}	xhcdws
 					zWordWrapOnSaveState	\\\{#insert zWordWrapOnSaveState\\\}	xhcdws
-				zToggleWW	\\\{#insert zToggleWW\\\}	xhcd
+				zToggleWW	\\\{#insert zToggleWW\\\}	xhcdw
 				zToggleWWHome (twh)	\\\{#insert zToggleWWHome\\\}	xhcdw
 				zWordWrapOff	\\\{#insert zWordWrapOff\\\}	xhcdw
 				zWordWrapOn	\\\{#insert zWordWrapOn\\\}	xhcdw

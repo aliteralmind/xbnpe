@@ -1,1 +1,1 @@
-zzXbnpeVersion	0.8.2.3-beta	zzXbnpeVersion
+zzXbnpeVersion	0.8.2.4-beta	zzXbnpeVersion

@@ -11,7 +11,44 @@
 
 <H1>XBN-PhraseExpress: Release notes</H1>
 
+<A NAME="0p8p2p4_beta"/><H2>9/20/2013: <CODE>0.8.2.4-beta</CODE></H2>
+
+<P><I>This is the current &quot;<CODE>stable_non_master_release</CODE>&quot; branch.</I></P>
+
+<P><UL>
+	<LI><B>CODE:</B><UL>
+		<LI>-Future: Working on re-implementing the LPD-project (ON DISK ONLY, not in PhraseExpress), which is the basis of both MINV and the not-yet-existing TextPad macro creation (TPM) project. Many of the below changes are in anticipation: <CODE><A HREF="future/lpd.html">future/lpd.html</A></CODE></LI>
+		<LI>-Replaced
+			<BR> &nbsp; &nbsp; <CODE>CWLPDF &gt; 3: Line &gt; line__select_copy_cut.px</CODE>
+			<BR>with
+			<BR> &nbsp; &nbsp; <CODE>lineselcopy_HK.px</CODE>
+			<BR>which adds the following:
+			<BR> &nbsp; &nbsp; <CODE>zClearCBCopyToLineEndGTNext</CODE>, <CODE>zCopyEntireLine</CODE>, <CODE>zCopyEntireLineNoNL</CODE>, <CODE>zCopyToLineEndGTNext</CODE>, <CODE>zCopyToLineEndGTPost</CODE>, <CODE>zCopyToLineHome</CODE>, <CODE>zCopyToLineHomeGTPre</CODE>, <CODE>zCutEntireLine</CODE>, <CODE>zCutEntireLineNoNL</CODE>, <CODE>zCutToLineEndBksp</CODE>, <CODE>zCutToLineEndDel</CODE>, <CODE>zCutToLineHomeBksp</CODE>, <CODE>zCutToLineHomeDel</CODE>, <CODE>zDeleteToLineEnd</CODE>, <CODE>zSelCopyToLineHome</CODE>, <CODE>zSelCopyUpThr1NonWS</CODE>, <CODE>zSelectUpThr1NonWS</CODE>
+			<BR>(These were incorrectly in the <A HREF="devpex/xbnpe_ddmenus.html#xh">xh</A> phrase-creator ddmenu. Now they are correctly in there.)</LI>
+		<LI>-Removed deprecated
+			<BR> &nbsp; &nbsp; <CODE>zzDelAllOutFilesRqst_M_outdir</CODE>
+			<BR>from
+			<BR> &nbsp; &nbsp; <CODE>xbnpe\main\cwlpdf\7__file\file.px.txt</CODE></LI>
+		<LI>-Changed (Other): In
+			<BR> &nbsp; &nbsp; <CODE>xbnpe\main\other\inline_config_vars.px.txt</CODE>
+			<BR>the variable name
+			<BR> &nbsp; &nbsp; <CODE>zvOUT_DIRECTORY</CODE>
+			<BR>is used. In its PhraseExpress counterpart, it was incorrectly using a different name:
+			<BR> &nbsp; &nbsp; <CODE>zvOUTPUT_DIRECTORY</CODE>
+			<BR>Both are now using
+			<BR> &nbsp; &nbsp; <CODE>zvOUT_DIR</CODE></LI>
+		<LI>-Change (HTML): <CODE>h[b]cq[p]</CODE> and <CODE>hbq[p]</CODE> now places the double quotes outside of the <CODE>CODE</CODE>/<CODE>B</CODE> tags.</LI>
+		<LI>-Fixed (<CODE>xh</CODE> pcddmenu): <CODE>zToggleWW</CODE> was incorrectly in &quot;<CODE>xhcd</CODE>&quot;. Now in &quot;<CODE>xhcdw</CODE>&quot;</LI>
+		<LI>-Fixed: Removed
+		<BR> &nbsp; &nbsp; <CODE>xbnpe\main\other\other\key_press_combinations.px.txt</CODE>
+		<BR>and its PhraseExpress counterpart. The only phrase in it was <CODE>zDownHome</CODE>, which is a duplicate of
+		<BR> &nbsp; &nbsp; <CODE>xbnpe\main\cwlpdf\3__line\lineother.px.txt</CODE></LI>
+	</UL></LI>
+</UL></P>
+
 <A NAME="0p8p2p3_beta"/><H2>9/20/2013: <CODE>0.8.2.3-beta</CODE></H2>
+
+<P><I>This is the current &quot;<CODE>master</CODE>&quot; branch.</I></P>
 
 <P><UL>
 	<LI><B>DOCUMENTATION:</B><UL>
