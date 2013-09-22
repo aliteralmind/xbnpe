@@ -4,7 +4,7 @@
 	<property name="projectinfo" value="Creates the download zip-archive for XBNPE users, and the documentation directory for FTP-ing to xbnpe.jeffyepstein.com. These tasks take a while, consider using the '-verbose' ant-parameter."/>
 	<property name="sandbox_parent" value="R:\jeffy\programming\sandbox\macros\"/>
 	<property name="build_parent" value="R:\jeffy\programming\build\macros\"/>
-	<property name="user_zip_path" value="${build_parent}xbnpe\xbnpe_0p8p2p2_beta.zip"/>
+	<property name="user_zip_path" value="${build_parent}xbnpe\xbnpe_0p8p2p3_beta.zip"/>
 
 	<target name="info">
 		<echo>${projectinfo}</echo>

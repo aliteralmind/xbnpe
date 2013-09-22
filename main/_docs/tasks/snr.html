@@ -251,7 +251,7 @@
 	<LI>TPKC-project:
 	<BR> &nbsp; &nbsp; <CODE>zFindDialogFlagPreCheck[MCOnly]</CODE></LI>
 	<LI>SNR-project:
-	<BR> &nbsp; &nbsp; <CODE>zFindDialogFlagPreCheckXSoff</CODE>
+	<BR> &nbsp; &nbsp; <CODE>zFindFlagPreCheckOnlyXSoff</CODE>
 	<BR> &nbsp; &nbsp; <CODE>zFindFlagsMConOnlyThenPreCheck</CODE></LI>
 </UL>
 <BR> &nbsp; &nbsp; </P></P>
@@ -481,7 +481,7 @@
 <!--Originates in find-syntax section...END-->
 		<LI><CODE>zFindFlagADBtnMarkAD[RAW]</CODE></LI>
 		<LI><CODE>zFindFlagsMConOnlyThenPreCheck</CODE></LI>
-		<LI><CODE>zFindDialogFlagPreCheckXSoff</CODE></LI>
+		<LI><CODE>zFindFlagPreCheckOnlyXSoff</CODE></LI>
 		<LI><CODE>zFindGoXSOpenRplc</CODE></LI>
 		<LI><CODE>zFindNextPromptedString</CODE></LI>
 		<LI><CODE>zFindNonWSCharUpREoff</CODE></LI>
@@ -584,7 +584,7 @@
 
 <PRE STYLE="background-color:#E1E1E1;"><!--xcfexample...START  //  (*File is empty. Create input.*){#insert zKeyPressFast}{#insert zzSnrXmplInputAThenZInRandomTxt}{#insert zTPGTDocTop}{#BALLOON -title Please wait... -text snr06findselxtoz}{#insert zSlk2KPSpeedSetToRequested}--><B><U>snr06findselxtoz</U></B>
 (*Pre-check, warning, and prep:*)
-   {#insert zFindDialogFlagPreCheckXSoff}
+   {#insert zFindFlagPreCheckOnlyXSoff}
    {#BALLOON -title WARNING -text Warning: This will fail&nbsp;
       unless 'xxx' exists, and 'zzz' exists after it.}
 	{#insert zTPGTDocTop}
