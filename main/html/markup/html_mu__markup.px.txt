@@ -15,12 +15,10 @@ hhb -- <B></B>	<B>{#insert zXmark}</B>{#insert zXUp}	hhb
 hbc -- <B><CODE></CODE></B>	<B><CODE>{#insert zXmark}</CODE></B>{#insert zXUp}	hbc
 hbcq -- &quot;<B><CODE></CODE></B>&quot;	&quot;<B><CODE>{#insert zXmark}</CODE></B>&quot;{#insert zXUp}	hbcq
 hbq -- &quot;<B></B>&quot;	&quot;<B>{#insert zXmark}</B>&quot;{#insert zXUp}	hbq
-hbcsq -- <B><CODE>''</CODE></B>	<B><CODE>'{#insert zXmark}'</CODE></B>{#insert zXUp}	hbcsq
 hbi -- <B><I></I></B>	<B><I>{#insert zXmark}</I></B>{#insert zXUp}	hbi
 hbu -- <B><U></U></B>	<B><U>{#insert zXmark}</U></B>{#insert zXUp}	hbu
 hhc -- <CODE></CODE>	<CODE>{#insert zXmark}</CODE>{#insert zXUp}	hhc
 hcq -- &quot;<CODE></CODE>&quot;	&quot;<CODE>{#insert zXmark}</CODE>&quot;{#insert zXUp}	hcq
-hcsq -- <CODE>''</CODE>	<CODE>'{#insert zXmark}'</CODE>{#insert zXUp}	hcsq
 hcqb -- <CODE>[]</CODE>	<CODE>[{#insert zXmark}]</CODE>{#insert zXUp}	hcqb
 hfc -- <FONT COLOR...	<FONT COLOR={#asc 34}#{#insert zXmark}{#asc 34}>{#insert zXmark}</FONT>{#insert zXUp}	hfc
 hfcs -- <FONT COLOR and SIZE...	<FONT COLOR={#asc 34}#{#insert zXmark}{#asc 34} SIZE={#asc 34}{#insert zXmark}{#asc 34}>{#insert zXmark}</FONT>{#insert zXUp}	hfcs

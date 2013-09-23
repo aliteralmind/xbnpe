@@ -16,20 +16,33 @@
 <P><I>This is the current &quot;<CODE>stable_non_master_release</CODE>&quot; branch.</I></P>
 
 <P><UL>
+	<LI><B>DOCUMENTATION:</B><UL>
+		<LI>-<U>CHANGED:</U> Installation instructions are more prominent. Now displayed in the very top of the home-page, along side  &quot;Getting started&quot;: <CODE><A HREF="index.html">index.html</A></CODE></LI>
+	</UL></LI>
 	<LI><B>CODE:</B><UL>
-		<LI>-Future: Working on re-implementing the LPD-project (ON DISK ONLY, not in PhraseExpress), which is the basis of both MINV and the not-yet-existing TextPad macro creation (TPM) project. Many of the below changes are in anticipation: <CODE><A HREF="future/lpd.html">future/lpd.html</A></CODE></LI>
-		<LI>-Replaced
+		<LI>-<U>HTML-project:</U><UL>
+			<LI>--ADDED: <CODE>kcb</CODE>, to create a non-<CODE>'#'</CODE> self-link. Call for complete syntax.</LI>
+			<LI>--REMOVED the following, in lieu of above:
+			<BR> &nbsp; &nbsp; <CODE>nl[cb,wl][c]</CODE>
+			<BR>including its &quot;raw&quot; phrases:
+			<BR> &nbsp; &nbsp; <CODE>zNameLinkFrom[CBWord,WordLeft][Coded]</CODE></LI>
+			<LI>--REWROTE: All quote and double-quote-creating <A HREF="basics/xbnpe_phrase_types.html#action">actions</A>: Call &quot;<CODE>hqq</CODE>&quot; for complete syntax.</LI>
+			<LI>--CHANGED: <CODE>hhhr</CODE> (<CODE>&lt;HR&gt;</CODE>) to <CODE>hhr</CODE> (<CODE>&lt;HR/&gt;</CODE>).</LI>
+			<LI>--FIXED: The following phrases had the wrong autotext, correct <A HREF="basics/phrase_file.html#pformat">description-autotext</A>: <CODE>hu[b][c]p</CODE></LI>
+		</UL></LI>
+		<LI>-<U>FUTURE:</U> Working on re-implementing the LPD-project (ON DISK ONLY, not in PhraseExpress), which is the basis of both MINV and the not-yet-existing TextPad macro creation (TPM) project. Many of the below changes are in anticipation: <CODE><A HREF="future/lpd.html">future/lpd.html</A></CODE></LI>
+		<LI>-<U>REPLACED</U>
 			<BR> &nbsp; &nbsp; <CODE>CWLPDF &gt; 3: Line &gt; line__select_copy_cut.px</CODE>
 			<BR>with
 			<BR> &nbsp; &nbsp; <CODE>lineselcopy_HK.px</CODE>
 			<BR>which adds the following:
 			<BR> &nbsp; &nbsp; <CODE>zClearCBCopyToLineEndGTNext</CODE>, <CODE>zCopyEntireLine</CODE>, <CODE>zCopyEntireLineNoNL</CODE>, <CODE>zCopyToLineEndGTNext</CODE>, <CODE>zCopyToLineEndGTPost</CODE>, <CODE>zCopyToLineHome</CODE>, <CODE>zCopyToLineHomeGTPre</CODE>, <CODE>zCutEntireLine</CODE>, <CODE>zCutEntireLineNoNL</CODE>, <CODE>zCutToLineEndBksp</CODE>, <CODE>zCutToLineEndDel</CODE>, <CODE>zCutToLineHomeBksp</CODE>, <CODE>zCutToLineHomeDel</CODE>, <CODE>zDeleteToLineEnd</CODE>, <CODE>zSelCopyToLineHome</CODE>, <CODE>zSelCopyUpThr1NonWS</CODE>, <CODE>zSelectUpThr1NonWS</CODE>
 			<BR>(These were incorrectly in the <A HREF="devpex/xbnpe_ddmenus.html#xh">xh</A> phrase-creator ddmenu. Now they are correctly in there.)</LI>
-		<LI>-Removed deprecated
+		<LI>-<U>REMOVED</U> deprecated
 			<BR> &nbsp; &nbsp; <CODE>zzDelAllOutFilesRqst_M_outdir</CODE>
 			<BR>from
 			<BR> &nbsp; &nbsp; <CODE>xbnpe\main\cwlpdf\7__file\file.px.txt</CODE></LI>
-		<LI>-Changed (Other): In
+		<LI>-<U>CHANGED (Other):</U> In
 			<BR> &nbsp; &nbsp; <CODE>xbnpe\main\other\inline_config_vars.px.txt</CODE>
 			<BR>the variable name
 			<BR> &nbsp; &nbsp; <CODE>zvOUT_DIRECTORY</CODE>
@@ -37,9 +50,8 @@
 			<BR> &nbsp; &nbsp; <CODE>zvOUTPUT_DIRECTORY</CODE>
 			<BR>Both are now using
 			<BR> &nbsp; &nbsp; <CODE>zvOUT_DIR</CODE></LI>
-		<LI>-Change (HTML): <CODE>h[b]cq[p]</CODE> and <CODE>hbq[p]</CODE> now places the double quotes outside of the <CODE>CODE</CODE>/<CODE>B</CODE> tags.</LI>
-		<LI>-Fixed (<CODE>xh</CODE> pcddmenu): <CODE>zToggleWW</CODE> was incorrectly in &quot;<CODE>xhcd</CODE>&quot;. Now in &quot;<CODE>xhcdw</CODE>&quot;</LI>
-		<LI>-Fixed: Removed
+		<LI>-<U>FIXED (<CODE>xh</CODE> pcddmenu):</U> <CODE>zToggleWW</CODE> was incorrectly in &quot;<CODE>xhcd</CODE>&quot;. Now in &quot;<CODE>xhcdw</CODE>&quot;</LI>
+		<LI>-<U>FIXED:</U> Removed
 		<BR> &nbsp; &nbsp; <CODE>xbnpe\main\other\other\key_press_combinations.px.txt</CODE>
 		<BR>and its PhraseExpress counterpart. The only phrase in it was <CODE>zDownHome</CODE>, which is a duplicate of
 		<BR> &nbsp; &nbsp; <CODE>xbnpe\main\cwlpdf\3__line\lineother.px.txt</CODE></LI>

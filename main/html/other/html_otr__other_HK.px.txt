@@ -3,7 +3,11 @@ hbacklk -- A '[BACK]' link, right-padded with space	<CODE>[<A HREF={#asc 34}#{#i
 hbackrk -- A '[BACK]' link, left-padded with space	(*starts with space*) &nbsp; <CODE>[<A HREF={#asc 34}#{#insert zXmark}{#asc 34}>BACK</A>]</CODE>{#insert zXUp}	hbackrk
 hgok -- A '[go]' link for toc lists	<CODE>[<A HREF={#asc 34}#{#insert zXmark}{#asc 34}><FONT SIZE={#asc 34}+1{#asc 34}><B>GO</B></FONT></A>]</CODE> &nbsp; (*ends with space*)	hgok
 hgow -- hgok, invisible and inactive (white)	<CODE><FONT COLOR={#insert zAscQQ}#FFFFFF{#insert zAscQQ}>[go]</FONT></A></CODE> &nbsp; (*ends with space*)	hgow
-hhhr -- <HR>	<HR>	hhhr
+hup -- hcqb, paste	[{#insert zTPPaste}]	hup
+hucp -- hup, paste	<CODE>[{#insert zTPPaste}]</CODE>	hucp
+hubp -- hup, bolded	<B>[{#insert zTPPaste}]</B>	hubp
+hucbp -- hucp, bolded	<B><CODE>[{#insert zTPPaste}]</CODE></B>	hucbp
+hhr -- <HR/>	<HR/>	hhhr
 hir -- <I>(...)</I>	<I>({#insert zXmark})</I>{#insert zXUp}	hir
 hnbir -- hnbnb, hir	 &nbsp; &nbsp; <I>({#insert zXmark})</I>{#insert zXUp}	hnbir
 hhz -- </> (z for close/end)	</>{#insert zLEFT}	hhz

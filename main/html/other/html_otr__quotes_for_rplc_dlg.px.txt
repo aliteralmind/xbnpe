@@ -1,0 +1,4 @@
+hqtq -- Opposite of qthq -- CALL FROM RPLC DLG WHAT FIELD!!!	{#insert zRplcFlagSel}&quot;{#insert zRplcFieldWith}{#asc 34}{#insert zRplcBtnAllSelHnr}{#insert zRplcDlgClose}	hqtq
+qthq -- HTML-Escape sel dbl-quotes -- CALL FROM RPLC DLG WHAT FIELD!!!	{#insert zRplcFlagSel}{#asc 34}{#insert zRplcFieldWith}&quot;{#insert zRplcBtnAllSelHnr}{#insert zRplcDlgClose}	qthq
+rhqtq	{#insert zRplcDlgSel}&quot;{#insert zRplcFieldWith}{#asc 34}{#insert zRplcBtnAllSelHnr}{#insert zRplcDlgClose}	rhqtq
+rqthq	{#insert zRplcDlgSel}{#asc 34}{#insert zRplcFieldWith}&quot;{#insert zRplcBtnAllSelHnr}{#insert zRplcDlgClose}	rqthq
