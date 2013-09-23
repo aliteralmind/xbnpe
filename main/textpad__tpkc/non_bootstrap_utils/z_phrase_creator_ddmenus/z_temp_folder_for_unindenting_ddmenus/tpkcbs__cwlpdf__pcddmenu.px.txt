@@ -39,8 +39,8 @@ zSystemSelectR1w	\\\{#insert zSystemSelectR1w\\\}	xhcwss
 zREoffFindNonWSWordUp	\\\{#insert zREoffFindNonWSWordUp\\\}	xhcwss
 zREonFindNonWSWordUp	\\\{#insert zREonFindNonWSWordUp\\\}	xhcwss
 (*          Select-copy -- xhcwsp   .   xhcws*)
-zSelectL1wCopy	\\\{#insert zSelectL1wCopy\\\}	xhcwax
-zSelectR1wCopy	\\\{#insert zSelectR1wCopy\\\}	xhcwax
+zSelectL1wCopy	\\\{#insert zSelectL1wCopy\\\}	xhcwsp
+zSelectR1wCopy	\\\{#insert zSelectR1wCopy\\\}	xhcwsp
 (*          Copy -- xhcwsc   .   xhcws*)
 (*    3. Line -- xhcl   .   xhc*)
 (*       Alter -- xhcla   .   xhcl*)
