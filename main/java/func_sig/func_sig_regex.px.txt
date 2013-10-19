@@ -1,0 +1,41 @@
+(*
+    ^[ \t]*(?:(?:public|protected|private)\s+)?
+    (?:(static|final|native|synchronized|abstract|threadsafe|transient)\s+){0,}
+    \w+{#insert zJRgx0123Generics}\s+               #return-type
+    \w+\s*\(\s*                                     #func-name and open-paren
+          (?:\w+{#insert zJRgx0123Generics}\s+      #param-1 (optional w/ 2nd-below '?')
+             \w+\s*
+       (?:,\s+                                      #param-2-plus (optional w/ 1st-below '?')
+          \w+{#insert zJRgx0123Generics}\s+
+             \w+\s*){0,})?
+    \s*\)\s*(\{|\;$)                                #close-param, ending semi-colon or curly
+                                                    #semi-colon must end line
+
+Where
+    `{#insert zJRgx0123Generics}`
+equals
+    `(?:|(?:<[?\w ]+>)|(?:<[^<]*<[?\w ]+>[^>]*>)|(?:<[^<]*<[^<]*<[?\w ]+>[^>]*>[^>]*>))`
+
+This requires no spaces between types and the opening '<' in their (optional) generics. Also requires generics to be nested three at the most (`<...<...<...>...>...>` okay, `<...<...<...<...>...>...>...>` not).
+
+Here it is written in PhraseExpress (auto-text and description on line 1, body on line 2). Call {#insert zJRgxJavaFuncSigThrSemicOrOpnCrly} for the full (non-free-spaced) regex.
+*)
+zJRgx0123Generics -- To follow return-type or parameter-type	(|(?:<[?\w ]+>)|(?:<[^<]*<[?\w ]+>[^>]*>)|(?:<[^<]*<[^<]*<[?\w ]+>[^>]*>[^>]*>))	zJRgx0123Generics
+zJRgxTypeW0123Generics	\b(\w+){#insert zJRgx0123Generics}\s+	zJRgxTypeW0123Generics
+zJRgxParamTypeName -- Ends w/ '\b(?!>)' to NOT find <? 'extends XClass'>	{#insert zJRgxTypeW0123Generics}(\w+)\b(?!>)	zJRgxParamTypeName
+zJRgx0OrMoreParams	\s*(?:{#insert zJRgxParamTypeName}\s*(?:,\s+{#insert zJRgxParamTypeName}\s*){0,})?\s*	zJRgx0OrMoreParams
+zJRgxOptionalPubProtPriv	(?:(?:public|protected|private)\s+)?	zJRgxOptionalPubProtPriv
+zJRgxOptKeywordsBtwScopeAndRetType	(?:(static|final|native|synchronized|abstract|threadsafe|transient)\s+){0,}	zJRgxOptKeywordsBtwScopeAndRetType
+zJRgxJavaFuncSigThrSemicOrOpnCrly -(**)-	{#insert zzJRgxJavaFuncSigPreFuncName}\w+{#insert zzJRgxJavaFuncSigPostFuncName}	zJRgxJavaFuncSigThrSemicOrOpnCrly
+zJRgxJavaFuncSigThrSemicOrOpnCrly_M_fnm -- Needs zvFOBJ_NAME	{#insert zzJRgxJavaFuncSigPreFuncName}{#insert zvFOBJ_NAME}{#insert zzJRgxJavaFuncSigPostFuncName}	zJRgxJavaFuncSigThrSemicOrOpnCrly_M_fnm
+zzJRgxJavaFuncSigPreFuncName	(*If a type has generics, there may be no spaces between it and the first open '<', also requires generics with three nestings at the most (<...<...<...>...>...> okay, <...<...<...<...>...>...>...> not)*)^[ \t]*{#insert zJRgxOptionalPubProtPriv}{#insert zJRgxOptKeywordsBtwScopeAndRetType}{#insert zJRgxTypeW0123Generics}\b	zzJRgxJavaFuncSigPreFuncName
+zzJRgxJavaFuncSigPostFuncName	{#insert zzJRgxPostFuncNmThrClsPrn}\s*(\{|\;$)	zzJRgxJavaFuncSigPostFuncName
+zzJRgxPostFuncNmThrClsPrn	\b\s*\({#insert zJRgx0OrMoreParams}\)	zzJRgxPostFuncNmThrClsPrn
+zJRgxJavaFuncNmThrClsPrn_M_fnm -- Needs zvFOBJ_NAME	(?<=\s)\b{#insert zvFOBJ_NAME}{#insert zzJRgxPostFuncNmThrClsPrn}	zJRgxJavaFuncNmThrClsPrn_M_fnm
+
+zzJRgxJavaFuncNmThrClsPrn_M_fnmTtlp -- Needs zvFOBJ_NAME, zvTTL_PRMS	(?<=[ \t])\b{#insert zvFOBJ_NAME}\b\s*\(\s*{#insert {#COND -if {#insert zvTTL_PRMS} = 0 -then z1slp -else zzParamsGT0_M_ttlp}}\)	zzJRgxJavaFuncNmThrClsPrn_M_fnmTtlp
+zzParamsGT0_M_ttlp -- Needs zvTTL_PRMS	{#insert zJRgxParamTypeName}\s*{#insert {#COND -if {#insert zvTTL_PRMS} = 1 -then z1slp -else zzParamsGT1_M_ttlp}}	zzParamsGT0_M_ttlp
+zzParamsGT1_M_ttlp	{#LOOP ,\s+{#insert zJRgxParamTypeName}\s* -count {#CALC {#insert zvTTL_PRMS} - 1 -round 0 -thousands none}}	zzParamsGT1_M_ttlp
+zvTTL_PRMS_stL1cSvRstrCB	{#insert zvCB_CONTENTS_stCB}{#insert zvTTL_PRMS_stL1c}{#insert zSetCBToCB_CONTENTS}	zvTTL_PRMS_stL1cSvRstrCB
+zvTTL_PRMS_stL1c	{#insert zCutL1c}{#SETPHRASE -description zvTTL_PRMS -content {#INSERTCLIPBOARD} -autotext zvTTL_PRMS -folder ctvv_folder}	zvTTL_PRMS_stL1c
+zvTTL_PRMS_stPrompt	{#SETPHRASE -description zvTTL_PRMS -content {#INPUT -head How many parameters? -single} -autotext zvTTL_PRMS -folder ctvv_folder}	zvTTL_PRMS_stPrompt

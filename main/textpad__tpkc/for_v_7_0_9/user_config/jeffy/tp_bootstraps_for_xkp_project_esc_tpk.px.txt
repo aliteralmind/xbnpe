@@ -11,8 +11,8 @@ zTPFileNewEsc	\\\{#F12\\\}\\\{#insert zTSlp\\\}\\\{#sleep 25\\\}\\\{#F11\\\}\\\{
 zTPFileNewTPKeys	F12, F11	zTPFileNewTPKeys
 zTPFileSaveEsc	\\\{#F12\\\}\\\{#insert zTSlp\\\}\\\{#sleep 25\\\}\\\{#F12\\\}\\\{#insert zTSlp\\\}\\\{#sleep 250\\\}	zTPFileSaveEsc
 zTPFileSaveTPKeys	F12, F12	zTPFileSaveTPKeys
-zTPGTDocTopEsc	\\\{#CTRL \\\{#ALT \\\{#SHIFT \\\{#UP\\\}\\\}\\\}\\\}\\\{#insert zTSlp\\\}\\\{#sleep 50\\\}	zTPGTDocTopEsc
-zTPGTDocTopTPKeys	Ctrl+Shift+Alt+Up	zTPGTDocTopTPKeys
+zTPGTDocTopEsc	\\\{#ALT \\\{#SHIFT \\\{#UP\\\}\\\}\\\}\\\{#insert zTSlp\\\}\\\{#sleep 50\\\}	zTPGTDocTopEsc
+zTPGTDocTopTPKeys	Shift+Alt+Up	zTPGTDocTopTPKeys
 zTPMoveR1wEsc	\\\{#CTRL \\\{#RIGHT\\\}\\\}\\\{#insert zTSlp\\\}\\\{#sleep 1\\\}	zTPMoveR1wEsc
 zTPMoveR1wTPKeys	Ctrl+Right	zTPMoveR1wTPKeys
 zTPPasteEsc	\\\{#CTRL -chars k\\\}\\\{#sleep 10\\\}\\\{#insert zTSlp\\\}	zTPPasteEsc
@@ -23,5 +23,5 @@ zTPSelectL1wEsc	\\\{#SHIFT \\\{#LEFT\\\}\\\}\\\{#insert zTSlp\\\}	zTPSelectL1wEs
 zTPSelectL1wTPKeys	Shift+Left	zTPSelectL1wTPKeys
 zTPSelectR1wEsc	\\\{#SHIFT \\\{#RIGHT\\\}\\\}\\\{#insert zTSlp\\\}\\\{#sleep 1\\\}	zTPSelectR1wEsc
 zTPSelectR1wTPKeys	Shift+Right	zTPSelectR1wTPKeys
-zTPToggleWWEsc	\\\{#CTRL \\\{#F7\\\}\\\}\\\{#insert zTSlp\\\}\\\{#sleep 25\\\}	zTPToggleWWEsc
-zTPToggleWWTPKeys	Ctrl+F7	zTPToggleWWTPKeys
+zTPToggleWWEsc	\\\{#F7\\\}\\\{#insert zTSlp\\\}\\\{#sleep 25\\\}	zTPToggleWWEsc
+zTPToggleWWTPKeys	Alt+F7	zTPToggleWWTPKeys

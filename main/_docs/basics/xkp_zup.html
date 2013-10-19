@@ -28,7 +28,7 @@
 
 <H2><CODE><U>zTSlp</U></CODE></H2>
 
-<P>The only difference between an x-key-presss and a default PhraseExpress key-press, is the call to <CODE>zTSlp</CODE> that ends each x-key-press. This call is what enables you to <A HREF="../devpex/debugging.html#kpspeed">slow down</A> <I>all</I> XBN-PhraseExpress code, on demand, for diagnostic or demonstration purposes. In normal circumstances, this <CODE>zTSlp</CODE> phrase <I>does not exist</I>, and therefore its overhead is minimal.</P>
+<P>The only difference between an x-key-presss and a default PhraseExpress key-press, is the call to <CODE>zTSlp</CODE> that ends each x-key-press. This call is what enables you to <A HREF="../devpex/debugging.html#ztslp">slow down</A> <I>all</I> XBN-PhraseExpress code, on demand, for diagnostic or demonstration purposes. In normal circumstances, this <CODE>zTSlp</CODE> phrase <I>does not exist</I>, and therefore its overhead is minimal.</P>
 
 <P><I>(This <CODE>zTSlp</CODE> phrase is more like a <A HREF="xbnpe_phrase_types.html#variable">variable</A> phrase-type than a <A HREF="xbnpe_phrase_types.html#command">command</A>, in that it is only dynamically-created, and when it does exist, it resides in the &quot;<CODE>cctv_folder</CODE>&quot;-autotexted folder, and also that it is destroyed every time <CODE>zKeyPressFast</CODE> is called [by setting its value--its &quot;<CODE>-content</CODE>&quot; parameter to <B>nothing</B>]. However, its name and <B>purpose</B> is more like a command than a variable: Where a command normally <U>does something</U>, a variable is normally just a holder for a discrete and static string.)</I></P>
 

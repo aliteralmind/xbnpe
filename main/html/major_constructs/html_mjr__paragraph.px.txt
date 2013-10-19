@@ -1,24 +1,24 @@
 __XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
-herb -- zENTER,<BR>	{#insert zENTER}<BR>{#insert zzPBRSyn}	herb
-hhp -- <P>x-mark</P>	<P>{#insert zXmark}</P>{#insert zXUp}{#insert zzPBRSyn}	hhp
+herb -- zENTER,<BR>	{#insert zENTER}<BR>{#insert pbrsyn}	herb
+hhp -- <P>x-mark</P>	<P>{#insert zXmark}</P>{#insert zXUp}{#insert pbrsyn}	hhp
 hlt -- &lt;	&lt;	hlt
-hnb -- &nbsp;	&nbsp;{#insert zzPBRSyn}	hnb
-hnbnb -- &nbsp; &nbsp; (*starts and ends with space*)	(*starts with space*) &nbsp; &nbsp; (*ends with space*){#insert zzPBRSyn}	hnbnb
-hp1 -- <P/> (Single tag)	<P/>{#insert zzPBRSyn}	hp1
-hpa -- <P> (a for close/end tag only)	<P>{#insert zzPBRSyn}	hpa
-hpb -- <P><B>x-mark</B></P>	<P><B>{#insert zXmark}</B></P>{#insert zXUp}{#insert zzPBRSyn}	hpb
+hnb -- &nbsp;	&nbsp;{#insert pbrsyn}	hnb
+hnbnb -- &nbsp; &nbsp; (*starts and ends with space*)	(*starts with space*) &nbsp; &nbsp; (*ends with space*){#insert pbrsyn}	hnbnb
+hp1 -- <P/> (Single tag)	<P/>{#insert pbrsyn}	hp1
+hpa -- <P> (a for close/end tag only)	<P>{#insert pbrsyn}	hpa
+hpb -- <P><B>x-mark</B></P>	<P><B>{#insert zXmark}</B></P>{#insert zXUp}{#insert pbrsyn}	hpb
 hpg -- <P><CODE STYLE='background-color:#E1E1E1;'></CODE></P>	<P><CODE STYLE={#insert zAscQQ}background-color:#E1E1E1;{#insert zAscQQ}>{#insert zXmark}</CODE></P>{#insert zXUp}	hpg
-hpi	<P><I>{#insert zXmark}</I></P>{#insert zXUp}{#insert zzPBRSyn}	hpi
-hpp -- hp with paste	<P>{#insert zTPPaste}</P>{#insert zzPBRSyn}	hpp
-hppb	<P><B>{#insert zTPPaste}</B></P>{#insert zzPBRSyn}	hppb
-hppi	<P><I>{#insert zTPPaste}</I></P>{#insert zzPBRSyn}	hppi
-hps -- Split existing para. into two (</P>\R\R<P>)	</P>{#insert zENTER2}<P>{#insert zzPBRSyn}	hps
-hpz -- </P> (z for close/end tag only)	</P>{#insert zzPBRSyn}	hpz
-hrb -- <BR> (backwards because faster to type)	<BR>{#insert zzPBRSyn}	hrb
-hrbb -- Return then hrb	{#insert zENTER}<BR>{#insert zzPBRSyn}	hrbb
-hrbc -- hrbs, hhc	{#insert hrbs}{#insert hhc}{#insert zzPBRSyn}	hrbc
-hrbcb -- hrbc, paste clipBoard	{#insert hrbc}{#insert zTPPaste}{#insert zPreBracketGTP}{#insert zzPBRSyn}	hrbcb
-hrbs	{#insert zENTER}<BR> &nbsp; &nbsp; (*ends with space*){#insert zzPBRSyn}	hrbs
+hpi	<P><I>{#insert zXmark}</I></P>{#insert zXUp}{#insert pbrsyn}	hpi
+hpp -- hp with paste	<P>{#insert zTPPaste}</P>{#insert pbrsyn}	hpp
+hppb	<P><B>{#insert zTPPaste}</B></P>{#insert pbrsyn}	hppb
+hppi	<P><I>{#insert zTPPaste}</I></P>{#insert pbrsyn}	hppi
+hps -- Split existing para. into two (</P>\R\R<P>)	</P>{#insert zENTER2}<P>{#insert pbrsyn}	hps
+hpz -- </P> (z for close/end tag only)	</P>{#insert pbrsyn}	hpz
+hrb -- <BR> (backwards because faster to type)	<BR>{#insert pbrsyn}	hrb
+hrbb -- Return then hrb	{#insert zENTER}<BR>{#insert pbrsyn}	hrbb
+hrbc -- hrbs, hhc	{#insert hrbs}{#insert hhc}{#insert pbrsyn}	hrbc
+hrbcb -- hrbc, paste clipBoard	{#insert hrbc}{#insert zTPPaste}{#insert zPreBracketGTP}{#insert pbrsyn}	hrbcb
+hrbs	{#insert zENTER}<BR> &nbsp; &nbsp; (*ends with space*){#insert pbrsyn}	hrbs
 htg -- &gt;	&gt;	htg
 htgs -- [space]&gt;[space], prints AND copies it	{#SETCLIPBOARD (*starts with space*) &gt; (*ends with space*)}{#insert zTPPaste}{#BALLOON -title DONE -text ' &gt; ' is now in the clipboard.}	htgs
-zzPBRSyn	{#BALLOON -title <P> and <BR> syntax -text hhp=plain, hpp=w/paste, hpg=grey-CODE  //  hp[p][b,i]=w/bold or italic ([p]=paste)  //  hpa=<P>, hpz=</P>, hps=split, hp1=<P/>  //  hrb=<BR>, hrbs[c[b]]=\n<BR>__ (c=code, b=paste)  //  herb=\n<BR>  //  hnbnb=_[_]}	zzPBRSyn
+pbrsyn	{#BALLOON -title Syntax: HTML <P> & <BR> -text hhp=plain, hpp=w/paste, hpg=grey-CODE  //  hp[p][b,i]=w/bold or italic ([p]=paste)  //  hpa=<P>, hpz=</P>, hps=split, hp1=<P/>  //  hrb=<BR>, hrbs[c[b]]=\n<BR>__ (c=code, b=paste)  //  herb=\n<BR>  //  hnbnb=_[_]  //  pbrsyn}	pbrsyn

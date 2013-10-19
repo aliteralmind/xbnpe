@@ -6,20 +6,15 @@ h3p -- hh3 with paste	<H3>{#insert zTPPaste}</H3>	h3p
 h4p -- hh4 with paste	<H4>{#insert zTPPaste}</H4>	h4p
 h4up -- hh4u with paste	<H4><U>{#insert zTPPaste}</U></H4>	h4up
 hbcp -- hhbc with paste	<B><CODE>{#insert zTPPaste}</CODE></B>	hbcp
-hbcqp -- hhbcq with paste	<B><CODE>&quot;{#insert zTPPaste}&quot;</CODE></B>	hbcqp
-hbcsqp -- hhbcsq with paste	<B><CODE>'{#insert zTPPaste}'</CODE></B>{#insert zRIGHT}	hbcsqp
 hbi -- hhib ALT KC	{#insert hhib}	hbi
 hbip -- hhbi with paste	<B><I>{#insert zTPPaste}</I></B>	hbip
 hbip -- hhbi with paste	<U><I>{#insert zTPPaste}</I></U>	hbip
-hbqp -- <B>&quot;</B>&quot;	<B>&quot;{#insert zTPPaste}&quot;</B>	hbqp
 hbp -- hhb with paste	<B>{#insert zTPPaste}</B>	hbp
-hcp -- hhc with paste	<CODE>{#insert zTPPaste}</CODE>	hcp
+hct -- hhc with paste	<CODE>{#insert zTPPaste}</CODE>	hct
 hcbp -- hhbcp ALT KC	{#insert hhbcp}	hcbp
 hcbqp -- hhbcqp ALT KC	{#insert hhbcqp}	hcbqp
 hcbsqp -- hhbcsqp ALT KC	{#insert hhbcsqp}	hcbsqp
-hcqbp -- hcqb, paste	<CODE>[{#insert zTPPaste}]</CODE>	hcqbp
-hcqp -- hhcq with paste	<CODE>&quot;{#insert zTPPaste}&quot;</CODE>	hcqp
-hcsqp -- hhcsq with paste	<CODE>'{#insert zTPPaste}'</CODE>	hcsqp
+hcqp -- hhcq with paste	&quot;<CODE>{#insert zTPPaste}</CODE>&quot;	hcqp
 hfcp -- hhfc with paste	<FONT COLOR={#asc 34}#{#insert zXmark}{#asc 34}>{#insert zTPPaste}</FONT>	hfcp
 hfcsp -- hhfcs with paste	<FONT COLOR={#asc 34}#{#insert zXmark}{#asc 34} SIZE={#asc 34}{#insert zXmark}{#asc 34}>{#insert zTPPaste}</FONT>	hfcsp
 hfsp -- hhfs with paste	<FONT SIZE={#asc 34}{#insert zXmark}{#asc 34}>{#insert zTPPaste}</FONT>	hfsp

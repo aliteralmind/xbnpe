@@ -63,7 +63,7 @@
 	<LI>Typing their autotext and then clicking on the &quot;Postfix&quot; key. <I>By default, the XBNPE-postfix key is the accent key (<CODE>'<B>`</B>'</CODE>, or <CODE><A HREF="../future/xcf.html">zACCENT</A></CODE>).</I></LI>
 	<LI>Calling it from another phrase
 	<BR> &nbsp; &nbsp; <CODE>{#insert zThePhraseToCall}</CODE></LI>
-	<LI>Putting the phrase's name in the clipboard, and then typing <CODE>'<A HREF="../devpex/cpcb.html">cpcb</A>'</CODE></LI>
+	<LI>Putting the phrase's name in the clipboard, and then typing <CODE>'<A HREF="../devpex/cpb.html">cpb</A>'</CODE></LI>
 </UL>
 
 <P>There are four types of &quot;normal&quot; phrases: <A HREF="#command">commands</A>, <A HREF="#variable">variables</A>, <A HREF="#action">actions</A>, and <A HREF="../devpex/xpc.html">phrase-creators</A></P>
@@ -90,14 +90,14 @@
 <a name="action"/><H2><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; XBNPE phrase-type: Action</CODE></H2>
 
 <P>An &quot;action&quot; phrase is one called by you, via typing its autotext or hitting its key-command (&quot;Hotkey&quot;), for the purpose of doing something <I>right now</I>. Example actions:<UL>
-	<LI><A HREF="../devpex/c2pl.html"><CODE>c2pl</CODE></A>: Compress a single two-line phrase into its one-line (and importable) version.</LI>
-	<LI><A HREF="../devpex/cpcb.html"><CODE>cpcb</CODE></A>: Executes the phrase whose <I>name</I> is currently in the clipboard.</LI>
+	<LI><A HREF="../devpex/pc2.html"><CODE>pc2</CODE></A>: Compress a single two-line phrase into its one-line (and importable) version.</LI>
+	<LI><A HREF="../devpex/cpb.html"><CODE>cpb</CODE></A>: Executes the phrase whose <I>name</I> is currently in the clipboard.</LI>
 	<LI>The various sQuare-Bracket List (qbl) <A HREF="../tasks/qbl.html#lltoqbl">sorting utilities</A>.</LI>
 	<LI><B><CODE>hbp</CODE>:</B> Used to create surround the clipboard text in a bold-tag:
 	<BR> &nbsp; &nbsp; <CODE>&lt;B&gt;[Esc]&lt;/B&gt;</CODE></LI>
 </UL></P>
 
-<P>Most actions are not <A HREF="#command">commands</A>--they are not intended to be called by other phrases. However, many actions provide, or are equal to, a &quot;raw&quot; version that is indeed a command. For example, &quot;<CODE>c2pl</CODE>&quot; uses (but is not equal to) the raw command &quot;<CODE>zzWWoffC2plRAW</CODE>&quot;.</P>
+<P>Most actions are not <A HREF="#command">commands</A>--they are not intended to be called by other phrases. However, many actions provide, or are equal to, a &quot;raw&quot; version that is indeed a command. For example, &quot;<CODE>pc2</CODE>&quot; uses (but is not equal to) the raw command &quot;<CODE>zzWWoffpc2RAW</CODE>&quot;.</P>
 
 <P>Actions that specifically generate phrase-calls are called <A HREF="../devpex/xpc.html">phrase-creators</A>.</P>
 
@@ -112,7 +112,7 @@
 
 <P>A &quot;command&quot; is a phrase intended to be called only from other phrases. Command phrase-names typically start with a single <CODE>'z'</CODE>. Example commands:<UL>
 	<LI><B><CODE>zApCC</CODE>:</B> The <A HREF="xkp.html">x-key-press</A> for <CODE>{#ALT -chars c}</CODE>.</LI>
-	<LI><B><CODE>zKeyPressSlow</CODE>:</B> Changes XBNPE <A HREF="../devpex/debugging.html#kpspeed">execution speed</A>.</LI>
+	<LI><B><CODE>zKeyPressSlow</CODE>:</B> Changes XBNPE <A HREF="../devpex/debugging.html#ztslp">execution speed</A>.</LI>
 	<LI><B><CODE>zOpenExplorerDirSelectTargetFile_M_dirFnm</CODE>:</B> <A HREF="../tasks/file_manipulation.html#nav">Opens</A> a Windows Explorer window, with a particular file selected. The &quot;<CODE>_M_dirFnm</CODE>&quot; postfix is an XBN-PhraseExpress <A HREF="#nameconv">naming convention</A>, indicating this phrase <A HREF="#rqrvars">requires</A> two specific variables in order to function.</LI>
 </UL></P>
 

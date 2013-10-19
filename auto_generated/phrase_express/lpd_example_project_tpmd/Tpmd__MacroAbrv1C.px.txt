@@ -1,13 +1,13 @@
 __**WARNING**__: All phrases in this folder were created by 'plpdcf'. DO NOT EDIT.	.		(*Extra tab to allow for empty-string autotext*)
 zvMACRO_ABRV_1C_sfKey	{#SETPHRASE -description zvMACRO_ABRV_1C -content {#insert zzTpmdMcrv1_cfgValue_M_key} -autotext zvMACRO_ABRV_1C -folder ctvv_folder}	zvMACRO_ABRV_1C_sfKey
-zzTpmdMcrv1_cfgValue_M_key	{#insert {#insert zzTpmdMcrv1_cfgVarPhrsName_M_key}}	zzTpmdMcrv1_cfgValue_M_key
+zzTpmdMcrv1_cfgValue_M_key	{#insert {#insert zzTpmdMcrv1_cfgVarPhrsName_M_key	zzTpmdMcrv1_cfgValue_M_key
 zzTpmdMacroAbrv1C_cvtFromAbrv1C	Mcrv1	zzTpmdMacroAbrv1C_cvtFromAbrv1C
 zzTpmdMcrv1_cfgVarPNmPost	MacroAbrv1C	zzTpmdMcrv1_cfgVarPNmPost
 zzTpmdMcrv1_intrnlVarNm	zvMACRO_ABRV_1C	zzTpmdMcrv1_intrnlVarNm
 zzTpmdMcrv1_cfgVarPhrsName_M_key	zz{#insert zzTpmdProjectAbrv1C}{#insert zzTpmdDataTypeAbrv1C}{#insert zvPHRS_NM_ABRV_1C}{#insert zzTpmdMcrv1_cfgVarPNmPost}	zzTpmdMcrv1_cfgVarPhrsName_M_key
 zzTpmdMcrv1_helpForDlg	The unique_identifier for a macro's configuration_variables, which is used and seen by your users. Should be moderatly verbose and easy to remember.	zzTpmdMcrv1_helpForDlg
 zzTpmdMcrv1_valuePrintable	yes	zzTpmdMcrv1_valuePrintable
-zzTpmdMcrv1_validateValuePhrsNm	zzValidateMcrv1_M_self	zzTpmdMcrv1_validateValuePhrsNm
+zzTpmdMcrv1_validateValuePhrsNm		zzTpmdMcrv1_validateValuePhrsNm
 zzTpmdMcrv1_nkcvListNum	-1	zzTpmdMcrv1_nkcvListNum
 zzTpmdMcrv1_keyCVTFromAbrv1C	{#insert zzTpmdPrivKeyCVTFromAbrv1C}	zzTpmdMcrv1_keyCVTFromAbrv1C
 zvCVT_FRMV_1C_stTpmdMcrv1	{#SETPHRASE -description zvCVT_FRMV_1C -content {#insert zzTpmdMacroAbrv1C_cvtFromAbrv1C} -autotext zvCVT_FRMV_1C -folder ctvv_folder}	zvCVT_FRMV_1C_stTpmdMcrv1

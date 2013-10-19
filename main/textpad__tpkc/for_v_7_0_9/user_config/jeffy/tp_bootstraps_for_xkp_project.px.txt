@@ -5,10 +5,10 @@ zTPDupLine -- TextPad built-in command: Edit > EditDupLine	{#CTRL {#ALT {#SHIFT 
 zTPFileClose -- TextPad built-in command: File > FileClose	{#F12}{#insert zTSlp}{#sleep 25}{#F9}{#insert zTSlp}{#sleep 100}	zTPFileClose
 zTPFileNew -- TextPad built-in command: File > FileNew	{#F12}{#insert zTSlp}{#sleep 25}{#F11}{#insert zTSlp}{#sleep 50}	zTPFileNew
 zTPFileSave -- TextPad built-in command: File > FileSave	{#F12}{#insert zTSlp}{#sleep 25}{#F12}{#insert zTSlp}{#sleep 250}	zTPFileSave
-zTPGTDocTop -- TextPad built-in command: Cursor > DocumentStart	{#CTRL {#ALT {#SHIFT {#UP}}}}{#insert zTSlp}{#sleep 50}	zTPGTDocTop
+zTPGTDocTop -- TextPad built-in command: Cursor > DocumentStart	{#ALT {#SHIFT {#UP}}}{#insert zTSlp}{#sleep 50}	zTPGTDocTop
 zTPMoveR1w -- TextPad built-in command: Cursor > WordRightEnd	{#CTRL {#RIGHT}}{#insert zTSlp}{#sleep 1}	zTPMoveR1w
 zTPPaste -- TextPad built-in command: Edit > EditPaste	{#CTRL -chars k}{#insert zTSlp}{#sleep 10}	zTPPaste
 zTPSelectAll -- TextPad built-in command: Selection > SelectAll	{#CTRL -chars a}{#insert zTSlp}{#sleep 250}	zTPSelectAll
 zTPSelectL1w -- TextPad built-in command: Cursor > WordLeftExtend	{#insert zTSlp}{#SHIFT {#LEFT}}	zTPSelectL1w
 zTPSelectR1w -- TextPad built-in command: Cursor > WordRightEndExtend	{#SHIFT {#RIGHT}}{#insert zTSlp}{#sleep 1}	zTPSelectR1w
-zTPToggleWW -- TextPad built-in command: Configure > ToggleWordWrap	{#CTRL {#F7}}{#insert zTSlp}{#sleep 25}	zTPToggleWW
+zTPToggleWW -- TextPad built-in command: Configure > ToggleWordWrap	{#F7}{#insert zTSlp}{#sleep 25}	zTPToggleWW

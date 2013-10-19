@@ -1,0 +1,76 @@
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+loc -- {#LOWERCASE ...}	{#insert zvESC_LVL_CNT_st0}{#insert zLocRAW_M_elc}{#insert trmsyn}	loc
+locb -- {#LOWERCASE [paste]}	{#insert zvESC_LVL_CNT_st0}{#insert zLocbRAW_M_elc}{#insert trmsyn}	locb
+locbp -- locb, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zLocbRAW_M_elc}{#insert trmsyn}	locbp
+locbq -- locb, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zLocbRAW_M_elc}{#insert trmsyn}	locbq
+locp -- loc, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zLocRAW_M_elc}{#insert trmsyn}	locp
+locq -- loc, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zLocRAW_M_elc}{#insert trmsyn}	locq
+lof -- {#LOWERCASEFIRST ...}	{#insert zvESC_LVL_CNT_st0}{#insert zLofRAW_M_elc}{#insert trmsyn}	lof
+lofb -- {#LOWERCASEFIRST [paste]}	{#insert zvESC_LVL_CNT_st0}{#insert zLofbRAW_M_elc}{#insert trmsyn}	lofb
+lofbp -- lofb, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zLofbRAW_M_elc}{#insert trmsyn}	lofbp
+lofbq -- lofb, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zLofbRAW_M_elc}{#insert trmsyn}	lofbq
+lofp -- lof, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zLofRAW_M_elc}{#insert trmsyn}	lofp
+lofq -- lof, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zLofRAW_M_elc}{#insert trmsyn}	lofq
+low -- {#LOWERCASEWORD ...}	{#insert zvESC_LVL_CNT_st0}{#insert zLowRAW_M_elc}{#insert trmsyn}	low
+lowb -- {#LOWERCASEWORD [paste]}	{#insert zvESC_LVL_CNT_st0}{#insert zLowbRAW_M_elc}{#insert trmsyn}	lowb
+lowbp -- lowb, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zLowbRAW_M_elc}{#insert trmsyn}	lowbp
+lowbq -- lowb, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zLowbRAW_M_elc}{#insert trmsyn}	lowbq
+lowp -- low, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zLowRAW_M_elc}{#insert trmsyn}	lowp
+lowq -- low, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zLowRAW_M_elc}{#insert trmsyn}	lowq
+trl -- {#TRIMLEFT ...}	{#insert zvESC_LVL_CNT_st0}{#insert zTrlRAW_M_elc}{#insert trmsyn}	trl
+trlb -- {#TRIMLEFT [paste]}	{#insert zvESC_LVL_CNT_st0}{#insert zTrlbRAW_M_elc}{#insert trmsyn}	trlb
+trlbp -- trlb, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zTrlbRAW_M_elc}{#insert trmsyn}	trlbp
+trlbq -- trlb, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zTrlbRAW_M_elc}{#insert trmsyn}	trlbq
+trlp -- trl, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zTrlRAW_M_elc}{#insert trmsyn}	trlp
+trlq -- trl, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zTrlRAW_M_elc}{#insert trmsyn}	trlq
+trm -- {#TRIM ...}	{#insert zvESC_LVL_CNT_st0}{#insert zTrmRAW_M_elc}{#insert trmsyn}	trm
+trmb -- {#TRIM [paste]}	{#insert zvESC_LVL_CNT_st0}{#insert zTrmbRAW_M_elc}{#insert trmsyn}	trmb
+trmbp -- trmb, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zTrmbRAW_M_elc}{#insert trmsyn}	trmbp
+trmbq -- trmb, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zTrmbRAW_M_elc}{#insert trmsyn}	trmbq
+trmp -- trm, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zTrmRAW_M_elc}{#insert trmsyn}	trmp
+trmq -- trm, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zTrmRAW_M_elc}{#insert trmsyn}	trmq
+trr -- {#TRIMRIGHT ...}	{#insert zvESC_LVL_CNT_st0}{#insert zTrrRAW_M_elc}{#insert trmsyn}	trr
+trrb -- {#TRIMRIGHT [paste]}	{#insert zvESC_LVL_CNT_st0}{#insert zTrrbRAW_M_elc}{#insert trmsyn}	trrb
+trrbp -- trrb, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zTrrbRAW_M_elc}{#insert trmsyn}	trrbp
+trrbq -- trrb, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zTrrbRAW_M_elc}{#insert trmsyn}	trrbq
+trrp -- trr, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zTrrRAW_M_elc}{#insert trmsyn}	trrp
+trrq -- trr, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zTrrRAW_M_elc}{#insert trmsyn}	trrq
+upc -- {#UPPERCASE ...}	{#insert zvESC_LVL_CNT_st0}{#insert zUpcRAW_M_elc}{#insert trmsyn}	upc
+upcb -- {#UPPERCASE [paste]}	{#insert zvESC_LVL_CNT_st0}{#insert zUpcbRAW_M_elc}{#insert trmsyn}	upcb
+upcbp -- upcb, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zUpcbRAW_M_elc}{#insert trmsyn}	upcbp
+upcbq -- upcb, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zUpcbRAW_M_elc}{#insert trmsyn}	upcbq
+upcp -- upc, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zUpcRAW_M_elc}{#insert trmsyn}	upcp
+upcq -- upc, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zUpcRAW_M_elc}{#insert trmsyn}	upcq
+upf -- {#UPPERCASEFIRST ...}	{#insert zvESC_LVL_CNT_st0}{#insert zUpfRAW_M_elc}{#insert trmsyn}	upf
+upfb -- {#UPPERCASEFIRST [paste]}	{#insert zvESC_LVL_CNT_st0}{#insert zUpfbRAW_M_elc}{#insert trmsyn}	upfb
+upfbp -- upfb, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zUpfbRAW_M_elc}{#insert trmsyn}	upfbp
+upfbq -- upfb, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zUpfbRAW_M_elc}{#insert trmsyn}	upfbq
+upfp -- upf, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zUpfRAW_M_elc}{#insert trmsyn}	upfp
+upfq -- upf, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zUpfRAW_M_elc}{#insert trmsyn}	upfq
+upw -- {#UPPERCASEWORD ...}	{#insert zvESC_LVL_CNT_st0}{#insert zUpwRAW_M_elc}{#insert trmsyn}	upw
+upwb -- {#UPPERCASEWORD [paste]}	{#insert zvESC_LVL_CNT_st0}{#insert zUpwbRAW_M_elc}{#insert trmsyn}	upwb
+upwbp -- upwb, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zUpwbRAW_M_elc}{#insert trmsyn}	upwbp
+upwbq -- upwb, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zUpwbRAW_M_elc}{#insert trmsyn}	upwbq
+upwp -- upw, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zUpwRAW_M_elc}{#insert trmsyn}	upwp
+upwq -- upw, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zUpwRAW_M_elc}{#insert trmsyn}	upwq
+zLocRAW_M_elc -- Needs zvESC_LVL_CNT (assumed good value!)	{#insert zOY_M_elc}#LOWERCASE {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zLocRAW_M_elc
+zLocbRAW_M_elc	{#insert zOY_M_elc}#LOWERCASE {#insert zTPPaste}{#insert zCY_M_elc}	zLocbRAW_M_elc
+zLofRAW_M_elc	{#insert zOY_M_elc}#LOWERCASEFIRST {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zLofRAW_M_elc
+zLofbRAW_M_elc	{#insert zOY_M_elc}#LOWERCASEFIRST {#insert zTPPaste}{#insert zCY_M_elc}	zLofbRAW_M_elc
+zLowRAW_M_elc	{#insert zOY_M_elc}#LOWERCASEWORD {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zLowRAW_M_elc
+zLowbRAW_M_elc	{#insert zOY_M_elc}#LOWERCASEWORD {#insert zTPPaste}{#insert zCY_M_elc}	zLowbRAW_M_elc
+zTrlRAW_M_elc	{#insert zOY_M_elc}#TRIMLEFT {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zTrlRAW_M_elc
+zTrlbRAW_M_elc	{#insert zOY_M_elc}#TRIMLEFT {#insert zTPPaste}{#insert zCY_M_elc}	zTrlbRAW_M_elc
+zTrmRAW_M_elc	{#insert zOY_M_elc}#TRIM {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zTrmRAW_M_elc
+zTrmbRAW_M_elc	{#insert zOY_M_elc}#TRIM {#insert zTPPaste}{#insert zCY_M_elc}	zTrmbRAW_M_elc
+zTrrRAW_M_elc	{#insert zOY_M_elc}#TRIMRIGHT {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zTrrRAW_M_elc
+zTrrbRAW_M_elc	{#insert zOY_M_elc}#TRIMRIGHT {#insert zTPPaste}{#insert zCY_M_elc}	zTrrbRAW_M_elc
+zUpcRAW_M_elc	{#insert zOY_M_elc}#UPPERCASE {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zUpcRAW_M_elc
+zUpcbRAW_M_elc	{#insert zOY_M_elc}#UPPERCASE {#insert zTPPaste}{#insert zCY_M_elc}	zUpcbRAW_M_elc
+zUpfRAW_M_elc	{#insert zOY_M_elc}#UPPERCASEFIRST {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zUpfRAW_M_elc
+zUpfbRAW_M_elc	{#insert zOY_M_elc}#UPPERCASEFIRST {#insert zTPPaste}{#insert zCY_M_elc}	zUpfbRAW_M_elc
+zUpwRAW_M_elc	{#insert zOY_M_elc}#UPPERCASEWORD {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zUpwRAW_M_elc
+zUpwbRAW_M_elc	{#insert zOY_M_elc}#UPPERCASEWORD {#insert zTPPaste}{#insert zCY_M_elc}	zUpwbRAW_M_elc
+trmsyn	{#BALLOON -title String: trim, lower, upper (all: '[[p,q]]') -text lo[c,f,w][b]=LOWERCASE[FIRST,WORD]  //  up[c,f,w][b]=UPPERCASE[FIRST,WORD]  //  tr[m,l,r][b]=TRIM[LEFT,RIGHT]  //  [p]=esc'd, [q]=dbly~esc'd (or more)  //  trmtestall  //  xpcsyn}	trmsyn
+zzPccStrAllMainAbrvs1CQBL	[Loc][Locb][Lof][Lofb][Low][Lowb][Trl][Trlb][Trm][Trmb][Trr][Trrb][Upc][Upcb][Upf][Upfb][Upw][Upwb]	zzPccStrAllMainAbrvs1CQBL
+trmtestall	{#SETPHRASE -description zvQB_STR_LIST -content {#insert zzPccStrAllMainAbrvs1CQBL} -autotext zvQB_STR_LIST -folder ctvv_folder}{#insert zzTestAllMainPhrsCrtrAbrvs_M_qbl}	trmtestall

@@ -1,4 +1,5 @@
 zTPSelectLine -- SelectLine (Slln)	{#insert zCApAA}{#sleep 10}	zTPSelectLine
 zTPSelectParagraph -- SelectParagraph (Slpara)	{#insert zApAA}{#sleep 10}	zTPSelectParagraph
 zTPSelectWord -- SelectWord (Slwd)	{#insert zCSpAA}{#sleep 10}	zTPSelectWord
+zTPSelSwapEnds -- SelectSwapEnds (Slswnds)	{#CTRL {#ALT {#SHIFT -chars j}}}{#sleep 25}{#insert zWW}{#sleep 10}	zTPSelSwapEnds
 zzTpkcAllCmdsWAKcQbl_sel	[SelectAll][SelectLine][SelectParagraph][SelectWord]	zzTpkcAllCmdsWAKcQbl_sel

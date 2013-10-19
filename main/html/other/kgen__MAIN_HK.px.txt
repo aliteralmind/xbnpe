@@ -1,22 +1,53 @@
 __XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
-hpltn -- zAddHashToPrevLink ALT KC	{#insert zAddHashToPrevLink}{#insert zzNmlnkSyn}	hpltn
-nlcb -- zNameLinkFromCBWord ALT KC	{#insert zNameLinkFromCBWord}{#insert zzNmlnkSyn}	nlcb
-nlcbc -- zNameLinkFromCBWordCoded ALT KC	{#insert zNameLinkFromCBWordCoded}{#insert zzNmlnkSyn}	nlcbc
-nlwl -- zNameLinkFromWordLeft ALT KC	{#insert zNameLinkFromWordLeft}{#insert zzNmlnkSyn}	nlwl
-nlwlc -- zNameLinkFromWordLeftCoded ALT KC	{#insert zNameLinkFromWordLeftCoded}{#insert zzNmlnkSyn}	nlwlc
-ntcb -- zNameTargetFromCBWord ALT KC	{#insert zNameTargetFromCBWord}{#insert zzNmlnkSyn}	ntcb
-ntwl -- zNameTargetFromWordLeft ALT KC	{#insert zNameTargetFromWordLeft}{#insert zzNmlnkSyn}	ntwl
+
+ahpl -- zAddHashToPrevLink ALT KC	{#insert zAddHashToPrevLink}{#insert kcbsyn}	ahpl
+
+kcb -- zSelfLinkFromCBUrlCoded ALT KC	{#insert zSelfLinkFromCBUrlCoded}{#insert kcbsyn}	kcb
+
+kcbg -- zTgtSelfLinkFromCBUrlCoded ALT KC	{#insert zTgtSelfLinkFromCBUrlCoded}	kcbg
+
+kcbgl -- zTgtSelfLinkFromCBUrl ALT KC	{#insert zTgtSelfLinkFromCBUrl}	kcbgl
+
+kcbl -- zSelfLinkFromCBUrl	{#insert zSelfLinkFromCBUrl}{#insert kcbsyn}	kcbl
+
+kwl -- zSelfLinkFromWLUrlCoded ALT KC	{#insert zSelfLinkFromWLUrlCoded}{#insert kcbsyn}	kwl
+
+kwll -- zSelfLinkFromWLUrl	{#insert zSelfLinkFromWLUrl}{#insert kcbsyn}	kwll
+
+ntcb -- zNameTargetFromCBWord ALT KC	{#insert zNameTargetFromCBWord}{#insert kcbsyn}	ntcb
+
+ntwl -- zNameTargetFromWordLeft ALT KC	{#insert zNameTargetFromWordLeft}{#insert kcbsyn}	ntwl
+
 zAddHashToPrevLink -- Add '#' to prev link [zApSIX]	{#insert zXmark}{#insert ztpmTagFindPrevHrefThrQQ}{#insert zRIGHT}#{#insert zSelectR1wCopy}{#insert zXDown}<a name={#asc 34}{#insert zTPPaste}{#asc 34}/>{#insert ztpmTagSelectL1}	zAddHashToPrevLink
+
 zCodedLinkFromSel -- Link from sel CODE-d [zCASpFIVE]	{#insert zzRplcDlgOpenRERplcUrlSpcDscWLink}{#insert zTPCut}<CODE>{#insert zTPPaste}</CODE>	zCodedLinkFromSel
+
 zLinkFromSel -- Link from sel (1st space-word url) [zCSpFIVE]	{#insert zzRplcDlgOpenRERplcUrlSpcDscWLink}{#insert zRIGHT}	zLinkFromSel
+
 zNameLinkFromCBWord -- Transforms cb-word to <A HREF='#[CB]'>[CB]</A>	<A HREF={#insert zAscQQ}#{#insert zTPPaste}{#insert zAscQQ}>{#insert zTPPaste}</A>	zNameLinkFromCBWord
-zNameLinkFromCBWordCoded -- zNameLinkFromCBWord, surrounded by <CODE>	<CODE>{#insert zNameLinkFromCBWord}</CODE>	zNameLinkFromCBWordCoded
-zNameLinkFromWordLeft -- Select-copy word-left, zNameLinkFromCBWord	{#insert zSelectL1wCopy}{#insert zNameLinkFromCBWord}	zNameLinkFromWordLeft
-zNameLinkFromWordLeftCoded -- Select-copy word-left, zNameLinkFromCBWordCoded	{#insert zSelectL1wCopy}{#insert zNameLinkFromCBWordCoded}	zNameLinkFromWordLeftCoded
+
 zNameTargetFromCBWord -- Transforms word in clipboard to <A NAME='[CB]'/>	<A NAME={#insert zAscQQ}{#insert zTPPaste}{#insert zAscQQ}/>	zNameTargetFromCBWord
+
 zNameTargetFromCBWordCoded -- Transforms word in clipboard to <A NAME='[CB]'/>	<A NAME={#insert zAscQQ}{#insert zTPPaste}{#insert zAscQQ}/>	zNameTargetFromCBWordCoded
+
 zNameTargetFromWordLeft -- Select-copy word-left, zNameTargetFromCBWord	{#insert zSelectL1wCopy}{#insert zNameTargetFromCBWord}	zNameTargetFromWordLeft
-zSelectedUrlDescToCodedNameLink -- zCodedLinkFromSel, hpltn [zCApSIX]	{#insert zCodedLinkFromSel}{#insert hpltn}	zSelectedUrlDescToCodedNameLink
-zSelectedUrlDescToNameLink -- zLinkFromSel, hpltn [zCSpSIX]	{#insert zLinkFromSel}{#insert hpltn}	zSelectedUrlDescToNameLink
-zzNmlnkSyn	{#BALLOON -title Syntax: '#NAME'~links -text hpltn=add '#' to prev link  //  nt[cb,wl]=clipboard or word-left to <A NAME='[cb]'/>  //  nl[cb,wl][c]=to full ('C'oded) name-link}	zzNmlnkSyn
+
+zSelectedUrlDescToCodedNameLink -- zCodedLinkFromSel, ahpl [zCApSIX]	{#insert zCodedLinkFromSel}{#insert ahpl}	zSelectedUrlDescToCodedNameLink
+
+zSelectedUrlDescToNameLink -- zLinkFromSel, ahpl [zCSpSIX]	{#insert zLinkFromSel}{#insert ahpl}	zSelectedUrlDescToNameLink
+
+zSelfLinkFromCBUrl -- zSelfLinkFromCBUrlCoded, non-CODE-d	<A HREF={#insert zAscQQ}{#insert zTPPaste}{#insert zAscQQ}>{#insert zTPPaste}</A>	zSelfLinkFromCBUrl
+
+zSelfLinkFromCBUrlCoded -- A CODE-d self-link using clipboard-url	<CODE>{#insert zSelfLinkFromCBUrl}</CODE>	zSelfLinkFromCBUrlCoded
+
+zSelfLinkFromWLUrl -- kwl, non-CODE-d	{#insert zCutL1w}{#insert zTgtSelfLinkFromCBUrl}	zSelfLinkFromWLUrl
+
+zSelfLinkFromWLUrlCoded -- A CODE-d self-link using clipboard-url	{#insert zCutL1w}{#insert zTgtSelfLinkFromCBUrlCoded}	zSelfLinkFromWLUrlCoded
+
+zTgtSelfLinkFromCBUrl -- zTgtSelfLinkFromCBUrlCoded, non-CODE-d	<A HREF={#insert zAscQQ}#{#insert zTPPaste}{#insert zAscQQ}>{#insert zTPPaste}</A>	zTgtSelfLinkFromCBUrl
+
+zTgtSelfLinkFromCBUrlCoded -- kcb, with '#' at start of url	<CODE>{#insert zTgtSelfLinkFromCBUrl}</CODE>{#insert kcbsyn}	zTgtSelfLinkFromCBUrlCoded
+
+kcbsyn	{#BALLOON -title Syntax: HTML links -text kcb[g][l]=Self-link from url in clipboard ([g]='#' at url-start, [l]=non-coded)  //  kwl[l]='#'-self-link from word-left  //  ahpl=Add '#' to prev link-url  //  nt[cb,wl]=NAME target from clipboard/word-left  //  kcbsyn}	kcbsyn
+
 zzRplcDlgOpenRERplcUrlSpcDscWLink	{#insert zRplcDlgOpenRE}([^ ]+) (.+){#sleep 5}{#insert zRplcFieldWith}<A HREF={#asc 34}$1{#asc 34}>$2</A>{#insert zRplcBtnAllSel}{#insert zRplcDlgClose}	zzRplcDlgOpenRERplcUrlSpcDscWLink

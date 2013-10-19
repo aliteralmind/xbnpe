@@ -1,0 +1,1 @@
+{#insert zSelectR1wCopy}{#SETPHRASE -description zvPHRS_NM -content {#INSERTCLIPBOARD} -autotext zvPHRS_NM -folder ctvv_folder}{#insert zCopyEntireLine}{#insert zTPBookmarkToggle}{#insert zTPFFindDlgOpen}{#insert zvPHRS_NM}{#insert zFFindBtnFindSlp500}{#insert zFFindDlgClose}{#insert zTPGTDocTop}{#insert zDOWN2}

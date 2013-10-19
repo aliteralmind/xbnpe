@@ -1,6 +1,6 @@
 __**WARNING**__: All phrases in this folder were created by 'plpdcf'. DO NOT EDIT.	.		(*Extra tab to allow for empty-string autotext*)
 zvLIVE_PN_POST_TC_sfKey	{#SETPHRASE -description zvLIVE_PN_POST_TC -content {#insert zzTpmdLivt_cfgValue_M_key} -autotext zvLIVE_PN_POST_TC -folder ctvv_folder}	zvLIVE_PN_POST_TC_sfKey
-zzTpmdLivt_cfgValue_M_key	{#insert {#insert zzTpmdLivt_cfgVarPhrsName_M_key}}	zzTpmdLivt_cfgValue_M_key
+zzTpmdLivt_cfgValue_M_key	{#insert {#insert zzTpmdLivt_cfgVarPhrsName_M_key	zzTpmdLivt_cfgValue_M_key
 zzTpmdLivePNPostTC_cvtFromAbrv1C	Livt	zzTpmdLivePNPostTC_cvtFromAbrv1C
 zzTpmdLivt_cfgVarPNmPost	LivePNPostTC	zzTpmdLivt_cfgVarPNmPost
 zzTpmdLivt_intrnlVarNm	zvLIVE_PN_POST_TC	zzTpmdLivt_intrnlVarNm

@@ -12,12 +12,10 @@ zTpkcEditCapitalizeNbsKcCount	2	zTpkcEditCapitalizeNbsKcCount
 zTpkcEditCapitalizeNbsKcEsc1	\\\{#insert zCSpUU\\\}\\\{#sleep 10\\\}	zTpkcEditCapitalizeNbsKcEsc1
 zTpkcEditCapitalizeNbsKcEsc2	\\\{#insert zCASpTWO\\\}\\\{#sleep 10\\\}	zTpkcEditCapitalizeNbsKcEsc2
 zTpkcEditClearAllNbsKcCount	0	zTpkcEditClearAllNbsKcCount
-zTpkcEditCopyNbsKcCount	1	zTpkcEditCopyNbsKcCount
-zTpkcEditCopyNbsKcEsc1	\\\{#insert zCpINS\\\}\\\{#sleep 25\\\}	zTpkcEditCopyNbsKcEsc1
+zTpkcEditCopyNbsKcCount	0	zTpkcEditCopyNbsKcCount
 zTpkcEditCopyAllFileNamesNbsKcCount	0	zTpkcEditCopyAllFileNamesNbsKcCount
-zTpkcEditCopyAppendNbsKcCount	2	zTpkcEditCopyAppendNbsKcCount
-zTpkcEditCopyAppendNbsKcEsc1	\\\{#insert zCSpCC\\\}\\\{#sleep 50\\\}	zTpkcEditCopyAppendNbsKcEsc1
-zTpkcEditCopyAppendNbsKcEsc2	\\\{#insert zApJJ\\\}\\\{#sleep 50\\\}	zTpkcEditCopyAppendNbsKcEsc2
+zTpkcEditCopyAppendNbsKcCount	1	zTpkcEditCopyAppendNbsKcCount
+zTpkcEditCopyAppendNbsKcEsc1	\\\{#insert zApJJ\\\}\\\{#sleep 50\\\}	zTpkcEditCopyAppendNbsKcEsc1
 zTpkcEditCopyAsHTMLNbsKcCount	0	zTpkcEditCopyAsHTMLNbsKcCount
 zTpkcEditCopyFileNameNbsKcCount	1	zTpkcEditCopyFileNameNbsKcCount
 zTpkcEditCopyFileNameNbsKcEsc1	\\\{#insert zCSpFF\\\}\\\{#sleep 10\\\}	zTpkcEditCopyFileNameNbsKcEsc1

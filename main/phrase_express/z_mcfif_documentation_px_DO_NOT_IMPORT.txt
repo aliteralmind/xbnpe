@@ -1,0 +1,32 @@
+---zMarkCopyFIFNextPhraseLine---
+
+This process is for reorganizing a large set of sub~phrases existing in a single phrase~file. This temporary document is called the {#insert zAscQQ}master{#insert zAscQQ} sub~phrase file. Each of these sub-phrases are used by one or more phrases throughout the project directory.
+
+These sub~phrases should be moved to exactly where they are needed. For example, if they are only called by (the phrases in) a single phrase~file, then the sub~phrase should be moved to that file. If used by multiple files in a single directory, it should be placed in a {#insert zAscQQ}zSUB.px.txt{#insert zAscQQ} file in that directory. If used across multiple directories, it should be in a zSUB.px.txt file in the parent~directory.
+
+Only phrases not called by other phrases IN THE {#insert zAscQQ}MASTER{#insert zAscQQ} phrase~file should be moved. In other words, if the phrase is called by any other phrase in the {#insert zAscQQ}master{#insert zAscQQ} file, it should be skipped until all those call-ING phrases are moved.
+
+As a by-product, this also help discover unused phrases.
+
+RECOMMENDATIONS:
+	-zMarkCopyFIFNextPhraseLine (I use zCASpEQUALS), zPasteLineSortDocFindLine_M_fonPnm (zCApEQUALS), and zSaveCloseClose (zASpEQUALS) should all be assigned unique key-commands during this process.
+- Open two instances of TextPad, one with the {#insert zAscQQ}master{#insert zAscQQ} phrase-file, the other with the main {#insert zAscQQ}zSUB{#insert zAscQQ} files existing throughout the project directories. Save the {#insert zAscQQ}zSUB{#insert zAscQQ} instance as TWO workspaces in the same directory. If you accidentally close one of these files (you never should), then open the duplicate workspace, and resave it as the original.
+	-a- If the next phrase belongs in a single file, then click on that line in the Search Results (which is open in the same TextPad instance as the {#insert zAscQQ}master{#insert zAscQQ}). When in the destination file, trigger zPasteLineSortDocFindLine_M_fonPnm and then zSaveCloseClose.
+-b- If it belongs in a zSUB file, then switch TextPad instances, place it in that file, trigger zPasteLineSortDocFindLine_M_fonPnm, save the document manually, then return to the {#insert zAscQQ}master{#insert zAscQQ} instance.  //  (This phrase is my first instance of explicit recursion in PhraseExpress.
+{#insert zBKSP2}
+
+WARNINGS:
+	- {#insert zAscQQ}Wrap searches{#insert zAscQQ} (WS) and {#insert zAscQQ}Whole words{#insert zAscQQ} (WW) must both be checked, and {#insert zAscQQ}Regular expression{#insert zAscQQ} (RE) must be unchecked before triggering this for the first time.
+- The directory-to-search must be relatively shallow--the file-search is expected to complete within half a second.
+- It is expected that the file-type and directory parameters in the find-in-files dialog are already set.
+- It is recommended that the Search Files document be closed each time. When the sub-phrase belongs in a single file (see {#insert zAscQQ}-a-{#insert zAscQQ} in recommendation section), this is automatically done by zSaveCloseClose.
+{#insert zBKSP}
+
+OPTION: Find the just-pasted-and-sorted line
+
+zPasteLineSortDocFindLine_M_fonPnm pastes the line(s), sorts the document, and then finds the line, to assure you it's there (since it likely disappears from view and placed far below). This is significantly slower, so once you are comfortable, you can turn it off with
+	zvFIND_ON_stES
+
+{#insert zBKSP}Turn it back on with
+	zvFIND_ON_stOn
+{#insert zBKSP}

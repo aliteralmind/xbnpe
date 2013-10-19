@@ -1,21 +1,27 @@
 __XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
 hbacklk -- A '[BACK]' link, right-padded with space	<CODE>[<A HREF={#asc 34}#{#insert zXmark}{#asc 34}>BACK</A>]</CODE> &nbsp; {#insert zXUp}	hbacklk
 hbackrk -- A '[BACK]' link, left-padded with space	(*starts with space*) &nbsp; <CODE>[<A HREF={#asc 34}#{#insert zXmark}{#asc 34}>BACK</A>]</CODE>{#insert zXUp}	hbackrk
+hqcbp -- hcqb, paste	<CODE>[{#insert zTPPaste}]</CODE>	hqcbp
+hqcb -- <CODE>[<cursor>]</CODE>	<CODE>[]</CODE>{#LEFT -count 9}	hqcb
 hgok -- A '[go]' link for toc lists	<CODE>[<A HREF={#asc 34}#{#insert zXmark}{#asc 34}><FONT SIZE={#asc 34}+1{#asc 34}><B>GO</B></FONT></A>]</CODE> &nbsp; (*ends with space*)	hgok
 hgow -- hgok, invisible and inactive (white)	<CODE><FONT COLOR={#insert zAscQQ}#FFFFFF{#insert zAscQQ}>[go]</FONT></A></CODE> &nbsp; (*ends with space*)	hgow
-hhhr -- <HR>	<HR>	hhhr
-hir -- <I>(...)</I>	<I>({#insert zXmark})</I>{#insert zXUp}	hir
-hnbir -- hnbnb, hir	 &nbsp; &nbsp; <I>({#insert zXmark})</I>{#insert zXUp}	hnbir
+hhr -- <HR/>	<HR/>	hhr
 hhz -- </> (z for close/end)	</>{#insert zLEFT}	hhz
 hig -- <IMG SRC='[crs]' BORDER='0'/>	<IMG SRC={#insert zAscQQ}{#insert zXmark}{#insert zAscQQ} BORDER={#insert zAscQQ}0{#insert zAscQQ}/>{#insert zXUp}	hig
 hig1 -- <IMG SRC='[crs]' BORDER='1'/>	<IMG SRC={#insert zAscQQ}{#insert zXmark}{#insert zAscQQ} BORDER={#insert zAscQQ}1{#insert zAscQQ}/>{#insert zXUp}	hig1
+hir -- <I>(...)</I>	<I>({#insert zXmark})</I>{#insert zXUp}	hir
+hnbir -- hnbnb, hir	 &nbsp; &nbsp; <I>({#insert zXmark})</I>{#insert zXUp}	hnbir
 hpg1 -- <P><IMG SRC='[crs]' BORDER='1'/></P>	<P><IMG SRC={#insert zAscQQ}{#insert zXmark}{#insert zAscQQ} BORDER={#insert zAscQQ}1{#insert zAscQQ}/></P>{#insert zXUp}	hpg1
 hpig -- <P><IMG SRC='[crs]' BORDER='0'/></P>	<P><IMG SRC={#insert zAscQQ}{#insert zXmark}{#insert zAscQQ} BORDER={#insert zAscQQ}0{#insert zAscQQ}/></P>{#insert zXUp}	hpig
+hqbp -- hup, bolded	<B>[{#insert zTPPaste}]</B>	hubp
+hqp -- [<paste>]	[{#insert zTPPaste}]	hqp
 hsectionh -- <PRE>\n\n<HR/>\n\n</PRE>y-mark<H2>hbacklk, x-mark</H2>	{#insert zzHsectionhPreBackLink}<CODE>[<A HREF={#insert zAscQQ}#{#insert zYmark}{#insert zAscQQ}>BACK</A>]</CODE> &nbsp; {#insert zYmark}</H2>{#insert zENTER}{#insert zXUp}	hsectionh
 hsectionhpre -- <PRE>\n\n<HR/>\n\n</PRE>	{#insert zzHsectionhPreHRPre}	hsectionhpre
 hsectionht -- <PRE>\n\n<HR/>\n\n</PRE>y-mark<H2>htoplk, x-mark</H2>	{#insert zzHsectionhPreBackLink}<CODE>[<A HREF={#insert zAscQQ}#top{#insert zAscQQ}>top</A>]</CODE> &nbsp; {#insert zYmark}</H2>{#insert zENTER}{#insert zXUp}	hsectionht
 htoplk -- A '[top]' link, right-padded with space	<CODE>[<A HREF={#asc 34}#top{#asc 34}>top</A>]</CODE> &nbsp; 	htoplk
 htoprk -- A '[top]' link, left-padded with space	(*starts with space*) &nbsp; <CODE>[<A HREF={#asc 34}#top{#asc 34}>top</A>]</CODE>	htoprk
+hucbp -- hucp, bolded	<B><CODE>[{#insert zTPPaste}]</CODE></B>	hucbp
+hucp -- hup, paste	<CODE>[{#insert zTPPaste}]</CODE>	hucp
 xhEscapeSel -- [zCASpF8]	{#BALLOON -title DING alert -text These replacements will ding, as a result of protecting against no search results.}{#insert zTPRplcDlgOpen}&{#insert zRplcFieldWith}&amp;{#insert zRplcBtnAllSelHnr}<{#insert zRplcFieldWith}&lt;{#insert zRplcBtnAllSelHnr}>{#insert zRplcFieldWith}&gt;{#insert zRplcBtnAllSelHnr}{#asc 34}{#insert zRplcFieldWith}&quot;{#insert zRplcBtnAllSelHnr}  {#insert zRplcFieldWith}&npsb; {#insert zFindFlagRETglRAW}{#insert zRplcBtnAllSelHnr}\t{#insert zRplcFieldWith}\&npsb; \&npsb;{#insert zRplcBtnAllSelHnr}{#insert zRplcDlgCloseRE}	xhEscapeSel
 zDeleteSurroundingTag [RST] -- [zCSpDD]	{#insert zFindDlgOpenUpRE}<[^>]+>{#insert zFindBtnNext}{#insert zFindDlgClose}{#insert zDEL}{#insert zTPFindNext}{#insert zDEL}{#insert zTPFindFlagREoff}	zDeleteSurroundingTag
 zTagDelete -- zDeleteSurroundingTag ALT KC	{#insert zDeleteSurroundingTag_rst}	zTagDelete

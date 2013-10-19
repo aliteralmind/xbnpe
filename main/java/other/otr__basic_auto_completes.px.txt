@@ -1,0 +1,30 @@
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+dddes -- ...START, ...END, cut START line	...{#insert zzHomeCpR}END{#insert zHOME}{#insert zEnterUp}{#insert zTPPaste}START{#insert zzRUslpCut}{#insert sopsyn}	dddes
+dddse -- ...START, ...END, cut END line (**)	(*Call from end of start line, where Dot-Dot-Dot should go.*)...{#insert zzHomeCpR}START{#insert zENTER}{#insert zTPPaste}END{#insert zzRUslpCut}{#insert sopsyn}	dddse
+fsqs -- func-name in CB, func()=\'' + func() + '\'	{#insert zTPPaste}()=\{#insert zAscQQ}{#insert zAscQQ} + {#insert zTPPaste}() + {#insert zAscQQ}\{#insert zAscQQ}	fsqs
+fqss -- func-name in CB, func()='' + func() + ''	{#insert zTPPaste}()='{#insert zAscQQ} + {#insert zTPPaste}() + {#insert zAscQQ}'	fqss
+fqbs -- func-name in CB, func()=[' + func() + ']	{#insert zTPPaste}()=[{#insert zAscQQ} + {#insert zTPPaste}() + {#insert zAscQQ}]	fqbs
+jfr -- With nothing	for({#insert zYmark})  {{#insert zENTER2}\\\}{#insert zYUp}{#insert sopsyn}	jfr
+jfri -- With int i	for(int i = 0; i < {#insert zYmark}; i++)  {{#insert zENTER2}\\\}{#insert zYUp}{#insert sopsyn}	jfri
+jfrj -- With int j	for(int j = 0; j < {#insert zYmark}; j++)  {{#insert zENTER2}\\\}{#insert zYUp}{#insert sopsyn}	jfrj
+jfrx -- With int {#insert zYmark}	for(int {#insert zYmark} = 0; {#insert zYmark} < {#insert zYmark}; {#insert zYmark}++)  {{#insert zENTER2}\\\}{#insert zXUp2}{#insert zXUp2}{#insert sopsyn}	jfrx
+jlf	public final (*ends with space*){#insert sopsyn}	jlf
+jls	public static (*ends with space*){#insert sopsyn}	jls
+jlsf	public static final (*ends with space*){#insert sopsyn}	jlsf
+jmlc	/*{#insert zENTER}{#insert zTAB}{#insert zEnterBksp}*/{#insert zUP}{#insert zEND}{#insert sopsyn}	jmlc
+jmlcb	/*{#insert zENTER}{#insert zTPPaste}*/{#insert sopsyn}	jmlcb
+jrf	protected final (*ends with space*){#insert sopsyn}	jrf
+jrs	protected static (*ends with space*){#insert sopsyn}	jrs
+jrsf	protected static final (*ends with space*){#insert sopsyn}	jrsf
+jts -- toString	toString{#insert sopsyn}	jts
+cnst -- constructor	constructor	cnst
+jvs	private static (*ends with space*){#insert sopsyn}	jvs
+sop -- System.out.print()	System.out.print({#insert zYmark});{#insert zENTER}{#insert zYUp}{#insert sopsyn}	sop
+sopif -- Conditional print()	if({#insert zYmark})  {{#insert zENTER}System.out.print({#insert zYmark});{#insert zENTER}}  {#insert zYUp2}{#insert sopsyn}	sopif
+sopl -- System.out.println()	System.out.println({#insert zYmark});{#insert zENTER}{#insert zYUp}{#insert sopsyn}	sopl
+soplif -- Conditional println()	if({#insert zYmark})  {{#insert zENTER}System.out.println({#insert zYmark});{#insert zENTER}}  {#insert zYUp2}{#insert sopsyn}	soplif
+soplq -- System.out.println()	System.out.println({#asc 34}{#insert zYmark}{#asc 34});{#insert zENTER}{#insert zYUp}{#insert sopsyn}	soplq
+sopq -- System.out.print()	System.out.print({#asc 34}{#insert zYmark}{#asc 34});{#insert zENTER}{#insert zYUp}{#insert sopsyn}	sopq
+sopsyn	{#BALLOON -title Syntax: Java basics -text ddd[es,se]=...START & ...END lines, jmlc[b]=/*...*/ ([b]=paste), jl[s][f]=pblc [sttc] [fnl], jrs[f]=prot sttc, jvs=priv sttc, jts=toString, sop[l][if,q], jfr[[i,x,j]]=for~loop, f[sq,qb,qs]s=CB()='+CB()+', cnst=constructor  //  javasyn}	sopsyn
+zzHomeCpR	{#insert zTPLineLeftExtend}{#insert zTPCopy}{#insert zRIGHT}	zzHomeCpR
+zzRUslpCut	{#insert zRIGHT}{#insert zTPLineUpExtend}{#sleep 500}{#insert zTPCut}	zzRUslpCut

@@ -1,11 +1,11 @@
 __**WARNING**__: All phrases in this folder were created by 'plpdcf'. DO NOT EDIT.	.		(*Extra tab to allow for empty-string autotext*)
 zvKEY_COMMAND_sfKey	{#SETPHRASE -description zvKEY_COMMAND -content {#insert zzTpmdKc_cfgValue_M_key} -autotext zvKEY_COMMAND -folder ctvv_folder}	zvKEY_COMMAND_sfKey
-zzTpmdKc_cfgValue_M_key	{#insert {#insert zzTpmdKc_cfgVarPhrsName_M_key}}	zzTpmdKc_cfgValue_M_key
+zzTpmdKc_cfgValue_M_key	{#insert {#insert zzTpmdKc_cfgVarPhrsName_M_key	zzTpmdKc_cfgValue_M_key
 zzTpmdKeyCommand_cvtFromAbrv1C	Kc	zzTpmdKeyCommand_cvtFromAbrv1C
 zzTpmdKc_cfgVarPNmPost	KeyCommand	zzTpmdKc_cfgVarPNmPost
 zzTpmdKc_intrnlVarNm	zvKEY_COMMAND	zzTpmdKc_intrnlVarNm
 zzTpmdKc_cfgVarPhrsName_M_key	zz{#insert zzTpmdProjectAbrv1C}{#insert zzTpmdDataTypeAbrv1C}{#insert zvPHRS_NM_ABRV_1C}{#insert zzTpmdKc_cfgVarPNmPost}	zzTpmdKc_cfgVarPhrsName_M_key
-zzTpmdKc_helpForDlg	The key_command, as configured in TextPad > Preferences > Keyboard > Macros. Must be QUINTUPLY=escaped==as in '{#insert zOYp}#CTRL {#insert zOYp}#HOME{#insert zCY2p}'. If the macro takes a particularly long time to execute, then add some {#insert zOY}#sleep...{#insert zCY} after triggering the key command.	zzTpmdKc_helpForDlg
+zzTpmdKc_helpForDlg	The key_command, as configured in TextPad > Preferences > Keyboard > Macros. Must be QUINTUPLY=escaped==as in '#CTRL #HOME'. If the macro takes a particularly long time to execute, then add some #sleep... after triggering the key command.	zzTpmdKc_helpForDlg
 zzTpmdKc_valuePrintable	no	zzTpmdKc_valuePrintable
 zzTpmdKc_validateValuePhrsNm		zzTpmdKc_validateValuePhrsNm
 zzTpmdKc_nkcvListNum	2	zzTpmdKc_nkcvListNum

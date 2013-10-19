@@ -1,0 +1,67 @@
+krk -- direct call for one Key-pRess, w/ no mods, chars, or count: {#...}	{#insert zvESC_LVL_CNT_st0}{#insert zKrkRAW_M_elc}{#insert krksyn}	krk
+krka -- {#ALT {#...}}	{#insert zvESC_LVL_CNT_st0}{#insert zKrkaRAW_M_elc}{#insert krksyn}	krka
+krkal -- {#ALT {#LWIN {#...}}}	{#insert zvESC_LVL_CNT_st0}{#insert zKrkalRAW_M_elc}{#insert krksyn}	krkal
+krkalp -- krkal, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrkalRAW_M_elc}{#insert krksyn}	krkalp
+krkalq -- krkal, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrkalRAW_M_elc}{#insert krksyn}	krkalq
+krkap -- krka, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrkaRAW_M_elc}{#insert krksyn}	krkap
+krkaq -- krka, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrkaRAW_M_elc}{#insert krksyn}	krkaq
+krkas -- {#ALT {#SHIFT {#...}}}	{#insert zvESC_LVL_CNT_st0}{#insert zKrkasRAW_M_elc}{#insert krksyn}	krkas
+krkasl -- {#ALT {#SHIFT {#LWIN {#...}}}}	{#insert zvESC_LVL_CNT_st0}{#insert zKrkaslRAW_M_elc}{#insert krksyn}	krkasl
+krkaslp -- krkasl, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrkaslRAW_M_elc}{#insert krksyn}	krkaslp
+krkaslq -- krkasl, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrkaslRAW_M_elc}{#insert krksyn}	krkaslq
+krkasp -- krkas, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrkasRAW_M_elc}{#insert krksyn}	krkasp
+krkasq -- krkas, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrkasRAW_M_elc}{#insert krksyn}	krkasq
+krkc -- {#CTRL {#...}}	{#insert zvESC_LVL_CNT_st0}{#insert zKrkcRAW_M_elc}{#insert krksyn}	krkc
+krkca -- {#CTRL {#ALT {#...}}}	{#insert zvESC_LVL_CNT_st0}{#insert zKrkcaRAW_M_elc}{#insert krksyn}	krkca
+krkcal -- {#CTRL {#ALT {#LWIN {#...}}}}	{#insert zvESC_LVL_CNT_st0}{#insert zKrkcalRAW_M_elc}{#insert krksyn}	krkcal
+krkcalp -- krkcal, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrkcalRAW_M_elc}{#insert krksyn}	krkcalp
+krkcalq -- krkcal, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrkcalRAW_M_elc}{#insert krksyn}	krkcalq
+krkcap -- krkca, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrkcaRAW_M_elc}{#insert krksyn}	krkcap
+krkcaq -- krkca, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrkcaRAW_M_elc}{#insert krksyn}	krkcaq
+krkcas -- {#CTRL {#ALT {#SHIFT {#...}}}}	{#insert zvESC_LVL_CNT_st0}{#insert zKrkcasRAW_M_elc}{#insert krksyn}	krkcas
+krkcasl -- {#CTRL {#ALT {#SHIFT {#insert zOY_M_elc}#LWIN {#...}}}}}	{#insert zvESC_LVL_CNT_st0}{#insert zKrkcaslRAW_M_elc}{#insert krksyn}	krkcasl
+krkcaslp -- krkcasl, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrkcaslRAW_M_elc}{#insert krksyn}	krkcaslp
+krkcaslq -- krkcasl, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrkcaslRAW_M_elc}{#insert krksyn}	krkcaslq
+krkcasp -- krkcas, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrkcasRAW_M_elc}{#insert krksyn}	krkcasp
+krkcasq -- krkcas, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrkcasRAW_M_elc}{#insert krksyn}	krkcasq
+krkcl -- {#CTRL {#LWIN {#...}}}	{#insert zvESC_LVL_CNT_st0}{#insert zKrkclRAW_M_elc}{#insert krksyn}	krkcl
+krkclp -- krkcl, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrkclRAW_M_elc}{#insert krksyn}	krkclp
+krkclq -- krkcl, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrkclRAW_M_elc}{#insert krksyn}	krkclq
+krkcp -- krkc, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrkcRAW_M_elc}{#insert krksyn}	krkcp
+krkcq -- krkc, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrkcRAW_M_elc}{#insert krksyn}	krkcq
+krkcs -- {#CTRL {#SHIFT {#...}}}	{#insert zvESC_LVL_CNT_st0}{#insert zKrkcsRAW_M_elc}{#insert krksyn}	krkcs
+krkcsl -- {#CTRL {#SHIFT {#LWIN {#...}}}}	{#insert zvESC_LVL_CNT_st0}{#insert zKrkcslRAW_M_elc}{#insert krksyn}	krkcsl
+krkcslp -- krkcsl, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrkcslRAW_M_elc}{#insert krksyn}	krkcslp
+krkcslq -- krkcsl, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrkcslRAW_M_elc}{#insert krksyn}	krkcslq
+krkcsp -- krkcs, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrkcsRAW_M_elc}{#insert krksyn}	krkcsp
+krkcsq -- krkcs, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrkcsRAW_M_elc}{#insert krksyn}	krkcsq
+krkl -- {#LWIN {#...}}	{#insert zvESC_LVL_CNT_st0}{#insert zKrklRAW_M_elc}{#insert krksyn}	krkl
+krklp -- krkl, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrklRAW_M_elc}{#insert krksyn}	krklp
+krklq -- krkl, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrklRAW_M_elc}{#insert krksyn}	krklq
+krkp -- krk, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrkRAW_M_elc}{#insert krksyn}	krkp
+krkq -- krk, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrkRAW_M_elc}{#insert krksyn}	krkq
+krks -- {#SHIFT {#...}}	{#insert zvESC_LVL_CNT_st0}{#insert zKrksRAW_M_elc}{#insert krksyn}	krks
+krksl -- {#SHIFT {#LWIN {#...}}}	{#insert zvESC_LVL_CNT_st0}{#insert zKrkslRAW_M_elc}{#insert krksyn}	krksl
+krkslp -- krksl, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrkslRAW_M_elc}{#insert krksyn}	krkslp
+krkslq -- krksl, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrkslRAW_M_elc}{#insert krksyn}	krkslq
+krksp -- krks, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrksRAW_M_elc}{#insert krksyn}	krksp
+krksq -- krks, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrksRAW_M_elc}{#insert krksyn}	krksq
+zKrkRAW_M_elc -- Needs zvESC_LVL_CNT (assumed good value!)	{#insert zOY_M_elc}#{#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zKrkRAW_M_elc
+zKrkaRAW_M_elc	{#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#{#insert zCYx2_M_elc}{#insert zzLeftPrevEscCrlyX2_M_elc}	zKrkaRAW_M_elc
+zKrkalRAW_M_elc	{#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#LWIN {#insert zOY_M_elc}#{#insert zCYx3_M_elc}{#insert zzLeftPrevEscCrlyX3_M_elc}	zKrkalRAW_M_elc
+zKrkasRAW_M_elc	{#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#SHIFT {#insert zOY_M_elc}#{#insert zCYx3_M_elc}{#insert zzLeftPrevEscCrlyX3_M_elc}	zKrkasRAW_M_elc
+zKrkaslRAW_M_elc	{#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#SHIFT {#insert zOY_M_elc}#LWIN {#insert zOY_M_elc}#{#insert zCYx4_M_elc}{#insert zzLeftPrevEscCrlyX4_M_elc}	zKrkaslRAW_M_elc
+zKrkcRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#{#insert zCYx2_M_elc}{#insert zzLeftPrevEscCrlyX2_M_elc}	zKrkcRAW_M_elc
+zKrkcaRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#{#insert zCYx3_M_elc}{#insert zzLeftPrevEscCrlyX3_M_elc}	zKrkcaRAW_M_elc
+zKrkcalRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#LWIN {#insert zOY_M_elc}#{#insert zCYx4_M_elc}{#insert zzLeftPrevEscCrlyX4_M_elc}	zKrkcalRAW_M_elc
+zKrkcasRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#SHIFT {#insert zOY_M_elc}#{#insert zCYx4_M_elc}{#insert zzLeftPrevEscCrlyX4_M_elc}	zKrkcasRAW_M_elc
+zKrkcaslRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#SHIFT {#insert zOY_M_elc}#LWIN {#insert zOY_M_elc}#{#insert zCYx5_M_elc}{#insert zzLeftPrevEscCrlyX5_M_elc}	zKrkcaslRAW_M_elc
+zKrkclRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#LWIN {#insert zOY_M_elc}#{#insert zCYx3_M_elc}{#insert zzLeftPrevEscCrlyX3_M_elc}	zKrkclRAW_M_elc
+zKrkcsRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#SHIFT {#insert zOY_M_elc}#{#insert zCYx3_M_elc}{#insert zzLeftPrevEscCrlyX3_M_elc}	zKrkcsRAW_M_elc
+zKrkcslRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#SHIFT {#insert zOY_M_elc}#LWIN {#insert zOY_M_elc}#{#insert zCYx4_M_elc}{#insert zzLeftPrevEscCrlyX4_M_elc}	zKrkcslRAW_M_elc
+zKrklRAW_M_elc	{#insert zOY_M_elc}#LWIN {#insert zOY_M_elc}#{#insert zCYx2_M_elc}{#insert zzLeftPrevEscCrlyX2_M_elc}	zKrklRAW_M_elc
+zKrksRAW_M_elc	{#insert zOY_M_elc}#SHIFT {#insert zOY_M_elc}#{#insert zCYx2_M_elc}{#insert zzLeftPrevEscCrlyX2_M_elc}	zKrksRAW_M_elc
+zKrkslRAW_M_elc	{#insert zOY_M_elc}#SHIFT {#insert zOY_M_elc}#LWIN {#insert zOY_M_elc}#{#insert zCYx3_M_elc}{#insert zzLeftPrevEscCrlyX3_M_elc}	zKrkslRAW_M_elc
+krksyn	{#BALLOON -title Syntax: Pex raw key~press -text kr[k,h,n,u,x][c][a][s][l][[p,q]]  //  [k]=No modifiers, chars, or count, [h]='~chars', [n]='~count', [u]='~chars' + '~count', [x]=Modifiers only (see krxinfo)  //  Modifiers: c/a/s/l: CTRL, ALT, SHIFT, LWIN'  //  kr[k,h,n,u,x]testall  //  xkpsyn}	krksyn
+zzKrkAllMainAbrvs1CQBL	[Krk][Krka][Krkc][Krkl][Krks][Krkal][Krkas][Krkca][Krkcl][Krkcs][Krksl][Krkasl][Krkcal][Krkcas][Krkcsl][Krkcasl]	zzKrkAllMainAbrvs1CQBL
+krktestall	{#SETPHRASE -description zvQB_STR_LIST -content {#insert zzKrkAllMainAbrvs1CQBL} -autotext zvQB_STR_LIST -folder ctvv_folder}{#insert zzTestAllMainPhrsCrtrAbrvs_M_qbl}	krktestall

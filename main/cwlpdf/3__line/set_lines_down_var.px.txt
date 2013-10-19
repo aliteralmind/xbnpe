@@ -1,0 +1,10 @@
+zvLINES_DOWN_st1	{#SETPHRASE -description zvLINES_DOWN -content 1 -autotext zvLINES_DOWN -folder ctvv_folder}	zvLINES_DOWN_st1
+zvLINES_DOWN_st2	{#SETPHRASE -description zvLINES_DOWN -content 2 -autotext zvLINES_DOWN -folder ctvv_folder}	zvLINES_DOWN_st2
+zvLINES_DOWN_st3	{#SETPHRASE -description zvLINES_DOWN -content 3 -autotext zvLINES_DOWN -folder ctvv_folder}	zvLINES_DOWN_st3
+zvLINES_DOWN_st4	{#SETPHRASE -description zvLINES_DOWN -content 4 -autotext zvLINES_DOWN -folder ctvv_folder}	zvLINES_DOWN_st4
+zvLINES_DOWN_st5	{#SETPHRASE -description zvLINES_DOWN -content 5 -autotext zvLINES_DOWN -folder ctvv_folder}	zvLINES_DOWN_st5
+zvLINES_DOWN_st6	{#SETPHRASE -description zvLINES_DOWN -content 6 -autotext zvLINES_DOWN -folder ctvv_folder}	zvLINES_DOWN_st6
+zvLINES_DOWN_st7	{#SETPHRASE -description zvLINES_DOWN -content 7 -autotext zvLINES_DOWN -folder ctvv_folder}	zvLINES_DOWN_st7
+zvLINES_DOWN_st8	{#SETPHRASE -description zvLINES_DOWN -content 8 -autotext zvLINES_DOWN -folder ctvv_folder}	zvLINES_DOWN_st8
+zvLINES_DOWN_st9	{#SETPHRASE -description zvLINES_DOWN -content 9 -autotext zvLINES_DOWN -folder ctvv_folder}	zvLINES_DOWN_st9
+zvLINES_DOWN_st10	{#SETPHRASE -description zvLINES_DOWN -content 10 -autotext zvLINES_DOWN -folder ctvv_folder}	zvLINES_DOWN_st10

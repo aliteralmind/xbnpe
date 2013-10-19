@@ -1,9 +1,0 @@
-__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
-zjreSetPCountPost_0	{#SETPHRASE -description zvPARAM_COUNT_POST -content 0 -autotext zvPARAM_COUNT_POST -folder ctvv_folder}	zjreSetPCountPost_0
-zjreSetPCountPost_1	{#SETPHRASE -description zvPARAM_COUNT_POST -content 1 -autotext zvPARAM_COUNT_POST -folder ctvv_folder}	zjreSetPCountPost_1
-zjreSetPCountPost_2	{#SETPHRASE -description zvPARAM_COUNT_POST -content 2 -autotext zvPARAM_COUNT_POST -folder ctvv_folder}	zjreSetPCountPost_2
-zjreSetPCountPost_3	{#SETPHRASE -description zvPARAM_COUNT_POST -content 3 -autotext zvPARAM_COUNT_POST -folder ctvv_folder}	zjreSetPCountPost_3
-zjreSetPCountPost_4	{#SETPHRASE -description zvPARAM_COUNT_POST -content 4 -autotext zvPARAM_COUNT_POST -folder ctvv_folder}	zjreSetPCountPost_4
-zjreSetPCountPost_5	{#SETPHRASE -description zvPARAM_COUNT_POST -content 5 -autotext zvPARAM_COUNT_POST -folder ctvv_folder}	zjreSetPCountPost_5
-
-

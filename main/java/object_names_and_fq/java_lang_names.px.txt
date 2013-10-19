@@ -1,0 +1,20 @@
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+blb -- Boolean	Boolean{#insert blbsyn}	blb
+blbm -- Boolean,_	Boolean, {#insert blbsyn}	blbm
+blnm -- boolean,_	boolean, {#insert blbsyn}	blnm
+cham -- char,_	char, {#insert blbsyn}	cham
+chr -- Character	Character{#insert blbsyn}	chr
+chrm -- Character,_	Character, {#insert blbsyn}	chrm
+csq -- CharSequence	CharSequence{#insert blbsyn}	csq
+csqm -- CharSequence,_	CharSequence, {#insert blbsyn}	csqm
+inm -- int,_	int, {#insert blbsyn}	inm
+int -- Integer	Integer{#insert blbsyn}	int
+obj -- Object	Object{#insert blbsyn}	obj
+objm -- Object,_	Object, {#insert blbsyn}	objm
+std -- StringBuilder	StringBuilder{#insert blbsyn}	std
+stdm -- StringBuilder,_	StringBuilder, {#insert blbsyn}	stdm
+stf -- StringBuffer	StringBuffer{#insert blbsyn}	stf
+stfm -- StringBuffer,_	StringBuffer, {#insert blbsyn}	stfm
+str -- String	String{#insert blbsyn}	str
+strm -- String,_	String, {#insert blbsyn}	stfm
+blbsyn	{#BALLOON -title Syntax: java.lang type names -text blb[m]=Boolean ([m]=comma-space); blnm=boolean,_;, chr[m]=Character,_; cham=char,_; int[m]; inm=int,_; obj[m]=Object; csq=CharSequence; st[r,d,f][m]=String[Buffer,Builder]  //  javasyn}	blbsyn

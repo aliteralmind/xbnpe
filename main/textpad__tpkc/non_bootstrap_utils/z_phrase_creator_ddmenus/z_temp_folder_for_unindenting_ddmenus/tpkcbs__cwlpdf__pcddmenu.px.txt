@@ -39,8 +39,8 @@ zSystemSelectR1w	\\\{#insert zSystemSelectR1w\\\}	xhcwss
 zREoffFindNonWSWordUp	\\\{#insert zREoffFindNonWSWordUp\\\}	xhcwss
 zREonFindNonWSWordUp	\\\{#insert zREonFindNonWSWordUp\\\}	xhcwss
 (*          Select-copy -- xhcwsp   .   xhcws*)
-zSelectL1wCopy	\\\{#insert zSelectL1wCopy\\\}	xhcwax
-zSelectR1wCopy	\\\{#insert zSelectR1wCopy\\\}	xhcwax
+zSelectL1wCopy	\\\{#insert zSelectL1wCopy\\\}	xhcwsp
+zSelectR1wCopy	\\\{#insert zSelectR1wCopy\\\}	xhcwsp
 (*          Copy -- xhcwsc   .   xhcws*)
 (*    3. Line -- xhcl   .   xhc*)
 (*       Alter -- xhcla   .   xhcl*)
@@ -100,7 +100,7 @@ zToggleWWSetStateToOn	\\\{#insert zToggleWWSetStateToOn\\\}	xhcdwss
 zToggleWWSetStateToOn w/ revert	\\\{#insert zToggleWWSetStateToOn\\\}\\\{#insert zRevertWWToOrigState\\\}	xhcdwss
 zWordWrapOffSaveState	\\\{#insert zWordWrapOffSaveState\\\}	xhcdws
 zWordWrapOnSaveState	\\\{#insert zWordWrapOnSaveState\\\}	xhcdws
-zToggleWW	\\\{#insert zToggleWW\\\}	xhcd
+zToggleWW	\\\{#insert zToggleWW\\\}	xhcdw
 zToggleWWHome (twh)	\\\{#insert zToggleWWHome\\\}	xhcdw
 zWordWrapOff	\\\{#insert zWordWrapOff\\\}	xhcdw
 zWordWrapOn	\\\{#insert zWordWrapOn\\\}	xhcdw
@@ -114,14 +114,18 @@ zFileNewPaste -- xhcfnd (open-dup-close)	\\\{#insert zFileNewPaste\\\}	xhcfn
 zDupCurrFileTextToNewFile	\\\{#insert zDupCurrFileTextToNewFile\\\}	xhcfnd
 zOpenDupCloseXstgFileTextToNewEmptyCB_M_dirFnm	\\\{#insert zOpenDupCloseXstgFileTextToNewEmptyCB_M_dirFnm\\\}	xhcfnd
 zOpenDupCloseXstgFileTextToNew_M_dirFnm	\\\{#insert zOpenDupCloseXstgFileTextToNew_M_dirFnm\\\}	xhcfnd
-(*       Open -- xhcfo   .   xhcf*)
+(*       Open/insert file -- xhcfo   .   xhcf*)
 zDirFileOpen_M_dirFnm	\\\{#insert zDirFileOpen_M_dirFnm\\\}	xhcfo
-zDirFilePauseQuickOpenSlk_M_dirFnm	\\\{#insert zDirFilePauseQuickOpenSlk_M_dirFnm\\\}	xhcfo
-zDirFileQuickOpenSlk2_M_dirFnm [2-5]	\\\{#insert zDirFileQuickOpenSlk2_M_dirFnm\\\}	xhcfo
-zDirFileQuickOpenSlk_M_dirFnm	\\\{#insert zDirFileQuickOpenSlk_M_dirFnm\\\}	xhcfo
+zDirFileQuickOpenSlk_M_dirFnm -- xhcfoq	\\\{#insert zDirFileQuickOpenSlk_M_dirFnm\\\}	xhcfo
+zDirFilePauseQuickOpenSlk_M_dirFnm	\\\{#insert zDirFilePauseQuickOpenSlk_M_dirFnm\\\}	xhcfoq
+zDirFileQuickOpenSlk2_M_dirFnm [2-5]	\\\{#insert zDirFileQuickOpenSlk2_M_dirFnm\\\}	xhcfoq
 zFcsOpenDlgEsc	\\\{#insert zFcsOpenDlgEsc\\\}	xhcfo
 zFcsOpenDlgEscSlk	\\\{#insert zFcsOpenDlgEscSlk\\\}	xhcfo
 zFcsTPFileOpen	\\\{#insert zFcsTPFileOpen\\\}	xhcfo
+zInsertFile_M_path -- xhcfoi	\\\{#insert zInsertFile_M_path\\\}	xhcfo
+zInsFileTextToNewWAboutToWarning_M_dirFnm	\\\{#insert zInsFileTextToNewWAboutToWarning_M_dirFnm\\\}	xhcfoi
+zInsFileTextToNewWAboutToWarning_M_pth	\\\{#insert zInsFileTextToNewWAboutToWarning_M_pth\\\}	xhcfoi
+zInsFileTextWAboutToWarning_M_pth	\\\{#insert zInsFileTextWAboutToWarning_M_pth\\\}	xhcfoi
 zSystemFileOpenDlgFieldName	\\\{#insert zSystemFileOpenDlgFieldName\\\}	xhcfo
 zvQOPEN_PAUSE_Y_stES	\\\{#insert zvQOPEN_PAUSE_Y_stES\\\}	xhcfo
 zvQOPEN_PAUSE_Y_stYes	\\\{#insert zvQOPEN_PAUSE_Y_stYes\\\}	xhcfo
@@ -129,9 +133,6 @@ zvQOPEN_PAUSE_Y_stYes	\\\{#insert zvQOPEN_PAUSE_Y_stYes\\\}	xhcfo
 About-to-open/insert-file warning -- xhcfta	.	xhcft
 zPrintAboutToOpenFileWarning_M_pth	\\\{#insert zPrintAboutToOpenFileWarning_M_pth\\\}	xhcfta
 zPrintDelAboutToOpenFileWarning_M_pth	\\\{#insert zPrintDelAboutToOpenFileWarning_M_pth\\\}	xhcfta
-zInsFileTextToNewWAboutToWarning_M_dirFnm	\\\{#insert zInsFileTextToNewWAboutToWarning_M_dirFnm\\\}	xhcfta
-zInsFileTextToNewWAboutToWarning_M_pth	\\\{#insert zInsFileTextToNewWAboutToWarning_M_pth\\\}	xhcfta
-zInsFileTextWAboutToWarning_M_pth	\\\{#insert zInsFileTextWAboutToWarning_M_pth\\\}	xhcfta
 Confirm/delete file(s) in dir -- xhcfti	.	xhcft
 zConfirmOneFileExistsDlgLeaveDlgOpen_M_dirFnm	\\\{#zConfirmOneFileExistsDlgLeaveDlgOpen_M_dirFnm\\\}	xhcfti
 zConfirmOneFileExistsDlgThenOpen_M_dirFnm	\\\{#insert zConfirmOneFileExistsDlgThenOpen_M_dirFnm\\\}	xhcfti
@@ -147,7 +148,6 @@ zFileOpenDlgGTDir_M_dir	\\\{#insert zFileOpenDlgGTDir_M_dir\\\}	xhcftv
 zOpenExplorerDirSelectTargetFile_M_dirFnm	\\\{#insert zOpenExplorerDirSelectTargetFile_M_dirFnm\\\}	xhcftv
 zOpenExplorerDirSelectTarget_M_path	\\\{#insert zOpenExplorerDirSelectTarget_M_path\\\}	xhcftv
 zOpenExplorerDir_M_dir	\\\{#insert zOpenExplorerDir_M_dir\\\}	xhcftv
-zInsertFile_M_path	\\\{#insert zInsertFile_M_path\\\}	xhcft
 Var: zvDIRECTORY* -- xhcftd (and other vars)	{#SETCLIPBOARD zvDIRECTORY}{#insert zzBalCBContainsVarNm}	xhcft
 Var: zvFILE_NAME	{#SETCLIPBOARD zvFILE_NAME}{#insert zzBalCBContainsVarNm}	xhcftd
 Var: zvPATH	{#SETCLIPBOARD zvPATH}{#insert zzBalCBContainsVarNm}	xhcftd

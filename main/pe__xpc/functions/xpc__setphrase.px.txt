@@ -1,0 +1,69 @@
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+stptestall	{#SETPHRASE -description zvQB_STR_LIST -content {#insert zzPccStpAllMainAbrvs1CQBL} -autotext zvQB_STR_LIST -folder ctvv_folder}{#insert zzTestAllMainPhrsCrtrAbrvs_M_qbl}	stptestall
+stm -- {#SETPHRASE -dsc [prompt] -cntnt ... -atx [prompt]...}	{#insert zvESC_LVL_CNT_st0}{#insert zStmRAW_M_elc}{#insert stpsyn}	stm
+stmc -- {#SETPHRASE -dsc [prompt] -cntnt ... -atx [prompt]...}	{#insert zvESC_LVL_CNT_st0}{#insert zStmcRAW_M_elc}{#insert stpsyn}	stmc
+stmcb -- {#SETPHRASE -dsc [prompt] -cntnt [paste] -atx [prompt]...}	{#insert zvESC_LVL_CNT_st0}{#insert zStmcbRAW_M_elc}{#insert stpsyn}	stmcb
+stmcbp -- stmcb, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zStmcbRAW_M_elc}{#insert stpsyn}	stmcbp
+stmcbq -- stmcb, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zStmcbRAW_M_elc}{#insert stpsyn}	stmcbq
+stmccb -- {#SETPHRASE -dsc [prompt] -cntnt {#insert [paste]} -atx [prompt]...}	{#insert zvESC_LVL_CNT_st0}{#insert zStmccbRAW_M_elc}{#insert stpsyn}	stmccb
+stmccbp -- stmccb, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zStmccbRAW_M_elc}{#insert stpsyn}	stmccbp
+stmccbq -- stmccb, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zStmccbRAW_M_elc}{#insert stpsyn}	stmccbq
+stmce -- stmc, no content (empty-string)	{#insert zvESC_LVL_CNT_st0}{#insert zStmceRAW_M_elc}{#insert stpsyn}	stmce
+stmcep -- stmce, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zStmceRAW_M_elc}{#insert stpsyn}	stmcep
+stmceq -- stmce, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zStmceRAW_M_elc}{#insert stpsyn}	stmceq
+stmcp -- stmc, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zStmcRAW_M_elc}{#insert stpsyn}	stmcp
+stmcq -- stmc, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zStmcRAW_M_elc}{#insert stpsyn}	stmcq
+stmct -- {#SETPHRASE -dsc [prompt] -cntnt {#insert [paste]} -atx [prompt]...}	{#insert zvESC_LVL_CNT_st0}{#insert zStmctRAW_M_elc}{#insert stpsyn}	stmct
+stmctp -- stmct, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zStmctRAW_M_elc}{#insert stpsyn}	stmctp
+stmctq -- stmct, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zStmctRAW_M_elc}{#insert stpsyn}	stmctq
+stmp -- stm, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zStmRAW_M_elc}{#insert stpsyn}	stmp
+stmq -- stm, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zStmRAW_M_elc}{#insert stpsyn}	stmq
+stp -- {#SETPHRASE -dsc... -cntnt ... -atx...}	{#insert zvESC_LVL_CNT_st0}{#insert zStpRAW_M_elc}{#insert stpsyn}	stp
+stpb -- {#SETPHRASE -dsc [paste] -cntnt ... -atx [paste]...}	{#insert zvESC_LVL_CNT_st0}{#insert zStpbRAW_M_elc}{#insert stpsyn}	stpb
+stpbc -- {#SETPHRASE -dsc [paste] -cntnt [crsr] -atx [paste]...}	{#insert zvESC_LVL_CNT_st0}{#insert zStpbcRAW_M_elc}{#insert stpsyn}	stpbc
+stpbcb -- {#SETPHRASE -dsc [paste] -cntnt {#INSERTCLIPBOARD} -atx [paste]...}	{#insert zvESC_LVL_CNT_st0}{#insert zStpbcbRAW_M_elc}{#insert stpsyn}	stpbcb
+stpbcbp -- stpbcb, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zStpbcbRAW_M_elc}{#insert stpsyn}	stpbcbp
+stpbcbq -- stpbcb, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zStpbcbRAW_M_elc}{#insert stpsyn}	stpbcbq
+stpbce -- stpbc, no content (empty-string)	{#insert zvESC_LVL_CNT_st0}{#insert zStpbceRAW_M_elc}{#insert stpsyn}	stpbce
+stpbcep -- stpbce, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zStpbceRAW_M_elc}{#insert stpsyn}	stpbcep
+stpbceq -- stpbce, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zStpbceRAW_M_elc}{#insert stpsyn}	stpbceq
+stpbcp -- stpbc, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zStpbcRAW_M_elc}{#insert stpsyn}	stpbcp
+stpbcq -- stpbc, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zStpbcRAW_M_elc}{#insert stpsyn}	stpbcq
+stpbp -- stpb, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zStpbRAW_M_elc}{#insert stpsyn}	stpbp
+stpbq -- stpb, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zStpbRAW_M_elc}{#insert stpsyn}	stpbq
+stpc -- {#SETPHRASE -dsc ... -cntnt [crsr] -atx ...}	{#insert zvESC_LVL_CNT_st0}{#insert zStpcRAW_M_elc}{#insert stpsyn}	stpc
+stpcb -- {#SETPHRASE -dsc ... -cntnt [paste] -atx ...}	{#insert zvESC_LVL_CNT_st0}{#insert zStpcbRAW_M_elc}{#insert stpsyn}	stpcb
+stpcbp -- stpcb, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zStpcbRAW_M_elc}{#insert stpsyn}	stpcbp
+stpcbq -- stpcb, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zStpcbRAW_M_elc}{#insert stpsyn}	stpcbq
+stpccb -- {#SETPHRASE -dsc ... -cntnt {#INSERTCLIPBOARD} -atx ...}	{#insert zvESC_LVL_CNT_st0}{#insert zStpccbRAW_M_elc}{#insert stpsyn}	stpccb
+stpccbp -- stpccb, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zStpccbRAW_M_elc}{#insert stpsyn}	stpccbp
+stpccbq -- stpccb, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zStpccbRAW_M_elc}{#insert stpsyn}	stpccbq
+stpce -- stpc, no content (empty-string)	{#insert zvESC_LVL_CNT_st0}{#insert zStpceRAW_M_elc}{#insert stpsyn}	stpce
+stpcep -- stpce, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zStpceRAW_M_elc}{#insert stpsyn}	stpcep
+stpceq -- stpce, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zStpceRAW_M_elc}{#insert stpsyn}	stpceq
+stpcp -- stpc, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zStpcRAW_M_elc}{#insert stpsyn}	stpcp
+stpcq -- stpc, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zStpcRAW_M_elc}{#insert stpsyn}	stpcq
+stpct -- {#SETPHRASE -dsc ... -cntnt {#insert [paste]} -atx ...}	{#insert zvESC_LVL_CNT_st0}{#insert zStpctRAW_M_elc}{#insert stpsyn}	stpct
+stpctp -- stpct, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zStpctRAW_M_elc}{#insert stpsyn}	stpctp
+stpctq -- stpct, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zStpctRAW_M_elc}{#insert stpsyn}	stpctq
+stpp -- stp, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zStpRAW_M_elc}{#insert stpsyn}	stpp
+stpq -- stp, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zStpRAW_M_elc}{#insert stpsyn}	stpq
+zStmRAW_M_elc -- Needs zvESC_LVL_CNT (assumed good value!)	{#insert zOY_M_elc}#SETPHRASE -description {#insert zzzInpVarName} -content {#insert zXmark} -autotext {#insert zzzInpVarName} -folder ctvv_folder{#insert zCY_M_elc}	zStmRAW_M_elc
+zStmcRAW_M_elc	{#insert zOY_M_elc}#SETPHRASE -description {#insert zzzInpVarName} -content  -autotext {#insert zzzInpVarName} -folder ctvv_folder{#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}{#LEFT -count 31}{#LOOP {#LEFT} -count {#LENGTH {#insert zzzInpVarName}}}	zStmcRAW_M_elc
+zStmcbRAW_M_elc	{#insert zOY_M_elc}#SETPHRASE -description {#insert zzzInpVarName} -content {#insert zTPPaste} -autotext {#insert zzzInpVarName} -folder ctvv_folder{#insert zCY_M_elc}	zStmcbRAW_M_elc
+zStmccbRAW_M_elc	{#insert zOY_M_elc}#SETPHRASE -description {#insert zzzInpVarName} -content \\\{#INSERTCLIPBOARD\\\} -autotext {#insert zzzInpVarName} -folder ctvv_folder{#insert zCY_M_elc}	zStmccbRAW_M_elc
+zStmceRAW_M_elc	{#insert zOY_M_elc}#SETPHRASE -description {#insert zzzInpVarName} -content -autotext {#insert zzzInpVarName} -folder ctvv_folder{#insert zCY_M_elc}	zStmceRAW_M_elc
+zStmctRAW_M_elc	{#insert zOY_M_elc}#SETPHRASE -description {#insert zzzInpVarName} -content \\\{#insert {#insert zTPPaste}\\\} -autotext {#insert zzzInpVarName} -folder ctvv_folder{#insert zCY_M_elc}	zStmctRAW_M_elc
+zStpRAW_M_elc	{#insert zOY_M_elc}#SETPHRASE -description {#insert zXmark} -content {#insert zYmark} -autotext {#insert zXmark} -folder ctvv_folder{#insert zCY_M_elc}	zStpRAW_M_elc
+zStpbRAW_M_elc	{#insert zOY_M_elc}#SETPHRASE -description {#insert zTPPaste} -content {#insert zXmark} -autotext {#insert zTPPaste} -folder ctvv_folder{#insert zCY_M_elc}	zStpbRAW_M_elc
+zStpbcRAW_M_elc	{#insert zOY_M_elc}#SETPHRASE -description {#insert zTPPaste} -content  -autotext {#insert zTPPaste} -folder ctvv_folder{#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}{#LEFT -count 31}{#LOOP {#LEFT} -count {#LENGTH {#INSERTCLIPBOARD}}}	zStpbcRAW_M_elc
+zStpbcbRAW_M_elc	{#insert zOY_M_elc}#SETPHRASE -description {#insert zTPPaste} -content \\\{#INSERTCLIPBOARD\\\} -autotext {#insert zTPPaste} -folder ctvv_folder{#insert zCY_M_elc}	zStpbcbRAW_M_elc
+zStpbceRAW_M_elc	{#insert zOY_M_elc}#SETPHRASE -description {#insert zTPPaste} -content -autotext {#insert zTPPaste} -folder ctvv_folder{#insert zCY_M_elc}	zStpbceRAW_M_elc
+zStpcRAW_M_elc	{#insert zOY_M_elc}#SETPHRASE -description {#insert zXmark} -content  -autotext {#insert zXmark} -folder ctvv_folder{#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}{#LEFT -count 34}	zStpcRAW_M_elc
+zStpcbRAW_M_elc	{#insert zOY_M_elc}#SETPHRASE -description {#insert zXmark} -content {#insert zTPPaste} -autotext {#insert zXmark} -folder ctvv_folder{#insert zCY_M_elc}	zStpcbRAW_M_elc
+zStpccbRAW_M_elc	{#insert zOY_M_elc}#SETPHRASE -description {#insert zXmark} -content \\\{#INSERTCLIPBOARD\\\} -autotext {#insert zXmark} -folder ctvv_folder{#insert zCY_M_elc}	zStpccbRAW_M_elc
+zStpceRAW_M_elc	{#insert zOY_M_elc}#SETPHRASE -description {#insert zXmark} -content -autotext {#insert zXmark} -folder ctvv_folder{#insert zCY_M_elc}	zStpceRAW_M_elc
+zStpctRAW_M_elc	{#insert zOY_M_elc}#SETPHRASE -description {#insert zXmark} -content \\\{#insert {#insert zTPPaste}\\\} -autotext {#insert zXmark} -folder ctvv_folder{#insert zCY_M_elc}	zStpctRAW_M_elc
+zzPccStpAllMainAbrvs1CQBL	[Stm][Stmc][Stmcb][Stmccb][Stmce][Stmct][Stp][Stpb][Stpbc][Stpbcb][Stpbce][Stpc][Stpcb][Stpccb][Stpce][Stpct]	zzPccStpAllMainAbrvs1CQBL
+stpsyn	{#BALLOON -title SETPHRASE (stp) syntax -text stp[b[c[b,e]]], stpc[[b,c[b,e],t]], stm[c[[b,c[b,e],t]]]  // [b]=paste CB, [cb]=\\\{#INSCB\\\} (incl. 'stpbcb'), [e]=content empty~string, [t]=\\\{#ins [paste]\\\}  //  All have [[p,q]]: [p]=esc'd, [q]=dbly~esc'd (or more)  //  stptestall  //  xpcsyn}	stpsyn
+zzzInpVarName	{#INPUT -head Variable name? -def zv -single}	zzzInpVarName

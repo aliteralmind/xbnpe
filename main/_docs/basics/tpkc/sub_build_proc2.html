@@ -124,6 +124,12 @@
 
 <P>This process makes a large number of replacements (as of August 2013: 96) in <I>every</I> individual-category-list file, transforming into the raw user configuration, or &quot;raw-user-config&quot;.</P>
 
+<H3>Known issue</H3>
+
+<P>This transforms all key-presses to <A HREF="../xkp.html">x-key-presses</A>, which is no longer recommended for multi-key-press key-commands. It is recommended that all key-presses <I>except the last</I> be manually changed to <A HREF="xkp.html#rawpexkc">raw PhraseExpress key-presses</A> before importing the phrase-files. This is so key-commands <I>as a whole</I> <A HREF="devpex/debugging.html#ztslp">slow down</A> when desired, but not each key-press within it.</P>
+
+ <I><B>Known issue:</B> the TPKC <A HREF="basics/tpkc/index.html#userbuild01">user-build-process</A> only generates x-key-presses. </I>:
+
 <H3>Details</H3>
 
 <P>Here is a portion of the <CODE>search.txt</CODE> raw-user-config (for version 7.0.9, and assuming none of these are bootstrap key-commands):</P>

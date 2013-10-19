@@ -1,0 +1,186 @@
+<HTML><HEAD>
+	<TITLE>XBNPE: pc2</TITLE>
+	<meta name="viewport" content="width=device-width" />
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF"><a name="top"></a>
+
+<P>[<A HREF="../index.html#devpex">BACK</A>]<CODE> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </CODE><I>(XBN-PhraseExpress is released under the <A HREF="../index.html#lpgl">LPGL 2.1</A>)</I>
+
+<HR/>
+
+<H1>XBN-PhraseExpress: Phrase &quot;compression&quot;:</H1>
+<H2>&quot;<CODE>pc2</CODE>&quot; and related utilities &nbsp; &nbsp; <I>(<CODE><A HREF="../devpex/xbnpe_ddmenus.html#xh">xh</A>pcc</CODE>)</I></H2>
+
+<P>XBN-PhraseExpress is developed exclusively in text-files (and specifically in <A HREF="../basics/pex_in_textpad.html">TextPad</A>). To review, the <A HREF="../basics/phrase_file.html#pformat">format</A> of a compressed phrase is</P>
+
+<P>&nbsp; &nbsp; <CODE>[description-autotext] -- rest of description[TAB]phrase-body[TAB]autotext</CODE></P>
+
+<P>where the description-autotext is critical, and the autotext field itself is derived from it. An example:</P>
+
+<PRE STYLE="background-color:#E1E1E1;">zPrintAnX -- Prints a lowercase 'x'	x	zPrintAnX</PRE>
+
+<P>This one-line phrase is called &quot;compressed&quot;, and is ready for import into PhraseExpress. This is the same phrase in &quot;un-compressed&quot; (two-line) form:</P>
+
+<PRE STYLE="background-color:#E1E1E1;">zPrintAnX -- Prints a lowercase 'x'
+x</PRE>
+
+<P>which is easier to work with when actually composing phrases. This document walks through the devolpment process, as it relates to compression and uncompression.</P>
+
+<A NAME="contents"/><P><B>Contents:</B><UL>
+	<LI>[<A HREF="#one">go</A>]</CODE> &nbsp; Compression process with one phrase</LI>
+	<LI>[<A HREF="#many">go</A>]</CODE> &nbsp; Compression process with many phrases</LI>
+	<LI>[<A HREF="#dnensx">go</A>]</CODE> &nbsp; Additional issues when working with many phrases: &quot;<CODE>dnen[s,x]</CODE>&quot;</LI>
+</UL></P>
+
+<P><I>All avaliable compression-related actions, including the full available <A HREF="../generic/phrase_set_syntax.html">syntax</A>, are listed in the phrase-creator ddmenu: <CODE><A HREF="../devpex/xbnpe_ddmenus.html#xh">xh</A>pcc</CODE>. Also note that all functions in this document <A HREF="../tasks/ww_with_state.html#stateprompt">prompt the user for word-wrap state</A>.</I></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="one"/><H2><CODE>[<A HREF="#contents">BACK</A>]</CODE> &nbsp; Compression process with one phrase</CODE></H2>
+
+<P>Take this two-line (&quot;uncompressed&quot;) phrase:</P>
+
+<PRE STYLE="background-color:#E1E1E1;">zPrintAnX -- Prints a lowercase 'x'
+x</PRE>
+
+<P><I>(See phrase-format <A HREF="../basics/phrase_file.html#pformat">specifications</A>)</I></P>
+
+<H3>Compression: &quot;<CODE>pc2</CODE>&quot; <I>(<CODE>pc2syn</CODE>)</I></H3>
+
+<P>Place the cursor in the top line, and <A HREF="../index.html#execute">execute</A> &quot;<CODE>pc2</CODE>&quot;. It is &quot;compressed&quot; into one-line (delimited by tabs):</P>
+
+<PRE STYLE="background-color:#E1E1E1;">zPrintAnX -- Prints a lowercase 'x'	x	zPrintAnX</PRE>
+
+<P>The two-line format is easier to read and edit. The one-line format is required for <A HREF="../basics/phrase_file_import1.html">importing</A> it into PhraseExpress.</P>
+
+<H3>Uncompression: &quot;<CODE>np2</CODE>&quot; <I>(<CODE>rp2syn</CODE>)</I></H3>
+
+<P>Place the cursor anywhere in the compressed phrase, and execute &quot;<CODE>np2</CODE>&quot;. This converts it back to the two-line version.</P>
+
+<H3>Re-compression: &quot;<CODE>rp2</CODE>&quot;</H3>
+
+<P>As stated at the <A HREF="#top">top</A> of this document, the description-autotext is critical, and the autotext field is derived from it. If you make a change to the description-autotext</P>
+
+<PRE STYLE="background-color:#E1E1E1;">zPrintALowerX -- Prints a lowercase 'x'	x	zPrintAnX</PRE>
+
+<P>it can be duplicated to the autotext field by either<UL>
+	<LI>Uncompressing and then compressing again, or by</LI>
+	<LI>recompressing, by placing the cursor in the one-line phrase, and executing &quot;<CODE>rp2</CODE>&quot;.</LI>
+</UL></P>
+
+
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="many"/><H2><CODE>[<A HREF="#contents">BACK</A>]</CODE> &nbsp; Compression process with many phrases</CODE></H2>
+
+<P>Take these five uncompressed (two-line) phrases:</P>
+
+<PRE STYLE="background-color:#E1E1E1;">zPrintAnX -- Prints a lowercase 'x'
+x
+zPrintALowerX -- zPrintAnX ALT KC
+{#insert zPrintAnX}
+zPrintXsWPrompt -- # determined by user-prompt
+{#LOOP {#insert zPrintAnX} -count {#INPUT -head How many x-s? -single}}
+zPrint2Xs -- zPrintAnX, two times
+{#insert zPrintAnX}{#insert zPrintAnX}
+zPrint3Xs -- zPrintAnX, three times
+{#insert zPrint2Xs}{#insert zPrintAnX}</PRE>
+
+<H3>Compression: &quot;<CODE>pc[2[2],3-10]</CODE>&quot;</H3>
+
+<P>To compress them, place the cursor in the first line and <A HREF="../index.html#execute">execute</A> either &quot;<CODE>pc5</CODE>&quot;  or &quot;<CODE>pc2n</CODE>&quot; (provide a <CODE>'5'</CODE> at the prompt). This climbs through each phrase, compressing them one by one. The cursor is left at the bottom.</P>
+
+<PRE STYLE="background-color:#E1E1E1;">zPrintAnX -- Prints a lowercase 'x'	x	zPrintAnX
+zPrintALowerX -- zPrintAnX ALT KC	{#insert zPrintAnX}	zPrintALowerX
+zPrintXsWPrompt -- # determined by user-prompt	{#LOOP {#insert zPrintAnX} -count {#INPUT -head How many x-s? -single}}	zPrintXsWPrompt
+zPrint2Xs -- zPrintAnX, two times	{#insert zPrintAnX}{#insert zPrintAnX}	zPrint2Xs
+zPrint3Xs -- zPrintAnX, three times	{#insert zPrint2Xs}{#insert zPrintAnX}	zPrint3Xs
+<B><I>[CURSOR]</I></B></PRE>
+
+<H3>Uncompression: &quot;<CODE>np2*</CODE>&quot;</H3>
+
+<P>To uncompress the phrases, place the cursor in the top phrase, and execute &quot;<CODE>np2n</CODE>&quot; (provide a <CODE>'5'</CODE> at the prompt), or place the cursor <I>anywhere</I>, and execute &quot;<CODE>np2all</CODE>&quot; (this assumes that <I>every</I> line in the phrase-file is a phrase-line!).</P>
+
+<P>Uncompression is done with a regular expression repalcement. Although it will likely work even when there are non-phrase-lines in the selected range (the regular expression has a strict format) it is a risk.</P>
+
+<H3>Recompression: &quot;<CODE>np2*</CODE>&quot;</H3>
+
+<P>As with <A HREF="#one">single phrase-lines</A>, multiple phrases can be recompressed by either uncompressing-and-then-compressing them again, or by directly re-compressing. This is done by either<UL>
+	<LI>placing the cursor in the top line and executing &quot;<CODE>rp2n</CODE>&quot;, or</LI>
+	<LI>with the cursor anywhere, executing &quot;<CODE>rp2all</CODE>&quot;. <I>As will &quot;<CODE>np2all</CODE>&quot;, this is a risk when there are non-phrase-lines in the file.</I></LI>
+</UL></P>
+
+<PRE>
+
+<HR/>
+
+</PRE>
+<a name="dnensx"/><H2><CODE>[<A HREF="#contents">BACK</A>]</CODE> &nbsp; Additional issues with multiple phrase-lines: &quot;<CODE>dnenx</CODE>&quot; and &quot;<CODE>dnens</CODE>&quot;</CODE></H2>
+
+<P>Looking at multiple phrases without any line-separation is very busy:</P>
+
+<PRE STYLE="background-color:#E1E1E1;">
+zPrintAnX -- Prints a lowercase 'x'	x	zPrintAnX
+zPrintALowerX -- zPrintAnX ALT KC	{#insert zPrintAnX}	zPrintALowerX
+zPrintXsWPrompt -- # determined by user-prompt	{#LOOP {#insert zPrintAnX} -count {#INPUT -head How many x-s? -single}}	zPrintXsWPrompt
+zPrint2Xs -- zPrintAnX, two times	{#insert zPrintAnX}{#insert zPrintAnX}	zPrint2Xs
+zPrint3Xs -- zPrintAnX, three times	{#insert zPrint2Xs}{#insert zPrintAnX}	zPrint3Xs</PRE>
+
+<P>To make this clearer, consider sorting it, and separating each phrase with an empty line:</P>
+
+<PRE STYLE="background-color:#E1E1E1;">zPrint2Xs -- zPrintAnX, two times	{#insert zPrintAnX}{#insert zPrintAnX}	zPrint2Xs
+
+zPrint3Xs -- zPrintAnX, three times	{#insert zPrint2Xs}{#insert zPrintAnX}	zPrint3Xs
+
+zPrintALowerX -- zPrintAnX ALT KC	{#insert zPrintAnX}	zPrintALowerX
+
+zPrintAnX -- Prints a lowercase 'x'	x	zPrintAnX
+
+zPrintXsWPrompt -- # determined by user-prompt	{#LOOP {#insert zPrintAnX} -count {#INPUT -head How many x-s? -single}}	zPrintXsWPrompt</PRE>
+
+<P>The convenience functions &quot;<CODE>dnens</CODE>&quot; (when there are no empty-lines in the document) and &quot;<CODE>dnenx</CODE>&quot; (for when there are empty-lines) do this for you. Execute either at any time, as long as <I>all phrases</I> in the current file are compressed. The entire document is sorted, and then empty lines are placed between each phrase.</P>
+
+<P><I>(While the basic &quot;<CODE>dnen</CODE>&quot; phrase is a bootstrap in the XBNPE/XKP-Project, the &quot;<CODE>dnen[s,x]</CODE>&quot; phrases are part of the XBNPE-CWLPDF project.)</I></P>
+
+<PRE>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</PRE>
+</BODY></HTML>
+
+
+

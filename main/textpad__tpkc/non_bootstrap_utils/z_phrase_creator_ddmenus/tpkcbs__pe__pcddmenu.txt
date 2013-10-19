@@ -36,10 +36,10 @@ Phrase-creators: XBN-PhraseExpress -- xh   .   zXbnpeCmdPopupRoot
 					zKPSpeedSetToRequested	\\\{#insert zKPSpeedSetToRequested\\\}	xhpgsr
 					Var: zvKP_SPD_RQSTD	{#SETCLIPBOARD zvKP_SPD_RQSTD}{#insert zzBalCBContainsVarNm}	xhpgsr
 				zKeyPressSpeedSetToMills_M_mils	\\\{#insert zKeyPressSpeedSetToMills_M_mils\\\}	xhpgs
-		zCallPhraseNameInCB (main action=cpcb)	\\\{#insert zCallPhraseNameInCB\\\}	xhp
+		zCallPhraseNameInCB (main action=cpb)	\\\{#insert zCallPhraseNameInCB\\\}	xhp
 		Phrase creation and import-text file management -- xhpc	.	xhp
 			Compress/un/re plain-text phrase files -- xhpcc	.	xhpc
-				Compress 2-line (name/body) phrase: c2pl[[2-10,n]]	.	xhpcc
+				Compress 2-line (name/body) phrase: pc2[[2-10,n]]	.	xhpcc
 			Create {#insert...}, main action: ins	.	xhpc
 			Curlys and escaped-ness -- xhpce	.	xhpc
 				eucurlys: zREoffEscapeAllUnescCurlysInDoc* -- xhpcee	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content eucurlys:zREoffEscapeAllUnescCurlysInDoc -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhpce

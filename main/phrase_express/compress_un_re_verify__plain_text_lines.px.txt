@@ -4,21 +4,39 @@ __XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a larg
       PM_DDMENU_DIRID_FILENMPHRSNM_HDRAUTOTXT=pex/zzPmdmFNmPrePex/xhpc
    Required by phrase-creator-ddmenu-utils...END
 *)
-mpfpl -- zMarkAllPrprlyFrmtdPlainTxtPhraseLines ALT KC	{#insert zMarkAllPrprlyFrmtdPlainTxtPhraseLines}{#insert zzR2plSyn}	mpfpl
+mpfpl -- zMarkAllPrprlyFrmtdPlainTxtPhraseLines ALT KC	{#insert zMarkAllPrprlyFrmtdPlainTxtPhraseLines}{#insert rp2syn}	mpfpl
 
-mpfpla -- zMarkAllPrprlyFrmtdPlainTxtPhraseLinesAD ALT KC	{#insert zMarkAllPrprlyFrmtdPlainTxtPhraseLinesAD}{#insert zzR2plSyn}	mpfpla
+mpfpla -- zMarkAllPrprlyFrmtdPlainTxtPhraseLinesAD ALT KC	{#insert zMarkAllPrprlyFrmtdPlainTxtPhraseLinesAD}{#insert rp2syn}	mpfpla
 
-r2pl -- zRefreshAutotextInCurrLnWDupDescWrd1_M_wwoLdc (for 1 line)	{#SETPHRASE -description zvLINES_DOWN -content 1 -autotext zvLINES_DOWN -folder ctvv_folder}{#insert zRefreshAutotextInCurrLnWDupDescWrd1_M_wwoLdc}{#insert zzR2plSyn}	r2pl
+rp2 -- zWWoff_RefreshAutotextInCurrLnWDupDescWrd1_M_ldc (for 1 line)	{#insert zWWOffHmSvStateMaybeRecheck}{#insert zvLINES_DOWN_st1}{#insert zWWoff_RefreshAutotextInCurrLnWDupDescWrd1Syn_M_ldc}	rp2
 
-r2plall -- select-all, zRefreshAutotextOfSelectedLines	{#insert zTPSelectAll}{#insert zRefreshAutotextOfSelectedLines}{#insert zzR2plSyn}	r2plall
+rp10	{#insert zWWOffHmSvStateMaybeRecheck}{#insert zvLINES_DOWN_st10}{#insert zWWoff_RefreshAutotextInCurrLnWDupDescWrd1Syn_M_ldc}	rp10
 
-r2pln -- r2pl, user-prompt-times	{#SETPHRASE -description zvLINES_DOWN -content {#INPUT -head How many lines down? -single} -autotext zvLINES_DOWN -folder ctvv_folder}{#insert zRefreshAutotextInCurrLnWDupDescWrd1_M_wwoLdc}{#insert zzR2plSyn}	r2pln
+rp22	{#insert zWWOffHmSvStateMaybeRecheck}{#insert zvLINES_DOWN_st2}{#insert zWWoff_RefreshAutotextInCurrLnWDupDescWrd1Syn_M_ldc}	rp22
 
-u2pl -- zUncompressSingleLinePhraseToTwo_M_wwoLdc (for 1 line)	{#SETPHRASE -description zvLINES_DOWN -content 1 -autotext zvLINES_DOWN -folder ctvv_folder}{#insert zUncompressSingleLinePhraseToTwo_M_wwoLdc}{#insert zzR2plSyn}	u2pl
+rp3	{#insert zWWOffHmSvStateMaybeRecheck}{#insert zvLINES_DOWN_st3}{#insert zWWoff_RefreshAutotextInCurrLnWDupDescWrd1Syn_M_ldc}	rp3
 
-u2plall -- select-all, zUncompressSlctd1LinePhrssTo2	{#insert zTPSelectAll}{#insert zUncompressSlctd1LinePhrssTo2}{#insert zzR2plSyn}	u2plall
+rp4	{#insert zWWOffHmSvStateMaybeRecheck}{#insert zvLINES_DOWN_st4}{#insert zWWoff_RefreshAutotextInCurrLnWDupDescWrd1Syn_M_ldc}	rp4
 
-u2pln -- u2pl, user-prompt-times	{#SETPHRASE -description zvLINES_DOWN -content {#INPUT -head How many lines down? -single} -autotext zvLINES_DOWN -folder ctvv_folder}{#insert zUncompressSingleLinePhraseToTwo_M_wwoLdc}{#insert zzR2plSyn}	u2pln
+rp5	{#insert zWWOffHmSvStateMaybeRecheck}{#insert zvLINES_DOWN_st5}{#insert zWWoff_RefreshAutotextInCurrLnWDupDescWrd1Syn_M_ldc}	rp5
+
+rp6	{#insert zWWOffHmSvStateMaybeRecheck}{#insert zvLINES_DOWN_st6}{#insert zWWoff_RefreshAutotextInCurrLnWDupDescWrd1Syn_M_ldc}	rp6
+
+rp7	{#insert zWWOffHmSvStateMaybeRecheck}{#insert zvLINES_DOWN_st7}{#insert zWWoff_RefreshAutotextInCurrLnWDupDescWrd1Syn_M_ldc}	rp7
+
+rp8	{#insert zWWOffHmSvStateMaybeRecheck}{#insert zvLINES_DOWN_st8}{#insert zWWoff_RefreshAutotextInCurrLnWDupDescWrd1Syn_M_ldc}	rp8
+
+rp9	{#insert zWWOffHmSvStateMaybeRecheck}{#insert zvLINES_DOWN_st9}{#insert zWWoff_RefreshAutotextInCurrLnWDupDescWrd1Syn_M_ldc}	rp9
+
+rp2all -- select-all, zRefreshAutotextOfSelectedLines	{#insert zTPSelectAll}{#insert zRefreshAutotextOfSelectedLines}{#insert rp2syn}	rp2all		rp2all
+
+rp2n -- rp2, user-prompt-times	{#insert zWWOffHmSvStateMaybeRecheck}{#SETPHRASE -description zvLINES_DOWN -content {#INPUT -head How many lines down? -single} -autotext zvLINES_DOWN -folder ctvv_folder}{#insert zWWoff_RefreshAutotextInCurrLnWDupDescWrd1Syn_M_ldc}	rp2n
+
+np2 -- zWWoff_uncompressSingleLinePhraseToTwo_M_ldc (for 1 line)	{#insert zWWOffHmSvStateMaybeRecheck}{#insert zvLINES_DOWN_st1}{#insert zWWoff_uncompressSingleLinePhraseToTwo_M_ldc}{#insert rp2syn}	np2
+
+np2all -- select-all, zUncompressSlctd1LinePhrssTo2	{#insert zTPSelectAll}{#insert zUncompressSlctd1LinePhrssTo2}{#insert rp2syn}	np2all
+
+np2n -- np2, user-prompt-times	{#insert zWWOffHmSvStateMaybeRecheck}{#SETPHRASE -description zvLINES_DOWN -content {#INPUT -head How many lines down? -single} -autotext zvLINES_DOWN -folder ctvv_folder}{#insert zWWoff_uncompressSingleLinePhraseToTwo_M_ldc}{#insert rp2syn}	np2n
 
 zMarkAllPrprlyFrmtdPlainTxtPhraseLines	{#insert zzMarkAllPrprlyFrmtdPlainTxtPhraseLinesPreMrkAllBtn}{#insert zzBtnMarkAllFindDlgCloseRE}	zMarkAllPrprlyFrmtdPlainTxtPhraseLines
 
@@ -26,13 +44,15 @@ zMarkAllPrprlyFrmtdPlainTxtPhraseLinesAD	{#insert zzMarkAllPrprlyFrmtdPlainTxtPh
 
 zRefreshAutotextInCurrLnWDupDescWrd1RAW_M_wwoLdc -- ww-off, at line-1-col-1	{#LOOP {#SHIFT {#DOWN}} -count {#insert zvLINES_DOWN}}{#insert zRefreshAutotextOfSelectedLines}	zRefreshAutotextInCurrLnWDupDescWrd1RAW_M_wwoLdc
 
-zRefreshAutotextInCurrLnWDupDescWrd1_M_wwoLdc -- zvWORD_WRAP_ON, zvLINES_DOWN	{#insert zWWOffHmSvStateMaybeRecheck}{#insert zRefreshAutotextInCurrLnWDupDescWrd1RAW_M_wwoLdc}{#insert zRevertWWToOrigState}	zRefreshAutotextInCurrLnWDupDescWrd1_M_wwoLdc
-
 zRefreshAutotextOfSelectedLines	{#insert zRplcDlgOpenMCRE}^{#insert zzRegexPhrsLnWAutotxtDscWrd1MidIndentAutotext}[\w]+${#insert zRplcFieldWith}{#SETPHRASE -description zvRPLC_WITH -content $1$2\t$3\t$1 -autotext zvRPLC_WITH -folder ctvv_folder}{#insert zvRPLC_WITH}{#insert zRplcBtnAllSel}{#insert zRplcDlgCloseRE}	zRefreshAutotextOfSelectedLines
 
-zUncompressSingleLinePhraseToTwo_M_wwoLdc -- zvWORD_WRAP_ON, zvLINES_DOWN	{#insert zWWOffHmSvStateMaybeRecheck}{#insert zWWonAtCol0_selectDwnLnsUncmprs1PhrsLnTo2_M_wwoLdc}{#insert zRevertWWToOrigState}	zUncompressSingleLinePhraseToTwo_M_wwoLdc
-
 zUncompressSlctd1LinePhrssTo2	{#insert zRplcDlgOpenMCRE}^{#insert zzRegexTabDelimPhraseLineWAutotextDescWord1PstIndnt}{#insert zRplcFieldWith}{#SETPHRASE -description zvRPLC_WITH -content $1$2\n$3 -autotext zvRPLC_WITH -folder ctvv_folder}{#insert zvRPLC_WITH}{#insert zRplcBtnAllSel}{#insert zRplcDlgCloseRE}	zUncompressSlctd1LinePhrssTo2
+
+zWWoff_RefreshAutotextInCurrLnWDupDescWrd1Syn_M_ldc	{#insert zWWoff_RefreshAutotextInCurrLnWDupDescWrd1_M_ldc}{#insert rp2syn}	zWWoff_RefreshAutotextInCurrLnWDupDescWrd1Syn_M_ldc
+
+zWWoff_RefreshAutotextInCurrLnWDupDescWrd1_M_ldc -- zvWORD_WRAP_ON, zvLINES_DOWN	{#insert zRefreshAutotextInCurrLnWDupDescWrd1RAW_M_wwoLdc}{#insert zRevertWWToOrigState}	zWWoff_RefreshAutotextInCurrLnWDupDescWrd1_M_ldc
+
+zWWoff_uncompressSingleLinePhraseToTwo_M_ldc -- zvWORD_WRAP_ON, zvLINES_DOWN	{#insert zWWonAtCol0_selectDwnLnsUncmprs1PhrsLnTo2_M_wwoLdc}{#insert zRevertWWToOrigState}	zWWoff_uncompressSingleLinePhraseToTwo_M_ldc
 
 zWWonAtCol0_selectDwnLnsUncmprs1PhrsLnTo2_M_wwoLdc -- ww-off, at line-1-col-1	{#LOOP {#SHIFT {#DOWN}} -count {#insert zvLINES_DOWN}}{#insert zUncompressSlctd1LinePhrssTo2}	zWWonAtCol0_selectDwnLnsUncmprs1PhrsLnTo2_M_wwoLdc
 
@@ -40,4 +60,4 @@ zzBtnMarkAllFindDlgCloseRE	{#insert zFindBtnMarkAll}{#insert zFindDlgClose}{#ins
 
 zzMarkAllPrprlyFrmtdPlainTxtPhraseLinesPreMrkAllBtn	{#BALLOON -title Please wait... -text Marking all properly-formatted plain-text phrase lines in this (or all open) document(s). The first word in the description is expected to be (redundantly) equal to the autotext.}{#insert zTPFindFlagREon}{#insert zFcsTPFindDlgOpen}{#SETPHRASE -description zvFIND_WHAT -content ^{#insert zzRegexTabDelimPhraseLineWAutotextDescWord1PstIndnt} -autotext zvFIND_WHAT -folder ctvv_folder}{#insert zvFIND_WHAT}	zzMarkAllPrprlyFrmtdPlainTxtPhraseLinesPreMrkAllBtn
 
-zzR2plSyn	{#BALLOON -title Syntax: r2pl, u2pl, mpfpl -text r2pl[all,n] ~~ [n]=user~prompt lines down, mpfpl=zMarkAllPrprlyFrmtdPlainTxtPhraseLines (also see 'maixbxbx[a]')  //  cpcbsyn}	zzR2plSyn
+rp2syn	{#BALLOON -title Syntax: Un/re~compress phrase~lines -text [n,r]p2=un/re~compress a single phrase, rp22=re~compress two phrases, rp[3~10]=re~compress 3~10 phrases, [n,r]p[n,all]=prompt~#/all phrases in file  //  mpfpl=Mark all properly~formatted phrases (see maixbxbx*: xhpm)  //  See: pc2syn  //  pexsyn}	rp2syn

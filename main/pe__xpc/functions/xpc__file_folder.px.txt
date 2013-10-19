@@ -1,0 +1,37 @@
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+
+ifl -- {#INSERTFILE ...}	{#insert zvESC_LVL_CNT_st0}{#insert zIflRAW_M_elc}{#insert iflsyn}	ifl
+iflb -- {#INSERTFILE [paste]}	{#insert zvESC_LVL_CNT_st0}{#insert zIflbRAW_M_elc}{#insert iflsyn}	iflb
+iflbp -- iflb, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zIflbRAW_M_elc}{#insert iflsyn}	iflbp
+iflbq -- iflb, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zIflbRAW_M_elc}{#insert iflsyn}	iflbq
+iflp -- ifl, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zIflRAW_M_elc}{#insert iflsyn}	iflp
+iflq -- ifl, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zIflRAW_M_elc}{#insert iflsyn}	iflq
+iod -- {#OPENFOLDER ...}	{#insert zvESC_LVL_CNT_st0}{#insert zIodRAW_M_elc}{#insert iflsyn}	iod
+iodb -- {#OPENFOLDER [paste]}	{#insert zvESC_LVL_CNT_st0}{#insert zIodbRAW_M_elc}{#insert iflsyn}	iodb
+iodbp -- iodb, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zIodbRAW_M_elc}{#insert iflsyn}	iodbp
+iodbq -- iodb, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zIodbRAW_M_elc}{#insert iflsyn}	iodbq
+iodp -- iod, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zIodRAW_M_elc}{#insert iflsyn}	iodp
+iodq -- iod, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zIodRAW_M_elc}{#insert iflsyn}	iodq
+iods -- {#OPENFOLDER /select, ''[paste]''}	{#insert zvESC_LVL_CNT_st0}{#insert zIodsRAW_M_elc}{#insert iflsyn}	iods
+iodsb -- {#OPENFOLDER /select, ''[paste]''}	{#insert zvESC_LVL_CNT_st0}{#insert zIodsbRAW_M_elc}{#insert iflsyn}	iodsb
+iodsbp -- iodsb, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zIodsbRAW_M_elc}{#insert iflsyn}	iodsbp
+iodsbq -- iodsb, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zIodsbRAW_M_elc}{#insert iflsyn}	iodsbq
+iodsp -- iods, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zIodsRAW_M_elc}{#insert iflsyn}	iodsp
+iodsq -- iods, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zIodsRAW_M_elc}{#insert iflsyn}	iodsq
+iol -- {#OPEN ...}	{#insert zvESC_LVL_CNT_st0}{#insert zIolRAW_M_elc}{#insert iflsyn}	iol
+iolb -- {#OPEN [paste]}	{#insert zvESC_LVL_CNT_st0}{#insert zIolbRAW_M_elc}{#insert iflsyn}	iolb
+iolbp -- iolb, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zIolbRAW_M_elc}{#insert iflsyn}	iolbp
+iolbq -- iolb, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zIolbRAW_M_elc}{#insert iflsyn}	iolbq
+iolp -- iol, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zIolRAW_M_elc}{#insert iflsyn}	iolp
+iolq -- iol, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zIolRAW_M_elc}{#insert iflsyn}	iolq
+ifltestall	{#SETPHRASE -description zvQB_STR_LIST -content {#insert zzPccIflAllMainAbrvs1CQBL} -autotext zvQB_STR_LIST -folder ctvv_folder}{#insert zzTestAllMainPhrsCrtrAbrvs_M_qbl}	ifltestall
+zIflRAW_M_elc -- Needs zvESC_LVL_CNT (assumed good value!)	{#insert zOY_M_elc}#INSERTFILE {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zIflRAW_M_elc
+zIflbRAW_M_elc	{#insert zOY_M_elc}#INSERTFILE {#insert zTPPaste}{#insert zCY_M_elc}	zIflbRAW_M_elc
+zIodRAW_M_elc	{#insert zOY_M_elc}#OPENFOLDER {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zIodRAW_M_elc
+zIodbRAW_M_elc	{#insert zOY_M_elc}#OPENFOLDER {#insert zTPPaste}{#insert zCY_M_elc}	zIodbRAW_M_elc
+zIodsRAW_M_elc	{#insert zOY_M_elc}#OPENFOLDER /select, {#insert zAscQQ}{#insert zAscQQ}{#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}{#LEFT}	zIodsRAW_M_elc
+zIodsbRAW_M_elc	{#insert zOY_M_elc}#OPENFOLDER /select, {#insert zAscQQ}{#insert zTPPaste}{#insert zAscQQ}{#insert zCY_M_elc}	zIodsbRAW_M_elc
+zIolRAW_M_elc	{#insert zOY_M_elc}#OPEN {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zIolRAW_M_elc
+zIolbRAW_M_elc	{#insert zOY_M_elc}#OPEN {#insert zTPPaste}{#insert zCY_M_elc}	zIolbRAW_M_elc
+iflsyn	{#BALLOON -title insfile, opn* syntax -text ifl[b][[p,q]]=INSERTFILE  //  iod[s][b][[p,q]]=OPEN folder, [s]=highlight (select) file  //  iol[b][[p,q]]=OPEN file  //  [p]=esc'd, [q]=dbly-esc'd (or more)  //  ifltestall  //  xpcsyn}	iflsyn
+zzPccIflAllMainAbrvs1CQBL	[Ifl][Iflb][Iod][Iodb][Iods][Iodsb][Iol][Iolb]	zzPccIflAllMainAbrvs1CQBL

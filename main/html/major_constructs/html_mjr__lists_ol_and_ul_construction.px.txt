@@ -1,22 +1,22 @@
 __XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
 hcontents -- hhp, hhb, Contents:, hlu, hgok	<P><B>Contents:</B><UL>{#insert zENTER}{#insert zTAB}<LI><CODE>[<A HREF={#insert zAscQQ}#{#insert zXmark}{#insert zAscQQ}>go</A>]</CODE> &nbsp; {#insert zXmark}</LI>{#insert zENTER}{#insert zBKSP}</UL></P>{#insert zXUp}	hcontents
-hli -- <LI>x-mark</LI>	<LI>{#insert zXmark}</LI>{#insert zXUp}{#insert zzHtmlListSyn}	hli
-hlib -- <LI><B>x-mark</B></LI>	<LI><B>{#insert zXmark}</B></LI>{#insert zXUp}{#insert zzHtmlListSyn}	hlib
-hlic -- <LI><CODE>x-mark</CODE></LI>	<LI><CODE>{#insert zXmark}</CODE></LI>{#insert zXUp}{#insert zzHtmlListSyn}	hlic
+hli -- <LI>x-mark</LI>	<LI>{#insert zXmark}</LI>{#insert zXUp}{#insert hlusyn}	hli
+hlib -- <LI><B>x-mark</B></LI>	<LI><B>{#insert zXmark}</B></LI>{#insert zXUp}{#insert hlusyn}	hlib
+hlic -- <LI><CODE>x-mark</CODE></LI>	<LI><CODE>{#insert zXmark}</CODE></LI>{#insert zXUp}{#insert hlusyn}	hlic
 hligk -- hll, hgok	{#insert hli}{#insert hgok}{#insert zXmark}{#insert zTPSelectL1w}	hligk
-hll -- End current line </LI> and start a new one.	</LI>{#insert zENTER}<LI>{#insert zXmark}{#insert zTPSelectL1w}{#insert zzHtmlListSyn}	hll
-hllb -- End current line </LI> and start a new <B>-olded one.	</LI>{#insert zENTER}<LI><B>{#insert zXmark}</B>{#insert zXUp}{#insert zzHtmlListSyn}	hllb
-hllc -- End current line </LI> and start a new <CODE>-d one.	</LI>{#insert zENTER}<LI><CODE>{#insert zXmark}</CODE>{#insert zXUp}{#insert zzHtmlListSyn}	hllc
+hll -- End current line </LI> and start a new one.	</LI>{#insert zENTER}<LI>{#insert zXmark}{#insert zTPSelectL1w}{#insert hlusyn}	hll
+hllb -- End current line </LI> and start a new <B>-olded one.	</LI>{#insert zENTER}<LI><B>{#insert zXmark}</B>{#insert zXUp}{#insert hlusyn}	hllb
+hllc -- End current line </LI> and start a new <CODE>-d one.	</LI>{#insert zENTER}<LI><CODE>{#insert zXmark}</CODE>{#insert zXUp}{#insert hlusyn}	hllc
 hllgk -- hll, hgok	{#insert hll}{#insert hgok}{#insert zXmark}{#insert zTPSelectL1w}	hllgk
-hlo -- <OL><LI>x-mark</LI></OL>..	<OL>{#insert zEnterTab}<LI>{#insert zXmark}</LI>{#insert zEnterBksp}</OL>{#insert zXUp}{#insert zzHtmlListSyn}	hlo
-hlu -- <UL><LI>x-mark</LI></UL>	<UL>{#insert zEnterTab}<LI>{#insert zXmark}</LI>{#insert zEnterBksp}</UL>{#insert zXUp}{#insert zzHtmlListSyn}	hlu
-hlux -- <UL>[cursor at home, for ins cb-lines]</UL>	<UL>{#insert zENTER}</UL>{#insert zHOME}{#insert zzHtmlListSyn}	hlux
-hlox -- <OL>[cursor at home, for ins cb-lines]</OL>	<OL>{#insert zENTER}</OL>{#insert zHOME}{#insert zzHtmlListSyn}	hlox
-hloxb -- <OL>[paste cb-lines]</OL>	<OL>{#insert zENTER}{#insert zHOME}{#insert zTPPaste}{#insert zBKSP}{#insert zENTER}{#insert zBKSP}</OL>{#insert zzHtmlListSyn}	hloxb
-hluxb -- <UL>[paste cb-lines]</UL>	<UL>{#insert zENTER}{#insert zHOME}{#insert zTPPaste}{#insert zBKSP}{#insert zENTER}{#insert zBKSP}</UL>{#insert zzHtmlListSyn}	hluxb
-hluc -- <UL><LI><CODE>x-mark</CODE></LI></UL>	<UL>{#insert zEnterTab}<LI><CODE>{#insert zXmark}</CODE></LI>{#insert zEnterBksp}</UL>{#insert zXUp}{#insert zzHtmlListSyn}	hluc
-hloc -- <OL><LI><CODE>x-mark</CODE></LI></OL>	<OL>{#insert zEnterTab}<LI><CODE>{#insert zXmark}</CODE></LI>{#insert zEnterBksp}</OL>{#insert zXUp}{#insert zzHtmlListSyn}	hloc
+hlo -- <OL><LI>x-mark</LI></OL>..	<OL>{#insert zEnterTab}<LI>{#insert zXmark}</LI>{#insert zEnterBksp}</OL>{#insert zXUp}{#insert hlusyn}	hlo
+hlu -- <UL><LI>x-mark</LI></UL>	<UL>{#insert zEnterTab}<LI>{#insert zXmark}</LI>{#insert zEnterBksp}</UL>{#insert zXUp}{#insert hlusyn}	hlu
+hlux -- <UL>[cursor at home, for ins cb-lines]</UL>	<UL>{#insert zENTER}</UL>{#insert zHOME}{#insert hlusyn}	hlux
+hlox -- <OL>[cursor at home, for ins cb-lines]</OL>	<OL>{#insert zENTER}</OL>{#insert zHOME}{#insert hlusyn}	hlox
+hloxb -- <OL>[paste cb-lines]</OL>	<OL>{#insert zENTER}{#insert zHOME}{#insert zTPPaste}{#insert zBKSP}{#insert zENTER}{#insert zBKSP}</OL>{#insert hlusyn}	hloxb
+hluxb -- <UL>[paste cb-lines]</UL>	<UL>{#insert zENTER}{#insert zHOME}{#insert zTPPaste}{#insert zBKSP}{#insert zENTER}{#insert zBKSP}</UL>{#insert hlusyn}	hluxb
+hluc -- <UL><LI><CODE>x-mark</CODE></LI></UL>	<UL>{#insert zEnterTab}<LI><CODE>{#insert zXmark}</CODE></LI>{#insert zEnterBksp}</UL>{#insert zXUp}{#insert hlusyn}	hluc
+hloc -- <OL><LI><CODE>x-mark</CODE></LI></OL>	<OL>{#insert zEnterTab}<LI><CODE>{#insert zXmark}</CODE></LI>{#insert zEnterBksp}</OL>{#insert zXUp}{#insert hlusyn}	hloc
 hplo -- hhp, hlo	<P><OL>{#insert zzEtrTbLiaXmkLizEtrBksp}</OL></P>{#insert zXUp}	hplo
 hplu -- hhp, hlu	<P><UL>{#insert zzEtrTbLiaXmkLizEtrBksp}</UL></P>{#insert zXUp}	hplu
 zzEtrTbLiaXmkLizEtrBksp	{#insert zENTER}{#insert zTAB}<LI>{#insert zXmark}</LI>{#insert zENTER}{#insert zBKSP}	zzEtrTbLiaXmkLizEtrBksp
-zzHtmlListSyn	{#BALLOON -title HTML lists (<UL> and <OL>) -text hl[o,u][c,x[b]]=<UL>... ([n]=null/non-null, [b]=bolded, [c] line-coded), [x]=no lines, [xb]=paste lines in cb) // h[p]l[o,u]=<OL/UL>... ([p]=surrounded by <P>) //  hll[b,c,gk]=end <LI>, start new // hli[b,c,gk]=<LI> // [b/c]=bold/coded, [gk]=w/ go-link}	zzHtmlListSyn
+hlusyn	{#BALLOON -title Syntax: HTML <UL> and <OL> -text hl[o,u][c,x[b]]=<UL>... ([n]=null/non, [b]=bold, [c] line-CODE-d), [x]=no lns, [xb]=paste lns in cb) // h[p]l[o,u]=<OL/UL>... ([p]=surrounded by <P>) //  hll[b,c,gk]=end <LI>, start new // hli[b,c,gk]=<LI> // [b/c]=bold/coded, [gk]=w/ 'GO'  //  hlusyn}	hlusyn

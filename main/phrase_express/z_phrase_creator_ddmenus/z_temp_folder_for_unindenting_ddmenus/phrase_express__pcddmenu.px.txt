@@ -40,7 +40,8 @@ zCopySlctdDDMenuHdrAbrvToChildrenWCountPrompt	\\\{#insert zCopySlctdDDMenuHdrAbr
 Var: zvDDMENU_ID	{#SETCLIPBOARD zvDDMENU_ID}{#insert zzBalCBContainsVarNm}	xhpm
 (*    Phrase creation and plain-text file management -- xhpc   .   xhp   *)
 (*       Compress/un/re plain-text phrase files -- xhpcc   .   xhpc  *)
-Re/Un-compress 1-line plain-text phrases: [r,u]2pl[all,n]	.	xhpcc
+Re-compress phrase: rp2, rp22, rp[3-10,n,all]	.	xhpcc
+Un-compress phrase: np2, np[n,all]	.	xhpcc
 zRefreshAutotextOfSelectedLines	\\\{#insert zRefreshAutotextOfSelectedLines\\\}	xhpcc
 zUncompressSlctd1LinePhrssTo2	\\\{#insert zUncompressSlctd1LinePhrssTo2\\\}	xhpcc
 mpfpl: zMarkAllPrprlyFrmtdPlainTxtPhraseLines	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content mpfpl:zMarkAllPrprlyFrmtdPlainTxtPhraseLines -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhpc

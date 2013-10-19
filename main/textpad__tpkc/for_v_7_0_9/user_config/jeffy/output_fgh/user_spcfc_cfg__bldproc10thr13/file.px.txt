@@ -1,6 +1,6 @@
 zTpkcFileCloseNbsKcCount	0	zTpkcFileCloseNbsKcCount
 zTpkcFileCloseAllNbsKcCount	1	zTpkcFileCloseAllNbsKcCount
-zTpkcFileCloseAllNbsKcEsc1	\\\{#insert zCpF12\\\}\\\{#sleep 25\\\}\\\{#insert zCpF9\\\}\\\{#sleep 250\\\}	zTpkcFileCloseAllNbsKcEsc1
+zTpkcFileCloseAllNbsKcEsc1	\\\{#CTRL \\\{#F12\\\}\\\}\\\{#sleep 25\\\}\\\{#insert zCpF9\\\}\\\{#sleep 250\\\}	zTpkcFileCloseAllNbsKcEsc1
 zTpkcFileExitNbsKcCount	0	zTpkcFileExitNbsKcCount
 zTpkcFileGoToNbsKcCount	1	zTpkcFileGoToNbsKcCount
 zTpkcFileGoToNbsKcEsc1	\\\{#insert zCASpOO\\\}\\\{#sleep 100\\\}	zTpkcFileGoToNbsKcEsc1
@@ -8,8 +8,7 @@ zTpkcFileManageNbsKcCount	0	zTpkcFileManageNbsKcCount
 zTpkcFileNewNbsKcCount	2	zTpkcFileNewNbsKcCount
 zTpkcFileNewNbsKcEsc1	\\\{#insert zCpNN\\\}\\\{#sleep 50\\\}	zTpkcFileNewNbsKcEsc1
 zTpkcFileNewNbsKcEsc2	\\\{#insert zCASpNN\\\}\\\{#sleep 50\\\}	zTpkcFileNewNbsKcEsc2
-zTpkcFileOpenNbsKcCount	1	zTpkcFileOpenNbsKcCount
-zTpkcFileOpenNbsKcEsc1	\\\{#insert zCpOO\\\}\\\{#sleep 1750\\\}	zTpkcFileOpenNbsKcEsc1
+zTpkcFileOpenNbsKcCount	0	zTpkcFileOpenNbsKcCount
 zTpkcFilePageSetupNbsKcCount	0	zTpkcFilePageSetupNbsKcCount
 zTpkcFilePrintNbsKcCount	1	zTpkcFilePrintNbsKcCount
 zTpkcFilePrintNbsKcEsc1	\\\{#insert zCpPP\\\}\\\{#sleep 50\\\}	zTpkcFilePrintNbsKcEsc1
@@ -24,11 +23,11 @@ zTpkcFileRevertNbsKcCount	0	zTpkcFileRevertNbsKcCount
 zTpkcFileSaveNbsKcCount	0	zTpkcFileSaveNbsKcCount
 zTpkcFileSaveAllNbsKcCount	2	zTpkcFileSaveAllNbsKcCount
 zTpkcFileSaveAllNbsKcEsc1	\\\{#insert zCSpSS\\\}\\\{#sleep 1000\\\}	zTpkcFileSaveAllNbsKcEsc1
-zTpkcFileSaveAllNbsKcEsc2	\\\{#insert zCpF12\\\}\\\{#sleep 25\\\}\\\{#insert zCpF12\\\}\\\{#sleep 1000\\\}	zTpkcFileSaveAllNbsKcEsc2
+zTpkcFileSaveAllNbsKcEsc2	\\\{#CTRL \\\{#F12\\\}\\\}\\\{#sleep 25\\\}\\\{#insert zCpF12\\\}\\\{#sleep 1000\\\}	zTpkcFileSaveAllNbsKcEsc2
 zTpkcFileSaveAndCloseNbsKcCount	1	zTpkcFileSaveAndCloseNbsKcCount
-zTpkcFileSaveAndCloseNbsKcEsc1	\\\{#insert zCASpF12\\\}\\\{#sleep 25\\\}\\\{#insert zCASpF9\\\}\\\{#sleep 100\\\}	zTpkcFileSaveAndCloseNbsKcEsc1
+zTpkcFileSaveAndCloseNbsKcEsc1	\\\{#CTRL \\\{#ALT \\\{#SHIFT \\\{#F12\\\}\\\}\\\}\\\}\\\{#sleep 25\\\}\\\{#insert zCASpF9\\\}\\\{#sleep 100\\\}	zTpkcFileSaveAndCloseNbsKcEsc1
 zTpkcFileSaveAsNbsKcCount	1	zTpkcFileSaveAsNbsKcCount
-zTpkcFileSaveAsNbsKcEsc1	\\\{#insert zSpF12\\\}\\\{#sleep 25\\\}\\\{#insert zSpF12\\\}\\\{#sleep 1750\\\}	zTpkcFileSaveAsNbsKcEsc1
+zTpkcFileSaveAsNbsKcEsc1	\\\{#SHIFT \\\{#F12\\\}\\\}\\\{#sleep 25\\\}\\\{#insert zSpF12\\\}\\\{#sleep 1750\\\}	zTpkcFileSaveAsNbsKcEsc1
 zTpkcFileSendNbsKcCount	0	zTpkcFileSendNbsKcCount
 zTpkcFileStatisticsNbsKcCount	1	zTpkcFileStatisticsNbsKcCount
 zTpkcFileStatisticsNbsKcEsc1	\\\{#insert zCpF1\\\}\\\{#sleep 5\\\}	zTpkcFileStatisticsNbsKcEsc1

@@ -1,11 +1,11 @@
-zTPFileCloseAll -- FileCloseAll (Fclsa)	{#insert zCpF12}{#sleep 25}{#insert zCpF9}{#sleep 250}	zTPFileCloseAll
+zTPFileCloseAll -- FileCloseAll (Fclsa)	{#CTRL {#F12}}{#sleep 25}{#insert zCpF9}{#sleep 250}	zTPFileCloseAll
 zTPFileOpenSelPath -- FileGoTo (Fgoto)	{#insert zCASpOO}{#sleep 100}	zTPFileOpenSelPath
 zTPFilePrint -- FilePrint (Fprnt)	{#insert zCpPP}{#sleep 50}	zTPFilePrint
 zTPFilePrintAll -- FilePrintAll (Fprnta)	{#insert zCASpPP}{#sleep 10}	zTPFilePrintAll
 zTPFilePrintPreview -- FilePrintPreview (Fprntprv)	{#insert zCSpPP}{#sleep 100}	zTPFilePrintPreview
 zTPFileSaveAll -- FileSaveAll (Fsval)	{#insert zCSpSS}{#sleep 1000}	zTPFileSaveAll
-zTPFileSaveAndClose -- FileSaveAndClose (Fsvcl)	{#insert zCASpF12}{#sleep 25}{#insert zCASpF9}{#sleep 100}	zTPFileSaveAndClose
-zTPFileSaveAs -- FileSaveAs (Fsvas)	{#insert zSpF12}{#sleep 25}{#insert zSpF12}{#sleep 1750}	zTPFileSaveAs
+zTPFileSaveAndClose -- FileSaveAndClose (Fsvcl)	{#CTRL {#ALT {#SHIFT {#F12}}}}{#sleep 25}{#insert zCASpF9}{#sleep 100}	zTPFileSaveAndClose
+zTPFileSaveAs -- FileSaveAs (Fsvas)	{#SHIFT {#F12}}{#sleep 25}{#insert zSpF12}{#sleep 1750}	zTPFileSaveAs
 zTPFileStatistics -- FileStatistics (Fstat)	{#insert zCpF1}{#sleep 5}	zTPFileStatistics
 zTPWorkspaceSaveAs -- WorkspaceSaveAs (Fwkssvas)	{#insert zASpOO}{#sleep 1750}	zTPWorkspaceSaveAs
 zzTpkcAllCmdsWAKcQbl_file	[FileClose][FileCloseAll][FileGoTo][FileManage][FileNew][FileOpen][FilePrint][FilePrintAll][FilePrintPreview][FileQuickOpen][FileSave][FileSaveAll][FileSaveAndClose][FileSaveAs][FileStatistics][WorkspaceSaveAs]	zzTpkcAllCmdsWAKcQbl_file

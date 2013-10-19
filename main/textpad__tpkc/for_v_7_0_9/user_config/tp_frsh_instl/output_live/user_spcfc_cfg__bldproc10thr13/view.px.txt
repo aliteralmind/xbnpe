@@ -19,10 +19,10 @@ zTpkcViewFindDialogBoxNbsKcCount	0	zTpkcViewFindDialogBoxNbsKcCount
 zTpkcViewFullPathsNbsKcCount	0	zTpkcViewFullPathsNbsKcCount
 zTpkcViewFullScreenNbsKcCount	0	zTpkcViewFullScreenNbsKcCount
 zTpkcViewHScrollbarNbsKcCount	1	zTpkcViewHScrollbarNbsKcCount
-zTpkcViewHScrollbarNbsKcEsc1	\\\{#insert zCpQQ\\\}\\\{#sleep 25\\\}\\\{#insert zHH\\\}\\\{#sleep 10\\\}	zTpkcViewHScrollbarNbsKcEsc1
+zTpkcViewHScrollbarNbsKcEsc1	\\\{#CTRL -chars q\\\}\\\{#sleep 25\\\}\\\{#insert zHH\\\}\\\{#sleep 10\\\}	zTpkcViewHScrollbarNbsKcEsc1
 zTpkcViewInBrowserNbsKcCount	0	zTpkcViewInBrowserNbsKcCount
 zTpkcViewLineNumbersNbsKcCount	1	zTpkcViewLineNumbersNbsKcCount
-zTpkcViewLineNumbersNbsKcEsc1	\\\{#insert zCpQQ\\\}\\\{#sleep 25\\\}\\\{#insert zLL\\\}\\\{#sleep 10\\\}	zTpkcViewLineNumbersNbsKcEsc1
+zTpkcViewLineNumbersNbsKcEsc1	\\\{#CTRL -chars q\\\}\\\{#sleep 25\\\}\\\{#insert zLL\\\}\\\{#sleep 10\\\}	zTpkcViewLineNumbersNbsKcEsc1
 zTpkcViewPropertiesNbsKcCount	0	zTpkcViewPropertiesNbsKcCount
 zTpkcViewReplaceDialogBoxNbsKcCount	0	zTpkcViewReplaceDialogBoxNbsKcCount
 zTpkcViewSearchResultsNbsKcCount	1	zTpkcViewSearchResultsNbsKcCount
@@ -32,6 +32,6 @@ zTpkcViewTabSelectorNbsKcCount	0	zTpkcViewTabSelectorNbsKcCount
 zTpkcViewToolOutputNbsKcCount	1	zTpkcViewToolOutputNbsKcCount
 zTpkcViewToolOutputNbsKcEsc1	\\\{#insert zCpF11\\\}\\\{#sleep 10\\\}	zTpkcViewToolOutputNbsKcEsc1
 zTpkcViewVisibleSpacesNbsKcCount	1	zTpkcViewVisibleSpacesNbsKcCount
-zTpkcViewVisibleSpacesNbsKcEsc1	\\\{#insert zCpQQ\\\}\\\{#sleep 25\\\}\\\{#insert zII\\\}\\\{#sleep 10\\\}	zTpkcViewVisibleSpacesNbsKcEsc1
+zTpkcViewVisibleSpacesNbsKcEsc1	\\\{#CTRL -chars q\\\}\\\{#sleep 25\\\}\\\{#insert zII\\\}\\\{#sleep 10\\\}	zTpkcViewVisibleSpacesNbsKcEsc1
 zTpkcViewVScrollbarNbsKcCount	1	zTpkcViewVScrollbarNbsKcCount
-zTpkcViewVScrollbarNbsKcEsc1	\\\{#insert zCpQQ\\\}\\\{#sleep 25\\\}\\\{#insert zVV\\\}\\\{#sleep 10\\\}	zTpkcViewVScrollbarNbsKcEsc1
+zTpkcViewVScrollbarNbsKcEsc1	\\\{#CTRL -chars q\\\}\\\{#sleep 25\\\}\\\{#insert zVV\\\}\\\{#sleep 10\\\}	zTpkcViewVScrollbarNbsKcEsc1

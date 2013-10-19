@@ -1,0 +1,29 @@
+z1PPFuncLinkDispFNm_M_drnFnmPrmsPap	{#insert zvDISPLAY_stFncObjNm}{#insert z1PPFuncLink_M_drnFnmPrmsDspPap}	z1PPFuncLinkDispFNm_M_drnFnmPrmsPap
+z1PPFuncLinkWPrek_M_drnFnmPrmsDspPapPrk	{#insert z1PPFuncLink_M_drnFnmPrmsDspPap}{#insert zPostLinkCreatePrekGoBackCIDrnH_M_prk}	z1PPFuncLinkWPrek_M_drnFnmPrmsDspPapPrk
+z1PPFuncLink_M_drnFnmPrmsDspPap	<A HREF={#insert zAscQQ}{#insert zzFuncObjLinkDirFile_M_drnFnm}#{#insert zvFOBJ_NAME}{#insert zvALL_PARAMS}{#insert zJavaPostAllParamsDelNmsGncrs4FQP}{#insert zAscQQ}>{#insert zvDISPLAY}</A>{#insert zzPostAParams_M_tmv}	z1PPFuncLink_M_drnFnmPrmsDspPap
+zPostParamsSetDel	{#insert zPostBracketSelCopy}{#SETPHRASE -description zvALL_PARAMS -content {#INSERTCLIPBOARD} -autotext zvALL_PARAMS -folder ctvv_folder}{#insert zDEL}	zPostParamsSetDel
+zSigInCBSetParamsFuncNm -*-	{#SETPHRASE -description zvFOBJ_NAME -content {#SUBSTR {#INSERTCLIPBOARD} -from 1 -count {#CALC {#insert zzCBPosOpenParen} - 1 -round 0 -thousands none}} -autotext zvFOBJ_NAME -folder ctvv_folder}{#SETPHRASE -description zvALL_PARAMS -content {#SUBSTR {#INSERTCLIPBOARD} -from {#insert zzCBPosOpenParen} -count {#CALC {#insert zCBLen} - {#insert zzCBPosOpenParen} + 1 -round 0 -thousands none}} -autotext zvALL_PARAMS -folder ctvv_folder}	zSigInCBSetParamsFuncNm
+zvALL_PARAMS_stCB -*-	{#SETPHRASE -description zvALL_PARAMS -content {#INSERTCLIPBOARD} -autotext zvALL_PARAMS -folder ctvv_folder}	zvALL_PARAMS_stCB
+zvANGUV_stA -*-	{#SETPHRASE -description zvANGUV -content a -autotext zvANGUV -folder ctvv_folder}	zvANGUV_stA
+zvHIDRUN_stU -*-	{#SETPHRASE -description zvHIDRUN -content u -autotext zvHIDRUN -folder ctvv_folder}	zvHIDRUN_stU
+zvPAP_TMVY_stL1c -*-	{#insert zCutL1c}{#SETPHRASE -description zvPAP_TMVY -content {#INSERTCLIPBOARD} -autotext zvPAP_TMVY -folder ctvv_folder}	zvPAP_TMVY_stL1c
+zvPAP_TMVY_stPrompt -*-	{#SETPHRASE -description zvPAP_TMVY -content {#INPUT -head Post-</A> params pre~opt? (t, m, v, y--see kglpapsyn) -single} -autotext zvPAP_TMVY -folder ctvv_folder}	zvPAP_TMVY_stPrompt
+zzCBPosOpenParen -*-	{#POS {#INSERTCLIPBOARD} -substr (}	zzCBPosOpenParen
+zzErrDlgBadTMVOpt_M_tmv	{#MSGBOX -head ERROR -text ERROR ~~ Unknown post-</A> pre-opt for kg[b,l]... (zvPAP_TMVY='{#insert zvPAP_TMVY}'). Must be 't', 'm', 'v', or 'y'. See kgltmvsyn.{#insert zCancelProcNowPostTxt}}	zzErrDlgBadTMVOpt_M_tmv
+zzErrDlgNonCodedPapY	{#MSGBOX -head ERROR -text ERROR ~~ The about-to~be~created function/constructor link is non~CODE~d. The 'y' post~</A> param pre~opt~char (zvPAP_TMVY='{#insert zvPAP_TMVY}') is incompatible with it (see lybadinfo).{#insert zCancelProcNowPostTxt}}	zzErrDlgNonCodedPapY
+zzKulOptSynTxt	[l]=sig up, [z]=down, [l]=non~CODE~d (gnrcs always escaped when CODE~d!), [[2~3,n]]=2nd,3rd,prompt~# sig	zzKulOptSynTxt
+zzPostAParamsDsplyAbrvs	{#insert zvALL_PARAMS}{#insert zJavaPostAllParamsDelNmsGncrs4TV}	zzPostAParamsDsplyAbrvs
+zzPostAParamsNames	{#insert zvALL_PARAMS}{#insert zJavaPostAllParamsDelTypes}	zzPostAParamsNames
+zzPostAParams_M_tmv -- Needs zvPAP_TMVY	{#insert {#COND -if {#insert zvPAP_TMVY} = t -then z1slp -else {#COND -if {#insert zvPAP_TMVY} = m -then zzPostAParamsNames -else {#COND -if {#insert zvPAP_TMVY} = v -then zzPostAParamsDsplyAbrvs -else {#COND -if {#insert zvPAP_TMVY} = y -then zYmark -else zzErrDlgBadTMVOpt_M_tmv}}}}}	zzPostAParams_M_tmv
+zzPreOptsMustBeTxtPap	't'=nothing, 'm'=names, 'v'=type~abbreviations, 'y'=nothing (y~mark)	zzPreOptsMustBeTxtPap
+zzSetDelDrnPapToL1cX2	{#insert zvHIDRUN_stL1c}{#insert zvPAP_TMVY_stL1c}	zzSetDelDrnPapToL1cX2
+zzSetPapToL1cCIY4NonCdd	{#insert zvPAP_TMVY_stL1c}{#insert {#COND -if {#insert zvPAP_TMVY} != y -then z1slp -else zzErrDlgNonCodedPapY}}	zzSetPapToL1cCIY4NonCdd
+zzTestFuncParams	(String s_s, AClass<? extends Another> ac_hello)	zzTestFuncParams
+zzzEtrTstPap2	{#insert zENTER}{#insert zzzTstPap2}	zzzEtrTstPap2
+zzzEtrTstPap2Drn2	{#insert zEnter}{#insert zzzTstPap2Drn2}	zzzEtrTstPap2Drn2
+zzzEtrTstPap2ForNonCdd	{#insert zENTER}{#insert zzzTstPap2ForNonCdd}	zzzEtrTstPap2ForNonCdd
+zzzSetPapPap2ToPrompt	{#insert zvPAP_TMVY_stPrompt}{#SETPHRASE -description zvPAP_TMVY2 -content {#insert zvPAP_TMVY} -autotext zvPAP_TMVY2 -folder ctvv_folder}	zzzSetPapPap2ToPrompt
+zzzTstPap2	{#insert zvPAP_TMVY2}{#insert zTSlp}	zzzTstPap2
+zzzTstPap2Drn2	{#insert zzzTstPap2}{#insert zzzTstDrn2}	zzzTstPap2Drn2
+zzzTstPap2ForNonCdd	{#COND -if {#insert zvPAP_TMVY2} = y -then t -else {#insert zvPAP_TMVY2}}{#insert zTSlp}	zzzTstPap2ForNonCdd
+zzzTstYLToYTWarningTxt	NOTE: If the post-</A> parameter pre-opt-char (see klhprksyn) is 'y', it is changed to 't' for all non-CODE-d links (see lybadinfo).{#insert zENTER2}	zzzTstYLToYTWarningTxt

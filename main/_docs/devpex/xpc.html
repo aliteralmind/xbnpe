@@ -38,6 +38,8 @@
 
 <P><I>(See: <A HREF="../basics/xkp.html#rawpexkc">&quot;Raw&quot; PhraseExpress key-presses</A>)</I></P>
 
+<P><I>This list is not complete. Using any of these phrase-creators will present you with a complete syntax-summary.</I></P>
+
 <P><UL>
 	<LI><B><CODE>krk</CODE>:</B> A raw key-press, unmodified.
 	<BR> &nbsp; &nbsp; <CODE>{#<U><I><B><SPAN CLASS="greyHL">[cursor]</SPAN></B></I></U>}</CODE>
@@ -55,8 +57,6 @@
 	<BR>This is for when the to-be-modified key is in the clipboard. Follow this by pasting it.</LI>
 </UL></P>
 
-<P><I>This list is not complete. Using any of these phrase-creators will present you with a complete syntax-summary.</I></P>
-
 <PRE>
 
 <HR/>
@@ -66,26 +66,26 @@
 
 <P>The &quot;<CODE>insert</CODE>&quot; tag is the most basic <A HREF="#func">PhraseExpress function</A>.</P>
 
+<P><I>This list is not complete. Using any of these phrase-creators will present you with a complete syntax-summary.</I></P>
+
 <P><UL>
 	<LI><B><CODE>ins</CODE>:</B> An insert tag.
 	<BR> &nbsp; &nbsp; <CODE>{#insert <U><I><B><SPAN CLASS="greyHL">[cursor]</SPAN></B></I></U>}</CODE></LI>
-	<LI><B><CODE>insb</CODE>:</B>
+	<LI><B><CODE>inb</CODE>:</B>
 	<BR> &nbsp; &nbsp; <CODE>{#insert <U><I><B>[paste]</B></I></U>}<U><I><B><SPAN CLASS="greyHL">[cursor]</SPAN></B></I></U></CODE></LI>
-	<LI><B><CODE>inwl</CODE>:</B> Call with the cursor immediately following a phrase-name
+	<LI><B><CODE>inl</CODE>:</B> Call with the cursor immediately following a phrase-name
 	<BR> &nbsp; &nbsp; <CODE>{#insert <U><I><B>[paste]</B></I></U>}<U><I><B><SPAN CLASS="greyHL">[cursor]</SPAN></B></I></U></CODE></LI>
-	<LI><B><CODE>inwr</CODE>:</B> Call with the cursor immediately preceding a phrase-name
+	<LI><B><CODE>inr</CODE>:</B> Call with the cursor immediately preceding a phrase-name
 	<BR> &nbsp; &nbsp; <CODE>{#insert <U><I><B>[paste]</B></I></U>}<U><I><B><SPAN CLASS="greyHL">[cursor]</SPAN></B></I></U></CODE></LI>
-	<LI><B><CODE>insx</CODE>:</B>
+	<LI><B><CODE>inx</CODE>:</B>
 	<BR> &nbsp; &nbsp; <CODE>{#insert XXX}<U><I><B><SPAN CLASS="greyHL">[cursor]</SPAN></B></I></U></CODE></LI>
 	<LI><B><CODE>insqs</CODE>:</B> For creating <A HREF="../devpex/debugging.html">diagnostic</A> text for <A HREF="../generic/pex_built_in_functions.html#msgbox"><CODE>MSGBOX</CODE></A>-es or <A HREF="../generic/pex_built_in_functions.html#balloon"><CODE>BALLOON</CODE></A>-s.
 	<BR> &nbsp; &nbsp; <CODE><U><I><B>[paste]</B></I></U>='{#insert <U><I><B>[paste]</B></I></U>}'<U><I><B><SPAN CLASS="greyHL">[cursor]</SPAN></B></I></U></CODE></LI>
-	<LI><B><CODE>inns</CODE>:</B> <I>Note that only the outer insert is <A HREF="#escaped">escaped</A></I>
+	<LI><B><CODE>inn</CODE>:</B> <I>Note that only the outer insert is <A HREF="#escaped">escaped</A></I>
 	<BR> &nbsp; &nbsp; <CODE>{#insert {#insert <U><I><B><SPAN CLASS="greyHL">[cursor]</SPAN></B></I></U>}}</CODE></LI>
-	<LI><B><CODE>innsb</CODE>:</B>
+	<LI><B><CODE>innb</CODE>:</B>
 	<BR> &nbsp; &nbsp; <CODE>{#insert {#insert <U><I><B>[paste]</B></I></U>}}<U><I><B><SPAN CLASS="greyHL">[cursor]</SPAN></B></I></U></CODE></LI>
 </UL></P>
-
-<P><I>This list is not complete. Using any of these phrase-creators will present you with a complete syntax-summary.</I></P>
 
 
 <H3><B><CODE>inlq</CODE>:</B></H3>
@@ -111,6 +111,8 @@ zPhraseName7</PRE>
 </PRE>
 <a name="func"/><H3><CODE>[<A HREF="#top">top</A>]</CODE> &nbsp; XBNPE-XPC: Examples: Raw PhraseExpress functions</H3>
 
+<P><I>This list is not complete. Using any of these phrase-creators will present you with a complete syntax-summary.</I></P>
+
 <P><UL>
 	<LI><B><CODE>ins</CODE>: An <A HREF="#ins">insert tag</A>.</B>
 	<BR> &nbsp; &nbsp; <CODE>{#insert <U><I><B><SPAN CLASS="greyHL">[cursor]</SPAN></B></I></U>}</CODE></LI>
@@ -129,8 +131,6 @@ zPhraseName7</PRE>
 	<LI><B><CODE>rpl</CODE>:</B>
 	<BR> &nbsp; &nbsp; <CODE>{#REPLACE XXX -oldtext YYY -newtext YYY}<U><I><B><SPAN CLASS="greyHL">[cursor]</SPAN></B></I></U></CODE></LI>
 </UL></P>
-
-<P><I>This list is not complete. Using any of these phrase-creators will present you with a complete syntax-summary.</I></P>
 
 
 <P>A listing of all &quot;main&quot; XPC phrase-creators can be obtained via <CODE>'<A HREF="../devpex/xbnpe_ddmenus.html#xh">xh</A>pcp'</CODE>. These &quot;main&quot; phrase-creators, when used, pop-up a &quot;<CODE>BALLOON</CODE>&quot; containing information and a complete <A HREF="../generic/phrase_set_syntax.html">syntax-summary</A> on all related phrases.</P>

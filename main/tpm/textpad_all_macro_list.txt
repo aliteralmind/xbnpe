@@ -1,0 +1,65 @@
+javaDelSlctdPrmNms4TV
+\s*\b(\w+)(?:|(?:<[?\w ]+>)|(?:<[^<]*<[?\w ]+>[^>]*>)|(?:<[^<]*<[^<]*<[?\w ]+>[^>]*>[^>]*>))\s+\w+\b
+_4TV_$1
+
+COMMANDS:               KEYS:
+
+charDeleteL5            Shift+Alt+W
+charDeleteR5            Shift+Alt+V
+charMoveL5              Alt+T
+charMoveR5              Alt+N
+charSelectL5            Alt+W
+charSelectR5            Alt+V
+h_findNextDoubleQuote   Alt+]
+h_findNextOpenParen     Ctrl+]
+h_findPrevCloseParen    Ctrl+[
+h_findPrevDoubleQuote   Alt+[
+h_findPrevSpace         Ctrl+Shift+Alt+Space
+h_insertDoubleQuote     Ctrl+/
+h_insertParens          Ctrl+B
+h_selThrNextCloseParen  Ctrl+Shift+]
+h_squareBrkctsInsert    Ctrl+Y
+javaDelSlctdPrmNms4FQP  Ctrl+Shift+Alt+J, Q
+javaDelSlctdPrmNms4TV   Ctrl+Shift+Alt+J, V
+javaDelSlctdPrmNmsOnly  Ctrl+Shift+Alt+J, E
+javaDelSlctdParamTypes  Ctrl+Shift+Alt+J, Y
+javaFindNextFuncSig     Ctrl+Alt+Down
+javaFindNxtParamTypNm   Ctrl+Alt+Right
+javaFindPrevFuncSig     Ctrl+Alt+Up
+javaFindPrevParamTypNm  Ctrl+Alt+Left
+javaSelectSuperClassNm  Ctrl+Shift+Alt+J, R
+javaSelectThisClassNm   Ctrl+Shift+Alt+J, T
+lineMoveDown10          Ctrl+Shift+R
+lineMoveUp10            Ctrl+Shift+C
+lineScrollDown20        Alt+Down
+lineScrollDown5         Ctrl+Down
+lineScrollUp20          Alt+Up
+lineScrollUp5           Ctrl+Up
+MacroMultiplay
+MacroPause
+MacroPlay
+MacroRecord             Ctrl+Shift+Alt+F1
+MacroSave               Ctrl+Alt+F1
+markXXXFindDown         Ctrl+End
+markXXXFindUp           Ctrl+Home
+markYYYFindDown         Ctrl+Pgup
+markYYYFindUp           Ctrl+Insert
+paraGoToEnd             Alt+End
+paraGoToStart           Alt+Home
+tagFindPrevHREFThrQQ    Ctrl+Shift+Alt+J, H
+tagInsertEmptySingle    Ctrl+U
+tagMoveL1               Ctrl+C
+tagMoveR1               Ctrl+R
+tagMoveR2               Alt+R
+tagPrevWordToDblWNL     Ctrl+Shift+G
+tagPrevWordToDouble     Ctrl+Alt+G
+tagPrevWordToSingle     Ctrl+E
+tagSelectL1             Ctrl+8
+tagSelectR1             Ctrl+9
+wordAllCapPrev          Ctrl+O                  Ctrl+Alt+C
+wordDeleteL5            Alt+Backspace           Shift+Alt+M
+wordDeleteR5            Shift+Alt+Z             Alt+Delete
+wordMoveL5              Alt+H                   Alt+Left
+wordMoveR5              Alt+S                   Alt+Right
+wordSelectL5            Alt+M                   Shift+Alt+Left
+wordSelectR5            Alt+Z                   Shift+Alt+Right

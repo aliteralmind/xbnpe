@@ -57,8 +57,7 @@ Phrase-creators: XBN-PhraseExpress -- xh   .   zXbnpeCmdPopupRoot
 				zTPMoveR1w [BS]	\\\{#insert zTPMoveR1w\\\}	xhcwm
 				zTPWordLeftEnd	\\\{#insert zTPWordLeftEnd\\\}	xhcwm
 (*       Select & copy -- xhcws   .   xhcw*)
-				Current word -- xhcwsr	.	xhcws
-					zTPSelectWord	\\\{#insert zTPSelectWord\\\}	xhcwsr
+				zTPSelectWord	\\\{#insert zTPSelectWord\\\}	xhcws
 (*          Select -- xhcwss   .   xhcws*)
 					zTPSelectL1w [BS]	\\\{#insert zTPSelectL1w\\\}	xhcwss
 					zTPSelectR1w [BS]	\\\{#insert zTPSelectR1w\\\}	xhcwss
@@ -81,7 +80,6 @@ Phrase-creators: XBN-PhraseExpress -- xh   .   zXbnpeCmdPopupRoot
 (*       Move -- xhclm   .   xhcl*)
 				zTPLineDown	\\\{#insert zTPLineDown\\\}	xhclm
 				zTPLineEnd	\\\{#insert zTPLineEnd\\\}	xhclm
-				zTPLineLeft	\\\{#insert zTPLineLeft\\\}	xhclm
 				zTPLineUp	\\\{#insert zTPLineUp\\\}	xhclm
 (*       Select -- xhclc   .   xhcl*)
 				zTPLineDownExtend	\\\{#insert zTPLineDownExtend\\\}	xhclc
@@ -122,6 +120,7 @@ Phrase-creators: XBN-PhraseExpress -- xh   .   zXbnpeCmdPopupRoot
 						zTPAlignRight	\\\{#insert zTPAlignRight\\\}	xhcssta
 (*          Block selection mode -- xhcssk   .   xhcss*)
 				zTPReformatSelection	\\\{#insert zTPReformatSelection\\\}	xhcss
+				zTPSelSwapEnds	\\\{#insert zTPSelSwapEnds\\\}	xhcss
 (*    6. Document, page -- xhcd   .   xhc*)
 (*       Document-windows -- xhcdo   .   xhcd*)
 (*          Go-to specific -- xhcdog   .   xhcdo*)
@@ -177,9 +176,6 @@ Phrase-creators: XBN-PhraseExpress -- xh   .   zXbnpeCmdPopupRoot
 					zTPToggleInsertMode	\\\{#insert zTPToggleInsertMode\\\}	xhcftt
 					zTPToggleReadOnly	\\\{#insert zTPToggleReadOnly\\\}	xhcftt
 			zTPCopyFileName	\\\{#insert zTPCopyFileName\\\}	xhcf
-(*    8. Other -- xhct   .   xhc*)
-			zTPViewEnd	\\\{#insert zTPViewEnd\\\}	xhct
-			zTPViewStart	\\\{#insert zTPViewStart\\\}	xhct
 (* Phrase-creators: Other -- xho   .   xh*)
 		View -- xhov	.	xho
 			zTPLineScrollDown	\\\{#insert zTPLineScrollDown\\\}	xhov

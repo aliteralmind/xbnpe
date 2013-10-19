@@ -59,7 +59,7 @@ zPrintNYs -- Prints one-or-more 'y's (user prompt)   {#LOOP y -count {#INPUT -he
 </PRE>
 <a name="pformat"/><H3>[<A HREF="#top">top</A>] &nbsp; Plain-text phrase format</CODE></H3>
 
-<P>Here's a plain-text phrase (in <A HREF="../devpex/c2pl.html">compressed</A> format):</P>
+<P>Here's a plain-text phrase (in <A HREF="../devpex/pc2.html">compressed</A> format):</P>
 
 <PRE STYLE="background-color:#E1E1E1;">zPrintAnX -- Prints a lowercase 'x'   x   zPrintAnX</PRE>
 
@@ -82,13 +82,13 @@ zPrintNYs -- Prints one-or-more 'y's (user prompt)   {#LOOP y -count {#INPUT -he
 
 <P>Most phrases in XBN-PhraseExpress have this autotext-redundancy.</P>
 
-<P>In addition, phrases with this redundant-autotext can take advantage of the <A HREF="../devpex/c2pl.html">&quot;<CODE>c2pl</CODE>&quot; utilities</A>. When composing phrases, I write them in a two-line format: the first line being the description (with the first word autotext), the second the phrase-body:</P>
+<P>In addition, phrases with this redundant-autotext can take advantage of the <A HREF="../devpex/pc2.html">&quot;<CODE>pc2</CODE>&quot; utilities</A>. When composing phrases, I write them in a two-line format: the first line being the description (with the first word autotext), the second the phrase-body:</P>
 
 
 <PRE STYLE="background-color:#E1E1E1;">zPrintAnX -- Prints a lowercase 'x'
 x</PRE>
 
-<P>Putting the cursor in the description line, and then running &quot;<CODE>c2pl</CODE>&quot;, &quot;compresses&quot; this two-line phrase into a one-line--and importable--format:</P>
+<P>Putting the cursor in the description line, and then running &quot;<CODE>pc2</CODE>&quot;, &quot;compresses&quot; this two-line phrase into a one-line--and importable--format:</P>
 
 <PRE STYLE="background-color:#E1E1E1;">zPrintAnX -- Prints a lowercase 'x'   x   zPrintAnX</PRE>
 
@@ -140,7 +140,7 @@ x</PRE>
 	<LI>Double quotes <I>anywhere</I> in the phrase-file, including in comments, will make import fail. Use
 	<BR> &nbsp; &nbsp; <CODE>{#insert zAscQQ}</CODE>
 	<BR>(<CODE>{#asc 34}</CODE>) (or simply a single-quote) instead.</LI>
-	<LI>Some lines were left <A HREF="../devpex/c2pl.html">uncompressed</A> (see the bottom of the <A HREF="#pformat">phrase-format</A> section).</LI>
+	<LI>Some lines were left <A HREF="../devpex/pc2.html">uncompressed</A> (see the bottom of the <A HREF="#pformat">phrase-format</A> section).</LI>
 	<LI>PhraseExpress just went <A HREF="../generic/troubleshooting.html">kablooee</A>, and needs to be restarted. In my experience, this happens a few times a week in heavy use.</LI>
 </UL></P>
 

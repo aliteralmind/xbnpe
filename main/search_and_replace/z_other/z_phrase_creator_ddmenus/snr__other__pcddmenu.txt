@@ -37,8 +37,10 @@ Phrase-creators: XBN-PhraseExpress -- Call 'xh'   .   zXbnpeCmdPopupRoot
 			Select/sel-copy -- xhses	.	xhse
 				zPostBracketSelCopy	\\\{#insert zPostBracketSelCopy\\\}	xhses
 				zPostBracketSelect	\\\{#insert zPostBracketSelect\\\}	xhses
+				zPostBracketSelContentsOnly	\\\{#insert zPostBracketSelContentsOnly\\\}	xhses
 				zPreBracketSelCopy	\\\{#insert zPreBracketSelCopy\\\}	xhses
 				zPreBracketSelect	\\\{#insert zPreBracketSelect\\\}	xhses
+				zPreBracketSelContentsOnly	\\\{#insert zPreBracketSelContentsOnly\\\}	xhses
 			zMatchBracket2	\\\{#insert zMatchBracket2\\\}	xhse
 			zMatchBracketExtend2	\\\{#insert zMatchBracketExtend2\\\}	xhse
 (*    SNR: Bookmarks -- xhsm   .   xhs*)

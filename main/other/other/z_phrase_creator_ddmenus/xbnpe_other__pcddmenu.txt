@@ -16,24 +16,43 @@ Phrase-creators: XBN-PhraseExpress -- Call 'xh'   .   zXbnpeCmdPopupRoot
 (*    Other -- xhoo   .   xho  *)
 			Actions: Equal/not-equal to: qtn, nqn	.	xhoa
 			Actions: Question-colon block (... ? ... : ...): qcb[1,2,3]	.	xhoa
-		Block-start comments -- xhob	.	xho
-			Action: zzfvbbsctest	zzfvbbsctest	xhob
-			zREonFindVerifyBypassNextBlockStartCmt_M_rqsxReon	\\\{#insert zREonFindVerifyBypassNextBlockStartCmt_M_rqsxReon\\\}	xhob
-			zzCBStartSubstrSameLenAs_rqsx	\\\{#insert zzCBStartSubstrSameLenAs_rqsx\\\}	xhob
-			zzREFindEOBlockStartCmtGTNextLine	\\\{#insert zzREFindEOBlockStartCmtGTNextLine\\\}	xhob
-			zzREFindNextNonWSInCol0Left	\\\{#insert zzREFindNextNonWSInCol0Left\\\}	xhob
-			zzREonFindVerifyBypassEmptyOkBSC_M_rqsxReon	\\\{#insert zzREonFindVerifyBypassEmptyOkBSC_M_rqsxReon\\\}	xhob
-		Inline configuration-variables -- xhov	.	xho
-			Action: zzinlinecvtest	zzinlinecvtest	xhov
-			zSetCBToNamedInlineCVWRqdValGTNxtLn_M_vnm	\\\{#insert zSetCBToNamedInlineCVWRqdValGTNxtLn_M_vnm\\\}	xhov
-			zSetCBToNamedInlineCfgValWESDfltGTNxtLn_M_vnmDflt	\\\{#insert zSetCBToNamedInlineCfgValWESDfltGTNxtLn_M_vnmDflt\\\}	xhov
-			zSetCBToNamedOptInlineCfgValESDfltIsESGTNxtLn_M_vnmDflt	\\\{#insert zSetCBToNamedOptInlineCfgValESDfltIsESGTNxtLn_M_vnmDflt\\\}	xhov
-			zSetCB_TO_dflt	\\\{#insert zSetCB_TO_dflt\\\}	xhov
-			zvES_VAL_DEFAULT_stES	\\\{#insert zvES_VAL_DEFAULT_stES\\\}	xhov
-			zvOUT_DIR_stRqdInlineCV	\\\{#insert zvOUT_DIR_stRqdInlineCV\\\}	xhov
-			zvOUTPUT_FILE_NAME_stOptInlineCVOrThisFileNm	\\\{#insert zvOUTPUT_FILE_NAME_stOptInlineCVOrThisFileNm\\\}	xhov
-			zzValidateInlineCVSetTrimValIntoCB_M_vnm	\\\{#insert zzValidateInlineCVSetTrimValIntoCB_M_vnm\\\}	xhov
-(*		Math and sleep -- xhom*)
-			Sleep -- xhoms	.	xhom
-				zSlpXMillsForEveryYWBal_xy	\\\{#insert zSlpXMillsForEveryYWBal_xy\\\}	xhoms
-				zSlpXMillsForEveryY_xy	\\\{#insert zSlpXMillsForEveryY_xy\\\}	xhoms
+			Block-start comments -- xhob	.	xho
+				Action: zzfvbbsctest	zzfvbbsctest	xhob
+				zREonFindVerifyBypassNextBlockStartCmt_M_rqsxReon	\\\{#insert zREonFindVerifyBypassNextBlockStartCmt_M_rqsxReon\\\}	xhob
+				zzCBStartSubstrSameLenAs_rqsx	\\\{#insert zzCBStartSubstrSameLenAs_rqsx\\\}	xhob
+				zzREFindEOBlockStartCmtGTNextLine	\\\{#insert zzREFindEOBlockStartCmtGTNextLine\\\}	xhob
+				zzREFindNextNonWSInCol0Left	\\\{#insert zzREFindNextNonWSInCol0Left\\\}	xhob
+				zzREonFindVerifyBypassEmptyOkBSC_M_rqsxReon	\\\{#insert zzREonFindVerifyBypassEmptyOkBSC_M_rqsxReon\\\}	xhob
+			Inline configuration-variables -- xhov	.	xho
+				Action: zzinlinecvtest	zzinlinecvtest	xhov
+				zSetCBToNamedInlineCVWRqdValGTNxtLn_M_vnm	\\\{#insert zSetCBToNamedInlineCVWRqdValGTNxtLn_M_vnm\\\}	xhov
+				zSetCBToNamedInlineCfgValWESDfltGTNxtLn_M_vnmDflt	\\\{#insert zSetCBToNamedInlineCfgValWESDfltGTNxtLn_M_vnmDflt\\\}	xhov
+				zSetCBToNamedOptInlineCfgValESDfltIsESGTNxtLn_M_vnmDflt	\\\{#insert zSetCBToNamedOptInlineCfgValESDfltIsESGTNxtLn_M_vnmDflt\\\}	xhov
+				zSetCB_TO_dflt	\\\{#insert zSetCB_TO_dflt\\\}	xhov
+				zvES_VAL_DEFAULT_stES	\\\{#insert zvES_VAL_DEFAULT_stES\\\}	xhov
+				zvOUT_DIR_stRqdInlineCV	\\\{#insert zvOUT_DIR_stRqdInlineCV\\\}	xhov
+				zvOUTPUT_FILE_NAME_stOptInlineCVOrThisFileNm	\\\{#insert zvOUTPUT_FILE_NAME_stOptInlineCVOrThisFileNm\\\}	xhov
+				zzValidateInlineCVSetTrimValIntoCB_M_vnm	\\\{#insert zzValidateInlineCVSetTrimValIntoCB_M_vnm\\\}	xhov
+(*	  Spot-marks -- xhox   .   xho*)
+			z[X,Y]Down[2] -- xhoxd	\\\{#insert z{#insert zDlgXorY}Down\\\}	xhox
+				z[X,Y]DownDelete	\\\{#insert z{#insert zDlgXorY}DownDelete\\\}	xhoxd
+				z[X,Y]DownPaste	\\\{#insert z{#insert zDlgXorY}DownPaste\\\}	xhoxd
+				z[X,Y]DownPastePreBrcktGTP	\\\{#insert z{#insert zDlgXorY}DownPastePreBrcktGTP\\\}	xhoxd
+				zSlk[X,Y]Down	\\\{#insert zSlk{#insert zDlgXorY}Down\\\}	xhoxd
+				zzSlk[X,Y]DownEnter	\\\{#insert zzSlk{#insert zDlgXorY}DownEnter\\\}	xhoxd
+			z[X,Y]Up[2] -- xhoxu	\\\{#insert z{#insert zDlgXorY}Up\\\}	xhox
+				z[X,Y]UpDelete	\\\{#insert z{#insert zDlgXorY}UpDelete\\\}	xhoxu
+				z[X,Y]UpPaste	\\\{#insert z{#insert zDlgXorY}UpPaste\\\}	xhoxu
+				z[X,Y]UpPastePreBrcktGTP	\\\{#insert z{#insert zDlgXorY}UpPastePreBrcktGTP\\\}	xhoxu
+				zSlk[X,Y]Up	\\\{#insert zSlk{#insert zDlgXorY}Up\\\}	xhoxu
+				zzSlk[X,Y]UpEnter	\\\{#insert zzSlk{#insert zDlgXorY}UpEnter\\\}	xhoxu
+			z[X,Y]mark -- xhoxk	\\\{#insert z{#insert zDlgXorY}mark\\\}	xhox
+				z[X,Y]markCoded	\\\{#insert z{#insert zDlgXorY}markCoded\\\}	xhoxk
+				z[X,Y]markPostGTP	\\\{#insert z{#insert zDlgXorY}markPostGTP\\\}	xhoxk
+				z[X,Y]markThenGTP	\\\{#insert z{#insert zDlgXorY}markThenGTP\\\}	xhoxk
+				z[X,Y]ThenSelect	\\\{#insert z{#insert zDlgXorY}ThenSelect\\\}	xhoxk
+(*			Math and sleep -- xhom*)
+				Sleep -- xhoms	.	xhom
+					zSlpXMillsForEveryYWBal_xy	\\\{#insert zSlpXMillsForEveryYWBal_xy\\\}	xhoms
+					zSlpXMillsForEveryY_xy	\\\{#insert zSlpXMillsForEveryY_xy\\\}	xhoms
+

@@ -5,10 +5,10 @@ zTPActivateSelector -- ActivateSelector (Vas)	{#insert zApONE}{#sleep 10}	zTPAct
 zTPActivateToolOutput -- ActivateToolOutput (Vato)	{#insert zApFIVE}{#sleep 10}	zTPActivateToolOutput
 zTPViewClipLib -- ViewClipLib (Vcl)	{#insert zCpF3}{#sleep 10}	zTPViewClipLib
 zTPViewDocSelector -- ViewDocSelector (Vds)	{#insert zF11}{#sleep 10}	zTPViewDocSelector
-zTPViewHScrollbar -- ViewHScrollbar (Vhsb)	{#insert zCpQQ}{#sleep 25}{#insert zHH}{#sleep 10}	zTPViewHScrollbar
-zTPViewLineNumbers -- ViewLineNumbers (Vlnm)	{#insert zCpQQ}{#sleep 25}{#insert zLL}{#sleep 10}	zTPViewLineNumbers
+zTPViewHScrollbar -- ViewHScrollbar (Vhsb)	{#CTRL -chars q}{#sleep 25}{#insert zHH}{#sleep 10}	zTPViewHScrollbar
+zTPViewLineNumbers -- ViewLineNumbers (Vlnm)	{#CTRL -chars q}{#sleep 25}{#insert zLL}{#sleep 10}	zTPViewLineNumbers
 zTPViewSearchResults -- ViewSearchResults (Vsrchr)	{#insert zSpF11}{#sleep 10}	zTPViewSearchResults
 zTPViewToolOutput -- ViewToolOutput (Vtlout)	{#insert zCpF11}{#sleep 10}	zTPViewToolOutput
-zTPVisibleSpaces -- ViewVisibleSpaces (Vvspc)	{#insert zCpQQ}{#sleep 25}{#insert zII}{#sleep 10}	zTPVisibleSpaces
-zTPViewVScrollbar -- ViewVScrollbar (Vvsb)	{#insert zCpQQ}{#sleep 25}{#insert zVV}{#sleep 10}	zTPViewVScrollbar
+zTPVisibleSpaces -- ViewVisibleSpaces (Vvspc)	{#CTRL -chars q}{#sleep 25}{#insert zII}{#sleep 10}	zTPVisibleSpaces
+zTPViewVScrollbar -- ViewVScrollbar (Vvsb)	{#CTRL -chars q}{#sleep 25}{#insert zVV}{#sleep 10}	zTPViewVScrollbar
 zzTpkcAllCmdsWAKcQbl_view	[ActivateClipLib][ActivateExplorer][ActivateSearchResults][ActivateSelector][ActivateToolOutput][ViewClipLib][ViewDocSelector][ViewHScrollbar][ViewLineNumbers][ViewSearchResults][ViewToolOutput][ViewVisibleSpaces][ViewVScrollbar]	zzTpkcAllCmdsWAKcQbl_view

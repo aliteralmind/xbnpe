@@ -1,0 +1,25 @@
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+bal -- {#BALLOON -title ... -text ...}	{#insert zvESC_LVL_CNT_st0}{#insert zBalRAW_M_elc}{#insert balsyn}	bal
+bali -- {#BALLOON -title [cursor] -text ...}	{#insert zvESC_LVL_CNT_st0}{#insert zBaliRAW_M_elc}{#insert balsyn}	bali
+balip -- bal, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zBaliRAW_M_elc}{#insert balsyn}	balip
+baliq -- bal, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zBaliRAW_M_elc}{#insert balsyn}	baliq
+balp -- bal, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zBalRAW_M_elc}{#insert balsyn}	balp
+balq -- bal, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zBalRAW_M_elc}{#insert balsyn}	balq
+balw -- {#BALLOON -title Please wait... -text [cursor]}	{#insert zvESC_LVL_CNT_st0}{#insert zBalwRAW_M_elc}{#insert balsyn}	balw
+balwp -- bal, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zBalwRAW_M_elc}{#insert balsyn}	balwp
+balwq -- bal, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zBalwRAW_M_elc}{#insert balsyn}	balwq
+balx -- {#BALLOON -title ... -text [cursor]}	{#insert zvESC_LVL_CNT_st0}{#insert zBalxRAW_M_elc}{#insert balsyn}	balx
+balxp -- bal, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zBalxRAW_M_elc}{#insert balsyn}	balxp
+balxq -- bal, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zBalxRAW_M_elc}{#insert balsyn}	balxq
+balxb -- {#BALLOON -title [cursor] -text [paste]}	{#insert zvESC_LVL_CNT_st0}{#insert zBalxbRAW_M_elc}{#insert balsyn}	balxb
+balxbp -- bal, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zBalxbRAW_M_elc}{#insert balsyn}	balxbp
+balxbq -- bal, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zBalxbRAW_M_elc}{#insert balsyn}	balxbq
+zBalRAW_M_elc -- Needs zvESC_LVL_CNT (assumed good value!)	{#insert zOY_M_elc}#BALLOON -title {#insert zYmark} -text {#insert zXmark}{#insert zCY_M_elc}	zBalRAW_M_elc
+zBaliRAW_M_elc	{#insert zOY_M_elc}#BALLOON -title  -text {#insert zXmark}{#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}{#LEFT -count 10}	zBaliRAW_M_elc
+zBalwRAW_M_elc	{#insert zOY_M_elc}#BALLOON -title Please wait... -text {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zBalwRAW_M_elc
+zBalxRAW_M_elc	{#insert zOY_M_elc}#BALLOON -title {#insert zXmark} -text {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zBalxRAW_M_elc
+zBalxbRAW_M_elc	{#insert zOY_M_elc}#BALLOON -title  -text {#insert zTPPaste}{#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}{#LOOP {#LEFT} -count {#CALC {#insert zCBLen} + 7 -round 0 -thousands none}}	zBalxbRAW_M_elc
+balsyn	{#BALLOON -title BALLOON (bal) syntax -text bal[[i,x[b],w]][[p,q]]  //  [b]=paste, [i]=GT title, [x]=GT text, [w]=Please wait..., [p]=esc'd, [q]=dbly-esc'd (or more)  //  baltestall  //  lcmtargetinfo  //  xpcsyn}	balsyn
+
+zzPccBalAllMainAbrvs1CQBL	[Bal][Bali][Balw][Balx][Balxb]	zzPccBalAllMainAbrvs1CQBL
+baltestall	{#SETPHRASE -description zvQB_STR_LIST -content {#insert zzPccBalAllMainAbrvs1CQBL} -autotext zvQB_STR_LIST -folder ctvv_folder}{#insert zzTestAllMainPhrsCrtrAbrvs_M_qbl}	baltestall

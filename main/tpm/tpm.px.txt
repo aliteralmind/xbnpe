@@ -1,0 +1,23 @@
+zTMFindNextJavaFuncSigLine -- TextPad macro: javaFindNextFuncSig	{#insert zCApDOWN}{#sleep 100}	zTMFindNextJavaFuncSigLine
+zTMFindNextOpenParen -- TextPad macro: h_findNextOpenParen	{#insert zCpCLOSE_SQUAREB}{#sleep 25}	zTMFindNextOpenParen
+zTMFindNextParamTypeAndName -- TextPad macro: javaFindNxtParamTypNm	{#insert zCApRIGHT}{#sleep 25}	zTMFindNextParamTypeAndName
+zTMFindPrevCloseParen -- TextPad macro: h_findPrevCloseParen	{#insert zCpOPEN_SQUAREB}{#sleep 25}	zTMFindPrevCloseParen
+zTMFindPrevHREFThrQQ -- TextPad macro: tagFindPrevHREFThrQQ	{#CTRL {#ALT {#SHIFT -chars j}}}{#sleep 25}{#insert zHH}{#sleep 100}	zTMFindPrevHREFThrQQ
+zTMFindPrevJavaFuncSigLine -- TextPad macro: javaFindPrevFuncSig	{#insert zCApUP}{#sleep 100}	zTMFindPrevJavaFuncSigLine
+zTMFindPrevParamTypeAndName -- TextPad macro: javaFindPrevParamTypNm	{#insert zCApLEFT}{#sleep 25}	zTMFindPrevParamTypeAndName
+zTMFindPrevSpace -- TextPad macro: h_findPrevSpace	{#insert zCASpSPACE}{#sleep 5}	zTMFindPrevSpace
+zTMFindXMarkDown -- TextPad macro: markXXXFindDown	{#insert zCpEND}{#sleep 25}	zTMFindXMarkDown
+zTMFindXMarkUp -- TextPad macro: markXXXFindUp	{#insert zCpHOME}{#sleep 25}	zTMFindXMarkUp
+zTMFindYMarkDown -- TextPad macro: markYYYFindDown	{#insert zCpPGUP}{#sleep 25}	zTMFindYMarkDown
+zTMFindYMarkUp -- TextPad macro: markYYYFindUp	{#insert zCpINS}{#sleep 25}	zTMFindYMarkUp
+zTMJavaDelNmsGnrcsFromSlctdParams4FQP -- TextPad macro: javaDelSlctdPrmNms4FQP	{#CTRL {#ALT {#SHIFT -chars j}}}{#sleep 25}{#insert zQQ}{#sleep 250}	zTMJavaDelNmsGnrcsFromSlctdParams4FQP
+zTMJavaDelNmsGnrcsFromSlctdParams4TV -- TextPad macro: javaDelSlctdPrmNms4TV	{#CTRL {#ALT {#SHIFT -chars j}}}{#sleep 25}{#insert zVV}{#sleep 250}	zTMJavaDelNmsGnrcsFromSlctdParams4TV
+zTMJavaDelNmsOnlyFromSlctdParams -- TextPad macro: javaDelSlctdPrmNmsOnly	{#CTRL {#ALT {#SHIFT -chars j}}}{#sleep 25}{#insert zEE}{#sleep 250}	zTMJavaDelNmsOnlyFromSlctdParams
+zTMJavaDelTypesFromSlctdParams -- TextPad macro: javaDelSlctdParamTypes	{#CTRL {#ALT {#SHIFT -chars j}}}{#sleep 25}{#insert zYY}{#sleep 250}	zTMJavaDelTypesFromSlctdParams
+zTMMoveL1Tag -- TextPad macro: tagMoveL1	{#insert zCpCC}{#sleep 100}	zTMMoveL1Tag
+zTMMoveR1Tag -- TextPad macro: tagMoveR1	{#insert zCpRR}{#sleep 100}	zTMMoveR1Tag
+zTMParaGTEnd -- TextPad macro: paraGoToEnd	{#insert zApPGDN}{#sleep 20}	zTMParaGTEnd
+zTMParaGTStart -- TextPad macro: paraGoToStart	{#insert zApPGUP}{#sleep 20}	zTMParaGTStart
+zTMSelThrNextCloseParen -- TextPad macro: h_selThrNextCloseParen	{#insert zCSpCLOSE_SQUAREB}{#sleep 25}	zTMSelThrNextCloseParen
+zTMSelectSuperClassNm -- TextPad macro: javaSelectSuperClassNm	{#CTRL {#ALT {#SHIFT -chars j}}}{#sleep 25}{#insert zRR}{#sleep 250}	zTMSelectSuperClassNm
+zTMSelectThisClassNm -- TextPad macro: javaSelectThisClassNm	{#CTRL {#ALT {#SHIFT -chars j}}}{#sleep 25}{#insert zTT}{#sleep 250}	zTMSelectThisClassNm
