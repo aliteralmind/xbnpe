@@ -1,0 +1,34 @@
+zHtmlEscJavaGenericsPostAllParams -*-	{#insert zPostBracketSelect}{#insert zHtmlEscSlctdJavaGenerics}{#insert zRIGHT}	zHtmlEscJavaGenericsPostAllParams
+zHtmlEscSlctdJavaGenerics -*- Fails if no generics selected!	{#insert zRplcDlgOpenMCOnly}{#SETPHRASE -description zvFIND_WHAT -content < -autotext zvFIND_WHAT -folder ctvv_folder}{#insert zvFIND_WHAT}{#insert zRplcFieldWith}{#SETPHRASE -description zvRPLC_WITH -content &lt; -autotext zvRPLC_WITH -folder ctvv_folder}{#insert zvRPLC_WITH}{#insert zRplcBtnAllSel}{#SETPHRASE -description zvFIND_WHAT -content > -autotext zvFIND_WHAT -folder ctvv_folder}{#insert zvFIND_WHAT}{#insert zRplcFieldWith}{#SETPHRASE -description zvRPLC_WITH -content &gt; -autotext zvRPLC_WITH -folder ctvv_folder}{#insert zvRPLC_WITH}{#insert zRplcBtnAllSel}{#insert zRplcDlgClose}	zHtmlEscSlctdJavaGenerics
+zJavaPostAllParamsDelNmsGncrsOnly -*-	{#insert zJavaPostAllParamsSelDelNamesOnly}{#insert zRIGHT}	zJavaPostAllParamsDelNmsGncrsOnly
+zJavaPostAllParamsDelNmsOnlyThenHEsc	{#insert zJavaPostAllParamsSelDelNamesOnly}{#insert zHtmlEscSlctdJavaGenerics}	zJavaPostAllParamsDelNmsOnlyThenHEsc
+zJavaPostAllParamsSelDelNamesOnly	{#insert zPostBracketSelect}{#insert zTMJavaDelNmsOnlyFromSlctdParams}	zJavaPostAllParamsSelDelNamesOnly
+zPostAllParamsKeepDelRqstd_M_ang -*- Needs zvANGUV	{#insert {#COND -if {#insert zvANGUV} = a -then z1slp -else {#COND -if {#insert zvANGUV} = A -then zHtmlEscJavaGenericsPostAllParams -else {#COND -if {#insert zvANGUV} = n -then zJavaPostAllParamsDelTypes -else {#COND -if {#insert zvANGUV} = g -then zJavaPostAllParamsDelNmsGncrsOnly -else {#COND -if {#insert zvANGUV} = G -then zJavaPostAllParamsDelNmsOnlyThenHEsc -else {#COND -if {#insert zvANGUV} = u -then zJavaPostAllParamsDelNmsGncrs4FQP -else {#COND -if {#insert zvANGUV} = v -then zJavaPostAllParamsDelNmsGncrs4TV -else zzErrDlgBadAllParamsAng_M_ang}}}}}}}}	zPostAllParamsKeepDelRqstd_M_ang
+zvANGUV_stL1c -*-	{#insert zCutL1c}{#SETPHRASE -description zvANGUV -content {#INSERTCLIPBOARD} -autotext zvANGUV -folder ctvv_folder}	zvANGUV_stL1c
+zvANGUV_stN -*-	{#SETPHRASE -description zvANGUV -content n -autotext zvANGUV -folder ctvv_folder}	zvANGUV_stN
+zvANGUV_stPrompt -*-	{#SETPHRASE -description zvANGUV -content {#INPUT -head Keep what part of params? [a,A,n,g,G,...] -single} -autotext zvANGUV -folder ctvv_folder}	zvANGUV_stPrompt
+zvCODED_ES_stCdd -*- -- 'Coded'	{#SETPHRASE -description zvCODED_ES -content Coded -autotext zvCODED_ES -folder ctvv_folder}	zvCODED_ES_stCdd
+zvCODED_ES_stES -*-	{#SETPHRASE -description zvCODED_ES -content -autotext zvCODED_ES -folder ctvv_folder}	zvCODED_ES_stES
+zvLC_ALTR_stES -*-	{#SETPHRASE -description zvLC_ALTR -content -autotext zvLC_ALTR -folder ctvv_folder}	zvLC_ALTR_stES
+zzAltrFlagPrgrmrNoteTxt	PROGRAMMER NOTE: Internally, the alteration pre~opt is divided into two separate variables: zvCODED_ES (currently '{#insert zvCODED_ES}') and zvLC_ALTR (currently '{#insert zvLC_ALTR}'). An alteration pre~opt of 'c' or ANY UPPERCASE value (such as 'O' or 'D') cause zvCODED_ES to be set to 'Coded', and zvLC_ALTR to be set to the empty~string (''). All other values cause zvCODED_ES to be set to the empty~string, and zvLC_ALTR to be set to the character's lowercase value. Examples: 'c'-->zvCODED_ES='Coded', zvLC_ALTR=''; 'q'-->zvCODED_ES='', zvLC_ALTR='q'; 'Q'-->zvCODED_ES='Coded', zvLC_ALTR='q'	zzAltrFlagPrgrmrNoteTxt
+zzB4EndCODETagGTPIfCdd_M_cde	{#insert {#COND -if {#LENGTH {#insert zvCODED_ES}} = 0 -then z1slp -else zPreBracketGTP}}	zzB4EndCODETagGTPIfCdd_M_cde
+zzErrDlgBadAllParamsAng_M_ang	{#MSGBOX -head ERROR -text ERROR ~~ The delete-what-from-parameters pre-option-character (currently zvANGUV='{#insert zvANGUV}') must be one of the following: [a,A,n,g,G,u,v] (see kulkpsyn).{#insert zCancelProcNowPostTxt}}	zzErrDlgBadAllParamsAng_M_ang
+zzErrDlgBadParamAltrFlag_M_lltr	{#MSGBOX -head ERROR -text ERROR ~~ The alteration/surround pre-option (currently zvLC_ALTR='{#insert zvLC_ALTR}') must be one of the following: 'c', 'q', 'Q', 's', 'S', or '' (see ml1altersyn).  //  {#insert zzAltrFlagPrgrmrNoteTxt}{#insert zCancelProcNowPostTxt}}	zzErrDlgBadParamAltrFlag_M_lltr
+zzEscGnrcsIfAngNotLCGPreBrktGTP -(**)-	(*ALWAYS escape generics in <CODE> (which are therefore literally-displayed in HTML!), if indeed there are generics:*){#insert {#COND -if {#insert zvANGUV} != g -then z1slp -else zHtmlEscJavaGenericsPostAllParams}}{#insert zPreBracketGTP}	zzEscGnrcsIfAngNotLCGPreBrktGTP
+zzParamSetLCAltrCddIfUCFromCB	{#insert {#COND -if {#insert zLowercaseCB} != {#INSERTCLIPBOARD} -then zvCODED_ES_stCdd -else zvCODED_ES_stES}}{#SETPHRASE -description zvLC_ALTR -content {#insert zLowercaseCB} -autotext zvLC_ALTR -folder ctvv_folder}	zzParamSetLCAltrCddIfUCFromCB
+zzRtlsyn_M_yon -- Needs zvSYNTAX_ON	{#insert {#COND -if {#insert zvSYNTAX_ON} = on -then rtlsyn -else z1slp}}	zzRtlsyn_M_yon
+zzSetAngToL1cWycTo1	{#insert zvANGUV_stL1c}{#insert zvAWAY_CNT_st1}	zzSetAngToL1cWycTo1
+zzSetAngToL1cWycTo2	{#insert zvANGUV_stL1c}{#insert zvAWAY_CNT_st2}	zzSetAngToL1cWycTo2
+zzSetAngToL1cWycTo3	{#insert zvANGUV_stL1c}{#insert zvAWAY_CNT_st3}	zzSetAngToL1cWycTo3
+zzSetAngToL1cWycToPrompt	{#insert zvANGUV_stL1c}{#insert zvAWAY_CNT_stPrompt}	zzSetAngToL1cWycToPrompt
+zzSetCddToCddLltrToES	{#insert zvCODED_ES_stCdd}{#insert zvLC_ALTR_stES}	zzSetCddToCddLltrToES
+zzSglOptSynTxt	[l]=sig up, [z]=down, [c]=CODE~d (gnrcs always escaped!), [[2~3,n]]=2nd,3rd,prompt~# sig	zzSglOptSynTxt
+zzXmarkMaybeCdd_M_cde -- Needs zvCODED_ES	{#insert zXmark{#insert zvCODED_ES}}	zzXmarkMaybeCdd_M_cde
+zzzEnterAng2	{#insert zENTER}{#insert zvANGUV2}{#insert zTSlp}	zzzEnterAng2
+zzzJavaSigTestSig	{#insert zENTER2}{#insert zTAB}public final ReturnType<? extends Whatever> ciNull1(Object o_bj1, String sn_object1, boolean b_nullOk1, AClass<? extends Object> s_calling1, String s_nameBNullOk1)  {{#insert zENTER2}{#insert zBKSP2}	zzzJavaSigTestSig
+zzzJavaSigTestSig2	{#insert zENTER2}{#insert zTAB}public final ReturnType<? extends Whatever> ciNull2(boolean b_b2, String s_s2, Object o_o2, SomeClass<? extends Whatever> s_c2, String s_s2)  {{#insert zENTER2}{#insert zBKSP2}	zzzJavaSigTestSig2
+zzzJavaSigTestSig3	{#insert zENTER2}{#insert zTAB}public final ReturnType<? extends Whatever> ciNull3(boolean b_b3, String s_s3, Object o_o3, SomeClass<? extends Whatever> s_c3, String s_s3)  {{#insert zENTER2}{#insert zBKSP2}	zzzJavaSigTestSig3
+zzzJavaTestIntroFileNewTest3SigsGTTop	{#insert zzJavaTestIntroFileNew}{#insert zzzJavaSigTestSig}{#insert zzzJavaSigTestSig2}{#insert zzzJavaSigTestSig3}{#insert zTPGTDocTop}	zzzJavaTestIntroFileNewTest3SigsGTTop
+zzzSetAngAng2ToPrompt	{#insert zvANGUV_stPrompt}{#SETPHRASE -description zvANGUV2 -content {#insert zvANGUV} -autotext zvANGUV2 -folder ctvv_folder}	zzzSetAngAng2ToPrompt
+zzzTstAng2	{#insert zvANGUV2}{#insert zTSlp}	zzzTstAng2
+zzzTstLltr2	{#insert zvLC_ALTR2}{#insert zTSlp}	zzzTstLltr2

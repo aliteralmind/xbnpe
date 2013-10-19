@@ -9,7 +9,7 @@ zFFindDlgOpenFilesOnlyRE	{#insert zTPFindFlagREon}{#insert zFFindDlgOpenFilesOnl
 zFFindDlgOpenFilesOnlyWW	{#insert zTPFindFlagWWon}{#insert zFFindDlgOpenFilesOnly}	zFFindDlgOpenFilesOnlyWW
 zFFindDlgOpenFilesOnlyForceWW	{#insert zFFindDlgOpenFilesOnly}{#insert zFindFlagForceWWTgl}	zFFindDlgOpenFilesOnlyForceWW
 
-zFFindDlgOpenFilesOnlyDefaults -- [zCpF5]	{#insert zTPFFindDlgOpen}{#insert zFFindBtnDefaults}{#insert zFFindFlagFilesOnly}	zFFindDlgOpenFilesOnlyDefaults
+zFFindDlgOpenFilesOnlyDefaults	{#insert zTPFFindDlgOpen}{#insert zFFindBtnDefaults}{#insert zFFindFlagFilesOnly}	zFFindDlgOpenFilesOnlyDefaults
 zFFindDlgOpenFilesOnlyDefaultsRE	{#insert zFFindDlgOpenFilesOnlyDefaults}{#insert zFindFlagRETgl}	zFFindDlgOpenFilesOnlyDefaultsRE
 zFFindDlgOpenFilesOnlyDefaultsWW	{#insert zFFindDlgOpenFilesOnlyDefaults}{#insert zFindFlagWWTgl}	zFFindDlgOpenFilesOnlyDefaultsWW
 zFFindDlgOpenFilesOnlyDefaultsForceWW	{#insert zFFindDlgOpenFilesOnlyDefaults}{#insert zFindFlagForceWWTgl}	zFFindDlgOpenFilesOnlyDefaultsForceWW

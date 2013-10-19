@@ -1,0 +1,144 @@
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+(*
+   Required by phrase-creator-ddmenu-utils...START
+      PM_DDMENU_DIRID_FILENMPHRSNM_HDRAUTOTXT=pex/zzPmdmFNmPrePex/xhpm
+   Required by phrase-creator-ddmenu-utils...END
+*)
+ddmfsc -- zPrintDDMenuFileStartComment ALT KC	{#insert zPrintDDMenuFileStartComment}	ddmfsc
+
+ddmpfsc -- zPrintDDMenuPhraseFileStartComment ALT KC	{#insert zPrintDDMenuPhraseFileStartComment}	ddmpfsc
+
+fidmb -- zzPmdmFillInEmptyItemsAll ALT KC	{#insert zConfirmWWStatePrompt}{#insert zzPmdmFillInEmptyItemsAll}{#insert zzzFidmbDoneSyn}	fidmb
+
+fidmba -- zzPmdmFillInEmptyItemsActionsWithWWStatePrompt ALT KC	{#insert zzPmdmFillInEmptyItemsActionsWithWWStatePrompt}{#insert zzzFidmbDoneSyn}	fidmba
+
+fidmbc -- zzPmdmFillInEmptyItemsCommands ALT KC	{#insert zzPmdmFillInEmptyItemsCommands}{#insert zzzFidmbDoneSyn}	fidmbc
+
+fidmbsyn	{#BALLOON -title fidmb* syntax -text fidmb[c,v,a,t[c,v,a]] ~~ [c]=commands only, [v]=variables, [a]=actions, [t]=revert (back to '.'), [no t]=Fill in '.' phrase-bodies with appropriate functionality.  //  pexsyn}	fidmbsyn
+
+fidmbt -- zzRevertDDMenuAllItemsToEmpty ALT KC	{#insert zzRevertDDMenuAllItemsToEmpty}{#insert zzzFidmbDoneSyn}	fidmbt
+
+fidmbta -- zzRevertDDMenuActionsToEmpty ALT KC	{#insert zzRevertDDMenuActionsToEmpty}{#insert zzzFidmbDoneSyn}	fidmbta
+
+fidmbtc -- zzRevertDDMenuCommandsToEmpty ALT KC	{#insert zzRevertDDMenuCommandsToEmpty}{#insert zzzFidmbDoneSyn}	fidmbtc
+
+fidmbtv -- zzRevertDDMenuVariablesToEmpty ALT KC	{#insert zzRevertDDMenuVariablesToEmpty}{#insert zzzFidmbDoneSyn}	fidmbtv
+
+fidmbv -- zzPmdmFillInEmptyItemsVariables ALT KC	{#insert zzPmdmFillInEmptyItemsVariables}{#insert zzzFidmbDoneSyn}	fidmbv
+
+gtddm -- zGoToDDMenuFileBasedOnIDPhrsFlHdrMarker ALT KC	{#insert zGoToDDMenuFileBasedOnIDPhrsFlHdrMarker}	gtddm
+
+maixbxbx -- zMarkAllIndentedTxtTbTxtTbTxtLines ALT KC	{#insert zMarkAllIndentedTxtTbTxtTbTxtLines}	maixbxbx
+
+maixbxbxa -- zMarkAllIndentedTxtTbTxtTbTxtLinesAllDocs ALT KC	{#insert zMarkAllIndentedTxtTbTxtTbTxtLinesAllDocs}	maixbxbxa
+
+piddd -- Prepare ALL ddmenu-files in id-dir, tgt-xst-prmpt, open-dir-prmpt	{#insert zvDDMF_PROMPT_Y_stYes}{#insert zvTGT_XSTS_PRMPT_Y_stYes}{#insert zvOPEN_YN_OR_PRMPT_stQpromptQ}{#insert zPrepAllIndentedDDMenuFilesInDir_M_txpyOpdynp}	piddd
+
+piddda -- Prepare ALL ddmenu-files in id-dir, tgt-xst-prmpt, open-dir-prmpt	{#insert zvDDMF_PROMPT_Y_stES}{#insert zvTGT_XSTS_PRMPT_Y_stYes}{#insert zvOPEN_YN_OR_PRMPT_stQpromptQ}{#insert zPrepAllIndentedDDMenuFilesInDir_M_txpyOpdynp}	piddda
+
+pidddao -- piddda, tgt-xst-prompt, open-dir-yes	{#insert zvDDMF_PROMPT_Y_stES}{#insert zvTGT_XSTS_PRMPT_Y_stYes}{#insert zvOPEN_YN_OR_PRMPT_stYes}{#insert zPrepAllIndentedDDMenuFilesInDir_M_txpyOpdynp}	pidddao
+
+pidddav -- piddda, tgt-overwrite, open-dir-prompt	{#insert zvDDMF_PROMPT_Y_stES}{#insert zvTGT_XSTS_PRMPT_Y_stES}{#insert zvOPEN_YN_OR_PRMPT_stQpromptQ}{#insert zPrepAllIndentedDDMenuFilesInDir_M_txpyOpdynp}	pidddav
+
+pidddavo -- piddda, tgt-overwrite, open-dir-yes	{#insert zvDDMF_PROMPT_Y_stES}{#insert zvDDMF_PROMPT_Y_stES}{#insert zvTGT_XSTS_PRMPT_Y_stES}{#insert zvOPEN_YN_OR_PRMPT_stYes}{#insert zPrepAllIndentedDDMenuFilesInDir_M_txpyOpdynp}	pidddavo
+
+pidddavx -- piddda, tgt-overwrite, open-dir-no	{#insert zvDDMF_PROMPT_Y_stES}{#insert zvTGT_XSTS_PRMPT_Y_stES}{#insert zvOPEN_YN_OR_PRMPT_stNo}{#insert zPrepAllIndentedDDMenuFilesInDir_M_txpyOpdynp}	pidddavx
+
+pidddax -- piddda, tgt-xst-prompt, open-dir-no	{#insert zvDDMF_PROMPT_Y_stES}{#insert zvTGT_XSTS_PRMPT_Y_stYes}{#insert zvOPEN_YN_OR_PRMPT_stNo}{#insert zPrepAllIndentedDDMenuFilesInDir_M_txpyOpdynp}	pidddax
+
+pidddo -- piddd, tgt-xst-prompt, open-dir-yes	{#insert zvDDMF_PROMPT_Y_stYes}{#insert zvTGT_XSTS_PRMPT_Y_stYes}{#insert zvOPEN_YN_OR_PRMPT_stYes}{#insert zPrepAllIndentedDDMenuFilesInDir_M_txpyOpdynp}	pidddo
+
+pidddv -- piddd, tgt-overwrite, open-dir-prompt	{#insert zvDDMF_PROMPT_Y_stYes}{#insert zvTGT_XSTS_PRMPT_Y_stES}{#insert zvOPEN_YN_OR_PRMPT_stQpromptQ}{#insert zPrepAllIndentedDDMenuFilesInDir_M_txpyOpdynp}	pidddv
+
+pidddvo -- piddd, tgt-overwrite, open-dir-yes	{#insert zvDDMF_PROMPT_Y_stYes}{#insert zvDDMF_PROMPT_Y_stYes}{#insert zvTGT_XSTS_PRMPT_Y_stES}{#insert zvOPEN_YN_OR_PRMPT_stYes}{#insert zPrepAllIndentedDDMenuFilesInDir_M_txpyOpdynp}	pidddvo
+
+pidddvx -- piddd, tgt-overwrite, open-dir-no	{#insert zvDDMF_PROMPT_Y_stYes}{#insert zvTGT_XSTS_PRMPT_Y_stES}{#insert zvOPEN_YN_OR_PRMPT_stNo}{#insert zPrepAllIndentedDDMenuFilesInDir_M_txpyOpdynp}	pidddvx
+
+pidddx -- piddd, tgt-xst-prompt, open-dir-no	{#insert zvDDMF_PROMPT_Y_stYes}{#insert zvTGT_XSTS_PRMPT_Y_stYes}{#insert zvOPEN_YN_OR_PRMPT_stNo}{#insert zPrepAllIndentedDDMenuFilesInDir_M_txpyOpdynp}	pidddx
+
+piddf -- Prepare THIS indntd ddmenu-file, tgt-xst-prmpt, open-dir-prmpt	{#insert zvTGT_XSTS_PRMPT_Y_stYes}{#insert zvOPEN_YN_OR_PRMPT_stQpromptQ}{#insert zPrepThisIndentedDDMenuFile_M_txpyOpdynp}	piddf
+
+piddfo -- piddf, tgt-xst-prompt, open-dir-yes	{#insert zvTGT_XSTS_PRMPT_Y_stYes}{#insert zvOPEN_YN_OR_PRMPT_stYes}{#insert zPrepThisIndentedDDMenuFile_M_txpyOpdynp}	piddfo
+
+piddfv -- piddf, tgt-overwrite, open-dir-prompt	{#insert zvTGT_XSTS_PRMPT_Y_stES}{#insert zvOPEN_YN_OR_PRMPT_stQpromptQ}{#insert zPrepThisIndentedDDMenuFile_M_txpyOpdynp}	piddfv
+
+piddfvo -- piddf, tgt-overwrite, open-dir-yes	{#insert zvTGT_XSTS_PRMPT_Y_stES}{#insert zvOPEN_YN_OR_PRMPT_stYes}{#insert zPrepThisIndentedDDMenuFile_M_txpyOpdynp}	piddfvo
+
+piddfvx -- piddf, tgt-overwrite, open-dir-no	{#insert zvTGT_XSTS_PRMPT_Y_stES}{#insert zvOPEN_YN_OR_PRMPT_stNo}{#insert zPrepThisIndentedDDMenuFile_M_txpyOpdynp}	piddfvx
+
+
+piddfvxq -- zPrepThisIndentedDDMenuFileQuick ALT KC	{#insert zKeyPressFast}{#insert zPrepThisIndentedDDMenuFileQuick}	piddfvxq
+zPrepThisIndentedDDMenuFileQuick -- piddfv, QUICK (uses TextPad file-manager)	{#BALLOON -title **WARNING** -text This overwrites the (what MUST be!) existing destination file, without any further warning.}{#sleep 1000}{#insert zFcsTPFileManager}{#sleep 250}{#insert zFMBtnCopy}(*In 'to' field*){#insert zSpTAB}{#insert zSystemCopy}{#insert zTAB}{#insert zSubDirNmTmpForUnindentingDDMenus}{#REPLACE {#INSERTCLIPBOARD} -oldtext .txt -newtext .px.txt}{#sleep 2000}{#insert zENTER}{#sleep 2000}{#insert zENTER}{#sleep 1000}{#insert zEscThenFcsTPSlk}{#insert zCompletelyUnindentSelection}{#insert zFileSaveClose}{#insert zBalloonDone}	zPrepThisIndentedDDMenuFileQuick
+
+piddfx -- piddf, tgt-xst-prompt, open-dir-no	{#insert zvTGT_XSTS_PRMPT_Y_stYes}{#insert zvOPEN_YN_OR_PRMPT_stNo}{#insert zPrepThisIndentedDDMenuFile_M_txpyOpdynp}	piddfx
+
+piddsyn	{#BALLOON -title Syntax: pidd* -text {#insert zzPiddSynTxt}}	piddsyn
+
+zCopySlctdDDMenuHdrAbrvToChildrenWCountPrompt -- [zApSPACE]	{#insert zTPCopy}{#LOOP zzDDMenuCopyHdrAbrvToNextChild_M_abrvcb -count {#INPUT -head How many children? -single}}	zCopySlctdDDMenuHdrAbrvToChildrenWCountPrompt
+
+zGoToDDMenuFileBasedOnIDPhrsFlHdrMarker -- Needs zvWORD_WRAP_ON	{#BALLOON -title Please wait... -text gtddm: Finding ddmenu-phrase-file marker.}{#insert zTPGTDocTop}{#insert zzFindDDMenuPhrsFileMarkerDown}{#insert zRIGHT}{#insert zSelCopyToLineEnd}{#insert zTPGTDocTop}{#insert zzGetSetAllDDMenuVarsFromClipboard}{#insert zzOpenDDMenuFile_M_dmidFpm}{#insert zzGoToMarkDDMenuHeaderAutoTextLine_M_hax}{#BALLOON -title DONE -text This is the DDMenu-header line for the phrase-file.}	zGoToDDMenuFileBasedOnIDPhrsFlHdrMarker
+
+zMarkAllIndentedTxtTbTxtTbTxtLines	{#insert zFindDlgOpenMCRE}{#insert zzzRgxIndTxTbTxTxTxMarkAllDlgClsRE}{#BALLOON -title DONE -text Lines marked. Also see 'mpfpl'}	zMarkAllIndentedTxtTbTxtTbTxtLines
+
+zMarkAllIndentedTxtTbTxtTbTxtLinesAllDocs	{#insert zFindDlgOpenMCRE}{#insert zFindFlagADTgl}{#insert zzzRgxIndTxTbTxTxTxMarkAllDlgClsRE}{#BALLOON -title DONE -text Lines marked in all open documents. Also see 'mpfpl'}	zMarkAllIndentedTxtTbTxtTbTxtLinesAllDocs
+
+zPrepAllIndentedDDMenuFilesInDir_M_txpyOpdynp -- Needs zvTGT_XSTS_PRMPT_Y, zvOPEN_YN_OR_PRMPT	{#BALLOON -title Please wait... -text Processing all phrase-name-DDMenu files in the same id-dir as the *currently-open* ddmenu-file}{#insert zzSetFidmbYToPromptWWPromptIf}{#insert zzzFindCopyDDMIdForThisFile}(*To undo the just-typed autotext:*){#insert zTPUndo}{#insert zTPUndo}{#insert zTPGTDocTop}{#MSGBOX -head WARNING -text This process will fail if there are any unsaved changes in this document. Please save any changes before proceeding.  //  This will also fail if this document is the output file. Output file-names end with '...pcddmenu.PX.txt'. Input file-names end with '...pcddmenu.txt'. All output files must be closed before calling this.}{#insert zzvQBL_stDDMenuForDirID_M_dmid}{#insert zzzCIESDDMenuDirQbl_M_dmid}{#insert zvQBL_LENGTH_stCurrSelfLen}(*Current file-number (index):*){#insert zvNUMBER_st0}{#LOOP {#insert zzProcessNextPNmDDMenuFileWYNPrompt_M_dmidTxpyQblenCfnDmpyFdmy} -count {#insert zvQBL_LENGTH}}{#insert zzBalDoneOpenDirYNDlg_M_opdynpDir}	zPrepAllIndentedDDMenuFilesInDir_M_txpyOpdynp
+
+zPrepThisIndentedDDMenuFile_M_txpyOpdynp -- Needs zvTGT_XSTS_PRMPT_Y, zvOPEN_YN_OR_PRMPT	{#BALLOON -title Please wait... -text Processing the *currently-open* phrase-name-DDMenu file}{#insert zzSetFidmbYToPromptWWPromptIf}{#insert zzzzGetThisDDMFilesOutputDirFNm}{#insert zzzzRunFidmbSaveThisFileIf_M_Fmby}{#insert zDirFileSaveAsOverwrite_M_dirFnmTxpy}{#insert zzzCompletelyUnindentDocWBal}{#insert zFileSaveClose}{#insert zzBalDoneOpenDirYNDlg_M_opdynpDir}	zPrepThisIndentedDDMenuFile_M_txpyOpdynp
+
+zPrintDDMenuFileStartComment	{#BALLOON -title Please wait... -text Printing phrase-name drop-down-menu start comment. Replace {#insert zXmark} with the ddmenu-id.}\(*{#ENTER}   Required by phrase-creator-ddmenu-utils...START{#ENTER}   {#insert zXDDMenuDirIDStartCmtMarker}={#insert zXmark}{#ENTER}{#BKSP -count 3}Required by phrase-creator-ddmenu-utils...END{#ENTER}{#BKSP -count 3}*){#ENTER}(*Does not work with only TPKC installed:*){#insert zXUp}	zPrintDDMenuFileStartComment
+
+zPrintDDMenuPhraseFileStartComment	{#BALLOON -title Please wait... -text Printing phrase-name drop-down-menu start comment. Replace {#insert zXmark} with the ddmenu-id.}\(*{#ENTER}   Required by phrase-creator-ddmenu-utils...START{#ENTER}   {#insert zXDDMenuPhraseFileMarker}={#insert zXmark}/{#insert zYmark}/{#insert zYmark}{#ENTER}{#BKSP -count 3}Required by phrase-creator-ddmenu-utils...END{#ENTER}{#BKSP -count 3}*){#ENTER}(*Does not work with only TPKC installed:*){#insert zXUp}	zPrintDDMenuPhraseFileStartComment
+
+zSubDirNmTmpForUnindentingDDMenus	z_temp_folder_for_unindenting_ddmenus\	zSubDirNmTmpForUnindentingDDMenus
+
+zXDDMenuDirIDStartCmtMarker	PM_DDMENU_DIR_ID	zXDDMenuDirIDStartCmtMarker
+
+zXDDMenuPhraseFileMarker -- This definition phrase must be *BELOW* this file's pmddm-cmt	PM_DDMENU_DIRID_FILENMPHRSNM_HDRAUTOTXT	zXDDMenuPhraseFileMarker
+
+
+zzPmdmFillInEmptyItemsActionsWithWWStatePrompt	{#insert zConfirmWWStatePrompt}{#insert zzPmdmFillInEmptyItemsActions_wwo}	zzPmdmFillInEmptyItemsActionsWithWWStatePrompt
+
+zzPmdmFillInEmptyItemsActions_wwo -- WW-state prompt must have been done	{#insert zzPmdmFillInEmptyItemsActions_wwo1of3REon}{#insert zzREonPmdmFillInEmptyItemsActions2of3REon}{#insert zzREonPmdmFillInEmptyItemsActions3of3}	zzPmdmFillInEmptyItemsActions_wwo
+
+
+zzPmdmFillInEmptyItemsActions_wwo1of3REon	{#BALLOON -title Please wait... -text Replacing all 'state-1' ddmenu **actions** (both action-only and action-commands) with appropriate functionality.  //  **DING ALERT**}{#insert zTPBookmarkClearAll}{#insert zFindDlgOpenRE}(*re is ON*){#insert zzzzRegexActionOnlyOrCmd}{#insert zFindBtnMarkAll}	zzPmdmFillInEmptyItemsActions_wwo1of3REon
+
+zzPmdmFillInEmptyItemsAll	{#insert zzPmdmFillInEmptyItemsCommands}{#insert zzPmdmFillInEmptyItemsVariables}{#insert zzPmdmFillInEmptyItemsActions_wwo}	zzPmdmFillInEmptyItemsAll
+
+zzPmdmFillInEmptyItemsCommands	{#BALLOON -title Please wait... -text Replacing all empty ('.') ddmenu-item phrase-bodies for **commands** ('zCommandName')}{#insert zRplcDlgOpenRE}(*The phrase-name is expected to start with a 'z' (hence 'zPhrsNm')*){#SETPHRASE -description zvFIND_WHAT -content ^([\t]+)(z[A-Za-z0-9_]+\>)([^\t\n\r]*)\t.\t([a-z0-9]+)$ -autotext zvFIND_WHAT -folder ctvv_folder}{#insert zvFIND_WHAT}{#insert zRplcFieldWith}{#SETPHRASE -description zvRPLC_WITH -content $1$2$3\t\\\\\\\\\\\\\{#insert $2\\\\\\\\\\\\\}\t$4 -autotext zvRPLC_WITH -folder ctvv_folder}{#insert zvRPLC_WITH}{#insert zRplcBtnAllTDHnr}{#insert zRplcDlgCloseRE}	zzPmdmFillInEmptyItemsCommands
+
+zzPmdmFillInEmptyItemsVariables	{#BALLOON -title Please wait... -text Replacing all '.' phrase-bodies with content appropriate for **variables** ('Var: zvVAR_NAME').}{#insert zRplcDlgOpenRE}{#SETPHRASE -description zvFIND_WHAT -content ^(\t+)Var: zv(\w+)\b([^\t\n\r]*)\t.\t(\w+)$ -autotext zvFIND_WHAT -folder ctvv_folder}{#insert zvFIND_WHAT}{#insert zRplcFieldWith}{#SETPHRASE -description zvRPLC_WITH -content $1Var: zv$2$3\t\\\\\\{#SETCLIPBOARD zv$2\\\\\\}\\\\\\{#insert zzBalCBContainsVarNm\\\\\\}\t$4 -autotext zvRPLC_WITH -folder ctvv_folder}{#insert zvRPLC_WITH}{#insert zRplcBtnAllTDHnr}{#insert zRplcDlgCloseRE}	zzPmdmFillInEmptyItemsVariables
+
+zzREonPmdmFillInEmptyItemsActions2of3REon	{#MSGBOX -head Actions-count in status-bar -text The number of actions (both action-only and action-command items) in this ddmenu-file THAT HAVE '[tab].[tab]' AS ITS PHRASE-BODY are marked (if zero, there is no number in the status bar, and there is a 'no-matches-found' dialog currently displayed over the find-dialog). The NUMBER of marked lines is in the status bar. About to ask you for this number.}(*When no lines marked: Close no-matches-found dialog. When at least one line marked: Go to first (next?) mark*){#insert zENTER}	zzREonPmdmFillInEmptyItemsActions2of3REon
+
+zzREonPmdmFillInEmptyItemsActions3of3	{#insert zFindDlgClose}(*re is ON. Random to prevent the previous value from being reused, when executing piddd*.*){#SETPHRASE -description zvACT_LN_CNT -content {#INPUT -head How many action-lines? (rnd={#rnd 99999999}) -def 0 -single} -autotext zvACT_LN_CNT -folder ctvv_folder}{#insert zTPGTDocTop}(*Don't bother with word-wrap unless there's at least one action to change (1/2):*){#insert {#COND -if {#insert zvACT_LN_CNT} = 0 -then z1slp -else zWordWrapOffSaveState}}{#LOOP {#insert zzzREonWWoffChangeNextActnItemPhrsBody} -count {#insert zvACT_LN_CNT}}{#insert zEND}{#insert zRIGHT}(*Don't bother with word-wrap unless there's at least one action to change (2/2):*){#insert {#COND -if {#insert zvACT_LN_CNT} = 0 -then z1slp -else zRevertWWToOrigState}}	zzREonPmdmFillInEmptyItemsActions3of3
+
+
+zzRevertDDMenuActionsToEmpty	{#BALLOON -title Please wait... -text Reverting all **action** ddmenu-items (both action-only and action-commands) THAT HAVE THE DEFAULT PHRASE-VALUES, to '.'. Custom phrase-bodies are left untouched.  //  1st: action-onlys, 2nd: action-commands}{#insert zRplcDlgOpenRE}{#insert zzzMidRplcREActionOnlyState2To1}{#insert zRplcBtnAllTDHnr}{#insert zzzMidRplcREActionCmdState2To1}{#insert zRplcBtnAllTDHnr}{#insert zRplcDlgCloseRE}	zzRevertDDMenuActionsToEmpty
+
+zzRevertDDMenuAllItemsToEmpty	{#insert zzRevertDDMenuCommandsToEmpty}{#insert zzRevertDDMenuVariablesToEmpty}{#insert zzRevertDDMenuActionsToEmpty}	zzRevertDDMenuAllItemsToEmpty
+
+zzRevertDDMenuCommandsToEmpty	{#BALLOON -title Please wait... -text Reverting all **command** ddmenu-items THAT HAVE THE DEFAULT PHRASE-VALUES, to '.'. Custom phrase-bodies are left untouched.}{#insert zRplcDlgOpenRE}{#insert zzzMidRplcRECommandState2To1}{#insert zRplcBtnAllTDHnr}{#insert zRplcDlgCloseRE}	zzRevertDDMenuCommandsToEmpty
+
+zzRevertDDMenuVariablesToEmpty	{#BALLOON -title Please wait... -text Reverting all **variable** ddmenu-items THAT HAVE THE DEFAULT PHRASE-VALUES, to '.'. Custom phrase-bodies are left untouched.}{#insert zRplcDlgOpenRE}{#insert zzzMidRplcREVariableState2To1}{#SETPHRASE -description zvRPLC_WITH -content $1$2$3.$4 -autotext zvRPLC_WITH -folder ctvv_folder}{#insert zvRPLC_WITH}{#insert zRplcBtnAllTDHnr}{#insert zRplcDlgCloseRE}	zzRevertDDMenuVariablesToEmpty
+
+zzzMidRplcREActionCmdState2To1	{#insert zzzRegexActnCmdState2}{#insert zRplcFieldWith}{#SETPHRASE -description zvRPLC_WITH -content $1$2: $3$4\t.$5 -autotext zvRPLC_WITH -folder ctvv_folder}{#insert zvRPLC_WITH}	zzzMidRplcREActionCmdState2To1
+
+zzzMidRplcREActionOnlyState2To1	{#insert zzzRegexActnOnlyState2}{#insert zRplcFieldWith}{#SETPHRASE -description zvRPLC_WITH -content $1$2$3.$4 -autotext zvRPLC_WITH -folder ctvv_folder}{#insert zvRPLC_WITH}	zzzMidRplcREActionOnlyState2To1
+
+zzzMidRplcRECommandState2To1	{#SETPHRASE -description zvFIND_WHAT -content ^(\t+)(z\w+)\b([^\t\n\r]*\t)\\\\\\\\\\\\\{#insert \2\\\\\\\\\\\\\}(\t[a-z0-9]+)$ -autotext zvFIND_WHAT -folder ctvv_folder}{#insert zvFIND_WHAT}{#insert zRplcFieldWith}{#SETPHRASE -description zvRPLC_WITH -content $1$2$3.$4 -autotext zvRPLC_WITH -folder ctvv_folder}{#insert zvRPLC_WITH}	zzzMidRplcRECommandState2To1
+
+zzzMidRplcREVariableState2To1	{#SETPHRASE -description zvFIND_WHAT -content ^(\t+Var: )(zv\w+)\b([^\t\n\r]*\t)\\\\\\\{#SETCLIPBOARD \2\\\\\\\}\\\\\\\{#insert zzBalCBContainsVarNm\\\\\\\}(\t[a-z0-9]+)$ -autotext zvFIND_WHAT -folder ctvv_folder}{#insert zvFIND_WHAT}{#insert zRplcFieldWith}	zzzMidRplcREVariableState2To1
+
+zzzRegexActionCmdMidLineAnchors -(*5 groups*)-	(*Groups: 1=indentation, 2=action name, 3=command name, 4=post command-name description (if any), 5=tab-then-autotext*)([\t]+)([a-z0-9]+): (z[A-Za-z0-9_]+\>)([^\t\n\r]*)\t.(\t[a-z0-9]+)	zzzRegexActionCmdMidLineAnchors
+
+zzzRegexActionOnlyMidLineAnchors -(*4 groups*)-	(*Groups: 1=indentation, 2=entire description, 3=action-name, 4=tab-then-autotext*)([\t]+)([^\t\n\r]+\t)\(\*actnonly=([a-z0-9]+)\*\)\.(\t[a-z0-9]+)	zzzRegexActionOnlyMidLineAnchors
+
+zzzRegexActnCmdState2	^(\t+)([a-z0-9+]+): (z\w+)([^\t\n\r]*)\t\\\\{#SETPHRASE -description zvATN_CLN_SPC_CMD -content \2:\3 -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder\\\\}\\\\{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd\\\\}(\t[a-z0-9]+)$	zzzRegexActnCmdState2
+
+zzzRegexActnOnlyState2	^(\t+)([^\t\n\r]+)(\t\(\*actnonly=[a-z0-9]+\*\))\\\\{#SETPHRASE -description zvACTN_NM -content \w+ -autotext zvACTN_NM -folder ctvv_folder\\\\}\\\\{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm\\\\}(\t\w+)$	zzzRegexActnOnlyState2
+
+zzzRgxIndTxTbTxTxTxMarkAllDlgClsRE	{#insert zzRegex_indentTxtTbTxtTbTxt}{#insert zFindBtnMarkAll}{#insert zFindDlgCloseRE}	zzzRgxIndTxTbTxTxTxMarkAllDlgClsRE
+
+zzzzRegexActionOnlyOrCmd	(*^(action-command-format|action-only-format)$, all groups non-capturing-->*)^(?:(?:{#insert zzzRegexActionCmdMidLineAnchors})|(?:{#insert zzzRegexActionOnlyMidLineAnchors}))$	zzzzRegexActionOnlyOrCmd

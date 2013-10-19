@@ -3,9 +3,12 @@ zMatchBracket2	{#insert zTPMatchBracket}{#insert zTPMatchBracket}	zMatchBracket2
 zPostBracketGTP	{#insert zLEFT}{#insert zTPMatchBracket}{#insert zLEFT}	zPostBracketGTP
 zPostBracketGTP2	{#insert zPostBracketGTP}{#insert zPostBracketGTP}	zPostBracketGTP2
 zPostBracketSelCopy	{#insert zPostBracketSelect}{#insert zTPCopy}	zPostBracketSelCopy
+zPostBracketCut	{#insert zPostBracketSelect}{#insert zTPCut}	zPostBracketCut
 zPostBracketSelect	{#insert zLEFT}{#insert zMatchBracketExtend2}	zPostBracketSelect
 zPreBracketGTP	{#insert zTPSelectR1c}(*Moving zRIGHT will work as long as there's at least one character inside the bracket: (x). It will NOT work if the brackets are empty: ()  *){#insert zTPMatchBracket}{#insert zRIGHT}	zPreBracketGTP
 zPreBracketGTP2	{#insert zPreBracketGTP}{#insert zPreBracketGTP}	zPreBracketGTP2
 zPreBracketSelCopy	{#insert zPreBracketSelect}{#insert zTPCopy}	zPreBracketSelCopy
 zPreBracketSelect	{#insert zRIGHT}{#insert zTPMatchBracketExtend}	zPreBracketSelect
-zMatchBracketExtend2	{#insert zTPMatchBracketExtend}{#insert zTPMatchBracketExtend}	zMatchBracketExtend2
+zMatchBracketExtend2	{#insert zTPMatchBracketExtend}{#sleep 25}{#insert zTPMatchBracketExtend}{#sleep 25}	zMatchBracketExtend2
+zPostBracketSelContentsOnly -- Brackets left unselected	{#insert zLEFT}{#insert zTPMatchBracketExtend}	zPostBracketSelContentsOnly
+zPreBracketSelContentsOnly -- Brackets left unselected	{#insert zTPMatchBracket}{#insert zTPMatchBracketExtend}	zPreBracketSelContentsOnly

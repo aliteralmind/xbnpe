@@ -17,7 +17,7 @@
 
 <H3>Example TextPad-bootstrap</H3>
 
-<P><I>Displayed in <A HREF="../devpex/c2pl.html#one">uncompressed</A> format. See <A HREF="phrase_file.html#pformat">phrase-format specifications</A></I></P>
+<P><I>Displayed in <A HREF="../devpex/pc2.html#one">uncompressed</A> format. See <A HREF="phrase_file.html#pformat">phrase-format specifications</A></I></P>
 
 <H4><U>Main</U></H4>
 
@@ -44,14 +44,14 @@ Ctrl+C</PRE>
 <PRE STYLE="background-color:#E1E1E1;"><B><U>zTPCopy</U></B> -- TextPad built-in command: Edit &gt; <B>EditCopy</B>
 {#CTRL -chars c}{#insert zTSlp}{#sleep 10}</PRE>
 
-<P><I>The XKP-project requires <A HREF="xkp.html#rawpexkc">&quot;raw&quot; PhraseExpress key-presses</A> in the phrase body, where each key-press is followed by a call to <CODE><A HREF="../devpex/debugging.html#kpspeed">zTSlp</A></CODE></I></P>
+<P><I>The XKP-project requires <A HREF="xkp.html#rawpexkc">&quot;raw&quot; PhraseExpress key-presses</A> in the phrase body. The last two statements in this phrase should be <CODE><A HREF="../devpex/debugging.html#ztslp">zTSlp</A>, and then minimal sleep as discussed below.</CODE></I></P>
 
 <H3>TPKC-project example</H3>
 
 <PRE STYLE="background-color:#E1E1E1;"><B><U>zTPFileOpen</U></B> -- TextPad built-in command: File &gt; <B>FileOpen</B>
 {#insert zCpOO}{#sleep 1750}</PRE>
 
-<P><I>The TPKC-project requires <A HREF="xkp.html">x-key-presses</A> (each of which integrate <CODE>zTSlp</CODE>).</I></P>
+<P><I>In the TPKC-project, the final key-press can be an <A HREF="xkp.html">x-key-presses</A>, which already integrates a call to <CODE>zTSlp</CODE>. All previous key-presses should be raw key-presses.</I></P>
 
 <H3>Requirements</H3>
 
@@ -62,7 +62,7 @@ Ctrl+C</PRE>
 	<BR> &nbsp; &nbsp; <CODE>&nbsp;-- TextPad built-in command: Edit &gt; EditCopy</CODE>
 	<BR>It is strongly recommended that the description is in exactly this format.</LI>
 	<LI><B>Value:</B> The value--phrase-body--is the specific (set of) key-press(es) that <I>actually triggers</I> the built-in TextPad command<UL>
-		<LI>Each individual key-press must be followed by a call to <CODE><A HREF="../devpex/debugging.html#kpspeed">zTSlp</A></CODE></LI>
+		<LI>Each individual key-press must be followed by a call to <CODE><A HREF="../devpex/debugging.html#ztslp">zTSlp</A></CODE></LI>
 		<LI>For key-commands with multiple key-presses, there must be some sleep between each. The default value is stored in the TPKC <A HREF="tpkc/master_cfg_vars.html">master-configuration-variable</A>
 		<BR> &nbsp; &nbsp; <CODE><A HREF="tpkc/master_cfg_vars.html#zTpkcMillsBtwMultiKeyKCs">zTpkcMillsBtwMultiKeyKCs</A></CODE></LI>
 		<LI>Must end with a <I>minimal</I> amount of sleep, so that PhraseExpress does not continue until the command has finished executing. This should be an amount satisfactory for <I>most situations</I>. For extreme situations, append extra sleep after calling it. For example:
@@ -136,7 +136,7 @@ Ctrl+C</PRE>
 
 <P><I><A HREF="tpbs_install.html#install5">More examples</A> (note the 1 multi-key key-command)</I></P>
 
-<P>Since the value of this phrase is not PhraseExpress code, it should therefore have no SLEEP or calls to <CODE><A HREF="../devpex/debugging.html#kpspeed">zTSlp</A></CODE>. TP-key-press phrases are used by the first step of the first TPKC <A HREF="tpkc/index.html#userbuild01">user-build-process</A> (<A HREF="tpkc/sub_build_proc2.html#10">sub-proc-10</A>) to delete all <A HREF="tpbs.html#terminology">bootstrap-kcs</A> from the tp-all-cmd-list.</P>
+<P>Since the value of this phrase is not PhraseExpress code, it should therefore have no SLEEP or calls to <CODE><A HREF="../devpex/debugging.html#ztslp">zTSlp</A></CODE>. TP-key-press phrases are used by the first step of the first TPKC <A HREF="tpkc/index.html#userbuild01">user-build-process</A> (<A HREF="tpkc/sub_build_proc2.html#10">sub-proc-10</A>) to delete all <A HREF="tpbs.html#terminology">bootstrap-kcs</A> from the tp-all-cmd-list.</P>
 
 <P>Below are two screenshots.<OL>
 	<LI>The TextPad preferences dialog, displaying the &quot;<CODE>EditCopy</CODE>&quot; command, and its key-command &quot;<CODE>Ctrl+C</CODE>&quot; (the first is its bootstrap-kc, the rest its nbs-kcs)</LI>

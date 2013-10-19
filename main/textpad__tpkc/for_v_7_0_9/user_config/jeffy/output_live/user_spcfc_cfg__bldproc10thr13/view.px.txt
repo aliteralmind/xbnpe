@@ -26,5 +26,5 @@ zTpkcViewTabSelectorNbsKcCount	0	zTpkcViewTabSelectorNbsKcCount
 zTpkcViewToolOutputNbsKcCount	1	zTpkcViewToolOutputNbsKcCount
 zTpkcViewToolOutputNbsKcEsc1	\\\{#insert zCpF11\\\}\\\{#sleep 10\\\}	zTpkcViewToolOutputNbsKcEsc1
 zTpkcViewVisibleSpacesNbsKcCount	1	zTpkcViewVisibleSpacesNbsKcCount
-zTpkcViewVisibleSpacesNbsKcEsc1	\\\{#insert zF9\\\}\\\{#sleep 25\\\}\\\{#insert zF8\\\}\\\{#sleep 10\\\}	zTpkcViewVisibleSpacesNbsKcEsc1
+zTpkcViewVisibleSpacesNbsKcEsc1	\\\{#F9\\\}\\\{#sleep 25\\\}\\\{#insert zF8\\\}\\\{#sleep 10\\\}	zTpkcViewVisibleSpacesNbsKcEsc1
 zTpkcViewVScrollbarNbsKcCount	0	zTpkcViewVScrollbarNbsKcCount

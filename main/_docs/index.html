@@ -77,7 +77,7 @@
 	<LI>Type it's key-command (&quot;hotkey&quot;)</LI>
 	<LI>Type its name into a TextPad document, followed by the accent key (<CODE>'<FONT SIZE="+1">`</FONT>'</CODE>--on my keyboard it's on the same key as the tilde: <CODE>'<FONT SIZE="+1">~</FONT>'</CODE>). The accent is the default trigger-postfix in XBN-PhraseExpress</LI>
 	<LI>Copy its name, then type
-	<BR> &nbsp; &nbsp; <CODE><A HREF="devpex/cpcb.html">cpcb</A><FONT SIZE="+1">`</FONT></CODE></LI>
+	<BR> &nbsp; &nbsp; <CODE><A HREF="devpex/cpb.html">cpb</A><FONT SIZE="+1">`</FONT></CODE></LI>
 </UL></P>
 
 <P><IMG SRC="images/basics/default_postfix_setting.jpg" BORDER="1"/></P>
@@ -110,8 +110,8 @@
 <P><I><CODE>[<A HREF="#start">start</A>, <A HREF="#basics">basics</A>, devpex, <A HREF="#tasks">tasks</A>, <A HREF="#generic">generic</A>, <A HREF="#future">future</A>]</CODE></I><UL>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="devpex/xbnpe_ddmenus.html">GO</A></B></FONT>]</CODE> &nbsp; &quot;<CODE>xh...</CODE>&quot; phrase-creator ddmenu (and the XBNPE user-menu)</LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="devpex/xpc.html">GO</A></B></FONT>]</CODE> &nbsp; XBNPE-Phrase-creators (XPC) project</LI>
-	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="devpex/c2pl.html">GO</A></B></FONT>]</CODE> &nbsp; Phrase &quot;compression&quot;: <CODE>c2pl</CODE> and related utilities</LI>
-	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="devpex/cpcb.html">GO</A></B></FONT>]</CODE> &nbsp; Call Phrase-name in ClipBoard: <CODE>cpcb</CODE> and related utilities</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="devpex/pc2.html">GO</A></B></FONT>]</CODE> &nbsp; Phrase &quot;compression&quot;: <CODE>pc2</CODE> and related utilities</LI>
+	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="devpex/cpb.html">GO</A></B></FONT>]</CODE> &nbsp; Call Phrase-name in ClipBoard: <CODE>cpb</CODE> and related utilities</LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="devpex/debugging.html">GO</A></B></FONT>]</CODE> &nbsp; Debugging utilities</LI>
 </UL></P>
 
@@ -131,6 +131,8 @@
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="tasks/ww_with_state.html">GO</A></B></FONT>]</CODE> &nbsp; Word-wrap with state</LI>
 	<LI><CODE>[<FONT SIZE="+1"><B><A HREF="tasks/pmdm.html">GO</A></B></FONT>]</CODE> &nbsp;  Phrase-creator-ddmenu creation utilities (PMDM)</LI>
 	<LI><CODE>[<A HREF="tasks/other.html"><FONT SIZE="+1"><B>GO</B></FONT></A>]</CODE> &nbsp; Other stuff</LI>
+	<LI> &nbsp; &nbsp; Java-code and JavaDoc creation: <CODE>javasyn</CODE> (<A HREF="#execute">execute</A> this phrase in a TextPad document)</LI>
+	<LI> &nbsp; &nbsp; Rudimentary HTML-code creation: <CODE>htmlsyn</CODE></LI>
 </UL></P>
 
 <A NAME="livexmpl"/><H3>XBNPE: Live example code</H3>
@@ -143,11 +145,11 @@
 	<LI>Select and copy it with your mouse, and paste it into a new text document (save it as a <A HREF="basics/phrase_file.html#fformat">phrase-file</A> named &quot;<CODE><I>something</I>.px.txt</CODE>&quot;)</LI>
 	<LI>Eliminate all line-breaks and indentation, except for the line-break between the phrase-name and body. Spaces at the <I>end</I> of lines must be preserved (there are hidden non-breaking spaces--<CODE>&quot;&amp;nbsp;&quot;</CODE> in the HTML source code, at the end of source lines where necessary).</LI>
 	<LI>Since the phrase already exists, its name must be changed. Consider adding a unique postfix, such as your initials (&quot;<CODE>snr06findselxtoz</CODE>&quot; <CODE>--&gt;</CODE> &quot;<CODE>snr06findselxtozjf</CODE>&quot;)</LI>
-	<LI>This is now an <A HREF="devpex/c2pl.html#one">uncompressed</A> phrase. Compress it with &quot;<CODE>c2pl</CODE>&quot;.</LI>
+	<LI>This is now an <A HREF="devpex/pc2.html#one">uncompressed</A> phrase. Compress it with &quot;<CODE>pc2</CODE>&quot;.</LI>
 	<LI><A HREF="basics/phrase_file_import1.html">Import</A> <CODE><I>something</I>.px.txt</CODE>.</LI>
 </OL></P>
 
-<P>Also note all example code can be <A HREF="devpex/debugging.html#kpspeed">slowed</A>.</P>
+<P>Also note all example code can be <A HREF="devpex/debugging.html#ztslp">slowed</A>.</P>
 
 <PRE>
 
@@ -212,7 +214,7 @@
 <H3>XBNPE users</H3>
 
 <P>For those composing their own phrases, using and calling some of the XBNPE-projects:
-<BR> &nbsp; &nbsp; <CODE><A HREF="../../zz_misc_and_pxp/xbnpe_0p8p2p4_beta.zip">xbnpe_0p8p2p4_beta.zip</A></CODE> &nbsp; &nbsp; <I>(~9mb, <A HREF="release_notes.html#0p8p2p4_beta">release notes</A>)</I>
+<BR> &nbsp; &nbsp; <CODE><A HREF="../../zz_misc_and_pxp/xbnpe_0p8p3_beta.zip">xbnpe_0p8p3_beta.zip</A></CODE> &nbsp; &nbsp; <I>(~9mb, <A HREF="release_notes.html#0p8p3_beta">release notes</A>)</I>
 <BR>This contains all documentation, plain-text phrase-files, PhraseExpress &quot;<CODE>*.pxp</CODE>&quot; files, and some other files that may be useful to the general user.</P>
 
 <H3>XBNPE developers</H3>

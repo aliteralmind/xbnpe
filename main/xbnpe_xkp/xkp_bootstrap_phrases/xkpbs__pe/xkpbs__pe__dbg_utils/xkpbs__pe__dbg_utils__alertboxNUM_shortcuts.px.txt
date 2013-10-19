@@ -1,12 +1,22 @@
 __XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
-pab1	\\\{#insert alertbox1\\\}{#insert zzPabSyntax}	pab1
-pab2	\\\{#insert alertbox2\\\}{#insert zzPabSyntax}	pab2
-pab3	\\\{#insert alertbox3\\\}{#insert zzPabSyntax}	pab3
-pab4	\\\{#insert alertbox4\\\}{#insert zzPabSyntax}	pab4
-pab5	\\\{#insert alertbox5\\\}{#insert zzPabSyntax}	pab5
-pab6	\\\{#insert alertbox6\\\}{#insert zzPabSyntax}	pab6
-pab7	\\\{#insert alertbox7\\\}{#insert zzPabSyntax}	pab7
-pab8	\\\{#insert alertbox8\\\}{#insert zzPabSyntax}	pab8
-pab9	\\\{#insert alertbox9\\\}{#insert zzPabSyntax}	pab9
-pab10	\\\{#insert alertbox10\\\}{#insert zzPabSyntax}	pab10
-zzPabSyntax	{#BALLOON -title Tracing alert boxes (pab) syntax -text pab[1-10]  //  Phrases: alertbox[1-10]}	zzPabSyntax
+pab1	\\\{#insert alertbox1\\\}{#insert pabsyn}	pab1
+pab2	\\\{#insert alertbox2\\\}{#insert pabsyn}	pab2
+pab3	\\\{#insert alertbox3\\\}{#insert pabsyn}	pab3
+pab4	\\\{#insert alertbox4\\\}{#insert pabsyn}	pab4
+pab5	\\\{#insert alertbox5\\\}{#insert pabsyn}	pab5
+pab6	\\\{#insert alertbox6\\\}{#insert pabsyn}	pab6
+pab7	\\\{#insert alertbox7\\\}{#insert pabsyn}	pab7
+pab8	\\\{#insert alertbox8\\\}{#insert pabsyn}	pab8
+pab9	\\\{#insert alertbox9\\\}{#insert pabsyn}	pab9
+pab10	\\\{#insert alertbox10\\\}{#insert pabsyn}	pab10
+kab1	\\\{#insert klertbox1\\\}{#insert pabsyn}	kab1
+kab2	\\\{#insert klertbox2\\\}{#insert pabsyn}	kab2
+kab3	\\\{#insert klertbox3\\\}{#insert pabsyn}	kab3
+kab4	\\\{#insert klertbox4\\\}{#insert pabsyn}	kab4
+kab5	\\\{#insert klertbox5\\\}{#insert pabsyn}	kab5
+kab6	\\\{#insert klertbox6\\\}{#insert pabsyn}	kab6
+kab7	\\\{#insert klertbox7\\\}{#insert pabsyn}	kab7
+kab8	\\\{#insert klertbox8\\\}{#insert pabsyn}	kab8
+kab9	\\\{#insert klertbox9\\\}{#insert pabsyn}	kab9
+kab10	\\\{#insert klertbox10\\\}{#insert pabsyn}	kab10
+pabsyn	{#BALLOON -title Tracing alert boxes (kab) syntax -text [k,p]ab[1-10] ([p]=immediate, [k]=slk first)  //  Phrases: [a,k]lertbox[1-10]  //  pexsyn}	pabsyn

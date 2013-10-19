@@ -1,2 +1,0 @@
-pbm -- zTPMatchBracket 	{#insert zOY}#insert zTPMatchBracket{#insert zCY}	pbm
-pbmx -- zTPMatchBracketExtend	{#insert zOY}#insert zTPMatchBracketExtend{#insert zCY}	pbmx

@@ -1,0 +1,51 @@
+anl	{#insert zzSetAngToNWycTo1}{#insert zzXPastePrvJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	anl
+anl2	{#insert zzSetAngToNWycTo2}{#insert zzXPastePrvJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	anl2
+anl3	{#insert zzSetAngToNWycTo3}{#insert zzXPastePrvJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	anl3
+anlc	{#insert zzSetAngToNWycTo1}{#insert zzXCddPastePrvJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	anlc
+anlc2	{#insert zzSetAngToNWycTo2}{#insert zzXCddPastePrvJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	anlc2
+anlc3	{#insert zzSetAngToNWycTo3}{#insert zzXCddPastePrvJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	anlc3
+anlcn	{#insert zzSetAngToNWycToPrompt}{#insert zzXCddPastePrvJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	anlcn
+anlkpsyn	{#BALLOON -title ap[l,z]*: What to keep in params? -text [a,n,g,G,u,v] declares what should be kept in the params. {#insert zzAnguvSynTxt}  //  Example: taplc2  //  anlsyn}	anlkpsyn
+anln	{#insert zzSetAngToNWycToPrompt}{#insert zzXPastePrvJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	anln
+anlsyn	{#BALLOON -title Syntax: Get~paste all params from sig -text {#insert zzAnlsyns1of3}  //  {#insert zzAnlsyns2of3}=Shortcut: nap[l,z]...  //  {#insert zzAnlsyns3of3}=escape all gnrcs (see kulsyn)  //  [a,n,g,G,u,v]: anlkpsyn // Example: napz2 // {#insert zzSglOptSynTxt}}	anlsyn
+zzAnlsyns1of3	[a,n,g,G,u,v]ap[l,z][c][2~3,n]	zzAnlsyns1of3
+zzAnlsyns2of3	an[l,z][c][2~3,n]	zzAnlsyns2of3
+zzAnlsyns3of3	papeg	zzAnlsyns3of3
+anltestall	{#insert zzJavaTestIntroFileNew}{#insert zzzTstDupedSigLines}{#insert zTPGTDocTop}{#insert zzzSetAngAng2ToPrompt}anz{#insert zENTER}{#insert anz}{#insert zENTER}anz2{#insert zENTER}{#insert anz2}{#insert zENTER}anz3{#insert zENTER}{#insert anz3}{#insert zENTER}anzc{#insert zENTER}{#insert anzc}{#insert zENTER}anzc2{#insert zENTER}{#insert anzc2}{#insert zENTER}anzc3{#insert zENTER}{#insert anzc3}{#insert zENTER}anzcn{#insert zENTER}{#insert anzcn}{#insert zENTER}anzn{#insert zENTER}{#insert anzn}{#insert zzzEnterAng2}apz{#insert zzzEnterAng2}{#insert apz}{#insert zzzEnterAng2}apz2{#insert zzzEnterAng2}{#insert apz2}{#insert zzzEnterAng2}apz3{#insert zzzEnterAng2}{#insert apz3}{#insert zzzEnterAng2}apzc{#insert zzzEnterAng2}{#insert apzc}{#insert zzzEnterAng2}apzc2{#insert zzzEnterAng2}{#insert apzc2}{#insert zzzEnterAng2}apzc3{#insert zzzEnterAng2}{#insert apzc3}{#insert zzzEnterAng2}apzcn{#insert zzzEnterAng2}{#insert apzcn}{#insert zzzEnterAng2}apzn{#insert zzzEnterAng2}{#insert apzn}{#insert zTPGTDocBottom}{#insert zHOME}anl{#insert zENTER}{#insert anl}{#insert zENTER}anl2{#insert zENTER}{#insert anl2}{#insert zENTER}anl3{#insert zENTER}{#insert anl3}{#insert zENTER}anlc{#insert zENTER}{#insert anlc}{#insert zENTER}anlc2{#insert zENTER}{#insert anlc2}{#insert zENTER}anlc3{#insert zENTER}{#insert anlc3}{#insert zENTER}anlcn{#insert zENTER}{#insert anlcn}{#insert zENTER}anln{#insert zENTER}{#insert anln}{#insert zzzEnterAng2}apl{#insert zzzEnterAng2}{#insert apl}{#insert zzzEnterAng2}apl2{#insert zzzEnterAng2}{#insert apl2}{#insert zzzEnterAng2}apl3{#insert zzzEnterAng2}{#insert apl3}{#insert zzzEnterAng2}aplc{#insert zzzEnterAng2}{#insert aplc}{#insert zzzEnterAng2}aplc2{#insert zzzEnterAng2}{#insert aplc2}{#insert zzzEnterAng2}aplc3{#insert zzzEnterAng2}{#insert aplc3}{#insert zzzEnterAng2}aplcn{#insert zzzEnterAng2}{#insert aplcn}{#insert zzzEnterAng2}apln{#insert zzzEnterAng2}{#insert apln}{#insert zvSYNTAX_ON_stOn}{#insert zzAnlsyn_M_yon}	anltestall
+
+anz	{#insert zzSetAngToNWycTo1}{#insert zzXPasteNxtJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	anz
+anz2	{#insert zzSetAngToNWycTo2}{#insert zzXPasteNxtJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	anz2
+anz3	{#insert zzSetAngToNWycTo3}{#insert zzXPasteNxtJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	anz3
+anzc	{#insert zzSetAngToNWycTo1}{#insert zzXCddPasteNxtJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	anzc
+anzc2	{#insert zzSetAngToNWycTo2}{#insert zzXCddPasteNxtJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	anzc2
+anzc3	{#insert zzSetAngToNWycTo3}{#insert zzXCddPasteNxtJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	anzc3
+anzcn	{#insert zzSetAngToNWycToPrompt}{#insert zzXCddPasteNxtJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	anzcn
+anzn	{#insert zzSetAngToNWycToPrompt}{#insert zzXPasteNxtJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	anzn
+apl	{#insert zzSetAngToL1cWycTo1}{#insert zzXPastePrvJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	apl
+apl2	{#insert zzSetAngToL1cWycTo2}{#insert zzXPastePrvJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	apl2
+apl3	{#insert zzSetAngToL1cWycTo3}{#insert zzXPastePrvJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	apl3
+aplc	{#insert zzSetAngToL1cWycTo1}{#insert zzXCddPastePrvJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	aplc
+aplc2	{#insert zzSetAngToL1cWycTo2}{#insert zzXCddPastePrvJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	aplc2
+aplc3	{#insert zzSetAngToL1cWycTo3}{#insert zzXCddPastePrvJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	aplc3
+aplcn	{#insert zzSetAngToL1cWycToPrompt}{#insert zzXCddPastePrvJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	aplcn
+apln	{#insert zzSetAngToL1cWycToPrompt}{#insert zzXPastePrvJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	apln
+apz	{#insert zzSetAngToL1cWycTo1}{#insert zzXPasteNxtJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	apz
+apz2	{#insert zzSetAngToL1cWycTo2}{#insert zzXPasteNxtJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	apz2
+apz3	{#insert zzSetAngToL1cWycTo3}{#insert zzXPasteNxtJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	apz3
+apzc	{#insert zzSetAngToL1cWycTo1}{#insert zzXCddPasteNxtJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	apzc
+apzc2	{#insert zzSetAngToL1cWycTo2}{#insert zzXCddPasteNxtJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	apzc2
+apzc3	{#insert zzSetAngToL1cWycTo3}{#insert zzXCddPasteNxtJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	apzc3
+apzcn	{#insert zzSetAngToL1cWycToPrompt}{#insert zzXCddPasteNxtJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	apzcn
+apzn	{#insert zzSetAngToL1cWycToPrompt}{#insert zzXPasteNxtJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	apzn
+zXCddPrvNxtJFSigCopyParamsRtrnToX_M_gpnWyc -*-	{#insert zXmarkCoded}{#insert zPrvNxtJFSigSelCopyParamsBackToX_M_gpnWyc}	zXCddPrvNxtJFSigCopyParamsRtrnToX_M_gpnWyc
+zXPrvNxtJFSigCopyParamsRtrnToX_M_gpnWyc -*-	{#insert zXmark}{#insert zPrvNxtJFSigSelCopyParamsBackToX_M_gpnWyc}	zXPrvNxtJFSigCopyParamsRtrnToX_M_gpnWyc
+zzSetAngToNWycTo1	{#insert zvANGUV_stN}{#insert zvAWAY_CNT_st1}	zzSetAngToNWycTo1
+zzSetAngToNWycTo2	{#insert zvANGUV_stN}{#insert zvAWAY_CNT_st2}	zzSetAngToNWycTo2
+zzSetAngToNWycTo3	{#insert zvANGUV_stN}{#insert zvAWAY_CNT_st3}	zzSetAngToNWycTo3
+zzSetAngToNWycToPrompt	{#insert zvANGUV_stN}{#insert zvAWAY_CNT_stPrompt}	zzSetAngToNWycToPrompt
+zzXCddPasteNxtJFParamsAtCrsrDelRqstdFrom_M_wycAng	{#insert zvGPRV_NXT_stNext}{#insert zzXCddPastePrvNxtJFParamsAtCrsrDelRqstdFrm_M_gpnWycAng}	zzXCddPasteNxtJFParamsAtCrsrDelRqstdFrom_M_wycAng
+zzXCddPastePrvJFParamsAtCrsrDelRqstdFrom_M_wycAng	{#insert zvGPRV_NXT_stPrev}{#insert zzXCddPastePrvNxtJFParamsAtCrsrDelRqstdFrm_M_gpnWycAng}	zzXCddPastePrvJFParamsAtCrsrDelRqstdFrom_M_wycAng
+zzXCddPastePrvNxtJFParamsAtCrsrDelRqstdFrm_M_gpnWycAng -- See zSelCopyPrvNxtJFSigReturnToXCursor_M_gpnWyc	{#insert zXCddPrvNxtJFSigCopyParamsRtrnToX_M_gpnWyc}{#insert zTPPaste}{#insert zPostAllParamsKeepDelRqstd_M_ang}{#insert zzEscGnrcsIfAngNotLCGPreBrktGTP}	zzXCddPastePrvNxtJFParamsAtCrsrDelRqstdFrm_M_gpnWycAng
+zzXPasteNxtJFParamsAtCrsrDelRqstdFrom_M_wycAng	{#insert zvGPRV_NXT_stNext}{#insert zzXPastePrvNxtJFParamsAtCrsrDelRqstdFrm_M_gpnWycAng}	zzXPasteNxtJFParamsAtCrsrDelRqstdFrom_M_wycAng
+zzXPastePrvJFParamsAtCrsrDelRqstdFrom_M_wycAng	{#insert zvGPRV_NXT_stPrev}{#insert zzXPastePrvNxtJFParamsAtCrsrDelRqstdFrm_M_gpnWycAng}	zzXPastePrvJFParamsAtCrsrDelRqstdFrom_M_wycAng
+zzXPastePrvNxtJFParamsAtCrsrDelRqstdFrm_M_gpnWycAng -- See zSelCopyPrvNxtJFSigReturnToXCursor_M_gpnWyc	{#insert zXPrvNxtJFSigCopyParamsRtrnToX_M_gpnWyc}{#insert zTPPaste}{#insert zPostAllParamsKeepDelRqstd_M_ang}	zzXPastePrvNxtJFParamsAtCrsrDelRqstdFrm_M_gpnWycAng

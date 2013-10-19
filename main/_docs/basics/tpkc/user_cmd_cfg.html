@@ -58,7 +58,7 @@ is <CODE>3</CODE>, then the following must exist:<UL>
 
 <P><UL>
 	<LI><B>Example phrase-name</B>: <CODE>zzTpkcFileCloseNbsKcEsc1</CODE></LI>
-	<LI><B>Example value:</B> <CODE>\\\{#insert zCpF12\\\}\\\{#sleep 25\\\}\\\{#insert zCpF9\\\}\\\{#sleep 100\\\}</CODE></LI>
+	<LI><B>Example value:</B> <CODE>\\\{#CTRL \\\{#F12\\\}\\\}\\\{#sleep 25\\\}\\\{#insert zCpF9\\\}\\\{#sleep 100\\\}</CODE></LI>
 </UL></P>
 
 <P>The specific key-command that triggers (should trigger) the command. There must be one of these variables for every number that <A HREF="#NbsKcCount"><CODE>zzTpkc[name]NbsKcCount</CODE></A> is above zero.</P>
@@ -66,7 +66,7 @@ is <CODE>3</CODE>, then the following must exist:<UL>
 <H3>Value (phrase-body) requirements</H3>
 
 <P>The value must<UL>
-	<LI>Contain only <A HREF="../xkp.html">x-key-presses</A></LI>
+	<LI>End with a call to <CODE><A HREF="../xkp.html#ztslp">zTSlp</A></CODE>. This implies that, in the case of multi-key-press key-commands, the last key-press only should be an <A HREF="../xkp.html">x-key-presses</A>. All previous key-presses should be a <A HREF="../xkp.html#rawpexkc">raw PhraseExpress key-presses</A></LI>
 	<LI>Be <A HREF="../../devpex/xpc.html#escaped">escaped</A></LI>
 	<LI>For key-commands with multiple key-presses, there must be some sleep between each. See the TPKC master-configuration-variable <A HREF="master_cfg_vars.html#zTpkcMillsBtwMultiKeyKCs"><CODE>zTpkcMillsBtwMultiKeyKCs</CODE></A> for more information.</LI>
 </UL><I>Having this value escaped makes <A HREF="tpkc_user_dir.html#remotebuild">remote-builds</A> possible.</I></P>
@@ -134,7 +134,7 @@ is <CODE>3</CODE>, then the following must exist:<UL>
 <BR>(The <CODE>PageDown</CODE> command is about half way down the file.)</P>
 
 <P><B>Notes:</B><UL>
-	<LI>These phrases are <A HREF="../../devpex/c2pl.html#one">compressed</A> and ready-for-import.</LI>
+	<LI>These phrases are <A HREF="../../devpex/pc2.html#one">compressed</A> and ready-for-import.</LI>
 	<LI>This phrase-file is originally created by the <A HREF="index.html#userbuild01">first TPKC build-process</A>.</LI>
 	<LI>This key-command must be unique among all TextPad built-in commands. There is no automated way to enforce this. However, there are numerous <A HREF="user_menu2.html#tpkcumakcdt">debugging tools</A> to help you diagnose conflicts.</LI>
 </UL></P>

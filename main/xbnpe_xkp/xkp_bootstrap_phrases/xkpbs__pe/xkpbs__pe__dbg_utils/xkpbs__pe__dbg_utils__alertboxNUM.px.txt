@@ -9,3 +9,13 @@ alertbox7 -- '7' alert box	{#MSGBOX -head 7 -text 7}	alertbox7
 alertbox8 -- '8' alert box	{#MSGBOX -head 8 -text 8}	alertbox8
 alertbox9 -- '9' alert box	{#MSGBOX -head 9 -text 9}	alertbox9
 alertbox10 -- '10' alert box	{#MSGBOX -head 10 -text 10}	alertbox10
+klertbox1 -- '1' alert box	{#sleep 1000}{#insert alertbox1}	klertbox1
+klertbox2 -- '2' alert box	{#sleep 1000}{#insert alertbox2}	klertbox2
+klertbox3 -- '3' alert box	{#sleep 1000}{#insert alertbox3}	klertbox3
+klertbox4 -- '4' alert box	{#sleep 1000}{#insert alertbox4}	klertbox4
+klertbox5 -- '5' alert box	{#sleep 1000}{#insert alertbox5}	klertbox5
+klertbox6 -- '6' alert box	{#sleep 1000}{#insert alertbox6}	klertbox6
+klertbox7 -- '7' alert box	{#sleep 1000}{#insert alertbox7}	klertbox7
+klertbox8 -- '8' alert box	{#sleep 1000}{#insert alertbox8}	klertbox8
+klertbox9 -- '9' alert box	{#sleep 1000}{#insert alertbox9}	klertbox9
+klertbox10 -- '10' alert box	{#sleep 1000}{#insert alertbox10}	klertbox10

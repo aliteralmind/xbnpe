@@ -1,5 +1,0 @@
-zzZIdxJdlnobPostfix	jdlobjectcb	zzZIdxJdlnobPostfix
-zzZIdxJdlnopPostfix	jdlobjectpw	zzZIdxJdlnopPostfix
-zzZIdxJdlnfrPostfix	jdlnfuncr	zzZIdxJdlnfrPostfix
-zzZIdxJdlnfoPostfix	jdlnfuncdf	zzZIdxJdlnfoPostfix
-zzZIdxJdlnftPostfix	jdlnfuncother	zzZIdxJdlnftPostfix

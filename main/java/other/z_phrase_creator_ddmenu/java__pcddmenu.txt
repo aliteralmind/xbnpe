@@ -1,0 +1,92 @@
+(*
+   Required by pipm[d,f]...START
+      XBNPE-DDMENU-DIR-ID=tpkc
+   Required by pipm[d,f]...END
+*)
+(*
+   Required by phrase-creator-ddmenu-utils...START
+      PM_DDMENU_DIR_ID=java
+   Required by phrase-creator-ddmenu-utils...END
+*)
+(*
+   FROM xbnpe_phrase_creator_popup_heirarchy_base.px.txt:
+
+Phrase-creators: XBN-PhraseExpress -- xh   .   zXbnpeCmdPopupRoot
+   Phrase-creators: Java -- xhj   .   xh*)
+(*    Function signature -- xhjg   .   xhj*)
+(*       Entire signature -- xhjgg   .   xhjg*)
+(*       Return type -- xhjgt   .   xhjg*)
+(*       Function name -- xhjgn   .   xhjg*)
+(*       Parameters -- xhjgp   .   xhjg*)
+(*    JavaDoc -- xhjd   .   xhj*)
+(*       Links -- xhjdk   .   xhjd*)
+				Class-file link -- xhjdkc	.	xhjdk
+					Var: zvDIR_TORD	{#SETCLIPBOARD zvDIR_TORD}{#insert zzBalCBContainsVarNm}	xhjdkc
+						zvDIR_TORD_stL1c	\\\{#insert zvDIR_TORD_stL1c\\\}	xhjdkcd
+						zvDIR_TORD_stPrompt	\\\{#insert zvDIR_TORD_stPrompt\\\}	xhjdkcd
+					zzClassFileLinkDispCNm_M_dtdCnm	\\\{#insert zzClassFileLinkDispCNm_M_dtdCnm\\\}	xhjdkc
+					zzClassFileLinkDispYmk_M_dtdCnm	\\\{#insert zzClassFileLinkDispYmk_M_dtdCnm\\\}	xhjdkc
+					zzClassFileLink_M_dtdCnmDsp	\\\{#insert zzClassFileLink_M_dtdCnmDsp\\\}	xhjdkc
+				Function/constructor link -- xhjdkf	.	xhjdk
+					1-plus parameter -- xhjdkfa	.	xhjdkf
+						z1PPFuncLinkDispFNmWPrek_M_drnFnmPrmsPapPrk	\\\{#insert z1PPFuncLinkDispFNmWPrek_M_drnFnmPrmsPapPrk\\\}	xhjdkfa
+						z1PPFuncLinkDispFNm_M_drnFnmPrmsPap	\\\{#insert z1PPFuncLinkDispFNm_M_drnFnmPrmsPap\\\}	xhjdkfa
+						z1PPFuncLinkDispYmkPapES_M_drnFnmPrms	\\\{#insert z1PPFuncLinkDispYmkPapES_M_drnFnmPrms\\\}	xhjdkfa
+						z1PPFuncLinkPapES_M_drnFnmPrmsDsp	\\\{#insert z1PPFuncLinkPapES_M_drnFnmPrmsDsp\\\}	xhjdkfa
+						z1PPFuncLinkWPrek_M_drnFnmPrmsDspPapPrk	\\\{#insert z1PPFuncLinkWPrek_M_drnFnmPrmsDspPapPrk\\\}	xhjdkfa
+						z1PPFuncLink_M_drnFnmPrmsDspPap	\\\{#insert z1PPFuncLink_M_drnFnmPrmsDspPap\\\}	xhjdkfa
+					z0PFuncLinkDispFNmWPrek_M_fnmDrnPrk	\\\{#insert z0PFuncLinkDispFNmWPrek_M_fnmDrnPrk\\\}	xhjdkf
+					z0PFuncLinkDispFNm_M_fnmDrn	\\\{#insert z0PFuncLinkDispFNm_M_fnmDrn\\\}	xhjdkf
+					z0PFuncLinkDsplyYmkPapES_M_fnmDrn	\\\{#insert z0PFuncLinkDsplyYmkPapES_M_fnmDrn\\\}	xhjdkf
+					z0PFuncLinkPapES_M_fnmDrnDsp	\\\{#insert z0PFuncLinkPapES_M_fnmDrnDsp\\\}	xhjdkf
+					z0PFuncLinkPapPPWPrek_M_fnmDrnDspPrk	\\\{#insert z0PFuncLinkPapPPWPrek_M_fnmDrnDspPrk\\\}	xhjdkf
+					z0PFuncLinkPapPP_M_fnmDrnDsp	\\\{#insert z0PFuncLinkPapPP_M_fnmDrnDsp\\\}	xhjdkf
+					z0PFuncLink_M_fnmPapDrnDsp	\\\{#insert z0PFuncLink_M_fnmPapDrnDsp\\\}	xhjdkf
+				Object link -- xhjdko
+					zzObjLinkDsplyONm_M_onmDrn	\\\{#insert zzObjLinkDsplyONm_M_onmDrn\\\}	xhjdko
+					zzObjLinkDsplyYmk_M_onmDrn	\\\{#insert zzObjLinkDsplyYmk_M_onmDrn\\\}	xhjdko
+					zzObjLink_M_onmDrnDsp	\\\{#insert zzObjLink_M_onmDrnDsp\\\}	xhjdko
+				this/super constructor link -- xhjdkn	.	xhjdk
+					super-constructor -- xhjdknr	.	xhjdkn
+						0-params -- xhjdknrz	.	xhjdknr
+							z0PSuperCnstrLinkDispCNmWPrek_M_cnmPrk	\\\{#insert z0PSuperCnstrLinkDispCNmWPrek_M_cnmPrk\\\}	xhjdknrz
+							z0PSuperCnstrLinkDispCNm_M_cnm	\\\{#insert z0PSuperCnstrLinkDispCNm_M_cnm\\\}	xhjdknrz
+							z0PSuperCnstrLinkDispQsprQPapPP_M_cnm	\\\{#insert z0PSuperCnstrLinkDispQsprQPapPP_M_cnm\\\}	xhjdknrz
+							z0PSuperCnstrLinkDispQsprQWPrek_M_cnmPrk	\\\{#insert z0PSuperCnstrLinkDispQsprQWPrek_M_cnmPrk\\\}	xhjdknrz
+							z0PSuperCnstrLinkDispYmk_M_cnm	\\\{#insert z0PSuperCnstrLinkDispYmk_M_cnm\\\}	xhjdknrz
+							z0PSuperCnstrLinkPapES_M_cnmDsp	\\\{#insert z0PSuperCnstrLinkPapES_M_cnmDsp\\\}	xhjdknrz
+						z1PPSuperCnstrLinkDispCNm_M_prmsPap	\\\{#insert z1PPSuperCnstrLinkDispCNm_M_prmsPap\\\}	xhjdknr
+						z1PPSuperCnstrLinkDispQsprQ_M_prmsPap	\\\{#insert z1PPSuperCnstrLinkDispQsprQ_M_prmsPap\\\}	xhjdknr
+						z1PPSuperCnstrLinkPapES_M_prmsDsp	\\\{#insert z1PPSuperCnstrLinkPapES_M_prmsDsp\\\}	xhjdknr
+						z1PPSuperCnstrLinkWPrekDispCNm_M_prmsPapPrk	\\\{#insert z1PPSuperCnstrLinkWPrekDispCNm_M_prmsPapPrk\\\}	xhjdknr
+					this-constructor -- xhjdknh	.	xhjdkn
+						0-params -- xhjdknhz	.	xhjdknh
+							z0PThisCnstrLinkDispCNm_M_cnm	\\\{#insert z0PThisCnstrLinkDispCNm_M_cnm\\\}	xhjdknhz
+							z0PThisCnstrLinkDispQthsQPapPP_M_cnm	\\\{#insert z0PThisCnstrLinkDispQthsQPapPP_M_cnm\\\}	xhjdknhz
+							z0PThisCnstrLinkDispYmk_M_cnm	\\\{#insert z0PThisCnstrLinkDispYmk_M_cnm\\\}	xhjdknhz
+							z0PThisCnstrLinkPapES_M_cnmDsp	\\\{#insert z0PThisCnstrLinkPapES_M_cnmDsp\\\}	xhjdknhz
+						z1PPThisCnstrLinkDispCNm_M_prmsPap	\\\{#insert z1PPThisCnstrLinkDispCNm_M_prmsPap\\\}	xhjdknh
+						z1PPThisCnstrLinkDispQthsQ_M_prmsPap	\\\{#insert z1PPThisCnstrLinkDispQthsQ_M_prmsPap\\\}	xhjdknh
+						z1PPThisCnstrLinkPapES_M_prmsDsp	\\\{#insert z1PPThisCnstrLinkPapES_M_prmsDsp\\\}	xhjdknh
+				Variables -- xhjdkv	.	xhjdk
+					Var: zvDISPLAY	{#SETCLIPBOARD zvDISPLAY}{#insert zzBalCBContainsVarNm}	xhjdkv
+						zvDISPLAY_stCB	\\\{#insert zvDISPLAY_stCB\\\}	xhjdkvd
+						zvDISPLAY_stFncObjNm	\\\{#insert zvDISPLAY_stFncObjNm\\\}	xhjdkvd
+						zvDISPLAY_stFncObjNm	\\\{#insert zvDISPLAY_stFncObjNm\\\}	xhjdkvd
+						zvDISPLAY_stQcnstrQ	\\\{#insert zvDISPLAY_stQcnstrQ\\\}	xhjdkvd
+						zvDISPLAY_stQsuperQ	\\\{#insert zvDISPLAY_stQsuperQ\\\}	xhjdkvd
+						zvDISPLAY_stQthisQ	\\\{#insert zvDISPLAY_stQthisQ\\\}	xhjdkvd
+						zvDISPLAY_stYmk	\\\{#insert zvDISPLAY_stYmk\\\}	xhjdkvd
+					Var: zvFOBJ_NAME	{#SETCLIPBOARD zvFOBJ_NAME}{#insert zzBalCBContainsVarNm}	xhjdkv
+					Var: zvALL_PARAMS
+						zvALL_PARAMS_stCB	\\\{#insert zvALL_PARAMS_stCB\\\}	xhjdkva
+					Var: zvHIDRUN	{#SETCLIPBOARD zvHIDRUN}{#insert zzBalCBContainsVarNm}	xhjdkv
+						zvHIDRUN_stH (U)	\\\{#insert zvHIDRUN_stH\\\}	xhjdkvh
+						zvHIDRUN_stL1c	\\\{#insert zvHIDRUN_stL1c\\\}	xhjdkvh
+					Var: zvPAP_TMVY	{#SETCLIPBOARD zvPAP_TMVY}{#insert zzBalCBContainsVarNm}	xhjdkv
+						zvPAP_TMVY_stL1c	\\\{#insert zvPAP_TMVY_stL1c\\\}	xhjdkvo
+						zvPAP_TMVY_stPrompt	\\\{#insert zvPAP_TMVY_stPrompt\\\}	xhjdkvo
+						zvPAP_TMVY_stT (M,V,Y)	\\\{#insert zvPAP_TMVY_stT\\\}	xhjdkvo
+					Var: zvPRK_FRY	{#SETCLIPBOARD zvPRK_FRY}{#insert zzBalCBContainsVarNm}	xhjdkv
+				zPostLinkCreatePrekGoBack_M_prk	\\\{#insert zPostLinkCreatePrekGoBack_M_prk\\\}	xhjdk
+

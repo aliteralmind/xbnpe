@@ -87,6 +87,7 @@ Phrase-creators: XBN-PhraseExpress -- Call 'xh'   .   zXbnpeCmdPopupRoot
 					zFindDlgCloseMCWW	\\\{#insert zFindDlgCloseMCWW\\\}	xhsfcb
 					zFindDlgCloseMCXS	\\\{#insert zFindDlgCloseMCXS\\\}	xhsfcb
 					zFindDlgCloseREXS	\\\{#insert zFindDlgCloseREXS\\\}	xhsfcb
+					zFindDlgCloseWSRE	\\\{#insert zFindDlgCloseWSRE\\\}	xhsfcb
 					zFindDlgCloseWWXS	\\\{#insert zFindDlgCloseWWXS\\\}	xhsfcb
 				zFindDlgCloseDown* -- xhsfcd	\\\{#insert zFindDlgCloseDown\\\}	xhsfc
 					...then set 2+ flags -- xhsfcdb	.	xhsfcd

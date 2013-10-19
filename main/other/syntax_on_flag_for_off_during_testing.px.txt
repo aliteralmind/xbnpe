@@ -1,0 +1,3 @@
+zvSYNTAX_ON_stOn	{#SETPHRASE -description zvSYNTAX_ON -content on -autotext zvSYNTAX_ON -folder ctvv_folder}	zvSYNTAX_ON_stOn
+zvSYNTAX_ON_stES	{#SETPHRASE -description zvSYNTAX_ON -content -autotext zvSYNTAX_ON -folder ctvv_folder}	zvSYNTAX_ON_stES
+zzSyntaxOnFlagWarningTxt	WARNING: If this test is aborted prematurely, then syntax-balloons will not be displayed for ANY actions, until either the test is fully run, or {#insert zAscQQ}Turn action syntax-summary balloons on{#insert zAscQQ} (in the XBN~PhraseExpress user~menu) is called.	zzSyntaxOnFlagWarningTxt

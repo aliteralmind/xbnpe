@@ -97,13 +97,13 @@
 	<LI><CODE>zWordWrap[On,Off]MaybeRecheckState</CODE></LI>
 </UL></P>
 
-<P>The only way to truly know the current word-wrap state is by prompting the user. For processes that open text documents and then <I>immediately process them</I>, TextPad <A HREF="#tptxtdstate">default-state</A> may be sufficient. For <A HREF="../basics/xbnpe_phrase_types.html#action">actions</A> that may be used randomly and frequently (such as <A HREF="../devpex/c2pl.html#one"><CODE>c2pl</CODE></A> or <CODE>dnen</CODE>), it may be necessary to prompt the user.</P>
+<P>The only way to truly know the current word-wrap state is by prompting the user. For processes that open text documents and then <I>immediately process them</I>, TextPad <A HREF="#tptxtdstate">default-state</A> may be sufficient. For <A HREF="../basics/xbnpe_phrase_types.html#action">actions</A> that may be used randomly and frequently (such as <A HREF="../devpex/pc2.html#one"><CODE>pc2</CODE></A> or <CODE>dnen</CODE>), it may be necessary to prompt the user.</P>
 
 <P>It is possible to prompt the user for word-wrap state every <I>n-th</I> time a process is run, such as <I>every</I> time, or every fifth time. The default is every time. To change this, use
 <BR> &nbsp; &nbsp; <CODE>swwrc</CODE>
 <BR>(the &quot;<CODE>wt</CODE>&quot; action tells you both the current state-check count, and reminds of you the <CODE>swwrc</CODE> shortcut to change the count). Whenever the actual word-wrap state is manually set by the user (such as with &quot;<CODE>wn</CODE>&quot; or &quot;<CODE>wf</CODE>&quot;), this count is reset (if it was &quot;<CODE>2/4</CODE>&quot;, for checking every fourth time, it is reset to &quot;<CODE>0/4</CODE>&quot;).</P>
 
-<P><I>Only processes needing to prompt the user for word-wrap state (whether every time or every tenth time) should use these functions.</I> Processes that do not ever want to prompt the user for word-wrap state should use functions elsewhere in this document.</P>
+<P><I>Only processes needing to prompt the user for word-wrap state (whether every time or every tenth time) should use these functions.</I> Processes that do not ever want to prompt the user for word-wrap state should use functions elsewhere in this document. It is recommended that, when the user does need to be prompted for the current word-wrap state, that this prompt is the very first step, before any other prompting occurs.</P>
 
 <P>Finally, note that the when-to-prompt-count is global. All phrases taking advantage of this prompt-the-user-for-ww-state functionality use the same internal counters. Changing it for one changes it for all (both the &quot;n-th&quot; number, and the &quot;current&quot; number).</P>
 

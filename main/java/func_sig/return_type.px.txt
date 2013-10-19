@@ -1,0 +1,49 @@
+rtcl -- rtl, CODE-d	{#insert zvCODED_ES_stCdd}{#insert zzSetGpnToPrevWncTo1}{#insert zXPrvNxtJFSigCopyReturnTypeNoGnrcsPasteAtX_M_cdeGpnWyc}{#insert zPreBracketGTP}{#insert zzRtlsyn_M_yon}	rtcl
+rtcl2 -- rtcl, 2 sigs up	{#insert zvCODED_ES_stCdd}{#insert zzSetGpnToPrevWncTo2}{#insert zXPrvNxtJFSigCopyReturnTypeNoGnrcsPasteAtX_M_cdeGpnWyc}{#insert zPreBracketGTP}{#insert zzRtlsyn_M_yon}	rtcl2
+rtcl3 -- rtcl, 3 sigs up	{#insert zvCODED_ES_stCdd}{#insert zzSetGpnToPrevWncTo3}{#insert zXPrvNxtJFSigCopyReturnTypeNoGnrcsPasteAtX_M_cdeGpnWyc}{#insert zPreBracketGTP}{#insert zzRtlsyn_M_yon}	rtcl3
+rtcln -- rtcl, [prompt-#] sigs up	{#insert zvCODED_ES_stCdd}{#insert zzSetGpnToPrevWncToPrompt}{#insert zXPrvNxtJFSigCopyReturnTypeNoGnrcsPasteAtX_M_cdeGpnWyc}{#insert zPreBracketGTP}{#insert zzRtlsyn_M_yon}	rtcln
+rtcz -- rtz, CODE-d	{#insert zvCODED_ES_stCdd}{#insert zzSetGpnToNextWncTo1}{#insert zXPrvNxtJFSigCopyReturnTypeNoGnrcsPasteAtX_M_cdeGpnWyc}{#insert zPreBracketGTP}{#insert zzRtlsyn_M_yon}	rtcz
+rtcz2 -- rtcz, 2 sigs down	{#insert zvCODED_ES_stCdd}{#insert zzSetGpnToNextWncTo2}{#insert zXPrvNxtJFSigCopyReturnTypeNoGnrcsPasteAtX_M_cdeGpnWyc}{#insert zPreBracketGTP}{#insert zzRtlsyn_M_yon}	rtcz2
+rtcz3 -- rtcz, 3 sigs down	{#insert zvCODED_ES_stCdd}{#insert zzSetGpnToNextWncTo3}{#insert zXPrvNxtJFSigCopyReturnTypeNoGnrcsPasteAtX_M_cdeGpnWyc}{#insert zPreBracketGTP}{#insert zzRtlsyn_M_yon}	rtcz3
+rtczn -- rtcz, [prompt-#] sigs down	{#insert zvCODED_ES_stCdd}{#insert zzSetGpnToNextWncToPrompt}{#insert zXPrvNxtJFSigCopyReturnTypeNoGnrcsPasteAtX_M_cdeGpnWyc}{#insert zPreBracketGTP}{#insert zzRtlsyn_M_yon}	rtczn
+rtl -- Sig up: Paste return-type (no generics) at cursor	{#insert zzSetCddToESGpnToPrevWncTo1}{#insert zXPrvNxtJFSigCopyReturnTypeNoGnrcsPasteAtX_M_cdeGpnWyc}{#insert zzRtlsyn_M_yon}	rtl
+rtl2 -- rtl, 2 sigs up	{#insert zzSetCddToESGpnToPrevWncTo2}{#insert zXPrvNxtJFSigCopyReturnTypeNoGnrcsPasteAtX_M_cdeGpnWyc}{#insert zzRtlsyn_M_yon}	rtl2
+rtl3 -- rtl, 3 sigs up	{#insert zzSetCddToESGpnToPrevWncTo3}{#insert zXPrvNxtJFSigCopyReturnTypeNoGnrcsPasteAtX_M_cdeGpnWyc}{#insert zzRtlsyn_M_yon}	rtl3
+rtln -- rtl, [prompt-#] sigs up	{#insert zzSetCddToESGpnToPrevWncToPrompt}{#insert zXPrvNxtJFSigCopyReturnTypeNoGnrcsPasteAtX_M_cdeGpnWyc}{#insert zzRtlsyn_M_yon}	rtln
+rtloptsyn	{#BALLOON -title Java func return~type OPTIONS -text [t]=type only, [y]=type+generics, [c]=CODE~d (& gnrcs esc), [l]=from sig up, [z]=sig down, [[2~3,n]]=2nd/3rd/n~th sig up/down  //  [cc]='</CODE>' only btw gnrcs & cursor, [cd]='</CODE>' plus extra (non~tag) text btw gnrcs & cursor  //  rtlsyn}	rtloptsyn
+rtlsyn	{#BALLOON -title Syntax: Java func return~type -text {#insert zzRtlsyns1of3}=Print return~type at cursor, from neighboring function signature  //  {#insert zzRtlsyns2of3}=Print @ crsr then HTML~escape generics  //  {#insert zzRtlsyns3of3}=HTML escape generics before cursor  //   Options: rtloptsyn  //  rtltestall  //  javasyn}	rtlsyn
+zzRtlsyns1of3	r[t,y][c][l,z][[2~3,n]]	zzRtlsyns1of3
+zzRtlsyns2of3	rye[l,z][[2~3,n]]	zzRtlsyns2of3
+zzRtlsyns3of3	ysc[c,d]	zzRtlsyns3of3
+rtltestall	{#insert zzzJavaTestIntroFileNewTest3SigsGTTop}{#insert zvES_23N_stPrompt}rtcz{#insert zvES_23N}: {#insert rtcz{#insert zvES_23N}}{#insert zENTER}rtz{#insert zvES_23N}: {#insert rtz{#insert zvES_23N}}{#insert zENTER}rycz{#insert zvES_23N}: {#insert rycz{#insert zvES_23N}}{#insert zENTER}ryez{#insert zvES_23N}: {#insert ryez{#insert zvES_23N}}{#insert zENTER}ryz{#insert zvES_23N}: {#insert ryz{#insert zvES_23N}}{#insert zENTER}{#insert zTPGTDocBottom}rtcl{#insert zvES_23N}: {#insert rtcl{#insert zvES_23N}}{#insert zENTER}rtl{#insert zvES_23N}: {#insert rtl{#insert zvES_23N}}{#insert zENTER}rycl{#insert zvES_23N}: {#insert rycl{#insert zvES_23N}}{#insert zENTER}ryel{#insert zvES_23N}: {#insert ryel{#insert zvES_23N}}{#insert zENTER}ryl{#insert zvES_23N}: {#insert ryl{#insert zvES_23N}}{#insert zENTER}ysc: <abc>{#insert ysc}{#insert zENTER}yscc: <abc></CODE>{#insert yscc}{#insert zENTER}yscd: <abc></CODE>...{#insert yscd}{#insert zvSYNTAX_ON_stOn}{#insert zzRtlsyn_M_yon}	rtltestall
+rtz -- Sig down: Paste return-type (no generics) at cursor	{#insert zzSetCddToESGpnToNextWncTo1}{#insert zXPrvNxtJFSigCopyReturnTypeNoGnrcsPasteAtX_M_cdeGpnWyc}{#insert zzRtlsyn_M_yon}	rtz
+rtz2 -- rtz, 2 sigs down	{#insert zzSetCddToESGpnToNextWncTo2}{#insert zXPrvNxtJFSigCopyReturnTypeNoGnrcsPasteAtX_M_cdeGpnWyc}{#insert zzRtlsyn_M_yon}	rtz2
+rtz3 -- rtz, 3 sigs down	{#insert zzSetCddToESGpnToNextWncTo3}{#insert zXPrvNxtJFSigCopyReturnTypeNoGnrcsPasteAtX_M_cdeGpnWyc}{#insert zzRtlsyn_M_yon}	rtz3
+rtzn -- rtz, [prompt-#] sigs down	{#insert zzSetCddToESGpnToNextWncToPrompt}{#insert zXPrvNxtJFSigCopyReturnTypeNoGnrcsPasteAtX_M_cdeGpnWyc}{#insert zzRtlsyn_M_yon}	rtzn
+rycl -- ryl, CODE-d	{#insert zvCODED_ES_stCdd}{#insert zzSetGpnToPrevWncTo1}{#insert zXPrvNxtJFSigCopyReturnTypeWGnrcsPasteAtX_M_cdeGpnWyc}{#insert zHtmlEscJGnrcsB4CrsrGTPEndCode}{#insert zzRtlsyn_M_yon}	rycl
+rycl2 -- rycl, 2 sigs up	{#insert zvCODED_ES_stCdd}{#insert zzSetGpnToPrevWncTo2}{#insert zXPrvNxtJFSigCopyReturnTypeWGnrcsPasteAtX_M_cdeGpnWyc}{#insert zHtmlEscJGnrcsB4CrsrGTPEndCode}{#insert zzRtlsyn_M_yon}	rycl2
+rycl3 -- rycl, 3 sigs up	{#insert zvCODED_ES_stCdd}{#insert zzSetGpnToPrevWncTo3}{#insert zXPrvNxtJFSigCopyReturnTypeWGnrcsPasteAtX_M_cdeGpnWyc}{#insert zHtmlEscJGnrcsB4CrsrGTPEndCode}{#insert zzRtlsyn_M_yon}	rycl3
+rycln -- rycl, [prompt-#] sigs up	{#insert zvCODED_ES_stCdd}{#insert zzSetGpnToPrevWncToPrompt}{#insert zXPrvNxtJFSigCopyReturnTypeWGnrcsPasteAtX_M_cdeGpnWyc}{#insert zHtmlEscJGnrcsB4CrsrGTPEndCode}{#insert zzRtlsyn_M_yon}	rycln
+rycz -- ryz, CODE-d	{#insert zvCODED_ES_stCdd}{#insert zzSetGpnToNextWncTo1}{#insert zXPrvNxtJFSigCopyReturnTypeWGnrcsPasteAtX_M_cdeGpnWyc}{#insert zHtmlEscJGnrcsB4CrsrGTPEndCode}{#insert zzRtlsyn_M_yon}	rycz
+rycz2 -- rycz, 2 sigs down	{#insert zvCODED_ES_stCdd}{#insert zzSetGpnToNextWncTo2}{#insert zXPrvNxtJFSigCopyReturnTypeWGnrcsPasteAtX_M_cdeGpnWyc}{#insert zHtmlEscJGnrcsB4CrsrGTPEndCode}{#insert zzRtlsyn_M_yon}	rycz2
+rycz3 -- rycz, 3 sigs down	{#insert zvCODED_ES_stCdd}{#insert zzSetGpnToNextWncTo3}{#insert zXPrvNxtJFSigCopyReturnTypeWGnrcsPasteAtX_M_cdeGpnWyc}{#insert zHtmlEscJGnrcsB4CrsrGTPEndCode}{#insert zzRtlsyn_M_yon}	rycz3
+ryczn -- rycz, [prompt-#] sigs down	{#insert zvCODED_ES_stCdd}{#insert zzSetGpnToNextWncToPrompt}{#insert zXPrvNxtJFSigCopyReturnTypeWGnrcsPasteAtX_M_cdeGpnWyc}{#insert zHtmlEscJGnrcsB4CrsrGTPEndCode}{#insert zzRtlsyn_M_yon}	ryczn
+ryel -- rye, HTML-escaped	{#insert zzSetCddToESGpnToPrevWncTo1}{#insert zXPrvNxtJFSigCopyReturnTypeWGnrcsPasteAtX_M_cdeGpnWyc}{#insert zHtmlEscJavaGnrcsB4Cursor}{#insert zzRtlsyn_M_yon}	ryel
+ryel2 -- ryel, 2 sigs up	{#insert zzSetCddToESGpnToPrevWncTo2}{#insert zXPrvNxtJFSigCopyReturnTypeWGnrcsPasteAtX_M_cdeGpnWyc}{#insert zHtmlEscJavaGnrcsB4Cursor}{#insert zzRtlsyn_M_yon}	ryel2
+ryel3 -- ryel, 3 sigs up	{#insert zzSetCddToESGpnToPrevWncTo3}{#insert zXPrvNxtJFSigCopyReturnTypeWGnrcsPasteAtX_M_cdeGpnWyc}{#insert zHtmlEscJavaGnrcsB4Cursor}{#insert zzRtlsyn_M_yon}	ryel3
+ryeln -- ryel, [prompt-#] sigs up	{#insert zzSetCddToESGpnToPrevWncToPrompt}{#insert zXPrvNxtJFSigCopyReturnTypeWGnrcsPasteAtX_M_cdeGpnWyc}{#insert zHtmlEscJavaGnrcsB4Cursor}{#insert zzRtlsyn_M_yon}	ryeln
+ryez -- rye, HTML-escaped	{#insert zzSetCddToESGpnToNextWncTo1}{#insert zXPrvNxtJFSigCopyReturnTypeWGnrcsPasteAtX_M_cdeGpnWyc}{#insert zHtmlEscJavaGnrcsB4Cursor}{#insert zzRtlsyn_M_yon}	ryez
+ryez2 -- ryez, 2 sigs down	{#insert zzSetCddToESGpnToNextWncTo2}{#insert zXPrvNxtJFSigCopyReturnTypeWGnrcsPasteAtX_M_cdeGpnWyc}{#insert zHtmlEscJavaGnrcsB4Cursor}{#insert zzRtlsyn_M_yon}	ryez2
+ryez3 -- ryez, 3 sigs down	{#insert zzSetCddToESGpnToNextWncTo3}{#insert zXPrvNxtJFSigCopyReturnTypeWGnrcsPasteAtX_M_cdeGpnWyc}{#insert zHtmlEscJavaGnrcsB4Cursor}{#insert zzRtlsyn_M_yon}	ryez3
+ryezn -- ryez, [prompt-#] sigs down	{#insert zzSetCddToESGpnToNextWncToPrompt}{#insert zXPrvNxtJFSigCopyReturnTypeWGnrcsPasteAtX_M_cdeGpnWyc}{#insert zHtmlEscJavaGnrcsB4Cursor}{#insert zzRtlsyn_M_yon}	ryezn
+ryl -- Sig up: Paste return-type (with generics) at cursor	{#insert zzSetCddToESGpnToPrevWncTo1}{#insert zXPrvNxtJFSigCopyReturnTypeWGnrcsPasteAtX_M_cdeGpnWyc}{#insert zzRtlsyn_M_yon}	ryl
+ryl2 -- ryl, 2 sigs up	{#insert zzSetCddToESGpnToPrevWncTo2}{#insert zXPrvNxtJFSigCopyReturnTypeWGnrcsPasteAtX_M_cdeGpnWyc}{#insert zzRtlsyn_M_yon}	ryl2
+ryl3 -- ryl, 3 sigs up	{#insert zzSetCddToESGpnToPrevWncTo3}{#insert zXPrvNxtJFSigCopyReturnTypeWGnrcsPasteAtX_M_cdeGpnWyc}{#insert zzRtlsyn_M_yon}	ryl3
+ryln -- ryl, [prompt-#] sigs up	{#insert zzSetCddToESGpnToPrevWncToPrompt}{#insert zXPrvNxtJFSigCopyReturnTypeWGnrcsPasteAtX_M_cdeGpnWyc}{#insert zzRtlsyn_M_yon}	ryln
+ryz -- Sig down: Paste return-type (with generics) at cursor	{#insert zzSetCddToESGpnToNextWncTo1}{#insert zXPrvNxtJFSigCopyReturnTypeWGnrcsPasteAtX_M_cdeGpnWyc}{#insert zzRtlsyn_M_yon}	ryz
+ryz2 -- ryz, 2 sigs down	{#insert zzSetCddToESGpnToNextWncTo2}{#insert zXPrvNxtJFSigCopyReturnTypeWGnrcsPasteAtX_M_cdeGpnWyc}{#insert zzRtlsyn_M_yon}	ryz2
+ryz3 -- ryz, 3 sigs down	{#insert zzSetCddToESGpnToNextWncTo3}{#insert zXPrvNxtJFSigCopyReturnTypeWGnrcsPasteAtX_M_cdeGpnWyc}{#insert zzRtlsyn_M_yon}	ryz3
+ryzn -- ryz, [prompt-#] sigs down	{#insert zzSetCddToESGpnToNextWncToPrompt}{#insert zXPrvNxtJFSigCopyReturnTypeWGnrcsPasteAtX_M_cdeGpnWyc}{#insert zzRtlsyn_M_yon}	ryzn
+ysc -- Escape just pasted generics, immediately before cursor	{#insert zHtmlEscJavaGnrcsB4Cursor}{#insert zzRtlsyn_M_yon}	ysc
+yscc -- ysc, with '</CODE>' between gnrcs and cursor	{#insert zPostBracketGTP}{#insert ysc}{#insert zPreBracketGTP}	yscc
+yscd -- ysc, '</CODE>' with some (non-tag) text after it, btw gnrcs & cursor	{#insert zXmark}{#insert zTMMoveL1Tag}{#insert zTMMoveL1Tag}{#insert ysc}{#insert zXDownDelete}	yscd

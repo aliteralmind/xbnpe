@@ -8,6 +8,7 @@ zTpkcSelectLineNbsKcCount	1	zTpkcSelectLineNbsKcCount
 zTpkcSelectLineNbsKcEsc1	\\\{#insert zCApAA\\\}\\\{#sleep 10\\\}	zTpkcSelectLineNbsKcEsc1
 zTpkcSelectParagraphNbsKcCount	1	zTpkcSelectParagraphNbsKcCount
 zTpkcSelectParagraphNbsKcEsc1	\\\{#insert zApAA\\\}\\\{#sleep 10\\\}	zTpkcSelectParagraphNbsKcEsc1
-zTpkcSelectSwapEndsNbsKcCount	0	zTpkcSelectSwapEndsNbsKcCount
+zTpkcSelectSwapEndsNbsKcCount	1	zTpkcSelectSwapEndsNbsKcCount
+zTpkcSelectSwapEndsNbsKcEsc1	\\\{#CTRL \\\{#ALT \\\{#SHIFT -chars j\\\}\\\}\\\}\\\{#sleep 25\\\}\\\{#insert zWW\\\}\\\{#sleep 10\\\}	zTpkcSelectSwapEndsNbsKcEsc1
 zTpkcSelectWordNbsKcCount	1	zTpkcSelectWordNbsKcCount
 zTpkcSelectWordNbsKcEsc1	\\\{#insert zCSpAA\\\}\\\{#sleep 10\\\}	zTpkcSelectWordNbsKcEsc1

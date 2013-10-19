@@ -1,0 +1,8 @@
+prf -- Create link b4 func/obj link, to its class (disp class-name)	{#insert zPostLinkCreatePrekGoBackFLwr}{#insert prfsyn}	prf
+prfi -- prf, italicized	{#insert zPostLinkCreatePrekGoBackFUpr}{#insert prfsyn}	prfi
+prfsyn	{#BALLOON -title Syntax: Java pre~link file~link -text {#insert zzPrfsyns}=create pre func/obj~link file~link ([f]=display class~name, [r]=disp 'super', [y]=disp y-mark, [i]=italic)  //  javasyn}	prfsyn
+zzPrfsyns	pr[f,r,y][i]	zzPrfsyns
+prr -- prf, display 'super'	{#insert zPostLinkCreatePrekGoBackRLwr}{#insert prfsyn}	prr
+prri -- prr, italicized	{#insert zPostLinkCreatePrekGoBackRUpr}{#insert prfsyn}	prri
+pry -- pry, display y-mark	{#insert zPostLinkCreatePrekGoBackYLwr}{#insert prfsyn}	pry
+pryi -- pry, italicized	{#insert zPostLinkCreatePrekGoBackyUpr}{#insert prfsyn}	pryi

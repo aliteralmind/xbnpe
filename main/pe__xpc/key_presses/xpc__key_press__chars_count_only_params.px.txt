@@ -1,0 +1,66 @@
+kru -- krh, w/ -count param {#NONE -chars [crsr] -count ...}	{#insert zvESC_LVL_CNT_st0}{#insert zKruRAW_M_elc}{#insert krksyn}	kru
+krua -- {#ALT -chars [crsr] -count ...}	{#insert zvESC_LVL_CNT_st0}{#insert zKruaRAW_M_elc}{#insert krksyn}	krua
+krual -- {#ALT {#LWIN -chars [crsr] -count ...}}	{#insert zvESC_LVL_CNT_st0}{#insert zKrualRAW_M_elc}{#insert krksyn}	krual
+krualp -- krual, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrualRAW_M_elc}{#insert krksyn}	krualp
+krualq -- krual, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrualRAW_M_elc}{#insert krksyn}	krualq
+kruap -- krua, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKruaRAW_M_elc}{#insert krksyn}	kruap
+kruaq -- krua, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKruaRAW_M_elc}{#insert krksyn}	kruaq
+kruas -- {#ALT {#SHIFT -chars [crsr] -count ...}}	{#insert zvESC_LVL_CNT_st0}{#insert zKruasRAW_M_elc}{#insert krksyn}	kruas
+kruasl -- {#ALT {#SHIFT {#LWIN -chars [crsr] -count ...}}}	{#insert zvESC_LVL_CNT_st0}{#insert zKruaslRAW_M_elc}{#insert krksyn}	kruasl
+kruaslp -- kruasl, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKruaslRAW_M_elc}{#insert krksyn}	kruaslp
+kruaslq -- kruasl, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKruaslRAW_M_elc}{#insert krksyn}	kruaslq
+kruasp -- kruas, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKruasRAW_M_elc}{#insert krksyn}	kruasp
+kruasq -- kruas, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKruasRAW_M_elc}{#insert krksyn}	kruasq
+kruc -- {#CTRL -chars [crsr] -count ...}	{#insert zvESC_LVL_CNT_st0}{#insert zKrucRAW_M_elc}{#insert krksyn}	kruc
+kruca -- {#CTRL {#ALT -chars [crsr] -count ...}}	{#insert zvESC_LVL_CNT_st0}{#insert zKrucaRAW_M_elc}{#insert krksyn}	kruca
+krucal -- {#CTRL {#ALT {#LWIN -chars [crsr] -count ...}}}	{#insert zvESC_LVL_CNT_st0}{#insert zKrucalRAW_M_elc}{#insert krksyn}	krucal
+krucalp -- krucal, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrucalRAW_M_elc}{#insert krksyn}	krucalp
+krucalq -- krucal, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrucalRAW_M_elc}{#insert krksyn}	krucalq
+krucap -- kruca, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrucaRAW_M_elc}{#insert krksyn}	krucap
+krucaq -- kruca, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrucaRAW_M_elc}{#insert krksyn}	krucaq
+krucas -- {#CTRL {#ALT {#SHIFT -chars [crsr] -count ...}}}	{#insert zvESC_LVL_CNT_st0}{#insert zKrucasRAW_M_elc}{#insert krksyn}	krucas
+krucasl -- {#CTRL {#ALT {#SHIFT {#LWIN -chars  -count {#insert zXmark}}}}}	{#insert zvESC_LVL_CNT_st0}{#insert zKrucaslRAW_M_elc}{#insert krksyn}	krucasl
+krucaslp -- krucasl, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrucaslRAW_M_elc}{#insert krksyn}	krucaslp
+krucaslq -- krucasl, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrucaslRAW_M_elc}{#insert krksyn}	krucaslq
+krucasp -- krucas, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrucasRAW_M_elc}{#insert krksyn}	krucasp
+krucasq -- krucas, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrucasRAW_M_elc}{#insert krksyn}	krucasq
+krucl -- {#CTRL {#LWIN -chars [crsr] -count ...}}	{#insert zvESC_LVL_CNT_st0}{#insert zKruclRAW_M_elc}{#insert krksyn}	krucl
+kruclp -- krucl, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKruclRAW_M_elc}{#insert krksyn}	kruclp
+kruclq -- krucl, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKruclRAW_M_elc}{#insert krksyn}	kruclq
+krucp -- kruc, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrucRAW_M_elc}{#insert krksyn}	krucp
+krucq -- kruc, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrucRAW_M_elc}{#insert krksyn}	krucq
+krucs -- {#CTRL {#SHIFT -chars [crsr] -count ...}}	{#insert zvESC_LVL_CNT_st0}{#insert zKrucsRAW_M_elc}{#insert krksyn}	krucs
+krucsl -- {#CTRL {#SHIFT {#LWIN -chars [crsr] -count ...}}}	{#insert zvESC_LVL_CNT_st0}{#insert zKrucslRAW_M_elc}{#insert krksyn}	krucsl
+krucslp -- krucsl, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrucslRAW_M_elc}{#insert krksyn}	krucslp
+krucslq -- krucsl, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrucslRAW_M_elc}{#insert krksyn}	krucslq
+krucsp -- krucs, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrucsRAW_M_elc}{#insert krksyn}	krucsp
+krucsq -- krucs, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrucsRAW_M_elc}{#insert krksyn}	krucsq
+krul -- {#LWIN -chars [crsr] -count ...}	{#insert zvESC_LVL_CNT_st0}{#insert zKrulRAW_M_elc}{#insert krksyn}	krul
+krulp -- krul, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrulRAW_M_elc}{#insert krksyn}	krulp
+krulq -- krul, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrulRAW_M_elc}{#insert krksyn}	krulq
+krup -- kru, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKruRAW_M_elc}{#insert krksyn}	krup
+kruq -- kru, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKruRAW_M_elc}{#insert krksyn}	kruq
+krus -- {#SHIFT -chars [crsr] -count ...}	{#insert zvESC_LVL_CNT_st0}{#insert zKrusRAW_M_elc}{#insert krksyn}	krus
+krusl -- {#SHIFT {#LWIN -chars [crsr] -count ...}}	{#insert zvESC_LVL_CNT_st0}{#insert zKruslRAW_M_elc}{#insert krksyn}	krusl
+kruslp -- krusl, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKruslRAW_M_elc}{#insert krksyn}	kruslp
+kruslq -- krusl, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKruslRAW_M_elc}{#insert krksyn}	kruslq
+krusp -- krus, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrusRAW_M_elc}{#insert krksyn}	krusp
+krusq -- krus, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrusRAW_M_elc}{#insert krksyn}	krusq
+zKruRAW_M_elc -- Needs zvESC_LVL_CNT (assumed good value!)	{#insert zOY_M_elc}#NONE -chars  -count {#insert zXmark}{#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}{#LEFT -count 11}	zKruRAW_M_elc
+zKruaRAW_M_elc	{#insert zOY_M_elc}#ALT -chars  -count {#insert zXmark}{#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}{#LEFT -count 11}	zKruaRAW_M_elc
+zKrualRAW_M_elc	{#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#LWIN -chars  -count {#insert zXmark}{#insert zCYx2_M_elc}{#insert zzLeftPrevEscCrlyX2_M_elc}{#LEFT -count 11}	zKrualRAW_M_elc
+zKruasRAW_M_elc	{#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#SHIFT -chars  -count {#insert zXmark}{#insert zCYx2_M_elc}{#insert zzLeftPrevEscCrlyX2_M_elc}{#LEFT -count 11}	zKruasRAW_M_elc
+zKruaslRAW_M_elc	{#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#SHIFT {#insert zOY_M_elc}#LWIN -chars  -count {#insert zXmark}{#insert zCYx3_M_elc}{#insert zzLeftPrevEscCrlyX3_M_elc}{#LEFT -count 11}	zKruaslRAW_M_elc
+zKrucRAW_M_elc	{#insert zOY_M_elc}#CTRL -chars  -count {#insert zXmark}{#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}{#LEFT -count 11}	zKrucRAW_M_elc
+zKrucaRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#ALT -chars  -count {#insert zXmark}{#insert zCYx2_M_elc}{#insert zzLeftPrevEscCrlyX2_M_elc}{#LEFT -count 11}	zKrucaRAW_M_elc
+zKrucalRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#LWIN -chars  -count {#insert zXmark}{#insert zCYx3_M_elc}{#insert zzLeftPrevEscCrlyX3_M_elc}{#LEFT -count 11}	zKrucalRAW_M_elc
+zKrucasRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#SHIFT -chars  -count {#insert zXmark}{#insert zCYx3_M_elc}{#insert zzLeftPrevEscCrlyX3_M_elc}{#LEFT -count 11}	zKrucasRAW_M_elc
+zKrucaslRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#SHIFT {#insert zOY_M_elc}#LWIN -chars  -count {#insert zXmark}{#insert zCYx4_M_elc}{#insert zzLeftPrevEscCrlyX4_M_elc}{#LEFT -count 11}	zKrucaslRAW_M_elc
+zKruclRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#LWIN -chars  -count {#insert zXmark}{#insert zCYx2_M_elc}{#insert zzLeftPrevEscCrlyX2_M_elc}{#LEFT -count 11}	zKruclRAW_M_elc
+zKrucsRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#SHIFT -chars  -count {#insert zXmark}{#insert zCYx2_M_elc}{#insert zzLeftPrevEscCrlyX2_M_elc}{#LEFT -count 11}	zKrucsRAW_M_elc
+zKrucslRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#SHIFT {#insert zOY_M_elc}#LWIN -chars  -count {#insert zXmark}{#insert zCYx3_M_elc}{#insert zzLeftPrevEscCrlyX3_M_elc}{#LEFT -count 11}	zKrucslRAW_M_elc
+zKrulRAW_M_elc	{#insert zOY_M_elc}#LWIN -chars  -count {#insert zXmark}{#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}{#LEFT -count 11}	zKrulRAW_M_elc
+zKrusRAW_M_elc	{#insert zOY_M_elc}#SHIFT -chars  -count {#insert zXmark}{#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}{#LEFT -count 11}	zKrusRAW_M_elc
+zKruslRAW_M_elc	{#insert zOY_M_elc}#SHIFT {#insert zOY_M_elc}#LWIN -chars  -count {#insert zXmark}{#insert zCYx2_M_elc}{#insert zzLeftPrevEscCrlyX2_M_elc}{#LEFT -count 11}	zKruslRAW_M_elc
+zzKruAllMainAbrvs1CQBL	[Kru][Kruc][Krua][Krus][Krul][Kruca][Krucs][Krucl][Kruas][Krual][Krusl][Krucas][Krucal][Krucsl][Kruasl][Krucasl]	zzKruAllMainAbrvs1CQBL
+krutestall	{#SETPHRASE -description zvQB_STR_LIST -content {#insert zzKruAllMainAbrvs1CQBL} -autotext zvQB_STR_LIST -folder ctvv_folder}{#insert zzTestAllMainPhrsCrtrAbrvs_M_qbl}	krutestall

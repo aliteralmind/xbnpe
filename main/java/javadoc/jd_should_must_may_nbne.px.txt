@@ -1,0 +1,23 @@
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+sbne -- <I>Should</I> be non-<CODE>null</CODE> and non-empty	<I>Should</I> {#insert zzBnne}{#insert sbnesyn}	sbne
+sbnel -- sbne, lowercase should	<I>should</I> {#insert zzBnne}{#insert sbnesyn}	sbnel
+sbnn -- <I>Should</I> be non-<CODE>null</CODE>	<I>Should</I> {#insert zzBnn}{#insert sbnesyn}	sbnn
+sbnnl -- sbnn, lowercase {#insert zzBnn}{#insert sbnesyn}	bnnsl
+snbn -- <I>Should</I> not be <CODE>null</CODE>	<I>Should</I> {#insert zzNbn}{#insert sbnesyn}	snbn
+snbne -- <I>Should</I> not be <CODE>null</CODE> or empty	<I>Should</I> {#insert zzNbne}{#insert sbnesyn}	snbne
+snbnel -- snbne, lowercase	<I>should</I> {#insert zzNbne}{#insert sbnesyn}	snbnel
+snbnl -- snbn, lowercase	<I>should</I> {#insert zzNbn}{#insert sbnesyn}	snbnl
+tbne -- Must be non-<CODE>null</CODE> and non-empty	Must {#insert zzBnne}{#insert sbnesyn}	tbne
+tbnel -- tbne, lowercase {#insert zzBnne}{#insert sbnesyn}	bnnel
+tbnn -- Must be non-<CODE>null</CODE>	Must {#insert zzBnn}{#insert sbnesyn}	tbnn
+ybnn -- bnn, lowercase	may {#insert zzBnn}{#insert sbnesyn}	ybnn
+ynbn -- May not be <CODE>null</CODE>	May {#insert zzNbn}{#insert sbnesyn}	ynbn
+ynbne -- May not be <CODE>null</CODE> or empty	May {#insert zzNbne}{#insert sbnesyn}	ynbne
+ynbnel -- nbne, lowercase	may {#insert zzNbne}{#insert sbnesyn}	ynbnel
+ynbnl -- nbn, lowercase	may {#insert zzNbn}{#insert sbnesyn}	ynbnl
+zzBnn -- STARTING W/ A SPACE ADDS AN **EXTRA** SPACE	be non-<CODE>null</CODE>	zzBnn
+zzBnne -- BUT NO SPACE RESULTS IN **NO** SPACE.	{#insert zzBnn} and non-empty	zzBnne
+zzNbn -- MUST APPEND A SPACE BEFORE CALLING	not be <CODE>null</CODE>	zzNbn
+zzNbne -- ANY OF THESE.	{#insert zzNbn} or empty	zzNbne
+sbnesyn	{#BALLOON -title Syntax: Should/may/must... -text sbn[e,n][l]=<I>Should</I> be... ([e]=non~null and non~empty, [l]=lowercase, [n]=non~null only) // snbn[e][l]=<I>Should</I> not be... // tbn[e[l],n]=Must be... // ybnn=May be non-null // ynbn[e][l]=May not be...  //  javasyn}	sbnesyn
+

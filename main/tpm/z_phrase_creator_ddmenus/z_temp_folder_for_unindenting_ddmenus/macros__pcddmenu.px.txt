@@ -1,0 +1,34 @@
+(*
+FROM xbnpe_phrase_creator_popup_heirarchy_base.px.txt:
+
+Phrase-creators: XBN-PhraseExpress -- xh   .   zXbnpeCmdPopupRoot
+Phrase-creators: Char, word, line, para, doc, file -- xhc   .   xh*)
+(*   Phrase-creators: Java -- xhj   .   xh*)
+zTMSelectSuperClassNm	\\\{#insert zTMSelectSuperClassNm\\\}	xhj
+zTMSelectThisClassNm	\\\{#insert zTMSelectThisClassNm\\\}	xhj
+(*    Function signature -- xhjg   .   xhj*)
+(*       Entire signature -- xhjgg   .   xhjg*)
+zTMFindNextJavaFuncSigLine	\\\{#insert zTMFindNextJavaFuncSigLine\\\}	xhjgg
+zTMFindPrevJavaFuncSigLine	\\\{#insert zTMFindPrevJavaFuncSigLine\\\}	xhjgg
+(*       Parameters -- xhjgp   .   xhjg*)
+Delete from slctd params -- xhjgpd	.	xhjgp
+zTMJavaDelNmsGnrcsFromSlctdParams4FQP	\\\{#insert zTMJavaDelNmsGnrcsFromSlctdParams4FQP\\\}	xhjgpd
+zTMJavaDelNmsGnrcsFromSlctdParams4TV	\\\{#insert zTMJavaDelNmsGnrcsFromSlctdParams4TV\\\}	xhjgpd
+zTMJavaDelNmsOnlyFromSlctdParams	\\\{#insert zTMJavaDelNmsOnlyFromSlctdParams\\\}	xhjgpd
+zTMJavaDelTypesFromSlctdParams	\\\{#insert zTMJavaDelTypesFromSlctdParams\\\}	xhjgpd
+zTMFindNextParamTypeAndName	\\\{#insert zTMFindNextParamTypeAndName\\\}	xhjgp
+zTMFindPrevParamTypeAndName	\\\{#insert zTMFindPrevParamTypeAndName\\\}	xhjgp
+zTMSelThrNextCloseParen	\\\{#insert zTMSelThrNextCloseParen\\\}	xhjgp
+(* Other -- xhoo   .   xho  *)
+zTMFindNextOpenParen	\\\{#insert zTMFindNextOpenParen\\\}	xhoo
+zTMFindPrevCloseParen	\\\{#insert zTMFindPrevCloseParen\\\}	xhoo
+zTMFindPrevSpace	\\\{#insert zTMFindPrevSpace\\\}	xhoo
+(*    Spot-marks -- xhox   .   xho*)
+(*    z[X,Y]Down[2] -- xhoxd   .   xhox*)
+zTMFindYMarkDown	\\\{#insert zTMFindYMarkDown\\\}	xhoxd
+(*    z[X,Y]Up[2] -- xhoxu   .   xhox*)
+zTMFindYMarkUp	\\\{#insert zTMFindYMarkUp\\\}	xhoxu
+(* Phrase-creators: HTML -- xhh   .   xh*)
+zTMFindPrevHREFThrQQ	\\\{#insert zTMFindPrevHREFThrQQ\\\}	xhh
+zTMMoveL1Tag	\\\{#insert zTMMoveL1Tag\\\}	xhh
+zTMMoveR1Tag	\\\{#insert zTMMoveR1Tag\\\}	xhh

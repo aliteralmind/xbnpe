@@ -6,41 +6,99 @@
 <BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF"><a name="top"></a>
 
 
-<A NAME="0p8p2p4_beta"/><H2>XBNPE: 9/23/2013: Release <CODE>0.8.2.4-beta</CODE></H2>
+<A NAME="0p8p3_beta"/><H2>XBNPE: 9/23/2013: Release <CODE>0.8.3-beta</CODE></H2>
 
 <P><I>Go to: <CODE>[<A HREF="index.html">top</A>, <A HREF="index.html#downloads">dnld</A>, <A HREF="index.html#start">start</A>]</CODE></I></P>
 
-<P>This is the current &quot;<CODE>stable_non_master_release</CODE>&quot; branch.</P>
+<P>This is the current &quot;<CODE>master</CODE>&quot; branch.</P>
+<!--
+	<P>This is the current &quot;<CODE>stable_non_master_release</CODE>&quot; branch.</P>
+ -->
 
 <P><UL>
 	<LI><B>DOCUMENTATION:</B><UL>
 		<LI>-<U>ADDED:</U> Ability to download historical versions: <CODE><A HREF="release_notes.html">release_notes.html</A></CODE></LI>
+		<LI>-<U>ADDED:</U> Syntax-summary summaries: <CODE>xpesyn</CODE></LI>
+		<LI>-<U>CHANGED (XPC):</U> All syntax phrase-names from (for example) &quot;<CODE>zzCqdSyn</CODE>&quot; to <CODE>cqdsyn</CODE>, and added some cross-references (this change was made in some other projects as well)</LI>
 		<LI>-<U>CHANGED:</U> Installation instructions are more prominent. Now displayed in the very top of the home-page, along side  &quot;Getting started&quot;: <CODE><A HREF="index.html">index.html</A></CODE></LI>
+		<LI>-<U>CHANGED:</U> Upped the xplorer2 modified time from 30 to 60 minutes: <CODE><A HREF="basics/phrase_file_mrc_tip.html#mrcx2">basics/phrase_file_mrc_tip.html#mrcx2</A></CODE></LI>
 	</UL></LI>
 	<LI><B>CODE:</B><UL>
-		<LI>-<U>FIXED (<CODE>xh</CODE> phrase-creator ddmenu):</U> <CODE>zSelect[L,R]1wCopy</CODE> had wrong autotext. now &quot;<CODE>xhcwsp</CODE>&quot;</LI>
-		<LI>-<U>HTML-project:</U><UL>
-			<LI>--ADDED: <CODE>kcb</CODE>, to create a non-<CODE>'#'</CODE> self-link. Call for complete syntax.</LI>
+		<LI>-<U>ADDED:</U> Java project: <CODE>javasyn</CODE></LI>
+		<LI>-<U>ADDED:</U> Phrases calling specific macros, some of which are critical to new-and-future XBN-PhraseExpress functionality. This will be expanded into a full TextPad macro (TPM) project, which will create, save, and then assign key-commands to your own TextPad macros. This project is how you can <I>edit</I> your TextPad macros, which is one of the top requests in the <A HREF="http://forums.textpad.com/viewtopic.php?t=9059">TextPad user-forums</A>.
+		<BR> &nbsp; &nbsp; <CODE>main\tpm\tpm.px.txt</CODE></LI>
+		<LI>-<U>ADDED (Other):</U> spot-marks (see <CODE>xhox</CODE>). Moved
+			<BR> &nbsp; &nbsp; <CODE>main\html\html_btstrp_phrss\html_btstrp__spot_markers_pre_xbnpe_tpm_project__foundation.px.txt</CODE>
+			<BR>and
+			<BR> &nbsp; &nbsp; <CODE>html_btstrp__spot_markers_pre_xbnpe_spot_mark_project__other.px.txt</CODE>
+			<BR>to
+			<BR> &nbsp; &nbsp; <CODE>main\other\spot_marks.px.txt</CODE><UL>
+				<LI>--REMOVED: <CODE>z[V,Z]Down</CODE>, <CODE>z[V,Z]Up</CODE>, <CODE>z[V,Z]markPostGTP</CODE>, <CODE>zXmarkThenLeft</CODE></LI>
+				<LI>--REMOVED: <CODE>z[V,Z]mark</CODE> from
+				<BR> &nbsp; &nbsp; <CODE>main\xbnpe_xkp\xkp_bootstrap_phrases\xkpbs__spot_marks_vxyz_raw__HK.px.txt</CODE></LI>
+			</UL></LI>
+		<LI>-<U>CHANGE:</U> Key-commands, for both TextPad-bootstraps and TPKC user-specific command-configuration, formerly required <I>only</I> <A HREF="basics/xkp.html">x-key-presses</A> (for all TextPad bulit-in commands, except for TextPad-bootstraps <A HREF="basics/xkp.html#tpbs">in the XKP</A>-project). Now changed to recommend that all key-presses <I>except for the last</I> (in multi-key-press key-commands) should be <A HREF="xkp.html#rawpexkc">raw PhraseExpress key-presses</A>. <I>This is so key-commands <I>as a whole</I> <A HREF="devpex/debugging.html#ztslp">slow down</A> when desired, but not each key-press within it. The <A HREF="devpex/xpc.html#keypress">key-press</A> phrase-creators in the <A HREF="devpex/xpc.html">XPC-project</A> can assist you (use the '<CODE>p</CODE>' option to escape it).</I><UL>
+			<LI>--<CODE><A HREF="basics/tpkc/index.html#userbuild01">basics/tpkc/index.html#userbuild01</A></CODE></LI>
+			<LI>--<CODE><A HREF="basics/tpkc/user_cmd_cfg.html#NbsKcEscNum">basics/tpkc/user_cmd_cfg.html#NbsKcEscNum</A></CODE></LI>
+			<LI>--<CODE><A HREF="basics/tpbs_format.html#mainp">basics/tpbs_format.html#mainp</A></CODE></LI>
+			<LI>--<CODE><A HREF="basics/tpkc/sub_build_proc2.html#12">basics/tpkc/sub_build_proc2.html#12</A></CODE> &nbsp; &nbsp; <I>(see &quot;known issue&quot;)</I></LI>
+		<LI>-<B>XBNPE-PEX</B> <I>(<CODE>pexsyn</CODE>)</I><UL>
+			<LI>--<U>ADDED:</U> <CODE>rp2[1-10]</CODE>: <CODE>rp2syn</CODE></LI>
+			<LI>--<U>ADDED:</U> <CODE>kab[1-10]</CODE>, <CODE>klertbox[1-10]</CODE> (and changed <CODE>fnpab</CODE> to find it): <CODE>kpfsyn</CODE></LI>
+			<LI>--<U>ADDED:</U> <CODE>zMarkCopyFIFNextPhraseLine</CODE>, <CODE>zSaveCloseClose</CODE>, <CODE>zPasteLineSortDocFindLine</CODE>: <CODE>mcfifinfo</CODE></LI>
+			<LI>--<U>CHANGED:</U> <CODE>[r,u]2pln</CODE> now ask about ww-state before line-count, to be consistent with <CODE>pc2n</CODE> and across all state-checking <A HREF="basics/xbnpe_phrase_types.html#action">action</A>-utilities: <CODE><A HREF="tasks/ww_with_state.html#stateprompt">tasks/ww_with_state.html#stateprompt</A></CODE></LI>
+			<LI>--<U>CHANGED:</U> Shortened <CODE>insb</CODE>, <CODE>inns*</CODE>, and <CODE>inw[l,r]</CODE> to <CODE>inb</CODE>, <CODE>inn</CODE>, and <CODE>in[l,r]</CODE>: <CODE>inssyn</CODE></LI>
+			<LI>--<U>CHANGED:</U> Shortened <CODE>cpcb*</CODE> and <CODE>cpw[l,r]*</CODE> to <CODE>cpb*</CODE> and <CODE>cp[l,r]*</CODE>: <CODE>cpbsyn</CODE></LI>
+			<LI>--<U>CHANGED:</U> Shortened <CODE>[c,r,u]2pl*</CODE> to <CODE>pc2*</CODE> and <CODE>[n,r]p2*</CODE>: See: <CODE>[pc,rp]2syn</CODE>, <CODE>xhpcc</CODE></LI>
+		</UL></LI>
+		<LI>-<U>CHANGED:</U> Key-command (Hotkey) for <CODE>twh_forHKOnly</CODE>/<CODE>twh</CODE> to <CODE>zApF7</CODE></LI>
+		<LI>-<B>XPC-project</B> <I>(<CODE>xpcsyn</CODE>)</I><UL>
+			<LI>--<U>ADDED:</U> <CODE>[b]</CODE> option to COND tag phrase-creators: <CODE>cqdsyn</CODE></LI>
+			<LI>--<U>ADDED:</U> <CODE>pqo</CODE>: <CODE>{#insert zAscQQ}XXX{#insert zAscQQ}</CODE></LI>
+			<LI>--<U>ADDED:</U>  <CODE>balxb</CODE>: <CODE>balsyn</CODE></LI>
+		</UL></LI>
+		<LI>-<U>ADDED (SNR):</U><UL>
+			<LI><CODE>zFindDlgCloseWSRE</CODE>: <CODE>xhsfcb</CODE></LI>
+			<LI><CODE>z[Post,Pre]BracketSelContentsOnly</CODE>, <CODE>zPostBracketCut</CODE>: xhses, <CODE><A HREF="tasks/snr.html">tasks/snr.html</A></CODE></LI>
+		</UL></LI>
+		</UL>For the special TPKC-user-dir name &quot;<CODE>tp_frsh_instl</CODE>&quot;, this affects the following user-cfg items, which have been changed (for both <A HREF="basics/tpkc/master_cfg_vars.html#zzTpkcBuildVersionName">&quot;fgh&quot; and &quot;live&quot;</A> builds): <CODE>zTpkcMatchCaseClearNbsKcEsc1</CODE>, <CODE>zTpkcMatchWordClearNbsKcEsc1</CODE>, <CODE>zTpkcMatchWordSetNbsKcEsc1</CODE>, <CODE>zTpkcRegexClearNbsKcEsc1</CODE>, <CODE>zTpkcRegexSetNbsKcEsc1</CODE>, <CODE>zTpkcRightMarginSetNbsKcEsc1</CODE>, <CODE>zTpkcSelectBeginStreamNbsKcEsc1</CODE>, <CODE>zTpkcToggleBlockSelectNbsKcEsc1</CODE>, <CODE>zTpkcToggleReadOnlyNbsKcEsc1</CODE>, <CODE>zTpkcToggleSyncScrollNbsKcEsc1</CODE>, <CODE>zTpkcToggleUndoNbsKcEsc1</CODE>, <CODE>zTpkcViewHScrollbarNbsKcEsc1</CODE>, <CODE>zTpkcViewLineNumbersNbsKcEsc1</CODE>, <CODE>zTpkcViewVScrollbarNbsKcEsc1</CODE>, <CODE>zTpkcViewVisibleSpacesNbsKcEsc1</CODE>
+		<BR><I>These changes are not required, only recommended. This does not affect behavior in any way, except as noted above.</I></LI>
+		<LI>-<U>FIXED (XKP):</U> Entire XKP-project was misconfigured in <CODE>xh</CODE> phrase-creator-ddmenu. Autotext is <CODE>xhcck</CODE>: <A HREF="devpex/xbnpe_ddmenus.html#xh">devpex/xbnpe_ddmenus.html#xh</A></LI>
+		<LI>-<U>FIXED (<CODE>xh</CODE> phrase-creator ddmenu):</U> <CODE>zSelect[L,R]1wCopy</CODE> had wrong autotext. Now &quot;<CODE>xhcwsp</CODE>&quot;</LI>
+		<LI>-<B>HTML-project</B> <I>(<CODE>htmlsyn</CODE>)</I><UL>
+			<LI>--ADDED: <CODE>kcb</CODE>, to create a non-<CODE>'#'</CODE> self-link: <CODE>kcbsyn</CODE></LI>
 			<LI>--REMOVED the following, in lieu of above:
 			<BR> &nbsp; &nbsp; <CODE>nl[cb,wl][c]</CODE>
 			<BR>including its &quot;raw&quot; phrases:
 			<BR> &nbsp; &nbsp; <CODE>zNameLinkFrom[CBWord,WordLeft][Coded]</CODE></LI>
-			<LI>--REWROTE: All quote and double-quote-creating <A HREF="basics/xbnpe_phrase_types.html#action">actions</A>: Call &quot;<CODE>hqq</CODE>&quot; for complete syntax.</LI>
+			<LI>--REWROTE: All quote and double-quote-creating actions: Call &quot;<CODE>hqq</CODE>&quot; for complete syntax.</LI>
 			<LI>--CHANGED: <CODE>hhhr</CODE> (<CODE>&lt;HR&gt;</CODE>) to <CODE>hhr</CODE> (<CODE>&lt;HR/&gt;</CODE>).</LI>
+			<LI>--CHANGED: <CODE>hcp</CODE> to <CODE>hct</CODE>, to avoid autotext conflicts (<CODE>hcb</CODE> would be another conflict).</LI>
 			<LI>--FIXED: The following phrases had the wrong autotext, correct <A HREF="basics/phrase_file.html#pformat">description-autotext</A>: <CODE>hu[b][c]p</CODE></LI>
 		</UL></LI>
 		<LI>-<U>FUTURE:</U> Working on re-implementing the LPD-project (ON DISK ONLY, not in PhraseExpress), which is the basis of both MINV and the not-yet-existing TextPad macro creation (TPM) project. Many of the below changes are in anticipation: <CODE><A HREF="future/lpd.html">future/lpd.html</A></CODE></LI>
-		<LI>-<U>REPLACED</U>
-			<BR> &nbsp; &nbsp; <CODE>CWLPDF &gt; 3: Line &gt; line__select_copy_cut.px</CODE>
-			<BR>with
-			<BR> &nbsp; &nbsp; <CODE>lineselcopy_HK.px</CODE>
-			<BR>which adds the following:
-			<BR> &nbsp; &nbsp; <CODE>zClearCBCopyToLineEndGTNext</CODE>, <CODE>zCopyEntireLine</CODE>, <CODE>zCopyEntireLineNoNL</CODE>, <CODE>zCopyToLineEndGTNext</CODE>, <CODE>zCopyToLineEndGTPost</CODE>, <CODE>zCopyToLineHome</CODE>, <CODE>zCopyToLineHomeGTPre</CODE>, <CODE>zCutEntireLine</CODE>, <CODE>zCutEntireLineNoNL</CODE>, <CODE>zCutToLineEndBksp</CODE>, <CODE>zCutToLineEndDel</CODE>, <CODE>zCutToLineHomeBksp</CODE>, <CODE>zCutToLineHomeDel</CODE>, <CODE>zDeleteToLineEnd</CODE>, <CODE>zSelCopyToLineHome</CODE>, <CODE>zSelCopyUpThr1NonWS</CODE>, <CODE>zSelectUpThr1NonWS</CODE>
-			<BR>(These were incorrectly in the <A HREF="devpex/xbnpe_ddmenus.html#xh">xh</A> phrase-creator ddmenu. Now they are correctly in there.)</LI>
-		<LI>-<U>REMOVED</U> deprecated
-			<BR> &nbsp; &nbsp; <CODE>zzDelAllOutFilesRqst_M_outdir</CODE>
-			<BR>from
-			<BR> &nbsp; &nbsp; <CODE>xbnpe\main\cwlpdf\7__file\file.px.txt</CODE></LI>
+		<LI>-<B>CWLPDF project:</B><UL>
+			<LI>--<U>ADDED:</U><UL>
+					<LI><CODE>zMove[L2R,R2L]w</CODE>, <CODE>zMove[L,R]2w</CODE>, <CODE>zSelectL2w</CODE></LI>
+					<LI><CODE>zvCB_CONTENTS_stCB</CODE> and <CODE>zSetCBToCB_CONTENTS</CODE> to save and restore the clipboard (as long as it is not executable!), and <CODE>zLowercaseCB</CODE></LI>
+					<LI><CODE>zvLINES_DOWN_st[1-10]</CODE> (and changed all existing <CODE>SETPHRASE</CODE>-s to call them)</LI>
+					<LI><CODE>zParaNotAtCol0_selectEntire</CODE>, <CODE>zParaNotAtCol0_selectEntire[NotNL]</CODE></LI>
+					<LI><CODE>zPasteLinesSortDoc</CODE></LI>
+				</UL></LI>
+			<LI>--<U>REPLACED</U>
+				<BR> &nbsp; &nbsp; <CODE>CWLPDF &gt; 3: Line &gt; line__select_copy_cut.px</CODE>
+				<BR>with
+				<BR> &nbsp; &nbsp; <CODE>lineselcopy_HK.px</CODE>
+				<BR>which adds the following:
+				<BR> &nbsp; &nbsp; <CODE>zClearCBCopyToLineEndGTNext</CODE>, <CODE>zCopyEntireLine</CODE>, <CODE>zCopyEntireLineNoNL</CODE>, <CODE>zCopyToLineEndGTNext</CODE>, <CODE>zCopyToLineEndGTPost</CODE>, <CODE>zCopyToLineHome</CODE>, <CODE>zCopyToLineHomeGTPre</CODE>, <CODE>zCutEntireLine</CODE>, <CODE>zCutEntireLineNoNL</CODE>, <CODE>zCutToLineEndBksp</CODE>, <CODE>zCutToLineEndDel</CODE>, <CODE>zCutToLineHomeBksp</CODE>, <CODE>zCutToLineHomeDel</CODE>, <CODE>zDeleteToLineEnd</CODE>, <CODE>zSelCopyToLineHome</CODE>, <CODE>zSelCopyUpThr1NonWS</CODE>, <CODE>zSelectUpThr1NonWS</CODE>
+				<BR>(These were incorrectly in the xh phrase-creator ddmenu. Now they are correctly in there.)</LI>
+			<LI>--<U>DEPRECATED</U> the following (removed from <CODE>xh</CODE>-ddmenu):<UL>
+				<LI><CODE>zParaNotAtCol0_[g,s]tNonWSChar1_downREoff</CODE></LI>
+				<LI><CODE>zParaNotAtEnd_[g,s]tLastNonWSChar_downREoff</CODE></LI>
+				<LI><CODE>zParaNotAt_[g,s]t[End,Start]_downREoff</CODE></LI>
+				<LI><CODE>zzDelAllOutFilesRqst_M_outdir</CODE></LI>
+			</UL></LI>
+		</UL></LI>
 		<LI>-<U>CHANGED (Other):</U> In
 			<BR> &nbsp; &nbsp; <CODE>xbnpe\main\other\inline_config_vars.px.txt</CODE>
 			<BR>the variable name
@@ -54,6 +112,7 @@
 		<BR> &nbsp; &nbsp; <CODE>xbnpe\main\other\other\key_press_combinations.px.txt</CODE>
 		<BR>and its PhraseExpress counterpart. The only phrase in it was <CODE>zDownHome</CODE>, which is a duplicate of
 		<BR> &nbsp; &nbsp; <CODE>xbnpe\main\cwlpdf\3__line\lineother.px.txt</CODE></LI>
+		<LI>-<U>FIXED (TPKC):</U> <CODE>newnbskc</CODE> was not escaping the <CODE>sleep</CODE>-call.</LI>
 	</UL></LI>
 </UL></P>
 
@@ -62,7 +121,6 @@
 <P><I>Go to: <CODE>[<A HREF="index.html">top</A>, <A HREF="index.html#downloads">dnld</A>, <A HREF="index.html#start">start</A>]</CODE></I></P>
 
 <P><UL>
-	<LI>This is the current &quot;<CODE>master</CODE>&quot; branch.</LI>
 	<LI>Download: <CODE><A HREF="../../zz_misc_and_pxp/xbnpe_0p8p2p3_beta.zip">xbnpe_0p8p2p3_beta.zip</A></CODE> &nbsp; &nbsp; <I>(~9mb)</I>
 </UL></P>
 

@@ -1,0 +1,6 @@
+XBN-PhraseExpress: All syntax summaries in each project
+	htmlsyn: HTML-code creation
+javasyn: Java-code creation
+pexsyn: PhraseExpress-code creation
+xkpsyn: Phrase-creators
+{#insert zBKSP}

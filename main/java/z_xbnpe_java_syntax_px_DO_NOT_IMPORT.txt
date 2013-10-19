@@ -1,0 +1,58 @@
+XBN-PhraseExpress: Java project (javasyn, xpesyn)
+	Function signature
+	fnlsyn: Function name. With alteration: falsyn (falaltersyn[1,2])
+	{#insert zzFalsyns}
+{#insert zBKSP}anlsyn: All parameters (anlkpsyn)
+	{#insert zzAnlsyns1of3}  //  {#insert zzAnlsyns2of3}  //  {#insert zzAnlsyns3of3}
+{#insert zBKSP}[m,n]l1syn: 1 parameter (ml1altersyn, ml1kpsyn)
+	{#insert zzMl1syns}
+{#insert zBKSP}sglsyn: Entire signature (func-name through close paren) (sgloptsyn, sglantsyn)
+	{#insert zzSglsyns2of2}  //  {#insert zzSglsyns1of2}
+{#insert zBKSP}rtlsyn: Return-type (rtloptsyn)
+	{#insert zzRtlsyns1of3}  //  {#insert zzRtlsyns2of3}  //  {#insert zzRtlsyns3of3}
+{#insert zBKSP}tlksyn: Find sig given func-name
+	{#insert zzTlksyns1of2}  //  {#insert zzTlksyns2of2}
+{#insert zBKSP2}JavaDoc
+	dz1syn: @param for params in neighboring signature
+	{#insert zzDz1syns1of3}  //  {#insert zzDz1syns2of3}  //  {#insert zzDz1syns3of3}
+{#insert zBKSP}lncsyn: null, false, true, -1
+jdbsyn: Basic block
+sbnesyn: Should, may, must ([not] be equal to...)
+Links:
+	kulsyn: link to neighboring signature (kuloptsyn, kultgtsyn, kuzxninfo)
+	{#insert zzKulsyns}
+{#insert zBKSP}kplsyn: this or super-constructor link to neighboring parameters
+	(kploptsyn, kplpapsyn)
+	{#insert zzKplsyns1of2}
+{#insert zzKplsyns2of2}
+{#insert zBKSP2}kflsyn: 0-parameter function/constructor (and internal-object)
+	With pre-link class-file link: kflksyn
+(kfloptsyn, kflprksyn, kfltgtsyn <khbadinfo, nobadinfo>)
+	{#insert zzKflsyns1of4}  //  {#insert zzKflsyns2of4}  //  {#insert zzKflsyns3of4}
+{#insert zzKflsyns4of4}  //  {#insert zzKflksyns}
+{#insert zBKSP2}knhsyn: 0-parameter this/super constructor (knhprksyn)
+	{#insert zzKnhsyns1of5}  //  {#insert zzKnhsyns2of5}  //  {#insert zzKnhsyns3of5}  //  {#insert zzKnhsyns5of5}
+{#insert zzKnhsyns4of5}
+{#insert zBKSP}kglsyn: 1+ parameter function/constructor
+	With pre-link class-file link: kglksyn
+(kgloptsyn, kglpapsyn, kglprksyn, kfltgtsyn)
+	{#insert zzKglsyns1of3}  //  {#insert zzKglsyns2of3}
+{#insert zzKglsyns3of3}  //  {#insert zzKglksyns}
+{#insert zBKSP2}klhsyn: 1+ parameter this/super constructor
+	(klhoptsyn, kgltgtsyn, klhpapsyn <lybadinfo>, klhprksyn)
+	{#insert zzKlhsyns1of2}  //  {#insert zzKlhsyns2of2}
+{#insert zBKSP2}kibsyn: Class-file
+	{#insert zzKibsyns1of2}  //  {#insert zzKibsyns2of2}
+{#insert zBKSP}prfsyn: Class-file link for before existing func/cnstr/obj link
+	{#insert zzPrfsyns}
+{#insert zBKSP4}Basic
+	hcnlsyn: Get-paste this and super-class name
+	{#insert zzHcnlsyns}
+{#insert zBKSP}rtndsyn: return statements (incl JavaDoc)
+sopsyn: Basic auto-completes
+xxsyn: Exceptions (throw, catch, specific types)
+{#insert zBKSP}Specific packages and classes
+	java.lang: jdlsyn, blbsyn
+java.util: jdusyn, cllsyn
+java.util.regex: jdursyn
+{#insert zBKSP}

@@ -5,3 +5,5 @@ zSelectL2c	{#insert zTPSelectL1c}{#insert zTPSelectL1c}	zSelectL2c
 zSelectL3c	{#insert zSelectL2c}{#insert zTPSelectL1c}	zSelectL3c
 zSelectR2c	{#insert zTPSelectR1c}{#insert zTPSelectR1c}	zSelectR2c
 zSelectR3c	{#insert zSelectR2c}{#insert zTPSelectR1c}	zSelectR3c
+zCutL1c	{#insert zTPSelectL1c}{#insert zTPCut}	zCutL1c
+zCutR1c	{#insert zTPSelectR1c}{#insert zTPCut}	zCutR1c

@@ -9,6 +9,7 @@ __XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a larg
 (*
 FROM
 ...\xbnpe\tpkc\tpkc_bootstrap_phrases\zphrase_creator_pop_up_heirarchies\xbnpe_phrase_creator_popup_heirarchy_base.px.txt
+
 Phrase-creators: XBN-PhraseExpress -- Call 'xh'   .   zXbnpeCmdPopupRoot
 Phrase-creators: Other -- xho   .   xh
 *)
@@ -32,7 +33,26 @@ zvES_VAL_DEFAULT_stES	\\\{#insert zvES_VAL_DEFAULT_stES\\\}	xhov
 zvOUT_DIR_stRqdInlineCV	\\\{#insert zvOUT_DIR_stRqdInlineCV\\\}	xhov
 zvOUTPUT_FILE_NAME_stOptInlineCVOrThisFileNm	\\\{#insert zvOUTPUT_FILE_NAME_stOptInlineCVOrThisFileNm\\\}	xhov
 zzValidateInlineCVSetTrimValIntoCB_M_vnm	\\\{#insert zzValidateInlineCVSetTrimValIntoCB_M_vnm\\\}	xhov
+Spot-marks -- xhox	.	xho
+z[X,Y]Down[2] -- xhoxd	\\\{#insert z{#insert zDlgXorY}Down\\\}	xhox
+z[X,Y]DownDelete	\\\{#insert z{#insert zDlgXorY}DownDelete\\\}	xhoxd
+z[X,Y]DownPaste	\\\{#insert z{#insert zDlgXorY}DownPaste\\\}	xhoxd
+z[X,Y]DownPastePreBrcktGTP	\\\{#insert z{#insert zDlgXorY}DownPastePreBrcktGTP\\\}	xhoxd
+zSlk[X,Y]Down	\\\{#insert zSlk{#insert zDlgXorY}Down\\\}	xhoxd
+zzSlk[X,Y]DownEnter	\\\{#insert zzSlk{#insert zDlgXorY}DownEnter\\\}	xhoxd
+z[X,Y]Up[2] -- xhoxu	\\\{#insert z{#insert zDlgXorY}Up\\\}	xhox
+z[X,Y]UpDelete	\\\{#insert z{#insert zDlgXorY}UpDelete\\\}	xhoxu
+z[X,Y]UpPaste	\\\{#insert z{#insert zDlgXorY}UpPaste\\\}	xhoxu
+z[X,Y]UpPastePreBrcktGTP	\\\{#insert z{#insert zDlgXorY}UpPastePreBrcktGTP\\\}	xhoxu
+zSlk[X,Y]Up	\\\{#insert zSlk{#insert zDlgXorY}Up\\\}	xhoxu
+zzSlk[X,Y]UpEnter	\\\{#insert zzSlk{#insert zDlgXorY}UpEnter\\\}	xhoxu
+z[X,Y]mark -- xhoxk	\\\{#insert z{#insert zDlgXorY}mark\\\}	xhox
+z[X,Y]markCoded	\\\{#insert z{#insert zDlgXorY}markCoded\\\}	xhoxk
+z[X,Y]markPostGTP	\\\{#insert z{#insert zDlgXorY}markPostGTP\\\}	xhoxk
+z[X,Y]markThenGTP	\\\{#insert z{#insert zDlgXorY}markThenGTP\\\}	xhoxk
+z[X,Y]ThenSelect	\\\{#insert z{#insert zDlgXorY}ThenSelect\\\}	xhoxk
 (*		Math and sleep -- xhom*)
 Sleep -- xhoms	.	xhom
 zSlpXMillsForEveryYWBal_xy	\\\{#insert zSlpXMillsForEveryYWBal_xy\\\}	xhoms
 zSlpXMillsForEveryY_xy	\\\{#insert zSlpXMillsForEveryY_xy\\\}	xhoms
+

@@ -5,7 +5,7 @@
 	<property name="sandbox_parent" value="R:\jeffy\programming\sandbox\macros\"/>
 	<property name="build_parent" value="R:\jeffy\programming\build\macros\"/>
 	<property name="user_zip_dir" value="${build_parent}xbnpe\"/>
-	<property name="user_zip_path" value="${user_zip_dir}xbnpe_0p8p2p4_beta.zip"/>
+	<property name="user_zip_path" value="${user_zip_dir}xbnpe_0p8p3_beta.zip"/>
 
 	<target name="info">
 		<echo>${projectinfo}</echo>

@@ -18,7 +18,7 @@ zzDupSplit1stLineFileNameMaster	{#SETPHRASE -description zvDEMO_DIR_Y -content -
 
 zzzDupSplit1stLineFileNameMaster_M_ddy -- Needs zvDEMO_DIR_Y	{#insert zTPGTDocTop}{#insert zz1lnIntroSetVars_M_ddy}{#insert zUndo2DupCurrFileTextToNewFileCloseOrig}{#insert zFindDialogFlagPreCheck}{#insert zvNUMBER_st0}{#LOOP {#insert zz1lnSplitSaveNextFile_M_dirNumFcnt} -count {#insert zvFILE_COUNT}}{#insert zzzOpenFindCheckWrapSrchClose}{#BALLOON -title Please wait... -text All files processed. About to close the (duplicated and now EMPTY) master file, and opening the output directory.}{#sleep 3000}{#insert zFileCloseDiscardChanges}{#insert zOpenExplorerDir_M_dir}{#MSGBOX -head splitsave1ln DONE -text splitsave1ln DONE. Output directory is now open in a Windows Explorer window.}	zzzDupSplit1stLineFileNameMaster_M_ddy
 
-zzzOpenFindCheckWrapSrchClose	(*Extend selection forces wrap-search to uncheck.*){#insert zFindDlgOpen}{#insert zFindFlagWrapSearchTglRAW}{#insert zFindDlgClose}	zzzOpenFindCheckWrapSrchClose
+zzzOpenFindCheckWrapSrchClose	(*Extend selection forces wrap-search to uncheck.*){#insert zFindDlgOpen}{#insert zFindDlgCloseWS}	zzzOpenFindCheckWrapSrchClose
 
 zzzSs1lnDelOutputFiles	{#SETPHRASE -description zvDIRECTORY -content {#insert zXPROOT_DIR_AG_temp} -autotext zvDIRECTORY -folder ctvv_folder}{#insert zFileOpenDlgGTDir_M_dir}{#MSGBOX -head Delete about~to~be~output files -text Delete all about~to~be~output~files from this directory (and close them if they're currently open!). I cannot yet know the names of these files, otherwise I would highlight them for you. Press [OK] when all files deleted.}{#insert zEscThenFcsTP}	zzzSs1lnDelOutputFiles
 

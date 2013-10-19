@@ -1,0 +1,29 @@
+z1PPSuperCnstrLinkDispCNm_M_prmsPap	{#insert zzSetDrnFNmToSuperDisp2FNm}{#insert z1PPFuncLink_M_drnFnmPrmsDspPap}	z1PPSuperCnstrLinkDispCNm_M_prmsPap
+z1PPSuperCnstrLinkDispQsprQ_M_prmsPap	{#insert zzSetDrnFNmToSuper}{#insert zvDISPLAY_stQsuperQ}{#insert z1PPFuncLink_M_drnFnmPrmsDspPap}	z1PPSuperCnstrLinkDispQsprQ_M_prmsPap
+z1PPSuperCnstrLinkPapES_M_prmsDsp	{#insert zzSetDrnFNmToSuperPapToT}{#insert z1PPFuncLink_M_drnFnmPrmsDspPap}	z1PPSuperCnstrLinkPapES_M_prmsDsp
+z1PPSuperCnstrLinkWPrekDispCNm_M_prmsPapPrk	{#insert zzSetDrnFNmToSuperDisp2FNm}{#insert z1PPFuncLinkWPrek_M_drnFnmPrmsDspPapPrk}	z1PPSuperCnstrLinkWPrekDispCNm_M_prmsPapPrk
+z1PPThisCnstrLinkDispCNm_M_prmsPap	{#insert zzSetDrnFNmToThisDispToFNm}{#insert z1PPFuncLink_M_drnFnmPrmsDspPap}	z1PPThisCnstrLinkDispCNm_M_prmsPap
+z1PPThisCnstrLinkDispQthsQ_M_prmsPap	{#insert zzSetDrnFNmToThisDispToQthisQ}{#insert z1PPFuncLink_M_drnFnmPrmsDspPap}	z1PPThisCnstrLinkDispQthsQ_M_prmsPap
+z1PPThisCnstrLinkPapES_M_prmsDsp	{#insert zzSetDrnFNmToThisPapToT}{#insert z1PPFuncLink_M_drnFnmPrmsDspPap}	z1PPThisCnstrLinkPapES_M_prmsDsp
+zzEnterPap2ForNonCddSetCBToTestFuncParams	{#insert zzzEtrTstPap2ForNonCdd}{#insert zzSetCBToTestFuncParams}	zzEnterPap2ForNonCddSetCBToTestFuncParams
+zzEnterPrintTestFuncParamsPap	{#insert zzzEnterTestFuncParams}{#insert zzzTstPap2}	zzEnterPrintTestFuncParamsPap
+zzEnterPrintTestFuncParamsPap4NonCdd	{#insert zzzEnterTestFuncParams}{#insert zzzTstPap2ForNonCdd}	zzEnterPrintTestFuncParamsPap4NonCdd
+zzKlhsyn_M_yon -- Needs zvSYNTAX_ON	{#insert {#COND -if {#insert zvSYNTAX_ON} = on -then klhsyn -else z1slp}}	zzKlhsyn_M_yon
+zzSetAllParamsToCBPapToL1c	{#insert zvALL_PARAMS_stCB}{#insert zvPAP_TMVY_stL1c}	zzSetAllParamsToCBPapToL1c
+zzSetAllParamsToCBPapToL1cCIY4NonCdd	{#insert zvALL_PARAMS_stCB}{#insert zzSetPapToL1cCIY4NonCdd}	zzSetAllParamsToCBPapToL1cCIY4NonCdd
+zzSetCBToTestFuncParams	{#SETCLIPBOARD {#insert zzTestFuncParams}}	zzSetCBToTestFuncParams
+zzSetDrnFNmToSuper	{#insert zvHIDRUN_stU}{#insert zXSetFObjNmToSuperClassXDown}	zzSetDrnFNmToSuper
+zzSetDrnFNmToSuperDisp2FNm	{#insert zzSetDrnFNmToSuper}{#insert zvDISPLAY_stFncObjNm}	zzSetDrnFNmToSuperDisp2FNm
+zzSetDrnFNmToSuperPapToT	{#insert zzSetDrnFNmToSuper}{#insert zvPAP_TMVY_stT}	zzSetDrnFNmToSuperPapToTkbh -- Link to THIS-class cnstr, with params-only in CB (see klhsyn)	{#insert zzSetAllParamsToCBPapToL1c}<CODE>{#insert z1PPThisCnstrLinkDispCNm_M_prmsPap}</CODE>{#insert zzKlhsyn_M_yon}	kbh
+zzSetDrnFNmToThis	{#insert zvHIDRUN_stH}{#insert zXSetFObjNmToThisClassXDown}	zzSetDrnFNmToThis
+zzSetDrnFNmToThisDispToFNm	{#insert zzSetDrnFNmToThis}{#insert zvDISPLAY_stFncObjNm}	zzSetDrnFNmToThisDispToFNm
+zzSetDrnFNmToThisDispToQthisQ	{#insert zzSetDrnFNmToThis}{#insert zvDISPLAY_stQthisQ}	zzSetDrnFNmToThisDispToQthisQ
+zzSetDrnFNmToThisPapToT	{#insert zzSetDrnFNmToThis}{#insert zvPAP_TMVY_stT}	zzSetDrnFNmToThisPapToT
+zzSetPapToL1cCIY4NonCddPostParamsSetDel	{#insert zzSetPapToL1cCIY4NonCdd}{#insert zPostParamsSetDel}	zzSetPapToL1cCIY4NonCddPostParamsSetDel
+zzSetPapToL1cPostParamsSet	{#insert zvPAP_TMVY_stL1c}{#insert zPostParamsSetDel}	zzSetPapToL1cPostParamsSet
+zzzEnterPapSetCBToTestFuncParams	{#insert zzzEtrTstPap2}{#insert zzSetCBToTestFuncParams}	zzzEnterPapSetCBToTestFuncParams
+zzzEnterTestFuncParams	{#insert zENTER}{#insert zzTestFuncParams}	zzzEnterTestFuncParams
+zzzEtrTstPrek2Pap2	{#insert zENTER}{#insert zzzTstPrek2Pap2}	zzzEtrTstPrek2Pap2
+zzzEtrTstPrekPap4NonCdd	{#insert zENTER}{#insert zzzTstPrekPap2ForNonCdd}	zzzEtrTstPrekPap4NonCdd
+zzzTstPrek2Pap2	{#insert zzzTstPrek2}{#insert zzzTstPap2}	zzzTstPrek2Pap2
+zzzTstPrekPap2ForNonCdd	{#insert zzzTstPrek2}{#insert zzzTstPap2ForNonCdd}	zzzTstPrekPap2ForNonCdd

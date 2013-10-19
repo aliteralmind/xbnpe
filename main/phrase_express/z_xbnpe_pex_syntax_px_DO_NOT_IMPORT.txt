@@ -1,0 +1,11 @@
+XBN-PhraseExpress: PhraseExpress-code creation (PE) project (pexsyn, xpesyn)
+	kpfsyn: Key-press speed (slow down execution)
+pabsyn: Tracing alert boxes
+inssyn: \\\{#insert ...\\\}
+cpbsyn: Execute phrase whose name is in the clipboard
+pc2syn: Compress two-line phrase to one-line (which is importable)
+rp2syn: Re-compress
+piddsyn: Prepare indented phrase-creator ddmenu phrase-file for import (fidmbsyn)
+xpcsyn: XBN-PhraseExpress: Phrase-creator (XPC) project
+mcfifinfo: zMarkCopyFIFNextPhraseLine: Optimizing the location of sub-phrases in a large project
+{#insert zBKSP}

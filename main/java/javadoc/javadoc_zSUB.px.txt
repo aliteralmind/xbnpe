@@ -1,0 +1,46 @@
+zPostLinkCreatePrekGoBackCIDrnH_M_prk	{#insert {#COND -if {#insert zvHIDRUN} != h -then z1slp -else zzErrDlgHDrnKOptBad_drn}}{#insert zPostLinkCreatePrekGoBack_M_prk}	zPostLinkCreatePrekGoBackCIDrnH_M_prk
+zPostLinkCreatePrekGoBackFLwr	{#insert zzPostLinkCreatePrekGoBackOptFThrQQGT}{#insert zTPPaste}{#insert zzPostLinkCreatePrekGoBackOptFPostDisp}	zPostLinkCreatePrekGoBackFLwr
+zPostLinkCreatePrekGoBackFUpr	{#insert zzPostLinkCreatePrekGoBackOptFThrQQGT}<I>{#insert zTPPaste}</I>{#insert zzPostLinkCreatePrekGoBackOptFPostDisp}	zPostLinkCreatePrekGoBackFUpr
+zPostLinkCreatePrekGoBackRLwr	{#insert zzPostLinkCreatePrekGoBackOptRandYThrQQGT}super{#insert zzPostLinkCreatePrekGoBackOptRPostDisp}	zPostLinkCreatePrekGoBackRLwr
+zPostLinkCreatePrekGoBackRUpr	{#insert zzPostLinkCreatePrekGoBackOptRandYThrQQGT}<I>super</I>{#insert zzPostLinkCreatePrekGoBackOptRPostDisp}	zPostLinkCreatePrekGoBackRUpr
+zPostLinkCreatePrekGoBackYLwr	{#insert zzPostLinkCreatePrekGoBackOptRandYThrQQGT}{#insert zYmark}{#insert zzPostLinkCreatePrekGoBackOptYPostDisp}	zPostLinkCreatePrekGoBackYLwr
+zPostLinkCreatePrekGoBackYUpr	{#insert zzPostLinkCreatePrekGoBackOptRandYThrQQGT}<I>{#insert zYmark}</I>{#insert zzPostLinkCreatePrekGoBackOptYPostDisp}	zPostLinkCreatePrekGoBackYUpr
+zPostLinkCreatePrekGoBack_M_prk	{#insert {#COND -if {#insert zvPRK_FRY} = f -then zPostLinkCreatePrekGoBackFLwr -else {#COND -if {#insert zvPRK_FRY} = F -then zPostLinkCreatePrekGoBackFUpr -else {#COND -if {#insert zvPRK_FRY} = r -then zPostLinkCreatePrekGoBackRLwr -else {#COND -if {#insert zvPRK_FRY} = R -then zPostLinkCreatePrekGoBackRUpr -else {#COND -if {#insert zvPRK_FRY} = y -then zPostLinkCreatePrekGoBackYLwr -else {#COND -if {#insert zvPRK_FRY} = Y -then zPostLinkCreatePrekGoBackYUpr -else zzErrDlgBadPrekParam}}}}}}}	zPostLinkCreatePrekGoBack_M_prk
+zPrekIntroWarnBal	{#BALLOON -title Creating pre~link file~link -text Creating pre~link file~link w/ opt '{#insert zvPRK_FRY}'). WARNINGS: ~This will fail if the 'Extend selection' flag ('XS') is checked, or if the link has no url~dir. ~DING alert.  //  Note: It is possible to display 'super' regardless the actual target.}	zPrekIntroWarnBal
+zPrekIntroXGTPrvTagThrQQDelSelCopyDirFileNotDtHtml	{#insert {#COND -if {#insert zvSYNTAX_ON} != on -then z1slp -else zPrekIntroWarnBal}}{#insert zXmark}{#insert zTMFindPrevHREFThrQQ}{#insert zDEL}{#insert zFindDlgOpenDownRE}{#SETPHRASE -description zvFIND_WHAT -content \b(\w+)(?=\.html) -autotext zvFIND_WHAT -folder ctvv_folder}{#insert zvFIND_WHAT}{#insert zFindXSBtnNextXS}{#insert zFindDlgCloseWSRE}{#insert zTPCopy}	zPrekIntroXGTPrvTagThrQQDelSelCopyDirFileNotDtHtml
+zvDISPLAY_stCB -*-	{#SETPHRASE -description zvDISPLAY -content {#INSERTCLIPBOARD} -autotext zvDISPLAY -folder ctvv_folder}	zvDISPLAY_stCB
+zvDISPLAY_stFncObjNm -*- Needs zvFOBJ_NAME	{#SETPHRASE -description zvDISPLAY -content {#insert zvFOBJ_NAME} -autotext zvDISPLAY -folder ctvv_folder}	zvDISPLAY_stFncObjNm
+zvDISPLAY_stQcnstrQ -*-	{#SETPHRASE -description zvDISPLAY -content constructor -autotext zvDISPLAY -folder ctvv_folder}	zvDISPLAY_stQcnstrQ
+zvDISPLAY_stQsuperQ -*-	{#SETPHRASE -description zvDISPLAY -content super -autotext zvDISPLAY -folder ctvv_folder}	zvDISPLAY_stQsuperQ
+zvDISPLAY_stQthisQ -*- Needs zvFOBJ_NAME	{#SETPHRASE -description zvDISPLAY -content this -autotext zvDISPLAY -folder ctvv_folder}	zvDISPLAY_stQthisQ
+zvDISPLAY_stYmk -*-	{#SETPHRASE -description zvDISPLAY -content {#insert zYmark} -autotext zvDISPLAY -folder ctvv_folder}	zvDISPLAY_stYmk
+zvHIDRUN_stH -*-	{#SETPHRASE -description zvHIDRUN -content h -autotext zvHIDRUN -folder ctvv_folder}	zvHIDRUN_stH
+zvHIDRUN_stL1c -*-	{#insert zCutL1c}{#SETPHRASE -description zvHIDRUN -content {#INSERTCLIPBOARD} -autotext zvHIDRUN -folder ctvv_folder}	zvHIDRUN_stL1c
+zvHIDRUN_stPrompt -*-	{#SETPHRASE -description zvHIDRUN -content {#INPUT -head Target class pre~opt char? ('h', 'i', 'r', 'd', 'n') -single} -autotext zvHIDRUN -folder ctvv_folder}	zvHIDRUN_stPrompt
+zvPAP_TMVY_stT -*-	{#SETPHRASE -description zvPAP_TMVY -content t -autotext zvPAP_TMVY -folder ctvv_folder}	zvPAP_TMVY_stT
+zvTST_PRK_FRY_stPrompt	{#SETPHRASE -description zvTST_PRK_FRY -content {#INPUT -head Pre-link opt? ('f', 'F', 'r', 'R', 'y', 'Y'--see kflprksyn) -single} -autotext zvTST_PRK_FRY -folder ctvv_folder}	zvTST_PRK_FRY_stPrompt
+zzDlgStartingTestSynOffWrn	{#MSGBOX -head About to start test -text {#insert zzSyntaxOnFlagWarningTxt}}{#insert {#COND -if {#insert zvHIDRUN2} = r -then zzDemoJavaClassLine -else z1slp}}	zzDlgStartingTestSynOffWrn
+zzErrDlgBadHDIRUN	{#MSGBOX -head ERROR -text ERROR ~~ The class~target pre~option (currently zvHIDRUN='{#insert zvHIDRUN}') must equal one of the following: 'h', 'i', 'r', 'd', 'n' (no quotes).{#insert zCancelProcNowPostTxt}}	zzErrDlgBadHDIRUN
+zzErrDlgBadPrekParam	{#MSGBOX -head ERROR -text ERROR ~~ The The 'pre-link file-link' parameter (option [k]) (currently zvPRK_FRY='{#insert zvPRK_FRY}') must equal one of the following: 'f', 'F', 'r', 'R', 'y', 'Y' (no quotes).{#insert zCancelProcNowPostTxt}}	zzErrDlgBadPrekParam
+zzErrDlgHDrnKOptBad_drn	{#MSGBOX -head ERROR -text ERROR ~~ The 'h' target class~file pre~option~character (zvHIDRUN='{#insert zvHIDRUN}') is incompatible with the [k] option. See khbadinfo.{#insert zCancelProcNowPostTxt}}	zzErrDlgHDrnKOptBad_drn
+zzFuncObjLinkDirFile_M_drnFnm -- Needs zvHIDRUN, zvFOBJ_NAME	{#insert {#COND -if {#insert zvHIDRUN} = h -then z1slp -else {#COND -if {#insert zvHIDRUN} = i -then zzYDotHtml -else {#COND -if {#insert zvHIDRUN} = d -then zzYSlashYDotHtml -else {#COND -if {#insert zvHIDRUN} = r -then zzYSlshSuperClassDotHtml -else {#COND -if {#insert zvHIDRUN} = u -then zzYSlshFNmDotHtml_M_fnm -else {#COND -if {#insert zvHIDRUN} = n -then zzYSlshFNmDotHtml_M_fnm -else zzErrDlgBadHDIRUN}}}}}}}	zzFuncObjLinkDirFile_M_drnFnm
+zzPostLinkCreatePrekGoBackOptFPostDisp	</A>.<A HREF={#insert zAscQQ}{#insert zvURL_DIR_FILE}{#insert zXDownDelete}	zzPostLinkCreatePrekGoBackOptFPostDisp
+zzPostLinkCreatePrekGoBackOptFThrQQGT	{#insert zPrekIntroXGTPrvTagThrQQDelSelCopyDirFileNotDtHtml}{#SETPHRASE -description zvURL_DIR_FILE -content {#INSERTCLIPBOARD} -autotext zvURL_DIR_FILE -folder ctvv_folder}{#insert zRplcDlgOpenRE}{#SETPHRASE -description zvFIND_WHAT -content (?:.+/)(\w+)\b -autotext zvFIND_WHAT -folder ctvv_folder}{#insert zvFIND_WHAT}{#insert zRplcFieldWith}$1{#insert zRplcBtnAllSelHnrRAW}{#insert zRplcDlgCloseRE}{#insert zTPCopy}<A HREF={#insert zAscQQ}{#insert zvURL_DIR_FILE}.html{#insert zAscQQ}>	zzPostLinkCreatePrekGoBackOptFThrQQGT
+zzPostLinkCreatePrekGoBackOptRPostDisp	</A>.<A HREF={#insert zAscQQ}{#insert zXDownDelete}	zzPostLinkCreatePrekGoBackOptRPostDisp
+zzPostLinkCreatePrekGoBackOptRandYThrQQGT	{#insert zPrekIntroXGTPrvTagThrQQDelSelCopyDirFileNotDtHtml}{#insert zLEFT}<A HREF={#insert zAscQQ}{#insert zTPPaste}.html{#insert zAscQQ}>	zzPostLinkCreatePrekGoBackOptRandYThrQQGT
+zzPostLinkCreatePrekGoBackOptYPostDisp	</A>.<A HREF={#insert zAscQQ}{#insert zXDownDelete}	zzPostLinkCreatePrekGoBackOptYPostDisp
+zzPreOptsMustBeTxtPrk	'i'=disp class~name, 'r'=display 'super', 'y'=no display (y~mark), capitalized=italic	zzPreOptsMustBeTxtPrk
+zzPreOptsMustBeTxtTgt	't'=THIS~class; 'i'=same~directory (package), diff~file; 'd'=diff~dir; 'r'=super~class, diff~file; 'n'=cnstr (file~nm=func~nm)	zzPreOptsMustBeTxtTgt
+zzYDotHtml	{#insert zYmark}.html	zzYDotHtml
+zzYSlashYDotHtml	{#insert zYmark}/{#insert zzYDotHtml}	zzYSlashYDotHtml
+zzYSlshFNmDotHtml_M_fnm -- Needs zvFOBJ_NAME (equal to cnstr name!)	{#insert zYmark}/{#insert zvFOBJ_NAME}.html	zzYSlshFNmDotHtml_M_fnm
+zzYSlshSuperClassDotHtml -(*!*)- Saves and restores clipboard	(*Clipboard is executed twice! Code or escaped code will be executed!*){#insert zYmark}/{#insert zvCB_CONTENTS_stCB}{#insert zXJavaSelCopySuperClsNmXDownPaste}{#insert zSetCBToCB_CONTENTS}.html	zzYSlshSuperClassDotHtml
+zzzEtrTstDrn2	{#insert zENTER}{#insert zzzTstDrn2}	zzzEtrTstDrn2
+zzzPrintClassLnIfDrn2R	{#insert {#COND -if {#insert zvHIDRUN2} = r -then zzDemoJavaClassLine -else z1slp}}	zzzPrintClassLnIfDrn2R
+zzzSetDrnDrn2ToPrompt	{#insert zvHIDRUN_stPrompt}{#SETPHRASE -description zvHIDRUN2 -content {#insert zvHIDRUN} -autotext zvHIDRUN2 -folder ctvv_folder}	zzzSetDrnDrn2ToPrompt
+zzzSetPrkPrk2ToPrompt	{#insert zvTST_PRK_FRY_stPrompt}{#SETPHRASE -description zvTST_PRK_FRY2 -content {#insert zvTST_PRK_FRY} -autotext zvTST_PRK_FRY2 -folder ctvv_folder}	zzzSetPrkPrk2ToPrompt
+zzzSetTstDrn2ToPromptPrintClassLnIfR	{#insert zzzSetDrnDrn2ToPrompt}{#insert zzzPrintClassLnIfDrn2R}	zzzSetTstDrn2ToPromptPrintClassLnIfR
+zzzSetTstPrk2ToPromptIfDrn2NotH_M_drn2	{#insert {#COND -if {#insert zvHIDRUN2} = h -then z1slp -else zzzSetPrkPrk2ToPrompt}}	zzzSetTstPrk2ToPromptIfDrn2NotH_M_drn2
+zzzSkippingKTestsBCHTgtPreOptBal	{#BALLOON -title Skipping [k] tests -text The target~class pre~option is 'h', which is incompatible with the [k] option. See khbadinfo}{#sleep 2000}	zzzSkippingKTestsBCHTgtPreOptBal
+zzzTstDrn2	{#insert zvHIDRUN2}{#insert zTSlp}	zzzTstDrn2
+zzzTstPrek2	{#insert zvTST_PRK_FRY2}{#insert zTSlp}	zzzTstPrek2

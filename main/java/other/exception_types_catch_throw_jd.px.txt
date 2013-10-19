@@ -1,0 +1,52 @@
+
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+xab -- ArrayIndexOutOfBoundsException	ArrayIndexOutOfBoundsException	xab
+xcab -- xab, catch block (not try!)	(*starts w spc*)  catch(ArrayIndexOutOfBoundsException aioobx{#insert zClsPrnThenCurlyBlkYUp}	xcab
+xcc -- ClassCastException	ClassCastException	xcc
+xccc -- catch ClassCastException (not try!)	(*starts w spc*)  catch(ClassCastException ccx{#insert zClsPrnThenCurlyBlkYUp}	xccc
+xca -- catch IllegalArgumentException (not try!)	(*starts w spc*)  catch(IllegalArgumentException iax{#insert zClsPrnThenCurlyBlkYUp}	xca
+xcas -- catch IllegalArgumentStateException (not try!)	(*starts w spc*)  catch(IllegalArgumentStateException iasx{#insert zClsPrnThenCurlyBlkYUp}	xcas
+xcb -- catch IndexOutOfBoundsException (not try!)	(*starts w spc*)  catch(IndexOutOfBoundsException ioobx{#insert zClsPrnThenCurlyBlkYUp}	xcb
+xcs -- catch IllegalStateException (not try!)	(*starts w spc*)  catch(IllegalStateException isx{#insert zClsPrnThenCurlyBlkYUp}	xcs
+xcn -- catch NullPointerException (not try!)	(*starts w spc*)  catch(NullPointerException npx{#insert zClsPrnThenCurlyBlkYUp}	xcn
+xcr -- catch RuntimeException (not try!)	(*starts w spc*)  catch(RuntimeException rtx{#insert zClsPrnThenCurlyBlkYUp}	xcr
+xcx -- catch ...Exception (not try!)	(*starts w spc*)  catch({#insert zYmark}Exception {#insert zYmark}x{#insert zClsPrnThenCurlyBlkYUp}{#insert zYUp}	xcx
+xdab -- @exception ArrayIndexOutOfBoundsException	@exception  ArrayIndexOutOfBoundsException  {#insert zYThenSelectXtnSyn}	xdab
+xdas -- @exception IllegalArgumentStateException	@exception  IllegalArgumentStateException  {#insert zYThenSelectXtnSyn}	xdas
+xdc -- @exception ClassCastException	@exception  ClassCastException  {#insert zYThenSelectXtnSyn}	xdc
+xda -- @exception IllegalArgumentException	@exception  IllegalArgumentException  {#insert zYThenSelectXtnSyn}	xda
+xdb -- @exception IndexOutOfBoundsException	@exception  IndexOutOfBoundsException  {#insert zYThenSelectXtnSyn}	xdb
+xds -- @exception IllegalStateException	@exception  IllegalStateException  {#insert zYThenSelectXtnSyn}	xds
+xdn -- @exception NullPointerException	@exception  NullPointerException  {#insert zYThenSelectXtnSyn}	xdn
+xdr -- @exception RuntimeException	@exception  RuntimeException  {#insert zYThenSelectXtnSyn}	xdr
+xdx -- @exception ...Exception	@exception  {#insert zYmark}Exception  {#insert zYThenSelectXtnSyn}	xdx
+xia -- IllegalArgumentException	IllegalArgumentException	xia
+xas -- IllegalArgumentStateException	IllegalArgumentStateException	xas
+xib -- IndexOutOfBoundsException	IndexOutOfBoundsException	xib
+xis -- IllegalStateException	IllegalStateException	xis
+xnp -- NullPointerException	NullPointerException	xnp
+xrab -- throw new ArrayIndexOutOfBoundsException(...)	throw  new ArrayIndexOutOfBoundsException{#insert zzParensNoQQsYUpXtnSyn}	xrab
+xras -- throw new IllegalArgumentStateException(...)	throw  new IllegalArgumentStateException{#insert zzParensNoQQsYUpXtnSyn}	xras
+xrc -- throw new ClassCastException(...)	throw  new ClassCastException{#insert zzParensNoQQsYUpXtnSyn}	xrc
+xra -- throw new IllegalArgumentException(...)	throw  new IllegalArgumentException{#insert zzParensNoQQsYUpXtnSyn}	xra
+xrb -- throw new IndexOutOfBoundsException(...)	throw  new IndexOutOfBoundsException{#insert zzParensNoQQsYUpXtnSyn}	xrb
+xrs -- throw new IllegalStateException(...)	throw  new IllegalStateException{#insert zzParensNoQQsYUpXtnSyn}	xrs
+xrn -- throw new NullPointerException(...)	throw  new NullPointerException{#insert zzParensNoQQsYUpXtnSyn}	xrn
+xrr -- throw new RuntimeException(...)	throw  new RuntimeException{#insert zzParensNoQQsYUpXtnSyn}	xrr
+xrt -- RuntimeException	RuntimeException	xrt
+xrx -- throw new ...Exception(...)	throw  new {#insert zYmark}Exception{#insert zzParensNoQQsYUpXtnSyn}	xrx
+xtab -- throw new ArrayIndexOutOfBoundsException('...')	throw  new ArrayIndexOutOfBoundsException{#insert zzParensWQQsYUpXtnSyn}	xtab
+xtas -- throw new IllegalArgumentStateException('...')	throw  new IllegalArgumentStateException{#insert zzParensWQQsYUpXtnSyn}	xtas
+xtc -- throw new ClassCastException('...')	throw  new ClassCastException{#insert zzParensWQQsYUpXtnSyn}	xtc
+xta -- throw new IllegalArgumentException('...')	throw  new IllegalArgumentException{#insert zzParensWQQsYUpXtnSyn}	xta
+xtb -- throw new IndexOutOfBoundsException('...')	throw  new IndexOutOfBoundsException{#insert zzParensWQQsYUpXtnSyn}	xtb
+xts -- throw new IllegalStateException('...')	throw  new IllegalStateException{#insert zzParensWQQsYUpXtnSyn}	xts
+xtn -- throw new NullPointerException('...')	throw  new NullPointerException{#insert zzParensWQQsYUpXtnSyn}	xtn
+xxsyn	{#BALLOON -title Syntax: Java exceptions -text x[[c,d,r,t]][ab,as,x]=AryIdxOOBnds,ArgmntStt,? // x[c]cc, x[d,r,t]c=ClsCast // x[c,d,i,r,t][a,b,s]=IlglArgmnt,IdxOOBnds,IlglStt // xnp, x[c,d,r,t]n=NullPtr // xrt, x[c,d,r,t]r=Runtime // ([c]=catch, [d]=@xcptn, [r]=throw-no-qq, [t]=w-qq) // javasyn}	xxsyn
+xtr -- throw new RuntimeException('...')	throw  new RuntimeException{#insert zzParensWQQsYUpXtnSyn}	xtr
+xtx -- throw new ...Exception('...')	throw  new {#insert zYmark}Exception{#insert zzParensWQQsYUpXtnSyn}	xtx
+xx -- ...Exception	{#insert zYmark}Exception{#insert zYUp}	xx
+zClsPrnThenCurlyBlkYUp	)  {{#insert zENTER}{#insert zYmark}{#insert zENTER}}{#insert zYUp}	zClsPrnThenCurlyBlkYUp
+zYThenSelectXtnSyn	{#insert zYThenSelect}{#insert xtnsyn}	zYThenSelectXtnSyn
+zzParensNoQQsYUpXtnSyn	({#insert zYmark});{#insert zYUp}{#insert xtnsyn}	zzParensNoQQsYUpXtnSyn
+zzParensWQQsYUpXtnSyn	({#insert zAscQQ}{#insert zYmark}{#insert zAscQQ});{#insert zYUp}{#insert xtnsyn}	zzParensWQQsYUpXtnSyn

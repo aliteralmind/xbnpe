@@ -1,0 +1,6 @@
+XBN-PhraseExpress: HTML project (htmlsyn, xpesyn)
+	kcbsyn: Link
+hqqsyn: Quotes
+pbrsyn: Line-breaks
+hlusyn: Lists
+{#insert zBKSP}

@@ -14,7 +14,7 @@ MatchWordClear	zTPFindFlagWWoff	Srchmtchwdclr	__ES__	5	{#insert zPGDN2}
 MatchWordSet	zTPFindFlagWWon	Srchmtchwdst	__ES__	5	{#insert zPGDN2}{#insert zDOWN}
 RegexClear	zTPFindFlagREoff	Srchreclr	__ES__	5	{#insert zRR}
 RegexSet	zTPFindFlagREon	Srchreset	__ES__	5	{#insert zRR}{#insert zDOWN}
-SearchFiles	zTPFFindDlgOpen	Srchfls	yes	10	{#insert zSS}
+SearchFiles	zTPFFindDlgOpen	Srchfls	yes	100	{#insert zSS}
 SearchFind	zTPFindDlgOpen	Srchfind	yes	10	{#insert zSS}{#insert zDOWN}
 SearchFindNext	zTPFindNext	Srchfnxt	yes	10	{#insert zSS}{#insert zDOWN2}
 SearchFindPrevious	zTPFindPrev	Srchfprv	__ES__	10	{#insert zEND}{#insert zPGUP}

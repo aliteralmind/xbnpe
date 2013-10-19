@@ -1,2 +1,0 @@
-thispn -- Copy-paste this classes package name	{#insert zYYYmark}{#insert zTPGTDocTop}{#insert zFindDlgDownRE}^package[ \t]+[^;]+;${#insert zFindGoREClose}{#insert zLEFT}{#insert zMoveR2L1w}{#insert zSpEND}{#insert zCSpLEFT}{#insert zTPCopy}{#insert zYYYDownPaste}.	thispn
-thispnc -- thispn, CODED	<CODE>{#insert thispn}</CODE>	thispnc

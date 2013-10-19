@@ -10,7 +10,7 @@ zFFindDlgOpenAllLinesRE	{#insert zTPFindFlagREon}{#insert zFFindDlgOpenAllLines}
 zFFindDlgOpenAllLinesWW	{#insert zTPFindFlagWWon}{#insert zFFindDlgOpenAllLines}	zFFindDlgOpenAllLinesWW
 
 
-zFFindDlgOpenAllLinesDefaults -- [zCpF5]	{#insert zTPFFindDlgOpen}{#insert zFFindBtnDefaults}	zFFindDlgOpenAllLinesDefaults
+zFFindDlgOpenAllLinesDefaults	{#insert zTPFFindDlgOpen}{#insert zFFindBtnDefaults}	zFFindDlgOpenAllLinesDefaults
 zFFindDlgOpenAllLinesDefaultsRE	{#insert zFFindDlgOpenAllLinesDefaults}{#insert zFindFlagRETgl}	zFFindDlgOpenAllLinesDefaultsRE
 zFFindDlgOpenAllLinesDefaultsWW	{#insert zFFindDlgOpenAllLinesDefaults}{#insert zFindFlagWWTgl}	zFFindDlgOpenAllLinesDefaultsWW
 zFFindDlgOpenAllLinesDefaultsForceWW	{#insert zFFindDlgOpenAllLinesDefaults}{#insert zFindFlagForceWWTgl}	zFFindDlgOpenAllLinesDefaultsForceWW

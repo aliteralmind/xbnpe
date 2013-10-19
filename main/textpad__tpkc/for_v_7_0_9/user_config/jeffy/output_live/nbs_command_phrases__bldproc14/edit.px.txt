@@ -1,7 +1,7 @@
 zTPAlignRight -- EditAlignRight (Ealr)	{#insert zCSpEE}{#sleep 10}	zTPAlignRight
 zTPDeleteL1c -- EditBackspace (Ebksp)	{#insert zSpBKSP}{#sleep 5}	zTPDeleteL1c
 zTPTitleCase -- EditCapitalize (Ecptl)	{#insert zCSpUU}{#sleep 10}	zTPTitleCase
-zTPCopyAppend -- EditCopyAppend (Ecpapp)	{#insert zCSpCC}{#sleep 50}	zTPCopyAppend
+zTPCopyAppend -- EditCopyAppend (Ecpapp)	{#insert zApJJ}{#sleep 50}	zTPCopyAppend
 zTPCopyFileName -- EditCopyFileName (Ecpfnm)	{#insert zCSpFF}{#sleep 10}	zTPCopyFileName
 zTPCutAppend -- EditCutAppend (Ectapp)	{#insert zCSpXX}{#sleep 50}	zTPCutAppend
 zTPDeleteR1c -- EditDelete (Edl)	{#insert zCSpVV}{#sleep 10}	zTPDeleteR1c

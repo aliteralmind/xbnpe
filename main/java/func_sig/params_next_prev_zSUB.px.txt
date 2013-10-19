@@ -1,0 +1,42 @@
+zParamInCBAlterPaste_M_lltrAng -*- zvLC_ALTR (lowercase and not 'c'), zvANGUV	{#insert {#COND -if {#LENGTH {#insert zvLC_ALTR}} = 0 -then zTPPaste -else {#COND -if {#insert zvLC_ALTR} = q -then zzQQPasteQQ_M_ang -else {#COND -if {#insert zvLC_ALTR} = o -then zzQQPasteQQHtmlEsc_M_ang -else {#COND -if {#insert zvLC_ALTR} = s -then zzQPasteQ_M_ang -else {#COND -if {#insert zvLC_ALTR} = + -then zzQPlsPastePlsQ_M_ang -else {#COND -if {#insert zvLC_ALTR} = _ -then zzLQQPlsPastePlsQLQ_M_ang -else zzErrDlgBadParamAltrFlag_M_lltr}}}}}}}	zParamInCBAlterPaste_M_lltrAng
+zParamTypNmSlctd_selectDesiredPortion_M_ang -- Needs zvANGUV	{#insert {#COND -if {#insert zvPPRV_NXT} = Next -then z1slp -else zTPSelSwapEnds}}{#insert {#COND -if {#LOWERCASE {#insert zvANGUV}} = a -then z1slp -else {#COND -if {#insert zvANGUV} = n -then zRightSelectL1w -else {#COND -if {#LOWERCASE {#insert zvANGUV}} = g -then zSelectL1wL1c -else {#COND -if {#insert zvANGUV} = u -then zLeftSelectR1w -else zzErrDlgBad1ParamAng_M_ang}}}}}	zParamTypNmSlctd_selectDesiredPortion_M_ang
+zPostGenericsHtmlEscape -*-	{#insert zPostBracketSelect}{#insert zHtmlEscSlctdJavaGenerics}	zPostGenericsHtmlEscape
+zPostGenericsHtmlEscapeIfAG_M_ang -*-	{#insert {#COND -if {#insert zvANGUV} = G -then zPostGenericsHtmlEscape -else {#COND -if {#insert zvANGUV} = A -then zPostVarTypeNameHtmlEscapeGnrcs -else z1slp}}}	zPostGenericsHtmlEscapeIfAG_M_ang
+zPostVarTypeNameHtmlEscapeGnrcs	{#insert zXmark}{#insert zTMMoveL1Tag}{#insert zPostGenericsHtmlEscape}{#insert zXDownDelete}	zPostVarTypeNameHtmlEscapeGnrcs
+zXSelCopyNxtPrvParamPartFromPrvNxtJFSigRtrnToX_M_cdeGpnPpnPnum -*-(*!*)- Needs zvCODED_ES, zvGPRV_NXT, zvPPRV_NXT, zvPARAM_NUM	(*See zSelCopyPrvNxtJFSigReturnToXCursor_M_gpnWyc*){#insert zzXmarkMaybeCdd_M_cde}{#insert zSelectPrvNxtJFSigLine_M_gpn}{#insert zzJFSigLnSlctd_selectNxtPrvParamTypeNm_M_pnpPnum}{#insert zParamTypNmSlctd_selectDesiredPortion_M_ang}{#insert zTPCopy}{#insert zzXUpDownOppositeDir_M_gpn}	zXSelCopyNxtPrvParamPartFromPrvNxtJFSigRtrnToX_M_cdeGpnPpnPnum
+zzJFSigLnSlctd_selectNxtPrvParamTypeNm_M_pnpPnum
+zXSlCpNxtPrvParam1PartFromPrvNxtJFSigRtrnToXAlterPaste_M_cdeGpnPpnPnumPlf	{#insert zvPARAM_NUM_st1}{#insert zzXSlCpNxtPrvParamPartFromPrvNxtJFSigRtrnToXAlterPaste_M_cdeGpnPpnPnumPlf}	zXSlCpNxtPrvParam1PartFromPrvNxtJFSigRtrnToXAlterPaste_M_cdeGpnPpnPnumPlf
+zXSlCpNxtPrvParam2PartFromPrvNxtJFSigRtrnToXAlterPaste_M_cdeGpnPpnPnumPlf	{#insert zvPARAM_NUM_st2}{#insert zzXSlCpNxtPrvParamPartFromPrvNxtJFSigRtrnToXAlterPaste_M_cdeGpnPpnPnumPlf}	zXSlCpNxtPrvParam2PartFromPrvNxtJFSigRtrnToXAlterPaste_M_cdeGpnPpnPnumPlf
+zXSlCpNxtPrvParam3PartFromPrvNxtJFSigRtrnToXAlterPaste_M_cdeGpnPpnPnumPlf	{#insert zvPARAM_NUM_st3}{#insert zzXSlCpNxtPrvParamPartFromPrvNxtJFSigRtrnToXAlterPaste_M_cdeGpnPpnPnumPlf}	zXSlCpNxtPrvParam3PartFromPrvNxtJFSigRtrnToXAlterPaste_M_cdeGpnPpnPnumPlf
+zXSlCpNxtPrvParam4PartFromPrvNxtJFSigRtrnToXAlterPaste_M_cdeGpnPpnPnumPlf	{#insert zvPARAM_NUM_st4}{#insert zzXSlCpNxtPrvParamPartFromPrvNxtJFSigRtrnToXAlterPaste_M_cdeGpnPpnPnumPlf}	zXSlCpNxtPrvParam4PartFromPrvNxtJFSigRtrnToXAlterPaste_M_cdeGpnPpnPnumPlf
+zXSlCpNxtPrvParam5PartFromPrvNxtJFSigRtrnToXAlterPaste_M_cdeGpnPpnPnumPlf	{#insert zvPARAM_NUM_st5}{#insert zzXSlCpNxtPrvParamPartFromPrvNxtJFSigRtrnToXAlterPaste_M_cdeGpnPpnPnumPlf}	zXSlCpNxtPrvParam5PartFromPrvNxtJFSigRtrnToXAlterPaste_M_cdeGpnPpnPnumPlf
+zXSlCpNxtPrvParamPrmptNumPartFromPrvNxtJFSigRtrnToXAlterPaste_M_cdeGpnPpnPnumPlf	{#insert zvPARAM_NUM_stPrompt}{#insert zzXSlCpNxtPrvParamPartFromPrvNxtJFSigRtrnToXAlterPaste_M_cdeGpnPpnPnumPlf}	zXSlCpNxtPrvParamPrmptNumPartFromPrvNxtJFSigRtrnToXAlterPaste_M_cdeGpnPpnPnumPlf
+zvANGUV_stCB -*-	{#SETPHRASE -description zvANGUV -content {#INSERTCLIPBOARD} -autotext zvANGUV -folder ctvv_folder}	zvANGUV_stCB
+zzCutL1cIfEThenSetNegNumToYCutL1cElseSetToES	{#insert zCutL1c}{#insert {#COND -if {#INSERTCLIPBOARD} = e -then zzSetPNxtPrvToPrevCutL1c -else zvPNXT_PRV_stNext}}	zzCutL1cIfEThenSetNegNumToYCutL1cElseSetToES
+zzErrDlgBad1ParamAng_M_ang	{#MSGBOX -head ERROR -text ERROR ~~ The keep~which~parameter~part pre-option (currently zvANGUV='{#insert zvANGUV}') must be one of the following: [a,A,n,g,G,u] (see ml1kpsyn).{#insert zCancelProcNowPostTxt}}	zzErrDlgBad1ParamAng_M_ang
+zzLQQPlsPastePlsQLQ_M_ang	\{#insert zAscQQ}{#insert zzQPlsPastePlsQ_M_ang}\{#insert zAscQQ}	zzLQQPlsPastePlsQLQ_M_ang
+zzParamSetLCAltrCddIfUCFromCBCutL1c	{#insert zzParamSetLCAltrCddIfUCFromCB}{#insert zCutL1c}	zzParamSetLCAltrCddIfUCFromCBCutL1c
+zzPastePostGenericsHtmlEscapeIfG_M_ang	{#insert zTPPaste}{#insert zPostGenericsHtmlEscapeIfAG_M_ang}	zzPastePostGenericsHtmlEscapeIfG_M_ang
+zzPl1syn_M_yon -- Needs zvSYNTAX_ON	{#insert {#COND -if {#insert zvSYNTAX_ON} = on -then nclsyn -else z1slp}}	zzPl1syn_M_yon
+zzQPasteQ_M_ang	'{#insert zzPastePostGenericsHtmlEscapeIfG_M_ang}'	zzQPasteQ_M_ang
+zzQPlsPastePlsQ_M_ang	{#insert zAscQQ} + {#insert zzPastePostGenericsHtmlEscapeIfG_M_ang} + {#insert zAscQQ}	zzQPlsPastePlsQ_M_ang
+zzQQPasteQQHtmlEsc_M_ang	&quot;{#insert zzPastePostGenericsHtmlEscapeIfG_M_ang}&quot;	zzQQPasteQQHtmlEsc_M_ang
+zzQQPasteQQ_M_ang	{#insert zAscQQ}{#insert zzPastePostGenericsHtmlEscapeIfG_M_ang}{#insert zAscQQ}	zzQQPasteQQ_M_ang
+zzSetAngToNGpnPpnToNextCddLltrToES	{#insert zzSetAngToNPpnToNext}{#insert zvGPRV_NXT_stNext}{#insert zzSetCddLltrToES}	zzSetAngToNGpnPpnToNextCddLltrToES
+zzSetAngToNGpnPpnToPrevCddLltrToES	{#insert zzSetAngToNPpnToPrev}{#insert zvGPRV_NXT_stPrev}{#insert zzSetCddLltrToES}	zzSetAngToNGpnPpnToPrevCddLltrToES
+zzSetAngToNGpnToNextPpnToPrevLltrToES	{#insert zzSetAngToNPpnToPrev}{#insert zvGPRV_NXT_stNext}{#insert zzSetCddLltrToES}	zzSetAngToNGpnToNextPpnToPrevLltrToES
+zzSetAngToNGpnToPrevPpnToNextCddLltrToES	{#insert zzSetAngToNPpnToNext}{#insert zvGPRV_NXT_stPrev}{#insert zzSetCddLltrToES}	zzSetAngToNGpnToPrevPpnToNextCddLltrToES
+zzSetAngToNPpnToNext	{#insert zvANGUV_stN}{#insert zvPNXT_PRV_stNext}	zzSetAngToNPpnToNext
+zzSetAngToNPpnToPrev	{#insert zvANGUV_stN}{#insert zvPNXT_PRV_stPrev}	zzSetAngToNPpnToPrev
+zzSetCddLltrToES	{#insert zvCODED_ES_stES}{#insert zvLC_ALTR_stES}	zzSetCddLltrToES
+zzSetCddToCddLltrToESCutL1c	{#insert zzSetCddToCddLltrToES}{#insert zCutL1c}	zzSetCddToCddLltrToESCutL1c
+zzSetDelParamPreOptCharsGpnToNext	{#insert zzSetPreOptsPpnCddLltrAng}{#insert zvGPRV_NXT_stNext}	zzSetDelParamPreOptCharsGpnToNext
+zzSetDelParamPreOptCharsGpnToPrev	{#insert zzSetPreOptsPpnCddLltrAng}{#insert zvGPRV_NXT_stPrev}	zzSetDelParamPreOptCharsGpnToPrev
+zzSetPNxtPrvToPrevCutL1c	{#insert zvPNXT_PRV_stPrev}{#insert zCutL1c}	zzSetPNxtPrvToPrevCutL1c
+zzSetPreOptsPpnCddLltrAng	{#insert zzCutL1cIfEThenSetNegNumToYCutL1cElseSetToES}{#insert {#COND -if {#INSERTCLIPBOARD} = c -then zzSetCddToCddLltrToESCutL1c -else {#COND -if {#insert zLowercaseCB} = q -then zzParamSetLCAltrCddIfUCFromCBCutL1c -else {#COND -if {#insert zLowercaseCB} = o -then zzParamSetLCAltrCddIfUCFromCBCutL1c -else {#COND -if {#insert zLowercaseCB} = s -then zzParamSetLCAltrCddIfUCFromCBCutL1c -else {#COND -if {#INSERTCLIPBOARD} = + -then zzParamSetLCAltrCddIfUCFromCBCutL1c -else {#COND -if {#INSERTCLIPBOARD} = _ -then zzParamSetLCAltrCddIfUCFromCBCutL1c -else zvLC_ALTR_stES}}}}}}}{#insert zvANGUV_stCB}	zzSetPreOptsPpnCddLltrAng
+zzXSlCpNxtPrvParamPartFromPrvNxtJFSigRtrnToXAlterPaste_M_cdeGpnPpnPnumPlf	{#insert zXSelCopyNxtPrvParamPartFromPrvNxtJFSigRtrnToX_M_cdeGpnPpnPnum}{#insert zParamInCBAlterPaste_M_lltrAng}{#insert zzB4EndCODETagGTPIfCdd_M_cde}	zzXSlCpNxtPrvParamPartFromPrvNxtJFSigRtrnToXAlterPaste_M_cdeGpnPpnPnumPlf
+zzzEnterTestAng2ForNonGnrcsLltr2	{#insert zENTER}{#insert zzzTstAng2ForNonGnrcsLltr2}	zzzEnterTestAng2ForNonGnrcsLltr2
+zzzEnterTestAng2Lltr2	{#insert zENTER}{#insert zzzTstAng2Lltr2}	zzzEnterTestAng2Lltr2
+zzzTstAng2ForNonGnrcs	{#COND -if {#insert zvANGUV2} = A -then a -else {#COND -if {#insert zvANGUV2} = G -then g -else {#insert zvANGUV2}}}{#insert zTSlp}	zzzTstAng2ForNonGnrcs
+zzzTstAng2ForNonGnrcsLltr2	{#insert zzzTstAng2ForNonGnrcs}{#insert zzzTstLltr2}	zzzTstAng2ForNonGnrcsLltr2
+zzzTstAng2Lltr2	{#insert zzzTstAng2}{#insert zzzTstLltr2}	zzzTstAng2Lltr2

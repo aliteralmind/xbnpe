@@ -1,0 +1,12 @@
+_Example: krxs, lfrn, 2: {#ALT {#LEFT -count 2}}	.		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+bkr -- {#BKSP}	\\\{#BKSP\\\}{#insert enrsyn}	bkr
+dlr -- {#DEL}	\\\{#DEL\\\}{#insert enrsyn}	dlr
+enr -- {#ENTER}	\\\{#ENTER\\\}{#insert enrsyn}	enr
+hmr -- {#HOME}	\\\{#HOME\\\}{#insert enrsyn}	hmr
+lfr -- {#LEFT}	\\\{#LEFT\\\}{#insert enrsyn}	lfr
+lur -- {#UP}	\\\{#UP\\\}{#insert enrsyn}	lur
+lwr -- {#DOWN}	\\\{#DOWN\\\}{#insert enrsyn}	lwr
+ndr -- {#END}	\\\{#END\\\}{#insert enrsyn}	ndr
+rgr -- {#RIGHT}	\\\{#RIGHT\\\}{#insert enrsyn}	rgr
+tbr -- {#TAB}	\\\{#TAB\\\}{#insert enrsyn}	tbr
+enrsyn	{#BALLOON -title Syntax: Common raw key~presses: Syntax -text [n]=~count  //  bkr[n]=\\\{#BKSP\\\}, dlr[n]=DEL  //  hmr[n]=HOME, ndr[n]=END  //  lfr[n]=LEFT, lur[n]=UP, lwr[n]=DOWN, rgr[n]=RIGHT  //  enr[n]=ENTER, tbr[n]=TAB  //  enrsyn}	enrsyn

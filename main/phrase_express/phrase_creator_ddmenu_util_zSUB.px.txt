@@ -25,7 +25,7 @@ zzOpenDDMenuFile_M_dmidFpm -- Needs zvDDMENU_ID, zvDDM_FNM_PRE	{#insert zzvDIR_s
 
 zzPiddDoneSyn	{#BALLOON -title DDMenu(s) now ready for import. -text {#insert zzPiddSynTxt}}	zzPiddDoneSyn
 
-zzPiddSynTxt	pidd[d[a],f][v][[o,x]] ~~ [d]=All files in ddmenu~id~dir, w/ y/n prompts [da]=all~no~prompts, [f]=this file only, [v]=Overwrite w/o does~tgt~xst prompt, [o/x]=Open/do not open output dir, [NOT o or x]=Prompt: Open dir? // piddfvxq=quick	zzPiddSynTxt
+zzPiddSynTxt	pidd[d[a],f][v][[o,x]] ~~ [d]=All files in ddmenu~id~dir, w/ y/n prompts [da]=all~no~prompts, [f]=this file only, [v]=Overwrite w/o does~tgt~xst prompt, [o/x]=Open/do not open output dir, [NOT o or x]=Prompt: Open dir?  //  piddfvxq=quick  //  pexsyn	zzPiddSynTxt
 
 zzPosSlash1InCBMinus1	{#CALC {#POS {#INSERTCLIPBOARD} -substr /} - 1 -round 0 -thousands none}	zzPosSlash1InCBMinus1
 

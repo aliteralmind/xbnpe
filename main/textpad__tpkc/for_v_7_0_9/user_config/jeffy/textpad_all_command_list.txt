@@ -310,7 +310,7 @@ SelectCancel
 SelectEnd
 SelectLine              Ctrl+Alt+A
 SelectParagraph         Alt+A
-SelectSwapEnds
+SelectSwapEnds          Ctrl+Shift+Alt+J, W
 SelectWord              Ctrl+Shift+A
 s-line_scrollDown20     Alt+Down
 ß

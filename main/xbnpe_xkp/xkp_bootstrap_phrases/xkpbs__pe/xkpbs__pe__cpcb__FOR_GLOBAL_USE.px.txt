@@ -5,22 +5,22 @@ __XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a larg
    Required by phrase-creator-ddmenu-utils...END
 *)
 _The phrase in this document are intended...	...for use both in and out of TextPad		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
-cpcb -- Call Phrase-name in ClipBoard (also works for other Pex code)	{#insert zCallPhraseNameInCB}{#insert cpcbsyn}	cpcb
-cpcbx -- cpcb, w/o syntax balloon	{#insert zCallPhraseNameInCB}	cpcbx
-cpwl -- sel-copy word-left, cpcb	{#insert zzCpwlRAW}{#insert cpcbsyn}	cpwl
-cplq -- copy word-left, '=', cpcb	{#insert zzCplqRAW}{#insert cpcbsyn}	cplq
+cpb -- Call Phrase-name in ClipBoard (also works for other Pex code)	{#insert zCallPhraseNameInCB}{#insert cpbsyn}	cpb
+cpbx -- cpb, w/o syntax balloon	{#insert zCallPhraseNameInCB}	cpbx
+cpl -- sel-copy word-left, cpb	{#insert zzCpwlRAW}{#insert cpbsyn}	cpl
+cplq -- copy word-left, '=', cpb	{#insert zzCplqRAW}{#insert cpbsyn}	cplq
 cplqx -- cplq, no syntax balloon	{#insert zzCplqRAW}	cplqx
-cpln -- copy word-left, enter, cpcb	{#insert zzCplnRAW}{#insert cpcbsyn}	cpln
-cplnn -- cplnnx, print syntax	{#insert cplnnx}{#insert cpcbsyn}	cplnn
-cplnnx -- cpln, for a list-list of phrase-names	{#LOOP {#insert zEND}{#insert zzCplnRAW}{#insert zDOWN} -count {#INPUT -head How many phrase-name-lines? -single}}	cplnnx
-cplnx -- cpln, no syntax balloon	{#insert zzCplnRAW}	cplnx
-cpwlx -- cpwl, no syntax balloon	{#insert zzCpwlRAW}	cpwlx
-cpwr -- sel-copy word-right, cpcb	{#insert zzCpwrRAW}{#insert cpcbsyn}	cpwr
-cpwrx -- cpwr, no syntax baloon	{#insert zzCpwrRAW}	cpwrx
+cplt -- copy word-left, enter, cpb	{#insert zzCpltnRAW}{#insert cpbsyn}	cplt
+cpltn -- cpltnx, print syntax	{#insert cpltnx}{#insert cpbsyn}	cpltn
+cpltnx -- cplt, for a list-list of phrase-names	{#LOOP {#insert zEND}{#insert zzCpltnRAW}{#insert zDOWN} -count {#INPUT -head How many phrase-name-lines? -single}}	cpltnx
+cpltx -- cplt, no syntax balloon	{#insert zzCpltnRAW}	cpltx
+cplx -- cpl, no syntax balloon	{#insert zzCpwlRAW}	cplx
+cpr -- sel-copy word-right, cpb	{#insert zzCpwrRAW}{#insert cpbsyn}	cpr
+cprx -- cpr, no syntax baloon	{#insert zzCpwrRAW}	cprx
 zCallPhraseNameInCB	{#insert {#INSERTCLIPBOARD}}	zCallPhraseNameInCB
-cpcbsyn	{#BALLOON -title Syntax: cpcb -text   // cpcb[x] ~~ (in ClipBoard) // cpw[l,r][x] ~~ (word~left/right) // cpl[q,n[n]][x] ~~ (cpwl, '='/e'N'ter before execute, [nn]=phrs~nm line~list) // [x]=no syntax balloon}	cpcbsyn
+cpbsyn	{#BALLOON -title Syntax: Execute phrs~nm in CB -text cpb[x] ~~ (in ClipBoard) // cp[l,r][x] ~~ (word~left/right) // cpl[q,t[n]][x] ~~ (cpl, '='/en'T'er before execute, [tn]=phrs~nm line~list) // [x]=no syntax balloon  //  pexsyn}	cpbsyn
 zzCpwlRAW	{#insert zzzSelL1wCopyRight}{#insert zCallPhraseNameInCB}	zzCpwlRAW
 zzCplqRAW	{#insert zzzSelL1wCopyRight}={#insert zCallPhraseNameInCB}	zzCplqRAW
-zzCplnRAW	{#insert zzzSelL1wCopyRight}{#ENTER}{#insert zCallPhraseNameInCB}	zzCplnRAW
+zzCpltnRAW	{#insert zzzSelL1wCopyRight}{#ENTER}{#insert zCallPhraseNameInCB}	zzCpltnRAW
 zzCpwrRAW	{#insert zTPSelectR1w}{#insert zTPCopy}{#LEFT}{#insert zCallPhraseNameInCB}	zzCpwrRAW
 zzzSelL1wCopyRight	{#insert zTPSelectL1w}{#insert zTPCopy}{#RIGHT}	zzzSelL1wCopyRight
