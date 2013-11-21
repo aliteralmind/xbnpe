@@ -71,8 +71,10 @@ zTpkcEditLongDateNbsKcCount	0	zTpkcEditLongDateNbsKcCount
 zTpkcEditLowerCaseNbsKcCount	1	zTpkcEditLowerCaseNbsKcCount
 zTpkcEditLowerCaseNbsKcEsc1	\\\{#insert zApTWO\\\}\\\{#sleep 10\\\}	zTpkcEditLowerCaseNbsKcEsc1
 zTpkcEditMarkCleanNbsKcCount	0	zTpkcEditMarkCleanNbsKcCount
-zTpkcEditNewLineAfterNbsKcCount	0	zTpkcEditNewLineAfterNbsKcCount
-zTpkcEditNewLineBeforeNbsKcCount	0	zTpkcEditNewLineBeforeNbsKcCount
+zTpkcEditNewLineAfterNbsKcCount	1	zTpkcEditNewLineAfterNbsKcCount
+zTpkcEditNewLineAfterNbsKcEsc1	\\\{#CTRL \\\{#ALT \\\{#SHIFT -chars i\\\}\\\}\\\}\\\{#sleep 20\\\}{#insert zAA}\\\{#sleep 10\\\}	zTpkcEditNewLineAfterNbsKcEsc1
+zTpkcEditNewLineBeforeNbsKcCount	1	zTpkcEditNewLineBeforeNbsKcCount
+zTpkcEditNewLineBeforeNbsKcEsc1	\\\{#CTRL \\\{#ALT \\\{#SHIFT -chars i\\\}\\\}\\\}\\\{#sleep 20\\\}{#insert zBB}\\\{#sleep 10\\\}	zTpkcEditNewLineBeforeNbsKcEsc1
 zTpkcEditPageBreakNbsKcCount	1	zTpkcEditPageBreakNbsKcCount
 zTpkcEditPageBreakNbsKcEsc1	\\\{#insert zCSpLL\\\}\\\{#sleep 10\\\}	zTpkcEditPageBreakNbsKcEsc1
 zTpkcEditPasteNbsKcCount	1	zTpkcEditPasteNbsKcCount

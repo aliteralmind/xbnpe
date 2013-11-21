@@ -98,6 +98,7 @@ zFindDlgCloseDownREXS	\\\{#insert zFindDlgCloseDownREXS\\\}	xhsfcdb
 zFindDlgCloseDownWWXS	\\\{#insert zFindDlgCloseDownWWXS\\\}	xhsfcdb
 zFindDlgCloseDownMC	\\\{#insert zFindDlgCloseDownMC\\\}	xhsfcd
 zFindDlgCloseDownRE	\\\{#insert zFindDlgCloseDownRE\\\}	xhsfcd
+zFindDlgCloseDownWS	\\\{#insert zFindDlgCloseDownWS\\\}	xhsfcd
 zFindDlgCloseDownWW	\\\{#insert zFindDlgCloseDownWW\\\}	xhsfcd
 zFindDlgCloseDownXS	\\\{#insert zFindDlgCloseDownXS\\\}	xhsfcd
 zFindDlgCloseUp* -- xhsfcu	\\\{#insert zFindDlgCloseUp\\\}	xhsfc
@@ -109,6 +110,7 @@ zFindDlgCloseUpREXS	\\\{#insert zFindDlgCloseUpREXS\\\}	xhsfcub
 zFindDlgCloseUpWWXS	\\\{#insert zFindDlgCloseUpWWXS\\\}	xhsfcub
 zFindDlgCloseUpMC	\\\{#insert zFindDlgCloseUpMC\\\}	xhsfcu
 zFindDlgCloseUpRE	\\\{#insert zFindDlgCloseUpRE\\\}	xhsfcu
+zFindDlgCloseDownWS	\\\{#insert zFindDlgCloseDownWS\\\}	xhsfcu
 zFindDlgCloseUpWW	\\\{#insert zFindDlgCloseUpWW\\\}	xhsfcu
 zFindDlgCloseUpXS	\\\{#insert zFindDlgCloseUpXS\\\}	xhsfcu
 (*       Open -- xhsfo   .   xhsf*)
@@ -168,6 +170,3 @@ zFindDlgOpenUpREXS	\\\{#insert zFindDlgOpenUpREXS\\\}{#insert zFindNxtAndClsYNPr
 zFindDlgOpenUpWWXS	\\\{#insert zFindDlgOpenUpWWXS\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfoub
 zFindDlgOpenUpMCOnly	\\\{#insert zFindDlgOpenUpMCOnly\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfou
 zFindDlgOpenMCOnly	\\\{#insert zFindDlgOpenMCOnly\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfoa
-
-
-

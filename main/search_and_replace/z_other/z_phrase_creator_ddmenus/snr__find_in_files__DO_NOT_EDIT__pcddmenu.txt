@@ -87,4 +87,5 @@ Phrase-creators: XBN-PhraseExpress -- Call 'xh'   .   zXbnpeCmdPopupRoot
 				zFFindDlgOpenRE	\\\{#insert zFFindDlgOpenRE\\\}{#insert zFFCloseYNPrompt}	xhsfio
 				zFFindDlgOpenWW	\\\{#insert zFFindDlgOpenWW\\\}{#insert zFFCloseYNPrompt}	xhsfio
 (*       Search results -- xhsfir   .   xhsfi*)
+				fifrx: zElimAllFIFResultMetaTextFromDoc	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content fifrx:zElimAllFIFResultMetaTextFromDoc -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhsfir
 				zElimAllInDoc_allLnsFifRslt_col0ThrColonSpc_reOff	\\\{#insert zElimAllInDoc_allLnsFifRslt_col0ThrColonSpc_reOff\\\}	xhsfir

@@ -33,26 +33,69 @@ zvES_VAL_DEFAULT_stES	\\\{#insert zvES_VAL_DEFAULT_stES\\\}	xhov
 zvOUT_DIR_stRqdInlineCV	\\\{#insert zvOUT_DIR_stRqdInlineCV\\\}	xhov
 zvOUTPUT_FILE_NAME_stOptInlineCVOrThisFileNm	\\\{#insert zvOUTPUT_FILE_NAME_stOptInlineCVOrThisFileNm\\\}	xhov
 zzValidateInlineCVSetTrimValIntoCB_M_vnm	\\\{#insert zzValidateInlineCVSetTrimValIntoCB_M_vnm\\\}	xhov
-Spot-marks -- xhox	.	xho
-z[X,Y]Down[2] -- xhoxd	\\\{#insert z{#insert zDlgXorY}Down\\\}	xhox
-z[X,Y]DownDelete	\\\{#insert z{#insert zDlgXorY}DownDelete\\\}	xhoxd
-z[X,Y]DownPaste	\\\{#insert z{#insert zDlgXorY}DownPaste\\\}	xhoxd
-z[X,Y]DownPastePreBrcktGTP	\\\{#insert z{#insert zDlgXorY}DownPastePreBrcktGTP\\\}	xhoxd
-zSlk[X,Y]Down	\\\{#insert zSlk{#insert zDlgXorY}Down\\\}	xhoxd
-zzSlk[X,Y]DownEnter	\\\{#insert zzSlk{#insert zDlgXorY}DownEnter\\\}	xhoxd
-z[X,Y]Up[2] -- xhoxu	\\\{#insert z{#insert zDlgXorY}Up\\\}	xhox
-z[X,Y]UpDelete	\\\{#insert z{#insert zDlgXorY}UpDelete\\\}	xhoxu
-z[X,Y]UpPaste	\\\{#insert z{#insert zDlgXorY}UpPaste\\\}	xhoxu
-z[X,Y]UpPastePreBrcktGTP	\\\{#insert z{#insert zDlgXorY}UpPastePreBrcktGTP\\\}	xhoxu
-zSlk[X,Y]Up	\\\{#insert zSlk{#insert zDlgXorY}Up\\\}	xhoxu
-zzSlk[X,Y]UpEnter	\\\{#insert zzSlk{#insert zDlgXorY}UpEnter\\\}	xhoxu
-z[X,Y]mark -- xhoxk	\\\{#insert z{#insert zDlgXorY}mark\\\}	xhox
-z[X,Y]markCoded	\\\{#insert z{#insert zDlgXorY}markCoded\\\}	xhoxk
-z[X,Y]markPostGTP	\\\{#insert z{#insert zDlgXorY}markPostGTP\\\}	xhoxk
-z[X,Y]markThenGTP	\\\{#insert z{#insert zDlgXorY}markThenGTP\\\}	xhoxk
-z[X,Y]ThenSelect	\\\{#insert z{#insert zDlgXorY}ThenSelect\\\}	xhoxk
-(*		Math and sleep -- xhom*)
+(*	  Spot-marks (x-mark) -- xhox   .   xho*)
+zXDown[2-4] -- xhoxd	\\\{#insert zXDown\\\}	xhox
+With paste -- xhoxdp	\\\{#insert zXDown\\\}	xhoxd
+zXDownPaste	\\\{#insert zXDownPaste\\\}	xhoxdp
+zXDownPastePreBrcktGTP	\\\{#insert zXDownPastePreBrcktGTP\\\}	xhoxdp
+zPasteXDown	\\\{#insert zPasteXDown\\\}	xhoxup
+zPasteXDownDelete	\\\{#insert zPasteXDownDelete\\\}	xhoxup
+zSlkXDown	\\\{#insert zSlkXDown\\\}	xhoxd
+zXDownDelete	\\\{#insert zXDownDelete\\\}	xhoxd
+zXDownLeft	\\\{#insert zXDownLeft\\\}	xhoxd
+zXDownRight	\\\{#insert zXDownRight\\\}	xhoxd
+zzSlkXDownEnter	\\\{#insert zzSlkXDownEnter\\\}	xhoxd
+zXUp[2-4] -- xhoxu	\\\{#insert zXUp\\\}	xhox
+With paste -- xhoxup	\\\{#insert zXDown\\\}	xhoxu
+zPasteXUp	\\\{#insert zPasteXUp\\\}	xhoxup
+zPasteXUpDelete	\\\{#insert zPasteXUpDelete\\\}	xhoxup
+zXUpPaste	\\\{#insert zXUpPaste\\\}	xhoxup
+zXUpPastePreBrcktGTP	\\\{#insert zXUpPastePreBrcktGTP\\\}	xhoxup
+zSlkXUp	\\\{#insert zSlkXUp\\\}	xhoxu
+zXUpDelete	\\\{#insert zXUpDelete\\\}	xhoxu
+zXUpLeft	\\\{#insert zXUpLeft\\\}	xhoxu
+zXUpRight	\\\{#insert zXUpRight\\\}	xhoxu
+zzSlkXUpEnter	\\\{#insert zzSlkXUpEnter\\\}	xhoxu
+zXmark -- xhoxk	\\\{#insert zXmark\\\}	xhox
+zXThenSelect	\\\{#insert zXThenSelect\\\}	xhoxk
+zXmarkCoded	\\\{#insert zXmarkCoded\\\}	xhoxk
+zXCddThenSelect	\\\{#insert zXCddThenSelect\\\}	xhoxk
+zXmarkMaybeCdd_M_cde	\\\{#insert zXmarkMaybeCdd_M_cde\\\}	xhoxk
+zXmarkPostGTP	\\\{#insert zXmarkPostGTP\\\}	xhoxk
+zXmarkThenGTP	\\\{#insert zXmarkThenGTP\\\}	xhoxk
+zXDownUp	\\\{#insert zXDownUp\\\}	xhox
+(*	  Spot-marks (y-mark) -- xhoy   .   xho*)
+zYDown[2-4] -- xhoxd	\\\{#insert zYDown\\\}	xhoy
+With paste -- xhoydp	\\\{#insert zYDown\\\}	xhoyd
+zYDownPaste	\\\{#insert zYDownPaste\\\}	xhoydp
+zYDownPastePreBrcktGTP	\\\{#insert zYDownPastePreBrcktGTP\\\}	xhoydp
+zPasteYDown	\\\{#insert zPasteYDown\\\}	xhoyup
+zPasteYDownDelete	\\\{#insert zPasteYDownDelete\\\}	xhoyup
+zSlkYDown	\\\{#insert zSlkYDown\\\}	xhoyd
+zYDownDelete	\\\{#insert zYDownDelete\\\}	xhoyd
+zYDownLeft	\\\{#insert zYDownLeft\\\}	xhoyd
+zYDownRight	\\\{#insert zYDownRight\\\}	xhoyd
+zzSlkYDownEnter	\\\{#insert zzSlkYDownEnter\\\}	xhoyd
+zYUp[2-4] -- xhoyu	\\\{#insert zYUp\\\}	xhoy
+With paste -- xhoyup	\\\{#insert zYDown\\\}	xhoyu
+zPasteYUp	\\\{#insert zPasteYUp\\\}	xhoyup
+zPasteYUpDelete	\\\{#insert zPasteYUpDelete\\\}	xhoyup
+zYUpPaste	\\\{#insert zYUpPaste\\\}	xhoyup
+zYUpPastePreBrcktGTP	\\\{#insert zYUpPastePreBrcktGTP\\\}	xhoyup
+zSlkYUp	\\\{#insert zSlkYUp\\\}	xhoyu
+zYUpDelete	\\\{#insert zYUpDelete\\\}	xhoyu
+zYUpLeft	\\\{#insert zYUpLeft\\\}	xhoyu
+zYUpRight	\\\{#insert zYUpRight\\\}	xhoyu
+zzSlkYUpEnter	\\\{#insert zzSlkYUpEnter\\\}	xhoyu
+zYmark -- xhoyk	\\\{#insert zYmark\\\}	xhoy
+zYThenSelect	\\\{#insert zYThenSelect\\\}	xhoyk
+zYmarkCoded	\\\{#insert zYmarkCoded\\\}	xhoyk
+zYCddThenSelect	\\\{#insert zYCddThenSelect\\\}	xhoyk
+zYmarkMaybeCdd_M_cde	\\\{#insert zYmarkMaybeCdd_M_cde\\\}	xhoyk
+zYmarkPostGTP	\\\{#insert zYmarkPostGTP\\\}	xhoyk
+zYmarkThenGTP	\\\{#insert zYmarkThenGTP\\\}	xhoyk
+zYDownUp	\\\{#insert zYDownUp\\\}	xhoy
+(* Math and sleep -- xhom*)
 Sleep -- xhoms	.	xhom
 zSlpXMillsForEveryYWBal_xy	\\\{#insert zSlpXMillsForEveryYWBal_xy\\\}	xhoms
 zSlpXMillsForEveryY_xy	\\\{#insert zSlpXMillsForEveryY_xy\\\}	xhoms
-

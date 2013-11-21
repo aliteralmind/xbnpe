@@ -18,4 +18,5 @@ shdil <I>Should</I>	<I>should</I> (*ends with space*){#insert lncsyn}	shdil
 trb -- <B>true</B>	<B>true</B>{#insert lncsyn}	trb
 trc -- <CODE>true</CODE>	<CODE>true</CODE>{#insert lncsyn}	trc
 trcb -- trc, bolded	<B><CODE>true</CODE></B>{#insert lncsyn}	trcb
-lncsyn	{#BALLOON -title Syntax: JavaDoc null, true, false, -1, ... -text [ln,nn,tr,fl][c][b]=null, non-null, true, false (c=CODE, b=bold, at least 1 b-c option required), n[c][b]1=-1, rt[s]b=return[s] bolded, shdi[l]=<I>Should</I>[spc] ([l]=lowercase)  //  See: javasyn}	lncsyn
+lncsyn	{#BALLOON -title Syntax: JavaDoc null, true, false, -1, ... -text [ln,nn,tr,fl][c][b]=null, non-null, true, false (c=CODE, b=bold, at least 1 b/c opt rqd), n[c][b]1=-1, rt[s]b=return[s] bold, shdi[l]=<I>Should</I>[spc] ([l]=lowercase)  //  javasyn}	lncsyn
+

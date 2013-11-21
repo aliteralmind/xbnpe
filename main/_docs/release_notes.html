@@ -1,3 +1,8 @@
+<!--
+<P>This is the current &quot;<CODE>master</CODE>&quot; branch.</P>
+<P>This is the current &quot;<CODE>master</CODE>&quot; branch. There is no &quot;<CODE>stable_non_master_release</CODE>&quot; branch.</P>
+<P>This is the current &quot;<CODE>stable_non_master_release</CODE>&quot; branch.</P>
+ -->
 <HTML><HEAD>
 	<TITLE>XBN-PhraseExpress</TITLE>
 	<meta name="viewport" content="width=device-width" />
@@ -5,15 +10,103 @@
 
 <BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF"><a name="top"></a>
 
-
-<A NAME="0p8p3_beta"/><H2>XBNPE: 9/23/2013: Release <CODE>0.8.3-beta</CODE></H2>
+<A NAME="0p9_beta"/><H2>XBNPE: 11/21/2013: Major update: Release <CODE>0.9-beta</CODE></H2>
 
 <P><I>Go to: <CODE>[<A HREF="index.html">top</A>, <A HREF="index.html#downloads">dnld</A>, <A HREF="index.html#start">start</A>]</CODE></I></P>
 
-<P>This is the current &quot;<CODE>master</CODE>&quot; branch.</P>
-<!--
-	<P>This is the current &quot;<CODE>stable_non_master_release</CODE>&quot; branch.</P>
- -->
+<P>This is the current &quot;<CODE>master</CODE>&quot; branch. There is no &quot;<CODE>stable_non_master_release</CODE>&quot; branch.</P>
+
+<P><UL>
+	<LI><B>CODE:</B><UL>
+		<LI>-<B>JAVA</B><UL>
+			<LI>--<U>REPLACED:</U><UL>
+				<LI>---All fully-qualified Java actions (such as <CODE>jdl</CODE>--&gt;<CODE>java.util.</CODE>) have been replaced with a drop-down menu: <CODE>ja</CODE></LI>
+				<LI>---<CODE>f[sq,qb,qs]s</CODE> with <CODE>[f,v][p,q,s,t,u]p[b,l]</CODE>: func/var-name to <CODE>F()...&quot;+F()+&quot;</CODE>: <CODE>fqplsyn</CODE></LI>
+			</UL></LI>
+			<LI>--<U>ADDED:</U> <UL>
+				<LI>---Create set-getter functions for 1 variable: <CODE>jsgsyn</CODE></LI>
+				<LI>---<CODE>Class.html#function(...)</CODE> links: <CODE>kutlsyn</CODE></LI>
+				<LI>---<CODE>Class.html#Object</CODE> links: <CODE>kotlsyn</CODE></LI>
+				<LI>---<CODE>eqlsf[x]</CODE>: Basic <CODE>equals(o)</CODE> function with <CODE>areFieldsEqual(x)</CODE> <CODE>sypsyn</CODE></LI>
+				<LI>---Function links from neighboring parameters, func-name word-left or in CB: <CODE>kullsyn</CODE></LI>
+				<LI>---<U>XBN-Java:</U><UL>
+					<LI>----Copy constructor and <CODE>getObjectCopy()</CODE>: <CODE>xcgsyn</CODE></LI>
+					<LI>----<CODE>xbn.lang.InterfaceWrapper</CODE> template: <CODE>iwtsyn</CODE></LI>
+					<LI>----<CODE>ciNull(...)</CODE> and <CODE>throw ciNullOrReturnCause(...)</CODE>: <CODE>clnsyn</CODE></LI>
+					<LI>----<CODE>xbn.number.XIF*InRange</CODE> and <CODE>xbn.lang.XBNObject</CODE> function builders: <CODE>xf</CODE></LI>
+				</UL></LI>
+				<LI>---Drop-down menu of all XBN-Java fully-qualified packages and many fq-classes: <CODE>xb</CODE></LI>
+				<LI>---<CODE>jdmfs</CODE>: Create &quot;main function&quot; table of contents at class-top JavaDoc block: <CODE>lncsyn</CODE></LI>
+				<LI>---<CODE>jdba[c]</CODE>: JavaDoc block only with &quot;<CODE>@...</CODE>&quot; <CODE>jdbsyn</CODE></LI>
+				<LI>---JavaDoc snippets: <CODE>jdqtsyn</CODE></LI>
+				<LI>---<CODE>jdbcs</CODE>: Basic JavaDoc block for constructor <CODE>jdbsyn</CODE></LI>
+				<LI>---<CODE>jdbuox</CODE>: Transform empty function to &quot;do-not-use&quot; w/ <CODE>UnsupportedOperationException</CODE>: <CODE>jdbsyn</CODE></LI>
+				<LI>---<CODE>xtn[1-5,n]</CODE>: Throw a <CODE>NullPointerException</CODE> for a specific parameter: <CODE>xtnsyn</CODE></LI>
+			</UL></LI>
+			<LI>--<U>CHANGED:</U><UL>
+				<LI>---Moved all JavaDoc <CODE>@return</CODE> actions to <CODE>Other/other/return_and_javadoc_return.px.txt</CODE>. Totally re-created: <CODE>rtasyn</CODE></LI>
+				<LI>---<CODE>[l]</CODE> option for non-CODE-ing to <CODE>[o]</CODE>, throughout all Java/JavaDoc actions.</LI>
+				<LI>---Eliminated <CODE>[e]</CODE> (negative number) option from <CODE>ml[1-5,n]</CODE>. Added <CODE>ml[a-e,gn]</CODE> for negative (1=last): ml1syn</LI>
+				<LI>----<CODE>pkgn</CODE> to <CODE>kgn</CODE>: Get this classes package name: <CODE>hcmlsyn</CODE></LI>
+				<LI>---<U>Autotext conflicts:</U><UL>
+					<LI>----<CODE>an[l,z]*</CODE> to <CODE>ae[l,z]*</CODE>: <CODE>aelsyn</CODE></LI>
+					<LI>----<CODE>fn[l,z]</CODE> to <CODE>fe[l,z]</CODE>: <CODE>felsyn</CODE></LI>
+					<LI>----<CODE>hcn[l,z]</CODE> to <CODE>hcm[l,z]</CODE>: <CODE>hcmlsyn</CODE></LI>
+					<LI>----<CODE>kpl*</CODE> to <CODE>ktl*</CODE>: <CODE>ktlsyn</CODE></LI>
+					<LI>----<CODE>[h,r]cm[l,z]c</CODE> to <CODE>[h,r]cmc[l,z]</CODE>: <CODE>hcmlsyn</CODE></LI>
+				</UL></LI>
+				<LI>---<CODE>sop[l][if,q]</CODE> to <CODE>sy[l,p[q],q][f]</CODE>: <CODE>System.out.println(...)</CODE>: <CODE>sypsyn</CODE></LI>
+				<LI>---<CODE>jmlc</CODE> to <CODE>jmc</CODE>: Java multi-line comment: <CODE>sypsyn</CODE></LI>
+			</UL></LI>
+			<LI>--<U>FIXED:</U><UL>
+				<LI>---<CODE>kuzxn</CODE>: <CODE>kuzxnsyn</CODE></LI>
+				<LI>---<CODE>kpl*</CODE>: <CODE>kplsyn</CODE></LI>
+				<LI>---<CODE>dddes</CODE>: <CODE>sopsyn</CODE></LI>
+				<LI>---<CODE>zJRgxJavaFuncSigThrSemicOrOpnCrly</CODE> now accepts parameters and generics with arrays and parameters with &quot;<CODE>...</CODE>&quot; (<I>any</I> parameter may have &quot;<CODE>...</CODE>&quot;)</LI>
+			</UL></LI>
+		</UL></LI>
+		<LI>-<B>CWLPDF</B><UL>
+			<LI>--<U>ADDED:</U> <CODE>zTrimCB</CODE>, <CODE>zPasteSelect[1Line[RplcDlgOpn],AddXmkAtSelEnd]</CODE>: <CODE>xhcsb</CODE></LI>
+			<LI>--<U>ADDED:</U> <CODE>zSel[ect,Copy]ThrLineEndNotLastChar</CODE>: <CODE>xhcls[p]</CODE></LI>
+			<LI>--<U>FIXED:</U> <CODE>zParaNotAtCol0_selectEntire</CODE> now correctly calls <CODE>zTPParaUp</CODE>: <CODE>xhcps</CODE></LI>
+		</UL></LI>
+		<LI>-<U>ADDED (HTML)</U> <CODE>htmlsyn</CODE><UL>
+			<LI>--<CODE>zHtmlEscAmpLTGT2SpcQQ[InCB,_M_esc]</CODE></LI>
+				<LI>---<CODE>zHtmlEscLTGTInCB</CODE></LI>
+				<LI>---<CODE>zHtmlEsc[2Spc,Amp,LT[GT],QQ]_M_esc</CODE></LI>
+				<LI>---<CODE>zHtmlEscSlctdAmpLTGT2SpcQQ[Tab]</CODE></LI>
+				<LI>---<CODE>zvESCAPED_stCB</CODE></LI>
+			</UL></LI>
+		<LI>-<U>ADDED (Spot-marks)</U> <CODE>xho[x,y]</CODE><UL>
+			<LI>--<CODE>z[X,Y]DownUp</CODE></LI>
+			<LI>--<CODE>z[X,Y][Down,Up][Left,Right]</CODE></LI>
+			<LI>--<CODE>zPaste[X,Y][Down,Up][Delete]</CODE></LI>
+			<LI>--<CODE>z[X,Y]CddThenSelect</CODE></LI>
+		</UL></LI>
+		<LI>-<U>ADDED (SNR):</U><UL>
+			<LI>---<CODE>zFindDlgClose[Down,Up]WS</CODE>: <CODE>xhsfc[d,u]</CODE></LI>
+			<LI>---<CODE>rqp</CODE>: <CODE>([...])</CODE></LI>
+			<LI>---<CODE>zPostBrktSelectWord1</CODE>: <CODE>xhses</CODE></LI>
+		</UL></LI>
+		<LI>-<U>CHANGED (PEX):</U> <CODE>inlq</CODE> (to put a line-list of phrase-names into insert tags) to <CODE>inll</CODE>, to avoid conflicts: <CODE>inssyn</CODE></LI>
+		<LI>-<U>ADDED (PEX):</U> <CODE>inll[b,k]</CODE>: Paste line-list of phrase-names, create phrase calls for each: <CODE>inssyn</CODE></LI>
+		<LI>-<U>CHANGED (XPC):</U> <CODE>tr[l,r]</CODE> to <CODE>trm[l,r]</CODE>, to avoid conflicts: <CODE>trmsyn</CODE></LI>
+		<LI>-<U>REMOVED (TPM):</U> <CODE>zTMPara*</CODE> in lieu of <CODE>zTPPara[Down,Up][Extend]</CODE></LI>
+	</UL></LI>
+	<LI><B>BUILD/OTHER:</B><UL>
+		<LI>-<U>ADDED:</U> My TextPad macros (the <CODE>*.TPM</CODE> files) are now included in the download archive: <CODE>xbnpe/zz_misc_and_pxp/<A HREF="../../xbnpe/zz_misc_and_pxp/textpad_macros.zip">textpad_macros.zip</A></CODE></LI>
+	</UL></LI>
+</UL></P>
+
+
+
+<A NAME="0p8p3p1_beta"/><H2>XBNPE: 10/19/2013: Release <CODE>0.8.3-beta</CODE></H2>
+
+<P><I>Go to: <CODE>[<A HREF="index.html">top</A>, <A HREF="index.html#downloads">dnld</A>, <A HREF="index.html#start">start</A>]</CODE></I></P>
+
+<P><UL>
+	<LI>Download: <CODE><A HREF="../../zz_misc_and_pxp/xbnpe_0p8p3_beta.zip">xbnpe_0p8p3_beta.zip</A></CODE> &nbsp; &nbsp; <I>(~9mb)</I>
+</UL></P>
 
 <P><UL>
 	<LI><B>DOCUMENTATION:</B><UL>
@@ -58,7 +151,6 @@
 			<LI>--<U>ADDED:</U>  <CODE>balxb</CODE>: <CODE>balsyn</CODE></LI>
 		</UL></LI>
 		<LI>-<U>ADDED (SNR):</U><UL>
-			<LI><CODE>zFindDlgCloseWSRE</CODE>: <CODE>xhsfcb</CODE></LI>
 			<LI><CODE>z[Post,Pre]BracketSelContentsOnly</CODE>, <CODE>zPostBracketCut</CODE>: xhses, <CODE><A HREF="tasks/snr.html">tasks/snr.html</A></CODE></LI>
 		</UL></LI>
 		</UL>For the special TPKC-user-dir name &quot;<CODE>tp_frsh_instl</CODE>&quot;, this affects the following user-cfg items, which have been changed (for both <A HREF="basics/tpkc/master_cfg_vars.html#zzTpkcBuildVersionName">&quot;fgh&quot; and &quot;live&quot;</A> builds): <CODE>zTpkcMatchCaseClearNbsKcEsc1</CODE>, <CODE>zTpkcMatchWordClearNbsKcEsc1</CODE>, <CODE>zTpkcMatchWordSetNbsKcEsc1</CODE>, <CODE>zTpkcRegexClearNbsKcEsc1</CODE>, <CODE>zTpkcRegexSetNbsKcEsc1</CODE>, <CODE>zTpkcRightMarginSetNbsKcEsc1</CODE>, <CODE>zTpkcSelectBeginStreamNbsKcEsc1</CODE>, <CODE>zTpkcToggleBlockSelectNbsKcEsc1</CODE>, <CODE>zTpkcToggleReadOnlyNbsKcEsc1</CODE>, <CODE>zTpkcToggleSyncScrollNbsKcEsc1</CODE>, <CODE>zTpkcToggleUndoNbsKcEsc1</CODE>, <CODE>zTpkcViewHScrollbarNbsKcEsc1</CODE>, <CODE>zTpkcViewLineNumbersNbsKcEsc1</CODE>, <CODE>zTpkcViewVScrollbarNbsKcEsc1</CODE>, <CODE>zTpkcViewVisibleSpacesNbsKcEsc1</CODE>

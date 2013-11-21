@@ -8,7 +8,7 @@ zParaNotAt_gtEnd_downREoff -- DEPRECATED. Assumes NOT at para-end!	{#insert zFin
 zParaNotAt_gtStart_downREoff -(**)- DEPRECATED. Assumes NOT in col-0!	(*Ends with RE=off dir=down*){#insert zFindDlgOpenUpRE}{#insert zzQcaretQ}{#insert zFindBtnNext}{#insert zFindDlgCloseDownRE}	zParaNotAt_gtStart_downREoff
 zParaNotAt_stEnd_downREoff -- DEPRECATED. Select-through.	{#insert zFindDlgOpenDownRE}{#insert zzQdollarSignQ}{#insert zFindXSBtnNextXS}{#insert zFindDlgCloseRE}	zParaNotAt_stEnd_downREoff
 zParaNotAt_stStart_downREoff -- DEPRECATED. Select-through.	{#insert zFindDlgOpenUpRE}{#insert zzQcaretQ}{#insert zFindXSBtnNextXS}{#insert zFindDlgCloseDownRE}	zParaNotAt_stStart_downREoff
-zParaNotAtCol0_selectEntire	{#insert zTMParaGTStart}{#insert zTPParaDownExtend}	zParaNotAtCol0_selectEntire
+zParaNotAtCol0_selectEntire	{#insert zTPParaUp}{#insert zTPParaDownExtend}	zParaNotAtCol0_selectEntire
 zParaNotAtCol0_selectEntireNotNL	{#insert zParaNotAtCol0_selectEntireNotNL}{#insert zTPSelectL1c}	zParaNotAtCol0_selectEntireNotNL
 zParaNotAtCol0_deleteEntire	{#insert zParaNotAtCol0_selectEntire}{#insert zDEL}	zParaNotAtCol0_deleteEntire
 zSelCopyParagraph	{#insert zTPSelectParagraph}{#insert zTPCopy}	zSelCopyParagraph

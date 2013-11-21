@@ -116,6 +116,15 @@ Your name, {#insert zYourNamePrompt}, has exactly (or less-than) five characters
 </PRE>
 <a name="notes"/><H2>[<A HREF="#top">top</A>] &nbsp; <CODE>COND</CODE> tag: Notes and observations</H2>
 
+<P>This works</P>
+
+<PRE STYLE="background-color:#E1E1E1;">{#insert {#COND -if {#SUBSTR (param1, param2) -from 1 -count 1} = ( -then z1slp -else zzErrDlgAllParamsNotSurroundedByParens}}</PRE>
+
+<P>This doesn't:</P>
+<PRE STYLE="background-color:#E1E1E1;">{#insert {#COND -if {#SUBSTR (param1, param2) -from 1 -count 1} = (  -then z1slp -else zzErrDlgAllParamsNotSurroundedByParens}}</PRE>
+
+<HR WIDTH="25%"/>
+
 <P>If any of the following <I>unescaped</I> characters are in your &quot;<CODE>-if</CODE>&quot; condition, the <CODE>COND</CODE> tag will fail: =, !, &lt;, &gt;.</P>
 
 <PRE STYLE="background-color:#E1E1E1;">CHAR    ASC#

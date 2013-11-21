@@ -1,35 +1,39 @@
-hcnl -- Get-paste this class-name (which is above the cursor)	{#insert zXJavaSelCopyThisClassNameXDown}{#insert zTPPaste}{#insert zzHcnlsyn_M_yon}	hcnl
-hcnlc -- hcnl, CODE-d	{#insert zXmarkCoded}{#insert zJavaSelCopyThisClassName}{#insert zXDownPastePreBrcktGTP}{#insert zzHcnlsyn_M_yon}	hcnlc
-hcnlsyn	{#BALLOON -title Syntax: Java class/package name -text {#insert zzHcnlsyns}=Get~paste class~name at cursor ([c]=CODE~d, [h]=this class, [r]=super~class, [l]=class~name is above, [z]=class~name is below)  //  pkgn[c]=Get~paste package~name.  //  hcnltestall  //  javasyn}	hcnlsyn
-hcnltestall	{#insert zFcsTPFileNew}{#insert zWordWrapOffFromTPDfltState}{#MSGBOX -head Testing class & pkg name actions -text Testing all get~java~class and package~name actions.{#insert zzSyntaxOnFlagWarningTxt}}{#insert zvSYNTAX_ON_stES}{#insert zzDemoJavaClassLine}{#insert zTPGTDocTop}hcnz{#insert zENTER}{#insert hcnz}{#insert zENTER}hcnzc{#insert zENTER}{#insert hcnzc}{#insert zENTER}rcnz{#insert zENTER}{#insert rcnz}{#insert zENTER}rcnzc{#insert zENTER}{#insert rcnzc}{#insert zENTER}{#insert zTPGTDocBottom}hcnl{#insert zENTER}{#insert hcnl}{#insert zENTER}hcnlc{#insert zENTER}{#insert hcnlc}{#insert zENTER}{#insert zTPGTDocTop}package abc.def.xyz;{#insert zENTER}{#insert zTPGTDocBottom}pkgn{#insert zENTER}{#insert pkgn}{#insert zENTER}pkgnc{#insert zENTER}{#insert pkgnc}{#insert zENTER}rcnl{#insert zENTER}{#insert rcnl}{#insert zENTER}rcnlc{#insert zENTER}{#insert rcnlc}{#insert zvSYNTAX_ON_stOn}{#insert zzHcnlsyn_M_yon}	hcnltestall
-hcnz -- hcnl, below	{#insert zXJavaSelCopyThisClassNameXUp}{#insert zTPPaste}{#insert zzHcnlsyn_M_yon}	hcnz
-hcnzc -- hcnl, CODE-d	{#insert zXmarkCoded}{#insert zJavaSelCopyThisClassName}{#insert zXUpPastePreBrcktGTP}{#insert zzHcnlsyn_M_yon}	hcnzc
-pkgn -- Get-paste package name at cursor	{#insert zXmark}{#insert zJavaSelCopyFQPackage}{#insert zXDownPaste}{#insert zzHcnlsyn_M_yon}	pkgn
-pkgnc -- pkgn, CODE-d	{#insert zXmarkCoded}{#insert zJavaSelCopyFQPackage}{#insert zXDownPastePreBrcktGTP}{#insert zzHcnlsyn_M_yon}	pkgnc
-rcnl -- Get-paste super-class name (which is above the cursor)	{#insert zXJavaSelCopySuperClsNmXDownPaste}{#insert zzHcnlsyn_M_yon}	rcnl
-rcnlc -- rcnl, CODE-d	{#insert zXmarkCoded}{#insert zJavaSelCopySuperClassName}{#insert zXDownPastePreBrcktGTP}{#insert zzHcnlsyn_M_yon}	rcnlc
-rcnz -- rcnl, below	{#insert zXJavaSelCopySuperClassName}{#insert zXUpPaste}{#insert zzHcnlsyn_M_yon}	rcnz
-rcnzc -- rcnz, CODE-d	{#insert zXmarkCoded}{#insert zJavaSelCopySuperClassName}{#insert zXUpPastePreBrcktGTP}{#insert zzHcnlsyn_M_yon}	rcnzc
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+hcml -- Get-paste this class-name (which is above the cursor)	{#insert zXJavaCopyThisClassNmXDown}{#insert zTPPaste}{#insert zzHcmlsyn_M_yon}	hcml
+hcmcl -- hcml, CODE-d	{#insert zXmarkCoded}{#insert zJavaSelCopyThisClassName}{#insert zXDownPastePreBrcktGTP}{#insert zzHcmlsyn_M_yon}	hcmcl
+hcmlsyn	{#BALLOON -title Syntax: Java class/package name -text {#insert zzHcmlsyns1of3}=Get~paste class~name at cursor ([c]=CODE~d, [h]=this class, [r]=super~class, [p]=class~name is above, [k]=class~name is below) // {#insert zzHcmlsyns2of3}=Get~paste package~name. // jcl=select THIS class~name in class~line // hcml[syn,testall] // javasyn}	hcmlsyn
+hcmltestall	{#insert zFcsTPFileNew}{#insert zWordWrapOffFromTPDfltState}{#MSGBOX -head Testing class & pkg name actions -text Testing all get~java~class and package~name actions.{#insert zzSyntaxOnFlagWarningTxt}}{#insert zvSYNTAX_ON_stES}{#insert zzDemoJavaClassLine}{#insert zTPGTDocTop}hcmz{#insert zENTER}{#insert hcmz}{#insert zENTER}hcmcz{#insert zENTER}{#insert hcmcz}{#insert zENTER}rcmz{#insert zENTER}{#insert rcmz}{#insert zENTER}rcmcz{#insert zENTER}{#insert rcmcz}{#insert zENTER}{#insert zTPGTDocBottom}hcml{#insert zENTER}{#insert hcml}{#insert zENTER}hcmcl{#insert zENTER}{#insert hcmcl}{#insert zENTER}{#insert zTPGTDocTop}package abc.def.xyz;{#insert zENTER}{#insert zTPGTDocBottom}kgn{#insert zENTER}{#insert kgn}{#insert zENTER}kgnc{#insert zENTER}{#insert kgnc}{#insert zENTER}rcml{#insert zENTER}{#insert rcml}{#insert zENTER}rcmcl{#insert zENTER}{#insert rcmcl}{#insert zvSYNTAX_ON_stOn}{#insert zzHcmlsyn_M_yon}	hcmltestall
+hcmz -- hcml, below	{#insert zXJavaCopyThisClassNmXUp}{#insert zTPPaste}{#insert zzHcmlsyn_M_yon}	hcmz
+hcmcz -- hcml, CODE-d	{#insert zXmarkCoded}{#insert zJavaSelCopyThisClassName}{#insert zXUpPastePreBrcktGTP}{#insert zzHcmlsyn_M_yon}	hcmcz
+jcl -- Select this classes name in the class/interface line	{#insert zJavaSelCopyThisClassName}	jcl
+kgn -- Get-paste package name at cursor	{#insert zXmark}{#insert zJavaSelCopyFQPackage}{#insert zXDownPaste}{#insert zzHcmlsyn_M_yon}	kgn
+kgnc -- kgn, CODE-d	{#insert zXmarkCoded}{#insert zJavaSelCopyFQPackage}{#insert zXDownPastePreBrcktGTP}{#insert zzHcmlsyn_M_yon}	kgnc
+rcml -- Get-paste super-class name (which is above the cursor)	{#insert zXJavaCopySuperClassNmXDownPaste}{#insert zzHcmlsyn_M_yon}	rcml
+rcmcl -- rcml, CODE-d	{#insert zXmarkCoded}{#insert zJavaSelCopySuperClassName}{#insert zXDownPastePreBrcktGTP}{#insert zzHcmlsyn_M_yon}	rcmcl
+rcmz -- rcml, below	{#insert zXJavaSelCopySuperClassName}{#insert zXUpPaste}{#insert zzHcmlsyn_M_yon}	rcmz
+rcmcz -- rcmz, CODE-d	{#insert zXmarkCoded}{#insert zJavaSelCopySuperClassName}{#insert zXUpPastePreBrcktGTP}{#insert zzHcmlsyn_M_yon}	rcmcz
+zAtDocTopJavaSelectPackageLine -*-	{#insert zFindDlgOpenDownRE}{#SETPHRASE -description zvFIND_WHAT -content ^[ \t]*package[ \t]+[\w.]+;$ -autotext zvFIND_WHAT -folder ctvv_folder}{#insert zvFIND_WHAT}{#insert zFindBtnNext}{#insert zFindDlgCloseRE}	zAtDocTopJavaSelectPackageLine
 zJavaSelCopyFQPackage -*-	{#insert zJavaSelectFQPackage}{#insert zTPCopy}	zJavaSelCopyFQPackage
 zJavaSelCopySuperClassName -*-	{#insert zTMSelectSuperClassNm}{#insert zTPCopy}	zJavaSelCopySuperClassName
 zJavaSelCopyThisClassName -*-	{#insert zTMSelectThisClassNm}{#insert zTPCopy}	zJavaSelCopyThisClassName
-zJavaSelectFQPackage -*-	{#insert zTPGTDocTop}{#insert zFindDlgOpenRE}{#SETPHRASE -description zvFIND_WHAT -content ^[ \t]*package[ \t]+[\w.]+;$ -autotext zvFIND_WHAT -folder ctvv_folder}{#insert zvFIND_WHAT}{#insert zFindBtnNext}{#insert zFindDlgCloseRE}{#insert zHOME}{#insert zMoveR2Lw}{#insert zTPLineEndExtend}{#insert zTPSelectL1c}	zJavaSelectFQPackage
+zJavaSelectFQPackage -*-	{#insert zJavaSelectPackageLine}{#insert zHOME}{#insert zMoveR2Lw}{#insert zTPLineEndExtend}{#insert zTPSelectL1c}	zJavaSelectFQPackage
+zJavaSelectPackageLine	{#insert zTPGTDocTop}{#insert zAtDocTopJavaSelectPackageLine}	zJavaSelectPackageLine
+zSetFObjNmSelCopySuperClass -*-	{#insert zJavaSelCopySuperClassName}{#insert zvFOBJ_NAME_stCB}	zSetFObjNmSelCopySuperClass
+zSetFObjNmSelCopyThisClass -*-	{#insert zJavaSelCopyThisClassName}{#insert zvFOBJ_NAME_stCB}	zSetFObjNmSelCopyThisClass
+zXJavaCopySuperClassNmXDown -*-	{#insert zXJavaSelCopySuperClassName}{#insert zXDown}	zXJavaCopySuperClassNmXDown
+zXJavaCopySuperClassNmXDownDel -*-	{#insert zXJavaCopySuperClassNmXDown}{#insert zDEL}	zXJavaCopySuperClassNmXDownDel
+zXJavaCopySuperClassNmXDownPaste -*-	{#insert zXJavaCopySuperClassNmXDown}{#insert zTPPaste}	zXJavaCopySuperClassNmXDownPaste
+zXJavaCopyThisClassNmXDown -*-	{#insert zXJavaSelCopyThisClassName}{#insert zXDown}	zXJavaCopyThisClassNmXDown
+zXJavaCopyThisClassNmXDownDel -*-	{#insert zXJavaCopyThisClassNmXDown}{#insert zDEL}	zXJavaCopyThisClassNmXDownDel
+zXJavaCopyThisClassNmXUp -*-	{#insert zXJavaSelCopyThisClassName}{#insert zXUp}	zXJavaCopyThisClassNmXUp
+zXJavaCopyThisClassNmXUpDel -*-	{#insert zXJavaCopyThisClassNmXUp}{#insert zDEL}	zXJavaCopyThisClassNmXUpDel
 zXJavaSelCopySuperClassName -*-	{#insert zXmark}{#insert zJavaSelCopySuperClassName}	zXJavaSelCopySuperClassName
-zXJavaSelCopySuperClassNameXUp -*-	{#insert zXJavaSelCopySuperClassName}{#insert zXUp}	zXJavaSelCopySuperClassNameXUp
-zXJavaSelCopySuperClassNmXDown -*-	{#insert zXJavaSelCopySuperClassName}{#insert zXDown}	zXJavaSelCopySuperClassNmXDown
-zXJavaSelCopySuperClsNmXDownPaste -*-	{#insert zXJavaSelCopySuperClassNmXDown}{#insert zTPPaste}	zXJavaSelCopySuperClsNmXDownPaste
 zXJavaSelCopyThisClassName -*-	{#insert zXmark}{#insert zJavaSelCopyThisClassName}	zXJavaSelCopyThisClassName
-zXJavaSelCopyThisClassNameXDown -*-	{#insert zXJavaSelCopyThisClassName}{#insert zXDown}	zXJavaSelCopyThisClassNameXDown
-zXJavaSelCopyThisClassNameXUp -*-	{#insert zXJavaSelCopyThisClassName}{#insert zXUp}	zXJavaSelCopyThisClassNameXUp
-zXSetFObjNmSelCopySuperClass -*-	{#insert zXJavaSelCopySuperClassName}{#insert zvFOBJ_NAME_stCB}	zXSetFObjNmSelCopySuperClass
-zXSetFObjNmSelCopyThisClass -*- Sets zvFOBJ_NAME, class name remains slctd, x-mk in original position	{#insert zXJavaSelCopyThisClassName}{#insert zvFOBJ_NAME_stCB}	zXSetFObjNmSelCopyThisClass
-zXSetFObjNmToSuperClassXDown -*-	{#insert zXSetFObjNmSelCopySuperClass}{#insert zXDown}	zXSetFObjNmToSuperClassXDown
+zXSetFObjNmToSuperClassXDown -*-	{#insert zXmark}{#insert zSetFObjNmSelCopySuperClass}{#insert zXDown}	zXSetFObjNmToSuperClassXDown
 zXSetFObjNmToSuperClassXDownDel -*-	{#insert zXSetFObjNmToSuperClassXDown}{#insert zDEL}	zXSetFObjNmToSuperClassXDownDel
-zXSetFObjNmToSuperClassXUp -*-	{#insert zXSetFObjNmSelCopySuperClass}{#insert zXUp}	zXSetFObjNmToSuperClassXUp
-zXSetFObjNmToSuperClassXUpDel -*-	{#insert zXSetFObjNmToSuperClassXUp}{#insert zDEL}	zXSetFObjNmToSuperClassXUpDel
-zXSetFObjNmToThisClassXDown -*-	{#insert zXSetFObjNmSelCopyThisClass}{#insert zXDown}	zXSetFObjNmToThisClassXDown
+zXSetFObjNmToThisClassXDown -*-	{#insert zXmark}{#insert zSetFObjNmSelCopyThisClass}{#insert zXDown}	zXSetFObjNmToThisClassXDown
 zXSetFObjNmToThisClassXDownDel -*-	{#insert zXSetFObjNmToThisClassXDown}{#insert zDEL}	zXSetFObjNmToThisClassXDownDel
-zXSetFObjNmToThisClassXUp -*-	{#insert zXSetFObjNmSelCopyThisClass}{#insert zXUp}	zXSetFObjNmToThisClassXUp
-zXSetFObjNmToThisClassXUpDel -*-	{#insert zXSetFObjNmToThisClassXUp}{#insert zDEL}	zXSetFObjNmToThisClassXUpDel
-zzHcnlsyn_M_yon	{#insert {#COND -if {#insert zvSYNTAX_ON} = on -then hcnlsyn -else z1slp}}	zzHcnlsyn_M_yon
-zzHcnlsyns	[h,r]cn[l,z][c]	zzHcnlsyns
+zzHcmlsyn_M_yon	{#insert {#COND -if {#insert zvSYNTAX_ON} = on -then hcmlsyn -else z1slp}}	zzHcmlsyn_M_yon
+zzHcmlsyns1of3	[h,r]cm[c][l,z]	zzHcmlsyns1of3
+zzHcmlsyns2of3	kgn[c]	zzHcmlsyns2of3
+zzHcmlsyns3of3	jcl	zzHcmlsyns3of3

@@ -51,18 +51,18 @@ z5ThnTSlp	\\\{#insert z5ThnTSlp\\\}	xhoms
 Var: zvNUMBER* -- xhomn	{#SETCLIPBOARD zvNUMBER}{#insert zzBalCBContainsVarNm}	xhom
 zvNUMBER_st0 (and 'st1')	\\\{#insert zvNUMBER_st0\\\}	xhomn
 zvNUMBER_incBy1	\\\{#insert zvNUMBER_incBy1\\\}	xhomn
-XBNPE main directories -- xhoy	.	xho
-zROOT_DIR_XBNPE_AG_PARENT -- xhoyg	\\\{#insert zROOT_DIR_XBNPE_AG_PARENT\\\}	xhoy
-**For output dirs in specific projects, see 'zROOT_DIR_XBNPE_PARENT'	.	xhoyg
-zROOT_DIR_XBNPE_AG -- xhoygg	\\\{#insert zROOT_DIR_XBNPE_AG\\\}	xhoyg
+XBNPE main directories -- xhor	.	xho
+zROOT_DIR_XBNPE_AG_PARENT -- xhorg	\\\{#insert zROOT_DIR_XBNPE_AG_PARENT\\\}	xhor
+**For output dirs in specific projects, see 'zROOT_DIR_XBNPE_PARENT'	.	xhorg
+zROOT_DIR_XBNPE_AG -- xhorgg	\\\{#insert zROOT_DIR_XBNPE_AG\\\}	xhorg
 zXPROOT_DIR_AG_temp
-zROOT_DIR_XBNPE_PARENT -- xhoym	\\\{#insert zROOT_DIR_XBNPE_PARENT\\\}	xhoy
-zROOT_DIR_XBNPE_MAIN -- xhoymm	\\\{#insert zROOT_DIR_XBNPE_MAIN\\\}	xhoym
-zXPROOT_DIR_xbnpeXkp	\\\{#insert zXPROOT_DIR_xbnpeXkp\\\}	xhoymm
+zROOT_DIR_XBNPE_PARENT -- xhorm	\\\{#insert zROOT_DIR_XBNPE_PARENT\\\}	xhor
+zROOT_DIR_XBNPE_MAIN -- xhormm	\\\{#insert zROOT_DIR_XBNPE_MAIN\\\}	xhorm
+zXPROOT_DIR_xbnpeXkp	\\\{#insert zXPROOT_DIR_xbnpeXkp\\\}	xhormm
 zzXPSUB_DIR_xkpInput
 zXPROOT_DIR_AG_xkpOutputRoot
-zXPROOT_DIR_tpkc -- xhoymmt	\\\{#insert zXPROOT_DIR_tpkc\\\}	xhoymm
-zXPROOT_DIR_AG_tpkc_M_bvm	\\\{#insert zXPROOT_DIR_AG_tpkc_M_bvm\\\}	xhoymmt
-zXPROOT_DIR_tpkcVrsnSpcfcFls -- xhoymmtv	\\\{#insert zXPROOT_DIR_tpkcVrsnSpcfcFls\\\}	xhoymmt
-zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn -- Needs zvTPKC_UDIR_NM	\\\{#insert zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn\\\}	xhoymmtv
-zWIN_DIR_DESKTOP	\\\{#insert zWIN_DIR_DESKTOP\\\}	xhoym
+zXPROOT_DIR_tpkc -- xhormmt	\\\{#insert zXPROOT_DIR_tpkc\\\}	xhormm
+zXPROOT_DIR_AG_tpkc_M_bvm	\\\{#insert zXPROOT_DIR_AG_tpkc_M_bvm\\\}	xhormmt
+zXPROOT_DIR_tpkcVrsnSpcfcFls -- xhormmtv	\\\{#insert zXPROOT_DIR_tpkcVrsnSpcfcFls\\\}	xhormmt
+zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn -- Needs zvTPKC_UDIR_NM	\\\{#insert zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn\\\}	xhormmtv
+zWIN_DIR_DESKTOP	\\\{#insert zWIN_DIR_DESKTOP\\\}	xhorm

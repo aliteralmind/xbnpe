@@ -22,3 +22,5 @@ zSelCopyToLineHome	{#insert zTPLineLeftExtend}{#insert zTPCopy}	zSelCopyToLineHo
 zSelCopyUpThr1NonWS [zCASpSPACE] -- The 1st non-WS char in the line, starting from col 1	{#insert zSelectUpThr1NonWS}{#insert zTPCopy}	zSelCopyUpThr1NonWS
 zSelectEntireLine	{#insert zHOME}{#insert zTPLineEndExtend}	zSelectEntireLine
 zSelectUpThr1NonWS [zSpSPACE] -- The 1st non-WS char in the line, starting from col 1	{#insert zTPLineLeftExtend}{#insert zSelectR1L1w}	zSelectUpThr1NonWS
+zSelectThrLineEndNotLastChar	{#insert zTPLineEndExtend}{#insert zTPSelectL1c}	zSelectThrLineEndNotLastChar
+zSelCopyThrLineEndNotLastChar	{#insert zSelectThrLineEndNotLastChar}{#insert zTPCopy}	zSelCopyThrLineEndNotLastChar

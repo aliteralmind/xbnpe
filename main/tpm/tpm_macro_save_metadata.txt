@@ -1,0 +1,34 @@
+aliteralmind-textpad@yahoo.com
+
+
+TPM_java_findPrevFuncSig.TPM
+javaFindPrevFuncSig
+Find and select the previous Java func-sig line, through the open-curly.
+
+TPM_java_findNextFuncSig.TPM
+javaFindNextFuncSig
+Find and select the next Java func sig-line, through the open curly.
+
+java_del_param_names_4fqp.TPM
+javaDelSlctdPrmNms4QP
+Delete names and generics from selected parameters, for fully-qualified types in URL ("_4FQP_").
+
+java_del_param_names_4tv.TPM
+javaDelSlctdPrmNms4TV
+Delete names and types from selected Java params, for display-only type-abbrevs ("_4TV_")
+
+java_del_param_names.TPM
+javaDelSlctdPrmNmsOnly
+Delete names, leaving types and generics in selected Java params.
+
+java_del_param_types.TPM
+javaDelSlctdPrmTypes
+Delete types and generics from selected Java parameters.
+
+java_find_next_param_type_and_name.TPM
+javaFindNxtParamTypNm
+Find and select next Java parameter type-plus-name
+
+java_find_prev_param_type_and_name.TPM
+javaFindPrvParamTypNm
+Find and select previous Java parameter type-plus-name

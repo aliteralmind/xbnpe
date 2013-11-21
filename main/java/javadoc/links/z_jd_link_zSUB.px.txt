@@ -1,0 +1,5 @@
+zzPostLinkCreatePrekGoBackIfNotESCIDrnH_M_drnPrk	{#insert {#COND -if {#LENGTH {#insert zvPREK}} > 0 -then zPostLinkCreatePrekGoBackCIDrnH_M_prk -else z1slp}}	zzPostLinkCreatePrekGoBackIfNotESCIDrnH_M_drnPrk
+zzzSetKulPrk2ToPromptIfLCDrn2NotH	{#insert {#COND -if {#LOWERCASE {#insert zvDRN2}} = h -then zvPREK2_stES -else zzzSetKulPrk2ToPrompt}}	zzzSetKulPrk2ToPromptIfLCDrn2NotH
+zzzSetKulPrk2ToPrompt	{#SETPHRASE -description zvPREK2 -content {#INPUT -head Prek link opt? ('', 'f', 'F', 'r', 'R', 'y', 'Y'~~kulprksyn) -single} -autotext zvPREK2 -folder ctvv_folder}	zzzSetKulPrk2ToPrompt
+zzzEtrPap2Drn2Prk2	{#insert zENTER}{#insert zzzPap2Drn2Prk2}	zzzEtrPap2Drn2Prk2
+zzzPap2Drn2Prk2	{#insert zvPAP2}{#insert zvDRN2}{#insert zvPREK2}{#insert zTSlp}	zzzPap2Drn2Prk2

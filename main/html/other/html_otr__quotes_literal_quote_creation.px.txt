@@ -28,6 +28,6 @@ hqq -- &quot;&quot;	&quot;{#insert zXmark}&quot;{#insert zXUp}{#insert hqqsyn}	h
 
 hqqsyn	{#BALLOON -title Syntax: HTML quotes -text hqo={#insert zAscQQ}, hqq={#insert zAscQQ}...{#insert zAscQQ}, hq[b][c][p]={#insert zAscQQ}...{#insert zAscQQ} ([b]=bold, [c]=CODE, [p]=paste), hcsq[b][p]='...' (CODE-d)  //  hqqsyn}	hqqsyn
 
-zQQOrQQHtmlIfCdd_M_cde -- zvCODED_ES=*something*-->escaped double-quote, if nothing-->non-esc	{#insert {#COND -if {#LENGTH {#insert zvCODED_ES}} = 0 -then zAscQQ -else zHtmlQQ}}	zQQOrQQHtmlIfCdd_M_cde
+zQQOrQQHtmlIfCdd_M_cde -- zvCDD_ES=*something*-->escaped double-quote, if nothing-->non-esc	{#insert {#COND -if {#LENGTH {#insert zvCDD_ES}} = 0 -then zAscQQ -else zHtmlQQ}}	zQQOrQQHtmlIfCdd_M_cde
 
 zHtmlQQ	&nbsp;	zHtmlQQ

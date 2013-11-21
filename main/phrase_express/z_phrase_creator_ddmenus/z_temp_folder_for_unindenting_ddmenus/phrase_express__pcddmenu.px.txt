@@ -59,9 +59,9 @@ zzRegexTabBtwWSCharsLookaround**	\\\{#insert zzRegexTabBtwWSCharsLookaround\\\}	
 xcfbuild	(*actnonly=xcfbuild*){#SETPHRASE -description zvACTN_NM -content xcfbuild -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhp
 (*
 Phrase-creators: Other -- xho   .   xh
-XBNPE main directories -- xhoy   .   xho
-zROOT_DIR_XBNPE_PARENT -- xhoym   .   xhoy
-zROOT_DIR_XBNPE_MAIN -- xhoymm   .   xhoym
+XBNPE main directories -- xhor   .   xho
+zROOT_DIR_XBNPE_PARENT -- xhorm   .   xhor
+zROOT_DIR_XBNPE_MAIN -- xhormm   .   xhorm
 *)
-zXPROOT_DIR_phraseExpress -- xhoymmp	\\\{#insert zXPROOT_DIR_phraseExpress\\\}	xhoymm
-zXPROOT_DIR_AG_phraseExpress	\\\{#insert zXPROOT_DIR_AG_phraseExpress\\\}	xhoymmp
+zXPROOT_DIR_phraseExpress -- xhormmp	\\\{#insert zXPROOT_DIR_phraseExpress\\\}	xhormm
+zXPROOT_DIR_AG_phraseExpress	\\\{#insert zXPROOT_DIR_AG_phraseExpress\\\}	xhormmp

@@ -1,3 +1,4 @@
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
 (*
    Required by pipm[d,f]...START
       XBNPE-DDMENU-DIR-ID=tpkc
@@ -23,10 +24,9 @@ Phrase-creators: XBN-PhraseExpress -- xh   .   zXbnpeCmdPopupRoot
 				Class-file link -- xhjdkc	.	xhjdk
 					Var: zvDIR_TORD	{#SETCLIPBOARD zvDIR_TORD}{#insert zzBalCBContainsVarNm}	xhjdkc
 						zvDIR_TORD_stL1c	\\\{#insert zvDIR_TORD_stL1c\\\}	xhjdkcd
-						zvDIR_TORD_stPrompt	\\\{#insert zvDIR_TORD_stPrompt\\\}	xhjdkcd
-					zzClassFileLinkDispCNm_M_dtdCnm	\\\{#insert zzClassFileLinkDispCNm_M_dtdCnm\\\}	xhjdkc
-					zzClassFileLinkDispYmk_M_dtdCnm	\\\{#insert zzClassFileLinkDispYmk_M_dtdCnm\\\}	xhjdkc
-					zzClassFileLink_M_dtdCnmDsp	\\\{#insert zzClassFileLink_M_dtdCnmDsp\\\}	xhjdkc
+					zzClassFileLinkDispCNm_M_trdCnm	\\\{#insert zzClassFileLinkDispCNm_M_trdCnm\\\}	xhjdkc
+					zzClassFileLinkDispYmk_M_trdCnm	\\\{#insert zzClassFileLinkDispYmk_M_trdCnm\\\}	xhjdkc
+					zzClassFileLink_M_trdCnmDsp	\\\{#insert zzClassFileLink_M_trdCnmDsp\\\}	xhjdkc
 				Function/constructor link -- xhjdkf	.	xhjdk
 					1-plus parameter -- xhjdkfa	.	xhjdkf
 						z1PPFuncLinkDispFNmWPrek_M_drnFnmPrmsPapPrk	\\\{#insert z1PPFuncLinkDispFNmWPrek_M_drnFnmPrmsPapPrk\\\}	xhjdkfa
@@ -51,22 +51,22 @@ Phrase-creators: XBN-PhraseExpress -- xh   .   zXbnpeCmdPopupRoot
 						0-params -- xhjdknrz	.	xhjdknr
 							z0PSuperCnstrLinkDispCNmWPrek_M_cnmPrk	\\\{#insert z0PSuperCnstrLinkDispCNmWPrek_M_cnmPrk\\\}	xhjdknrz
 							z0PSuperCnstrLinkDispCNm_M_cnm	\\\{#insert z0PSuperCnstrLinkDispCNm_M_cnm\\\}	xhjdknrz
-							z0PSuperCnstrLinkDispQsprQPapPP_M_cnm	\\\{#insert z0PSuperCnstrLinkDispQsprQPapPP_M_cnm\\\}	xhjdknrz
-							z0PSuperCnstrLinkDispQsprQWPrek_M_cnmPrk	\\\{#insert z0PSuperCnstrLinkDispQsprQWPrek_M_cnmPrk\\\}	xhjdknrz
+							z0PSuperCnstrLinkDispQsprPapPP_M_cnm	\\\{#insert z0PSuperCnstrLinkDispQsprPapPP_M_cnm\\\}	xhjdknrz
+							z0PSuperCnstrLinkDispQsprWPrek_M_cnmPrk	\\\{#insert z0PSuperCnstrLinkDispQsprWPrek_M_cnmPrk\\\}	xhjdknrz
 							z0PSuperCnstrLinkDispYmk_M_cnm	\\\{#insert z0PSuperCnstrLinkDispYmk_M_cnm\\\}	xhjdknrz
 							z0PSuperCnstrLinkPapES_M_cnmDsp	\\\{#insert z0PSuperCnstrLinkPapES_M_cnmDsp\\\}	xhjdknrz
 						z1PPSuperCnstrLinkDispCNm_M_prmsPap	\\\{#insert z1PPSuperCnstrLinkDispCNm_M_prmsPap\\\}	xhjdknr
-						z1PPSuperCnstrLinkDispQsprQ_M_prmsPap	\\\{#insert z1PPSuperCnstrLinkDispQsprQ_M_prmsPap\\\}	xhjdknr
+						z1PPSuperCnstrLinkDispQspr_M_prmsPap	\\\{#insert z1PPSuperCnstrLinkDispQspr_M_prmsPap\\\}	xhjdknr
 						z1PPSuperCnstrLinkPapES_M_prmsDsp	\\\{#insert z1PPSuperCnstrLinkPapES_M_prmsDsp\\\}	xhjdknr
 						z1PPSuperCnstrLinkWPrekDispCNm_M_prmsPapPrk	\\\{#insert z1PPSuperCnstrLinkWPrekDispCNm_M_prmsPapPrk\\\}	xhjdknr
 					this-constructor -- xhjdknh	.	xhjdkn
 						0-params -- xhjdknhz	.	xhjdknh
 							z0PThisCnstrLinkDispCNm_M_cnm	\\\{#insert z0PThisCnstrLinkDispCNm_M_cnm\\\}	xhjdknhz
-							z0PThisCnstrLinkDispQthsQPapPP_M_cnm	\\\{#insert z0PThisCnstrLinkDispQthsQPapPP_M_cnm\\\}	xhjdknhz
+							z0PThisCnstrLinkDispQthsPapPP_M_cnm	\\\{#insert z0PThisCnstrLinkDispQthsPapPP_M_cnm\\\}	xhjdknhz
 							z0PThisCnstrLinkDispYmk_M_cnm	\\\{#insert z0PThisCnstrLinkDispYmk_M_cnm\\\}	xhjdknhz
 							z0PThisCnstrLinkPapES_M_cnmDsp	\\\{#insert z0PThisCnstrLinkPapES_M_cnmDsp\\\}	xhjdknhz
 						z1PPThisCnstrLinkDispCNm_M_prmsPap	\\\{#insert z1PPThisCnstrLinkDispCNm_M_prmsPap\\\}	xhjdknh
-						z1PPThisCnstrLinkDispQthsQ_M_prmsPap	\\\{#insert z1PPThisCnstrLinkDispQthsQ_M_prmsPap\\\}	xhjdknh
+						z1PPThisCnstrLinkDispQths_M_prmsPap	\\\{#insert z1PPThisCnstrLinkDispQths_M_prmsPap\\\}	xhjdknh
 						z1PPThisCnstrLinkPapES_M_prmsDsp	\\\{#insert z1PPThisCnstrLinkPapES_M_prmsDsp\\\}	xhjdknh
 				Variables -- xhjdkv	.	xhjdk
 					Var: zvDISPLAY	{#SETCLIPBOARD zvDISPLAY}{#insert zzBalCBContainsVarNm}	xhjdkv
@@ -74,19 +74,19 @@ Phrase-creators: XBN-PhraseExpress -- xh   .   zXbnpeCmdPopupRoot
 						zvDISPLAY_stFncObjNm	\\\{#insert zvDISPLAY_stFncObjNm\\\}	xhjdkvd
 						zvDISPLAY_stFncObjNm	\\\{#insert zvDISPLAY_stFncObjNm\\\}	xhjdkvd
 						zvDISPLAY_stQcnstrQ	\\\{#insert zvDISPLAY_stQcnstrQ\\\}	xhjdkvd
-						zvDISPLAY_stQsuperQ	\\\{#insert zvDISPLAY_stQsuperQ\\\}	xhjdkvd
-						zvDISPLAY_stQthisQ	\\\{#insert zvDISPLAY_stQthisQ\\\}	xhjdkvd
+						zvDISPLAY_stQspr	\\\{#insert zvDISPLAY_stQspr\\\}	xhjdkvd
+						zvDISPLAY_stQths	\\\{#insert zvDISPLAY_stQths\\\}	xhjdkvd
 						zvDISPLAY_stYmk	\\\{#insert zvDISPLAY_stYmk\\\}	xhjdkvd
 					Var: zvFOBJ_NAME	{#SETCLIPBOARD zvFOBJ_NAME}{#insert zzBalCBContainsVarNm}	xhjdkv
 					Var: zvALL_PARAMS
-						zvALL_PARAMS_stCB	\\\{#insert zvALL_PARAMS_stCB\\\}	xhjdkva
-					Var: zvHIDRUN	{#SETCLIPBOARD zvHIDRUN}{#insert zzBalCBContainsVarNm}	xhjdkv
-						zvHIDRUN_stH (U)	\\\{#insert zvHIDRUN_stH\\\}	xhjdkvh
-						zvHIDRUN_stL1c	\\\{#insert zvHIDRUN_stL1c\\\}	xhjdkvh
-					Var: zvPAP_TMVY	{#SETCLIPBOARD zvPAP_TMVY}{#insert zzBalCBContainsVarNm}	xhjdkv
-						zvPAP_TMVY_stL1c	\\\{#insert zvPAP_TMVY_stL1c\\\}	xhjdkvo
-						zvPAP_TMVY_stPrompt	\\\{#insert zvPAP_TMVY_stPrompt\\\}	xhjdkvo
-						zvPAP_TMVY_stT (M,V,Y)	\\\{#insert zvPAP_TMVY_stT\\\}	xhjdkvo
-					Var: zvPRK_FRY	{#SETCLIPBOARD zvPRK_FRY}{#insert zzBalCBContainsVarNm}	xhjdkv
+						zzSetAllParamsToCBThenCIB	\\\{#insert zzSetAllParamsToCBThenCIB\\\}	xhjdkva
+					Var: zvDRN	{#SETCLIPBOARD zvDRN}{#insert zzBalCBContainsVarNm}	xhjdkv
+						zvDRN_stH (U)	\\\{#insert zvDRN_stH\\\}	xhjdkvh
+						zvDRN_stL1c	\\\{#insert zvDRN_stL1c\\\}	xhjdkvh
+					Var: zvPAP	{#SETCLIPBOARD zvPAP}{#insert zzBalCBContainsVarNm}	xhjdkv
+						zvPAP_stL1c	\\\{#insert zvPAP_stL1c\\\}	xhjdkvo
+						zvPAP_stPrompt	\\\{#insert zvPAP_stPrompt\\\}	xhjdkvo
+						zvPAP_stT (M,V,Y)	\\\{#insert zvPAP_stT\\\}	xhjdkvo
+					Var: zvPREK	{#SETCLIPBOARD zvPREK}{#insert zzBalCBContainsVarNm}	xhjdkv
 				zPostLinkCreatePrekGoBack_M_prk	\\\{#insert zPostLinkCreatePrekGoBack_M_prk\\\}	xhjdk
 

@@ -1,0 +1,43 @@
+
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+kib	{#insert zzSetClsNmToCBTrdToL1c}<CODE>{#insert zzClassFileLinkDispCNm_M_trdCnm}</CODE>{#insert zzKibsyn_M_yon}	kib
+kibsyn	{#BALLOON -title Syntax: Java class~file link -text {#insert zzKibsyns1of2}=class nm in clipboard ([t]=non-CODE-d, [y]=no display <y-mark>, [c]=CODE-d)  //  {#insert zzKibsyns2of2}  ([r]:class~nm=super, [rr]=disp 'spr', [l]=class~nm word~left, [yb]=display in CB)  //  kibtestall  //  See: kiflsyn  //  javasyn}	kibsyn
+kibt	{#insert zzSetClsNmToCBTrdToL1c}{#insert zzClassFileLinkDispCNm_M_trdCnm}{#insert zzKibsyn_M_yon}	kibt
+kibtestall	{#insert zzJavaTestIntroFileNew}{#insert zvSYNTAX_ON_stES}{#insert zvDIR_TORD2_stPrompt}{#insert zzDemoJavaClassLine}{#insert zzzEtrDirTrd2}kib{#insert zzzEnterScbDmoClsTrd}{#insert kib}{#insert zzzEtrDirTrd2}kibt{#insert zzzEnterScbDmoClsTrd}{#insert kibt}{#insert zzzEtrDirTrd2}kiby{#insert zzzEnterScbDmoClsTrd}{#insert kiby}{#insert zzzEtrDirTrd2}kibyc{#insert zzzEnterScbDmoClsTrd}{#insert kibyc}{#insert zzzEtrDirTrd2}kil{#insert zzzEnterPrntDmoClsTrd}{#insert kil}{#insert zzzEtrDirTrd2}kilt{#insert zzzEnterPrntDmoClsTrd}{#insert kilt}{#insert zzzEtrDirTrd2}kily{#insert zzzEnterPrntDmoClsTrd}{#insert kily}{#insert zzzEtrDirTrd2}kilyb{#insert zzzEnterScbDmoDisp}MyClass{#insert zzzTrd2}{#insert kilyb}{#insert zzzEtrDirTrd2}kilybc{#insert zzzEnterScbDmoDisp}MyClass{#insert zzzTrd2}{#insert kilybc}{#insert zzzEtrDirTrd2}kilyc{#insert zzzEnterPrntDmoClsTrd}{#insert kilyc}{#insert zzzEtrDirTrd2}kir{#insert zzzEtrDirTrd2}{#insert kir}{#insert zzzEtrDirTrd2}kirt{#insert zzzEtrDirTrd2}{#insert kirt}{#insert zzzEtrDirTrd2}kiry{#insert zzzEtrDirTrd2}{#insert kiry}{#insert zzzEtrDirTrd2}kiryb{#insert zzzEnterScbDmoDispTrd}{#insert kiryb}{#insert zzzEtrDirTrd2}kirybc{#insert zzzEnterScbDmoDispTrd}{#insert kirybc}{#insert zzzEtrDirTrd2}kiryc{#insert zzzEtrDirTrd2}{#insert kiryc}{#insert zvSYNTAX_ON_stOn}{#insert zzKibsyn_M_yon}	kibtestall
+kiby	{#insert zzSetClsNmToCBTrdToL1c}{#insert zzClassFileLinkDispYmk_M_trdCnm}{#insert zzKibsyn_M_yon}	kiby
+kibyc	{#insert zzSetClsNmToCBTrdToL1c}<CODE>{#insert zzClassFileLinkDispYmk_M_trdCnm}</CODE>{#insert zzKibsyn_M_yon}	kibyc
+kil	{#insert zzSetTrdToL1cClsNmToL1w}<CODE>{#insert zzClassFileLinkDispCNm_M_trdCnm}</CODE>{#insert zzKibsyn_M_yon}	kil
+kilt	{#insert zzSetTrdToL1cClsNmToL1w}{#insert zzClassFileLinkDispCNm_M_trdCnm}{#insert zzKibsyn_M_yon}	kilt
+kily	{#insert zzSetTrdToL1cClsNmToL1w}{#insert zzClassFileLinkDispYmk_M_trdCnm}{#insert zzKibsyn_M_yon}	kily
+kilyb	{#insert zvDISPLAY_stCB}{#insert zzSetTrdToL1cClsNmToL1w}{#insert zzClassFileLink_M_trdCnmDsp}{#insert zzKibsyn_M_yon}	kilyb
+kilybc	{#insert zvDISPLAY_stCB}{#insert zzSetTrdToL1cClsNmToL1w}<CODE>{#insert zzClassFileLink_M_trdCnmDsp}</CODE>{#insert zzKibsyn_M_yon}	kilybc
+kilyc	{#insert zzSetTrdToL1cClsNmToL1w}<CODE>{#insert zzClassFileLinkDispYmk_M_trdCnm}</CODE>{#insert zzKibsyn_M_yon}	kilyc
+kir	{#insert zzSetTrdToL1cClsNmToSuper}<CODE>{#insert zzClassFileLinkDispCNm_M_trdCnm}</CODE>{#insert zzKibsyn_M_yon}	kir
+kirr	{#insert zzSetTrdToL1cClsNmToSuper}<CODE>{#insert zzClassFileLinkDispQspr_M_trdCnm}</CODE>{#insert zzKibsyn_M_yon}	kirr
+kirrt	{#insert zzSetTrdToL1cClsNmToSuper}{#insert zzClassFileLinkDispQspr_M_trdCnm}{#insert zzKibsyn_M_yon}	kirrt
+kirt	{#insert zzSetTrdToL1cClsNmToSuper}{#insert zzClassFileLinkDispCNm_M_trdCnm}{#insert zzKibsyn_M_yon}	kirt
+kiry	{#insert zzSetTrdToL1cClsNmToSuper}{#insert zzClassFileLinkDispYmk_M_trdCnm}{#insert zzKibsyn_M_yon}	kiry
+kiryb	{#insert zvDISPLAY_stCB}{#insert zzSetTrdToL1cClsNmToSuper}{#insert zzClassFileLink_M_trdCnmDsp}{#insert zzKibsyn_M_yon}	kiryb
+kirybc	{#insert zvDISPLAY_stCB}{#insert zzSetTrdToL1cClsNmToSuper}<CODE>{#insert zzClassFileLink_M_trdCnmDsp}</CODE>{#insert zzKibsyn_M_yon}	kirybc
+kiryc	{#insert zzSetTrdToL1cClsNmToSuper}<CODE>{#insert zzClassFileLinkDispYmk_M_trdCnm}</CODE>{#insert zzKibsyn_M_yon}	kiryc
+zYmarkSlash	{#insert zYmark}/	zYmarkSlash
+zvDIR_TORD2_stPrompt -*-	{#SETPHRASE -description zvDIR_TORD2 -content {#INPUT -head Class file in this ('t') or diff dir ('d')? -single} -autotext zvDIR_TORD2 -folder ctvv_folder}	zvDIR_TORD2_stPrompt
+zvDIR_TORD_stCB -*-	{#SETPHRASE -description zvDIR_TORD -content {#INSERTCLIPBOARD} -autotext zvDIR_TORD -folder ctvv_folder}	zvDIR_TORD_stCB
+zvDIR_TORD_stL1c -*-	{#insert zCutL1c}{#insert zvDIR_TORD_stCB}	zvDIR_TORD_stL1c
+zzClassFileLinkDispCNm_M_trdCnm	{#insert zvDISPLAY_stFncObjNm}{#insert zzClassFileLink_M_trdCnmDsp}	zzClassFileLinkDispCNm_M_trdCnm
+zzClassFileLinkDispQspr_M_trdCnm	{#insert zvDISPLAY_stQspr}{#insert zzClassFileLink_M_trdCnmDsp}	zzClassFileLinkDispQspr_M_trdCnm
+zzClassFileLinkDispYmk_M_trdCnm	{#insert zvDISPLAY_stYmk}{#insert zzClassFileLink_M_trdCnmDsp}	zzClassFileLinkDispYmk_M_trdCnm
+zzClassFileLink_M_trdCnmDsp -- Needs zvDIR_TORD, zvFOBJ_NAME=class-name, zvDISPLAY	<A HREF={#insert zAscQQ}{#insert {#COND -if {#insert zvDIR_TORD} = t -then z1slp -else {#COND -if {#insert zvDIR_TORD} = d -then zYmarkSlash -else zzErrDlgBadTrd_M_trd}}}{#insert zvFOBJ_NAME}.html{#insert zAscQQ}>{#insert zvDISPLAY}</A>	zzClassFileLink_M_trdCnmDsp
+zzErrDlgBadTrd_M_trd	{#MSGBOX -head ERROR -text ERROR ~~ target pre~option (currently zvDIR_TORD='{#insert zvDIR_TORD}') must be 't' (target class is THIS one) or 'd' (target class is a different one).{#insert zCancelProcNowPostTxt}}	zzErrDlgBadTrd_M_trd
+zzKibsyn_M_yon -- Needs zvSYNTAX_ON	{#insert {#COND -if {#insert zvSYNTAX_ON} = on -then kibsyn -else z1slp}}	zzKibsyn_M_yon
+zzKibsyns1of2	[t,d]ki[b,l][t,y[c]]	zzKibsyns1of2
+zzKibsyns2of2	[t,d]ki[l,r[r]][t,y[b][c]]	zzKibsyns2of2
+zzSetClsNmToCBTrdToL1c	{#insert zvFOBJ_NAME_stCB}{#insert zvDIR_TORD_stL1c}	zzSetClsNmToCBTrdToL1c
+zzSetTrdToL1cClsNmToL1w	{#insert zvDIR_TORD_stL1c}{#insert zvFOBJ_NAME_stL1w}	zzSetTrdToL1cClsNmToL1w
+zzSetTrdToL1cClsNmToSuper	{#insert zvDIR_TORD_stL1c}{#insert zXSetFObjNmToSuperClassXDown}	zzSetTrdToL1cClsNmToSuper
+zzzEnterPrntDmoClsTrd	{#insert zENTER}MyClass{#insert zzzTrd2}	zzzEnterPrntDmoClsTrd
+zzzEnterScbDmoClsTrd	{#insert zENTER}{#SETCLIPBOARD MyClass}{#insert zzzTrd2}	zzzEnterScbDmoClsTrd
+zzzEnterScbDmoDisp	{#insert zENTER}{#insert zzzScbDmoDisp}	zzzEnterScbDmoDisp
+zzzEnterScbDmoDispTrd	{#insert zENTER}{#insert zzzScbDmoDisp}{#insert zzzTrd2}	zzzEnterScbDmoDispTrd
+zzzEtrDirTrd2	{#insert zENTER}{#insert zzzTrd2}	zzzEtrDirTrd2
+zzzTrd2	{#insert zvDIR_TORD2}{#insert zTSlp}	zzzTrd2

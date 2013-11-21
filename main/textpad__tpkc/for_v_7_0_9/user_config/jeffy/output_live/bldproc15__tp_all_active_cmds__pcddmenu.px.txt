@@ -74,6 +74,8 @@ zTPIndent	\\\{#insert zTPIndent\\\}	xhclai
 zTPUnindent	\\\{#insert zTPUnindent\\\}	xhclai
 (*          Other -- xhclat   .   xhcla*)
 zTPDupLine [BS]	\\\{#insert zTPDupLine\\\}	xhclat
+zTPNewLineAfter	\\\{#insert zTPNewLineAfter\\\}	xhclat
+zTPNewLineBefore	\\\{#insert zTPNewLineBefore\\\}	xhclat
 zTPSplitLines	\\\{#insert zTPSplitLines\\\}	xhclat
 (*          Sort -- xhclas   .   xhcla*)
 zTPSortDlgOpen	\\\{#insert zTPSortDlgOpen\\\}	xhclas

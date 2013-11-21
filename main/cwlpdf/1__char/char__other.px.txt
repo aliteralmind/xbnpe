@@ -7,3 +7,5 @@ zSelectR2c	{#insert zTPSelectR1c}{#insert zTPSelectR1c}	zSelectR2c
 zSelectR3c	{#insert zSelectR2c}{#insert zTPSelectR1c}	zSelectR3c
 zCutL1c	{#insert zTPSelectL1c}{#insert zTPCut}	zCutL1c
 zCutR1c	{#insert zTPSelectR1c}{#insert zTPCut}	zCutR1c
+zTAB2	{#TAB -count 2}{#insert zTSlp}	zTAB2
+zTAB3	{#TAB -count 3}{#insert zTSlp}	zTAB3

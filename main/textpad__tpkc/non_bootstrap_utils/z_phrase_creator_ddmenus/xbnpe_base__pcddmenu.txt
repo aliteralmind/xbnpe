@@ -77,7 +77,8 @@ Phrase-creators: XBN-PhraseExpress -- xh   .   zXbnpeCmdPopupRoot
 	Phrase-creators: Other -- xho	.	xh
 		Key-presses -- xhok	.	xho
 		Other -- xhot	.	xho
-		Spot-marks -- xhox	.	xho
+		Spot-marks (x-mark) -- xhox	.	xho
+		Spot-marks (y-mark) -- xhoy	.	xho
 	Phrase-creators: PhraseExpress -- xhp (creating & managing Pex code)	.	xh
 		Key-presses -- xhok	.	xho
 	Phrase-creators: Search & replace -- xhs	.	xh

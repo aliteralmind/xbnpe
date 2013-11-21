@@ -3,3 +3,5 @@ zzQcaretQ	^	zzQcaretQ
 zzQdollarSignQ	$	zzQdollarSignQ
 zzQtabQ	\t	zzQtabQ
 zzRegexTabBtwWSCharsLookaround	(?<=\S){#insert zzQtabQ}(?=\S)	zzRegexTabBtwWSCharsLookaround
+zzQDnrSlshPlus	\s+	zzQDnrSlshPlus
+zzQdlr1	$1	zzQdlr1

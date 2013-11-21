@@ -1,0 +1,11 @@
+zXcX	{#insert zXmark},{#insert zXmark}	zXcX
+zYcY	{#insert zYmark},{#insert zYmark}	zYcY
+zYcXcX	{#insert zYmark},{#insert zXcX}	zYcXcX
+zYcXcXcX	{#insert zYcXcX},{#insert zXmark}	zYcXcXcX
+zXcXcX	{#insert zXcX},{#insert zXmark}	zXcXcX
+zXcXcY	{#insert zXcX},{#insert zYmark}	zXcXcY
+zYcXcXcYcXcX	{#insert zYcXcX},{#insert zYcXcX}	zYcXcXcYcXcX
+zYcXcXcXcY	{#insert zYcXcXcX},{#insert zYmark}	zYcXcXcXcY
+zXcXcYcX	{#insert zXcXcY},{#insert zXmark}	zXcXcYcX
+zYcYcXcX	{#insert zYcY},{#insert zXcX}	zYcYcXcX
+zzLeftPostBrktSelectWord1	{#insert zLEFT}{#insert zPostBrktSelectWord1}	zzLeftPostBrktSelectWord1

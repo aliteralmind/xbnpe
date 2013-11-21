@@ -3,4 +3,4 @@ ptn -- Pattern	Pattern	ptn
 ptnm -- Pattern,_	Pattern,	ptnm
 mch -- Matcher	Matcher	mch
 mchm -- Matcher,_	Matcher,	mchm
-jdlsyn	{#BALLOON -title Syntax: java.util.regex type names -text ptn[m]=Pattern ([m]=comma-space), mch[m]=Matcher  //  javasyn}	jdlsyn
+ptnsyn	{#BALLOON -title Syntax: java.util.regex type names -text ptn[m]=Pattern ([m]=comma-space), mch[m]=Matcher  //  javasyn}	ptnsyn

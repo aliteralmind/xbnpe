@@ -1,0 +1,26 @@
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+cln -- ciNull(...)	{#insert zvCFY_stL1c}ciNull({#insert zYmark}{#insert zzCmaSpcQFnmPromptQCmaSpcQ}{#insert zYmark}{#insert zAscQQ});{#insert clnsyn}	cln
+cln1 -- cln, param 1	{#insert zvCFY_stL1c}{#insert zvPARAM_NUM_st1}{#insert zzCINull_M_pnumCfy}{#insert clnsyn}	cln1
+cln2 -- cln, param 2	{#insert zvCFY_stL1c}{#insert zvPARAM_NUM_st2}{#insert zzCINull_M_pnumCfy}{#insert clnsyn}	cln2
+cln3 -- cln, param 3	{#insert zvCFY_stL1c}{#insert zvPARAM_NUM_st3}{#insert zzCINull_M_pnumCfy}{#insert clnsyn}	cln3
+cln4 -- cln, param 4	{#insert zvCFY_stL1c}{#insert zvPARAM_NUM_st4}{#insert zzCINull_M_pnumCfy}{#insert clnsyn}	cln4
+cln5 -- cln, param 5	{#insert zvCFY_stL1c}{#insert zvPARAM_NUM_st5}{#insert zzCINull_M_pnumCfy}{#insert clnsyn}	cln5
+clnn -- cln, [prompt #] param	{#insert zvCFY_stL1c}{#insert zvPARAM_NUM_stPrompt}{#insert zzCINull_M_pnumCfy}{#insert clnsyn}	clnn
+clnsyn	{#BALLOON -title Syntax: Java throw new ... -text {#insert zzClnsyns3of3}  //  [ln]=ciNull(...), [nr]=throw ciNullOrReturnCause(...)  //  [c]='cnstr', [f]=func~name, [x]=y~mk w/ no quotes, [y]=y~mk w/ quotes  //  [[1~5,n]]=for a specific parameter  //  See: xtnsyn //  javasyn}	clnsyn
+cnr -- throw  ciNullOrReturnCause...	{#insert zvCFY_stL1c}throw  ciNullOrReturnCause({#insert zYmark}{#insert zzCmaSpcQFnmPromptQCmaSpcQ}{#insert zYmark}{#insert zAscQQ}, rtx);{#insert clnsyn}	cnr
+cnr1 -- cnr, param 1	{#insert zvCFY_stL1c}{#insert zvPARAM_NUM_st1}{#insert zzThrowCINlOrRtnCause_M_pnumCfy}{#insert clnsyn}	cnr1
+cnr2 -- cnr, param 2	{#insert zvCFY_stL1c}{#insert zvPARAM_NUM_st2}{#insert zzThrowCINlOrRtnCause_M_pnumCfy}{#insert clnsyn}	cnr2
+cnr3 -- cnr, param 3	{#insert zvCFY_stL1c}{#insert zvPARAM_NUM_st3}{#insert zzThrowCINlOrRtnCause_M_pnumCfy}{#insert clnsyn}	cnr3
+cnr4 -- cnr, param 4	{#insert zvCFY_stL1c}{#insert zvPARAM_NUM_st4}{#insert zzThrowCINlOrRtnCause_M_pnumCfy}{#insert clnsyn}	cnr4
+cnr5 -- cnr, param 5	{#insert zvCFY_stL1c}{#insert zvPARAM_NUM_st5}{#insert zzThrowCINlOrRtnCause_M_pnumCfy}{#insert clnsyn}	cnr5
+cnrn -- cnr, [prompt #] param	{#insert zvCFY_stL1c}{#insert zvPARAM_NUM_stPrompt}{#insert zzThrowCINlOrRtnCause_M_pnumCfy}{#insert clnsyn}	cnrn
+zzCINull_M_pnumCfy -- Needs zvPARAM_NUM	ciNull({#insert zzzPasteSetPnmQFnmCnstrPromptQCmaSpcQPnmQ_M_pnum});	zzCINull_M_pnumCfy
+zzClnsyns1of3	[c,f,x,y]cln[[1~5,n]]	zzClnsyns1of3
+zzClnsyns2of3	[c,f,x,y]cnr[[1~5,n]]	zzClnsyns2of3
+zzClnsyns2of3 -- for javasyn only	[c,f,x,y]c[ln,nr][[1~5,n]]	zzClnsyns2of3
+zzCmaSpcQFnmPromptQCmaSpcQ	, {#insert zzGetPrintQFuncCnstrNmQ_M_cfy}, {#insert zAscQQ}	zzCmaSpcQFnmPromptQCmaSpcQ
+zzQGetPasteFuncNameUpQ	{#insert zAscQQ}{#insert zzJFSigUpGetPasteFuncName}{#insert zAscQQ}	zzQGetPasteFuncNameUpQ
+zzQqcnstrq	{#insert zAscQQ}constructor{#insert zAscQQ}	zzQqcnstrq
+zzQqymkq	{#insert zAscQQ}{#insert zYmark}{#insert zAscQQ}	zzQqymkq
+zzThrowCINlOrRtnCause_M_pnumCfy -- Needs zvPARAM_NUM	throw  ciNullOrReturnCause({#insert zzzPasteSetPnmQFnmCnstrPromptQCmaSpcQPnmQ_M_pnum}, rtx);	zzThrowCINlOrRtnCause_M_pnumCfy
+zzzPasteSetPnmQFnmCnstrPromptQCmaSpcQPnmQ_M_pnum	{#insert zzSetGpnToPrevPpnToNext}{#insert zzPasteParamNameAtCrsr_M_gpnPpnPnum}{#SETPHRASE -description zvPNM -content {#INSERTCLIPBOARD} -autotext zvPNM -folder ctvv_folder}{#insert zzCmaSpcQFnmPromptQCmaSpcQ}{#insert zvPNM}{#insert zAscQQ}	zzzPasteSetPnmQFnmCnstrPromptQCmaSpcQPnmQ_M_pnum

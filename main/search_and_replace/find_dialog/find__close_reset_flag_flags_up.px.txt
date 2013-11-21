@@ -16,3 +16,4 @@ zFindDlgCloseUpREXS	{#insert zFindDlgCloseUpXS}{#insert zTPFindFlagREoff}	zFindD
 zFindDlgCloseUpWW	{#insert zFindDlgCloseUp}{#insert zTPFindFlagWWoff}	zFindDlgCloseUpWW
 zFindDlgCloseUpWWXS	{#insert zFindDlgCloseUpXS}{#insert zTPFindFlagWWoff}	zFindDlgCloseUpWWXS
 zFindDlgCloseUpXS	{#insert zFindFlagXSTgl}{#insert zFindDlgCloseUp}	zFindDlgCloseUpXS
+zFindDlgCloseUpWS	{#insert zFindFlagWrapSearchTglRAW}{#insert zFindDlgCloseUp}	zFindDlgCloseUpWS

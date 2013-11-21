@@ -1,4 +1,3 @@
-__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
 (*
 *DUPLICATE* this document, unindent every line in it, then import it with the following settings:
 - No prefix
@@ -21,8 +20,7 @@ SNR: Find In Files -- xhsfi   .   xhsf*)
 (*       Close -- xhsfic   .   xhsfi*)
 zFFindDlgClose	\\\{#insert zFFindDlgClose\\\}	xhsit
 Other -- xhsfit	.	xhsfi
-Action: fwhatp (and 'rwithp')	.	xhsit
-zFFindOpenForCurrFile	\\\{#insert zFFindOpenForCurrFile\\\}	xhsit
+fwhatp (and 'rwithp')	(*actnonly=fwhatp*){#SETPHRASE -description zvACTN_NM -content fwhatp -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhsit
 (*       Buttons -- xhsfib   .   xhsfi*)
 (*       Fields -- xhsfid   .   xhsfi*)
 Save/restore dir/f-type -- xhsfidv ('...'=save-then-restore)	.	xhsfid
@@ -38,6 +36,7 @@ zFFindRestoreCurrDirFNms_M_dirFnm* -- xhsfidvf	\\\{#insert zFFindRestoreCurrDirF
 zFFindRestoreCurrDirRAW_M_dir	\\\{#insert zFFindRestoreCurrDirRAW_M_dir\\\}	xhsfidvf
 zFFindRestoreCurrDirFNmsRAW_M_dirFnm	\\\{#insert zFFindRestoreCurrDirFNmsRAW_M_dirFnm\\\}	xhsfidvf
 zFFindRestoreCurrFileTypeRAW_M_fnm	\\\{#insert zFFindRestoreCurrFileTypeRAW_M_fnm\\\}	xhsfidvf
+zFFindSaveCurrDirFNmsThenSet_M_dirFnm	\\\{#insert zFFindSaveCurrDirFNmsThenSet_M_dirFnm\\\}	xhsfidv
 zFFindSetDirFNmsRAW_M_dirFnm	\\\{#insert zFFindSetDirFNmsRAW_M_dirFnm\\\}	xhsfid
 zFFindSetDirFNms_M_dirFnm	\\\{#insert zFFindSetDirFNms_M_dirFnm\\\}	xhsfid
 zFFindSetDir_M_dir* -- xhsfidd (& file-type, individually)	\\\{#insert zFFindSetDir_M_dir\\\}	xhsfid
@@ -88,4 +87,5 @@ zFFindDlgOpenMCWW	\\\{#insert zFFindDlgOpenMCWW\\\}{#insert zFFCloseYNPrompt}	xh
 zFFindDlgOpenRE	\\\{#insert zFFindDlgOpenRE\\\}{#insert zFFCloseYNPrompt}	xhsfio
 zFFindDlgOpenWW	\\\{#insert zFFindDlgOpenWW\\\}{#insert zFFCloseYNPrompt}	xhsfio
 (*       Search results -- xhsfir   .   xhsfi*)
+fifrx: zElimAllFIFResultMetaTextFromDoc	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content fifrx:zElimAllFIFResultMetaTextFromDoc -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhsfir
 zElimAllInDoc_allLnsFifRslt_col0ThrColonSpc_reOff	\\\{#insert zElimAllInDoc_allLnsFifRslt_col0ThrColonSpc_reOff\\\}	xhsfir

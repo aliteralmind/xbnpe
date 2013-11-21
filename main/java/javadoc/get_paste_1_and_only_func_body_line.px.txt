@@ -1,0 +1,25 @@
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+facQ -- facc, HTML-escape double-quotes	{#insert zXmarkCoded}{#insert zzJFuncDownPasteCallLine1AtCrsr}	facQ
+facc -- faco, CODE-d	{#insert zXmarkCoded}{#insert zzSelCopy1NOnlyFuncLineXUpRPaste}{#insert farosyn}	facc
+faco -- Copy 1-&-ONLY line from below func, to cursor	{#insert zXmark}{#insert zzSelCopy1NOnlyFuncLineXUpRPaste}{#insert farosyn}	faco
+facq -- faco, HTML-escape double-quotes	{#insert zXmark}{#insert zzJFuncDownPasteCallLine1AtCrsr}{#insert farosyn}	facq
+farQ -- farq, HTML-escape double-quotes	{#insert zXmarkCoded}{#insert zzJFuncDownPasteRtrnLine1AtCrsr}{#insert farosyn}	farQ
+farc -- faro, CODE-d	{#insert zXmarkCoded}{#insert zzSelCopy1NOnlyRetFuncLineXUpPaste}{#insert farosyn}	farc
+faro -- Copy return line, which is 1-&-ONLY line in below func, to cursor (not 'return ')	{#insert zXmark}{#insert zzSelCopy1NOnlyRetFuncLineXUpPaste}{#insert farosyn}	faro
+farosyn	{#BALLOON -title Syntax: Get~paste 1&only func line -text {#insert zzFarosyns}=paste one~&~ONLY line in the function body @ crsr ([fac]=get entire line [far non~return call], [r]=which is a return line [get all but 'return '], [t]=non~CODE~d, [c]=CODE~d; [q]=HTML~esc {#insert zAscQQ}, >, <; [Q]=CODE~d & {#insert zAscQQ}-->&quot;  // javasyn}	farosyn
+farq -- faro, HTML-escape double-quotes	{#insert zXmark}{#insert zzJFuncDownPasteRtrnLine1AtCrsr}{#insert farosyn}	farq
+zSelCopyTrimThrLineEndNotLastCharWWWarn -*-	{#BALLOON -title Warning -text This assumes that word wrap is {#insert zzTPTxtDefaultWordWrapOnOrES} (as defined by the XBNPE global~config~var zzTPTxtDefaultWordWrapOnOrES)}{#insert zWordWrapOffFromTPDfltState}{#insert zSelCopyThrLineEndNotLastChar}{#insert zTrimCB}{#insert zWordWrapOn}	zSelCopyTrimThrLineEndNotLastCharWWWarn
+zSelCopyTrimThrLineEndNotLastCharWWWarnXUpRPasteUpDel -*-	{#insert zSelCopyTrimThrLineEndNotLastCharWWWarn}{#insert zXUpRight}{#insert zPasteXUpDelete}	zSelCopyTrimThrLineEndNotLastCharWWWarnXUpRPasteUpDel
+zzFarosyns	fa[c,r][t,c,q]	zzFarosyns
+zzJFuncDownGTBodyLine1Char1 -*-	{#insert zzJFuncDownGTBodyLine1Col0}{#insert zMoveR1L1w}	zzJFuncDownGTBodyLine1Char1
+zzJFuncDownGTBodyLine1Col0 -*-	{#insert zTMFindNextJavaFuncSigLine}{#insert zRIGHT2}	zzJFuncDownGTBodyLine1Col0
+zzJFuncDownGTBodyLine1Word2 -*-	{#insert zzJFuncDownGTBodyLine1Col0}{#insert zMoveR2Lw}	zzJFuncDownGTBodyLine1Word2
+zzJFuncDownPasteCallLine1AtCrsr	{#insert zzJFuncDownGTBodyLine1Col0}{#insert zMoveR1L1w}{#insert zSelCopyTrimThrLineEndNotLastCharWWWarn}{#insert zXUpRight}{#insert zHtmlEscAmpLTGT2SpcQQInCB}{#insert zXUpDelete}	zzJFuncDownPasteCallLine1AtCrsr
+zzJFuncDownPasteRtrnLine1AtCrsr	{#insert zzJFuncDownGTBodyLine1Word2}{#insert zSelCopyTrimThrLineEndNotLastCharWWWarn}{#insert zXUpRight}{#insert zHtmlEscAmpLTGT2SpcQQInCB}{#insert zXUpDelete}	zzJFuncDownPasteRtrnLine1AtCrsr
+zzSelCopy1NOnlyFuncLineXUpRPaste -*-	{#insert zzJFuncDownGTBodyLine1Col0}{#insert zMoveR1L1w}{#insert zSelCopyTrimThrLineEndNotLastCharWWWarnXUpRPasteUpDel}	zzSelCopy1NOnlyFuncLineXUpRPaste
+zzSelCopy1NOnlyRetFuncLineXUpPaste -*-	{#insert zzJFuncDownGTBodyLine1Word2}{#insert zSelCopyTrimThrLineEndNotLastCharWWWarnXUpRPasteUpDel}	zzSelCopy1NOnlyRetFuncLineXUpPaste
+
+
+
+
+

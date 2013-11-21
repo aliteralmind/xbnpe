@@ -44,9 +44,9 @@ TRIM: tri	{#SETCLIPBOARD tri}{#insert zzBalCBContainsVarNm}	xhpcpfs
 Key-presses: kr[k,h,n,u,x][c][a][s][l][[p,q]] (example: krks)	{#SETCLIPBOARD krks}{#insert zzBalCBContainsVarNm}	xhpcp
 (*
 Phrase-creators: Other -- xho   .   xh
-XBNPE main directories -- xhoy   .   xho
-zROOT_DIR_XBNPE_PARENT -- xhoym   .   xhoy
-zROOT_DIR_XBNPE_MAIN -- xhoymm   .   xhoym
-zXPROOT_DIR_phraseExpress -- xhoymmp   .   xhoymm
+XBNPE main directories -- xhor   .   xho
+zROOT_DIR_XBNPE_PARENT -- xhorm   .   xhor
+zROOT_DIR_XBNPE_MAIN -- xhormm   .   xhorm
+zXPROOT_DIR_phraseExpress -- xhormmp   .   xhormm
 *)
-zXPROOT_DIR_xpc	\\\{#insert zXPROOT_DIR_xpc\\\}	xhoymmp
+zXPROOT_DIR_xpc	\\\{#insert zXPROOT_DIR_xpc\\\}	xhormmp

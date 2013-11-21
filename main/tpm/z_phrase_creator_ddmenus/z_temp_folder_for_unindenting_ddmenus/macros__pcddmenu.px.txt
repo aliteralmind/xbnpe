@@ -23,11 +23,16 @@ zTMSelThrNextCloseParen	\\\{#insert zTMSelThrNextCloseParen\\\}	xhjgp
 zTMFindNextOpenParen	\\\{#insert zTMFindNextOpenParen\\\}	xhoo
 zTMFindPrevCloseParen	\\\{#insert zTMFindPrevCloseParen\\\}	xhoo
 zTMFindPrevSpace	\\\{#insert zTMFindPrevSpace\\\}	xhoo
-(*    Spot-marks -- xhox   .   xho*)
-(*    z[X,Y]Down[2] -- xhoxd   .   xhox*)
-zTMFindYMarkDown	\\\{#insert zTMFindYMarkDown\\\}	xhoxd
-(*    z[X,Y]Up[2] -- xhoxu   .   xhox*)
-zTMFindYMarkUp	\\\{#insert zTMFindYMarkUp\\\}	xhoxu
+(*    Spot-marks (x-mark) -- xhox   .   xho*)
+(*       zXDown[2] -- xhoxd   .   xhox*)
+zTMFindXMarkDown	\\\{#insert zTMFindXMarkDown\\\}	xhoxd
+(*       zXUp[2] -- xhoxu   .   xhox*)
+zTMFindXMarkUp	\\\{#insert zTMFindXMarkUp\\\}	xhoxu
+(*    Spot-marks (y-mark) -- xhoy   .   xho*)
+(*       zYDown[2] -- xhoyd   .   xhoy*)
+zTMFindYMarkDown	\\\{#insert zTMFindYMarkDown\\\}	xhoyd
+(*       zYUp[2] -- xhoyu   .   xhoy*)
+zTMFindYMarkUp	\\\{#insert zTMFindYMarkUp\\\}	xhoyu
 (* Phrase-creators: HTML -- xhh   .   xh*)
 zTMFindPrevHREFThrQQ	\\\{#insert zTMFindPrevHREFThrQQ\\\}	xhh
 zTMMoveL1Tag	\\\{#insert zTMMoveL1Tag\\\}	xhh

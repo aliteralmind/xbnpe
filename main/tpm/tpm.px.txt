@@ -16,8 +16,6 @@ zTMJavaDelNmsOnlyFromSlctdParams -- TextPad macro: javaDelSlctdPrmNmsOnly	{#CTRL
 zTMJavaDelTypesFromSlctdParams -- TextPad macro: javaDelSlctdParamTypes	{#CTRL {#ALT {#SHIFT -chars j}}}{#sleep 25}{#insert zYY}{#sleep 250}	zTMJavaDelTypesFromSlctdParams
 zTMMoveL1Tag -- TextPad macro: tagMoveL1	{#insert zCpCC}{#sleep 100}	zTMMoveL1Tag
 zTMMoveR1Tag -- TextPad macro: tagMoveR1	{#insert zCpRR}{#sleep 100}	zTMMoveR1Tag
-zTMParaGTEnd -- TextPad macro: paraGoToEnd	{#insert zApPGDN}{#sleep 20}	zTMParaGTEnd
-zTMParaGTStart -- TextPad macro: paraGoToStart	{#insert zApPGUP}{#sleep 20}	zTMParaGTStart
 zTMSelThrNextCloseParen -- TextPad macro: h_selThrNextCloseParen	{#insert zCSpCLOSE_SQUAREB}{#sleep 25}	zTMSelThrNextCloseParen
 zTMSelectSuperClassNm -- TextPad macro: javaSelectSuperClassNm	{#CTRL {#ALT {#SHIFT -chars j}}}{#sleep 25}{#insert zRR}{#sleep 250}	zTMSelectSuperClassNm
 zTMSelectThisClassNm -- TextPad macro: javaSelectThisClassNm	{#CTRL {#ALT {#SHIFT -chars j}}}{#sleep 25}{#insert zTT}{#sleep 250}	zTMSelectThisClassNm

@@ -1,17 +1,17 @@
 XBN-PhraseExpress: Phrase-creator (XPC) project (xkpsyn, pexsyn, xpesyn)
 	krksyn: Raw PhraseExpress key-presses
-	enrsyn: Common raw key-presses (\\\{#ENTER\\\}, \\\{#UP\\\}, ...)
-	gthsyn: SUBSTR, REPLACE, POS, LENGTH
-	trmsyn: UPPERCASE..., LOWERCASE..., TRIM...
-	slpsyn: SLEEP
-	stpsyn: SETPHRASE
-	mbxsyn: MSGBOX
-	lopsyn: LOOP
-	fcssyn: FOCUS, MOUSEPOSITION, PASTEOPTIONS
-	iflsyn: INSERTFILE, OPEN
-	inpsyn: CURSOR, INPUT
-	cqdsyn: COND
-	icbsyn: INSERTCLIPBOARD, SETCLIPBOARD \\\{#CLIPBOARD\\\}
-	cilsyn: CALC
-	balsyn: BALLOON
+enrsyn: Common raw key-presses (\\\{#ENTER\\\}, \\\{#UP\\\}, ...)
+gthsyn: SUBSTR, REPLACE, POS, LENGTH
+trmsyn: UPPERCASE..., LOWERCASE..., TRIM...
+slpsyn: SLEEP
+stpsyn: SETPHRASE
+mbxsyn: MSGBOX
+lopsyn: LOOP
+fcssyn: FOCUS, MOUSEPOSITION, PASTEOPTIONS
+iflsyn: INSERTFILE, OPEN
+inpsyn: CURSOR, INPUT
+cqdsyn: COND
+icbsyn: INSERTCLIPBOARD, SETCLIPBOARD \\\{#CLIPBOARD\\\}
+cilsyn: CALC
+balsyn: BALLOON
 {#insert zBKSP}

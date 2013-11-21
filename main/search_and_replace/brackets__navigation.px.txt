@@ -1,14 +1,16 @@
 __XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
 zMatchBracket2	{#insert zTPMatchBracket}{#insert zTPMatchBracket}	zMatchBracket2
+zMatchBracketExtend2	{#insert zTPMatchBracketExtend}{#sleep 25}{#insert zTPMatchBracketExtend}{#sleep 25}	zMatchBracketExtend2
+zPostBracketCut	{#insert zPostBracketSelect}{#insert zTPCut}	zPostBracketCut
 zPostBracketGTP	{#insert zLEFT}{#insert zTPMatchBracket}{#insert zLEFT}	zPostBracketGTP
 zPostBracketGTP2	{#insert zPostBracketGTP}{#insert zPostBracketGTP}	zPostBracketGTP2
+zPostBracketSelContentsOnly -- Brackets left unselected	{#insert zLEFT}{#insert zTPMatchBracketExtend}	zPostBracketSelContentsOnly
 zPostBracketSelCopy	{#insert zPostBracketSelect}{#insert zTPCopy}	zPostBracketSelCopy
-zPostBracketCut	{#insert zPostBracketSelect}{#insert zTPCut}	zPostBracketCut
 zPostBracketSelect	{#insert zLEFT}{#insert zMatchBracketExtend2}	zPostBracketSelect
+zPostBrktSelectWord1	{#insert zTPMatchBracket}{#insert zRIGHT}{#insert zTPSelectR1w}	zPostBrktSelectWord1
 zPreBracketGTP	{#insert zTPSelectR1c}(*Moving zRIGHT will work as long as there's at least one character inside the bracket: (x). It will NOT work if the brackets are empty: ()  *){#insert zTPMatchBracket}{#insert zRIGHT}	zPreBracketGTP
 zPreBracketGTP2	{#insert zPreBracketGTP}{#insert zPreBracketGTP}	zPreBracketGTP2
+zPreBracketGTPIfCdd_M_cde -- Needs zvCDD_ES	{#insert {#COND -if {#insert zvCDD_ES} = Coded -then zPreBracketGTP -else z1slp}}	zPreBracketGTPIfCdd_M_cde
+zPreBracketSelContentsOnly -- Brackets left unselected	{#insert zTPMatchBracket}{#insert zTPMatchBracketExtend}	zPreBracketSelContentsOnly
 zPreBracketSelCopy	{#insert zPreBracketSelect}{#insert zTPCopy}	zPreBracketSelCopy
 zPreBracketSelect	{#insert zRIGHT}{#insert zTPMatchBracketExtend}	zPreBracketSelect
-zMatchBracketExtend2	{#insert zTPMatchBracketExtend}{#sleep 25}{#insert zTPMatchBracketExtend}{#sleep 25}	zMatchBracketExtend2
-zPostBracketSelContentsOnly -- Brackets left unselected	{#insert zLEFT}{#insert zTPMatchBracketExtend}	zPostBracketSelContentsOnly
-zPreBracketSelContentsOnly -- Brackets left unselected	{#insert zTPMatchBracket}{#insert zTPMatchBracketExtend}	zPreBracketSelContentsOnly

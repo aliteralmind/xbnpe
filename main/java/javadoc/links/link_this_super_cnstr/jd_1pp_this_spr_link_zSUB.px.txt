@@ -1,0 +1,29 @@
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+z1PPFuncLinkDispFNm_M_drnFnmPrmsPap	{#insert zvDISPLAY_stFncObjNm}{#insert z1PPFuncLink_M_drnFnmPrmsDspPap}	z1PPFuncLinkDispFNm_M_drnFnmPrmsPap
+z1PPFuncLinkThrClsATag_M_drnFnmPrmsDsp	<A HREF={#insert zAscQQ}{#insert zzFuncObjLinkDirFile_M_drnFnm}#{#insert zvFOBJ_NAME}{#insert zvALL_PARAMS}{#insert zJavaPostAllParamsDelNmsGncrs4FQP}{#insert zAscQQ}>{#insert zvDISPLAY}</A>	z1PPFuncLinkThrClsATag_M_drnFnmPrmsDsp
+z1PPFuncLinkWPrek_M_drnFnmPrmsDspPapPrk	{#insert z1PPFuncLink_M_drnFnmPrmsDspPap}{#insert zPostLinkCreatePrekGoBackCIDrnH_M_prk}	z1PPFuncLinkWPrek_M_drnFnmPrmsDspPapPrk
+z1PPFuncLink_M_drnFnmPrmsDspPap	{#insert z1PPFuncLinkThrClsATag_M_drnFnmPrmsDsp}{#insert zzPostAParams_M_pap}	z1PPFuncLink_M_drnFnmPrmsDspPap
+zCBPosOpenParen -*-	{#POS {#INSERTCLIPBOARD} -substr (}	zCBPosOpenParen
+zPostParamsSetDel	{#insert zPostBracketSelCopy}{#insert zzSetAllParamsToCBThenCIB}{#insert zDEL}	zPostParamsSetDel
+zSigInCBSetFuncNmSetCIBParams -*-	{#SETPHRASE -description zvFOBJ_NAME -content {#SUBSTR {#INSERTCLIPBOARD} -from 1 -count {#CALC {#insert zCBPosOpenParen} - 1 -round 0 -thousands none}} -autotext zvFOBJ_NAME -folder ctvv_folder}{#SETPHRASE -description zvALL_PARAMS -content {#SUBSTR {#INSERTCLIPBOARD} -from {#insert zCBPosOpenParen} -count {#CALC {#insert zCBLen} - {#insert zCBPosOpenParen} + 1 -round 0 -thousands none}} -autotext zvALL_PARAMS -folder ctvv_folder}{#insert zzCIAllParamsNotSurroundedByParens_M_prms}	zSigInCBSetFuncNmSetCIBParams
+zvANG_stA -*-	{#SETPHRASE -description zvANG -content a -autotext zvANG -folder ctvv_folder}	zvANG_stA
+zvDRN_stU -*-	{#SETPHRASE -description zvDRN -content u -autotext zvDRN -folder ctvv_folder}	zvDRN_stU
+zvPAP_stTmvyPrompt -*-	{#SETPHRASE -description zvPAP -content {#INPUT -head Post-</A> params pre~opt? (t, m, v, y--see kglpapsyn) -single} -autotext zvPAP -folder ctvv_folder}	zvPAP_stTmvyPrompt
+zzErrDlgBadTMVOpt_M_tmv	{#MSGBOX -head ERROR -text ERROR ~~ Unknown post-</A> pre-opt for kg[b,l]... (zvPAP='{#insert zvPAP}'). Must be 't', 'm', 'v', or 'y'. See kgltmvsyn.{#insert zCancelProcNowPostTxt}}	zzErrDlgBadTMVOpt_M_tmv
+zzErrDlgNonCodedPapY	{#MSGBOX -head ERROR -text ERROR ~~ The about-to~be~created function/constructor link is non~CODE~d. The 'y' post~</A> param pre~opt~char (zvPAP='{#insert zvPAP}') is incompatible with it (see lybadinfo).{#insert zCancelProcNowPostTxt}}	zzErrDlgNonCodedPapY
+zzKulOptSynTxt	[l]=sig up, [z]=down, [t]=non~CODE~d (gnrcs always escaped when CODE~d!), [[2~5,n]]=2nd,3rd,...,prompt~# sig	zzKulOptSynTxt
+zzPostAParamsDsplyAbrvs	{#insert zvALL_PARAMS}{#insert zJavaPostAllParamsDelNmsGncrs4TV}	zzPostAParamsDsplyAbrvs
+zzPostAParamsNames	{#insert zvALL_PARAMS}{#insert zJavaPostAllParamsDelTypes}	zzPostAParamsNames
+zzPostAParams_M_pap -- Needs zvPAP	{#insert {#COND -if {#insert zvPAP} = t -then z1slp -else {#COND -if {#insert zvPAP} = m -then zzPostAParamsNames -else {#COND -if {#insert zvPAP} = v -then zzPostAParamsDsplyAbrvs -else {#COND -if {#insert zvPAP} = y -then zYmark -else zzErrDlgBadTMVOpt_M_tmv}}}}}	zzPostAParams_M_pap
+zzPreOptsMustBeTxtPap	't'=nothing, 'm'=names, 'v'=type~abbreviations, 'y'=nothing (y~mark)	zzPreOptsMustBeTxtPap
+zvPAP_stL1c	{#insert zCutL1c}{#SETPHRASE -description zvPAP -content {#INSERTCLIPBOARD} -autotext zvPAP -folder ctvv_folder}	zvPAP_stL1c
+zzSetPapToL1cCIY4NonCdd	{#insert zvPAP_stL1c}{#insert {#COND -if {#insert zvPAP} != y -then z1slp -else zzErrDlgNonCodedPapY}}	zzSetPapToL1cCIY4NonCdd
+zzTestFuncParams	(String s_s, AClass<? extends Another> ac_hello)	zzTestFuncParams
+zzzEtrPap2	{#insert zENTER}{#insert zzzPap2}	zzzEtrPap2
+zzzEtrPap2Drn2	{#insert zEnter}{#insert zzzPap2Drn2}	zzzEtrPap2Drn2
+zzzEtrPap2ForNonCdd	{#insert zENTER}{#insert zzzPap2ForNonCdd}	zzzEtrPap2ForNonCdd
+zzzSetPapPap2ToPrompt	{#insert zvPAP_stTmvyPrompt}{#SETPHRASE -description zvPAP2 -content {#insert zvPAP} -autotext zvPAP2 -folder ctvv_folder}	zzzSetPapPap2ToPrompt
+zzzPap2	{#insert zvPAP2}{#insert zTSlp}	zzzPap2
+zzzPap2Drn2	{#insert zzzPap2}{#insert zzzDrn2}	zzzPap2Drn2
+zzzPap2ForNonCdd	{#COND -if {#insert zvPAP2} = y -then t -else {#insert zvPAP2}}{#insert zTSlp}	zzzPap2ForNonCdd
+zzzYLToYTWarningTxt	NOTE: If the post-</A> parameter pre-opt-char (see klhprksyn) is 'y', it is changed to 't' for all non-CODE-d links (see lybadinfo).{#insert zENTER2}	zzzYLToYTWarningTxt

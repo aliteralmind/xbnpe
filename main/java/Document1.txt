@@ -1,1 +1,32 @@
-{#insert zSelectR1wCopy}{#SETPHRASE -description zvPHRS_NM -content {#INSERTCLIPBOARD} -autotext zvPHRS_NM -folder ctvv_folder}{#insert zCopyEntireLine}{#insert zTPBookmarkToggle}{#insert zTPFFindDlgOpen}{#insert zvPHRS_NM}{#insert zFFindBtnFindSlp500}{#insert zFFindDlgClose}{#insert zTPGTDocTop}{#insert zDOWN2}
+{#insert zXJavaCopyThisClassNmXDown}{#insert zvFOBJ_NAME_stCB}/**{#insert zEnterTab}@return  <CODE>true</CODE> If <CODE>o_o</CODE> is non-<CODE>null</CODE>, an <CODE>{#insert zvFOBJ_NAME}</CODE>, and <CODE><A HREF="#areFieldsEqual(_4FQP_{#insert zvFOBJ_NAME})">areFieldsEqual</A>(({#insert zvFOBJ_NAME})o_o)</CODE> is <CODE>true</CODE>.
+	 **/
+	@Override public boolean equals(Object o_o)  {
+
+		//See internal comments in {#insert zvFOBJ_NAME}.equals(o)
+
+		if(o_o == null)  {
+			throw  new NullPointerException("equals: o_o");
+		\\\}
+		if(this == o_o)  {
+			return  true;
+		\\\}
+
+		if(!(o_o instanceof {#insert zvFOBJ_NAME}))  {
+			return  false;
+		\\\}
+
+		{#insert zvFOBJ_NAME} xo = ({#insert zvFOBJ_NAME})o_o;
+
+		return  areFieldsEqual(xo);
+	\\\}
+
+	/**
+		<P>Are all internal values in the provided <CODE>{#insert zvFOBJ_NAME}</CODE> the same as in <I><CODE>this</CODE></I>?.</P>
+
+		@return  <CODE>YYY</CODE>
+	 **/
+	public boolean areFieldsEqual({#insert zvFOBJ_NAME} {#insert zzInpParamNm4Cls})  {
+		super.areFieldsEqual({#insert zzInpParamNm4Cls})
+		return  XXX;
+	\\\}{#insert zENTER}{#SETCLIPBOARD {#insert zzInpParamNm4Cls}}{#BALLOON -title DONE -text '{#INSERTCLIPBOARD}' is in the clipboard}
+zzInpParamNm4Cls		{#INPUT -head Param name for {#insert zvFOBJ_NAME} -single}	zzInpParamNm4Cls

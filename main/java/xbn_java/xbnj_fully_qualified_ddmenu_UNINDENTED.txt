@@ -1,0 +1,265 @@
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+xbn.* Fully-qualified package names -- n	xbn.	xb
+	xbn.ant.	xbn.ant.	xbn
+	xbn.glist. -- g	xbn.glist.	xbn
+		xbn.glist... -- l	xbn.glist.	xbng
+			xbn.glist.able.	xbn.glist.able.	xbngl
+			xbn.glist.element. -- e	xbn.glist.element.	xbngl
+				xbn.glist.element.GenericElement	xbn.glist.element.GenericElement	xbngle
+				xbn.glist.element.instance.InstanceGE	xbn.glist.element.instance.InstanceGE	xbngle
+				xbn.glist.element.raw.RawGenericElement	xbn.glist.element.raw.RawGenericElement	xbngle
+					xbn.glist.element.instance.	xbn.glist.element.instance.	xbngle
+					xbn.glist.element.raw. -- r	xbn.glist.element.raw.	xbngle
+					xbn.glist.element.raw.actual.	xbn.glist.element.raw.actual.	xbngler
+					xbn.glist.element.raw.actual_ge	xbn.glist.element.raw.actual_ge	xbngler
+			xbn.glist.glist.	xbn.glist.glist.	xbngl
+			xbn.glist.h.	xbn.glist.h.	xbngl
+			xbn.glist.instance. -- i	xbn.glist.instance.	xbngl
+				xbn.glist.instance.InstanceGL	xbn.glist.instance.InstanceGL	xbngli
+				xbn.glist.instance.InstanceNonGL	xbn.glist.instance.InstanceNonGL	xbngli
+				xbn.glist.instance.igl_types	xbn.glist.instance.igl_types	xbngli
+				xbn.glist.instance.ingl_types	xbn.glist.instance.ingl_types	xbngli
+			xbn.glist.raw. -- r	xbn.glist.raw.	xbngl
+				xbn.glist.raw.RawGenericList	xbn.glist.raw.RawGenericList	xbnglr
+				xbn.glist.raw.aop.	xbn.glist.raw.aop.	xbnglr
+			xbn.glist.validate.	xbn.glist.validate.	xbngl
+		xbn.glist.GenericCollection	xbn.glist.GenericCollection	xbng
+		xbn.glist.GenericList	xbn.glist.GenericList	xbng
+		xbn.glist.able.GLBoolable	xbn.glist.able.GLBoolable	xbng
+	xbn.html. -- h	xbn.html.	xbn
+		xbn.html.HtmlFont	xbn.html.HtmlFont	xbnh
+		xbn.html.HtmlMarkup	xbn.html.HtmlMarkup	xbnh
+		xbn.html.HtmlSimpleLink	xbn.html.HtmlSimpleLink	xbnh
+		xbn.html.JDFuncURLBuilder	xbn.html.JDFuncURLBuilder	xbnh
+		xbn.html.UtilHtml	xbn.html.UtilHtml	xbnh
+	xbn.io. -- i	xbn.io.	xbn
+		xbn.io.BadInputException	xbn.io.BadInputException	xbni
+		xbn.io.Debuggable	xbn.io.Debuggable	xbni
+		xbn.io.OWEmpty	xbn.io.OWEmpty	xbni
+		xbn.io.OWFile	xbn.io.OWFile	xbni
+		xbn.io.OWIntoSD	xbn.io.OWIntoSD	xbni
+		xbn.io.OWSysDotOut	xbn.io.OWSysDotOut	xbni
+		xbn.io.OWriter	xbn.io.OWriter	xbni
+		xbn.io.lfic.	xbn.io.lfic.	xbni
+	xbn.keyed. -- k	xbn.keyed.	xbn
+		xbn.keyed.CMOKeyedValidator	xbn.keyed.CMOKeyedValidator	xbnk
+		xbn.keyed.CXDForKeyedList	xbn.keyed.CXDForKeyedList	xbnk
+		xbn.keyed.KBConfig	xbn.keyed.KBConfig	xbnk
+		xbn.keyed.KVBConfig	xbn.keyed.KVBConfig	xbnk
+		xbn.keyed.KeyValue	xbn.keyed.KeyValue	xbnk
+		xbn.keyed.KeyValueBasic	xbn.keyed.KeyValueBasic	xbnk
+		xbn.keyed.Keyed	xbn.keyed.Keyed	xbnk
+		xbn.keyed.KeyedBasic	xbn.keyed.KeyedBasic	xbnk
+		xbn.keyed.KeyedConfig	xbn.keyed.KeyedConfig	xbnk
+		xbn.keyed.KeyedValidator	xbn.keyed.KeyedValidator	xbnk
+		xbn.keyed.KeyedValidatorBasic	xbn.keyed.KeyedValidatorBasic	xbnk
+			xbn.keyed.cache.	xbn.keyed.cache.	xbnk
+			xbn.keyed.cache.KeyCache	xbn.keyed.cache.KeyCache	xbnk
+			xbn.keyed.named.	xbn.keyed.named.	xbnk
+				xbn.keyed.named.Named	xbn.keyed.named.Named	xbnkn
+				xbn.keyed.named.NamedBasic	xbn.keyed.named.NamedBasic	xbnkn
+				xbn.keyed.named.NamedValidator	xbn.keyed.named.NamedValidator	xbnkn
+				xbn.keyed.named.NamedVector	xbn.keyed.named.NamedVector	xbnkn
+				xbn.named.Named	xbn.named.Named	xbnkn
+				xbn.named.VWNamed	xbn.named.VWNamed	xbnkn
+			xbn.keyed.vector.	xbn.keyed.vector.	xbnk
+				xbn.keyed.vector.KeyListLister	xbn.keyed.vector.KeyListLister	xbnkv
+				xbn.keyed.vector.KeyListerElement	xbn.keyed.vector.KeyListerElement	xbnkv
+				xbn.keyed.vector.KeyVector	xbn.keyed.vector.KeyVector	xbnkv
+				xbn.keyed.vector.MKVConfig	xbn.keyed.vector.MKVConfig	xbnkv
+				xbn.keyed.vector.MKeyVector	xbn.keyed.vector.MKeyVector	xbnkv
+	xbn.lang. -- l	xbn.lang.	xbn
+		xbn.lang.xcontext. -- x	xbn.lang.xcontext.	xbnl
+			xbn.lang.xcontext.EXContext	xbn.lang.xcontext.EXContext	xbnlx
+			xbn.lang.xcontext.ElementExceptionContext -- e	xbn.lang.xcontext.ElementExceptionContext	xbnlx
+				xbn.lang.xcontext.ElementExceptionContextable	xbn.lang.xcontext.ElementExceptionContextable	xbnlxe
+			xbn.lang.xcontext.ExceptionContextable	xbn.lang.xcontext.ExceptionContextable	xbnlx
+			xbn.lang.xcontext.OXCableBasic	xbn.lang.xcontext.OXCableBasic	xbnlx
+			xbn.lang.xcontext.OXContext	xbn.lang.xcontext.OXContext	xbnlx
+			xbn.lang.xcontext.ObjectExceptionContext -- o	xbn.lang.xcontext.ObjectExceptionContext	xbnlx
+				xbn.lang.xcontext.ObjectExceptionContextable	xbn.lang.xcontext.ObjectExceptionContextable	xbnlxo
+			xbn.lang.xcontext.XCableBasic	xbn.lang.xcontext.XCableBasic	xbnlx
+			xbn.lang.xcontext.XContext	xbn.lang.xcontext.XContext	xbnlx
+		xbn.lang.A-C -- b	xbn.lang.	xbnl
+			xbn.lang.AbstractCopyableDiagnostable	xbn.lang.AbstractCopyableDiagnostable	xbnlb
+			xbn.lang.AbstractCopyableObject	xbn.lang.AbstractCopyableObject	xbnlb
+			xbn.lang.AbstractCopyOWLockable	xbn.lang.AbstractCopyOWLockable	xbnlb
+			xbn.lang.AbstractLockable	xbn.lang.AbstractLockable	xbnlb
+			xbn.lang.BadInterfaceBehaviorException	xbn.lang.BadInterfaceBehaviorException	xbnlb
+			xbn.lang.CopyableObject	xbn.lang.CopyableObject	xbnlb
+		xbn.lang.D-T -- d	xbn.lang.	xbnl
+			xbn.lang.Diagnostable	xbn.lang.Diagnostable	xbnld
+			xbn.lang.GetDiagnosticsUtil	xbn.lang.GetDiagnosticsUtil	xbnld
+			xbn.lang.IllegalArgumentStateException	xbn.lang.IllegalArgumentStateException	xbnld
+			xbn.lang.InterfaceHelper	xbn.lang.InterfaceHelper	xbnld
+			xbn.lang.ToStringUtil	xbn.lang.ToStringUtil	xbnld
+			xbn.lang.UtilGBTD	xbn.lang.UtilGBTD	xbnld
+		xbn.lang.XBNObject	xbn.lang.XBNObject	xbnl
+	xbn.lock. -- o	xbn.lock.	xbn
+		xbn.lock.AbstractOneWayLockable	xbn.lock.AbstractOneWayLockable	xbno
+		xbn.lock.LockException	xbn.lock.LockException	xbno
+		xbn.lock.Lockable	xbn.lock.Lockable	xbno
+		xbn.lock.OneWayLockable	xbn.lock.OneWayLockable	xbno
+	xbn.number. -- n	xbn.number.	xbn
+		xbn.number.I... -- i	.	xbnn
+			xbn.number.Incrementer	xbn.number.Incrementer	xbnni
+			xbn.number.IndexInRange	xbn.number.IndexInRange	xbnni
+			xbn.number.IndexRange	xbn.number.IndexRange	xbnni
+			xbn.number.IndexUtil	xbn.number.IndexUtil	xbnni
+			xbn.number.IndexValidator	xbn.number.IndexValidator	xbnni
+			xbn.number.IntBoundExclusive	xbn.number.IntBoundExclusive	xbnni
+			xbn.number.IntInRange	xbn.number.IntInRange	xbnni
+		xbn.number.LengthInRange	xbn.number.LengthInRange	xbnn
+		xbn.number.LengthValidator	xbn.number.LengthValidator	xbnn
+		xbn.number.NumberBound	xbn.number.NumberBound	xbnn
+		xbn.number.NumberRange	xbn.number.NumberRange	xbnn
+		xbn.number.NumberUtil	xbn.number.NumberUtil	xbnn
+		xbn.number.NumberValidator	xbn.number.NumberValidator	xbnn
+	xbn.t... -- e (template, testdev)	.	xbn
+		xbn.template. -- m	xbn.template.	xbne
+			xbn.template.AbstractGapFiller	xbn.template.AbstractGapFiller	xbnem
+			xbn.template.AllGapFiller	xbn.template.AllGapFiller	xbnem
+			xbn.template.GFAllSourceLines	xbn.template.GFAllSourceLines	xbnem
+			xbn.template.GapFiller	xbn.template.GapFiller	xbnem
+			xbn.template.GapFillerMeta	xbn.template.GapFillerMeta	xbnem
+			xbn.template.GapNameSepParams	xbn.template.GapNameSepParams	xbnem
+		xbn.testdev. -- v	xbn.testdev.	xbne
+			xbn.testdev.labuilder.	xbn.testdev.labuilder.	xbnev
+		xbn.txol	xbn.txol.	xbnee
+	xbn.text. -- t	xbn.text.	xbn
+		xbn.text... -- x	xbn.text.	xbnt
+			xbn.text.dsbv. -- d	xbn.text.dsbv.	xbntx
+				xbn.text.dsbv.DSBConfig	xbn.text.dsbv.DSBConfig	xbntxd
+				xbn.text.dsbv.DSBVarTokenizer	xbn.text.dsbv.DSBVarTokenizer	xbntxd
+				xbn.text.dsbv.DSBVariable	xbn.text.dsbv.DSBVariable	xbntxd
+				xbn.text.dsbv.DollarSignBraceVariable	xbn.text.dsbv.DollarSignBraceVariable	xbntxd
+			xbn.text.line. -- l	xbn.text.line.	xbntx
+			xbn.text.line... -- i	xbn.text.line.	xbntxl
+					xbn.text.line.alter. -- a	xbn.text.line.alter.	xbntxli
+						xbn.text.line.alter.ATLR... -- a	xbn.text.line.alter.	xbntxlia
+							xbn.text.line.alter.ATLRDeleteLine	xbn.text.line.alter.ATLRDeleteLine	xbntxliaa
+							xbn.text.line.alter.ATLRForAlterString	xbn.text.line.alter.ATLRForAlterString	xbntxliaa
+							xbn.text.line.alter.ATLRawForWhen	xbn.text.line.alter.ATLRawForWhen	xbntxliaa
+							xbn.text.line.alter.ATLRawForWhen	xbn.text.line.alter.ATLRawForWhen	xbntxliaa
+							xbn.text.line.alter.ATLRawVectorBase	xbn.text.line.alter.ATLRawVectorBase	xbntxliaa
+						xbn.text.line.alter.ATLWhenVectorBase	xbn.text.line.alter.ATLWhenVectorBase	xbntxlia
+						xbn.text.line.alter.AbstractAlterTLRaw	xbn.text.line.alter.AbstractAlterTLRaw	xbntxlia
+						xbn.text.line.alter.AlterTLWhenBasic	xbn.text.line.alter.AlterTLWhenBasic	xbntxlia
+						xbn.text.line.alter.AlterTextLineRaw	xbn.text.line.alter.AlterTextLineRaw	xbntxlia
+						xbn.text.line.alter.AlterTextLineWhen	xbn.text.line.alter.AlterTextLineWhen	xbntxlia
+						xbn.text.line.alter.marked. -- m	xbn.text.line.alter.marked.	xbntxlia
+							xbn.text.line.alter.marked.AMLR* -- r	xbn.text.line.alter.marked.	xbntxlia
+								xbn.text.line.alter.marked.AMLRCrash	xbn.text.line.alter.marked.AMLRCrash	xbntxliamr
+								xbn.text.line.alter.marked.AMLRDeleteLine	xbn.text.line.alter.marked.AMLRDeleteLine	xbntxliamr
+								xbn.text.line.alter.marked.AMLRForAlterString	xbn.text.line.alter.marked.AMLRForAlterStringr	xbntxliamr
+								xbn.text.line.alter.marked.AMLRMarked	xbn.text.line.alter.marked.AMLRMarked	xbntxliamr
+								xbn.text.line.alter.marked.AMLRUnmarked	xbn.text.line.alter.marked.AMLRUnmarked	xbntxliamr
+							xbn.text.line.alter.marked.AMLWhenVector	xbn.text.line.alter.marked.AMLWhenVector	xbntxliam
+							xbn.text.line.alter.marked.AbstractAlterMLRaw	xbn.text.line.alter.marked.AbstractAlterMLRaw	xbntxliam
+							xbn.text.line.alter.marked.AlterMLWhenBasic	xbn.text.line.alter.marked.AlterMLWhenBasic	xbntxliam
+							xbn.text.line.alter.marked.AlterMarkedLineWhen	xbn.text.line.alter.marked.AlterMarkedLineWhen	xbntxliam
+							xbn.text.line.alter.marked.CommonMarkedLineAlterers	xbn.text.line.alter.marked.CommonMarkedLineAlterers	xbntxliam
+					xbn.text.line.mark.	xbn.text.line.mark.	xbntxlii
+					xbn.text.line.validate. -- v	xbn.text.line.validate.	xbntxlii
+						xbn.text.line.validate.AbstractMLValidator	xbn.text.line.validate.AbstractMLValidator	xbntxliiv
+						xbn.text.line.validate.MLVAlwaysValidInvalid	xbn.text.line.validate.MLVAlwaysValidInvalid	xbntxliiv
+						xbn.text.line.validate.MLVMultiLineBlock	xbn.text.line.validate.MLVMultiLineBlock	xbntxliiv
+						xbn.text.line.validate.MLVSingleLineBlock	xbn.text.line.validate.MLVSingleLineBlock	xbntxliiv
+						xbn.text.line.validate.MarkedLineValidator	xbn.text.line.validate.MarkedLineValidator	xbntxliiv
+						xbn.text.line.validate.TextLineValidator	xbn.text.line.validate.TextLineValidator	xbntxliiv
+				xbn.text.line.AbstractTextLineIterator	xbn.text.line.AbstractTextLineIterator	xbntxl
+				xbn.text.line.MarkedLineMeta	xbn.text.line.MarkedLineMeta	xbntxl
+				xbn.text.line.MarkedLineMetadata	xbn.text.line.MarkedLineMetadata	xbntxl
+				xbn.text.line.TLIStringBuilder	xbn.text.line.TLIStringBuilder	xbntxl
+				xbn.text.line.TextLine	xbn.text.line.TextLine	xbntxl
+				xbn.text.line.TextLineBasic	xbn.text.line.TextLineBasic	xbntxl
+			xbn.text.regex. -- r	xbn.text.regex.	xbntx
+				xbn.text.regex.PatternUtil	xbn.text.regex.PatternUtil	xbntxr
+				xbn.text.regex.RTConfig	xbn.text.regex.RTConfig	xbntxr
+				xbn.text.regex.RTElement	xbn.text.regex.RTElement	xbntxr
+				xbn.text.regex.RegexTokenizer	xbn.text.regex.RegexTokenizer	xbntxr
+			xbn.text.sr. -- s	xbn.text.sr.	xbntx
+				xbn.text.sr.SRLiteralWhat	xbn.text.sr.SRLiteralWhat	xbntxs
+				xbn.text.sr.StrRplc	xbn.text.sr.StrRplc	xbntxs
+				xbn.text.sr.StrRplcWith	xbn.text.sr.StrRplcWith	xbntxs
+		xbn.text.A-C -- a	.	xbnt
+			xbn.text.AlterString	xbn.text.AlterString	xbnta
+			xbn.text.AlterStringBuilderRaw	xbn.text.AlterStringBuilderRaw	xbnta
+			xbn.text.AlterStringRaw	xbn.text.AlterStringRaw	xbnta
+			xbn.text.CharUtil	xbn.text.CharUtil	xbnta
+			xbn.text.ChopString	xbn.text.ChopString	xbnta
+			xbn.text.ConsecutiveDups	xbn.text.ConsecutiveDups	xbnta
+		xbn.text.P-Q -- p	.	xbnt
+			xbn.text.PadString	xbn.text.PadString	xbntp
+			xbn.text.ProcessEscapedECs	xbn.text.ProcessEscapedECs	xbntp
+			xbn.text.QUtil	xbn.text.QUtil	xbntp
+			xbn.text.QVBasic	xbn.text.QVBasic	xbntp
+			xbn.text.QValidator	xbn.text.QValidator	xbntp
+		xbn.text.S-T -- s	.	xbnt
+			xbn.text.StringArrayUtil	xbn.text.StringArrayUtil	xbnts
+			xbn.text.TextOutputter	xbn.text.TextOutputter	xbnts
+			xbn.text.TextVBasic	xbn.text.TextVBasic	xbnts
+			xbn.text.TextVBasic	xbn.text.TextVBasic	xbnts
+			xbn.text.TextValidator	xbn.text.TextValidator	xbnts
+			xbn.text.TrimUtil	xbn.text.TrimUtil	xbnts
+		xbn.text.UnescapedEscapeCharException	xbn.text.UnescapedEscapeCharException	xbnt
+		xbn.text.VisibleString	xbn.text.VisibleString	xbnt
+		xbn.text.VzblPadChop	xbn.text.VzblPadChop	xbnt
+		xbn.text.vector.	xbn.text.vector.	xbnt
+	xbn.util. -- u	xbn.util.	xbn
+		xbn.util... -- t	xbn.util.	xbnu
+			xbn.util.alter. -- a	xbn.util.alter.	xbnut
+				xbn.util.alter.Alter	xbn.util.alter.Alter	xbnuta
+				xbn.util.alter.AlterRaw	xbn.util.alter.AlterRaw	xbnuta
+				xbn.util.alter.AlterRaw	xbn.util.alter.AlterRaw	xbnuta
+				xbn.util.alter.AlterRelationRaw	xbn.util.alter.AlterRelationRaw	xbnuta
+				xbn.util.alter.AlterValue	xbn.util.alter.AlterValue	xbnuta
+				xbn.util.alter.AlterValueRaw	xbn.util.alter.AlterValueRaw	xbnuta
+				xbn.util.alter.AlterValueWhen	xbn.util.alter.AlterValueWhen	xbnuta
+				xbn.util.alter.vector.	xbn.util.alter.vector.	xbnua
+			xbn.util.cmo. -- c	xbn.util.cmo.	xbnut
+				xbn.util.cmo.AbstractCMO	xbn.util.cmo.AbstractCMO	xbnutc
+				xbn.util.cmo.AbstractCMOFCProcessor	xbn.util.cmo.AbstractCMOFCProcessor	xbnutc
+				xbn.util.cmo.CMONeeder	xbn.util.cmo.CMONeeder	xbnutc
+				xbn.util.cmo.CMONeederBase	xbn.util.cmo.CMONeederBase	xbnutc
+				xbn.util.cmo.CMOProcessFullyConfigured	xbn.util.cmo.CMOProcessFullyConfigured	xbnutc
+				xbn.util.cmo.ConfigManyOptions	xbn.util.cmo.ConfigManyOptions	xbnutc
+				xbn.util.cmo.xcmo.	xbn.util.cmo.xcmo.	xbnutc
+			xbn.util.uses. -- u	xbn.util.uses.	xbnut
+				xbn.util.uses.PAUseCounts	xbn.util.uses.PAUseCounts	xbnutu
+				xbn.util.uses.PotentialActualUseCounts	xbn.util.uses.PotentialActualUseCounts	xbnutu
+				xbn.util.uses.UseCountValidator	xbn.util.uses.UseCountValidator	xbnutu
+			xbn.util.validate. -- l	xbn.util.validate.	xbnut
+				xbn.util.validate.VVBasic	xbn.util.validate.VVBasic	xbnutl
+				xbn.util.validate.ValidateValue	xbn.util.validate.ValidateValue	xbnutl
+				xbn.util.validate.Validator	xbn.util.validate.Validator	xbnutl
+				xbn.util.validate.pair.	xbn.util.validate.pair.	xbnutl
+			xbn.util.vector. -- v	xbn.util.vector.	xbnut
+				xbn.util.vector.MVConfig	xbn.util.vector.MVConfig	xbnutv
+				xbn.util.vector.MVector	xbn.util.vector.MVector	xbnutv
+				xbn.util.vector.XBNVector	xbn.util.vector.XBNVector	xbnutv
+				xbn.util.vector.XVConfig	xbn.util.vector.XVConfig	xbnutv
+					xbn.util.vector.lister.	xbn.util.vector.lister.	xbnutv
+					xbn.util.vector.lister.ListLister	xbn.util.vector.lister.ListLister	xbnutv
+		xbn.util.A-C -- a	.	xbnu
+			xbn.util.ArrayUtil	xbn.util.ArrayUtil	xbnua
+			xbn.util.BadDuplicateException	xbn.util.BadDuplicateException	xbnua
+			xbn.util.BinarySearchData	xbn.util.BinarySearchData	xbnua
+			xbn.util.BitUtil	xbn.util.BitUtil	xbnua
+			xbn.util.ContiguousIndexedDups	xbn.util.ContiguousIndexedDups	xbnua
+			xbn.util.CXDForListOfSelfKeys	xbn.util.CXDForListOfSelfKeys	xbnua
+			xbn.util.CXDupIterator	xbn.util.CXDupIterator	xbnua
+		xbn.util.D-J, L-R -- d	.	xbnu
+			xbn.util.DiagnosticIDable	xbn.util.DiagnosticIDable	xbnud
+			xbn.util.EqualsInclNull	xbn.util.EqualsInclNull	xbnud
+			xbn.util.JavaUtil	xbn.util.JavaUtil	xbnud
+			xbn.util.LegalFMLfl	xbn.util.LegalFMLfl	xbnud
+			xbn.util.ReflectionUtil	xbn.util.ReflectionUtil	xbnud
+		xbn.util.I -- i	.	xbnu
+			xbn.util.IllegalPositionException	xbn.util.IllegalPositionException	xbnui
+			xbn.util.IntRange	xbn.util.IntRange	xbnui
+			xbn.util.InvalidException	xbn.util.InvalidException	xbnui
+			xbn.util.IterationOdometer	xbn.util.IterationOdometer	xbnui
+			xbn.util.IteratorIOD	xbn.util.IteratorIOD	xbnui
+	xbn.xcfu. -- x	xbn.xcfu.	xbn
+		xbn.xcfu.xc2i	xbn.xcfu.xc2i	xbnx

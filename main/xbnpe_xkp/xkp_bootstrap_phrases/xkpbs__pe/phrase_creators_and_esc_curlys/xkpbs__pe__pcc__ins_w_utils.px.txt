@@ -1,14 +1,13 @@
-
 __XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
 inb -- {#insert [paste]}	{#insert zvESC_LVL_CNT_st0}{#insert zInbRAW_M_elc}{#insert inssyn}	inb
 inbp -- inb, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zInbRAW_M_elc}{#insert inssyn}	inbp
 inbq -- inb, doubly-or-more escaped	{#insert zvESC_LVL_CNT_stPromptCIB}{#insert zInbRAW_M_elc}{#insert inssyn}	inbq
 inl -- sel-copy word-left, then ins	{#insert zvESC_LVL_CNT_st0}{#insert zInlRAW_M_elc}{#insert inssyn}	inl
+inll -(**)- ins-sequence for line-list of phrase-names	(*Cursor must be at end of first line, no whitespace on any line.*){#insert zvESC_LVL_CNT_st0}{#insert zInllRAW_M_elc}{#insert inssyn}	inll
+inllp -- inll, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zInllRAW_M_elc}{#insert inssyn}	inllp
+inllq -- inll, doubly-escaped	{#insert zvESC_LVL_CNT_stPromptCIB}{#insert zInllRAW_M_elc}{#insert inssyn}	inllq
 inlp -- inl, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zInlRAW_M_elc}{#insert inssyn}	inlp
-inlq -(**)- ins-sequence for line-list of phrase-names	(*Cursor must be at end of first line, no whitespace on any line.*){#insert zvESC_LVL_CNT_st0}{#insert zInlqRAW_M_elc}{#insert inssyn}	inlq
 inlq -- inl, doubly-or-more escaped	{#insert zvESC_LVL_CNT_stPromptCIB}{#insert zInlRAW_M_elc}{#insert inssyn}	inlq
-inlqp -- inlq, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zInlqRAW_M_elc}{#insert inssyn}	inlqp
-inlqq -- inlq, doubly-escaped	{#insert zvESC_LVL_CNT_stPromptCIB}{#insert zInlqRAW_M_elc}{#insert inssyn}	inlqq
 inn -- {#insert {#insert ...}}	{#insert zvESC_LVL_CNT_st0}{#insert zInnRAW_M_elc}{#insert inssyn}	inn
 innb -- {#insert {#insert [paste]}}	{#insert zvESC_LVL_CNT_st0}{#insert zInnbRAW_M_elc}{#insert inssyn}	innb
 innbp -- innb, (outer-insert-only) escaped	{#insert zvESC_LVL_CNT_st1}{#insert zInnbRAW_M_elc}{#insert inssyn}	innbp
@@ -22,18 +21,24 @@ ins -- {#insert ...}	{#insert zvESC_LVL_CNT_st0}{#insert zInsRAW_M_elc}{#insert 
 insp -- ins, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zInsRAW_M_elc}{#insert inssyn}	insp
 insq -- ins, doubly-or-more escaped	{#insert zvESC_LVL_CNT_stPromptCIB}{#insert zInsRAW_M_elc}{#insert inssyn}	insq
 insqs -- [paste]='[inb]' (for debugging--no esc'd versions)	{#insert zTPPaste}='{#insert zvESC_LVL_CNT_st0}{#insert zInbRAW_M_elc}'{#insert inssyn}	insqs
-inssyn	{#BALLOON -title Syntax: INSERT syntax -text in[[s,b,x]][[p,q]]  //  in[l,r][[p,q]] -- (word Left/Right)  //  inlq[[p,q]] -- (line-list sequence)  //  insqs -- (paste='inb')  //  inn[b][[p,q]] [double-ins]  //  [p]=esc'd, [q]=dbly-esc'd (or more)  //  instestall  //  pexsyn}	inssyn
+inssyn	{#BALLOON -title Syntax: INSERT syntax -text in[[s,[w]b,x]][[p,q]]  //  in[l,r][[p,q]] -- (word Left/Right)  //  inll[[p,q]] -- (line-list sequence)  (inllb[k])  //  insqs -- (paste='inb')  //  inn[b][[p,q]] [double-ins]  //  [p]=esc'd, [q]=dbly-esc'd (or more)  //  instestall  //  pexsyn}	inssyn
 instestall	{#SETPHRASE -description zvQB_STR_LIST -content {#insert zzPccInsAllMainAbrvs1CQBL} -autotext zvQB_STR_LIST -folder ctvv_folder}{#insert zzTestAllMainPhrsCrtrAbrvs_M_qbl}	instestall
+inwb -- {#insert [windows-paste]}	{#insert zvESC_LVL_CNT_st0}{#insert zInwbRAW_M_elc}{#insert inssyn}	inwb
+inwbp -- inwb, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zInwbRAW_M_elc}{#insert inssyn}	inwbp
+inwbq -- inwb, doubly-or-more escaped	{#insert zvESC_LVL_CNT_stPromptCIB}{#insert zInwbRAW_M_elc}{#insert inssyn}	inwbq
 inx -- {#insert ...}	{#insert zvESC_LVL_CNT_st0}{#insert zInxRAW_M_elc}{#insert inssyn}	inx
 inxp -- inx, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zInxRAW_M_elc}{#insert inssyn}	inxp
 inxq -- inx, doubly-or-more escaped	{#insert zvESC_LVL_CNT_stPromptCIB}{#insert zInxRAW_M_elc}{#insert inssyn}	inxq
 zInbRAW_M_elc	{#insert zOY_M_elc}#insert {#insert zTPPaste}{#insert zCY_M_elc}	zInbRAW_M_elc
 zInlRAW_M_elc	{#insert zSelectL1wCopy}{#insert zInbRAW_M_elc}	zInlRAW_M_elc
-zInlqRAW_M_elc -- Needs zvESC_LVL_CNT (assumed good value!)	{#insert zInlRAW_M_elc}{#LOOP {#DEL}{#insert zInrRAW_M_elc} -count {#CALC {#INPUT -head How many lines TOTAL? -single} - 1 -round 0 -thousands none}}	zInlqRAW_M_elc
+zInllRAW_M_elc -- Needs zvESC_LVL_CNT (assumed good value!)	{#insert zvLINE_COUNT_stPrompt}{#insert zInllRAW_M_elcLcnt}	zInllRAW_M_elc
+zInllRAW_M_elcLcnt -- Needs zvESC_LVL_CNT, zvLINE_COUNT	{#insert zInlRAW_M_elc}{#LOOP {#DEL}{#insert zInrRAW_M_elc} -count {#CALC {#insert zvLINE_COUNT} - 1 -round 0 -thousands none}}	zInllRAW_M_elcLcnt
 zInnRAW_M_elc	{#insert zOY_M_elc}#insert \\\{#insert \\\}{#insert zCY_M_elc}{#insert zzzLeftPrevEscCrly_M_elc}{#LEFT}	zInnRAW_M_elc
 zInnbRAW_M_elc	{#insert zOY_M_elc}#insert \\\{#insert {#insert zTPPaste}\\\}{#insert zCY_M_elc}	zInnbRAW_M_elc
 zInrRAW_M_elc	{#insert zSelectR1wCopy}{#insert zInbRAW_M_elc}	zInrRAW_M_elc
 zInsRAW_M_elc	{#insert zOY_M_elc}#insert {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zInsRAW_M_elc
+zInwbRAW_M_elc	{#insert zOY_M_elc}#insert {#insert zSystemPaste}{#insert zCY_M_elc}	zInwbRAW_M_elc
 zInxRAW_M_elc	{#insert zOY_M_elc}#insert {#insert zXmark}{#insert zCY_M_elc}	zInxRAW_M_elc
-zzPccInsAllMainAbrvs1CQBL	[Innb][Inn][Inb][Ins][Inx]	zzPccInsAllMainAbrvs1CQBL
-zzPccInsAllMainAbrvs1CQBL_README -(**)-	(*Can't be tested via instestall: [Inlq][Inl][Inr]*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+zvLINE_COUNT_stPrompt	{#SETPHRASE -description zvLINE_COUNT -content {#INPUT -head How many lines TOTAL? -single} -autotext zvLINE_COUNT -folder ctvv_folder}	zvLINE_COUNT_stPrompt
+zzPccInsAllMainAbrvs1CQBL	[Innb][Inn][Inb][Ins][Inwb][Inx]	zzPccInsAllMainAbrvs1CQBL
+zzPccInsAllMainAbrvs1CQBL_README -(**)-	(*Can't be tested via instestall: [Inll][Inl][Inr]*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)

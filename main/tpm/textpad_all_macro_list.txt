@@ -1,6 +1,3 @@
-javaDelSlctdPrmNms4TV
-\s*\b(\w+)(?:|(?:<[?\w ]+>)|(?:<[^<]*<[?\w ]+>[^>]*>)|(?:<[^<]*<[^<]*<[?\w ]+>[^>]*>[^>]*>))\s+\w+\b
-_4TV_$1
 
 COMMANDS:               KEYS:
 
@@ -44,8 +41,6 @@ markXXXFindDown         Ctrl+End
 markXXXFindUp           Ctrl+Home
 markYYYFindDown         Ctrl+Pgup
 markYYYFindUp           Ctrl+Insert
-paraGoToEnd             Alt+End
-paraGoToStart           Alt+Home
 tagFindPrevHREFThrQQ    Ctrl+Shift+Alt+J, H
 tagInsertEmptySingle    Ctrl+U
 tagMoveL1               Ctrl+C

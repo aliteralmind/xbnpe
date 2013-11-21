@@ -1,33 +1,62 @@
 __XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+zPasteXDown	{#insert zTPPaste}{#insert zXDown}	zPasteXDown
+zPasteXDownDelete	{#insert zPasteXDown}{#insert zDEL}	zPasteXDownDelete
+zPasteXUp	{#insert zTPPaste}{#insert zXUp}	zPasteXUp
+zPasteXUpDelete	{#insert zPasteXUp}{#insert zDEL}	zPasteXUpDelete
+zPasteYDown	{#insert zTPPaste}	zPasteYDown
+zPasteYDownDelete	{#insert zPasteXDown}{#insert zDEL}	zPasteYDownDelete
+zPasteYUp	{#insert zTPPaste}	zPasteYUp
+zPasteYUpDelete	{#insert zPasteXUp}{#insert zDEL}	zPasteYUpDelete
 zSlkXDown	{#sleep 1000}{#insert zXDown}	zSlkXDown
 zSlkXUp	{#sleep 1000}{#insert zXUp}	zSlkXUp
 zSlkYDown	{#sleep 1000}{#insert zYDown}	zSlkYDown
 zSlkYUp	{#sleep 1000}{#insert zYUp}	zSlkYUp
+zXCddThenSelect	<CODE>{#insert zXmark}</CODE>{#insert zXUp}	zXCddThenSelect
 zXDown	{#insert zTMFindXMarkDown}	zXDown
+zXDown2	{#insert zTMFindXMarkDown}{#insert zTMFindXMarkDown}	zXDown2
+zXDown3	{#insert zXDown2}{#insert zTMFindXMarkDown}	zXDown3
+zXDown4	{#insert zXDown3}{#insert zTMFindXMarkDown}	zXDown4
 zXDownDelete	{#insert zXDown}{#DEL}	zXDownDelete
+zXDownLeft	{#insert zXDown}{#insert zLEFT}	zXDownLeft
 zXDownPaste	{#insert zXDown}{#insert zTPPaste}	zXDownPaste
 zXDownPastePreBrcktGTP	{#insert zXDownPaste}{#insert zPreBracketGTP}	zXDownPastePreBrcktGTP
+zXDownRight	{#insert zXDown}{#insert zRIGHT}	zXDownRight
+zXDownUp	{#insert zXDown}{#insert zXUp}	zXDownUp
 zXThenSelect	{#insert zXmark}{#insert zSelectL3c}	zXThenSelect
 zXUp	{#insert zTMFindXMarkUp}	zXUp
 zXUp2	{#insert zTMFindXMarkUp}{#insert zTMFindXMarkUp}	zXUp2
-zYUp2	{#insert zTMFindYMarkUp}{#insert zTMFindYMarkUp}	zYUp2
-zXDown2	{#insert zTMFindXMarkDown}{#insert zTMFindXMarkDown}	zXDown2
-zYDown2	{#insert zTMFindYMarkDown}{#insert zTMFindYMarkDown}	zYDown2
+zXUp3	{#insert zXUp2}{#insert zTMFindXMarkUp}	zXUp3
+zXUp4	{#insert zXUp3}{#insert zTMFindXMarkUp}	zXUp4
 zXUpDelete	{#insert zXUp}{#DEL}	zXUpDelete
+zXUpLeft	{#insert zXUp}{#insert zLEFT}	zXUpLeft
 zXUpPaste	{#insert zXUp}{#insert zTPPaste}	zXUpPaste
 zXUpPastePreBrcktGTP	{#insert zXUpPaste}{#insert zPreBracketGTP}	zXUpPastePreBrcktGTP
+zXUpRight	{#insert zXUp}{#insert zRIGHT}	zXUpRight
 zXmarkCoded	<CODE>{#insert zXmark}</CODE>	zXmarkCoded
+zXmarkMaybeCdd_M_cde -- Needs zvCDD_ES	{#insert zXmark{#insert zvCDD_ES}}	zXmarkMaybeCdd_M_cde
 zXmarkPostGTP	{#LEFT -count 3}	zXmarkPostGTP
 zXmarkThenGTP	{#insert zXmark}{#insert zXmarkPostGTP}	zXmarkThenGTP
+zYCddThenSelect	<CODE>{#insert zYmark}</CODE>{#insert zYUp}	zYCddThenSelect
 zYDown	{#insert zTMFindYMarkDown}	zYDown
+zYDown2	{#insert zTMFindYMarkDown}{#insert zTMFindYMarkDown}	zYDown2
+zYDown3	{#insert zYDown2}{#insert zTMFindYMarkDown}	zYDown3
+zYDown4	{#insert zYDown3}{#insert zTMFindYMarkDown}	zYDown4
 zYDownDelete	{#insert zYDown}{#DEL}	zYDownDelete
+zYDownLeft	{#insert zYDown}{#insert zLEFT}	zYDownLeft
 zYDownPaste	{#insert zYDown}{#insert zTPPaste}	zYDownPaste
 zYDownPastePreBrcktGTP	{#insert zYDownPaste}{#insert zPreBracketGTP}	zYDownPastePreBrcktGTP
+zYDownRight	{#insert zYDown}{#insert zRIGHT}	zYDownRight
+zYDownUp	{#insert zYDown}{#insert zYUp}	zYDownUp
 zYThenSelect	{#insert zYmark}{#insert zSelectL3c}	zYThenSelect
 zYUp	{#insert zTMFindYMarkUp}	zYUp
+zYUp2	{#insert zTMFindYMarkUp}{#insert zTMFindYMarkUp}	zYUp2
+zYUp3	{#insert zYUp2}{#insert zTMFindYMarkUp}	zYUp3
+zYUp4	{#insert zYUp3}{#insert zTMFindYMarkUp}	zYUp4
 zYUpDelete	{#insert zYUp}{#DEL}	zYUpDelete
+zYUpLeft	{#insert zYUp}{#insert zLEFT}	zYUpLeft
 zYUpPaste	{#insert zYUp}{#insert zTPPaste}	zYUpPaste
 zYUpPastePreBrcktGTP	{#insert zYUpPaste}{#insert zPreBracketGTP}	zYUpPastePreBrcktGTP
+zYUpRight	{#insert zYUp}{#insert zRIGHT}	zYUpRight
 zYmarkCoded	<CODE>{#insert zYmark}</CODE>	zYmarkCoded
 zYmarkPostGTP	{#LEFT -count 3}	zYmarkPostGTP
 zYmarkThenGTP	{#insert zYmark}{#insert zYmarkPostGTP}	zYmarkThenGTP

@@ -1,0 +1,55 @@
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+__ORIGINAL: class.func link. NEEDED BY: class.obj link	.		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+zPostFuncSigGTName -*-	{#insert zPostBracketGTP}{#insert zTPMoveL1w}	zPostFuncSigGTName
+zPrintClassFuncLinkAltDisp_M_cnmFnmPrmsDsp -*-	{#insert zzCIPapKOrP_M_pap}{#insert zvPREK_stES}{#insert zPrintClassFuncLinkOptPrk_M_cnmFnmPrmsDspPapPrk}	zPrintClassFuncLinkAltDisp_M_cnmFnmPrmsDsp
+zPrintClassFuncLinkDispFNm_M_cnmFnmPrmsPapPrk -*-	{#insert zvDISPLAY_stFncObjNm}{#insert zPrintClassFuncLinkOptPrk_M_cnmFnmPrmsDspPapPrk}	zPrintClassFuncLinkDispFNm_M_cnmFnmPrmsPapPrk
+zPrintClassFuncLinkDispYmk_M_cnmFnmPrmsPap -*-	{#insert zvDISPLAY_stYmk}{#insert zPrintClassFuncLinkAltDisp_M_cnmFnmPrmsDsp}	zPrintClassFuncLinkDispYmk_M_cnmFnmPrmsPap
+zPrintClassFuncLinkOptPrk_M_cnmFnmPrmsDspPapPrk -*-	<A HREF={#insert zAscQQ}{#insert {#COND -if {#insert zvDIR_TORD} = t -then z1slp -else {#COND -if {#insert zvDIR_TORD} = d -then zYmarkSlash -else zzErrDlgBadTrd_M_dtd}}}{#insert zvCLS_NM}.html#{#insert zzCFLinkUrlFuncPortion_M_fnmPrms}{#insert zAscQQ}>{#insert zvDISPLAY}</A>{#insert zzCFLinkPrintPap_M_01pPap}(*Drn must be anything BUT 'h':*){#insert zvDRN_stR}{#insert zzPostLinkCreatePrekGoBackIfNotESCIDrnH_M_drnPrk}	zPrintClassFuncLinkOptPrk_M_cnmFnmPrmsDspPapPrk
+zzErrDlgBadTrd_M_dtd	{#MSGBOX -head ERROR -text ERROR ~~ The this-or-different-directory pre-option must be either 't' or 'd' (zvDIR_TORD='{#insert zvDIR_TORD}'). See kutloptsyn {#insert zCancelProcNowPostTxt}}	zzErrDlgBadTrd_M_dtd
+zv0_OR_1_st0	{#SETPHRASE -description zv0_OR_1 -content 0 -autotext zv0_OR_1 -folder ctvv_folder}	zv0_OR_1_st0
+zv0_OR_1_st1	{#SETPHRASE -description zv0_OR_1 -content 1 -autotext zv0_OR_1 -folder ctvv_folder}	zv0_OR_1_st1
+zvCLS_NM_stCB -*-	{#SETPHRASE -description zvCLS_NM -content {#INSERTCLIPBOARD} -autotext zvCLS_NM -folder ctvv_folder}	zvCLS_NM_stCB
+zvCLS_NM_stL1w -*-	{#insert zCutL1w}{#insert zvCLS_NM_stCB}	zvCLS_NM_stL1w
+zvCLS_NM_stSuperCls -*-	{#insert zXJavaCopySuperClassNmXDownDel}{#insert zvCLS_NM_stCB}	zvCLS_NM_stSuperCls
+zvFOBJ_NAME_stR1w -*-	{#insert zCutR1w}{#SETPHRASE -description zvFOBJ_NAME -content {#INSERTCLIPBOARD} -autotext zvFOBJ_NAME -folder ctvv_folder}	zvFOBJ_NAME_stR1w
+zvPREK_stES -*-	{#SETPHRASE -description zvPREK -content -autotext zvPREK -folder ctvv_folder}	zvPREK_stES
+zzCFLinkPrintPap0Params_M_pap -- Needs zvPAP (equal to [x,o,k,p])	{#insert {#COND -if {#insert zvPAP} = x -then z1slp -else {#COND -if {#insert zvPAP} = o -then z1slp -else {#COND -if {#insert zvPAP} = k -then zzQpp -else {#COND -if {#insert zvPAP} = p -then zzQpp -else zzErrDlgCFLinkBadTmvy_M_pap}}}}}	zzCFLinkPrintPap0Params_M_pap
+zzCFLinkPrintPap_M_01pPap -- Needs zvPAP (equal to [x,o,p,t,m,v,y]), zv0_OR_1	{#insert {#COND -if {#insert zv0_OR_1} = 0 -then zzCFLinkPrintPap0Params_M_pap -else {#COND -if {#insert zv0_OR_1} = 1 -then zzPostAParams_M_pap -else zzErrDlgCFLinkBad01p_M_01p}}}	zzCFLinkPrintPap_M_01pPap
+zzCFLinkUrlFuncPortion_M_fnmPrms	{#insert {#COND -if {#SUBSTR {#insert zv0_OR_1} -from 1 -count 1} = 0 -then zzFuncNmEmptyParens_M_fnm -else zzFuncNmSigForUrl_M_fnmPrms}}	zzCFLinkUrlFuncPortion_M_fnmPrms
+zzCIPapKOrP_M_pap	{#insert {#COND -if {#insert zvPAP} = k -then zzErrDlgKPWithY_M_pap -else {#COND -if {#insert zvPAP} = p -then zzErrDlgKPWithY_M_pap -else {#COND -if {#insert zvPAP} = m -then zzErrDlgKPWithY_M_pap -else {#COND -if {#insert zvPAP} = v -then zzErrDlgKPWithY_M_pap -else z1slp}}}}}	zzCIPapKOrP_M_pap
+zzErrDlgCFLinkBad01p_M_01p -- zv0_OR_1	{#MSGBOX -head ERROR -text ERROR ~~ Internal variable zv0_OR_1 (currently '{#insert zv0_OR_1}') must be '0' or '1'.{#insert zCancelProcNowPostTxt}}	zzErrDlgCFLinkBad01p_M_01p
+zzErrDlgCFLinkBadTmvy_M_pap -- Needs zvPAP	{#MSGBOX -head ERROR -text ERROR ~~ The link~target pre~option (currently zvPAP='{#insert zvPAP}') must be one of the following: [x,o,p] (see kutl0optsyn) or [t,m,v,y] (see kutl1optsyn).{#insert zCancelProcNowPostTxt}}	zzErrDlgCFLinkBadTmvy_M_pap
+zzErrDlgKPWithY_M_pap	{#MSGBOX -head ERROR -text ERROR ~~ The post~</A> parameter pre~options 'k', 'p', 'm', and 'v' are all incompatible with kut*y* (see kybadinfo){#insert zCancelProcNowPostTxt}}	zzErrDlgKPWithY_M_pap
+zzFuncNmEmptyParens_M_fnm	{#insert zvFOBJ_NAME}()	zzFuncNmEmptyParens_M_fnm
+zzFuncNmSigForUrl_M_fnmPrms	{#insert zvFOBJ_NAME}{#insert zvALL_PARAMS}{#insert zJavaPostAllParamsDelNmsGncrs4FQP}	zzFuncNmSigForUrl_M_fnmPrms
+zzKutsyn_M_yon -- Needs zvSYNTAX_ON	{#insert {#COND -if {#insert zvSYNTAX_ON} = on -then kutsyn -else z1slp}}	zzKutsyn_M_yon
+zzKutlsyns1of4	[*][t,d][[f,r,w]]kut[b,l,r][t]	zzKutlsyns1of4
+zzKutlsyns2of4	[*][t,d]kut[b,l]y[c]	zzKutlsyns2of4
+zzKutlsyns3of4	[*][t,d]kut[l,r]y[b][c]	zzKutlsyns3of4
+zzKutlsyns4of4 -- Only used by javasyn	[*] --> 1+ params=[t,m,v,y] 0=[x,o,k,p]	zzKutlsyns4of4
+zzQpp	()	zzQpp
+zzSet01pSetFNmParamsToR_M_pap	(*k and p parens are handled in the print-pap function:*){#insert {#COND -if {#insert zvPAP} = x -then zzSetFNmToR1w01pTo0DelMtParens -else {#COND -if {#insert zvPAP} = o -then zzSetFNmToR1w01pTo0 -else {#COND -if {#insert zvPAP} = k -then zzSetFNmToR1w01pTo0DelMtParens -else {#COND -if {#insert zvPAP} = p -then zzSetFNmToR1w01pTo0 -else {#COND -if {#insert zvPAP} = t -then zzSetFuncNmToR1w01pTo1SetDel1PParams -else {#COND -if {#insert zvPAP} = m -then zzSetFuncNmToR1w01pTo1SetDel1PParams -else {#COND -if {#insert zvPAP} = v -then zzSetFuncNmToR1w01pTo1SetDel1PParams -else {#COND -if {#insert zvPAP} = y -then zzSetFuncNmToR1w01pTo1SetDel1PParams -else zzErrDlgCFLinkBadTmvy_M_pap}}}}}}}}}	zzSet01pSetFNmParamsToR_M_pap
+zzSetFNmToR1w01pTo0	{#insert zvFOBJ_NAME_stR1w}{#insert zv0_OR_1_st0}	zzSetFNmToR1w01pTo0
+zzSetFNmToR1w01pTo0DelMtParens	{#insert zvFOBJ_NAME_stR1w}{#insert zv0_OR_1_st0}{#insert zDEL2}	zzSetFNmToR1w01pTo0DelMtParens
+zzSetFuncNmToR1w01pTo1SetDel1PParams	{#insert zvFOBJ_NAME_stR1w}{#insert zv0_OR_1_st1}{#insert zPreBracketSelCopy}{#insert zDEL}{#insert zvALL_PARAMS_stCB}	zzSetFuncNmToR1w01pTo1SetDel1PParams
+zzSetOptPrkTrdPap01pToL1cX3ClsNmToL1wSetFNmParamsToR	{#insert zzSetOptPrkTrdPapToL1cX3}{#insert zvCLS_NM_stL1w}{#insert zzSet01pSetFNmParamsToR_M_pap}	zzSetOptPrkTrdPap01pToL1cX3ClsNmToL1wSetFNmParamsToR
+zzSetOptPrkTrdPap01pToL1cX3SetFNmParamsToR	{#insert zzSetOptPrkTrdPapToL1cX3}{#insert zzSet01pSetFNmParamsToR_M_pap}	zzSetOptPrkTrdPap01pToL1cX3SetFNmParamsToR
+zzSetOptPrkTrdPapToL1cX3	{#insert zCutL1c}(*Set optional prek param. If provided, cut the next char to the left:*){#insert {#COND -if {#insert zLowercaseCB} = f -then zzSetPrkToCBCutL1c -else {#COND -if {#insert zLowercaseCB} = r -then zzSetPrkToCBCutL1c -else {#COND -if {#INSERTCLIPBOARD} = w -then zzSetPrkToYLcCutL1c -else {#COND -if {#INSERTCLIPBOARD} = W -then zzSetPrkToYUcCutL1c -else zvPREK_stES}}}}}{#insert zvDIR_TORD_stCB}{#insert zvPAP_toL1c}	zzSetOptPrkTrdPapToL1cX3
+zzSetPap2TmvyxopPromptSet01p2	{#SETPHRASE -description zvPAP2 -content {#INPUT -head Post~</A> param? (x,o,k,p,t,m,v,y~~kutl[0,1]syn) -single} -autotext zvPAP2 -folder ctvv_folder}{#insert zvDIR_TORD2_stPrompt}{#insert {#COND -if {#insert zvPAP2} = x -then zv0_OR_1_st0 -else {#COND -if {#insert zvPAP2} = o -then zv0_OR_1_st0 -else {#COND -if {#insert zvPAP2} = k -then zv0_OR_1_st0 -else {#COND -if {#insert zvPAP2} = p -then zv0_OR_1_st0 -else zv0_OR_1_st1}}}}}{#SETPHRASE -description zv0_OR_1_2 -content {#insert zv0_OR_1} -autotext zv0_OR_1_2 -folder ctvv_folder}	zzSetPap2TmvyxopPromptSet01p2
+zzSetPrkToCBCutL1c	{#insert zvPREK_stCB}{#insert zCutL1c}	zzSetPrkToCBCutL1c
+zzSetClsNmToSuperTrdPpa01pToL1cX2SetFNmParamsToR	{#insert zvCLS_NM_stSuperCls}{#insert zzSetTrdPap01pToL1cX2SetFNmParamsToR}	zzSetClsNmToSuperTrdPpa01pToL1cX2SetFNmParamsToR
+zzSetTrdPap01pClsNmToL1cX3FNmParamsToR	{#insert zzSetTrdPapToL1cX2}{#insert zvCLS_NM_stL1w}{#insert zzSet01pSetFNmParamsToR_M_pap}	zzSetTrdPap01pClsNmToL1cX3FNmParamsToR
+zzSetTrdPap01pToL1cX2SetFNmParamsToR	{#insert zzSetTrdPapToL1cX2}{#insert zzSet01pSetFNmParamsToR_M_pap}	zzSetTrdPap01pToL1cX2SetFNmParamsToR
+zzSetPrkToYLcCutL1c	{#SETPHRASE -description zvPREK -content y -autotext zvPREK -folder ctvv_folder}{#insert zCutL1c}	zzSetPrkToYLcCutL1c
+zzSetPrkToYUcCutL1c	{#SETPHRASE -description zvPREK -content Y -autotext zvPREK -folder ctvv_folder}{#insert zCutL1c}	zzSetPrkToYUcCutL1c
+zzSetTrdPapToL1cX2	{#insert zvDIR_TORD_stL1c}{#insert zvPAP_toL1c}	zzSetTrdPapToL1cX2
+zzzEndEtrTstPap2ForYTrd2	{#insert zEndEnter}{#insert zzzPap2ForYTrd2}	zzzEndEtrTstPap2ForYTrd2
+zzzEndEtrTstPap2Trd2Prk2	{#insert zEndEnter}{#insert zzzPap2Trd2Prk2}	zzzEndEtrTstPap2Trd2Prk2
+zzzEtrDmoClsTstPap2ForYTrd2	{#insert zENTER}MyClass{#insert zzzPap2ForYTrd2}	zzzEtrDmoClsTstPap2ForYTrd2
+zzzPrintTstFNmParams_M_01p2	(*starts w spc*) {#COND -if {#insert zv0_OR_1_2} = 0 -then functionName() -else functionName(boolean b1, String s2)}{#insert zPostFuncSigGTName}{#insert zBKSP}	zzzPrintTstFNmParams_M_01p2
+zzzScbDmoClsPrintFNmParams	{#SETCLIPBOARD MyClass}{#insert zzzPrintTstFNmParams_M_01p2}	zzzScbDmoClsPrintFNmParams
+zzzPap2ForY	{#COND -if {#insert zvPAP2} = k -then o -else {#COND -if {#insert zvPAP2} = p -then o -else {#COND -if {#insert zvPAP2} = m -then t -else {#COND -if {#insert zvPAP2} = v -then t -else {#insert zvPAP2}}}}}{#insert zTSlp}	zzzPap2ForY
+zzzPap2ForYTrd2	{#insert zzzPap2ForY}{#insert zzzTrd2}	zzzPap2ForYTrd2
+zzzPap2ForYTrd2ScbDmoDisp	{#insert zzzPap2ForYTrd2}{#insert zzzScbDmoDisp}	zzzPap2ForYTrd2ScbDmoDisp
+zzzPap2Trd2Prk2	{#insert zvPAP2}{#insert zzzTrd2Prk2}	zzzPap2Trd2Prk2
+zzzTrd2Prk2	{#insert zvDIR_TORD2}{#insert zvPREK2}{#insert zTSlp}	zzzTrd2Prk2

@@ -1,0 +1,22 @@
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+__ORIGINAL: class.func link. NEEDED BY: class.obj link	.		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+zPrintClassObjLinkAltDisp_M_cnmFnmPrmsDsp -*-	{#insert zvPREK_stES}{#insert zPrintClassObjLinkOptPrk_M_cnmFnmPrmsDspPrk}	zPrintClassObjLinkAltDisp_M_cnmFnmPrmsDsp
+zPrintClassObjLinkOptPrk_M_cnmFnmPrmsDspPrk -*-	<A HREF={#insert zAscQQ}{#insert {#COND -if {#insert zvDIR_TORD} = t -then z1slp -else {#COND -if {#insert zvDIR_TORD} = d -then zYmarkSlash -else zzErrDlgBadTrd_M_dtd}}}{#insert zvCLS_NM}.html#{#insert zvFOBJ_NAME}{#insert zAscQQ}>{#insert zvDISPLAY}</A>{#insert {#COND -if {#LENGTH {#insert zvPREK}} > 0 -then zPostLinkCreatePrekGoBack_M_prk -else z1slp}}	zPrintClassObjLinkOptPrk_M_cnmFnmPrmsDspPrk
+zPrintClassObjLinkDispFNmOptPrk_M_cnmFnmPrmsPrk -*-	{#insert zvDISPLAY_stFncObjNm}{#insert zPrintClassObjLinkOptPrk_M_cnmFnmPrmsDspPrk}	zPrintClassObjLinkDispFNmOptPrk_M_cnmFnmPrmsPrk
+zPrintClassObjLinkDispYmk_M_cnmFnmPrms -*-	{#insert zvDISPLAY_stYmk}{#insert zPrintClassObjLinkAltDisp_M_cnmFnmPrmsDsp}	zPrintClassObjLinkDispYmk_M_cnmFnmPrms
+zzKotlsyn_M_yon -- Needs zvSYNTAX_ON	{#insert {#COND -if {#insert zvSYNTAX_ON} = on -then kotlsyn -else z1slp}}	zzKotlsyn_M_yon
+zzKotlsyns1of4	[t,d][[f,r,w]]kot[b,l,r][t]	zzKotlsyns1of4
+zzKotlsyns2of4	[t,d]kot[b,l]y[c]	zzKotlsyns2of4
+zzKotlsyns3of4	[t,d]kot[l,r]y[b][c]	zzKotlsyns3of4
+zzSetClsNmToSuperTrdToL1cSetONmToR	{#insert zvCLS_NM_stSuperCls}{#insert zzSetTrdToL1cSetONmToR1w}	zzSetClsNmToSuperTrdToL1cSetONmToR
+zzSetOptPrkTrdToL1cX1or2	{#insert zCutL1c}(*Set optional prek param. If provided, cut the next char to the left:*){#insert {#COND -if {#insert zLowercaseCB} = f -then zzSetPrkToCBCutL1c -else {#COND -if {#insert zLowercaseCB} = r -then zzSetPrkToCBCutL1c -else {#COND -if {#INSERTCLIPBOARD} = w -then zzSetPrkToYLcCutL1c -else {#COND -if {#INSERTCLIPBOARD} = W -then zzSetPrkToYUcCutL1c -else zvPREK_stES}}}}}{#insert zvDIR_TORD_stCB}	zzSetOptPrkTrdToL1cX1or2
+zzSetOptPrkTrdToL1cX1or2ClsNmToL1wSetONmToR1w	{#insert zzSetOptPrkTrdToL1cX1or2}{#insert zvCLS_NM_stL1w}{#insert zvFOBJ_NAME_stR1w}	zzSetOptPrkTrdToL1cX1or2ClsNmToL1wSetONmToR1w
+zzSetOptPrkTrdToL1cX1or2ONmToR1w	{#insert zzSetOptPrkTrdToL1cX1or2}{#insert zvFOBJ_NAME_stR1w}	zzSetOptPrkTrdToL1cX1or2ONmToR1w
+zzSetTrdToL1cONmToL1wONmToR	{#insert zvDIR_TORD_stL1c}{#insert zvCLS_NM_stL1w}{#insert zvFOBJ_NAME_stR1w}	zzSetTrdToL1cONmToL1wONmToR
+zzSetTrdToL1cSetONmToR1w	{#insert zvDIR_TORD_stL1c}{#insert zvFOBJ_NAME_stR1w}	zzSetTrdToL1cSetONmToR1w
+zzzEndEtrTstTrd2	{#insert zEndEnter}{#insert zzzTrd2}	zzzEndEtrTstTrd2
+zzzEndEtrTstTrd2Prk2	{#insert zEndEnter}{#insert zzzTrd2Prk2}	zzzEndEtrTstTrd2Prk2
+zzzEtrDmoClsTstTrd2	{#insert zENTER}MyClass{#insert zzzTrd2}	zzzEtrDmoClsTstTrd2
+zzzPrintTstONm	ObjectName{#LEFT -count 10}	zzzPrintTstONm
+zzzScbDmoClsPrintONm	{#SETCLIPBOARD MyClass}{#insert zzzPrintTstONm}	zzzScbDmoClsPrintONm
+zzzTrd2ScbDmoDisp	{#insert zzzTrd2}{#insert zzzScbDmoDisp}	zzzTrd2ScbDmoDisp

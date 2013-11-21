@@ -6,3 +6,7 @@ zDbgTxtCBandCONTENTS -- zvCB_CONTENTS and the clipboard	zvCB_CONTENTS='{#insert 
 zCBLen	{#LENGTH {#INSERTCLIPBOARD}}	zCBLen
 zInsertCB -- For use in COND phrases, so it only executes if needed.	{#INSERTCLIPBOARD}	zInsertCB
 zLowercaseCB	{#LOWERCASE {#INSERTCLIPBOARD}}	zLowercaseCB
+zTrimCB	{#SETCLIPBOARD {#TRIM {#INSERTCLIPBOARD}}}	zTrimCB
+zPasteSelectAddXmkAtSelEnd -- Expects NO x-marks in selection or anywhere in document	{#insert zXmark}{#insert zTPPaste}{#insert zXmarkThenGTP}{#insert zXUpDelete}{#insert zFindDlgOpenDown}{#insert zXmark}{#insert zFindXSBtnNextXS}{#insert zFindDlgCloseWS}	zPasteSelectAddXmkAtSelEnd
+zPasteSelect1Line -- Adds then elims an x-mark via replacement -- no line breaks!	{#insert zzPasteSelect1LineRDlgOpn}{#insert zRplcDlgClose}	zPasteSelect1Line
+zzPasteSelect1LineRDlgOpn	{#insert zPasteSelectAddXmkAtSelEnd}{#insert zRplcDlgOpenMCOnly}{#LOOP {#insert zSystemSelectL1c} -count 3}{#insert zSystemCopy}{#insert zRplcFieldWith}{#insert zSystemPaste}{#insert zRplcBtnAllSel}	zzPasteSelect1LineRDlgOpn

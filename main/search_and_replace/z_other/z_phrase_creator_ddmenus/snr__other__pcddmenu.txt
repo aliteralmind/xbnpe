@@ -34,13 +34,15 @@ Phrase-creators: XBN-PhraseExpress -- Call 'xh'   .   zXbnpeCmdPopupRoot
 				zPostBracketGTP2	\\\{#insert zPostBracketGTP2\\\}	xhseg
 				zPreBracketGTP	\\\{#insert zPreBracketGTP\\\}	xhseg
 				zPreBracketGTP2	\\\{#insert zPreBracketGTP2\\\}	xhseg
+				zPreBracketGTPIfCdd_M_cde	\\\{#insert zPreBracketGTPIfCdd_M_cde\\\}	xhseg
 			Select/sel-copy -- xhses	.	xhse
+				zPostBracketSelContentsOnly	\\\{#insert zPostBracketSelContentsOnly\\\}	xhses
 				zPostBracketSelCopy	\\\{#insert zPostBracketSelCopy\\\}	xhses
 				zPostBracketSelect	\\\{#insert zPostBracketSelect\\\}	xhses
-				zPostBracketSelContentsOnly	\\\{#insert zPostBracketSelContentsOnly\\\}	xhses
+				zPostBrktSelectWord1	\\\{#insert zPostBrktSelectWord1\\\}	xhses
+				zPreBracketSelContentsOnly	\\\{#insert zPreBracketSelContentsOnly\\\}	xhses
 				zPreBracketSelCopy	\\\{#insert zPreBracketSelCopy\\\}	xhses
 				zPreBracketSelect	\\\{#insert zPreBracketSelect\\\}	xhses
-				zPreBracketSelContentsOnly	\\\{#insert zPreBracketSelContentsOnly\\\}	xhses
 			zMatchBracket2	\\\{#insert zMatchBracket2\\\}	xhse
 			zMatchBracketExtend2	\\\{#insert zMatchBracketExtend2\\\}	xhse
 (*    SNR: Bookmarks -- xhsm   .   xhs*)
@@ -50,9 +52,9 @@ Phrase-creators: XBN-PhraseExpress -- Call 'xh'   .   zXbnpeCmdPopupRoot
 		verifysnrnbs	(*actnonly=verifysnrnbs*){#SETPHRASE -description zvACTN_NM -content verifysnrnbs -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhs
 (*
    Phrase-creators: Other -- xho   .   xh
-      XBNPE main directories -- xhoy   .   xho
-         zROOT_DIR_XBNPE_PARENT -- xhoym   .   xhoy
-            zROOT_DIR_XBNPE_MAIN -- xhoymm   .   xhoym
+      XBNPE main directories -- xhor   .   xho
+         zROOT_DIR_XBNPE_PARENT -- xhorm   .   xhor
+            zROOT_DIR_XBNPE_MAIN -- xhormm   .   xhorm
 *)
-					zXPROOT_DIR_srchRplc -- xhoymms	\\\{#insert zXPROOT_DIR_srchRplc\\\}	xhoymm
-						zXPROOT_DIR_AG_srchRplc	\\\{#insert zXPROOT_DIR_AG_srchRplc\\\}	xhoymms
+					zXPROOT_DIR_srchRplc -- xhormms	\\\{#insert zXPROOT_DIR_srchRplc\\\}	xhormm
+						zXPROOT_DIR_AG_srchRplc	\\\{#insert zXPROOT_DIR_AG_srchRplc\\\}	xhormms

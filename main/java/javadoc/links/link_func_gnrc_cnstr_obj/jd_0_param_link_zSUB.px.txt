@@ -1,0 +1,19 @@
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+z0PFuncLinkDispFNm_M_fnmDrn	{#insert zvDISPLAY_stFncObjNm}{#insert z0PFuncLinkPapPP_M_fnmDrnDsp}	z0PFuncLinkDispFNm_M_fnmDrn
+z0PFuncLinkDsplyYmkPapES_M_fnmDrn	{#insert zvDISPLAY_stYmk}{#insert z0PFuncLinkPapES_M_fnmDrnDsp}	z0PFuncLinkDsplyYmkPapES_M_fnmDrn
+z0PFuncLinkPapPP_M_fnmDrnDsp	{#SETPHRASE -description zvPAP_PRNS_ES -content () -autotext zvPAP_PRNS_ES -folder ctvv_folder}{#insert z0PFuncLink_M_fnmPapDrnDsp}	z0PFuncLinkPapPP_M_fnmDrnDsp
+z0PFuncLinkPapES_M_fnmDrnDsp	{#SETPHRASE -description zvPAP_PRNS_ES -content  -autotext zvPAP_PRNS_ES -folder ctvv_folder}{#insert z0PFuncLink_M_fnmPapDrnDsp}	z0PFuncLinkPapES_M_fnmDrnDsp
+z0PFuncLink_M_fnmPapDrnDsp -- Needs zvDRN, zvFOBJ_NAME, zvDISPLAY, zvPAP_PRNS_ES	{#insert zzObj0PFuncLinkThrFObjNm_M_drnOfm}(){#insert zzzObj0PFuncLinkPostUrlPP}{#insert zvPAP_PRNS_ES}	z0PFuncLink_M_fnmPapDrnDsp
+zvPREK_stL1c -*-	{#insert zCutL1c}{#insert zvPREK_stCB}	zvPREK_stL1c
+zvPREK_stCB -*-	{#SETPHRASE -description zvPREK -content {#INSERTCLIPBOARD} -autotext zvPREK -folder ctvv_folder}	zvPREK_stCB
+zzKflsyn_M_yon -- Needs zvSYNTAX_ON	{#insert {#COND -if {#insert zvSYNTAX_ON} = on -then kflsyn -else z1slp}}	zzKflsyn_M_yon
+zzObj0PFuncLinkThrFObjNm_M_drnOfm	<A HREF={#insert zAscQQ}{#insert zzFuncObjLinkDirFile_M_drnFnm}#{#insert zvFOBJ_NAME}	zzObj0PFuncLinkThrFObjNm_M_drnOfm
+zzSetDrnL1cFObjNmL1w	{#insert zvDRN_stL1c}{#insert zvFOBJ_NAME_stL1w}	zzSetDrnL1cFObjNmL1w
+zzSetDsplyCBDrnL1cFObjNmL1w	{#insert zvDISPLAY_stCB}{#insert zzSetDrnL1cFObjNmL1w}	zzSetDsplyCBDrnL1cFObjNmL1w
+zzSetFObjNmCBDrnL1c	{#insert zvFOBJ_NAME_stCB}{#insert zvDRN_stL1c}	zzSetFObjNmCBDrnL1c
+zzSetFObjNmCBDrnPrekL1cX2	{#insert zzSetFObjNmCBDrnL1c}{#insert zvPREK_stL1c}	zzSetFObjNmCBDrnPrekL1cX2
+zzzEtrPrek2Drn2	{#insert zENTER}{#insert zzzPrek2Drn2}	zzzEtrPrek2Drn2
+zzzObj0PFuncLinkPostUrlPP -- PP='()'	{#insert zAscQQ}>{#insert zvDISPLAY}</A>	zzzObj0PFuncLinkPostUrlPP
+zzzScbDmoDisp	{#SETCLIPBOARD LINK DISPLAY TEXT!!!}	zzzScbDmoDisp
+zzzPrek2Drn2	{#insert zvTST_PRK_FRY2}{#insert zzzDrn2}	zzzPrek2Drn2
+z1PPFuncLinkDispFNmWOptPrek_M_drnFnmPrmsPapPrk -*-	{#insert z1PPFuncLinkDispFNm_M_drnFnmPrmsPap}{#insert zzPostLinkCreatePrekGoBackIfNotESCIDrnH_M_drnPrk}	z1PPFuncLinkDispFNmWOptPrek_M_drnFnmPrmsPapPrk

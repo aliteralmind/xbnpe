@@ -31,6 +31,7 @@ zSelectR2c [2-3]	\\\{#insert zSelectR2c\\\}	xhccs
 (*    2. Word -- xhcw   .   xhc*)
 (*       Alter -- xhcwa   .   xhcw*)
 (*          Cut, delete -- xhcwax   .   xhcwa*)
+zCutL1wBksp	\\\{#insert zCutL1wBksp\\\}	xhcwax
 (*          Other -- xhcwat   .   xhcwa*)
 (*       Move -- xhcwm   .   xhcw*)
 zEndMoveR1L1w	\\\{#insert zEndMoveR1L1w\\\}	xhcwm
@@ -81,23 +82,25 @@ zPasteLinesSortDoc	\\\{#insert zPasteLinesSortDoc\\\}	xhclas
 zSortDialogConfirm	\\\{#insert zSortDialogConfirm\\\}	xhclas
 zSortDialogNoConfirm	\\\{#insert zSortDialogNoConfirm\\\}	xhclas
 zSortDialogSl500Confirm	\\\{#insert zSortDialogSl500Confirm\\\}	xhclas
-(*       Select/copy -- xhclc   .   xhcl*)
-Copy -- xhclcc	.	xhclc
-zClearCBCopyToLineEndGTNext	\\\{#insert zClearCBCopyToLineEndGTNext\\\}	xhclcc
-zCopyEntireLine	\\\{#insert zCopyEntireLine\\\}	xhclcc
-zCopyEntireLineNoNL	\\\{#insert zCopyEntireLineNoNL\\\}	xhclcc
-zCopyToLineEnd	\\\{#insert zCopyToLineEnd\\\}	xhclcc
-zCopyToLineEndGTNext	\\\{#insert zCopyToLineEndGTNext\\\}	xhclcc
-zCopyToLineEndGTPost	\\\{#insert zCopyToLineEndGTPost\\\}	xhclcc
-zCopyToLineHome	\\\{#insert zCopyToLineHome\\\}	xhclcc
-zCopyToLineHomeGTPre	\\\{#insert zCopyToLineHomeGTPre\\\}	xhclcc
-Select-copy -- xhclccs	.	xhclcc
-zSelCopyEntireLineNoNL	\\\{#insert zSelCopyEntireLineNoNL\\\}	xhclccs
-zSelCopyToLineEnd	\\\{#insert zSelCopyToLineEnd\\\}	xhclccs
-zSelCopyToLineHome	\\\{#insert zSelCopyToLineHome\\\}	xhclccs
-zSelCopyUpThr1NonWS	\\\{#insert zSelCopyUpThr1NonWS\\\}	xhclccs
-zSelectEntireLine	\\\{#insert zSelectEntireLine\\\}	xhclc
-zSelectUpThr1NonWS	\\\{#insert zSelectUpThr1NonWS\\\}	xhclc
+(*       Select/copy -- xhcls   .   xhcl*)
+Copy -- xhclsc	.	xhcls
+zClearCBCopyToLineEndGTNext	\\\{#insert zClearCBCopyToLineEndGTNext\\\}	xhclsc
+zCopyEntireLine	\\\{#insert zCopyEntireLine\\\}	xhclsc
+zCopyEntireLineNoNL	\\\{#insert zCopyEntireLineNoNL\\\}	xhclsc
+zCopyToLineEnd	\\\{#insert zCopyToLineEnd\\\}	xhclsc
+zCopyToLineEndGTNext	\\\{#insert zCopyToLineEndGTNext\\\}	xhclsc
+zCopyToLineEndGTPost	\\\{#insert zCopyToLineEndGTPost\\\}	xhclsc
+zCopyToLineHome	\\\{#insert zCopyToLineHome\\\}	xhclsc
+zCopyToLineHomeGTPre	\\\{#insert zCopyToLineHomeGTPre\\\}	xhclsc
+Select-copy -- xhclscp	.	xhclsc
+zSelCopyEntireLineNoNL	\\\{#insert zSelCopyEntireLineNoNL\\\}	xhclscp
+zSelCopyToLineEnd	\\\{#insert zSelCopyToLineEnd\\\}	xhclscp
+zSelCopyToLineHome	\\\{#insert zSelCopyToLineHome\\\}	xhclscp
+zSelCopyThrLineEndNotLastChar	\\\{#insert zSelCopyThrLineEndNotLastChar\\\}	xhclscp
+zSelCopyUpThr1NonWS	\\\{#insert zSelCopyUpThr1NonWS\\\}	xhclscp
+zSelectEntireLine	\\\{#insert zSelectEntireLine\\\}	xhcls
+zSelectUpThr1NonWS	\\\{#insert zSelectUpThr1NonWS\\\}	xhcls
+zSelectThrLineEndNotLastChar	\\\{#insert zSelectThrLineEndNotLastChar\\\}	xhcls
 (*    4. Para -- xhcp   .   xhc*)
 (*          Move -- xhcpm   .   xhcp*)
 (*          Select -- xhcps   .   xhcp*)
@@ -110,9 +113,15 @@ zSelCopyParagraph	\\\{#insert zSelCopyParagraph\\\}	xhcp
 zCBLen	\\\{#insert zCBLen\\\}	xhcsb
 zDbgTxtCBandCONTENTS	\\\{#insert zDbgTxtCBandCONTENTS\\\}	xhcsb
 zInsertCB (for COND/MSGBOX targets)	\\\{#insert zInsertCB\\\}	xhcsb
-zSetCBToCB_CONTENTS -- Restore (cb must not be a phrase-name!)	\\\{#insert zSetCBToCB_CONTENTS\\\}	xhcsb
-zvCB_CONTENTS_stCB -- Save clipboard	\\\{#insert zvCB_CONTENTS_stCB\\\}	xhcsb
 zLowercaseCB	\\\{#insert zLowercaseCB\\\}	xhcsb
+zPasteSelect1Line	\\\{#insert zPasteSelect1Line\\\}	xhcsb
+zPasteSelectAddXmkAtSelEnd	\\\{#insert zPasteSelectAddXmkAtSelEnd\\\}	xhcsb
+zSetCBToCB_CONTENTS -- Restore (cb must not be a phrase-name!)	\\\{#insert zSetCBToCB_CONTENTS\\\}	xhcsb
+zTrimCB	\\\{#insert zTrimCB\\\}	xhcsb
+zvCB_CONTENTS_stCB -- Save clipboard	\\\{#insert zvCB_CONTENTS_stCB\\\}	xhcsb
+zzPasteSelect1LineRDlgOpn	\\\{#insert zzPasteSelect1LineRDlgOpn\\\}	xhcsb
+(*    6. Document, page -- xhcd   .   xhc*)
+(*       Word-wrap -- xhcdw   .   xhcd*)
 (*    7. File -- xhcf   .   xhc*)
 ccdf: zCopySetCurrDirFileNameREoffDown* -- xhcff	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content ccdf:zCopySetCurrDirFileNameREoffDown -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhcf
 ccdr: zCopySetCurrDirREoffDown	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content ccdr:zCopySetCurrDirREoffDown -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhcff
@@ -139,9 +148,9 @@ zDirFileSaveInsfileSelf_M_dirFnm
 
 (*
 Phrase-creators: Other -- xho   .   xh
-XBNPE main directories -- xhoy   .   xho
-zROOT_DIR_XBNPE_PARENT -- xhoym   .   xhoy
-zROOT_DIR_XBNPE_MAIN -- xhoymm   .   xhoym*)
-zXPROOT_DIR_cwlpdf	\\\{#insert zXPROOT_DIR_cwlpdf\\\}	xhoymmc
+XBNPE main directories -- xhor   .   xho
+zROOT_DIR_XBNPE_PARENT -- xhorm   .   xhor
+zROOT_DIR_XBNPE_MAIN -- xhormm   .   xhorm*)
+zXPROOT_DIR_cwlpdf	\\\{#insert zXPROOT_DIR_cwlpdf\\\}	xhormmc
 
 

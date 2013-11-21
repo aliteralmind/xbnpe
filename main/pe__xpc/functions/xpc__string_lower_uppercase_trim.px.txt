@@ -17,24 +17,26 @@ lowbp -- lowb, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zLowbRAW_M_elc}{#inse
 lowbq -- lowb, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zLowbRAW_M_elc}{#insert trmsyn}	lowbq
 lowp -- low, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zLowRAW_M_elc}{#insert trmsyn}	lowp
 lowq -- low, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zLowRAW_M_elc}{#insert trmsyn}	lowq
-trl -- {#TRIMLEFT ...}	{#insert zvESC_LVL_CNT_st0}{#insert zTrlRAW_M_elc}{#insert trmsyn}	trl
-trlb -- {#TRIMLEFT [paste]}	{#insert zvESC_LVL_CNT_st0}{#insert zTrlbRAW_M_elc}{#insert trmsyn}	trlb
-trlbp -- trlb, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zTrlbRAW_M_elc}{#insert trmsyn}	trlbp
-trlbq -- trlb, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zTrlbRAW_M_elc}{#insert trmsyn}	trlbq
-trlp -- trl, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zTrlRAW_M_elc}{#insert trmsyn}	trlp
-trlq -- trl, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zTrlRAW_M_elc}{#insert trmsyn}	trlq
 trm -- {#TRIM ...}	{#insert zvESC_LVL_CNT_st0}{#insert zTrmRAW_M_elc}{#insert trmsyn}	trm
 trmb -- {#TRIM [paste]}	{#insert zvESC_LVL_CNT_st0}{#insert zTrmbRAW_M_elc}{#insert trmsyn}	trmb
 trmbp -- trmb, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zTrmbRAW_M_elc}{#insert trmsyn}	trmbp
 trmbq -- trmb, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zTrmbRAW_M_elc}{#insert trmsyn}	trmbq
+trml -- {#TRIMLEFT ...}	{#insert zvESC_LVL_CNT_st0}{#insert zTrmlRAW_M_elc}{#insert trmsyn}	trml
+trmlb -- {#TRIMLEFT [paste]}	{#insert zvESC_LVL_CNT_st0}{#insert zTrmlbRAW_M_elc}{#insert trmsyn}	trmlb
+trmlbp -- trmlb, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zTrmlbRAW_M_elc}{#insert trmsyn}	trmlbp
+trmlbq -- trmlb, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zTrmlbRAW_M_elc}{#insert trmsyn}	trmlbq
+trmlp -- trml, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zTrmlRAW_M_elc}{#insert trmsyn}	trmlp
+trmlq -- trml, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zTrmlRAW_M_elc}{#insert trmsyn}	trmlq
 trmp -- trm, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zTrmRAW_M_elc}{#insert trmsyn}	trmp
 trmq -- trm, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zTrmRAW_M_elc}{#insert trmsyn}	trmq
-trr -- {#TRIMRIGHT ...}	{#insert zvESC_LVL_CNT_st0}{#insert zTrrRAW_M_elc}{#insert trmsyn}	trr
-trrb -- {#TRIMRIGHT [paste]}	{#insert zvESC_LVL_CNT_st0}{#insert zTrrbRAW_M_elc}{#insert trmsyn}	trrb
-trrbp -- trrb, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zTrrbRAW_M_elc}{#insert trmsyn}	trrbp
-trrbq -- trrb, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zTrrbRAW_M_elc}{#insert trmsyn}	trrbq
-trrp -- trr, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zTrrRAW_M_elc}{#insert trmsyn}	trrp
-trrq -- trr, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zTrrRAW_M_elc}{#insert trmsyn}	trrq
+trmsyn	{#BALLOON -title String: trim, lower, upper (all: '[[p,q]]') -text lo[c,f,w][b]=LOWERCASE[FIRST,WORD]  //  up[c,f,w][b]=UPPERCASE[FIRST,WORD]  //  trm[[l,r]][b]=TRIM[LEFT,RIGHT]  //  [p]=esc'd, [q]=dbly~esc'd (or more)  //  trmtestall  //  xpcsyn}	trmsyn
+trmtestall	{#SETPHRASE -description zvQB_STR_LIST -content {#insert zzPccStrAllMainAbrvs1CQBL} -autotext zvQB_STR_LIST -folder ctvv_folder}{#insert zzTestAllMainPhrsCrtrAbrvs_M_qbl}	trmtestall
+trmr -- {#TRIMRIGHT ...}	{#insert zvESC_LVL_CNT_st0}{#insert zTrmrRAW_M_elc}{#insert trmsyn}	trmr
+trmrb -- {#TRIMRIGHT [paste]}	{#insert zvESC_LVL_CNT_st0}{#insert zTrmrbRAW_M_elc}{#insert trmsyn}	trmrb
+trmrbp -- trmrb, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zTrmrbRAW_M_elc}{#insert trmsyn}	trmrbp
+trmrbq -- trmrb, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zTrmrbRAW_M_elc}{#insert trmsyn}	trmrbq
+trmrp -- trmr, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zTrmrRAW_M_elc}{#insert trmsyn}	trmrp
+trmrq -- trmr, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zTrmrRAW_M_elc}{#insert trmsyn}	trmrq
 upc -- {#UPPERCASE ...}	{#insert zvESC_LVL_CNT_st0}{#insert zUpcRAW_M_elc}{#insert trmsyn}	upc
 upcb -- {#UPPERCASE [paste]}	{#insert zvESC_LVL_CNT_st0}{#insert zUpcbRAW_M_elc}{#insert trmsyn}	upcb
 upcbp -- upcb, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zUpcbRAW_M_elc}{#insert trmsyn}	upcbp
@@ -59,18 +61,16 @@ zLofRAW_M_elc	{#insert zOY_M_elc}#LOWERCASEFIRST {#insert zCY_M_elc}{#insert zzL
 zLofbRAW_M_elc	{#insert zOY_M_elc}#LOWERCASEFIRST {#insert zTPPaste}{#insert zCY_M_elc}	zLofbRAW_M_elc
 zLowRAW_M_elc	{#insert zOY_M_elc}#LOWERCASEWORD {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zLowRAW_M_elc
 zLowbRAW_M_elc	{#insert zOY_M_elc}#LOWERCASEWORD {#insert zTPPaste}{#insert zCY_M_elc}	zLowbRAW_M_elc
-zTrlRAW_M_elc	{#insert zOY_M_elc}#TRIMLEFT {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zTrlRAW_M_elc
-zTrlbRAW_M_elc	{#insert zOY_M_elc}#TRIMLEFT {#insert zTPPaste}{#insert zCY_M_elc}	zTrlbRAW_M_elc
+zTrmlRAW_M_elc	{#insert zOY_M_elc}#TRIMLEFT {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zTrmlRAW_M_elc
+zTrmlbRAW_M_elc	{#insert zOY_M_elc}#TRIMLEFT {#insert zTPPaste}{#insert zCY_M_elc}	zTrmlbRAW_M_elc
 zTrmRAW_M_elc	{#insert zOY_M_elc}#TRIM {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zTrmRAW_M_elc
 zTrmbRAW_M_elc	{#insert zOY_M_elc}#TRIM {#insert zTPPaste}{#insert zCY_M_elc}	zTrmbRAW_M_elc
-zTrrRAW_M_elc	{#insert zOY_M_elc}#TRIMRIGHT {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zTrrRAW_M_elc
-zTrrbRAW_M_elc	{#insert zOY_M_elc}#TRIMRIGHT {#insert zTPPaste}{#insert zCY_M_elc}	zTrrbRAW_M_elc
+zTrmrRAW_M_elc	{#insert zOY_M_elc}#TRIMRIGHT {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zTrmrRAW_M_elc
+zTrmrbRAW_M_elc	{#insert zOY_M_elc}#TRIMRIGHT {#insert zTPPaste}{#insert zCY_M_elc}	zTrmrbRAW_M_elc
 zUpcRAW_M_elc	{#insert zOY_M_elc}#UPPERCASE {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zUpcRAW_M_elc
 zUpcbRAW_M_elc	{#insert zOY_M_elc}#UPPERCASE {#insert zTPPaste}{#insert zCY_M_elc}	zUpcbRAW_M_elc
 zUpfRAW_M_elc	{#insert zOY_M_elc}#UPPERCASEFIRST {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zUpfRAW_M_elc
 zUpfbRAW_M_elc	{#insert zOY_M_elc}#UPPERCASEFIRST {#insert zTPPaste}{#insert zCY_M_elc}	zUpfbRAW_M_elc
 zUpwRAW_M_elc	{#insert zOY_M_elc}#UPPERCASEWORD {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zUpwRAW_M_elc
 zUpwbRAW_M_elc	{#insert zOY_M_elc}#UPPERCASEWORD {#insert zTPPaste}{#insert zCY_M_elc}	zUpwbRAW_M_elc
-trmsyn	{#BALLOON -title String: trim, lower, upper (all: '[[p,q]]') -text lo[c,f,w][b]=LOWERCASE[FIRST,WORD]  //  up[c,f,w][b]=UPPERCASE[FIRST,WORD]  //  tr[m,l,r][b]=TRIM[LEFT,RIGHT]  //  [p]=esc'd, [q]=dbly~esc'd (or more)  //  trmtestall  //  xpcsyn}	trmsyn
-zzPccStrAllMainAbrvs1CQBL	[Loc][Locb][Lof][Lofb][Low][Lowb][Trl][Trlb][Trm][Trmb][Trr][Trrb][Upc][Upcb][Upf][Upfb][Upw][Upwb]	zzPccStrAllMainAbrvs1CQBL
-trmtestall	{#SETPHRASE -description zvQB_STR_LIST -content {#insert zzPccStrAllMainAbrvs1CQBL} -autotext zvQB_STR_LIST -folder ctvv_folder}{#insert zzTestAllMainPhrsCrtrAbrvs_M_qbl}	trmtestall
+zzPccStrAllMainAbrvs1CQBL	[Loc][Locb][Lof][Lofb][Low][Lowb][Trml][Trmlb][Trm][Trmb][Trmr][Trmrb][Upc][Upcb][Upf][Upfb][Upw][Upwb]	zzPccStrAllMainAbrvs1CQBL

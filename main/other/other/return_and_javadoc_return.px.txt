@@ -1,0 +1,21 @@
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+rnl -- return  null;	return  null;{#insert rtasyn}	rnl
+rnd -- @return  <CODE>null</CODE>	@return  <CODE>null</CODE>{#insert rtasyn}	rnd
+rndb -- @return  <B><CODE>null</CODE></B>	@return  <B><CODE>null</CODE></B>{#insert rtasyn}	rndb
+rta -- return  ...;	return  {#insert zYmark};{#insert zYUp}{#insert rtasyn}	rta
+rtab -- return  [paste];	return  {#insert zTPPaste};{#insert rtasyn}	rtab
+rtasyn	{#BALLOON -title Syntax: return & @return -text {#insert zzRtasyns2of4}=..., {#insert zzRtasyns3of4}=@..., {#insert zzRtasyns1of4}=null, {#insert zzRtasyns4of4}=false, this, true  //  [b]=paste, [d]=@return (JavaDoc), [c]=CODE~d   //  rtasyn  //  See: javasyn}	rtasyn
+rtd -- @return  ...	@return  {#insert zYThenSelect}{#insert rtasyn}	rtd
+rtdb -- @return  [paste]	@return  {#insert zTPPaste}{#insert rtasyn}	rtdb
+rtdbc -- @return  <CODE>[paste]</CODE>	@return  <CODE>{#insert zTPPaste}</CODE>{#insert rtasyn}	rtdbc
+rtdc -- @return  <CODE>...</CODE>	@return  {#insert zYCddThenSelect}{#insert rtasyn}	rtdc
+rtf -- return  false;	return  false;{#insert rtasyn}	rtf
+rtfd -- @return  <CODE>false</CODE>	@return  <CODE>false</CODE>{#insert rtasyn}	rtfd
+rth -- return  this;	return  this;{#insert rtasyn}	rth
+rthd -- @return  <I><CODE>this</CODE></I>	@return  <I><CODE>this</CODE></I>{#insert rtasyn}	rthd
+rtt -- return  true;	return  true;{#insert rtasyn}	rtt
+rttd -- @return  <CODE>true</CODE>	@return  <CODE>true</CODE>{#insert rtasyn}	rttd
+zzRtasyns1of4	rn[d,l][b]	zzRtasyns1of4
+zzRtasyns2of4	rta[b]	zzRtasyns2of4
+zzRtasyns3of4	rtd[b][c]	zzRtasyns3of4
+zzRtasyns4of4	rt[f,h,t][d]	zzRtasyns4of4

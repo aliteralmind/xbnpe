@@ -5,8 +5,8 @@ blnm -- boolean,_	boolean, {#insert blbsyn}	blnm
 cham -- char,_	char, {#insert blbsyn}	cham
 chr -- Character	Character{#insert blbsyn}	chr
 chrm -- Character,_	Character, {#insert blbsyn}	chrm
-csq -- CharSequence	CharSequence{#insert blbsyn}	csq
-csqm -- CharSequence,_	CharSequence, {#insert blbsyn}	csqm
+chq -- CharSequence	CharSequence{#insert blbsyn}	chq
+chqm -- CharSequence,_	CharSequence, {#insert blbsyn}	chqm
 inm -- int,_	int, {#insert blbsyn}	inm
 int -- Integer	Integer{#insert blbsyn}	int
 obj -- Object	Object{#insert blbsyn}	obj
@@ -15,6 +15,6 @@ std -- StringBuilder	StringBuilder{#insert blbsyn}	std
 stdm -- StringBuilder,_	StringBuilder, {#insert blbsyn}	stdm
 stf -- StringBuffer	StringBuffer{#insert blbsyn}	stf
 stfm -- StringBuffer,_	StringBuffer, {#insert blbsyn}	stfm
-str -- String	String{#insert blbsyn}	str
-strm -- String,_	String, {#insert blbsyn}	stfm
-blbsyn	{#BALLOON -title Syntax: java.lang type names -text blb[m]=Boolean ([m]=comma-space); blnm=boolean,_;, chr[m]=Character,_; cham=char,_; int[m]; inm=int,_; obj[m]=Object; csq=CharSequence; st[r,d,f][m]=String[Buffer,Builder]  //  javasyn}	blbsyn
+srt -- String	String{#insert blbsyn}	srt
+srtm -- String,_	String, {#insert blbsyn}	srtm
+blbsyn	{#BALLOON -title Syntax: java.lang type names -text blb[m]=Boolean ([m]=comma-space); blnm=boolean,_;, chr[m]=Character,_; cham=char,_; int[m]; inm=int,_; obj[m]=Object; chq=CharSequence; sr[t,d,f][m]=String[Buffer,Builder]  //  javasyn}	blbsyn
