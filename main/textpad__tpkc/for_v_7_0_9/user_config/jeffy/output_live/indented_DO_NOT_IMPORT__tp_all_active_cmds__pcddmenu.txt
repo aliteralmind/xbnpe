@@ -73,22 +73,22 @@ Phrase-creators: XBN-PhraseExpress -- xh   .   zXbnpeCmdPopupRoot
 					zTPIndent	\\\{#insert zTPIndent\\\}	xhclai
 					zTPUnindent	\\\{#insert zTPUnindent\\\}	xhclai
 (*          Other -- xhclat   .   xhcla*)
-					zTPDupLine [BS]	\\\{#insert zTPDupLine\\\}	xhclat
 					zTPNewLineAfter	\\\{#insert zTPNewLineAfter\\\}	xhclat
 					zTPNewLineBefore	\\\{#insert zTPNewLineBefore\\\}	xhclat
 					zTPSplitLines	\\\{#insert zTPSplitLines\\\}	xhclat
 (*          Sort -- xhclas   .   xhcla*)
 					zTPSortDlgOpen	\\\{#insert zTPSortDlgOpen\\\}	xhclas
+				zTPDupLine [BS]	\\\{#insert zTPDupLine\\\}	xhcla
 (*       Move -- xhclm   .   xhcl*)
 				zTPLineDown	\\\{#insert zTPLineDown\\\}	xhclm
 				zTPLineEnd	\\\{#insert zTPLineEnd\\\}	xhclm
 				zTPLineUp	\\\{#insert zTPLineUp\\\}	xhclm
-(*       Select -- xhclc   .   xhcl*)
-				zTPLineDownExtend	\\\{#insert zTPLineDownExtend\\\}	xhclc
-				zTPLineEndExtend	\\\{#insert zTPLineEndExtend\\\}	xhclc
-				zTPLineLeftExtend	\\\{#insert zTPLineLeftExtend\\\}	xhclc
-				zTPLineUpExtend	\\\{#insert zTPLineUpExtend\\\}	xhclc
-				zTPSelectLine	\\\{#insert zTPSelectLine\\\}	xhclc
+(*       Select, copy -- xhcls   .   xhcl*)
+				zTPLineDownExtend	\\\{#insert zTPLineDownExtend\\\}	xhcls
+				zTPLineEndExtend	\\\{#insert zTPLineEndExtend\\\}	xhcls
+				zTPLineLeftExtend	\\\{#insert zTPLineLeftExtend\\\}	xhcls
+				zTPLineUpExtend	\\\{#insert zTPLineUpExtend\\\}	xhcls
+				zTPSelectLine	\\\{#insert zTPSelectLine\\\}	xhcls
 (*    4. Para -- xhcp   .   xhc*)
 (*       Move -- xhcpm   .   xhcp*)
 				zTPParaDown	\\\{#insert zTPParaDown\\\}	xhcpm

@@ -1,0 +1,244 @@
+(*
+*DUPLICATE* this document, unindent every line in it, then import it with the following settings:
+- No prefix
+- Manual confirmation
+- Assign the key-command (hotkey) to the first phrase
+*)
+(*
+Phrase-creators: XBN-PhraseExpress -- xh   .   zXbnpeCmdPopupRoot
+Phrase-creators: TextPad-specific -- xht   .   xh*)
+Macros -- xhtm	.	xht
+zTPMacroMultiplay	\\\{#insert zTPMacroMultiplay\\\}	xhtm
+zTPMacroPlay	\\\{#insert zTPMacroPlay\\\}	xhtm
+zTPMacroRecordToggle	\\\{#insert zTPMacroRecordToggle\\\}	xhtm
+(*    Other -- xhtt   .   xht*)
+zTPActivateExplorer	\\\{#insert zTPActivateExplorer\\\}	xhtt
+zTPPopupContext	\\\{#insert zTPPopupContext\\\}	xhtt
+Sub-windows -- xhtw	.	xht
+Cliplib -- xhtwp	.	xhtw
+zTPActivateClipLib	\\\{#insert zTPActivateClipLib\\\}	xhtwp
+zTPViewClipLib	\\\{#insert zTPViewClipLib\\\}	xhtwp
+Document selector -- xhtl	.	xht
+zTPActivateSelector	\\\{#insert zTPActivateSelector\\\}	xhtl
+zTPViewDocSelector	\\\{#insert zTPViewDocSelector\\\}	xhtl
+Main document -- xhtd	.	xht
+zTPToggleSyncScroll	\\\{#insert zTPToggleSyncScroll\\\}	xhtd
+zTPViewHScrollbar	\\\{#insert zTPViewHScrollbar\\\}	xhtd
+zTPViewLineNumbers	\\\{#insert zTPViewLineNumbers\\\}	xhtd
+zTPViewVScrollbar	\\\{#insert zTPViewVScrollbar\\\}	xhtd
+zTPVisibleSpaces	\\\{#insert zTPVisibleSpaces\\\}	xhtd
+Tools -- xhtt	.	xht
+zTPActivateToolOutput	\\\{#insert zTPActivateToolOutput\\\}	xhtt
+zTPViewToolOutput	\\\{#insert zTPViewToolOutput\\\}	xhtt
+Specific -- xhtts	.	xhtt
+zTPToolExplorer	\\\{#insert zTPToolExplorer\\\}	xhtts
+zTPToolHTMLValidate	\\\{#insert zTPToolHTMLValidate\\\}	xhtts
+zTPToolSpell	\\\{#insert zTPToolSpell\\\}	xhtts
+zTPToolCompareFiles	\\\{#insert zTPToolCompareFiles\\\}	xht
+zTPPrefsDlgOpen [BS]	\\\{#insert zTPPrefsDlgOpen\\\}	xht
+(* PC: CWLPDF: Char, word, line, para, doc, file -- xhc   .   xh*)
+(*    1. Char -- xhcc   .   xhc*)
+(*       Alter -- xhcca   .   xhcc*)
+zTPDeleteL1c	\\\{#insert zTPDeleteL1c\\\}	xhcca
+zTPDeleteR1c	\\\{#insert zTPDeleteR1c\\\}	xhcca
+(*       Move -- xhccm   .   xhcc*)
+zTPMoveL1c	\\\{#insert zTPMoveL1c\\\}	xhccm
+zTPMoveR1c	\\\{#insert zTPMoveR1c\\\}	xhccm
+(*       Select -- xhccs   .   xhcc*)
+zTPSelectL1c	\\\{#insert zTPSelectL1c\\\}	xhccs
+zTPSelectR1c	\\\{#insert zTPSelectR1c\\\}	xhccs
+(*    2. Word -- xhcw   .   xhc*)
+(*       Alter -- xhcwa   .   xhcw*)
+(*          Cut, delete -- xhcwax   .   xhcwa*)
+TextPad built-ins -- xhcwaxt	.	xhcwax
+zTPDeleteL1w	\\\{#insert zTPDeleteL1w\\\}	xhcwaxt
+zTPDeleteR1w	\\\{#insert zTPDeleteR1w\\\}	xhcwaxt
+(*          Other -- xhcwat   .   xhcwa*)
+zTPTransposeWords	\\\{#insert zTPTransposeWords\\\}	xhcwat
+(*       Move -- xhcwm   .   xhcw*)
+zTPMoveL1w	\\\{#insert zTPMoveL1w\\\}	xhcwm
+zTPMoveR1w [BS]	\\\{#insert zTPMoveR1w\\\}	xhcwm
+zTPWordLeftEnd	\\\{#insert zTPWordLeftEnd\\\}	xhcwm
+zTPWordRight	\\\{#insert zTPWordRight\\\}	xhcwm
+(*       Select & copy -- xhcws   .   xhcw*)
+Current word -- xhcwsr	.	xhcws
+(*          Select -- xhcwss   .   xhcws*)
+zTPSelectL1w [BS]	\\\{#insert zTPSelectL1w\\\}	xhcwss
+zTPSelectR1w [BS]	\\\{#insert zTPSelectR1w\\\}	xhcwss
+zTPWordLeftEndExtend	\\\{#insert zTPWordLeftEndExtend\\\}	xhcwss
+zTPWordRightExtend	\\\{#insert zTPWordRightExtend\\\}	xhcwss
+(*          Select-copy -- xhcwsp   .   xhcws*)
+(*          Copy -- xhcwsc   .   xhcws*)
+(*    3. Line -- xhcl   .   xhc*)
+(*       Alter -- xhcla   .   xhcl*)
+(*          Cut, copy, delete -- xhclax   .   xhcla*)
+zTPDelToEndOfLine	\\\{#insert zTPDelToEndOfLine\\\}	xhclax
+(*          Indent -- xhclai   .   xhcla*)
+zTPIndent	\\\{#insert zTPIndent\\\}	xhclai
+zTPUnindent	\\\{#insert zTPUnindent\\\}	xhclai
+(*          Other -- xhclat   .   xhcla*)
+zTPJoinLines	\\\{#insert zTPJoinLines\\\}	xhclat
+zTPSplitLines	\\\{#insert zTPSplitLines\\\}	xhclat
+(*          Sort -- xhclas   .   xhcla*)
+zTPSortDlgOpen	\\\{#insert zTPSortDlgOpen\\\}	xhclas
+zTPDupLine [BS]	\\\{#insert zTPDupLine\\\}	xhcla
+(*       Move -- xhclm   .   xhcl*)
+zTPLineDown	\\\{#insert zTPLineDown\\\}	xhclm
+zTPLineEnd	\\\{#insert zTPLineEnd\\\}	xhclm
+zTPLineHome	\\\{#insert zTPLineHome\\\}	xhclm
+zTPLineUp	\\\{#insert zTPLineUp\\\}	xhclm
+(*       Select, copy -- xhcls   .   xhcl*)
+zTPLineDownExtend	\\\{#insert zTPLineDownExtend\\\}	xhcls
+zTPLineEndExtend	\\\{#insert zTPLineEndExtend\\\}	xhcls
+zTPLineHomeExtend	\\\{#insert zTPLineHomeExtend\\\}	xhcls
+zTPLineUpExtend	\\\{#insert zTPLineUpExtend\\\}	xhcls
+(*    4. Para -- xhcp   .   xhc*)
+(*       Move -- xhcpm   .   xhcp*)
+zTPParaDown	\\\{#insert zTPParaDown\\\}	xhcpm
+zTPParaUp	\\\{#insert zTPParaUp\\\}	xhcpm
+(*       Select -- xhcps   .   xhcp*)
+zTPParaDownExtend	\\\{#insert zTPParaDownExtend\\\}	xhcps
+zTPParaUpExtend	\\\{#insert zTPParaUpExtend\\\}	xhcps
+(*    5. Selection, clipboard, undo/redo -- xhcs   .   xhc*)
+(*       Clipboard -- xhcsb   .   xhcs*)
+(*          Copy & cut -- xhcsbc   .   xhcsb*)
+zTPCopy	\\\{#insert zTPCopy\\\}	xhcsbc
+zTPCopyAppend	\\\{#insert zTPCopyAppend\\\}	xhcsbc
+zTPCut [BS]	\\\{#insert zTPCut\\\}	xhcsbc
+zTPCutAppend	\\\{#insert zTPCutAppend\\\}	xhcsbc
+(*          Paste -- xhcsbp   .   xhcsb*)
+zTPPaste [BS]	\\\{#insert zTPPaste\\\}	xhcsbp
+(*       Undo & redo -- xhcsu   .   xhcs*)
+zTPRedo	\\\{#insert zTPRedo\\\}	xhcsu
+zTPRedoAll	\\\{#insert zTPRedoAll\\\}	xhcsu
+zTPToggleUndo	\\\{#insert zTPToggleUndo\\\}	xhcsu
+zTPUndo	\\\{#insert zTPUndo\\\}	xhcsu
+zTPUndoAll	\\\{#insert zTPUndoAll\\\}	xhcsu
+(*       Alter selection (& meta) -- xhcss   .   xhcs*)
+(*          Change case -- xhcssc   .   xhcss*)
+zTPLowerCase	\\\{#insert zTPLowerCase\\\}	xhcssc
+zTPSentenceCase	\\\{#insert zTPSentenceCase\\\}	xhcssc
+zTPTitleCase	\\\{#insert zTPTitleCase\\\}	xhcssc
+zTPToggleCase	\\\{#insert zTPToggleCase\\\}	xhcssc
+zTPUpperCase	\\\{#insert zTPUpperCase\\\}	xhcssc
+(*          Other -- xhcsst   .   xhcss*)
+Align -- xhcssta	.	xhcsst
+zTPAlignCenter	\\\{#insert zTPAlignCenter\\\}	xhcssta
+zTPAlignRight	\\\{#insert zTPAlignRight\\\}	xhcssta
+zTPSelBeginStream	\\\{#insert zTPSelBeginStream\\\}	xhcsst
+(*          Block selection mode -- xhcssk   .   xhcss*)
+zTPToggleBlockSelect	\\\{#insert zTPToggleBlockSelect\\\}	xhcssk
+zTPReformatSelection	\\\{#insert zTPReformatSelection\\\}	xhcss
+(*    6. Document, page -- xhcd   .   xhc*)
+(*       Document-windows -- xhcdo   .   xhcd*)
+(*          Go-to specific -- xhcdog   .   xhcdo*)
+Numbered -- xhcdogn	.	xhcdog
+Other -- xhcdoo	.	xhcdo
+zTPWindowPaneNext	\\\{#insert zTPWindowPaneNext\\\}	xhcdoo
+zTPWindowPanePrev	\\\{#insert zTPWindowPanePrev\\\}	xhcdoo
+Other -- xhcdt	.	xhcd
+Right margin -- xhcdtm	.	xhcdt
+zTPRightMarginSet	\\\{#insert zTPRightMarginSet\\\}	xhcdtm
+zTPClearAll	\\\{#insert zTPClearAll\\\}	xhcdt
+zTPPageBreak	\\\{#insert zTPPageBreak\\\}	xhcdt
+(*       Page up/down left/right -- xhcdp   .   xhcd*)
+Extend -- xhcdpx	.	xhcdp
+zTPPageDownExtend	\\\{#insert zTPPageDownExtend\\\}	xhcdpx
+zTPPageLeftExtend	\\\{#insert zTPPageLeftExtend\\\}	xhcdpx
+zTPPageRightExtend	\\\{#insert zTPPageRightExtend\\\}	xhcdpx
+zTPPageUpExtend	\\\{#insert zTPPageUpExtend\\\}	xhcdpx
+zTPPageDown	\\\{#insert zTPPageDown\\\}	xhcdp
+zTPPageLeft	\\\{#insert zTPPageLeft\\\}	xhcdp
+zTPPageRight	\\\{#insert zTPPageRight\\\}	xhcdp
+zTPPageUp	\\\{#insert zTPPageUp\\\}	xhcdp
+(*       Select-all -- xhcda   .   xhcd*)
+zTPSelectAll [BS]	\\\{#insert zTPSelectAll\\\}	xhcda
+(*       Top & bottom -- xhcdm   .   xhcd*)
+zTPGTDocBottom	\\\{#insert zTPGTDocBottom\\\}	xhcdm
+zTPSTDocBottom	\\\{#insert zTPSTDocBottom\\\}	xhcdm
+zTPGTDocTop [BS]	\\\{#insert zTPGTDocTop\\\}	xhcdm
+zTPSTDocTop	\\\{#insert zTPSTDocTop\\\}	xhcdm
+(*       Word-wrap -- xhcdw   .   xhcd*)
+zTPToggleWW [BS] (tw[p])	\\\{#insert zTPToggleWW\\\}	xhcdw
+(*    7. File -- xhcf   .   xhc*)
+(*       Close -- xhcfc   .   xhcf*)
+zTPFileClose [BS]	\\\{#insert zTPFileClose\\\}	xhcfc
+(*       New -- xhcfn   .   xhcf*)
+zTPFileNew [BS]	\\\{#insert zTPFileNew\\\}	xhcfn
+(*       Open -- xhcfo   .   xhcf*)
+zTPFileOpen [BS]	\\\{#insert zTPFileOpen\\\}	xhcfo
+zTPFileOpenSelPath	\\\{#insert zTPFileOpenSelPath\\\}	xhcfo
+zTPFileQOpen [BS]	\\\{#insert zTPFileQOpen\\\}	xhcfo
+(*       Save -- xhcfs   .   xhcf*)
+TextPad built-ins -- xhcfst	.	xhcfs
+zTPFileSave [BS]	\\\{#insert zTPFileSave\\\}	xhcfst
+zTPFileSaveAll	\\\{#insert zTPFileSaveAll\\\}	xhcfst
+(*          Save as -- xhcfsa   .   xhcfs*)
+zTPFileSaveAs	\\\{#insert zTPFileSaveAs\\\}	xhcfsa
+(*       Other -- xhcft   .   xhcf*)
+Print -- xhcftp	.	xhcft
+zTPFilePrint	\\\{#insert zTPFilePrint\\\}	xhcftp
+zTPFilePrintPreview	\\\{#insert zTPFilePrintPreview\\\}	xhcftp
+Other -- xhcftt	.	xhcft
+zTPFile... -- xhcfttf	(*fidmb never processes this file. If it did, this comment would be required in order for it to NOT recognize this line.*).	xhcftt
+zTPFileManager [BS]	\\\{#insert zTPFileManager\\\}	xhcfttf
+zTPFileStatistics	\\\{#insert zTPFileStatistics\\\}	xhcfttf
+zTPInsertFile	\\\{#insert zTPInsertFile\\\}	xhcftt
+zTPToggleInsertMode	\\\{#insert zTPToggleInsertMode\\\}	xhcftt
+zTPToggleReadOnly	\\\{#insert zTPToggleReadOnly\\\}	xhcftt
+(*    8. Other -- xhct   .   xhc*)
+zTPTranspose	\\\{#insert zTPTranspose\\\}	xhct
+zTPViewEnd	\\\{#insert zTPViewEnd\\\}	xhct
+zTPViewStart	\\\{#insert zTPViewStart\\\}	xhct
+(* Phrase-creators: Other -- xho   .   xh*)
+View -- xhov	.	xho
+zTPLineScrollDown	\\\{#insert zTPLineScrollDown\\\}	xhov
+zTPLineScrollUp	\\\{#insert zTPLineScrollUp\\\}	xhov
+Date & time -- xhod	.	xho
+zTPPopupDateTime	\\\{#insert zTPPopupDateTime\\\}	xhod
+(* Phrase-creators: Search & replace -- xhs   .   xh*)
+(*    SNR: Bookmarks -- xhsm   .   xhs*)
+(*       All bookmarks -- xhsma   .   xhsm*)
+zTPBookmarkClearAll	\\\{#insert zTPBookmarkClearAll\\\}	xhsma
+zTPBookmarkCopyAll [BS]	\\\{#insert zTPBookmarkCopyAll\\\}	xhsma
+zTPBookmarkCutAll [BS]	\\\{#insert zTPBookmarkCutAll\\\}	xhsma
+zTPBookmarkToggle	\\\{#insert zTPBookmarkToggle\\\}	xhsm
+zTPBookmarkGTNext [BS]	\\\{#insert zTPBookmarkGTNext\\\}	xhsm
+zTPBookmarkGTPrev	\\\{#insert zTPBookmarkGTPrev\\\}	xhsm
+(*    SNR: Brackets -- xhse   .   xhs*)
+zTPMatchBracket	\\\{#insert zTPMatchBracket\\\}	xhse
+zTPMatchBracketExtend	\\\{#insert zTPMatchBracketExtend\\\}	xhse
+(*    SNR: Find -- xhsf   .   xhs*)
+(*       Buttons -- xhsfb (& next/prev)   .   xhsf*)
+zTPFindNext [BS]	\\\{#insert zTPFindNext\\\}	xhsfb
+zTPFindPrev	\\\{#insert zTPFindPrev\\\}	xhsfb
+(*       Flags -- xhsff   .   xhsf*)
+(*          Set 1 on/off -- xhsffs (Out-of-dlg only, TextPad built-ins)   .   xhsff*)
+zTPFindFlagMCoff	\\\{#insert zTPFindFlagMCoff\\\}	xhsffs
+zTPFindFlagMCon	\\\{#insert zTPFindFlagMCon\\\}	xhsffs
+zTPFindFlagREoff	\\\{#insert zTPFindFlagREoff\\\}	xhsffs
+zTPFindFlagREon	\\\{#insert zTPFindFlagREon\\\}	xhsffs
+zTPFindFlagWWoff	\\\{#insert zTPFindFlagWWoff\\\}	xhsffs
+zTPFindFlagWWon	\\\{#insert zTPFindFlagWWon\\\}{#insert zFindWWFlagOnWarningDlg}	xhsffs
+Incremental find -- xhsfr	.	xhsf
+zTPIncrementalFind	\\\{#insert zTPIncrementalFind\\\}	xhsfr
+(*       Open -- xhsfo   .   xhsf*)
+zTPFindDlgOpen [BS]	\\\{#insert zTPFindDlgOpen\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfo
+(*       SNR: Find In Files -- xhsfi   .   xhsf*)
+(*          Open -- xhsfio   .   xhsfi*)
+zTPFFindDlgOpen [BS]	\\\{#insert zTPFFindDlgOpen\\\}{#insert zFFCloseYNPrompt}	xhsfio
+(*          Search results -- xhsfir   .   xhsfi*)
+zTPActivateSearchResults	\\\{#insert zTPActivateSearchResults\\\}	xhsfir
+zTPSearchJumpNext	\\\{#insert zTPSearchJumpNext\\\}	xhsfir
+zTPSearchJumpPrev	\\\{#insert zTPSearchJumpPrev\\\}	xhsfir
+zTPViewSearchResults	\\\{#insert zTPViewSearchResults\\\}	xhsfi
+(*    SNR: Replace -- xhsr   .   xhs*)
+(*       Buttons -- xhsrb   .   xhsr*)
+zTPReplaceNext	\\\{#insert zTPReplaceNext\\\}	xhsrb
+(*       Open -- xhsro   .   xhsr*)
+zTPRplcDlgOpen [BS]	\\\{#insert zTPRplcDlgOpen\\\}{#insert zRplcWAndCloseYNPrompt}	xhsro
+(*       Other -- xhsrt   .   xhsr*)
+(*    SNR: Go-to dialog -- xhsg   .   xhs*)
+(*       Open -- xhsgo   .   xhsg*)
+Open w/ specific unit -- xhsgof	.	xhsgo
+zTPGTDlgOpen [BS]	\\\{#insert zTPGTDlgOpen\\\}	xhsgo

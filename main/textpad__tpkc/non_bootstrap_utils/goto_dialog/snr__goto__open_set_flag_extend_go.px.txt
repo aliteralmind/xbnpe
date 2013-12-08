@@ -3,5 +3,5 @@ zGTDlgOpenLineExtendGo_M_gtn -- Needs zvGT_REL_NUM	{#insert zGTDlgOpenFlagLineEx
 zGTDlgOpenColumnExtendGo_M_gtn	{#insert zGTDlgOpenFlagColumnExtend}{#insert zvGT_REL_NUM}{#sleep 10}{#insert zGTDlgGoClose}	zGTDlgOpenColumnExtendGo_M_gtn
 zGTDlgOpenPageExtendGo_M_gtn	{#insert zGTDlgOpenFlagPageExtend}{#insert zvGT_REL_NUM}{#sleep 10}{#insert zGTDlgGoClose}	zGTDlgOpenPageExtendGo_M_gtn
 zGTDlgOpenByteExtendGo_M_gtn	{#insert zGTDlgOpenFlagByteExtend}{#insert zvGT_REL_NUM}{#sleep 10}{#insert zGTDlgGoClose}	zGTDlgOpenByteExtendGo_M_gtn
-zGTDlgOpenBookmarkExtendGo_M_gtn	{#insert zGTDlgOpenFlagBookmarkExtend}{#insert zvGT_REL_NUM}{#sleep 10}{#insert zGTDlgGoClose}	zGTDlgOpenBookmarkExtendGo_M_gtn
+zGTDlgOpenBookmarkExtendGo	{#insert zGTDlgOpenFlagBookmarkExtend}{#sleep 10}{#insert zGTDlgGoClose}	zGTDlgOpenBookmarkExtendGo
 zGTDlgOpenExtendGo_M_gtn	{#insert zGTDlgOpenFlagExtend}{#insert zvGT_REL_NUM}{#sleep 10}{#insert zGTDlgGoClose}	zGTDlgOpenExtendGo_M_gtn

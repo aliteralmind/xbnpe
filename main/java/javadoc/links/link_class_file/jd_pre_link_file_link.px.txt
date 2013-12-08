@@ -7,3 +7,9 @@ prr -- prf, display 'super'	{#insert zPostLinkCreatePrekGoBackRLwr}{#insert prfs
 prri -- prr, italicized	{#insert zPostLinkCreatePrekGoBackRUpr}{#insert prfsyn}	prri
 pry -- pry, display y-mark	{#insert zPostLinkCreatePrekGoBackYLwr}{#insert prfsyn}	pry
 pryi -- pry, italicized	{#insert zPostLinkCreatePrekGoBackYUpr}{#insert prfsyn}	pryi
+zvPREK_stFUpper -*-	{#SETPHRASE -description zvPREK -content F -autotext zvPREK -folder ctvv_folder}	zvPREK_stFUpper
+zvPREK_stFLower -*-	{#SETPHRASE -description zvPREK -content f -autotext zvPREK -folder ctvv_folder}	zvPREK_stFLower
+zvPREK_stRUpper -*-	{#SETPHRASE -description zvPREK -content R -autotext zvPREK -folder ctvv_folder}	zvPREK_stRUpper
+zvPREK_stRLower -*-	{#SETPHRASE -description zvPREK -content r -autotext zvPREK -folder ctvv_folder}	zvPREK_stRLower
+zvPREK_stYUpper -*-	{#SETPHRASE -description zvPREK -content Y -autotext zvPREK -folder ctvv_folder}	zvPREK_stYUpper
+zvPREK_stYLower -*-	{#SETPHRASE -description zvPREK -content y -autotext zvPREK -folder ctvv_folder}	zvPREK_stYLower

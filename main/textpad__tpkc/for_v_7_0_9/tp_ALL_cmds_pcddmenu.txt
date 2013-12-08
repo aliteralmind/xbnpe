@@ -199,7 +199,7 @@ Phrase-creators: XBN-PhraseExpress -- xh   .   zXbnpeCmdPopupRoot
 (*          Copy -- xhcwsc   .   xhcws*)
 (*    3. Line -- xhcl   .   xhc*)
 (*       Alter -- xhcla   .   xhcl*)
-(*          Cut, copy, delete -- xhclax   .   xhcla*)
+(*          Cut, delete -- xhclax   .   xhcla*)
 					zTPCopyLine	\\\{#insert zTPCopyLine\\\}	xhclax
 					zTPCopyLineAppend	\\\{#insert zTPCopyLineAppend\\\}	xhclax
 					zTPCutLine	\\\{#insert zTPCutLine\\\}	xhclax
@@ -210,27 +210,27 @@ Phrase-creators: XBN-PhraseExpress -- xh   .   zXbnpeCmdPopupRoot
 					zTPIndent	\\\{#insert zTPIndent\\\}	xhclai
 					zTPUnindent	\\\{#insert zTPUnindent\\\}	xhclai
 (*          Other -- xhclat   .   xhcla*)
-					zTPDupLine [BS]	\\\{#insert zTPDupLine\\\}	xhclat
 					zTPJoinLines	\\\{#insert zTPJoinLines\\\}	xhclat
 					zTPNewLineAfter	\\\{#insert zTPNewLineAfter\\\}	xhclat
 					zTPNewLineBefore	\\\{#insert zTPNewLineBefore\\\}	xhclat
 					zTPSplitLines	\\\{#insert zTPSplitLines\\\}	xhclat
 (*          Sort -- xhclas   .   xhcla*)
 					zTPSortDlgOpen	\\\{#insert zTPSortDlgOpen\\\}	xhclas
+				zTPDupLine [BS]	\\\{#insert zTPDupLine\\\}	xhcla
 (*       Move -- xhclm   .   xhcl*)
 				zTPLineDown	\\\{#insert zTPLineDown\\\}	xhclm
 				zTPLineEnd	\\\{#insert zTPLineEnd\\\}	xhclm
 				zTPLineHome	\\\{#insert zTPLineHome\\\}	xhclm
 				zTPLineLeft	\\\{#insert zTPLineLeft\\\}	xhclm
 				zTPLineUp	\\\{#insert zTPLineUp\\\}	xhclm
-(*       Select -- xhclc   .   xhcl*)
-				zTPLineDownExtend	\\\{#insert zTPLineDownExtend\\\}	xhclc
-				zTPLineEndExtend	\\\{#insert zTPLineEndExtend\\\}	xhclc
-				zTPLineHomeExtend	\\\{#insert zTPLineHomeExtend\\\}	xhclc
-				zTPLineLeftExtend	\\\{#insert zTPLineLeftExtend\\\}	xhclc
-				zTPLineUpExtend	\\\{#insert zTPLineUpExtend\\\}	xhclc
-				zTPSelBeginLine	\\\{#insert zTPSelBeginLine\\\}	xhclc
-				zTPSelectLine	\\\{#insert zTPSelectLine\\\}	xhclc
+(*       Select, copy -- xhcls   .   xhcl*)
+				zTPLineDownExtend	\\\{#insert zTPLineDownExtend\\\}	xhcls
+				zTPLineEndExtend	\\\{#insert zTPLineEndExtend\\\}	xhcls
+				zTPLineHomeExtend	\\\{#insert zTPLineHomeExtend\\\}	xhcls
+				zTPLineLeftExtend	\\\{#insert zTPLineLeftExtend\\\}	xhcls
+				zTPLineUpExtend	\\\{#insert zTPLineUpExtend\\\}	xhcls
+				zTPSelBeginLine	\\\{#insert zTPSelBeginLine\\\}	xhcls
+				zTPSelectLine	\\\{#insert zTPSelectLine\\\}	xhcls
 (*    4. Para -- xhcp   .   xhc*)
 (*       Move -- xhcpm   .   xhcp*)
 				zTPParaDown	\\\{#insert zTPParaDown\\\}	xhcpm

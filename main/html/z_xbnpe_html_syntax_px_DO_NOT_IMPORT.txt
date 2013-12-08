@@ -3,4 +3,5 @@ XBN-PhraseExpress: HTML project (htmlsyn, xpesyn)
 hqqsyn: Quotes
 pbrsyn: Line-breaks
 hlusyn: Lists
+hescn: HTML-escape multiple lines (may mess up indentation)
 {#insert zBKSP}

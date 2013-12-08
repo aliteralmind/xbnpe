@@ -1,0 +1,78 @@
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+java.* Fully-qualified package names -- v	java.	ja
+java... -- m (applet, awt, beans, net, rmi, security)	java.	jav
+java.applet.	java.applet.	javm
+java.awt. -- a	java.awt.	javm
+java.awt.color.	java.awt.color.	javma
+java.awt.datatransfer.	java.awt.datatransfer.	javma
+java.awt.dnd. -- d	java.awt.dnd.	javma
+java.awt.dnd.peer.	java.awt.dnd.peer.	javmad
+java.awt.doc-files	java.awt.doc-files	javma
+java.awt.event.	java.awt.event.	javma
+java.awt.font.	java.awt.font.	javma
+java.awt.geom.	java.awt.geom.	javma
+java.awt.im. -- i	java.awt.im.	javma
+java.awt.im.spi.	java.awt.im.spi.	javmai
+java.awt.image. -- m	java.awt.image.	javma
+java.awt.image.renderable.	java.awt.image.renderable.	javmam
+java.awt.peer.	java.awt.peer.	javma
+java.awt.print.	java.awt.print.	javma
+java.beans. -- b	java.beans.	javm
+java.beans.beancontext.	java.beans.beancontext.	javmb
+java.net.	java.net.	javm
+java.rmi. -- r	java.rmi.	javm
+java.rmi.activation.	java.rmi.activation.	javmr
+java.rmi.dgc.	java.rmi.dgc.	javmr
+java.rmi.registry.	java.rmi.registry.	javmr
+java.rmi.server.	java.rmi.server.	javmr
+java.security. -- s	java.security.	javm
+java.security.acl.	java.security.acl.	javms
+java.security.cert.	java.security.cert.	javms
+java.security.interfaces.	java.security.interfaces.	javms
+java.security.spec.	java.security.spec.	javms
+java.io.	java.io.	jav
+java.lang. -- l	java.lang.	jav
+java.lang. -- a	.	javla
+java.lang.annotation.	java.lang.annotation.	javla
+java.lang.doc-files	java.lang.doc-files	javla
+java.lang.instrument.	java.lang.instrument.	javla
+java.lang.management.	java.lang.management.	javla
+java.lang.ref.	java.lang.ref.	javla
+java.lang.reflect.	java.lang.reflect.	javla
+java.lang.Object	java.lang.Object	javl
+java.lang.Boolean	java.lang.Boolean	javl
+java.lang.Character	java.lang.Character	javl
+java.lang.Integer	java.lang.Integer	javl
+java.lang.String... -- s	java.lang.String	javl
+java.lang.StringBuffer	java.lang.StringBuffer	javls
+java.lang.StringBuilder	java.lang.StringBuilder	javls
+java.math.	java.math.	jav
+java.nio. -- n	java.nio.	jav
+java.nio.channels.	java.nio.channels.	javn
+java.nio.channels.spi.	java.nio.channels.spi.	javnc
+java.nio.charset.	java.nio.charset.	javnc
+java.nio.charset.spi.	java.nio.charset.spi.	javnc
+java.sql.	java.sql.	jav
+java.text. -- t	java.text.	jav
+java.text.spi.	java.text.spi.	javt
+java.util. -- u	java.util.	jav
+java.util... -- t	java.util.	javu
+java.util.concurrent. -- c	java.util.concurrent.	javut
+java.util.concurrent.atomic.	java.util.concurrent.atomic.	javutc
+java.util.concurrent.locks.	java.util.concurrent.locks.	javutc
+java.util.jar.	java.util.jar.	javut
+java.util.logging.	java.util.logging.	javut
+java.util.prefs.	java.util.prefs.	javut
+java.util.regex -- r	java.util.regex.	javut
+java.util.regex.Matcher -- m	java.util.regex.Matcher	javutr
+java.util.regex.MatchResult	java.util.regex.MatchResult	javutrm
+java.util.regex.Pattern -- p	java.util.regex.Pattern	javutr
+java.util.regex.PatternSyntaxException	java.util.regex.PatternSyntaxException	javutrp
+java.util.spi.	java.util.spi.	javut
+java.util.zip.	java.util.zip.	javut
+java.util.Arrays	java.util.Arrays	javu
+java.util.Collection	java.util.Collection	javu
+java.util.Comparator	java.util.Comparator	javu
+java.util.List	java.util.List	javu
+java.util.NoSuchElementException	java.util.NoSuchElementException	javu
+java.util.Vector	java.util.Vector	javu

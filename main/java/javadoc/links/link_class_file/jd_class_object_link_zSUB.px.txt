@@ -8,7 +8,7 @@ zzKotlsyn_M_yon -- Needs zvSYNTAX_ON	{#insert {#COND -if {#insert zvSYNTAX_ON} =
 zzKotlsyns1of4	[t,d][[f,r,w]]kot[b,l,r][t]	zzKotlsyns1of4
 zzKotlsyns2of4	[t,d]kot[b,l]y[c]	zzKotlsyns2of4
 zzKotlsyns3of4	[t,d]kot[l,r]y[b][c]	zzKotlsyns3of4
-zzSetClsNmToSuperTrdToL1cSetONmToR	{#insert zvCLS_NM_stSuperCls}{#insert zzSetTrdToL1cSetONmToR1w}	zzSetClsNmToSuperTrdToL1cSetONmToR
+zzSetClsNmToSuperTrdToL1cSetONmToR	{#insert zXSetClsNmToSuperClassXDownDel}{#insert zzSetTrdToL1cSetONmToR1w}	zzSetClsNmToSuperTrdToL1cSetONmToR
 zzSetOptPrkTrdToL1cX1or2	{#insert zCutL1c}(*Set optional prek param. If provided, cut the next char to the left:*){#insert {#COND -if {#insert zLowercaseCB} = f -then zzSetPrkToCBCutL1c -else {#COND -if {#insert zLowercaseCB} = r -then zzSetPrkToCBCutL1c -else {#COND -if {#INSERTCLIPBOARD} = w -then zzSetPrkToYLcCutL1c -else {#COND -if {#INSERTCLIPBOARD} = W -then zzSetPrkToYUcCutL1c -else zvPREK_stES}}}}}{#insert zvDIR_TORD_stCB}	zzSetOptPrkTrdToL1cX1or2
 zzSetOptPrkTrdToL1cX1or2ClsNmToL1wSetONmToR1w	{#insert zzSetOptPrkTrdToL1cX1or2}{#insert zvCLS_NM_stL1w}{#insert zvFOBJ_NAME_stR1w}	zzSetOptPrkTrdToL1cX1or2ClsNmToL1wSetONmToR1w
 zzSetOptPrkTrdToL1cX1or2ONmToR1w	{#insert zzSetOptPrkTrdToL1cX1or2}{#insert zvFOBJ_NAME_stR1w}	zzSetOptPrkTrdToL1cX1or2ONmToR1w

@@ -1,0 +1,1 @@
+_forH -- Transform 'phrase-name -- [zCpHOTKEY]' to _forHKOnly phrase	{#insert zCopyL1w}_forHKOnly{#insert zEND}{#insert zTAB}\\\{#insert {#insert zTPPaste}\\\}{#insert zTAB}{#insert zTPPaste}_forHKOnly{#insert zRIGHT}{#insert zBalloonDone}	_forH

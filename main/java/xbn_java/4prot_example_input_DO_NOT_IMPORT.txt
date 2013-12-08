@@ -1,0 +1,24 @@
+		<P>Start configuration with a default object.</P>
+{#insert zBKSP}public void startConfig_4prot(O o_default, boolean b_immediatelyEndable, String s_clgFunc)  {
+<P>Update the object. This must be called immediately after configuration is started, and after every configuration function in the chain.</P>
+{#insert zBKSP}public void updateObject_4prot(O o_updated, boolean b_endable, String s_clgFunc)  {
+<P>The validator that checks the object after every configuration step.</P>
+{#insert zBKSP}public ValidateValue<O> getValidator_4prot()  {
+<P>Context for the potenital error message, when the object is invalidated.</P>
+{#insert zBKSP}public ExceptionContext getXCForBadObject_4prot()  {
+<P>Get the object currently being configured.</P>
+{#insert zBKSP}public O getInProcess_4prot()  {
+<P>If a configuration is not currently in process, crash.</P>
+{#insert zBKSP}public void ciNotActive_4prot(String s_clgFunc)  {
+<P>If a configuration is currently in process, crash.</P>
+{#insert zBKSP}public void ciActive_4prot(String s_clgFunc)  {
+
+
+
+
+
+
+
+//do-not-use...START
+{#insert zXmark}
+//do-not-use...END

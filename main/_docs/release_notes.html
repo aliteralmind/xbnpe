@@ -5,16 +5,71 @@
  -->
 <HTML><HEAD>
 	<TITLE>XBN-PhraseExpress</TITLE>
-	<meta name="viewport" content="width=device-width" />
+	<meta name="viewport" content="width=device-width"/>
 </HEAD>
 
 <BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF"><a name="top"></a>
 
-<A NAME="0p9_beta"/><H2>XBNPE: 11/21/2013: Major update: Release <CODE>0.9-beta</CODE></H2>
-
-<P><I>Go to: <CODE>[<A HREF="index.html">top</A>, <A HREF="index.html#downloads">dnld</A>, <A HREF="index.html#start">start</A>]</CODE></I></P>
+<A NAME="0p9p1_beta"/><H2>XBNPE: 12/8/2013: Release <CODE>0.9.0.1-beta</CODE></H2>
 
 <P>This is the current &quot;<CODE>master</CODE>&quot; branch. There is no &quot;<CODE>stable_non_master_release</CODE>&quot; branch.</P>
+
+<P><I>Go to: <CODE>[<A HREF="index.html">top</A>, <A HREF="index2.html#downloads">dnld</A>, <A HREF="index.html#start">start</A>]</CODE></I></P>
+
+<P><UL>
+	<LI><B>DOCS:</B><UL>
+		<LI>-ADDED: Latest output of <CODE>javasyn</CODE> to <CODE><A HREF="index.html#tasks">index.html#tasks</A></CODE></LI>
+		<LI>-CLARIFIED: Download links in installation instructions: <CODE><A HREF="install.html#04impxpe">install.html#04impxpe</A></CODE></LI>
+		<LI>-ADDED: Beginning of <CODE>htmlsyn</CODE></CODE></LI>
+	</UL></LI>
+	<LI><B>CODE:</B><UL>
+		<LI>-<B>JAVA</B><UL>
+			<LI>--FIXED: <CODE>eqlsf</CODE>: <CODE>sypsyn</CODE></LI>
+			<LI>--ADDED: <CODE>jdbg*</CODE>: Create JavaDoc block for a getter, given just above and <I>duplicated</I> setter signature line: <CODE>jsgsyn</CODE></LI>
+			<LI>--ADDED: <CODE>jdbr*</CODE>: Create JavaDoc block only with <CODE>@return</CODE>, and optionally the one-and-only line in the function, which <I>is</I> a <CODE>return</CODE> line: <CODE>jdbsyn</CODE></LI>
+			<LI>--ADDED: Generics to setter-getter functions, via a prompt: <CODE>jsgsyn</CODE></LI>
+			<LI>--ADDED: Create sub-class construtors from duplicate super-class signature lines: <CODE>dcnstrsyn</CODE></LI>
+			<LI>--CHANGED: Exception types, such as <CODE>xnp</CODE> --&gt; <CODE>NullPointerException</CODE>, to auto-completes.</LI>
+			<LI>--REMOVED: Java type-name actions, such as <CODE>chr</CODE> --&gt; <CODE>Character</CODE></LI>
+			<LI>--XBN-Java:<UL>
+				<LI>---ADDED: <CODE>pt4*</CODE>: Transform &quot;_4prot&quot; function from super-class to the two functions needed by sub-classes: <CODE>pt4syn</CODE></LI>
+				<LI>---ADDED: Generics to the copy-constructor and <CODE>getXObjectCopy()</CODE> via a prompt: <CODE>xcgsyn</CODE></LI>
+				<LI>---CHANGED: Pre-link class-file-dot links, when italicized, now surround the display-text with square-brackets: <CODE>prfsyn</CODE></LI>
+				<LI>---CHANGED: <CODE>iwt*</CODE> no longer uses the interface instance's parameter-name. &quot;<CODE>o_iinstance</CODE>&quot; is always used. See <CODE>iwtrootx</CODE> for example input: <CODE>iwtsyn</CODE></LI>
+			</UL></LI>
+		</UL></LI>
+		<LI>-<B>CWLPDF:</B><UL>
+			<LI>--REMOVED: The following in <CODE>cwlpdf/3_line/lineother_HK.px.txt</CODE>. Not used by any other phrases, and was not in the <CODE>xh</CODE> phrase-creator ddmenu.<UL>
+				<LI>---All mark/delete empty lines phrases</LI>
+				<LI>---<CODE>zvLINE_[DOWN,UP]_COUNT_stPrompt</CODE></LI>
+			</UL></LI>
+			<LI>---ADDED:<UL>
+				<LI>----<CODE>zUpEnd</CODE>: <CODE>xhclm</CODE></LI>
+				<LI>----<CODE>zSelectSlpCutEntireLine</CODE>: <CODE>xhclax</CODE></LI>
+				<LI>----<CODE>z[Down]GT1stNonWSCharInLine</CODE>: <CODE>xhclm</CODE></LI>
+				<LI>----<CODE>zCutParagraph</CODE>: <CODE>xhcp</CODE></LI>
+				<LI>----<CODE>zGetNonWSLineCountFor[CB,CurrentTempDocCls]_M_hnry</CODE></LI>
+			</UL></LI>
+		</UL></LI>
+		<LI>-FIXED (TPKC): The &quot;<CODE>__The phrases in this file are...</CODE>&quot; phrase is intended to be a read-only, information-only comment. It is supposed to have NO autotext, but had an autotext of &quot;<CODE><I>[space]</I></CODE>&quot;. The space was removed.</LI>
+		<LI>-Search and Replace (SNR)<UL>
+			<LI>-ADDED: <CODE>zFindDlgOpenFlag[Down,Up,WrapSearchTgl]Close</CODE>: <CODE>xhsfo[d,u]</CODE>: <CODE><A HREF="tasks/snr.html#findsyn">tasks/snr.html#findsyn</A></CODE></LI>
+			<LI>---<CODE>zLeftPostBrktSelectWord1</CODE>: <CODE>xhses</CODE></LI>
+			<LI>-ADDED: <CODE>zTPBookmarkGT[Prev,Next]Toggle</CODE>: <CODE>xhsm</CODE>: <CODE><A HREF="tasks/snr.html#bkmksyn">tasks/snr.html#bkmksyn</A></CODE></LI>
+			<LI>-CHANGED: Renamed <CODE>zGTDlgOpenBookmarkExtendGo_M_gtn</CODE> to <CODE>zGTDlgOpenBookmarkExtendGo</CODE>, to reflect the fact that the number field in the GoTo dialog (variable <CODE>zvGT_REL_NUM</CODE>) has no affect on bookmarks. You can only go to the immediately-next bookmark. Functionality has not changed. </LI>
+		</UL></LI>
+	</UL></LI>
+	<LI><B>OTHER:</B><UL>
+		<LI>-ADDED: Ability to turn off syntax-summary ballons via the XBN-PhraseExpress user-menu: <CODE><A HREF="devpex/xbnpe_ddmenus.html#user">devpex/xbnpe_ddmenus.html#user</A></CODE></LI>
+		<LI>-CHANGED: Changed the name of all &quot;<CODE>__pcddmenu.px.txt</CODE>&quot; files to &quot;<CODE>__pcddmenu_MC.px.txt</CODE>&quot;. To reflect this change, updated the most-recently-changed files settings, the phrase that calls it (<CODE>zActivateMrcMCXplorer2Search --&gt; zActivateMrcMCXplorer2Search</CODE>in <CODE>other/other/xplorer2.px.txt</CODE>), and the other, non-MC, search-settings: <CODE><A HREF="basics/phrase_file_mrc_tip.html#mrcx204">basics/phrase_file_mrc_tip.html#mrcx204</A></CODE></LI>
+	</UL></LI>
+</UL></P>
+
+<A NAME="0p9_beta"/><H2>XBNPE: 11/21/2013: Major update: Release <CODE>0.9-beta</CODE></H2>
+
+<P><UL>
+	<LI>Download: <CODE><A HREF="../../zz_misc_and_pxp/xbnpe_0p9_beta.zip">xbnpe_0p8p3_beta.zip</A></CODE> &nbsp; &nbsp; <I>(~9mb)</I>
+</UL></P>
 
 <P><UL>
 	<LI><B>CODE:</B><UL>
@@ -102,7 +157,7 @@
 
 <A NAME="0p8p3p1_beta"/><H2>XBNPE: 10/19/2013: Release <CODE>0.8.3-beta</CODE></H2>
 
-<P><I>Go to: <CODE>[<A HREF="index.html">top</A>, <A HREF="index.html#downloads">dnld</A>, <A HREF="index.html#start">start</A>]</CODE></I></P>
+<P><I>Go to: <CODE>[<A HREF="index.html">top</A>, <A HREF="index2.html#downloads">dnld</A>, <A HREF="index.html#start">start</A>]</CODE></I></P>
 
 <P><UL>
 	<LI>Download: <CODE><A HREF="../../zz_misc_and_pxp/xbnpe_0p8p3_beta.zip">xbnpe_0p8p3_beta.zip</A></CODE> &nbsp; &nbsp; <I>(~9mb)</I>
@@ -220,7 +275,7 @@
 
 <A NAME="0p8p2p3_beta"/><H2>XBNPE: 9/20/2013: Release <CODE>0.8.2.3-beta</CODE></H2>
 
-<P><I>Go to: <CODE>[<A HREF="index.html">top</A>, <A HREF="index.html#downloads">dnld</A>, <A HREF="index.html#start">start</A>]</CODE></I></P>
+<P><I>Go to: <CODE>[<A HREF="index.html">top</A>, <A HREF="index2.html#downloads">dnld</A>, <A HREF="index.html#start">start</A>]</CODE></I></P>
 
 <P><UL>
 	<LI>Download: <CODE><A HREF="../../zz_misc_and_pxp/xbnpe_0p8p2p3_beta.zip">xbnpe_0p8p2p3_beta.zip</A></CODE> &nbsp; &nbsp; <I>(~9mb)</I>
@@ -239,7 +294,7 @@
 
 <A NAME="0p8p2p2_beta"/><H2>XBNPE: 9/20/2013: Release <CODE>0.8.2.2-beta</CODE></H2>
 
-<P><I>Go to: <CODE>[<A HREF="index.html">top</A>, <A HREF="index.html#downloads">dnld</A>, <A HREF="index.html#start">start</A>]</CODE></I></P>
+<P><I>Go to: <CODE>[<A HREF="index.html">top</A>, <A HREF="index2.html#downloads">dnld</A>, <A HREF="index.html#start">start</A>]</CODE></I></P>
 
 <P><UL>
 	<LI>Download: <CODE><A HREF="../../zz_misc_and_pxp/xbnpe_0p8p2p2_beta.zip">xbnpe_0p8p2p2_beta.zip</A></CODE> &nbsp; &nbsp; <I>(~9mb)</I></LI>
@@ -247,7 +302,7 @@
 
 <P><UL>
 	<LI><B>CODE:</B><UL>
-		<LI>-Added <CODE>zzXbnpeVersion</CODE>: <CODE><A HREF="index.html#downloads">index.html#downloads</A></CODE></LI>
+		<LI>-Added <CODE>zzXbnpeVersion</CODE>: <CODE><A HREF="index2.html#downloads">index.html#downloads</A></CODE></LI>
 		<LI>-Added <CODE>&quot;skf&quot;</CODE>: <CODE><A HREF="tasks/other.html">tasks/other.html</A></CODE></LI>
 		<LI>-Added to SNR-find: <CODE><A HREF="tasks/snr.html#findsyn">tasks/snr.html#findsyn</A></CODE><UL>
 			<LI>-<CODE>zFindFlagPreCheckOnlyXSoff</CODE></LI>
@@ -272,7 +327,7 @@
 
 <A NAME="0p8p2p1_beta"/><H2>XBNPE: 9/19/2013: Release <CODE>0.8.2.1-beta</CODE></H2>
 
-<P><I>Go to: <CODE>[<A HREF="index.html">top</A>, <A HREF="index.html#downloads">dnld</A>, <A HREF="index.html#start">start</A>]</CODE></I></P>
+<P><I>Go to: <CODE>[<A HREF="index.html">top</A>, <A HREF="index2.html#downloads">dnld</A>, <A HREF="index.html#start">start</A>]</CODE></I></P>
 
 <P><UL>
 	<LI>Download: <CODE><A HREF="../../zz_misc_and_pxp/xbnpe_0p8p2p1_beta.zip">xbnpe_0p8p2p1_beta.zip</A></CODE> &nbsp; &nbsp; <I>(~9mb)</I>
@@ -295,7 +350,7 @@
 
 <A NAME="0p8p2_beta"/><H2>XBNPE: 9/19/2013: Release <CODE>0.8.2-beta</CODE></H2>
 
-<P><I>Go to: <CODE>[<A HREF="index.html">top</A>, <A HREF="index.html#downloads">dnld</A>, <A HREF="index.html#start">start</A>]</CODE></I></P>
+<P><I>Go to: <CODE>[<A HREF="index.html">top</A>, <A HREF="index2.html#downloads">dnld</A>, <A HREF="index.html#start">start</A>]</CODE></I></P>
 
 <P><UL>
 	<LI>Download: <CODE><A HREF="../../zz_misc_and_pxp/xbnpe_0p8p2_beta.zip">xbnpe_0p8p2_beta.zip</A></CODE> &nbsp; &nbsp; <I>(~9mb)</I>
@@ -311,7 +366,7 @@
 
 <A NAME="0p8p1_beta"/><H2>XBNPE: 9/18/2013: Release <CODE>0.8.1-beta</CODE></H2>
 
-<P><I>Go to: <CODE>[<A HREF="index.html">top</A>, <A HREF="index.html#downloads">dnld</A>, <A HREF="index.html#start">start</A>]</CODE></I></P>
+<P><I>Go to: <CODE>[<A HREF="index.html">top</A>, <A HREF="index2.html#downloads">dnld</A>, <A HREF="index.html#start">start</A>]</CODE></I></P>
 
 <P><UL>
 	<LI>Download: <CODE><A HREF="../../zz_misc_and_pxp/xbnpe_0p8p1_beta.zip">xbnpe_0p8p1_beta.zip</A></CODE> &nbsp; &nbsp; <I>(~9mb)</I>

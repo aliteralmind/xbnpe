@@ -9,3 +9,4 @@ zFindGoXSOpenRplc -- Find next, tick XS, open replace dialog	{#insert zTPFindNex
 zFindNextPromptedString -- [zCASpF4]	{#insert zFindDlgOpenDown}{#INPUT -head String to find? [NEXT] -single}{#insert zFindBtnNext}{#insert zFindDlgClose}	zFindNextPromptedString
 zFindPrevPromptedString -- [zCASpF2]	{#insert zFindDlgOpenUp}{#INPUT -head String to find? [PREV] -single}{#insert zFindBtnNext}{#insert zFindDlgClose}	zFindPrevPromptedString
 zFindFlagPreCheckOnlyXSoff	{#insert zFcsTPFindDlgOpen}{#MSGBOX -head Turn XS off -text Please ensure 'Extend selection' (XS) is uncheked. (It is also recommended for Wrap searches to be checked.)}{#insert zFindDlgClose}	zFindFlagPreCheckOnlyXSoff
+zSetSearchTermToReplaceWith -*-[zCApF3]-	{#insert zTPRplcDlgOpen}{#insert zRplcFieldWith}{#insert zSystemCopy}{#insert zRplcFieldWhat}{#insert zSystemPaste}{#insert zRplcDlgClose}	zSetSearchTermToReplaceWith

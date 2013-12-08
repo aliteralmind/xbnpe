@@ -6,7 +6,7 @@
 
 <BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF"><a name="top"></a>
 
-<P>[<A HREF="pex_built_in_functions.html">BACK</A>]<CODE> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </CODE><I>(XBN-PhraseExpress is released under the <A HREF="../index.html#lpgl">LPGL 2.1</A>)</I>
+<P>[<A HREF="pex_built_in_functions.html">BACK</A>]<CODE> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </CODE><I>(XBN-PhraseExpress is released under the <A HREF="../index2.html#lpgl">LPGL 2.1</A>)</I>
 
 <HR/>
 
@@ -120,7 +120,7 @@ Your name, {#insert zYourNamePrompt}, has exactly (or less-than) five characters
 
 <PRE STYLE="background-color:#E1E1E1;">{#insert {#COND -if {#SUBSTR (param1, param2) -from 1 -count 1} = ( -then z1slp -else zzErrDlgAllParamsNotSurroundedByParens}}</PRE>
 
-<P>This doesn't:</P>
+<P>This doesn't, because of the extra space:</P>
 <PRE STYLE="background-color:#E1E1E1;">{#insert {#COND -if {#SUBSTR (param1, param2) -from 1 -count 1} = (  -then z1slp -else zzErrDlgAllParamsNotSurroundedByParens}}</PRE>
 
 <HR WIDTH="25%"/>
@@ -177,21 +177,21 @@ z LTOE 9
 
 <HR/>
 
-<P>Comments on either side of the &quot;<CODE>-if</CODE>&quot; parameter</P>
+<P>Comments on either side of the &quot;<CODE>-if</CODE>&quot; parameter...</P>
 
 <PRE STYLE="background-color:#E1E1E1;"><!--xcfexample...START  //  cond10ifcmt:{#ENTER}--><B><U>cond10ifcmt</U></B>
 {#COND -if yes == yes(*a test comment*)&nbsp;
    -then YES&nbsp;
    -else NO}<!--xcfexample...END  //  {#ENTER}--></PRE>
 
-<P>and <I>no</I> spaces around the comparison operator</P>
+<P>...and <I>no</I> spaces around the comparison operator...</P>
 
 <PRE STYLE="background-color:#E1E1E1;"><!--xcfexample...START  //  cond11nospaceif1:{#ENTER}--><B><U>cond11nospaceif1</U></B>
 {#COND -if yes==yes&nbsp;
    -then YES&nbsp;
    -else NO}<!--xcfexample...END  //  {#ENTER}--></PRE>
 
-<P>Works in some situations, and doesn't in others. It is strongly recommended that you avoid comments in the &quot;<CODE>-if</CODE>&quot; clause, and always have spaces around the comparator.</P>
+<P>...works in some situations, and doesn't in others. It is strongly recommended that you avoid comments in the &quot;<CODE>-if</CODE>&quot; clause, and always have spaces around the comparator.</P>
 
 <H4>Example</H4>
 

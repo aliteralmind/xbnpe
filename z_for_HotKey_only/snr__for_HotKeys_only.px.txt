@@ -3,3 +3,5 @@ zFindNextPromptedString_forHKOnly -- [zCASpF4]	{#insert zFindNextPromptedString}
 zFindPrevPromptedString_forHKOnly -- [zCASpF2]	{#insert zFindPrevPromptedString}	zFindPrevPromptedString_forHKOnly
 zFFindOpenForCurrFile_forHKOnly -- Save's the previous dir & file values [zASpF5]	{#insert zFFindOpenForCurrFile}	zFFindOpenForCurrFile_forHKOnly
 zFFindDlgOpenFilesOnly_forHKOnly -- [zCpF5]	{#insert zFFindDlgOpenFilesOnly}	zFFindDlgOpenFilesOnly_forHKOnly
+zSetSearchTermToReplaceWith_forHKOnly -*-[zCApF3]-	{#insert zSetSearchTermToReplaceWith}	zSetSearchTermToReplaceWith_forHKOnly
+

@@ -1,0 +1,39 @@
+(*
+   FROM xbnpe_phrase_creator_popup_heirarchy_base.px.txt:
+
+Phrase-creators: XBN-PhraseExpress -- xh   .   zXbnpeCmdPopupRoot
+	Phrase-creators: Char, word, line, para, doc, file -- xhc   .   xh*)
+(*   Phrase-creators: Java -- xhj   .   xh*)
+		zTMSelectSuperClassNm	\\\{#insert zTMSelectSuperClassNm\\\}	xhj
+		zTMSelectThisClassNm	\\\{#insert zTMSelectThisClassNm\\\}	xhj
+(*    Function signature -- xhjg   .   xhj*)
+(*       Entire signature -- xhjgg   .   xhjg*)
+				zTMFindNextJavaFuncSigLine	\\\{#insert zTMFindNextJavaFuncSigLine\\\}	xhjgg
+				zTMFindPrevJavaFuncSigLine	\\\{#insert zTMFindPrevJavaFuncSigLine\\\}	xhjgg
+(*       Parameters -- xhjgp   .   xhjg*)
+				Delete from slctd params -- xhjgpd	.	xhjgp
+					zTMJavaDelNmsGnrcsFromSlctdParams4FQP	\\\{#insert zTMJavaDelNmsGnrcsFromSlctdParams4FQP\\\}	xhjgpd
+					zTMJavaDelNmsGnrcsFromSlctdParams4TV	\\\{#insert zTMJavaDelNmsGnrcsFromSlctdParams4TV\\\}	xhjgpd
+					zTMJavaDelNmsOnlyFromSlctdParams	\\\{#insert zTMJavaDelNmsOnlyFromSlctdParams\\\}	xhjgpd
+					zTMJavaDelTypesFromSlctdParams	\\\{#insert zTMJavaDelTypesFromSlctdParams\\\}	xhjgpd
+				zTMFindNextParamTypeAndName	\\\{#insert zTMFindNextParamTypeAndName\\\}	xhjgp
+				zTMFindPrevParamTypeAndName	\\\{#insert zTMFindPrevParamTypeAndName\\\}	xhjgp
+				zTMSelThrNextCloseParen	\\\{#insert zTMSelThrNextCloseParen\\\}	xhjgp
+(* Other -- xhot  .   xho  *)
+		zTMFindNextOpenParen	\\\{#insert zTMFindNextOpenParen\\\}	xhot
+		zTMFindPrevCloseParen	\\\{#insert zTMFindPrevCloseParen\\\}	xhot
+		zTMFindPrevSpace	\\\{#insert zTMFindPrevSpace\\\}	xhot
+(*    Spot-marks (x-mark) -- xhox   .   xho*)
+(*       zXDown[2] -- xhoxd   .   xhox*)
+				zTMFindXMarkDown	\\\{#insert zTMFindXMarkDown\\\}	xhoxd
+(*       zXUp[2] -- xhoxu   .   xhox*)
+				zTMFindXMarkUp	\\\{#insert zTMFindXMarkUp\\\}	xhoxu
+(*    Spot-marks (y-mark) -- xhoy   .   xho*)
+(*       zYDown[2] -- xhoyd   .   xhoy*)
+				zTMFindYMarkDown	\\\{#insert zTMFindYMarkDown\\\}	xhoyd
+(*       zYUp[2] -- xhoyu   .   xhoy*)
+				zTMFindYMarkUp	\\\{#insert zTMFindYMarkUp\\\}	xhoyu
+(* Phrase-creators: HTML -- xhh   .   xh*)
+		zTMFindPrevHREFThrQQ	\\\{#insert zTMFindPrevHREFThrQQ\\\}	xhh
+		zTMMoveL1Tag	\\\{#insert zTMMoveL1Tag\\\}	xhh
+		zTMMoveR1Tag	\\\{#insert zTMMoveR1Tag\\\}	xhh

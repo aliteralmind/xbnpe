@@ -1,0 +1,96 @@
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+(*
+*DUPLICATE* this document, unindent every line in it, then import it with the following settings:
+- No prefix
+- Manual confirmation
+- Assign the key-command (hotkey) to the first phrase
+**All these phrases must be manually maintained.
+*)
+(*
+Required by phrase-creator-ddmenu-utils...START
+PM_DDMENU_DIR_ID=tpkc
+Required by phrase-creator-ddmenu-utils...END
+*)
+(*
+FROM xbnpe_phrase_creator_popup_heirarchy_base.px.txt:
+Phrase-creators: XBN-PhraseExpress -- xh   .   zXbnpeCmdPopupRoot
+Phrase-creators: Search & replace -- xhs   .   xh
+*)
+(*    SNR: String-tokenization -- xhsk   .   xhs*)
+Square-Bracketed List (qbl) -- xhskq	.	xhsk
+zExtrElimSetStrSetQBL_M_qbl* -- xhskqx	\\\{#insert zExtrElimSetStrSetQBL_M_qbl\\\}	xhskq
+zExtrElimStrSetQBL_M_qbl	\\\{#insert zExtrElimStrSetQBL_M_qbl\\\}	xhskqx
+zExtractString_M_qbs	\\\{#insert zExtractString_M_qbs\\\}	xhskqx
+zGetExtractStr1FromQBList_M_qbl	\\\{#insert zGetExtractStr1FromQBList_M_qbl\\\}	xhskqx
+zQblLenFromSelf_M_qbl[2] -- xhskqg	\\\{#insert zQblLenFromSelf_M_qbl\\\}	xhskq
+Var: zvQBL_LENGTH	{#SETCLIPBOARD zvQBL_LENGTH}{#insert zzBalCBContainsVarNm}	xhskqg
+zvQBL_LENGTH_addCurrSelfLen	\\\{#insert zvQBL_LENGTH_addCurrSelfLen\\\}	xhskqg
+zvQBL_LENGTH_stCurrSelfLen	\\\{#insert zvQBL_LENGTH_stCurrSelfLen\\\}	xhskqg
+lltoqbl: zLineListToSquareBracketedList -- xhskql	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content lltoqbl:zLineListToSquareBracketedList -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhskq
+qbltoll: zREoffRplcQblOnlyDocToLineList	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content qbltoll:zREoffRplcQblOnlyDocToLineList -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhskql
+zLineListToSquareBracketedList_M_qblen	\\\{#insert zLineListToSquareBracketedList_M_qblen\\\}	xhskql
+zREonRplcQblOnlyDocToLineList	\\\{#insert zREonRplcQblOnlyDocToLineList\\\}	xhskql
+zzMidRplcREoffOpenSqBrktToNthng	\\\{#insert zzMidRplcREoffOpenSqBrktToNthng\\\}	xhskql
+zzMidRplcREClsSqBrktToNewLine	\\\{#insert zzMidRplcREClsSqBrktToNewLine\\\}	xhskql
+zzMidRplcTDREoffQblToLineList	\\\{#insert zzMidRplcTDREoffQblToLineList\\\}	xhsql
+Other -- xhskqo	.	xhskq
+qbldemo	(*actnonly=qbldemo*){#SETPHRASE -description zvACTN_NM -content qbldemo -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhskqo
+zDelimList_M_qblDelim	\\\{#insert zDelimList_M_qblDelim\\\}	xhskqo
+zGetQBS1_M_qbl	\\\{#insert zGetQBS1_M_qbl\\\}	xhskqo
+zzDebugAllQBListVarsDlgTxt	\\\{#insert zzDebugAllQBListVarsDlgTxt\\\}	xhskqo
+Var: zvQB_STR_LIST* -- xhskqv	{#SETCLIPBOARD zvQB_STR_LIST}{#insert zzBalCBContainsVarNm}	xhskq
+zvQB_STR_LIST_sfElimFirstQBS_M_qbl	\\\{#insert zvQB_STR_LIST_sfElimFirstQBS_M_qbl\\\}	xhskqv
+zvQB_STR_LIST_withItem1Elim	\\\{#insert zvQB_STR_LIST_withItem1Elim\\\}	xhskqv
+zvQB_STR_LIST_withItem1Elim_M_posclsq	\\\{#insert zvQB_STR_LIST_withItem1Elim_M_posclsq\\\}	xhskqv
+zInitAllQBListVars	\\\{#insert zInitAllQBListVars\\\}	xhskqv
+zSetQBListAndStrToEmpty	\\\{#insert zSetQBListAndStrToEmpty\\\}	xhskqv
+(*    SNR: Go-to dialog -- xhsg   .   xhs*)
+In-dlg: set 1 flag -- xhsgf	.	xhsg
+zGTFlagByte	\\\{#insert zGTFlagByte\\\}	xhsgf
+zGTFlagPage	\\\{#insert zGTFlagPage\\\}	xhsgf
+zGTFlagLine	\\\{#insert zGTFlagLine\\\}	xhsgf
+zGTFlagColumn	\\\{#insert zGTFlagColumn\\\}	xhsgf
+zGTFlagBookmark	\\\{#insert zGTFlagBookmark\\\}	xhsgf
+zGTFlagExtendRAW	\\\{#insert zGTFlagExtendRAW\\\}	xhsgf
+zGTFlagExtend	\\\{#insert zGTFlagExtend\\\}	xhsgf
+zGoToDocBottom_page999999ViaGTDlg	\\\{#insert zGoToDocBottom_page999999ViaGTDlg\\\}	xhsg
+(*       Open -- xhsgo   .   xhsg*)
+With specific flag -- xhsgof	.	xhsgo
+Extend -- xhsgofx	.	xhsgof
+zGTDlgOpenFlagLineExtend	\\\{#insert zGTDlgOpenFlagLineExtend\\\}	xhsgofx
+zGTDlgOpenFlagColumnExtend	\\\{#insert zGTDlgOpenFlagColumnExtend\\\}	xhsgofx
+zGTDlgOpenFlagPageExtend	\\\{#insert zGTDlgOpenFlagPageExtend\\\}	xhsgofx
+zGTDlgOpenFlagByteExtend	\\\{#insert zGTDlgOpenFlagByteExtend\\\}	xhsgofx
+zGTDlgOpenFlagBookmarkExtend	\\\{#insert zGTDlgOpenFlagBookmarkExtend\\\}	xhsgofx
+zGTDlgOpenFlagExtendRAW	\\\{#insert zGTDlgOpenFlagExtendRAW\\\}	xhsgofx
+zGTDlgOpenFlagExtend	\\\{#insert zGTDlgOpenFlagExtend\\\}	xhsgofx
+zGTDlgOpenFlagLine	\\\{#insert zGTDlgOpenFlagLine\\\}	xhsgof
+zGTDlgOpenFlagColumn	\\\{#insert zGTDlgOpenFlagColumn\\\}	xhsgof
+zGTDlgOpenFlagPage	\\\{#insert zGTDlgOpenFlagPage\\\}	xhsgof
+zGTDlgOpenFlagByte	\\\{#insert zGTDlgOpenFlagByte\\\}	xhsgof
+zGTDlgOpenFlagBookmark	\\\{#insert zGTDlgOpenFlagBookmark\\\}	xhsgof
+zGTDlgOpenViaAltS	\\\{#insert zGTDlgOpenViaAltS\\\}	xhsgo
+Open then go -- xhsgog	.	xhsgo
+Var: zvGT_REL_NUM	{#SETCLIPBOARD zvGT_REL_NUM}{#insert zzBalCBContainsVarNm}	xhsgog
+With extend -- xhsgogx	.	xhsgog
+zGTDlgOpenBookmarkExtendGo	\\\{#insert zGTDlgOpenBookmarkExtendGo\\\}	xhsgogx
+zGTDlgOpenByteExtendGo_M_gtn	\\\{#insert zGTDlgOpenByteExtendGo_M_gtn\\\}	xhsgogx
+zGTDlgOpenColumnExtendGo_M_gtn	\\\{#insert zGTDlgOpenColumnExtendGo_M_gtn\\\}	xhsgogx
+zGTDlgOpenExtendGo_M_gtn	\\\{#insert zGTDlgOpenExtendGo_M_gtn\\\}	xhsgogx
+zGTDlgOpenLineExtendGo_M_gtn	\\\{#insert zGTDlgOpenLineExtendGo_M_gtn\\\}	xhsgogx
+zGTDlgOpenPageExtendGo_M_gtn	\\\{#insert zGTDlgOpenPageExtendGo_M_gtn\\\}	xhsgogx
+zGTDlgOpenBookmarkGo_M_gtn	\\\{#insert zGTDlgOpenBookmarkGo_M_gtn\\\}	xhsgog
+zGTDlgOpenByteGo_M_gtn	\\\{#insert zGTDlgOpenByteGo_M_gtn\\\}	xhsgog
+zGTDlgOpenColumnGo_M_gtn	\\\{#insert zGTDlgOpenColumnGo_M_gtn\\\}	xhsgog
+zGTDlgOpenGo_M_gtn	\\\{#insert zGTDlgOpenGo_M_gtn\\\}	xhsgog
+zGTDlgOpenLineGo_M_gtn	\\\{#insert zGTDlgOpenLineGo_M_gtn\\\}	xhsgog
+zGTDlgOpenPageGo_M_gtn	\\\{#insert zGTDlgOpenPageGo_M_gtn\\\}	xhsgog
+zGTDlgGoClose	\\\{#insert zGTDlgGoClose\\\}	xhsg
+zGTDlgClose	\\\{#insert zGTDlgClose\\\}	xhsg
+(*    SNR: Bookmarks -- xhsm   .   xhs
+All bookmarks -- xhsma   .   xhsm*)
+zBookmarkInvertAllViaAltS	\\\{#insert zBookmarkInvertAllViaAltS\\\}	xhsma
+zBookmarkToggleViaAltS	\\\{#insert zBookmarkToggleViaAltS\\\}	xhsm
+zCopyMarkedLinesToNewFile -- xhsmn	\\\{#insert zCopyMarkedLinesToNewFile\\\}	xhsm
+zREoffCopyCountMarkedLinesToNewFile	\\\{#insert zREoffCopyCountMarkedLinesToNewFile\\\}	xhsmn
+zREonCopyCountMarkedLinesToNewFile	\\\{#insert zREonCopyCountMarkedLinesToNewFile\\\}	xhsmn

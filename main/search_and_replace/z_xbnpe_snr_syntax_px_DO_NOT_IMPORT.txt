@@ -1,0 +1,8 @@
+XBN-PhraseExpress: Search and replace (snrsyn, xpesyn)
+	fifrx: zElimAllFIFResultMetaTextFromDoc
+lltoqbl: zLineListToSquareBracketedList
+nwrqsyn: Non-WW, non-RE replacement sequence for below text
+sortqblcb: zReSortQblInCB
+sortqblcbn: zReSortQblNameInCB
+sortqbldoc: zReSortQblOnlyDoc
+{#insert zBKSP}

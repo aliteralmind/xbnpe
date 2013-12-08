@@ -1,0 +1,2 @@
+<> -- &lt;...&gt;	&lt;{#CURSOR}&gt;	<>
+<> -- HTML-escape brackets immediately before cursor	{#insert zPostBracketSelect}{#insert zHtmlEscSlctdAmpLTGT2SpcQQ}	<>

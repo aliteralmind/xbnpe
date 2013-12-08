@@ -1,136 +1,130 @@
-xbn.lang.XBNObject functions -- xfo	.	xf
-	ciNull(...) -- xfon	.	xfo
-		ciNull(o,s,s)	ciNull({#insert zYcXcX}){#insert zPostBrktSelectWord1}	xfon
-		ciNull(o,s,s,s,xc)	ciNull({#insert zYcXcXcXcY}){#insert zPostBrktSelectWord1}	xfon
-		ciNull(b,o,s,s)	ciNull({#insert zYcYcXcX}){#insert zPostBrktSelectWord1}	xfon
-		ciNull(b,o,s,s,s,xc)	ciNull({#insert zYcYcXcXcX},{#insert zYmark}){#insert zPostBrktSelectWord1}	xfon
-	ci[other] -- xfor	.	xfo
-		ciMinGTMax(i,i)	ciMinGTMax({#insert zYcY}){#insert zPostBrktSelectWord1}	xfor
-		ciMinGTMax(i,i,s,s,s,s,xc)	ciMinGTMax({#insert zYcYcXcX},{#insert zXcXcY}){#insert zPostBrktSelectWord1}	xfor
-		ciNullEmptyString(o,s,s,s,xc)	ciNullEmptyString({#insert zYcXcXcXcY}){#insert zPostBrktSelectWord1}	xfor
-		ciNullOrReturnCause(o,s,s,s,xc,thw)	ciNullOrReturnCause({#insert zYcXcXcX},{#insert zYcY}){#insert zPostBrktSelectWord1}	xfor
-		ciNullOrReturnCause(o,s,s,thw)	ciNullOrReturnCause({#insert zYcXcX},{#insert zYmark}){#insert zPostBrktSelectWord1}	xfor
-	get*LengthCINull -- xfol	.	xfo
-		getArrayLengthCINull(o,s,s) -- xfola	getArrayLengthCINull({#insert zYcXcX}){#insert zPostBrktSelectWord1}	xfol
-			getArrayLengthCINull(o)	getArrayLengthCINull({#insert zYmark}){#insert zPostBrktSelectWord1}	xfola
-			getArrayLengthCINull(o,s,s,s,xc)	getArrayLengthCINull({#insert zYcXcXcXcY}){#insert zPostBrktSelectWord1}	xfola
-		getCollectionSizeCINull(cll,s,s) -- xfolc	getCollectionSizeCINull({#insert zYcXcX}){#insert zPostBrktSelectWord1}	xfol
-			getCollectionSizeCINull(cll)	getCollectionSizeCINull({#insert zYmark}){#insert zPostBrktSelectWord1}	xfolc
-			getCollectionSizeCINull(cll,s,s,s,xc)	getCollectionSizeCINull({#insert zYcXcXcXcY}){#insert zPostBrktSelectWord1}	xfolc
-		getStringLengthCINull(o,s,s) -- xfols	getStringLengthCINull({#insert zYcXcX}){#insert zPostBrktSelectWord1}	xfol
-			getStringLengthCINull(o)	getStringLengthCINull({#insert zYmark}){#insert zPostBrktSelectWord1}	xfols
-			getStringLengthCINull(o,s,s,s,xc)	getStringLengthCINull({#insert zYcXcXcXcY}){#insert zPostBrktSelectWord1}	xfols
-	Other -- xfoo	.	xfo
-		getStringOrDefaultIfNull(o,s)	getStringOrDefaultIfNull({#insert zYmark},{#insert zXmark}){#insert zPostBrktSelectWord1}	xfoo
-		getStringOrDefaultIfNull(s,o,s,s)	getStringOrDefaultIfNull({#insert zXmark},{#insert zYcXcX}){#insert zPostBrktSelectWord1}	xfoo
-		getUnknownAttemptingXMsg(s,s,xc)	getUnknownAttemptingXMsg({#insert zXcXcY}){#insert zPostBrktSelectWord1}	xfoo
-		getXMsg(s,s,s,xc)	getXMsg({#insert zXcXcX},{#insert zYmark}){#insert zPostBrktSelectWord1}	xfoo
-xbn.number.XIFIntInRange functions -- xfi	XIFIntInRange.{#insert zzLeftPostBrktSelectWord1}	xf
-	ci... -- xfib	.{#insert zzLeftPostBrktSelectWord1}	xfi
-		cib(i)	cib({#insert zYmark}){#insert zPostBrktSelectWord1}	xfib
-		cib(i,s,s,s)	cib({#insert zYcXcXcX}){#insert zPostBrktSelectWord1}	xfib
-		cibIntElement(i)	cibIntElement({#insert zYmark}){#insert zPostBrktSelectWord1}	xfib
-		cibIntElement(i,s,s,i,s,s)	cibIntElement({#insert zYcXcXcYcXcX}){#insert zPostBrktSelectWord1}	xfib
-		cibIntObject(i)	cibIntObject({#insert zYmark}){#insert zPostBrktSelectWord1}	xfib
-		cibIntObject(i,s,s,s)	cibIntObject({#insert zYcXcXcX}){#insert zPostBrktSelectWord1}	xfib
-		cibRange(i,i)	cibRange({#insert zYcY}){#insert zPostBrktSelectWord1}	xfib
-		cibRange(i,i,s,s)	cibRange({#insert zYcYcXcX}){#insert zPostBrktSelectWord1}	xfib
-	Config -- xfig	.{#insert zzLeftPostBrktSelectWord1}	xfi
-		intInRange(iir)	intInRange({#insert zYmark}).{#insert zzLeftPostBrktSelectWord1}	xfig
-		max(i)	max({#insert zYmark}).{#insert zzLeftPostBrktSelectWord1}	xfig
-		min(i)	min({#insert zYmark}).{#insert zzLeftPostBrktSelectWord1}	xfig
-		minMax(i,i)	minMax({#insert zYcY}).{#insert zzLeftPostBrktSelectWord1}	xfig
-	z-incl/excl 1 bound -- xfiga	.{#insert zzLeftPostBrktSelectWord1}	xfig
-		maxExclusive(i)	maxExclusive({#insert zYmark}).{#insert zzLeftPostBrktSelectWord1}	xfiga
-		maxInclusive(i)	maxInclusive({#insert zYmark}).{#insert zzLeftPostBrktSelectWord1}	xfiga
-		minExclusive(i)	minExclusive({#insert zYmark}).{#insert zzLeftPostBrktSelectWord1}	xfiga
-		minInclusive(i)	minInclusive({#insert zYmark}).{#insert zzLeftPostBrktSelectWord1}	xfiga
-	z-incl/excl, min/max -- xfigb	.{#insert zzLeftPostBrktSelectWord1}	xfig
-		minExMaxInclusive(i,i)	minExMaxInclusive({#insert zYcY}).{#insert zzLeftPostBrktSelectWord1}	xfigb
-		minInMaxExclusive(i,i)	minInMaxExclusive({#insert zYcY}).{#insert zzLeftPostBrktSelectWord1}	xfigb
-		minMaxExclusive(i,i)	minMaxExclusive({#insert zYcY}).{#insert zzLeftPostBrktSelectWord1}	xfigb
-		minMaxInclusive(i,i)	minMaxInclusive({#insert zYcY}).{#insert zzLeftPostBrktSelectWord1}	xfigb
-	ExceptionContext -- xfic	.{#insert zzLeftPostBrktSelectWord1}	xfi
-		1. oxcontext(s,s)	XIFIntInRange.oxcontext({#insert zXcX}).{#insert zzLeftPostBrktSelectWord1}	xfic
-		1. oxcontext(s,s,s)	XIFIntInRange.oxcontext({#insert zXcXcX}).{#insert zzLeftPostBrktSelectWord1}	xfic
-		2. excontext(s,s,i)	XIFIntInRange.excontext({#insert zXcXcY}).{#insert zzLeftPostBrktSelectWord1}	xfic
-		2. excontext(s,s,i,s)	XIFIntInRange.excontext({#insert zXcXcYcX}).{#insert zzLeftPostBrktSelectWord1}	xfic
-		3. xcontext(s)	XIFIntInRange.xcontext({#insert zXmark}).{#insert zzLeftPostBrktSelectWord1}	xfic
-		3. xcontext(s,s)	XIFIntInRange.xcontext({#insert zXcX}).{#insert zzLeftPostBrktSelectWord1}	xfic
-xbn.number.XIFLengthInRange functions -- xfl	XIFLengthInRange.{#insert zzLeftPostBrktSelectWord1}	xf
-	ci... -- xflb	.{#insert zzLeftPostBrktSelectWord1}	xfl
-		Array -- xflba	.{#insert zzLeftPostBrktSelectWord1}	xflb
-			ciNullEmpty(o[])	ciNullEmpty({#insert zYmark}){#insert zPostBrktSelectWord1}	xflba
-			ciNullEmpty(o[],s,s,s)	ciNullEmpty({#insert zYcXcXcX}){#insert zPostBrktSelectWord1}	xflba
-			cib(o[])	cib({#insert zYmark}){#insert zPostBrktSelectWord1}	xflba
-			cib(o[],s,s,s)	cib({#insert zYcXcXcX}){#insert zPostBrktSelectWord1}	xflba
-			cibArrayTIAElement(o[])	cibArrayTIAElement({#insert zYmark}){#insert zPostBrktSelectWord1}	xflba
-			cibArrayTIAElement(o[],s,s,i,s,s)	cibArrayTIAElement({#insert zYcXcXcYcXcX}){#insert zPostBrktSelectWord1}	xflba
-		Collection -- xflbc	.{#insert zzLeftPostBrktSelectWord1}	xflb
-			ciNullEmpty(cll)	ciNullEmpty({#insert zYmark}){#insert zPostBrktSelectWord1}	xflbc
-			ciNullEmpty(cll,s,s,s)	ciNullEmpty({#insert zYcXcXcX}){#insert zPostBrktSelectWord1}	xflbc
-			cib(cll)	cib({#insert zYmark}){#insert zPostBrktSelectWord1}	xflbc
-			cib(cll,s,s,s)	cib({#insert zYcXcXcX}){#insert zPostBrktSelectWord1}	xflbc
-			cibCollectionTIAElement(cll)	cibCollectionTIAElement({#insert zYmark}){#insert zPostBrktSelectWord1}	xflbc
-			cibCollectionTIAElement(cll,s,s,i,s,s)	cibCollectionTIAElement({#insert zYcXcXcYcXcX}){#insert zPostBrktSelectWord1}	xflbc
-		int -- xflbi	.{#insert zzLeftPostBrktSelectWord1}	xflb
-			cib(i)	cib({#insert zYmark}){#insert zPostBrktSelectWord1}	xflbi
-			cib(i,s,s,s)	cib({#insert zYcXcXcX}){#insert zPostBrktSelectWord1}	xflbi
-			cibContainer(i)	cibContainer({#insert zYmark}){#insert zPostBrktSelectWord1}	xflbi
-			cibContainer(i,s,s,s)	cibContainer({#insert zYcXcXcX}){#insert zPostBrktSelectWord1}	xflbi
-			cibElement(i)	cibElement({#insert zYmark}){#insert zPostBrktSelectWord1}	xflbi
-			cibElement(i,s,s,i,s,s)	cibElement({#insert zYcXcXcYcXcX}){#insert zPostBrktSelectWord1}	xflbi
-		String -- xflbs	.{#insert zzLeftPostBrktSelectWord1}	xflb
-			ciNullEmpty(o)	ciNullEmpty({#insert zYmark}){#insert zPostBrktSelectWord1}	xflbs
-			ciNullEmpty(o,s,s,s)	ciNullEmpty({#insert zYcXcXcX}){#insert zPostBrktSelectWord1}	xflbs
-			cib(o)	cib({#insert zYmark}){#insert zPostBrktSelectWord1}	xflbs
-			cib(o,s,s,s)	cib({#insert zYcXcXcX}){#insert zPostBrktSelectWord1}	xflbs
-			cibStringElement(o)	cibStringElement({#insert zYmark}){#insert zPostBrktSelectWord1}	xflbs
-			cibStringElement(o,s,s,i,s,s)	cibStringElement({#insert zYcXcXcYcXcX}){#insert zPostBrktSelectWord1}	xflbs
-	Config -- xflg	.{#insert zzLeftPostBrktSelectWord1}	xfl
-		lengthInRange(lir)	lengthInRange({#insert zYmark}).{#insert zzLeftPostBrktSelectWord1}	xflg
-		max(i)	max({#insert zYmark}).{#insert zzLeftPostBrktSelectWord1}	xflg
-		min(i)	min({#insert zYmark}).{#insert zzLeftPostBrktSelectWord1}	xflg
-		minMax(i,i)	minMax({#insert zYcY}).{#insert zzLeftPostBrktSelectWord1}	xflg
-		nullBad()	nullBad()	xflg
-		nullOk()	nullOk()	xflg
-		nullOk(b)	nullOk({#insert zYmark}).{#insert zzLeftPostBrktSelectWord1}	xflg
-	ExceptionContext -- xflc	.{#insert zzLeftPostBrktSelectWord1}	xfl
-		1. oxcontext(s,s)	XIFIndexInRange.oxcontext({#insert zXcX}).{#insert zzLeftPostBrktSelectWord1}	xflc
-		1. oxcontext(s,s,s)	XIFIndexInRange.oxcontext({#insert zXcXcX}).{#insert zzLeftPostBrktSelectWord1}	xflc
-		2. excontext(s,s,i)	XIFIndexInRange.excontext({#insert zXcXcY}).{#insert zzLeftPostBrktSelectWord1}	xflc
-		2. excontext(s,s,i,s)	XIFIndexInRange.excontext({#insert zXcXcYcX}).{#insert zzLeftPostBrktSelectWord1}	xflc
-		3. xcontext(s)	XIFIndexInRange.xcontext({#insert zXmark}).{#insert zzLeftPostBrktSelectWord1}	xflc
-		3. xcontext(s,s)	XIFIndexInRange.xcontext({#insert zXcX}).{#insert zzLeftPostBrktSelectWord1}	xflc
-xbn.number.XIFIndexInRange functions -- xfx	XIFIndexInRange.{#insert zzLeftPostBrktSelectWord1}	xf
-	cib... -- xfxb	.{#insert zzLeftPostBrktSelectWord1}	xfx
-		cib(i)	cib({#insert zYmark}){#insert zPostBrktSelectWord1}	xfxb
-		cib(i,s,s,s)	cib({#insert zYcXcXcX}){#insert zPostBrktSelectWord1}	xfxb
-		cibIndexElement(i)	cibIndexElement({#insert zYmark}){#insert zPostBrktSelectWord1}	xfxb
-		cibIndexElement(i,s,s,i,s,s)	cibIndexElement({#insert zYcXcXcYcXcX}){#insert zPostBrktSelectWord1}	xfxb
-	Config -- xfxg	.{#insert zzLeftPostBrktSelectWord1}	xfx
-		lengthInRange(xir)	lengthInRange({#insert zYmark}).{#insert zzLeftPostBrktSelectWord1}	xfxg
-		forLength(i)	forLength({#insert zYmark}).{#insert zzLeftPostBrktSelectWord1}	xfxg
-		min(i)	min({#insert zYmark}).{#insert zzLeftPostBrktSelectWord1}	xfxg
-		minAndForLength(i,i)	minAndForLength({#insert zYcY}).{#insert zzLeftPostBrktSelectWord1}	xfxg
-		s, o[], cll -- xfxgs	.{#insert zzLeftPostBrktSelectWord1}	xfxg
-			forLength(cll)	forLength({#insert zYmark}).{#insert zzLeftPostBrktSelectWord1}	xfxgs
-			forLength(o)	forLength({#insert zYmark}).{#insert zzLeftPostBrktSelectWord1}	xfxgs
-			forLength(o[])	forLength({#insert zYmark}).{#insert zzLeftPostBrktSelectWord1}	xfxgs
-			minAndForLength(i,cll)	minAndForLength({#insert zYcY}).{#insert zzLeftPostBrktSelectWord1}	xfxgs
-			minAndForLength(i,o)	minAndForLength({#insert zYcY}).{#insert zzLeftPostBrktSelectWord1}	xfxgs
-			minAndForLength(i,o[])	minAndForLength({#insert zYcY}).{#insert zzLeftPostBrktSelectWord1}	xfxgs
-	ExceptionContext -- xfxc	.{#insert zzLeftPostBrktSelectWord1}	xfx
-		1. oxcontext(s,s)	XIFIndexInRange.oxcontext({#insert zXcX}).{#insert zzLeftPostBrktSelectWord1}	xfxc
-		1. oxcontext(s,s,s)	XIFIndexInRange.oxcontext({#insert zXcXcX}).{#insert zzLeftPostBrktSelectWord1}	xfxc
-		2. excontext(s,s,i)	XIFIndexInRange.excontext({#insert zXcXcY}).{#insert zzLeftPostBrktSelectWord1}	xfxc
-		2. excontext(s,s,i,s)	XIFIndexInRange.excontext({#insert zXcXcYcX}).{#insert zzLeftPostBrktSelectWord1}	xfxc
-		3. xcontext(s)	XIFIndexInRange.xcontext({#insert zXmark}).{#insert zzLeftPostBrktSelectWord1}	xfxc
-		3. xcontext(s,s)	XIFIndexInRange.xcontext({#insert zXcX}).{#insert zzLeftPostBrktSelectWord1}	xfxc
-ExceptionContext -- xfc	.{#insert zzLeftPostBrktSelectWord1}	xf
-	1. oxcontext(s,s)	oxcontext({#insert zXcX}).{#insert zzLeftPostBrktSelectWord1}	xfc
-	1. oxcontext(s,s,s)	oxcontext({#insert zXcXcX}).{#insert zzLeftPostBrktSelectWord1}	xfc
-	2. excontext(s,s,i)	excontext({#insert zXcXcY}).{#insert zzLeftPostBrktSelectWord1}	xfc
-	2. excontext(s,s,i,s)	excontext({#insert zXcXcYcX}).{#insert zzLeftPostBrktSelectWord1}	xfc
-	3. xcontext(s)	xcontext({#insert zXmark}).{#insert zzLeftPostBrktSelectWord1}	xfc
-	3. xcontext(s,s)	xcontext({#insert zXcX}).{#insert zzLeftPostBrktSelectWord1}	xfc
+GetLengthOrCINull -- g	GetLengthOrCINull.	xf
+	getArray/getCollection -- a	.	xfg
+		forArray(o[])	GetLengthOrCINull.forArray({#insert zYmark}){#insert zLeftPostBrktSelectWord1}	xfga
+		forArray(o[],s,s)	GetLengthOrCINull.forArray({#insert zYcXcX}){#insert zLeftPostBrktSelectWord1}	xfga
+		forArray(o[],s,s,o,xc)	GetLengthOrCINull.forArray({#insert zYcXcXcYcY}){#insert zLeftPostBrktSelectWord1}	xfga
+		forCollection(cll)	GetLengthOrCINull.forCollection({#insert zYmark}){#insert zLeftPostBrktSelectWord1}	xfga
+		forCollection(cll,s,s)	GetLengthOrCINull.forCollection({#insert zYcXcX}){#insert zLeftPostBrktSelectWord1}	xfga
+		forCollection(cll,s,s,o,xc)	GetLengthOrCINull.forCollection({#insert zYcXcXcYcY}){#insert zLeftPostBrktSelectWord1}	xfga
+	forString(o)	GetLengthOrCINull.forString({#insert zYmark}){#insert zLeftPostBrktSelectWord1}	xfg
+	forString(o,s,s)	GetLengthOrCINull.forString({#insert zYcXcX}){#insert zLeftPostBrktSelectWord1}	xfg
+	forString(o,s,s,o,xc)	GetLengthOrCINull.forString({#insert zYcXcXcYcY}){#insert zLeftPostBrktSelectWord1}	xfg
+XBNObject -- o	XBNObject.	xf
+	ciNull... -- u	.	xfo
+		ciNull(b,o,s,s)	ciNull({#insert zYcYcXcX});{#insert zLeftPostBrktSelectWord1}	xfou
+		ciNull(b,o,s,s,o,xc)	ciNull({#insert zYmark}, {#insert zYcXcXcYcY});{#insert zLeftPostBrktSelectWord1}	xfou
+		ciNull(o,s,s)	ciNull({#insert zYcXcX});{#insert zLeftPostBrktSelectWord1}	xfou
+		ciNull(o,s,s,o,xc)	ciNull({#insert zYcXcXcYcY});{#insert zLeftPostBrktSelectWord1}	xfou
+		ciNullEmptyString(o,s,s,o,xc)	ciNullEmptyString({#insert zYcXcXcYcY});{#insert zLeftPostBrktSelectWord1}	xfou
+		ciNullOrReturnCause(o,s,s,o,xc,thr)	ciNullOrReturnCause({#insert zYcXcXcY}, {#insert zYcY});{#insert zLeftPostBrktSelectWord1}	xfou
+		ciNullOrReturnCause(o,s,s,thr)	ciNullOrReturnCause({#insert zYcXcXcY});{#insert zLeftPostBrktSelectWord1}	xfou
+	ciMinGTMax(i,i)	ciMinGTMax({#insert zYcY});{#insert zLeftPostBrktSelectWord1}	xfo
+	ciMinGTMax(i,i,s,s,s,o,xc)	ciMinGTMax({#insert zYcYcXcX}, {#insert zXcY}, {#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xfo
+	getStringOrDefaultIfNull(o,s)	GetLengthOrCINull.getStringOrDefaultIfNull({#insert zYmark}, {#insert zXmark}){#insert zLeftPostBrktSelectWord1}	xfo
+	getStringOrDefaultIfNull(s,o,s,s)	GetLengthOrCINull.getStringOrDefaultIfNull({#insert zXcY}, {#insert zXcX}){#insert zLeftPostBrktSelectWord1}	xfo
+	getUnknownAttemptingXMsg(s,o,xc)	getUnknownAttemptingXMsg({#insert zXcY}, {#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xfo
+	getXMsg(s,s,o,xc)	getXMsg({#insert zXcXcYcY}){#insert zLeftPostBrktSelectWord1}	xfo
+XIFLengthInRange -- l	XIFLengthInRange.	xf
+	ci... array -- a	.	xfl
+		ciNullEmpty(o[])	ciNullEmpty({#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xfla
+		ciNullEmpty(o[],s,s,o)	ciNullEmpty({#insert zYcXcXcY});{#insert zLeftPostBrktSelectWord1}	xfla
+		cib(o[])	cib({#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xfla
+		cib(o[],s,s,o)	cib({#insert zYcXcXcY});{#insert zLeftPostBrktSelectWord1}	xfla
+		cibArrayTIAElement(o[])	cibArrayTIAElement({#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xfla
+		cibArrayTIAElement(o[],s,s,i,s,o)	cibArrayTIAElement({#insert zYcXcXcYcXcY});{#insert zLeftPostBrktSelectWord1}	xfla
+	ci... Collection -- c	.	xfl
+		ciNullEmpty(cll)	ciNullEmpty({#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xflc
+		ciNullEmpty(cll,s,s,o)	ciNullEmpty({#insert zYcXcXcY});{#insert zLeftPostBrktSelectWord1}	xflc
+		cib(cll)	cib({#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xflc
+		cib(cll,s,s,o)	cib({#insert zYcXcXcY});{#insert zLeftPostBrktSelectWord1}	xflc
+		cibCollectionTIAElement(cll)	cibCollectionTIAElement({#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xflc
+		cibCollectionTIAElement(cll,s,s,i,s,o)	cibCollectionTIAElement({#insert zYcXcXcYcXcY});{#insert zLeftPostBrktSelectWord1}	xflc
+	ci... int -- i	.	xfl
+		cib(i)	cib({#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xfli
+		cib(i,s,s,o)	cib({#insert zYcXcXcY});{#insert zLeftPostBrktSelectWord1}	xfli
+		cibContainer(i)	cibContainer({#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xfli
+		cibContainer(i,s,s,o)	cibContainer({#insert zYcXcXcY});{#insert zLeftPostBrktSelectWord1}	xfli
+		cibElement(i)	cibElement({#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xfli
+		cibElement(i,s,s,i,s,o)	cibElement({#insert zYcXcXcYcXcY});{#insert zLeftPostBrktSelectWord1}	xfli
+	ci... String -- s	.	xfl
+		ciNullEmpty(o)	ciNullEmpty({#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xfls
+		ciNullEmpty(o,s,s,o)	ciNullEmpty({#insert zYcXcXcY});{#insert zLeftPostBrktSelectWord1}	xfls
+		cib(o)	cib({#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xfls
+		cib(o,s,s,o)	cib({#insert zYcXcXcY});{#insert zLeftPostBrktSelectWord1}	xfls
+		cibStringElement(o)	cibStringElement({#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xfls
+		cibStringElement(o,s,s,i,s,o)	cibStringElement({#insert zYcXcXcYcXcY});{#insert zLeftPostBrktSelectWord1}	xfls
+	Config -- g	.	xfl
+		lengthInRange(lir)	lengthInRange({#insert zYmark}).	xflg
+		max(i)	max({#insert zYmark}).	xflg
+		min(i)	min({#insert zYmark}).	xflg
+		minMax(i,i)	minMax({#insert zYcY}).	xflg
+		nullBad()	nullBad().	xflg
+		nullOk()	nullOk().	xflg
+		nullOk(b)	nullOk({#insert zYmark}).	xflg
+	ExceptionContext -- x	.	xfl
+		1. xcontext(s)	XIFLengthInRange.xcontext({#insert zXmark}).	xflx
+		1. xcontext(s,o)	XIFLengthInRange.xcontext({#insert zXcY}).	xflx
+		2. oxcontext(s,s)	XIFLengthInRange.oxcontext({#insert zXcX}).	xflx
+		2. oxcontext(s,s,o)	XIFLengthInRange.oxcontext({#insert zXcXcY}).	xflx
+		3. excontext(s,s,i)	XIFLengthInRange.excontext({#insert zXcXcY}).	xflx
+		3. excontext(s,s,i,o)	XIFLengthInRange.excontext({#insert zXcXcYcY}).	xflx
+		exceptionContext(xc)	XIFLengthInRange.exceptionContext({#insert zYmark}).	xflx
+XIFIntInRange -- i	XIFIntInRange.	xf
+	cib... int -- i	.	xfi
+		cib(i)	cib({#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xfii
+		cib(i,s,s,o)	cib({#insert zYcXcXcY});{#insert zLeftPostBrktSelectWord1}	xfii
+		cibIntElement(i)	cibIntElement({#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xfii
+		cibIntElement(i,s,s,i,s,o)	cibIntElement({#insert zYcXcXcYcXcY});{#insert zLeftPostBrktSelectWord1}	xfii
+		cibIntObject(i)	cibIntObject({#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xfii
+		cibIntObject(i,s,s,o)	cibIntObject({#insert zYcXcXcY});{#insert zLeftPostBrktSelectWord1}	xfii
+		cibRange(i,i)	cibRange({#insert zYcY});{#insert zLeftPostBrktSelectWord1}	xfii
+		cibRange(i,i,s,s)	cibRange({#insert zYcYcXcX});{#insert zLeftPostBrktSelectWord1}	xfii
+	Config -- g	.	xfi
+		intInRange(iir)	intInRange({#insert zYmark}).	xfig
+		max(i)	max({#insert zYmark}).	xfig
+		min(i)	min({#insert zYmark}).	xfig
+		minMax(i,i)	minMax({#insert zYcY}).	xfig
+		z-Inclusive/exclusive -- i	.	xfigi
+			maxExclusive(i)	maxExclusive({#insert zYmark}).	xfigi
+			maxInclusive(i)	maxInclusive({#insert zYmark}).	xfigi
+			minExMaxInclusive(i,i)	minExMaxInclusive({#insert zYcY}).	xfigi
+			minExclusive(i)	minExclusive({#insert zYmark}).	xfigi
+			minInMaxExclusive(i,i)	minInMaxExclusive({#insert zYcY}).	xfigi
+			minInclusive(i)	minInclusive({#insert zYmark}).	xfigi
+			minMaxExclusive(i,i)	minMaxExclusive({#insert zYcY}).	xfigi
+			minMaxInclusive(i,i)	minMaxInclusive({#insert zYcY}).	xfigi
+	ExceptionContext -- x	.	xfix
+		1. xcontext(s)	XIFIntInRange.xcontext({#insert zXmark}).	xfix
+		1. xcontext(s,o)	XIFIntInRange.xcontext({#insert zXcY}).	xfix
+		2. oxcontext(s,s)	XIFIntInRange.oxcontext({#insert zXcX}).	xfix
+		2. oxcontext(s,s,o)	XIFIntInRange.oxcontext({#insert zXcXcY}).	xfix
+		3. excontext(s,s,i)	XIFIntInRange.excontext({#insert zXcXcY}).	xfix
+		3. excontext(s,s,i,o)	XIFIntInRange.excontext({#insert zXcXcYcY}).	xfix
+		exceptionContext(xc)	XIFIntInRange.exceptionContext({#insert zYmark}).	xfix
+XIFIndexInRange -- x	XIFIndexInRange.	xf
+	cib... int -- i	.	xfx
+		cib(i)	cib({#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xfxi
+		cib(i,s,s,o)	cib({#insert zYcXcXcY});{#insert zLeftPostBrktSelectWord1}	xfxi
+		cibIndexElement(i)	cibIndexElement({#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xfxi
+		cibIndexElement(i,s,s,i,s,o)	cibIndexElement({#insert zYcXcXcYcXcY});{#insert zLeftPostBrktSelectWord1}	xfxi
+	Config -- g	.	xfx
+		forLength... -- f	.	xfxg
+			forLength(cll)	forLength({#insert zYmark}).	xfxgf
+			forLength(i)	forLength({#insert zYmark}).	xfxgf
+			forLength(o)	forLength({#insert zYmark}).	xfxgf
+			forLength(o[])	forLength({#insert zYmark}).	xfxgf
+		indexInRange(xir)	indexInRange({#insert zYmark}).	xfxg
+		min(i)	min({#insert zYmark}).	xfxg
+		minAndForLength(i,cll)	minAndForLength({#insert zYcY}).	xfxg
+		minAndForLength(i,i)	minAndForLength({#insert zYcY}).	xfxg
+		minAndForLength(i,o)	minAndForLength({#insert zYcY}).	xfxg
+		minAndForLength(i,o[])	minAndForLength({#insert zYcY}).	xfxg
+	ExceptionContext -- x	.	xfx
+		1. xcontext(s)	XIFIndexInRange.xcontext({#insert zXmark}).	xfxx
+		1. xcontext(s,o)	XIFIndexInRange.xcontext({#insert zXcY}).	xfxx
+		2. oxcontext(s,s)	XIFIndexInRange.oxcontext({#insert zXcX}).	xfxx
+		2. oxcontext(s,s,o)	XIFIndexInRange.oxcontext({#insert zXcXcY}).	xfxx
+		3. excontext(s,s,i)	XIFIndexInRange.excontext({#insert zXcXcY}).	xfxx
+		3. excontext(s,s,i,o)	XIFIndexInRange.excontext({#insert zXcXcYcY}).	xfxx
+		exceptionContext(xc)	XIFIndexInRange.exceptionContext({#insert zYmark}).	xfxx
+

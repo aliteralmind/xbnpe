@@ -3,4 +3,5 @@ XBN-PhraseExpress: All syntax summaries in each project
 javasyn: Java-code creation
 pexsyn: PhraseExpress-code creation
 xkpsyn: Phrase-creators
+snrsyn: Search and replace
 {#insert zBKSP}

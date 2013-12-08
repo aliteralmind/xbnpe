@@ -13,8 +13,8 @@ kotly -- kotl, display y-mark	{#insert zzSetTrdToL1cONmToL1wONmToR}{#insert zPri
 kotlyb -- kotly, display in clipboard	{#insert zvDISPLAY_stCB}{#insert zzSetTrdToL1cONmToL1wONmToR}{#insert zPrintClassObjLinkAltDisp_M_cnmFnmPrmsDsp}{#insert zzKotlsyn_M_yon}	kotlyb
 kotlybc -- kotlyb, CODE-d	{#insert zvDISPLAY_stCB}{#insert zzSetTrdToL1cONmToL1wONmToR}<CODE>{#insert zPrintClassObjLinkAltDisp_M_cnmFnmPrmsDsp}</CODE>{#insert zzKotlsyn_M_yon}	kotlybc
 kotlyc -- kotly, CODE-d	{#insert zzSetTrdToL1cONmToL1wONmToR}<CODE>{#insert zPrintClassObjLinkDispYmk_M_cnmFnmPrms}</CODE>{#insert zzKotlsyn_M_yon}	kotlyc
-kotr -- SuperClass.html#Object link, cls-nm in CB	{#insert zvCLS_NM_stSuperCls}{#insert zzSetOptPrkTrdToL1cX1or2ONmToR1w}<CODE>{#insert zPrintClassObjLinkDispFNmOptPrk_M_cnmFnmPrmsPrk}</CODE>{#insert zzKotlsyn_M_yon}	kotr
-kotrt -- kotr, non-CODE-d	{#insert zvCLS_NM_stSuperCls}{#insert zzSetOptPrkTrdToL1cX1or2ONmToR1w}{#insert zPrintClassObjLinkDispFNmOptPrk_M_cnmFnmPrmsPrk}{#insert zzKotlsyn_M_yon}	kotrt
+kotr -- SuperClass.html#Object link, cls-nm in CB	{#insert zXSetClsNmToSuperClassXDownDel}{#insert zzSetOptPrkTrdToL1cX1or2ONmToR1w}<CODE>{#insert zPrintClassObjLinkDispFNmOptPrk_M_cnmFnmPrmsPrk}</CODE>{#insert zzKotlsyn_M_yon}	kotr
+kotrt -- kotr, non-CODE-d	{#insert zXSetClsNmToSuperClassXDownDel}{#insert zzSetOptPrkTrdToL1cX1or2ONmToR1w}{#insert zPrintClassObjLinkDispFNmOptPrk_M_cnmFnmPrmsPrk}{#insert zzKotlsyn_M_yon}	kotrt
 kotry -- kotr, display y-mark	{#insert zzSetClsNmToSuperTrdToL1cSetONmToR}{#insert zPrintClassObjLinkDispYmk_M_cnmFnmPrms}{#insert zzKotlsyn_M_yon}	kotry
 kotryb -- kotry, display in clipboard	{#insert zvDISPLAY_stCB}{#insert zzSetClsNmToSuperTrdToL1cSetONmToR}{#insert zPrintClassObjLinkAltDisp_M_cnmFnmPrmsDsp}{#insert zzKotlsyn_M_yon}	kotryb
 kotrybc -- kotryb, CODE-d	{#insert zvDISPLAY_stCB}{#insert zzSetClsNmToSuperTrdToL1cSetONmToR}<CODE>{#insert zPrintClassObjLinkAltDisp_M_cnmFnmPrmsDsp}</CODE>{#insert zzKotlsyn_M_yon}	kotrybc

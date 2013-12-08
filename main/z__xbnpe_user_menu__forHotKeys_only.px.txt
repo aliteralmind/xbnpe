@@ -1,5 +1,6 @@
 Change execution speed	{#insert kpspeed_user_menu_folder}	kpspeed_user_menu_folder_forHKOnly
 Phrase-creators: XBN-PhraseExpress -- Type 'xh'	.		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
 TextPad built-in commands (TPKC) project	{#insert tpkc_user_menu_folder}	tpkc_user_menu_folder_forHKOnly
-Turn action syntax-summary balloons on	{#insert zvSYNTAX_ON_stOn}{#BALLOON -title Syntax summary balloons are on -text zvSYNTAX_ON='{#insert zvSYNTAX_ON}'}	zvSYNTAX_ON_stOnForDdm
+Turn action syntax-summary balloons off	{#insert zvSYNTAX_ON_stOff}{#BALLOON -title Syntax summary balloons: OFF -text zvSYNTAX_ON='{#insert zvSYNTAX_ON}'}	zvSYNTAX_ON_stOnForDdm
+Turn action syntax-summary balloons on	{#insert zvSYNTAX_ON_stES}{#BALLOON -title Syntax summary balloons: on -text zvSYNTAX_ON='{#insert zvSYNTAX_ON}'}	zvSYNTAX_ON_stOnForDdm
 z-(The default key-command for this FOLDER is zCASpDNR_SLASH)	.		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)

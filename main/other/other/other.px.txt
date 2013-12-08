@@ -1,0 +1,1 @@
+zzSqBrkCURSORSlk2Bksp8	[CURSOR]{#sleep 2000}{#BKSP -count 8}	zzSqBrkCURSORSlk2Bksp8

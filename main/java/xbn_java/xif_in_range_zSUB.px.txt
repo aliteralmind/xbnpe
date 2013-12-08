@@ -1,11 +1,10 @@
-zXcX	{#insert zXmark},{#insert zXmark}	zXcX
-zYcY	{#insert zYmark},{#insert zYmark}	zYcY
-zYcXcX	{#insert zYmark},{#insert zXcX}	zYcXcX
-zYcXcXcX	{#insert zYcXcX},{#insert zXmark}	zYcXcXcX
-zXcXcX	{#insert zXcX},{#insert zXmark}	zXcXcX
-zXcXcY	{#insert zXcX},{#insert zYmark}	zXcXcY
-zYcXcXcYcXcX	{#insert zYcXcX},{#insert zYcXcX}	zYcXcXcYcXcX
-zYcXcXcXcY	{#insert zYcXcXcX},{#insert zYmark}	zYcXcXcXcY
-zXcXcYcX	{#insert zXcXcY},{#insert zXmark}	zXcXcYcX
-zYcYcXcX	{#insert zYcY},{#insert zXcX}	zYcYcXcX
-zzLeftPostBrktSelectWord1	{#insert zLEFT}{#insert zPostBrktSelectWord1}	zzLeftPostBrktSelectWord1
+zXcY	{#insert zXmark}, {#insert zYmark}	zXcY
+zYcXcX	{#insert zYmark}, {#insert zXcX}	zYcXcX
+zYcXcXcY	{#insert zYcXcX}, {#insert zYmark}	zYcXcXcY
+zXcXcY	{#insert zXmark}, {#insert zXcY}	zXcXcY
+zXcXcYcY	{#insert zXcXcY}, {#insert zYmark}	zXcXcYcY
+zYcY	{#insert zYmark}, {#insert zYmark}	zYcY
+zXcX	{#insert zXmark}, {#insert zXmark}	zXcX
+zYcXcXcYcXcY	{#insert zYcXcXcY}, {#insert zXcY}	zYcXcXcYcXcY
+zYcXcXcYcY	{#insert zYcXcXcY}, {#insert zYmark}	zYcXcXcYcY
+zYcYcXcX	{#insert zYmark}, {#insert zYcXcX}	zYcYcXcX

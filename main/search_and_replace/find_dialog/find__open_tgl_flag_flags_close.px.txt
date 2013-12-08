@@ -5,3 +5,5 @@ __XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a larg
    Required by phrase-creator-ddmenu-utils...END
 *)
 zFindDlgOpenWrapSearchTglClose	{#insert zFcsTPFindDlgOpen}{#insert zFindDlgCloseWS}	zFindDlgOpenWrapSearchTglClose
+zFindDlgOpenFlagUpClose	{#insert zFindDlgOpenUp}{#insert zFindDlgClose}	zFindDlgOpenFlagUpClose
+zFindDlgOpenFlagDownClose	{#insert zFindDlgOpenDown}{#insert zFindDlgClose}	zFindDlgOpenFlagDownClose

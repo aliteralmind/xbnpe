@@ -10,18 +10,20 @@ fspb -- Func-name in CB to F() is '+F()+'	{#insert zTPPaste}() is {#insert zzQQP
 fspl -- fspb, func-name word-left	{#insert zCutL1w}{#insert fspb}	fspl
 ftpb -- Func-name in clipboard to F()=\''+F()+'\'	{#insert zTPPaste}()=\{#insert zAscQQ}{#insert zzQQPlsFncPPPlusQQ}\{#insert zAscQQ}{#insert zzftplsyn_M_yon}	ftpb
 ftpl -- ftpb, func-name word-left	{#insert zCutL1w}{#insert ftpb}	ftpl
+vbpb -- Var-name in CB to V=['+V+']	{#insert zTPPaste}=[{#insert zJavaVarInStringPaste}]{#insert zzFqplsyn_M_yon}	vbpb
+vbpl -- fppb, var-name word-left	{#insert zCutL1w}{#insert vbpb}	vbpl
 vppb -- Var-name in CB to V ('+V+')	{#insert zTPPaste} ({#insert zJavaVarInStringPaste}){#insert zzFqplsyn_M_yon}	vppb
-vppl -- fppb, var-name word-left	{#insert zCutL1w}{#insert vppl}	vppl
+vppl -- fppb, var-name word-left	{#insert zCutL1w}{#insert vppb}	vppl
 vqpb -- Var-name in clipboard to V='+V+'	{#insert zTPPaste}={#insert zJavaVarInStringPaste}{#insert zzFqplsyn_M_yon}	vqpb
 vqpl -- fqpb, var-name word-left	{#insert zCutL1w}{#insert vqpb}	vqpl
 vspb -- Var-name in CB to V is '+V+'	{#insert zTPPaste} is {#insert zJavaVarInStringPaste}{#insert zzFqplsyn_M_yon}	vspb
 vspl -- fspb, var-name word-left	{#insert zCutL1w}{#insert vspb}	vspl
 vtpb -- Func-name in clipboard to V=\''+V+'\'	{#insert zTPPaste}=\{#insert zAscQQ}{#insert zJavaVarInStringPaste}\{#insert zAscQQ}{#insert zzvtplsyn_M_yon}	vtpb
 vtpl -- vtpb, func-name word-left	{#insert zCutL1w}{#insert vtpb}	vtpl
-vupb -- Var-name in CB to V is '+V+'	{#insert zTPPaste}=[{#insert zJavaVarInStringPaste}]{#insert zzFqplsyn_M_yon}	vupb
+vupb -- Var-name in CB to V is '+V+'	{#insert zTPPaste} is {#insert zJavaVarInStringPaste}{#insert zzFqplsyn_M_yon}	vupb
 vupl -- fspb, var-name word-left	{#insert zCutL1w}{#insert vupb}	vupl
 zJavaVarInString -[zCSpACCENT]- ' + ... + '	{#insert zAscQQ} + {#insert zYmark} + {#insert zAscQQ}{#insert zYUp}	zJavaVarInString
 zJavaVarInStringPaste -[zCApACCENT]- ' + [paste] + '	{#insert zAscQQ} + {#insert zTPPaste} + {#insert zAscQQ}	zJavaVarInStringPaste
 zzFqplsyn_M_yon -- Needs zvSYNTAX_ON	{#insert {#COND -if {#insert zvSYNTAX_ON} = on -then fqplsyn -else z1slp}}	zzFqplsyn_M_yon
-zzFqplsyns	[f,v][p,q,s,t,u]p[b,l]	zzFqplsyns
+zzFqplsyns	[f,v][b,p,q,s,t,u]p[b,l]	zzFqplsyns
 zzQQPlsFncPPPlusQQ	{#insert zAscQQ} + {#insert zTPPaste}() + {#insert zAscQQ}	zzQQPlsFncPPPlusQQ

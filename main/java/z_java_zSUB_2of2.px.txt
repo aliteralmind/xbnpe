@@ -1,0 +1,49 @@
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+zzSetAngToNWycTo1 -*-	{#insert zvANG_stN}{#insert zvAWAY_CNT_st1}	zzSetAngToNWycTo1
+zzSetAngToNWycTo2 -*-	{#insert zvANG_stN}{#insert zvAWAY_CNT_st2}	zzSetAngToNWycTo2
+zzSetAngToNWycTo3 -*-	{#insert zvANG_stN}{#insert zvAWAY_CNT_st3}	zzSetAngToNWycTo3
+zzSetAngToNWycTo4 -*-	{#insert zvANG_stN}{#insert zvAWAY_CNT_st4}	zzSetAngToNWycTo4
+zzSetAngToNWycTo5 -*-	{#insert zvANG_stN}{#insert zvAWAY_CNT_st5}	zzSetAngToNWycTo5
+zzSetAngToNWycToPrompt -*-	{#insert zvANG_stN}{#insert zvAWAY_CNT_stPrompt}	zzSetAngToNWycToPrompt
+zzSetAngToAWycTo1 -*-	{#insert zvANG_stA}{#insert zvAWAY_CNT_st1}	zzSetAngToAWycTo1
+zzSetAngToAWycTo2 -*-	{#insert zvANG_stA}{#insert zvAWAY_CNT_st2}	zzSetAngToAWycTo2
+zzSetAngToAWycTo3 -*-	{#insert zvANG_stA}{#insert zvAWAY_CNT_st3}	zzSetAngToAWycTo3
+zzSetAngToAWycTo4 -*-	{#insert zvANG_stA}{#insert zvAWAY_CNT_st4}	zzSetAngToAWycTo4
+zzSetAngToAWycTo5 -*-	{#insert zvANG_stA}{#insert zvAWAY_CNT_st5}	zzSetAngToAWycTo5
+zzSetAngToAWycToPrompt -*-	{#insert zvANG_stA}{#insert zvAWAY_CNT_stPrompt}	zzSetAngToAWycToPrompt
+zzAtJFSigStartSelectFuncName -*-	{#insert zTMFindNextOpenParen}{#insert zLEFT}{#insert zTPSelectL1w}	zzAtJFSigStartSelectFuncName
+zvPARAM_NUM_st8 -*-	{#SETPHRASE -description zvPARAM_NUM -content 8 -autotext zvPARAM_NUM -folder ctvv_folder}	zvPARAM_NUM_st8
+zvPARAM_NUM_st9 -*-	{#SETPHRASE -description zvPARAM_NUM -content 9 -autotext zvPARAM_NUM -folder ctvv_folder}	zvPARAM_NUM_st9
+zvPARAM_NUM_stPrompt -*-	{#SETPHRASE -description zvPARAM_NUM -content {#INPUT -head Parameter number? (1+) -single} -autotext zvPARAM_NUM -folder ctvv_folder}	zvPARAM_NUM_stPrompt
+zvPNXT_PRV_stNext -*-	{#SETPHRASE -description zvPPRV_NXT -content Next -autotext zvPPRV_NXT -folder ctvv_folder}	zvPNXT_PRV_stNext
+zvPNXT_PRV_stPrev -*-	{#SETPHRASE -description zvPPRV_NXT -content Prev -autotext zvPPRV_NXT -folder ctvv_folder}	zvPNXT_PRV_stPrev
+zzDemoJavaClassLine	{#ENTER -count 2}/**{#ENTER} **/{#ENTER}{#BKSP}public class ThisClass extends SuperClass  {{#ENTER}...{#ENTER}\\\}{#ENTER -count 2}	zzDemoJavaClassLine
+zzJFSigLineSlctdGoToFuncName	{#insert zJFSigLineSlctdGoToOpenParen}{#insert zTPMoveL1w}	zzJFSigLineSlctdGoToFuncName
+zzJFSigLineSlctd_selectFuncName	{#insert zJFSigLineSlctdGoToOpenParen}{#insert zTPSelectL1w}	zzJFSigLineSlctd_selectFuncName
+zzJFSigLnSlctd_selectNextParamTypeNm_M_pnum	{#insert zLEFT}{#insert zTMFindNextOpenParen}{#LOOP {#insert zTMFindNextParamTypeAndName} -count {#insert zvPARAM_NUM}}	zzJFSigLnSlctd_selectNextParamTypeNm_M_pnum
+zzJFSigLnSlctd_selectNxtPrvParamTypeNm_M_pnpPnum -- Needs zvPPRV_NXT, zvPARAM_NUM	{#insert zzJFSigLnSlctd_select{#insert zvPPRV_NXT}ParamTypeNm_M_pnum}	zzJFSigLnSlctd_selectNxtPrvParamTypeNm_M_pnpPnum
+zzJFSigLnSlctd_selectPrevParamTypeNm_M_pnum	{#insert zRIGHT}{#insert zTMFindPrevCloseParen}{#LOOP {#insert zTMFindPrevParamTypeAndName} -count {#insert zvPARAM_NUM}}	zzJFSigLnSlctd_selectPrevParamTypeNm_M_pnum
+zzJavaTestIntroFileNew	{#MSGBOX -head Testing Java actions -text About to test Java actions.{#insert zzSyntaxOnFlagWarningTxt}}{#insert zvSYNTAX_ON_stES}{#insert zFcsTPFileNew}	zzJavaTestIntroFileNew
+zzSetCddLltrToES	{#insert zvCDD_ES_stES}{#insert zvLC_ALTR_stES}	zzSetCddLltrToES
+zzSetDispToFuncNmIfFutr_M_dsp -*-	(*If zvDISPLAY is '__CLS_NM__', reset it to THIS (in zvFOBJ_NAME). See zzSetDispToFutrCNmCddToCddIfUcPapToLcCB_M_cb*){#insert {#COND -if {#insert zvDISPLAY} = __CLS_NM__ -then zvDISPLAY_stFncObjNm -else z1slp}}	zzSetDispToFuncNmIfFutr_M_dsp
+zzSetDrnToHPapToV	{#insert zvDRN_stH}{#insert zvPAP_stV}	zzSetDrnToHPapToV
+zzSetGpnPpnToNext -*-	{#insert zvGPRV_NXT_stNext}{#insert zvPNXT_PRV_stNext}	zzSetGpnPpnToNext
+zzSetGpnPpnToPrev -*-	{#insert zvGPRV_NXT_stPrev}{#insert zvPNXT_PRV_stPrev}	zzSetGpnPpnToPrev
+zzSetGpnPpnToPrevParamNumTo1 -*-	{#insert zzSetGpnPpnToPrev}{#insert zvPARAM_NUM_st1}	zzSetGpnPpnToPrevParamNumTo1
+zzSetGpnPpnToPrevParamNumTo2 -*-	{#insert zzSetGpnPpnToPrev}{#insert zvPARAM_NUM_st2}	zzSetGpnPpnToPrevParamNumTo2
+zzSetGpnPpnToPrevParamNumTo3 -*-	{#insert zzSetGpnPpnToPrev}{#insert zvPARAM_NUM_st3}	zzSetGpnPpnToPrevParamNumTo3
+zzSetGpnPpnToPrevParamNumTo4 -*-	{#insert zzSetGpnPpnToPrev}{#insert zvPARAM_NUM_st4}	zzSetGpnPpnToPrevParamNumTo4
+zzSetGpnPpnToPrevParamNumTo5 -*-	{#insert zzSetGpnPpnToPrev}{#insert zvPARAM_NUM_st5}	zzSetGpnPpnToPrevParamNumTo5
+zzSetGpnPpnToPrevParamNumToPrompt -*-	{#insert zzSetGpnPpnToPrev}{#insert zvPARAM_NUM_stPrompt}	zzSetGpnPpnToPrevParamNumToPrompt
+zzSetGpnToNextPpnToPrev -*-	{#insert zvGPRV_NXT_stNext}{#insert zvPNXT_PRV_stPrev}	zzSetGpnToNextPpnToPrev
+zzSetGpnToPrevPpnToNext -*-	{#insert zvGPRV_NXT_stPrev}{#insert zvPNXT_PRV_stNext}	zzSetGpnToPrevPpnToNext
+zzSetGpnToPrevPpnToNextParamNumTo1 -*-	{#insert zzSetGpnToPrevPpnToNext}{#insert zvPARAM_NUM_st1}	zzSetGpnToPrevPpnToNextParamNumTo1
+zzSetGpnToPrevPpnToNextParamNumTo2 -*-	{#insert zzSetGpnToPrevPpnToNext}{#insert zvPARAM_NUM_st2}	zzSetGpnToPrevPpnToNextParamNumTo2
+zzSetGpnToPrevPpnToNextParamNumTo3 -*-	{#insert zzSetGpnToPrevPpnToNext}{#insert zvPARAM_NUM_st3}	zzSetGpnToPrevPpnToNextParamNumTo3
+zzSetGpnToPrevPpnToNextParamNumTo4 -*-	{#insert zzSetGpnToPrevPpnToNext}{#insert zvPARAM_NUM_st4}	zzSetGpnToPrevPpnToNextParamNumTo4
+zzSetGpnToPrevPpnToNextParamNumTo5 -*-	{#insert zzSetGpnToPrevPpnToNext}{#insert zvPARAM_NUM_st5}	zzSetGpnToPrevPpnToNextParamNumTo5
+zzSetGpnToPrevPpnToNextParamNumToPrompt -*-	{#insert zzSetGpnToPrevPpnToNext}{#insert zvPARAM_NUM_stPrompt}	zzSetGpnToPrevPpnToNextParamNumToPrompt
+zzSglsyn_M_yon	{#insert {#COND -if {#insert zvSYNTAX_ON} = on -then sglsyn -else z1slp}}	zzSglsyn_M_yon
+zzzDupedSigLine1	{#insert zENTER2}{#insert zHOME}   public static final void ciNull1(Object o_bj1, String s_clgFunc1, SomeClass<? extends SomeOtherClass> sc_name1, String s_dotFuncPON1, String s_extraNNPre1, String s_extraInfo1)  {{#insert zEnterBksp}	zzzDupedSigLine1
+zzzDupedSigLines	{#insert zzzDupedSigLine1}public static final void ciNull2(Object o_bj2, String s_clgFunc2, SomeClass<? extends SomeOtherClass> sc_name2, String s_dotFuncPON2, String s_extraNNPre2, String s_extraInfo2)  {{#insert zEnterBksp}public static final void ciNull3(Object o_bj3, String s_clgFunc3, SomeClass<? extends SomeOtherClass> sc_name3, String s_dotFuncPON3, String s_extraNNPre3, String s_extraInfo3)  {{#insert zEnterBksp}public static final void ciNull4(Object o_bj4, String s_clgFunc4, SomeClass<? extends SomeOtherClass> sc_name4, String s_dotFuncPON4, String s_extraNNPre4, String s_extraInfo4)  {{#insert zENTER2}{#insert zBKSP}	zzzDupedSigLines
+zzzJFSigWNumberedParamsGnrcsIn4	{#insert zENTER2}{#insert zTAB}public final ReturnType<? extends Whatever> doSomething(Object o_bj1, String sn_object2, boolean b_nullOk3, AClass<? extends Object> s_calling4, String s_nameBNullOk5)  {{#insert zENTER2}{#insert zBKSP2}	zzzJFSigWNumberedParamsGnrcsIn4

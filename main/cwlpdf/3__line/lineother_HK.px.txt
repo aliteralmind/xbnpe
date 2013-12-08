@@ -1,24 +1,10 @@
 __XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
-zzREonRplcNewLinesToNothing	{#insert zFcsTPRplcDlgOpen}{#insert zzMidRplcRENewlnToNothing}{#insert zRplcBtnAllSelHnr}{#insert zRplcDlgClose}	zzREonRplcNewLinesToNothing
-zzREoffRplcNewLinesToNothing	(*RE=off*){#insert zRplcDlgOpenRE}(*RE=on*){#insert zzMidRplcRENewlnToNothing}{#insert zRplcBtnAllSelHnr}{#insert zRplcDlgClose}{#insert zTPFindFlagREon}(*RE=off*)	zzREoffRplcNewLinesToNothing
-
-delmtlines -- zDelAllEmptyLinesButLastInDoc ALT KC	{#insert zDelAllEmptyLinesButLastInDoc}	delmtlines
-markmtlines -- zMarkAllEmptyLinesButLastInDocZduDel ALT KC	{#insert zMarkAllEmptyLinesButLastInDocZduDel}	markmtlines
-zMarkAllEmptyLinesButLastInDocZduDel	{#insert zMarkAllEmptyLinesButLastInDoc}{#insert zZDownUpDelete}	zMarkAllEmptyLinesButLastInDocZduDel
-markmtlineswp -- zMarkAllEmptyLinesButLastInDocWCountPromptUnmark ALT KC	{#insert zMarkAllEmptyLinesButLastInDocWCountPromptUnmark}	markmtlineswp
-zCutEntireLineNoNLDel	{#insert zCutEntireLineNoNL}{#insert zDEL}	zCutEntireLineNoNLDel
-zDelAllEmptyLinesButLastInDoc -(*!!*)- Does not delete potential final empty-line	(*Warning: Eliminates any current selection!*){#insert zMarkAllEmptyLinesButLastInDoc}{#insert zTPBookmarkDeleteAll}{#insert zZDownUpDelete}	zDelAllEmptyLinesButLastInDoc
 zDelToLineEnd -- zTPDelToEndOfLine X2	{#insert zTPDelToEndOfLine}{#insert zTPDelToEndOfLine}	zDelToLineEnd
-zDeleteLine -- zTPDeleteLine ALT KC	{#insert zTPDeleteLine}	zDeleteLine
+zDownGT1stNonWSCharInLine	{#insert zDOWN}{#insert zGT1stNonWSCharInLine}	zDownGT1stNonWSCharInLine
 zDownHome	{#insert zDOWN}{#insert zHOME}	zDownHome
-zDupLine -- zTPDupLine ALT KC	{#insert zTPDupLine}	zDupLine
 zGT1stNonWSCharInLine -[zApSPACE]- Places cursor before the first non-whitespace char in line	{#insert zHOME}{#insert zMoveR1L1w}	zGT1stNonWSCharInLine
-zHomeSpEND	{#insert zHOME}{#insert zSpEND}	zHomeSpEND
-zMarkAllEmptyLinesButLastInDoc -(*!!*)- Does not mark potential final empty-line	(*Warning: Eliminates any current selection!*){#insert zzZFillLastLine}{#insert zFindOpenRE}^${#insert zFindMarkAllREClose}{#insert zzElimLastLineFill}	zMarkAllEmptyLinesButLastInDoc
-zMarkAllEmptyLinesButLastInDocWCountPrompt -(*!!*)- Does not mark potential final empty-line	(*Warning: Eliminates any current selection!*){#insert zzZFillLastLine}{#insert zFindOpenRE}^${#insert zFindMarkAllRE}{#MSGBOX -head Empty lines marked -text All empty lines are marked. The number of marks is in the status bar.}{#insert zFindDlgClose}{#insert zzElimLastLineFill}{#insert zZDownUpDelete}	zMarkAllEmptyLinesButLastInDocWCountPrompt
-zMarkAllEmptyLinesButLastInDocWCountPromptUnmark	{#insert zMarkAllEmptyLinesButLastInDocWCountPrompt}{#insert zTPBookmarkClearAll}	zMarkAllEmptyLinesButLastInDocWCountPromptUnmark
-zWWGTFirstNonWS -- zTPToggleWW, zGT1stNonWSCharInLine	{#insert zTPToggleWW}{#insert zGT1stNonWSCharInLine}	zWWGTFirstNonWS
-zvLINE_DOWN_COUNT_stPrompt	{#SETPHRASE -description zvLINE_UP_COUNT -content {#input -head Set zvLINE_DOWN_COUNT to? -single} -autotext zvLINE_DOWN_COUNT -folder ctvv_folder}	zvLINE_DOWN_COUNT_stPrompt
-zvLINE_UP_COUNT_stPrompt	{#SETPHRASE -description zvLINE_UP_COUNT -content {#input -head Set zvLINE_UP_COUNT to? -single} -autotext zvLINE_UP_COUNT -folder ctvv_folder}	zvLINE_UP_COUNT_stPrompt
-zzZFillLastLine	{#insert zZmark}{#insert zGTDocBottom}x	zzZFillLastLine
-zzElimLastLineFill	{#insert zGTDocBottom}{#insert zBKSP}	zzElimLastLineFill
+zUpEnd	{#insert zUP}{#insert zEND}	zUpEnd
+zzREoffRplcNewLinesToNothing	(*RE=off*){#insert zRplcDlgOpenRE}(*RE=on*){#insert zzMidRplcRENewlnToNothing}{#insert zRplcBtnAllSelHnr}{#insert zRplcDlgClose}{#insert zTPFindFlagREon}(*RE=off*)	zzREoffRplcNewLinesToNothing
+zzREonRplcNewLinesToNothing	{#insert zFcsTPRplcDlgOpen}{#insert zzMidRplcRENewlnToNothing}{#insert zRplcBtnAllSelHnr}{#insert zRplcDlgClose}	zzREonRplcNewLinesToNothing
+zGetNonWSLineCountForCurrentTempDocCls_M_hnry -*-	{#insert zzEmptyLnCntIntroWDingWarn_M_hnry}{#insert zRplcDlgOpenRE}{#insert zzMidRplcGoRETDAllNonWSLnsTo1XNLsToNothing_M_hnry}{#insert zRplcDlgCloseRE}{#insert zzLeftCopyAllSetLnCntClsDscrdBalOutro}	zGetNonWSLineCountForCurrentTempDocCls_M_hnry
+zGetNonWSLineCountForCB_M_hnry -*-	{#insert zFileNewPaste}{#insert zGetNonWSLineCountForCurrentTempDocCls_M_hnry}	zGetNonWSLineCountForCB_M_hnry

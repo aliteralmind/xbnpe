@@ -54,10 +54,6 @@ zzAnlsyn_M_yon	{#insert {#COND -if {#insert zvSYNTAX_ON} = on -then aelsyn -else
 zzAnlsyns1of3	[a,n,g,G,u,v]ap[l,z][c][2~5,n]	zzAnlsyns1of3
 zzAnlsyns2of3	an[l,z][c][2~5,n]	zzAnlsyns2of3
 zzAnlsyns3of3	papeg	zzAnlsyns3of3
-zzSetAngToNWycTo1	{#insert zvANG_stN}{#insert zvAWAY_CNT_st1}	zzSetAngToNWycTo1
-zzSetAngToNWycTo2	{#insert zvANG_stN}{#insert zvAWAY_CNT_st2}	zzSetAngToNWycTo2
-zzSetAngToNWycTo3	{#insert zvANG_stN}{#insert zvAWAY_CNT_st3}	zzSetAngToNWycTo3
-zzSetAngToNWycToPrompt	{#insert zvANG_stN}{#insert zvAWAY_CNT_stPrompt}	zzSetAngToNWycToPrompt
 zzXCddPasteNxtJFParamsAtCrsrDelRqstdFrom_M_wycAng	{#insert zvGPRV_NXT_stNext}{#insert zzXCddPastePrvNxtJFParamsAtCrsrDelRqstdFrm_M_gpnWycAng}	zzXCddPasteNxtJFParamsAtCrsrDelRqstdFrom_M_wycAng
 zzXCddPastePrvJFParamsAtCrsrDelRqstdFrom_M_wycAng	{#insert zvGPRV_NXT_stPrev}{#insert zzXCddPastePrvNxtJFParamsAtCrsrDelRqstdFrm_M_gpnWycAng}	zzXCddPastePrvJFParamsAtCrsrDelRqstdFrom_M_wycAng
 zzXCddPastePrvNxtJFParamsAtCrsrDelRqstdFrm_M_gpnWycAng -- See zSelCopyPrvNxtJFSigReturnToXCursor_M_gpnWyc	{#insert zXCddPrvNxtJFSigCopyParamsRtrnToX_M_gpnWyc}{#insert zTPPaste}{#insert zPostAllParamsKeepDelRqstd_M_ang}{#insert zzEscGnrcsIfAngNotLCGPreBrktGTP}	zzXCddPastePrvNxtJFParamsAtCrsrDelRqstdFrm_M_gpnWycAng

@@ -7,5 +7,5 @@ zTMSteps_javaFindNextFuncSig	{#insert zFindDlgOpenDownRE}{#insert zJRgxJavaFuncS
 zTMSteps_javaFindNxtParamTypNm	{#insert zFindDlgOpenDownRE}{#insert zJRgxParamTypeName}{#insert zFindBtnNext}{#insert zFindDlgCloseRE}	zTMSteps_javaFindNxtParamTypNm
 zTMSteps_javaFindPrevFuncSig	{#insert zFindDlgOpenUpRE}{#insert zJRgxJavaFuncSigThrSemicOrOpnCrly}{#insert zFindBtnNext}{#insert zFindDlgCloseDownRE}	zTMSteps_javaFindPrevFuncSig
 zTMSteps_javaFindPrvParamTypNm	{#insert zFindDlgOpenUpRE}{#insert zJRgxParamTypeName}{#insert zFindBtnNext}{#insert zFindDlgCloseDownRE}	zTMSteps_javaFindPrvParamTypNm
-zzRplcFldWDlr1BtnAllSel2PSpcsTo1	{#insert zRplcFieldWith}{#insert zzQdlr1}{#insert zRplcBtnAllSel}{#insert zzRplcRESel2PSpcsTo1}	zzRplcFldWDlr1BtnAllSel2PSpcsTo1
+zzRplcFldWDlr1BtnAllSel2PSpcsTo1	{#insert zRplcFieldWith}{#insert zzQdollarSign1}{#insert zRplcBtnAllSel}{#insert zzRplcRESel2PSpcsTo1}	zzRplcFldWDlr1BtnAllSel2PSpcsTo1
 zzRplcRESel2PSpcsTo1	{#insert zzQDnrSlshPlus}{#insert zRplcFieldWith}{#insert zAscSpace}{#insert zRplcBtnAllSelHnr}{#insert zzQDnrSlshPlusComma}{#insert zRplcFieldWith}{#insert zzQcomma}{#insert zRplcBtnAllSelHnr}	zzRplcRESel2PSpcsTo1
