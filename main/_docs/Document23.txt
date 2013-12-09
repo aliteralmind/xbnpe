@@ -1,0 +1,67 @@
+> I have it loaded on my machine...but I still don't understand what to do with it!
+
+Gregg,
+
+I hope the installation instructions were clear, and as not-overwhelming as possible.
+
+I'm going to assume that you've verified your installation, as described here:
+
+http://goo.gl/Z2NeGm
+
+Let me know if I can help you any more in that regard.
+
+As far as what to do, consider taking a look at the demo-video:
+
+http://goo.gl/jm0y99
+
+Also, in TextPad, type "xh". It is the root of almost everything in XBN-PhraseExpress. Just add and delete letters as instructed to navigate it. Clicking on an item prints a phrase-call to it.
+
+In addition,
+
+Perhaps we could set up a meeting so I could introduce you to some interesting stuff, and confirm everything is working. Once you're comfortable, we could get started talking about Stealth Radio again.
+
+I have something to show you, assuming your installation is all working. But first you'll need to follow these instructions to install a minor upgrade. This is something you may want to get used to (feel free to call me if you need assistance: 856 779 0466).
+
+Please unzip the attachment to your desktop. It contains a PhraseExpress branch:
+   XBNPE- Other utilites.pxp
+and its corresponding source-code folder:
+   xbnpe\main\other
+
+Open PhraseExpress, and select-and-then-delete this folder:
+   XBNPE: Parent folder/XBN-PhraseExpress/XBNPE: Other utilities
+
+Now select its parent folder:
+   XBNPE: Parent folder/XBN-PhraseExpress
+and click Ctrl+I. Navigate to your desktop and double click the pxp file from the attachment, then confirm yes-I-do-want-to-import (and do NOT eliminate any duplicate phrases when asked).
+
+Close PhraseExpress.
+
+Now, in Windows Explorer, go to your xbnpe installation (source-code) directory:
+
+C:\programming\phrase_express\xbnpe\main
+
+In this directory, eliminate the "other" folder, and replace it with the new one from the email attachment.
+
+---DONE---
+
+Now, what I wanted to show you:
+
+In TextPad, execute the phrase 'icvdemo'.
+
+It shows the basics of reading in and verifying the values of "inline configuration variables", as we discussed in the distant past. This is what I'm planning for Stealth Radio. Once all variables are read in, the needed doc-file will be opened in MS-Word, and search and replacements will be made to put all the input values into their proper spots.
+
+As far as what it's doing: Each variable is defined as required or optional, and the email address demonstrates some additional error checking, of requiring the @-sign. Finally, each variable can have a default value, when no value is provided. There's some further documentation on this, if you're interested, which includes a link to the source-code
+
+http://goo.gl/1I6mIm
+
+(Take a look at the "example" section)
+
+All inline-configuration-variable phrases are accessible via typing "xhoi" in TextPad.
+
+Jeff
+jeff_epstein@yahoo.com
+-------------------------------
+http://facebook.com/SeeJeffSing
+http://seejeffsing.tumblr.com
+http://soundcloud.com/seejeffsing
+TWITTER:  @seejeffsing
