@@ -48,7 +48,7 @@ Down-enter: dnen	.	xhcla
 Home-backspace: hokn	.	xhcla
 down[-two]-then-delete: d[2]dln	.	xhcla
 Keep 1st-words only -- xhclak	.	xhcla
-Main action: klw1	(*actnonly=klw1*){#SETPHRASE -description zvACTN_NM -content klw1 -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhclak
+Main action: klw1	(*actiononly=klw1*){#SETPHRASE -description zvACTN_NM -content klw1 -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhclak
 zREoffKlw1SelLines_M_hnry	\\\{#insert zREoffKlw1SelLines_M_hnry\\\}	xhclak
 zREonKlw1SelLines_M_hnry	\\\{#insert zREonKlw1SelLines_M_hnry\\\}	xhclak
 zzMidRplcREKeepWrd1Only	\\\{#insert zzMidRplcREKeepWrd1Only\\\}	xhclak

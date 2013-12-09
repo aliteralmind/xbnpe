@@ -34,7 +34,7 @@ zzMidRplcREoffOpenSqBrktToNthng	\\\{#insert zzMidRplcREoffOpenSqBrktToNthng\\\}	
 zzMidRplcREClsSqBrktToNewLine	\\\{#insert zzMidRplcREClsSqBrktToNewLine\\\}	xhskql
 zzMidRplcTDREoffQblToLineList	\\\{#insert zzMidRplcTDREoffQblToLineList\\\}	xhsql
 Other -- xhskqo	.	xhskq
-qbldemo	(*actnonly=qbldemo*){#SETPHRASE -description zvACTN_NM -content qbldemo -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhskqo
+qbldemo	(*actiononly=qbldemo*){#SETPHRASE -description zvACTN_NM -content qbldemo -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhskqo
 zDelimList_M_qblDelim	\\\{#insert zDelimList_M_qblDelim\\\}	xhskqo
 zGetQBS1_M_qbl	\\\{#insert zGetQBS1_M_qbl\\\}	xhskqo
 zzDebugAllQBListVarsDlgTxt	\\\{#insert zzDebugAllQBListVarsDlgTxt\\\}	xhskqo

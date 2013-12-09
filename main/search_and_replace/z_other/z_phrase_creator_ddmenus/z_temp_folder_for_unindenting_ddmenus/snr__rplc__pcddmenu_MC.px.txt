@@ -39,5 +39,5 @@ zRplcDlgOpenMCWW	\\\{#insert zRplcDlgOpenMCWW\\\}{#insert zRplcWAndCloseYNPrompt
 zRplcDlgOpenRE	\\\{#insert zRplcDlgOpenRE\\\}{#insert zRplcWAndCloseYNPrompt}	xhsro
 zRplcDlgOpenWW	\\\{#insert zRplcDlgOpenWW\\\}{#insert zRplcWAndCloseYNPrompt}	xhsro
 (*       Other -- xhsrt   .   xhsr*)
-fwhatp	(*actnonly=fwhatp*){#SETPHRASE -description zvACTN_NM -content fwhatp -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhsr
-rwithp	(*actnonly=rwithp*){#SETPHRASE -description zvACTN_NM -content rwithp -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhsr
+fwhatp	(*actiononly=fwhatp*){#SETPHRASE -description zvACTN_NM -content fwhatp -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhsr
+rwithp	(*actiononly=rwithp*){#SETPHRASE -description zvACTN_NM -content rwithp -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhsr

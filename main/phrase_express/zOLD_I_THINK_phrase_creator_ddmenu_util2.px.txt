@@ -133,11 +133,11 @@ zzzMidRplcREVariableState2To1	{#SETPHRASE -description zvFIND_WHAT -content ^(\t
 
 zzzRegexActionCmdMidLineAnchors -(*5 groups*)-	(*Groups: 1=indentation, 2=action name, 3=command name, 4=post command-name description (if any), 5=tab-then-autotext*)([\t]+)([a-z0-9]+): (z[A-Za-z0-9_]+\>)([^\t\n\r]*)\t.(\t[a-z0-9]+)	zzzRegexActionCmdMidLineAnchors
 
-zzzRegexActionOnlyMidLineAnchors -(*4 groups*)-	(*Groups: 1=indentation, 2=entire description, 3=action-name, 4=tab-then-autotext*)([\t]+)([^\t\n\r]+\t)\(\*actnonly=([a-z0-9]+)\*\)\.(\t[a-z0-9]+)	zzzRegexActionOnlyMidLineAnchors
+zzzRegexActionOnlyMidLineAnchors -(*4 groups*)-	(*Groups: 1=indentation, 2=entire description, 3=action-name, 4=tab-then-autotext*)([\t]+)([^\t\n\r]+\t)\(\*actiononly=([a-z0-9]+)\*\)\.(\t[a-z0-9]+)	zzzRegexActionOnlyMidLineAnchors
 
 zzzRegexActnCmdState2	^(\t+)([a-z0-9+]+): (z\w+)([^\t\n\r]*)\t\\\\{#SETPHRASE -description zvATN_CLN_SPC_CMD -content \2:\3 -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder\\\\}\\\\{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd\\\\}(\t[a-z0-9]+)$	zzzRegexActnCmdState2
 
-zzzRegexActnOnlyState2	^(\t+)([^\t\n\r]+)(\t\(\*actnonly=[a-z0-9]+\*\))\\\\{#SETPHRASE -description zvACTN_NM -content \w+ -autotext zvACTN_NM -folder ctvv_folder\\\\}\\\\{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm\\\\}(\t\w+)$	zzzRegexActnOnlyState2
+zzzRegexActnOnlyState2	^(\t+)([^\t\n\r]+)(\t\(\*actiononly=[a-z0-9]+\*\))\\\\{#SETPHRASE -description zvACTN_NM -content \w+ -autotext zvACTN_NM -folder ctvv_folder\\\\}\\\\{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm\\\\}(\t\w+)$	zzzRegexActnOnlyState2
 
 zzzRgxIndTxTbTxTxTxMarkAllDlgClsRE	{#insert zzRegex_indentTxtTbTxtTbTxt}{#insert zFindBtnMarkAll}{#insert zFindDlgCloseRE}	zzzRgxIndTxTbTxTxTxMarkAllDlgClsRE
 

@@ -154,7 +154,7 @@ Phrase-creators: XBN-PhraseExpress -- Call 'xh'   .   zXbnpeCmdPopupRoot
 					zDirFileSaveInsfileSelf_M_dirFnm	\\\{#insert zDirFileSaveInsfileSelf_M_dirFnm\\\}	xhcfoi
 (*       Other -- xhcft   .   xhcf*)
 				splitsave1ln: zzDupSplit1stLineFileNameMaster* -- xhcftl	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content splitsave1ln:zzDupSplit1stLineFileNameMaster -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhcft
-				splitsave1lndemo	(*actnonly=splitsave1lndemo*){#SETPHRASE -description zvACTN_NM -content splitsave1lndemo -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhcftl
+				splitsave1lndemo	(*actiononly=splitsave1lndemo*){#SETPHRASE -description zvACTN_NM -content splitsave1lndemo -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhcftl
 					zDirFileSaveInsfileSelf_M_dirFnm
 
 (*

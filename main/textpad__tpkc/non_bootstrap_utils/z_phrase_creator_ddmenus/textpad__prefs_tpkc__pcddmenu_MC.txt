@@ -186,11 +186,11 @@ Phrase-creators: Search & replace -- xhs   .   xh
 				zXPROOT_DIR_tpkcUsrCfgParent	\\\{#insert zXPROOT_DIR_tpkcUsrCfgParent\\\}	xhtkd
 				zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn	\\\{#insert zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn\\\}	xhtkd
 				zXPROOT_DIR_tpkcVrsnSpcfcFls	\\\{#insert zXPROOT_DIR_tpkcVrsnSpcfcFls\\\}	xhtkd
-			newnbskc	(*actnonly=newnbskc*){#SETPHRASE -description zvACTN_NM -content newnbskc -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhtk
+			newnbskc	(*actiononly=newnbskc*){#SETPHRASE -description zvACTN_NM -content newnbskc -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhtk
 			testtpbstpkc: zTestAllTPKCTextPadBootstraps	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content testtpbstpkc:zTestAllTPKCTextPadBootstraps -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhtk
 			testtpbsxkptpkc: zTestAllXkpTpkcTPBootstraps	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content testtpbsxkptpkc:zTestAllXkpTpkcTPBootstraps -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhtk
-			tpaclcibkcs	(*actnonly=tpaclcibkcs*){#SETPHRASE -description zvACTN_NM -content tpaclcibkcs -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhtk
-			tpaclwarnkccount	(*actnonly=tpaclwarnkccount*){#SETPHRASE -description zvACTN_NM -content tpaclwarnkccount -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhtk
+			tpaclcibkcs	(*actiononly=tpaclcibkcs*){#SETPHRASE -description zvACTN_NM -content tpaclcibkcs -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhtk
+			tpaclwarnkccount	(*actiononly=tpaclwarnkccount*){#SETPHRASE -description zvACTN_NM -content tpaclwarnkccount -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhtk
 			tpkcudcb: zzCopyTpkcUserDirPath	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content tpkcudcb:zzCopyTpkcUserDirPath -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhtk
 			vtpkcuds: zzVerifyTpkcUserDirStructure	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content vtpkcuds:zzVerifyTpkcUserDirStructure -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhtk
 (*    Other -- xhtt   .   xht*)

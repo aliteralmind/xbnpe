@@ -222,16 +222,16 @@ Functions the same as these phrases split into two files:
 
 <P>An action-item in the DDMenu menu must be of this format:</P>
 
-<P><CODE STYLE="background-color:#E1E1E1;">[tab-indentation][description-field][tab](*actnonly=klw1*).[tab][autotext]</CODE></P>
+<P><CODE STYLE="background-color:#E1E1E1;">[tab-indentation][description-field][tab](*actiononly=klw1*).[tab][autotext]</CODE></P>
 
-<P><I>The tab-indentation, as in all types, is required.</I> Note that the description field's must be at least one character in length, but is otherwise ignored.</P>
+<P><I>The tab-indentation, as in all types, is required. <B>The period (dot) following the &quot;<CODE>actiononly</CODE>&quot; comment is also required!</B></I> Note that the description field's must be at least one character in length, but is otherwise ignored.</P>
 
 <P>For example:
-<BR><CODE STYLE="background-color:#E1E1E1;"> &nbsp; &nbsp; Main action: klw1	(*ao=klw1*).	xhclak</CODE></P>
+<BR><CODE STYLE="background-color:#E1E1E1;"> &nbsp; &nbsp; Main action: klw1	(*actiononly=klw1*).	xhclak</CODE></P>
 
 <P>After executing <CODE>'<A HREF="#mainprocs">fidmb</A>'</CODE>, this phrase is changed to its <A HREF="#ddf2of3">final form</A>:</P>
 
-<P><CODE STYLE="background-color:#E1E1E1;"> &nbsp; &nbsp; Main action: klw1	(*mao=klw1*){#SETPHRASE -description zvACTN_NM -content klw1 -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhclak
+<P><CODE STYLE="background-color:#E1E1E1;"> &nbsp; &nbsp; Main action: klw1	(*actiononly=klw1*){#SETPHRASE -description zvACTN_NM -content klw1 -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhclak
 </CODE></P>
 
 <P>This sets the action-name to a variable, and then calls a function that prompts the user and does the desired action.</P>

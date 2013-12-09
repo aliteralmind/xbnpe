@@ -69,7 +69,7 @@ zFindBtnMarkAllThnEtr**	\\\{#insert zFindBtnMarkAllThnEtr\\\}	xhsfm
 zFindFlagADBtnMarkAD	\\\{#insert zFindFlagADBtnMarkAD\\\}	xhsfm
 zFindFlagADBtnMarkADraw	\\\{#insert zFindFlagADBtnMarkADraw\\\}	xhsfm
 (*       Other -- xhsft   .   xhsf*)
-fwhatp (and 'rwithp')	(*actnonly=fwhatp*){#SETPHRASE -description zvACTN_NM -content fwhatp -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhsft
+fwhatp (and 'rwithp')	(*actiononly=fwhatp*){#SETPHRASE -description zvACTN_NM -content fwhatp -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhsft
 zFindNextPromptedString	{#insert zFindNextPromptedString}	xhsft
 zFindPrevPromptedString	{#insert zFindPrevPromptedString}	xhsft
 zFindFlagsMConOnlyThenPreCheck	\\\{#insert zFindFlagsMConOnlyThenPreCheck\\\}	xhsft

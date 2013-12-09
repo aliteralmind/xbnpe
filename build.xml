@@ -7,7 +7,7 @@
 	<property name="sandbox_misc_dir" value="${sandbox_root}zz_misc_and_pxp\"/>
 	<property name="build_parent" value="R:\jeffy\programming\build\macros\"/>
 	<property name="user_zip_dir" value="${build_parent}xbnpe\"/>
-	<property name="user_zip_path" value="${user_zip_dir}xbnpe_0p9p1_beta.zip"/>
+	<property name="user_zip_path" value="${user_zip_dir}xbnpe_0p9p0p2_beta.zip"/>
 
 	<target name="info">
 		<echo>${projectinfo}</echo>
@@ -102,7 +102,7 @@
 				<!--The "includes" parameter results in ALL tpkc-user config files being used. I only want "jeffy", "tp_frsh_instl", and "_tpkc_user_dir_id__BLANK_TEMPLATE", but I'm leaving it as is, to avoid making this parameter much longer.-->
 			<fileset dir="${sandbox_root}"
 				excludes="LICENSE, **\*.tws, *.pxp*, .git*, *.zip, zz_misc_and_pxp\*.tws, zz_misc_and_pxp\*.pxp, **\snr_example_input_files\**"
-				includes="main\_docs\**\*, ${tpkc_user_base_sub_dir}**\tp_bootstraps_for_*_project*.px.txt, ${tpkc_user_base_sub_dir}**\textpad_all_command_list.txt, ${tpkc_pcddmenu_sub_dir}**\xkp__pcddmenu*.txt, ${tpkc_user_base_sub_dir}tp_ALL_cmds_pcddmenu.txt, ${tpkc_user_base_sub_dir}tp_frsh_instl\output_*\usr_spcfc_cfg__bldproc10thr13\cursor.px.txt, main\xbnpe_xkp\configuration\*_config*.px.txt, zz_misc_and_pxp\*.syn, zz_misc_and_pxp\*.scp.txt, **\_char_category_cmd_name_alternatives.txt, **\_all_matching_lines_for_each_cat_in_all_cmd_all_cat_file.txt, **\textpad__prefs_tpkc__pcddmenu*.txt, **\tpkc_all_categories_configuration_7_0_4.px.txt, **\cat_config_file.px.txt, **\file_FileSave.px.txt, **\tpkc__master_configuration.px.txt, **\xkp__pcddmenu*.txt, **\*.x2fnd, **\TPKC_USER_DIR_NAME\z_tpkc_user_directory_name.px.txt, **\main\java\z_latest_javasyn_output_DO_NOT_IMPORT.txt"/>
+				includes="main\_docs\**\*, ${tpkc_user_base_sub_dir}**\tp_bootstraps_for_*_project*.px.txt, ${tpkc_user_base_sub_dir}**\textpad_all_command_list.txt, ${tpkc_pcddmenu_sub_dir}**\xkp__pcddmenu*.txt, ${tpkc_user_base_sub_dir}tp_ALL_cmds_pcddmenu.txt, ${tpkc_user_base_sub_dir}tp_frsh_instl\output_*\usr_spcfc_cfg__bldproc10thr13\cursor.px.txt, main\xbnpe_xkp\configuration\*_config*.px.txt, zz_misc_and_pxp\*.syn, zz_misc_and_pxp\*.scp.txt, **\_char_category_cmd_name_alternatives.txt, **\_all_matching_lines_for_each_cat_in_all_cmd_all_cat_file.txt, **\textpad__prefs_tpkc__pcddmenu*.txt, **\tpkc_all_categories_configuration_7_0_4.px.txt, **\cat_config_file.px.txt, **\file_FileSave.px.txt, **\tpkc__master_configuration.px.txt, **\xkp__pcddmenu*.txt, **\*.x2fnd, **\TPKC_USER_DIR_NAME\z_tpkc_user_directory_name.px.txt, **\main\java\z_latest_javasyn_output_DO_NOT_IMPORT.txt, **\other\inline_config_vars\icv_demo_primary.px.txt"/>
 		</copy>
 
 		<!--So all old versions are downloadable-->

@@ -56,7 +56,7 @@ zPhrsLnNotAtParaEnd_selBodyEndTab_upREFndOpn \\\{#insert zPhrsLnNotAtParaEnd_sel
 zPhrsLnNotAtParaStart_selBodyStartTab_downREFndOpn	\\\{#insert zPhrsLnNotAtParaStart_selBodyStartTab_downREFndOpn\\\}	xhpt
 zPhrsLnNotAtParaStart_selBodyStartTab_downREoff	\\\{#insert zPhrsLnNotAtParaStart_selBodyStartTab_downREoff\\\}	xhpt
 zzRegexTabBtwWSCharsLookaround**	\\\{#insert zzRegexTabBtwWSCharsLookaround\\\}	xhpt
-xcfbuild	(*actnonly=xcfbuild*){#SETPHRASE -description zvACTN_NM -content xcfbuild -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhp
+xcfbuild	(*actiononly=xcfbuild*){#SETPHRASE -description zvACTN_NM -content xcfbuild -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhp
 (*
 Phrase-creators: Other -- xho   .   xh
 XBNPE main directories -- xhor   .   xho

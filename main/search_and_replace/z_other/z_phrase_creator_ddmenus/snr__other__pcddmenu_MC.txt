@@ -55,7 +55,7 @@ Phrase-creators: XBN-PhraseExpress -- Call 'xh'   .   zXbnpeCmdPopupRoot
 				zREonCopyCountMarkedLines	\\\{#insert zREonCopyCountMarkedLines\\\}	xhsmn
 			zTPBookmarkGTNextToggle	\\\{#insert zTPBookmarkGTNextToggle\\\}	xhsm
 			zTPBookmarkGTPrevToggle	\\\{#insert zTPBookmarkGTPrevToggle\\\}	xhsm
-		verifysnrnbs	(*actnonly=verifysnrnbs*){#SETPHRASE -description zvACTN_NM -content verifysnrnbs -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhs
+		verifysnrnbs	(*actiononly=verifysnrnbs*){#SETPHRASE -description zvACTN_NM -content verifysnrnbs -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhs
 (*
    Phrase-creators: Other -- xho   .   xh
       XBNPE main directories -- xhor   .   xho

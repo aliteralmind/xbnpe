@@ -20,7 +20,7 @@ SNR: Find In Files -- xhsfi   .   xhsf*)
 (*       Close -- xhsfic   .   xhsfi*)
 zFFindDlgClose	\\\{#insert zFFindDlgClose\\\}	xhsit
 Other -- xhsfit	.	xhsfi
-fwhatp (and 'rwithp')	(*actnonly=fwhatp*){#SETPHRASE -description zvACTN_NM -content fwhatp -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhsit
+fwhatp (and 'rwithp')	(*actiononly=fwhatp*){#SETPHRASE -description zvACTN_NM -content fwhatp -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhsit
 (*       Buttons -- xhsfib   .   xhsfi*)
 (*       Fields -- xhsfid   .   xhsfi*)
 Save/restore dir/f-type -- xhsfidv ('...'=save-then-restore)	.	xhsfid

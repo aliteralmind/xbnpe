@@ -1,5 +1,5 @@
 <HTML><HEAD>
-	<TITLE></TITLE>
+	<TITLE>XBNPE: Other stuff</TITLE>
 	<meta name="viewport" content="width=device-width" />
 <STYLE TYPE="text/css">
 	<!--
@@ -19,6 +19,7 @@
 
 <P><B>Contents:</B><UL>
 	<LI><CODE>[<A HREF="#sff">go</A>]</CODE> &nbsp; Document navigation:  Find then select-through</LI>
+	<LI><CODE>[<A HREF="#icv">go</A>]</CODE> &nbsp; Reading Inline-Configuration-Variables</LI>
 </UL></P>
 
 <PRE>
@@ -32,7 +33,7 @@
 
 <PRE STYLE="background-color:#E1E1E1;">Goodbye
 au revior
-chao
+ciao
 fare-thee well<B><U><I><CODE>[CURSOR]</CODE></I></U></B>
 we've had a lovely time</PRE>
 
@@ -43,12 +44,57 @@ we've had a lovely time</PRE>
 
 <PRE STYLE="background-color:#E1E1E1;">Goodbye
 <SPAN CLASS="yellowHL">au revior
-chao
+ciao
 fare-</SPAN>thee well<B><U><I><CODE>[CURSOR]</CODE></I></U></B>
 we've had a lovely time</PRE>
 
 <P>Further details and options are provided at the end of its execution.</P>
 
+<PRE>
+
+<HR/>
+
+</PRE>
+<A NAME="icv"/><H2><CODE>[<A HREF="#top">TOP</A>]</CODE> &nbsp; Reading Inline-Configuration-Variables</H2>
+
+<P>In TextPad, execute '<CODE>icvdemo</CODE>'. This creates four new demo variables in a new document, and then reads them in, one by one. Each variable can be defined as required or optional (meaning must have at least one character following the '<CODE>=</CODE>'). Required variables may also have default values, used only when no value (no characters) is provided.</P>
+
+<H3>Syntax</H3>
+
+<P><UL>
+	<LI><B>Value required:</B> <CODE>zSetCBToNamedInlineCVWRqdValGTNxtLn_M_vnm</CODE></LI>
+	<LI><B>Value required w/ no-value-provided default:</B> <CODE>zSetCBToNamedOptInlineCfgValESDfltIsESGTNxtLn_M_vnmDflt</CODE></LI>
+	<LI><B>Value optional:</B> <CODE>zSetCBToNamedOptInlineCfgValESDfltIsESGTNxtLn_M_vnmDflt</CODE></LI>
+	<LI>Other:<UL>
+		<LI><CODE>zSetCB_TO_dflt</CODE></LI>
+		<LI><CODE>zvES_VAL_DEFAULT_stES</CODE></LI>
+		<LI><CODE>zvOUT_DIR_stRqdInlineCV</CODE></LI>
+		<LI><CODE>zvOUTPUT_FILE_NAME_stOptInlineCVOrThisFileNm</CODE></LI>
+		<LI><CODE>zzErrDlg[MissingRqdVal,MissingICV,BadICVValue]_M_cvn</CODE></LI>
+	</UL></LI>
+</UL></P>
+
+<H3>Example inline-config-variable from <CODE>icvdemo[go]</CODE> (Phrase-creators: <CODE><A HREF="../devpex/xbnpe_ddmenus.html#xh">xh</A>oi</CODE>)</H3>
+
+<UL>
+	<LI>Source-code: <CODE>{#insert <CODE><A HREF="../global_config.html#zROOT_DIR_XBNPE_MAIN">zROOT_DIR_XBNPE_MAIN</A></CODE>}other\inline_config_vars\<A HREF="../../other/inline_config_vars/icv_demo_primary.px.txt">icv_demo_primary.px.txt</A></LI>
+</UL>
+
+<P>In TextPad, execute <CODE>icvdemo</CODE> to see this in action.</P>
+
+<PRE STYLE="background-color:#E1E1E1;"><B><U>zzIcvSetRqd_emailTo</U></B>
+(*Define the config-var name, as required by zSetCBToNamedInlineCVWRqdValGTNxtLn_M_vnm:*)
+{#SETPHRASE -description zvCFG_VAR_NAME -content __EMAIL_ADDR_TO__ -autotext zvCFG_VAR_NAME -folder ctvv_folder}
+
+(*Read this REQUIRED variable from the text file--the current line--and set it into the clipboard:*)
+{#insert zSetCBToNamedInlineCVWRqdValGTNxtLn_M_vnm}
+
+(*Transfer the value from the clipboard to the required Pex variable:*)
+{#SETPHRASE -description zvEMAIL_TO -content {#INSERTCLIPBOARD} -autotext zvEMAIL_TO -folder ctvv_folder}
+
+(*Additional error checking: The email must have an '@'. If it does, do nothing (pause for 1 millisecond). If it doesn't present a generic error-dialog:*)
+{#insert {#COND -if {#POS {#insert zvEMAIL_TO} -substr @} > 0 -then z1slp -else zzErrDlgBadICVValue_M_cvn}}
+</PRE>
 
 <PRE>
 

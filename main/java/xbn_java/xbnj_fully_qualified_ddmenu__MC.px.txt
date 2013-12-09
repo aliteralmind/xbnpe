@@ -28,7 +28,13 @@ GenericListTranslator	xbn.glist.translator.GenericListTranslator	xbngt
 GLTRawIsListOfE	xbn.glist.translator.GLTRawIsListOfE	xbngt
 GLTListOfERoot xbn.glist.translator.GLTListOfERoot	xbngt
 GLTArrayOfERoot xbn.glist.translator.GLTArrayOfERoot	xbngt
-xbn.glist.translator.parray -- a	xbn.glist.translator.parray.	xbngt
+GLTNonPArrayOfE xbn.glist.translator.GLTNonPArrayOfE	xbngt
+GLTPrimitiveListOfE xbn.glist.translator.GLTPrimitiveListOfE	xbngt
+xbn.glist.translator.gvc. -- c	xbn.glist.translator.gvc.	xbngt
+GetValueCopy	xbn.glist.translator.gvc.GetValueCopy	xbngtc
+GVCElementsNotCopyable	xbn.glist.translator.gvc.GVCElementsNotCopyable	xbngtc
+GVCOneSelfCnstrParam	xbn.glist.translator.gvc.GVCOneSelfCnstrParam	xbngtc
+xbn.glist.translator.paofe -- p	xbn.glist.translator.parray.	xbngt
 GLTPrimitiveArrayOfE xbn.glist.translator.parray.GLTPrimitiveArrayOfE	xbngta
 GLTBoolArray xbn.glist.translator.parray.GLTBoolArray	xbngta
 GLTCharArray xbn.glist.translator.parray.GLTCharArray	xbngta
@@ -39,36 +45,6 @@ GLTPDoubleArray xbn.glist.translator.parray.GLTPDoubleArray	xbngtan
 GLTPFloatArray xbn.glist.translator.parray.GLTPFloatArray	xbngtan
 GLTPLongArray xbn.glist.translator.parray.GLTPLongArray	xbngtan
 GLTPShortArray xbn.glist.translator.parray.GLTPShortArray	xbngtan
-xbn.glist.translator.nonparray. -- r	xbn.glist.translator.aofe.nonparray.	xbngt
-GLTAOCharSequenceRoot xbn.glist.translator.nonparray.GLTAOCharSequenceRoot	xbngtr
-GLTAOString xbn.glist.translator.aofe.nonparray.GLTAOString	xbngtr
-GLTAOStringBuilder xbn.glist.translator.aofe.nonparray.GLTAOStringBuilder	xbngtr
-GLTNonPrimitiveArrayOfE xbn.glist.translator.aofe.nonparray.GLTNonPrimitiveArrayOfE	xbngtr
-xbn.glist.translator.nonparray.pable. -- p	xbn.glist.translator.nonparray.pable.	xbngtr
-GLTBoolArray xbn.glist.translator.parray.GLTBoolArray	xbngtrp
-GLTCharArray xbn.glist.translator.parray.GLTCharArray	xbngtrp
-GLTArrayOfNumber -- n xbn.glist.translator.parray.GLTArrayOfNumber	xbngtrp
-GLTIntArray xbn.glist.translator.parray.GLTIntArray	xbngtrp
-GLTPByteArray xbn.glist.translator.parray.GLTPByteArray	xbngtrp
-GLTPDoubleArray xbn.glist.translator.parray.GLTPDoubleArray	xbngtrp
-GLTPFloatArray xbn.glist.translator.parray.GLTPFloatArray	xbngtrp
-GLTPLongArray xbn.glist.translator.parray.GLTPLongArray	xbngtrp
-GLTPShortArray xbn.glist.translator.parray.GLTPShortArray	xbngtrp
-xbn.glist.translator.plist. -- l	xbn.glist.translator.plist.	xbngt
-GLTPrimitiveListOfE xbn.glist.translator.plist.GLTPrimitiveListOfE	xbngtl
-GLTBooleanList xbn.glist.translator.plist.GLTBooleanList	xbngtl
-GLTCharacterList xbn.glist.translator.plist.GLTCharacterList	xbngtl
-GLTListOfNumber -- n xbn.glist.translator.plist.GLTListOfNumber	xbngtl
-GLTByteList xbn.glist.translator.plist.GLTByteList	xbngtln
-GLTFloatList xbn.glist.translator.plist.GLTFloatList	xbngtln
-GLTDoubleList xbn.glist.translator.plist.GLTDoubleList	xbngtln
-GLTIntegerList xbn.glist.translator.plist.GLTIntegerList	xbngtln
-GLTLongList xbn.glist.translator.plist.GLTLongList	xbngtln
-GLTShortList xbn.glist.translator.plist.GLTShortList	xbngtln
-xbn.glist.translator.nonplist. -- i	xbn.glist.translator.nonplist.	xbngt
-GLTListOfCharSequenceRoot xbn.glist.translator.nonplist.GLTListOfCharSequenceRoot	xbngti
-GLTStringList xbn.glist.translator.nonplist.GLTStringList	xbngti
-GLTStringBuilderList xbn.glist.translator.nonplist.GLTStringBuilderList	xbngti
 xbn.glist.parray. -- p	xbn.glist.parray.	xbng
 GLPrimitiveArrayable	xbn.glist.translator.GLPrimitiveArrayable	xbngp
 GLPrimitiveBase	xbn.glist.translator.GLPrimitiveBase	xbngp

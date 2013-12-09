@@ -23,16 +23,19 @@ zzCBStartSubstrSameLenAs_rqsx	\\\{#insert zzCBStartSubstrSameLenAs_rqsx\\\}	xhob
 zzREFindEOBlockStartCmtGTNextLine	\\\{#insert zzREFindEOBlockStartCmtGTNextLine\\\}	xhob
 zzREFindNextNonWSInCol0Left	\\\{#insert zzREFindNextNonWSInCol0Left\\\}	xhob
 zzREonFindVerifyBypassEmptyOkBSC_M_rqsxReon	\\\{#insert zzREonFindVerifyBypassEmptyOkBSC_M_rqsxReon\\\}	xhob
-Inline configuration-variables -- xhov	.	xho
-Action: zzinlinecvtest	zzinlinecvtest	xhov
-zSetCBToNamedInlineCVWRqdValGTNxtLn_M_vnm	\\\{#insert zSetCBToNamedInlineCVWRqdValGTNxtLn_M_vnm\\\}	xhov
-zSetCBToNamedInlineCfgValWESDfltGTNxtLn_M_vnmDflt	\\\{#insert zSetCBToNamedInlineCfgValWESDfltGTNxtLn_M_vnmDflt\\\}	xhov
-zSetCBToNamedOptInlineCfgValESDfltIsESGTNxtLn_M_vnmDflt	\\\{#insert zSetCBToNamedOptInlineCfgValESDfltIsESGTNxtLn_M_vnmDflt\\\}	xhov
-zSetCB_TO_dflt	\\\{#insert zSetCB_TO_dflt\\\}	xhov
-zvES_VAL_DEFAULT_stES	\\\{#insert zvES_VAL_DEFAULT_stES\\\}	xhov
-zvOUT_DIR_stRqdInlineCV	\\\{#insert zvOUT_DIR_stRqdInlineCV\\\}	xhov
-zvOUTPUT_FILE_NAME_stOptInlineCVOrThisFileNm	\\\{#insert zvOUTPUT_FILE_NAME_stOptInlineCVOrThisFileNm\\\}	xhov
-zzValidateInlineCVSetTrimValIntoCB_M_vnm	\\\{#insert zzValidateInlineCVSetTrimValIntoCB_M_vnm\\\}	xhov
+Inline configuration-variables -- xhoi	.	xho
+icvdemo[go]	(*actiononly=icvdemo*){#SETPHRASE -description zvACTN_NM -content icvdemo -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhoi
+zSetCBToNamedInlineCVWRqdValGTNxtLn_M_vnm	\\\{#insert zSetCBToNamedInlineCVWRqdValGTNxtLn_M_vnm\\\}	xhoi
+zSetCBToNamedInlineCfgValWESDfltGTNxtLn_M_vnmDflt	\\\{#insert zSetCBToNamedInlineCfgValWESDfltGTNxtLn_M_vnmDflt\\\}	xhoi
+zSetCBToNamedOptInlineCfgValESDfltIsESGTNxtLn_M_vnmDflt	\\\{#insert zSetCBToNamedOptInlineCfgValESDfltIsESGTNxtLn_M_vnmDflt\\\}	xhoi
+zzErrDlgBadICVValue_M_cvn	\\\{#insert zzErrDlgBadICVValue_M_cvn\\\}	xhoi
+zzErrDlgMissingICV_M_cvn	\\\{#insert zzErrDlgMissingICV_M_cvn\\\}	xhoi
+zzErrDlgMissingRqdVal_M_cvn	\\\{#insert zzErrDlgMissingRqdVal_M_cvn\\\}	xhoi
+Set variables -- v	.	xhoi
+zSetCB_TO_dflt	\\\{#insert zSetCB_TO_dflt\\\}	xhoiv
+zvES_VAL_DEFAULT_stES	\\\{#insert zvES_VAL_DEFAULT_stES\\\}	xhoiv
+zvOUTPUT_FILE_NAME_stOptInlineCVOrThisFileNm	\\\{#insert zvOUTPUT_FILE_NAME_stOptInlineCVOrThisFileNm\\\}	xhoiv
+zvOUT_DIR_stRqdInlineCV	\\\{#insert zvOUT_DIR_stRqdInlineCV\\\}	xhoiv
 zzSqBrkCURSORSlk2Bksp8	\\\{#insert zzSqBrkCURSORSlk2Bksp8\\\}	xho
 (*	  Spot-marks (x-mark) -- xhox   .   xho*)
 zXDown[2-4] -- xhoxd	\\\{#insert zXDown\\\}	xhox
