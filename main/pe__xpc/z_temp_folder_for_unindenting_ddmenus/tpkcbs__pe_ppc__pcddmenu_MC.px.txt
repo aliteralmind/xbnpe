@@ -8,25 +8,26 @@ __XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a larg
 *)
 (*
 FROM xbnpe_phrase_creator_popup_heirarchy_base.px.txt:
+
 Phrase-creators: XBN-PhraseExpress -- Call 'xh'   .   zXbnpeCmdPopupRoot
-Phrase-creators: PhraseExpress -- xhp   .   xh
-Phrase creation and import-text file management -- xhpc   .   xhp
+Phrase-creators: PhraseExpress -- p   .   xh
+Phrase creation and import-text file management -- c   .   xhp
 *)
-Pex func-call phrase-creators (main actions ONLY) -- xhpcp	.	xhpc
-Functions -- xhpcpf	.	xhpcp
-Clipboard & external file/dirs -- xhpcpfx	.	xhpcpf
+Pex func-call phrase-creators (main actions ONLY) -- p	.	xhpc
+Functions -- f	.	xhpcp
+Clipboard & external file/dirs -- x	.	xhpcpf
 INSERTCLIPBOARD: icb	{#SETCLIPBOARD icb}{#insert zzBalCBContainsVarNm}	xhpcpfx
 INSERTFILE: ifl	{#SETCLIPBOARD ifl}{#insert zzBalCBContainsVarNm}	xhpcpfx
 OPEN: ofl	{#SETCLIPBOARD ofl}{#insert zzBalCBContainsVarNm}	xhpcpfx
 OPENFOLDER: ofd	{#SETCLIPBOARD ofd}{#insert zzBalCBContainsVarNm}	xhpcpfx
 PASTEOPTIONS: popt	{#SETCLIPBOARD popt}{#insert zzBalCBContainsVarNm}	xhpcpfx
 SETCLIPBOARD: scb	{#SETCLIPBOARD scb}{#insert zzBalCBContainsVarNm}	xhpcpfx
-Logic & numbers -- xhpcpfl (cil, cqd, lop, slp)	.	xhpcpf
+Logic & numbers -- l (cil, cqd, lop, slp)	.	xhpcpf
 CALC: cil	{#SETCLIPBOARD cil}{#insert zzBalCBContainsVarNm}	xhpcpfl
 COND: cqd	{#SETCLIPBOARD cqd}{#insert zzBalCBContainsVarNm}	xhpcpfl
 LOOP: lop	{#SETCLIPBOARD lop}{#insert zzBalCBContainsVarNm}	xhpcpfl
 SLEEP: slp	{#SETCLIPBOARD slp}{#insert zzBalCBContainsVarNm}	xhpcpfl
-Other -- xhpcpfo	.	xhpcpf
+Other -- o	.	xhpcpf
 BALLOON: bal	{#SETCLIPBOARD bal}{#insert zzBalCBContainsVarNm}	xhpcpfo
 CURSOR: crs	{#SETCLIPBOARD crs}{#insert zzBalCBContainsVarNm}	xhpcpfo
 FOCUS: fcs	{#SETCLIPBOARD fcs}{#insert zzBalCBContainsVarNm}	xhpcpfo
@@ -34,7 +35,7 @@ INPUT: inp	{#SETCLIPBOARD inp}{#insert zzBalCBContainsVarNm}	xhpcpfo
 MOUSEPOSITION: mps	{#SETCLIPBOARD mps}{#insert zzBalCBContainsVarNm}	xhpcpfo
 MSGBOX: mbx	{#SETCLIPBOARD mbx}{#insert zzBalCBContainsVarNm}	xhpcpfo
 SETPHRASE: stp	{#SETCLIPBOARD stp}{#insert zzBalCBContainsVarNm}	xhpcpfo
-String -- xhpcpfs (gth, [lo,up]c, rpl, s[b,p]s, tri)	.	xhpcpf
+String -- s (gth, [lo,up]c, rpl, s[b,p]s, tri)	.	xhpcpf
 LENGTH: gth	{#SETCLIPBOARD gth}{#insert zzBalCBContainsVarNm}	xhpcpfs
 LOWER/UPPERCASE: loc, upc	.	xhpcpfs
 POS: sps	{#SETCLIPBOARD sps}{#insert zzBalCBContainsVarNm}	xhpcpfs
@@ -42,11 +43,12 @@ REPLACE: rpl	{#SETCLIPBOARD rpl}{#insert zzBalCBContainsVarNm}	xhpcpfs
 SUBSTR: sbs	{#SETCLIPBOARD sbs}{#insert zzBalCBContainsVarNm}	xhpcpfs
 TRIM: tri	{#SETCLIPBOARD tri}{#insert zzBalCBContainsVarNm}	xhpcpfs
 Key-presses: kr[k,h,n,u,x][c][a][s][l][[p,q]] (example: krks)	{#SETCLIPBOARD krks}{#insert zzBalCBContainsVarNm}	xhpcp
+
 (*
-Phrase-creators: Other -- xho   .   xh
-XBNPE main directories -- xhor   .   xho
-zROOT_DIR_XBNPE_PARENT -- xhorm   .   xhor
-zROOT_DIR_XBNPE_MAIN -- xhormm   .   xhorm
-zXPROOT_DIR_phraseExpress -- xhormmp   .   xhormm
+Phrase-creators: Other -- o   .   xh
+XBNPE main directories -- r   .   xho
+zROOT_DIR_XBNPE_PARENT -- m   .   xhor
+zROOT_DIR_XBNPE_MAIN -- m   .   xhorm
+zXPROOT_DIR_phraseExpress -- p   .   xhormm
 *)
 zXPROOT_DIR_xpc	\\\{#insert zXPROOT_DIR_xpc\\\}	xhormmp

@@ -1,17 +1,17 @@
 __XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
-jdb -- Basic JavaDoc block, with opening paragraph	{#insert zzJDBlockGTEnd}{#insert zYUp}{#insert jdbsyn}	jdb
-jdba -- JavaDoc block with only @...  ...	{#insert zzEtrUpSlshAstrAstrEnterTab}@{#insert zXmark}  {#insert zYmark}{#insert zEnterBksp} **/{#insert zXUp}{#insert jdbsyn}	jdba
-jdbac -- JavaDoc block with only @... <CODE>...</CODE>	{#insert zzEtrUpSlshAstrAstrEnterTab}@{#insert zXmark}  {#insert zYmarkCoded}{#insert zEnterBksp} **/{#insert zXUp}{#insert jdbsyn}	jdbac
-jdbccs -- jdbcs, 'as a duplicate...'	{#insert zzJDBCnstrThrClsNm} as a duplicate of another.{#insert zzJDBCnstrPostClsNm}	jdbccs
-jdbcs -- jdb, w/ 'create a new THIS-class-nm' intro line	{#insert zzJDBCnstrThrClsNm}.{#insert zzJDBCnstrPostClsNm}	jdbcs
-jdbr -- Block with only @return in it (non-CODE-d)	{#insert zzEtrUpSlshAstrAstrEnterTab}@return  {#insert zYmark}{#insert zEnterBksp} **/{#insert zYUp}{#insert jdbsyn}	jdbr
-jdbx -- Block with only @exception in it (non-CODE-d)	{#insert zzEtrUpSlshAstrAstrEnterTab}@exception  {#insert zYmark}{#insert zEnterBksp} **/{#insert zYUp}{#insert jdbsyn}	jdbx
-jdbrac -- jdbr, farc	{#insert zzEtrUpSlshAstrAstrEnterTab}@return  <CODE>{#insert zYmark}{#insert zXmark}{#insert zzJFuncDownSelCopyPostRtrnLn1NotSmiClnWWWarn}{#insert zXUpPaste}</CODE>{#insert zEnterBksp} **/{#insert zYUpDelete}{#insert jdbsyn}	jdbrac
-jdbrc -- jdbr, CODE-d	{#insert zzEtrUpSlshAstrAstrEnterTab}@return  {#insert zYmarkCoded}{#insert zEnterBksp} **/{#insert zYUp}{#insert jdbsyn}	jdbrc
+jdb -- Basic JavaDoc block, with opening paragraph	{#insert zzJDBlockGTEnd}{#insert zYUp}{#insert zzJdbsyn_M_yon}	jdb
+jdba -- JavaDoc block with only @...  ...	{#insert zzEtrUpSlshAstrAstrEnterTab}@{#insert zXmark}  {#insert zYmark}{#insert zEnterBksp} **/{#insert zXUp}{#insert zzJdbsyn_M_yon}	jdba
+jdbac -- JavaDoc block with only @... <CODE>...</CODE>	{#insert zzEtrUpSlshAstrAstrEnterTab}@{#insert zXmark}  {#insert zYmarkCoded}{#insert zEnterBksp} **/{#insert zXUp}{#insert zzJdbsyn_M_yon}	jdbac
+jdbr -- Block with only @return in it (non-CODE-d)	{#insert zzEtrUpSlshAstrAstrEnterTab}@return  {#insert zYmark}{#insert zEnterBksp} **/{#insert zYUp}{#insert zzJdbsyn_M_yon}	jdbr
+jdbraQ -- jdbr, farQ	{#insert zzAtJFSigStartWriteReturnOnlyRetLine1JDBlockWHtmlEsc}{#insert zzJdbsyn_M_yon}	jdbraQ
+jdbrac -- jdbr, farc	{#insert zzAtJFSigStartWriteReturnOnlyRetLine1JDBlockNoHtmlEsc}{#insert zzJdbsyn_M_yon}	jdbrac
+jdbrc -- jdbr, CODE-d	{#insert zzEtrUpSlshAstrAstrEnterTab}@return  {#insert zYmarkCoded}{#insert zEnterBksp} **/{#insert zYUp}{#insert zzJdbsyn_M_yon}	jdbrc
 jdbsyn	{#BALLOON -title Syntax: JavaDoc block -text jdb[a[c]]=/**...**/  ([a[c]]=@... only, [c]=CODE-d), jdbc[c]s=w/ constructor intro. ([c]=as a dup...), jdb[r[[a]c],x] ([r]=@return, [c]=CODE~d, [a]=copy~paste 1~and~only return line, [x]=@exception)  //  See: jdbg* (jsgsyn)  //  javasyn}	jdbsyn
+jdbx -- Block with only @exception in it (non-CODE-d)	{#insert zzEtrUpSlshAstrAstrEnterTab}@exception  {#insert zYmark}{#insert zEnterBksp} **/{#insert zYUp}{#insert zzJdbsyn_M_yon}	jdbx
+zzAtJFSigStartWriteReturnOnlyRetLine1JDBlockNoHtmlEsc -*-	{#insert zzEtrUpSlshAstrAstrEnterTab}@return  <CODE>{#insert zYmark}{#insert zXmark}{#insert zzJFuncDownSelCopyPostRtrnLn1NotSmiClnWWWarn}{#insert zXUpPaste}</CODE>{#insert zEnterBksp} **/{#insert zYUpDelete}	zzAtJFSigStartWriteReturnOnlyRetLine1JDBlockNoHtmlEsc
+zzAtJFSigStartWriteReturnOnlyRetLine1JDBlockWHtmlEsc -*-	{#insert zzEtrUpSlshAstrAstrEnterTab}@return  <CODE>{#insert zXmark}{#insert zzJFuncDownReturnLine1XUpRHtmlEscPaste}</CODE>{#insert zEnterBksp} **/{#insert zXUpDelete}	zzAtJFSigStartWriteReturnOnlyRetLine1JDBlockWHtmlEsc
 zzEtrUpSlshAstrAstrEnter	{#insert zENTER}{#insert zUP}/**{#insert zENTER}	zzEtrUpSlshAstrAstrEnter
 zzEtrUpSlshAstrAstrEnterTab	{#insert zzEtrUpSlshAstrAstrEnter}{#insert zTAB}	zzEtrUpSlshAstrAstrEnterTab
-zzJDBCnstrPostClsNm	</P>{#insert zENTER2}{#insert zEnterBksp} **/{#insert zUP}	zzJDBCnstrPostClsNm
-zzJDBCnstrThrClsNm	{#insert zzEtrUpSlshAstrAstrEnterTab}<P>Create a new {#insert zXJavaCopyThisClassNmXDown}<CODE>{#insert zTPPaste}</CODE>	zzJDBCnstrThrClsNm
 zzJDBlockGTEnd	{#insert zzJDBlockThrEndPIntroLine}{#insert zEnterBksp} **/	zzJDBlockGTEnd
 zzJDBlockThrEndPIntroLine	{#insert zzEtrUpSlshAstrAstrEnterTab}<P>{#insert zYmark}</P>	zzJDBlockThrEndPIntroLine
+zzJdbsyn_M_yon -- Needs zvSYNTAX_ON	{#insert {#COND -if {#insert zvSYNTAX_ON} = on -then jdbsyn -else z1slp}}	zzJdbsyn_M_yon

@@ -18,128 +18,128 @@
    ------
 
 Phrase-creators: XBN-PhraseExpress -- xh   .   zXbnpeCmdPopupRoot
-   Phrase-creators: TextPad-specific -- xht   .   xh*)
-		Help -- xhth	.	xht
-		Macros -- xhtm	.	xht
-(*    Other -- xhtt   .   xht*)
-		Sub-windows -- xhtw	.	xht
-			Cliplib -- xhtwp	.	xhtw
-				Book -- xhtwpb	.	xhtwp
-				Entry -- xhtwpe	.	xhtwp
-			Document selector -- xhtl	.	xht
-			Main document -- xhtd	.	xht
+   Phrase-creators: TextPad-specific -- t   .   xh*)
+		Help -- h	.	xht
+		Macros -- m	.	xht
+(*    Other -- t   .   xht*)
+		Sub-windows -- w	.	xht
+			Cliplib -- p	.	xhtw
+				Book -- b	.	xhtwp
+				Entry -- e	.	xhtwp
+			Document selector -- l	.	xht
+			Main document -- d	.	xht
 				zTPToggleSyncScroll	\\\{#insert zTPToggleSyncScroll\\\}	xhtd
-		Tools -- xhtt	.	xht
-		Specific -- xhtts	.	xhtt
+		Tools -- t	.	xht
+		Specific -- s	.	xhtt
 		zTPPrefsDlgOpen [BS]	\\\{#insert zTPPrefsDlgOpen\\\}	xht
-(* PC: CWLPDF: Char, word, line, para, doc, file -- xhc   .   xh*)
-(*    1. Char -- xhcc   .   xhc*)
-			Special characters -- xhccp	.	xhcc
-				A -- xhccpa	.	xhccp
-				C-E -- xhccpc	.	xhccp
-				I-N -- xhccpi	.	xhccp
-				O -- xhccpo	.	xhccp
-				S-U -- xhccps	.	xhccp
-				Y & other -- xhccpy	.	xhccp
-(*       Alter -- xhcca   .   xhcc*)
-(*       Move -- xhccm   .   xhcc*)
-(*       Select -- xhccs   .   xhcc*)
-(*    2. Word -- xhcw   .   xhc*)
-(*       Alter -- xhcwa   .   xhcw*)
-(*          Cut, delete -- xhcwax   .   xhcwa*)
-					TextPad built-ins -- xhcwaxt	.	xhcwax
-(*          Other -- xhcwat   .   xhcwa*)
-(*       Move -- xhcwm   .   xhcw*)
-(*       Select & copy -- xhcws   .   xhcw*)
-				Current word -- xhcwsr	.	xhcws
-(*          Select -- xhcwss   .   xhcws*)
-(*          Select-copy -- xhcwsp   .   xhcws*)
-(*          Copy -- xhcwsc   .   xhcws*)
-(*    3. Line -- xhcl   .   xhc*)
-(*       Alter -- xhcla   .   xhcl*)
-(*          Cut, copy, delete -- xhclax   .   xhcla*)
-(*          Indent -- xhclai   .   xhcla*)
-(*          Other -- xhclat   .   xhcla*)
-(*          Sort -- xhclas   .   xhcla*)
-(*       Move -- xhclm   .   xhcl*)
-(*       Select -- xhclc   .   xhcl*)
-(*    4. Para -- xhcp   .   xhc*)
-(*       Move -- xhcpm   .   xhcp*)
-(*       Select -- xhcps   .   xhcp*)
-(*    5. Selection, clipboard, undo/redo -- xhcs   .   xhc*)
-(*       Clipboard -- xhcsb   .   xhcs*)
-(*          Copy & cut -- xhcsbc   .   xhcsb*)
-(*          Paste -- xhcsbp   .   xhcsb*)
-(*       Undo & redo -- xhcsu   .   xhcs*)
+(* PC: CWLPDF: Char, word, line, para, doc, file -- c   .   xh*)
+(*    1. Char -- c   .   xhc*)
+			Special characters -- p	.	xhcc
+				A -- a	.	xhccp
+				C-E -- c	.	xhccp
+				I-N -- i	.	xhccp
+				O -- o	.	xhccp
+				S-U -- s	.	xhccp
+				Y & other -- y	.	xhccp
+(*       Alter -- a   .   xhcc*)
+(*       Move -- m   .   xhcc*)
+(*       Select -- s   .   xhcc*)
+(*    2. Word -- w   .   xhc*)
+(*       Alter -- a   .   xhcw*)
+(*          Cut, delete -- x   .   xhcwa*)
+					TextPad built-ins -- t	.	xhcwax
+(*          Other -- t   .   xhcwa*)
+(*       Move -- m   .   xhcw*)
+(*       Select & copy -- s   .   xhcw*)
+				Current word -- r	.	xhcws
+(*          Select -- s   .   xhcws*)
+(*          Select-copy -- p   .   xhcws*)
+(*          Copy -- c   .   xhcws*)
+(*    3. Line -- l   .   xhc*)
+(*       Alter -- a   .   xhcl*)
+(*          Cut, copy, delete -- x   .   xhcla*)
+(*          Indent -- i   .   xhcla*)
+(*          Other -- t   .   xhcla*)
+(*          Sort -- s   .   xhcla*)
+(*       Move -- m   .   xhcl*)
+(*       Select -- c   .   xhcl*)
+(*    4. Para -- p   .   xhc*)
+(*       Move -- m   .   xhcp*)
+(*       Select -- s   .   xhcp*)
+(*    5. Selection, clipboard, undo/redo -- s   .   xhc*)
+(*       Clipboard -- b   .   xhcs*)
+(*          Copy & cut -- c   .   xhcsb*)
+(*          Paste -- p   .   xhcsb*)
+(*       Undo & redo -- u   .   xhcs*)
 				zTPToggleUndo	\\\{#insert zTPToggleUndo\\\}	xhcsu
-(*       Alter selection (& meta) -- xhcss   .   xhcs*)
-(*          Change case -- xhcssc   .   xhcss*)
-(*          Other -- xhcsst   .   xhcss*)
-					Align -- xhcssta	.	xhcsst
-(*          Block selection mode -- xhcssk   .   xhcss*)
+(*       Alter selection (& meta) -- s   .   xhcs*)
+(*          Change case -- c   .   xhcss*)
+(*          Other -- t   .   xhcss*)
+					Align -- a	.	xhcsst
+(*          Block selection mode -- k   .   xhcss*)
 					zTPToggleBlockSelect	\\\{#insert zTPToggleBlockSelect\\\}	xhcssk
-(*    6. Document, page -- xhcd   .   xhc*)
-(*       Document-windows -- xhcdo   .   xhcd*)
-				Arrange, cascade, tile -- xhcdoa	.	xhcdo
-(*          Go-to specific -- xhcdog   .   xhcdo*)
-					Numbered -- xhcdogn	.	xhcdog
-				Other -- xhcdoo	.	xhcdo
-			Other -- xhcdt	.	xhcd
-				Right margin -- xhcdtm	.	xhcdt
+(*    6. Document, page -- d   .   xhc*)
+(*       Document-windows -- o   .   xhcd*)
+				Arrange, cascade, tile -- a	.	xhcdo
+(*          Go-to specific -- g   .   xhcdo*)
+					Numbered -- n	.	xhcdog
+				Other -- o	.	xhcdo
+			Other -- t	.	xhcd
+				Right margin -- m	.	xhcdt
 					zTPRightMarginSet	\\\{#insert zTPRightMarginSet\\\}	xhcdtm
-(*       Page up/down left/right -- xhcdp   .   xhcd*)
-				Extend -- xhcdpx	.	xhcdp
-(*       Select-all -- xhcda   .   xhcd*)
-(*       Top & bottom -- xhcdm   .   xhcd*)
-(*       Word-wrap -- xhcdw   .   xhcd*)
+(*       Page up/down left/right -- p   .   xhcd*)
+				Extend -- x	.	xhcdp
+(*       Select-all -- a   .   xhcd*)
+(*       Top & bottom -- m   .   xhcd*)
+(*       Word-wrap -- w   .   xhcd*)
 				zTPToggleWW [BS] (tw[p])	\\\{#insert zTPToggleWW\\\}	xhcdw
-(*    7. File -- xhcf   .   xhc*)
-(*       Close -- xhcfc   .   xhcf*)
+(*    7. File -- f   .   xhc*)
+(*       Close -- c   .   xhcf*)
 				zTPFileClose [BS]	\\\{#insert zTPFileClose\\\}	xhcfc
-(*       New -- xhcfn   .   xhcf*)
+(*       New -- n   .   xhcf*)
 				zTPFileNew [BS]	\\\{#insert zTPFileNew\\\}	xhcfn
-(*       Open -- xhcfo   .   xhcf*)
+(*       Open -- o   .   xhcf*)
 				zTPFileOpen [BS]	\\\{#insert zTPFileOpen\\\}	xhcfo
 				zTPFileOpenSelPath	\\\{#insert zTPFileOpenSelPath\\\}	xhcfo
 				zTPFileQOpen [BS]	\\\{#insert zTPFileQOpen\\\}	xhcfo
-(*       Save -- xhcfs   .   xhcf*)
-				TextPad built-ins -- xhcfst	.	xhcfs
+(*       Save -- s   .   xhcf*)
+				TextPad built-ins -- t	.	xhcfs
 					zTPFileSave [BS]	\\\{#insert zTPFileSave\\\}	xhcfst
 					zTPFileSaveAll	\\\{#insert zTPFileSaveAll\\\}	xhcfst
-(*          Save as -- xhcfsa   .   xhcfs*)
+(*          Save as -- a   .   xhcfs*)
 					zTPFileSaveAs	\\\{#insert zTPFileSaveAs\\\}	xhcfsa
-(*       Other -- xhcft   .   xhcf*)
-				Print -- xhcftp	.	xhcft
+(*       Other -- t   .   xhcf*)
+				Print -- p	.	xhcft
 					zTPFilePrint	\\\{#insert zTPFilePrint\\\}	xhcftp
 					zTPFilePrintPreview	\\\{#insert zTPFilePrintPreview\\\}	xhcftp
-				Workspace -- xhcftw	.	xhcft
-				Other -- xhcftt	.	xhcft
-					zTPFile... -- xhcfttf	(*fidmb never processes this file. If it did, this comment would be required in order for it to NOT recognize this line.*).	xhcftt
+				Workspace -- w	.	xhcft
+				Other -- t	.	xhcft
+					zTPFile... -- f	(*fidmb never processes this file. If it did, this comment would be required in order for it to NOT recognize this line.*).	xhcftt
 						zTPFileManager [BS]	\\\{#insert zTPFileManager\\\}	xhcfttf
 						zTPFileStatistics	\\\{#insert zTPFileStatistics\\\}	xhcfttf
 					zTPToggleInsertMode	\\\{#insert zTPToggleInsertMode\\\}	xhcftt
 					zTPToggleReadOnly	\\\{#insert zTPToggleReadOnly\\\}	xhcftt
-(*    8. Other -- xhct   .   xhc*)
-(* Phrase-creators: Other -- xho   .   xh*)
-		View -- xhov	.	xho
-		Date & time -- xhod	.	xho
-(* Phrase-creators: Search & replace -- xhs   .   xh*)
-(*    SNR: Bookmarks -- xhsm   .   xhs*)
-(*       All bookmarks -- xhsma   .   xhsm*)
-(*    SNR: Brackets -- xhse   .   xhs*)
-(*    SNR: Find -- xhsf   .   xhs*)
-(*       Buttons -- xhsfb (& next/prev)   .   xhsf*)
-(*       Flags -- xhsff   .   xhsf*)
-(*          Set 1 on/off -- xhsffs (Out-of-dlg only, TextPad built-ins)   .   xhsff*)
-			Incremental find -- xhsfr	.	xhsf
-(*       Open -- xhsfo   .   xhsf*)
-(*       SNR: Find In Files -- xhsfi   .   xhsf*)
-(*          Open -- xhsfio   .   xhsfi*)
-(*          Search results -- xhsfir   .   xhsfi*)
-(*    SNR: Replace -- xhsr   .   xhs*)
-(*       Buttons -- xhsrb   .   xhsr*)
-(*       Open -- xhsro   .   xhsr*)
-(*       Other -- xhsrt   .   xhsr*)
-(*    SNR: Go-to dialog -- xhsg   .   xhs*)
-(*       Open -- xhsgo   .   xhsg*)
-				Open w/ specific unit -- xhsgof	.	xhsgo
+(*    8. Other -- t   .   xhc*)
+(* Phrase-creators: Other -- o   .   xh*)
+		View -- v	.	xho
+		Date & time -- d	.	xho
+(* Phrase-creators: Search & replace -- s   .   xh*)
+(*    SNR: Bookmarks -- m   .   xhs*)
+(*       All bookmarks -- a   .   xhsm*)
+(*    SNR: Brackets -- e   .   xhs*)
+(*    SNR: Find -- f   .   xhs*)
+(*       Buttons -- b (& next/prev)   .   xhsf*)
+(*       Flags -- f   .   xhsf*)
+(*          Set 1 on/off -- s (Out-of-dlg only, TextPad built-ins)   .   xhsff*)
+			Incremental find -- r	.	xhsf
+(*       Open -- o   .   xhsf*)
+(*       SNR: Find In Files -- i   .   xhsf*)
+(*          Open -- o   .   xhsfi*)
+(*          Search results -- r   .   xhsfi*)
+(*    SNR: Replace -- r   .   xhs*)
+(*       Buttons -- b   .   xhsr*)
+(*       Open -- o   .   xhsr*)
+(*       Other -- t   .   xhsr*)
+(*    SNR: Go-to dialog -- g   .   xhs*)
+(*       Open -- o   .   xhsg*)
+				Open w/ specific unit -- f	.	xhsgo

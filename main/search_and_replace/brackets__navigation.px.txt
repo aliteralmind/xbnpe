@@ -15,3 +15,4 @@ zPreBracketGTPIfCdd_M_cde -- Needs zvCDD_ES	{#insert {#COND -if {#insert zvCDD_E
 zPreBracketSelContentsOnly -- Brackets left unselected	{#insert zTPMatchBracket}{#insert zTPMatchBracketExtend}	zPreBracketSelContentsOnly
 zPreBracketSelCopy	{#insert zPreBracketSelect}{#insert zTPCopy}	zPreBracketSelCopy
 zPreBracketSelect	{#insert zRIGHT}{#insert zTPMatchBracketExtend}	zPreBracketSelect
+zPostBrkctGTPCopyWordLeftGTP	{#insert zPostBracketGTP}{#insert zCopyL1w}{#insert zPreBracketGTP}	zPostBrkctGTPCopyWordLeftGTP

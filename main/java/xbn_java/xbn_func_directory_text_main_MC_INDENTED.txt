@@ -1,0 +1,28 @@
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools,written in PhraseExpress,using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License,or (at your option) any later version.  //  This library is distributed in the hope that it will be useful,but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not,write to the Free Software Foundation,Inc.,51 Franklin Street,Fifth Floor,Boston,MA 02110-1301 USA*)		(*Two tabs plus this comment,to force this phrase to be (a) imported,and (b) with NO autotext*)
+(*_ xf -- com.github.xbn.* function directory   .   xf*)
+	text -- x	.	xf
+		CrashIfStringIs.nullEmpty(b,O,s,o)	CrashIfStringIs.nullEmpty({#insert zYcX}, {#insert zXcY});{#insert zLeftPostBrktSelectWord1}	xfx
+		CrashIfStringIs.nullEmpty(O,s,o)	CrashIfStringIs.nullEmpty({#insert zXcXcY});{#insert zLeftPostBrktSelectWord1}	xfx
+		StringUtil, StringUtilBase -- s	.	xfx
+			appendIfTrueFalse(apbl,O,b,o) (and 'X')	StringUtil.appendIfTrueFalse({#insert zYcX}, {#insert zYcX});{#insert zLeftPostBrktSelectWord1}	xfxs
+			appendPreTruePostOrFalse(apbl,s,O,s,b,o) (and 'X')	StringUtil.appendPreTruePostOrFalse({#insert zYcXcX}, {#insert zXcY}, {#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xfxs
+		get/appendDuped -- d	.	xfxs
+			getDuped(o,i)	StringUtil.getDuped({#insert zYcY}){#insert zLeftPostBrktSelectWord1}	xfxsd
+			getDupedNEC(o,i)	StringUtil.getDupedNEC({#insert zYcY}){#insert zLeftPostBrktSelectWord1}	xfxsd
+			appendDuped(apbl,o,i) (and 'X')	StringUtil.appendDuped({#insert zYcYcY}){#insert zLeftPostBrktSelectWord1}	xfxsd
+		get/appendWithNullDefault -- f	.	xfxs
+			getWithNullDefault(O,s)	StringUtilBase.getWithNullDefault({#insert zXcX}){#insert zLeftPostBrktSelectWord1}	xfxsf
+			getWithNullDefault(s,O,s,s)	StringUtilBase.getWithNullDefault({#insert zXcX}, {#insert zXcX}){#insert zLeftPostBrktSelectWord1}	xfxsf
+			appendWithNullDefault(apbl,O,s) (and 'X')	StringUtilBase.appendWithNullDefault({#insert zYmark}, {#insert zXcX}){#insert zLeftPostBrktSelectWord1}	xfxsf
+			appendWithNullDefault(apbl,s,O,s,s) (and 'X')	StringUtilBase.appendWithNullDefault({#insert zYcX}, {#insert zXcX}, {#insert zXmark}){#insert zLeftPostBrktSelectWord1}	xfxsf
+			getIteratorForCharsInString(O)	StringUtil.getIteratorForCharsInString({#insert zXmark}){#insert zLeftPostBrktSelectWord1}	xfxs
+		getLengthCINull -- c	.	xfxs
+			getLengthCINull(O,s)	StringUtilBase.getLengthCINull({#insert zXcX}){#insert zLeftPostBrktSelectWord1}	xfxsc
+			getLengthCINull(O,s,o)	StringUtilBase.getLengthCINull({#insert zXcXcY}){#insert zLeftPostBrktSelectWord1}	xfxsc
+			getLengthCINullWBNullBad(O,s,s)	StringUtilBase.getLengthCINullWBNullBad({#insert zXcXcX}){#insert zLeftPostBrktSelectWord1}	xfxsc
+			getLengthCINullWBNullBad(O,s,s,o)	StringUtilBase.getLengthCINullWBNullBad({#insert zXcXcX}, {#insert zYmark}){#insert zLeftPostBrktSelectWord1}	xfxsc
+		getVisibleIndexMask -- m	.	xfxs
+			getVisibleIndexMask(O)	StringUtil.getVisibleIndexMask({#insert zXmark}){#insert zLeftPostBrktSelectWord1}	xfxsm
+			getVisibleIndexMask(O,i)	StringUtil.getVisibleIndexMask({#insert zXcY}){#insert zLeftPostBrktSelectWord1}	xfxsm
+			getVisibleIndexMask(O,i,i)	StringUtil.getVisibleIndexMask({#insert zXmark}, {#insert zYcY}){#insert zLeftPostBrktSelectWord1}	xfxsm
+		newSDForToStringCINull(O)	StringUtilBase.newSDForToStringCINull({#insert zXmark}){#insert zLeftPostBrktSelectWord1}	xfxs

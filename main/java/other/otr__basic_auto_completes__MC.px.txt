@@ -1,28 +1,63 @@
-
  __XBN-PhraseExpress is released under the LGPL 2.1	(* <--**MUST_HAVE SPACE BEFORE UNDERSCORES, in this file only**  --XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
 , _4FQP_	, _4FQP_	, _
 ,_4TV_	,_4TV_	,_
 --this returns <B><CODE>null</CODE></B> (must return &quot;<CODE>this</CODE>&quot; from non-abstract sub-classes).--this returns <B><CODE>null (must return &quot;<CODE>this...	--this returns <B><CODE>null</CODE></B> (must return &quot;<CODE>this</CODE>&quot; from non-abstract sub-classes){#BALLOON -title Related actions -text rnl, rnldb}	--this r
-/*stub functions for implements compile	/*stub functions for implements compile...START{#insert zENTER} stub functions for implements compile...END*/{#insert zEnterTab}{#BALLOON -title Write stub functions here -text Move END comment down when done.}	/*stub
-/*stub functions for non-abstract compile...	/*stub functions for non-abstract compile...START{#insert zENTER} stub functions for non-abstract compile...END*/{#insert zEnterTab}{#BALLOON -title Write stub functions here -text Move END comment down when done.}	/*stub
-//Doc-ed by interface	//Doc-ed by interface	//Doc
-//Doc-ed by super	//Doc-ed by super	//Doc
-//Functions that do nothing but call their super-version	//Functions that do nothing but call their super-version...START	//Func
-//Functions that do nothing but their super-version	//Functions that do nothing but call their super-version...END	//Func
+/*...*/	{#insert zzJavaNonJDCmtBlock}	/*
+/*...*/	{#insert zzJavaNonJDCmtBlock}	/8
+/*[paste]*/	{#insert zzJavaNonJDCmtBlockPaste}	/*
+/*[paste]*/	{#insert zzJavaNonJDCmtBlockPaste}	/8
+/*stu -- /*stub functions for non-abstract compile...	{#insert zzStubFncsForNAbstrCmpl}	/*s
+/*stu -- /*stub functions for non-abstract compile...	{#insert zzStubFncsForNAbstrCmpl}	/8s
+/*stub functions for implements compile	{#insert zzStubFncsForImplCmpl}	/*s
+/*stub functions for implements compile	{#insert zzStubFncsForImplCmpl}	/8s
 //-: //------------------[enter-tab]	//------------------{#insert zEnterTab}	//-
-@SuppressWarnings('...')	@SuppressWarnings({#insert zAscQQ}{#CURSOR}{#insert zAscQQ})	@S
-@SuppressWarnings('unchecked')	@SuppressWarnings({#insert zAscQQ}unchecked{#insert zAscQQ})	@S
-A base class for implementing... (for *Base.java)	{#insert zzABaseClassForImplementing}	A base c
-A base class for implementing... (for *Base.java)	{#insert zzABaseClassForImplementing}	A base-c
-An abstract impl of ... (deletes 'Abstract' from cls-nm)	abstract implementation of <CODE>{#insert zXmark}{#insert zJavaSelCopyThisClassName}{#insert zXUpRight}{#insert zPasteXUpDelete}{#RIGHT -count 8}{#insert zTPDeleteL1w}{#insert zSelectR1wCopy}{#insert zRIGHT}</CODE>.{#MSGBOX -head Need 'see Base'? -text Need 'For classes needing to implement...see XBase.java' sentence? -yes zzSeeBaseForAbstrct -no z1slp}	abstr
-Instructions on... (_4prot)	<I><A HREF={#insert zAscQQ}{#insert zYmark}/../package-summary.html#_4prot{#insert zAscQQ}>Instructions</A> on implementing this &quot;<CODE>_4prot</CODE>&quot; function.</I>	instru
-Simple interface template	/**{#insert zEnterTab}<P>{#insert zYmark}</P>{#insert zEnterBksp} **/{#insert zEnterBksp}public interface {#insert zYmark} extends {#insert zYmark}  {{#insert zENTER}{#insert zYmark}{#insert zENTER}\\\}{#insert zENTER}{#insert zYUp3}	public i
-_4FQP_	_4FQP_	_4
-_4TV_	_4TV_	_4
-greater-than-or-equal-to	greater-than-or-equal-to	great
+//doc -- //documented by interface	//documented by interface	//doc
+//doc -- //documented by super-class	//documented by super-class	//doc
+@Override	@Override	2o
+@Override  (also 2o)	@Override	@o
+@SuppressWarnings('...')	{#insert zzzAtSprsWarn}	2S
+@SuppressWarnings('...') (also 2s)	{#insert zzzAtSprsWarn}	@S
+@SuppressWarnings('unchecked')	{#insert zzzAtSprsWarnUnchkd}	2S
+@SuppressWarnings('unchecked') (also 2s)	{#insert zzzAtSprsWarnUnchkd}	@S
+@SuppressWarnings({'unchecked', 'varargs'})	{#insert zzzAtSprsWarnUnchkdVrrgs}	2S
+@SuppressWarnings({'unchecked', 'varargs'}) (also 2s)	{#insert zzzAtSprsWarnUnchkdVrrgs}	@S
+A new -- Create a new instance	Create a new instance	A new
+A new -- Create a new instance as a duplicate of another	Create a new instance as a duplicate of another	A new
+A new -- Create a new instance from a <CODE>...</CODE>	Create a new instance from a <CODE>{#insert zYmark}</CODE>.{#insert zYUp}	A new
+An abstract impl of ... (deletes 'Abstract' from cls-nm)	abstract implementation of <CODE>{#insert zXmark}{#insert zzzPasteElimAbstractFromClassNameXUp}{#insert zSelectL1wCopy}{#insert zRIGHT}</CODE>.{#MSGBOX -head Need 'see Base'? -text Need 'For classes needing to implement...see *Composer.java' sentence? -yes zzSeeComposerForAbstrct -no z1slp -defaultno}	abstr
+An imple -- An implementation of [class-name minus 'Abstract']	An implementation of <CODE>{#insert zXmark}{#insert zzzPasteElimAbstractFromClassNameXUp}</CODE>.	An imple
+Arrays.toString(...) w/ opt import	Arrays.toString(){#insert zLEFT}{#MSGBOX -head Import statement? -text Create import statement for java.util.Arrays? -yes zzImportJUArrays -no z1slp -defaultno}{#insert zBalloonDone}	arrays
+Arrays.toString([paste]) w/ opt import	Arrays.toString({#insert zTPPaste}){#MSGBOX -head Import statement? -text Create import statement for java.util.Arrays? -yes zzImportJUArrays -no z1slp -defaultno}{#insert zBalloonDone}	arrays
+Boo -- All primitive wrapper-type line-list, shortened ('PByte', 'Int'), in a line-list	Bool{#insert zENTER}Char{#insert zENTER}PByte{#insert zENTER}PShort{#insert zENTER}Int{#insert zENTER}PLong{#insert zENTER}PFloat{#insert zENTER}PDouble{#UP -count 7}{#insert zHOME}	Boo
+Boo -- All primitive wrapper-type line-list, shortened: b,d,f,l,i,h,y,c	Bool{#insert zENTER}PDouble{#insert zENTER}PFloat{#insert zENTER}PLong{#insert zENTER}Int{#insert zENTER}PShort{#insert zENTER}PByte{#insert zENTER}Char{#UP -count 7}{#insert zHOME}	Boo
+Boo All primitive type line-list, full ('Byte', 'Integer')	Boolean{#insert zENTER}Character{#insert zENTER}Byte{#insert zENTER}Short{#insert zENTER}Integer{#insert zENTER}Long{#insert zENTER}Float{#insert zENTER}Double{#UP -count 7}{#insert zHOME}	Boo
+Boo All primitive type line-list, full: b,d,f,l,i,h,y,c	Boolean{#insert zENTER}Double{#insert zENTER}Float{#insert zENTER}Long{#insert zENTER}Integer{#insert zENTER}Short{#insert zENTER}Byte{#insert zENTER}Character{#UP -count 7}{#insert zHOME}	Boo
+C:\java_code\	C:\java_code\	c;
+Convenience functions for creating new {@code ...}	Convenience functions for creating new {@code }{#insert zLEFT}	conve
+Create a -- Create a new instance	Create a new instance	Create a
+Create a -- Create a new instance as a duplicate of another	Create a new instance as a duplicate of another	Create a
+Create a -- Create a new instance from a <CODE>...</CODE>	Create a new instance from a <CODE>{#insert zYmark}</CODE>.{#insert zYUp}	Create a
+For classes that need to implement... (for *Composer.java)	{#insert zzCmpsrForClassesThatNeedDDD}	For cla
+For classes that need to implement... (for *Composer.java)	{#insert zzCmpsrForClassesThatNeedDDD}	For impl
+Objects.requireNonNull(...); (no import)	Objects.requireNonNull({#insert zXmark}, {#insert zAscQQ}{#insert zYmark}{#insert zAscQQ});{#insert zXUp}	objects
+Objects.requireNonNull(...); (w/ import)	Objects.requireNonNull({#insert zzImportJUObjects}{#insert zXmark}, {#insert zAscQQ}{#insert zYmark}{#insert zAscQQ});{#insert zXUp}	objects
+Objects.requireNonNull([paste], '[paste]'); (no import)	Objects.requireNonNull({#insert zTPPaste}, {#insert zAscQQ}{#insert zTPPaste}{#insert zAscQQ});	objects
+Objects.requireNonNull([paste], '[paste]'); (w/ import)	Objects.requireNonNull({#insert zTPPaste}, {#insert zAscQQ}{#insert zTPPaste}{#insert zAscQQ});{#insert zzImportJUObjects}	objects
+System.out.println('...')	System.out.println({#insert zAscQQ}{#insert zAscQQ});{#insert zLEFT3}	sys
+System.out.println(...)	System.out.println();{#insert zLEFT2}	sys
+boo All primitive type line-list.	boolean{#insert zENTER}char{#insert zENTER}byte{#insert zENTER}short{#insert zENTER}int{#insert zENTER}long{#insert zENTER}float{#insert zENTER}double{#UP -count 7}{#insert zHOME}	boo
+boo All primitive type line-list: b,d,f,l,i,h,y,c	boolean{#insert zENTER}double{#insert zENTER}float{#insert zENTER}long{#insert zENTER}int{#insert zENTER}short{#insert zENTER}byte{#insert zENTER}char{#UP -count 7}{#insert zHOME}	boo
+cann -- Cannot be <CODE>final</CODE>.	Cannot be <CODE>final</CODE>.	cann
+getClass().getName()	getClass().getName()	getC
+imp -- import  ...;	import  {#insert zXmark};{#insert zXUp}	imp
+imp -- import  static ....*;	import  static {#insert zXmark}.*;{#insert zXUp}	imp
 in sub-classes, this must be overridden or made abstract.	in sub-classes, this function must be overridden or made abstract.	in sub
-less-than-or-equal-to	less-than-or-equal-to	less
-public c--Simple class template (class name in clipboard)	{#SETPHRASE -description zvFOBJ_NAME -content {#INSERTCLIPBOARD} -autotext zvFOBJ_NAME -folder ctvv_folder}package  {#insert zXmark};{#insert zENTER2}/**{#insert zEnterTab}<P>{#insert zYmark}</P>{#insert zEnterBksp} **/{#insert zEnterBksp}public class {#insert zvFOBJ_NAME} extends {#insert zYmark}  {{#insert zEnterBksp}//constructors...START{#insert zEnterTab}{#insert zYmark}{#insert zEnterBksp}//constructors...END{#insert zENTER}{#insert zENTER}\\\}{#insert zXUp}	public c
-public s--getTSPostfix() function (no super-call)	public String getTSPostfix()  {{#insert zENTER}return  {#insert zYmark};{#insert zEnterBksp}\\\}	public s
-public s--getTSPostfix() function (w/ super-call)	public String getTSPostfix()  {{#insert zENTER}return  super.getTSPostfix() + ", {#insert zYmark}";{#insert zEnterBksp}\\\}	public s
-zzInpClassNm	{#INPUT -head Class name? -single}	zzInpClassNm
+ret -- z-return  (ret-type)super.funcName();	return  ({#insert zXPrevJFSigCopyReturnTypeWGnrcsPasteCddAtX}{#SETPHRASE -description zvRET_W_GNRCS -content {#INSERTCLIPBOARD} -autotext zvRET_W_GNRCS -folder ctvv_folder})super.{#insert zzXPastePrevJFSigAtCrsrDelTypes}(*If the function is zero parameters, the cursor will end up in the parens.*){#insert sEND};{#MSGBOX -head Document call? -text [Yes]=Document this casted super-function call in a new JavaDoc block  //  WARNING: Word-wrap must be on (assuming on is your TextPad default). -yes zzzAtRetLineEndDocCastedSuperCallReturn -no z1slp}{#insert zBalloonDone}	ret
+super-call to same function, for sig-line, return this (multiple times)	{#SETPHRASE -description zvSPR_CALS -content {#INPUT -head How many super-call sig lines? -single} -autotext zvSPR_CALS -folder ctvv_folder}{#insert zzzSprCallToSameFuncRetThis_M_scals}	super.
+super-call to same function, for sig-line, return this (once)	{#SETPHRASE -description zvSPR_CALS -content 1 -autotext zvSPR_CALS -folder ctvv_folder}{#insert zzzSprCallToSameFuncRetThis_M_scals}	super.
+symbol:[ ]+class (for find-dialog text-box)	{#insert zzJRegexSymbolClassForCompileOutput}	sym
+symbol:[ ]+class, create import statement templates	{#SETPHRASE -description zvFIND_WHAT -content {#insert zzJRegexSymbolClassForCompileOutput} -autotext zvFIND_WHAT -folder ctvv_folder}{#insert zzSymbolVarImportStmntsFromCompileOutput_M_fwt}	sym
+this.getClass().getName()	this.getClass().getName()	this.g
+z- System.getProperty('line.separator', '\r\n')	System.getProperty({#insert zAscQQ}line.separator{#insert zAscQQ}, {#insert zAscQQ}\r\n{#insert zAscQQ})	sys
+z- if(...) { System.out.println(...) }	if({#insert zXmark}) { System.out.println({#insert zXmark}); \\\}{#insert zXUpDelete}	sys
+z- symbol:[ ]+(?:class|variable), create import statement template	{#SETPHRASE -description zvFIND_WHAT -content {#insert zzJRegexSymbolClassOrVarForCompileOutput} -autotext zvFIND_WHAT -folder ctvv_folder}{#insert zzSymbolVarImportStmntsFromCompileOutput_M_fwt}	sym

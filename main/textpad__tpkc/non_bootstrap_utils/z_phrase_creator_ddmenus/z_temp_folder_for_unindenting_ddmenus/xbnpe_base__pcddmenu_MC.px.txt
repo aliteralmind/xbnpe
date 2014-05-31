@@ -14,99 +14,99 @@ FROM xbnpe_phrase_creator_popup_heirarchy_base.px.txt:
 
 Phrase-creators: XBN-PhraseExpress -- xh   .   zXbnpeCmdPopupRoot
 *)
-Phrase-creators: TextPad-specific -- xht	.	xh
-Other -- xhtt	.	xht
-PC: CWLPDF: Char, word, line, para, doc, file -- xhc	.	xh
-1. Char -- xhcc	.	xhc
-Alter -- xhcca	.	xhcc
-Move -- xhccm	.	xhcc
-Select -- xhccs	.	xhcc
-2. Word -- xhcw	.	xhc
-Alter -- xhcwa	.	xhcw
-Cut, delete -- xhcwax	.	xhcwa
-Other -- xhcwat	.	xhcwa
-Move -- xhcwm	.	xhcw
-Select & copy -- xhcws	.	xhcw
-Select -- xhcwss	.	xhcws
-Select-copy -- xhcwsp	.	xhcws
-Copy -- xhcwsc	.	xhcws
-3. Line -- xhcl	.	xhc
-Alter -- xhcla	.	xhcl
-Cut, delete -- xhclax	.	xhcla
-Indent -- xhclai	.	xhcla
-Other -- xhclat	.	xhcla
-Sort -- xhclas	.	xhcla
-Move -- xhclm	.	xhcl
-Select, copy -- xhcls	.	xhcl
-4. Para -- xhcp	.	xhc
-Move -- xhcpm	.	xhcp
-Select -- xhcps	.	xhcp
-5. Selection, clipboard, undo/redo -- xhcs	.	xhc
-Clipboard -- xhcsb	.	xhcs
-Copy & cut -- xhcsbc	.	xhcsb
-Paste -- xhcsbp	.	xhcsb
-Undo & redo -- xhcsu	.	xhcs
-Alter selection (& meta) -- xhcss	.	xhcs
-Change case -- xhcssc	.	xhcss
-Other -- xhcsst	.	xhcss
-Block selection mode -- xhcssk	.	xhcss
-6. Document, page -- xhcd	.	xhc
-Document-windows -- xhcdo	.	xhcd
-Go-to specific -- xhcdog	.	xhcdo
-Page up/down left/right -- xhcdp	.	xhcd
-Select-all -- xhcda	.	xhcd
-Top & bottom -- xhcdm	.	xhcd
-Word-wrap -- xhcdw	.	xhcd
-7. File -- xhcf	.	xhc
-Close -- xhcfc	.	xhcf
-New -- xhcfn (and open-dup-close)	.	xhcf
-Open -- xhcfo	.	xhcf
-Save -- xhcfs	.	xhcf
-Save as -- xhcfsa	.	xhcfs
-Other -- xhcft	.	xhcf
-8. Other -- xhct	.	xhc
-Phrase-creators: HTML -- xhh	.	xh
-Phrase-creators: Java -- xhj	.	xh
-Function signature -- xhjg	.	xhj
-Entire signature -- xhjgg	.	xhjg
-Return type -- xhjgt	.	xhjg
-Function name -- xhjgn	.	xhjg
-Parameters -- xhjgp	.	xhjg
-JavaDoc -- xhjd	.	xhj
-Links -- xhjdk	.	xhjd
-Phrase-creators: Other -- xho	.	xh
-Key-presses -- xhok	.	xho
-Other -- xhot	.	xho
-Spot-marks (x-mark) -- xhox	.	xho
-Spot-marks (y-mark) -- xhoy	.	xho
-Phrase-creators: PhraseExpress -- xhp (creating & managing Pex code)	.	xh
-Key-presses -- xhok	.	xho
-Phrase-creators: Search & replace -- xhs	.	xh
-SNR: Bookmarks -- xhsm	.	xhs
-All bookmarks -- xhsma	.	xhsm
-SNR: Brackets -- xhse	.	xhs
-SNR: Find -- xhsf	.	xhs
-Buttons -- xhsfb (& next/prev)	.	xhsf
-Close -- xhsfc	.	xhsf
-Flags -- xhsff	.	xhsf
-Set 1 on/off -- xhsffs (Out-of-dlg only, TextPad built-ins)	.	xhsff
-Open -- xhsfo	.	xhsf
-Other -- xhsft	.	xhsf
-SNR: Find In Files -- xhsfi	.	xhsf
-Buttons -- xhsfib	.	xhsfi
-Close -- xhsfic	.	xhsfi
-Fields -- xhsfid	.	xhsfi
-Flags -- xhsfif	.	xhsfi
-Open -- xhsfio	.	xhsfi
-Search results -- xhsfir	.	xhsfi
-SNR: Go-to dialog -- xhsg	.	xhs
-Open -- xhsgo	.	xhsg
-SNR: Replace -- xhsr	.	xhs
-Buttons -- xhsrb	.	xhsr
-Close -- xhsrc	.	xhsr
-Fields -- xhsrd	.	xhsr
-Flags -- xhsrf	.	xhsr
-Open -- xhsro	.	xhsr
-Other -- xhsrt	.	xhsr
-SNR: String-tokenization -- xhsk	.	xhs
+Phrase-creators: TextPad-specific -- t	.	xh
+Other -- t	.	xht
+PC: CWLPDF: Char, word, line, para, doc, file -- c	.	xh
+1. Char -- c	.	xhc
+Alter -- a	.	xhcc
+Move -- m	.	xhcc
+Select -- s	.	xhcc
+2. Word -- w	.	xhc
+Alter -- a	.	xhcw
+Cut, delete -- x	.	xhcwa
+Other -- t	.	xhcwa
+Move -- m	.	xhcw
+Select & copy -- s	.	xhcw
+Select -- s	.	xhcws
+Select-copy -- p	.	xhcws
+Copy -- c	.	xhcws
+3. Line -- l	.	xhc
+Alter -- a	.	xhcl
+Cut, delete -- x	.	xhcla
+Indent -- i	.	xhcla
+Other -- t	.	xhcla
+Sort -- s	.	xhcla
+Move -- m	.	xhcl
+Select, copy -- s	.	xhcl
+4. Para -- p	.	xhc
+Move -- m	.	xhcp
+Select -- s	.	xhcp
+5. Selection, clipboard, undo/redo -- s	.	xhc
+Clipboard -- b	.	xhcs
+Copy & cut -- c	.	xhcsb
+Paste -- p	.	xhcsb
+Undo & redo -- u	.	xhcs
+Alter selection (& meta) -- s	.	xhcs
+Change case -- c	.	xhcss
+Other -- t	.	xhcss
+Block selection mode -- k	.	xhcss
+6. Document, page -- d	.	xhc
+Document-windows -- o	.	xhcd
+Go-to specific -- g	.	xhcdo
+Page up/down left/right -- p	.	xhcd
+Select-all -- a	.	xhcd
+Top & bottom -- m	.	xhcd
+Word-wrap -- w	.	xhcd
+7. File -- f	.	xhc
+Close -- c	.	xhcf
+New -- n (and open-dup-close)	.	xhcf
+Open -- o	.	xhcf
+Save -- s	.	xhcf
+Save as -- a	.	xhcfs
+Other -- t	.	xhcf
+8. Other -- t	.	xhc
+Phrase-creators: HTML -- h	.	xh
+Phrase-creators: Java -- j	.	xh
+Function signature -- g	.	xhj
+Entire signature -- g	.	xhjg
+Return type -- t	.	xhjg
+Function name -- n	.	xhjg
+Parameters -- p	.	xhjg
+JavaDoc -- d	.	xhj
+Links -- k	.	xhjd
+Phrase-creators: Other -- o	.	xh
+Key-presses -- k	.	xho
+Other -- t	.	xho
+Spot-marks (x-mark) -- x	.	xho
+Spot-marks (y-mark) -- y	.	xho
+Phrase-creators: PhraseExpress -- p (creating & managing Pex code)	.	xh
+Key-presses -- k	.	xho
+Phrase-creators: Search & replace -- s	.	xh
+SNR: Bookmarks -- m	.	xhs
+All bookmarks -- a	.	xhsm
+SNR: Brackets -- e	.	xhs
+SNR: Find -- f	.	xhs
+Buttons -- b (& next/prev)	.	xhsf
+Close -- c	.	xhsf
+Flags -- f	.	xhsf
+Set 1 on/off -- s (Out-of-dlg only, TextPad built-ins)	.	xhsff
+Open -- o	.	xhsf
+Other -- t	.	xhsf
+SNR: Find In Files -- i	.	xhsf
+Buttons -- b	.	xhsfi
+Close -- c	.	xhsfi
+Fields -- d	.	xhsfi
+Flags -- f	.	xhsfi
+Open -- o	.	xhsfi
+Search results -- r	.	xhsfi
+SNR: Go-to dialog -- g	.	xhs
+Open -- o	.	xhsg
+SNR: Replace -- r	.	xhs
+Buttons -- b	.	xhsr
+Close -- c	.	xhsr
+Fields -- d	.	xhsr
+Flags -- f	.	xhsr
+Open -- o	.	xhsr
+Other -- t	.	xhsr
+SNR: String-tokenization -- k	.	xhs
 

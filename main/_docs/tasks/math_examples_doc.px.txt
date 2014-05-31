@@ -1,0 +1,19 @@
+(*
+   Changes this (actual double-quotes):
+      <map name='tpkcumac1cmap'>
+         <area shape='rect' coords='332,158,603,181' href='#tpkcumac1clistpri' alt='List primary KC for all cmds in cat' >
+         <area shape='rect' coords='332,206,601,229' href='#tpkcumac1ctest' alt='Test all nbs-cmds in cat' >
+         <area shape='rect' coords='332,182,602,205' href='#tpkcumac1cprintnvpm' alt='Print all name/abrv/phrase-names' >
+         <area shape='rect' coords='332,134,603,156' href='#tpkcumac1cdebug' alt='Debug all cmds in category' >
+         <area shape='rect' coords='332,110,602,133' href='#tpkcumac1cassign' alt='Assign all kc-s to all cmds in cat' >
+      </map>
+
+   to this (assuming '3' is the pixel-increment, '5' is the area-count, and the cursor is immediately following the '158'):
+      <map name='tpkcumac1cmap'>
+         <area shape='rect' coords='332,161,603,181' href='#tpkcumac1clistpri' alt='List primary KC for all cmds in cat' >
+         <area shape='rect' coords='332,209,601,229' href='#tpkcumac1ctest' alt='Test all nbs-cmds in cat' >
+         <area shape='rect' coords='332,185,602,205' href='#tpkcumac1cprintnvpm' alt='Print all name/abrv/phrase-names' >
+         <area shape='rect' coords='332,137,603,156' href='#tpkcumac1cdebug' alt='Debug all cmds in category' >
+         <area shape='rect' coords='332,113,602,133' href='#tpkcumac1cassign' alt='Assign all kc-s to all cmds in cat' >
+      </map>
+*)

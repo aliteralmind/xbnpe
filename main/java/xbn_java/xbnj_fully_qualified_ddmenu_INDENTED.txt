@@ -1,0 +1,151 @@
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+xbn.* fully-qualified package and class names	.	xb
+	com.github.xbn.analyze. -- z	com.github.xbn.analyze.	xb
+		_ com.github.xbn.analyze. (package name)	com.github.xbn.analyze.	xbz
+		_ com.github.xbn.analyze. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.xbn.analyze. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbz
+		com.github.xbn.analyze.alter. -- a	com.github.xbn.analyze.alter.	xbz
+			_ com.github.xbn.analyze.alter. (package name)	com.github.xbn.analyze.alter.	xbza
+			_ com.github.xbn.analyze.alter. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.xbn.analyze.alter. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbza
+		com.github.xbn.analyze.validate. -- v	com.github.xbn.analyze.validate.	xbz
+			_ com.github.xbn.analyze.validate. (package name)	com.github.xbn.analyze.validate.	xbzv
+			_ com.github.xbn.analyze.validate. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.xbn.analyze.validate. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbzv
+			com.github.xbn.analyze.validate.z. -- z	com.github.xbn.analyze.validate.z.	xbzv
+				_ com.github.xbn.analyze.validate.z. (package name)	com.github.xbn.analyze.validate.z.	xbzvz
+				_ com.github.xbn.analyze.validate.z. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.xbn.analyze.validate.z. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbzvz
+	com.github.xbn.array. -- a	com.github.xbn.array.	xb
+		_ com.github.xbn.array. (package name)	com.github.xbn.array.	xba
+		_ com.github.xbn.array. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.xbn.array. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xba
+		com.github.xbn.array.helper. -- h	com.github.xbn.array.helper.	xba
+		_ com.github.xbn.array.helper. (package name)	com.github.xbn.array.helper.	xbah
+		_ com.github.xbn.array.helper. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.xbn.array.helper. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbah
+		com.github.xbn.array.z. -- z	com.github.xbn.array.z.	xba
+			_ com.github.xbn.array.z. (package name)	com.github.xbn.array.z.	xbaz
+			_ com.github.xbn.array.z. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.xbn.array.z. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbaz
+		com.github.xbn.array.primitive. -- p	com.github.xbn.array.primitive.	xba
+			_ com.github.xbn.array.primitive. (package name)	com.github.xbn.array.primitive.	xbap
+			_ com.github.xbn.array.primitive. (primitive-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.xbn.array.primitive. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbap
+	com.github.xbn.neederneedable. -- h	com.github.xbn.neederneedable.	xb
+		_ com.github.xbn.neederneedable. (package name)	com.github.xbn.neederneedable.	xbh
+		_ com.github.xbn.neederneedable. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.xbn.neederneedable. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbh
+	com.github.aliteralmind.codelet. -- c	com.github.aliteralmind.codelet.	xb
+		_ com.github.aliteralmind.codelet. (package name)	com.github.aliteralmind.codelet.	xbc
+		_ com.github.aliteralmind.codelet. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.aliteralmind.codelet. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbc
+		com.github.aliteralmind.codelet.examples. -- m	com.github.aliteralmind.codelet.examples.	xbc
+			_ com.github.aliteralmind.codelet.examples. (package name)	com.github.aliteralmind.codelet.examples.	xbcm
+			_ com.github.aliteralmind.codelet.examples. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.aliteralmind.codelet.examples. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbcm
+		com.github.aliteralmind.codelet.linefilter. -- l	com.github.aliteralmind.codelet.linefilter.	xbc
+			_ com.github.aliteralmind.codelet.linefilter. (package name)	com.github.aliteralmind.codelet.linefilter.	xbcl
+			_ com.github.aliteralmind.codelet.linefilter. (reflect-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.aliteralmind.codelet.linefilter. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbcl
+		com.github.aliteralmind.codelet.simplesig. -- s	com.github.aliteralmind.codelet.simplesig.	xbc
+			_ com.github.aliteralmind.codelet.simplesig. (package name)	com.github.aliteralmind.codelet.simplesig.	xbcs
+			_ com.github.aliteralmind.codelet.simplesig. (reflect-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.aliteralmind.codelet.simplesig. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbcs
+		com.github.aliteralmind.codelet.taglet. -- g	com.github.aliteralmind.codelet.taglet.	xbc
+			_ com.github.aliteralmind.codelet.taglet. (package name)	com.github.aliteralmind.codelet.taglet.	xbcg
+			_ com.github.aliteralmind.codelet.taglet. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.aliteralmind.codelet.taglet. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbcg
+		com.github.aliteralmind.codelet.type. -- y	com.github.aliteralmind.codelet.type.	xbc
+			_ com.github.aliteralmind.codelet.type. (package name)	com.github.aliteralmind.codelet.type.	xbcy
+			_ com.github.aliteralmind.codelet.type. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.aliteralmind.codelet.type. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbcy
+		com.github.aliteralmind.codelet.util. -- u	com.github.aliteralmind.codelet.util.	xbc
+			_ com.github.aliteralmind.codelet.util. (package name)	com.github.aliteralmind.codelet.util.	xbcu
+			_ com.github.aliteralmind.codelet.util. (reflect-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.aliteralmind.codelet.util. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbcu
+	com.github.xbn.examples. -- m	com.github.xbn.examples.	xb
+		_ com.github.xbn.examples. (package name)	com.github.xbn.examples.	xbm
+		_ com.github.xbn.examples. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.xbn.examples. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbm
+	com.github.xbn.experimental. -- p	com.github.xbn.experimental.	xb
+		_ com.github.xbn.experimental. (package name)	com.github.xbn.experimental.	xbp
+		_ com.github.xbn.experimental. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.xbn.experimental. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbp
+	com.github.xbn.io. -- i	com.github.xbn.io.	xb
+		_ com.github.xbn.io. (package name)	com.github.xbn.io.	xbi
+		_ com.github.xbn.io. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.xbn.io. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbi
+		com.github.xbn.io.z. -- z	com.github.xbn.io.z.	xbi
+			_ com.github.xbn.io.z. (package name)	com.github.xbn.io.	xbiz
+			_ com.github.xbn.io.z. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.xbn.io.z. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbiz
+	com.github.xbn.keyed. -- d	com.github.xbn.keyed.	xb
+		_ com.github.xbn.keyed. (package name)	com.github.xbn.keyed.	xbd
+		_ com.github.xbn.keyed. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.xbn.keyed. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbd
+	com.github.xbn.lang. -- l	com.github.xbn.lang.	xb
+		_ com.github.xbn.lang. (package name)	com.github.xbn.lang.	xbl
+		_ com.github.xbn.lang. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.xbn.lang. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbl
+		CrashIfBase	com.github.xbn.lang.CrashIfBase	xbl
+		XbnConstants	com.github.xbn.lang.XbnConstants	xbl
+		com.github.xbn.lang.z. -- z	com.github.xbn.lang.z.	xbl
+			_ com.github.xbn.lang.z. (package name)	com.github.xbn.lang.z.	xblz
+			_ com.github.xbn.lang.z. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.xbn.lang.z. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xblz
+		com.github.xbn.lang.reflect. -- r	com.github.xbn.lang.reflect.	xbl
+			_ com.github.xbn.lang.reflect. (package name)	com.github.xbn.lang.reflect.	xblr
+			_ com.github.xbn.lang.reflect. (reflect-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.xbn.lang.reflect. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xblr
+	com.github.xbn.list. -- s	com.github.xbn.list.	xb
+		_ com.github.xbn.list. (package name)	com.github.xbn.list.	xbs
+		_ com.github.xbn.list. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.xbn.list. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbs
+		com.github.xbn.list.lister. -- e	com.github.xbn.list.lister.	xbs
+			_ com.github.xbn.list.lister. (package name)	com.github.xbn.list.lister.	xbse
+			_ com.github.xbn.list.lister. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.xbn.list.lister. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbse
+			com.github.xbn.list.lister.z. -- z	com.github.xbn.list.lister.z.	xbse
+				_ com.github.xbn.list.lister.z. (package name)	com.github.xbn.list.lister.z.	xbsez
+				_ com.github.xbn.list.lister.z. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.xbn.list.lister.z. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbsez
+		com.github.xbn.list.listify. -- i	com.github.xbn.list.listify.	xbs
+			_ com.github.xbn.list.listify. (package name)	com.github.xbn.list.listify.	xbsi
+			_ com.github.xbn.list.listify. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.xbn.list.listify. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbsi
+			com.github.xbn.list.listify.backend. -- b	com.github.xbn.list.listify.backend.	xbsi
+				_ com.github.xbn.list.listify.backend. (package name)	com.github.xbn.list.listify.backend.	xbsib
+				_ com.github.xbn.list.listify.backend. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.xbn.list.listify.backend. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbsib
+			com.github.xbn.list.listify.arrayofsame. -- e	com.github.xbn.list.listify.arrayofsame.	xbsi
+				_ com.github.xbn.list.listify.arrayofsame. (package name)	com.github.xbn.list.listify.arrayofsame.	xbsie
+				_ com.github.xbn.list.listify.arrayofsame. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.xbn.list.listify.arrayofsame. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbsie
+			com.github.xbn.list.listify.privitiveable. -- p	com.github.xbn.list.listify.privitiveable.	xbsi
+				_ com.github.xbn.list.listify.privitiveable. (package name)	com.github.xbn.list.listify.privitiveable.	xbsip
+				_ com.github.xbn.list.listify.privitiveable. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.xbn.list.listify.privitiveable. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbsip
+	com.github.xbn.number. -- n	com.github.xbn.number.	xb
+		_ com.github.xbn.number. (package name)	com.github.xbn.number.	xbn
+		_ com.github.xbn.number. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.xbn.number. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbn
+		com.github.xbn.number.z. -- z	com.github.xbn.number.z.	xbn
+			_ com.github.xbn.number.z. (package name)	com.github.xbn.number.z.	xbnz
+			_ com.github.xbn.number.z. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.xbn.number.z. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbnz
+	com.github.aliteralmind.templatefeather. -- f	com.github.aliteralmind.templatefeather.	xb
+		_ com.github.aliteralmind.templatefeather. (package name)	com.github.aliteralmind.templatefeather.	xbf
+		_ com.github.aliteralmind.templatefeather. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.aliteralmind.templatefeather. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbf
+	com.github.xbn.testdev. -- v	com.github.xbn.testdev.	xb
+		_ com.github.xbn.testdev. (package name)	com.github.xbn.testdev.	xbv
+		_ com.github.xbn.testdev. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.xbn.testdev. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbv
+		com.github.xbn.testdev.ant. -- a	com.github.xbn.testdev.ant.	xbv
+			_ com.github.xbn.testdev.ant. (package name)	com.github.xbn.testdev.ant.	xbva
+			_ com.github.xbn.testdev.ant. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.xbn.testdev.ant. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbva
+	com.github.xbn.text. -- x	com.github.xbn.text.	xb
+		_ com.github.xbn.text. (package name)	com.github.xbn.text.	xbx
+		_ com.github.xbn.text. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.xbn.text. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbx
+		com.github.xbn.text.line. -- l	com.github.xbn.text.line.	xbx
+			_ com.github.xbn.text.line. (package name)	com.github.xbn.text.line.	xbxl
+			_ com.github.xbn.text.line. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.xbn.text.line. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbxl
+			com.github.xbn.text.line.z. -- z	com.github.xbn.text.line.z.	xbxl
+				_ com.github.xbn.text.line.z. (package name)	com.github.xbn.text.line.z.	xbxlz
+				_ com.github.xbn.text.line.z. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.xbn.text.line.z. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbxlz
+		com.github.xbn.text.padchop. -- c	com.github.xbn.text.padchop.	xbx
+			_ com.github.xbn.text.padchop. (package name)	com.github.xbn.text.padchop.	xbxc
+			_ com.github.xbn.text.padchop. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.xbn.text.padchop. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbxc
+			com.github.xbn.text.padchop.z. -- z	com.github.xbn.text.padchop.z.	xbxc
+				_ com.github.xbn.text.padchop.z. (package name)	com.github.xbn.text.padchop.z.	xbxcz
+				_ com.github.xbn.text.padchop.z. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.xbn.text.padchop.z. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbxcz
+		com.github.xbn.regexutil. -- r	com.github.xbn.regexutil.	xbx
+			_ com.github.xbn.regexutil. (package name)	com.github.xbn.regexutil.	xbxr
+			_ com.github.xbn.regexutil. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.xbn.regexutil. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbxr
+			com.github.xbn.regexutil.z. -- z	com.github.xbn.regexutil.z.	xbxr
+				_ com.github.xbn.regexutil.z. (package name)	com.github.xbn.regexutil.z.	xbxrz
+				_ com.github.xbn.regexutil.z. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.xbn.regexutil.z. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbxrz
+	com.github.xbn.util. -- u	com.github.xbn.util.	xb
+		_ com.github.xbn.util. (package name)	com.github.xbn.util.	xbu
+		_ com.github.xbn.util. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.xbn.util. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbu
+		com.github.xbn.util.itr. -- t	com.github.xbn.util.itr.	xbu
+			_ com.github.xbn.util.itr. (package name)	com.github.xbn.util.itr.	xbut
+			_ com.github.xbn.util.itr. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.xbn.util.itr. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbut
+		com.github.xbn.util.copyval. -- g	com.github.xbn.util.copyval.	xbu
+			_ com.github.xbn.util.copyval. (package name)	com.github.xbn.util.copyval.	xbug
+			_ com.github.xbn.util.copyval. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.xbn.util.copyval. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbug
+		com.github.xbn.util.lock. -- l	com.github.xbn.util.lock.	xbu
+			_ com.github.xbn.util.lock. (package name)	com.github.xbn.util.lock.	xbul
+			_ com.github.xbn.util.lock. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.xbn.util.lock. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbul
+		com.github.xbn.util.tuple. -- u	com.github.xbn.util.tuple.	xbu
+			_ com.github.xbn.util.tuple. (package name)	com.github.xbn.util.tuple.	xbuu
+			_ com.github.xbn.util.tuple. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.xbn.util.tuple. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbuu
+		com.github.xbn.util.xcontext. -- x	com.github.xbn.util.xcontext.	xbu
+			_ com.github.xbn.util.xcontext. (package name)	com.github.xbn.util.xcontext.	xbux
+			_ com.github.xbn.util.xcontext. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.github.xbn.util.xcontext. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	xbux

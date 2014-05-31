@@ -24,7 +24,7 @@ zzJFSigLnSlctd_selectNextParamTypeNm_M_pnum	{#insert zLEFT}{#insert zTMFindNextO
 zzJFSigLnSlctd_selectNxtPrvParamTypeNm_M_pnpPnum -- Needs zvPPRV_NXT, zvPARAM_NUM	{#insert zzJFSigLnSlctd_select{#insert zvPPRV_NXT}ParamTypeNm_M_pnum}	zzJFSigLnSlctd_selectNxtPrvParamTypeNm_M_pnpPnum
 zzJFSigLnSlctd_selectPrevParamTypeNm_M_pnum	{#insert zRIGHT}{#insert zTMFindPrevCloseParen}{#LOOP {#insert zTMFindPrevParamTypeAndName} -count {#insert zvPARAM_NUM}}	zzJFSigLnSlctd_selectPrevParamTypeNm_M_pnum
 zzJavaTestIntroFileNew	{#MSGBOX -head Testing Java actions -text About to test Java actions.{#insert zzSyntaxOnFlagWarningTxt}}{#insert zvSYNTAX_ON_stES}{#insert zFcsTPFileNew}	zzJavaTestIntroFileNew
-zzSetCddLltrToES	{#insert zvCDD_ES_stES}{#insert zvLC_ALTR_stES}	zzSetCddLltrToES
+zzSetCddLltrToES	{#insert zvJCD_ES_stES}{#insert zvLC_ALTR_stES}	zzSetCddLltrToES
 zzSetDispToFuncNmIfFutr_M_dsp -*-	(*If zvDISPLAY is '__CLS_NM__', reset it to THIS (in zvFOBJ_NAME). See zzSetDispToFutrCNmCddToCddIfUcPapToLcCB_M_cb*){#insert {#COND -if {#insert zvDISPLAY} = __CLS_NM__ -then zvDISPLAY_stFncObjNm -else z1slp}}	zzSetDispToFuncNmIfFutr_M_dsp
 zzSetDrnToHPapToV	{#insert zvDRN_stH}{#insert zvPAP_stV}	zzSetDrnToHPapToV
 zzSetGpnPpnToNext -*-	{#insert zvGPRV_NXT_stNext}{#insert zvPNXT_PRV_stNext}	zzSetGpnPpnToNext

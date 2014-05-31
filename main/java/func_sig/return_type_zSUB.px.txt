@@ -4,23 +4,23 @@ zHtmlEscJavaGnrcsB4Cursor -*- '>' is immediately before the cursor	{#insert zPos
 zJFRtrnTypeFNmSlctd_selectReturnTypeNoGnrcs -*- 	{#insert zLEFT}{#insert zTPSelectR1w}	zJFRtrnTypeFNmSlctd_selectReturnTypeNoGnrcs
 zJFRtrnTypeFNmSlctd_selectReturnTypeWGnrcs -*- Assumes spcs&tbs-only b/t ret-type-gnrcs & func-name	{#insert zSelectL2w}{#insert zTPSelectR1w}	zJFRtrnTypeFNmSlctd_selectReturnTypeWGnrcs
 zXPrvNxtJFSigCopyReturnTypeNoGnrcsPasteAtX_M_cdeGpnWyc	{#insert zXPrvNxtJFSigCopyReturnTypeNoGnrcsRtrnToX_M_cdeGpnWyc}{#insert zTPPaste}	zXPrvNxtJFSigCopyReturnTypeNoGnrcsPasteAtX_M_cdeGpnWyc
-zXPrvNxtJFSigCopyReturnTypeNoGnrcsRtrnToX_M_cdeGpnWyc -*-(*!*)- Needs zvCDD_ES, zvGPRV_NXT	(*See zSelCopyPrvNxtJFSigReturnToXCursor_M_gpnWyc*){#insert zXSelectRtrnTypeFNmInNxtPrvJFSig_M_cdeGpnWyc}{#insert zJFRtrnTypeFNmSlctd_selectReturnTypeNoGnrcs}{#insert zTPCopy}{#insert zXUpDownOppositeDir_M_gpn}	zXPrvNxtJFSigCopyReturnTypeNoGnrcsRtrnToX_M_cdeGpnWyc
+zXPrvNxtJFSigCopyReturnTypeNoGnrcsRtrnToX_M_cdeGpnWyc -*-(*!*)- Needs zvJCD_ES, zvGPRV_NXT	(*See zSelCopyPrvNxtJFSigReturnToXCursor_M_gpnWyc*){#insert zXSelectRtrnTypeFNmInNxtPrvJFSig_M_cdeGpnWyc}{#insert zJFRtrnTypeFNmSlctd_selectReturnTypeNoGnrcs}{#insert zTPCopy}{#insert zXUpDownOppositeDir_M_gpn}	zXPrvNxtJFSigCopyReturnTypeNoGnrcsRtrnToX_M_cdeGpnWyc
 zXPrvNxtJFSigCopyReturnTypeWGnrcsPasteAtX_M_cdeGpnWyc	{#insert zXPrvNxtJFSigCopyReturnTypeWGnrcsRtrnToX_M_cdeGpnWyc}{#insert zTPPaste}	zXPrvNxtJFSigCopyReturnTypeWGnrcsPasteAtX_M_cdeGpnWyc
-zXPrvNxtJFSigCopyReturnTypeWGnrcsRtrnToX_M_cdeGpnWyc -*-(*!*)- Needs zvCDD_ES, zvGPRV_NXT	(*See zSelCopyPrvNxtJFSigReturnToXCursor_M_gpnWyc*){#insert zXSelectRtrnTypeFNmInNxtPrvJFSig_M_cdeGpnWyc}{#insert zJFRtrnTypeFNmSlctd_selectReturnTypeWGnrcs}{#insert zTPCopy}{#insert zXUpDownOppositeDir_M_gpn}	zXPrvNxtJFSigCopyReturnTypeWGnrcsRtrnToX_M_cdeGpnWyc
-zXSelectRtrnTypeFNmInNxtPrvJFSig_M_cdeGpnWyc -*-	{#insert zXmarkMaybeCdd_M_cde}{#insert zSelectPrvNxtJavaFuncSigLine_M_gpnWyc}{#insert zJFSigLineSlctdGoToOpenParen}{#insert zTMFindPrevParamTypeAndName}{#insert zTPSelSwapEnds}	zXSelectRtrnTypeFNmInNxtPrvJFSig_M_cdeGpnWyc
+zXPrvNxtJFSigCopyReturnTypeWGnrcsRtrnToX_M_cdeGpnWyc -*-(*!*)- Needs zvJCD_ES, zvGPRV_NXT	(*See zSelCopyPrvNxtJFSigReturnToXCursor_M_gpnWyc*){#insert zXSelectRtrnTypeFNmInNxtPrvJFSig_M_cdeGpnWyc}{#insert zJFRtrnTypeFNmSlctd_selectReturnTypeWGnrcs}{#insert zTPCopy}{#insert zXUpDownOppositeDir_M_gpn}	zXPrvNxtJFSigCopyReturnTypeWGnrcsRtrnToX_M_cdeGpnWyc
+zXSelectRtrnTypeFNmInNxtPrvJFSig_M_cdeGpnWyc -*-	{#insert zXmarkMaybeJDCdd_M_cde}{#insert zSelectPrvNxtJavaFuncSigLine_M_gpnWyc}{#insert zJFSigLineSlctdGoToOpenParen}{#insert zTMFindPrevParamTypeAndName}{#insert zTPSelSwapEnds}	zXSelectRtrnTypeFNmInNxtPrvJFSig_M_cdeGpnWyc
 zvES_23N_stPrompt	{#SETPHRASE -description zvES_23_PROMPT -content {#REPLACE {#INPUT -head Which sig? ('1', '2', '3', or 'n' for prompt) -def 1 -single} -oldtext p -newtext Prompt} -autotext zvES_23N -folder ctvv_folder}	zvES_23N_stPrompt
-zzSetCddToESGpnToNextWncTo1	{#insert zvCDD_ES_stES}{#insert zzSetGpnToNextWncTo1}	zzSetCddToESGpnToNextWncTo1
-zzSetCddToESGpnToNextWncTo2	{#insert zvCDD_ES_stES}{#insert zzSetGpnToNextWncTo2}	zzSetCddToESGpnToNextWncTo2
-zzSetCddToESGpnToNextWncTo3	{#insert zvCDD_ES_stES}{#insert zzSetGpnToNextWncTo3}	zzSetCddToESGpnToNextWncTo3
-zzSetCddToESGpnToNextWncTo4	{#insert zvCDD_ES_stES}{#insert zzSetGpnToNextWncTo4}	zzSetCddToESGpnToNextWncTo4
-zzSetCddToESGpnToNextWncTo5	{#insert zvCDD_ES_stES}{#insert zzSetGpnToNextWncTo5}	zzSetCddToESGpnToNextWncTo5
-zzSetCddToESGpnToNextWncToPrompt	{#insert zvCDD_ES_stES}{#insert zzSetGpnToNextWncToPrompt}	zzSetCddToESGpnToNextWncToPrompt
-zzSetCddToESGpnToPrevWncTo1	{#insert zvCDD_ES_stES}{#insert zzSetGpnToPrevWncTo1}	zzSetCddToESGpnToPrevWncTo1
-zzSetCddToESGpnToPrevWncTo2	{#insert zvCDD_ES_stES}{#insert zzSetGpnToPrevWncTo2}	zzSetCddToESGpnToPrevWncTo2
-zzSetCddToESGpnToPrevWncTo3	{#insert zvCDD_ES_stES}{#insert zzSetGpnToPrevWncTo3}	zzSetCddToESGpnToPrevWncTo3
-zzSetCddToESGpnToPrevWncTo4	{#insert zvCDD_ES_stES}{#insert zzSetGpnToPrevWncTo4}	zzSetCddToESGpnToPrevWncTo4
-zzSetCddToESGpnToPrevWncTo5	{#insert zvCDD_ES_stES}{#insert zzSetGpnToPrevWncTo5}	zzSetCddToESGpnToPrevWncTo5
-zzSetCddToESGpnToPrevWncToPrompt	{#insert zvCDD_ES_stES}{#insert zzSetGpnToPrevWncToPrompt}	zzSetCddToESGpnToPrevWncToPrompt
+zzSetCddToESGpnToNextWncTo1	{#insert zvJCD_ES_stES}{#insert zzSetGpnToNextWncTo1}	zzSetCddToESGpnToNextWncTo1
+zzSetCddToESGpnToNextWncTo2	{#insert zvJCD_ES_stES}{#insert zzSetGpnToNextWncTo2}	zzSetCddToESGpnToNextWncTo2
+zzSetCddToESGpnToNextWncTo3	{#insert zvJCD_ES_stES}{#insert zzSetGpnToNextWncTo3}	zzSetCddToESGpnToNextWncTo3
+zzSetCddToESGpnToNextWncTo4	{#insert zvJCD_ES_stES}{#insert zzSetGpnToNextWncTo4}	zzSetCddToESGpnToNextWncTo4
+zzSetCddToESGpnToNextWncTo5	{#insert zvJCD_ES_stES}{#insert zzSetGpnToNextWncTo5}	zzSetCddToESGpnToNextWncTo5
+zzSetCddToESGpnToNextWncToPrompt	{#insert zvJCD_ES_stES}{#insert zzSetGpnToNextWncToPrompt}	zzSetCddToESGpnToNextWncToPrompt
+zzSetCddToESGpnToPrevWncTo1	{#insert zvJCD_ES_stES}{#insert zzSetGpnToPrevWncTo1}	zzSetCddToESGpnToPrevWncTo1
+zzSetCddToESGpnToPrevWncTo2	{#insert zvJCD_ES_stES}{#insert zzSetGpnToPrevWncTo2}	zzSetCddToESGpnToPrevWncTo2
+zzSetCddToESGpnToPrevWncTo3	{#insert zvJCD_ES_stES}{#insert zzSetGpnToPrevWncTo3}	zzSetCddToESGpnToPrevWncTo3
+zzSetCddToESGpnToPrevWncTo4	{#insert zvJCD_ES_stES}{#insert zzSetGpnToPrevWncTo4}	zzSetCddToESGpnToPrevWncTo4
+zzSetCddToESGpnToPrevWncTo5	{#insert zvJCD_ES_stES}{#insert zzSetGpnToPrevWncTo5}	zzSetCddToESGpnToPrevWncTo5
+zzSetCddToESGpnToPrevWncToPrompt	{#insert zvJCD_ES_stES}{#insert zzSetGpnToPrevWncToPrompt}	zzSetCddToESGpnToPrevWncToPrompt
 zzSetGpnToNextWncTo1	{#insert zvGPRV_NXT_stNext}{#insert zvAWAY_CNT_st1}	zzSetGpnToNextWncTo1
 zzSetGpnToNextWncTo2	{#insert zvGPRV_NXT_stNext}{#insert zvAWAY_CNT_st2}	zzSetGpnToNextWncTo2
 zzSetGpnToNextWncTo3	{#insert zvGPRV_NXT_stNext}{#insert zvAWAY_CNT_st3}	zzSetGpnToNextWncTo3
@@ -33,3 +33,4 @@ zzSetGpnToPrevWncTo3	{#insert zvGPRV_NXT_stPrev}{#insert zvAWAY_CNT_st3}	zzSetGp
 zzSetGpnToPrevWncTo4	{#insert zvGPRV_NXT_stPrev}{#insert zvAWAY_CNT_st4}	zzSetGpnToPrevWncTo4
 zzSetGpnToPrevWncTo5	{#insert zvGPRV_NXT_stPrev}{#insert zvAWAY_CNT_st5}	zzSetGpnToPrevWncTo5
 zzSetGpnToPrevWncToPrompt	{#insert zvGPRV_NXT_stPrev}{#insert zvAWAY_CNT_stPrompt}	zzSetGpnToPrevWncToPrompt
+zXPrevJFSigCopyReturnTypeWGnrcsPasteCddAtX -*-	{#insert zzSetCddToESGpnToPrevWncTo1}{#insert zXPrvNxtJFSigCopyReturnTypeWGnrcsPasteAtX_M_cdeGpnWyc}	zXPrevJFSigCopyReturnTypeWGnrcsPasteCddAtX

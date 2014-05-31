@@ -7,13 +7,13 @@ z0PFuncLink_M_fnmPapDrnDsp -- Needs zvDRN, zvFOBJ_NAME, zvDISPLAY, zvPAP_PRNS_ES
 zvPREK_stL1c -*-	{#insert zCutL1c}{#insert zvPREK_stCB}	zvPREK_stL1c
 zvPREK_stCB -*-	{#SETPHRASE -description zvPREK -content {#INSERTCLIPBOARD} -autotext zvPREK -folder ctvv_folder}	zvPREK_stCB
 zzKflsyn_M_yon -- Needs zvSYNTAX_ON	{#insert {#COND -if {#insert zvSYNTAX_ON} = on -then kflsyn -else z1slp}}	zzKflsyn_M_yon
-zzObj0PFuncLinkThrFObjNm_M_drnOfm	<A HREF={#insert zAscQQ}{#insert zzFuncObjLinkDirFile_M_drnFnm}#{#insert zvFOBJ_NAME}	zzObj0PFuncLinkThrFObjNm_M_drnOfm
+zzObj0PFuncLinkThrFObjNm_M_drnOfm	{@link {#insert zzFuncObjLinkDirFile_M_drnFnm}#{#insert zvFOBJ_NAME}	zzObj0PFuncLinkThrFObjNm_M_drnOfm
 zzSetDrnL1cFObjNmL1w	{#insert zvDRN_stL1c}{#insert zvFOBJ_NAME_stL1w}	zzSetDrnL1cFObjNmL1w
 zzSetDsplyCBDrnL1cFObjNmL1w	{#insert zvDISPLAY_stCB}{#insert zzSetDrnL1cFObjNmL1w}	zzSetDsplyCBDrnL1cFObjNmL1w
 zzSetFObjNmCBDrnL1c	{#insert zvFOBJ_NAME_stCB}{#insert zvDRN_stL1c}	zzSetFObjNmCBDrnL1c
 zzSetFObjNmCBDrnPrekL1cX2	{#insert zzSetFObjNmCBDrnL1c}{#insert zvPREK_stL1c}	zzSetFObjNmCBDrnPrekL1cX2
 zzzEtrPrek2Drn2	{#insert zENTER}{#insert zzzPrek2Drn2}	zzzEtrPrek2Drn2
-zzzObj0PFuncLinkPostUrlPP -- PP='()'	{#insert zAscQQ}>{#insert zvDISPLAY}</A>	zzzObj0PFuncLinkPostUrlPP
+zzzObj0PFuncLinkPostUrlPP -- PP='()'	(*starts with space*) {#insert zvDISPLAY}\\\}	zzzObj0PFuncLinkPostUrlPP
 zzzScbDmoDisp	{#SETCLIPBOARD LINK DISPLAY TEXT!!!}	zzzScbDmoDisp
 zzzPrek2Drn2	{#insert zvTST_PRK_FRY2}{#insert zzzDrn2}	zzzPrek2Drn2
 z1PPFuncLinkDispFNmWOptPrek_M_drnFnmPrmsPapPrk -*-	{#insert z1PPFuncLinkDispFNm_M_drnFnmPrmsPap}{#insert zzPostLinkCreatePrekGoBackIfNotESCIDrnH_M_drnPrk}	z1PPFuncLinkDispFNmWOptPrek_M_drnFnmPrmsPapPrk

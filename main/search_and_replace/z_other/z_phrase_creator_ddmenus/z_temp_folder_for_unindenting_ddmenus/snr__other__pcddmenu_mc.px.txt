@@ -15,30 +15,32 @@ FROM
 ...\xbnpe\tpkc\tpkc_bootstrap_phrases\zphrase_creator_pop_up_heirarchies\xbnpe_phrase_creator_popup_heirarchy_base.px.txt
 
 Phrase-creators: XBN-PhraseExpress -- Call 'xh'   .   zXbnpeCmdPopupRoot
-Phrase-creators: Search & replace -- xhs   .   xh
-SNR: String-tokenization -- xhsk   .   xhs
-Square-Bracketed List (qbl) -- xhskq   .   xhsk
-lltoqbl: zLineListToSquareBracketedList -- xhskql   .   xhskq
+Phrase-creators: Search & replace -- s   .   xh
+SNR: String-tokenization -- k   .   xhs
+Square-Bracketed List (qbl) -- q   .   xhsk
+lltoqbl: zLineListToSquareBracketedList -- l   .   xhskq
 *)
 sortqblcb: zReSortQblInCB	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content sortqblcb:zReSortQblInCB -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhskql
 sortqblcbn: zReSortQblNameInCB	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content sortqblcbn:zReSortQblNameInCB -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhskql
 sortqbldoc: zReSortQblOnlyDoc	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content sortqbldoc:zReSortQblOnlyDoc -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhskql
-SNR: Regex -- xhsx	.	xhs
+SNR: Regex -- x	.	xhs
 zzQcaret	\\\{#insert zzQcaret\\\}	xhsx
 zzQdollarSign	\\\{#insert zzQdollarSign\\\}	xhsx
 zzQdollarSign1	\\\{#insert zzQdollarSign1\\\}	xhsx
+zzQescCloseParen	\\\{#insert zzQescCloseParen\\\}	xhsx
+zzQescOpenParen	\\\{#insert zzQescOpenParen\\\}	xhsx
 zzQescapedDot	\\\{#insert zzQescapedDot\\\}	xhsx
 zzQslashDot	\\\{#insert zzQslashDot\\\}	xhsx
 zzQtab	\\\{#insert zzQtab\\\}	xhsx
 zzRegexTabBtwWSCharsLookaround	\\\{#insert zzRegexTabBtwWSCharsLookaround\\\}	xhsx
-(*    SNR: Brackets -- xhse   .   xhs*)
-GTP -- xhseg	.	xhse
+(*    SNR: Brackets -- e   .   xhs*)
+GTP -- g	.	xhse
 zPostBracketGTP	\\\{#insert zPostBracketGTP\\\}	xhseg
 zPostBracketGTP2	\\\{#insert zPostBracketGTP2\\\}	xhseg
 zPreBracketGTP	\\\{#insert zPreBracketGTP\\\}	xhseg
 zPreBracketGTP2	\\\{#insert zPreBracketGTP2\\\}	xhseg
-zPreBracketGTPIfCdd_M_cde	\\\{#insert zPreBracketGTPIfCdd_M_cde\\\}	xhseg
-Select/sel-copy -- xhses	.	xhse
+zPreBracketGTPIfCdd_M_cde (zvCDD_ES)	\\\{#insert zPreBracketGTPIfCdd_M_cde\\\}	xhseg
+Select/sel-copy -- s	.	xhse
 zLeftPostBrktSelectWord1 \\\{#insert zLeftPostBrktSelectWord1\\\}	xhses
 zPostBracketSelContentsOnly	\\\{#insert zPostBracketSelContentsOnly\\\}	xhses
 zPostBracketSelCopy	\\\{#insert zPostBracketSelCopy\\\}	xhses
@@ -49,18 +51,18 @@ zPreBracketSelCopy	\\\{#insert zPreBracketSelCopy\\\}	xhses
 zPreBracketSelect	\\\{#insert zPreBracketSelect\\\}	xhses
 zMatchBracket2	\\\{#insert zMatchBracket2\\\}	xhse
 zMatchBracketExtend2	\\\{#insert zMatchBracketExtend2\\\}	xhse
-(*    SNR: Bookmarks -- xhsm   .   xhs*)
-(*       zCopyMarkedLinesToNewFile -- xhsmn   .   xhsm*)
+(*    SNR: Bookmarks -- m   .   xhs*)
+(*       zCopyMarkedLinesToNewFile -- n   .   xhsm*)
 zREoffCopyCountMarkedLines	\\\{#insert zREoffCopyCountMarkedLines\\\}	xhsmn
 zREonCopyCountMarkedLines	\\\{#insert zREonCopyCountMarkedLines\\\}	xhsmn
 zTPBookmarkGTNextToggle	\\\{#insert zTPBookmarkGTNextToggle\\\}	xhsm
 zTPBookmarkGTPrevToggle	\\\{#insert zTPBookmarkGTPrevToggle\\\}	xhsm
 verifysnrnbs	(*actiononly=verifysnrnbs*){#SETPHRASE -description zvACTN_NM -content verifysnrnbs -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhs
 (*
-Phrase-creators: Other -- xho   .   xh
-XBNPE main directories -- xhor   .   xho
-zROOT_DIR_XBNPE_PARENT -- xhorm   .   xhor
-zROOT_DIR_XBNPE_MAIN -- xhormm   .   xhorm
+Phrase-creators: Other -- o   .   xh
+XBNPE main directories -- r   .   xho
+zROOT_DIR_XBNPE_PARENT -- m   .   xhor
+zROOT_DIR_XBNPE_MAIN -- m   .   xhorm
 *)
-zXPROOT_DIR_snr -- xhormms	\\\{#insert zXPROOT_DIR_snr\\\}	xhormm
+zXPROOT_DIR_snr -- s	\\\{#insert zXPROOT_DIR_snr\\\}	xhormm
 zXPROOT_DIR_AG_srchRplc	\\\{#insert zXPROOT_DIR_AG_srchRplc\\\}	xhormms

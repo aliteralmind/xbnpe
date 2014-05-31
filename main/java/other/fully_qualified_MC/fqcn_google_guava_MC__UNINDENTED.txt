@@ -1,0 +1,47 @@
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+com.google.common.* fully-qualified class-names	.	gg
+com.google.common.annotations. --  a	com.google.common.annotations.	gg
+	_ com.google.common.annotations. (package name)	com.google.common.annotations.	gga
+	_ com.google.common.annotations. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.google.common.annotations. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	gga
+com.google.common.base. --  b	com.google.common.base.	gg
+	_ com.google.common.base. (package name)	com.google.common.base.	ggb
+	_ com.google.common.base. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.google.common.base. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	ggb
+com.google.common.cache. --  h	com.google.common.cache.	gg
+	_ com.google.common.cache. (package name)	com.google.common.cache.	ggh
+	_ com.google.common.cache. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.google.common.cache. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	ggh
+com.google.common.collect. --  l	com.google.common.collect.	gg
+	_ com.google.common.collect. (package name)	com.google.common.collect.	ggl
+	_ com.google.common.collect. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.google.common.collect. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	ggl
+com.google.common.escape. --  e	com.google.common.escape.	gg
+	_ com.google.common.escape. (package name)	com.google.common.escape.	gge
+	_ com.google.common.escape. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.google.common.escape. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	gge
+com.google.common.eventbus. --  v	com.google.common.eventbus.	gg
+	_ com.google.common.eventbus. (package name)	com.google.common.eventbus.	ggv
+	_ com.google.common.eventbus. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.google.common.eventbus. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	ggv
+com.google.common.hash. --  s	com.google.common.hash.	gg
+	_ com.google.common.hash. (package name)	com.google.common.hash.	ggs
+	_ com.google.common.hash. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.google.common.hash. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	ggs
+com.google.common.html. --  t	com.google.common.html.	gg
+	_ com.google.common.html. (package name)	com.google.common.html.	ggt
+	_ com.google.common.html. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.google.common.html. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	ggt
+com.google.common.io. --  i	com.google.common.io.	gg
+	_ com.google.common.io. (package name)	com.google.common.io.	ggi
+	_ com.google.common.io. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.google.common.io. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	ggi
+com.google.common.math. --  m	com.google.common.math.	gg
+	_ com.google.common.math. (package name)	com.google.common.math.	ggm
+	_ com.google.common.math. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.google.common.math. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	ggm
+com.google.common.net. --  n	com.google.common.net.	gg
+	_ com.google.common.net. (package name)	com.google.common.net.	ggn
+	_ com.google.common.net. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.google.common.net. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	ggn
+com.google.common.primitives. --  p	com.google.common.primitives.	gg
+	_ com.google.common.primitives. (package name)	com.google.common.primitives.	ggp
+	_ com.google.common.primitives. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.google.common.primitives. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	ggp
+com.google.common.reflect. --  r	com.google.common.reflect.	gg
+	_ com.google.common.reflect. (package name)	com.google.common.reflect.	ggr
+	_ com.google.common.reflect. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.google.common.reflect. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	ggr
+com.google.common.util.concurrent. --  u	com.google.common.concurrent.	gg
+	_ com.google.common.util.concurrent. (package name)	com.google.common.util.concurrent.	ggu
+	_ com.google.common.util.concurrent. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.google.common.util.concurrent. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	ggu
+com.google.common.xml. --  x	com.google.common.xml.	gg
+	_ com.google.common.xml. (package name)	com.google.common.xml.	ggx
+	_ com.google.common.xml. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content com.google.common.xml. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	ggx

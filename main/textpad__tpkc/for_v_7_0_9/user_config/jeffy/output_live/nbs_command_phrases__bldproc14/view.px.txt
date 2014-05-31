@@ -4,4 +4,5 @@ zTPViewClipLib -- ViewClipLib (Vcl)	{#insert zCpF3}{#sleep 10}	zTPViewClipLib
 zTPViewSearchResults -- ViewSearchResults (Vsrchr)	{#insert zSpF11}{#sleep 10}	zTPViewSearchResults
 zTPViewToolOutput -- ViewToolOutput (Vtlout)	{#insert zCpF11}{#sleep 10}	zTPViewToolOutput
 zTPVisibleSpaces -- ViewVisibleSpaces (Vvspc)	{#insert zF9}{#sleep 25}{#insert zF8}{#sleep 10}	zTPVisibleSpaces
+zTPViewProperties -- ViewProperties (Vprp)	{#insert zCASpJJ}{#sleep 25}{#insert zPP}{#sleep 10}	zTPViewProperties
 zzTpkcAllCmdsWAKcQbl_view	[ActivateSearchResults][ActivateToolOutput][ViewClipLib][ViewSearchResults][ViewToolOutput][ViewVisibleSpaces]	zzTpkcAllCmdsWAKcQbl_view

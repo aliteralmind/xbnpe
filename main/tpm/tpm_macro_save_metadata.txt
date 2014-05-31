@@ -10,12 +10,12 @@ javaFindNextFuncSig
 Find and select the next Java func sig-line, through the open curly.
 
 java_del_param_names_4fqp.TPM
-javaDelSlctdPrmNms4QP
-Delete names and generics from selected parameters, for fully-qualified types in URL ("_4FQP_").
+javaDelSlctdPrmNms
+Delete names and generics from selected parameters.
 
 java_del_param_names_4tv.TPM
 javaDelSlctdPrmNms4TV
-Delete names and types from selected Java params, for display-only type-abbrevs ("_4TV_")
+Delete names and types from selected Java params, for display-only type-abbrevs ("_4TV_").
 
 java_del_param_names.TPM
 javaDelSlctdPrmNmsOnly

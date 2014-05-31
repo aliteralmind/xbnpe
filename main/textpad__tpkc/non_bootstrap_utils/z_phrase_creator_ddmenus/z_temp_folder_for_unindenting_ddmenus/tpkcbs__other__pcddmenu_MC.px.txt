@@ -12,57 +12,58 @@ PM_DDMENU_DIR_ID=tpkc
 Required by phrase-creator-ddmenu-utils...END
 
 Phrase-creators: XBN-PhraseExpress -- xh   .   zXbnpeCmdPopupRoot
-Phrase-creators: Other -- xho   .   xh
-Key-presses -- xhok   .   xho
+Phrase-creators: Other -- o   .   xh
+Key-presses -- k   .   xho
 *)
-Key-press combinations -- xhokc	.	xhok
-Enter-then-... -- xhokce	.	xhokc
-zEnterBksp (etrb)	\\\{#insert zEnterBksp\\\}	xhokce
+Key-press combinations -- c	.	xhok
+Enter-then-... -- e	.	xhokc
+zEnterBksp	\\\{#insert zEnterBksp\\\}	xhokce
 zEnterBkspBksp	\\\{#insert zEnterBkspBksp\\\}	xhokce
-zEnterTab (etrt)	\\\{#insert zEnterTab\\\}	xhokce
+zEnterTab	\\\{#insert zEnterTab\\\}	xhokce
 zEnterTabTab	\\\{#insert zEnterTabTab\\\}	xhokce
-zSlkEtr* -- xhokces	\\\{#insert zSlkEtr\\\}	xhokce
+zSlkEtr* -- s	\\\{#insert zSlkEtr\\\}	xhokce
 zEtr100slp	\\\{#insert zEtr100slp\\\}	xhokces
 zSlkEtrSlk	\\\{#insert zSlkEtrSlk\\\}	xhokces
 zENTER	\\\{#insert zENTER\\\}	xhokces
-(*    Other -- xhot   .   xho*)
-Asc-equivalents -- xhota	.	xhot
+(*    Other -- t   .   xho*)
+Asc-equivalents -- a	.	xhot
 zAscCloseCurly	\\\{#insert zAscCloseCurly\\\}	xhota
 zAscDash	\\\{#insert zAscDash\\\}	xhota
 zAscOpenCurly	\\\{#insert zAscOpenCurly\\\}	xhota
 zAscSpace	\\\{#insert zAscSpace\\\}	xhota
 zEscThenFcsTP	\\\{#insert zEscThenFcsTP\\\}	xhot
 zzEmptyStringMarker	\\\{#insert zzEmptyStringMarker\\\}	xhot
-Numbers: Math & sleep -- xhom	.	xho
-zQuotient_M_divisorDividend* -- xhomq	\\\{#insert zQuotient_M_divisorDividend\\\}	xhom
-quotientmoddemo: zzTestQuotientMod* -- xhomqt	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content quotientmoddemo:zzTestQuotientMod -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhomq
+Numbers: Math & sleep -- m	.	xho
+zQuotient_M_divisorDividend* -- q	\\\{#insert zQuotient_M_divisorDividend\\\}	xhom
+quotientmoddemo: zzTestQuotientMod* -- t	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content quotientmoddemo:zzTestQuotientMod -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhomq
 zDbgTxtAllQuotientModulo1IfModTtlBlksInputAndOutput	\\\{#insert zDbgTxtAllQuotientModulo1IfModTtlBlksInputAndOutput\\\}	xhomqt
 zDbgTxtDvsrDivdrQtntModIfMod	\\\{#insert zDbgTxtDvsrDivdrQtntModIfMod\\\}	xhomqt
 zInitAllQuotientOutputVars	\\\{#insert zInitAllQuotientOutputVars\\\}	xhomqt
 zInitDividendDivisor	\\\{#insert zInitDividendDivisor\\\}	xhomqt
-zQuotientModulo1IfModTtlBlks_M_divisorDividend	\\\{#insert zQuotientModulo1IfModTtlBlks_M_divisorDividend\\\}	xhomq
+zQuotientModulo1IfModTtlBlks_M_divisorDividend (zvDIVISOR_BTM, zvDIVIDEND_TOP)	\\\{#insert zQuotientModulo1IfModTtlBlks_M_divisorDividend\\\}	xhomq
 zQuotientModulo1IfMod_M_divisorDividend	\\\{#insert zQuotientModulo1IfMod_M_divisorDividend\\\}	xhomq
 zQuotientModulo_M_divisorDividend	\\\{#insert zQuotientModulo_M_divisorDividend\\\}	xhomq
 zvTTL_DIV_BLKS_stQtnPls1IfMod	\\\{#insert zvTTL_DIV_BLKS_stQtnPls1IfMod\\\}	xhomq
-(*       Sleep -- xhoms   .   xhom*)
-z1slp* -- xhomsa	\\\{#insert z1slp\\\}	xhoms
+(*       Sleep -- s   .   xhom*)
+z1slp* -- a	\\\{#insert z1slp\\\}	xhoms
 z5000slp	\\\{#insert z5000slp\\\}	xhomsa
 z5ThnTSlp	\\\{#insert z5ThnTSlp\\\}	xhoms
-Var: zvNUMBER* -- xhomn	{#SETCLIPBOARD zvNUMBER}{#insert zzBalCBContainsVarNm}	xhom
+Var: zvNUMBER* -- n	{#SETCLIPBOARD zvNUMBER}{#insert zzBalCBContainsVarNm}	xhom
 zvNUMBER_st0 (and 'st1')	\\\{#insert zvNUMBER_st0\\\}	xhomn
 zvNUMBER_incBy1	\\\{#insert zvNUMBER_incBy1\\\}	xhomn
-XBNPE main directories -- xhor	.	xho
-zROOT_DIR_XBNPE_AG_PARENT -- xhorg	\\\{#insert zROOT_DIR_XBNPE_AG_PARENT\\\}	xhor
+XBNPE main directories -- r	.	xho
+zROOT_DIR_XBNPE_AG_PARENT -- g	\\\{#insert zROOT_DIR_XBNPE_AG_PARENT\\\}	xhor
 **For output dirs in specific projects, see 'zROOT_DIR_XBNPE_PARENT'	.	xhorg
-zROOT_DIR_XBNPE_AG -- xhorgg	\\\{#insert zROOT_DIR_XBNPE_AG\\\}	xhorg
+zROOT_DIR_XBNPE_AG -- g	\\\{#insert zROOT_DIR_XBNPE_AG\\\}	xhorg
 zXPROOT_DIR_AG_temp
-zROOT_DIR_XBNPE_PARENT -- xhorm	\\\{#insert zROOT_DIR_XBNPE_PARENT\\\}	xhor
-zROOT_DIR_XBNPE_MAIN -- xhormm	\\\{#insert zROOT_DIR_XBNPE_MAIN\\\}	xhorm
+zROOT_DIR_XBNPE_PARENT -- m	\\\{#insert zROOT_DIR_XBNPE_PARENT\\\}	xhor
+zROOT_DIR_XBNPE_MAIN -- m	\\\{#insert zROOT_DIR_XBNPE_MAIN\\\}	xhorm
 zXPROOT_DIR_xbnpeXkp	\\\{#insert zXPROOT_DIR_xbnpeXkp\\\}	xhormm
 zzXPSUB_DIR_xkpInput
 zXPROOT_DIR_AG_xkpOutputRoot
-zXPROOT_DIR_tpkc -- xhormmt	\\\{#insert zXPROOT_DIR_tpkc\\\}	xhormm
-zXPROOT_DIR_AG_tpkc_M_bvm	\\\{#insert zXPROOT_DIR_AG_tpkc_M_bvm\\\}	xhormmt
-zXPROOT_DIR_tpkcVrsnSpcfcFls -- xhormmtv	\\\{#insert zXPROOT_DIR_tpkcVrsnSpcfcFls\\\}	xhormmt
-zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn -- Needs zvTPKC_UDIR_NM	\\\{#insert zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn\\\}	xhormmtv
+zXPROOT_DIR_tpkc -- t	\\\{#insert zXPROOT_DIR_tpkc\\\}	xhormm
+zXPROOT_DIR_AG_tpkc	\\\{#insert zXPROOT_DIR_AG_tpkc\\\}	xhormmt
+zXPROOT_DIR_AG_tpkc_M_bvm (Needs zzTpkcBuildVersionName)	\\\{#insert zXPROOT_DIR_AG_tpkc_M_bvm\\\}	xhormmt
+zXPROOT_DIR_tpkcVrsnSpcfcFls -- v	\\\{#insert zXPROOT_DIR_tpkcVrsnSpcfcFls\\\}	xhormmt
+zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn (zvTPKC_UDIR_NM)	\\\{#insert zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn\\\}	xhormmtv
 zWIN_DIR_DESKTOP	\\\{#insert zWIN_DIR_DESKTOP\\\}	xhorm

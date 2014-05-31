@@ -1,0 +1,18 @@
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools,written in PhraseExpress,using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License,or (at your option) any later version.  //  This library is distributed in the hope that it will be useful,but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not,write to the Free Software Foundation,Inc.,51 Franklin Street,Fifth Floor,Boston,MA 02110-1301 USA*)		(*Two tabs plus this comment,to force this phrase to be (a) imported,and (b) with NO autotext*)
+(*_ xf -- com.github.xbn.* function directory   .   xf*)
+	lang -- l	.	xf
+		appendExtraInfoPostfix(sd,o) (all funcs at this level from CrashIfBase)	appendExtraInfoPostfix({#insert zYcY});{#insert zLeftPostBrktSelectWord1}	xfl
+		regetRtxCINull(rx,s)	regetRtxCINull({#insert zYcX});{#insert zLeftPostBrktSelectWord1}	xfl
+		getXMsg(s,o)	getXMsg({#insert zXcY});{#insert zLeftPostBrktSelectWord1}	xfl
+		w- CrashIfObject -- o	.	xfl
+			crashIfNullObjBadFlagFalse(b,s)	CrashIfObject.crashIfNullObjBadFlagFalse({#insert zYcX});{#insert zLeftPostBrktSelectWord1}	xflo
+			nnull(b,o,s,o)	CrashIfObject.nnull({#insert zYcY}, {#insert zXcY});{#insert zLeftPostBrktSelectWord1}	xflo
+			nnull(o,s,o)	CrashIfObject.nnull({#insert zYmark}, {#insert zXcY});{#insert zLeftPostBrktSelectWord1}	xflo
+			nullOrReturnCause(o,s,o,rx)	CrashIfObject.nullOrReturnCause({#insert zYmark}, {#insert zXcY}, {#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xflo
+		XbnConstants -- n (assumes static import)	.	xfl
+			sXMK -- 'X' + 'XX'	sXMK	xfln
+			sYMK -- 'Y' + 'YY'	sYMK	xfln
+			bIGNORED_PARAM -- false	bIGNORED_PARAM	xfln
+			sLS -- System.getProperty('line.separator','\n')	sLS	xfln
+			sFS -- System.getProperty('file.separator','\\')	sFS	xfln
+		z - *All CrashIfBase functions assume static import	.	xfl

@@ -1,3 +1,4 @@
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
 (*
    *DUPLICATE* this document, unindent every line in it, then import it with the following settings:
       - No prefix
@@ -14,39 +15,39 @@
    ...\xbnpe\tpkc\tpkc_bootstrap_phrases\zphrase_creator_pop_up_heirarchies\xbnpe_phrase_creator_popup_heirarchy_base.px.txt
 
 Phrase-creators: XBN-PhraseExpress -- Call 'xh'   .   zXbnpeCmdPopupRoot
-   Phrase-creators: Search & replace -- xhs   .   xh
-      SNR: Find -- xhsf   .   xhs
-         SNR: Find In Files -- xhsfi   .   xhsf*)
-(*       Close -- xhsfic   .   xhsfi*)
+   Phrase-creators: Search & replace -- s   .   xh
+      SNR: Find -- f   .   xhs
+         SNR: Find In Files -- i   .   xhsf*)
+(*       Close -- c   .   xhsfi*)
 				zFFindDlgClose	\\\{#insert zFFindDlgClose\\\}	xhsit
-			Other -- xhsfit	.	xhsfi
+			Other -- t	.	xhsfi
 				fwhatp (and 'rwithp')	(*actiononly=fwhatp*){#SETPHRASE -description zvACTN_NM -content fwhatp -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhsit
-(*       Buttons -- xhsfib   .   xhsfi*)
-(*       Fields -- xhsfid   .   xhsfi*)
-				Save/restore dir/f-type -- xhsfidv ('...'=save-then-restore)	.	xhsfid
+(*       Buttons -- b   .   xhsfi*)
+(*       Fields -- d   .   xhsfi*)
+				Save/restore dir/f-type -- v ('...'=save-then-restore)	.	xhsfid
 					zFFindSaveCurrDirFNms...	\\\{#insert zFFindSaveCurrDirFNms\\\}{#CURSOR}\\\{#insert zFFindRestoreCurrDirFNms_M_dirFnm\\\}	xhsfidv
 					zFFindSaveCurrDirFNmsRAW...	\\\{#insert zFFindSaveCurrDirFNmsRAW\\\}{#CURSOR}\\\{#insert zFFindRestoreCurrDirFNmsRAW_M_dirFnm\\\}	xhsfidv
 					zFFindSaveCurrDirRAW...	\\\{#insert zFFindSaveCurrDirRAW\\\}{#CURSOR}\\\{#insert zFFindRestoreCurrDirRAW_M_dir\\\}	xhsfidv
 					zFFindSaveCurrFileTypeRAW...	\\\{#insert zFFindSaveCurrFileTypeRAW\\\}{#CURSOR}\\\{#insert zFFindRestoreCurrFileTypeRAW_M_fnm\\\}	xhsfidv
-					zFFindSaveCurrDirFNms* -- xhsfidvd	\\\{#insert zFFindSaveCurrDirFNms\\\}	xhsfidv
+					zFFindSaveCurrDirFNms* -- d	\\\{#insert zFFindSaveCurrDirFNms\\\}	xhsfidv
 						zFFindSaveCurrDirRAW	\\\{#insert zFFindSaveCurrDirRAW\\\}	xhsfidvd
 						zFFindSaveCurrDirFNmsRAW	\\\{#insert zFFindSaveCurrDirFNmsRAW\\\}	xhsfidvd
 						zFFindSaveCurrFileTypeRAW	\\\{#insert zFFindSaveCurrFileTypeRAW\\\}	xhsfidvd
-					zFFindRestoreCurrDirFNms_M_dirFnm* -- xhsfidvf	\\\{#insert zFFindRestoreCurrDirFNms_M_dirFnm\\\}	xhsfidv
-						zFFindRestoreCurrDirRAW_M_dir	\\\{#insert zFFindRestoreCurrDirRAW_M_dir\\\}	xhsfidvf
-						zFFindRestoreCurrDirFNmsRAW_M_dirFnm	\\\{#insert zFFindRestoreCurrDirFNmsRAW_M_dirFnm\\\}	xhsfidvf
+					zFFindRestoreCurrDirFNms_M_dirFnm* -- f	\\\{#insert zFFindRestoreCurrDirFNms_M_dirFnm\\\}	xhsfidv
+						zFFindRestoreCurrDirRAW_M_dir (zvDIRECTORY)	\\\{#insert zFFindRestoreCurrDirRAW_M_dir\\\}	xhsfidvf
+						zFFindRestoreCurrDirFNmsRAW_M_dirFnm (zvFILE_NAME)	\\\{#insert zFFindRestoreCurrDirFNmsRAW_M_dirFnm\\\}	xhsfidvf
 						zFFindRestoreCurrFileTypeRAW_M_fnm	\\\{#insert zFFindRestoreCurrFileTypeRAW_M_fnm\\\}	xhsfidvf
 					zFFindSaveCurrDirFNmsThenSet_M_dirFnm	\\\{#insert zFFindSaveCurrDirFNmsThenSet_M_dirFnm\\\}	xhsfidv
-				zFFindSetDirFNmsRAW_M_dirFnm	\\\{#insert zFFindSetDirFNmsRAW_M_dirFnm\\\}	xhsfid
-				zFFindSetDirFNms_M_dirFnm	\\\{#insert zFFindSetDirFNms_M_dirFnm\\\}	xhsfid
-				zFFindSetDir_M_dir* -- xhsfidd (& file-type, individually)	\\\{#insert zFFindSetDir_M_dir\\\}	xhsfid
+				zFFindSetDirFNmsRAW_M_dirFnm (zvDIRECTORY, zvFILE_NAME)	\\\{#insert zFFindSetDirFNmsRAW_M_dirFnm\\\}	xhsfid
+				zFFindSetDirFNms_M_dirFnm (zvDIRECTORY, zvFILE_NAME)	\\\{#insert zFFindSetDirFNms_M_dirFnm\\\}	xhsfid
+				zFFindSetDir_M_dir* -- d (& file-type, individually)	\\\{#insert zFFindSetDir_M_dir\\\}	xhsfid
 					zFFindSetDirRAW_M_dir	\\\{#insert zFFindSetDirRAW_M_dir\\\}	xhsfidd
 					zFFindSetFNmsRAW_M_fnm	\\\{#insert zFFindSetFNmsRAW_M_fnm\\\}	xhsfidd
 					zFFindSetFNms_M_fnm	\\\{#insert zFFindSetFNms_M_fnm\\\}	xhsfidd
-(*       Flags -- xhsfif   .   xhsfi*)
-(*       Open -- xhsfio   .   xhsfi*)
-				zFFindDlgOpenAllLines* -- xhsfioa	\\\{#insert zFFindDlgOpenAllLines\\\}{#insert zFFCloseYNPrompt}	xhsfio
-					zFFindDlgOpenAllLinesDefaults* -- xhsfioad	\\\{#insert zFFindDlgOpenAllLinesDefaults\\\}	xhsfioa
+(*       Flags -- f   .   xhsfi*)
+(*       Open -- o   .   xhsfi*)
+				zFFindDlgOpenAllLines* -- a	\\\{#insert zFFindDlgOpenAllLines\\\}{#insert zFFCloseYNPrompt}	xhsfio
+					zFFindDlgOpenAllLinesDefaults* -- d	\\\{#insert zFFindDlgOpenAllLinesDefaults\\\}	xhsfioa
 						zFFindDlgOpenAllLinesDefaultsForceWW	\\\{#insert zFFindDlgOpenAllLinesDefaultsForceWW\\\}	xhsfioad
 						zFFindDlgOpenAllLinesDefaultsRE	\\\{#insert zFFindDlgOpenAllLinesDefaultsRE\\\}	xhsfioad
 						zFFindDlgOpenAllLinesDefaultsSubDirs	\\\{#insert zFFindDlgOpenAllLinesDefaultsSubDirs\\\}	xhsfioad
@@ -55,15 +56,15 @@ Phrase-creators: XBN-PhraseExpress -- Call 'xh'   .   zXbnpeCmdPopupRoot
 						zFFindDlgOpenAllLinesDefaultsSubDirsWW	\\\{#insert zFFindDlgOpenAllLinesDefaultsSubDirsWW\\\}	xhsfioad
 						zFFindDlgOpenAllLinesDefaultsWW	\\\{#insert zFFindDlgOpenAllLinesDefaultsWW\\\}	xhsfioad
 					zFFindDlgOpenAllLinesForceWW	\\\{#insert zFFindDlgOpenAllLinesForceWW\\\}{#insert zFFCloseYNPrompt}	xhsfioa
-					zFFindDlgOpenAllLinesMC* -- xhsfioam	\\\{#insert zFFindDlgOpenAllLinesMC\\\}{#insert zFFCloseYNPrompt}	xhsfioa
+					zFFindDlgOpenAllLinesMC* -- m	\\\{#insert zFFindDlgOpenAllLinesMC\\\}{#insert zFFCloseYNPrompt}	xhsfioa
 						zFFindDlgOpenAllLinesMCForceWW	\\\{#insert zFFindDlgOpenAllLinesMCForceWW\\\}{#insert zFFCloseYNPrompt}	xhsfioam
 						zFFindDlgOpenAllLinesMCOnly	\\\{#insert zFFindDlgOpenAllLinesMCOnly\\\}{#insert zFFCloseYNPrompt}	xhsfioam
 						zFFindDlgOpenAllLinesMCRE	\\\{#insert zFFindDlgOpenAllLinesMCRE\\\}{#insert zFFCloseYNPrompt}	xhsfioam
 						zFFindDlgOpenAllLinesMCWW	\\\{#insert zFFindDlgOpenAllLinesMCWW\\\}{#insert zFFCloseYNPrompt}	xhsfioam
 					zFFindDlgOpenAllLinesRE	\\\{#insert zFFindDlgOpenAllLinesRE\\\}{#insert zFFCloseYNPrompt}	xhsfioa
 					zFFindDlgOpenAllLinesWW	\\\{#insert zFFindDlgOpenAllLinesWW\\\}{#insert zFFCloseYNPrompt}	xhsfioa
-				zFFindDlgOpenFilesOnly* -- xhsfiof	\\\{#insert zFFindDlgOpenFilesOnly\\\}{#insert zFFCloseYNPrompt}	xhsfio
-					zFFindDlgOpenFilesOnlyDefaults* -- xhsfiofd	\\\{#insert zFFindDlgOpenFilesOnlyDefaults\\\}	xhsfiof
+				zFFindDlgOpenFilesOnly* -- f	\\\{#insert zFFindDlgOpenFilesOnly\\\}{#insert zFFCloseYNPrompt}	xhsfio
+					zFFindDlgOpenFilesOnlyDefaults* -- d	\\\{#insert zFFindDlgOpenFilesOnlyDefaults\\\}	xhsfiof
 						zFFindDlgOpenFilesOnlyDefaultsForceWW	\\\{#insert zFFindDlgOpenFilesOnlyDefaultsForceWW\\\}	xhsfiofd
 						zFFindDlgOpenFilesOnlyDefaultsRE	\\\{#insert zFFindDlgOpenFilesOnlyDefaultsRE\\\}	xhsfiofd
 						zFFindDlgOpenFilesOnlyDefaultsSubDirs	\\\{#insert zFFindDlgOpenFilesOnlyDefaultsSubDirs\\\}	xhsfiofd
@@ -72,7 +73,7 @@ Phrase-creators: XBN-PhraseExpress -- Call 'xh'   .   zXbnpeCmdPopupRoot
 						zFFindDlgOpenFilesOnlyDefaultsSubDirsWW	\\\{#insert zFFindDlgOpenFilesOnlyDefaultsSubDirsWW\\\}	xhsfiofd
 						zFFindDlgOpenFilesOnlyDefaultsWW	\\\{#insert zFFindDlgOpenFilesOnlyDefaultsWW\\\}	xhsfiofd
 					zFFindDlgOpenFilesOnlyForceWW	\\\{#insert zFFindDlgOpenFilesOnlyForceWW\\\}{#insert zFFCloseYNPrompt}	xhsfiof
-					zFFindDlgOpenFilesOnlyMC* -- xhsfiofm	\\\{#insert zFFindDlgOpenFilesOnlyMC\\\}{#insert zFFCloseYNPrompt}	xhsfiof
+					zFFindDlgOpenFilesOnlyMC* -- m	\\\{#insert zFFindDlgOpenFilesOnlyMC\\\}{#insert zFFCloseYNPrompt}	xhsfiof
 						zFFindDlgOpenFilesOnlyMCForceWW	\\\{#insert zFFindDlgOpenFilesOnlyMCForceWW\\\}{#insert zFFCloseYNPrompt}	xhsfiofm
 						zFFindDlgOpenFilesOnlyMCOnly	\\\{#insert zFFindDlgOpenFilesOnlyMCOnly\\\}{#insert zFFCloseYNPrompt}	xhsfiofm
 						zFFindDlgOpenFilesOnlyMCRE	\\\{#insert zFFindDlgOpenFilesOnlyMCRE\\\}{#insert zFFCloseYNPrompt}	xhsfiofm
@@ -80,12 +81,12 @@ Phrase-creators: XBN-PhraseExpress -- Call 'xh'   .   zXbnpeCmdPopupRoot
 					zFFindDlgOpenFilesOnlyRE	\\\{#insert zFFindDlgOpenFilesOnlyRE\\\}{#insert zFFCloseYNPrompt}	xhsfiof
 					zFFindDlgOpenFilesOnlyWW	\\\{#insert zFFindDlgOpenFilesOnlyWW\\\}{#insert zFFCloseYNPrompt}	xhsfiof
 				zFFindDlgOpenForceWW	\\\{#insert zFFindDlgOpenForceWW\\\}{#insert zFFCloseYNPrompt}	xhsfio
-				zFFindDlgOpenMC* -- xhsfiom	\\\{#insert zFFindDlgOpenMC\\\}{#insert zFFCloseYNPrompt}	xhsfio
+				zFFindDlgOpenMC* -- m	\\\{#insert zFFindDlgOpenMC\\\}{#insert zFFCloseYNPrompt}	xhsfio
 					zFFindDlgOpenMCOnly	\\\{#insert zFFindDlgOpenMCOnly\\\}{#insert zFFCloseYNPrompt}	xhsfiom
 					zFFindDlgOpenMCRE	\\\{#insert zFFindDlgOpenMCRE\\\}{#insert zFFCloseYNPrompt}	xhsfiom
 					zFFindDlgOpenMCWW	\\\{#insert zFFindDlgOpenMCWW\\\}{#insert zFFCloseYNPrompt}	xhsfiom
 				zFFindDlgOpenRE	\\\{#insert zFFindDlgOpenRE\\\}{#insert zFFCloseYNPrompt}	xhsfio
 				zFFindDlgOpenWW	\\\{#insert zFFindDlgOpenWW\\\}{#insert zFFCloseYNPrompt}	xhsfio
-(*       Search results -- xhsfir   .   xhsfi*)
+(*       Search results -- r   .   xhsfi*)
 				fifrx: zElimAllFIFResultMetaTextFromDoc	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content fifrx:zElimAllFIFResultMetaTextFromDoc -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhsfir
 				zElimAllInDoc_allLnsFifRslt_col0ThrColonSpc_reOff	\\\{#insert zElimAllInDoc_allLnsFifRslt_col0ThrColonSpc_reOff\\\}	xhsfir

@@ -11,4 +11,4 @@ zTPPaste -- TextPad built-in command: Edit > EditPaste	{#CTRL -chars k}{#insert 
 zTPSelectAll -- TextPad built-in command: Selection > SelectAll	{#CTRL -chars a}{#insert zTSlp}{#sleep 250}	zTPSelectAll
 zTPSelectL1w -- TextPad built-in command: Cursor > WordLeftExtend	{#insert zTSlp}{#SHIFT {#LEFT}}	zTPSelectL1w
 zTPSelectR1w -- TextPad built-in command: Cursor > WordRightEndExtend	{#SHIFT {#RIGHT}}{#insert zTSlp}{#sleep 1}	zTPSelectR1w
-zTPToggleWW -- TextPad built-in command: Configure > ToggleWordWrap	{#F7}{#insert zTSlp}{#sleep 25}	zTPToggleWW
+zTPToggleWW -- TextPad built-in command: Configure > ToggleWordWrap	{#F8}{#insert zTSlp}{#sleep 25}	zTPToggleWW

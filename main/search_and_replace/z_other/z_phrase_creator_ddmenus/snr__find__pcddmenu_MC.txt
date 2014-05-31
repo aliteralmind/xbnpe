@@ -15,27 +15,27 @@ __XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a larg
    ...\xbnpe\tpkc\tpkc_bootstrap_phrases\zphrase_creator_pop_up_heirarchies\xbnpe_phrase_creator_popup_heirarchy_base.px.txt
 
 Phrase-creators: XBN-PhraseExpress -- Call 'xh'   .   zXbnpeCmdPopupRoot
-   Phrase-creators: Search & replace -- xhs   .   xh
-      SNR: Find -- xhsf   .   xhs*)
-(*       Buttons -- xhsfb (& next/prev)   .   xhsf*)
+   Phrase-creators: Search & replace -- s   .   xh
+      SNR: Find -- f   .   xhs*)
+(*       Buttons -- b (& next/prev)   .   xhsf*)
 				zFindNext[2-5]	\\\{#insert zFindNext2\\\}	xhsfb
 				zFindPrev[2-5]	\\\{#insert zFindPrev2\\\}	xshfb
-(*       Flags -- xhsff   .   xhsf*)xhsff
+(*       Flags -- f   .   xhsf*)xhsff
 				_NOTE: Find-flags **MC/RE/WW/Text/Hex** are used for ALL dialogs	.	xhsff
-				Set 1 flag *only* (all others off) -- xhsffa	.	xhsff
+				Set 1 flag *only* (all others off) -- a	.	xhsff
 					zFindFlagMConOnly	\\\{#insert zFindFlagMConOnly\\\}	xhsffa
 					zFindFlagREonOnly	\\\{#insert zFindFlagREonOnly\\\}	xhsffa
 					zFindFlagREonOnly	\\\{#insert zFindFlagREonOnly\\\}	xhsffa
 					zFindFlagWWonOnly	\\\{#insert zFindFlagWWonOnly\\\}	xhsffa
-				Set 2+ flags -- xhsffb	.	xhsff
+				Set 2+ flags -- b	.	xhsff
 					zFindFlagsMCREoff	\\\{#insert zFindFlagsMCREoff\\\}	xhsffb
 					zFindFlagsMCREon	\\\{#insert zFindFlagsMCREon\\\}	xhsffb
 					zFindFlagsMCWWoff	\\\{#insert zFindFlagsMCWWoff\\\}	xhsffb
 					zFindFlagsMCWWon	\\\{#insert zFindFlagsMCWWon\\\}	xhsffb
-				Toggle 2+ flags -- xhsffl (force-ww != unset)	.	xhsff
-					Tgl 2+ RAW -- xhsfflr	.	xhsffl
+				Toggle 2+ flags -- l (force-ww != unset)	.	xhsff
+					Tgl 2+ RAW -- r	.	xhsffl
 						zFindFlagsForceWWXSTglRAW	\\\{#insert zFindFlagsForceWWXSTglRAW\\\}	xhsfflr
-						zFindFlagsMCRETglRAW -- xhsfflrm	\\\{#RAWinsert zFindFlagsMCRETgl\\\}	xhsfflr
+						zFindFlagsMCRETglRAW -- m	\\\{#RAWinsert zFindFlagsMCRETgl\\\}	xhsfflr
 							zFindFlagsMCForceWWTglRAW	\\\{#insert zFindFlagsMCForceWWTglRAW\\\}	xhsfflrm
 							zFindFlagsMCForceWWXSTglRAW	\\\{#insert zFindFlagsMCForceWWXSTglRAW\\\}	xhsfflrm
 							zFindFlagsMCREXSTglRAW	\\\{#insert zFindFlagsMCREXSTglRAW\\\}	xhsfflrm
@@ -44,7 +44,7 @@ Phrase-creators: XBN-PhraseExpress -- Call 'xh'   .   zXbnpeCmdPopupRoot
 							zFindFlagsMCXSTglRAW	\\\{#insert zFindFlagsMCXSTglRAW\\\}	xhsfflrm
 						zFindFlagsREXSTglRAW	\\\{#insert zFindFlagsREXSTglRAW\\\}	xhsfflr
 						zFindFlagsWWXSTglRAW	\\\{#insert zFindFlagsWWXSTglRAW\\\}	xhsfflr
-					Tgl 2+ then un-tgl-raw -- xhsfflb (!force-ww)	.	xhsffl
+					Tgl 2+ then un-tgl-raw -- b (!force-ww)	.	xhsffl
 						zFindFlagsMCRETgl...	\\\{#insert zFindFlagsMCRETgl\\\}{#CURSOR}\\\{#insert zFindFlagsMCRETglRAW\\\}	xhsfflb
 						zFindFlagsMCREXSTgl...	\\\{#insert zFindFlagsMCREXSTgl\\\}{#CURSOR}\\\{#insert zFindFlagsMCREXSTglRAW\\\}	xhsfflb
 						zFindFlagsMCWWTgl...	\\\{#insert zFindFlagsMCWWTgl\\\}{#CURSOR}\\\{#insert zFindFlagsMCWWTglRAW\\\}	xhsfflb
@@ -53,7 +53,7 @@ Phrase-creators: XBN-PhraseExpress -- Call 'xh'   .   zXbnpeCmdPopupRoot
 						zFindFlagsREXSTgl...	\\\{#insert zFindFlagsREXSTgl\\\}{#CURSOR}\\\{#insert zFindFlagsREXSTglRAW\\\}	xhsfflb
 						zFindFlagsWWXSTgl...	\\\{#insert zFindFlagsWWXSTgl\\\}{#CURSOR}\\\{#insert zFindFlagsWWXSTglRAW\\\}	xhsfflb
 					zFindFlagsForceWWXSTgl	\\\{#insert zFindFlagsForceWWXSTgl\\\}	xhsffl
-					zFindFlagsMCRETgl -- xhsfflm	\\\{#insert zFindFlagsMCRETgl\\\}	xhsffl
+					zFindFlagsMCRETgl -- m	\\\{#insert zFindFlagsMCRETgl\\\}	xhsffl
 						zFindFlagsMCForceWWTgl	\\\{#insert zFindFlagsMCForceWWTgl\\\}	xhsfflm
 						zFindFlagsMCForceWWXSTgl	\\\{#insert zFindFlagsMCForceWWXSTgl\\\}	xhsfflm
 						zFindFlagsMCREXSTgl	\\\{#insert zFindFlagsMCREXSTgl\\\}	xhsfflm
@@ -63,34 +63,36 @@ Phrase-creators: XBN-PhraseExpress -- Call 'xh'   .   zXbnpeCmdPopupRoot
 					zFindFlagsREXSTgl	\\\{#insert zFindFlagsREXSTgl\\\}	xhsffl
 					zFindFlagsWWXSTgl	\\\{#insert zFindFlagsWWXSTgl\\\}	xhsffl
 				zFindDlgOpenWrapSearchTglClose	\\\{#insert zFindDlgOpenWrapSearchTglClose\\\}	xhsff
-			Mark (buttons & flags) -- xhsfm	.	xhsf
+			Mark (buttons & flags) -- m	.	xhsf
 				zFindBtnMarkAll**	\\\{#insert zFindBtnMarkAll\\\}	xhsfm
 				zFindBtnMarkAllThnEtr**	\\\{#insert zFindBtnMarkAllThnEtr\\\}	xhsfm
 				zFindFlagADBtnMarkAD	\\\{#insert zFindFlagADBtnMarkAD\\\}	xhsfm
 				zFindFlagADBtnMarkADraw	\\\{#insert zFindFlagADBtnMarkADraw\\\}	xhsfm
-(*       Other -- xhsft   .   xhsf*)
+(*       Other -- t   .   xhsf*)
 				fwhatp (and 'rwithp')	(*actiononly=fwhatp*){#SETPHRASE -description zvACTN_NM -content fwhatp -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhsft
+				zvFIND_WHAT_stCB	\\\{#insert zvFIND_WHAT_stCB\\\}	xhsft
+				zvRPLC_WITH_stCB	\\\{#insert zvRPLC_WITH_stCB\\\}	xhsft
 				zFindNextPromptedString	{#insert zFindNextPromptedString}	xhsft
 				zFindPrevPromptedString	{#insert zFindPrevPromptedString}	xhsft
 				zFindFlagsMConOnlyThenPreCheck	\\\{#insert zFindFlagsMConOnlyThenPreCheck\\\}	xhsft
 				zFindFlagPreCheckOnlyXSoff	\\\{#insert zFindFlagPreCheckOnlyXSoff\\\}	xhsft
 				zFindGoXSOpenRplc	\\\{#insert zFindGoXSOpenRplc\\\}	xhsft
-(*       Close -- xhsfc   .   xhsf*)
-				...then set 1 flag -- xhsfca	.	xhsfc
+(*       Close -- c   .   xhsf*)
+				...then set 1 flag -- a	.	xhsfc
 					zFindDlgCloseMC	\\\{#insert zFindDlgCloseMC\\\}	xhsfca
 					zFindDlgCloseRE	\\\{#insert zFindDlgCloseRE\\\}	xhsfca
 					zFindDlgCloseWS	\\\{#insert zFindDlgCloseWS\\\}	xhsfca
 					zFindDlgCloseWW	\\\{#insert zFindDlgCloseWW\\\}	xhsfca
 					zFindDlgCloseXS	\\\{#insert zFindDlgCloseXS\\\}	xhsfca
-				...then set 2+ flags -- xhsfcb	.	xhsfc
+				...then set 2+ flags -- b	.	xhsfc
 					zFindDlgCloseMCRE	\\\{#insert zFindDlgCloseMCRE\\\}	xhsfcb
 					zFindDlgCloseMCWW	\\\{#insert zFindDlgCloseMCWW\\\}	xhsfcb
 					zFindDlgCloseMCXS	\\\{#insert zFindDlgCloseMCXS\\\}	xhsfcb
 					zFindDlgCloseREXS	\\\{#insert zFindDlgCloseREXS\\\}	xhsfcb
 					zFindDlgCloseWSRE	\\\{#insert zFindDlgCloseWSRE\\\}	xhsfcb
 					zFindDlgCloseWWXS	\\\{#insert zFindDlgCloseWWXS\\\}	xhsfcb
-				zFindDlgCloseDown* -- xhsfcd	\\\{#insert zFindDlgCloseDown\\\}	xhsfc
-					...then set 2+ flags -- xhsfcdb	.	xhsfcd
+				zFindDlgCloseDown* -- d	\\\{#insert zFindDlgCloseDown\\\}	xhsfc
+					...then set 2+ flags -- b	.	xhsfcd
 						zFindDlgCloseDownMCRE	\\\{#insert zFindDlgCloseDownMCRE\\\}	xhsfcdb
 						zFindDlgCloseDownMCWW	\\\{#insert zFindDlgCloseDownMCWW\\\}	xhsfcdb
 						zFindDlgCloseDownMCXS	\\\{#insert zFindDlgCloseDownMCXS\\\}	xhsfcdb
@@ -101,8 +103,8 @@ Phrase-creators: XBN-PhraseExpress -- Call 'xh'   .   zXbnpeCmdPopupRoot
 					zFindDlgCloseDownWS	\\\{#insert zFindDlgCloseDownWS\\\}	xhsfcd
 					zFindDlgCloseDownWW	\\\{#insert zFindDlgCloseDownWW\\\}	xhsfcd
 					zFindDlgCloseDownXS	\\\{#insert zFindDlgCloseDownXS\\\}	xhsfcd
-				zFindDlgCloseUp* -- xhsfcu	\\\{#insert zFindDlgCloseUp\\\}	xhsfc
-					...then set 2+ flags -- xhsfcub	.	xhsfcu
+				zFindDlgCloseUp* -- u	\\\{#insert zFindDlgCloseUp\\\}	xhsfc
+					...then set 2+ flags -- b	.	xhsfcu
 						zFindDlgCloseUpMCRE	\\\{#insert zFindDlgCloseUpMCRE\\\}	xhsfcub
 						zFindDlgCloseUpMCWW	\\\{#insert zFindDlgCloseUpMCWW\\\}	xhsfcub
 						zFindDlgCloseUpMCXS	\\\{#insert zFindDlgCloseUpMCXS\\\}	xhsfcub
@@ -113,16 +115,16 @@ Phrase-creators: XBN-PhraseExpress -- Call 'xh'   .   zXbnpeCmdPopupRoot
 					zFindDlgCloseDownWS	\\\{#insert zFindDlgCloseDownWS\\\}	xhsfcu
 					zFindDlgCloseUpWW	\\\{#insert zFindDlgCloseUpWW\\\}	xhsfcu
 					zFindDlgCloseUpXS	\\\{#insert zFindDlgCloseUpXS\\\}	xhsfcu
-(*       Open -- xhsfo   .   xhsf*)
-				...and set 1 flag -- xhsfoa	.	xhsfo
+(*       Open -- o   .   xhsf*)
+				...and set 1 flag -- a	.	xhsfo
 					zFindDlgOpenForceWW	\\\{#insert zFindDlgOpenForceWW\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfoa
 					zFindDlgOpenMC	\\\{#insert zFindDlgOpenMC\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfoa
 					zFindDlgOpenRE	\\\{#insert zFindDlgOpenRE\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfoa
 					zFindDlgOpenWW	\\\{#insert zFindDlgOpenWW\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfoa
 					zFindDlgOpenXS	\\\{#insert zFindDlgOpenXS\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfoa
-				...and set 2+ flags -- xhsfob	.	xhsfo
+				...and set 2+ flags -- b	.	xhsfo
 					zFindDlgOpenForceWWXS	\\\{#insert zFindDlgOpenForceWWXS\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfob
-					zFindDlgOpenMCRE -- xhsfobm	\\\{#insert zFindDlgOpenMCRE\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfob
+					zFindDlgOpenMCRE -- m	\\\{#insert zFindDlgOpenMCRE\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfob
 						zFindDlgOpenMCForceWW	\\\{#insert zFindDlgOpenMCForceWW\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfobm
 						zFindDlgOpenMCForceWWXS	\\\{#insert zFindDlgOpenMCForceWWXS\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfobm
 						zFindDlgOpenMCREXS	\\\{#insert zFindDlgOpenMCREXS\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfobm
@@ -131,16 +133,16 @@ Phrase-creators: XBN-PhraseExpress -- Call 'xh'   .   zXbnpeCmdPopupRoot
 						zFindDlgOpenMCXS	\\\{#insert zFindDlgOpenMCXS\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfobm
 					zFindDlgOpenREXS	\\\{#insert zFindDlgOpenREXS\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfob
 					zFindDlgOpenWWXS	\\\{#insert zFindDlgOpenWWXS\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfob
-				zFindDlgOpenDown* -- xhsfod	\\\{#insert zFindDlgOpenDown\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfo
-					...and set 1 flag -- xhsfoda	.	xhsfod
+				zFindDlgOpenDown* -- d	\\\{#insert zFindDlgOpenDown\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfo
+					...and set 1 flag -- a	.	xhsfod
 						zFindDlgOpenDownForceWW	\\\{#insert zFindDlgOpenDownForceWW\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfoda
 						zFindDlgOpenDownMC	\\\{#insert zFindDlgOpenDownMC\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfoda
 						zFindDlgOpenDownRE	\\\{#insert zFindDlgOpenDownRE\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfoda
 						zFindDlgOpenDownWW	\\\{#insert zFindDlgOpenDownWW\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfoda
 						zFindDlgOpenDownXS	\\\{#insert zFindDlgOpenDownXS\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfoda
-					...and set 2+ flags -- xhsfodb	.	xhsfod
+					...and set 2+ flags -- b	.	xhsfod
 						zFindDlgOpenDownForceWWXS	\\\{#insert zFindDlgOpenDownForceWWXS\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfodb
-						zFindDlgOpenDownMCRE -- xhsfodbm	\\\{#insert zFindDlgOpenDownMCRE\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfodb
+						zFindDlgOpenDownMCRE -- m	\\\{#insert zFindDlgOpenDownMCRE\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfodb
 							zFindDlgOpenDownMCForceWW	\\\{#insert zFindDlgOpenDownMCForceWW\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfodbm
 							zFindDlgOpenDownMCForceWWXS	\\\{#insert zFindDlgOpenDownMCForceWWXS\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfodbm
 							zFindDlgOpenDownMCREXS	\\\{#insert zFindDlgOpenDownMCREXS\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfodbm
@@ -151,16 +153,16 @@ Phrase-creators: XBN-PhraseExpress -- Call 'xh'   .   zXbnpeCmdPopupRoot
 						zFindDlgOpenDownWWXS	\\\{#insert zFindDlgOpenDownWWXS\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfodb
 					zFindDlgOpenDownMCOnly	\\\{#insert zFindDlgOpenDownMCOnly\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfod
 					zFindDlgOpenFlagDownClose	\\\{#insert zFindDlgOpenFlagDownClose\\\}	xhsfod
-				zFindDlgOpenUp* -- xhsfou	\\\{#insert zFindDlgOpenUp\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfo
-					...and set 1 flag -- xhsfoua	.	xhsfou
+				zFindDlgOpenUp* -- u	\\\{#insert zFindDlgOpenUp\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfo
+					...and set 1 flag -- a	.	xhsfou
 						zFindDlgOpenUpForceWW	\\\{#insert zFindDlgOpenUpForceWW\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfoua
 						zFindDlgOpenUpMC	\\\{#insert zFindDlgOpenUpMC\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfoua
 						zFindDlgOpenUpRE	\\\{#insert zFindDlgOpenUpRE\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfoua
 						zFindDlgOpenUpWW	\\\{#insert zFindDlgOpenUpWW\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfoua
 						zFindDlgOpenUpXS	\\\{#insert zFindDlgOpenUpXS\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfoua
-					...and set 2+ flags -- xhsfoub	.	xhsfou
+					...and set 2+ flags -- b	.	xhsfou
 						zFindDlgOpenUpForceWWXS	\\\{#insert zFindDlgOpenUpForceWWXS\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfoub
-						zFindDlgOpenUpMCRE -- xhsfoubm	\\\{#insert zFindDlgOpenUpMCRE\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfoub
+						zFindDlgOpenUpMCRE -- m	\\\{#insert zFindDlgOpenUpMCRE\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfoub
 							zFindDlgOpenUpMCForceWW	\\\{#insert zFindDlgOpenUpMCForceWW\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfoubm
 							zFindDlgOpenUpMCForceWWXS	\\\{#insert zFindDlgOpenUpMCForceWWXS\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfoubm
 							zFindDlgOpenUpMCREXS	\\\{#insert zFindDlgOpenUpMCREXS\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfoubm

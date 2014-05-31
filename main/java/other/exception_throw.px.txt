@@ -13,41 +13,38 @@ xrn -- throw new NullPointerException(...)	throw  new NullPointerException{#inse
 xrr -- throw new RuntimeException(...)	throw  new RuntimeException{#insert zzParensNoQQsYUp}{#insert xnpsyn}	xrr
 xrs -- throw new IllegalStateException(...)	throw  new IllegalStateException{#insert zzParensNoQQsYUp}{#insert xnpsyn}	xrs
 xrx -- throw new ...Exception(...)	throw  new {#insert zYmark}Exception{#insert zzParensNoQQsYUp}{#insert xnpsyn}	xrx
-xta -- throw new IllegalArgumentException('...')	{#insert zvCFY_stL1c}throw  new IllegalArgumentException{#insert zzParensWQQsFCNm_M_cfy}{#insert zYUp}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xta
-xtab -- throw new ArrayIndexOutOfBoundsException('...')	{#insert zvCFY_stL1c}throw  new ArrayIndexOutOfBoundsException{#insert zzParensWQQsFCNm_M_cfy}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xtab
-xtas -- throw new IllegalArgumentStateException('...')	{#insert zvCFY_stL1c}throw  new IllegalArgumentStateException{#insert zzParensWQQsFCNm_M_cfy}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xtas
-xtb -- throw new IndexOutOfBoundsException('...')	{#insert zvCFY_stL1c}throw  new IndexOutOfBoundsException{#insert zzParensWQQsFCNm_M_cfy}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xtb
-xtc -- throw new ClassCastException('...')	{#insert zvCFY_stL1c}throw  new ClassCastException{#insert zzParensWQQsFCNm_M_cfy}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xtc
-xtn -- throw new NullPointerException('...')	{#insert zvCFY_stL1c}throw  new NullPointerException({#insert zzGetPrintQFuncCnstrNmNoQ_M_cfy}: {#insert zYmark}{#insert zAscQQ}){#insert zYUp}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xtn
-xtn1 -- xtn for param 1	{#insert zvCFY_stL1c}{#insert zvPARAM_NUM_st1}{#insert zzThrowNpxPQFNmPrmNmQP_M_pnumCfy}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xtn1
-xtn2 -- xtn for param 2	{#insert zvCFY_stL1c}{#insert zvPARAM_NUM_st2}{#insert zzThrowNpxPQFNmPrmNmQP_M_pnumCfy}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xtn2
-xtn3 -- xtn for param 3	{#insert zvCFY_stL1c}{#insert zvPARAM_NUM_st3}{#insert zzThrowNpxPQFNmPrmNmQP_M_pnumCfy}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xtn3
-xtn4 -- xtn for param 4	{#insert zvCFY_stL1c}{#insert zvPARAM_NUM_st4}{#insert zzThrowNpxPQFNmPrmNmQP_M_pnumCfy}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xtn4
-xtn5 -- xtn for param 5	{#insert zvCFY_stL1c}{#insert zvPARAM_NUM_st5}{#insert zzThrowNpxPQFNmPrmNmQP_M_pnumCfy}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xtn5
-xtnh -- if(...==null) { throw new NullPointerException('...') }	{#insert zvCFY_stL1c}if({#insert zYmark} == null)  {{#insert zENTER}throw  new NullPointerException{#insert zzParensWQQsFCNm_M_cfy}{#insert zENTER}\\\}{#insert zYUp2}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xtnh
-xtnh1 -- xtnh for param 1	{#insert zvCFY_stL1c}{#insert zvPARAM_NUM_st1}{#insert zzThrowNpxIfNullBlockPQFNmPrmNmQP_M_pnum}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xtnh1
-xtnh2 -- xtnh for param 2	{#insert zvCFY_stL1c}{#insert zvPARAM_NUM_st2}{#insert zzThrowNpxIfNullBlockPQFNmPrmNmQP_M_pnum}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xtnh2
-xtnh3 -- xtnh for param 3	{#insert zvCFY_stL1c}{#insert zvPARAM_NUM_st3}{#insert zzThrowNpxIfNullBlockPQFNmPrmNmQP_M_pnum}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xtnh3
-xtnh4 -- xtnh for param 4	{#insert zvCFY_stL1c}{#insert zvPARAM_NUM_st4}{#insert zzThrowNpxIfNullBlockPQFNmPrmNmQP_M_pnum}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xtnh4
-xtnh5 -- xtnh for param 5	{#insert zvCFY_stL1c}{#insert zvPARAM_NUM_st5}{#insert zzThrowNpxIfNullBlockPQFNmPrmNmQP_M_pnum}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xtnh5
-xtnhn -- xtnh for [prompt #] param	{#insert zvCFY_stL1c}{#insert zvPARAM_NUM_stPrompt}{#insert zzThrowNpxIfNullBlockPQFNmPrmNmQP_M_pnum}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xtnhn
-xtnn -- xtn for [prompt #] param	{#insert zvCFY_stL1c}{#insert zvPARAM_NUM_stPrompt}{#insert zzThrowNpxPQFNmPrmNmQP_M_pnumCfy}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xtnn
-xtnsyn	{#BALLOON -title Syntax: Java throw new ... -text {#insert zzXtnsyns1of4}=thrw new ... // {#insert zzXtnsyns2of4}=no {#insert zAscQQ} // {#insert zzXtnsyns3of4}=npx // [c]='cnstr', [f]=fnc~nm, [x]=no {#insert zAscQQ}, [y]=w {#insert zAscQQ} // {#insert zzXtnsyns4of4}=func->UnsptdOprtnX ([r]=mst ovr) // [[1~5,n]]=specific param // See: clnsyn // javasyn}	xtnsyn
-xtr -- throw new RuntimeException('...')	{#insert zvCFY_stL1c}throw  new RuntimeException{#insert zzParensWQQsFCNm_M_cfy}{#insert zYUp}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xtr
-xts -- throw new IllegalStateException('...')	{#insert zvCFY_stL1c}throw  new IllegalStateException{#insert zzParensWQQsFCNm_M_cfy}{#insert zYUp}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xts
-xtx -- throw new ...Exception('...')	throw  new {#insert zvCFY_stL1c}{#insert zYmark}Exception{#insert zzParensWQQsFCNm_M_cfy}{#insert zYUp}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xtx
+xta -- throw new IllegalArgumentException('...')	throw  new IllegalArgumentException{#insert zzParensWQQsFCNm_M_cfy}{#insert zYUp}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xta
+xtab -- throw new ArrayIndexOutOfBoundsException('...')	throw  new ArrayIndexOutOfBoundsException{#insert zzParensWQQsFCNm_M_cfy}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xtab
+xtas -- throw new IllegalArgumentStateException('...')	throw  new IllegalArgumentStateException{#insert zzParensWQQsFCNm_M_cfy}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xtas
+xtb -- throw new IndexOutOfBoundsException('...')	throw  new IndexOutOfBoundsException{#insert zzParensWQQsFCNm_M_cfy}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xtb
+xtc -- throw new ClassCastException('...')	throw  new ClassCastException{#insert zzParensWQQsFCNm_M_cfy}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xtc
+xtn -- throw new NullPointerException('...')	throw  new NullPointerException({#insert zAscQQ}{#insert zYmark}{#insert zAscQQ}){#insert zYUp}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xtn
+xtn1 -- xtn for param 1	{#insert zvPARAM_NUM_st1}{#insert zzThrowNpxPQFNmPrmNmQP_M_pnumCfy}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xtn1
+xtn2 -- xtn for param 2	{#insert zvPARAM_NUM_st2}{#insert zzThrowNpxPQFNmPrmNmQP_M_pnumCfy}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xtn2
+xtn3 -- xtn for param 3	{#insert zvPARAM_NUM_st3}{#insert zzThrowNpxPQFNmPrmNmQP_M_pnumCfy}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xtn3
+xtn4 -- xtn for param 4	{#insert zvPARAM_NUM_st4}{#insert zzThrowNpxPQFNmPrmNmQP_M_pnumCfy}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xtn4
+xtn5 -- xtn for param 5	{#insert zvPARAM_NUM_st5}{#insert zzThrowNpxPQFNmPrmNmQP_M_pnumCfy}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xtn5
+xtnh -- if(...==null) { throw new NullPointerException('...') }	if({#insert zYmark} == null)  {{#insert zENTER}throw  new NullPointerException{#insert zzParensWQQsFCNm_M_cfy}{#insert zENTER}\\\}{#insert zYUp2}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xtnh
+xtnh1 -- xtnh for param 1	{#insert zvPARAM_NUM_st1}{#insert zzThrowNpxIfNullBlockPQFNmPrmNmQP_M_pnum}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xtnh1
+xtnh2 -- xtnh for param 2	{#insert zvPARAM_NUM_st2}{#insert zzThrowNpxIfNullBlockPQFNmPrmNmQP_M_pnum}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xtnh2
+xtnh3 -- xtnh for param 3	{#insert zvPARAM_NUM_st3}{#insert zzThrowNpxIfNullBlockPQFNmPrmNmQP_M_pnum}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xtnh3
+xtnh4 -- xtnh for param 4	{#insert zvPARAM_NUM_st4}{#insert zzThrowNpxIfNullBlockPQFNmPrmNmQP_M_pnum}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xtnh4
+xtnh5 -- xtnh for param 5	{#insert zvPARAM_NUM_st5}{#insert zzThrowNpxIfNullBlockPQFNmPrmNmQP_M_pnum}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xtnh5
+xtnhn -- xtnh for [prompt #] param	{#insert zvPARAM_NUM_stPrompt}{#insert zzThrowNpxIfNullBlockPQFNmPrmNmQP_M_pnum}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xtnhn
+xtnn -- xtn for [prompt #] param	{#insert zvPARAM_NUM_stPrompt}{#insert zzThrowNpxPQFNmPrmNmQP_M_pnumCfy}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xtnn
+xtnsyn	{#BALLOON -title Syntax: Java throw new ... -text {#insert zzXtnsyns1of4}=thrw new ... // {#insert zzXtnsyns2of4}=no {#insert zAscQQ} // {#insert zzXtnsyns3of4}=npx // {#insert zzXtnsyns4of4}=func->UnsptdOprtnX ([r]=mst ovr) // [[1~5,n]]=specific param // See: clnsyn // javasyn}	xtnsyn
+xtr -- throw new RuntimeException('...')	throw  new RuntimeException{#insert zzParensWQQsFCNm_M_cfy}{#insert zYUp}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xtr
+xts -- throw new IllegalStateException('...')	throw  new IllegalStateException{#insert zzParensWQQsFCNm_M_cfy}{#insert zYUp}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xts
+xtx -- throw new ...Exception('...')	throw  new {#insert zYmark}Exception{#insert zzParensWQQsFCNm_M_cfy}{#insert zYUp}{#insert zzzYUpIfXY_M_cfy}{#insert xnpsyn}	xtx
 zvCFY_stL1c	{#insert zCutL1c}{#SETPHRASE -description zvCFY -content {#INSERTCLIPBOARD} -autotext zvCFY -folder ctvv_folder}	zvCFY_stL1c
 zzDlgBadCfy_M_cfy	{#MSGBOX -head ERROR -text ERROR ~~ Unknown value for func~cnstr~name pre~option character (zvCFY='{#insert zvCFY}'). Must be 'c', 'f', 'x', or 'y' (see [cln,xtn]syn).{#insert zCancelProcNowPostTxt}}	zzDlgBadCfy_M_cfy
-zzGetPrintQFuncCnstrNmNoQ_M_cfy -- Needs zvCFY	{#insert {#COND -if {#insert zvCFY} = c -then zzzQqcnstr -else {#COND -if {#insert zvCFY} = f -then zzzQqGetPasteFuncNameUp -else {#COND -if {#insert zvCFY} = x -then zzzQ_ymkPlsq -else {#COND -if {#insert zvCFY} = y -then zzzQqymk -else zzDlgBadCfy_M_cfy}}}}}	zzGetPrintQFuncCnstrNmNoQ_M_cfy
-zzGetPrintQFuncCnstrNmQ_M_cfy -- Needs zvCFY	{#insert {#COND -if {#insert zvCFY} = c -then zzQqcnstrq -else {#COND -if {#insert zvCFY} = f -then zzQGetPasteFuncNameUpQ -else {#COND -if {#insert zvCFY} = x -then zYmark -else {#COND -if {#insert zvCFY} = y -then zzQqymkq -else zzDlgBadCfy_M_cfy}}}}}	zzGetPrintQFuncCnstrNmQ_M_cfy
 zzParensNoQQsYUp	({#insert zYmark});{#insert zYUp}	zzParensNoQQsYUp
-zzParensWQQsFCNm_M_cfy	({#insert zzGetPrintQFuncCnstrNmNoQ_M_cfy}: {#insert zYmark}{#insert zAscQQ});	zzParensWQQsFCNm_M_cfy
-zzQcnstr	constructor	zzQcnstr
-zzThrowNpxIfNullBlockPQFNmPrmNmQP_M_pnum -- Needs zvPARAM_NUM	{#insert zzSetGpnToPrevPpnToNext}if({#insert zzPasteParamNameAtCrsr_M_gpnPpnPnum}{#SETPHRASE -description zvPARAM_NM -content {#INSERTCLIPBOARD} -autotext zvPARAM_NM -folder ctvv_folder} == null)  {{#insert zENTER}throw  new NullPointerException({#insert zzGetPrintQFuncCnstrNmNoQ_M_cfy}: {#insert zvPARAM_NM}{#insert zAscQQ});{#insert zENTER}\\\}	zzThrowNpxIfNullBlockPQFNmPrmNmQP_M_pnum
-zzThrowNpxPQFNmPrmNmQP_M_pnumCfy -- Needs zvPARAM_NUM	{#insert zzSetGpnToPrevPpnToNext}throw  new NullPointerException({#insert zzGetPrintQFuncCnstrNmNoQ_M_cfy}: {#insert zzPasteParamNameAtCrsr_M_gpnPpnPnum}{#insert zAscQQ});	zzThrowNpxPQFNmPrmNmQP_M_pnumCfy
-zzXtnsyns1of4	[c,f,x,y]xt[a[[b,s]],b,c,r,s,x]	zzXtnsyns1of4
+zzParensWQQsFCNm_M_cfy	({#insert zAscQQ}{#insert zYmark}{#insert zAscQQ});	zzParensWQQsFCNm_M_cfy
+zzThrowNpxIfNullBlockPQFNmPrmNmQP_M_pnum -- Needs zvPARAM_NUM	{#insert zzSetGpnToPrevPpnToNext}if({#insert zzPasteParamNameAtCrsr_M_gpnPpnPnum}{#SETPHRASE -description zvPARAM_NM -content {#INSERTCLIPBOARD} -autotext zvPARAM_NM -folder ctvv_folder} == null)  {{#insert zENTER}throw  new NullPointerException({#insert zAscQQ}{#insert zvPARAM_NM}{#insert zAscQQ});{#insert zENTER}\\\}	zzThrowNpxIfNullBlockPQFNmPrmNmQP_M_pnum
+zzThrowNpxPQFNmPrmNmQP_M_pnumCfy -- Needs zvPARAM_NUM	{#insert zzSetGpnToPrevPpnToNext}throw  new NullPointerException({#insert zAscQQ}{#insert zzPasteParamNameAtCrsr_M_gpnPpnPnum}{#insert zAscQQ});	zzThrowNpxPQFNmPrmNmQP_M_pnumCfy
+zzXtnsyns1of4	xt[a[[b,s]],b,c,r,s,x]	zzXtnsyns1of4
 zzXtnsyns2of4	xr[a[[b,s]],b,c,n,r,s,x]	zzXtnsyns2of4
-zzXtnsyns3of4	[c,f,x,y]xtn[h][[1~5,n]]	zzXtnsyns3of4
+zzXtnsyns3of4	xtn[h][[1~5,n]]	zzXtnsyns3of4
 zzXtnsyns4of4	jdbuox[r]	zzXtnsyns4of4
 zzzQ_ymkPlsq	{#insert zYmark} + {#insert zAscQQ}	zzzQ_ymkPlsq
 zzzQqGetPasteFuncNameUp	{#insert zAscQQ}{#insert zzJFSigUpGetPasteFuncName}	zzzQqGetPasteFuncNameUp

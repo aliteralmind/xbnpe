@@ -18,7 +18,7 @@ vqpb -- Var-name in clipboard to V='+V+'	{#insert zTPPaste}={#insert zJavaVarInS
 vqpl -- fqpb, var-name word-left	{#insert zCutL1w}{#insert vqpb}	vqpl
 vspb -- Var-name in CB to V is '+V+'	{#insert zTPPaste} is {#insert zJavaVarInStringPaste}{#insert zzFqplsyn_M_yon}	vspb
 vspl -- fspb, var-name word-left	{#insert zCutL1w}{#insert vspb}	vspl
-vtpb -- Func-name in clipboard to V=\''+V+'\'	{#insert zTPPaste}=\{#insert zAscQQ}{#insert zJavaVarInStringPaste}\{#insert zAscQQ}{#insert zzvtplsyn_M_yon}	vtpb
+vtpb -- Func-name in clipboard to V=\''+V+'\'	{#insert zTPPaste}=\{#insert zAscQQ}{#insert zJavaVarInStringPaste}\{#insert zAscQQ}{#insert zzFqplsyn_M_yon}	vtpb
 vtpl -- vtpb, func-name word-left	{#insert zCutL1w}{#insert vtpb}	vtpl
 vupb -- Var-name in CB to V is '+V+'	{#insert zTPPaste} is {#insert zJavaVarInStringPaste}{#insert zzFqplsyn_M_yon}	vupb
 vupl -- fspb, var-name word-left	{#insert zCutL1w}{#insert vupb}	vupl

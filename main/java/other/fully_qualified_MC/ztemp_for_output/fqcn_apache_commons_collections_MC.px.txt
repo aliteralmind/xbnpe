@@ -1,0 +1,309 @@
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+org.apache.commons -- c	org.apache.commons.	apc
+_ org.apache.commons.	org.apache.commons.	apcc
+_ org.apache.commons. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content org.apache.commons. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	apcc
+org.apache.commons.collections4 -- l	org.apache.commons.collections4.	apc
+_ org.apache.commons.collections4.	org.apache.commons.collections4.	apcl
+_ org.apache.commons.collections4. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content org.apache.commons.collections4. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	apcl
+b-e -- b	.	apcl
+Bag	org.apache.commons.collections4.Bag	apclb
+BagUtils	org.apache.commons.collections4.BagUtils	apclb
+BidiMap	org.apache.commons.collections4.BidiMap	apclb
+BoundedCollection	org.apache.commons.collections4.BoundedCollection	apclb
+BoundedMap	org.apache.commons.collections4.BoundedMap	apclb
+Closure	org.apache.commons.collections4.Closure	apclb
+ClosureUtils	org.apache.commons.collections4.ClosureUtils	apclb
+CollectionUtils	org.apache.commons.collections4.CollectionUtils	apclb
+ComparatorUtils	org.apache.commons.collections4.ComparatorUtils	apclb
+EnumerationUtils	org.apache.commons.collections4.EnumerationUtils	apclb
+Equator	org.apache.commons.collections4.Equator	apclb
+f-l -- f	.	apcl
+Factory	org.apache.commons.collections4.Factory	apclf
+FactoryUtils	org.apache.commons.collections4.FactoryUtils	apclf
+FunctorException	org.apache.commons.collections4.FunctorException	apclf
+Get	org.apache.commons.collections4.Get	apclf
+IterableGet	org.apache.commons.collections4.IterableGet	apclf
+IterableMap	org.apache.commons.collections4.IterableMap	apclf
+IterableSortedMap	org.apache.commons.collections4.IterableSortedMap	apclf
+IteratorUtils	org.apache.commons.collections4.IteratorUtils	apclf
+KeyValue	org.apache.commons.collections4.KeyValue	apclf
+ListUtils	org.apache.commons.collections4.ListUtils	apclf
+m-q -- m	.	apcl
+MapIterator	org.apache.commons.collections4.MapIterator	apclm
+MapUtils	org.apache.commons.collections4.MapUtils	apclm
+MultiMap	org.apache.commons.collections4.MultiMap	apclm
+OrderedBidiMap	org.apache.commons.collections4.OrderedBidiMap	apclm
+OrderedIterator	org.apache.commons.collections4.OrderedIterator	apclm
+OrderedMap	org.apache.commons.collections4.OrderedMap	apclm
+OrderedMapIterator	org.apache.commons.collections4.OrderedMapIterator	apclm
+Predicate	org.apache.commons.collections4.Predicate	apclm
+PredicateUtils	org.apache.commons.collections4.PredicateUtils	apclm
+Put	org.apache.commons.collections4.Put	apclm
+QueueUtils	org.apache.commons.collections4.QueueUtils	apclm
+r-u -- r	.	apcl
+ResettableIterator	org.apache.commons.collections4.ResettableIterator	apclr
+ResettableListIterator	org.apache.commons.collections4.ResettableListIterator	apclr
+SetUtils	org.apache.commons.collections4.SetUtils	apclr
+SortedBag	org.apache.commons.collections4.SortedBag	apclr
+SortedBidiMap	org.apache.commons.collections4.SortedBidiMap	apclr
+SplitMapUtils	org.apache.commons.collections4.SplitMapUtils	apclr
+Transformer	org.apache.commons.collections4.Transformer	apclr
+TransformerUtils	org.apache.commons.collections4.TransformerUtils	apclr
+Trie	org.apache.commons.collections4.Trie	apclr
+TrieUtils	org.apache.commons.collections4.TrieUtils	apclr
+Unmodifiable	org.apache.commons.collections4.Unmodifiable	apclr
+org.apache.commons.collections4.bag -- b	org.apache.commons.collections4.bag.	apc
+_ org.apache.commons.collections4.bag.	org.apache.commons.collections4.bag.	apcb
+_ org.apache.commons.collections4.bag. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content org.apache.commons.collections4.bag. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	apcb
+a-p -- a	.	apcb
+AbstractBagDecorator	org.apache.commons.collections4.bag.AbstractBagDecorator	apcba
+AbstractMapBag	org.apache.commons.collections4.bag.AbstractMapBag	apcba
+AbstractSortedBagDecorator	org.apache.commons.collections4.bag.AbstractSortedBagDecorator	apcba
+CollectionBag	org.apache.commons.collections4.bag.CollectionBag	apcba
+CollectionSortedBag	org.apache.commons.collections4.bag.CollectionSortedBag	apcba
+HashBag	org.apache.commons.collections4.bag.HashBag	apcba
+PredicatedBag	org.apache.commons.collections4.bag.PredicatedBag	apcba
+PredicatedSortedBag	org.apache.commons.collections4.bag.PredicatedSortedBag	apcba
+s-u -- s	.	apcb
+SynchronizedBag	org.apache.commons.collections4.bag.SynchronizedBag	apcbs
+SynchronizedSortedBag	org.apache.commons.collections4.bag.SynchronizedSortedBag	apcbs
+TransformedBag	org.apache.commons.collections4.bag.TransformedBag	apcbs
+TransformedSortedBag	org.apache.commons.collections4.bag.TransformedSortedBag	apcbs
+TreeBag	org.apache.commons.collections4.bag.TreeBag	apcbs
+UnmodifiableBag	org.apache.commons.collections4.bag.UnmodifiableBag	apcbs
+UnmodifiableSortedBag	org.apache.commons.collections4.bag.UnmodifiableSortedBag	apcbs
+org.apache.commons.collections4.collection -- l	org.apache.commons.collections4.collection.	apc
+_ org.apache.commons.collections4.collection.	org.apache.commons.collections4.collection.	apcl
+_ org.apache.commons.collections4.collection. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content org.apache.commons.collections4.collection. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	apcl
+AbstractCollectionDecorator	org.apache.commons.collections4.collection.AbstractCollectionDecorator	apcl
+CompositeCollection	org.apache.commons.collections4.collection.CompositeCollection	apcl
+IndexedCollection	org.apache.commons.collections4.collection.IndexedCollection	apcl
+PredicatedCollection	org.apache.commons.collections4.collection.PredicatedCollection	apcl
+SynchronizedCollection	org.apache.commons.collections4.collection.SynchronizedCollection	apcl
+TransformedCollection	org.apache.commons.collections4.collection.TransformedCollection	apcl
+UnmodifiableBoundedCollection	org.apache.commons.collections4.collection.UnmodifiableBoundedCollection	apcl
+UnmodifiableCollection	org.apache.commons.collections4.collection.UnmodifiableCollection	apcl
+org.apache.commons.collections4.comparators -- m	org.apache.commons.collections4.comparators.	apc
+_ org.apache.commons.collections4.comparators.	org.apache.commons.collections4.comparators.	apcm
+_ org.apache.commons.collections4.comparators. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content org.apache.commons.collections4.comparators. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	apcm
+BooleanComparator	org.apache.commons.collections4.comparators.BooleanComparator	apcm
+ComparableComparator	org.apache.commons.collections4.comparators.ComparableComparator	apcm
+ComparatorChain	org.apache.commons.collections4.comparators.ComparatorChain	apcm
+FixedOrderComparator	org.apache.commons.collections4.comparators.FixedOrderComparator	apcm
+NullComparator	org.apache.commons.collections4.comparators.NullComparator	apcm
+ReverseComparator	org.apache.commons.collections4.comparators.ReverseComparator	apcm
+TransformingComparator	org.apache.commons.collections4.comparators.TransformingComparator	apcm
+org.apache.commons.collections4.functors -- f	org.apache.commons.collections4.functors.	apc
+_ org.apache.commons.collections4.functors.	org.apache.commons.collections4.functors.	apcf
+_ org.apache.commons.collections4.functors. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content org.apache.commons.collections4.functors. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	apcf
+a-c -- a	.	apcf
+AbstractQuantifierPredicate	org.apache.commons.collections4.functors.AbstractQuantifierPredicate	apcfa
+AllPredicate	org.apache.commons.collections4.functors.AllPredicate	apcfa
+AndPredicate	org.apache.commons.collections4.functors.AndPredicate	apcfa
+AnyPredicate	org.apache.commons.collections4.functors.AnyPredicate	apcfa
+CatchAndRethrowClosure	org.apache.commons.collections4.functors.CatchAndRethrowClosure	apcfa
+ChainedClosure	org.apache.commons.collections4.functors.ChainedClosure	apcfa
+ChainedTransformer	org.apache.commons.collections4.functors.ChainedTransformer	apcfa
+CloneTransformer	org.apache.commons.collections4.functors.CloneTransformer	apcfa
+ClosureTransformer	org.apache.commons.collections4.functors.ClosureTransformer	apcfa
+ComparatorPredicate	org.apache.commons.collections4.functors.ComparatorPredicate	apcfa
+ConstantFactory	org.apache.commons.collections4.functors.ConstantFactory	apcfa
+ConstantTransformer	org.apache.commons.collections4.functors.ConstantTransformer	apcfa
+d-f -- d	.	apcf
+DefaultEquator	org.apache.commons.collections4.functors.DefaultEquator	apcfd
+EqualPredicate	org.apache.commons.collections4.functors.EqualPredicate	apcfd
+ExceptionClosure	org.apache.commons.collections4.functors.ExceptionClosure	apcfd
+ExceptionFactory	org.apache.commons.collections4.functors.ExceptionFactory	apcfd
+ExceptionPredicate	org.apache.commons.collections4.functors.ExceptionPredicate	apcfd
+ExceptionTransformer	org.apache.commons.collections4.functors.ExceptionTransformer	apcfd
+FactoryTransformer	org.apache.commons.collections4.functors.FactoryTransformer	apcfd
+FalsePredicate	org.apache.commons.collections4.functors.FalsePredicate	apcfd
+ForClosure	org.apache.commons.collections4.functors.ForClosure	apcfd
+FunctorUtils	org.apache.commons.collections4.functors.FunctorUtils	apcfd
+i-NOP -- i	.	apcf
+IdentityPredicate	org.apache.commons.collections4.functors.IdentityPredicate	apcfi
+IfClosure	org.apache.commons.collections4.functors.IfClosure	apcfi
+InstanceofPredicate	org.apache.commons.collections4.functors.InstanceofPredicate	apcfi
+InstantiateFactory	org.apache.commons.collections4.functors.InstantiateFactory	apcfi
+InstantiateTransformer	org.apache.commons.collections4.functors.InstantiateTransformer	apcfi
+InvokerTransformer	org.apache.commons.collections4.functors.InvokerTransformer	apcfi
+MapTransformer	org.apache.commons.collections4.functors.MapTransformer	apcfi
+NonePredicate	org.apache.commons.collections4.functors.NonePredicate	apcfi
+NOPClosure	org.apache.commons.collections4.functors.NOPClosure	apcfi
+NOPTransformer	org.apache.commons.collections4.functors.NOPTransformer	apcfi
+Not-p -- n	.	apcf
+NotNullPredicate	org.apache.commons.collections4.functors.NotNullPredicate	apcfn
+NotPredicate	org.apache.commons.collections4.functors.NotPredicate	apcfn
+NullIsExceptionPredicate	org.apache.commons.collections4.functors.NullIsExceptionPredicate	apcfn
+NullIsFalsePredicate	org.apache.commons.collections4.functors.NullIsFalsePredicate	apcfn
+NullIsTruePredicate	org.apache.commons.collections4.functors.NullIsTruePredicate	apcfn
+NullPredicate	org.apache.commons.collections4.functors.NullPredicate	apcfn
+OnePredicate	org.apache.commons.collections4.functors.OnePredicate	apcfn
+OrPredicate	org.apache.commons.collections4.functors.OrPredicate	apcfn
+PredicateDecorator	org.apache.commons.collections4.functors.PredicateDecorator	apcfn
+PredicateTransformer	org.apache.commons.collections4.functors.PredicateTransformer	apcfn
+PrototypeFactory	org.apache.commons.collections4.functors.PrototypeFactory	apcfn
+s-w -- s	.	apcf
+StringValueTransformer	org.apache.commons.collections4.functors.StringValueTransformer	apcfs
+SwitchClosure	org.apache.commons.collections4.functors.SwitchClosure	apcfs
+SwitchTransformer	org.apache.commons.collections4.functors.SwitchTransformer	apcfs
+TransformedPredicate	org.apache.commons.collections4.functors.TransformedPredicate	apcfs
+TransformerClosure	org.apache.commons.collections4.functors.TransformerClosure	apcfs
+TransformerPredicate	org.apache.commons.collections4.functors.TransformerPredicate	apcfs
+TruePredicate	org.apache.commons.collections4.functors.TruePredicate	apcfs
+UniquePredicate	org.apache.commons.collections4.functors.UniquePredicate	apcfs
+WhileClosure	org.apache.commons.collections4.functors.WhileClosure	apcfs
+org.apache.commons.collections4.iterators -- i	org.apache.commons.collections4.iterators.	apc
+_ org.apache.commons.collections4.iterators.	org.apache.commons.collections4.iterators.	apci
+_ org.apache.commons.collections4.iterators. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content org.apache.commons.collections4.iterators. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	apci
+a-c -- a	.	apci
+AbstractEmptyIterator	org.apache.commons.collections4.iterators.AbstractEmptyIterator	apcia
+AbstractEmptyMapIterator	org.apache.commons.collections4.iterators.AbstractEmptyMapIterator	apcia
+AbstractIteratorDecorator	org.apache.commons.collections4.iterators.AbstractIteratorDecorator	apcia
+AbstractListIteratorDecorator	org.apache.commons.collections4.iterators.AbstractListIteratorDecorator	apcia
+AbstractMapIteratorDecorator	org.apache.commons.collections4.iterators.AbstractMapIteratorDecorator	apcia
+AbstractOrderedMapIteratorDecorator	org.apache.commons.collections4.iterators.AbstractOrderedMapIteratorDecorator	apcia
+AbstractUntypedIteratorDecorator	org.apache.commons.collections4.iterators.AbstractUntypedIteratorDecorator	apcia
+ArrayIterator	org.apache.commons.collections4.iterators.ArrayIterator	apcia
+ArrayListIterator	org.apache.commons.collections4.iterators.ArrayListIterator	apcia
+CollatingIterator	org.apache.commons.collections4.iterators.CollatingIterator	apcia
+e-i -- e	.	apci
+EmptyIterator	org.apache.commons.collections4.iterators.EmptyIterator	apcie
+EmptyListIterator	org.apache.commons.collections4.iterators.EmptyListIterator	apcie
+EmptyMapIterator	org.apache.commons.collections4.iterators.EmptyMapIterator	apcie
+EmptyOrderedIterator	org.apache.commons.collections4.iterators.EmptyOrderedIterator	apcie
+EmptyOrderedMapIterator	org.apache.commons.collections4.iterators.EmptyOrderedMapIterator	apcie
+EntrySetMapIterator	org.apache.commons.collections4.iterators.EntrySetMapIterator	apcie
+EnumerationIterator	org.apache.commons.collections4.iterators.EnumerationIterator	apcie
+FilterIterator	org.apache.commons.collections4.iterators.FilterIterator	apcie
+FilterListIterator	org.apache.commons.collections4.iterators.FilterListIterator	apcie
+IteratorChain	org.apache.commons.collections4.iterators.IteratorChain	apcie
+IteratorEnumeration	org.apache.commons.collections4.iterators.IteratorEnumeration	apcie
+IteratorIterable	org.apache.commons.collections4.iterators.IteratorIterable	apcie
+l-p -- l	.	apci
+LazyIteratorChain	org.apache.commons.collections4.iterators.LazyIteratorChain	apcil
+ListIteratorWrapper	org.apache.commons.collections4.iterators.ListIteratorWrapper	apcil
+LoopingIterator	org.apache.commons.collections4.iterators.LoopingIterator	apcil
+LoopingListIterator	org.apache.commons.collections4.iterators.LoopingListIterator	apcil
+NodeListIterator	org.apache.commons.collections4.iterators.NodeListIterator	apcil
+ObjectArrayIterator	org.apache.commons.collections4.iterators.ObjectArrayIterator	apcil
+ObjectArrayListIterator	org.apache.commons.collections4.iterators.ObjectArrayListIterator	apcil
+ObjectGraphIterator	org.apache.commons.collections4.iterators.ObjectGraphIterator	apcil
+PeekingIterator	org.apache.commons.collections4.iterators.PeekingIterator	apcil
+PermutationIterator	org.apache.commons.collections4.iterators.PermutationIterator	apcil
+PushbackIterator	org.apache.commons.collections4.iterators.PushbackIterator	apcil
+r-u -- r	.	apci
+ReverseListIterator	org.apache.commons.collections4.iterators.ReverseListIterator	apcir
+SingletonIterator	org.apache.commons.collections4.iterators.SingletonIterator	apcir
+SingletonListIterator	org.apache.commons.collections4.iterators.SingletonListIterator	apcir
+TransformIterator	org.apache.commons.collections4.iterators.TransformIterator	apcir
+UniqueFilterIterator	org.apache.commons.collections4.iterators.UniqueFilterIterator	apcir
+UnmodifiableIterator	org.apache.commons.collections4.iterators.UnmodifiableIterator	apcir
+UnmodifiableListIterator	org.apache.commons.collections4.iterators.UnmodifiableListIterator	apcir
+UnmodifiableMapIterator	org.apache.commons.collections4.iterators.UnmodifiableMapIterator	apcir
+UnmodifiableOrderedMapIterator	org.apache.commons.collections4.iterators.UnmodifiableOrderedMapIterator	apcir
+org.apache.commons.collections4.keyvalue -- k	org.apache.commons.collections4.keyvalue.	apc
+_ org.apache.commons.collections4.keyvalue.	org.apache.commons.collections4.keyvalue.	apck
+_ org.apache.commons.collections4.keyvalue. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content org.apache.commons.collections4.keyvalue. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	apck
+AbstractKeyValue	org.apache.commons.collections4.keyvalue.AbstractKeyValue	apck
+AbstractMapEntry	org.apache.commons.collections4.keyvalue.AbstractMapEntry	apck
+AbstractMapEntryDecorator	org.apache.commons.collections4.keyvalue.AbstractMapEntryDecorator	apck
+DefaultKeyValue	org.apache.commons.collections4.keyvalue.DefaultKeyValue	apck
+DefaultMapEntry	org.apache.commons.collections4.keyvalue.DefaultMapEntry	apck
+MultiKey	org.apache.commons.collections4.keyvalue.MultiKey	apck
+TiedMapEntry	org.apache.commons.collections4.keyvalue.TiedMapEntry	apck
+UnmodifiableMapEntry	org.apache.commons.collections4.keyvalue.UnmodifiableMapEntry	apck
+org.apache.commons.collections4.list -- s	org.apache.commons.collections4.list.	apc
+_ org.apache.commons.collections4.list.	org.apache.commons.collections4.list.	apcs
+_ org.apache.commons.collections4.list. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content org.apache.commons.collections4.list. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	apcs
+AbstractLinkedList	org.apache.commons.collections4.list.AbstractLinkedList	apcs
+AbstractListDecorator	org.apache.commons.collections4.list.AbstractListDecorator	apcs
+AbstractSerializableListDecorator	org.apache.commons.collections4.list.AbstractSerializableListDecorator	apcs
+CursorableLinkedList	org.apache.commons.collections4.list.CursorableLinkedList	apcs
+FixedSizeList	org.apache.commons.collections4.list.FixedSizeList	apcs
+GrowthList	org.apache.commons.collections4.list.GrowthList	apcs
+LazyList	org.apache.commons.collections4.list.LazyList	apcs
+NodeCachingLinkedList	org.apache.commons.collections4.list.NodeCachingLinkedList	apcs
+PredicatedList	org.apache.commons.collections4.list.PredicatedList	apcs
+SetUniqueList	org.apache.commons.collections4.list.SetUniqueList	apcs
+TransformedList	org.apache.commons.collections4.list.TransformedList	apcs
+TreeList	org.apache.commons.collections4.list.TreeList	apcs
+UnmodifiableList	org.apache.commons.collections4.list.UnmodifiableList	apcs
+org.apache.commons.collections4.map -- m	org.apache.commons.collections4.map.	apc
+_ org.apache.commons.collections4.map.	org.apache.commons.collections4.map.	apcm
+_ org.apache.commons.collections4.map. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content org.apache.commons.collections4.map. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	apcm
+a-c -- a	.	apcm
+AbstractHashedMap	org.apache.commons.collections4.map.AbstractHashedMap	apcma
+AbstractInputCheckedMapDecorator	org.apache.commons.collections4.map.AbstractInputCheckedMapDecorator	apcma
+AbstractIterableMap	org.apache.commons.collections4.map.AbstractIterableMap	apcma
+AbstractLinkedMap	org.apache.commons.collections4.map.AbstractLinkedMap	apcma
+AbstractMapDecorator	org.apache.commons.collections4.map.AbstractMapDecorator	apcma
+AbstractOrderedMapDecorator	org.apache.commons.collections4.map.AbstractOrderedMapDecorator	apcma
+AbstractReferenceMap	org.apache.commons.collections4.map.AbstractReferenceMap	apcma
+AbstractSortedMapDecorator	org.apache.commons.collections4.map.AbstractSortedMapDecorator	apcma
+CaseInsensitiveMap	org.apache.commons.collections4.map.CaseInsensitiveMap	apcma
+CompositeMap	org.apache.commons.collections4.map.CompositeMap	apcma
+d-la -- d	.	apcm
+DefaultedMap	org.apache.commons.collections4.map.DefaultedMap	apcmd
+EntrySetToMapIteratorAdapter	org.apache.commons.collections4.map.EntrySetToMapIteratorAdapter	apcmd
+FixedSizeMap	org.apache.commons.collections4.map.FixedSizeMap	apcmd
+FixedSizeSortedMap	org.apache.commons.collections4.map.FixedSizeSortedMap	apcmd
+Flat3Map	org.apache.commons.collections4.map.Flat3Map	apcmd
+HashedMap	org.apache.commons.collections4.map.HashedMap	apcmd
+LazyMap	org.apache.commons.collections4.map.LazyMap	apcmd
+LazySortedMap	org.apache.commons.collections4.map.LazySortedMap	apcmd
+li-r -- l	.	apcm
+LinkedMap	org.apache.commons.collections4.map.LinkedMap	apcml
+ListOrderedMap	org.apache.commons.collections4.map.ListOrderedMap	apcml
+LRUMap	org.apache.commons.collections4.map.LRUMap	apcml
+MultiKeyMap	org.apache.commons.collections4.map.MultiKeyMap	apcml
+MultiValueMap	org.apache.commons.collections4.map.MultiValueMap	apcml
+PassiveExpiringMap	org.apache.commons.collections4.map.PassiveExpiringMap	apcml
+PredicatedMap	org.apache.commons.collections4.map.PredicatedMap	apcml
+PredicatedSortedMap	org.apache.commons.collections4.map.PredicatedSortedMap	apcml
+ReferenceIdentityMap	org.apache.commons.collections4.map.ReferenceIdentityMap	apcml
+ReferenceMap	org.apache.commons.collections4.map.ReferenceMap	apcml
+s-u -- s	.	apcm
+SingletonMap	org.apache.commons.collections4.map.SingletonMap	apcms
+StaticBucketMap	org.apache.commons.collections4.map.StaticBucketMap	apcms
+TransformedMap	org.apache.commons.collections4.map.TransformedMap	apcms
+TransformedSortedMap	org.apache.commons.collections4.map.TransformedSortedMap	apcms
+UnmodifiableEntrySet	org.apache.commons.collections4.map.UnmodifiableEntrySet	apcms
+UnmodifiableMap	org.apache.commons.collections4.map.UnmodifiableMap	apcms
+UnmodifiableOrderedMap	org.apache.commons.collections4.map.UnmodifiableOrderedMap	apcms
+UnmodifiableSortedMap	org.apache.commons.collections4.map.UnmodifiableSortedMap	apcms
+org.apache.commons.collections4.queue -- q	org.apache.commons.collections4.queue.	apc
+_ org.apache.commons.collections4.queue.	org.apache.commons.collections4.queue.	apcq
+_ org.apache.commons.collections4.queue. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content org.apache.commons.collections4.queue. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	apcq
+AbstractQueueDecorator	org.apache.commons.collections4.queue.AbstractQueueDecorator	apcq
+CircularFifoQueue	org.apache.commons.collections4.queue.CircularFifoQueue	apcq
+PredicatedQueue	org.apache.commons.collections4.queue.PredicatedQueue	apcq
+TransformedQueue	org.apache.commons.collections4.queue.TransformedQueue	apcq
+UnmodifiableQueue	org.apache.commons.collections4.queue.UnmodifiableQueue	apcq
+org.apache.commons.collections4.sequence -- u	org.apache.commons.collections4.sequence.	apc
+_ org.apache.commons.collections4.sequence.	org.apache.commons.collections4.sequence.	apcu
+_ org.apache.commons.collections4.sequence. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content org.apache.commons.collections4.sequence. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	apcu
+CommandVisitor	org.apache.commons.collections4.sequence.CommandVisitor	apcu
+DeleteCommand	org.apache.commons.collections4.sequence.DeleteCommand	apcu
+EditCommand	org.apache.commons.collections4.sequence.EditCommand	apcu
+EditScript	org.apache.commons.collections4.sequence.EditScript	apcu
+InsertCommand	org.apache.commons.collections4.sequence.InsertCommand	apcu
+KeepCommand	org.apache.commons.collections4.sequence.KeepCommand	apcu
+ReplacementsFinder	org.apache.commons.collections4.sequence.ReplacementsFinder	apcu
+ReplacementsHandler	org.apache.commons.collections4.sequence.ReplacementsHandler	apcu
+SequencesComparator	org.apache.commons.collections4.sequence.SequencesComparator	apcu
+org.apache.commons.collections4.set -- e	org.apache.commons.collections4.set.	apc
+_ org.apache.commons.collections4.set.	org.apache.commons.collections4.set.	apce
+_ org.apache.commons.collections4.set. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content org.apache.commons.collections4.set. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	apce
+AbstractSerializableSetDecorator	org.apache.commons.collections4.set.AbstractSerializableSetDecorator	apce
+AbstractSetDecorator	org.apache.commons.collections4.set.AbstractSetDecorator	apce
+AbstractSortedSetDecorator	org.apache.commons.collections4.set.AbstractSortedSetDecorator	apce
+CompositeSet	org.apache.commons.collections4.set.CompositeSet	apce
+ListOrderedSet	org.apache.commons.collections4.set.ListOrderedSet	apce
+MapBackedSet	org.apache.commons.collections4.set.MapBackedSet	apce
+PredicatedSet	org.apache.commons.collections4.set.PredicatedSet	apce
+PredicatedSortedSet	org.apache.commons.collections4.set.PredicatedSortedSet	apce
+TransformedSet	org.apache.commons.collections4.set.TransformedSet	apce
+TransformedSortedSet	org.apache.commons.collections4.set.TransformedSortedSet	apce
+UnmodifiableSet	org.apache.commons.collections4.set.UnmodifiableSet	apce
+UnmodifiableSortedSet	org.apache.commons.collections4.set.UnmodifiableSortedSet	apce

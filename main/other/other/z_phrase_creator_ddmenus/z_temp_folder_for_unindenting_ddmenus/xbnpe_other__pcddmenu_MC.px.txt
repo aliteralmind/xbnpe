@@ -11,35 +11,35 @@ FROM
 ...\xbnpe\tpkc\tpkc_bootstrap_phrases\zphrase_creator_pop_up_heirarchies\xbnpe_phrase_creator_popup_heirarchy_base.px.txt
 
 Phrase-creators: XBN-PhraseExpress -- Call 'xh'   .   zXbnpeCmdPopupRoot
-Phrase-creators: Other -- xho   .   xh
+Phrase-creators: Other -- o   .   xh
 *)
-(*    Other -- xhot   .   xho  *)
+(*    Other -- t   .   xho  *)
 Actions: Equal/not-equal to: qtn, nqn	.	xhoa
 Actions: Question-colon block (... ? ... : ...): qcb[1,2,3]	.	xhoa
-Block-start comments -- xhob	.	xho
+Block-start comments -- b	.	xho
 Action: zzfvbbsctest	zzfvbbsctest	xhob
-zREonFindVerifyBypassNextBlockStartCmt_M_rqsxReon	\\\{#insert zREonFindVerifyBypassNextBlockStartCmt_M_rqsxReon\\\}	xhob
+zREonFindVerifyBypassNextBlockStartCmt_M_rqsx (zvRQD_CMT_START_TXT)	\\\{#insert zREonFindVerifyBypassNextBlockStartCmt_M_rqsx\\\}	xhob
 zzCBStartSubstrSameLenAs_rqsx	\\\{#insert zzCBStartSubstrSameLenAs_rqsx\\\}	xhob
 zzREFindEOBlockStartCmtGTNextLine	\\\{#insert zzREFindEOBlockStartCmtGTNextLine\\\}	xhob
 zzREFindNextNonWSInCol0Left	\\\{#insert zzREFindNextNonWSInCol0Left\\\}	xhob
-zzREonFindVerifyBypassEmptyOkBSC_M_rqsxReon	\\\{#insert zzREonFindVerifyBypassEmptyOkBSC_M_rqsxReon\\\}	xhob
-Inline configuration-variables -- xhoi	.	xho
+zzREonFindVerifyBypassEmptyOkBSC_M_rqsx	\\\{#insert zzREonFindVerifyBypassEmptyOkBSC_M_rqsx\\\}	xhob
+Inline configuration-variables -- i	.	xho
 icvdemo[go]	(*actiononly=icvdemo*){#SETPHRASE -description zvACTN_NM -content icvdemo -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhoi
-zSetCBToNamedInlineCVWRqdValGTNxtLn_M_vnm	\\\{#insert zSetCBToNamedInlineCVWRqdValGTNxtLn_M_vnm\\\}	xhoi
-zSetCBToNamedInlineCfgValWESDfltGTNxtLn_M_vnmDflt	\\\{#insert zSetCBToNamedInlineCfgValWESDfltGTNxtLn_M_vnmDflt\\\}	xhoi
+zSetCBToNamedInlineCVWRqdValGTNxtLn_M_cvm (zvCFG_VAR_NAME)	\\\{#insert zSetCBToNamedInlineCVWRqdValGTNxtLn_M_cvm\\\}	xhoi
+zSetCBToNamedInlineCfgValWESDfltGTNxtLn_M_cvmDflt (zvES_VAL_DEFAULT)	\\\{#insert zSetCBToNamedInlineCfgValWESDfltGTNxtLn_M_cvmDflt\\\}	xhoi
 zSetCBToNamedOptInlineCfgValESDfltIsESGTNxtLn_M_vnmDflt	\\\{#insert zSetCBToNamedOptInlineCfgValESDfltIsESGTNxtLn_M_vnmDflt\\\}	xhoi
-zzErrDlgBadICVValue_M_cvn	\\\{#insert zzErrDlgBadICVValue_M_cvn\\\}	xhoi
-zzErrDlgMissingICV_M_cvn	\\\{#insert zzErrDlgMissingICV_M_cvn\\\}	xhoi
-zzErrDlgMissingRqdVal_M_cvn	\\\{#insert zzErrDlgMissingRqdVal_M_cvn\\\}	xhoi
+zzErrDlgBadICVValue_M_cvm	\\\{#insert zzErrDlgBadICVValue_M_cvm\\\}	xhoi
+zzErrDlgMissingICV_M_cvm	\\\{#insert zzErrDlgMissingICV_M_cvm\\\}	xhoi
+zzErrDlgMissingRqdVal_M_cvm	\\\{#insert zzErrDlgMissingRqdVal_M_cvm\\\}	xhoi
 Set variables -- v	.	xhoi
 zSetCB_TO_dflt	\\\{#insert zSetCB_TO_dflt\\\}	xhoiv
 zvES_VAL_DEFAULT_stES	\\\{#insert zvES_VAL_DEFAULT_stES\\\}	xhoiv
 zvOUTPUT_FILE_NAME_stOptInlineCVOrThisFileNm	\\\{#insert zvOUTPUT_FILE_NAME_stOptInlineCVOrThisFileNm\\\}	xhoiv
 zvOUT_DIR_stRqdInlineCV	\\\{#insert zvOUT_DIR_stRqdInlineCV\\\}	xhoiv
 zzSqBrkCURSORSlk2Bksp8	\\\{#insert zzSqBrkCURSORSlk2Bksp8\\\}	xho
-(*	  Spot-marks (x-mark) -- xhox   .   xho*)
-zXDown[2-4] -- xhoxd	\\\{#insert zXDown\\\}	xhox
-With paste -- xhoxdp	\\\{#insert zXDown\\\}	xhoxd
+(*	  Spot-marks (x-mark) -- x   .   xho*)
+zXDown[2-4] -- d	\\\{#insert zXDown\\\}	xhox
+With paste -- p	\\\{#insert zXDown\\\}	xhoxd
 zXDownPaste	\\\{#insert zXDownPaste\\\}	xhoxdp
 zXDownPastePreBrcktGTP	\\\{#insert zXDownPastePreBrcktGTP\\\}	xhoxdp
 zPasteXDown	\\\{#insert zPasteXDown\\\}	xhoxdp
@@ -49,8 +49,8 @@ zXDownDelete	\\\{#insert zXDownDelete\\\}	xhoxd
 zXDownLeft	\\\{#insert zXDownLeft\\\}	xhoxd
 zXDownRight	\\\{#insert zXDownRight\\\}	xhoxd
 zzSlkXDownEnter	\\\{#insert zzSlkXDownEnter\\\}	xhoxd
-zXUp[2-4] -- xhoxu	\\\{#insert zXUp\\\}	xhox
-With paste -- xhoxup	\\\{#insert zXDown\\\}	xhoxu
+zXUp[2-4] -- u	\\\{#insert zXUp\\\}	xhox
+With paste -- p	\\\{#insert zXDown\\\}	xhoxu
 zPasteXUp	\\\{#insert zPasteXUp\\\}	xhoxup
 zPasteXUpDelete	\\\{#insert zPasteXUpDelete\\\}	xhoxup
 zXUpPaste	\\\{#insert zXUpPaste\\\}	xhoxup
@@ -60,17 +60,17 @@ zXUpDelete	\\\{#insert zXUpDelete\\\}	xhoxu
 zXUpLeft	\\\{#insert zXUpLeft\\\}	xhoxu
 zXUpRight	\\\{#insert zXUpRight\\\}	xhoxu
 zzSlkXUpEnter	\\\{#insert zzSlkXUpEnter\\\}	xhoxu
-zXmark -- xhoxk	\\\{#insert zXmark\\\}	xhox
+zXmark -- k	\\\{#insert zXmark\\\}	xhox
 zXThenSelect	\\\{#insert zXThenSelect\\\}	xhoxk
 zXmarkCoded	\\\{#insert zXmarkCoded\\\}	xhoxk
 zXCddThenSelect	\\\{#insert zXCddThenSelect\\\}	xhoxk
-zXmarkMaybeCdd_M_cde	\\\{#insert zXmarkMaybeCdd_M_cde\\\}	xhoxk
+zXmarkMaybeCdd_M_cde (zvCDD_ES)	\\\{#insert zXmarkMaybeCdd_M_cde\\\}	xhoxk
 zXmarkPostGTP	\\\{#insert zXmarkPostGTP\\\}	xhoxk
 zXmarkThenGTP	\\\{#insert zXmarkThenGTP\\\}	xhoxk
 zXDownUp	\\\{#insert zXDownUp\\\}	xhox
-(*	  Spot-marks (y-mark) -- xhoy   .   xho*)
-zYDown[2-4] -- xhoxd	\\\{#insert zYDown\\\}	xhoy
-With paste -- xhoydp	\\\{#insert zYDown\\\}	xhoyd
+(*	  Spot-marks (y-mark) -- y   .   xho*)
+zYDown[2-4] -- d	\\\{#insert zYDown\\\}	xhoy
+With paste -- p	\\\{#insert zYDown\\\}	xhoyd
 zYDownPaste	\\\{#insert zYDownPaste\\\}	xhoydp
 zYDownPastePreBrcktGTP	\\\{#insert zYDownPastePreBrcktGTP\\\}	xhoydp
 zPasteYDown	\\\{#insert zPasteYDown\\\}	xhoydp
@@ -80,8 +80,8 @@ zYDownDelete	\\\{#insert zYDownDelete\\\}	xhoyd
 zYDownLeft	\\\{#insert zYDownLeft\\\}	xhoyd
 zYDownRight	\\\{#insert zYDownRight\\\}	xhoyd
 zzSlkYDownEnter	\\\{#insert zzSlkYDownEnter\\\}	xhoyd
-zYUp[2-4] -- xhoyu	\\\{#insert zYUp\\\}	xhoy
-With paste -- xhoyup	\\\{#insert zYDown\\\}	xhoyu
+zYUp[2-4] -- u	\\\{#insert zYUp\\\}	xhoy
+With paste -- p	\\\{#insert zYDown\\\}	xhoyu
 zPasteYUp	\\\{#insert zPasteYUp\\\}	xhoyup
 zPasteYUpDelete	\\\{#insert zPasteYUpDelete\\\}	xhoyup
 zYUpPaste	\\\{#insert zYUpPaste\\\}	xhoyup
@@ -91,15 +91,19 @@ zYUpDelete	\\\{#insert zYUpDelete\\\}	xhoyu
 zYUpLeft	\\\{#insert zYUpLeft\\\}	xhoyu
 zYUpRight	\\\{#insert zYUpRight\\\}	xhoyu
 zzSlkYUpEnter	\\\{#insert zzSlkYUpEnter\\\}	xhoyu
-zYmark -- xhoyk	\\\{#insert zYmark\\\}	xhoy
+zYmark -- k	\\\{#insert zYmark\\\}	xhoy
 zYThenSelect	\\\{#insert zYThenSelect\\\}	xhoyk
 zYmarkCoded	\\\{#insert zYmarkCoded\\\}	xhoyk
 zYCddThenSelect	\\\{#insert zYCddThenSelect\\\}	xhoyk
-zYmarkMaybeCdd_M_cde	\\\{#insert zYmarkMaybeCdd_M_cde\\\}	xhoyk
+zYmarkMaybeCdd_M_cde (zvCDD_ES)	\\\{#insert zYmarkMaybeCdd_M_cde\\\}	xhoyk
 zYmarkPostGTP	\\\{#insert zYmarkPostGTP\\\}	xhoyk
 zYmarkThenGTP	\\\{#insert zYmarkThenGTP\\\}	xhoyk
 zYDownUp	\\\{#insert zYDownUp\\\}	xhoy
-(* Math and sleep -- xhom*)
-Sleep -- xhoms	.	xhom
+(* Math and sleep -- m*)
+Sleep -- s	.	xhom
 zSlpXMillsForEveryYWBal_xy	\\\{#insert zSlpXMillsForEveryYWBal_xy\\\}	xhoms
 zSlpXMillsForEveryY_xy	\\\{#insert zSlpXMillsForEveryY_xy\\\}	xhoms
+(*    Key-presses -- k   .   xho
+Key-press combinations -- c   .   xhok
+Enter-then-... -- e   .   xhokc*)
+zEnterHome	\\\{#insert zEnterHome\\\}	xhokce

@@ -7,12 +7,13 @@ zPostVarTypeNameHtmlEscapeGnrcs	{#insert zXmark}{#insert zTMMoveL1Tag}{#insert z
 zvANG_stCB -*-	{#SETPHRASE -description zvANG -content {#INSERTCLIPBOARD} -autotext zvANG -folder ctvv_folder}	zvANG_stCB
 zzErrDlgBad1ParamAng_M_ang	{#MSGBOX -head ERROR -text ERROR ~~ The keep~which~parameter~part pre-option (currently zvANG='{#insert zvANG}') must be one of the following: [a,A,n,g,G,u] (see ml1kpsyn).{#insert zCancelProcNowPostTxt}}	zzErrDlgBad1ParamAng_M_ang
 zzLQQPlsPastePlsQLQ_M_ang	\{#insert zAscQQ}{#insert zzQPlsPastePlsQ_M_ang}\{#insert zAscQQ}	zzLQQPlsPastePlsQLQ_M_ang
-zzAlterPasteParamPartAtCrsr_M_cdeAngGpnPpnPnum -*-	(*See zSelCopyPrvNxtJFSigReturnToXCursor_M_gpnWyc*){#insert zXmarkMaybeCdd_M_cde}{#insert zzSelCopyParamPart_M_angGpnPpnPnum}{#insert zXUpDownOppositeDir_M_gpn}{#insert zParamInCBAlterPaste_M_lltrAng}{#insert zzB4EndCODETagGTPIfCdd_M_cde}	zzAlterPasteParamPartAtCrsr_M_cdeAngGpnPpnPnum
+zzAlterPasteParamPartAtCrsr_M_cdeAngGpnPpnPnum -*-	(*See zSelCopyPrvNxtJFSigReturnToXCursor_M_gpnWyc*){#insert zXmarkMaybeJDCdd_M_cde}{#insert zzSelCopyParamPart_M_angGpnPpnPnum}{#insert zXUpDownOppositeDir_M_gpn}{#insert zParamInCBAlterPaste_M_lltrAng}{#insert zzB4EndAtCodeRightIfCdd_M_cde}	zzAlterPasteParamPartAtCrsr_M_cdeAngGpnPpnPnum
 zzMl1syns	[a,A,n,g,G,u][[c,q,Q,o,O,s,S,+,_]]m[l,z][1~5,a~e,[g]n]	zzMl1syns
 zzNl1syns	n[l,z][1~5,a~e,[g]n]	zzNl1syns
 zzParamSetLCAltrCddIfUCFromCBCutL1c	{#insert zzParamSetLltrCddIfUFrmCB}{#insert zCutL1c}	zzParamSetLCAltrCddIfUCFromCBCutL1c
 zzPastePostGenericsHtmlEscapeIfG_M_ang	{#insert zTPPaste}{#insert zPostGenericsHtmlEscapeIfAG_M_ang}	zzPastePostGenericsHtmlEscapeIfG_M_ang
-zzPl1syn_M_yon -- Needs zvSYNTAX_ON	{#insert {#COND -if {#insert zvSYNTAX_ON} = on -then nclsyn -else z1slp}}	zzPl1syn_M_yon
+zzNl1syn_M_yon -- Needs zvSYNTAX_ON	{#insert {#COND -if {#insert zvSYNTAX_ON} = on -then nl1syn -else z1slp}}	zzNl1syn_M_yon
+zzMl1syn_M_yon -- Needs zvSYNTAX_ON	{#insert {#COND -if {#insert zvSYNTAX_ON} = on -then ml1syn -else z1slp}}	zzMl1syn_M_yon
 zzQPasteQ_M_ang	'{#insert zzPastePostGenericsHtmlEscapeIfG_M_ang}'	zzQPasteQ_M_ang
 zzQPlsPastePlsQ_M_ang	{#insert zAscQQ} + {#insert zzPastePostGenericsHtmlEscapeIfG_M_ang} + {#insert zAscQQ}	zzQPlsPastePlsQ_M_ang
 zzQQPasteQQHtmlEsc_M_ang	&quot;{#insert zzPastePostGenericsHtmlEscapeIfG_M_ang}&quot;	zzQQPasteQQHtmlEsc_M_ang

@@ -10,24 +10,24 @@ __XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a larg
 FROM xbnpe_phrase_creator_popup_heirarchy_base.px.txt:
 
 Phrase-creators: XBN-PhraseExpress -- Call 'xh'   .   zXbnpeCmdPopupRoot
-Phrase-creators: PhraseExpress -- xhp   .   xh
-Phrase creation and import-text file management -- xhpc   .   xhp
+Phrase-creators: PhraseExpress -- p   .   xh
+Phrase creation and import-text file management -- c   .   xhp
 *)
-Pex func-call phrase-creators (main actions ONLY) -- xhpcp	.	xhpc
-Functions -- xhpcpf	.	xhpcp
-Clipboard & external file/dirs -- xhpcpfx	.	xhpcpf
+Pex func-call phrase-creators (main actions ONLY) -- p	.	xhpc
+Functions -- f	.	xhpcp
+Clipboard & external file/dirs -- x	.	xhpcpf
 INSERTCLIPBOARD: icb	icb	xhpcpfx
 INSERTFILE: ifl	.	xhpcpfx
 OPEN: ofl	.	xhpcpfx
 OPENFOLDER: ofd	.	xhpcpfx
 PASTEOPTIONS: popt	popt	xhpcpfx
 SETCLIPBOARD: scb	scb	xhpcpfx
-Logic & numbers -- xhpcpfl (cil, cqd, lop, slp)	.	xhpcpf
+Logic & numbers -- l (cil, cqd, lop, slp)	.	xhpcpf
 CALC: cil	cil	xhpcpfl
 COND: cqd	cqd	xhpcpfl
 LOOP: lop	lop	xhpcpfl
 SLEEP: slp	slp	xhpcpfl
-Other -- xhpcpfo	.	xhpcpf
+Other -- o	.	xhpcpf
 BALLOON: bal	bal	xhpcpfo
 CURSOR: crs	crs	xhpcpfo
 FOCUS: fcs	fcs	xhpcpfo
@@ -35,7 +35,7 @@ INPUT: inp	inp	xhpcpfo
 MOUSEPOSITION: mps	mps	xhpcpfo
 MSGBOX: mbx	mbx	xhpcpfo
 SETPHRASE: stp	stp	xhpcpfo
-String -- xhpcpfs (gth, [lo,up]c, rpl, s[b,p]s, tri)	.	xhpcpf
+String -- s (gth, [lo,up]c, rpl, s[b,p]s, tri)	.	xhpcpf
 LENGTH: gth	.	xhpcpfs
 LOWER/UPPERCASE: loc, upc	.	xhpcpfs
 POS: sps	.	xhpcpfs

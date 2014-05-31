@@ -13,22 +13,22 @@ __XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a larg
    FROM xbnpe_phrase_creator_popup_heirarchy_base.px.txt:
 
 Phrase-creators: XBN-PhraseExpress -- xh   .   zXbnpeCmdPopupRoot
-   Phrase-creators: Java -- xhj   .   xh*)
-(*    Function signature -- xhjg   .   xhj*)
-(*       Entire signature -- xhjgg   .   xhjg*)
-(*       Return type -- xhjgt   .   xhjg*)
-(*       Function name -- xhjgn   .   xhjg*)
-(*       Parameters -- xhjgp   .   xhjg*)
-(*    JavaDoc -- xhjd   .   xhj*)
-(*       Links -- xhjdk   .   xhjd*)
-				Class-file link -- xhjdkc	.	xhjdk
+   Phrase-creators: Java -- j   .   xh*)
+(*    Function signature -- g   .   xhj*)
+(*       Entire signature -- g   .   xhjg*)
+(*       Return type -- t   .   xhjg*)
+(*       Function name -- n   .   xhjg*)
+(*       Parameters -- p   .   xhjg*)
+(*    JavaDoc -- d   .   xhj*)
+(*       Links -- k   .   xhjd*)
+				Class-file link -- c	.	xhjdk
 					Var: zvDIR_TORD	{#SETCLIPBOARD zvDIR_TORD}{#insert zzBalCBContainsVarNm}	xhjdkc
 						zvDIR_TORD_stL1c	\\\{#insert zvDIR_TORD_stL1c\\\}	xhjdkcd
 					zzClassFileLinkDispCNm_M_trdCnm	\\\{#insert zzClassFileLinkDispCNm_M_trdCnm\\\}	xhjdkc
 					zzClassFileLinkDispYmk_M_trdCnm	\\\{#insert zzClassFileLinkDispYmk_M_trdCnm\\\}	xhjdkc
 					zzClassFileLink_M_trdCnmDsp	\\\{#insert zzClassFileLink_M_trdCnmDsp\\\}	xhjdkc
-				Function/constructor link -- xhjdkf	.	xhjdk
-					1-plus parameter -- xhjdkfa	.	xhjdkf
+				Function/constructor link -- f	.	xhjdk
+					1-plus parameter -- a	.	xhjdkf
 						z1PPFuncLinkDispFNmWPrek_M_drnFnmPrmsPapPrk	\\\{#insert z1PPFuncLinkDispFNmWPrek_M_drnFnmPrmsPapPrk\\\}	xhjdkfa
 						z1PPFuncLinkDispFNm_M_drnFnmPrmsPap	\\\{#insert z1PPFuncLinkDispFNm_M_drnFnmPrmsPap\\\}	xhjdkfa
 						z1PPFuncLinkDispYmkPapES_M_drnFnmPrms	\\\{#insert z1PPFuncLinkDispYmkPapES_M_drnFnmPrms\\\}	xhjdkfa
@@ -42,13 +42,13 @@ Phrase-creators: XBN-PhraseExpress -- xh   .   zXbnpeCmdPopupRoot
 					z0PFuncLinkPapPPWPrek_M_fnmDrnDspPrk	\\\{#insert z0PFuncLinkPapPPWPrek_M_fnmDrnDspPrk\\\}	xhjdkf
 					z0PFuncLinkPapPP_M_fnmDrnDsp	\\\{#insert z0PFuncLinkPapPP_M_fnmDrnDsp\\\}	xhjdkf
 					z0PFuncLink_M_fnmPapDrnDsp	\\\{#insert z0PFuncLink_M_fnmPapDrnDsp\\\}	xhjdkf
-				Object link -- xhjdko
+				Object link -- o
 					zzObjLinkDsplyONm_M_onmDrn	\\\{#insert zzObjLinkDsplyONm_M_onmDrn\\\}	xhjdko
 					zzObjLinkDsplyYmk_M_onmDrn	\\\{#insert zzObjLinkDsplyYmk_M_onmDrn\\\}	xhjdko
 					zzObjLink_M_onmDrnDsp	\\\{#insert zzObjLink_M_onmDrnDsp\\\}	xhjdko
-				this/super constructor link -- xhjdkn	.	xhjdk
-					super-constructor -- xhjdknr	.	xhjdkn
-						0-params -- xhjdknrz	.	xhjdknr
+				this/super constructor link -- n	.	xhjdk
+					super-constructor -- r	.	xhjdkn
+						0-params -- z	.	xhjdknr
 							z0PSuperCnstrLinkDispCNmWPrek_M_cnmPrk	\\\{#insert z0PSuperCnstrLinkDispCNmWPrek_M_cnmPrk\\\}	xhjdknrz
 							z0PSuperCnstrLinkDispCNm_M_cnm	\\\{#insert z0PSuperCnstrLinkDispCNm_M_cnm\\\}	xhjdknrz
 							z0PSuperCnstrLinkDispQsprPapPP_M_cnm	\\\{#insert z0PSuperCnstrLinkDispQsprPapPP_M_cnm\\\}	xhjdknrz
@@ -59,8 +59,8 @@ Phrase-creators: XBN-PhraseExpress -- xh   .   zXbnpeCmdPopupRoot
 						z1PPSuperCnstrLinkDispQspr_M_prmsPap	\\\{#insert z1PPSuperCnstrLinkDispQspr_M_prmsPap\\\}	xhjdknr
 						z1PPSuperCnstrLinkPapES_M_prmsDsp	\\\{#insert z1PPSuperCnstrLinkPapES_M_prmsDsp\\\}	xhjdknr
 						z1PPSuperCnstrLinkWPrekDispCNm_M_prmsPapPrk	\\\{#insert z1PPSuperCnstrLinkWPrekDispCNm_M_prmsPapPrk\\\}	xhjdknr
-					this-constructor -- xhjdknh	.	xhjdkn
-						0-params -- xhjdknhz	.	xhjdknh
+					this-constructor -- h	.	xhjdkn
+						0-params -- z	.	xhjdknh
 							z0PThisCnstrLinkDispCNm_M_cnm	\\\{#insert z0PThisCnstrLinkDispCNm_M_cnm\\\}	xhjdknhz
 							z0PThisCnstrLinkDispQthsPapPP_M_cnm	\\\{#insert z0PThisCnstrLinkDispQthsPapPP_M_cnm\\\}	xhjdknhz
 							z0PThisCnstrLinkDispYmk_M_cnm	\\\{#insert z0PThisCnstrLinkDispYmk_M_cnm\\\}	xhjdknhz
@@ -68,7 +68,7 @@ Phrase-creators: XBN-PhraseExpress -- xh   .   zXbnpeCmdPopupRoot
 						z1PPThisCnstrLinkDispCNm_M_prmsPap	\\\{#insert z1PPThisCnstrLinkDispCNm_M_prmsPap\\\}	xhjdknh
 						z1PPThisCnstrLinkDispQths_M_prmsPap	\\\{#insert z1PPThisCnstrLinkDispQths_M_prmsPap\\\}	xhjdknh
 						z1PPThisCnstrLinkPapES_M_prmsDsp	\\\{#insert z1PPThisCnstrLinkPapES_M_prmsDsp\\\}	xhjdknh
-				Variables -- xhjdkv	.	xhjdk
+				Variables -- v	.	xhjdk
 					Var: zvDISPLAY	{#SETCLIPBOARD zvDISPLAY}{#insert zzBalCBContainsVarNm}	xhjdkv
 						zvDISPLAY_stCB	\\\{#insert zvDISPLAY_stCB\\\}	xhjdkvd
 						zvDISPLAY_stFncObjNm	\\\{#insert zvDISPLAY_stFncObjNm\\\}	xhjdkvd

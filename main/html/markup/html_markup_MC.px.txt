@@ -1,0 +1,27 @@
+ __XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+&nbsp;	&nbsp;	&n
+&nbsp;	&nbsp;	7n
+&nbsp; &nbsp;	(*starts w spc*) &nbsp; &nbsp; (*ends w spc*)	&n
+&nbsp; &nbsp;	(*starts w spc*) &nbsp; &nbsp; (*ends w spc*)	7n
+&nbsp; &nbsp; <I>(...)</I> {#insert zzHnbnbIParens}{#insert zYUp}	&n
+&nbsp; &nbsp; <I>(...)</I> {#insert zzHnbnbIParens}{#insert zYUp}	7n
+</P>\n\n<P> </P>{#insert zENTER2}<P>	,/p
+</P>\n\n<P> </P>{#insert zENTER2}<P>	</p
+<CODE>...</CODE>	<CODE>{#insert zYmark}</CODE>{#insert zYUp}	,c
+<CODE>...</CODE>	<CODE>{#insert zYmark}</CODE>{#insert zYUp}	<c
+<CODE>[paste]</CODE> <CODE>{#insert zTPPaste}</CODE>	,c
+<CODE>[paste]</CODE> <CODE>{#insert zTPPaste}</CODE>	<c
+<FONT SIZE='...'>	<FONT SIZE={#insert zAscQQ}{#insert zYmark}{#insert zAscQQ}>{#insert zYmark}</FONT>{#insert zYUp2}	,F
+<FONT SIZE='...'>	<FONT SIZE={#insert zAscQQ}{#insert zYmark}{#insert zAscQQ}>{#insert zYmark}</FONT>{#insert zYUp2}	<F
+<FONT SIZE='...'>[paste]	<FONT SIZE={#insert zAscQQ}{#insert zYmark}{#insert zAscQQ}>{#insert zTPPaste}</FONT>{#insert zYUp}	,F
+<FONT SIZE='...'>[paste]	<FONT SIZE={#insert zAscQQ}{#insert zYmark}{#insert zAscQQ}>{#insert zTPPaste}</FONT>{#insert zYUp}	<F
+<P style='font-size:...%'>...</P>	<P style={#insert zAscQQ}font-size:{#insert zYmark}%{#insert zAscQQ}>{#insert zYmark}</P>{#insert zYUp}	<p
+<P style='font-size:...%'>...</P>	<P style={#insert zAscQQ}font-size:{#insert zYmark}%{#insert zAscQQ}>{#insert zYmark}</P>{#insert zYUp}	<p
+<P>...</P>	<P>{#insert zYmark}</P>{#insert zYUp}	,p
+<P>...</P>	<P>{#insert zYmark}</P>{#insert zYUp}	<p
+<P><CODE>...	{#insert zzPCdd}{#insert zYUp}	,p
+<P><CODE>...	{#insert zzPCdd}{#insert zYUp}	<p
+<P><I>...	<P><I>{#insert zYmark}</I></P>{#insert zYUp} ,p
+<P><I>...	<P><I>{#insert zYmark}</I></P>{#insert zYUp} <p
+<P>[paste]</P> <P>{#insert zTPPaste}</P>	,p
+<P>[paste]</P> <P>{#insert zTPPaste}</P>	<p

@@ -1,0 +1,1 @@
+iwt[root,sub,xo][x]=overall template AND functions ([root]=extends xbn.lang.IW, [xo]=extends x.l.XBNObjectable), iwft[n[x],x]=function tpml, iwtpq[x]=prepare replacement sequence for func params   //  [n]=multiple funcs, [x]=example input  //  javasyn

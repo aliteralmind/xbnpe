@@ -1,0 +1,87 @@
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools,written in PhraseExpress,using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License,or (at your option) any later version.  //  This library is distributed in the hope that it will be useful,but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not,write to the Free Software Foundation,Inc.,51 Franklin Street,Fifth Floor,Boston,MA 02110-1301 USA*)		(*Two tabs plus this comment,to force this phrase to be (a) imported,and (b) with NO autotext*)
+(*_ xf -- com.github.xbn.* function directory   .   xf*)
+number -- n	.	xf
+CrashIfIntIs -- n	.	xfn
+greaterThan(i,i,s,s,s,o) -- g	CrashIfIntIs.greaterThan({#insert zYcY}, {#insert zXcXcX}, {#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xfnn
+greaterThanOrReturnCause(i,i,s,s,s,o,rx)	CrashIfIntIs.greaterThanOrReturnCause({#insert zYcY}, {#insert zXcXcX}, {#insert zYmark}, {#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xfnng
+greaterThanOE(i,i,s,s,s,o) -- r	CrashIfIntIs.greaterThanOE({#insert zYcY}, {#insert zXcXcX}, {#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xfnn
+greaterThanOEOrReturnCause(i,i,s,s,s,o,rx)	CrashIfIntIs.greaterThanOEOrReturnCause({#insert zYcY}, {#insert zXcXcX}, {#insert zYmark}, {#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xfnnr
+lessThan(i,i,s,s,s,o) -- l	CrashIfIntIs.lessThan({#insert zYcY}, {#insert zXcXcX}, {#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xfnn
+lessThanOrReturnCause(i,i,s,s,s,o,rx)	CrashIfIntIs.lessThanOrReturnCause({#insert zYcY}, {#insert zXcXcX}, {#insert zYmark}, {#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xfnnl
+lessThanOE(i,i,s,s,s,o) -- e	CrashIfIntIs.lessThanOE({#insert zYcY}, {#insert zXcXcX}, {#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xfnn
+lessThanOEOrReturnCause(i,i,s,s,s,o,rx)	CrashIfIntIs.lessThanOEOrReturnCause({#insert zYcY}, {#insert zXcXcX}, {#insert zYmark}, {#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xfnne
+lessThanZero(i,s,s,o) -- z	CrashIfIntIs.lessThanZero({#insert zYmark}, {#insert zXcXcY});{#insert zLeftPostBrktSelectWord1}	xfnn
+lessThanZeroOrReturnCause(i,s,s,o,rx)	CrashIfIntIs.lessThanZeroOrReturnCause({#insert zYmark}, {#insert zXcXcY}, {#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xfnnz
+VIntInRange -- i  (new ....Cfg().callingFunc(s))  	new VIntInRange.Cfg().callingFunc({#insert zXmark})	xfn
+cib(i,s) (all prefixed with '.build()')	.build().cib({#insert zYcX});{#insert zLeftPostBrktSelectWord1}	xfni
+cibRange(i,i,s,s)	.build().cibRange;{#insert zLeftPostBrktSelectWord1}	xfni
+cibIntObject(i,s)	.build().cibIntObject;{#insert zLeftPostBrktSelectWord1}	xfni
+cibIntElement(i,s,i,s)	.build().cibIntElement;{#insert zLeftPostBrktSelectWord1}	xfni
+Config -- g (no semi-colon, follow with cib*)	.	xfni
+.extraInfo(O)	.extraInfo({#insert zYmark})	xfnig
+.invert(b)	.invert({#insert zYmark})	xfnig
+.max(i)	.max({#insert zYmark})	xfnig
+.min(i)	.min({#insert zYmark})	xfnig
+.minMax(i)	.minMax({#insert zYmark})	xfnig
+.minMax(i,i)	.minMax({#insert zYxY})	xfnig
+.nullOk(b)	.nullOk({#insert zYmark})	xfnig
+.range(iir)	.range({#insert zYmark})	xfnig
+y- .build()	.build()	xfnig
+z- .chainID(o)	.chainID({#insert zYmark})	xfnig
+Config: Inclusive/exclusive -- l	.	xfni
+.minInclusive(i)	.minInclusive({#insert zYmark})	xfnil
+.maxInclusive(i)	.maxInclusive({#insert zYmark})	xfnil
+.minExclusive(i)	.minExclusive({#insert zYmark})	xfnil
+.maxExclusive(i)	.maxExclusive({#insert zYmark})	xfnil
+.minMaxInclusive(i,i)	.minMaxInclusive({#insert zYxY})	xfnil
+.minInMaxExclusive(i,i)	.minInMaxExclusive({#insert zYxY})	xfnil
+.minExMaxInclusive(i,i)	.minExMaxInclusive({#insert zYxY})	xfnil
+.minMaxExclusive(i,i)	.minMaxExclusive({#insert zYxY})	xfnil
+VLengthInRange -- l  (new ....Cfg().callingFunc(s))  	new VLengthInRange.Cfg().callingFunc({#insert zXmark})	xfn
+cib as element -- e	.	xfnl
+cibArrayTIAElementLength(E[],s,i,s)	.cibArrayTIAElementLength({#insert zYcX}, {#insert zYcX});{#insert zLeftPostBrktSelectWord1}	xfnle
+cibCollectionTIAElementSize(cll,s,i,s)	.cibCollectionTIAElementSize({#insert zYcX}, {#insert zYcX});{#insert zLeftPostBrktSelectWord1}	xfnle
+cibElementLength(i,s,i,s)	.cibElementLength({#insert zYcX}, {#insert zYcX});{#insert zLeftPostBrktSelectWord1}	xfnle
+cibStringElementLength(o,s,i,s)	.cibStringElementLength({#insert zYcX}, {#insert zYcX});{#insert zLeftPostBrktSelectWord1}	xfnle
+cib(i,s) (all prefixed with '.build()')	.build().cib({#insert zYcX});{#insert zLeftPostBrktSelectWord1}	xfnl
+cibArray(E[],s)	.build().cibArray({#insert zYcX});{#insert zLeftPostBrktSelectWord1}	xfnl
+cibCollection(cll,s)	.build().cibCollection({#insert zYcX});{#insert zLeftPostBrktSelectWord1}	xfnl
+cibContainer(i,s)	.build().cibContainer({#insert zYcX});{#insert zLeftPostBrktSelectWord1}	xfnl
+cibPArray(o,s)	.build().cibPArray({#insert zYcX});{#insert zLeftPostBrktSelectWord1}	xfnl
+cibString(o,s)	.build().cibString({#insert zYcX});{#insert zLeftPostBrktSelectWord1}	xfnl
+Config -- g (no semi-colon, follow with cib*)	.	xfnl
+.extraInfo(O)	.extraInfo({#insert zXmark})	xfnlg
+.invert(b)	.invert({#insert zYmark})	xfnlg
+.max(i)	.max({#insert zYmark})	xfnlg
+.min(i)	.min({#insert zYmark})	xfnlg
+.minMax(i)	.minMax({#insert zYmark})	xfnlg
+.minMax(i,i)	.minMax({#insert zYcY})	xfnlg
+.nullOk(b)	.nullOk({#insert zYmark})	xfnlg
+.range(lir)	.range({#insert zYmark})	xfnlg
+y- .build()	.build()	xfnlg
+z- .chainID(o)	.chainID({#insert zYmark})	xfnlg
+VIndexInRange -- x  (new ....Cfg().callingFunc(s))  	new VIndexInRange.Cfg().callingFunc({#insert zXmark})	xfn
+cib(i,s) (all prefixed with '.build()')	.build().cib({#insert zYcX});{#insert zLeftPostBrktSelectWord1}	xfnx
+cibIndexObject(i,s)	.build().cibIndexObject({#insert zYcX});{#insert zLeftPostBrktSelectWord1}	xfnx
+cibIndexElement(i,s,i,s)	.build().cibIndexElement({#insert zYcX}, {#insert zYcX});{#insert zLeftPostBrktSelectWord1}	xfnx
+cibRange(i,i,s,s)	.build().cibRange({#insert zYcY}, {#insert zXcX});{#insert zLeftPostBrktSelectWord1}	xfnx
+Config -- g (no semi-colon, follow with cib*)	.	xfnx
+extraInfo(O)	.extraInfo({#insert zXmark})	xfnxg
+invert(b)	.invert({#insert zYmark})	xfnxg
+min(i)	.min({#insert zYmark})	xfnxg
+nullOk(b)	.nullOk({#insert zYmark})	xfnxg
+range(xir)	.range({#insert zYmark})	xfnxg
+y- .build()	.build()	xfnxg
+z- .chainID(o)	.chainID({#insert zYmark})	xfnxg
+Config for... -- o	.	xfnx
+forArrayLength(E[])	.forArrayLength({#insert zYmark})	xfnxo
+forCollectionSize(cll)	.forCollectionSize({#insert zYmark})	xfnxo
+forLength(i)	.forLength({#insert zYmark})	xfnxo
+forPArrayLength(o)	.forPArrayLength({#insert zYmark})	xfnxo
+forStringLength(o)	.forStringLength({#insert zYmark})	xfnxo
+forMinAnd... -- a	.	xfnxo
+forMinAndArrayLength(i,E[])	.forMinAndArrayLength({#insert zYcY})	xfnxoa
+forMinAndCollectionSize(i,cll)	.forMinAndCollectionSize({#insert zYcY})	xfnxoa
+forMinAndLength(i,i)	.forMinAndLength({#insert zYcY})	xfnxoa
+forMinAndPArrayLength(i,o)	.forMinAndPArrayLength({#insert zYcX})	xfnxoa
+forMinAndStringLength(i,o)	.forMinAndStringLength({#insert zYcX})	xfnxoa

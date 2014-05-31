@@ -1,0 +1,70 @@
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+(*
+   *DUPLICATE* this document, unindent every line in it, then import it with the following settings:
+      - No prefix
+      - Manual confirmation
+      - Assign the key-command (hotkey) to the first phrase
+   **All these phrases must be manually maintained.
+*)
+(*
+   Required by phrase-creator-ddmenu-utils...START
+      PM_DDMENU_DIR_ID=tpkc
+   Required by phrase-creator-ddmenu-utils...END
+*)
+(*
+   FROM xbnpe_phrase_creator_popup_heirarchy_base.px.txt:
+Phrase-creators: Search & replace -- s   .   xh
+   Phrase-creators: TextPad -- t   .   xh
+*)
+		TextPad-bootstrap utilities -- b	.	xht
+			Var: zvBTSTRP_PHRS_NM (abbrv: 'bspm')	{#SETCLIPBOARD zvBTSTRP_PHRS_NM}{#insert zzBalCBContainsVarNm}	xhtb
+			zTPBtstrpEscKC_M_bspm (zvBTSTRP_PHRS_NM)	\\\{#insert zTPBtstrpEscKC_M_bspm\\\}	xhtb
+			zTPBtstrpEscPhrsNm_M_bspm	\\\{#insert zTPBtstrpEscPhrsNm_M_bspm\\\}	xhtb
+			zTPBtstrpTPKeysPhrsNm_M_bspm	\\\{#insert zTPBtstrpTPKeysPhrsNm_M_bspm\\\}	xhtb
+			zTPBtstrpTPKeys_M_bspm	\\\{#insert zTPBtstrpTPKeys_M_bspm\\\}	xhtb
+		Preferences Dialog -- p	.	xht
+			Assign then go back to command -- a	.	xhtp
+				zAssignKCInFieldGBTCmdFast	\\\{#insert zAssignKCInFieldGBTCmdFast\\\}	xhtpa
+				zAssignKCInFieldGBTCmdMedium	\\\{#insert zAssignKCInFieldGBTCmdMedium\\\}	xhtpa
+				zAssignKCInFieldGBTCmdSlow	\\\{#insert zAssignKCInFieldGBTCmdSlow\\\}	xhtpa
+			Assign then go to cmd-list top -- m	.	xhtpa
+				zAssignKCInFieldGTCmdTopFast	\\\{#insert zAssignKCInFieldGTCmdTopFast\\\}	xhtpam
+				zAssignKCInFieldGTCmdTopMedium	\\\{#insert zAssignKCInFieldGTCmdTopMedium\\\}	xhtpam
+				zAssignKCInFieldGTCmdTopSlow	\\\{#insert zAssignKCInFieldGTCmdTopSlow\\\}	xhtpam
+			Assign then go to cat-list top -- t	.	xhtpa
+				zAssignKCInFieldGTKBCatTopFast	\\\{#insert zAssignKCInFieldGTKBCatTopFast\\\}	xhtpat
+				zAssignKCInFieldGTKBCatTopMedium	\\\{#insert zAssignKCInFieldGTKBCatTopMedium\\\}	xhtpat
+				zAssignKCInFieldGTKBCatTopSlow	\\\{#insert zAssignKCInFieldGTKBCatTopSlow\\\}	xhtpat
+			Open dialog (then) -- o	.	xhtp
+				zFcsTPPrefsDlgOpen	\\\{#insert zFcsTPPrefsDlgOpen\\\}{#insert zPrefsCloseYNPrompt}	xhtpo
+				zTPPrefsOpenGTKBCatTop	\\\{#insert zTPPrefsOpenGTKBCatTop\\\}{#insert zPrefsCloseYNPrompt}	xhtpo
+				zzOpenPrefsDlgGotoCmdListTop_M_catl (zvCAT_ABRV_LC)	\\\{#insert zzOpenPrefsDlgGotoCmdListTop_M_catl\\\}{#insert zPrefsCloseYNPrompt}	xhtpo
+				zzOpenPrefsDlgGotoCmdListTop_M_cmd1 (zvCMD_ABRV_LC)	\\\{#insert zzOpenPrefsDlgGotoCmdListTop_M_cmd1\\\}{#insert zPrefsCloseYNPrompt}	xhtpo
+				zzTPPrefsDlgGotoCmdListTopFromCatListTop_M_catl \\\{#insert zzTPPrefsDlgGotoCmdListTopFromCatListTop_M_catl\\\}	xhtpo
+				zGBTCmdFromKCField	\\\{#insert zGBTCmdFromKCField\\\}{#insert zPrefsCloseYNPrompt}	xhtpo
+			zGTKBCatTopFromCmd	\\\{#insert zGTKBCatTopFromCmd\\\}	xhtp
+			zTPPrefsClose	\\\{#insert zTPPrefsClose\\\}	xhtp
+		TextPad built-in commands (TPKC) project -- k	.	xht
+			Directories (primary only) -- d	.	xhtk
+				zXPROOT_DIR_AG_tpkc	\\\{#insert zXPROOT_DIR_AG_tpkc\\\}	xhtkd
+				zXPROOT_DIR_AG_tpkc_M_bvm	\\\{#insert zXPROOT_DIR_AG_tpkc_M_bvm\\\}	xhtkd
+				zXPROOT_DIR_AG_tpkcNonBootstrapCmdPhrss	\\\{#insert zXPROOT_DIR_AG_tpkcNonBootstrapCmdPhrss\\\}	xhtkd
+				zXPROOT_DIR_tpkc	\\\{#insert zXPROOT_DIR_tpkc\\\}	xhtkd
+				zXPROOT_DIR_tpkcBuild	\\\{#insert zXPROOT_DIR_tpkcBuild\\\}	xhtkd
+				zXPROOT_DIR_tpkcDropDownMenu	\\\{#insert zXPROOT_DIR_tpkcDropDownMenu\\\}	xhtkd
+				zXPROOT_DIR_tpkcRawCfgGlobal	\\\{#insert zXPROOT_DIR_tpkcRawCfgGlobal\\\}	xhtkd
+				zXPROOT_DIR_tpkcUsrCfgOutputBase_M_tudnBmvt	\\\{#insert zXPROOT_DIR_tpkcUsrCfgOutputBase_M_tudnBmvt\\\}	xhtkd
+				zXPROOT_DIR_tpkcUsrCfgParent	\\\{#insert zXPROOT_DIR_tpkcUsrCfgParent\\\}	xhtkd
+				zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn	\\\{#insert zXPROOT_DIR_tpkcUsrCfgUserBase_M_tudn\\\}	xhtkd
+				zXPROOT_DIR_tpkcVrsnSpcfcFls	\\\{#insert zXPROOT_DIR_tpkcVrsnSpcfcFls\\\}	xhtkd
+			newnbskc	(*actiononly=newnbskc*){#SETPHRASE -description zvACTN_NM -content newnbskc -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhtk
+			testtpbstpkc: zTestAllTPKCTextPadBootstraps	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content testtpbstpkc:zTestAllTPKCTextPadBootstraps -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhtk
+			testtpbsxkptpkc: zTestAllXkpTpkcTPBootstraps	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content testtpbsxkptpkc:zTestAllXkpTpkcTPBootstraps -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhtk
+			tpaclcibkcs	(*actiononly=tpaclcibkcs*){#SETPHRASE -description zvACTN_NM -content tpaclcibkcs -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhtk
+			tpaclwarnkccount	(*actiononly=tpaclwarnkccount*){#SETPHRASE -description zvACTN_NM -content tpaclwarnkccount -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhtk
+			tpkcudcb: zzCopyTpkcUserDirPath	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content tpkcudcb:zzCopyTpkcUserDirPath -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhtk
+			vtpkcuds: zzVerifyTpkcUserDirStructure	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content vtpkcuds:zzVerifyTpkcUserDirStructure -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhtk
+(*    Other -- t   .   xht*)
+			zFocusOnTextPadWindow	\\\{#insert zFocusOnTextPadWindow\\\}	xhtt
+			zEscThenFcsTP	\\\{#insert zEscThenFcsTP\\\}	xhtt
+			zEscThenFcsTPSlk	\\\{#insert zEscThenFcsTPSlk\\\}	xhtt

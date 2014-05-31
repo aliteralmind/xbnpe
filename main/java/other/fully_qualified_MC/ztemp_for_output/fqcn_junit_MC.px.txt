@@ -1,0 +1,76 @@
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+org.junit. -- j	org.junit.	or
+_ org.junit.	org.junit.	orj
+_ org.junit. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content org.junit. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	orj
+After	org.junit.After	orj
+AfterClass	org.junit.AfterClass	orj
+Assert	org.junit.Assert	orj
+Assume	org.junit.Assume	orj
+Before	org.junit.Before	orj
+BeforeClass	org.junit.BeforeClass	orj
+ComparisonFailure	org.junit.ComparisonFailure	orj
+Ignore	org.junit.Ignore	orj
+Rule	org.junit.Rule	orj
+Test	org.junit.Test	orj
+org.junit.matchers -- m	org.junit.matchers.	orj
+_ org.junit.matchers.	org.junit.matchers.	orjm
+_ org.junit.matchers. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content org.junit.matchers. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	orjm
+JUnitMatchers	org.junit.matchers.JUnitMatchers	orjm
+org.junit.rules -- r	org.junit.rules.	orj
+_ org.junit.rules.	org.junit.rules.	orjr
+_ org.junit.rules. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content org.junit.rules. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	orjr
+ErrorCollector	org.junit.rules.ErrorCollector	orjr
+ExpectedException	org.junit.rules.ExpectedException	orjr
+ExternalResource	org.junit.rules.ExternalResource	orjr
+MethodRule	org.junit.rules.MethodRule	orjr
+TemporaryFolder	org.junit.rules.TemporaryFolder	orjr
+TestName	org.junit.rules.TestName	orjr
+TestWatchman	org.junit.rules.TestWatchman	orjr
+Timeout	org.junit.rules.Timeout	orjr
+Verifier	org.junit.rules.Verifier	orjr
+org.junit.runner -- u	org.junit.runner.	orj
+_ org.junit.runner.	org.junit.runner.	orju
+_ org.junit.runner. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content org.junit.runner. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	orju
+Computer	org.junit.runner.Computer	orju
+Describable	org.junit.runner.Describable	orju
+Description	org.junit.runner.Description	orju
+JUnitCore	org.junit.runner.JUnitCore	orju
+Request	org.junit.runner.Request	orju
+Result	org.junit.runner.Result	orju
+Runner	org.junit.runner.Runner	orju
+RunWith	org.junit.runner.RunWith	orju
+org.junit.runner.manipulation -- m	org.junit.runner.manipulation.	orjr
+_ org.junit.runner.manipulation.	org.junit.runner.manipulation.	orjrm
+_ org.junit.runner.manipulation. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content org.junit.runner.manipulation. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	orjrm
+Filter	org.junit.runner.manipulation.Filter	orjrm
+Filterable	org.junit.runner.manipulation.Filterable	orjrm
+NoTestsRemainException	org.junit.runner.manipulation.NoTestsRemainException	orjrm
+Sortable	org.junit.runner.manipulation.Sortable	orjrm
+Sorter	org.junit.runner.manipulation.Sorter	orjrm
+org.junit.runner.notification -- n	org.junit.runner.notification.	orjr
+_ org.junit.runner.notification.	org.junit.runner.notification.	orjrn
+_ org.junit.runner.notification. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content org.junit.runner.notification. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	orjrn
+Failure	org.junit.runner.notification.Failure	orjrn
+RunListener	org.junit.runner.notification.RunListener	orjrn
+RunNotifier	org.junit.runner.notification.RunNotifier	orjrn
+StoppedByUserException	org.junit.runner.notification.StoppedByUserException	orjrn
+org.junit.runners -- s	org.junit.runners.	orj
+_ org.junit.runners.	org.junit.runners.	orjs
+_ org.junit.runners. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content org.junit.runners. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	orjs
+AllTests	org.junit.runners.AllTests	orjs
+BlockJUnit4ClassRunner	org.junit.runners.BlockJUnit4ClassRunner	orjs
+JUnit4	org.junit.runners.JUnit4	orjs
+Parameterized	org.junit.runners.Parameterized	orjs
+ParentRunner	org.junit.runners.ParentRunner	orjs
+Suite	org.junit.runners.Suite	orjs
+org.junit.runners.model -- m	org.junit.runners.model.	orjs
+_ org.junit.runners.model.	org.junit.runners.model.	orjsm
+_ org.junit.runners.model. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content org.junit.runners.model. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	orjsm
+FrameworkField	org.junit.runners.model.FrameworkField	orjsm
+FrameworkMember	org.junit.runners.model.FrameworkMember	orjsm
+FrameworkMethod	org.junit.runners.model.FrameworkMethod	orjsm
+InitializationError	org.junit.runners.model.InitializationError	orjsm
+RunnerBuilder	org.junit.runners.model.RunnerBuilder	orjsm
+RunnerScheduler	org.junit.runners.model.RunnerScheduler	orjsm
+Statement	org.junit.runners.model.Statement	orjsm
+TestClass	org.junit.runners.model.TestClass	orjsm

@@ -17,8 +17,9 @@ __XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a larg
    Required by phrase-creator-ddmenu-utils...END
 *)
 zDirFileSaveClose_M_dirFnm -- Needs zvDIRECTORY, zvFILE_NAME	{#insert zDirFileSave_M_dirFnm}{#insert zFcsTPFileClose}	zDirFileSaveClose_M_dirFnm
-zzDirFileSavePreConfirm_M_dirFnm	{#insert zFileSave1750slp}{#insert zzDirKslpEtrKslpFNm}	zzDirFileSavePreConfirm_M_dirFnm
+zzDirFileSavePreConfirm_M_dirFnm	{#insert zFileSave1750slp}{#insert zzDirKslpEtrIfNotESKslpFNm}	zzDirFileSavePreConfirm_M_dirFnm
 zDirFileSave_M_dirFnm -- Needs zvDIRECTORY, zvFILE_NAME	{#insert zzDirFileSavePreConfirm_M_dirFnm}{#insert zSlkEtr}{#sleep 100}{#insert zFocusOnTextPadWindow}	zDirFileSave_M_dirFnm
 zFileCloseDiscardChanges -(**)- See doc\other.px.txt	(*Expects the save-changes yes/no/cancel dialog. This clicks No.*){#insert zFcsTPFileClose}{#insert zApNN}(*<--No button*)	zFileCloseDiscardChanges
 zFileSaveClose -- Assumes file's SECOND or subsequent save (no save dlg)	{#insert zFcsTPFileSave}{#insert zFcsTPFileClose}	zFileSaveClose
-zzDirKslpEtrKslpFNm	{#insert zvDIRECTORY}{#insert zSlkEtrSlk}{#insert zvFILE_NAME}	zzDirKslpEtrKslpFNm
+zzDirKslpEtrIfNotESKslpFNm	{#insert {#COND -if {#LENGTH {#insert zvDIRECTORY}} = 0 -then z1slp -else zzDirSlkEtrSlk}}{#insert zvFILE_NAME}	zzDirKslpEtrIfNotESKslpFNm
+zzDirSlkEtrSlk	{#insert zvDIRECTORY}{#insert zSlkEtrSlk}	zzDirSlkEtrSlk

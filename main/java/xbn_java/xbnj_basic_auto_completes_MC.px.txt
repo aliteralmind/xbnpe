@@ -1,0 +1,27 @@
+ __XBN-PhraseExpress is released under the LGPL 2.1	(* <--**MUST_HAVE SPACE BEFORE UNDERSCORES, in this file only**  --XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+--thi -- '--this must be implmntd as <CODE>prot...' ('_4prot' funcs)	--this must be implemented as <CODE>protected</CODE> with the name &quot;<CODE>{#insert zzSetCddLltrToESGpnToNext}{#insert zXPasteAltrFNmFrom1PrvNxtJFSigAtX_M_cdeGpnWycAltr}{#BKSP -count 6}</CODE>&quot;.	--thi
+@author  Copyright (C) 2013 Jeff Epstein...	{#insert zzXBNAuthorTagNoEnter}	@au
+@author  Copyright (C) 2013 Jeff Epstein...	{#insert zzXBNAuthorTagNoEnter}	2au
+ObjectCopyOrCIBad.<...> , then add import	{#insert zzOcocibOrigInCB}{#insert zzAddImprtForOcocib}	Objectc
+ObjectCopyOrCIBad.<...>.get([paste], ....class)	{#insert zzOcocibOrigInCB}	Objectc
+ObjectCopyOrCIBad.<[paste]>, then add import	{#insert zzOcocibGnrcInCB}{#insert zzAddImprtForOcocib}	Objectc
+ObjectCopyOrCIBad.<[paste]>.get(..., [paste].class)	{#insert zzOcocibGnrcInCB}	Objectc
+ocg -- ObjectCopyOrCIBad.<...>get(...) for generified types (template)	{#insert zzOcicibForGnrfdType}	Objectc
+ocg -- ObjectCopyOrCIBad.<...>get(...) for generified types (template)	{#insert zzOcicibForGnrfdType}	ocg
+ocgm -- ocg, add import for ObjectCopyOrCIBad	{#insert zzOcicibForGnrfdType}{#insert zzAddImprtForOcocib}	ocg
+ocgx -- ocg example input	ValidateValue Integer vvi to_copy.getCondition(){#BALLOON -title ocgx -text Erased type, generic type, variable name, original variable. All must be single words, except for the original variable, which may not contain any spaces.}	ocg
+pub -- Simple class template w/ XBN-Java license-header and @author	{#insert zzInsXBNJFileLicenseHeader}{#insert zzzPubClassPreAuthorSetCnmToCB}{#insert zzEnterXBNAuthorTag}{#insert zzzPubClassPostAuthor_M_cnm}	pub
+pub -- Simple interface template w/ XBN-Java license, @author, and iwt-input	{#insert zzInsXBNJFileLicenseHeader}{#insert zzzPubClassPreAuthorSetCnmToCB}{#insert zzEnterXBNAuthorTag}{#insert zzzInterfacePostAuthor}/*{#insert zENTER}---iwt{#insert zYmark} input---{#insert zENTER}{#insert zYmark} {#insert zvFOBJ_NAME} {#insert zYmark}{#insert zENTER} */{#insert zENTER}{#insert zXUp}	pub
+).appent( (also 0.a)	).appent(	).a
+).appent( for ' + ' [prompt times] (also 0.a)	{#insert zzzClsPrnDtApndForNxtPromptPlusesXbn}	).a
+).appent(' (also 0.a)	).appent({#insert zAscQQ}	).a
+).appent(	).appent(	0.a
+).appent( for ' + ' [prompt times]	{#insert zzzClsPrnDtApndForNxtPromptPlusesXbn}	0.a
+).appent('	).appent({#insert zAscQQ}	0.a
+getDbgApntr().appent()	getDbgApntr().appent(){#insert zLEFT}	getD
+getDbgApntr().appent('')	getDbgApntr().appent({#insert zAscQQ}{#insert zAscQQ}){#insert zLEFT2}	getD
+getDbgApbl().appent()	getDbgApbl().append(){#insert zLEFT}	getD
+getDbgApbl().appent('')	getDbgApbl().append({#insert zAscQQ}{#insert zAscQQ}){#insert zLEFT2}	getD
+if(isDebugOn()) { getDbgApntr().appent(); }	if(isDebugOn()) { getDbgApntr().appent({#insert zXmark}); \\\}{#insert zXUpDelete}	getD
+').appent(   	{#insert zAscQQ}).appent(	'0.
+').appent('   	{#insert zAscQQ}).appent({#insert zAscQQ}	'0.

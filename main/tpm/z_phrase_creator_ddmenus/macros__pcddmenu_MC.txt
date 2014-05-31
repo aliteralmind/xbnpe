@@ -1,17 +1,18 @@
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
 (*
    FROM xbnpe_phrase_creator_popup_heirarchy_base.px.txt:
 
 Phrase-creators: XBN-PhraseExpress -- xh   .   zXbnpeCmdPopupRoot
-	Phrase-creators: Char, word, line, para, doc, file -- xhc   .   xh*)
-(*   Phrase-creators: Java -- xhj   .   xh*)
+	Phrase-creators: Char, word, line, para, doc, file -- c   .   xh*)
+(*   Phrase-creators: Java -- j   .   xh*)
 		zTMSelectSuperClassNm	\\\{#insert zTMSelectSuperClassNm\\\}	xhj
 		zTMSelectThisClassNm	\\\{#insert zTMSelectThisClassNm\\\}	xhj
-(*    Function signature -- xhjg   .   xhj*)
-(*       Entire signature -- xhjgg   .   xhjg*)
+(*    Function signature -- g   .   xhj*)
+(*       Entire signature -- g   .   xhjg*)
 				zTMFindNextJavaFuncSigLine	\\\{#insert zTMFindNextJavaFuncSigLine\\\}	xhjgg
 				zTMFindPrevJavaFuncSigLine	\\\{#insert zTMFindPrevJavaFuncSigLine\\\}	xhjgg
-(*       Parameters -- xhjgp   .   xhjg*)
-				Delete from slctd params -- xhjgpd	.	xhjgp
+(*       Parameters -- p   .   xhjg*)
+				Delete from slctd params -- d	.	xhjgp
 					zTMJavaDelNmsGnrcsFromSlctdParams4FQP	\\\{#insert zTMJavaDelNmsGnrcsFromSlctdParams4FQP\\\}	xhjgpd
 					zTMJavaDelNmsGnrcsFromSlctdParams4TV	\\\{#insert zTMJavaDelNmsGnrcsFromSlctdParams4TV\\\}	xhjgpd
 					zTMJavaDelNmsOnlyFromSlctdParams	\\\{#insert zTMJavaDelNmsOnlyFromSlctdParams\\\}	xhjgpd
@@ -19,21 +20,21 @@ Phrase-creators: XBN-PhraseExpress -- xh   .   zXbnpeCmdPopupRoot
 				zTMFindNextParamTypeAndName	\\\{#insert zTMFindNextParamTypeAndName\\\}	xhjgp
 				zTMFindPrevParamTypeAndName	\\\{#insert zTMFindPrevParamTypeAndName\\\}	xhjgp
 				zTMSelThrNextCloseParen	\\\{#insert zTMSelThrNextCloseParen\\\}	xhjgp
-(* Other -- xhot  .   xho  *)
+(* Other -- t  .   xho  *)
 		zTMFindNextOpenParen	\\\{#insert zTMFindNextOpenParen\\\}	xhot
 		zTMFindPrevCloseParen	\\\{#insert zTMFindPrevCloseParen\\\}	xhot
 		zTMFindPrevSpace	\\\{#insert zTMFindPrevSpace\\\}	xhot
-(*    Spot-marks (x-mark) -- xhox   .   xho*)
-(*       zXDown[2] -- xhoxd   .   xhox*)
+(*    Spot-marks (x-mark) -- x   .   xho*)
+(*       zXDown[2] -- d   .   xhox*)
 				zTMFindXMarkDown	\\\{#insert zTMFindXMarkDown\\\}	xhoxd
-(*       zXUp[2] -- xhoxu   .   xhox*)
+(*       zXUp[2] -- u   .   xhox*)
 				zTMFindXMarkUp	\\\{#insert zTMFindXMarkUp\\\}	xhoxu
-(*    Spot-marks (y-mark) -- xhoy   .   xho*)
-(*       zYDown[2] -- xhoyd   .   xhoy*)
+(*    Spot-marks (y-mark) -- y   .   xho*)
+(*       zYDown[2] -- d   .   xhoy*)
 				zTMFindYMarkDown	\\\{#insert zTMFindYMarkDown\\\}	xhoyd
-(*       zYUp[2] -- xhoyu   .   xhoy*)
+(*       zYUp[2] -- u   .   xhoy*)
 				zTMFindYMarkUp	\\\{#insert zTMFindYMarkUp\\\}	xhoyu
-(* Phrase-creators: HTML -- xhh   .   xh*)
+(* Phrase-creators: HTML -- h   .   xh*)
 		zTMFindPrevHREFThrQQ	\\\{#insert zTMFindPrevHREFThrQQ\\\}	xhh
 		zTMMoveL1Tag	\\\{#insert zTMMoveL1Tag\\\}	xhh
 		zTMMoveR1Tag	\\\{#insert zTMMoveR1Tag\\\}	xhh

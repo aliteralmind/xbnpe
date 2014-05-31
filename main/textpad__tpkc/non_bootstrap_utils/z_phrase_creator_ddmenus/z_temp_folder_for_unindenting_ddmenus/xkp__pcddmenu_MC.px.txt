@@ -14,13 +14,13 @@ Required by phrase-creator-ddmenu-utils...END
 (*
 Phrase-creators: XBN-PhraseExpress -- xh [zCASpDNR_SLASH]   .      (*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
 Phrase-creators: XBN-PhraseExpress -- xh   .   zXbnpeCmdPopupRoot
-Phrase-creators: Char, word, line, para, doc, file -- xhc   .   xh
-1. Char -- xhcc   .   xhc
+Phrase-creators: Char, word, line, para, doc, file -- c   .   xh
+1. Char -- c   .   xhc
 *)
-PC: XBNPE-Key-Presses (XKP) -- xhcck	.	xhcc
-TextPad-bootstraps -- xhcckb	.	xhcck
+PC: XBNPE-Key-Presses (XKP) -- k	.	xhcc
+TextPad-bootstraps -- b	.	xhcck
 testtpbsxkp: zTestAllXKPTextPadBootstraps	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content testtpbsxkp:zTestAllXKPTextPadBootstraps -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhcckb
-zTPBtstrpEscKCGetOrCIES_M_bspm	\\\{#insert zTPBtstrpEscKCGetOrCIES_M_bspm\\\}	xhcckb
+zTPBtstrpEscKCGetOrCIES_M_bspm (zvBTSTRP_PHRS_NM)	\\\{#insert zTPBtstrpEscKCGetOrCIES_M_bspm\\\}	xhcckb
 zTPBtstrpEscKC_M_bspm	\\\{#insert zTPBtstrpEscKC_M_bspm\\\}	xhcckb
 zTPBtstrpEscPhrsNm_M_bspm	\\\{#insert zTPBtstrpEscPhrsNm_M_bspm\\\}	xhcckb
 zTPBtstrpTPKeysKCGetOrCIES_M_bspm	\\\{#insert zTPBtstrpTPKeysKCGetOrCIES_M_bspm\\\}	xhcckb
@@ -30,10 +30,10 @@ buildxkp: zBuildAllXKPPhrasesWTypePromptActual	{#SETPHRASE -description zvATN_CL
 buildxkptest: zBuildAllXKPPhrasesWTypePromptTestOnly	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content buildxkptest:zBuildAllXKPPhrasesWTypePromptTestOnly -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhcck
 zXPROOT_DIR_AG_xkpOutputRoot	\\\{#insert zXPROOT_DIR_AG_xkpOutputRoot\\\}	xhcck
 zXPROOT_DIR_allModForChrsInput	\\\{#insert zXPROOT_DIR_allModForChrsInput\\\}	xhcck
-All unmodified keys -- xhcckp (add '[C][A][S][L*]p' btw 'z' & key-name)	.	xhcck
+All unmodified keys -- p (add '[C][A][S][L*]p' btw 'z' & key-name)	.	xhcck
 Digit: z[all-caps-spelled-digit] (ex: 'zFIVE')	.	xhcckp
 Letter: z[A-Z][letter-repeated] (ex: 'zAA')	.	xhcckp
-Non-printable keys -- xhcckpn	.	xhcckp
+Non-printable keys -- n	.	xhcckp
 zBKSP	\\\{#insert zBKSP\\\}	xhcckpn
 zBREAK	\\\{#insert zBREAK\\\}	xhcckpn
 zDEL	\\\{#insert zDEL\\\}	xhcckpn
@@ -52,13 +52,13 @@ zSPACE	\\\{#insert zSPACE\\\}	xhcckpn
 zTAB	\\\{#insert zTAB\\\}	xhcckpn
 zUP	\\\{#insert zUP\\\}	xhcckpn
 Non-printable functions: zF[1-12]	.	xhcckp
-Number pad -- xhcckpm -- zNUM[1-12]	.	xhcckp
+Number pad -- m -- zNUM[1-12]	.	xhcckp
 zNUMADD	\\\{#insert zNUMADD\\\}	xhcckpm
 zNUMDECIMAL	\\\{#insert zNUMDECIMAL\\\}	xhcckpm
 zNUMDIVIDE	\\\{#insert zNUMDIVIDE\\\}	xhcckpm
 zNUMMULTIPLY	\\\{#insert zNUMMULTIPLY\\\}	xhcckpm
 zNUMSUBTRACT	\\\{#insert zNUMSUBTRACT\\\}	xhcckpm
-Other printable -- xhcckpo	.	xhcckp
+Other printable -- o	.	xhcckp
 zACCENT	\\\{#insert zACCENT\\\}	xhcckpo
 zASTERISK	\\\{#insert zASTERISK\\\}	xhcckpo
 zCLOSE_SQUAREB	\\\{#insert zCLOSE_SQUAREB\\\}	xhcckpo

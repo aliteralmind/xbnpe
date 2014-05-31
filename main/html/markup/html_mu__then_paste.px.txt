@@ -7,7 +7,6 @@ h4p -- hh4 with paste	<H4>{#insert zTPPaste}</H4>	h4p
 h4up -- hh4u with paste	<H4><U>{#insert zTPPaste}</U></H4>	h4up
 hbcp -- hhbc with paste	<B><CODE>{#insert zTPPaste}</CODE></B>	hbcp
 hbi -- hhib ALT KC	{#insert hhib}	hbi
-hbip -- hhbi with paste	<B><I>{#insert zTPPaste}</I></B>	hbip
 hbip -- hhbi with paste	<U><I>{#insert zTPPaste}</I></U>	hbip
 hbp -- hhb with paste	<B>{#insert zTPPaste}</B>	hbp
 hct -- hhc with paste	<CODE>{#insert zTPPaste}</CODE>	hct

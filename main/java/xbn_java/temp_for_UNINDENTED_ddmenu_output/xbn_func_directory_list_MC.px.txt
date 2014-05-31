@@ -1,0 +1,74 @@
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools,written in PhraseExpress,using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License,or (at your option) any later version.  //  This library is distributed in the hope that it will be useful,but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not,write to the Free Software Foundation,Inc.,51 Franklin Street,Fifth Floor,Boston,MA 02110-1301 USA*)		(*Two tabs plus this comment,to force this phrase to be (a) imported,and (b) with NO autotext*)
+(*_ xf -- com.github.xbn.* function directory   .   xf*)
+list -- s	.	xf
+CollectionUtil -- c	.	xfs
+getMiddleIndex(cll)	CollectionUtil.getMiddleIndex({#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xfsc
+xItrContainsY(itr,o)	CollectionUtil.xItrContainsY({#insert zYcY});{#insert zLeftPostBrktSelectWord1}	xfsc
+xItrContainsAllY(itr,cll)	CollectionUtil.xItrContainsAllY({#insert zYcY});{#insert zLeftPostBrktSelectWord1}	xfsc
+xItrContainsY_nullOk(itr,o)	CollectionUtil.xItrContainsY_nullOk({#insert zYcY});{#insert zLeftPostBrktSelectWord1}	xfsc
+xItrContainsAllY_nullOk(itr,cll)	CollectionUtil.xItrContainsAllY_nullOk({#insert zYcY});{#insert zLeftPostBrktSelectWord1}	xfsc
+CollectionSizeCINull -- u	.	xfs
+get(cll)	CollectionSizeCINull.get({#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xfsu
+get(cll,s,s)	CollectionSizeCINull.get({#insert zYmark}, {#insert zXcX});{#insert zLeftPostBrktSelectWord1}	xfsu
+get(cll,s,s,o)	CollectionSizeCINull.get({#insert zYmark}, {#insert zXcXcY}, {#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xfsu
+getWBNullBadVarName(cll,s,s,s)	CollectionSizeCINull.getWBNullBadVarName({#insert zYmark}, {#insert zXcXcX});{#insert zLeftPostBrktSelectWord1}	xfsu
+getWBNullBadVarName(cll,s,s,s,o)	CollectionSizeCINull.getWBNullBadVarName({#insert zYmark}, {#insert zXcXcX}, {#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xfsu
+ListUtil.getFromWrapperRplcNulls(B[],b,s,s) (all primitive types)	ListUtil.getFromWrapperRplcNulls({#insert zYcY}, {#insert zXcX});{#insert zLeftPostBrktSelectWord1}	xfs
+ListUtil.getFromWrapperRplcNulls(B[],hnv,s,s) (all primitive types)	ListUtil.getFromWrapperRplcNulls({#insert zYcY}, {#insert zXcX});{#insert zLeftPostBrktSelectWord1}	xfs
+ListUtil.getFromBoolCollectionCINulls(cll) (Char, PByte, PShort, Int, PLong, PFloat, PDouble)	ListUtil.getFromBoolCollectionCINulls({#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xfs
+ListLister -- l: new ListLister.Cfg().	new ListLister.Cfg().	xfs
+.get(lst)	.get(lst)	xfsl
+.append(apbl,lst) (and 'X')	.append({#insert zYcY})	xfsl
+Config -- g	new ListLister.Cfg()	xfsl
+.commaSpaceBetween()	.commaSpaceBetween()	xfslg
+.newLineBetween()	.newLineBetween()	xfslg
+.between(s)	.between({#insert zYmark})	xfslg
+.cfgOverall()	.cfgOverall()	xfslg
+.cfgElement()	.cfgElement()	xfslg
+index/value filter -- f	.	xfslg
+.filterNullValues()	.filterNullValues()	xfslgf
+.indexFilter(vv)	.indexFilter({#insert zYmark})	xfslgf
+.keepAllIndexes()	.keepAllIndexes()	xfslgf
+.keepIndexesBelow(i)	.keepIndexesBelow({#insert zYmark})	xfslgf
+.keepIndexesBetween(i,i)	.keepIndexesBetween({#insert zYcY})	xfslgf
+.valueFilter(vv)	.valueFilter({#insert zYmark})	xfslgf
+.chainID(o)	.chainID({#insert zYmark})	xfslg
+y- .build()	.build()	xfslg
+z- .chainID(o)	.chainID({#insert zYmark})	xfsl
+Config element -- e: new..Cfg()	new LLCIndexableElement.Cfg()	xfsl
+.cfgVPCFinalOutput()	.cfgVPCFinalOutput()	xfsle
+.cfgVPCFinalOutput(i)	.cfgVPCFinalOutput({#insert zYmark})	xfsle
+.finalOutputUnaltered()	.finalOutputUnaltered()	xfsle
+.ifElementLength(vv,s)	.ifElementLength({#insert zYcX})	xfsle
+.ifNoElements(s)	.ifNoElements({#insert zYmark})	xfsle
+.ifNonNull(s)	.ifNonNull({#insert zXmark})	xfsle
+.ifNull(s)	.ifNull({#insert zYmark})	xfsle
+.noAltForElementLength()	.noAltForElementLength()	xfsle
+.prePost(s,s)	.prePost({#insert zXcX})	xfsle
+.reset()	.reset()	xfsle
+y- .endCfg()	.endCfg()	xfsle
+z- .chainID(o)	.chainID({#insert zYmark})	xfsle
+Config indexable element -- x: new LLCfgElement.Cfg()	new LLCfgElement.Cfg()	xfsl
+.alterIndex(av)	.alterIndex({#insert zYmark})	xfslx
+.alterValue(av)	.alterValue({#insert zYmark})	xfslx
+.cfgVPCFinalOutput()	.cfgVPCFinalOutput()	xfslx
+.cfgVPCFinalOutput(i)	.cfgVPCFinalOutput({#insert zYmark})	xfslx
+.indexUnaltered()	.indexUnaltered()	xfslx
+.valueUnaltered()	.valueUnaltered()	xfslx
+y- .endCfg()	.endCfg()	xfslx
+z- .chainID(o)	.chainID({#insert zYmark})	xfslx
+Config overall -- o: new LLCfgOverall.Cfg()	new LLCfgOverall.Cfg()	xfsl
+.cfgVPCFinalOutput()	.cfgVPCFinalOutput()	xfslo
+.cfgVPCFinalOutput(i)	.cfgVPCFinalOutput({#insert zYmark})	xfslo
+.finalOutputUnaltered()	.finalOutputUnaltered()	xfslo
+Alt for element length/value -- a	.	xfslo
+.ifElementLength(vv,s)	.ifElementLength({#insert zYcX})	xfsla
+.ifNoElements(s)	.ifNoElements({#insert zXmark})	xfsla
+.ifNonNull(s)	.ifNonNull({#insert zXmark})	xfsla
+.ifNull(s)	.ifNull({#insert zXmark})	xfsla
+.noAltForElementLength()	.noAltForElementLength()	xfsla
+.prePost(s,s)	.prePost(s,s)	xfslo
+.reset()	.reset()	xfslo
+y- .build()	.build()	xfslo
+y- .endCfg()	.endCfg()	xfslo
+z- .chainID(o)	.chainID({#insert zYmark})	xfslo

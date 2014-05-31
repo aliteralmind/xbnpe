@@ -1,0 +1,79 @@
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools,written in PhraseExpress,using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License,or (at your option) any later version.  //  This library is distributed in the hope that it will be useful,but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not,write to the Free Software Foundation,Inc.,51 Franklin Street,Fifth Floor,Boston,MA 02110-1301 USA*)		(*Two tabs plus this comment,to force this phrase to be (a) imported,and (b) with NO autotext*)
+(*_ xf -- com.github.xbn.* function directory   .   xf*)
+(* text -- s   .   xf*)
+vpc -- v	.	xfx
+ChopString -- c	.	xfxv
+.appendChopped(apbl,O) (also 'X')	.appendChopped({#insert zYcX})	xfxvc
+.appendChopped(apbl,O,i) (also 'X')	.appendChopped({#insert zYcXcY})	xfxvc
+.appendChoppedln(apbl,O) (also (apbl,O,i))	.appendChoppedln({#insert zYcX})	xfxvc
+.appendChoppedlns(i,apbl,O) (also (i,apbl,O,i)) 	.appendChoppedlns({#insert zYmark}, {#insert zYcX})	xfxvc
+.getChopped(O)	.getChopped({#insert zXmark})	xfxvc
+.getChopped(O,i)	.getChopped({#insert zXcY})	xfxvc
+Config -- g: new ChopString.Cfg()	new ChopString.Cfg(){#BALLOON -title Alternate -text new ChopString.Cfg([goal-length])}	xfxvc
+ddd -- d	.	xfxvcg
+.ddd()	.ddd()	xfxvcg
+.ddd(s)	.ddd({#insert zXmark})	xfxvcg
+.noDDD()	.noDDD()	xfxvcg
+Location -- l	.	xfxvcg
+.atEnd()	.atEnd()	xfxvcgl
+.charsBefore(i)	.charsBefore({#insert zYmark})	xfxvcgl
+.inMiddle()	.inMiddle()	xfxvcgl
+Overhang -- v	.	xfxvcg
+.maxOverhang()	.maxOverhang()	xfxvcgv
+.noOverhang()	.noOverhang()	xfxvcgv
+.overhang(i)	.overhang({#insert zYmark})	xfxvcgv
+.goalLength(i)	.goalLength({#insert zYmark})	xfxvcg
+.left()	.left()	xfxvcg
+.right()	.right()	xfxvcg
+y- .build()	.build()	xfxvcg
+y- .endCfg()	.endCfg()	xfxvcg
+z- .chainID(o)	.chainID({#insert zYmark})	xfxvcg
+PadString -- p	.	xfxv
+.getPadded(O)	.getPadded({#insert zXmark})	xfxvp
+.getPadded(O,i)	.getPadded({#insert zXcY})	xfxvp
+.appendPaddedln(apbl,O) (also (apbl,O,i))	.appendPaddedln({#insert zYcX})	xfxvc
+.appendPaddedlns(i,apbl,O) (also (i,apbl,O,i)) 	.appendPaddedlns({#insert zYmark}, {#insert zYcX})	xfxvc
+.appendPadded(apbl,O) (also 'X')	.appendPadded({#insert zYcX})	xfxvp
+.appendPadded(apbl,O,i) (also 'X')	.appendPadded({#insert zYcXcY})	xfxvp
+Config -- g: new PadString.Cfg()	new PadString.Cfg(){#BALLOON -title Alternate -text new PadString.Cfg([goal-length])}	xfxvp
+.goalLength(i)	.goalLength({#insert zYmark})	xfxvpg
+.left()	.left()	xfxvpg
+.with({#insert zYmark})	.with({#insert zYmark})	xfxvpg
+.withSpace()	.withSpace()	xfxvpg
+.right()	.right()	xfxvpg
+y- .build()	.build()	xfxvpg
+y- .endCfg()	.endCfg()	xfxvpg
+z- .chainID(o)	.chainID({#insert zYmark})	xfxvpg
+VzblPadChop -- v	.	xfxv
+.get(O)	.get({#insert zXmark})	xfxvv
+.get(O,i)	.get({#insert zXcY})	xfxvv
+.appendln(apbl,O) (also (apbl,O,i))	.appendln({#insert zYcX})	xfxvc
+.appendlns(i,apbl,O) (also (i,apbl,O,i)) 	.appendlns({#insert zYmark}, {#insert zYcX})	xfxvc
+.append(apbl,O) (and 'X')	.append({#insert zYcX})	xfxvv
+.append(apbl,O,i) (and 'X')	.append({#insert zYcXcY})	xfxvv
+Config -- g: new ListLister.Cfg()	new ListLister.Cfg(){#BALLOON -title Alternate -text new ListLister.Cfg([goal-length])}	xfxvv
+.reset()	.reset()	xfxvvg
+.reset(i)	.reset({#insert zYmark})	xfxvvg
+.build()	.build()	xfxvvg
+.endCfg()	.endCfg()	xfxvvg
+Pad/chop -- p (see PadString/ChopString)	.	xfxvvg
+.cfgChop(b)	.cfgChop({#insert zYmark})	xfxvvgp
+.cfgChop(b,i)	.cfgChop({#insert zYcY})	xfxvvgp
+.cfgPad(b)	.cfgPad({#insert zYmark})	xfxvvgp
+.cfgPad(b,i)	.cfgPad({#insert zYcY})	xfxvvgp
+.chop(b)	.chop({#insert zYmark})	xfxvvgp
+.chopFirst()	.chopFirst()	xfxvvgp
+.goalLength(i)	.goalLength({#insert zYmark})	xfxvvgp
+.pad(b)	.pad({#insert zYmark})	xfxvvgp
+.padFirst()	.padFirst()	xfxvvgp
+Escape and trim -- e	.	xfxvvg
+.escape()	.escape()	xfxvvge
+.noEscape()	.noEscape()	xfxvvge
+.trim()	.trim()	xfxvvge
+.trim(b,b)	.trim({#insert zYcY})	xfxvvge
+.trimLeft()	.trimLeft()	xfxvvge
+.trimRight()	.trimRight()	xfxvvge
+.unescape()	.unescape()	xfxvvge
+z- .chainID(o)	.chainID({#insert zYcX})	xfxvvg
+z- .diffGoalLengthsCrash()	.diffGoalLengthsCrash()	xfxvvg
+z- .diffGoalLengthsOverwrite()	.diffGoalLengthsOverwrite()	xfxvvg

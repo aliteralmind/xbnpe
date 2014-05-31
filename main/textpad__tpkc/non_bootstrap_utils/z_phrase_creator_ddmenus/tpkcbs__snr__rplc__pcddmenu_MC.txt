@@ -15,30 +15,30 @@ __XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a larg
    FROM xbnpe_phrase_creator_popup_heirarchy_base.px.txt:
 
 Phrase-creators: XBN-PhraseExpress -- xh   .   zXbnpeCmdPopupRoot
-   Phrase-creators: Search & replace -- xhs   .   xh
-      SNR: Replace -- xhsr   .   xhs
-         Buttons -- xhsrb   .   xhsr*)
-				zRplcBtnAll* -- xhsrba	\\\{#insert zRplcBtnAll\\\}	xhsrb
-					Handle-no-replacemnts (search-term not found) for scope -- xhsrbah	.	xhsrba
+   Phrase-creators: Search & replace -- s   .   xh
+      SNR: Replace -- r   .   xhs
+         Buttons -- b   .   xhsr*)
+				zRplcBtnAll* -- a	\\\{#insert zRplcBtnAll\\\}	xhsrb
+					Handle-no-replacemnts (search-term not found) for scope -- h	.	xhsrba
 						zADHandleNoRplcs	\\\{#insert zADHandleNoRplcs\\\}	xhsrbah
 						zADHandleNoRplcsRAW	\\\{#insert zADHandleNoRplcsRAW\\\}	xhsrbah
 						zSelHandleNoRplcs	\\\{#insert zSelHandleNoRplcs\\\}	xhsrbah
 						zSelHandleNoRplcsRAW	\\\{#insert zSelHandleNoRplcsRAW\\\}	xhsrbah
 						zTDHandleNoRplcs	\\\{#insert zTDHandleNoRplcs\\\}	xhsrbah
 						zTDHandleNoRplcsRAW	\\\{#insert zTDHandleNoRplcsRAW\\\}	xhsrbah
-					Var: zvHNR_YES -- xhsrbai	{#SETCLIPBOARD zvHNR_YES}{#insert zzBalCBContainsVarNm}	xhsrba
-						zADAlreadyOn_rplcBtnAll_hnrIf_M_hnry -- xhsrbaia	\\\{#insert zADAlreadyOn_rplcBtnAll_hnrIf_M_hnry\\\}	xhsrbai
+					Var: zvHNR_YES -- i (abbrev: 'hnry')	{#SETCLIPBOARD zvHNR_YES}{#insert zzBalCBContainsVarNm}	xhsrba
+						zADAlreadyOn_rplcBtnAll_hnrIf_M_hnry -- a	\\\{#insert zADAlreadyOn_rplcBtnAll_hnrIf_M_hnry\\\}	xhsrbai
 							zADAlreadyOn_rplcBtnAllNoConfirm_hnrIf_M_hnry	\\\{#insert zADAlreadyOn_rplcBtnAllNoConfirm_hnrIf_M_hnry\\\}	xhsrbaia
 							zADAlreadyOn_rplcBtnAllNoConfirm_hnrRAWIf_M_hnry	\\\{#insert zADAlreadyOn_rplcBtnAllNoConfirm_hnrRAWIf_M_hnry\\\}	xhsrbaia
 							zADAlreadyOn_rplcBtnAll_hnrRAWIf_M_hnry	\\\{#insert zADAlreadyOn_rplcBtnAll_hnrRAWIf_M_hnry\\\}	xhsrbaia
-						zRplcBtnAllSel_hnrIf_M_hnry	\\\{#insert zRplcBtnAllSel_hnrIf_M_hnry\\\}	xhsrbai
+						zRplcBtnAllSel_hnrIf_M_hnry (zvHNR_YES)	\\\{#insert zRplcBtnAllSel_hnrIf_M_hnry\\\}	xhsrbai
 						zRplcBtnAllSel_hnrRAWIf_M_hnry	\\\{#insert zRplcBtnAllSel_hnrRAWIf_M_hnry\\\}	xhsrbai
 						zRplcBtnAllTD_hnrIf_M_hnry	\\\{#insert zRplcBtnAllTD_hnrIf_M_hnry\\\}	xhsrbai
 						zRplcBtnAllTD_hnrRAWIf_M_hnry	\\\{#insert zRplcBtnAllTD_hnrRAWIf_M_hnry\\\}	xhsrbai
 						zvHNR_YES_stES	\\\{#insert zvHNR_YES_stES\\\}	xhsrbai
 						zvHNR_YES_stYes	\\\{#insert zvHNR_YES_stYes\\\}	xhsrbai
 					zRplcBtnAllRAW	\\\{#insert zRplcBtnAllRAW\\\}	xhsrba
-					zADAlreadyOn_rplcBtnAll* -- xhsrbaa	\\\{#insert zADAlreadyOn_rplcBtnAll\\\}	xhsrba
+					zADAlreadyOn_rplcBtnAll* -- a	\\\{#insert zADAlreadyOn_rplcBtnAll\\\}	xhsrba
 						zADAlreadyOn_rplcBtnAllHnr	\\\{#insert zADAlreadyOn_rplcBtnAllHnr\\\}	xhsrbaa
 						zADAlreadyOn_rplcBtnAllHnrRAW	\\\{#insert zADAlreadyOn_rplcBtnAllHnrRAW\\\}	xhsrbaa
 						zADAlreadyOn_rplcBtnAllNoConfirm	\\\{#insert zADAlreadyOn_rplcBtnAllNoConfirm\\\}	xhsrbaa
@@ -46,24 +46,24 @@ Phrase-creators: XBN-PhraseExpress -- xh   .   zXbnpeCmdPopupRoot
 						zADAlreadyOn_rplcBtnAllNoConfirmHnrRAW	\\\{#insert zADAlreadyOn_rplcBtnAllNoConfirmHnrRAW\\\}	xhsrbaa
 						zADAlreadyOn_rplcBtnAllNoConfirmRAW	\\\{#insert zADAlreadyOn_rplcBtnAllNoConfirmRAW\\\}	xhsrbaa
 						zADAlreadyOn_rplcBtnAllRAW	\\\{#insert zADAlreadyOn_rplcBtnAllRAW\\\}	xhsrbaa
-					zRplcBtnAllSel* -- xhsrbas	\\\{#insert zRplcBtnAllSel\\\}	xhsrba
+					zRplcBtnAllSel* -- s	\\\{#insert zRplcBtnAllSel\\\}	xhsrba
 						zRplcBtnAllSelHnr	\\\{#insert zRplcBtnAllSelHnr\\\}	xhsrbas
 						zRplcBtnAllSelHnrRAW	\\\{#insert zRplcBtnAllSelHnrRAW\\\}	xhsrbas
-					zRplcBtnAllTD* -- xhsrbat	\\\{#insert zRplcBtnAllTD\\\}	xhsrba
+					zRplcBtnAllTD* -- t	\\\{#insert zRplcBtnAllTD\\\}	xhsrba
 						zRplcBtnAllTDHnr	\\\{#insert zRplcBtnAllTDHnr\\\}	xhsrbat
 						zRplcBtnAllTDHnrRAW	\\\{#insert zRplcBtnAllTDHnrRAW\\\}	xhsrbat
 				zRplcBtnFind	\\\{#insert zRplcBtnFind\\\}	xhsrb
 				zRplcBtnNext	\\\{#insert zRplcBtnNext\\\}	xhsrb
 				zRplcBtnRplc	\\\{#insert zRplcBtnRplc\\\}	xhsrb
-(*       Open -- xhsro   .   xhsr*)
+(*       Open -- o   .   xhsr*)
 				zFcsTPRplcDlgOpen	\\\{#insert zFcsTPRplcDlgOpen\\\}{#insert zRplcWAndCloseYNPrompt}	xhsro
-(*       Close -- xhsrc   .   xhsr*)
+(*       Close -- c   .   xhsr*)
 				zRplcDlgClose	\\\{#insert zRplcDlgClose\\\}	xhsrc
-(*       Fields -- xhsrd   .   xhsr*)
+(*       Fields -- d   .   xhsr*)
 				zRplcFieldWhat	\\\{#insert zRplcFieldWhat\\\}	xhsrd
 				zRplcFieldWith	\\\{#insert zRplcFieldWith\\\}	xhsrd
 				zRplcWithNOTHING	\\\{#insert zRplcWithNOTHING\\\}	xhsrd
-(*       Flags -- xhsrf   .   xhsr*)
+(*       Flags -- f   .   xhsr*)
 				MC/RE/WW/Text/Hex: See 'xhsff'	.	xhsrf
 				zRplcFlagAD	\\\{#insert zRplcFlagAD\\\}	xhsrf
 				zRplcFlagADEntrForHNROnlyRAW	\\\{#insert zRplcFlagADEntrForHNROnlyRAW\\\}	xhsrf

@@ -14,8 +14,8 @@ zTPUnindent -- EditIndentLess (Eindl)	{#insert zCSpCOMMA}{#sleep 20}	zTPUnindent
 zTPIndent -- EditIndentMore (Eindm)	{#insert zCSpPERIOD}{#sleep 20}	zTPIndent
 zTPToggleCase -- EditInvertCase (Einvcs)	{#insert zCASpONE}{#sleep 10}	zTPToggleCase
 zTPLowerCase -- EditLowerCase (Elwc)	{#insert zApTWO}{#sleep 10}	zTPLowerCase
-zTPNewLineAfter -- EditNewLineAfter (Enwlnftr)	{#CTRL {#ALT {#SHIFT -chars i}}}{#sleep 20}{#insert zAA}{#sleep 10}	zTPNewLineAfter
-zTPNewLineBefore -- EditNewLineBefore (Enwlnb4)	{#CTRL {#ALT {#SHIFT -chars i}}}{#sleep 20}{#insert zBB}{#sleep 10}	zTPNewLineBefore
+zTPNewLineAfter -- EditNewLineAfter (Enwlnftr)	{#insert zCpENTER}{#sleep 10}	zTPNewLineAfter
+zTPNewLineBefore -- EditNewLineBefore (Enwlnb4)	{#insert zApENTER}{#sleep 10}	zTPNewLineBefore
 zTPPageBreak -- EditPageBreak (Epgbrk)	{#insert zCSpLL}{#sleep 10}	zTPPageBreak
 zTPPopupContext -- EditPopupContext (Epopcntxt)	{#insert zSpF10}{#sleep 10}	zTPPopupContext
 zTPRedo -- EditRedo (Erdo)	{#insert zApSEMI_COLON}{#sleep 10}	zTPRedo

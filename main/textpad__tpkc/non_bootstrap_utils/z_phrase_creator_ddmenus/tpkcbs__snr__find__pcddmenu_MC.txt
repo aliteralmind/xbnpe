@@ -15,23 +15,23 @@ __XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a larg
    FROM xbnpe_phrase_creator_popup_heirarchy_base.px.txt:
 
 Phrase-creators: XBN-PhraseExpress -- xh   .   zXbnpeCmdPopupRoot
-   Phrase-creators: Search & replace -- xhs   .   xh
-		SNR: Find -- xhsf   .   xhs*)
-(*       Buttons -- xhsfb   .   xhsf*)
+   Phrase-creators: Search & replace -- s   .   xh
+		SNR: Find -- f   .   xhs*)
+(*       Buttons -- b   .   xhsf*)
 				zFindBtnMarkAll	\\\{#insert zFindBtnMarkAll\\\}	xhsfb
 				zFindBtnMarkAllThnEtr	\\\{#insert zFindBtnMarkAllThnEtr\\\}	xhsfb
-				zFindBtnNext* -- xhsfbn	\\\{#insert zFindBtnNext\\\}	xhsfb
+				zFindBtnNext* -- n	\\\{#insert zFindBtnNext\\\}	xhsfb
 					zFindBtnNext[2-5]	\\\{#insert zFindBtnNext2\\\}	xhsfbn
 					zFindMCBtnNextMC	\\\{#insert zFindMCBtnNextMC\\\}	xhsfbn
 					zFindREBtnNextRE	\\\{#insert zFindREBtnNextRE\\\}	xhsfbn
 					zFindWWBtnNextWW	\\\{#insert zFindWWBtnNextWW\\\}	xhsfbn
 					zFindXSBtnNextXS	\\\{#insert zFindXSBtnNextXS\\\}	xhsfbn
-(*       Close -- xhsfc   .   xhsf*)
+(*       Close -- c   .   xhsf*)
 				zFindDlgClose	\\\{#insert zFindDlgClose\\\}	xhsfc
-(*       Flags -- xhsff   .   xhsf*)
-				Tgl 1 (in-dlg only) -- xhsffg	.	xhsff
-					Tgl 1: Other -- xhsffgt (AD,fww,wrap,Hex,Txt,Dn,Up)	.	xhsffg
-						Tgl 1: AD/ForceWW/WrapSearch -- xhsffgta	.	xhsffgt
+(*       Flags -- f   .   xhsf*)
+				Tgl 1 (in-dlg only) -- g	.	xhsff
+					Tgl 1: Other -- t (AD,fww,wrap,Hex,Txt,Dn,Up)	.	xhsffg
+						Tgl 1: AD/ForceWW/WrapSearch -- a	.	xhsffgt
 							zFindFlagADTgl	\\\{#insert zFindFlagADTgl\\\}{#insert zzBalFindFlagADWarning}	xhsffgta
 							zFindFlagADTgl... (w/ un-tgl-raw)	\\\{#insert zFindFlagADTgl\\\}{#CURSOR}\\\{#insert zFindFlagADTglRAW\\\}	xhsffgta
 							zFindFlagADTglRAW	\\\{#insert zFindFlagADTglRAW\\\}{#insert zzBalFindFlagADWarning}	xhsffgta
@@ -40,7 +40,7 @@ Phrase-creators: XBN-PhraseExpress -- xh   .   zXbnpeCmdPopupRoot
 							zFindFlagWrapSearchTgl	\\\{#insert zFindFlagWrapSearchTgl\\\}	xhsffgta
 							zFindFlagWrapSearchTgl... (w/ un-tgl-raw)	\\\{#insert zFindFlagWrapSearchTgl\\\}{#CURSOR}\\\{#insert zFindFlagWrapSearchTglRAW\\\}	xhsffgta
 							zFindFlagWrapSearchTglRAW	\\\{#insert zFindFlagWrapSearchTglRAW\\\}	xhsffgta
-						Tgl 1: Hex/text -- xhsffgtx	.	xhsffgt
+						Tgl 1: Hex/text -- x	.	xhsffgt
 							zFindFlagHex	\\\{#insert zFindFlagHex\\\}	xhsffgtx
 							zFindFlagHexRAW	\\\{#insert zFindFlagHexRAW\\\}	xhsffgtx
 							zFindFlagText	\\\{#insert zFindFlagText\\\}	xhsffgtx
@@ -49,12 +49,12 @@ Phrase-creators: XBN-PhraseExpress -- xh   .   zXbnpeCmdPopupRoot
 						zFindFlagDownRAW	\\\{#insert zFindFlagDownRAW\\\}	xhsffgt
 						zFindFlagUp	\\\{#insert zFindFlagUp\\\}	xhsffgt
 						zFindFlagUpRAW	\\\{#insert zFindFlagUpRAW\\\}	xhsffgt
-					Tgl 1: RAW (does not go to find-what field) -- xhsffgr	.	xhsffg
+					Tgl 1: RAW (does not go to find-what field) -- r	.	xhsffg
 						zFindFlagMCTglRAW	\\\{#insert zFindFlagMCTglRAW\\\}	xhsffgr
 						zFindFlagRETglRAW	\\\{#insert zFindFlagRETglRAW\\\}	xhsffgr
 						zFindFlagWWTglRAW	\\\{#insert zFindFlagWWTglRAW\\\}{#insert zFindWWFlagOnWarningDlg}	xhsffgr
 						zFindFlagXSTglRAW	\\\{#insert zFindFlagXSTglRAW\\\}	xhsffgr
-					Tgl 1, raw un-tgl -- xhsffgb	.	xhsffg
+					Tgl 1, raw un-tgl -- b	.	xhsffg
 						zFindFlagMCTgl...	\\\{#insert zFindFlagMCTgl\\\}{#CURSOR}\\\{#insert zFindFlagMCTglRAW\\\}	xhsffgb
 						zFindFlagRETgl...	\\\{#insert zFindFlagRETgl\\\}{#CURSOR}\\\{#insert zFindFlagRETglRAW\\\}	xhsffgb
 						zFindFlagWWTgl...	\\\{#insert zFindFlagWWTgl\\\}{#CURSOR}\\\{#insert zFindFlagWWTglRAW\\\}{#insert zFindWWFlagOnWarningDlg}	xhsffgb
@@ -64,15 +64,15 @@ Phrase-creators: XBN-PhraseExpress -- xh   .   zXbnpeCmdPopupRoot
 					zFindFlagRETgl	\\\{#insert zFindFlagRETgl\\\}	xhsffg
 					zFindFlagWWTgl	\\\{#insert zFindFlagWWTgl\\\}{#insert zFindWWFlagOnWarningDlg}	xhsffg
 				zFindDlgOpenRETglClose	\\\{#insert zFindDlgOpenRETglClose\\\}	xhsff
-(*       Open -- xhsfo   .   xhsf*)
-				zFcsTPFindDlgOpen* -- xhsfoo (see 'xhsf[o]')	\\\{#insert zFcsTPFindDlgOpen\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfo
+(*       Open -- o   .   xhsf*)
+				zFcsTPFindDlgOpen* -- o (see 'xhsf[o]')	\\\{#insert zFcsTPFindDlgOpen\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfo
 				zTPFindDlgOpen	\\\{#insert zTPFindDlgOpen\\\}{#insert zFindNxtAndClsYNPrompt}	xhsfoo
-(*       Other -- xhsft   .   xhsf*)
+(*       Other -- t   .   xhsf*)
 				zFindDialogFlagPreCheck	\\\{#insert zFindDialogFlagPreCheck\\\}	xhsft
 				zFindDialogFlagPreCheckMCOnly	\\\{#insert zFindDialogFlagPreCheckMCOnly\\\}	xhsft
-(*       SNR: Find In Files -- xhsfi   .   xhsf*)
-(*          Buttons -- xhsfib   .   xhsfi*)
-					zFFindBtnDefaults* -- xhsfibd	\\\{#insert zFFindBtnDefaults\\\}	xhsfib
+(*       SNR: Find In Files -- i   .   xhsf*)
+(*          Buttons -- b   .   xhsfi*)
+					zFFindBtnDefaults* -- d	\\\{#insert zFFindBtnDefaults\\\}	xhsfib
 						zFFindBtnDefaultsFilesOnly	\\\{#insert zFFindBtnDefaultsFilesOnly\\\}	xhsfibd
 						zFFindBtnDefaultsFilesOnlyRAW	\\\{#insert zFFindBtnDefaultsFilesOnlyRAW\\\}	xhsfibd
 						zFFindBtnDefaultsFilesOnlySubDirsTgl	\\\{#insert zFFindBtnDefaultsFilesOnlySubDirsTgl\\\}	xhsfibd
@@ -84,13 +84,13 @@ Phrase-creators: XBN-PhraseExpress -- xh   .   zXbnpeCmdPopupRoot
 					zFFindBtnFindSlp1500	\\\{#insert zFFindBtnFindSlp1500\\\}	xhsfib
 					zFFindBtnFindSlp3000	\\\{#insert zFFindBtnFindSlp3000\\\}	xhsfib
 					zFFindBtnFindSlp5000	\\\{#insert zFFindBtnFindSlp5000\\\}	xhsfib
-(*          Fields -- xhsfid   .   xhsfi*)
+(*          Fields -- d   .   xhsfi*)
 					zFFindFieldDir	\\\{#insert zFFindFieldDir\\\}	xhsfid
 					zFFindFieldFileType	\\\{#insert zFFindFieldFileType\\\}	xhsfid
 					zFFindFieldWhat	\\\{#insert zFFindFieldWhat\\\}	xhsfid
-(*          Flags: In-dlg -- xhsfif (tgl & non-standard-set)   .   xhsfi*)
+(*          Flags: In-dlg -- f (tgl & non-standard-set)   .   xhsfi*)
 					MC/RE/WW/Text/Hex: See 'xhsfg'	.	xhsfif
-					RAW -- xhsfifr	.	xhsfif
+					RAW -- r	.	xhsfif
 						zFFindFlagAllLinesRAW	\\\{#insert zFFindFlagAllLinesRAW\\\}	xhsfifr
 						zFFindFlagBinaryFilesTglRAW	\\\{#insert zFFindFlagBinaryFilesTglRAW\\\}	xhsfifr
 						zFFindFlagFilesOnlyRAW	\\\{#insert zFFindFlagFilesOnlyRAW\\\}	xhsfifr
@@ -103,13 +103,13 @@ Phrase-creators: XBN-PhraseExpress -- xh   .   zXbnpeCmdPopupRoot
 					zFFindFlagFilesOnlySubDirsTgl	\\\{#insert zFFindFlagFilesOnlySubDirsTgl\\\}	xhsfif
 					zFFindFlagSubDirsTgl	\\\{#insert zFFindFlagSubDirsTgl\\\}	xhsfif
 					zFFindFlagSubDirsTgl (w/ un-tgl-raw)	\\\{#insert zFFindFlagSubDirsTgl\\\}{#CURSOR}\\\{#insert zFFindFlagSubDirsTglRAW\\\}	xhsfif
-(*          Open -- xhsfio   .   xhsfi*)
+(*          Open -- o   .   xhsfi*)
 					zFFindDlgOpenViaAltS	\\\{#insert zFFindDlgOpenViaAltS\\\}	xhsfio
-(*          Search results -- xhsfir   .   xhsfi*)
+(*          Search results -- r   .   xhsfi*)
 					zRegexFifAllLnsSrchRslt_col0ThrColonSpc	\\\{#insert zRegexFifAllLnsSrchRslt_col0ThrColonSpc\\\}	xhsfir
 					zzMidRplcREElim_allLnsFifRslt_col0ThrClsPrnClnSpc	\\\{#insert zzMidRplcREElim_allLnsFifRslt_col0ThrClsPrnClnSpc\\\}	xhsfir
 					zzMidRplcREElim_fifFoundXOccurancesFooter	\\\{#insert zzMidRplcREElim_fifFoundXOccurancesFooter\\\}	xhsfir
 					zzMidRplcREElim_fifSearchingForHeader	\\\{#insert zzMidRplcREElim_fifSearchingForHeader\\\}	xhsfir
-			zFindFieldWhat	\\\{#insert zFindFieldWhat\\\}	xhsfbt
+			zFindFieldWhat	\\\{#insert zFindFieldWhat\\\}	xhsf
 
 

@@ -1,0 +1,19 @@
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+zzAtLinkClassNameAsDisp	{@link {#insert zTPPaste}{#insert zzzCopySpcPasteL1w}\\\}	zzAtLinkClassNameAsDisp
+zzAtLinkPreClsDotFunc	{#insert zzSetJDUrlToCBPrintPreLinkThrUrl}(*{#insert zzzCopySpcPasteL1w}*)\\\}.{#SETCLIPBOARD {#insert zvJD_URL}}{#insert zzAtLinkUseFuncNameAsDispNoHash_M_urlcb}	zzAtLinkPreClsDotFunc
+zzAtLinkPreClsLinkDotObj	{#insert zzSetJDUrlToCBPrintPreLinkThrUrl}(*{#insert zzzCopySpcPasteL1w}*)\\\}.{@link {#insert zvJD_URL}{#insert zzzCopySpcPasteL1w}\\\}	zzAtLinkPreClsLinkDotObj
+zzAtLinkPreClsDotObj	{@link {#insert zTPPaste}{#insert zCopyL1w} {#insert zTPPaste}\\\}{#insert zMoveL2w}{#insert zMoveL2w}{#insert zSelectL1wCopy}{#insert zMatchBracket2}{#insert zLEFT}{#insert zTPPaste}.{#insert zPreBracketGTP}	zzAtLinkPreClsDotObj
+zzAtLinkPreClsSprDotFunc	{#insert zzSetJDUrlToCBPrintPreLinkThrUrl} super\\\}.{#insert zzAtLinkUseFuncNameAsDispNoHash_M_urlcb}	zzAtLinkPreClsSprDotFunc
+zzAtLinkUseFuncNameAsDispNoHash_M_urlcb	{@link {#insert zzAtLinkUseFuncNameAsDispPostHash}	zzAtLinkUseFuncNameAsDispNoHash_M_urlcb
+zzAtLinkUseFuncNameAsDispPostHash	{#insert zTPPaste}{#insert zPostBrkctGTPCopyWordLeftGTP} {#insert zTPPaste}\\\}	zzAtLinkUseFuncNameAsDispPostHash
+zzAtLinkUseFuncNameAsDispWHash_M_urlcb	{@link #{#insert zzAtLinkUseFuncNameAsDispPostHash}	zzAtLinkUseFuncNameAsDispWHash_M_urlcb
+zvJD_URL_stCB	{#SETPHRASE -description zvJD_URL -content {#INSERTCLIPBOARD} -autotext zvJD_URL -folder ctvv_folder}	zvJD_URL_stCB
+zzSetJDUrlToCBPrintPreLinkThrUrl	{#insert zvJD_URL_stCB}{@link {#SUBSTR {#insert zvJD_URL} -from 0 -count {#CALC {#POS {#insert zvJD_URL} -substr #} - 1 -round 0 -thousands none}}	zzSetJDUrlToCBPrintPreLinkThrUrl
+zzSetJDUrlToCBPrintPreClass	{#insert zvJD_URL_stCB}{#SUBSTR {#insert zvJD_URL} -from {#CALC {#POS {#insert zvJD_URL} -substr #} + 1 -round 0 -thousands none} -count {#CALC {#LENGTH {#insert zvJD_URL}} - {#POS {#insert zvJD_URL} -substr #} -round 0 -thousands none}}	zzSetJDUrlToCBPrintPreClass
+zzzCopySpcPasteL1w	{#insert zCopyL1w} {#insert zTPPaste}	zzzCopySpcPasteL1w
+
+(*DELETE?
+   zzAtLinkPreClsDotFunc   {#SETPHRASE -description zvJD_URL -content {#INSERTCLIPBOARD} -autotext zvJD_URL -folder ctvv_folder}{@link {#SUBSTR {#insert zvJD_URL} -from 0 -count {#POS {#insert zvJD_URL} -substr #}}{#BALLOON -title XXX -text pos={#POS {#insert zvJD_URL} -substr #}, substr={#SUBSTR {#insert zvJD_URL} -from 0 -count {#POS {#insert zvJD_URL} -substr #}}}{#insert zzzCopySpcPasteL1w}\\\}.{#insert zzAtLinkUseFuncNameAsDispNoHash}   zzAtLinkPreClsDotFunc
+	zzAtLinkUseFuncNameAsDispNoHash   {@link {#insert zzAtLinkUseFuncNameAsDispPostHash}   zzAtLinkUseFuncNameAsDispNoHash
+	zzAtLinkUseFuncNameAsDispWHash_M_urlcb   {@link {#insert zzAtLinkUseFuncNameAsDispPostHash}   zzAtLinkUseFuncNameAsDispWHash_M_urlcb
+ *)

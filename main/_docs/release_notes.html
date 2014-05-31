@@ -10,6 +10,55 @@
 
 <BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF"><a name="top"></a>
 
+DOCS:
+	ADDED: Needed variable names to xh phrase-creator ddmenu. Example (xhclak):
+		zREoffKlw1SelLines_M_hnry (zvHNR_YES)
+	REMOVED: All characters except the last in the DISPLAYED autotext of all headers in the xh phrase-creator ddmenu. Example:
+		Alter -- a
+	which used to be
+		Alter -- xhcca
+OTHER:
+	ADDED script to import multiple phrase-files for PhraseExpress version 10. There are bugs in the import process, so this will be changed when those bugs are addressed.
+	IMPROVEMENT: The lag-time after phrases complete, before another phrase can be executed (or, indeed, anything using a modifier key can be done on the computer) has been dramatically reduced--from about a two second average, to about a third-of-a-second. See (viewed 2/11/2014)
+	<BR> &nbsp; &nbsp; <CODE><A HREF="http://www.phraseexpress.com/phpBB3/viewtopic.php?f=146&t=12503">http://www.phraseexpress.com/phpBB3/viewtopic.php?f=146&t=12503</A></CODE>
+ADDED (SNR)
+			zzQescCloseParen
+			zzQescOpenParen
+			nwrq: Multiple replacement sequences for the below text: nwrqsyn
+			fnrq: Replace next occurances of word with below line-list of words
+			ndrq: One replacement sequence for entire document
+			zv[FIND_WHAT,RPLC_WITH]_stCB: xhsft
+zTMSteps_javaDelSlctdPrmTypes
+	Now escapes the open-paren when making the replacement. This works fine in TextPad version 7.0.9, it fails (as it should!) in 7.1.0. TextPad macros also updated to reflect this.
+Java
+	ADDED: mpl[j,x]y: Same as z, but re-pastes class-name only at cursor.
+	XBN-Java:
+		ADDED (XBN-Java): iwtpq
+		REMOVED (XBN-Java): pt4 (works great, but no longer duplicating &quot;<CODE>_4prot</CODE>&quot; functions in this fashion)
+		ADDED: <CODE>[c,f]xcrr[1-5]</CODE>, which calls xcr, then xcnr. This is to catch a RuntimeException, and immediately
+		<BR> &nbsp; &nbsp; <CODE>throw  CIObject.nullOrReturnCause(<I>[parameter-1]</I>, sCNSTR, &quot;<I>[parameter-1]</I>&quot;, rtx)</CODE>
+	ADDED: [m] pre-option for sgl, to print a semi-colon at the end of the signature: sglsyn
+	FIXED: mpl[j,x]z
+	FIXED: nl1syn
+	FIXED: zJRgxJavaFuncSigThrSemicOrOpnCrly to allow whitespace after the ending open-curly or semi-colon
+Other:
+	FIXED: zActivateMrc*Xplorer2Search. See "CHANGED (XKP): Changed perimissions..."
+	FIXED: Turning syntax-balloons on and off via the XBN-PhraseExpress User Menu: <CODE><A HREF="devpex/xbnpe_ddmenus.html#user">devpex/xbnpe_ddmenus.html#user</A></CODE>
+	IMPROVED: Sped up qcb*: (...?...:...): qtnsyn
+CHANGED (XKP): Changed perimissions of the following folders so they are executable everywhere.
+	configuration\xbnpe__directory_config_do_not_edit_this__EXECUTABLE_EVERYWHERE.px.txt
+	configuration\xbnpe__global_config_edit_this__EXECUTABLE_EVERYWHERE.px.txt
+	Temporary variable storage -- ctvv_folder -- EXECUTABLE EVERYWHERE
+This change is required for phrases such as
+	other\xplorer2__EXECUTE_EVERYWHERE.px.txt\zActivateMrc*Xplorer2Search
+PhraseExpress:
+	FIXED: zzMidRplcREIndentTbSpcToNothing, which broke in TextPad version 7.1 (this is used by pidd* [xhpm]): xhclai
+CWLPDF:
+	FIXED: zDirFileSave_M_dirFnm and zzDirFileSaveAsPreConfirm_M_dirFnm, to properly handle no zvDIRECTORY (use working directory).
+	DEPRECATED: zPrintDelAboutToOpenFileWarning_M_dirFnm and zPrintDelAboutToOpenFileWarning_M_pth. Use zBalOpeningInsertingFileWarning_M_dirFnm and zBalOpeningInsertingFileWarning_M_pth instead.
+	CHANGED: zzHoknRAW to zzHomeBkspFromPrompt
+	ADDED: zzHomeBksp_M_lnc
+
 <A NAME="0p9p0p2_beta"/><H2>XBNPE: 12/9/2013: Release <CODE>0.9.0.2-beta</CODE></H2>
 
 <P>This is the current &quot;<CODE>master</CODE>&quot; branch. There is no &quot;<CODE>stable_non_master_release</CODE>&quot; branch.</P>

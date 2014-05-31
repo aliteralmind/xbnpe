@@ -1,19 +1,34 @@
 __XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+xci -- catch IOException	(*starts w spc*)  catch(IOException iox{#insert zClsPrnThenCurlyBlkYUp}{#insert xnpsyn}	xci
+xcf -- catch NoSuchFileException	(*starts w spc*)  catch(NoSuchFileException nsfx{#insert zClsPrnThenCurlyBlkYUp}{#insert xnpsyn}	xcf
+xcad -- catch AccessDeniedException	(*starts w spc*)  catch(AccessDeniedException adx{#insert zClsPrnThenCurlyBlkYUp}{#insert xnpsyn}	xcad
 xca -- catch IllegalArgumentException (not try!)	(*starts w spc*)  catch(IllegalArgumentException iax{#insert zClsPrnThenCurlyBlkYUp}{#insert xnpsyn}	xca
-xcab -- xab, catch block (not try!)	(*starts w spc*)  catch(ArrayIndexOutOfBoundsException aibx{#insert zClsPrnThenCurlyBlkYUp}{#insert xnpsyn}	xcab
+xcab -- xab, catch block (not try!)	(*starts w spc*)  catch(ArrayIndexOutOfBoundsException abx{#insert zClsPrnThenCurlyBlkYUp}{#insert xnpsyn}	xcab
 xcb -- catch IndexOutOfBoundsException (not try!)	(*starts w spc*)  catch(IndexOutOfBoundsException ibx{#insert zClsPrnThenCurlyBlkYUp}{#insert xnpsyn}	xcb
 xcc -- catch ClassCastException (not try!)	(*starts w spc*)  catch(ClassCastException ccx{#insert zClsPrnThenCurlyBlkYUp}{#insert xnpsyn}	xcc
 xcn -- catch NullPointerException (not try!)	(*starts w spc*)  catch(NullPointerException npx{#insert zClsPrnThenCurlyBlkYUp}{#insert xnpsyn}	xcn
-xcr -- catch RuntimeException (not try!)	(*starts w spc*)  catch(RuntimeException rtx{#insert zClsPrnThenCurlyBlkYUp}{#insert xnpsyn}	xcr
+xcr -- catch RuntimeException (not try!)	{#insert zzSpcSpcCatchRtxBrkBrk}{#insert xnpsyn}	xcr
+zzSpcSpcCatchRtxBrkBrk	(*starts w spc*)  catch(RuntimeException rx{#insert zClsPrnThenCurlyBlkYUp}	zzSpcSpcCatchRtxBrkBrk
 xcs -- catch IllegalStateException (not try!)	(*starts w spc*)  catch(IllegalStateException isx{#insert zClsPrnThenCurlyBlkYUp}{#insert xnpsyn}	xcs
 xcx -- catch ...Exception (not try!)	(*starts w spc*)  catch({#insert zYmark}Exception {#insert zYmark}x{#insert zClsPrnThenCurlyBlkYUp}{#insert zYUp}{#insert xnpsyn}	xcx
 xda -- @exception IllegalArgumentException	@exception  IllegalArgumentException  {#insert zYThenSelect}{#insert xnpsyn}	xda
 xdab -- @exception ArrayIndexOutOfBoundsException	@exception  ArrayIndexOutOfBoundsException  {#insert zYThenSelect}{#insert xnpsyn}	xdab
 xdb -- @exception IndexOutOfBoundsException	@exception  IndexOutOfBoundsException  {#insert zYThenSelect}{#insert xnpsyn}	xdb
 xdc -- @exception ClassCastException	@exception  ClassCastException  {#insert zYThenSelect}{#insert xnpsyn}	xdc
+xdf -- @exception NoSuchFileException	@exception  NoSuchFileException  {#insert zYThenSelect}{#insert xnpsyn}	xdf
+xdad -- @exception AccessDeniedException	@exception  AccessDeniedException  {#insert zYThenSelect}{#insert xnpsyn}	xdad
 xdn -- @exception NullPointerException	@exception  NullPointerException  {#insert zYThenSelect}{#insert xnpsyn}	xdn
 xdr -- @exception RuntimeException	@exception  RuntimeException  {#insert zYThenSelect}{#insert xnpsyn}	xdr
 xds -- @exception IllegalStateException	@exception  IllegalStateException  {#insert zYThenSelect}{#insert xnpsyn}	xds
 xdx -- @exception ...Exception	@exception  {#insert zYmark}Exception  {#insert zYThenSelect}{#insert xnpsyn}	xdx
-xnpsyn	{#BALLOON -title Syntax: Java exceptions -text x[[c,d]][ab,as,x]=AIdxOOB,ArgStt,? // x[c,d]c=ClsCast // x[c,d]n=NullPtr  //  x[c,d]r=Runtime // ([c]=catch, [d]=@) // javasyn}	xnpsyn
-zClsPrnThenCurlyBlkYUp	)  {{#insert zENTER}{#insert zYmark}{#insert zENTER}}{#insert zYUp}	zClsPrnThenCurlyBlkYUp
+xnpsyn	{#BALLOON -title Syntax: Java exceptions -text x[[c,d]][ab,as,x]=AIdxOOB,ArgStt,? // x[c,d]c=ClsCast // x[c,d]n=NullPtr  //  x[c,d]r=Runtime // ([c]=catch, [d]=@) // xcrr[0-5]=catch~RTX~throw~ciNullOrReturnCause for param # // javasyn}	xnpsyn
+zClsPrnThenCurlyBlkYUp	{#insert zClsPrnThenCurlyBlk}{#insert zYUp}	zClsPrnThenCurlyBlkYUp
+zClsPrnThenCurlyBlk	)  {{#insert zENTER}{#insert zYmark}{#insert zENTER}}	zClsPrnThenCurlyBlk
+xcrr -- catch RTX, throw ciNullOrReturnCause for param 1	{#insert xcrr1}	xcrr
+xcrr0 -- catch RTX, throw ciNullOrReturnCause, x-mark	{#insert zzSpcSpcCatchRtxBrkBrk}throw  CrashIfObject.nullOrReturnCause({#insert zXmark}, {#insert zAscQQ}{#insert zXmark}{#insert zAscQQ}, null, rx);{#insert clnsyn}	xcrr0
+xcrr1 -- catch RTX, throw ciNullOrReturnCause for param 1	{#insert zzSpcSpcCatchRtxBrkBrk}{#insert zvPARAM_NUM_st1}{#insert zzThrowCINlOrRtnCause_M_pnum}{#insert clnsyn}	xcrr1
+xcrr2 -- xcrr, param 2	{#insert zzSpcSpcCatchRtxBrkBrk}{#insert zvPARAM_NUM_st2}{#insert zzThrowCINlOrRtnCause_M_pnum}{#insert clnsyn}	xcrr2
+xcrr3 -- xcrr, param 3	{#insert zzSpcSpcCatchRtxBrkBrk}{#insert zvPARAM_NUM_st3}{#insert zzThrowCINlOrRtnCause_M_pnum}{#insert clnsyn}	xcrr3
+xcrr4 -- xcrr, param 4	{#insert zzSpcSpcCatchRtxBrkBrk}{#insert zvPARAM_NUM_st4}{#insert zzThrowCINlOrRtnCause_M_pnum}{#insert clnsyn}	xcrr4
+xcrr5 -- xcrr, param 5	{#insert zzSpcSpcCatchRtxBrkBrk}{#insert zvPARAM_NUM_st5}{#insert zzThrowCINlOrRtnCause_M_pnum}{#insert clnsyn}	xcrr5
+xcrrn -- xcrr, [prompt #] param	{#insert zzSpcSpcCatchRtxBrkBrk}{#insert zvPARAM_NUM_stPrompt}{#insert zzThrowCINlOrRtnCause_M_pnum}{#insert clnsyn}	xcrrn

@@ -1,2 +1,0 @@
-hmlc -- Multi-line <!-- -->	<!--{#insert zENTER2} -->{#insert zUP}{#TAB}	hmlc
-hslc -- Single-line <!-- -->	<!--  -->{#insert zTPMoveL1w}{#insert zLEFT}	hslc

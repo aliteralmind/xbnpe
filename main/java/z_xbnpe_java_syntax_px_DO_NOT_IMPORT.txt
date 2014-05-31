@@ -18,18 +18,19 @@ XBN-PhraseExpress: Java code creation (javasyn, xpesyn)
 	Non-links:
 	dz1syn: @param for parameters in below signature
 	{#insert zzDz1syns1of3}  //  {#insert zzDz1syns2of3}  //  {#insert zzDz1syns3of3}
-{#insert zBKSP}jdbsyn: Basic block  //  jdqtsyn: snippets
+{#insert zBKSP}jdbsyn: Basic block  //  jdqtsyn: snippets (jdmfs=MAIN-FUNC block)
 sbnesyn: Should, may, must ([not] be equal to...)
 lncsyn: null, true, false, ...  //  jdqtsyn: Random snippets
 rtndsyn: @return ...
 fqplsyn: func/var-name to F()...{#insert zAscQQ}+F()+{#insert zAscQQ}
 	{#insert zzFqplsyns}
-{#insert zBKSP2}Links: Functions/generic constructors/object:
+{#insert zBKSP}hcf[b,l]: Non-link coded function name from word [in clipboard/left]
+{#insert zBKSP}Links: Functions/generic constructors/object:
 	kflsyn: 0-parameter (w/ internal-object)
 (kfl[k,opt,prk,tgt]syn <khbadinfo, nobadinfo>)
 	{#insert zzKflsyns1of4}  //  {#insert zzKflsyns3of4}
 {#insert zzKflksyns}
-{#insert zzKflsyns4of4}  //  {#insert zzKflsyns2of4}
+{#insert zzKflsyns4of4}  //  {#insert zzKflsyns2of4}  //  Non-link: hcf[b]
 {#insert zBKSP}kglsyn: 1+ parameters (kgl[k,opt,pap,prk,tgt]syn)
 	{#insert zzKglsyns2of3}  //  {#insert zzKglsyns1of3}
 {#insert zzKglsyns3of3}  //  {#insert zzKglksyns}
@@ -62,19 +63,19 @@ fqplsyn: func/var-name to F()...{#insert zAscQQ}+F()+{#insert zAscQQ}
 {#insert zzKutlsyns2of4}  //  {#insert zzKutlsyns4of4}
 {#insert zBKSP2}kotlsyn: Object link with a specific target class (kotlaltsyn, obj-name-->)
 	***same as kut..., without '[*]' ('kut' --> 'kot')
-{#insert zBKSP3}Other
+{#insert zBKSP4}Other
 	gfnsyn: Go to/copy init/getter line for internal var-name before cursor
 	{#insert zzGfnsyns1of3}  //  {#insert zzGfnsyns2of3}  //  {#insert zzGfnsyns3of3}
 {#insert zBKSP}jsgsyn: Setter and getter functions
 	{#insert zzJsgsyns1of2}  //  {#insert zzJsgsyns2of2}
-{#insert zBKSP}mplsyn: Write import statement for class just before the cursor
-	{#insert zzMplsyns}
+{#insert zBKSP}mplsyn: Write import statement for class-name just before the cursor
+	{#insert zzMplsyns1of3}  //  {#insert zzMplsyns2of3}  //  {#insert zzMplsyns3of3}
 {#insert zBKSP}hcmlsyn: Get-paste this/super-class name (expects JavaDoc block above class-line)
 	{#insert zzHcmlsyns1of3}  //  {#insert zzHcmlsyns2of3}  //  {#insert zzHcmlsyns3of3}
 {#insert zBKSP}dcnstrsyn: Create sub-class construtors from dup super-class signatures: {#insert zzDcnstrsyns}
 sypsyn: Basic auto-completes
-	{#insert zzSypsyns1of10}  //  {#insert zzSypsyns2of10}  //  {#insert zzSypsyns3of10}  //  {#insert zzSypsyns5of10}  //  {#insert zzSypsyns6of10}  //  {#insert zzSypsyns10of10}
-{#insert zzSypsyns7of10}  //  {#insert zzSypsyns8of10}  //  {#insert zzSypsyns4of10}  //  {#insert zzSypsyns9of10}
+	{#insert zzSypsyns1of7}  //  {#insert zzSypsyns2of7}  //  {#insert zzSypsyns7of7}
+{#insert zzSypsyns5of7}  //  {#insert zzSypsyns6of7}
 {#insert zBKSP}rtasyn: return & @return
 	{#insert zzRtasyns2of4}  //  {#insert zzRtasyns1of4}  //  {#insert zzRtasyns3of4}  //  {#insert zzRtasyns4of4}
 {#insert zBKSP}farosyn: Get-paste 1-and-ONLY line in below function: {#insert zzFarosyns}
@@ -82,15 +83,12 @@ xnpsyn: Exceptions: catch, specific types
 xtnsyn: Exceptions: throw
 	{#insert zzXtnsyns1of4}  //  {#insert zzXtnsyns3of4}
 {#insert zzXtnsyns2of4}  //  {#insert zzXtnsyns4of4}
-{#insert zBKSP2}XBN-Java specific:
-	clnsyn: ciNull, ciNullOrReturnCause: {#insert zzClnsyns1of3}
-xcgsyn: Copy-constructor and corresponding getXObjectCopy() function
+{#insert zBKSP}stubf: Turn interface function signature into return-null stub function
+{#insert zBKSP}XBN-Java specific:
+	clnsyn: CrashIfObject.nnull, CrashIfObject.nullOrReturnCause: {#insert zzClnsyns1of3}
+xcgsyn: Copy-constructor and corresponding getObjectCopy() function
 	{#insert zzXcgsyns1of6}  //  {#insert zzXcgsyns2of6}  //  {#insert zzXcgsyns3of6}  //  {#insert zzXcgsyns4of6}  //  {#insert zzXcgsyns5of6}  //  {#insert zzXcgsyns6of6}
 {#insert zBKSP}xcksyn: Link to THIS or super copy-constructor
 	{#insert zzXcksyns1of4}  //  {#insert zzXcksyns2of4}  //  {#insert zzXcksyns3of4}  //  {#insert zzXcksyns4of4}
-{#insert zBKSP}iwtsyn: xbn.lang.InterfaceWrapper template
-	{#insert zzIwtsyns1of2}  //  {#insert zzIwtsyns2of2}
-{#insert zBKSP}pt4syn: Transform {#insert zAscQQ}_4prot{#insert zAscQQ} super-class function to two functions for sub-class
-	{#insert zzPt4syns}
 {#insert zBKSP}xajcsyn: XBN-Java ant '<javac' tags: {#insert zzXajcsyns}
-{#insert zBKSP2}
+{#insert zBKSP}

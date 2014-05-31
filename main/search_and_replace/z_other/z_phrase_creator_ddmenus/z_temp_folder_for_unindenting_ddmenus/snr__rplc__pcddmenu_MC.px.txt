@@ -15,29 +15,29 @@ FROM
 ...\xbnpe\tpkc\tpkc_bootstrap_phrases\zphrase_creator_pop_up_heirarchies\xbnpe_phrase_creator_popup_heirarchy_base.px.txt
 
 Phrase-creators: XBN-PhraseExpress -- Call 'xh'   .   zXbnpeCmdPopupRoot
-Phrase-creators: Search & replace -- xhs   .   xh
-SNR: Replace -- xhsr   .   xhs*)xhsrb
-(*			Buttons -- xhsrb   .   xhsr*)xhsrb
-(*          zRplcBtnNext -- xhsrbn   .   xhsrb*)
+Phrase-creators: Search & replace -- s   .   xh
+SNR: Replace -- r   .   xhs*)xhsrb
+(*			Buttons -- b   .   xhsr*)xhsrb
+(*          zRplcBtnNext -- n   .   xhsrb*)
 zRplcBtnNext2 [2-5]	\\\{#insert zRplcBtnNext2\\\}	xhsrbn
 zRplcBtnNextClose	\\\{#insert zRplcBtnNextClose\\\}	xhsrbn
-zRplcBtnNext_M_rnxtc	\\\{#insert zRplcBtnNext_M_rnxtc\\\}	xhsrbnxhsrb
+zRplcBtnNext_M_rnxtc (zvRPLC_NXT_CNT)	\\\{#insert zRplcBtnNext_M_rnxtc\\\}	xhsrbnxhsrb
 zRplcBtnFindThenRplc	\\\{#insert zRplcBtnFindThenRplc\\\}	xhsrb
-(*       Close -- xhsrc   .   xhsr*)
+(*       Close -- c   .   xhsr*)
 zRplcDlgCloseMC	\\\{#insert zRplcDlgCloseMC\\\}	xhsrc
 zRplcDlgCloseMCRE	\\\{#insert zRplcDlgCloseMCRE\\\}	xhsrc
 zRplcDlgCloseMCWW	\\\{#insert zRplcDlgCloseMCWW\\\}	xhsrc
 zRplcDlgCloseRE	\\\{#insert zRplcDlgCloseRE\\\}	xhsrc
 zRplcDlgCloseWW	\\\{#insert zRplcDlgCloseWW\\\}	xhsrc
-(*       Open -- xhsro   .   xhsr*)
+(*       Open -- o   .   xhsr*)
 zRplcDlgOpenForceWW	\\\{#insert zRplcDlgOpenForceWW\\\}{#insert zRplcWAndCloseYNPrompt}	xhsro
-zRplcDlgOpenMC* -- xhsrom	\\\{#insert zRplcDlgOpenMC\\\}{#insert zRplcWAndCloseYNPrompt}	xhsro
+zRplcDlgOpenMC* -- m	\\\{#insert zRplcDlgOpenMC\\\}{#insert zRplcWAndCloseYNPrompt}	xhsro
 zRplcDlgOpenMCForceWW	\\\{#insert zRplcDlgOpenMCForceWW\\\}{#insert zRplcWAndCloseYNPrompt}	xhsrom
 zRplcDlgOpenMCOnly	\\\{#insert zRplcDlgOpenMCOnly\\\}{#insert zRplcWAndCloseYNPrompt}	xhsrom
 zRplcDlgOpenMCRE	\\\{#insert zRplcDlgOpenMCRE\\\}{#insert zRplcWAndCloseYNPrompt}	xhsrom
 zRplcDlgOpenMCWW	\\\{#insert zRplcDlgOpenMCWW\\\}{#insert zRplcWAndCloseYNPrompt}	xhsrom
 zRplcDlgOpenRE	\\\{#insert zRplcDlgOpenRE\\\}{#insert zRplcWAndCloseYNPrompt}	xhsro
 zRplcDlgOpenWW	\\\{#insert zRplcDlgOpenWW\\\}{#insert zRplcWAndCloseYNPrompt}	xhsro
-(*       Other -- xhsrt   .   xhsr*)
+(*       Other -- t   .   xhsr*)
 fwhatp	(*actiononly=fwhatp*){#SETPHRASE -description zvACTN_NM -content fwhatp -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhsr
 rwithp	(*actiononly=rwithp*){#SETPHRASE -description zvACTN_NM -content rwithp -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhsr

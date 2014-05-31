@@ -1,12 +1,13 @@
 __XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
-zPasteSpaceGTStart -- Paste, space, cursor b/4 1st pasted char [zCApKK]	CT/HU!-83%2hu{#insert zTPPaste} {#insert zTPFindDlgOpen}{#insert zFindFlagUp}CT/HU!-83%2hu{#insert zFindBtnNext}{#insert zFindFlagDownRAW}{#insert zFindDlgClose}{#insert zDEL}	zPasteSpaceGTStart
-zvCB_CONTENTS_stCB -- Save clipboard. WARNING: Executes the clipboard!	{#SETPHRASE -description zvCB_CONTENTS -content {#INSERTCLIPBOARD} -autotext zvCB_CONTENTS -folder ctvv_folder}	zvCB_CONTENTS_stCB
-zSetCBToCB_CONTENTS -- Restore clipboard (var is executed!)	{#SETCLIPBOARD {#insert zvCB_CONTENTS}}	zSetCBToCB_CONTENTS
-zDbgTxtCBandCONTENTS -- zvCB_CONTENTS and the clipboard	zvCB_CONTENTS='{#insert zvCB_CONTENTS}', cb='{#INSERTCLIPBOARD}'	zDbgTxtCBandCONTENTS
 zCBLen	{#LENGTH {#INSERTCLIPBOARD}}	zCBLen
+zCBTrimmed	{#TRIM {#INSERTCLIPBOARD}}	zCBTrimmed
+zDbgTxtCBandCONTENTS -- zvCB_CONTENTS and the clipboard	zvCB_CONTENTS='{#insert zvCB_CONTENTS}', cb='{#INSERTCLIPBOARD}'	zDbgTxtCBandCONTENTS
 zInsertCB -- For use in COND phrases, so it only executes if needed.	{#INSERTCLIPBOARD}	zInsertCB
 zLowercaseCB	{#LOWERCASE {#INSERTCLIPBOARD}}	zLowercaseCB
-zTrimCB	{#SETCLIPBOARD {#TRIM {#INSERTCLIPBOARD}}}	zTrimCB
-zPasteSelectAddXmkAtSelEnd -- Expects NO x-marks in selection or anywhere in document	{#insert zXmark}{#insert zTPPaste}{#insert zXmarkThenGTP}{#insert zXUpDelete}{#insert zFindDlgOpenDown}{#insert zXmark}{#insert zFindXSBtnNextXS}{#insert zFindDlgCloseWS}	zPasteSelectAddXmkAtSelEnd
 zPasteSelect1Line -- Adds then elims an x-mark via replacement -- no line breaks!	{#insert zzPasteSelect1LineRDlgOpn}{#insert zRplcDlgClose}	zPasteSelect1Line
+zPasteSelectAddXmkAtSelEnd -- Expects NO x-marks in selection or anywhere in document	{#insert zXmark}{#insert zTPPaste}{#insert zXmarkThenGTP}{#insert zXUpDelete}{#insert zFindDlgOpenDown}{#insert zXmark}{#insert zFindXSBtnNextXS}{#insert zFindDlgCloseWS}	zPasteSelectAddXmkAtSelEnd
+zSetCBToCB_CONTENTS -- Restore clipboard (var is executed!)	{#SETCLIPBOARD {#insert zvCB_CONTENTS}}	zSetCBToCB_CONTENTS
+zSetCBToTrimmed	{#SETCLIPBOARD {#insert zCBTrimmed}}	zSetCBToTrimmed
+zvCB_CONTENTS_stCB -- Save clipboard. WARNING: Executes the clipboard!	{#SETPHRASE -description zvCB_CONTENTS -content {#INSERTCLIPBOARD} -autotext zvCB_CONTENTS -folder ctvv_folder}	zvCB_CONTENTS_stCB
 zzPasteSelect1LineRDlgOpn	{#insert zPasteSelectAddXmkAtSelEnd}{#insert zRplcDlgOpenMCOnly}{#LOOP {#insert zSystemSelectL1c} -count 3}{#insert zSystemCopy}{#insert zRplcFieldWith}{#insert zSystemPaste}{#insert zRplcBtnAllSel}	zzPasteSelect1LineRDlgOpn
+zUndoRedo -[zCApSEMI_COLON]-	{#insert zTPUndo}{#insert zTPRedo}	zUndoRedo

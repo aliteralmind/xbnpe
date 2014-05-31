@@ -1,7 +1,20 @@
 __XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
 qtn -- == null	(*starts w spc*) == null{#insert qtnsyn}	qtn
 nqn -- != null	(*starts w spc*) != null{#insert qtnsyn}	nqn
-qcb	({#insert zXmark} ? {#insert zXmark} : {#insert zXmark}){#insert zXmark}{#insert zXUp4}{#insert qtnsyn}	qcb
-qcb2	({#insert zXmark} ? {#insert zXmark}{#insert zEnterTab}:  {#insert zXmark}){#insert zXmark}{#insert zXUp4}{#insert qtnsyn}	qcb2
-qcb3	({#insert zXmark}{#insert zEnterTab}?  {#insert zXmark}{#insert zEnter}:  {#insert zXmark}){#insert zXmark}{#insert zXUp4}{#insert qtnsyn}	qcb3
-qtnsyn	{#BALLOON -title Syntax: Equal to/?:~block -text qtn=' == null', nqn=' != null', qcb[[2~3]]='... ? ... : ...' (on 1~3 lines)}	qtnsyn
+qt- -- == -1	(*starts w spc*) == -1{#insert qtnsyn}	qt-
+nq- -- != -1	(*starts w spc*) != -1{#insert qtnsyn}	nq-
+qts -- == -1	(*starts w spc*) == -1{#insert qtnsyn}	qts
+nqs -- != -1	(*starts w spc*) != -1{#insert qtnsyn}	nqs
+qt' -- == 1	(*starts w spc*) == 1{#insert qtnsyn}	qt'
+nq' -- != 1	(*starts w spc*) != 1{#insert qtnsyn}	nq'
+qt1 -- == 1	(*starts w spc*) == 1{#insert qtnsyn}	qt1
+nq1 -- != 1	(*starts w spc*) != 1{#insert qtnsyn}	nq1
+qt0 -- == 0	(*starts w spc*) == 0{#insert qtnsyn}	qt0
+nq0 -- != 0	(*starts w spc*) != 0{#insert qtnsyn}	nq0
+qtl -- == 0	(*starts w spc*) == 0{#insert qtnsyn}	qtl
+nql -- != 0	(*starts w spc*) != 0{#insert qtnsyn}	nql
+qcb	({#insert zXmark} ? {#insert zXmark} : {#insert zXmark}){#insert zzXmkGTPPostBrktGTPXDown}{#insert qtnsyn}	qcb
+qcb2	({#insert zXmark} ? {#insert zXmark}{#insert zEnterTab}:  {#insert zXmark}){#insert zzXmkGTPPostBrktGTPXDown}{#insert qtnsyn}	qcb2
+qcb3	({#insert zXmark}{#insert zEnterTab}?  {#insert zXmark}{#insert zEnter}:  {#insert zXmark}){#insert zzXmkGTPPostBrktGTPXDown}{#insert qtnsyn}	qcb3
+qtnsyn	{#BALLOON -title Syntax: Equal to/?:~block -text qtn=' == null', nqn=' != null', [nq,qt][s,-]: -1, [nq,qt][l,0]: 0, [nq,qt][',1]: 1, qcb[[2~3]]='... ? ... : ...' (on 1~3 lines)}	qtnsyn
+zzXmkGTPPostBrktGTPXDown	{#insert zXmarkThenGTP}{#insert zPostBracketGTP}{#insert zXDown}	zzXmkGTPPostBrktGTPXDown

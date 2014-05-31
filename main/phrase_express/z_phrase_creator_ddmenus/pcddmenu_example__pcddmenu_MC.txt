@@ -17,10 +17,10 @@ __XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a larg
    FROM xbnpe_phrase_creator_popup_heirarchy_base.px.txt:
 
 Phrase-creators: XBN-PhraseExpress -- Call 'xh'   .   zXbnpeCmdPopupRoot
-   Phrase-creators: Other -- xho   .   xh
+   Phrase-creators: Other -- o   .   xh
 *)
-		My example ddmenu phrases -- xhodx	.	xhod
-			Numbered -- xhodxn (mxp[1-4])	.	xhodx
+		My example ddmenu phrases -- x	.	xhod
+			Numbered -- n (mxp[1-4])	.	xhodx
 				zExamplePhrase1	\\\{#insert zExamplePhrase1\\\}	xhodxn
 				zExamplePhrase2	\\\{#insert zExamplePhrase2\\\}	xhodxn
 				zExamplePhrase3	\\\{#insert zExamplePhrase3\\\}	xhodxn

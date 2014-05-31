@@ -1,0 +1,87 @@
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+public -- b	public (*ends w spc*)	pu
+	_ final -- f	public final (*ends w spc*)	pub
+		String	public final String (*ends w spc*)	pubf
+		boolean	public final boolean (*ends w spc*)	pubf
+		char	public final char (*ends w spc*)	pubf
+		int	public final int (*ends w spc*)	pubf
+		void	public final void (*ends w spc*)	pubf
+		...	public final (*ends w spc*)	pubf
+	_ static -- s	public static (*ends w spc*)	pub
+		_ static final -- f	public static final (*end w spc*)	pubs
+			String	public static final String (*ends w spc*)	pubsf
+			boolean	public static final boolean (*ends w spc*)	pubsf
+			char	public static final char (*ends w spc*)	pubsf
+			int	public static final int (*ends w spc*)	pubsf
+			void	public static final void (*ends w spc*)	pubsf
+			void main(...)	public static final void main(String {#insert zXmark})  {{#insert zENTER}\\\}{#insert zXUp}	pubsf
+			void main(ignored)	public static final void main(String ignored)  {{#insert zENTER2}\\\}{#insert zUP}{#insert zEND}	pubsf
+			...	public static final (*ends w spc*)	pubsf
+		String	public static String (*ends w spc*)	pubs
+		boolean	public static boolean (*ends w spc*)	pubs
+		char	public static char (*ends w spc*)	pubs
+		int	public static int (*ends w spc*)	pubs
+		void	public static void (*ends w spc*)	pubs
+		...	public static (*ends w spc*)	pubs
+	String	public String (*ends w spc*)	pub
+	boolean	public boolean (*ends w spc*)	pub
+	char	public char (*ends w spc*)	pub
+	int	public int (*ends w spc*)	pub
+	void	public void (*ends w spc*)	pub
+	(*...	public ( *ends w spc* )	pub*)
+protected -- o	protected (*ends w spc*)	pr
+	_ final -- f	protected final (*ends w spc*)	pro
+		String	protected final String (*ends w spc*)	prof
+		boolean	protected final boolean (*ends w spc*)	prof
+		char	protected final char (*ends w spc*)	prof
+		int	protected final int (*ends w spc*)	prof
+		void	protected final void (*ends w spc*)	prof
+		...	protected final (*ends w spc*)	prof
+	_ static -- s	protected static (*ends w spc*)	pro
+		_ static final -- f	protected static final (*end w spc*)	pros
+			String	protected static final String (*ends w spc*)	prosf
+			boolean	protected static final boolean (*ends w spc*)	prosf
+			char	protected static final char (*ends w spc*)	prosf
+			int	protected static final int (*ends w spc*)	prosf
+			void	protected static final void (*ends w spc*)	prosf
+			...	protected static final (*ends w spc*)	prosf
+		String	protected static String (*ends w spc*)	pros
+		boolean	protected static boolean (*ends w spc*)	pros
+		char	protected static char (*ends w spc*)	pros
+		int	protected static int (*ends w spc*)	pros
+		void	protected static void (*ends w spc*)	pros
+		...	protected static (*ends w spc*)	pros
+	String	protected String (*ends w spc*)	pro
+	boolean	protected boolean (*ends w spc*)	pro
+	char	protected char (*ends w spc*)	pro
+	int	protected int (*ends w spc*)	pro
+	void	protected void (*ends w spc*)	pro
+	(*...	protected ( *ends w spc* )	pro*)
+private -- i	private (*ends w spc*)	pr
+	_ final -- f	private final (*ends w spc*)	pri
+		String	private final String (*ends w spc*)	prif
+		boolean	private final boolean (*ends w spc*)	prif
+		char	private final char (*ends w spc*)	prif
+		int	private final int (*ends w spc*)	prif
+		void	private final void (*ends w spc*)	prif
+		...	private final (*ends w spc*)	prif
+	_ static -- s	private static (*ends w spc*)	pri
+		_ static final -- f	private static final (*end w spc*)	pris
+			String	private static final String (*ends w spc*)	prisf
+			boolean	private static final boolean (*ends w spc*)	prisf
+			char	private static final char (*ends w spc*)	prisf
+			int	private static final int (*ends w spc*)	prisf
+			void	private static final void (*ends w spc*)	prisf
+			...	private static final (*ends w spc*)	prisf
+		String	private static String (*ends w spc*)	pris
+		boolean	private static boolean (*ends w spc*)	pris
+		char	private static char (*ends w spc*)	pris
+		int	private static int (*ends w spc*)	pris
+		void	private static void (*ends w spc*)	pris
+		...	private static (*ends w spc*)	pris
+	String	private String (*ends w spc*)	pri
+	boolean	private boolean (*ends w spc*)	pri
+	char	private char (*ends w spc*)	pri
+	int	private int (*ends w spc*)	pri
+	void	private void (*ends w spc*)	pri
+	(*...	private ( *ends w spc* )	pri*)

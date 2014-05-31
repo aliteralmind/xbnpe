@@ -14,7 +14,7 @@ ViewFullScreen	0
 ViewHScrollbar	0
 ViewInBrowser	0
 ViewLineNumbers	0
-ViewProperties	0
+ViewProperties	1	\\\{#insert zCASpJJ\\\}\\\{#sleep 25\\\}\\\{#insert zJJ\\\}\\\{#sleep 10\\\}
 ViewReplaceDialogBox	0
 ViewSearchResults	1	\\\{#insert zSpF11\\\}
 ViewStatusBar	0

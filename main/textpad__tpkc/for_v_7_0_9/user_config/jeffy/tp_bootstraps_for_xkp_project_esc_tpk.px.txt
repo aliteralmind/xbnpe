@@ -23,5 +23,5 @@ zTPSelectL1wEsc	\\\{#SHIFT \\\{#LEFT\\\}\\\}\\\{#insert zTSlp\\\}	zTPSelectL1wEs
 zTPSelectL1wTPKeys	Shift+Left	zTPSelectL1wTPKeys
 zTPSelectR1wEsc	\\\{#SHIFT \\\{#RIGHT\\\}\\\}\\\{#insert zTSlp\\\}\\\{#sleep 1\\\}	zTPSelectR1wEsc
 zTPSelectR1wTPKeys	Shift+Right	zTPSelectR1wTPKeys
-zTPToggleWWEsc	\\\{#F7\\\}\\\{#insert zTSlp\\\}\\\{#sleep 25\\\}	zTPToggleWWEsc
-zTPToggleWWTPKeys	Alt+F7	zTPToggleWWTPKeys
+zTPToggleWWEsc	\\\{#F8\\\}\\\{#insert zTSlp\\\}\\\{#sleep 25\\\}	zTPToggleWWEsc
+zTPToggleWWTPKeys	F8	zTPToggleWWTPKeys

@@ -18,7 +18,7 @@ ntcb -- zNameTargetFromCBWord ALT KC	{#insert zNameTargetFromCBWord}{#insert kcb
 
 ntwl -- zNameTargetFromWordLeft ALT KC	{#insert zNameTargetFromWordLeft}{#insert kcbsyn}	ntwl
 
-zAddHashToPrevLink -- Add '#' to prev link [zApSIX]	{#insert zXmark}{#insert zTMFindPrevHREFThrQQ}{#insert zRIGHT}#{#insert zSelectR1wCopy}{#insert zXDown}<a name={#asc 34}{#insert zTPPaste}{#asc 34}/>{#insert ztpmTagSelectL1}	zAddHashToPrevLink
+zAddHashToPrevLink -- Add '#' to prev link [zApSIX]	{#insert zXmark}{#insert zTMFindPrevHREFThrQQ}{#insert zRIGHT}#{#insert zSelectR1wCopy}{#insert zXDown}<a name={#asc 34}{#insert zTPPaste}{#asc 34}/>{#insert zPostBracketSelect}	zAddHashToPrevLink
 
 zCodedLinkFromSel -- Link from sel CODE-d [zCASpFIVE]	{#insert zzRplcDlgOpenRERplcUrlSpcDscWLink}{#insert zTPCut}<CODE>{#insert zTPPaste}</CODE>	zCodedLinkFromSel
 

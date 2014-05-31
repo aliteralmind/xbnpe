@@ -1,7 +1,7 @@
 XBN-PhraseExpress: Java code creation (javasyn, xpesyn)
 	Function signature
 		sglsyn: Entire signature (func-name through close paren) (sglkpsyn)
-			papeg  //  [a,A,n,g,G,u,v]sg[l,z][c][2~5,n]
+			papeg  //  [a,A,m,n,g,G,u,v]sg[l,z][c][2~5,n]
 		felsyn: Function name. With alteration: falsyn (fal[link,opt]syn)
 			fe[l,z][[2~5,n]]  //  [d,o,q,p,r,n,s]fa[l,z][[2~5,n]]
 			[c,+,\,_]fa[l,z][[2~5,n]]  //  [h,i,d,r,n]kfa[l,z][[2~5,n]]
@@ -18,18 +18,19 @@ XBN-PhraseExpress: Java code creation (javasyn, xpesyn)
 		Non-links:
 			dz1syn: @param for parameters in below signature
 				dza[ll,2-10,n]  //  dz[1~10,n]  //  dz[a-e,gn]
-			jdbsyn: Basic block  //  jdqtsyn: snippets
+			jdbsyn: Basic block  //  jdqtsyn: snippets (jdmfs=MAIN-FUNC block)
 			sbnesyn: Should, may, must ([not] be equal to...)
 			lncsyn: null, true, false, ...  //  jdqtsyn: Random snippets
 			rtndsyn: @return ...
 			fqplsyn: func/var-name to F()..."+F()+"
 				[f,v][b,p,q,s,t,u]p[b,l]
+			hcf[b,l]: Non-link coded function name from word [in clipboard/left]
 		Links: Functions/generic constructors/object:
 			kflsyn: 0-parameter (w/ internal-object)
 			(kfl[k,opt,prk,tgt]syn <khbadinfo, nobadinfo>)
 				[h,i,d,r,n]k[f,o][b,l][t]  //  [h,i,d,r,n]k[f,o]ly[b][c]
 				[f,r,y][h,i,d,r,n]k[f,o][b,l][t]k
-				kflh[t]  //  k[f,o]by[c]
+				kflh[t]  //  k[f,o]by[c]  //  Non-link: hcf[b]
 			kglsyn: 1+ parameters (kgl[k,opt,pap,prk,tgt]syn)
 				kg[b,l]y[c]  //  [t,m,v,y][h,i,d,r,n]kg[b,l][t]
 				kglyb[c]  //  [f,r,y][t,m,v,y][h,i,d,r,n]kg[b,l][t]k
@@ -62,34 +63,32 @@ XBN-PhraseExpress: Java code creation (javasyn, xpesyn)
 					[*][t,d]kut[b,l]y[c]  //  [*] --> 1+ params=[t,m,v,y] 0=[x,o,k,p]
 			kotlsyn: Object link with a specific target class (kotlaltsyn, obj-name-->)
 				***same as kut..., without '[*]' ('kut' --> 'kot')
-	Other
-		gfnsyn: Go to/copy init/getter line for internal var-name before cursor
-			ggl  //  gfn  //  tfl
-		jsgsyn: Setter and getter functions
-			jsg[d,s][x]  //  [f,h]jdbg[1~5,a~z,[g]n]
-		mplsyn: Write import statement for class just before the cursor
-			mpl[[j[z],x[z]]]
-		hcmlsyn: Get-paste this/super-class name (expects JavaDoc block above class-line)
-			[h,r]cm[c][l,z]  //  kgn[c]  //  jcl
-		dcnstrsyn: Create sub-class construtors from dup super-class signatures: dcnstr[s[x]]
-		sypsyn: Basic auto-completes
-			dd[es,se[d]]  //  jmc[b]  //  jl[s][f]  //  jvs  //  jts  //  eqlsf[x]
-			sy[l,p[q],q][f]  //  jfr[[i,x,j]]  //  jrs[f]  //  cnst
-		rtasyn: return & @return
-			rta[b]  //  rn[d,l][b]  //  rtd[b][c]  //  rt[f,h,t][d]
-		farosyn: Get-paste 1-and-ONLY line in below function: fa[c,r][t,c,q]
-		xnpsyn: Exceptions: catch, specific types
-		xtnsyn: Exceptions: throw
-			[c,f,x,y]xt[a[[b,s]],b,c,r,s,x]  //  [c,f,x,y]xtn[h][[1~5,n]]
-			xr[a[[b,s]],b,c,n,r,s,x]  //  jdbuox[r]
-	XBN-Java specific:
-		clnsyn: ciNull, ciNullOrReturnCause: [c,f,x,y]c[ln,nr][[1~5,n]]
-		xcgsyn: Copy-constructor and corresponding getXObjectCopy() function
-			xccg  //  xccgoc  //  xccnstr  //  xgocopy  //  jdxcsc[x]  //  jdsks
-		xcksyn: Link to THIS or super copy-constructor
-			[t,m,v,y][h,H,r,R]xck[t]  //  xck[r[r]]d  //  xck[r]y[c]  //  [t,m,v,y]xck[b,l][d,t]
-		iwtsyn: xbn.lang.InterfaceWrapper template
-			iwt[root,sub,xo][x]  //  iwft[n[x],x]
-		pt4syn: Transform "_4prot" super-class function to two functions for sub-class
-			pt4[n[x]]
-		xajcsyn: XBN-Java ant '<javac' tags: xajc[q]
+Other
+	gfnsyn: Go to/copy init/getter line for internal var-name before cursor
+		ggl  //  gfn  //  tfl
+	jsgsyn: Setter and getter functions
+		jsg[d,s][x]  //  [f,h]jdbg[1~5,a~z,[g]n]
+	mplsyn: Write import statement for class-name just before the cursor
+		mpl[p,[x[[l,x[r,v]]]]]  //  mplj[[i,l,u[r]]]]  //  mplo
+	hcmlsyn: Get-paste this/super-class name (expects JavaDoc block above class-line)
+		[h,r]cm[c][l,z]  //  kgn[c]  //  jcl
+	dcnstrsyn: Create sub-class construtors from dup super-class signatures: dcnstr[s[x]]
+	sypsyn: Basic auto-completes
+		dd[es,se[d]]  //  jmc[b]  //  eqlsf[x]
+		jfor  //  cnst
+		jlssyn: public/protected/private: j[l,r,v]s[f][[b,i,s,v]]  //  jvf[s]  //  jlsfvm
+	rtasyn: return & @return
+		rta[b]  //  rn[d,l][b]  //  rtd[b][c]  //  rt[f,h,t][d]
+	farosyn: Get-paste 1-and-ONLY line in below function: fa[c,r][t,c,q]
+	xnpsyn: Exceptions: catch, specific types
+	xtnsyn: Exceptions: throw
+		xt[a[[b,s]],b,c,r,s,x]  //  xtn[h][[1~5,n]]
+		xr[a[[b,s]],b,c,n,r,s,x]  //  jdbuox[r]
+	stubf: Turn interface function signature into return-null stub function
+XBN-Java specific:
+	clnsyn: CrashIfObject.nnull, CrashIfObject.nullOrReturnCause: c[ln,nr][[1~5,n]]
+	xcgsyn: Copy-constructor and corresponding getObjectCopy() function
+		xccg  //  xccgoc  //  xccnstr  //  xgocopy  //  jdxcsc[x]  //  jdsks
+	xcksyn: Link to THIS or super copy-constructor
+		[t,m,v,y][h,H,r,R]xck[t]  //  xck[r[r]]d  //  xck[r]y[c]  //  [t,m,v,y]xck[b,l][d,t]
+	xajcsyn: XBN-Java ant '<javac' tags: xajc[q]

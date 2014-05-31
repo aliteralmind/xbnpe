@@ -17,7 +17,8 @@ zTpkcViewFullScreenNbsKcCount	0	zTpkcViewFullScreenNbsKcCount
 zTpkcViewHScrollbarNbsKcCount	0	zTpkcViewHScrollbarNbsKcCount
 zTpkcViewInBrowserNbsKcCount	0	zTpkcViewInBrowserNbsKcCount
 zTpkcViewLineNumbersNbsKcCount	0	zTpkcViewLineNumbersNbsKcCount
-zTpkcViewPropertiesNbsKcCount	0	zTpkcViewPropertiesNbsKcCount
+zTpkcViewPropertiesNbsKcCount	1	zTpkcViewPropertiesNbsKcCount
+zTpkcViewPropertiesNbsKcEsc1	\\\{#insert zCASpJJ\\\}\\\{#sleep 25\\\}\\\{#insert zJJ\\\}\\\{#sleep 10\\\}	zTpkcViewPropertiesNbsKcEsc1
 zTpkcViewReplaceDialogBoxNbsKcCount	0	zTpkcViewReplaceDialogBoxNbsKcCount
 zTpkcViewSearchResultsNbsKcCount	1	zTpkcViewSearchResultsNbsKcCount
 zTpkcViewSearchResultsNbsKcEsc1	\\\{#insert zSpF11\\\}\\\{#sleep 10\\\}	zTpkcViewSearchResultsNbsKcEsc1

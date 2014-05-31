@@ -1,71 +1,27 @@
 __XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
-(*
-	http://stackoverflow.com/questions/68633/regex-that-will-match-a-java-method-declaration
-
-Here is what I came up with, after looking through the other answers.
-
-    #permission
-        ^[ \t]*(?:(?:public|protected|private)\s+)?
-    #keywords
-        (?:(static|final|native|synchronized|abstract|threadsafe|transient|{#insert zJRgx123GenericsNotInGroup})\s+){0,}
-    #return type
-        #If return type is "return" then it's actually a 'return funcName();' line. Ignore.
-        (?!return)
-        \b(\w+)(|{#insert zJRgx123GenericsNotInGroup})((?:\[\]){0,})\s+
-    #function name
-        \b\w+\b\s*
-    #parameters
-        \(
-            #one
-                \s*(?:\b(\w+)(|{#insert zJRgx123GenericsNotInGroup})((?:\[\]){0,})(\.\.\.)?\s+(\w+)\b(?![>\[])
-            #two and up
-                \s*(?:,\s+\b(\w+)(|{#insert zJRgx123GenericsNotInGroup})((?:\[\]){0,})(\.\.\.)?\s+(\w+)\b(?![>\[])\s*){0,})?\s*
-        \)
-    #post parameters
-        (?:\s*throws \w+(\s*,\s*\w+))?
-    #close-curly (concrete) or semi-colon (abstract)
-        \s*(?:\{|\;$)
-
----
-
-`{#insert zJRgx123GenericsNotInGroup}` equals
-    `(?:<[?\w\[\] ,&]+>)|(?:<[^<]*<[?\w\[\] ,&]+>[^>]*>)|(?:<[^<]*<[^<]*<[?\w\[\] ,&]+>[^>]*>[^>]*>)`
-
-Limitations:
-
-* ANY parameter can have an ellipsis: "..." (Java allows only last)
-* Three levels of nested generics at most: (`<...<...<...>...>...>` okay, `<...<...<...<...>...>...>...>` bad). The syntax inside generics can be very bogus, and still seem okay to this regex.
-* Requires no spaces between types and their (optional) opening generics '<'
-
-Below is the raw PhraseExpress code (auto-text and description on line 1, body on line 2). Call `{#insert zJRgxJavaFuncSigThrSemicOrOpnCrly}`, and you get this:
-
-    ^[ \t]*(?:(?:public|protected|private)\s+)?(?:(static|final|native|synchronized|abstract|threadsafe|transient|(?:<[?\w\[\] ,&]+>)|(?:<[^<]*<[?\w\[\] ,&]+>[^>]*>)|(?:<[^<]*<[^<]*<[?\w\[\] ,&]+>[^>]*>[^>]*>))\s+){0,}(?!return)\b(\w+)(|(?:<[?\w\[\] ,&]+>)|(?:<[^<]*<[?\w\[\] ,&]+>[^>]*>)|(?:<[^<]*<[^<]*<[?\w\[\] ,&]+>[^>]*>[^>]*>))((?:\[\]){0,})\s+\b\w+\b\s*\(\s*(?:\b(\w+)(|(?:<[?\w\[\] ,&]+>)|(?:<[^<]*<[?\w\[\] ,&]+>[^>]*>)|(?:<[^<]*<[^<]*<[?\w\[\] ,&]+>[^>]*>[^>]*>))((?:\[\]){0,})(\.\.\.)?\s+(\w+)\b(?![>\[])\s*(?:,\s+\b(\w+)(|(?:<[?\w\[\] ,&]+>)|(?:<[^<]*<[?\w\[\] ,&]+>[^>]*>)|(?:<[^<]*<[^<]*<[?\w\[\] ,&]+>[^>]*>[^>]*>))((?:\[\]){0,})(\.\.\.)?\s+(\w+)\b(?![>\[])\s*){0,})?\s*\)(?:\s*throws \w+(\s*,\s*\w+))?\s*(?:\{|\;$)
-
----
-Raw code:
-*)
-zJRgx123GenericsNotInGroup -- To precede return-type	(?:<[?\w\[\] ,&]+>)|(?:<[^<]*<[?\w\[\] ,&]+>[^>]*>)|(?:<[^<]*<[^<]*<[?\w\[\] ,&]+>[^>]*>[^>]*>)	zJRgx123GenericsNotInGroup
+zJRgx123GenericsNotInGroup -- To precede return-type	(?:<[?\w\[\] ,.&]+>)|(?:<[^<]*<[?\w\[\] ,.&]+>[^>]*>)|(?:<[^<]*<[^<]*<[?\w\[\] ,.&]+>[^>]*>[^>]*>)	zJRgx123GenericsNotInGroup
 zJRgx0OrMoreParams	\s*(?:{#insert zJRgxParamTypeName}\s*(?:,\s+{#insert zJRgxParamTypeName}\s*){0,})?\s*	zJRgx0OrMoreParams
 zJRgxJavaFuncNmThrClsPrn_M_fnm -- Needs zvFOBJ_NAME	(?<=\s)\b{#insert zvFOBJ_NAME}{#insert zzJRgxPostFuncNmThrClsPrn}	zJRgxJavaFuncNmThrClsPrn_M_fnm
-zJRgxJavaFuncSigThrSemicOrOpnCrly -(**)-	{#insert zzJRgxJavaFuncSigPreFuncName}\w+{#insert zzJRgxJavaFuncSigPostFuncName}	zJRgxJavaFuncSigThrSemicOrOpnCrly
-zJRgxJavaFuncSigThrSemicOrOpnCrly_M_fnm -- Needs zvFOBJ_NAME	{#insert zzJRgxJavaFuncSigPreFuncName}{#insert zvFOBJ_NAME}{#insert zzJRgxJavaFuncSigPostFuncName}	zJRgxJavaFuncSigThrSemicOrOpnCrly_M_fnm
+zJRgxJavaFuncSigThrSemicOrOpnCrly -(**)-	{#insert zzJRgxJavaFuncSigPreWSFuncName}(?:\s+\b\w+)?{#insert zzJRgxJavaFuncSigPostFuncName}	zJRgxJavaFuncSigThrSemicOrOpnCrly
+zJRgxJavaFuncSigThrSemicOrOpnCrly_M_fnm -- Needs zvFOBJ_NAME	{#insert zzJRgxJavaFuncSigPreWSFuncName}\s+\b{#insert zvFOBJ_NAME}{#insert zzJRgxJavaFuncSigPostFuncName}	zJRgxJavaFuncSigThrSemicOrOpnCrly_M_fnm
 zJRgxOptKeywordsBtwScopeAndRetType	(?:(static|final|native|synchronized|abstract|threadsafe|transient|{#insert zJRgx123GenericsNotInGroup})\s+){0,}	zJRgxOptKeywordsBtwScopeAndRetType
 zJRgxOptionalPubProtPriv	(?:(?:public|protected|private)\s+)?	zJRgxOptionalPubProtPriv
 zJRgxParamTypeName -(**)- Ends w/ '\b(?![>\[])' to NOT find <? 'extends XClass'> or ...[]>	(*Original: zJRgxParamTypeName, Needed by: zJRgxParamTypeName[4FQPTV,ForDel[NmsOnly,Types]]*){#insert zJRgxTypeW0123GenericsArry}(\.\.\.)?\s+(\w+)\b(?![>\[])	zJRgxParamTypeName
-zJRgxTypeW0123GenericsArry -- Grp1=Type, Grp2='[]', if any	\b(\w+)(?:|{#insert zJRgx123GenericsNotInGroup})((?:\[\]){0,})	zJRgxTypeW0123GenericsArry
+zJRgxTypeW0123GenericsArry -- Grp1=Type, Grp2='[]', if any	\b([\w.]+)\b(?:|{#insert zJRgx123GenericsNotInGroup})((?:\[\]){0,})	zJRgxTypeW0123GenericsArry
 zvTTL_PRMS_stL1c	{#insert zCutL1c}{#SETPHRASE -description zvTTL_PRMS -content {#INSERTCLIPBOARD} -autotext zvTTL_PRMS -folder ctvv_folder}	zvTTL_PRMS_stL1c
 zvTTL_PRMS_stL1cSvRstrCB	{#insert zvCB_CONTENTS_stCB}{#insert zvTTL_PRMS_stL1c}{#insert zSetCBToCB_CONTENTS}	zvTTL_PRMS_stL1cSvRstrCB
 zvTTL_PRMS_stPrompt	{#SETPHRASE -description zvTTL_PRMS -content {#INPUT -head How many parameters? -single} -autotext zvTTL_PRMS -folder ctvv_folder}	zvTTL_PRMS_stPrompt
 zzJRgxJavaFuncNmThrClsPrn_M_fnmTtlp -- Needs zvFOBJ_NAME, zvTTL_PRMS	(?<=[ \t])\b{#insert zvFOBJ_NAME}\b\s*\(\s*{#insert {#COND -if {#insert zvTTL_PRMS} = 0 -then z1slp -else zzParamsGT0_M_ttlp}}\)	zzJRgxJavaFuncNmThrClsPrn_M_fnmTtlp
-zzJRgxJavaFuncSigPostFuncName	{#insert zzJRgxPostFuncNmThrClsPrn}(?:\s*throws \w+(\s*,\s*\w+))?\s*(?:\{|\;$)	zzJRgxJavaFuncSigPostFuncName
-zzJRgxJavaFuncSigPreFuncName	(*If a type has generics, there may be no spaces between it and the first open '<', also requires generics with three nestings at the most (<...<...<...>...>...> okay, <...<...<...<...>...>...>...> not)*)^[ \t]*{#insert zJRgxOptionalPubProtPriv}{#insert zJRgxOptKeywordsBtwScopeAndRetType}(*To prevent 'return funcName();' from being recognized:*)(?!return){#insert zJRgxTypeW0123GenericsArry}\s+\b	zzJRgxJavaFuncSigPreFuncName
+zzJRgxJavaFuncSigPostFuncName	{#insert zzJRgxPostFuncNmThrClsPrn}(?:\s*throws \b(?:[\w.]+)\b(\s*,\s*\b(?:[\w.]+)\b))?\s*(?:\{|;)[ \t]*$	zzJRgxJavaFuncSigPostFuncName
+zzJRgxJavaFuncSigPreWSFuncName	(*If a type has generics, there may be no spaces between it and the first open '<', also requires generics with three nestings at the most (<...<...<...>...>...> okay, <...<...<...<...>...>...>...> not)*)^[ \t]*{#insert zJRgxOptionalPubProtPriv}{#insert zJRgxOptKeywordsBtwScopeAndRetType}(*To prevent 'return funcName();' from being recognized:*)(?!return){#insert zJRgxTypeW0123GenericsArry}	zzJRgxJavaFuncSigPreWSFuncName
 zzJRgxPostFuncNmThrClsPrn	\b\s*\({#insert zJRgx0OrMoreParams}\)	zzJRgxPostFuncNmThrClsPrn
 zzParamsGT0_M_ttlp -- Needs zvTTL_PRMS	{#insert zJRgxParamTypeName}\s*{#insert {#COND -if {#insert zvTTL_PRMS} = 1 -then z1slp -else zzParamsGT1_M_ttlp}}	zzParamsGT0_M_ttlp
 zzParamsGT1_M_ttlp	{#LOOP ,\s+{#insert zJRgxParamTypeName}\s* -count {#CALC {#insert zvTTL_PRMS} - 1 -round 0 -thousands none}}	zzParamsGT1_M_ttlp
 
-zJRgxParamTypeName4FQPTV -(**)- 	(*Original: zJRgxParamTypeName, Needed by: zJRgxParamTypeName[4FQPTV,ForDel[NmsOnly,Types]]*)\b(\w+)(?:|(?:<[?\w\[\] ,&]+>)|(?:<[^<]*<[?\w\[\] ,&]+>[^>]*>)|(?:<[^<]*<[^<]*<[?\w\[\] ,&]+>[^>]*>[^>]*>))((?:\[\]){0,})(\.\.\.)?\s+\w+\b(?!>)	zJRgxParamTypeName4FQPTV
-zJRgxParamTypeNameForDelNmsOnly -(**)- 	(*Original: zJRgxParamTypeName, Needed by: zJRgxParamTypeName[4FQPTV,ForDel[NmsOnly,Types]]*)\b(\w+(?:|(?:<[?\w\[\] ,&]+>)|(?:<[^<]*<[?\w\[\] ,&]+>[^>]*>)|(?:<[^<]*<[^<]*<[?\w\[\] ,&]+>[^>]*>[^>]*>))((?:\[\]){0,})(?:\.\.\.)?)\s+\w+\b(?!>)	zJRgxParamTypeNameForDelNmsOnly
-zJRgxParamTypeNameForDelTypes -(**)- 	(*Original: zJRgxParamTypeName, Needed by: zJRgxParamTypeName[4FQPTV,ForDel[NmsOnly,Types]]*)\b(?:\w+(?:|(?:<[?\w\[\] ,&]+>)|(?:<[^<]*<[?\w\[\] ,&]+>[^>]*>)|(?:<[^<]*<[^<]*<[?\w\[\] ,&]+>[^>]*>[^>]*>))(?:(?:\[\]){0,})(?:\.\.\.)?)(\s+\w+)\b(?!>)	zJRgxParamTypeNameForDelTypes
+
+zJRgxParamTypeName4FQPTV -(**)- 	(*Original: zJRgxParamTypeName, Needed by: zJRgxParamTypeName[4FQPTV,ForDel[NmsOnly,Types]]*)\b([\w.]+)\b(?:|(?:<[?\w\[\] ,&]+>)|(?:<[^<]*<[?\w\[\] ,&]+>[^>]*>)|(?:<[^<]*<[^<]*<[?\w\[\] ,&]+>[^>]*>[^>]*>))((?:\[\]){0,})(\.\.\.)?\s+\w+\b(?!>)	zJRgxParamTypeName4FQPTV
+zJRgxParamTypeNameForDelNmsOnly -(**)- 	(*Original: zJRgxParamTypeName, Needed by: zJRgxParamTypeName[4FQPTV,ForDel[NmsOnly,Types]]*)(\b(?:[\w.]+)\b(?:|(?:<[?\w\[\] ,&]+>)|(?:<[^<]*<[?\w\[\] ,&]+>[^>]*>)|(?:<[^<]*<[^<]*<[?\w\[\] ,&]+>[^>]*>[^>]*>))((?:\[\]){0,})(?:\.\.\.)?)\s+\w+\b(?!>)	zJRgxParamTypeNameForDelNmsOnly
+zJRgxParamTypeNameForDelTypes -(**)- 	(*Original: zJRgxParamTypeName, Needed by: zJRgxParamTypeName[4FQPTV,ForDel[NmsOnly,Types]]*)(?:\b(?:[\w.]+)\b(?:|(?:<[?\w\[\] ,&]+>)|(?:<[^<]*<[?\w\[\] ,&]+>[^>]*>)|(?:<[^<]*<[^<]*<[?\w\[\] ,&]+>[^>]*>[^>]*>))(?:(?:\[\]){0,})(?:\.\.\.)?)(\s+\w+)\b(?!>)	zJRgxParamTypeNameForDelTypes
+
 zzQDnrSlshPlusComma	\s+,	zzQDnrSlshPlusComma
 zzQcomma	,	zzQcomma
-

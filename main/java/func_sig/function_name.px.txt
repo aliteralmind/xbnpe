@@ -1,3 +1,4 @@
+
 __XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
 fal -- Sig up: Alter-paste func-name at cursor	{#insert zzFNmSetLCAltrCddFromL1cGPNToPrev}{#insert zXPasteAltrFNmFrom1PrvNxtJFSigAtX_M_cdeGpnWycAltr}{#insert zzFalsyn_M_yon}	fal
 fal2 -- fal, 2 sigs up	{#insert zzFNmSetLCAltrCddFromL1cGPNToPrev}{#insert zXPasteAltrFNmFrom2PrvNxtJFSigAtX_M_cdeGpnWycAltr}{#insert zzFalsyn_M_yon}	fal2
@@ -37,7 +38,7 @@ zXPasteAltrFNmFrom3PrvNxtJFSigAtX_M_cdeGpnWycAltr	{#insert zvAWAY_CNT_st3}{#inse
 zXPasteAltrFNmFrom4PrvNxtJFSigAtX_M_cdeGpnWycAltr	{#insert zvAWAY_CNT_st4}{#insert zXPasteAltrFNmFromPrvNxtJFSigAtX_M_cdeGpnWycAltr}	zXPasteAltrFNmFrom4PrvNxtJFSigAtX_M_cdeGpnWycAltr
 zXPasteAltrFNmFrom5PrvNxtJFSigAtX_M_cdeGpnWycAltr	{#insert zvAWAY_CNT_st5}{#insert zXPasteAltrFNmFromPrvNxtJFSigAtX_M_cdeGpnWycAltr}	zXPasteAltrFNmFrom5PrvNxtJFSigAtX_M_cdeGpnWycAltr
 zXPasteAltrFNmFromPrmptNumPrvNxtJFSigAtX_M_cdeGpnWycAltr	{#insert zvAWAY_CNT_stPrompt}{#insert zXPasteAltrFNmFromPrvNxtJFSigAtX_M_cdeGpnWycAltr}	zXPasteAltrFNmFromPrmptNumPrvNxtJFSigAtX_M_cdeGpnWycAltr
-zXPasteAltrFNmFromPrvNxtJFSigAtX_M_cdeGpnWycAltr -*-	{#insert zXmarkMaybeCdd_M_cde}{#insert zSelCopyFuncNmInPrvNxtJavaSig_M_gpnWyc}{#insert zXUpDownOppositeDir_M_gpn}{#insert zFNmInCBAlterPaste_M_lltr}{#insert zzB4EndCODETagGTPIfCdd_M_cde}	zXPasteAltrFNmFromPrvNxtJFSigAtX_M_cdeGpnWycAltr
+zXPasteAltrFNmFromPrvNxtJFSigAtX_M_cdeGpnWycAltr -*-	{#insert zzXmarkMaybeJDOrNotJDCdd_M_cdeLltr}{#insert zSelCopyFuncNmInPrvNxtJavaSig_M_gpnWyc}{#insert zXUpDownOppositeDir_M_gpn}{#insert zFNmInCBAlterPaste_M_lltr}{#insert zzB4EndAtCodeRightIfCdd_M_cde}	zXPasteAltrFNmFromPrvNxtJFSigAtX_M_cdeGpnWycAltr
 zzErrDlgFnmLltr_M_lltr	{#MSGBOX -head ERROR -text ERROR ~~ The alteration pre~option (currently zvLC_ALTR='{#insert zvLC_ALTR}') must be one of the following: [c,+,\,_]or[d,k,o,q,p,r,n,s] (see faloptsyn){#insert zCancelProcNowPostTxt}  //  {#insert zzAltrFlagPrgrmrNoteTxt}{#insert zCancelProcNowPostTxt}}	zzErrDlgFnmLltr_M_lltr
 zzFNmPPEqlsLQQPlsPastePlsQLQ	{#insert zTPPaste}()={#insert zzLQQPlsPastePlsQLQ}	zzFNmPPEqlsLQQPlsPastePlsQLQ
 zzFNmSetLCAltrCddFromL1c	{#insert zCutL1c}{#insert {#COND -if {#INSERTCLIPBOARD} = c -then zzSetCddToCddLltrToES -else {#COND -if {#insert zLowercaseCB} = d -then zzParamSetLltrCddIfUFrmCB -else {#COND -if {#insert zLowercaseCB} = k -then zzParamSetLltrCddIfUFrmCBDrnToL1c -else {#COND -if {#insert zLowercaseCB} = n -then zzParamSetLltrCddIfUFrmCB -else {#COND -if {#insert zLowercaseCB} = o -then zzParamSetLltrCddIfUFrmCB -else {#COND -if {#insert zLowercaseCB} = p -then zzParamSetLltrCddIfUFrmCB -else {#COND -if {#insert zLowercaseCB} = q -then zzParamSetLltrCddIfUFrmCB -else {#COND -if {#insert zLowercaseCB} = r -then zzParamSetLltrCddIfUFrmCB -else {#COND -if {#insert zLowercaseCB} = s -then zzParamSetLltrCddIfUFrmCB -else {#COND -if {#INSERTCLIPBOARD} = + -then zzSetLltrToCBCddToES -else {#COND -if {#INSERTCLIPBOARD} = \ -then zzSetLltrToCBCddToES -else {#COND -if {#INSERTCLIPBOARD} = _ -then zzSetLltrToCBCddToES -else zzErrDlgFnmLltr_M_lltr}}}}}}}}}}}}}	zzFNmSetLCAltrCddFromL1c
@@ -52,14 +53,16 @@ zzFelsyn_M_yon -- Needs zvSYNTAX_ON	{#insert {#COND -if {#insert zvSYNTAX_ON} = 
 zzJFSigUpGetPasteFuncName -*-	{#insert zzSetCddLltrToES}{#insert zvGPRV_NXT_stPrev}{#insert zXPasteAltrFNmFrom1PrvNxtJFSigAtX_M_cdeGpnWycAltr}	zzJFSigUpGetPasteFuncName
 zzLQQPlsPastePlsQLQ	\{#insert zAscQQ}{#insert zzQPlsPastePlsQ}\{#insert zAscQQ}	zzLQQPlsPastePlsQLQ
 zzParamSetLltrCddIfUFrmCBDrnToL1c	{#insert zzParamSetLltrCddIfUFrmCB}{#insert zvDRN_stL1c}	zzParamSetLltrCddIfUFrmCBDrnToL1c
-zzPastePPLeft -(*!*)-	(*Turns coded off, so zzB4EndCODETagGTPIfCdd_M_cde does NOT go to the other side of </CODE> (when indeed coded).*){#insert zTPPaste}(){#insert zLEFT}{#insert zvCDD_ES_stES}	zzPastePPLeft
-zzPastePPSClnLeft2 -- See zzPastePPLeft internal comment	{#insert zTPPaste}();{#insert zLEFT2}{#insert zvCDD_ES_stES}	zzPastePPSClnLeft2
-zzPastePQQPSClnLeft3 -- See zzPastePPLeft internal comment	{#insert zTPPaste}({#insert zAscQQ}{#insert zAscQQ});{#insert zLEFT3}{#insert zvCDD_ES_stES}	zzPastePQQPSClnLeft3
+zzPastePPLeft -(*!*)-	(*Turns coded off, so zzB4EndAtCodeRightIfCdd_M_cde does NOT go to the other side of </CODE> (when indeed coded).*){#insert zTPPaste}(){#insert zLEFT}{#insert zvJCD_ES_stES}	zzPastePPLeft
+zzPastePPSClnLeft2 -- See zzPastePPLeft internal comment	{#insert zTPPaste}();{#insert zLEFT2}{#insert zvJCD_ES_stES}	zzPastePPSClnLeft2
+zzPastePQQPSClnLeft3 -- See zzPastePPLeft internal comment	{#insert zTPPaste}({#insert zAscQQ}{#insert zAscQQ});{#insert zLEFT3}{#insert zvJCD_ES_stES}	zzPastePQQPSClnLeft3
 zzPasteParenDDDParen	{#insert zTPPaste}(...)	zzPasteParenDDDParen
 zzQPasteQ	'{#insert zTPPaste}'	zzQPasteQ
 zzQPlsPastePlsQ	{#insert zAscQQ} + {#insert zTPPaste}() + {#insert zAscQQ}	zzQPlsPastePlsQ
 zzQQPasteQQHtmlEsc	&quot;{#insert zTPPaste}&quot;	zzQQPasteQQHtmlEsc
 zzQQPasteQQ_M_cde	{#insert zQQOrQQHtmlIfCdd_M_cde}{#insert zTPPaste}{#insert zQQOrQQHtmlIfCdd_M_cde}	zzQQPasteQQ_M_cde
 zzSetCddLltrToESGpnToNext	{#insert zzSetCddLltrToES}{#insert zvGPRV_NXT_stNext}	zzSetCddLltrToESGpnToNext
-zzSetLltrToCBCddToES	{#SETPHRASE -description zvLC_ALTR -content {#INSERTCLIPBOARD} -autotext zvLC_ALTR -folder ctvv_folder}{#insert zvCDD_ES_stES}	zzSetLltrToCBCddToES
+zzSetLltrToCBCddToES	{#SETPHRASE -description zvLC_ALTR -content {#INSERTCLIPBOARD} -autotext zvLC_ALTR -folder ctvv_folder}{#insert zvJCD_ES_stES}	zzSetLltrToCBCddToES
+zzXmarkMaybeJDOrNotJDCdd_M_cdeLltr	{#insert {#COND -if {#insert zvLC_ALTR} = k -then {#COND -if {#insert zvJCD_ES} = JCoded -then zXmarkCoded -else zXmarkMaybeJDCdd_M_cde} -else zXmarkMaybeJDCdd_M_cde}}	zzXmarkMaybeJDOrNotJDCdd_M_cdeLltr
 zzzEnterLcAltr2	{#insert zENTER}{#insert zzzLltr2}	zzzEnterLcAltr2
+zzzSetCddESToCodedPrintCddXm

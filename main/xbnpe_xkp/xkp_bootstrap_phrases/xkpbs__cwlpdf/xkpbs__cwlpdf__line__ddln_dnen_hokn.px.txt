@@ -5,9 +5,9 @@ ddln -- DOWN, DEL, any 'N'umber of times.	{#insert zWWOffSvStateMaybeRecheck}{#i
 
 dnen -- DOWN, ENTER, any 'N'umber of times.	{#insert zWWOffSvStateMaybeRecheck}{#insert zzDnenRAW}{#insert zRevertWWToOrigState}{#insert zRevertWWToOrigState}{#insert zzDnenSyn}	dnen
 
-hokn -- HOME, BKSP, any 'N'umber of times	{#insert zWWOffSvStateMaybeRecheck}{#insert zzHoknRAW}{#insert zRevertWWToOrigState}{#insert zzDnenSyn}	hokn
+hokn -- HOME, BKSP, any 'N'umber of times	{#insert zWWOffSvStateMaybeRecheck}{#insert zzHomeBkspFromPrompt}{#insert zRevertWWToOrigState}{#insert zzDnenSyn}	hokn
 
-hoknw -- ww-tgl, hokn, ww-tgl 	{#insert zTPToggleWW}{#insert zzHoknRAW}{#insert zTPToggleWW}{#insert zzDnenSyn}	hoknw
+hoknw -- ww-tgl, hokn, ww-tgl 	{#insert zTPToggleWW}{#insert zzHomeBkspFromPrompt}{#insert zTPToggleWW}{#insert zzDnenSyn}	hoknw
 
 zzD2dlnRAW	{#LOOP {#DOWN -count 2}{#DEL} -count {#INPUT -head How many down~down~deletes? -single}}	zzD2dlnRAW
 
@@ -17,4 +17,5 @@ zzDnenSyn	{#BALLOON -title dnen/hokn/ddln syntax  -text dnen ~~ (DOWN, ENTER mul
 
 zzDnenRAW	{#LOOP {#DOWN}{#ENTER} -count {#INPUT -head How many down~enters? -single}}	zzDnenRAW
 
-zzHoknRAW	{#LOOP {#HOME}{#BKSP} -count {#INPUT -head How many home~bksps? -single}}	zzHoknRAW
+zzHomeBkspFromPrompt	{#SETPHRASE -description zvLINE_COUNT -content {#INPUT -head How many home~bksps? -single} -autotext zvLINE_COUNT -folder ctvv_folder}{#insert zzHomeBksp_M_lnc}	zzHomeBkspFromPrompt
+zzHomeBksp_M_lnc	{#LOOP {#HOME}{#BKSP} -count {#insert zvLINE_COUNT}}	zzHomeBksp_M_lnc

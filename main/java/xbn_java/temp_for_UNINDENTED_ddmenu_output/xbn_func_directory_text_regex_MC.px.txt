@@ -1,0 +1,88 @@
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools,written in PhraseExpress,using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License,or (at your option) any later version.  //  This library is distributed in the hope that it will be useful,but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not,write to the Free Software Foundation,Inc.,51 Franklin Street,Fifth Floor,Boston,MA 02110-1301 USA*)		(*Two tabs plus this comment,to force this phrase to be (a) imported,and (b) with NO autotext*)
+(*_ xf -- com.github.xbn.* function directory   .   xf*)
+(* text -- s   .   xf*)
+regex -- r	.	xfx
+NewPatternFor... -- p	.	xfxr
+..literal(s)	NewPatternFor.literal({#insert zXmark})	xfxrp
+..literal(s,s,s)	NewPatternFor.literal({#insert zXcXcX})	xfxrp
+..regex(s)	NewPatternFor.regex({#insert zXmark})	xfxrp
+..regex(s,s,s)	NewPatternFor.regex({#insert zXcXcX})	xfxrp
+..regex(s,i)	NewPatternFor.regex({#insert zXcY})	xfxrp
+..regex(s,i,s,s)	NewPatternFor.regex({#insert zXcY}, {#insert zXcX})	xfxrp
+RegexReplacer -- r	.	xfxr
+.getReplaced(O)	.getReplaced({#insert zXmark})	xfxrr
+.appendReplaced(apbl,O) (also 'X')	.appendReplaced({#insert zYcX})	xfxrr
+.appendReplacedln(apbl,O) (also (i,apbl,O))	.appendReplacedln({#insert zYcX})	xfxrr
+.appendReplacedlns(i,apbl,O)	.appendReplacedlns({#insert zYmark}, {#insert zYcX})	xfxrr
+.appendReplaced(sb,O)	.appendReplaced({#insert zYcX})	xfxrr
+Constructors and static creators -- d	.	xfxrr
+RegexReplacer(p)	new RegexReplacer({#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xfxrrd
+RegexReplacer(p,rr.c)	new RegexReplacer({#insert zYcY});{#insert zLeftPostBrktSelectWord1}	xfxrrd
+RegexReplacer(rr.c)	new RegexReplacer({#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xfxrrd
+RegexReplacer(s)	new RegexReplacer({#insert zXmark});{#insert zLeftPostBrktSelectWord1}	xfxrrd
+RegexReplacer(s,rr.c)	new RegexReplacer({#insert zXcY});{#insert zLeftPostBrktSelectWord1}	xfxrrd
+newForPattern(p,s)  	RegexReplacer.newForPattern({#insert zYcX});{#insert zLeftPostBrktSelectWord1}	xfxrrd
+newForPattern(s,s)  	RegexReplacer.newForPattern({#insert zXcX});{#insert zLeftPostBrktSelectWord1}	xfxrrd
+newForLiteral(s,s)  	RegexReplacer.newForLiteral({#insert zXcX});{#insert zLeftPostBrktSelectWord1}	xfxrrd
+@param  vv_termNumber  May not be <CODE>null</CODE>, and
+
+New search terms -- t	.	xfxrr
+.findWhat(s)	.findWhat({#insert zXmark})	xfxrrt
+.findWhat(p)	.findWhat({#insert zYmark})	xfxrrt
+.declareIndirect()	.declareIndirect()	xfxrrt
+.replaceWith(o)	.replaceWith({#insert zYmark})	xfxrrt
+Config new -- g	.	xfxrr
+new RegexReplacer.Cfg().first()	new RegexReplacer.Cfg().first()	xfxrrg
+new..all()	new RegexReplacer.Cfg().all()	xfxrrg
+new..matchRange(iir)	new RegexReplacer.Cfg().matchRange({#insert zYmark})	xfxrrg
+new..matchRange(i,i)	new RegexReplacer.Cfg().matchRange({#insert zYcY})	xfxrrg
+new..until()	new RegexReplacer.Cfg().until()	xfxrrg
+new..until(i)	new RegexReplacer.Cfg().until({#insert zYmark})	xfxrrg
+new..until(i,b)	new RegexReplacer.Cfg().until({#insert zYcY})	xfxrrg
+Config other -- o	.	xfxrr
+.debugTo(apbl)	.debugTo(apbl)	xfxrro
+.debugToConsole()	.debugToConsole()	xfxrro
+.patternForIndirect(p)	.patternForIndirect({#insert zYmark})	xfnxa
+.patternForIndirect(s)	.patternForIndirect(s)	xfnxa
+.literalForIndirect(s)	.literalForIndirect(s)	xfnxa
+.validTerms(vv)	.validTerms(vv)	xfxrro
+z- .build(p,s)	.build(p,s)	xfnxa
+z- .build(s,s)	.build({#insert zXcX})	xfnxa
+z- .buildLiteral(s,s)	.buildLiteral({#insert zXcX})	xfnxa
+RegexGroupExtractor -- e	.	xfxr
+.nextAsJoinedString(s)	.nextAsJoinedString({#insert zXmark})	xfxre
+.search(s)	.search({#insert zXmark})	xfxre
+new RegexGroupExtractor.Cfg().useMatches()	new RegexGroupExtractor.Cfg().useMatches()	xfxre
+new..useFind()	new..useFind()	xfxre
+new..requiredGroups(i)	new..requiredGroups({#insert zYmark})	xfxre
+z- .build(p)	.build({#insert zYmark})	xfxre
+z- .build(s)	.build({#insert zXmark})	xfxre
+RegexTokenizer -- t	.	xfxr
+.setNewSearch(p,i,O)	.setNewSearch({#insert zYcY}, {#insert zXmark})	xfxrt
+.setNewSearch(i,O)	.setNewSearch({#insert zYcX})	xfxrt
+.setNewSearch(s,i,O)	.setNewSearch({#insert zXcY}, {#insert zXmark})	xfxrt
+.setNewSearchLiteral(s,i,O)	.setNewSearchLiteral({#insert zXcY}, {#insert zXmark})	xfxrt
+Config -- g	.	xfxrt
+.lineNumber(i)	.lineNumber({#insert zYmark})	xfxrt
+new RegexTokenizer.Cfg().separatorsOnly()	new RegexTokenizer.Cfg().separatorsOnly()	xfxrt
+new..allBetweensOnly()	new RegexTokenizer.Cfg().allBetweensOnly()	xfxrt
+new..debugToConsole()	new RegexTokenizer.Cfg().debugToConsole()	xfxrt
+new..debugOnIfNNull(apbl)	new RegexTokenizer.Cfg().debugOnIfNNull({#insert zYmark})	xfxrt
+new..nonEmptyBetweensOnly()	new RegexTokenizer.Cfg().nonEmptyBetweensOnly()	xfxrt
+new..separatorsAndAllBetweens()	new RegexTokenizer.Cfg().separatorsAndAllBetweens()	xfxrt
+new..separatorsAndNonEmptyBetweens()	new RegexTokenizer.Cfg().separatorsAndNonEmptyBetweens()	xfxrt
+z- .buildLiteral(s,O)	.buildLiteral({#insert zXcX})	xfxrt
+z- .build(s,O)	.build({#insert zXcX})	xfxrt
+z- .build(p,O)	.build({#insert zYcX})	xfxrt
+RegexUtil -- u	.	xfxr
+cibGroupNumberForCount(i,m,s,s,s)	RegexUtil.cibGroupNumberForCount({#insert zYcY}, {#insert zXcXcX})	xfxru
+cibGroupNumberForCountOrReturnCause(i,m,s,s,s,rx)	RegexUtil.cibGroupNumberForCountOrReturnCause({#insert zYcY}, {#insert zXcXcX}, {#insert zYmark})	xfxru
+getPattern... -- p	.	xfxru
+getPatternCIHaserNull(ph,s,s)	RegexUtil.getPatternCIHaserNull({#insert zYcXcX})	xfxrup
+getPatternCopy(p)	RegexUtil.getPatternCopy({#insert zYmark})	xfxrup
+getPatternCopy(p,s,s)	RegexUtil.getPatternCopy({#insert zYcXcX})	xfxrup
+getPatternCopy(ph,s,s)	RegexUtil.getPatternCopy({#insert zYcXcX})	xfxrup
+getRELowerUpperDigitPunctBlankChars(b,b,b,b,b)	RegexUtil.getRELowerUpperDigitPunctBlankChars(b,b,b,b,b)	xfxru
+getRplc1stWInt(s,p,i)	RegexUtil.getRplc1stWInt({#insert zXcY}, {#insert zYmark})	xfxru
+isLiteral(p)	RegexUtil.isLiteral({#insert zYmark})	xfxru
+newMatcherForPatternCINull(p,s,s,s)	RegexUtil.newMatcherForPatternCINull({#insert zYmark}, {#insert zXcXcX})	xfxru

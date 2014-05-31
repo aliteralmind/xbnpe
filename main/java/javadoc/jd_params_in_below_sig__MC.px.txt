@@ -1,0 +1,38 @@
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+Use '2pa' for '@param' autotexts.	.	@p
+Use '2pa' for '@param' autotexts.	.	@pa
+Use '2pa' for '@param' autotexts.	.	@par
+Use '2pa' for '@param' autotexts.	.	@para
+Use '2pa' for '@param' autotexts.	.	@param
+@param for number L>R -- l	.	2pa
+@param  param 01	{#insert zvPNXT_PRV_stNext}{#insert zvPARAM_NUM_st1}{#insert zJavadocPrvNxtParamFromSigDown_M_pnpPnum}{#insert zzDz1syn_M_yon}	2pal
+@param  param 02	{#insert zvPNXT_PRV_stNext}{#insert zvPARAM_NUM_st2}{#insert zJavadocPrvNxtParamFromSigDown_M_pnpPnum}{#insert zzDz1syn_M_yon}	2pal
+@param  param 03	{#insert zvPNXT_PRV_stNext}{#insert zvPARAM_NUM_st3}{#insert zJavadocPrvNxtParamFromSigDown_M_pnpPnum}{#insert zzDz1syn_M_yon}	2pal
+@param  param 04	{#insert zvPNXT_PRV_stNext}{#insert zvPARAM_NUM_st4}{#insert zJavadocPrvNxtParamFromSigDown_M_pnpPnum}{#insert zzDz1syn_M_yon}	2pal
+@param  param 05	{#insert zvPNXT_PRV_stNext}{#insert zvPARAM_NUM_st5}{#insert zJavadocPrvNxtParamFromSigDown_M_pnpPnum}{#insert zzDz1syn_M_yon}	2pal
+@param  param 06	{#insert zvPNXT_PRV_stNext}{#insert zvPARAM_NUM_st6}{#insert zJavadocPrvNxtParamFromSigDown_M_pnpPnum}{#insert zzDz1syn_M_yon}	2pal
+@param  param 07	{#insert zvPNXT_PRV_stNext}{#insert zvPARAM_NUM_st7}{#insert zJavadocPrvNxtParamFromSigDown_M_pnpPnum}{#insert zzDz1syn_M_yon}	2pal
+@param  param 08	{#insert zvPNXT_PRV_stNext}{#insert zvPARAM_NUM_st8}{#insert zJavadocPrvNxtParamFromSigDown_M_pnpPnum}{#insert zzDz1syn_M_yon}	2pal
+@param  param 09	{#insert zvPNXT_PRV_stNext}{#insert zvPARAM_NUM_st9}{#insert zJavadocPrvNxtParamFromSigDown_M_pnpPnum}{#insert zzDz1syn_M_yon}	2pal
+@param  param 10	{#insert zvPNXT_PRV_stNext}{#insert zvPARAM_NUM_st10}{#insert zJavadocPrvNxtParamFromSigDown_M_pnpPnum}{#insert zzDz1syn_M_yon}	2pal
+@param  prompt-number	{#insert zvPNXT_PRV_stNext}{#insert zvPARAM_NUM_stPrompt}{#insert zJavadocPrvNxtParamFromSigDown_M_pnpPnum}{#insert zzDz1syn_M_yon}	2pal
+@param for number L<R -- r	.	2pa
+@param  1     LAST	{#insert zvPNXT_PRV_stPrev}{#insert zvPARAM_NUM_st1}{#insert zJavadocPrvNxtParamFromSigDown_M_pnpPnum}{#insert zzDz1syn_M_yon}	2par
+@param  2nd-to-LAST	{#insert zvPNXT_PRV_stPrev}{#insert zvPARAM_NUM_st2}{#insert zJavadocPrvNxtParamFromSigDown_M_pnpPnum}{#insert zzDz1syn_M_yon}	2par
+@param  3rd-to-LAST	{#insert zvPNXT_PRV_stPrev}{#insert zvPARAM_NUM_st3}{#insert zJavadocPrvNxtParamFromSigDown_M_pnpPnum}{#insert zzDz1syn_M_yon}	2par
+@param  4th-to-LAST	{#insert zvPNXT_PRV_stPrev}{#insert zvPARAM_NUM_st4}{#insert zJavadocPrvNxtParamFromSigDown_M_pnpPnum}{#insert zzDz1syn_M_yon}	2par
+@param  5th-to-LAST	{#insert zvPNXT_PRV_stPrev}{#insert zvPARAM_NUM_st5}{#insert zJavadocPrvNxtParamFromSigDown_M_pnpPnum}{#insert zzDz1syn_M_yon}	2par
+@param  Prompt-num-to LAST	{#insert zvPNXT_PRV_stPrev}{#insert zvPARAM_NUM_stPrompt}{#insert zJavadocPrvNxtParamFromSigDown_M_pnpPnum}{#insert zzDz1syn_M_yon}	2par
+@param for all params -- a	.	2pa
+@param: All in 02-param function	{#SETPHRASE -description zvTOTAL_PARAMS -content 2 -autotext zvTOTAL_PARAMS -folder ctvv_folder}{#insert zJavadocAllParamsFromSigDown_M_ptot}{#insert zzDz1syn_M_yon}	2paa
+@param: All in 03-param function	{#SETPHRASE -description zvTOTAL_PARAMS -content 3 -autotext zvTOTAL_PARAMS -folder ctvv_folder}{#insert zJavadocAllParamsFromSigDown_M_ptot}{#insert zzDz1syn_M_yon}	2paa
+@param: All in 04-param function	{#SETPHRASE -description zvTOTAL_PARAMS -content 4 -autotext zvTOTAL_PARAMS -folder ctvv_folder}{#insert zJavadocAllParamsFromSigDown_M_ptot}{#insert zzDz1syn_M_yon}	2paa
+@param: All in 05-param function	{#SETPHRASE -description zvTOTAL_PARAMS -content 5 -autotext zvTOTAL_PARAMS -folder ctvv_folder}{#insert zJavadocAllParamsFromSigDown_M_ptot}{#insert zzDz1syn_M_yon}	2paa
+@param: All in 06-param function	{#SETPHRASE -description zvTOTAL_PARAMS -content 6 -autotext zvTOTAL_PARAMS -folder ctvv_folder}{#insert zJavadocAllParamsFromSigDown_M_ptot}{#insert zzDz1syn_M_yon}	2paa
+@param: All in 07-param function	{#SETPHRASE -description zvTOTAL_PARAMS -content 7 -autotext zvTOTAL_PARAMS -folder ctvv_folder}{#insert zJavadocAllParamsFromSigDown_M_ptot}{#insert zzDz1syn_M_yon}	2paa
+@param: All in 08-param function	{#SETPHRASE -description zvTOTAL_PARAMS -content 8 -autotext zvTOTAL_PARAMS -folder ctvv_folder}{#insert zJavadocAllParamsFromSigDown_M_ptot}{#insert zzDz1syn_M_yon}	2paa
+@param: All in 09-param function	{#SETPHRASE -description zvTOTAL_PARAMS -content 9 -autotext zvTOTAL_PARAMS -folder ctvv_folder}{#insert zJavadocAllParamsFromSigDown_M_ptot}{#insert zzDz1syn_M_yon}	2paa
+@param: All in 10-param function	{#SETPHRASE -description zvTOTAL_PARAMS -content 10 -autotext zvTOTAL_PARAMS -folder ctvv_folder}{#insert zJavadocAllParamsFromSigDown_M_ptot}{#insert zzDz1syn_M_yon}	2paa
+@param: All in prompt-num-param function	{#SETPHRASE -description zvTOTAL_PARAMS -content {#INPUT -head How many parameters in below sig? (1+) -single} -autotext zvTOTAL_PARAMS -folder ctvv_folder}{#insert zJavadocAllParamsFromSigDown_M_ptot}{#insert zzDz1syn_M_yon}	2paa
+@param: All in unknown-#-param function	{#insert zJavadocAllParamsFromSigDown}{#insert zzDz1syn_M_yon}	2paa
+@param  [paste]	@param  {#insert zTPPaste}  (*ends w 2spcs*)	2pa

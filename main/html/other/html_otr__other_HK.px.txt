@@ -61,3 +61,4 @@ zzMinRplcLtrlNbspSpcToNon	&nbsp; {#insert zRplcFieldWith}  (*ends with 2 spaces*
 zzMinRplcLtrlNbspToNon	&nbsp;{#insert zRplcFieldWith} (*ends with space*)	zzMinRplcLtrlNbspToNon
 zzMinRplcLtrlQuotToNon	&quot;{#insert zRplcFieldWith}{#insert zAscQQ}	zzMinRplcLtrlQuotToNon
 zzMinRplcRELtrlNbspSpcNbspToTab	&nbsp; &nbsp;{#insert zRplcFieldWith}{#insert zzQtab}	zzMinRplcRELtrlNbspSpcNbspToTab
+zBlockQuotePre	<BLOCKQUOTE><PRE>{#insert zENTER}{#insert zXmark}{#insert zENTER}</PRE></BLOCKQUOTE>{#insert zXUp}	zBlockQuotePre

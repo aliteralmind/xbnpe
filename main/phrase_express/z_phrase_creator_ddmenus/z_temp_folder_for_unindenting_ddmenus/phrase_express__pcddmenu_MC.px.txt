@@ -14,15 +14,15 @@ Required by phrase-creator-ddmenu-utils...END
 (*
 FROM xbnpe_phrase_creator_popup_heirarchy_base.px.txt:
 
-Phrase-creators: Search & replace -- xhs   .   xh
-Phrase-creators: PhraseExpress -- xhp   .   xh
+Phrase-creators: Search & replace -- s   .   xh
+Phrase-creators: PhraseExpress -- p   .   xh
 *)
-Phrase-name DDMenu utils -- xhpm	.	xhp
-			fidmb: zzPmdmFillInEmptyItemsAll* -- xhpmf (fidmbsyn)	.	xhpm
+Phrase-name DDMenu utils -- m	.	xhp
+			fidmb: zzPmdmFillInEmptyItemsAll* -- f (fidmbsyn)	.	xhpm
 fidmbc: zzPmdmFillInEmptyItemsCommands	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content fidmbc:zzPmdmFillInEmptyItemsCommands -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhpmf
 fidmbv: zzPmdmFillInEmptyItemsVariables	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content fidmbv:zzPmdmFillInEmptyItemsVariables -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhpmf
 fidmba: zzPmdmFillInEmptyItemsActionsWithWWStatePrompt	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content fidmba:zzPmdmFillInEmptyItemsActionsWithWWStatePrompt -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhpmf
-fidmbt: zzRevertDDMenuAllItemsToEmpty* -- xhpmft	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content fidmbt:zzRevertDDMenuAllItemsToEmpty -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhpmf
+fidmbt: zzRevertDDMenuAllItemsToEmpty* -- t	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content fidmbt:zzRevertDDMenuAllItemsToEmpty -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhpmf
 fidmbtc: zzRevertDDMenuCommandsToEmpty	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content fidmbtc:zzRevertDDMenuCommandsToEmpty -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhpmft
 fidmbtv: zzRevertDDMenuVariablesToEmpty	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content fidmbtv:zzRevertDDMenuVariablesToEmpty -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhpmft
 fidmbta: zzRevertDDMenuActionsToEmpty	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content fidmbta:zzRevertDDMenuActionsToEmpty -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhpmft
@@ -30,7 +30,7 @@ gtddm: zGoToDDMenuFileBasedOnIDPhrsFlHdrMarker	{#SETPHRASE -description zvATN_CL
 Prepare DDMenu-file(s) for import: pidd* (piddsyn)	.	xhpm
 maixbxbx: zMarkAllIndentedTxtTbTxtTbTxtLines	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content maixbxbx:zMarkAllIndentedTxtTbTxtTbTxtLines -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhpm
 maixbxbxa: zMarkAllIndentedTxtTbTxtTbTxtLinesAllDocs	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content maixbxbxa:zMarkAllIndentedTxtTbTxtTbTxtLinesAllDocs -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhpm
-Static strings -- xhpms	.	xhpm
+Static strings -- s	.	xhpm
 ddmfsc: zPrintDDMenuFileStartComment	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content ddmfsc:zPrintDDMenuFileStartComment -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhpms
 ddmpfsc: zPrintDDMenuPhraseFileStartComment	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content ddmpfsc:zPrintDDMenuPhraseFileStartComment -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhpms
 zXDDMenuDirIDStartCmtMarker	\\\{#insert zXDDMenuDirIDStartCmtMarker\\\}	xhpms
@@ -38,19 +38,19 @@ zXDDMenuPhraseFileMarker	\\\{#insert zXDDMenuPhraseFileMarker\\\}	xhpms
 zSubDirNmTmpForUnindentingDDMenus	\\\{#insert zSubDirNmTmpForUnindentingDDMenus\\\}	xhpms
 zCopySlctdDDMenuHdrAbrvToChildrenWCountPrompt	\\\{#insert zCopySlctdDDMenuHdrAbrvToChildrenWCountPrompt\\\}	xhpm
 Var: zvDDMENU_ID	{#SETCLIPBOARD zvDDMENU_ID}{#insert zzBalCBContainsVarNm}	xhpm
-(*    Phrase creation and plain-text file management -- xhpc   .   xhp   *)
-(*       Compress/un/re plain-text phrase files -- xhpcc   .   xhpc  *)
+(*    Phrase creation and plain-text file management -- c   .   xhp   *)
+(*       Compress/un/re plain-text phrase files -- c   .   xhpc  *)
 Re-compress phrase: rp2, rp22, rp[3-10,n,all]	.	xhpcc
 Un-compress phrase: np2, np[n,all]	.	xhpcc
 zRefreshAutotextOfSelectedLines	\\\{#insert zRefreshAutotextOfSelectedLines\\\}	xhpcc
 zUncompressSlctd1LinePhrssTo2	\\\{#insert zUncompressSlctd1LinePhrssTo2\\\}	xhpcc
 mpfpl: zMarkAllPrprlyFrmtdPlainTxtPhraseLines	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content mpfpl:zMarkAllPrprlyFrmtdPlainTxtPhraseLines -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhpc
 mpfpla: zMarkAllPrprlyFrmtdPlainTxtPhraseLinesAD	{#SETPHRASE -description zvATN_CLN_SPC_CMD -content mpfpla:zMarkAllPrprlyFrmtdPlainTxtPhraseLinesAD -autotext zvATN_CLN_SPC_CMD -folder ctvv_folder}{#insert zzCpExeActnOrPhrsClCmd_M_actclncmd}	xhpc
-Regular expressions -- xhpcr	.	xhpc
+Regular expressions -- r	.	xhpc
 zzRegexPhrsLnWAutotxtDscWrd1MidIndentAutotext	\\\{#insert zzRegexPhrsLnWAutotxtDscWrd1MidIndentAutotext\\\}	xhpcr
 zzRegexTabDelimPhraseLineWAutotextDescWord1PstIndnt	\\\{#insert zzRegexTabDelimPhraseLineWAutotextDescWord1PstIndnt\\\}	xhpcr
 zzRegexTextTabTextTabTextDlrSignPstIndnt	\\\{#insert zzRegexTextTabTextTabTextDlrSignPstIndnt\\\}	xhpcr
-Find-select phrase-line tab -- xhpt	.	xhp
+Find-select phrase-line tab -- t	.	xhp
 zPhrsLnNotAtParaEnd_selBodyEndTab_downREoff	\\\{#insert zPhrsLnNotAtParaEnd_selBodyEndTab_downREoff\\\}	xhpt
 zPhrsLnNotAtParaEnd_selBodyEndTab_upREFndOpn \\\{#insert zPhrsLnNotAtParaEnd_selBodyEndTab_upREFndOpn\\\}	xhpt
 zPhrsLnNotAtParaStart_selBodyStartTab_downREFndOpn	\\\{#insert zPhrsLnNotAtParaStart_selBodyStartTab_downREFndOpn\\\}	xhpt
@@ -58,10 +58,10 @@ zPhrsLnNotAtParaStart_selBodyStartTab_downREoff	\\\{#insert zPhrsLnNotAtParaStar
 zzRegexTabBtwWSCharsLookaround**	\\\{#insert zzRegexTabBtwWSCharsLookaround\\\}	xhpt
 xcfbuild	(*actiononly=xcfbuild*){#SETPHRASE -description zvACTN_NM -content xcfbuild -autotext zvACTN_NM -folder ctvv_folder}{#insert zzMainActnNmOnlyCpExeOrCpDlg_M_actm}	xhp
 (*
-Phrase-creators: Other -- xho   .   xh
-XBNPE main directories -- xhor   .   xho
-zROOT_DIR_XBNPE_PARENT -- xhorm   .   xhor
-zROOT_DIR_XBNPE_MAIN -- xhormm   .   xhorm
+Phrase-creators: Other -- o   .   xh
+XBNPE main directories -- r   .   xho
+zROOT_DIR_XBNPE_PARENT -- m   .   xhor
+zROOT_DIR_XBNPE_MAIN -- m   .   xhorm
 *)
-zXPROOT_DIR_phraseExpress -- xhormmp	\\\{#insert zXPROOT_DIR_phraseExpress\\\}	xhormm
+zXPROOT_DIR_phraseExpress -- p	\\\{#insert zXPROOT_DIR_phraseExpress\\\}	xhormm
 zXPROOT_DIR_AG_phraseExpress	\\\{#insert zXPROOT_DIR_AG_phraseExpress\\\}	xhormmp

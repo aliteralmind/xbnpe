@@ -48,7 +48,7 @@ apzc4	{#insert zzSetAngToL1cWycTo4}{#insert zzXCddPasteNxtJFParamsAtCrsrDelRqstd
 apzc5	{#insert zzSetAngToL1cWycTo5}{#insert zzXCddPasteNxtJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	apzc5
 apzcn	{#insert zzSetAngToL1cWycToPrompt}{#insert zzXCddPasteNxtJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	apzcn
 apzn	{#insert zzSetAngToL1cWycToPrompt}{#insert zzXPasteNxtJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	apzn
-zXCddPrvNxtJFSigCopyParamsRtrnToX_M_gpnWyc -*-	{#insert zXmarkCoded}{#insert zPrvNxtJFSigSelCopyParamsBackToX_M_gpnWyc}	zXCddPrvNxtJFSigCopyParamsRtrnToX_M_gpnWyc
+zXCddPrvNxtJFSigCopyParamsRtrnToX_M_gpnWyc -*-	{#insert zXmarkJCoded}{#insert zPrvNxtJFSigSelCopyParamsBackToX_M_gpnWyc}	zXCddPrvNxtJFSigCopyParamsRtrnToX_M_gpnWyc
 zXPrvNxtJFSigCopyParamsRtrnToX_M_gpnWyc -*-	{#insert zXmark}{#insert zPrvNxtJFSigSelCopyParamsBackToX_M_gpnWyc}	zXPrvNxtJFSigCopyParamsRtrnToX_M_gpnWyc
 zzAnlsyn_M_yon	{#insert {#COND -if {#insert zvSYNTAX_ON} = on -then aelsyn -else z1slp}}	zzAnlsyn_M_yon
 zzAnlsyns1of3	[a,n,g,G,u,v]ap[l,z][c][2~5,n]	zzAnlsyns1of3

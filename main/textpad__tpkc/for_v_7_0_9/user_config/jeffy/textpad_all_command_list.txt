@@ -373,7 +373,7 @@ ViewFullScreen
 ViewHScrollbar
 ViewInBrowser
 ViewLineNumbers
-ViewProperties
+ViewProperties          Ctrl+Shift+Alt+J, P
 ViewReplaceDialogBox
 ViewSearchResults       Shift+F11
 ViewStart               Alt+Home

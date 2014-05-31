@@ -11,4 +11,4 @@ zTPFindDlgOpen -- TextPad built-in command: Search > SearchFind	{#insert zF3}{#s
 zTPFindNext -- TextPad built-in command: Search > SearchFindNext	{#insert zF4}{#sleep 15}	zTPFindNext
 zTPGTDlgOpen -- TextPad built-in command: Search > SearchGoto	{#insert zCSpTT}{#sleep 50}	zTPGTDlgOpen
 zTPPrefsDlgOpen -- TextPad built-in command: Configure > Preferences	{#insert zF9}{#sleep 50}{#insert zF12}{#sleep 50}	zTPPrefsDlgOpen
-zTPRplcDlgOpen -- TextPad built-in command: Search > SearchReplace	{#insert zF5}{#sleep 50}	zTPRplcDlgOpen
+zTPRplcDlgOpen -- TextPad built-in command: Search > SearchReplace	{#insert zF5}{#sleep 150}	zTPRplcDlgOpen

@@ -1,0 +1,82 @@
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools,written in PhraseExpress,using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License,or (at your option) any later version.  //  This library is distributed in the hope that it will be useful,but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not,write to the Free Software Foundation,Inc.,51 Franklin Street,Fifth Floor,Boston,MA 02110-1301 USA*)		(*Two tabs plus this comment,to force this phrase to be (a) imported,and (b) with NO autotext*)
+_ xf -- com.github.xbn.* function directory	.	xf
+array -- a	.	xf
+CrashIfArrayIs -- a	.	xfa
+isOrElementNullBadIndexOrReturnCause(s,E[],s,i,s,o,rx)	CrashIfArrayIs.isOrElementNullBadIndexOrReturnCause({#insert zXcYcXcY}, {#insert zXcYcY});{#insert zLeftPostBrktSelectWord1}	xfaa
+lengthLTOE(E[],i,s,s,o)	CrashIfArrayIs.lengthLTOE({#insert zYcY}, {#insert zXcXcY});{#insert zLeftPostBrktSelectWord1}	xfaa
+nullBadIndexOrReturnCause(s,E[],s,i,s,o,rx)	CrashIfArrayIs.nullBadIndexOrReturnCause({#insert zXcYcXcY}, {#insert zXcYcY});{#insert zLeftPostBrktSelectWord1}	xfaa
+unknownPrimitiveNullBadIndexOrReturnCause(o,i,s,s,s,o,rx)	CrashIfArrayIs.unknownPrimitiveNullBadIndexOrReturnCause({#insert zYcYcXcX}, {#insert zXcYcY});{#insert zLeftPostBrktSelectWord1}	xfaa
+CrashIfIndexableIs -- d	.	xfa
+indexForLength(i,i,s,s,s)	CrashIfIndexableIs.indexForLength({#insert zYcY}, {#insert zXcXcX});{#insert zLeftPostBrktSelectWord1}	xfad
+indexForLengthOrReturnCause(s,i,s,i,s,rx)	CrashIfIndexableIs.indexForLengthOrReturnCause({#insert zXcYcXcY}, {#insert zXcY});{#insert zLeftPostBrktSelectWord1}	xfad
+indexRangeForLength(i,i,i,s,s,s,s)	CrashIfIndexableIs.indexRangeForLength({#insert zYcY}, {#insert zYmark}, {#insert zXcXcX}, {#insert zXmark});{#insert zLeftPostBrktSelectWord1}	xfad
+Non-primitive array -- n	.	xfa
+NonPArrayFromPrimitiveUtil -- u	.	xfan
+getObjectArrayOrNull(b[],s,s) (all primitive types)	NonPArrayFromPrimitiveUtil.getObjectArrayOrNull({#insert zYcXcX});{#insert zLeftPostBrktSelectWord1}	xfanu
+getObjectArrayOrNullFromUnknown(o,s,s)	NonPArrayFromPrimitiveUtil.getObjectArrayOrNullFromUnknown({#insert zYcXcX});{#insert zLeftPostBrktSelectWord1}	xfanu
+getStringArrayOrNull(b[],s,s) (all primitive types)	NonPArrayFromPrimitiveUtil.getStringArrayOrNull({#insert {#insert zYcXcX}});{#insert zLeftPostBrktSelectWord1}	xfanu
+getStringArrayOrNullFromUnknown(o,s,s)	NonPArrayFromPrimitiveUtil.getStringArrayOrNullFromUnknown({#insert zYcXcX});{#insert zLeftPostBrktSelectWord1}	xfanu
+getWrapperArrayOrNull(b[],s,s) (all primitive types)	NonPArrayFromPrimitiveUtil.getWrapperArrayOrNull({#insert zYcXcX});{#insert zLeftPostBrktSelectWord1}	xfanu
+NonPArrayLengthCINull.get(o[],s,o)	NonPArrayLengthCINull.get({#insert zYcXcX}){#insert zLeftPostBrktSelectWord1}	xfan
+NonPArrayLengthCINull.getWBNullBadVarName(o[],s,s,s,o)	NonPArrayLengthCINull.getWBNullBadVarName({#insert zYmark}, {#insert zXcXcX}, {#insert zYmark}){#insert zLeftPostBrktSelectWord1}	xfan
+Primitive array -- p	.	xfa
+PrimitiveArrayUtilBase.getLengthForUnknown(o)	PrimitiveArrayUtilBase.getLengthForUnknown({#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xfap
+PrimitiveArrayUtilBase.getLengthForUnknown(o,s,s)	PrimitiveArrayUtilBase.getLengthForUnknown({#insert zYcXcX});{#insert zLeftPostBrktSelectWord1}	xfap
+PrimitiveArrayUtil -- u	.	xfap
+getBoolCopyOrNullFromObject(o,s,s) (Char, PByte, PShort, Int, PLong, PFloat, PDouble)	PrimitiveArrayUtil.getBoolCopyOrNullFromObject({#insert zYcXcX});{#insert zLeftPostBrktSelectWord1}	xfapu
+getBoolOrNullFromObject(o,s,s) (Char, PByte, PShort, Int, PLong, PFloat, PDouble)	PrimitiveArrayUtil.getBoolOrNullFromObject({#insert zYcXcX});{#insert zLeftPostBrktSelectWord1}	xfapu
+isPrimitive(o)	PrimitiveArrayUtil.isPrimitive({#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xfapu
+isPrimitiveType(cls)	PrimitiveArrayUtil.isPrimitiveType({#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xfapu
+getDfltValStrTypeNullIfNotPrim(s)	PrimitiveArrayUtil.getDfltValStrTypeNullIfNotPrim({#insert zXmark});{#insert zLeftPostBrktSelectWord1}	xfapu
+getLengthForUnknown(o)	PrimitiveArrayUtil.getLengthForUnknown({#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xfapu
+z- aoEMPTY	aoEMPTY	xfapu
+z- asEMPTY	asEMPTY	xfapu
+WrapperArrayUtil -- w	.	xfa
+isWrapper(o)	WrapperArrayUtil.isWrapper({#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xfaw
+isWrapperType(cls)	WrapperArrayUtil.isWrapperType({#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xfaw
+getFromWrapperRplcNulls(B[],b,s,s) (all primitive types)	WrapperArrayUtil.getFromWrapperRplcNulls({#insert zYmark}, {#insert zYcXcX});{#insert zLeftPostBrktSelectWord1}	xfaw
+getFromWrapperRplcNulls(B[],hnv,s,s) (all primitive types)	WrapperArrayUtil.getFromWrapperRplcNulls({#insert zYmark}, {#insert zYcXcX});{#insert zLeftPostBrktSelectWord1}	xfaw
+getFromBoolCollectionCINulls(cll) (Char, PByte, PShort, Int, PLong, PFloat, PDouble)	WrapperArrayUtil.getFromBoolCollectionCINulls({#insert zYmark});{#insert zLeftPostBrktSelectWord1}	xfaw
+XbnIndexOutOfBoundsException -- b (also Array & String)	.	xfa
+.abs...Array -- a (not String)	.	xfab
+.absNonPArrayLength(E[])	.absNonPArrayLength({#insert zYmark})	xfaba
+.absMinNonPArrayLength(i,E[])	.absMinNonPArrayLength({#insert zYcY})	xfaba
+.absMinNonPArrayLength(i,E[],s,s)	.absMinNonPArrayLength({#insert zYcY}, {#insert zXcX})	xfaba
+.absMinPArrayLength(i,o)	.absMinPArrayLength({#insert zYcY})	xfaba
+.absMinPArrayLength(i,o,s,s)	.absMinPArrayLength({#insert zYcY}, {#insert zXcX})	xfaba
+.abs...StringLength -- (not Array)	.	xfab
+.absStringLength(o)	.absStringLength({#insert zYmark})	xfabs
+.absStringLength(o,s)	.absStringLength({#insert zYcX})	xfabs
+.absMinStringLength(i,o)	.absMinStringLength({#insert zYcX})	xfabs
+.absMinStringLength(i,o,s,s)	.absMinStringLength({#insert zYcY}, {#insert zXcX})	xfabs
+.abs...CollectionSize -- c (not Array or String)	.	xfab
+.absMinCollectionSize(i,cll)	.absMinCollectionSize({#insert zYcY})	xfabc
+.absMinCollectionSize(i,cll,s,s)	.absMinCollectionSize({#insert zYcY}, {#insert zXcX})	xfabc
+.absCollectionSize(cll)	.absCollectionSize({#insert zYmark})	xfabc
+.absCollectionSize(cll,s)	.absCollectionSize({#insert zYcX})	xfabc
+.abs (int) -- i	.	xfab
+.absBounds(i,i)	.absBounds({#insert zYcY})	xfabi
+.absBounds(i,i,s,s)	.absBounds({#insert zYcY}, {#insert zXcX})	xfabi
+.absMaxX(i)	.absMaxX({#insert zYmark})	xfabi
+.absMaxX(i,s)	.absMaxX({#insert zYcX})	xfabi
+new -- n	.	xfab
+new..badIndex(i)	new XbnIndexOutOfBoundsException_Cfg().badIndex({#insert zYmark})	xfabn
+new..badIndex(i,s)	new XbnIndexOutOfBoundsException_Cfg().badIndex({#insert zYcX})	xfabn
+new..badRange(i,i)	new XbnIndexOutOfBoundsException_Cfg().badRange({#insert zYcY})	xfabn
+new..badRange(i,i,s,s)	new XbnIndexOutOfBoundsException_Cfg().badRange({#insert zYcY}, {#insert zXcX})	xfabn
+.build -- u	.	xfab
+.build(s)	.build({#insert zXmark})	xfabu
+.buildWithInfo(s,o)	.buildWithInfo({#insert zXcY})	xfabu
+.buildWithCauseInfo(s,thr,o)	.buildWithCauseInfo({#insert zXcY}, {#insert zYmark})	xfabu
+.buildWithCause(s,thr)	.buildWithCause({#insert zXcY})	xfabu
+.chainID(o)	.chainID({#insert zYmark})	xfabu
+io -- i: new NewPrintWriterForFile.Cfg().	new NewPrintWriterForFile.Cfg().	xfi
+.append()	.append()	xfi
+.overwrite()	.overwrite()	xfi
+.autoFlush()	.autoFlush()	xfi
+.manualFlush()	.manualFlush()	xfi
+.build(s)	.build({#insert zXmark})	xfi
+.buildTA(s)	.buildTA({#insert zXmark})	xfi
+.buildMuteableTA(s)	.buildMuteableTA({#insert zXmark})	xfi
+z - ddmtt -- Rplc ddmenu param type-name w/ 1-char abrv	.	xf
+

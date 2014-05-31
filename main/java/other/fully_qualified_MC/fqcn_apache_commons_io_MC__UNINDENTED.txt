@@ -1,0 +1,130 @@
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
+	org.apache.commons.io -- i	org.apache.commons.io.	ap
+		_ org.apache.commons.io.	org.apache.commons.io.	api
+		_ org.apache.commons.io. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content org.apache.commons.io. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	api
+		b-f -- a	.	api
+			ByteOrderMark	org.apache.commons.io.ByteOrderMark	apia
+			Charsets	org.apache.commons.io.Charsets	apia
+			CopyUtils	org.apache.commons.io.CopyUtils	apia
+			DirectoryWalker	org.apache.commons.io.DirectoryWalker	apia
+			EndianUtils	org.apache.commons.io.EndianUtils	apia
+			FileCleaner	org.apache.commons.io.FileCleaner	apia
+			FileCleaningTracker	org.apache.commons.io.FileCleaningTracker	apia
+			FileDeleteStrategy	org.apache.commons.io.FileDeleteStrategy	apia
+			FileExistsException	org.apache.commons.io.FileExistsException	apia
+			FilenameUtils	org.apache.commons.io.FilenameUtils	apia
+			FileSystemUtils	org.apache.commons.io.FileSystemUtils	apia
+			FileUtils	org.apache.commons.io.FileUtils	apia
+		h-t -- h	.	api
+			HexDump	org.apache.commons.io.HexDump	apih
+			IOCase	org.apache.commons.io.IOCase	apih
+			IOExceptionWithCause	org.apache.commons.io.IOExceptionWithCause	apih
+			IOUtils	org.apache.commons.io.IOUtils	apih
+			LineIterator	org.apache.commons.io.LineIterator	apih
+			TaggedIOException	org.apache.commons.io.TaggedIOException	apih
+			ThreadMonitor	org.apache.commons.io.ThreadMonitor	apih
+		org.apache.commons.io.builder -- b	org.apache.commons.io.builder.	api
+			_ org.apache.commons.io.builder.	org.apache.commons.io.builder.	apib
+			_ org.apache.commons.io.builder. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content org.apache.commons.io.builder. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	apib
+			CompareToBuilder	org.apache.commons.io.builder.CompareToBuilder	apib
+			EqualsBuilder	org.apache.commons.io.builder.EqualsBuilder	apib
+			HashCodeBuilder	org.apache.commons.io.builder.HashCodeBuilder	apib
+			IDKey	org.apache.commons.io.builder.IDKey	apib
+			ReflectionToStringBuilder	org.apache.commons.io.builder.ReflectionToStringBuilder	apib
+			StandardToStringStyle	org.apache.commons.io.builder.StandardToStringStyle	apib
+			ToStringBuilder	org.apache.commons.io.builder.ToStringBuilder	apib
+			ToStringStyle	org.apache.commons.io.builder.ToStringStyle	apib
+		org.apache.commons.io.filefilter -- f	org.apache.commons.io.filefilter.	api
+			_ org.apache.commons.io.filefilter.	org.apache.commons.io.filefilter.	apif
+			_ org.apache.commons.io.filefilter. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content org.apache.commons.io.filefilter. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	apif
+			a-d -- a	.	apif
+				AbstractFileFilter	org.apache.commons.io.filefilter.AbstractFileFilter	apifa
+				AgeFileFilter	org.apache.commons.io.filefilter.AgeFileFilter	apifa
+				AndFileFilter	org.apache.commons.io.filefilter.AndFileFilter	apifa
+				CanReadFileFilter	org.apache.commons.io.filefilter.CanReadFileFilter	apifa
+				CanWriteFileFilter	org.apache.commons.io.filefilter.CanWriteFileFilter	apifa
+				ConditionalFileFilter	org.apache.commons.io.filefilter.ConditionalFileFilter	apifa
+				DelegateFileFilter	org.apache.commons.io.filefilter.DelegateFileFilter	apifa
+				DirectoryFileFilter	org.apache.commons.io.filefilter.DirectoryFileFilter	apifa
+			e-n -- e	.	apif
+				EmptyFileFilter	org.apache.commons.io.filefilter.EmptyFileFilter	apife
+				FalseFileFilter	org.apache.commons.io.filefilter.FalseFileFilter	apife
+				FileFileFilter	org.apache.commons.io.filefilter.FileFileFilter	apife
+				FileFilterUtils	org.apache.commons.io.filefilter.FileFilterUtils	apife
+				HiddenFileFilter	org.apache.commons.io.filefilter.HiddenFileFilter	apife
+				IOFileFilter	org.apache.commons.io.filefilter.IOFileFilter	apife
+				MagicNumberFileFilter	org.apache.commons.io.filefilter.MagicNumberFileFilter	apife
+				NameFileFilter	org.apache.commons.io.filefilter.NameFileFilter	apife
+				NotFileFilter	org.apache.commons.io.filefilter.NotFileFilter	apife
+			o-w -- o	.	apif
+				OrFileFilter	org.apache.commons.io.filefilter.OrFileFilter	apifo
+				PrefixFileFilter	org.apache.commons.io.filefilter.PrefixFileFilter	apifo
+				RegexFileFilter	org.apache.commons.io.filefilter.RegexFileFilter	apifo
+				SizeFileFilter	org.apache.commons.io.filefilter.SizeFileFilter	apifo
+				SuffixFileFilter	org.apache.commons.io.filefilter.SuffixFileFilter	apifo
+				TrueFileFilter	org.apache.commons.io.filefilter.TrueFileFilter	apifo
+				WildcardFileFilter	org.apache.commons.io.filefilter.WildcardFileFilter	apifo
+				WildcardFilter	org.apache.commons.io.filefilter.WildcardFilter	apifo
+		org.apache.commons.io.input -- i	org.apache.commons.io.input.	api
+			_ org.apache.commons.io.input.	org.apache.commons.io.input.	apii
+			_ org.apache.commons.io.input. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content org.apache.commons.io.input. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	apii
+			a-c -- a	.	apii
+				AutoCloseInputStream	org.apache.commons.io.input.AutoCloseInputStream	apiia
+				BOMInputStream	org.apache.commons.io.input.BOMInputStream	apiia
+				BoundedInputStream	org.apache.commons.io.input.BoundedInputStream	apiia
+				BrokenInputStream	org.apache.commons.io.input.BrokenInputStream	apiia
+				CharSequenceInputStream	org.apache.commons.io.input.CharSequenceInputStream	oarii
+				CharSequenceReader	org.apache.commons.io.input.CharSequenceReader	apiia
+				ClassLoaderObjectInputStream	org.apache.commons.io.input.aClassLoaderObjectInputStream	apii
+				ClosedInputStream	org.apache.commons.io.input.ClosedInputStream	apiia
+				CloseShieldInputStream	org.apache.commons.io.input.CloseShieldInputStream	oarii
+				CountingInputStream	org.apache.commons.io.input.CountingInputStream	apiia
+			d-s -- d	.	apii
+				DemuxInputStream	org.apache.commons.io.input.DemuxInputStream	apiid
+				NullInputStream	org.apache.commons.io.input.NullInputStream	apiid
+				NullReader	org.apache.commons.io.input.NullReader	apiid
+				ProxyInputStream	org.apache.commons.io.input.ProxyInputStream	apiid
+				ProxyReader	org.apache.commons.io.input.ProxyReader	apiid
+				ReaderInputStream	org.apache.commons.io.input.ReaderInputStream	apiid
+				ReversedLinesFileReader	org.apache.commons.io.input.ReversedLinesFileReader	apiid
+				SwappedDataInputStream	org.apache.commons.io.input.SwappedDataInputStream	apiid
+				TaggedInputStream	org.apache.commons.io.input.TaggedInputStream	apiid
+				Tailer	org.apache.commons.io.input.Tailer	apiid
+				TailerListener	org.apache.commons.io.input.TailerListener	apiid
+				TailerListenerAdapter	org.apache.commons.io.input.TailerListenerAdapter	apiid
+				TeeInputStream	org.apache.commons.io.input.TeeInputStream	apiid
+				XmlStreamReader	org.apache.commons.io.input.XmlStreamReader	apiid
+				XmlStreamReaderException	org.apache.commons.io.input.XmlStreamReaderException	apiid
+		org.apache.commons.io.monitor -- n	org.apache.commons.io.monitor.	api
+			_ org.apache.commons.io.monitor.	org.apache.commons.io.monitor.	apin
+			_ org.apache.commons.io.monitor. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content org.apache.commons.io.monitor. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	apin
+			FileAlterationListener	org.apache.commons.io.monitor.FileAlterationListener	apin
+			FileAlterationListenerAdaptor	org.apache.commons.io.monitor.FileAlterationListenerAdaptor	apin
+			FileAlterationMonitor	org.apache.commons.io.monitor.FileAlterationMonitor	apin
+			FileAlterationObserver	org.apache.commons.io.monitor.FileAlterationObserver	apin
+			FileEntry	org.apache.commons.io.monitor.FileEntry	apin
+		org.apache.commons.io.output -- o	org.apache.commons.io.output.	api
+			_ org.apache.commons.io.output.	org.apache.commons.io.output.	apio
+			_ org.apache.commons.io.output. (z-import statement for word-left)	{#SETPHRASE -description zvPKG -content org.apache.commons.io.output. -autotext zvPKG -folder ctvv_folder}{#insert zCopyL1w}{#insert zzXGTLineAftrPkgTabQImprtSpcSpcPkgIcbColonXDownDelSetCbToPkg_M_pkg}	apio
+			b-d -- b	.	apio
+				BrokenOutputStream	org.apache.commons.io.output.BrokenOutputStream	apiob
+				ByteArrayOutputStream	org.apache.commons.io.output.ByteArrayOutputStream	apiob
+				ClosedOutputStream	org.apache.commons.io.output.ClosedOutputStream	apiob
+				CloseShieldOutputStream	org.apache.commons.io.output.CloseShieldOutputStream	apiob
+				CountingOutputStream	org.apache.commons.io.output.CountingOutputStream	apiob
+				DeferredFileOutputStream	org.apache.commons.io.output.DeferredFileOutputStream	apiob
+				DemuxOutputStream	org.apache.commons.io.output.DemuxOutputStream	apiob
+			f-p -- f	.	apio
+				FileWriterWithEncoding	org.apache.commons.io.output.FileWriterWithEncoding	apiof
+				LockableFileWriter	org.apache.commons.io.output.LockableFileWriter	apiof
+				NullOutputStream	org.apache.commons.io.output.NullOutputStream	apiof
+				NullWriter	org.apache.commons.io.output.NullWriter	apiof
+				ProxyOutputStream	org.apache.commons.io.output.ProxyOutputStream	apiof
+				ProxyWriter	org.apache.commons.io.output.ProxyWriter	apiof
+			s-x -- s	.	apio
+				StringBuilderWriter	org.apache.commons.io.output.StringBuilderWriter	apios
+				TaggedOutputStream	org.apache.commons.io.output.TaggedOutputStream	apios
+				TeeOutputStream	org.apache.commons.io.output.TeeOutputStream	apios
+				ThresholdingOutputStream	org.apache.commons.io.output.ThresholdingOutputStream	apios
+				WriterOutputStream	org.apache.commons.io.output.WriterOutputStream	apios
+				XmlStreamWriter	org.apache.commons.io.output.XmlStreamWriter	apios

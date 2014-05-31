@@ -5,7 +5,7 @@ zGenericsInHEscSharpsIfNotES_M_gnr -*- Needs zvGENERICS	{#insert {#COND -if {#LE
 zGenericsInHEscSharps_M_gnr -*- Needs zvGENERICS	&lt;{#insert zvGENERICS}&gt;	zGenericsInHEscSharps_M_gnr
 zvGENERICS_stPrompt_M_fom -*- zvTYPE=zvFOBJ_NAME	{#SETPHRASE -description zvTYPE -content {#insert zvFOBJ_NAME} -autotext zvTYPE -folder ctvv_folder}{#insert zvGENERICS_stPrompt_M_typ}	zvGENERICS_stPrompt_M_fom
 zvGENERICS_stPrompt_M_typ -*- Needs zvTYPE	{#SETPHRASE -description zvGENERICS -content {#insert zzGenericsPrompt_M_typ} -autotext zvGENERICS -folder ctvv_folder}	zvGENERICS_stPrompt_M_typ
-zzGenericsPrompt_M_typ -*-	{#INPUT -head Generics for '{#insert zvTYPE}'? (no <>, NOTHING if none) -single}	zzGenericsPrompt_M_typ
+zzGenericsPrompt_M_typ -*-	{#INPUT -head Generics for '{#insert zvTYPE}'? (no <>, NOTHING if none) -def {#insert zvGENERICS} -single}	zzGenericsPrompt_M_typ
 zJFSigLineSlctdGoToOpenParen -*-	{#insert zJFSigLineSlctdSelectOpenParen}{#insert zLEFT}	zJFSigLineSlctdGoToOpenParen
 zJFSigLineSlctdSelectOpenParen -*-	{#insert zLEFT}{#insert zTMFindNextOpenParen}	zJFSigLineSlctdSelectOpenParen
 zJFSigLineSlctd_copyFuncName	{#insert zzJFSigLineSlctd_selectFuncName}{#insert zTPCopy}	zJFSigLineSlctd_copyFuncName
@@ -36,8 +36,8 @@ zvAWAY_CNT_st3 -*-	{#SETPHRASE -description zvAWAY_CNT -content 3 -autotext zvAW
 zvAWAY_CNT_st4 -*-	{#SETPHRASE -description zvAWAY_CNT -content 4 -autotext zvAWAY_CNT -folder ctvv_folder}	zvAWAY_CNT_st4
 zvAWAY_CNT_st5 -*-	{#SETPHRASE -description zvAWAY_CNT -content 5 -autotext zvAWAY_CNT -folder ctvv_folder}	zvAWAY_CNT_st5
 zvAWAY_CNT_stPrompt -*-	{#SETPHRASE -description zvAWAY_CNT -content {#INPUT -head How many sigs away? (1+) -single} -autotext zvAWAY_CNT -folder ctvv_folder}	zvAWAY_CNT_stPrompt
-zvCDD_ES_stCdd -*- -- 'Coded'	{#SETPHRASE -description zvCDD_ES -content Coded -autotext zvCDD_ES -folder ctvv_folder}	zvCDD_ES_stCdd
-zvCDD_ES_stES -*-	{#SETPHRASE -description zvCDD_ES -content -autotext zvCDD_ES -folder ctvv_folder}	zvCDD_ES_stES
+zvJCD_ES_stCdd -*- -- 'JCoded'	{#SETPHRASE -description zvJCD_ES -content JCoded -autotext zvJCD_ES -folder ctvv_folder}	zvJCD_ES_stCdd
+zvJCD_ES_stES -*-	{#SETPHRASE -description zvJCD_ES -content -autotext zvJCD_ES -folder ctvv_folder}	zvJCD_ES_stES
 zvDISPLAY_stFutureFONm -*-	(*We don't know the class-name yet. This special string indicates it's needed. See xcck:*){#SETPHRASE -description zvDISPLAY -content __CLS_NM__ -autotext zvDISPLAY -folder ctvv_folder}	zvDISPLAY_stFutureFONm
 zvDRN_stH -*-	{#SETPHRASE -description zvDRN -content h -autotext zvDRN -folder ctvv_folder}	zvDRN_stH
 zvDRN_stR -*-	{#SETPHRASE -description zvDRN -content r -autotext zvDRN -folder ctvv_folder}	zvDRN_stR

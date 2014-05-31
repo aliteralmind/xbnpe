@@ -1,0 +1,24 @@
+I have something to show you, assuming your installation is all working. But first you'll need to follow these instructions to install a minor upgrade.
+
+
+Please unzip the attachment to your desktop. It contains a PhraseExpress branch:
+   XBNPE- Other utilites.pxp
+and its corresponding source-code folder:
+   xbnpe\main\other
+
+Open PhraseExpress, and select-and-then-delete this folder:
+   XBNPE: Parent folder/XBN-PhraseExpress/XBNPE: Other utilities
+
+Now select its parent folder:
+   XBNPE: Parent folder/XBN-PhraseExpress
+and click Ctrl+I. Navigate to your desktop and double click the pxp file from the attachment, then confirm yes-I-do-want-to-import (and do NOT eliminate any duplicate phrases when asked).
+
+Close PhraseExpress.
+
+Now, in Windows Explorer, go to your xbnpe installation (source-code) directory:
+
+C:\programming\phrase_express\xbnpe\main
+
+In this directory, eliminate the "other" folder, and replace it with the new one from the email attachment.
+
+---DONE---
