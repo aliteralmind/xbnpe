@@ -30,6 +30,7 @@ int	public int (*ends w spc*)	pub
 void	public void (*ends w spc*)	pub
 (*...	public ( *ends w spc* )	pub*)
 protected -- o	protected (*ends w spc*)	pr
+...	protected (*ends w spc*)	pro
 _ final -- f	protected final (*ends w spc*)	pro
 String	protected final String (*ends w spc*)	prof
 boolean	protected final boolean (*ends w spc*)	prof

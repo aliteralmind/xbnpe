@@ -14,8 +14,8 @@ public -- b	public (*ends w spc*)	pu
 			char	public static final char (*ends w spc*)	pubsf
 			int	public static final int (*ends w spc*)	pubsf
 			void	public static final void (*ends w spc*)	pubsf
-			void main(...)	public static final void main(String {#insert zXmark})  {{#insert zENTER}\\\}{#insert zXUp}	pubsf
-			void main(ignored)	public static final void main(String ignored)  {{#insert zENTER2}\\\}{#insert zUP}{#insert zEND}	pubsf
+			void main(...)	public static final void main(String[] {#insert zXmark})  {{#insert zENTER}\\\}{#insert zXUp}	pubsf
+			void main(ignored)	public static final void main(String[] ignored)  {{#insert zENTER2}\\\}{#insert zUP}{#insert zEND}	pubsf
 			...	public static final (*ends w spc*)	pubsf
 		String	public static String (*ends w spc*)	pubs
 		boolean	public static boolean (*ends w spc*)	pubs
@@ -30,6 +30,7 @@ public -- b	public (*ends w spc*)	pu
 	void	public void (*ends w spc*)	pub
 	(*...	public ( *ends w spc* )	pub*)
 protected -- o	protected (*ends w spc*)	pr
+	...	protected (*ends w spc*)	pro
 	_ final -- f	protected final (*ends w spc*)	pro
 		String	protected final String (*ends w spc*)	prof
 		boolean	protected final boolean (*ends w spc*)	prof

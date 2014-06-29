@@ -40,6 +40,8 @@ aplcn	{#insert zzSetAngToL1cWycToPrompt}{#insert zzXCddPastePrvJFParamsAtCrsrDel
 apln	{#insert zzSetAngToL1cWycToPrompt}{#insert zzXPastePrvJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	apln
 apz	{#insert zzSetAngToL1cWycTo1}{#insert zzXPasteNxtJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	apz
 apz2	{#insert zzSetAngToL1cWycTo2}{#insert zzXPasteNxtJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	apz2
+apz3	{#insert zzSetAngToL1cWycTo3}{#insert zzXPasteNxtJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	apz3
+apz4	{#insert zzSetAngToL1cWycTo4}{#insert zzXPasteNxtJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	apz4
 apz5	{#insert zzSetAngToL1cWycTo5}{#insert zzXPasteNxtJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	apz5
 apzc	{#insert zzSetAngToL1cWycTo1}{#insert zzXCddPasteNxtJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	apzc
 apzc2	{#insert zzSetAngToL1cWycTo2}{#insert zzXCddPasteNxtJFParamsAtCrsrDelRqstdFrom_M_wycAng}{#insert zzAnlsyn_M_yon}	apzc2

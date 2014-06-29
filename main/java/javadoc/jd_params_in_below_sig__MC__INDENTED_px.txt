@@ -35,4 +35,5 @@ Use '2pa' for '@param' autotexts.	.	@param
 	@param: All in 10-param function	{#SETPHRASE -description zvTOTAL_PARAMS -content 10 -autotext zvTOTAL_PARAMS -folder ctvv_folder}{#insert zJavadocAllParamsFromSigDown_M_ptot}{#insert zzDz1syn_M_yon}	2paa
 	@param: All in prompt-num-param function	{#SETPHRASE -description zvTOTAL_PARAMS -content {#INPUT -head How many parameters in below sig? (1+) -single} -autotext zvTOTAL_PARAMS -folder ctvv_folder}{#insert zJavadocAllParamsFromSigDown_M_ptot}{#insert zzDz1syn_M_yon}	2paa
 	@param: All in unknown-#-param function	{#insert zJavadocAllParamsFromSigDown}{#insert zzDz1syn_M_yon}	2paa
+@param	@param  (*ends w 2spcs*)	2pa
 @param  [paste]	@param  {#insert zTPPaste}  (*ends w 2spcs*)	2pa

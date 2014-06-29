@@ -84,6 +84,7 @@ xtnsyn: Exceptions: throw
 	{#insert zzXtnsyns1of4}  //  {#insert zzXtnsyns3of4}
 {#insert zzXtnsyns2of4}  //  {#insert zzXtnsyns4of4}
 {#insert zBKSP}stubf: Turn interface function signature into return-null stub function
+dnty -- Split current X x=y; to X x=null;try{x=y}
 {#insert zBKSP}XBN-Java specific:
 	clnsyn: CrashIfObject.nnull, CrashIfObject.nullOrReturnCause: {#insert zzClnsyns1of3}
 xcgsyn: Copy-constructor and corresponding getObjectCopy() function

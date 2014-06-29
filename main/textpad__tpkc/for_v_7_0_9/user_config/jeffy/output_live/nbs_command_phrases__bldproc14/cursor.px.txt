@@ -1,7 +1,7 @@
 zTPMoveL1c -- CharLeft (Crl)	{#insert zLEFT}{#sleep 1}	zTPMoveL1c
-zTPSelectL1c -- CharLeftExtend (Crlx)	{#insert zCpWW}{#sleep 1}	zTPSelectL1c
+zTPSelectL1c -- CharLeftExtend (Crlx)	{#insert zCSpLEFT}{#sleep 1}	zTPSelectL1c
 zTPMoveR1c -- CharRight (Crr)	{#insert zRIGHT}{#sleep 1}	zTPMoveR1c
-zTPSelectR1c -- CharRightExtend (Crrx)	{#insert zCpVV}{#sleep 1}	zTPSelectR1c
+zTPSelectR1c -- CharRightExtend (Crrx)	{#insert zCSpRIGHT}{#sleep 1}	zTPSelectR1c
 zTPGTDocBottom -- DocumentEnd (Crdce)	{#insert zASpDOWN}{#sleep 25}	zTPGTDocBottom
 zTPSTDocBottom -- DocumentEndExtend (Crdcex)	{#insert zCASpDOWN}{#sleep 50}	zTPSTDocBottom
 zTPSTDocTop -- DocumentStartExtend (Crdcsx)	{#insert zCASpUP}{#sleep 50}	zTPSTDocTop

@@ -5,6 +5,8 @@ __XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a larg
 @return	@return  (*ends w 2spc*)	@re
 @return  <CODE>...</CODE>	@return  <CODE>{#insert zYmark}</CODE>{#insert zYUp}	2re
 @return  <CODE>...</CODE>	@return  <CODE>{#insert zYmark}</CODE>{#insert zYUp}	@re
+@return  <I>{@code this}</I>	@return  <I>{@code this}</I>	2re
+@return  <I>{@code this}</I>	@return  <I>{@code this}</I>	@re
 @return  {@code ...}	@return  {@code {#insert zYmark}\\\}{#insert zYUp}	2re
 @return  {@code ...}	@return  {@code {#insert zYmark}\\\}{#insert zYUp}	@re
 @exception	@exception  (*ends w 2spc*)	2ex
@@ -22,8 +24,8 @@ __XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a larg
 {@literal ...}	{@literal {#CURSOR}\\\}	[2
 {@literal ...}	{@literal {#CURSOR}\\\}	{@
 {@link ...} -- l	(*Make changes to the '[2' branch, then duplicate it to the '{@' branch*){@link {#CURSOR}}	{@
-1. {@link #[paste]}	{@link #{#insert zTPPaste}\\\}	{@l
-2. {@link [paste]}	{@link {#insert zTPPaste}}	{@l
+1. {@link [paste]}	{@link {#insert zTPPaste}}	{@l
+2. {@link #[paste]}	{@link #{#insert zTPPaste}\\\}	{@l
 3. {@link ... [paste]}	{@link {#insert zXmark} {#insert zTPPaste}\\\}{#insert zXUp}	{@l
 4. {@link #... [paste]}	{@link #{#insert zXmark} {#insert zTPPaste}\\\}{#insert zXUp}	{@l
 5. {@link Class}.{@link Class#OBJ OBJ}	{#insert zzAtLinkPreClsLinkDotObj}	{@l
@@ -38,8 +40,8 @@ Display function name -- f	.	{@l
 6. {@link #[paste] super} -- Super-constructor	{@link #{#insert zTPPaste} super\\\}	{@lf
 7. {@link [paste] super} -- Super-constructor	{@link {#insert zTPPaste} super\\\}	{@lf
 {@link ...} -- l	(*Make changes to the '[2' branch, then duplicate it to the '{@' branch*){@link {#CURSOR}}	[2
-1. {@link #[paste]}	{@link #{#insert zTPPaste}\\\}	[2l
-2. {@link [paste]}	{@link {#insert zTPPaste}}	[2l
+1. {@link [paste]}	{@link {#insert zTPPaste}}	[2l
+2. {@link #[paste]}	{@link #{#insert zTPPaste}\\\}	[2l
 3. {@link ... [paste]}	{@link {#insert zXmark} {#insert zTPPaste}\\\}{#insert zXUp}	[2l
 4. {@link #... [paste]}	{@link #{#insert zXmark} {#insert zTPPaste}\\\}{#insert zXUp}	[2l
 5. {@link Class}.{@link Class#OBJ OBJ}	{#insert zzAtLinkPreClsLinkDotObj}	[2l

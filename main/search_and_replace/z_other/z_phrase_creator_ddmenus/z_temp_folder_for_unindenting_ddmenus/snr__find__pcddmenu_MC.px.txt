@@ -18,8 +18,8 @@ Phrase-creators: XBN-PhraseExpress -- Call 'xh'   .   zXbnpeCmdPopupRoot
 Phrase-creators: Search & replace -- s   .   xh
 SNR: Find -- f   .   xhs*)
 (*       Buttons -- b (& next/prev)   .   xhsf*)
-zFindNext[2-5]	\\\{#insert zFindNext2\\\}	xhsfb
-zFindPrev[2-5]	\\\{#insert zFindPrev2\\\}	xshfb
+zFindNext2 [2-5]	\\\{#insert zFindNext2\\\}	xhsfb
+zFindPrev2 [2-5]	\\\{#insert zFindPrev2\\\}	xshfb
 (*       Flags -- f   .   xhsf*)xhsff
 _NOTE: Find-flags **MC/RE/WW/Text/Hex** are used for ALL dialogs	.	xhsff
 Set 1 flag *only* (all others off) -- a	.	xhsff

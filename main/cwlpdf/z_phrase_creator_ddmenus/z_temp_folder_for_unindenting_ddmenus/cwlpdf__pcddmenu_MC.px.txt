@@ -107,9 +107,9 @@ zSelCopyEntireLineNoNL	\\\{#insert zSelCopyEntireLineNoNL\\\}	xhclscp
 zSelCopyToLineEnd	\\\{#insert zSelCopyToLineEnd\\\}	xhclscp
 zSelCopyToLineHome	\\\{#insert zSelCopyToLineHome\\\}	xhclscp
 zSelCopyThrLineEndNotLastChar	\\\{#insert zSelCopyThrLineEndNotLastChar\\\}	xhclscp
-zSelCopyUpThr1NonWS	\\\{#insert zSelCopyUpThr1NonWS\\\}	xhclscp
+zSelCopyThr1stNonWSInCurrentLine	\\\{#insert zSelCopyThr1stNonWSInCurrentLine\\\}	xhclscp
 zSelectEntireLine	\\\{#insert zSelectEntireLine\\\}	xhcls
-zSelectUpThr1NonWS	\\\{#insert zSelectUpThr1NonWS\\\}	xhcls
+zSelectThr1stNonWSInCurrentLine	\\\{#insert zSelectThr1stNonWSInCurrentLine\\\}	xhcls
 zSelectThrLineEndNotLastChar	\\\{#insert zSelectThrLineEndNotLastChar\\\}	xhcls
 (*    4. Para -- p   .   xhc*)
 (*          Move -- m   .   xhcp*)
