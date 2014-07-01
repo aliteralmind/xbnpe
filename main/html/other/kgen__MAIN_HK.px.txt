@@ -26,9 +26,9 @@ zLinkFromSel -- Link from sel (1st space-word url) [zCSpFIVE]	{#insert zzRplcDlg
 
 zNameLinkFromCBWord -- Transforms cb-word to <A HREF='#[CB]'>[CB]</A>	<A HREF={#insert zAscQQ}#{#insert zTPPaste}{#insert zAscQQ}>{#insert zTPPaste}</A>	zNameLinkFromCBWord
 
-zNameTargetFromCBWord -- Transforms word in clipboard to <A NAME='[CB]'/>	<A NAME={#insert zAscQQ}{#insert zTPPaste}{#insert zAscQQ}/>	zNameTargetFromCBWord
+zNameTargetFromCBWord -- Transforms word in clipboard to <A NAME='[CB]'/>	<A NAME={#insert zAscQQ}{#insert zTPPaste}{#insert zAscQQ}></A>	zNameTargetFromCBWord
 
-zNameTargetFromCBWordCoded -- Transforms word in clipboard to <A NAME='[CB]'/>	<A NAME={#insert zAscQQ}{#insert zTPPaste}{#insert zAscQQ}/>	zNameTargetFromCBWordCoded
+zNameTargetFromCBWordCoded -- Transforms word in clipboard to <A NAME='[CB]'/>	<A NAME={#insert zAscQQ}{#insert zTPPaste}{#insert zAscQQ}></A>	zNameTargetFromCBWordCoded
 
 zNameTargetFromWordLeft -- Select-copy word-left, zNameTargetFromCBWord	{#insert zSelectL1wCopy}{#insert zNameTargetFromCBWord}	zNameTargetFromWordLeft
 
