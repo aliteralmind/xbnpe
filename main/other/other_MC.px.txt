@@ -1,2 +1,1 @@
 syn_ -- zzAbcsyn_M_yon -- Needs zvSYNTAX_ON...	{#MSGBOX -head syn for zvSYNTAX_ON -text You just wrote 'zzXyzsyn_'. About to copy the 'Xyz'}{#insert zTPSelectL1w}{#insert zSelectR2c}{#insert zTPCopy}{#insert zTPMoveR1w}syn_M_yon -- Needs zvSYNTAX_ON{#insert zTAB}\\\{#insert \\\{#COND -if \\\{#insert zvSYNTAX_ON\\\} = on -then {#insert zLowercaseCB}syn -else z1slp\\\}\\\}{#insert zTAB}zz{#INSERTCLIPBOARD}syn_M_yon{#insert zRIGHT}	syn_
-${ --  ${}	${\\\}	${

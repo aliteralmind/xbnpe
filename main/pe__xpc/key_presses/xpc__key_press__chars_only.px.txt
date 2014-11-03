@@ -1,3 +1,4 @@
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
 krh -- krk, w/ -chars param {#NONE -chars ...}	{#insert zvESC_LVL_CNT_st0}{#insert zKrhRAW_M_elc}{#insert krksyn}	krh
 krha -- {#ALT -chars ...}	{#insert zvESC_LVL_CNT_st0}{#insert zKrhaRAW_M_elc}{#insert krksyn}	krha
 krhal -- {#ALT {#LWIN -chars ...}}	{#insert zvESC_LVL_CNT_st0}{#insert zKrhalRAW_M_elc}{#insert krksyn}	krhal
@@ -46,21 +47,21 @@ krhslp -- krhsl, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrhslRAW_M_elc}{#i
 krhslq -- krhsl, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrhslRAW_M_elc}{#insert krksyn}	krhslq
 krhsp -- krhs, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrhsRAW_M_elc}{#insert krksyn}	krhsp
 krhsq -- krhs, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrhsRAW_M_elc}{#insert krksyn}	krhsq
-zKrhRAW_M_elc -- Needs zvESC_LVL_CNT (assumed good value!)	{#insert zOY_M_elc}#NONE -chars {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zKrhRAW_M_elc
-zKrhaRAW_M_elc	{#insert zOY_M_elc}#ALT -chars {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zKrhaRAW_M_elc
-zKrhalRAW_M_elc	{#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#LWIN -chars {#insert zCYx2_M_elc}{#insert zzLeftPrevEscCrlyX2_M_elc}	zKrhalRAW_M_elc
-zKrhasRAW_M_elc	{#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#SHIFT -chars {#insert zCYx2_M_elc}{#insert zzLeftPrevEscCrlyX2_M_elc}	zKrhasRAW_M_elc
-zKrhaslRAW_M_elc	{#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#SHIFT {#insert zOY_M_elc}#LWIN -chars {#insert zCYx3_M_elc}{#insert zzLeftPrevEscCrlyX3_M_elc}	zKrhaslRAW_M_elc
-zKrhcRAW_M_elc	{#insert zOY_M_elc}#CTRL -chars {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zKrhcRAW_M_elc
-zKrhcaRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#ALT -chars {#insert zCYx2_M_elc}{#insert zzLeftPrevEscCrlyX2_M_elc}	zKrhcaRAW_M_elc
-zKrhcalRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#LWIN -chars {#insert zCYx3_M_elc}{#insert zzLeftPrevEscCrlyX3_M_elc}	zKrhcalRAW_M_elc
-zKrhcasRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#SHIFT -chars {#insert zCYx3_M_elc}{#insert zzLeftPrevEscCrlyX3_M_elc}	zKrhcasRAW_M_elc
-zKrhcaslRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#SHIFT {#insert zOY_M_elc}#LWIN -chars {#insert zCYx4_M_elc}{#insert zzLeftPrevEscCrlyX4_M_elc}	zKrhcaslRAW_M_elc
-zKrhclRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#LWIN -chars {#insert zCYx2_M_elc}{#insert zzLeftPrevEscCrlyX2_M_elc}	zKrhclRAW_M_elc
-zKrhcsRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#SHIFT -chars {#insert zCYx2_M_elc}{#insert zzLeftPrevEscCrlyX2_M_elc}	zKrhcsRAW_M_elc
-zKrhcslRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#SHIFT {#insert zOY_M_elc}#LWIN -chars {#insert zCYx3_M_elc}{#insert zzLeftPrevEscCrlyX3_M_elc}	zKrhcslRAW_M_elc
-zKrhlRAW_M_elc	{#insert zOY_M_elc}#LWIN -chars {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zKrhlRAW_M_elc
-zKrhsRAW_M_elc	{#insert zOY_M_elc}#SHIFT -chars {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zKrhsRAW_M_elc
-zKrhslRAW_M_elc	{#insert zOY_M_elc}#SHIFT {#insert zOY_M_elc}#LWIN -chars {#insert zCYx2_M_elc}{#insert zzLeftPrevEscCrlyX2_M_elc}	zKrhslRAW_M_elc
+zKrhRAW_M_elc -- Needs zvESC_LVL_CNT (assumed good value!)	{#insert zOY_M_elc}#NONE -chars {#insert zCY_M_elc}{#insert zLtrlTSlpPhrsPostBrktGTP}{#insert zzLeftPrevEscCrly_M_elc}	zKrhRAW_M_elc
+zKrhaRAW_M_elc	{#insert zOY_M_elc}#ALT -chars {#insert zCY_M_elc}{#insert zLtrlTSlpPhrsPostBrktGTP}{#insert zzLeftPrevEscCrly_M_elc}	zKrhaRAW_M_elc
+zKrhalRAW_M_elc	{#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#LWIN -chars {#insert zCYx2_M_elc}{#insert zLtrlTSlpPhrsPostBrktGTP}{#insert zzLeftPrevEscCrlyX2_M_elc}	zKrhalRAW_M_elc
+zKrhasRAW_M_elc	{#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#SHIFT -chars {#insert zCYx2_M_elc}{#insert zLtrlTSlpPhrsPostBrktGTP}{#insert zzLeftPrevEscCrlyX2_M_elc}	zKrhasRAW_M_elc
+zKrhaslRAW_M_elc	{#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#SHIFT {#insert zOY_M_elc}#LWIN -chars {#insert zCYx3_M_elc}{#insert zLtrlTSlpPhrsPostBrktGTP}{#insert zzLeftPrevEscCrlyX3_M_elc}	zKrhaslRAW_M_elc
+zKrhcRAW_M_elc	{#insert zOY_M_elc}#CTRL -chars {#insert zCY_M_elc}{#insert zLtrlTSlpPhrsPostBrktGTP}{#insert zzLeftPrevEscCrly_M_elc}	zKrhcRAW_M_elc
+zKrhcaRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#ALT -chars {#insert zCYx2_M_elc}{#insert zLtrlTSlpPhrsPostBrktGTP}{#insert zzLeftPrevEscCrlyX2_M_elc}	zKrhcaRAW_M_elc
+zKrhcalRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#LWIN -chars {#insert zCYx3_M_elc}{#insert zLtrlTSlpPhrsPostBrktGTP}{#insert zzLeftPrevEscCrlyX3_M_elc}	zKrhcalRAW_M_elc
+zKrhcasRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#SHIFT -chars {#insert zCYx3_M_elc}{#insert zLtrlTSlpPhrsPostBrktGTP}{#insert zzLeftPrevEscCrlyX3_M_elc}	zKrhcasRAW_M_elc
+zKrhcaslRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#SHIFT {#insert zOY_M_elc}#LWIN -chars {#insert zCYx4_M_elc}{#insert zLtrlTSlpPhrsPostBrktGTP}{#insert zzLeftPrevEscCrlyX4_M_elc}	zKrhcaslRAW_M_elc
+zKrhclRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#LWIN -chars {#insert zCYx2_M_elc}{#insert zLtrlTSlpPhrsPostBrktGTP}{#insert zzLeftPrevEscCrlyX2_M_elc}	zKrhclRAW_M_elc
+zKrhcsRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#SHIFT -chars {#insert zCYx2_M_elc}{#insert zLtrlTSlpPhrsPostBrktGTP}{#insert zzLeftPrevEscCrlyX2_M_elc}	zKrhcsRAW_M_elc
+zKrhcslRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#SHIFT {#insert zOY_M_elc}#LWIN -chars {#insert zCYx3_M_elc}{#insert zLtrlTSlpPhrsPostBrktGTP}{#insert zzLeftPrevEscCrlyX3_M_elc}	zKrhcslRAW_M_elc
+zKrhlRAW_M_elc	{#insert zOY_M_elc}#LWIN -chars {#insert zCY_M_elc}{#insert zLtrlTSlpPhrsPostBrktGTP}{#insert zzLeftPrevEscCrly_M_elc}	zKrhlRAW_M_elc
+zKrhsRAW_M_elc	{#insert zOY_M_elc}#SHIFT -chars {#insert zCY_M_elc}{#insert zLtrlTSlpPhrsPostBrktGTP}{#insert zzLeftPrevEscCrly_M_elc}	zKrhsRAW_M_elc
+zKrhslRAW_M_elc	{#insert zOY_M_elc}#SHIFT {#insert zOY_M_elc}#LWIN -chars {#insert zCYx2_M_elc}{#insert zLtrlTSlpPhrsPostBrktGTP}{#insert zzLeftPrevEscCrlyX2_M_elc}	zKrhslRAW_M_elc
 zzKrhAllMainAbrvs1CQBL	[Krh][Krha][Krhc][Krhl][Krhs][Krhal][Krhas][Krhca][Krhcl][Krhcs][Krhsl][Krhasl][Krhcal][Krhcas][Krhcsl][Krhcasl]	zzKrhAllMainAbrvs1CQBL
 krhtestall	{#SETPHRASE -description zvQB_STR_LIST -content {#insert zzKrhAllMainAbrvs1CQBL} -autotext zvQB_STR_LIST -folder ctvv_folder}{#insert zzTestAllMainPhrsCrtrAbrvs_M_qbl}	krhtestall

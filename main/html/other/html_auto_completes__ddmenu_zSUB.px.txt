@@ -4,3 +4,10 @@ zzHtmlCmtBlockPaste -- Sub for MC only	<!--{#insert zENTER}{#insert zTPPaste} --
 zzHtmlEscBrkctsB4Crsr	{#insert zPostBracketSelect}{#insert zHtmlEscSlctdAmpLTGT2SpcQQ}	zzHtmlEscBrkctsB4Crsr
 zzHtmlSingleLnCmt	<!--  -->{#insert zTPMoveL1w}{#insert zLEFT}	zzHtmlSingleLnCmt
 zzHtmlSingleLnCmtPaste	<!-- {#insert zTPPaste} -->	zzHtmlSingleLnCmtPaste
+zzPrintGTForOpenTagTmpcpy1stWord -- Temp var: tagName	>{#insert zLeftPostBrktSelectWord1}{#insert zTPCopy}{#SETTEMP -name tagName -content {#INSERTCLIPBOARD}}{#insert zTPMatchBracket}{#RIGHT}{#insert zTSlp}	zzPrintGTForOpenTagTmpcpy1stWord
+zzCloseTagWNameInCBGoToMid_M_tgnm -- Needs temp var tagName	</{#GETTEMP -name tagName}>{#insert zPostBracketGTP}	zzCloseTagWNameInCBGoToMid
+zzRtn2CloseTagWNameInCBGoToMidTab	{#ENTER -count 2}{#insert zTSlp}</{#GETTEMP -name tagName}>{#UP}{#insert zTSlp}{#END}{#insert zTSlp}{#TAB}{#insert zTSlp}	zzRtn2CloseTagWNameInCBGoToMidTab
+zzCutWordLeftToOpenHtmlTag	{#insert zCutL1w}{#SETTEMP -name tagName -content {#INSERTCLIPBOARD}}<{#GETTEMP -name tagName}>	zzCutWordLeftToOpenHtmlTag
+zvCONTENT_stCB	{#SETPHRASE -description zvCONTENT -content {#INSERTCLIPBOARD} -autotext zvCONTENT -folder ctvv_folder}	zvCONTENT_stCB
+zzSetCBToCONTENTPaste	{#SETCLIPBOARD {#insert zvCONTENT}}{#insert zTPPaste}	zzSetCBToCONTENTPaste
+zzEndTagPasteContentGTPostEndTag_M_ctntCb -- Tag name in clipboard, zvCONTENT	{#ENTER -count 2}{#insert zTSlp}</{#GETTEMP -name tagName}>{#UP}{#insert zTSlp}{#TAB}{#insert zTSlp}{#insert zzSetCBToCONTENTPaste}{#DOWN}{#insert zTSlp}{#END}{#insert zTSlp}	zzEndTagPasteContentGTPostEndTag_M_ctntCb

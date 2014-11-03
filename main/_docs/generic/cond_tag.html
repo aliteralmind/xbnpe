@@ -180,14 +180,14 @@ z LTOE 9
 <P>Comments on either side of the &quot;<CODE>-if</CODE>&quot; parameter...</P>
 
 <PRE STYLE="background-color:#E1E1E1;"><!--xcfexample...START  //  cond10ifcmt:{#ENTER}--><B><U>cond10ifcmt</U></B>
-{#COND -if yes == yes(*a test comment*)&nbsp;
+{#COND -if yes = yes(*a test comment*)&nbsp;
    -then YES&nbsp;
    -else NO}<!--xcfexample...END  //  {#ENTER}--></PRE>
 
 <P>...and <I>no</I> spaces around the comparison operator...</P>
 
 <PRE STYLE="background-color:#E1E1E1;"><!--xcfexample...START  //  cond11nospaceif1:{#ENTER}--><B><U>cond11nospaceif1</U></B>
-{#COND -if yes==yes&nbsp;
+{#COND -if yes=yes&nbsp;
    -then YES&nbsp;
    -else NO}<!--xcfexample...END  //  {#ENTER}--></PRE>
 
@@ -231,7 +231,7 @@ not equal</PRE>
 
 <PRE STYLE="background-color:#E1E1E1;"><!--xcfexample...START  //  --><B><U>cond152balloons3</U></B>
 {#SETPHRASE -description zvTRIGGER_TEXT -content {#input -head Trigger word [3/3]? (it's 'trigger')} -autotext zvTRIGGER_TEXT -folder ctvv_folder}
-{#BALLOON -title {#COND -if {#insert zvTRIGGER_TEXT} == trigger&nbsp;
+{#BALLOON -title {#COND -if {#insert zvTRIGGER_TEXT} = trigger&nbsp;
    -then Right&nbsp;
    -else Wrong} word -text You have{#COND -if {#insert zvTRIGGER_TEXT} != trigger&nbsp;
       -then n't&nbsp;
@@ -246,7 +246,7 @@ not equal</PRE>
 <P>Note to those familiar with C++ and Java, and the like:</P>
 
 <PRE STYLE="background-color:#E1E1E1;"><!--xcfexample...START  //  cond162equals:{#ENTER}--><B><U>cond162equals</U></B>
-{#COND -if on == on&nbsp;
+{#COND -if on = on&nbsp;
    -then ON!&nbsp;
    -else OFF!}{#ENTER}
 {#COND -if on = on&nbsp;

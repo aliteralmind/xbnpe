@@ -1,24 +1,24 @@
 __XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
 ***All phrases in folder derived from mu__markup.px.txt. Do not edit!	x	xxxxxx
-h1p -- hh1 with paste	<H1>{#insert zTPPaste}</H1>	h1p
-h2p -- hh2 with paste	<H2>{#insert zTPPaste}</H2>	h2p
-h3p -- hh3 with paste	<H3>{#insert zTPPaste}</H3>	h3p
-h4p -- hh4 with paste	<H4>{#insert zTPPaste}</H4>	h4p
-h4up -- hh4u with paste	<H4><U>{#insert zTPPaste}</U></H4>	h4up
-hbcp -- hhbc with paste	<B><CODE>{#insert zTPPaste}</CODE></B>	hbcp
+h1p -- hh1 with paste	<h1>{#insert zTPPaste}</h1>	h1p
+h2p -- hh2 with paste	<h2>{#insert zTPPaste}</h2>	h2p
+h3p -- hh3 with paste	<h3>{#insert zTPPaste}</h3>	h3p
+h4p -- hh4 with paste	<h4>{#insert zTPPaste}</h4>	h4p
+h4up -- hh4u with paste	<h4><u>{#insert zTPPaste}</u></h4>	h4up
+hbcp -- hhbc with paste	<b><code>{#insert zTPPaste}</code></b>	hbcp
 hbi -- hhib ALT KC	{#insert hhib}	hbi
-hbip -- hhbi with paste	<U><I>{#insert zTPPaste}</I></U>	hbip
-hbp -- hhb with paste	<B>{#insert zTPPaste}</B>	hbp
-hct -- hhc with paste	<CODE>{#insert zTPPaste}</CODE>	hct
+hbip -- hhbi with paste	<u><i>{#insert zTPPaste}</i></u>	hbip
+hbp -- hhb with paste	<b>{#insert zTPPaste}</b>	hbp
+hct -- hhc with paste	<code>{#insert zTPPaste}</code>	hct
 hcbp -- hhbcp ALT KC	{#insert hhbcp}	hcbp
 hcbqp -- hhbcqp ALT KC	{#insert hhbcqp}	hcbqp
 hcbsqp -- hhbcsqp ALT KC	{#insert hhbcsqp}	hcbsqp
-hcqp -- hhcq with paste	&quot;<CODE>{#insert zTPPaste}</CODE>&quot;	hcqp
-hfcp -- hhfc with paste	<FONT COLOR={#asc 34}#{#insert zXmark}{#asc 34}>{#insert zTPPaste}</FONT>	hfcp
-hfcsp -- hhfcs with paste	<FONT COLOR={#asc 34}#{#insert zXmark}{#asc 34} SIZE={#asc 34}{#insert zXmark}{#asc 34}>{#insert zTPPaste}</FONT>	hfcsp
-hfsp -- hhfs with paste	<FONT SIZE={#asc 34}{#insert zXmark}{#asc 34}>{#insert zTPPaste}</FONT>	hfsp
-hip -- hhi with paste	<I>{#insert zTPPaste}</I>	hip
-hibp -- hhib with paste	<I><B>{#insert zTPPaste}</B></I>	hibp
-hicp -- hhic with paste	<I><CODE>{#insert zTPPaste}</CODE></I>	hicp
-hbup -- hhb with underline inside	<B><U>{#insert zTPPaste}</U></B>	hbup
-hup -- hhu with paste	<U>{#insert zTPPaste}</U>	hup
+hcqp -- hhcq with paste	&quot;<code>{#insert zTPPaste}</code>&quot;	hcqp
+hfcp -- hhfc with paste	<font color={#asc 34}#{#insert zXmark}{#asc 34}>{#insert zTPPaste}</font>	hfcp
+hfcsp -- hhfcs with paste	<font color={#asc 34}#{#insert zXmark}{#asc 34} SIZE={#asc 34}{#insert zXmark}{#asc 34}>{#insert zTPPaste}</font>	hfcsp
+hfsp -- hhfs with paste	<font SIZE={#asc 34}{#insert zXmark}{#asc 34}>{#insert zTPPaste}</font>	hfsp
+hip -- hhi with paste	<i>{#insert zTPPaste}</i>	hip
+hibp -- hhib with paste	<i><b>{#insert zTPPaste}</b></i>	hibp
+hicp -- hhic with paste	<i><code>{#insert zTPPaste}</code></i>	hicp
+hbup -- hhb with underline inside	<b><u>{#insert zTPPaste}</u></b>	hbup
+hup -- hhu with paste	<u>{#insert zTPPaste}</u>	hup

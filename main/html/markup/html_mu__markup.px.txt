@@ -1,31 +1,31 @@
 __XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
-hfnt -- <FONT ...='...'>...</FONT>	<FONT {#insert zYmark}={#insert zAscQQ}{#insert zYmark}{#insert zAscQQ}>{#insert zYmark}</FONT>{#insert zYUp}	hfnt
-hfnp -- <FONT SIZE='...'>...</FONT>	<FONT SIZE={#insert zAscQQ}{#insert zYmark}{#insert zAscQQ}>{#insert zYmark}</FONT>{#insert zYUp}	hfnp
-hfnl -- <FONT COLOR='...'>...</FONT>	<FONT COLOR={#insert zAscQQ}{#insert zYmark}{#insert zAscQQ}>{#insert zYmark}</FONT>{#insert zYUp}	hfnl
-hh1 -- <H1></H1>	<H1>{#insert zYmark}</H1>{#insert zYUp}	hh1
-hh2 -- <H2></H2>	<H2>{#insert zYmark}</H2>{#insert zYUp}	hh2
-hh3 -- <H3></H3>	<H3>{#insert zYmark}</H3>{#insert zYUp}	hh3
-hh4 -- <H4></H4>	<H4>{#insert zYmark}</H4>{#insert zYUp}	hh4
-h1u -- <H1><U></U></H1>	<H1><U>{#insert zYmark}</U></H1>{#insert zYUp}	h1u
-h2u -- <H2><U></U></H2>	<H2><U>{#insert zYmark}</U></H2>{#insert zYUp}	h2u
-h3u -- <H3><U></U></H3>	<H3><U>{#insert zYmark}</U></H3>{#insert zYUp}	h3u
-h4u -- <H4><U></U></H4>	<H4><U>{#insert zYmark}</U></H4>{#insert zYUp}	h4u
-h4uc -- <H4><U><CODE></CODE></U></H4>	<H4><U><CODE>{#insert zYmark}</CODE></U></H4>{#insert zYUp}	h4uc
-hhb -- <B></B>	<B>{#insert zYmark}</B>{#insert zYUp}	hhb
-hbc -- <B><CODE></CODE></B>	<B><CODE>{#insert zYmark}</CODE></B>{#insert zYUp}	hbc
-hbcq -- &quot;<B><CODE></CODE></B>&quot;	&quot;<B><CODE>{#insert zYmark}</CODE></B>&quot;{#insert zYUp}	hbcq
-hbq -- &quot;<B></B>&quot;	&quot;<B>{#insert zYmark}</B>&quot;{#insert zYUp}	hbq
-hbi -- <B><I></I></B>	<B><I>{#insert zYmark}</I></B>{#insert zYUp}	hbi
-hbu -- <B><U></U></B>	<B><U>{#insert zYmark}</U></B>{#insert zYUp}	hbu
-hhc -- <CODE></CODE>	<CODE>{#insert zYmark}</CODE>{#insert zYUp}	hhc
-hcq -- &quot;<CODE></CODE>&quot;	&quot;<CODE>{#insert zYmark}</CODE>&quot;{#insert zYUp}	hcq
-hcqb -- <CODE>[]</CODE>	<CODE>[{#insert zYmark}]</CODE>{#insert zYUp}	hcqb
-hfc -- <FONT COLOR...	<FONT COLOR={#asc 34}#{#insert zYmark}{#asc 34}>{#insert zYmark}</FONT>{#insert zYUp}	hfc
-hfcs -- <FONT COLOR and SIZE...	<FONT COLOR={#asc 34}#{#insert zYmark}{#asc 34} SIZE={#asc 34}{#insert zYmark}{#asc 34}>{#insert zYmark}</FONT>{#insert zYUp}	hfcs
-hfs -- <FONT SIZE...	<FONT SIZE={#asc 34}{#insert zYmark}{#asc 34}>{#insert zYmark}</FONT>{#insert zYUp}	hfs
-hhi -- <I></I>	<I>{#insert zYmark}</I>{#insert zYUp}	hhi
-hib -- <I><B></B></I>	<I><B>{#insert zYmark}</B></I>{#insert zYUp}	hib
+hfnt -- <font ...='...'>...</font>	<font {#insert zYmark}={#insert zAscQQ}{#insert zYmark}{#insert zAscQQ}>{#insert zYmark}</font>{#insert zYUp}	hfnt
+hfnp -- <font SIZE='...'>...</font>	<font SIZE={#insert zAscQQ}{#insert zYmark}{#insert zAscQQ}>{#insert zYmark}</font>{#insert zYUp}	hfnp
+hfnl -- <font color='...'>...</font>	<font color={#insert zAscQQ}{#insert zYmark}{#insert zAscQQ}>{#insert zYmark}</font>{#insert zYUp}	hfnl
+hh1 -- <h1></h1>	<h1>{#insert zYmark}</h1>{#insert zYUp}	hh1
+hh2 -- <h2></h2>	<h2>{#insert zYmark}</h2>{#insert zYUp}	hh2
+hh3 -- <h3></h3>	<h3>{#insert zYmark}</h3>{#insert zYUp}	hh3
+hh4 -- <h4></h4>	<h4>{#insert zYmark}</h4>{#insert zYUp}	hh4
+h1u -- <h1><u></u></h1>	<h1><u>{#insert zYmark}</u></h1>{#insert zYUp}	h1u
+h2u -- <h2><u></u></h2>	<h2><u>{#insert zYmark}</u></h2>{#insert zYUp}	h2u
+h3u -- <h3><u></u></h3>	<h3><u>{#insert zYmark}</u></h3>{#insert zYUp}	h3u
+h4u -- <h4><u></u></h4>	<h4><u>{#insert zYmark}</u></h4>{#insert zYUp}	h4u
+h4uc -- <h4><u><code></code></u></h4>	<h4><u><code>{#insert zYmark}</code></u></h4>{#insert zYUp}	h4uc
+hhb -- <b></b>	<b>{#insert zYmark}</b>{#insert zYUp}	hhb
+hbc -- <b><code></code></b>	<b><code>{#insert zYmark}</code></b>{#insert zYUp}	hbc
+hbcq -- &quot;<b><code></code></b>&quot;	&quot;<b><code>{#insert zYmark}</code></b>&quot;{#insert zYUp}	hbcq
+hbq -- &quot;<b></b>&quot;	&quot;<b>{#insert zYmark}</b>&quot;{#insert zYUp}	hbq
+hbi -- <b><i></i></b>	<b><i>{#insert zYmark}</i></b>{#insert zYUp}	hbi
+hbu -- <b><u></u></b>	<b><u>{#insert zYmark}</u></b>{#insert zYUp}	hbu
+hhc -- <code></code>	<code>{#insert zYmark}</code>{#insert zYUp}	hhc
+hcq -- &quot;<code></code>&quot;	&quot;<code>{#insert zYmark}</code>&quot;{#insert zYUp}	hcq
+hcqb -- <code>[]</code>	<code>[{#insert zYmark}]</code>{#insert zYUp}	hcqb
+hfc -- <font COLOR...	<font color={#asc 34}#{#insert zYmark}{#asc 34}>{#insert zYmark}</font>{#insert zYUp}	hfc
+hfcs -- <font COLOR and SIZE...	<font color={#asc 34}#{#insert zYmark}{#asc 34} SIZE={#asc 34}{#insert zYmark}{#asc 34}>{#insert zYmark}</font>{#insert zYUp}	hfcs
+hfs -- <font SIZE...	<font SIZE={#asc 34}{#insert zYmark}{#asc 34}>{#insert zYmark}</font>{#insert zYUp}	hfs
+hhi -- <i></i>	<i>{#insert zYmark}</i>{#insert zYUp}	hhi
+hib -- <i><b></b></i>	<i><b>{#insert zYmark}</b></i>{#insert zYUp}	hib
 hbi -- hhib ALT KC	{#insert hhib}	hbi
-hic -- <I><CODE></CODE></I>	<I><CODE>{#insert zYmark}</CODE></I>{#insert zYUp}	hic
-hhu -- <U></U>	<U>{#insert zYmark}</U>{#insert zYUp}	hhu
+hic -- <i><code></code></i>	<i><code>{#insert zYmark}</code></i>{#insert zYUp}	hic
+hhu -- <u></u>	<u>{#insert zYmark}</u>{#insert zYUp}	hhu
 hub -- hhbu ALT KC	{#insert hhbu}	hub

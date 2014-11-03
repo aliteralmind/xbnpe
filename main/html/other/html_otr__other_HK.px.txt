@@ -1,27 +1,27 @@
 __XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
-hbacklk -- A '[BACK]' link, right-padded with space	<CODE>[<A HREF={#asc 34}#{#insert zXmark}{#asc 34}>BACK</A>]</CODE> &nbsp; {#insert zXUp}	hbacklk
-hbackrk -- A '[BACK]' link, left-padded with space	(*starts with space*) &nbsp; <CODE>[<A HREF={#asc 34}#{#insert zXmark}{#asc 34}>BACK</A>]</CODE>{#insert zXUp}	hbackrk
+hbacklk -- A '[BACK]' link, right-padded with space	<code>[<a href={#asc 34}#{#insert zXmark}{#asc 34}>BACK</a>]</code> &nbsp; {#insert zXUp}	hbacklk
+hbackrk -- A '[BACK]' link, left-padded with space	(*starts with space*) &nbsp; <code>[<a href={#asc 34}#{#insert zXmark}{#asc 34}>BACK</a>]</code>{#insert zXUp}	hbackrk
 hescn -- HTML escape multiple lines (may not contain phrase express code!)	{#insert zWordWrapOffFromTPDfltState}{#LOOP {#insert zSelectEntireLine}{#insert zHtmlEscSlctdAmpLTGT2SpcQQ}{#insert zDownHome} -count {#INPUT -head How many lines? -single}}{#insert zWordWrapOn}	hescn
-hgok -- A '[go]' link for toc lists	<CODE>[<A HREF={#asc 34}#{#insert zXmark}{#asc 34}><FONT SIZE={#asc 34}+1{#asc 34}><B>GO</B></FONT></A>]</CODE> &nbsp; (*ends with space*)	hgok
-hgow -- hgok, invisible and inactive (white)	<CODE><FONT COLOR={#insert zAscQQ}#FFFFFF{#insert zAscQQ}>[go]</FONT></A></CODE> &nbsp; (*ends with space*)	hgow
-hhr -- <HR/>	<HR/>	hhr
+hgok -- A '[go]' link for toc lists	<code>[<a href={#asc 34}#{#insert zXmark}{#asc 34}><font SIZE={#asc 34}+1{#asc 34}><b>GO</b></font></a>]</code> &nbsp; (*ends with space*)	hgok
+hgow -- hgok, invisible and inactive (white)	<code><font color={#insert zAscQQ}#FFFFFF{#insert zAscQQ}>[go]</font></a></code> &nbsp; (*ends with space*)	hgow
+hhr -- <hr/>	<hr/>	hhr
 hhz -- </> (z for close/end)	</>{#insert zLEFT}	hhz
-hig -- <IMG SRC='[crs]' BORDER='0'/>	<IMG SRC={#insert zAscQQ}{#insert zXmark}{#insert zAscQQ} BORDER={#insert zAscQQ}0{#insert zAscQQ}/>{#insert zXUp}	hig
-hig1 -- <IMG SRC='[crs]' BORDER='1'/>	<IMG SRC={#insert zAscQQ}{#insert zXmark}{#insert zAscQQ} BORDER={#insert zAscQQ}1{#insert zAscQQ}/>{#insert zXUp}	hig1
-hir -- <I>(...)</I>	<I>({#insert zXmark})</I>{#insert zXUp}	hir
-hnbir -- hnbnb, hir	 &nbsp; &nbsp; <I>({#insert zXmark})</I>{#insert zXUp}	hnbir
-hpg1 -- <P><IMG SRC='[crs]' BORDER='1'/></P>	<P><IMG SRC={#insert zAscQQ}{#insert zXmark}{#insert zAscQQ} BORDER={#insert zAscQQ}1{#insert zAscQQ}/></P>{#insert zXUp}	hpg1
-hpig -- <P><IMG SRC='[crs]' BORDER='0'/></P>	<P><IMG SRC={#insert zAscQQ}{#insert zXmark}{#insert zAscQQ} BORDER={#insert zAscQQ}0{#insert zAscQQ}/></P>{#insert zXUp}	hpig
-hqbp -- hup, bolded	<B>[{#insert zTPPaste}]</B>	hubp
-hqkc -- <CODE>[<cursor>]</CODE>	<CODE>[]</CODE>{#LEFT -count 9}	hqkc
-hqkcp -- hqkc, paste	<CODE>[{#insert zTPPaste}]</CODE>	hqkcp
-hsectionh -- <PRE>\n\n<HR/>\n\n</PRE>y-mark<H2>hbacklk, x-mark</H2>	{#insert zzHsectionhPreBackLink}<CODE>[<A HREF={#insert zAscQQ}#{#insert zYmark}{#insert zAscQQ}>BACK</A>]</CODE> &nbsp; {#insert zYmark}</H2>{#insert zENTER}{#insert zXUp}	hsectionh
-hsectionhpre -- <PRE>\n\n<HR/>\n\n</PRE>	{#insert zzHsectionhPreHRPre}	hsectionhpre
-hsectionht -- <PRE>\n\n<HR/>\n\n</PRE>y-mark<H2>htoplk, x-mark</H2>	{#insert zzHsectionhPreBackLink}<CODE>[<A HREF={#insert zAscQQ}#top{#insert zAscQQ}>top</A>]</CODE> &nbsp; {#insert zYmark}</H2>{#insert zENTER}{#insert zXUp}	hsectionht
-htoplk -- A '[top]' link, right-padded with space	<CODE>[<A HREF={#asc 34}#top{#asc 34}>top</A>]</CODE> &nbsp; 	htoplk
-htoprk -- A '[top]' link, left-padded with space	(*starts with space*) &nbsp; <CODE>[<A HREF={#asc 34}#top{#asc 34}>top</A>]</CODE>	htoprk
-hucbp -- hucp, bolded	<B><CODE>[{#insert zTPPaste}]</CODE></B>	hucbp
-hucp -- hup, paste	<CODE>[{#insert zTPPaste}]</CODE>	hucp
+hig -- <img SRC='[crs]' BORDER='0'/>	<img SRC={#insert zAscQQ}{#insert zXmark}{#insert zAscQQ} BORDER={#insert zAscQQ}0{#insert zAscQQ}/>{#insert zXUp}	hig
+hig1 -- <img SRC='[crs]' BORDER='1'/>	<img SRC={#insert zAscQQ}{#insert zXmark}{#insert zAscQQ} BORDER={#insert zAscQQ}1{#insert zAscQQ}/>{#insert zXUp}	hig1
+hir -- <i>(...)</i>	<i>({#insert zXmark})</i>{#insert zXUp}	hir
+hnbir -- hnbnb, hir	 &nbsp; &nbsp; <i>({#insert zXmark})</i>{#insert zXUp}	hnbir
+hpg1 -- <p><img SRC='[crs]' BORDER='1'/></p>	<p><img SRC={#insert zAscQQ}{#insert zXmark}{#insert zAscQQ} BORDER={#insert zAscQQ}1{#insert zAscQQ}/></p>{#insert zXUp}	hpg1
+hpig -- <p><img SRC='[crs]' BORDER='0'/></p>	<p><img SRC={#insert zAscQQ}{#insert zXmark}{#insert zAscQQ} BORDER={#insert zAscQQ}0{#insert zAscQQ}/></p>{#insert zXUp}	hpig
+hqbp -- hup, bolded	<b>[{#insert zTPPaste}]</b>	hubp
+hqkc -- <code>[<cursor>]</code>	<code>[]</code>{#LEFT -count 9}	hqkc
+hqkcp -- hqkc, paste	<code>[{#insert zTPPaste}]</code>	hqkcp
+hsectionh -- <pre>\n\n<hr/>\n\n</pre>y-mark<H2>hbacklk, x-mark</H2>	{#insert zzHsectionhPreBackLink}<code>[<a href={#insert zAscQQ}#{#insert zYmark}{#insert zAscQQ}>BACK</a>]</code> &nbsp; {#insert zYmark}</H2>{#insert zENTER}{#insert zXUp}	hsectionh
+hsectionhpre -- <pre>\n\n<hr/>\n\n</pre>	{#insert zzHsectionhPreHRPre}	hsectionhpre
+hsectionht -- <pre>\n\n<hr/>\n\n</pre>y-mark<H2>htoplk, x-mark</H2>	{#insert zzHsectionhPreBackLink}<code>[<a href={#insert zAscQQ}#top{#insert zAscQQ}>top</a>]</code> &nbsp; {#insert zYmark}</H2>{#insert zENTER}{#insert zXUp}	hsectionht
+htoplk -- A '[top]' link, right-padded with space	<code>[<a href={#asc 34}#top{#asc 34}>top</a>]</code> &nbsp; 	htoplk
+htoprk -- A '[top]' link, left-padded with space	(*starts with space*) &nbsp; <code>[<a href={#asc 34}#top{#asc 34}>top</a>]</code>	htoprk
+hucbp -- hucp, bolded	<b><code>[{#insert zTPPaste}]</code></b>	hucbp
+hucp -- hup, paste	<code>[{#insert zTPPaste}]</code>	hucp
 xhEscapeSelWTPRplc -- Via TextPad search and replace	{#BALLOON -title DING alert -text These replacements will ding, as a result of protecting against no search results.}{#insert zTPRplcDlgOpen}&{#insert zRplcFieldWith}&amp;{#insert zRplcBtnAllSelHnr}<{#insert zRplcFieldWith}&lt;{#insert zRplcBtnAllSelHnr}>{#insert zRplcFieldWith}&gt;{#insert zRplcBtnAllSelHnr}{#asc 34}{#insert zRplcFieldWith}&quot;{#insert zRplcBtnAllSelHnr}  {#insert zRplcFieldWith}&npsb; {#insert zFindFlagRETglRAW}{#insert zRplcBtnAllSelHnr}{#insert zzMidRplcREHtmlEscTabToNbSpcNb}{#insert zRplcDlgCloseRE}	xhEscapeSelWTPRplc
 zDeleteSurroundingTag [RST] -[zCSpDD]- 	{#insert zFindDlgOpenUpRE}<[^>]+>{#insert zFindBtnNext}{#insert zFindDlgClose}{#insert zDEL}{#insert zTPFindNext}{#insert zDEL}{#insert zTPFindFlagREoff}	zDeleteSurroundingTag
 zHtmlEsc2Spc_M_esc -*- Needs zvESCAPED, which remains unaltered	{#REPLACE {#insert zvESCAPED} -oldtext {#insert zAscSpace}{#insert zAscSpace} -newtext {#insert zAscSpace}&nbsp;}	zHtmlEsc2Spc_M_esc
@@ -51,7 +51,7 @@ zTagSelectL2 -- [zApSEVEN]	{#insert ztpmTagSelectL1}{#insert ztpmTagSelectL1}	zT
 zTagSelectR2 -- [zApZERO]	{#insert ztpmTagSelectR1}{#insert ztpmTagSelectR1}	zTagSelectR2
 zvESCAPED_stCB -*-	{#SETPHRASE -description zvESCAPED -content {#INSERTCLIPBOARD} -autotext zvESCAPED -folder ctvv_folder}	zvESCAPED_stCB
 zzHsectionhPreBackLink	{#insert zzHsectionhPreHRPre}{#insert zXmark}<H2>	zzHsectionhPreBackLink
-zzHsectionhPreHRPre	<PRE>{#insert zENTER}{#insert zENTER}<HR/>{#insert zENTER}{#insert zENTER}</PRE>{#insert zENTER}	zzHsectionhPreHRPre
+zzHsectionhPreHRPre	<pre>{#insert zENTER}{#insert zENTER}<hr/>{#insert zENTER}{#insert zENTER}</pre>{#insert zENTER}	zzHsectionhPreHRPre
 zzMidRplcGoSelHnrHtmlUnsecape	{#insert zzMinRplcLtrlGTToNon}{#insert zRplcBtnAllSelHnr}{#insert zzMinRplcLtrlLTToNon}{#insert zRplcBtnAllSelHnr}{#insert zzMinRplcRELtrlNbspSpcNbspToTab}{#insert zRplcBtnAllSelHnr}{#insert zzMinRplcLtrlNbspSpcToNon}{#insert zRplcBtnAllSelHnr}{#insert zzMinRplcLtrlNbspToNon}{#insert zRplcBtnAllSelHnr}{#insert zzMinRplcLtrlQuotToNon}{#insert zRplcBtnAllSelHnr}{#insert zzMinRplcLtrlAmpToNon}{#insert zRplcBtnAllSelHnr}	zzMidRplcGoSelHnrHtmlUnsecape
 zzMidRplcREHtmlEscTabToNbSpcNb -*-	{#insert zzQtab}{#insert zRplcFieldWith}\&npsb; \&npsb;	zzMidRplcREHtmlEscTabToNbSpcNb
 zzMinRplcLtrlAmpToNon	&amp;{#insert zRplcFieldWith}&	zzMinRplcLtrlAmpToNon
@@ -61,4 +61,4 @@ zzMinRplcLtrlNbspSpcToNon	&nbsp; {#insert zRplcFieldWith}  (*ends with 2 spaces*
 zzMinRplcLtrlNbspToNon	&nbsp;{#insert zRplcFieldWith} (*ends with space*)	zzMinRplcLtrlNbspToNon
 zzMinRplcLtrlQuotToNon	&quot;{#insert zRplcFieldWith}{#insert zAscQQ}	zzMinRplcLtrlQuotToNon
 zzMinRplcRELtrlNbspSpcNbspToTab	&nbsp; &nbsp;{#insert zRplcFieldWith}{#insert zzQtab}	zzMinRplcRELtrlNbspSpcNbspToTab
-zBlockQuotePre	<BLOCKQUOTE><PRE>{#insert zENTER}{#insert zXmark}{#insert zENTER}</PRE></BLOCKQUOTE>{#insert zXUp}	zBlockQuotePre
+zBlockQuotePre	<blockquote><pre>{#insert zENTER}{#insert zXmark}{#insert zENTER}</pre></blockquote>{#insert zXUp}	zBlockQuotePre

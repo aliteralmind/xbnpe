@@ -3,10 +3,6 @@
 , _4FQP_	, _4FQP_	, _
 ,_4TV_	,_4TV_	,_
 --this returns <B><CODE>null</CODE></B> (must return &quot;<CODE>this</CODE>&quot; from non-abstract sub-classes).--this returns <B><CODE>null (must return &quot;<CODE>this...	--this returns <B><CODE>null</CODE></B> (must return &quot;<CODE>this</CODE>&quot; from non-abstract sub-classes){#BALLOON -title Related actions -text rnl, rnldb}	--this r
-/*...*/	{#insert zzJavaNonJDCmtBlock}	/*
-/*...*/	{#insert zzJavaNonJDCmtBlock}	/8
-/*[paste]*/	{#insert zzJavaNonJDCmtBlockPaste}	/*
-/*[paste]*/	{#insert zzJavaNonJDCmtBlockPaste}	/8
 /*stu -- /*stub functions for non-abstract compile...	{#insert zzStubFncsForNAbstrCmpl}	/*s
 /*stu -- /*stub functions for non-abstract compile...	{#insert zzStubFncsForNAbstrCmpl}	/8s
 /*stub functions for implements compile	{#insert zzStubFncsForImplCmpl}	/*s
@@ -37,7 +33,6 @@ Boo -- All primitive wrapper-type line-list, shortened ('PByte', 'Int'), in a li
 Boo -- All primitive wrapper-type line-list, shortened: b,d,f,l,i,h,y,c	Bool{#insert zENTER}PDouble{#insert zENTER}PFloat{#insert zENTER}PLong{#insert zENTER}Int{#insert zENTER}PShort{#insert zENTER}PByte{#insert zENTER}Char{#UP -count 7}{#insert zHOME}	Boo
 Boo All primitive type line-list, full ('Byte', 'Integer')	Boolean{#insert zENTER}Character{#insert zENTER}Byte{#insert zENTER}Short{#insert zENTER}Integer{#insert zENTER}Long{#insert zENTER}Float{#insert zENTER}Double{#UP -count 7}{#insert zHOME}	Boo
 Boo All primitive type line-list, full: b,d,f,l,i,h,y,c	Boolean{#insert zENTER}Double{#insert zENTER}Float{#insert zENTER}Long{#insert zENTER}Integer{#insert zENTER}Short{#insert zENTER}Byte{#insert zENTER}Character{#UP -count 7}{#insert zHOME}	Boo
-C:\java_code\	C:\java_code\	c;
 Convenience functions for creating {@code ...}	Convenience functions for creating {@code }{#insert zLEFT}	conve
 Create a -- Create a new instance	Create a new instance	Create a
 Create a -- Create a new instance as a duplicate of another	Create a new instance as a duplicate of another	Create a
@@ -55,7 +50,7 @@ getClass().getName()	getClass().getName()	getC
 imp -- import  ...;	import  {#insert zXmark};{#insert zXUp}	imp
 imp -- import  static ....*;	import  static {#insert zXmark}.*;{#insert zXUp}	imp
 in sub-classes, this must be overridden or made abstract.	in sub-classes, this function must be overridden or made abstract.	in sub
-ret -- z-return  (ret-type)super.funcName();	return  ({#insert zXPrevJFSigCopyReturnTypeWGnrcsPasteCddAtX}{#SETPHRASE -description zvRET_W_GNRCS -content {#INSERTCLIPBOARD} -autotext zvRET_W_GNRCS -folder ctvv_folder})super.{#insert zzXPastePrevJFSigAtCrsrDelTypes}(*If the function is zero parameters, the cursor will end up in the parens.*){#insert sEND};{#MSGBOX -head Document call? -text [Yes]=Document this casted super-function call in a new JavaDoc block  //  WARNING: Word-wrap must be on (assuming on is your TextPad default). -yes zzzAtRetLineEndDocCastedSuperCallReturn -no z1slp}{#insert zBalloonDone}	ret
+(*ret -- z-return  (ret-type)super.funcName();   return  ({#insert zXPrevJFSigCopyReturnTypeWGnrcsPasteCddAtX}{#SETPHRASE -description zvRET_W_GNRCS -content {#INSERTCLIPBOARD} -autotext zvRET_W_GNRCS -folder ctvv_folder})super.{#insert zzXPastePrevJFSigAtCrsrDelTypes}(*If the function is zero parameters, the cursor will end up in the parens.*){#insert sEND};{#MSGBOX -head Document call? -text [Yes]=Document this casted super-function call in a new JavaDoc block  //  WARNING: Word-wrap must be on (assuming on is your TextPad default). -yes zzzAtRetLineEndDocCastedSuperCallReturn -no z1slp}{#insert zBalloonDone}   ret*)
 super-call to same function, for sig-line, return this (multiple times)	{#SETPHRASE -description zvSPR_CALS -content {#INPUT -head How many super-call sig lines? -single} -autotext zvSPR_CALS -folder ctvv_folder}{#insert zzzSprCallToSameFuncRetThis_M_scals}	super.
 super-call to same function, for sig-line, return this (once)	{#SETPHRASE -description zvSPR_CALS -content 1 -autotext zvSPR_CALS -folder ctvv_folder}{#insert zzzSprCallToSameFuncRetThis_M_scals}	super.
 symbol:[ ]+class (for find-dialog text-box)	{#insert zzJRegexSymbolClassForCompileOutput}	sym
@@ -63,3 +58,9 @@ symbol:[ ]+class, create import statement templates	{#SETPHRASE -description zvF
 symbol:[ ]+class, for cannot-find-symbol class list only	{#SETPHRASE -description zvFIND_WHAT -content {#insert zzJRegexSymbolClassOrVarForCompileOutput} -autotext zvFIND_WHAT -folder ctvv_folder}{#insert zzSymbolVarClassListOnlyFromCompileOutput_M_fwt}	sym
 this.getClass().getName()	this.getClass().getName()	this.g
 z- symbol:[ ]+(?:class|variable), create import statement template	{#SETPHRASE -description zvFIND_WHAT -content {#insert zzJRegexSymbolClassOrVarForCompileOutput} -autotext zvFIND_WHAT -folder ctvv_folder}{#insert zzSymbolVarImportStmntsFromCompileOutput_M_fwt}	sym
+(*
+   /*...*/   {#insert zzJavaNonJDCmtBlock}   /*
+   /*...*/   {#insert zzJavaNonJDCmtBlock}   /8
+   /*[paste]*/   {#insert zzJavaNonJDCmtBlockPaste}   /*
+   /*[paste]*/   {#insert zzJavaNonJDCmtBlockPaste}   /8
+*)

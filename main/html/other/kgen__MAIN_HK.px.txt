@@ -20,15 +20,15 @@ ntwl -- zNameTargetFromWordLeft ALT KC	{#insert zNameTargetFromWordLeft}{#insert
 
 zAddHashToPrevLink -- Add '#' to prev link [zApSIX]	{#insert zXmark}{#insert zTMFindPrevHREFThrQQ}{#insert zRIGHT}#{#insert zSelectR1wCopy}{#insert zXDown}<a name={#asc 34}{#insert zTPPaste}{#asc 34}/>{#insert zPostBracketSelect}	zAddHashToPrevLink
 
-zCodedLinkFromSel -- Link from sel CODE-d [zCASpFIVE]	{#insert zzRplcDlgOpenRERplcUrlSpcDscWLink}{#insert zTPCut}<CODE>{#insert zTPPaste}</CODE>	zCodedLinkFromSel
+zCodedLinkFromSel -- Link from sel CODE-d [zCASpFIVE]	{#insert zzRplcDlgOpenRERplcUrlSpcDscWLink}{#insert zTPCut}<code>{#insert zTPPaste}</code>	zCodedLinkFromSel
 
 zLinkFromSel -- Link from sel (1st space-word url) [zCSpFIVE]	{#insert zzRplcDlgOpenRERplcUrlSpcDscWLink}{#insert zRIGHT}	zLinkFromSel
 
-zNameLinkFromCBWord -- Transforms cb-word to <A HREF='#[CB]'>[CB]</A>	<A HREF={#insert zAscQQ}#{#insert zTPPaste}{#insert zAscQQ}>{#insert zTPPaste}</A>	zNameLinkFromCBWord
+zNameLinkFromCBWord -- Transforms cb-word to <a href='#[CB]'>[CB]</a>	<a href={#insert zAscQQ}#{#insert zTPPaste}{#insert zAscQQ}>{#insert zTPPaste}</a>	zNameLinkFromCBWord
 
-zNameTargetFromCBWord -- Transforms word in clipboard to <A NAME='[CB]'/>	<A NAME={#insert zAscQQ}{#insert zTPPaste}{#insert zAscQQ}></A>	zNameTargetFromCBWord
+zNameTargetFromCBWord -- Transforms word in clipboard to <a NAME='[CB]'/>	<a NAME={#insert zAscQQ}{#insert zTPPaste}{#insert zAscQQ}></a>	zNameTargetFromCBWord
 
-zNameTargetFromCBWordCoded -- Transforms word in clipboard to <A NAME='[CB]'/>	<A NAME={#insert zAscQQ}{#insert zTPPaste}{#insert zAscQQ}></A>	zNameTargetFromCBWordCoded
+zNameTargetFromCBWordCoded -- Transforms word in clipboard to <a NAME='[CB]'/>	<a NAME={#insert zAscQQ}{#insert zTPPaste}{#insert zAscQQ}></a>	zNameTargetFromCBWordCoded
 
 zNameTargetFromWordLeft -- Select-copy word-left, zNameTargetFromCBWord	{#insert zSelectL1wCopy}{#insert zNameTargetFromCBWord}	zNameTargetFromWordLeft
 
@@ -36,18 +36,18 @@ zSelectedUrlDescToCodedNameLink -- zCodedLinkFromSel, ahpl [zCApSIX]	{#insert zC
 
 zSelectedUrlDescToNameLink -- zLinkFromSel, ahpl [zCSpSIX]	{#insert zLinkFromSel}{#insert ahpl}	zSelectedUrlDescToNameLink
 
-zSelfLinkFromCBUrl -- zSelfLinkFromCBUrlCoded, non-CODE-d	<A HREF={#insert zAscQQ}{#insert zTPPaste}{#insert zAscQQ}>{#insert zTPPaste}</A>	zSelfLinkFromCBUrl
+zSelfLinkFromCBUrl -- zSelfLinkFromCBUrlCoded, non-CODE-d	<a href={#insert zAscQQ}{#insert zTPPaste}{#insert zAscQQ}>{#insert zTPPaste}</a>	zSelfLinkFromCBUrl
 
-zSelfLinkFromCBUrlCoded -- A CODE-d self-link using clipboard-url	<CODE>{#insert zSelfLinkFromCBUrl}</CODE>	zSelfLinkFromCBUrlCoded
+zSelfLinkFromCBUrlCoded -- A CODE-d self-link using clipboard-url	<code>{#insert zSelfLinkFromCBUrl}</code>	zSelfLinkFromCBUrlCoded
 
 zSelfLinkFromWLUrl -- kwl, non-CODE-d	{#insert zCutL1w}{#insert zTgtSelfLinkFromCBUrl}	zSelfLinkFromWLUrl
 
 zSelfLinkFromWLUrlCoded -- A CODE-d self-link using clipboard-url	{#insert zCutL1w}{#insert zTgtSelfLinkFromCBUrlCoded}	zSelfLinkFromWLUrlCoded
 
-zTgtSelfLinkFromCBUrl -- zTgtSelfLinkFromCBUrlCoded, non-CODE-d	<A HREF={#insert zAscQQ}#{#insert zTPPaste}{#insert zAscQQ}>{#insert zTPPaste}</A>	zTgtSelfLinkFromCBUrl
+zTgtSelfLinkFromCBUrl -- zTgtSelfLinkFromCBUrlCoded, non-CODE-d	<a href={#insert zAscQQ}#{#insert zTPPaste}{#insert zAscQQ}>{#insert zTPPaste}</a>	zTgtSelfLinkFromCBUrl
 
-zTgtSelfLinkFromCBUrlCoded -- kcb, with '#' at start of url	<CODE>{#insert zTgtSelfLinkFromCBUrl}</CODE>{#insert kcbsyn}	zTgtSelfLinkFromCBUrlCoded
+zTgtSelfLinkFromCBUrlCoded -- kcb, with '#' at start of url	<code>{#insert zTgtSelfLinkFromCBUrl}</code>{#insert kcbsyn}	zTgtSelfLinkFromCBUrlCoded
 
 kcbsyn	{#BALLOON -title Syntax: HTML links -text kcb[g][l]=Self-link from url in clipboard ([g]='#' at url-start, [l]=non-coded)  //  kwl[l]='#'-self-link from word-left  //  ahpl=Add '#' to prev link-url  //  nt[cb,wl]=NAME target from clipboard/word-left  //  kcbsyn}	kcbsyn
 
-zzRplcDlgOpenRERplcUrlSpcDscWLink	{#insert zRplcDlgOpenRE}([^ ]+) (.+){#sleep 5}{#insert zRplcFieldWith}<A HREF={#asc 34}$1{#asc 34}>$2</A>{#insert zRplcBtnAllSel}{#insert zRplcDlgClose}	zzRplcDlgOpenRERplcUrlSpcDscWLink
+zzRplcDlgOpenRERplcUrlSpcDscWLink	{#insert zRplcDlgOpenRE}([^ ]+) (.+){#sleep 5}{#insert zRplcFieldWith}<a href={#asc 34}$1{#asc 34}>$2</a>{#insert zRplcBtnAllSel}{#insert zRplcDlgClose}	zzRplcDlgOpenRERplcUrlSpcDscWLink

@@ -1,24 +1,24 @@
 __XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
 
-hcsq -- '<CODE></CODE>'	'<CODE>{#insert zXmark}</CODE>'{#insert zXUp}{#insert hqqsyn}	hcsq
+hcsq -- '<code></code>'	'<code>{#insert zXmark}</code>'{#insert zXUp}{#insert hqqsyn}	hcsq
 
-hcsqb -- hcsq, bolded	'<B><CODE>{#insert zXmark}</CODE></B>'{#insert zXUp}{#insert hqqsyn}	hcsqb
+hcsqb -- hcsq, bolded	'<b><code>{#insert zXmark}</code></b>'{#insert zXUp}{#insert hqqsyn}	hcsqb
 
-hcsqbp -- hcsqb, paste	'<B><CODE>{#insert zTPPaste}</CODE></B>'{#insert hqqsyn}	hcsqbp
+hcsqbp -- hcsqb, paste	'<b><code>{#insert zTPPaste}</code></b>'{#insert hqqsyn}	hcsqbp
 
-hcsqp -- hcsq, paste	<CODE>'{#insert zTPPaste}'</CODE>{#insert hqqsyn}	hcsqp
+hcsqp -- hcsq, paste	<code>'{#insert zTPPaste}'</code>{#insert hqqsyn}	hcsqp
 
-hqb -- hqq, bolded	&quot;<B>{#insert zXmark}</B>&quot;{#insert zXUp}{#insert hqqsyn}	hqb
+hqb -- hqq, bolded	&quot;<b>{#insert zXmark}</b>&quot;{#insert zXUp}{#insert hqqsyn}	hqb
 
-hqbp -- hqb, paste	&quot;<B>{#insert zTPPaste}</B>&quot;{#insert hqqsyn}	hqbp
+hqbp -- hqb, paste	&quot;<b>{#insert zTPPaste}</b>&quot;{#insert hqqsyn}	hqbp
 
-hqc -- hqq, CODE-d	&quot;<CODE>{#insert zXmark}</CODE>&quot;{#insert zXUp}{#insert hqqsyn}	hqc
+hqc -- hqq, CODE-d	&quot;<code>{#insert zXmark}</code>&quot;{#insert zXUp}{#insert hqqsyn}	hqc
 
-hqbc -- hqc, bolded	&quot;<B><CODE>{#insert zXmark}</CODE></B>&quot;{#insert zXUp}{#insert hqqsyn}	hqbc
+hqbc -- hqc, bolded	&quot;<b><code>{#insert zXmark}</code></b>&quot;{#insert zXUp}{#insert hqqsyn}	hqbc
 
-hqbcp -- hqbc, paste	&quot;<B><CODE>{#insert zTPPaste}</CODE></B>&quot;{#insert hqqsyn}	hqbcp
+hqbcp -- hqbc, paste	&quot;<b><code>{#insert zTPPaste}</code></b>&quot;{#insert hqqsyn}	hqbcp
 
-hqcp -- hqc, paste	&quot;<CODE>{#insert zTPPaste}</CODE>&quot;{#insert hqqsyn}	hqcp
+hqcp -- hqc, paste	&quot;<code>{#insert zTPPaste}</code>&quot;{#insert hqqsyn}	hqcp
 
 hqo -- &quot;	&quot;{#insert hqqsyn}	hqo
 

@@ -1,3 +1,4 @@
+__XBN-PhraseExpress is released under the LGPL 2.1	(*XBN-PhraseExpress is a large set of generically-useful Microsoft Windows scripting tools, written in PhraseExpress, using the plain-text editor TextPad as its foundation.  //  Copyright (C) 2013 Jeff Epstein  //  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.  //  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  //  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA*)		(*Two tabs plus this comment, to force this phrase to be (a) imported, and (b) with NO autotext*)
 krx -- There is no krx, because it's logically NOTHING	{#MSGBOX -head 'krx' not applicable -text There is no 'krx'. At least one character must follow 'krx'. See: krxinfo, krksyn}	krx
 krxa -- Alt modifier with NOTHING MODIFIED: {#ALT ...}	{#insert zvESC_LVL_CNT_st0}{#insert zKrxaRAW_M_elc}{#insert krksyn}	krxa
 krxal -- {#ALT {#LWIN ...}}	{#insert zvESC_LVL_CNT_st0}{#insert zKrxalRAW_M_elc}{#insert krksyn}	krxal
@@ -44,21 +45,21 @@ krxslp -- krxsl, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrxslRAW_M_elc}{#i
 krxslq -- krxsl, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrxslRAW_M_elc}{#insert krksyn}	krxslq
 krxsp -- krxs, escaped	{#insert zvESC_LVL_CNT_st1}{#insert zKrxsRAW_M_elc}{#insert krksyn}	krxsp
 krxsq -- krxs, doubly-escaped (or more)	{#insert zvESC_LVL_CNT_stPrompt}{#insert zKrxsRAW_M_elc}{#insert krksyn}	krxsq
-zKrxaRAW_M_elc -- Needs zvESC_LVL_CNT (assumed good value!)	{#insert zOY_M_elc}#ALT {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zKrxaRAW_M_elc
-zKrxalRAW_M_elc	{#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#LWIN {#insert zCYx2_M_elc}{#insert zzLeftPrevEscCrlyX2_M_elc}	zKrxalRAW_M_elc
-zKrxasRAW_M_elc	{#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#SHIFT {#insert zCYx2_M_elc}{#insert zzLeftPrevEscCrlyX2_M_elc}	zKrxasRAW_M_elc
-zKrxaslRAW_M_elc	{#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#SHIFT {#insert zOY_M_elc}#LWIN {#insert zCYx3_M_elc}{#insert zzLeftPrevEscCrlyX3_M_elc}	zKrxaslRAW_M_elc
-zKrxcRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zKrxcRAW_M_elc
-zKrxcaRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#ALT {#insert zCYx2_M_elc}{#insert zzLeftPrevEscCrlyX2_M_elc}	zKrxcaRAW_M_elc
-zKrxcalRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#LWIN {#insert zCYx3_M_elc}{#insert zzLeftPrevEscCrlyX3_M_elc}	zKrxcalRAW_M_elc
-zKrxcasRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#SHIFT {#insert zCYx3_M_elc}{#insert zzLeftPrevEscCrlyX3_M_elc}	zKrxcasRAW_M_elc
-zKrxcaslRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#SHIFT {#insert zOY_M_elc}#LWIN {#insert zCYx4_M_elc}{#insert zzLeftPrevEscCrlyX4_M_elc}	zKrxcaslRAW_M_elc
-zKrxclRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#LWIN {#insert zCYx2_M_elc}{#insert zzLeftPrevEscCrlyX2_M_elc}	zKrxclRAW_M_elc
-zKrxcsRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#SHIFT {#insert zCYx2_M_elc}{#insert zzLeftPrevEscCrlyX2_M_elc}	zKrxcsRAW_M_elc
-zKrxcslRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#SHIFT {#insert zOY_M_elc}#LWIN {#insert zCYx3_M_elc}{#insert zzLeftPrevEscCrlyX3_M_elc}	zKrxcslRAW_M_elc
-zKrxlRAW_M_elc	{#insert zOY_M_elc}#LWIN {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zKrxlRAW_M_elc
-zKrxsRAW_M_elc	{#insert zOY_M_elc}#SHIFT {#insert zCY_M_elc}{#insert zzLeftPrevEscCrly_M_elc}	zKrxsRAW_M_elc
-zKrxslRAW_M_elc	{#insert zOY_M_elc}#SHIFT {#insert zOY_M_elc}#LWIN {#insert zCYx2_M_elc}{#insert zzLeftPrevEscCrlyX2_M_elc}	zKrxslRAW_M_elc
+zKrxaRAW_M_elc -- Needs zvESC_LVL_CNT (assumed good value!)	{#insert zOY_M_elc}#ALT {#insert zCY_M_elc}{#insert zLtrlTSlpPhrsPostBrktGTP}{#insert zzLeftPrevEscCrly_M_elc}	zKrxaRAW_M_elc
+zKrxalRAW_M_elc	{#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#LWIN {#insert zCYx2_M_elc}{#insert zLtrlTSlpPhrsPostBrktGTP}{#insert zzLeftPrevEscCrlyX2_M_elc}	zKrxalRAW_M_elc
+zKrxasRAW_M_elc	{#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#SHIFT {#insert zCYx2_M_elc}{#insert zLtrlTSlpPhrsPostBrktGTP}{#insert zzLeftPrevEscCrlyX2_M_elc}	zKrxasRAW_M_elc
+zKrxaslRAW_M_elc	{#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#SHIFT {#insert zOY_M_elc}#LWIN {#insert zCYx3_M_elc}{#insert zLtrlTSlpPhrsPostBrktGTP}{#insert zzLeftPrevEscCrlyX3_M_elc}	zKrxaslRAW_M_elc
+zKrxcRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zCY_M_elc}{#insert zLtrlTSlpPhrsPostBrktGTP}{#insert zzLeftPrevEscCrly_M_elc}	zKrxcRAW_M_elc
+zKrxcaRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#ALT {#insert zCYx2_M_elc}{#insert zLtrlTSlpPhrsPostBrktGTP}{#insert zzLeftPrevEscCrlyX2_M_elc}	zKrxcaRAW_M_elc
+zKrxcalRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#LWIN {#insert zCYx3_M_elc}{#insert zLtrlTSlpPhrsPostBrktGTP}{#insert zzLeftPrevEscCrlyX3_M_elc}	zKrxcalRAW_M_elc
+zKrxcasRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#SHIFT {#insert zCYx3_M_elc}{#insert zLtrlTSlpPhrsPostBrktGTP}{#insert zzLeftPrevEscCrlyX3_M_elc}	zKrxcasRAW_M_elc
+zKrxcaslRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#ALT {#insert zOY_M_elc}#SHIFT {#insert zOY_M_elc}#LWIN {#insert zCYx4_M_elc}{#insert zLtrlTSlpPhrsPostBrktGTP}{#insert zzLeftPrevEscCrlyX4_M_elc}	zKrxcaslRAW_M_elc
+zKrxclRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#LWIN {#insert zCYx2_M_elc}{#insert zLtrlTSlpPhrsPostBrktGTP}{#insert zzLeftPrevEscCrlyX2_M_elc}	zKrxclRAW_M_elc
+zKrxcsRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#SHIFT {#insert zCYx2_M_elc}{#insert zLtrlTSlpPhrsPostBrktGTP}{#insert zzLeftPrevEscCrlyX2_M_elc}	zKrxcsRAW_M_elc
+zKrxcslRAW_M_elc	{#insert zOY_M_elc}#CTRL {#insert zOY_M_elc}#SHIFT {#insert zOY_M_elc}#LWIN {#insert zCYx3_M_elc}{#insert zLtrlTSlpPhrsPostBrktGTP}{#insert zzLeftPrevEscCrlyX3_M_elc}	zKrxcslRAW_M_elc
+zKrxlRAW_M_elc	{#insert zOY_M_elc}#LWIN {#insert zCY_M_elc}{#insert zLtrlTSlpPhrsPostBrktGTP}{#insert zzLeftPrevEscCrly_M_elc}	zKrxlRAW_M_elc
+zKrxsRAW_M_elc	{#insert zOY_M_elc}#SHIFT {#insert zCY_M_elc}{#insert zLtrlTSlpPhrsPostBrktGTP}{#insert zzLeftPrevEscCrly_M_elc}	zKrxsRAW_M_elc
+zKrxslRAW_M_elc	{#insert zOY_M_elc}#SHIFT {#insert zOY_M_elc}#LWIN {#insert zCYx2_M_elc}{#insert zLtrlTSlpPhrsPostBrktGTP}{#insert zzLeftPrevEscCrlyX2_M_elc}	zKrxslRAW_M_elc
 zzKrxAllMainAbrvs1CQBL	[Krxa][Krxc][Krxl][Krxs][Krxal][Krxas][Krxca][Krxcl][Krxcs][Krxsl][Krxasl][Krxcal][Krxcas][Krxcsl][Krxcasl]	zzKrxAllMainAbrvs1CQBL
 krxtestall	{#SETPHRASE -description zvQB_STR_LIST -content {#insert zzKrxAllMainAbrvs1CQBL} -autotext zvQB_STR_LIST -folder ctvv_folder}{#insert zzTestAllMainPhrsCrtrAbrvs_M_qbl}	krxtestall
 krxinfo	{#BALLOON -title krx* info -text Example use: With '\\\{#ENTER\\\}' in the clipboard, execute 'krxca', then paste, resulting in: \\\{#CTRL \\\{#ALT \\\{#ENTER\\\}\\\}\\\}  //  There is no 'krx' phrase-creator, as that would logically output *nothing*.}
