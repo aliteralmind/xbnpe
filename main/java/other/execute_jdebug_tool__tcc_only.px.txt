@@ -1,0 +1,4 @@
+java com.debugtools.jdebugtool.Main	java com.debugtools.jdebugtool.Main	jdb
+java com.debugtools.jdebugtool.Main	java com.debugtools.jdebugtool.Main	jde
+java com.debugtools.jdebugtool.Main	java com.debugtools.jdebugtool.Main	jdeb
+java com.debugtools.jdebugtool.Main	java com.debugtools.jdebugtool.Main	jdebu

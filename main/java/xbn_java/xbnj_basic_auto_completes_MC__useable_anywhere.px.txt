@@ -13,8 +13,10 @@ ocg -- ObjectCopyOrCIBad.<...>get(...) for generified types (template)	{#insert 
 ocg -- ObjectCopyOrCIBad.<...>get(...) for generified types (template)	{#insert zzOcicibForGnrfdType}	ocg
 ocgm -- ocg, add import for ObjectCopyOrCIBad	{#insert zzOcicibForGnrfdType}{#insert zzAddImprtForOcocib}	ocg
 ocgx -- ocg example input	ValidateValue Integer vvi to_copy.getCondition(){#BALLOON -title ocgx -text Erased type, generic type, variable name, original variable. All must be single words, except for the original variable, which may not contain any spaces.}	ocg
-pub -- Simple class template w/ XBN-Java license-header and @author	{#insert zzInsXBNJFileLicenseHeader}{#insert zzzPubClassPreAuthorSetCnmToCB}{#insert zzEnterXBNAuthorTag}{#insert zzzPubClassPostAuthor_M_cnm}	pub
-pub -- Simple interface template w/ XBN-Java license, @author, and iwt-input	{#insert zzInsXBNJFileLicenseHeader}{#insert zzzPubClassPreAuthorSetCnmToCB}{#insert zzEnterXBNAuthorTag}{#insert zzzInterfacePostAuthor}/*{#insert zENTER}---iwt{#insert zYmark} input---{#insert zENTER}{#insert zYmark} {#insert zvFOBJ_NAME} {#insert zYmark}{#insert zENTER} */{#insert zENTER}{#insert zXUp}	pub
+(*
+   pub -- Simple class template w/ XBN-Java license-header and @author   {#insert zzInsXBNJFileLicenseHeader}{#insert zzzPubClassPreAuthorSetCnmToCB}{#insert zzEnterXBNAuthorTag}{#insert zzzPubClassPostAuthor_M_cnm}   pub
+   pub -- Simple interface template w/ XBN-Java license, @author, and iwt-input   {#insert zzInsXBNJFileLicenseHeader}{#insert zzzPubClassPreAuthorSetCnmToCB}{#insert zzEnterXBNAuthorTag}{#insert zzzInterfacePostAuthor}/*{#insert zENTER}---iwt{#insert zYmark} input---{#insert zENTER}{#insert zYmark} {#insert zvFOBJ_NAME} {#insert zYmark}{#insert zENTER} */{#insert zENTER}{#insert zXUp}   pub
+*)
 ).appent( (also 0.a)	).appent(	).a
 ).appent( for ' + ' [prompt times] (also 0.a)	{#insert zzzClsPrnDtApndForNxtPromptPlusesXbn}	).a
 ).appent(' (also 0.a)	).appent({#insert zAscQQ}	).a
