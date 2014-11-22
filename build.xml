@@ -2,10 +2,10 @@
 	<description>${projectinfo}</description>
 
 	<property name="projectinfo" value="Creates the download zip-archive for XBNPE users, and the documentation directory for FTP-ing to xbnpe.jeffyepstein.com. These tasks take a while, consider using the '-verbose' ant-parameter."/>
-	<property name="sandbox_parent" value="R:\jeffy\programming\sandbox\macros\"/>
+	<property name="sandbox_parent" value="C:\data_jeffy\programming\sandbox\macros\"/>
 	<property name="sandbox_root" value="${sandbox_parent}xbnpe\"/>
 	<property name="sandbox_misc_dir" value="${sandbox_root}zz_misc_and_pxp\"/>
-	<property name="build_parent" value="R:\jeffy\programming\build\macros\"/>
+	<property name="build_parent" value="C:\data_jeffy\programming\build\macros\"/>
 	<property name="user_zip_dir" value="${build_parent}xbnpe\"/>
 	<property name="user_zip_path" value="${user_zip_dir}xbnpe_0p9p0p2_beta.zip"/>
 
